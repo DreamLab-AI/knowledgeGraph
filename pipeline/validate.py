@@ -18,7 +18,10 @@ import sys
 from collections import Counter, defaultdict
 from dataclasses import dataclass, field
 from pathlib import Path
-from .jsonld_parser import PageData, parse_corpus
+from typing import Optional
+
+from .jsonld_parser import MISSING, PageData, parse_corpus
+from .visibility import VisibilityPolicy, build_policy
 
 
 VALID_DOMAINS = {
@@ -41,6 +44,12 @@ class ValidationIssue:
     severity: str  # error, warning, info
     code: str
     message: str
+    #: Whether the page this issue is about is published. The validation report
+    #: is itself an artefact written into the public tree, and both the page
+    #: *filename* and the parent labels quoted in a message can name a private
+    #: page. Public-safe serialisation filters on this flag rather than
+    #: string-matching the message.
+    page_is_public: bool = True
 
 
 @dataclass
@@ -68,6 +77,7 @@ class ValidationReport:
             "total_pages": self.total_pages,
             "pages_with_ontology": self.pages_with_ontology,
             "public_pages": self.public_pages,
+            "non_public_pages": self.total_pages - self.public_pages,
             "total_issues": len(self.issues),
             "errors": len(self.errors),
             "warnings": len(self.warnings),
@@ -76,13 +86,46 @@ class ValidationReport:
         }
 
 
-def validate_corpus(pages: list[PageData]) -> ValidationReport:
+def validate_corpus(pages: list[PageData],
+                    policy: Optional[VisibilityPolicy] = None) -> ValidationReport:
+    """Validate the corpus.
+
+    The report is truthful about the whole corpus, private pages included; use
+    :func:`public_report` to serialise the subset that may be published.
+    """
+    policy = build_policy(pages, policy)
     report = ValidationReport(total_pages=len(pages))
     iri_owners: dict[str, list[str]] = defaultdict(list)
+    public_by_file: dict[str, bool] = {}
 
     for page in pages:
         fname = page.path.name
+        public_by_file[fname] = page.is_public
         report.public_pages += 1 if page.is_public else 0
+
+        # ---------------------------------------------------------------- #
+        # Publication flag: strict boolean.
+        # ---------------------------------------------------------------- #
+        # This field selects what leaves the authoring workspace, so it gets
+        # stronger treatment than an ordinary display-field check. Only a
+        # literal JSON `true` publishes. The string "false" is truthy in Python
+        # and used to publish a page its author had marked unpublished; that is
+        # now an error, not a silent publication.
+        flag = page.public_flag_raw
+        if flag is MISSING:
+            report.issues.append(ValidationIssue(
+                fname, "error", "MISSING_PUBLIC_FLAG",
+                "Page block has no vc:public; publication must be declared explicitly"))
+        elif not isinstance(flag, bool):
+            report.issues.append(ValidationIssue(
+                fname, "error", "PUBLIC_FLAG_NOT_BOOLEAN",
+                f"vc:public is {type(flag).__name__} {flag!r}; only boolean true publishes"))
+
+        if page.schema_version_raw is not MISSING and not isinstance(page.schema_version_raw, int):
+            report.issues.append(ValidationIssue(
+                fname, "error", "SCHEMA_VERSION_NOT_INTEGER",
+                f"vc:schemaVersion is {type(page.schema_version_raw).__name__} "
+                f"{page.schema_version_raw!r}, expected an integer"))
 
         if not page.page_iri:
             report.issues.append(ValidationIssue(
@@ -150,18 +193,54 @@ def validate_corpus(pages: list[PageData]) -> ValidationReport:
             # a single u16 category (FORMAT-NGG1 §3), so the graph tiers keep
             # only the nearest category. This is where the discarded bridges
             # are still visible.
+            # Quote only publishable parent labels: this message is copied into
+            # the published validation report, and a private ancestor's label is
+            # exactly the derived metadata the visibility policy withholds
+            # everywhere else.
+            shown = policy.filter_refs(oc.sub_class_of)
+            withheld = len(oc.sub_class_of) - len(shown)
+            suffix = f" (+{withheld} withheld)" if withheld else ""
             report.issues.append(ValidationIssue(
                 fname, "info", "MULTI_PARENT",
                 f"Bridging class, {len(oc.sub_class_of)} parents: "
-                f"{', '.join(p.label for p in oc.sub_class_of)}"))
+                f"{', '.join(p.label for p in shown)}{suffix}"))
 
     for iri, owners in iri_owners.items():
         if len(owners) > 1:
             report.issues.append(ValidationIssue(
                 owners[0], "error", "DUPLICATE_IRI",
-                f"IRI {iri} claimed by {len(owners)} files: {', '.join(owners[:5])}"))
+                f"IRI {iri} claimed by {len(owners)} files: {', '.join(owners[:5])}",
+                page_is_public=all(public_by_file.get(o, False) for o in owners)))
+
+    # Stamp publication state on every issue raised inside the page loop.
+    for issue in report.issues:
+        if issue.code != "DUPLICATE_IRI":
+            issue.page_is_public = public_by_file.get(issue.path, True)
 
     return report
+
+
+def issue_dicts(issues: list[ValidationIssue]) -> list[dict]:
+    return [
+        {"path": i.path, "severity": i.severity, "code": i.code, "message": i.message}
+        for i in issues
+    ]
+
+
+def public_report(report: ValidationReport) -> dict:
+    """Serialise the report for publication into the public artefact tree.
+
+    Counts describe the whole corpus — numbers disclose nothing. The per-issue
+    detail is restricted to public pages, because an issue names its page by
+    filename and a ``MULTI_PARENT`` message quotes parent labels: publishing the
+    full list would put private page names into a public file.
+    """
+    data = report.summary()
+    public_issues = [i for i in report.issues if i.page_is_public]
+    data["issues"] = issue_dicts(public_issues)
+    data["issues_withheld_non_public"] = len(report.issues) - len(public_issues)
+    data["issues_scope"] = "public pages only; counts above cover the whole corpus"
+    return data
 
 
 def fix_self_references(pages_dir: Path, dry_run: bool = True) -> list[str]:
@@ -222,11 +301,10 @@ def main():
             print(f"Fixed {len(self_refs)} self-references: {', '.join(self_refs)}")
 
     if output_json:
+        # The CLI prints the full local truth; only the artefact written into
+        # the published tree is restricted (see pipeline.build).
         result = report.summary()
-        result["issues"] = [
-            {"path": i.path, "severity": i.severity, "code": i.code, "message": i.message}
-            for i in report.issues
-        ]
+        result["issues"] = issue_dicts(report.issues)
         json.dump(result, sys.stdout, indent=2)
     else:
         s = report.summary()

@@ -1,0 +1,14 @@
+{
+  "contract_version": 1,
+  "repository": "DreamLab-AI/knowledgeGraph",
+  "repository_aliases": [
+    "narrativegoldmine"
+  ],
+  "expected_classes": 8138,
+  "public_classes": 8138,
+  "identity_file": "class-identity.txt",
+  "identity_sha256": "f943cf6b8b6f1fd396ec69b4aa873977b76262408cf6e1122ee88c30f5806464",
+  "generated_at": "2026-09-05T12:28:09+00:00",
+  "source_commit": null,
+  "note": "Sorted set of every class IRI the public build must contain. The count in .github/workflows/build.yml EXPECTED_CLASSES stays hand-typed and independent (ADR-2003); this file adds membership on top of it, so an equal-count substitution is a diff, not a silent pass."
+}

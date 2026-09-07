@@ -71,6 +71,54 @@ class PageData:
     ontology_class: Optional[OntologyEntity] = None
     body: str = ""
     raw_page_block: dict = field(default_factory=dict)
+    #: The ``vc:public`` value exactly as authored, before coercion. ``MISSING``
+    #: when the key was absent. ``is_public`` is ``True`` only for a literal
+    #: JSON boolean ``true``; every other value publishes nothing and is
+    #: reported by :mod:`pipeline.validate` as a ``PUBLIC_FLAG_NOT_BOOLEAN``
+    #: error. The publication boundary selects what leaves the workspace, so it
+    #: is never decided by Python truthiness.
+    public_flag_raw: object = None
+    #: The ``vc:schemaVersion`` value exactly as authored, before coercion.
+    schema_version_raw: object = None
+
+
+class _Missing:
+    """Sentinel for an absent authored field (distinct from an authored null)."""
+
+    __slots__ = ()
+
+    def __repr__(self) -> str:  # pragma: no cover - debugging aid
+        return "MISSING"
+
+    def __bool__(self) -> bool:
+        return False
+
+
+MISSING = _Missing()
+
+
+@dataclass(frozen=True)
+class PageRejection:
+    """One input file that produced no :class:`PageData`, and why.
+
+    ``status`` is ``"rejected"`` for a file that looks like a corpus page but
+    could not be read as one (a build-blocking defect under strict mode), and
+    ``"excluded"`` for a file that is legitimately not a corpus page.
+    """
+
+    path: Path
+    status: str
+    code: str
+    message: str
+
+    def to_dict(self, root: Optional[Path] = None) -> dict:
+        name = str(self.path.relative_to(root)) if root else str(self.path)
+        return {
+            "path": name,
+            "status": self.status,
+            "code": self.code,
+            "message": self.message,
+        }
 
 
 JSONLD_BLOCK_RE = re.compile(
@@ -167,26 +215,55 @@ def _extract_body(text: str) -> str:
     return text[last_block_end:].strip()
 
 
-def parse_page(path: Path) -> Optional[PageData]:
-    text = path.read_text(encoding="utf-8", errors="replace")
+def parse_page_outcome(path: Path) -> tuple[Optional[PageData], Optional[PageRejection]]:
+    """Parse one page, returning either the page or a typed reason it produced none.
+
+    Exactly one element of the pair is non-``None``. Every early return that the
+    original :func:`parse_page` expressed as a bare ``None`` now carries a code,
+    so :mod:`pipeline.census` can account for every input file and strict builds
+    can refuse to publish a corpus that silently lost one.
+    """
+    try:
+        text = path.read_text(encoding="utf-8", errors="replace")
+    except OSError as exc:
+        return None, PageRejection(path, "rejected", "UNREADABLE", f"Cannot read file: {exc}")
+
     blocks = JSONLD_BLOCK_RE.findall(text)
     if not blocks:
-        return None
+        return None, PageRejection(
+            path, "excluded", "NO_JSONLD_FENCE",
+            "File contains no ```json-ld fence; not a corpus page")
 
     parsed_blocks = []
+    decode_errors = []
     for raw in blocks:
         try:
             parsed_blocks.append(json.loads(raw))
-        except json.JSONDecodeError:
-            continue
+        except json.JSONDecodeError as exc:
+            decode_errors.append(f"line {exc.lineno} col {exc.colno}: {exc.msg}")
+
+    if decode_errors:
+        # A malformed fence is a defect in a file that declares itself a corpus
+        # page. It is reported even when other fences in the same file parsed,
+        # because a dropped Class fence silently deletes a class (ADR-2002).
+        return None, PageRejection(
+            path, "rejected", "MALFORMED_JSONLD",
+            f"{len(decode_errors)} of {len(blocks)} json-ld fence(s) failed to decode: "
+            + "; ".join(decode_errors[:3]))
 
     if not parsed_blocks:
-        return None
+        return None, PageRejection(
+            path, "rejected", "NO_DECODABLE_BLOCK",
+            "No json-ld fence decoded to a JSON value")
 
     page_block = None
     ontology_block = None
 
     for b in parsed_blocks:
+        if not isinstance(b, dict):
+            return None, PageRejection(
+                path, "rejected", "NON_OBJECT_BLOCK",
+                f"json-ld fence decoded to {type(b).__name__}, expected an object")
         btype = b.get("@type", "")
         if btype == "Page" and page_block is None:
             page_block = b
@@ -194,20 +271,30 @@ def parse_page(path: Path) -> Optional[PageData]:
             ontology_block = b
 
     if page_block is None:
-        return None
+        return None, PageRejection(
+            path, "rejected", "NO_PAGE_BLOCK",
+            "No json-ld fence carries \"@type\": \"Page\"")
 
     wikilinks = _parse_refs(page_block.get("vc:outboundWikilinks", []))
+
+    public_raw = page_block.get("vc:public", MISSING)
+    schema_raw = page_block.get("vc:schemaVersion", MISSING)
 
     pd = PageData(
         path=path,
         page_iri=page_block.get("@id", ""),
         slug=page_block.get("vc:slug", ""),
         title=page_block.get("title", path.stem),
-        is_public=page_block.get("vc:public", False),
-        schema_version=page_block.get("vc:schemaVersion", 0),
+        # Strict: only a real JSON boolean true publishes. The string "false",
+        # 0, [] and every other truthy/falsy value are non-publishing and are
+        # raised as validation errors from the retained raw value.
+        is_public=(public_raw is True),
+        schema_version=schema_raw if isinstance(schema_raw, int) and not isinstance(schema_raw, bool) else 0,
         wikilinks=wikilinks,
         body=_extract_body(text),
         raw_page_block=page_block,
+        public_flag_raw=public_raw,
+        schema_version_raw=schema_raw,
     )
 
     if ontology_block:
@@ -257,15 +344,32 @@ def parse_page(path: Path) -> Optional[PageData]:
             raw=ontology_block,
         )
 
-    return pd
+    return pd, None
 
 
-def parse_corpus(pages_dir: Path) -> list[PageData]:
+def parse_page(path: Path) -> Optional[PageData]:
+    """Backwards-compatible wrapper: the page, or ``None`` if it produced none."""
+    page, _rejection = parse_page_outcome(path)
+    return page
+
+
+def parse_corpus(
+    pages_dir: Path,
+    rejections: Optional[list] = None,
+) -> list[PageData]:
+    """Parse every ``*.md`` under *pages_dir*.
+
+    When *rejections* is a list it is extended with a :class:`PageRejection`
+    for every input file that produced no page, so the caller can account for
+    the difference between the file count and the page count.
+    """
     pages = []
     for md_file in sorted(pages_dir.glob("*.md")):
-        pd = parse_page(md_file)
+        pd, rejection = parse_page_outcome(md_file)
         if pd is not None:
             pages.append(pd)
+        elif rejections is not None:
+            rejections.append(rejection)
     return pages
 
 

@@ -16,7 +16,10 @@ except ImportError:
     print("ERROR: rdflib required. Install with: pip install rdflib>=7.0.0", file=sys.stderr)
     sys.exit(1)
 
+from typing import Optional
+
 from .jsonld_parser import PageData, OntologyEntity, parse_corpus
+from .visibility import VisibilityPolicy, build_policy
 
 VC = Namespace("https://narrativegoldmine.com/ns/v1#")
 NGM = Namespace("https://narrativegoldmine.com/class/")
@@ -89,7 +92,18 @@ def _label_from_slug(slug: str) -> str:
 
 
 def build_graph(pages: list[PageData], public_only: bool = True,
-                emit_domain_disjointness: bool = True) -> Graph:
+                emit_domain_disjointness: bool = True,
+                policy: Optional[VisibilityPolicy] = None) -> Graph:
+    """Serialise the corpus as OWL 2 EL Turtle.
+
+    When *public_only* is set, references are additionally filtered through the
+    visibility policy: skipping the private page's own triples still left
+    ``<public-child> rdfs:subClassOf <private-parent>`` in the public file, which
+    republishes the private identifier and — through the tail-stub rule below —
+    a label derived from its slug. A private export (``public_only=False``)
+    uses a permissive policy so nothing is redacted from the full graph.
+    """
+    policy = build_policy(pages, policy) if public_only else VisibilityPolicy.permissive()
     g = Graph()
     g.bind("owl", OWL)
     g.bind("rdfs", RDFS)
@@ -253,10 +267,10 @@ def build_graph(pages: list[PageData], public_only: bool = True,
 
         if oc.entity_type == "Individual":
             g.add((entity_uri, RDF.type, OWL.NamedIndividual))
-            for cls_ref in oc.instance_of:
+            for cls_ref in policy.filter_refs(oc.instance_of):
                 cls_uri = _iri_to_uriref(cls_ref.iri)
                 g.add((entity_uri, RDF.type, cls_uri))
-            for cls_ref in oc.sub_class_of:
+            for cls_ref in policy.filter_refs(oc.sub_class_of):
                 cls_uri = _iri_to_uriref(cls_ref.iri)
                 g.add((entity_uri, RDF.type, cls_uri))
         else:
@@ -264,7 +278,7 @@ def build_graph(pages: list[PageData], public_only: bool = True,
             # Intermediate categories and domain roots are also SKOS Concepts
             if entity_slug in TAXONOMIC_SLUGS:
                 g.add((entity_uri, RDF.type, SKOS.Concept))
-            for parent in oc.sub_class_of:
+            for parent in policy.filter_refs(oc.sub_class_of):
                 parent_uri = _iri_to_uriref(parent.iri)
                 parent_slug = _slug_from_uri(parent_uri)
                 if parent_slug in TAXONOMIC_SLUGS:
@@ -278,7 +292,7 @@ def build_graph(pages: list[PageData], public_only: bool = True,
         if oc.definition:
             g.add((entity_uri, RDFS.comment, Literal(oc.definition, lang="en")))
 
-        for aligned in oc.same_as:
+        for aligned in policy.filter_refs(oc.same_as):
             g.add((entity_uri, OWL.sameAs, _iri_to_uriref(aligned.iri)))
 
         g.add((entity_uri, VC.sourceDomain, Literal(oc.domain)))
@@ -305,7 +319,7 @@ def build_graph(pages: list[PageData], public_only: bool = True,
             "part_of": VC.isPartOf,
         }
         for attr_name, prop_uri in rel_map.items():
-            refs = getattr(oc.relations, attr_name, [])
+            refs = policy.filter_refs(getattr(oc.relations, attr_name, []))
             for ref in refs:
                 target_uri = _iri_to_uriref(ref.iri)
                 g.add((entity_uri, prop_uri, target_uri))
@@ -335,7 +349,7 @@ def build_graph(pages: list[PageData], public_only: bool = True,
             continue
         entity_uri = _iri_to_uriref(oc.iri)
         for attr_name, prop_uri in restriction_props.items():
-            refs = getattr(oc.relations, attr_name, [])
+            refs = policy.filter_refs(getattr(oc.relations, attr_name, []))
             for ref in refs:
                 target_uri = _iri_to_uriref(ref.iri)
                 if target_uri in declared_uris:

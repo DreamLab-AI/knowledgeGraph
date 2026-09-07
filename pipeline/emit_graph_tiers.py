@@ -38,6 +38,7 @@ from pathlib import Path
 from typing import Iterable, Optional
 
 from .jsonld_parser import PageData, parse_corpus
+from .visibility import VisibilityPolicy
 from .jsonld_to_webvowl import _remap_iri
 
 # ─────────────────────────── pipeline identity ───────────────────────────
@@ -535,6 +536,7 @@ def build_graph_model(pages: list[PageData]) -> GraphModel:
     """Resolve parsed pages into nodes + typed edges. Mirrors jsonld_to_webvowl's
     declared-target filter: an edge ships only when its target is itself a
     declared public node."""
+    policy = VisibilityPolicy.from_pages(pages)
     public_pages = [p for p in pages if p.is_public and p.ontology_class]
     # INV-5 honesty (fixes D2 "count integrity"): `pages` is the reading-unit
     # count — DISTINCT public source Pages. Per the DDD ubiquitous language a
@@ -661,10 +663,14 @@ def build_graph_model(pages: list[PageData]) -> GraphModel:
     bridges: list[dict] = []
     for p in public_pages:
         oc = p.ontology_class
-        if len(oc.sub_class_of) < 2:
+        # Bridge records carry parent *labels*. Filter the parent list through
+        # the visibility policy first, or bridges.json republishes the label of
+        # a private ancestor that every other tier correctly withheld.
+        bridge_parents = policy.filter_refs(oc.sub_class_of)
+        if len(bridge_parents) < 2:
             continue
         cats, doms = [], []
-        for r in oc.sub_class_of:
+        for r in bridge_parents:
             ps = _slug_of(r.iri)
             cid = CATEGORY_INDEX.get(ps)
             if cid is None:
@@ -682,7 +688,7 @@ def build_graph_model(pages: list[PageData]) -> GraphModel:
                 "label": oc.label,
                 "categories": cats,
                 "domains": doms,
-                "parents": [r.label for r in oc.sub_class_of],
+                "parents": [r.label for r in bridge_parents],
             })
 
     return GraphModel(

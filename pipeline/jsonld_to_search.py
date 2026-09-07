@@ -5,14 +5,26 @@ import json
 import re
 import sys
 from pathlib import Path
+from typing import Optional
+
 from .jsonld_parser import PageData, parse_corpus
+from .visibility import VisibilityPolicy, build_policy
 
 
 def slugify(s: str) -> str:
     return re.sub(r'[^a-z0-9]+', '-', s.lower()).strip('-')
 
 
-def build_search_index(pages: list[PageData]) -> list[dict]:
+def build_search_index(pages: list[PageData],
+                       policy: Optional[VisibilityPolicy] = None) -> list[dict]:
+    """Build the public search index.
+
+    ``is_subclass_of`` and ``wikilinks`` carry parent and target *labels*, so
+    they are filtered through the visibility policy: a private ancestor's label
+    is exactly the kind of derived metadata that crosses the boundary when only
+    whole pages are filtered.
+    """
+    policy = build_policy(pages, policy)
     index = []
     for page in pages:
         if not page.is_public:
@@ -41,8 +53,8 @@ def build_search_index(pages: list[PageData]) -> list[dict]:
                 "maturity": oc.maturity,
                 "iri": oc.iri,
                 "labels": labels,
-                "is_subclass_of": [p.label for p in oc.sub_class_of],
-                "wikilinks": [wl.label for wl in page.wikilinks[:20]],
+                "is_subclass_of": [p.label for p in policy.filter_refs(oc.sub_class_of)],
+                "wikilinks": [wl.label for wl in policy.filter_refs(page.wikilinks)[:20]],
             })
         else:
             entry["labels"] = [page.title]

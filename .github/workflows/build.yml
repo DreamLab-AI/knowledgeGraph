@@ -30,18 +30,30 @@
 #
 # What this workflow proves, on every push and pull request:
 #   1. the corpus contains no credential-shaped strings (load-bearing: the
-#      corpus is the published artefact — 8,138 markdown pages go out verbatim)
+#      public corpus feeds the export — projected Markdown shares its privacy filter)
 #   2. the NGG1 binary writer still matches its 183-byte golden fixture
 #      (pipeline/tests/test_emit_graph_tiers.py, pipeline/tests/fixtures/ngg1-3n2e.bin)
 #   3. the 7-stage pipeline runs end to end from ontology/pages/
 #   4. the build produced exactly 8138 OWL classes — a hard contract gate, not
 #      a printed statistic
 #   5. pipeline.validate reports zero errors over the corpus
+#   6. every input file is accounted for — parsed, rejected with a reason, or
+#      excluded — and the strict build refuses to publish a corpus containing a
+#      malformed page (pipeline/census.py)
+#   7. the built class set matches the committed sorted class-IRI set, so an
+#      equal-count identity substitution fails even though the count agrees;
+#      the same gate checks the consumer schema shape and scans every public
+#      artefact for private identifiers (pipeline/release_gate.py)
+#   8. the generation manifest re-verifies: every artefact's SHA-256 matches
+#      what the build recorded (pipeline/manifest.py)
 #
 # Reproduce locally:
 #   pip install "rdflib>=7.0.0" pytest
 #   python -m pytest pipeline/tests -q
-#   python -m pipeline.build ontology/pages dist-ci
+#   python -m pipeline.build ontology/pages dist-ci --strict
+#   python -m pipeline.release_gate dist-ci --pages ontology/pages \
+#       --expected-classes 8138
+#   python -m pipeline.manifest dist-ci
 
 name: Build and verify
 
@@ -61,6 +73,13 @@ env:
   # The corpus contract. Both dist-ci/data/graph/stats.json (`classes`) and
   # dist-ci/data/ontology.json (`class[]` length) must report this many OWL
   # classes or the build fails. Change it only alongside the corpus.
+  #
+  # This stays a hand-typed, independently-authored number (ADR-2003): an
+  # auto-derived expectation moves with any parse regression and can therefore
+  # never detect one. GATE 5 adds *membership* on top of this *count*, because a
+  # count cannot see an equal-count identity substitution — delete one class,
+  # add another, and this gate still passes. Both must move in the same commit
+  # as any corpus size change; the gate fails if they disagree.
   EXPECTED_CLASSES: '8138'
 
 jobs:
@@ -72,12 +91,12 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
 
       # ------------------------------------------------------------------
       # GATE 1 — secret scan over the published corpus (cheapest first)
       # ------------------------------------------------------------------
-      # ontology/pages/*.md ships verbatim. A leaked key in a page is a leaked
+      # ontology/pages/*.md feeds public exports. A leaked key in a page is a leaked
       # key on the internet, so this gate blocks the build rather than warning.
       #
       # Every pattern is anchored to a token-shaped suffix on purpose. A bare
@@ -111,7 +130,7 @@ jobs:
           echo "Secret scan passed: no credential-shaped strings under ontology/"
 
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
 
@@ -132,13 +151,30 @@ jobs:
       # BUILD — the 7 stages: parse, validate, Turtle, WebVOWL JSON,
       # page API, search index, NGG1 graph tiers
       # ------------------------------------------------------------------
-      - name: Run the JSON-LD pipeline
+      # Both strict and non-strict canonical builds now refuse malformed or
+      # ambiguously public input and validation errors before promotion.
+      # Strict remains explicit for release-contract and explorer checks.
+      # Local authoring diagnostics use census/validate directly; public output
+      # receives aggregate diagnostics and projected Markdown only.
+      # Successful staging promotion replaces obsolete generated pages.
+      - name: Run the JSON-LD pipeline (strict)
         run: |
           set -euo pipefail
-          python -m pipeline.build ontology/pages dist-ci
+          python -m pipeline.build ontology/pages dist-ci --strict
           echo "--- outputs ---"
           ls -la dist-ci/data/
           ls -la dist-ci/data/graph/
+          echo "--- input census ---"
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          c = json.loads(Path("dist-ci/api/census.json").read_text())
+          print(f"  input files : {c['input_files']}")
+          print(f"  parsed      : {c['parsed']} ({c['public_pages']} public)")
+          print(f"  rejected    : {c['rejected']}")
+          print(f"  excluded    : {c['excluded']}")
+          print(f"  balanced    : {c['balanced']}")
+          PY
 
       # ------------------------------------------------------------------
       # GATE 3 — corpus contract: the build must produce 8138 OWL classes
@@ -190,6 +226,33 @@ jobs:
         run: python -m pipeline.validate ontology/pages
 
       # ------------------------------------------------------------------
+      # GATE 5 — identity, schema and publication-visibility contracts
+      # ------------------------------------------------------------------
+      # The count above is one number, and three failures leave it unchanged:
+      # an equal-count identity substitution, an altered publication visibility,
+      # and a shape drift that still parses as JSON but no longer parses in the
+      # explorer. This gate compares the built class set against the committed
+      # sorted class-IRI set (pipeline/contracts/class-identity.txt), asserts
+      # the consumer-shaped class/property arrays are present, and re-derives
+      # the private identifiers from source to prove none of them occurs in a
+      # published artefact. Private identifiers are never written into dist-ci.
+      - name: Assert release contracts (identity set, schema, visibility)
+        run: |
+          set -euo pipefail
+          python -m pipeline.release_gate dist-ci \
+            --pages ontology/pages \
+            --expected-classes "$EXPECTED_CLASSES"
+
+      # ------------------------------------------------------------------
+      # GATE 6 — the generation manifest re-verifies
+      # ------------------------------------------------------------------
+      # Every artefact's SHA-256, the source revision, the counts and a
+      # generation id are recorded with the export. Re-hashing the tree here
+      # proves the manifest describes the artefacts actually uploaded.
+      - name: Verify generation manifest
+        run: python -m pipeline.manifest dist-ci
+
+      # ------------------------------------------------------------------
       # ARTEFACT — build output, downloadable from the run page. Nothing is
       # published anywhere; the artefact expires with the run's retention.
       # ------------------------------------------------------------------
@@ -199,7 +262,7 @@ jobs:
       # a second, misleading upload failure on top of it.
       - name: Upload build output
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: dist-ci
           path: dist-ci
