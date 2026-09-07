@@ -260,11 +260,22 @@ jobs:
       # case dist-ci was never created. `if-no-files-found: warn` keeps that case
       # to one honest failure — the gate that actually broke — instead of adding
       # a second, misleading upload failure on top of it.
+      # Archive first: title mirrors intentionally preserve ':' and case-sensitive
+      # names, which upload-artifact cannot transport as loose files.
+      # Download dist-ci then run: tar -xzf dist-ci.tar.gz
+      - name: Package build output without filename normalisation
+        if: always()
+        run: |
+          set -euo pipefail
+          if [ -d dist-ci ]; then
+            tar -czf dist-ci.tar.gz dist-ci
+          fi
+
       - name: Upload build output
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
           name: dist-ci
-          path: dist-ci
+          path: dist-ci.tar.gz
           retention-days: 14
           if-no-files-found: warn

@@ -1,0 +1,3 @@
+# Build artifact transport — 2026-09-07
+
+The downloadable `dist-ci` Actions artifact now contains `dist-ci.tar.gz`. Extract it with `tar -xzf dist-ci.tar.gz` on a filesystem that preserves case-sensitive filenames. The archive retains title-form Markdown names, including colons and names differing only by case; renaming those paths would break title-based consumers. Uploading the loose output fails GitHub's artifact filename validation even after all build gates pass. No in-repository workflow downloads this artifact. Generation manifest verification still applies to the extracted tree. This is build artifact transport, not publication or activation.
