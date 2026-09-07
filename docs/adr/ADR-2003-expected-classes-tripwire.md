@@ -7,7 +7,7 @@ implementation_status: complete
 activation_status: live
 supersedes: []
 superseded_by: []
-verified_commit: 6be5871c4
+verified_commit: d09a476124caa14aa0165c642d0950f6026c46fb
 owner: jjohare
 review_trigger: any proposal to auto-derive the class count, or to wire this gate into a corpus-editing workflow
 repo: narrativegoldmine
@@ -161,3 +161,8 @@ edit that forgets it fails CI, which is the intended behaviour, not a bug.
 The existing identity/count/schema gates now run over a shared public projection and fresh output staging. Every build mode rejects malformed/ambiguous publication input and validation errors before promotion; detailed rejected-file diagnostics are local authoring data, while published census/validation fields are aggregate-only. Title-form Markdown joins the existing slug aliases under the same privacy policy. Failed promotion rolls back generated trees; a second filesystem failure retains an explicit recovery directory. The full corpus still produces 8,138 classes and passes the committed identity set, schema, visibility and manifest checks locally. No deployment is inferred.
 
 Evidence: [federation execution receipt](../../../VisionFlow/docs/estate-review/closeout/2026-09-07-execution-federation.md).
+
+
+## Publication baseline re-verification — 2026-09-07
+
+Re-read against pipeline source at `d09a476124caa14aa0165c642d0950f6026c46fb`. The four-record ledger, class/individual distinction, immutable corpus identities and 8,138-class tripwire remain the scoped decisions. The canonical builder now projects known-private references before inference and public Markdown export, refuses malformed input in either mode, and preserves prior output through promotion rollback. The baseline/build guide now describe those current boundaries and distinguish fresh manifest UUID/time from deterministic graph ordering. `./.venv/bin/python -m pytest pipeline/tests -q` passes **96 tests**; the ADR generator validates all four records. Historical measurements, missing upstream documents and consumer limitations above remain dated evidence. No decision or activation axis was promoted by this re-verification.

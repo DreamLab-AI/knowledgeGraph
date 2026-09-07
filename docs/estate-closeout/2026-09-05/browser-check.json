@@ -1,0 +1,53 @@
+{
+  "receipt": "knowledgeGraph estate closeout — local site serve and browser verification",
+  "date": "2026-09-05",
+  "method": {
+    "artefacts_under_test": "fresh strict build of ontology/pages (generation 551a3067-a618-4d27-b169-faea87623057, source 7bbf0aae2b60, dirty working tree)",
+    "spa": "explorer/modern/dist (prebuilt in-repo artefact, dated 2026-07-25; not rebuilt here)",
+    "serve": "SPA-fallback static server on 0.0.0.0:8199 with COOP/COEP, data/ and api/ symlinked to the fresh build output",
+    "browser": "chrome-devtools-mcp on the browsercontainer sidecar, reaching this container at http://agentbox:8199",
+    "renderer": "ANGLE (NVIDIA, Vulkan 1.4.341, NVIDIA RTX A6000), WebGL2",
+    "viewport": "1440x900, deviceScaleFactor 1"
+  },
+  "routes": [
+    { "path": "/", "http": 200, "screenshot": "explorer-home.png", "title": "Narrative Goldmine — the DreamLab knowledge mesh", "rendered": true },
+    { "path": "/graph", "http": 200, "screenshot": "explorer-graph.png", "rendered": "chrome only — see finding EXP-01", "canvas": true },
+    { "path": "/search", "http": 200, "screenshot": "explorer-search.png", "rendered": true },
+    { "path": "/about", "http": 200, "screenshot": "explorer-about.png", "rendered": true }
+  ],
+  "producer_contract_verified_in_browser": {
+    "data/graph/stats.json": { "classes": 8138, "nodes": 8138, "pages": 8134, "domains": 6, "categories": 34, "edges_declared": 113506, "edges_resolvable": 101321 },
+    "data/graph/overview.json": { "nodes": 40, "fetched_by_spa": true },
+    "data/graph/full.bin": { "magic": "NGG1", "node_count_from_header": 8138, "bytes": 1380011 },
+    "api/search-index.json": { "http": 200, "fetched_by_spa": true },
+    "api/pages/1-hive.json": { "slug": "1-hive", "public": true, "subClassOf": 1, "backlinks": 4 },
+    "api/census.json": { "input_files": 8138, "parsed": 8138, "rejected": 0, "excluded": 0, "balanced": true, "public_pages": 8138 },
+    "api/generation-manifest.json": { "manifest_version": 1, "strict": true, "artefact_entries": 19, "source_commit": "7bbf0aae2b60a63c2714b750e3b381bce6be7ad8", "source_dirty": true },
+    "data/ontology-explorer.json": {
+      "top_level_key": "class (singular)",
+      "plural_classes_key_absent": true,
+      "classes": 8138,
+      "properties": 108242,
+      "property_domain_and_range": "strings, as StandardParser::parse_property requires",
+      "class_label": "string, as StandardParser::parse_class_node reads with .as_str()",
+      "divergences_declared": ["TS_LABEL_LANGUAGE_MAP", "TS_DOMAIN_RANGE_ARRAY"]
+    }
+  },
+  "console": { "errors": 0, "warnings": 1, "warning_detail": "WebGL GPU stall due to ReadPixels — caused by this check's own pixel readback probe, not by the app" },
+  "findings": [
+    {
+      "id": "EXP-01",
+      "severity": "consumer-side, not this repository",
+      "summary": "The /graph route renders its chrome (domain legend, edge filters, search, zoom controls) and the app reports '40 nodes on screen', but the WebGL surface is empty: readPixels at the canvas centre returns 0,0,0,0.",
+      "evidence": "Across the page's 12 resource requests there is no .wasm request and no .bin request. The physics worker script (assets/physics.worker-*.js) is fetched; the WASM module and the NGG1 tier it would render are never requested. No JavaScript error is raised.",
+      "interpretation": "The producer-side data contract is satisfied — overview.json, stats.json, search-index.json and the page API are all served, parsed and consumed, and full.bin parses as NGG1 with 8138 nodes when fetched directly. The stall is inside the explorer's render path, downstream of the data.",
+      "owner": "WasmVOWL — this is the open acceptance item in its docs/adr/ADR-001 ('loading the actual corpus in a browser with the actual WASM module', 'resolve Map initialisation and the hook/parser mismatch', 'prove simulation ticks do not repeatedly reset topology'). Not edited by this work.",
+      "caveats": [
+        "The SPA under test is the prebuilt explorer/modern/dist artefact dated 2026-07-25, not a fresh explorer build.",
+        "self.crossOriginIsolated was false despite COOP/COEP being served (the coi-serviceworker never took control); baseline Invariant 7 records that the SharedArrayBuffer transport is disabled, so isolation should not be required for rendering.",
+        "No claim is made about the deployed site, which serves a different build."
+      ]
+    }
+  ],
+  "conclusion": "The artefacts this repository produces load, parse and are consumed correctly by the explorer in a real GPU browser. The graph render path does not complete; that defect is downstream, in the consumer, and is already the subject of WasmVOWL ADR-001."
+}

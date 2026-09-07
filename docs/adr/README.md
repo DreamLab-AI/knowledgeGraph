@@ -36,7 +36,9 @@ governing document **in the same change**, and regenerate this index
 frontmatter against the required fields and enums and exits non-zero on a bad
 record, so run it before committing; it is not yet wired into CI).
 
-_4 record(s). Regenerate with_ `node scripts/adr-index-gen.js docs/adr`.
+_4 record(s). Regenerate with_ `node scripts/adr-index-gen.js ../knowledgeGraph/docs/adr`.
+
+_Canonical repository: **DreamLab-AI/knowledgeGraph**. The `repo` column may carry the historical publishing name `narrativegoldmine` — the name minted into every class IRI, the CNAME and the site — which maps to the canonical repository above._
 
 | ID | Title | Date | Decision | Impl | Activation | Supersedes | Superseded by | Owner | Repo |
 |----|-------|------|----------|------|------------|------------|---------------|-------|------|

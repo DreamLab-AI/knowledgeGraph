@@ -1,0 +1,147 @@
+{
+  "receipt": "knowledgeGraph estate closeout \u2014 CI gate verification",
+  "date": "2026-09-05T18:52:27+00:00",
+  "repository": {
+    "canonical": "DreamLab-AI/knowledgeGraph",
+    "historical_alias": [
+      "narrativegoldmine"
+    ]
+  },
+  "source_revision": {
+    "pages_dir": "ontology/pages",
+    "commit": "7bbf0aae2b60a63c2714b750e3b381bce6be7ad8",
+    "branch": "main",
+    "remote": "git@github.com:DreamLab-AI/knowledgeGraph.git",
+    "dirty": true,
+    "describe": "7bbf0aae2-dirty"
+  },
+  "note": "Local source, build and test evidence at a dirty working tree. Does not re-certify any deployment.",
+  "gates": [
+    {
+      "gate": "unit tests (pytest)",
+      "command": "python -m pytest pipeline/tests -q",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 4.4,
+      "stdout_tail": [
+        "........................................................................ [ 84%]",
+        ".............                                                            [100%]",
+        "85 passed in 4.07s"
+      ],
+      "stderr_tail": []
+    },
+    {
+      "gate": "strict build",
+      "command": "python -m pipeline.build ontology/pages /home/devuser/workspace/.kg-dist-ci --strict",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 26.8,
+      "stdout_tail": [
+        "",
+        "Pipeline complete in 25.6s",
+        "  Output: /home/devuser/workspace/.kg-dist-ci",
+        "  input_files: 8138",
+        "  parsed_pages: 8138",
+        "  public_pages: 8138",
+        "  classes: 8138",
+        "  explorer_classes: 8138",
+        "  explorer_properties: 108242",
+        "  triples: 265796",
+        "  page_api_files: 8138",
+        "  search_entries: 8138",
+        "  graph_nodes: 8138",
+        "  graph_edges: 101321"
+      ],
+      "stderr_tail": []
+    },
+    {
+      "gate": "validation (0 errors)",
+      "command": "python -m pipeline.validate ontology/pages",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 2.8,
+      "stdout_tail": [
+        "Validation: 8138 pages, 8138 with ontology, 8138 public",
+        "Issues: 0 errors, 0 warnings, 1403 info"
+      ],
+      "stderr_tail": []
+    },
+    {
+      "gate": "release gate (identity/schema/visibility)",
+      "command": "python -m pipeline.release_gate /home/devuser/workspace/.kg-dist-ci --pages ontology/pages --expected-classes 8138",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 4.5,
+      "stdout_tail": [
+        "Release gate \u2014 repository DreamLab-AI/knowledgeGraph (alias narrativegoldmine)",
+        "  identity set : 8138 class IRIs, digest f943cf6b8b6f\u2026",
+        "  counts       : OK",
+        "  identity     : OK (exact set match)",
+        "  schema       : OK (consumer-shaped class/property present)",
+        "  visibility   : OK (census balanced, no private identifier in public artefacts)",
+        "Release gate PASSED"
+      ],
+      "stderr_tail": []
+    },
+    {
+      "gate": "generation manifest verify",
+      "command": "python -m pipeline.manifest /home/devuser/workspace/.kg-dist-ci",
+      "exit_code": 0,
+      "passed": true,
+      "seconds": 1.5,
+      "stdout_tail": [
+        "Manifest OK: generation bc3e7d81-9c83-472e-9d89-47b32e7ba785 from 7bbf0aae2b60 (19 artefact entries)"
+      ],
+      "stderr_tail": []
+    }
+  ],
+  "all_gates_passed": true,
+  "census": {
+    "input_files": 8138,
+    "parsed": 8138,
+    "rejected": 0,
+    "excluded": 0,
+    "balanced": true,
+    "public_pages": 8138,
+    "non_public_pages": 0
+  },
+  "validation": {
+    "total_pages": 8138,
+    "public_pages": 8138,
+    "errors": 0,
+    "warnings": 0,
+    "info": 1403
+  },
+  "counts": {
+    "input_files": 8138,
+    "parsed_pages": 8138,
+    "public_pages": 8138,
+    "classes": 8138,
+    "explorer_classes": 8138,
+    "explorer_properties": 108242,
+    "triples": 265796,
+    "page_api_files": 8138,
+    "search_entries": 8138,
+    "graph_nodes": 8138,
+    "graph_edges": 101321
+  },
+  "identity_contract": {
+    "expected_classes": 8138,
+    "public_classes": 8138,
+    "identity_sha256": "f943cf6b8b6f1fd396ec69b4aa873977b76262408cf6e1122ee88c30f5806464",
+    "ci_pin_EXPECTED_CLASSES": 8138
+  },
+  "generation": {
+    "id": "bc3e7d81-9c83-472e-9d89-47b32e7ba785",
+    "manifest_version": 1,
+    "strict": true,
+    "artefact_entries": 19
+  },
+  "visibility_policy": {
+    "policy": "redact-references-to-known-private-entities",
+    "private_entities": 0,
+    "public_entities": 8229,
+    "private_iris": 0,
+    "public_iris": 16272
+  }
+}

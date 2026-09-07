@@ -70,27 +70,15 @@ One command compiles the corpus into every served artefact:
 python -m pipeline.build ontology/pages dist
 ```
 
-`pipeline/build.py` runs seven stages in a fixed order — parse → validate →
-Turtle → WebVOWL → Page API → search index → graph tiers (NGG1) — then writes
-`api/schema/context.jsonld` and `api/validation-report.json`. Only `main()`
-exits non-zero on validation errors; the build itself treats them as
-non-blocking (`pipeline/build.py`). Dependency surface is `rdflib>=7.0.0`
-(plus `pytest`). The run is **deterministic within a day** (the only wall-clock
-input is `date.today()`, the only RNG a seeded force layout) — every binary and
-JSON artefact reproduces byte-for-byte. The **one exception** is
-`dist/data/ontology.ttl`: rdflib mints fresh blank-node ids for the existential
-restrictions on every run, so it is isomorphic and equal-length but reorders.
-Compare it by triple set, never by hash.
+`pipeline/build.py` performs input census/preflight, public projection and validation before exporting Turtle, WebVOWL, Page API/Markdown, search and graph tiers, then a generation manifest. Malformed or ambiguous input and validation errors refuse publication in both strict and non-strict calls. Outputs are staged; promotion backs up the prior generated trees and rolls back on failure. An additional rollback failure retains the recovery directory for repair. This is not atomic activation across live readers or consumers.
 
-### The `is_public` gate
+Graph payloads use stable ordering where implemented, but the complete bundle is not byte-deterministic: `pipeline/manifest.py` records a fresh UUID and UTC timestamp, and Turtle blank-node identities can vary. Compare RDF by isomorphism/triple semantics, and verify each generation against its own manifest rather than claiming equal bytes across builds.
 
-`vc:public` on the Page block is the **sole** publication gate, and it is
-checked independently in every output stage rather than filtered once, so no
-stage can inherit a stale list: `pipeline/jsonld_to_turtle.py:244` and `:331`,
-`pipeline/jsonld_to_webvowl.py:48`, `pipeline/jsonld_to_page_api.py:21`,
-`pipeline/jsonld_to_search.py:18`, `pipeline/emit_graph_tiers.py:538`. The one
-place it is deliberately **not** applied is `build_backlink_index`, which runs
-over the full page list (documented in `docs/architecture/pipeline.md`).
+### The public projection boundary
+
+`vc:public` must be a literal JSON boolean. `pipeline/public_projection.py` rejects malformed, missing or ambiguous declarations and conflicts with other public flags. The canonical builder projects only public pages before inference and export. It drops or redacts references to known private identities, including body text and title-form Markdown; unresolved concepts remain available as intentional dangling references. This is not a general secret detector.
+
+Exporter-local visibility checks in `pipeline/visibility.py` remain defensive boundaries. The canonical public graph and Markdown are derived from the same protected projection; no workflow copies raw authored Markdown over it. Public census/validation diagnostics are aggregate-only. Authoring-directory exclusions and exact corpus identity/count gates remain separate from the privacy flag.
 
 ### The NGG1 binary tier contract
 
@@ -137,19 +125,19 @@ CI glue are **AGPL-3.0-or-later** (`LICENSE`); the `ontology/` corpus is
 
 ## Known divergences & open items
 
-- **`ADR-NG-001` is cited pervasively but is absent from this tree.** Over
-  thirty code and doc files cite `ADR-NG-001 §2/§3/§4/§5/§7/§9` as the authority
-  for the explorer overhaul, and `explorer/FORMAT-NGG1.md:3` links it by the
-  exact path `../../docs/adr/ADR-NG-001-explorer-architecture.md` — which does
-  not exist here (it lived in the upstream publishing repo). The load-bearing
-  design is real and implemented; only the cited document is missing. This
-  baseline plus `docs/architecture/explorer.md` are its de-facto reconstruction.
-  Reconstructing `ADR-NG-001` into `docs/adr/` is an open item. Note the
-  `FORMAT-NGG1.md:3` link is **doubly broken**: `../../docs/adr/…` from
-  `explorer/FORMAT-NGG1.md` normalises to *above* the repo root (one `../` too
-  many — the correct depth is `../docs/adr/…`). Whoever reconstructs `ADR-NG-001`
-  must fix the relative depth too, or the link still will not resolve once the
-  target exists.
+- **`ADR-NG-001` is classified `historical-absent`, not open** (resolved
+  2026-09-05, ADR-2001). 33 files cite `ADR-NG-001 §2/§3/§4/§5/§7/§9`; the
+  document itself never existed in this tree and lived in the upstream
+  publishing repo. It is **not** reconstructed — writing a decision record for a
+  decision this repo did not take would fabricate authority. Instead each cited
+  section is mapped to the in-tree surface that carries its content today
+  (ADR-2001 "ADR-NG-001 resolution"), so a reader following a citation reaches
+  a real document. `explorer/FORMAT-NGG1.md:3` links the absent record by the
+  path `../../docs/adr/ADR-NG-001-explorer-architecture.md`, which is **doubly
+  broken**: from `explorer/` that normalises to *above* the repo root (the
+  correct depth would be `../docs/adr/…`). Since the target is classified
+  absent, the link is recorded as a dangling historical citation rather than
+  repaired to point at nothing.
 - **The `7,874` figure is stale corpus-wide.** `docs/architecture/pipeline.md`
   and `docs/architecture/explorer.md` are written against a 7,874-page corpus,
   but the corpus is now **8,138** pages (`EXPECTED_CLASSES: '8138'`,
@@ -167,25 +155,43 @@ CI glue are **AGPL-3.0-or-later** (`LICENSE`); the `ontology/` corpus is
 - **`ontology.ttl` is not byte-reproducible** (blank-node reshuffle, above).
 - **`EXPECTED_CLASSES` is a hand-typed pin** that duplicates a figure the
   pipeline already computes and drifts the moment the corpus does; it must move
-  in the same commit as any corpus change.
+  in the same commit as any corpus change. That independence is deliberate
+  (ADR-2003) and is preserved. Since 2026-09-05 it is no longer the only
+  membership check: `pipeline/contracts/class-identity.txt` commits the sorted
+  class-IRI **set**, so an equal-count identity substitution — delete one class,
+  add another — fails the release gate as a diff even though the count agrees.
+  Count and set must move in the same commit; the gate fails if they disagree.
 - **Three classes resolve to no category** (`electric-vehicle`,
   `ethan-mollick`, `urban-planning`) — a corpus ancestry gap, not a resolver
   fault.
 - **4,383+ object-property targets are referenced but never declared** as pages
-  and ship as `skos:Concept` stubs with slug-derived labels.
+  and ship as `skos:Concept` stubs with slug-derived labels. The visibility
+  policy deliberately does **not** redact these: they resolve to no page, so they
+  name no private entity, and redacting them would rewrite the published
+  semantics of the whole corpus for no privacy benefit.
+- **The explorer cannot consume `ontology.json` directly.** The classic WebVOWL
+  split shape keeps `domain`/`range` in `propertyAttribute[]`, and the consumer's
+  `StandardParser::parse_property` raises `Missing domain for property` without
+  them on the `property[]` entry itself. `pipeline/explorer_compat.py` emits a
+  merged `ontology-explorer.json` that satisfies it. **One divergence remains
+  unresolvable from this side**: the Rust parser requires `domain`/`range` as
+  strings while `modern/src/stores/useGraphStore.ts` indexes them with `[0]`, and
+  a JSON value cannot be both. It is recorded, tested and owned by WasmVOWL
+  (`EXPLORER_DIVERGENCES`, `pipeline/tests/test_explorer_compat.py`).
 
 ## Invariants (must not silently change)
 
-1. `vc:public` is the only publication gate, and it is re-checked in every
-   output stage. No stage may filter once and let another inherit the list.
+1. Public input must have a strictly boolean `vc:public`. The canonical builder
+   applies the protected public projection before inference/export; exporter-local
+   checks must not be bypassed by raw Markdown copying or diagnostic disclosure.
 2. The NGG1 node record is **24 bytes** with **one** `u16 category`. Writer and
    both readers stay pinned to the 183-byte golden fixture; changing the stride
    or the category cardinality breaks all six builders at once.
 3. Bridged (multi-category / multi-domain) membership is recoverable **only**
    from `bridges.json`. The binary `category` field is the nearest category, not
    the membership set.
-4. The pipeline is deterministic within a day for every artefact **except**
-   `ontology.ttl`; that exception is compared by triple set, not by hash.
+4. Verify every bundle against its own generation manifest. Manifest UUID/time
+   and Turtle blank-node identities prevent a blanket byte-determinism claim.
 5. The corpus is synthetic-AI-generated-under-human-direction and must be
    surfaced as such from data (`ATTRIBUTED_TO`, `CORPUS_NATURE`,
    `corpusNature`), never rebranded as human-authored or authoritative.
@@ -193,16 +199,67 @@ CI glue are **AGPL-3.0-or-later** (`LICENSE`); the `ontology/` corpus is
    lockstep with any corpus change.
 7. The SharedArrayBuffer transport stays disabled until re-enabled behind a
    double-buffered SAB with an Atomics-gated generation flip.
+8. **Every input file is accounted for.** `input_files == parsed + rejected +
+   excluded`, and a release contains zero `rejected` entries. A file that
+   produces no page must produce a coded reason, never silence.
+9. **No public artefact contains a private identifier.** Whole-page filtering is
+   the floor, not the ceiling: derived references are filtered through
+   `pipeline/visibility.py` at every output, and the release gate re-derives the
+   private set from source and scans the built tree for it.
+10. **Count and identity move together.** `EXPECTED_CLASSES` and
+    `pipeline/contracts/class-identity.txt` must agree and change in the same
+    commit; the count keeps its independent-tripwire property, the set adds
+    membership the count cannot see.
+11. **Every export carries a generation manifest** naming the source revision,
+    the generation id, the counts and a SHA-256 for each artefact. An artefact
+    without a matching manifest entry is not a release.
 
 ## Change process
 
 Any change to a fact in this baseline requires: (1) updating the affected
 section with the new `file:line`; (2) confirming the relevant invariant still
 holds (especially the `is_public` re-check and the NGG1 stride); (3) if the
-corpus size changes, updating `EXPECTED_CLASSES` and the stale `7,874` figures
-in `docs/architecture/*.md` **in the same commit**; (4) bumping `version` and
+corpus size changes, updating `EXPECTED_CLASSES`, regenerating the identity set
+(`python -m pipeline.release_gate <dist> --pages ontology/pages --regenerate`)
+and the stale `7,874` figures in `docs/architecture/*.md` **in the same
+commit**; (4) bumping `version` and
 re-recording `verified_commit` from `git rev-parse --short HEAD`. New decisions
 are recorded in `docs/adr/` from `docs/adr/TEMPLATE.md` and the index
 regenerated (`node scripts/adr-index-gen.js docs/adr`). Legacy prose — including
 the absent `ADR-NG-001` and the `ADR-008`/`ADR-012` corpus pages — is evidence,
 not authority: cite it, do not defer to it.
+
+## Estate closeout qualification — 2026-09-04
+
+The [knowledge-production review](../../VisionFlow/docs/estate-review/knowledge-production.md) and [current-vault trace](../../VisionFlow/docs/estate-review/authored-vault-transition.md) distinguish this extracted publisher from the active visionGraph corpus. ADR-2001–2004 now carry explicit identity, publication and consumer acceptance conditions. The count tripwire and separate CI validator remain implemented safeguards; pipeline/build.py itself only logs validation errors. Equal counts cannot prove equal identities or intended visibility. Parser input census, strict publication flags, immutable export generations and actual explorer-schema compatibility remain open. ADR-008/012 under ontology/pages are corpus content, not operative decisions.
+
+## Estate closeout progress — 2026-09-05
+
+The four qualifications recorded on 2026-09-04 are closed against this working
+tree, with the count tripwire preserved rather than replaced.
+
+- **Parser input census** — `pipeline/census.py`. Every `*.md` is parsed,
+  rejected with a code, or excluded; the totals must balance and a strict build
+  refuses a corpus containing a rejected file. Real corpus: 8,138 / 8,138,
+  balanced, 0 rejected.
+- **Strict publication flags** — only a literal JSON `true` publishes; a
+  non-boolean or absent flag is a validation error and publishes nothing.
+- **Inference visibility** — `pipeline/visibility.py`, consulted by every
+  exporter, with per-format tests over a public-child / private-parent /
+  private-grandparent fixture.
+- **Immutable export generations** — `pipeline/manifest.py` writes a versioned
+  manifest (generation id, source revision + dirty flag, counts, SHA-256 per
+  artefact) with every export; CI re-verifies it.
+- **Explorer-schema compatibility** — `pipeline/explorer_compat.py` emits the
+  merged shape the WasmVOWL consumer actually parses, pinned to a fixture.
+- **Validation blocks** — `pipeline/build.py --strict` stops before writing any
+  artefact; the non-strict build still exits non-zero.
+- **Identity beside the count** — `pipeline/contracts/class-identity.txt`; an
+  equal-count substitution fails the release gate while the count still passes.
+
+Local verification at this revision: 85 pipeline tests pass; the full CI gate
+sequence (strict build, corpus contract 8138, validation 0 errors, release gate,
+manifest verification) passes; the built site was served and loaded in a real
+browser against this build's artefacts. Receipts:
+`docs/estate-closeout/2026-09-05/`. This is local source, build, test and
+browser evidence; it does not re-certify any deployment.

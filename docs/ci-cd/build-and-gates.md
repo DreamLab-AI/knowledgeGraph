@@ -1,39 +1,16 @@
 # Build and quality gates
 
-This repository ships a **build**, not a deployment.
-`.github/workflows/build.yml` (207 lines) runs the seven-stage Python pipeline
-behind four blocking gates and uploads the output as a run artefact;
-`permissions: contents: read` is the whole permission set, so it cannot write
-anywhere. It is not a strict subset of the private publishing CI. That CI runs
-nine gates: two of the four here re-appear in it (pipeline unit tests, corpus
-validation — which it runs twice, once inside the build and once standalone),
-six more need a Rust or Node toolchain this workflow never installs, and then it
-deploys. The other two gates here, the secret scan and the class-count contract,
-are specific to this extracted corpus and have no counterpart in that CI, because
-the corpus is the published artefact here and is not there. This document
-describes each gate, what it catches, and, for three of them, the incident that
-shaped it — two that were written because something broke, and one that was
-already there and was reporting the wrong thing.
+This repository builds and verifies the extracted corpus; `.github/workflows/build.yml` does not deploy it. Six gates cover credential-shaped strings, pipeline tests, the exact class-count contract, validation, identity/schema/visibility and the generation manifest. The active website is built by the separate visionGraph publisher and deployed into this repository's `gh-pages` branch.
+
+Build output is uploaded as `dist-ci.tar.gz` inside the `dist-ci` Actions artifact, preserving title filenames containing colons and case-sensitive distinctions. See [artifact transport](artifact-transport.md) for extraction. These gates do not prove a running consumer or published generation.
 
 ---
 
 ## 1. Build
 
-`python -m pipeline.build <pages-dir> <output-dir>` runs seven stages in a fixed
-order, defined in `pipeline/build.py`:
+`python -m pipeline.build <pages-dir> <output-dir>` performs census/preflight, protected public projection and validation, then emits Turtle, WebVOWL, Page API and projected Markdown, search and NGG1 graph tiers, schema/aggregate diagnostics and a generation manifest. `pipeline/build.py` stages the generated output and restores the prior trees if promotion fails; a rollback failure retains recovery files. Both strict and non-strict publication calls refuse invalid input. See [the baseline](../BASELINE-narrativegoldmine.md) for the current boundary.
 
-| # | Stage | Module | Output |
-|---|-------|--------|--------|
-| 1 | Parse | `pipeline/jsonld_parser.py` | `PageData` / `OntologyEntity` in memory |
-| 2 | Validate | `pipeline/validate.py` | error/warning report |
-| 3 | Turtle | `pipeline/jsonld_to_turtle.py` | `data/ontology.ttl` |
-| 4 | WebVOWL JSON | `pipeline/jsonld_to_webvowl.py` | `data/ontology.json` |
-| 5 | Page API | `pipeline/jsonld_to_page_api.py` | `api/pages/*.json`, `api/markdown/*.md` |
-| 6 | Search index | `pipeline/jsonld_to_search.py` | `api/search-index.json` |
-| 7 | Graph tiers | `pipeline/emit_graph_tiers.py` | `data/graph/*.bin`, `overview.json`, `stats.json` |
-
-The whole pipeline is 2,471 lines of Python across nine modules plus one
-496-line test module, and its only runtime dependency is `rdflib>=7.0.0`.
+The following timing and corpus measurements are historical, not the current class contract.
 
 Measured on 2026-07-25 from this tree: **18.7 seconds**, 7,874 public pages in,
 7,874 OWL classes and 0 individuals out, 258,200 Turtle triples, 98,776 graph
@@ -58,19 +35,25 @@ explaining why `/dist/data/` is not ignored.
 
 ### 2.1 What `.github/workflows/build.yml` runs
 
-Four gates, cheapest first, so a leaked credential or a broken unit test fails in
+Six gates, cheapest first, so a leaked credential or a broken unit test fails in
 seconds rather than after a 40 MB WebVOWL serialisation.
 
 | # | Gate | Command | Catches |
 |---|------|---------|---------|
-| 1 | Secret scan | `grep -rInE '<8 anchored patterns>' ontology/` | credential-shaped strings in a corpus that ships verbatim |
-| 2 | Pipeline unit tests | `python -m pytest pipeline/tests -q` | NGG1 byte layout, overview.json consumer contract, cap policy |
-| 3 | Corpus contract | `EXPECTED_CLASSES: '7874'` read back from two build artefacts | silent parse regressions that move the class count |
-| 4 | Validation | `python -m pipeline.validate ontology/pages` exit code | corpus errors (missing IRI/slug/label, self-reference, duplicate IRI) |
+| 1 | Secret scan | `grep -rInE '<8 anchored patterns>' ontology/` | credential-shaped strings in authored corpus input |
+| 2 | Pipeline unit tests | `python -m pytest pipeline/tests -q` | NGG1 byte layout, overview.json consumer contract, cap policy, input census, publication typing, inference visibility, identity tripwire, manifest, consumer schema |
+| 3 | Corpus contract | `EXPECTED_CLASSES: '8138'` read back from two build artefacts | silent parse regressions that move the class count |
+| 4 | Validation | `python -m pipeline.validate ontology/pages` exit code | corpus errors (missing IRI/slug/label, self-reference, duplicate IRI, non-boolean or absent `vc:public`) |
+| 5 | Release contracts | `python -m pipeline.release_gate dist-ci --pages ontology/pages --expected-classes "$EXPECTED_CLASSES"` | equal-count identity substitution, publication-visibility change, consumer schema drift, a private identifier in a public artefact |
+| 6 | Generation manifest | `python -m pipeline.manifest dist-ci` | an artefact that does not match the SHA-256 the build recorded for it |
 
 The build itself sits between gates 2 and 3 (`python -m pipeline.build
-ontology/pages dist-ci`), and the output is uploaded as a 14-day run artefact. No
-step reads a secret and there is no deploy step.
+ontology/pages dist-ci --strict`), and the output is uploaded as a 14-day run
+artefact. No step reads a secret and there is no deploy step.
+
+The canonical builder refuses malformed input or validation errors in either mode, preserving the previous generated bundle. CI still selects `--strict` explicitly for release-contract checks. Previously a malformed page vanished silently
+between the parser and the validator, and validation errors were printed as
+"non-blocking" while the invalid export was written anyway.
 
 ### 2.2 Gates in this tree that `build.yml` does not run
 
@@ -304,25 +287,41 @@ files and flags 0**; it passes unmodified on this tree.
 is a table where every row carries a test name, a build log line, or a measured
 byte count.
 
-### Private-content filtering is not a gate
+### Private-content filtering — now a gate (changed 2026-09-05)
 
-The private-content filter is not a CI step and there is no "remove private
-pages" pass. `vc:public` on the Page block is the sole publication predicate, read
-once at `pipeline/jsonld_parser.py:205` as
-`page_block.get("vc:public", False)`, **fail-closed**: a page missing the key is
-private.
+This section previously read "private-content filtering is not a gate". That is
+no longer true, and the reasoning it recorded had two defects.
 
-Five emitters then re-derive publication independently from `PageData.is_public`:
-Turtle (`build_graph(..., public_only=True)`), WebVOWL
-(`jsonld_to_webvowl.py:48`), page API (`jsonld_to_page_api.py:21`), search index
-(`jsonld_to_search.py:18`) and graph tiers (`emit_graph_tiers.py:538`). Nothing
-downstream trusts an upstream filter. The one deliberate exception is
-`build_backlink_index`, which is called on the full page list so that a private
-page linking to a public one still contributes a backlink; the extracted corpus
-here contains only the 7,874 public pages, so it does not arise.
+`vc:public` on the Page block is still the sole publication predicate, and it is
+still fail-closed. It is now also **strictly typed**: `is_public` is true only
+for a literal JSON `true` (`pipeline/jsonld_parser.py`). The old
+`page_block.get("vc:public", False)` assigned the authored value straight
+through and every emitter tested its truthiness, so the string `"false"` — a
+truthy value in Python — published the page. A non-boolean or absent flag is now
+a validation error (`PUBLIC_FLAG_NOT_BOOLEAN`, `MISSING_PUBLIC_FLAG`) and
+publishes nothing.
 
-The gate that protects publication is the markdown-mirror count contract
-below.
+Five emitters still re-derive publication independently from
+`PageData.is_public`, and nothing downstream trusts an upstream filter. But
+filtering whole *pages* was never sufficient: every public page carries
+references — `subClassOf` parents, twelve relation kinds, outbound wikilinks —
+and an emitter that copies them verbatim republishes a private page's identifier
+and, in the page API and search index, its label. `pipeline/visibility.py` now
+supplies one decision procedure every emitter consults: a reference is redacted
+if and only if it resolves to a known private entity. A reference resolving to
+nothing is dangling, not private, and is left alone — the corpus mints 4,383+
+such SKOS stubs deliberately.
+
+The `build_backlink_index` exception is withdrawn: it now runs over public pages
+only, because a private page linking to a public one otherwise discloses its own
+slug on the public page. The published `validation-report.json` is likewise
+restricted to public pages, since an issue names its page by filename and a
+`MULTI_PARENT` message quotes parent labels.
+
+Two gates protect publication: the markdown-mirror count contract below, and
+**GATE 5**, which re-derives the private identifier set from *source* and scans
+every public artefact for it. Private identifiers are never written into
+`dist-ci` in order to be checked for.
 
 ---
 
