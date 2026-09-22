@@ -1,18 +1,25 @@
-# narrativegoldmine: a Logseq corpus that is also an OWL ontology
+# narrativegoldmine: the published export of an Obsidian corpus that is also an OWL ontology
 
 ![Narrative Goldmine](explorer/modern/public/images/heroes/ngm-hero.webp)
 
-This repository holds a **corpus** of 8,138 ordinary Logseq markdown pages and the Python
-pipeline that compiles them losslessly into a formal **OWL 2 ontology** — the classes,
-typed properties and axioms that define what *can* be said, emitted as RDF triples and
-resolvable typed edges you can traverse, query and cite, in Turtle and a binary graph
-format. The corpus is **pure TBox: every entity is a class, and there are zero
-individuals, by design**. That is the fact that licenses the word ontology — and it is
-why this artefact is not called a knowledge graph: instance data lives in the mesh's
-runtime graphs (VisionClaw, agents' working graphs, Solid pods), which populate this
-vocabulary against these classes. The WebAssembly explorer renders
-the result. It is a self-contained release: corpus, build, viewer and method in one tree,
-published at [narrativegoldmine.com](https://narrativegoldmine.com).
+This repository is the **published export** of the DreamLab corpus. It serves 8,138 pages and
+their compiled **OWL 2 ontology** to the public at
+[narrativegoldmine.com](https://narrativegoldmine.com) from the `gh-pages` branch, under
+**ODbL-1.0** for the data, and it ships the WebAssembly explorer that renders them. That is now
+its whole role.
+
+The corpus itself is no longer authored here. It is written and governed in
+[`visionGraph`](https://github.com/jjohare/visionGraph) — an **Obsidian** vault whose ontology
+lives in typed frontmatter, validated, reasoned and built by a single Rust implementation
+(`VisionClaw/crates/vault`) and published as an **OKF v0.2** bundle rendered by Quartz. One vault,
+one build, one human gate; see VisionFlow ADR-2013 and `PRD-sovereign-corpus`. This repository's
+own `ontology/pages` source tree and its seven-stage rdflib `pipeline/` are **archived**: kept in
+git for history and for reproducing past releases, not built from and not accepted into.
+
+The published artefact is **pure TBox: every entity is a class, and there are zero individuals,
+by design**. That is the fact that licenses the word ontology — and it is why this artefact is
+not called a knowledge graph: instance data lives in the mesh's runtime graphs (VisionClaw,
+agents' working graphs, Solid pods), which populate this vocabulary against these classes.
 
 It is also a working example of the layer the industry began demanding of agentic
 systems in 2026: a shared, formal semantic substrate — an ontology agents can be
@@ -21,16 +28,16 @@ sibling [VisionClaw](https://github.com/DreamLab-AI/VisionClaw) engine reasons o
 this corpus with a Whelk OWL 2 EL reasoner — the machine check that classifies the
 graph and rejects contradictions before they enter it — and measured the grounding
 lift; the sibling
-[Loom](https://github.com/DreamLab-AI/loom) consumes the generations this repo
+[Loom](https://github.com/DreamLab-AI/loom) consumes the generations this corpus
 publishes and serves that ontology as grounding to any LLM behind an
 OpenAI-compatible, model-swappable façade (measured ~0.94 grounded recall). This repo
-gives you the corpus, the pipeline and the method to build your own.
+gives you the published corpus, the archived pipeline and the method behind them.
 
-> **Self-improvement.** The pipeline is dream-able: a nightly [dream cycle](https://github.com/DreamLab-AI/dream-engine) can propose evidence-gated improvements to the corpus build and method as draft PRs a human merges — validated against the same 0-errors/0-warnings gate.
+> **Self-improvement (archived pipeline).** The rdflib pipeline was dream-able: a nightly [dream cycle](https://github.com/DreamLab-AI/dream-engine) proposed evidence-gated improvements to the corpus build and method as draft PRs a human merged — validated against the same 0-errors/0-warnings gate.
 
 > **What this corpus is.** Mostly **AI-generated synthetic content, produced under
 > human direction, by design**. It is an ontology testbed (built to exercise a
-> medium-scale Logseq→OWL pipeline and a GPU graph renderer), not an authoritative
+> medium-scale markdown→OWL pipeline and a GPU graph renderer), not an authoritative
 > encyclopaedia. The provenance it carries (`did:nostr` attribution,
 > `prov:generatedAtTime`, stable URNs) attests **traceable generation under human
 > direction, not human authorship**. That framing is emitted by the pipeline itself
@@ -38,7 +45,7 @@ gives you the corpus, the pipeline and the method to build your own.
 
 ---
 
-> **8,100+ ordinary Logseq markdown pages that compile losslessly into a formal OWL 2 ontology — pure TBox, every page a class, zero individuals by design.** Corpus, pipeline, viewer and method ship as one open release (ODbL-1.0 data, AGPL-3.0 pipeline) published at narrativegoldmine.com; siblings reason over it (VisionClaw) and serve it as measured LLM grounding (Loom, ~0.94 grounded recall), and third-party extractors such as OntoCast stage RDF into it as governed, reviewable candidates. Rigorous curation is amortised once and reused per query — this repo is the once.
+> **8,100+ ordinary Obsidian markdown pages whose frontmatter compiles losslessly into a formal OWL 2 ontology — pure TBox, every page a class, zero individuals by design.** Corpus, pipeline, viewer and method ship as one open release (ODbL-1.0 data, AGPL-3.0 pipeline) published at narrativegoldmine.com; siblings reason over it (VisionClaw) and serve it as measured LLM grounding (Loom, ~0.94 grounded recall), and third-party extractors such as OntoCast stage RDF into it as governed, reviewable candidates. Rigorous curation is amortised once and reused per query — this repo is the once.
 
 ---
 

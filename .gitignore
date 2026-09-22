@@ -44,3 +44,9 @@ venv/
 .hive-mind/
 .swarm/
 .claude/
+
+# Derived explorer projection: pipeline/explorer_compat.py rebuilds it from the
+# corpus in seconds (`python -m pipeline.build ontology/pages dist`). It is a
+# release-gate input, not a committed dataset — dist/data/ontology.json already
+# carries the same content in the classic WebVOWL split shape.
+/dist/data/ontology-explorer.json
