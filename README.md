@@ -353,6 +353,7 @@ this one are listed.
 | [VisionFlow](https://github.com/DreamLab-AI/VisionFlow) | Ecosystem canon: vision report, ADRs, PRDs, website. | No root licence file |
 | [WasmVOWL](https://github.com/DreamLab-AI/WasmVOWL/tree/master) | Upstream of `explorer/`; itself a fork of VisualDataWeb/WebVOWL. Default branch is `master`. | MIT |
 | [agentbox](https://github.com/DreamLab-AI/agentbox) | Agent runtime used to build and maintain this pipeline. | AGPL-3.0 |
+| [sidestr-rs](https://github.com/DreamLab-AI/sidestr-rs) | Estate sibling, not a corpus consumer. Rust port of Melvin Carvalho's sidestr sidechains, AGPL-3.0-only: the economic engine for `did:nostr` agents. A `did:nostr` key is a sidechain wallet. | AGPL-3.0-only |
 | [Metaverse-Ontology](https://github.com/DreamLab-AI/Metaverse-Ontology) | Independent precedent: Logseq markdown to OWL Functional Syntax via a Rust extractor, rather than embedded JSON-LD via Python. | No licence file |
 
 Each sibling in its own words:
@@ -410,6 +411,14 @@ Each sibling in its own words:
 <br/>
 
 > **The commercial face of the mesh, running on the mesh's own rails.** A React marketing site and a Rust/Leptos WASM community forum share one Cloudflare-edge origin, end-to-end encrypted where it matters. It is deliberately a thin consumer of the nostr-rust-forum kit — branding and zone config live here, the protocol lives upstream — living proof the kit stands up a real community without a fork.
+
+</details>
+
+<details>
+<summary><b>sidestr-rs</b> — <em>economic engine for did:nostr agents — a did:nostr key is a sidechain wallet</em></summary>
+<br/>
+
+> **Rust port of Melvin Carvalho's sidestr sidechains, AGPL-3.0-only: the economic engine for `did:nostr` agents. A `did:nostr` key is a sidechain wallet.**
 
 </details>
 
