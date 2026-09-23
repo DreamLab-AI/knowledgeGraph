@@ -1,0 +1,12 @@
+
+Balancer is a decentralised automated market maker (AMM) protocol on Ethereum and compatible EVM chains that generalises the constant-product AMM model to support weighted multi-asset pools, where pool weights can be set arbitrarily (e.g., 80/20 or 60/20/20 distributions) rather than the 50/50 split of Uniswap. It functions simultaneously as a self-rebalancing portfolio manager, a liquidity provider, and a price sensor.
+
+- ### Content
+  - Balancer was developed by Fernando Martinelli and Mike McDonald and launched its v1 mainnet in March 2020. The core insight — that Uniswap's constant-product formula is a special case of a generalised constant weighted geometric mean — enabled multi-token pools with tunable weights. Balancer Labs raised $3m in a seed round in 2020 and $5m in a Series A in 2021, distributing governance via the BAL token launched in June 2020.
+
+  - The v2 architecture, launched in 2021, separated pool logic from asset management by introducing a single centralised Vault that holds all pool assets, dramatically reducing gas costs for multi-hop trades. Pool types were abstracted into a plugin model: Weighted Pools (the original generalised AMM), Stable Pools (optimised for like-priced assets via the StableSwap invariant), Boosted Pools (integrating yield-bearing assets such as Aave aTokens), and Managed Pools for actively managed on-chain funds.
+
+  - Balancer's ecosystem is notable for its composability — Boosted Pools allow idle liquidity to earn yield on Aave or Euler whilst still being available for trades, creating capital efficiency that simple AMMs cannot achieve. Protocols such as Aura Finance build veBAL meta-governance layers on top of Balancer's vote-escrowed token model, mirroring the Curve Wars dynamic and routing BAL emissions toward strategic pools.
+
+  - Through 2024–2025, Balancer v3 introduced a simplified vault-with-hooks model to make custom pool logic more accessible to developers. The protocol expanded to multiple EVM chains including Polygon, Arbitrum, Optimism, and Gnosis Chain. Competition from concentrated liquidity AMMs pushed Balancer to focus on its differentiated value: composable stable pools powering liquid staking token (LST) pairs and on-chain portfolio management primitives that single-asset AMMs cannot replicate.
+

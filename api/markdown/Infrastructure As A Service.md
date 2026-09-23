@@ -1,0 +1,32 @@
+
+Infrastructure as a Service (IaaS) is a cloud computing service model in which a provider delivers virtualised computing resources — including virtual machines, storage, networking, and bare-metal servers — over the internet on a pay-per-use basis, while the customer manages the operating system, middleware, and applications. IaaS abstracts away physical hardware procurement and data centre operations, enabling organisations to provision and de-provision compute capacity elastically. Major IaaS providers include Amazon Web Services (EC2/S3), Microsoft Azure (Virtual Machines), and Google Cloud Platform (Compute Engine).
+
+- ### Overview
+  - Amazon Web Services launched EC2 in 2006 and S3 in 2006, establishing the IaaS market.
+  - IaaS enables capital expenditure to be converted to operational expenditure, removing upfront hardware investment.
+  - Auto-scaling groups and load balancers enable elastic capacity aligned to demand fluctuations.
+  - Multi-region deployment improves resilience and latency for global applications.
+  - Shared responsibility model: provider secures physical layer; customer secures OS, data, and application.
+
+- ### Key aspects
+  - Compute: virtual CPUs, GPU instances, high-memory and high-compute types.
+  - Storage: block storage (EBS/Azure Disk), object storage (S3/Blob), file storage (EFS/Azure Files).
+  - Networking: virtual private cloud (VPC), subnets, security groups, load balancers, CDN.
+  - Billing: per-second or per-hour metering with reserved and spot-pricing tiers.
+  - Infrastructure-as-code (Terraform, CloudFormation) automates reproducible provisioning.
+
+- ### Mechanisms
+  - Hypervisors (Xen, KVM, Hyper-V) partition physical hardware into virtual machines.
+  - Software-defined networking (SDN) provides tenant network isolation and programmable routing.
+  - Object storage APIs (S3-compatible) expose durability-guaranteed blob containers at scale.
+  - Snapshots and AMIs enable immutable machine image management.
+
+- ### Applications
+  - Web application hosting with auto-scaling to handle variable traffic.
+  - Big data processing clusters spun up and torn down on demand.
+  - Development and test environment provisioning without hardware lead times.
+  - Disaster recovery with cross-region replication and rapid failover.
+  - HPC workloads on spot instances for cost-optimised batch computing.
+
+- ### Provenance
+

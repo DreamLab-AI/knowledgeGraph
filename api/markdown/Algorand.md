@@ -1,0 +1,12 @@
+
+Algorand is a permissionless, pure proof-of-stake Layer 1 blockchain protocol designed by MIT cryptographer Silvio Micali, providing instant transaction finality, high throughput, and carbon-negative operation through a cryptographically random committee-selection consensus mechanism. It resolves the blockchain trilemma of security, scalability, and decentralisation without forks by ensuring all confirmed blocks are final. The Algorand Virtual Machine (AVM) supports smart contract execution in TEAL bytecode and, via ARC standards, enables NFTs, DeFi, and tokenised assets at scale.
+
+- ### Content
+  - Algorand was founded in 2017 by Turing Award-winning cryptographer Silvio Micali and launched its MainNet in June 2019. The project emerged from Micali's academic work on verifiable random functions and Byzantine agreement, aiming to build a blockchain capable of supporting global financial infrastructure without the energy costs of proof-of-work or the stake-concentration risks of delegated systems.
+
+  - The protocol operates by randomly selecting a small committee of block proposers and validators from all ALGO holders on a per-round basis using a cryptographic lottery tied to verifiable random functions. This selection is performed locally and privately, so validators are not known until they broadcast their credential, making targeted attacks computationally infeasible. Every round concludes with Byzantine Agreement in two message steps, producing blocks with sub-4-second finality that can never be reversed.
+
+  - Algorand supports a dual-layer smart contract model: layer-1 stateless contracts (TEAL logic signatures) run at consensus speed with no additional fees, while stateful contracts (AVM applications) maintain on-chain key-value stores. ARC token standards underpin a rich ecosystem of DeFi protocols, NFT marketplaces, stablecoins (USDC), and central bank digital currency pilots. The Algorand Foundation's governance mechanism allows ALGO holders to vote on protocol parameters while earning rewards.
+
+  - As of 2024-2025 Algorand hosts hundreds of dApps, maintains sub-3.9-second block finality at throughput exceeding 6,000 transactions per second in stress tests, and has achieved carbon-negative certification through offsets and low per-transaction energy. Key ecosystem focus areas include real-world asset tokenisation, identity, and cross-border settlement infrastructure, with ongoing research into zero-knowledge proofs, co-chains, and state proofs for interoperability with other networks.
+

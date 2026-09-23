@@ -1,0 +1,3 @@
+
+Yjs is an open-source, high-performance CRDT (Conflict-free Replicated Data Type) framework for building collaborative applications in JavaScript. It provides shared data types such as maps, arrays, and rich text that automatically merge concurrent edits without conflicts, and integrates with popular editors like ProseMirror, CodeMirror, and Quill. Yjs supports multiple transport backends including WebSocket, WebRTC, and IndexedDB for offline persistence.
+

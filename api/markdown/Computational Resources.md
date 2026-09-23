@@ -1,0 +1,96 @@
+
+Computational Resources denotes the aggregate hardware and software infrastructure — encompassing processors (CPUs, GPUs, NPUs, TPUs), memory hierarchies, storage systems, network fabrics, and associated middleware — that a computing system makes available to execute workloads. The capacity, performance characteristics, and allocation policies of these resources determine achievable throughput, latency, and quality of service across application domains from real-time simulation and AI inference to distributed data processing. Resource management disciplines — including scheduling, load balancing, virtualisation, and power efficiency — govern how competing workloads share finite physical capacity, making computational resources a foundational abstraction in systems design and infrastructure planning.
+
+- ### Overview
+  - Computational resources represent the physical and logical substrate upon which all software execution depends. They are finite, heterogeneous assets — a system may have abundant CPU cores yet be memory-bandwidth-constrained, or possess large GPU clusters yet suffer network-fabric bottlenecks when distributing work.
+  - The field has evolved through several architectural eras: mainframe time-sharing, personal computing, client-server architectures, [[Cloud Computing]], and now a continuum stretching from tiny [[Edge Computing]] nodes to hyperscale data centres. Each era introduced new resource types, new abstractions for managing them, and new trade-offs between cost, performance, and energy.
+  - Modern systems treat computational resources as programmable, pooled commodities managed through software layers: [[Virtualisation]] isolates workloads, [[Container Orchestration]] (Kubernetes and equivalents) schedules containers, and [[Resource Scheduling]] frameworks dispatch tasks to available capacity. This abstraction allows operators to share resources across tenants while maintaining performance guarantees.
+  - Why it matters: computational resources are the ultimate binding constraint behind every digital system. AI model training cost, XR rendering quality, blockchain transaction throughput, and IoT sensor processing all reduce to questions of how much compute, memory, and network bandwidth is available and how efficiently it is exploited.
+
+- ### Key Components
+  - **Processing Units**
+    - [[Central Processing Unit]] (CPU) — general-purpose sequential and parallel execution; handles operating system, application logic, and coordination tasks
+    - [[Graphics Processing Unit]] (GPU) — massively parallel SIMD architecture; the dominant accelerator for [[Machine Learning]] training and [[Rendering Engine]] workloads
+    - [[Neural Processing Unit]] (NPU / TPU) — dedicated matrix-multiply silicon for low-power AI inference; integral to mobile and embedded deployments
+    - [[Field-Programmable Gate Array]] (FPGA) — reconfigurable logic for ultra-low-latency custom pipelines (network packet processing, HFT, signal processing)
+  - **Memory Hierarchy**
+    - [[Memory Subsystem]] spans L1/L2/L3 CPU caches, HBM (High Bandwidth Memory) on GPU packages, DRAM main memory, and persistent memory (PMEM). [[Bandwidth]] and capacity at each tier determine whether workloads are compute-bound or memory-bound.
+    - [[Cache Coherency]] protocols (MESI, MESIF) coordinate distributed cache state across multi-core and multi-socket systems, directly impacting [[Scalability]].
+  - **Storage Subsystem**
+    - [[Storage]] tiers range from NVMe SSDs (microsecond latency) through SAS/SATA arrays to object storage (S3-class) and tape archives. Storage I/O is frequently the bottleneck in data-intensive workloads.
+    - Disaggregated storage (Ceph, AWS EBS, GCS Persistent Disk) allows [[Cloud Computing]] platforms to scale storage independently of compute.
+  - **Network Fabric**
+    - [[Network Fabric]] interconnects nodes within a cluster (InfiniBand, RoCE, NVLink fabric) and connects to external services. In distributed training of large AI models, inter-node bandwidth is often the scaling bottleneck.
+    - [[Software-Defined Networking]] (SDN) abstracts physical network topology, enabling dynamic bandwidth allocation across workloads.
+  - **Software Resource Management**
+    - [[Operating System]] kernel provides process scheduling, memory management, and device drivers — the first layer of resource mediation.
+    - [[Virtualisation]] (hypervisors: KVM, VMware, Hyper-V) partitions physical resources into isolated virtual machines.
+    - [[Container Orchestration]] (Kubernetes, Nomad) coordinates lightweight container deployments, bin-packing workloads onto available nodes.
+    - [[Resource Scheduling]] frameworks (SLURM for HPC, YARN for Hadoop, Ray for AI) match tasks to available capacity with policy constraints (priority, fairness, preemption).
+
+- ### Resource Management Disciplines
+  - **Allocation and Scheduling**
+    - [[Resource Scheduling]] determines which task runs on which resource at which time. Policies include FIFO, priority queuing, fair-share, preemptive, and gang scheduling for tightly coupled parallel jobs.
+    - [[Load Balancing]] distributes incoming work across a resource pool to prevent hotspots and maximise utilisation. Techniques include round-robin, least-connections, consistent hashing, and dynamic power-aware placement.
+  - **Optimisation Techniques**
+    - [[Performance Optimisation]] encompasses compiler auto-vectorisation, kernel fusion, operator fusion in ML frameworks, and memory layout transforms (tiling, blocking) that improve cache utilisation.
+    - Foveated rendering in XR concentrates GPU pixel fill in the gaze-tracked foveal region, reducing total pixel workload per frame — a domain-specific resource reduction technique.
+    - [[Power Management]] (DVFS — Dynamic Voltage and Frequency Scaling, sleep states, power capping) balances performance against thermal and energy budgets; critical on battery-powered and thermally constrained devices.
+  - **Elasticity and Scaling**
+    - [[Scalability]] is achieved through horizontal scaling (adding more nodes) or vertical scaling (larger nodes). [[Cloud Computing]] platforms automate horizontal elasticity through auto-scaling groups triggered by utilisation metrics.
+    - [[Distributed Computing]] frameworks (MPI, Spark, Ray) partition workloads across multiple nodes, requiring explicit communication and synchronisation that adds overhead governed by Amdahl's Law.
+
+- ### Applications and Use Cases
+  - **AI and Machine Learning**
+    - Training large [[Machine Learning]] models requires clusters of thousands of GPUs/TPUs with high-bandwidth inter-connects. Techniques like model parallelism, pipeline parallelism, and gradient checkpointing manage memory constraints.
+    - [[Federated Learning]] distributes training across edge devices, requiring careful management of heterogeneous computational resources with varying compute and communication capabilities.
+    - Inference serving for production [[Artificial Intelligence]] systems uses batching, quantisation, and model distillation to fit inference within latency SLOs on constrained hardware.
+  - **Spatial Computing and XR**
+    - [[Extended Reality]] (VR/AR/MR) imposes strict per-frame time budgets (typically 11 ms at 90 Hz). GPUs handle stereoscopic rasterisation; NPUs run hand-tracking and scene-understanding AI; CPUs manage application logic and physics.
+    - [[Edge Computing]] nodes near users offload rendering from head-mounted displays, trading network latency for reduced on-device thermal and power burden.
+    - [[Digital Twin]] platforms combine real-time 3D visualisation with physics simulation and IoT data ingestion, requiring multi-tenant resource orchestration across rendering, simulation, and data-pipeline workloads simultaneously.
+  - **Cloud and Data Centre Operations**
+    - [[Cloud Computing]] hyperscalers (AWS, GCP, Azure) expose computational resources as metered services (EC2 instances, TPU pods, GPU VMs). Resource pools are shared across tenants using [[Virtualisation]] and fine-grained scheduling.
+    - Data-intensive analytics (Spark, Presto, BigQuery) leverage distributed CPU and memory pools, with [[Storage]] I/O often determining end-to-end query latency.
+  - **High-Performance Computing (HPC)**
+    - Scientific simulations (climate modelling, protein folding, fluid dynamics) run on supercomputers with dedicated high-speed [[Network Fabric]] (InfiniBand HDR/NDR) and parallel file systems (Lustre, GPFS).
+    - HPC resource management relies on batch schedulers (SLURM, PBS, LSF) that queue and prioritise jobs across shared node pools.
+  - **Robotics and Embedded Systems**
+    - [[Robotics]] platforms require real-time, deterministic resource allocation for sensor fusion, motion planning, and actuator control, often on power-limited embedded SoCs.
+    - Resource-constrained inference uses model quantisation, pruning, and hardware-aware [[Neural Architecture Search]] to fit capable models within tight compute and energy envelopes.
+
+- ### Standards and Context
+  - **Processor Specifications**
+    - IEEE 754 floating-point standard governs numerical computation across all processor types; critical for reproducibility in [[Machine Learning]] training.
+    - PCIe (PCI Express) standards define the interconnect between CPUs and accelerators (GPUs, FPGAs, NVMe drives); PCIe 5.0/6.0 generations double bandwidth per generation.
+    - NVLink (NVIDIA) and Infinity Fabric (AMD) provide higher-bandwidth GPU-to-GPU and CPU-to-GPU links for multi-accelerator systems.
+  - **Memory and Storage**
+    - JEDEC standards (DDR5, LPDDR5, HBM3) specify DRAM interfaces and characteristics. HBM3 is widely deployed in high-end GPU and AI accelerator packages.
+    - NVMe (Non-Volatile Memory Express) specification optimises storage protocols for solid-state media, reducing access latency relative to legacy SCSI/ATA command sets.
+  - **Network**
+    - InfiniBand Trade Association (IBTA) and RoCEv2 (RDMA over Converged Ethernet) standards underpin data centre fabric for HPC and AI clusters.
+    - IEEE 802.3 Ethernet standards (100GbE, 400GbE, 800GbE) define physical and data-link layer characteristics for commodity network fabric.
+  - **Resource Management**
+    - CNCF (Cloud Native Computing Foundation) governs Kubernetes and related [[Container Orchestration]] specifications.
+    - OpenStack Foundation standards for IaaS resource pooling and [[Virtualisation]] management.
+    - Green500 / TOP500 benchmarks (HPL, HPCG) provide standardised rankings of HPC system performance and energy efficiency, contextualising resource capacity claims.
+
+- ### Current Landscape (2026)
+  - The binding constraint on computational resources shifted from raw GPU supply (the 2024 H100 crunch) to power and physical infrastructure: Gartner projects 40% of AI data centres will be power-constrained by 2027, US/European grid-connection approvals now run 24-36 months, and GE Vernova and Siemens Energy report gas turbines nearly sold out through 2029.
+  - The five largest US hyperscalers (Amazon, Alphabet, Microsoft, Meta, Oracle) guided to roughly $700-800 billion of combined 2026 capex — a ~60-77% year-on-year jump from ~$402-410 billion in 2025, with about 75% (~$450 billion) targeting AI silicon, servers and data centres (Q1 2026 earnings, 29 April 2026).
+  - NVIDIA's Blackwell rack-scale systems (GB200/GB300 NVL72) have been "sold out" for consecutive quarters; the company reported $193.7 billion FY2026 data-centre revenue and guided to ~$500 billion of combined Blackwell-plus-Rubin orders through end-2026 and ~$1 trillion through 2027, with the Rubin generation moving racks from 72 to 576 GPUs.
+  - The hard bottleneck is TSMC CoWoS-L advanced packaging (sold out through 2026, expanding toward ~130,000 wafers/month by end-2026) and high-bandwidth memory: all three HBM makers (SK Hynix, Samsung, Micron) are booked through 2026, spot DRAM has risen roughly 8x since early 2025, and Intel's Lip-Bu Tan warned of "no relief until 2028".
+  - Custom accelerators scaled materially — Google TPU, AWS Trainium, Microsoft Maia and Meta MTIA now claim 40-65% TCO advantages and have pushed NVIDIA's accelerator share down from ~86% (2024) toward ~75% (2026) — while workloads tilt to inference, forecast at roughly two-thirds of all compute in 2026 (up from half in 2025), driving a $50 billion-plus inference-chip market.
+  - Access fragmented into neoclouds (CoreWeave, Lambda, Nebius, typically 40-70% cheaper than hyperscaler on-demand), sovereign-AI programmes across the Gulf, India, Japan and Europe, and heterogeneous NVIDIA/AMD estates; compute is increasingly financed as an asset via GPU-collateralised debt and structured credit.
+  - Regulation and geopolitics tightened around compute as a strategic resource: EU GPAI rules began applying 2 August 2025, the US pursued chip location-verification/attestation (Chip Security Act), and export controls hardened a multi-bloc order with China scaling Huawei 910C/CloudMatrix domestic accelerators.
+
+- ### References
+  - 1. Al Capital Advisory (2026). AI Capex Cycle 2026: $725B Hyperscaler Buildout — CFA Analysis. https://alcapitaladvisory.com/research/intelligence/ai-infrastructure.html
+  - 2. Apollo Global Management (2026). The Growing Compute Shortage. https://www.apollo.com/wealth/insights-news/insights/2026/06/growing-compute-shortage
+  - 3. Spheron Network (2026). AI Data Center Power Constraints Are the Real 2026 Bottleneck. https://www.spheron.network/blog/ai-data-center-power-constraints-2026/
+  - 4. Barrack AI (2026). The 2026 GPU Memory Crisis: What the Data Actually Shows. https://blog.barrack.ai/2026-gpu-memory-crisis/
+  - 5. Deloitte Insights (2025). More compute for AI, not less (TMT Predictions 2026). https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/compute-power-ai.html
+  - 6. J.P. Morgan Asset Management (2026). Is AI running out of compute? https://am.jpmorgan.com/us/en/asset-management/liq/insights/market-insights/market-updates/on-the-minds-of-investors/is-ai-running-out-of-compute/
+
+- ### Provenance
+

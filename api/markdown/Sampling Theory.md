@@ -1,0 +1,21 @@
+
+Sampling theory is the body of statistical and signal-processing principles governing how a subset of observations is selected from a larger population or continuous signal so that valid inferences can be drawn about the whole. In statistics it formalises how representative samples are drawn, how estimator variance and bias behave, and how confidence in conclusions scales with sample size. In signal processing it specifies the conditions under which a continuous signal can be reconstructed without loss from discrete samples. The discipline underpins survey design, experimental design, digital signal acquisition, and Monte Carlo estimation.
+
+- Sampling theory studies how observations are drawn from a population or continuous signal so that conclusions about the whole remain valid. It bridges [[Statistics]], [[Probability Theory]], and [[Signal Processing]].
+- It underwrites both inferential statistics and the conversion of continuous phenomena into discrete data through [[Random Sampling]].
+- ### Overview
+- In the statistical tradition, sampling theory describes how a representative subset is selected, how estimator properties such as variance and bias depend on the sampling scheme, and how confidence scales with sample size.
+- In the signal-processing tradition, it states the conditions under which a band-limited continuous signal can be reconstructed exactly from discrete samples, the foundation of all analogue-to-digital acquisition.
+- The two traditions share a common concern: extracting maximal information from a finite, discrete subset of an effectively infinite whole.
+- ### Key aspects
+- Probability sampling designs: simple random, stratified, cluster, and systematic schemes.
+- Estimator behaviour: unbiasedness, consistency, and the convergence guaranteed by the [[Central Limit Theorem]].
+- Sample-size determination and the trade-off between cost and precision.
+- The sampling rate and reconstruction conditions that prevent information loss in discretised signals.
+- ### Applications
+- Survey research, opinion polling, and official statistics.
+- Quality control and acceptance sampling in manufacturing.
+- Digital audio, imaging, and sensor acquisition pipelines.
+- Monte Carlo integration and stochastic simulation.
+- ### Provenance
+

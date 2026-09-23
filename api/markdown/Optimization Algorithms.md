@@ -1,0 +1,31 @@
+
+Mathematical procedures for minimising or maximising objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to reduce loss; advanced techniques encompass momentum-based optimisation, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free approaches (evolutionary strategies, Bayesian optimisation), addressing non-convexity, saddle points, and high-dimensional parameter-space challenges.
+
+- ### Semantic Classification
+
+- ### Content
+
+  #### Key Characteristics
+  - Employs gradient descent and its variants
+  - Adapts learning rates dynamically during training
+  - Incorporates momentum and acceleration techniques
+  - Handles large-scale distributed optimization
+  - Balances convergence speed and stability
+
+  ## Overview
+
+  Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based methods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions. Advanced techniques include momentum-based optimization, adaptive learning rates, second-order methods (L-BFGS, natural gradient), and gradient-free optimization (evolutionary strategies, Bayesian optimization). Optimization algorithms address challenges of non-convexity, saddle points, vanishing/exploding gradients, and computational efficiency in high-dimensional parameter spaces.
+
+  #### Related Concepts
+  - [[Gradient Descent]]
+  - [[Backpropagation]]
+  - [[Hyperparameter Tuning]]
+  - [[Convex Optimization]]
+
+  #### References
+  - Kingma, D. & Ba, J. (2015). Adam: A Method for Stochastic Optimization. ICLR 2015.
+  - Ruder, S. (2016). An overview of gradient descent optimization algorithms. arXiv:1609.04747.
+  - Duchi, J. et al. (2011). Adaptive Subgradient Methods for Online Learning and Stochastic Optimization. JMLR 12, 2121-2159.
+
+- ### Provenance
+

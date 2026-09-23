@@ -1,0 +1,1457 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Sampling</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Sampling"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Sampling"/><meta name="twitter:description" content="Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions — ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte… S..."/><meta property="og:description" content="Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions — ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte… S..."/><meta property="og:image:alt" content="Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions — ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Sampling"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Sampling"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions — ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Sampling"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6759"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6759" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Sampling</a></div></nav><h1 class="article-title">Sampling</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.890Z">23 Sept 2026</time><span>48 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:sampling</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Numerical-Methods" class="internal">Numerical Methods</a></li><li><a href="../pages/Stochastic-Processes" class="internal">Stochastic Processes</a></li><li><a href="../pages/Probabilistic-Model" class="internal">Probabilistic Model</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../Statistical-Computing" class="internal">Statistical Computing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../autoregressive-sampling" class="internal">Autoregressive Sampling</a></li><li><a href="../pages/Importance-Sampling" class="internal">Importance Sampling</a></li><li><a href="../pages/Markov-Chain-Monte-Carlo" class="internal">Markov Chain Monte Carlo</a></li><li><a href="../nested-sampling" class="internal">Nested Sampling</a></li><li><a href="../pages/Quasi-Monte-Carlo" class="internal">Quasi-Monte Carlo</a></li><li><a href="../pages/Rejection-Sampling" class="internal">Rejection Sampling</a></li><li><a href="../pages/Sequential-Monte-Carlo" class="internal">Sequential Monte Carlo</a></li><li><a href="../pages/Diffusion-Models" class="internal">Diffusion Models</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../convergence-criterion" class="internal">Convergence Criterion</a></li><li><a href="../pages/Probability-Distribution" class="internal">Probability Distribution</a></li><li><a href="../pages/Proposal-Distribution" class="internal">Proposal Distribution</a></li><li><a href="../pages/Random-Number-Generator" class="internal">Random Number Generator</a></li><li><a href="../target-density" class="internal">Target Density</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Particle-Filter" class="internal">Particle Filter</a></li><li><a href="../pages/Stable-Diffusion-Image-Model" class="internal">Stable Diffusion Image Model</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Variational-Inference" class="internal">Variational Inference</a></li><li><a href="../Deterministic-Integration" class="internal">Deterministic Integration</a></li><li><a href="../Grid-Approximation" class="internal">Grid Approximation</a></li><li><a href="../Laplace-Approximation" class="internal">Laplace Approximation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../pages/Measure-Theory" class="internal">Measure Theory</a></li><li><a href="../pages/Stochastic-Processes" class="internal">Stochastic Processes</a></li><li><a href="../pages/Numerical-Methods" class="internal">Numerical Methods</a></li><li><a href="../pages/Ergodic-Theory" class="internal">Ergodic Theory</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../InferenceLayer" class="internal">InferenceLayer</a></li><li><a href="../GenerationLayer" class="internal">GenerationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Gibbs-Sampling" class="internal">Gibbs Sampling</a></li><li><a href="../pages/Hamiltonian-Monte-Carlo" class="internal">Hamiltonian Monte Carlo</a></li><li><a href="../metropolis-hastings-algorithm" class="internal">Metropolis-Hastings Algorithm</a></li><li><a href="../pages/Nucleus-Sampling" class="internal">Nucleus Sampling</a></li><li><a href="../speculative-decoding" class="internal">Speculative Decoding</a></li><li><a href="../NUTS" class="internal">NUTS</a></li><li><a href="../DDIM" class="internal">DDIM</a></li><li><a href="../DPM-Solver" class="internal">DPM-Solver</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-2047</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../autoregressive-sampling" class="internal">Autoregressive Sampling</a></li><li><a href="../bayesian-inference" class="internal">Bayesian Inference</a></li><li><a href="../bayesian-neural-networks" class="internal">Bayesian Neural Networks</a></li><li><a href="../convergence-criterion" class="internal">Convergence Criterion</a></li><li><a href="../ddim" class="internal">DDIM</a></li><li><a href="../deterministic-integration" class="internal">Deterministic Integration</a></li><li><a href="../dpm-solver" class="internal">DPM-Solver</a></li><li><a href="../entropy" class="internal">Entropy</a></li><li><a href="../ergodic-theory" class="internal">Ergodic Theory</a></li><li><a href="../generation-layer" class="internal">GenerationLayer</a></li><li><a href="../gibbs-sampling" class="internal">Gibbs Sampling</a></li><li><a href="../gradient-information" class="internal">Gradient Information</a></li><li><a href="../grid-approximation" class="internal">Grid Approximation</a></li><li><a href="../hamiltonian-monte-carlo" class="internal">Hamiltonian Monte Carlo</a></li><li><a href="../hugging-face-diffusers" class="internal">Hugging Face Diffusers</a></li><li><a href="../importance-sampling" class="internal">Importance Sampling</a></li><li><a href="../inference-layer" class="internal">InferenceLayer</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../kullback-leibler-divergence" class="internal">Kullback-Leibler Divergence</a></li><li><a href="../laplace-approximation" class="internal">Laplace Approximation</a></li><li><a href="../markov-chain-monte-carlo" class="internal">Markov Chain Monte Carlo</a></li><li><a href="../measure-theory" class="internal">Measure Theory</a></li><li><a href="../metropolis-hastings-algorithm" class="internal">Metropolis-Hastings Algorithm</a></li><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../nested-sampling" class="internal">Nested Sampling</a></li><li><a href="../noise-schedule" class="internal">Noise Schedule</a></li><li><a href="../nucleus-sampling" class="internal">Nucleus Sampling</a></li><li><a href="../num-pyro" class="internal">NumPyro</a></li><li><a href="../numerical-methods" class="internal">Numerical Methods</a></li><li><a href="../nuts" class="internal">NUTS</a></li><li><a href="../probabilistic-modelling-domain" class="internal">ProbabilisticModellingDomain</a></li><li><a href="../probability-distribution" class="internal">Probability Distribution</a></li><li><a href="../proposal-distribution" class="internal">Proposal Distribution</a></li><li><a href="../py-mc" class="internal">PyMC</a></li><li><a href="../quasi-monte-carlo" class="internal">Quasi-Monte Carlo</a></li><li><a href="../random-number-generator" class="internal">Random Number Generator</a></li><li><a href="../rejection-sampling" class="internal">Rejection Sampling</a></li><li><a href="../robert-casella-monte-carlo-statistical-methods" class="internal">Robert-Casella Monte Carlo Statistical Methods</a></li><li><a href="../score-function" class="internal">Score Function</a></li><li><a href="../sequential-monte-carlo" class="internal">Sequential Monte Carlo</a></li><li><a href="../simulation-based-inference" class="internal">Simulation-Based Inference</a></li><li><a href="../speculative-decoding" class="internal">Speculative Decoding</a></li><li><a href="../stan-probabilistic-programming" class="internal">Stan Probabilistic Programming</a></li><li><a href="../statistical-computing" class="internal">Statistical Computing</a></li><li><a href="../statistical-computing-domain" class="internal">StatisticalComputingDomain</a></li><li><a href="../stochastic-processes" class="internal">Stochastic Processes</a></li><li><a href="../target-density" class="internal">Target Density</a></li><li><a href="../uncertainty-quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../variational-inference" class="internal">Variational Inference</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../attention" class="internal">Attention</a></li><li><a href="../checkpoints" class="internal">Checkpoints</a></li><li><a href="../comfy-ui" class="internal">ComfyUI</a></li><li><a href="../comfy-ui-workflows" class="internal">ComfyUI Workflows</a></li><li><a href="../diffusion-models" class="internal">Diffusion Models</a></li><li><a href="../foundation-models" class="internal">Foundation Models</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../model-optimisation-and-performance" class="internal">Model Optimisation and Performance</a></li><li><a href="../particle-filter" class="internal">Particle Filter</a></li><li><a href="../probabilistic-model" class="internal">Probabilistic Model</a></li><li><a href="../reasoning" class="internal">Reasoning</a></li><li><a href="../stable-diffusion" class="internal">Stable Diffusion</a></li><li><a href="../training-data" class="internal">Training Data</a></li><li><a href="../transformers" class="internal">Transformers</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:ac175f370a9e20c39348a6b57ac53a8ea387f387fc120f3efd7e7558c2374cae</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../pages/Attention" class="internal">Attention</a></li><li><a href="../pages/Checkpoints" class="internal">Checkpoints</a></li><li><a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal">Node-Based Diffusion Pipeline Interface</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../Model-Optimisation-and-Performance" class="internal">Model Optimisation and Performance</a></li><li><a href="../pages/Probabilistic-Model" class="internal">Probabilistic Model</a></li><li><a href="../pages/Reasoning" class="internal">Reasoning</a></li><li><a href="../pages/Stable-Diffusion-Image-Model" class="internal">Stable Diffusion Image Model</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../Transformers" class="internal">Transformers</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../hugging-face-diffusers" class="internal">Hugging Face Diffusers</a></li><li><a href="../py-mc" class="internal">PyMC</a></li><li><a href="../Robert-Casella-Monte-Carlo-Statistical-Methods" class="internal">Robert-Casella Monte Carlo Statistical Methods</a></li><li><a href="../Stan-Probabilistic-Programming" class="internal">Stan Probabilistic Programming</a></li><li><a href="../NumPyro" class="internal">NumPyro</a></li><li><a href="../PyMC" class="internal">PyMC</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../variational-inference" class="internal">Variational Inference</a></li><li><a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal">Node-Based Diffusion Pipeline Interface</a></li><li><a href="../pages/ComfyUI-Workflows" class="internal">ComfyUI Workflows</a></li><li><a href="../pages/Diffusion-Models" class="internal">Diffusion Models</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Particle-Filter" class="internal">Particle Filter</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Entropy" class="internal">Entropy</a></li><li><a href="../gradient-information" class="internal">Gradient Information</a></li><li><a href="../pages/Kullback-Leibler-Divergence" class="internal">Kullback-Leibler Divergence</a></li><li><a href="../pages/Markov-Chain-Monte-Carlo" class="internal">Markov Chain Monte Carlo</a></li><li><a href="../pages/Noise-Schedule" class="internal">Noise Schedule</a></li><li><a href="../pages/Score-Function" class="internal">Score Function</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions — ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:MarkovChainMonteCarlo))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:ImportanceSampling))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:RejectionSampling))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:SequentialMonteCarlo))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:DiffusionSampling))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:AutoregressiveSampling))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:QuasiMonteCarlo))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:hasPart ai:NestedSampling))
+
+  ## Dependency Relationships
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:requires ai:ProbabilityDistribution))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:requires ai:RandomNumberGenerator))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:requires ai:TargetDensity))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:requires ai:ProposalDistribution))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:requires ai:ConvergenceCriterion))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:dependsOn ai:MeasureTheory))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:dependsOn ai:StochasticDifferentialEquations))
+
+  ## Capability Relationships
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:enables ai:BayesianPosteriorInference))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:enables ai:GenerativeImageSynthesis))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:enables ai:LanguageModelDecoding))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:enables ai:UncertaintyQuantification))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:enables ai:SimulationBasedInference))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:enables ai:ModelSelection))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:supports ai:DiffusionModels))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:supports ai:VariationalInference))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:supports ai:ParticleFilter))
+
+  ## Implementation Relationships
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:MetropolisHastingsAlgorithm))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:GibbsSampling))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:HamiltonianMonteCarlo))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:NUTS))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:DDIM))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:DPMSolver))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:NucleusSampling))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:implements ai:SpeculativeDecoding))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:uses ai:MarkovChains))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:uses ai:GradientInformation))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:uses ai:Entropy))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:uses ai:ScoreFunction))
+
+  ## Reduction Relationships
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:reduces ai:SamplingVariance))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:reduces ai:AutocorrelationTime))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:reduces ai:InferenceCost))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:reduces ai:DecodingLatency))
+  SubClassOf(ai:Sampling
+    ObjectSomeValuesFrom(ai:reduces ai:HallucinationRate))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:Sampling &quot;Sampling&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:Sampling &quot;Family of computational procedures drawing values from probability distributions spanning classical MCMC (Metropolis-Hastings, Gibbs, HMC, NUTS), sequential Monte Carlo, importance/rejection sampling, quasi-Monte Carlo (Sobol), nested sampling, autoregressive LLM decoding strategies (top-k, nucleus/top-p, temperature, min-p, mirostat, eta), and diffusion model schedulers (DDIM, DPM-Solver, Euler, Heun, Karras EDM), unifying all regimes under approximation of intractable expectations E_p[f(x)] via strategically chosen sample points.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:Sampling &quot;AI-2047&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:Sampling &quot;Monte Carlo Methods, Bayesian Inference, Language Model Decoding, Diffusion Samplers, Statistical Computing&quot;@en)
+  DisjointClasses(ai:Sampling ai:DeterministicIntegration)
+  DisjointClasses(ai:Sampling ai:GridApproximation)
+
+  ## Property Characteristics
+  AsymmetricObjectProperty(ai:requires)
+  AsymmetricObjectProperty(ai:enables)
+  AsymmetricObjectProperty(ai:implements)
+  TransitiveObjectProperty(ai:dependsOn)
+  FunctionalDataProperty(ai:varianceReductionFactor)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-sampling">About Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Sampling</strong> occupies a central position in modern artificial intelligence, statistics, and scientific computing.</p>
+</li>
+<li>
+<p>Every practical inference task involving a probability distribution too complex for analytical treatment — posterior distributions in Bayesian modelling, data distributions learned by generative networks, the token distribution at each decoding step of an LLM, the reverse diffusion trajectory of a latent-space image model — reduces to a sampling problem: drawing realisations from p(x) or estimating integrals ∫ f(x) p(x) dx without evaluating every point in the (often infinite-dimensional) support of p.</p>
+</li>
+<li>
+<p>The canonical approximation is the <strong>Monte Carlo estimate</strong>: given N independent draws {x₁, …, xₙ} ~ p(x), the expectation E_p[f(x)] ≈ (1/N) Σᵢ f(xᵢ) converges by the law of large numbers with standard error O(N^{-1/2}) regardless of dimensionality.</p>
+</li>
+<li>
+<p>This is a dramatic improvement over deterministic quadrature requiring O(N^{d/m}) points for d-dimensional integrands of smoothness m — the curse of dimensionality.</p>
+</li>
+<li>
+<p>The art of sampling is therefore <strong>variance reduction</strong>: designing procedures that produce draws whose empirical average converges to the true expectation faster than naive random sampling.</p>
+</li>
+<li>
+<p>The fundamental challenge: the <strong>curse of dimensionality</strong> means that most probability mass concentrates in a thin “typical set” — not at the mode and not at the tails — making naive grid search or uniform sampling exponentially inefficient as d increases.</p>
+</li>
+<li>
+<p><strong>Ergodic theory</strong> underpins MCMC: the Birkhoff ergodic theorem guarantees that time averages (sample averages along a Markov chain trajectory) equal space averages (true posterior expectations) for ergodic chains, justifying asymptotic consistency of all MCMC estimators.</p>
+</li>
+<li>
+<p><strong>Central limit theorem for MCMC</strong>: under weak mixing conditions, (1/N) Σᵢ f(xᵢ) satisfies a CLT with asymptotic variance σ²_MCMC = σ²_iid × (1 + 2 Σ_k ρ_k), where ρ_k is the lag-k autocorrelation; the integrated autocorrelation time τ_int = 1 + 2 Σ_k ρ_k quantifies the effective sample size loss due to dependence.</p>
+</li>
+<li>
+<p>Three major variance reduction paradigms: (1) <strong>improved proposals</strong> (HMC, NUTS — lower autocorrelation per sample); (2) <strong>control variates</strong> (Rao-Blackwellisation, ZV-MCMC — reducing variance of the estimator for fixed samples); (3) <strong>quasi-randomness</strong> (QMC, LHS — replacing random draws with deterministic low-discrepancy sequences).</p>
+</li>
+<li>
+<h2 id="componentsarchitecture">Components/Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#componentsarchitecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="markov-chain-monte-carlo-mcmc">Markov Chain Monte Carlo (MCMC)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#markov-chain-monte-carlo-mcmc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>MCMC</strong> constructs a Markov chain whose stationary distribution equals the target p(x) ∝ π(x), producing correlated samples that — after a burn-in period — constitute an ergodic approximation of the posterior.</p>
+</li>
+<li>
+<p>The three foundational algorithms are Metropolis-Hastings, Gibbs, and Hamiltonian Monte Carlo.</p>
+</li>
+<li>
+<p>Key theoretical property: ergodicity guarantees that time averages equal space (ensemble) averages, so correlated MCMC samples still produce consistent estimators as N → ∞.</p>
+</li>
+<li>
+<p>Practical diagnostics: R-hat (Gelman-Rubin) convergence statistic comparing within-chain vs between-chain variance; effective sample size (ESS) = N / (1 + 2 Σ_k ρ_k) accounting for autocorrelation ρ_k at lag k; trace plots for stationarity; divergent transitions (HMC-specific, indicating numerical instability near posterior curvature).</p>
+</li>
+<li>
+<h4 id="metropolis-hastings-mh">Metropolis-Hastings (MH)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metropolis-hastings-mh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Proposed by Metropolis et al. (1953) for physics simulations; generalised by Hastings (1970, Cambridge).</p>
+</li>
+<li>
+<p>Algorithm: propose x’ ~ q(x’|xₜ); accept with probability α = min(1, [π(x’) q(xₜ|x’)] / [π(xₜ) q(x’|xₜ)]); set xₜ₊₁ = x’ if accepted, else xₜ₊₁ = xₜ.</p>
+</li>
+<li>
+<p>The acceptance ratio cancels the unknown normalisation constant Z (π(x) = p(x)/Z), making MH applicable whenever the unnormalised density π(x) is evaluable.</p>
+</li>
+<li>
+<p>The random-walk proposal q(x’|xₜ) = N(x’; xₜ, σ²I) yields <strong>Random Walk Metropolis</strong> (RWM); optimal σ² scales as 2.38²/d (Roberts et al. 1997) giving acceptance rate ≈ 23.4% and mixing time O(d).</p>
+</li>
+<li>
+<p>The <strong>independence Metropolis-Hastings</strong> variant uses a fixed proposal q(x’) independent of xₜ — efficient when q approximates p closely but prone to sticky behaviour when tails disagree.</p>
+</li>
+<li>
+<p>Limitation: in d > 50 dimensions, random-walk steps become pathologically small, requiring exponentially many evaluations to traverse the posterior.</p>
+</li>
+<li>
+<p><strong>Adaptive Metropolis</strong> (Haario et al. 2001) learns the proposal covariance online from the chain history, converging toward the optimal covariance 2.38²/d × Σ_posterior.</p>
+</li>
+<li>
+<p><strong>Delayed rejection adaptive Metropolis</strong> (DRAM, Haario et al. 2006) combines adaptive proposals with a second proposal attempt on rejection, improving efficiency in complex posteriors.</p>
+</li>
+<li>
+<p>Key correctness requirement: the proposal must be ergodic (capable of reaching any region of positive posterior mass) and reversible (detailed balance must hold); adaptive MH must use diminishing adaptation to maintain ergodicity.</p>
+</li>
+<li>
+<h4 id="gibbs-sampling">Gibbs Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gibbs-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Gibbs sampling (Geman &amp; Geman 1984; popularised in statistics by Gelfand &amp; Smith 1990) exploits factored conditionals: cycle over coordinates i = 1,…,d, drawing xᵢ ~ p(xᵢ | x_{-i}), which automatically satisfies detailed balance with acceptance probability 1.</p>
+</li>
+<li>
+<p>When all full conditionals are available in closed form — as in conjugate Bayesian models (Normal-Normal, Gamma-Poisson, Dirichlet-Multinomial) — Gibbs is highly efficient and forms the backbone of BUGS/JAGS-style probabilistic programming.</p>
+</li>
+<li>
+<p><strong>Collapsed Gibbs</strong> (Rao-Blackwellisation) marginalises out subsets of variables analytically before sampling the rest, reducing variance and improving mixing.</p>
+</li>
+<li>
+<p><strong>Blocked Gibbs</strong> groups correlated variables into blocks and samples each block jointly, improving mixing vs coordinate-wise updates.</p>
+</li>
+<li>
+<p>Limitations: slow mixing under strong posterior correlations (requiring many steps to traverse elongated posterior ridges); inapplicable when conditionals lack closed forms.</p>
+</li>
+<li>
+<p><strong>Systematic vs random-scan Gibbs</strong>: systematic scan (fixed coordinate order 1, 2, …, d) satisfies detailed balance only in pairs of scans; random-scan (randomly choose coordinate at each step) satisfies detailed balance exactly per step but has higher variance.</p>
+</li>
+<li>
+<p><strong>Auxiliary variable Gibbs</strong>: intractable conditionals can be made tractable by introducing auxiliary variables — the Albert-Chib probit model (augment with latent normals), slice sampling (augment with a uniform variable), and the Polya-Gamma trick for logistic regression (Polson et al. 2013).</p>
+</li>
+<li>
+<p><strong>Latent Dirichlet Allocation (LDA)</strong> collapsed Gibbs sampler (Griffiths &amp; Steyvers 2004) is the classical topic modelling inference algorithm, marginalising word and document-topic distributions analytically and sampling topic assignments for each word in O(K) per token — the default algorithm in Mallet and Gensim.</p>
+</li>
+<li>
+<p><strong>Restricted Boltzmann Machines (RBMs)</strong> use block Gibbs between visible and hidden units; <strong>contrastive divergence</strong> (Hinton 2002) approximates the gradient of log-likelihood using one or a few Gibbs steps, enabling practical training of energy-based models.</p>
+</li>
+<li>
+<h4 id="hamiltonian-monte-carlo-hmc">Hamiltonian Monte Carlo (HMC)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hamiltonian-monte-carlo-hmc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>HMC (Duane et al. 1987; Neal 2011) introduces auxiliary momentum variables p ~ N(0, M) and simulates Hamiltonian dynamics H(x, p) = -log π(x) + (1/2) pᵀ M⁻¹ p on the augmented space (x, p).</p>
+</li>
+<li>
+<p>Uses L leapfrog steps of step-size ε to propose a distant, low-autocorrelation point; a final MH accept/reject corrects for numerical discretisation error.</p>
+</li>
+<li>
+<p>The leapfrog integrator is volume-preserving and time-reversible, ensuring detailed balance.</p>
+</li>
+<li>
+<p>HMC exploits gradient information ∇_x log π(x), dramatically reducing random-walk behaviour: mixing time scales as O(d^{1/4}) vs O(d) for RWM.</p>
+</li>
+<li>
+<p>The <strong>mass matrix M</strong> (preconditioning) and choice of (L, ε) critically affect efficiency; hand-tuning is replaced in practice by the No-U-Turn Sampler.</p>
+</li>
+<li>
+<p><strong>Riemannian manifold HMC</strong> (Girolami &amp; Calderhead 2011, JRSS-B) adapts M using the Fisher information metric G(x) at each position, dramatically improving mixing on highly correlated posteriors — at the cost of Christoffel symbol computations O(d³) per leapfrog step.</p>
+</li>
+<li>
+<h4 id="no-u-turn-sampler-nuts">No-U-Turn Sampler (NUTS)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#no-u-turn-sampler-nuts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>NUTS (Hoffman &amp; Gelman 2014) eliminates the need to specify L by dynamically building a balanced binary tree of leapfrog trajectory points, stopping when the trajectory “turns back” on itself (∂H/∂t &lt; 0, a U-turn).</p>
+</li>
+<li>
+<p>A slice variable enforces detailed balance across the tree’s leaves.</p>
+</li>
+<li>
+<p>NUTS also adapts ε via dual-averaging (Nesterov 2009) during warm-up.</p>
+</li>
+<li>
+<p>The result is a parameter-free, self-tuning HMC variant achieving O(d^{1/4}) mixing with no user effort.</p>
+</li>
+<li>
+<p>NUTS is the algorithm underpinning Stan, PyMC, NumPyro, and TensorFlow Probability.</p>
+</li>
+<li>
+<p>Empirical studies show NUTS requires 2-10× fewer gradient evaluations than well-tuned HMC and 100-1000× fewer than RWM on problems with d > 100.</p>
+</li>
+<li>
+<p><strong>Divergent transitions</strong> in NUTS signal that the leapfrog trajectory entered a region of extreme posterior curvature; they are a critical diagnostic indicating model mis-specification, inadequate parameterisation, or step-size too large — not merely a tuning issue.</p>
+</li>
+<li>
+<p><strong>Non-centred parameterisations</strong> (e.g., replacing θ ~ N(μ, σ²) with θ = μ + σ·η where η ~ N(0,1)) dramatically reduce funnel-shaped posteriors common in hierarchical models, enabling NUTS to traverse the full posterior efficiently.</p>
+</li>
+<li>
+<p><strong>NUTS in practice</strong>: Stan’s default of 1000 warm-up + 1000 sampling iterations is usually sufficient; R-hat &lt; 1.01 and ESS > 100 per parameter are standard convergence criteria per Vehtari et al. (2021).</p>
+</li>
+<li>
+<p><strong>MCLMC</strong> (Robnik &amp; Seljak 2023, Microcanonical Langevin Monte Carlo): a recent improvement replacing the momentum resampling step with a continuous Langevin dynamics conserving the microcanonical ensemble, achieving up to 10× speedup over NUTS on high-dimensional posteriors; implemented in BlackJAX.</p>
+</li>
+<li>
+<h3 id="importance-sampling-is-and-self-normalised-variants">Importance Sampling (IS) and Self-Normalised Variants<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#importance-sampling-is-and-self-normalised-variants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Importance sampling</strong> estimates E_p[f(x)] by drawing from a tractable proposal q(x) and reweighting: E_p[f(x)] ≈ Σᵢ wᵢ f(xᵢ) / Σᵢ wᵢ where wᵢ = p(xᵢ)/q(xᵢ) and {xᵢ} ~ q(x).</p>
+</li>
+<li>
+<p>Unbiased when q(x) > 0 wherever p(x) > 0 (absolute continuity).</p>
+</li>
+<li>
+<p>Variance depends critically on the effective sample size ESS = (Σ wᵢ)² / Σ wᵢ² ∈ [1, N]; IS degrades catastrophically in high dimensions when q has lighter tails than p, producing weight collapse.</p>
+</li>
+<li>
+<p><strong>Self-normalised IS</strong> (SNIS) cancels the unknown normalisation Z via the ratio of weighted sums, introducing bias O(1/N) but often lower MSE in practice.</p>
+</li>
+<li>
+<p><strong>Annealed IS</strong> (Neal 1998) bridges between simple q and complex p through a geometric tempering path p_t ∝ p^t q^{1-t}, t ∈ {0, 1/(T-1), …, 1}, accumulating weights multiplicatively — a key tool for marginal likelihood estimation.</p>
+</li>
+<li>
+<p><strong>Pareto-smoothed IS</strong> (Vehtari et al. 2019, PSIS-LOO) fits a Pareto distribution to the tail of weights to diagnose and correct weight instability; the Pareto shape parameter k̂ > 0.7 signals unreliable IS estimates and is a standard diagnostic in Stan and LOO cross-validation.</p>
+</li>
+<li>
+<h3 id="rejection-sampling">Rejection Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rejection-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Rejection sampling draws x ~ q(x) and accepts with probability p(x) / (M q(x)) where M ≥ sup_x p(x)/q(x) is a bounding constant, yielding exact samples from p(x).</p>
+</li>
+<li>
+<p>Acceptance rate is 1/M; finding a tight M in high dimensions is difficult as M typically grows exponentially with d, making rejection sampling effective only in d ≤ 10-20.</p>
+</li>
+<li>
+<p><strong>Adaptive rejection sampling</strong> (Gilks &amp; Wild 1992) constructs piecewise-exponential upper envelopes for log-concave targets.</p>
+</li>
+<li>
+<p><strong>Zig-Zag</strong> and <strong>bouncy particle samplers</strong> (Bouchard-Côté et al. 2018) extend rejection ideas to continuous-time piecewise-deterministic Markov processes that scale to higher dimensions.</p>
+</li>
+<li>
+<p>Key application: sampling from truncated distributions (e.g., truncated-Normal for constrained parameters) where the truncation region is small enough that the accept rate remains reasonable.</p>
+</li>
+<li>
+<p><strong>Slice sampling</strong> (Neal 2003) introduces a uniform auxiliary variable u ~ Uniform(0, π(xₜ)) and samples x’ uniformly from the “slice” {x : π(x) > u} — an implicit rejection sampler that automatically adapts its step size to local posterior curvature.</p>
+</li>
+<li>
+<p><strong>Elliptical slice sampling</strong> (Murray, Adams &amp; MacKay 2010) handles Gaussian prior structure by proposing points on an ellipse defined by the current position and a Gaussian draw, enabling efficient sampling for GP-based models and Bayesian neural networks.</p>
+</li>
+<li>
+<h3 id="sequential-monte-carlo-smc">Sequential Monte Carlo (SMC)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sequential-monte-carlo-smc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>SMC</strong> (Del Moral, Doucet &amp; Jasra 2006; Chopin 2002) maintains a population of N weighted particles {(xᵢ, wᵢ)} propagated, reweighted, and resampled through a sequence of intermediate distributions π₁, …, πT bridging between a tractable prior π₁ and the target πT.</p>
+</li>
+<li>
+<p>Steps per iteration: (1) Importance weight update wᵢ ∝ πₜ(xᵢ)/π_{t-1}(xᵢ); (2) Resample particles proportional to weights (multinomial, systematic, or stratified) when ESS &lt; N/2; (3) MCMC rejuvenation via several MH/HMC steps to diversify the population.</p>
+</li>
+<li>
+<p>SMC provides an unbiased estimate of the normalising constant Z = ∫ π(x) dx at each step — valuable for Bayesian model comparison via Bayes factors.</p>
+</li>
+<li>
+<p>In <strong>SMC²</strong> (Chopin, Papaspiliopoulos &amp; Rousset 2013), an outer SMC operates over parameter particles while an inner particle filter handles state-space latent variables.</p>
+</li>
+<li>
+<p>SMC is the dominant method for real-time state estimation (robot navigation via the <a href="../pages/Particle-Filter" class="internal alias" data-slug="pages/Particle-Filter">Particle Filter</a>, financial filtering) and increasingly for Bayesian deep learning with <a href="../Bayesian-Neural-Networks" class="internal alias" data-slug="Bayesian-Neural-Networks">Bayesian Neural Networks</a>.</p>
+</li>
+<li>
+<p><strong>Tempering schedules</strong>: the sequence of bridging distributions can use geometric tempering (power posteriors), likelihood tempering (data tempering), or data-driven tempering — the choice strongly affects the efficiency of the normalising constant estimate.</p>
+</li>
+<li>
+<p><strong>Resample-move</strong>: systematic resampling (van der Merwe &amp; Wan 2001) with stratified assignments minimises resampling variance; the number of distinct particles after resampling approximates ESS, so systematic resampling produces floor(ESS) distinct particles vs multinomial’s stochastic floor.</p>
+</li>
+<li>
+<p><strong>SMC for likelihood-free inference (ABC-SMC)</strong>: replaces exact likelihood evaluation with a summary statistic distance threshold ε; iterates decreasing ε values, using SMC to adapt the population toward the target posterior p(θ | d(S(x_sim), S(x_obs)) &lt; ε) — widely used in systems biology (Toni et al. 2009).</p>
+</li>
+<li>
+<p><strong>Parallel SMC</strong>: particle populations are embarrassingly parallelisable (each particle independently propagated); GPU implementations with N=10K-100K particles achieve real-time Bayesian inference for robotics and econometrics.</p>
+</li>
+<li>
+<h3 id="nested-sampling">Nested Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nested-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Nested sampling</strong> (Skilling 2004, 2006) targets the marginal likelihood Z = ∫ L(x) π(x) dx directly by transforming the d-dimensional integral into a 1D integral over the prior mass X(λ) = Pr(L(x) > λ).</p>
+</li>
+<li>
+<p>Starting from N “live” particles drawn from π(x), it iteratively replaces the particle with lowest likelihood L_min with a new draw constrained to L > L_min, each step peeling off a thin shell of prior volume ΔX ≈ e^{-i/N}.</p>
+</li>
+<li>
+<p>The evidence accumulates as Z = Σᵢ Lᵢ ΔXᵢ; uncertainty on Z is estimated via the variance over the dead points.</p>
+</li>
+<li>
+<p><strong>MultiNest</strong> (Feroz &amp; Hobson 2009) uses ellipsoidal bounding for the constrained sampling step; <strong>PolyChord</strong> (Handley et al. 2015, Cambridge) uses slice sampling within the constrained likelihood region, scaling to d ~ 1000 dimensions; <strong>dynesty</strong> (Speagle 2020) implements dynamic nested sampling adaptively allocating particles.</p>
+</li>
+<li>
+<p>Widely used in astrophysics (Planck CMB parameter estimation), cosmology, and molecular dynamics where log Z differences determine Bayes factors between physical models.</p>
+</li>
+<li>
+<h3 id="latin-hypercube-and-quasi-monte-carlo-sampling">Latin Hypercube and Quasi-Monte Carlo Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#latin-hypercube-and-quasi-monte-carlo-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Latin Hypercube Sampling (LHS)</strong> (McKay, Beckman &amp; Conover 1979) partitions each of d dimensions into N equal-probability strata and samples exactly once from each stratum per dimension, ensuring full marginal coverage.</p>
+</li>
+<li>
+<p>Variance of LHS estimators is ≤ variance of pure Monte Carlo for any integrand with finite variance; improvements are greatest for monotone integrands.</p>
+</li>
+<li>
+<p>Extensively used in engineering uncertainty quantification (UQ), surrogate model construction, and design of computer experiments for costly simulation codes.</p>
+</li>
+<li>
+<p><strong>Optimised LHS</strong> (Morris &amp; Mitchell 1995) maximises the minimum pairwise distance between sample points (maximin criterion), improving space-filling beyond stratified random sampling; used in the Python pyDOE and SALib libraries.</p>
+</li>
+<li>
+<p><strong>Quasi-Monte Carlo (QMC)</strong> replaces pseudo-random draws with deterministic low-discrepancy sequences whose empirical distribution covers the unit hypercube more uniformly than random samples.</p>
+</li>
+<li>
+<p>The <strong>Sobol sequence</strong> (Sobol 1967) uses a base-2 construction generating points with star-discrepancy D*_N = O((log N)^d / N), yielding integration error O((log N)^d / N) vs O(N^{-1/2}) for Monte Carlo — potentially O(N^{-1}) convergence for smooth integrands.</p>
+</li>
+<li>
+<p><strong>Halton sequences</strong> and <strong>digital nets</strong> provide alternative constructions; <strong>Randomised QMC</strong> (RQMC, Owen 1997) adds a random scramble preserving low-discrepancy whilst enabling variance estimation.</p>
+</li>
+<li>
+<p>QMC is standard in financial option pricing, path-traced rendering, and sensitivity analysis (Sobol’ indices); modern applications include QMC-based stochastic gradient estimation (Buchholz et al. 2018) and quasi-random data augmentation.</p>
+</li>
+<li>
+<p><strong>Sobol’ sensitivity indices</strong> (Sobol 1993) decompose the variance of f(x) into contributions from individual variables and their interactions, enabling global sensitivity analysis; they are computed via IS-weighted QMC integrals and are the dominant method for uncertainty importance ranking in engineering simulation.</p>
+</li>
+<li>
+<p><strong>Dimension reduction for QMC</strong>: the <strong>effective dimension</strong> of an integrand determines whether QMC outperforms MC; the ANOVA-HDMR decomposition (Hoeffding 1948; Liu &amp; Owen 2006) identifies low-effective-dimension structure enabling QMC to achieve near-O(N^{-1}) convergence even in formally high-d settings.</p>
+</li>
+<li>
+<p><strong>Deep learning applications of QMC</strong>: batch-normalised Sobol sequences improve training convergence in neural architecture search (NAS); QMC-based Bayesian hyperparameter optimisation outperforms random search in Gaussian process BO with d ≤ 20.</p>
+</li>
+<li>
+<h3 id="mcmc-diagnostics-and-convergence-assessment">MCMC Diagnostics and Convergence Assessment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mcmc-diagnostics-and-convergence-assessment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>R-hat (Gelman-Rubin statistic)</strong>: compares within-chain variance to between-chain variance across M parallel chains. R-hat = sqrt((N-1)/N + B/(N·W)) where B is between-chain and W is within-chain variance; R-hat &lt; 1.01 is the 2021 standard (Vehtari et al.), superseding the older &lt; 1.1 threshold.</p>
+</li>
+<li>
+<p><strong>Effective Sample Size (ESS)</strong>: ESS = N / τ_int where τ_int = 1 + 2 Σ_k ρ_k is the integrated autocorrelation time; ESS_bulk measures mixing in the bulk of the distribution; ESS_tail (rank-normalised, Vehtari et al. 2021) specifically monitors tail mixing critical for posterior interval estimation.</p>
+</li>
+<li>
+<p><strong>Trace plots</strong>: visual inspection of the Markov chain trajectory over iterations; a stationary, well-mixing chain should resemble “hairy caterpillar” — dense oscillations around a stable mean with no visible trends or long-range correlations.</p>
+</li>
+<li>
+<p><strong>Autocorrelation function (ACF) plots</strong>: ACF(k) = Cov(f(xₜ), f(xₜ₊ₖ)) / Var(f(xₜ)); should decay quickly toward zero for well-mixing chains. Slow decay (ACF > 0.1 at lag k > 20) signals poor mixing.</p>
+</li>
+<li>
+<p><strong>Energy diagnostic (E-BFMI)</strong>: Bayesian fraction of missing information from the energy — E-BFMI = Var(H(xₜ₊₁) - H(xₜ)) / Var(H(xₜ)) &lt; 0.3 indicates poor HMC energy exploration; values > 0.3 are generally acceptable.</p>
+</li>
+<li>
+<p><strong>Posterior predictive checks (PPC)</strong>: simulate data from the fitted posterior and compare its distribution to observed data; mismatches reveal model misspecification that may also compromise sampler convergence.</p>
+</li>
+<li>
+<p><strong>Geweke diagnostic</strong>: z-score comparing means of the first 10% vs last 50% of the chain; non-stationarity indicates failed convergence.</p>
+</li>
+<li>
+<p><strong>Heidelberger-Welch test</strong>: tests stationarity of each chain using a Cramer-von Mises statistic; useful for single long chains where R-hat is unavailable.</p>
+</li>
+<li>
+<h3 id="variance-reduction-and-control-variates">Variance Reduction and Control Variates<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variance-reduction-and-control-variates" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Control variates (CV)</strong>: if a function g(x) with known mean E_p[g] is correlated with f(x), the estimator f̂_CV = (1/N) Σᵢ [f(xᵢ) - c(g(xᵢ) - E_p[g])] has lower variance for optimal c = Cov(f,g)/Var(g); widely used in MCMC via zero-variance (ZV) estimators with polynomial control variates.</p>
+</li>
+<li>
+<p><strong>Rao-Blackwellisation</strong>: replacing a Monte Carlo estimator by its conditional expectation E[f(x) | x_{-i}] (analytically computed) reduces variance without bias; the fundamental principle behind collapsed Gibbs and marginalised particle filters.</p>
+</li>
+<li>
+<p><strong>Antithetic variates</strong>: if x ~ p(x) is paired with a negatively correlated draw x̃ (e.g., x̃ = 2μ - x for symmetric p), the estimator (f(x) + f(x̃))/2 has variance ≤ Var(f(x))/2 when Cov(f(x), f(x̃)) &lt; 0.</p>
+</li>
+<li>
+<p><strong>Stratified sampling</strong>: partition the support into K strata, draw Nₖ samples from each stratum with Σ Nₖ = N, weight by stratum probability; variance = Σₖ (pₖ²/Nₖ) σₖ² ≤ Var[MC] for any f with finite variance.</p>
+</li>
+<li>
+<p><strong>Coupling from the past (CFTP)</strong>: (Propp &amp; Wilson 1996) exact MCMC algorithm that provably produces draws from the exact stationary distribution (not asymptotically) by running chains backward from -∞; requires monotone or bounding chains; practically useful for finite discrete state spaces.</p>
+</li>
+<li>
+<h3 id="probabilistic-programming-languages-and-sampling-infrastructure">Probabilistic Programming Languages and Sampling Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#probabilistic-programming-languages-and-sampling-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Stan</strong> (Columbia, 2012-present): probabilistic programming language with NUTS as the default sampler; HMC-ready automatic differentiation via its Math Library; interfaces in R (RStan), Python (PyStan), Julia (Stan.jl), and CmdStan; 200K+ users in statistics, ecology, political science, and clinical trials.</p>
+</li>
+<li>
+<p><strong>PyMC</strong> (v5, 2023): Python probabilistic programming with NUTS via Aesara/PyTensor autodiff; supports custom samplers (DEMetropolis, SMC); tight integration with ArviZ for convergence diagnostics and posterior visualisation.</p>
+</li>
+<li>
+<p><strong>NumPyro</strong> (Uber Research, 2019-present): NumPy-compatible probabilistic programming in JAX enabling JIT-compiled NUTS with hardware acceleration; NUTS on GPU/TPU achieves 10-100× speedup over CPU Stan for large hierarchical models (d > 1000).</p>
+</li>
+<li>
+<p><strong>BlackJAX</strong> (DeepMind/INRIA collaboration): modular JAX library of MCMC kernels (NUTS, SGLD, MALA, HMC, MCLMC, AIES); composable via JAX’s functional API; state-of-the-art MCLMC implementation achieving 10× speedup over NUTS on d > 500 posteriors.</p>
+</li>
+<li>
+<p><strong>Pyro / Numpyro</strong> (Uber AI, 2017-present): deep probabilistic programming integrating PyTorch/JAX neural networks with MCMC and SVI; supports structured variational inference, Gaussian process models, and normalising flow posteriors.</p>
+</li>
+<li>
+<p><strong>Turing.jl</strong> (University of Cambridge, Alan Turing Institute): Julia probabilistic programming with composable samplers (NUTS, HMC, MH, Gibbs, SMC, PG); native support for models with intractable likelihoods via ABC; 3K+ GitHub stars.</p>
+</li>
+<li>
+<p><strong>Infer.NET</strong> (Microsoft Research Cambridge): message-passing inference engine for factor graphs; supports exact and approximate inference (EP, VMP, Gibbs sampling) on discrete and continuous models; used for Xbox recommendation systems and clinical trial design.</p>
+</li>
+<li>
+<p><strong>ArviZ</strong>: Python library for Bayesian inference diagnostics and visualisation; computes R-hat, ESS_bulk, ESS_tail, MCSE, ELPD LOO, PSIS-LOO; the standard interface between Stan/PyMC/NumPyro outputs and post-sampling analysis.</p>
+</li>
+<li>
+<p><strong>Diffusers (Hugging Face)</strong>: Python library implementing all major diffusion samplers (DDIM, DPM-Solver++, Euler, Heun, PNDM, UniPC, LMS) as interchangeable scheduler objects compatible with Stable Diffusion, DALL-E 3, Stable Diffusion XL, Stable Video Diffusion; 25K+ GitHub stars.</p>
+</li>
+<li>
+<p><strong>ComfyUI</strong> (<a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a>): node-based diffusion model interface (30M+ users) exposing all major samplers (Euler, Euler_a, Heun, DPM-Solver++, LCM, DDIM) and schedulers (Karras, exponential, cosine, linear) as graph nodes enabling visual composition of sampling pipelines.</p>
+</li>
+<li>
+<h3 id="stochastic-gradient-and-scalable-mcmc">Stochastic Gradient and Scalable MCMC<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stochastic-gradient-and-scalable-mcmc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Stochastic Gradient Langevin Dynamics (SGLD)</strong> (Welling &amp; Teh 2011): combines SGD noise with Langevin dynamics — θₜ₊₁ = θₜ + (ε/2) ∇_θ log p(θ|x̃) + N(0, ε) where x̃ is a minibatch; converges to the posterior as ε→0 without an accept/reject step; scales to millions of data points.</p>
+</li>
+<li>
+<p><strong>SGHMC</strong> (Chen et al. 2014): adds momentum to SGLD, improving mixing; stochastic gradient noise acts as a thermostatic friction term, enabling principled Bayesian inference with minibatches.</p>
+</li>
+<li>
+<p><strong>Stein Variational Gradient Descent (SVGD)</strong> (Liu &amp; Wang 2016): a deterministic particle method that transports a set of N particles to approximate the posterior by minimising KL divergence via functional gradient descent in an RKHS; bridges between MCMC and variational inference.</p>
+</li>
+<li>
+<p><strong>Scalable nested sampling</strong>: PolyChord’s GPU-accelerated likelihood evaluations and parallel live point propagation enable nested sampling on d ~ 1000 problems relevant to deep neural network weight-space posteriors (Cobb &amp; Jalaian 2021).</p>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Family</th><th>Representative Algorithm</th><th>Primary Domain</th><th>Key Scaling Property</th></tr></thead><tbody><tr><td>MCMC</td><td>NUTS (Stan/PyMC)</td><td>Bayesian inference</td><td>O(d^{1/4}) mixing</td></tr><tr><td>IS/SMC</td><td>Sequential MC²</td><td>State filtering</td><td>Unbiased log Z</td></tr><tr><td>Nested</td><td>PolyChord</td><td>Cosmology/physics</td><td>Evidence estimation</td></tr><tr><td>QMC</td><td>Sobol + RQMC</td><td>Numerical integration</td><td>O((log N)^d/N) error</td></tr><tr><td>LLM decoding</td><td>Nucleus + min-p</td><td>Text generation</td><td>Token-adaptive thresholding</td></tr><tr><td>Speculative</td><td>EAGLE-2</td><td>LLM throughput</td><td>2-4× speedup exact</td></tr><tr><td>Diffusion ODE</td><td>DPM-Solver++(2M)</td><td>Image synthesis</td><td>10-20 NFE</td></tr><tr><td>Diffusion determ.</td><td>DDIM η=0</td><td>Image editing/inversion</td><td>Invertible</td></tr></tbody></table></div>
+</li>
+<li>
+<h3 id="autoregressive-llm-sampling-strategies">Autoregressive LLM Sampling Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#autoregressive-llm-sampling-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Large language models parameterise a factored probability p(x₁, …, xT) = Π p(xₜ | x_{&lt;t}) over discrete token vocabulary V (|V| ≈ 32,000-100,000).</p>
+</li>
+<li>
+<p>At each step the model outputs a logit vector z ∈ ℝ^{|V|}, converted to probabilities via softmax; the <strong>decoding strategy</strong> determines how the next token is selected.</p>
+</li>
+<li>
+<p>The choice of sampling strategy has profound effects on text quality, diversity, and coherence — pure greedy decoding (argmax) produces degenerate repetitive text; uniform random sampling produces incoherent output; practical strategies occupy the middle ground.</p>
+</li>
+<li>
+<h4 id="temperature-scaling">Temperature Scaling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#temperature-scaling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Temperature T ∈ (0, ∞) divides logits before softmax: p_T(xₜ) = softmax(z/T).</p>
+</li>
+<li>
+<p>T→0 collapses to greedy argmax (deterministic, high repetition); T=1 recovers the model distribution; T>1 flattens toward uniform (more diverse, less coherent).</p>
+</li>
+<li>
+<p>Temperature is the foundational parameter and is composed with all other strategies.</p>
+</li>
+<li>
+<p>Typical values: T=0.7-1.0 for creative generation, T=0.2-0.5 for factual/code tasks.</p>
+</li>
+<li>
+<p>Temperature > 1.2 risks grammatical errors and factual hallucinations in most models.</p>
+</li>
+<li>
+<h4 id="top-k-sampling">Top-k Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#top-k-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Top-k (Fan et al. 2018; “Hierarchical Neural Story Generation”, ACL 2018) restricts sampling to the k most probable tokens at each step, redistributing the filtered probability mass.</p>
+</li>
+<li>
+<p>Addresses pathological samples from the tail of the distribution. k=50 is a common default; k=1 reduces to greedy.</p>
+</li>
+<li>
+<p>Limitation: a fixed k is contextually inappropriate — when the distribution is peaked (one highly probable token), k=50 includes many unlikely tokens; when the distribution is flat, k=50 may be too restrictive.</p>
+</li>
+<li>
+<p>Top-k was the dominant decoding strategy from 2018-2020 before being superseded by nucleus sampling.</p>
+</li>
+<li>
+<h4 id="nucleus-top-p-sampling">Nucleus (Top-p) Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nucleus-top-p-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Nucleus sampling</strong> (Holtzman et al. 2020, “The Curious Case of Neural Text Degeneration”, ICLR 2020) selects the smallest set Vₚ ⊆ V such that Σ_{v∈Vₚ} p(v|x_{&lt;t}) ≥ p, then samples from the renormalised distribution over Vₚ.</p>
+</li>
+<li>
+<p>p ∈ (0.9, 0.95) are standard values; typical defaults in OpenAI, Anthropic, and Mistral APIs.</p>
+</li>
+<li>
+<p>Unlike top-k, nucleus adapts dynamically: when the model is confident (peaked distribution) only a few tokens are included; when uncertain (flat distribution) many tokens are included.</p>
+</li>
+<li>
+<p>This closely tracks the model’s effective branching factor and produces more natural, less repetitive text than top-k.</p>
+</li>
+<li>
+<p>Top-p is the default decoding strategy in most production LLM APIs and the Hugging Face transformers library; ICLR 2020 best paper candidate with 3000+ citations.</p>
+</li>
+<li>
+<h4 id="min-p-sampling">Min-p Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#min-p-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Min-p sampling</strong> (Bradley et al. 2024, arXiv:2407.01082) sets a probability floor: exclude token v if p(v|x_{&lt;t}) &lt; min_p × max_{v’} p(v’|x_{&lt;t}).</p>
+</li>
+<li>
+<p>Only tokens whose probability is at least a fraction min_p of the most probable token’s probability are retained.</p>
+</li>
+<li>
+<p>Unlike top-p which is reference-agnostic, min-p scales adaptively with model confidence.</p>
+</li>
+<li>
+<p>When the model is confident (top token p=0.9), a min_p=0.05 threshold keeps tokens with p ≥ 0.045; when uncertain (top token p=0.05), only very improbable tokens are excluded.</p>
+</li>
+<li>
+<p>Min-p outperforms top-p on creative generation benchmarks whilst avoiding the incoherence of high-temperature sampling.</p>
+</li>
+<li>
+<p>Merged into llama.cpp and Hugging Face transformers in 2024; becoming the community-preferred strategy for creative writing tasks with instruction-tuned models.</p>
+</li>
+<li>
+<h4 id="mirostat-adaptive-sampling">Mirostat Adaptive Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mirostat-adaptive-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Mirostat</strong> (Basu et al. 2021, ICLR 2021) frames decoding as a feedback control problem targeting a fixed perplexity level μ.</p>
+</li>
+<li>
+<p>At each step it estimates the text’s current perplexity and adjusts a dynamic top-k threshold k to drive perplexity toward μ.</p>
+</li>
+<li>
+<p><strong>Mirostat-2</strong> simplifies this to a running estimate of the surprise Sₜ = -log p(xₜ|x_{&lt;t}), adjusting a probability threshold τ to maintain E[S] ≈ μ.</p>
+</li>
+<li>
+<p>The result is text whose information density is approximately constant — avoiding both repetitive low-surprise sequences and incoherent high-surprise token sequences.</p>
+</li>
+<li>
+<p>Mirostat is particularly effective for extended generation (stories, essays) where top-p tends to degrade after hundreds of tokens due to compounding distributional drift.</p>
+</li>
+<li>
+<p>Hyperparameter μ controls the target perplexity; μ=5 approximately replicates top-p=0.9 behaviour; μ=3 produces more focused text.</p>
+</li>
+<li>
+<h4 id="eta-sampling">Eta Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eta-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Eta sampling</strong> (Hewitt et al. 2022, EMNLP Findings 2022, arXiv:2210.15191) removes tokens below a threshold η = min(η_min, √(ε × e^{-H(p)})) where H(p) is the token distribution entropy and ε is a hyperparameter.</p>
+</li>
+<li>
+<p>When the model is very confident (low H), the threshold tightens; when uncertain (high H), the threshold relaxes.</p>
+</li>
+<li>
+<p>Eta sampling provides a principled information-theoretic motivation for adaptive truncation.</p>
+</li>
+<li>
+<p>Particularly robust under distribution shift between training and inference — unlike top-p which assumes calibrated probability estimates.</p>
+</li>
+<li>
+<p>Subsumes many properties of min-p and top-p under a unified entropy-based framework.</p>
+</li>
+<li>
+<h4 id="speculative-decoding">Speculative Decoding<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#speculative-decoding" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Speculative decoding</strong> (Leviathan et al. 2023, ICML 2023; Chen et al. 2023, arXiv:2302.01318) addresses the autoregressive throughput bottleneck.</p>
+</li>
+<li>
+<p>Each token requires a full forward pass through the large target model (typically 7B-70B parameters).</p>
+</li>
+<li>
+<p>A small <strong>draft model</strong> (70M-1B parameters, 3-8× faster) autoregressively generates K candidate tokens.</p>
+</li>
+<li>
+<p>The large model evaluates all K tokens in a single parallel forward pass and accepts/rejects each via a modified Metropolis-Hastings acceptance rule.</p>
+</li>
+<li>
+<p>The acceptance rule guarantees the accepted sequence distribution matches the target model’s distribution <strong>exactly</strong> (not approximately) — zero quality loss.</p>
+</li>
+<li>
+<p>Accepted tokens are appended; the first rejected token is resampled from the corrected distribution p_target - p_draft (renormalised).</p>
+</li>
+<li>
+<p>Typical speedup: 2-4× wall-clock reduction; EAGLE-2 achieves 3.5× on Llama-3.1-70B.</p>
+</li>
+<li>
+<p>Variants:</p>
+<ul>
+<li><strong>Medusa</strong> (Cai et al. 2024): adds K parallel decoding heads to the target model itself, avoiding a separate draft model.</li>
+<li><strong>EAGLE / EAGLE-2</strong> (Li et al. 2024): feature-level draft model operating in the target model’s representation space.</li>
+<li><strong>SpecTr</strong> (Sun et al. 2023): tree-structured speculative drafts accepting multiple branches in parallel.</li>
+<li><strong>Lookahead decoding</strong> (Fu et al. 2024): Jacobi iteration to generate parallel draft tokens without a separate model.</li>
+</ul>
+</li>
+<li>
+<h3 id="diffusion-model-sampling-strategies">Diffusion Model Sampling Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diffusion-model-sampling-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Diffusion models</strong> (DDPM, Song et al. score matching, Rombach et al. LDM / <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a>) define a forward noising process q(xₜ|x₀) = N(xₜ; √ᾱₜ x₀, (1-ᾱₜ)I) that gradually adds Gaussian noise over T = 1000 steps.</p>
+</li>
+<li>
+<p>A neural score network ε_θ(xₜ, t) ≈ -√(1-ᾱₜ) ∇_{xₜ} log p(xₜ) is learned to reverse the process.</p>
+</li>
+<li>
+<p>Sampling = running the reverse process from xT ~ N(0, I) to x₀.</p>
+</li>
+<li>
+<p>The schedule, step count, and ODE/SDE solver together determine both quality and speed; typical 2025 production trade-off is 20-30 NFE (network function evaluations) for high quality, 4-8 NFE for fast preview.</p>
+</li>
+<li>
+<h4 id="ddim--denoising-diffusion-implicit-models">DDIM — Denoising Diffusion Implicit Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ddim--denoising-diffusion-implicit-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>DDIM</strong> (Song, Meng &amp; Ermon 2020, ICLR 2021, arXiv:2010.02502) reinterprets DDPM’s Markov chain as a deterministic ODE.</p>
+</li>
+<li>
+<p>Update rule: xₜ₋₁ = √ᾱₜ₋₁ (xₜ - √(1-ᾱₜ) ε_θ(xₜ,t)) / √ᾱₜ + √(1-ᾱₜ₋₁) ε_θ(xₜ,t).</p>
+</li>
+<li>
+<p>The η parameter interpolates between fully deterministic (η=0, same latent → same image) and fully stochastic (η=1, recovers DDPM).</p>
+</li>
+<li>
+<p>η=0 enables <strong>DDIM inversion</strong>: encode real images into latent space for editing; the inversion is approximate but sufficient for text-guided editing.</p>
+</li>
+<li>
+<p>Supports 10-50 step generation vs DDPM’s 1000 steps with near-identical perceptual quality.</p>
+</li>
+<li>
+<p>DDIM inversion is the backbone of SDEdit, prompt-to-prompt, null-text inversion, and most diffusion image editing pipelines.</p>
+</li>
+<li>
+<h4 id="dpm-solver-and-dpm-solver">DPM-Solver and DPM-Solver++<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dpm-solver-and-dpm-solver" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>DPM-Solver</strong> (Lu et al. 2022a, NeurIPS 2022, arXiv:2206.00927) derives fast ODE solvers by expressing the diffusion ODE in the log-SNR domain λ(t) = log(ᾱₜ/(1-ᾱₜ)) and applying exponential integrators.</p>
+</li>
+<li>
+<p>DPM-Solver-2 achieves high-quality samples in 10-20 steps (global truncation error O(h²)); DPM-Solver-3 in 10-15 steps.</p>
+</li>
+<li>
+<p><strong>DPM-Solver++</strong> (Lu et al. 2022b, arXiv:2211.01095) adds multistep history terms; <strong>DPM-Solver++(2M)</strong> (M=2 multistep) is the most widely deployed fast sampler in Stable Diffusion WebUI (AUTOMATIC1111), <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a>, and InvokeAI.</p>
+</li>
+<li>
+<p>Converges in the order-2 sense with global truncation error O(h²) vs DDIM’s O(h) (first-order).</p>
+</li>
+<li>
+<h4 id="euler-euler-ancestral-and-heun-methods">Euler, Euler-Ancestral, and Heun Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#euler-euler-ancestral-and-heun-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Euler</strong> is the first-order explicit integrator for the diffusion ODE: xₜ₋₁ = xₜ + (tₜ₋₁ - tₜ) d/dt[xₜ]; fast (1 NFE/step) but requires many steps for high quality.</p>
+</li>
+<li>
+<p><strong>Euler-a</strong> (ancestral) adds Gaussian noise at each step scaled to the remaining noise schedule, recovering the DDPM stochastic reverse process; produces diverse outputs but non-invertible.</p>
+</li>
+<li>
+<p><strong>Heun’s method</strong> (second-order Runge-Kutta corrector) evaluates the score network twice per step: a predictor step (Euler) followed by a corrector using the averaged score, halving the global error at the cost of 2× NFE.</p>
+</li>
+<li>
+<p>In Karras et al. (2022) notation, the Heun solver on the EDM ODE is the default high-quality reference sampler.</p>
+</li>
+<li>
+<h4 id="karras-edm-and-restart-sampling">Karras EDM and Restart Sampling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#karras-edm-and-restart-sampling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Karras et al. (2022)</strong> (“Elucidating the Design Space of Diffusion-Based Generative Models”, NeurIPS 2022, arXiv:2206.00364) provide a unified analysis identifying the optimal noise schedule σ(t), preconditioning scalings, and ODE/SDE formulation.</p>
+</li>
+<li>
+<p>The <strong>EDM framework</strong> separates the sampler design space into: noise schedule (σ_min, σ_max, ρ), ODE solver (Euler, Heun, RK45), and stochastic correction (Langevin noise injection).</p>
+</li>
+<li>
+<p><strong>Restart sampling</strong> (Xu et al. 2023, NeurIPS 2023) adds backward stochasticity by periodically jumping back to a higher noise level and re-running the deterministic ODE — trading extra NFE for diversity and reduced mode collapse.</p>
+</li>
+<li>
+<p>The Karras et al. analysis is the theoretical foundation of ComfyUI’s sampling pipeline and informs most 2023-2026 diffusion sampler research.</p>
+</li>
+<li>
+<p>The EDM preconditioning (c_skip, c_out, c_in, c_noise scalings) eliminates the need for cosine or linear noise schedules, providing near-optimal variance throughout the trajectory.</p>
+</li>
+<li>
+<h3 id="sampling-vs-variational-inference-trade-offs">Sampling vs Variational Inference: Trade-offs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sampling-vs-variational-inference-trade-offs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Variational inference (VI)</strong> approximates the posterior by optimising a parametric family q_φ(x) to minimise KL(q_φ || p) via gradient descent — deterministic, fast, but biased (mean-field VI underestimates posterior variance).</p>
+</li>
+<li>
+<p><strong>MCMC</strong> produces asymptotically exact samples but is slow for large models; the choice between VI and MCMC depends on whether speed or accuracy is the binding constraint.</p>
+</li>
+<li>
+<p><strong>Normalising flows</strong> as posterior approximators bridge the gap: flows are expressive enough to match complex posteriors while remaining amenable to reparameterisation-trick gradient estimation — Variational Inference with Normalising Flows (Rezende &amp; Mohamed 2015) is the dominant approach in modern probabilistic programming.</p>
+</li>
+<li>
+<p><strong>Pathfinder</strong> (Zhang et al. 2022, Stan ecosystem): rapid VI algorithm that initialises from the L-BFGS optimisation trajectory, providing a warm start for NUTS and reducing warm-up by 10-100× on complex posteriors.</p>
+</li>
+<li>
+<p><strong>MCMC with VI initialisation</strong>: using a VI approximation as a proposal for IS (importance weighted autoencoder, IWAE) or as a warm start for MCMC chains (Stan’s default from 2023) combines the efficiency of VI with the asymptotic correctness of MCMC.</p>
+</li>
+<li>
+<p><strong>Hybrid approaches</strong> (MCMC-corrected VI, VBMC — Acerbi 2018): use VI to identify high-probability regions, then MCMC to refine; VBMC specifically targets expensive likelihoods with O(100) evaluations (e.g., neuroscience, psychology psychometric models).</p>
+</li>
+<li>
+<h3 id="sampling-in-the-diffusion-model-ecosystem-full-pipeline">Sampling in the Diffusion Model Ecosystem: Full Pipeline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sampling-in-the-diffusion-model-ecosystem-full-pipeline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Training</strong>: diffusion models are trained via denoising score matching — minimise E[||ε_θ(√ᾱₜ x₀ + √(1-ᾱₜ) ε, t) - ε||²] where ε ~ N(0,I) and t ~ Uniform(1, T); the noise schedule {ᾱₜ} (cosine, linear, EDM σ(t)) determines the difficulty of denoising at each step.</p>
+</li>
+<li>
+<p><strong>Guidance mechanisms</strong>: <strong>classifier guidance</strong> (Dhariwal &amp; Nichol 2021) adds ∇_x log p(y|x) to the score, steering samples toward class y at inference; <strong>classifier-free guidance</strong> (Ho &amp; Salimans 2022) trains a joint model with randomly dropped conditioning c, using CFG weight w: ε_guided = ε_uncond + w(ε_cond - ε_uncond); w=7-12 is standard for photorealistic image synthesis.</p>
+</li>
+<li>
+<p><strong>SDXL Turbo / LCM / Hyper-SD</strong>: distilled diffusion models using adversarial score distillation or consistency training achieve 1-4 step generation; these replace the iterative sampler with a learned shortcut from noise to image, trading sampler flexibility for speed.</p>
+</li>
+<li>
+<p><strong>Stable Diffusion 3.0 / FLUX</strong>: flow matching models parameterise the trajectory as straight paths x_t = (1-t) x_noise + t x_data; the ODE becomes dx/dt = x_data - x_noise (constant velocity), enabling highly efficient Euler integration with 20-28 steps; the sampler is trivially first-order with no need for DPM-Solver-class exponential integrators.</p>
+</li>
+<li>
+<p><strong>Video diffusion</strong>: temporal consistency requires joint space-time sampling; Stable Video Diffusion and Sora-class models use 3D U-Net or transformer architectures with the same DDIM/DPM-Solver samplers applied to space-time latents; motion prior conditioning replaces static text conditioning.</p>
+</li>
+<li>
+<p><strong>Inpainting and image editing via sampling</strong>: RePaint (Lugmayr et al. 2022) interleaves forward diffusion (adding noise to the unmasked region) with reverse sampling (denoising the full image), resampling the unmasked region at each step to enforce consistency; ControlNet (Zhang et al. 2023) adds spatial conditioning to the score network, enabling geometry-aware sampling.</p>
+</li>
+<li>
+<h3 id="llm-decoding-strategy-comparison">LLM Decoding Strategy Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#llm-decoding-strategy-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Strategy</th><th>Vocabulary truncation</th><th>Adaptive to model confidence</th><th>Distribution-preserving</th><th>Main use case</th></tr></thead><tbody><tr><td>Greedy</td><td>Argmax (k=1)</td><td>N/A</td><td>No (deterministic)</td><td>Factual Q&amp;A</td></tr><tr><td>Beam search</td><td>Top-k beam</td><td>No</td><td>No (MAP approx)</td><td>Translation, summarisation</td></tr><tr><td>Top-k</td><td>Fixed k</td><td>No</td><td>Yes (within truncation)</td><td>General generation</td></tr><tr><td>Top-p (nucleus)</td><td>Dynamic p-nucleus</td><td>Partially</td><td>Yes</td><td>Most creative tasks</td></tr><tr><td>Min-p</td><td>Dynamic min-p floor</td><td>Yes</td><td>Yes</td><td>Creative, instruction</td></tr><tr><td>Temperature</td><td>None (redistributes)</td><td>No</td><td>Yes (at T=1)</td><td>Combined with above</td></tr><tr><td>Mirostat</td><td>Dynamic k via feedback</td><td>Yes</td><td>Approx</td><td>Long-form generation</td></tr><tr><td>Eta</td><td>Entropy-relative floor</td><td>Yes</td><td>Yes</td><td>Robust generation</td></tr><tr><td>Speculative</td><td>None (exact)</td><td>N/A</td><td>Yes (exact match)</td><td>Throughput at scale</td></tr></tbody></table></div>
+</li>
+<li>
+<p><strong>Beam search</strong> maintains K candidate sequences, extending each by all vocabulary tokens and pruning to the K highest cumulative log-probability beams; produces high-probability but often repetitive output; standard in neural machine translation (Sutskever et al. 2014) and summarisation (Lewis et al. 2020, BART).</p>
+</li>
+<li>
+<p><strong>Diverse beam search</strong> (Vijayakumar et al. 2018) adds a diversity penalty between beams to improve output variety; <strong>group beam search</strong> partitions beams into G groups encouraging diversity across groups.</p>
+</li>
+<li>
+<p><strong>Constrained beam search</strong> (Post &amp; Vilar 2018) enforces the inclusion of specified lexical constraints (must-have terms) by maintaining a state machine over the beam; used in controlled generation and instruction following.</p>
+</li>
+<li>
+<h3 id="stochastic-sampling-in-reinforcement-learning-from-human-feedback-rlhf">Stochastic Sampling in Reinforcement Learning from Human Feedback (RLHF)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stochastic-sampling-in-reinforcement-learning-from-human-feedback-rlhf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>RLHF fine-tuning</strong> (Ouyang et al. 2022, InstructGPT) uses the sampled outputs of the SFT model as the action space for PPO training: the LLM generates diverse responses via top-p sampling, a reward model scores each, and PPO updates the policy to maximise expected reward.</p>
+</li>
+<li>
+<p><strong>KL penalty</strong>: RLHF adds a KL divergence penalty KL(π_RL || π_SFT) to prevent the policy from collapsing to degenerate high-reward but low-quality outputs — this is itself a sampling constraint on the learned distribution.</p>
+</li>
+<li>
+<p><strong>DPO (Direct Preference Optimisation)</strong> (Rafailov et al. 2023) eliminates the reward model and PPO loop by directly fine-tuning on preference pairs, implicitly modelling RLHF as a change in the sampling distribution away from π_SFT proportional to exp(r/β).</p>
+</li>
+<li>
+<p><strong>Best-of-N sampling</strong> (also “rejection sampling fine-tuning”): generates N responses via temperature sampling, scores each with a reward model, returns the highest-scoring response; equivalent to IS sampling from π_SFT with reward weights but without policy update; effective for test-time compute scaling (Snell et al. 2024).</p>
+</li>
+<li>
+<p><strong>Speculative decoding meets RLHF</strong>: EAGLE-2 draft models must be trained on the RLHF-finetuned target model distribution to maintain the exact distribution guarantee; distribution shift between SFT and RLHF models requires retraining draft models.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The theoretical foundations of MCMC were established by physicists: Metropolis et al. (1953, Los Alamos) computed partition functions for interacting particle systems; Hastings (1970, Cambridge) generalised the acceptance rule.</p>
+</li>
+<li>
+<p>The statistics community adopted MCMC with the Geman-Geman (1984) Gibbs sampler for image restoration and Gelfand-Smith (1990) for Bayesian computation, triggering the “MCMC revolution” enabling practical Bayesian inference.</p>
+</li>
+<li>
+<p>Neal (1993, 2011) brought HMC into statistics; Hoffman &amp; Gelman (2014) made it mainstream via NUTS and Stan; Girolami &amp; Calderhead (2011) extended to Riemannian manifolds.</p>
+</li>
+<li>
+<p>Robert &amp; Casella’s “Monte Carlo Statistical Methods” (2004, 2nd ed.) remains the canonical graduate text, covering IS, MCMC, and variance reduction.</p>
+</li>
+<li>
+<p>Chopin &amp; Papaspiliopoulos’s “An Introduction to Sequential Monte Carlo” (2020, Springer) is the standard SMC reference.</p>
+</li>
+<li>
+<p>Skilling’s nested sampling (2006) and its Cambridge implementations (PolyChord) produced widely used cosmological parameter estimation tools.</p>
+</li>
+<li>
+<p>In LLM decoding: Holtzman et al. (2020) “The Curious Case of Neural Text Degeneration” (ICLR 2020, 3000+ citations) established nucleus sampling; Bradley et al. (2024) introduced min-p; Basu et al. (2021) introduced mirostat; Leviathan et al. (2023) and Chen et al. (2023) independently proposed speculative decoding.</p>
+</li>
+<li>
+<p>In diffusion models: Song et al. (2020) derived DDIM; Lu et al. (2022) derived DPM-Solver; Karras et al. (2022) unified the design space — these three papers define the modern diffusion sampling landscape.</p>
+</li>
+<li>
+<p><strong>Convergence theory for MCMC</strong>: Rosenthal (1995) established quantitative convergence rates for finite-state Markov chains; Roberts &amp; Tweedie (1996) extended geometric ergodicity to continuous state spaces; Hairer, Stuart &amp; Vollmer (2014) proved spectral gaps for Langevin dynamics in high dimensions; these theoretical results underpin the practical convergence diagnostics used in Stan and PyMC.</p>
+</li>
+<li>
+<p><strong>Optimal transport and sampling</strong>: the Wasserstein distance W₂(p, q) measures the cost of transporting probability mass from p to q; Villani’s “Optimal Transport: Old and New” (2009) establishes that the optimal transport map T: p → q minimises quadratic transport cost; this geometric perspective motivates flow-based samplers, SVGD, and the Schrödinger bridge formulation of diffusion models.</p>
+</li>
+<li>
+<p><strong>Non-reversible MCMC</strong>: lifting tricks and Hamiltonian dynamics break the detailed balance condition while maintaining the stationary distribution, provably reducing autocorrelation time vs reversible chains; the Zig-Zag sampler (Bierkens et al. 2019) and bouncy particle sampler (BPS) are the leading non-reversible alternatives with proven spectral gap improvements.</p>
+</li>
+<li>
+<p><strong>Adaptive MCMC theory</strong>: Roberts &amp; Rosenthal (2007) establish conditions (diminishing adaptation + containment) under which adaptive MH algorithms are ergodic despite history-dependent proposals — the theoretical foundation for Stan’s warm-up phase and PyMC’s step method adaptation.</p>
+</li>
+<li>
+<p><strong>Gelman-Rubin convergence and its limitations</strong>: the R-hat statistic is a between/within-chain variance ratio; Vats &amp; Knudson (2021) prove that R-hat &lt; 1.01 is necessary but not sufficient for convergence; their multivariate R-hat generalisation (using ESS for the joint chain vector) provides a stronger guarantee and is implemented in ArviZ v0.12+.</p>
+</li>
+<li>
+<p><strong>Information-geometric MCMC</strong>: the natural gradient Langevin algorithm (Patterson &amp; Teh 2013) uses Fisher information metric preconditioning for SGLD, achieving significantly faster convergence than isotropic SGLD on deep neural network posterior inference; connections to mirror descent and Bregman divergences are explored in the natural MCMC literature.</p>
+</li>
+<li>
+<p><strong>Rare event sampling</strong>: <strong>metadynamics</strong> (Laio &amp; Parrinello 2002) and <strong>adaptive biasing force</strong> methods add history-dependent bias potentials to MCMC to escape free-energy barriers — standard in computational chemistry and materials science for sampling rare conformational transitions; the bias is periodically removed via importance reweighting to recover unbiased ensemble averages.</p>
+</li>
+<li>
+<p><strong>Parallel tempering (replica exchange MC)</strong>: runs M chains at different temperatures T₁ > T₂ > … > T_M and proposes swaps between adjacent temperature chains; the high-temperature chain rapidly explores the landscape while the low-temperature chain samples the target — widely used in protein folding and spin glass physics; implemented in parallel in MCX (GPU-accelerated photon transport).</p>
+</li>
+<li>
+<p><strong>Deep neural network posteriors</strong>: BNNs (Bayesian Neural Networks) with millions of parameters require novel MCMC approaches; Izmailov et al. (2021, SWAG — Stochastic Weight Averaging with Gaussians) approximates the BNN posterior with a low-rank Gaussian around the SGD trajectory; Wenzel et al. (2020) demonstrate that HMC produces better-calibrated posteriors than mean-field VI for moderately-sized ResNets on CIFAR-10.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>MCMC software</strong>: Stan (Columbia, ~200K active users, NUTS with adaptation); PyMC v5 (Python, 50K+ stars); NumPyro (JAX, hardware-accelerated NUTS); BlackJAX (DeepMind/INRIA, modular MCMC kernels composable in JAX); flowMC (Glasgow/UCL, normalising flows + MCMC for gravitational wave parameter estimation).</p>
+</li>
+<li>
+<p><strong>LLM inference frameworks</strong> (llama.cpp, vLLM, TGI, Ollama) expose temperature, top-p, top-k, min-p, and mirostat as first-class parameters.</p>
+</li>
+<li>
+<p>Speculative decoding with EAGLE-2 draft models is now the default serving strategy for Llama-3.1-70B and Mistral-class models, delivering 2.5-3.5× throughput gains.</p>
+</li>
+<li>
+<p>Diffusion model samplers are fully modularised in <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> (30M+ users) and InvokeAI, with DPM-Solver++(2M) and Euler-a as defaults.</p>
+</li>
+<li>
+<p>Research in 2025-2026 focuses on <strong>consistency models</strong> (Song et al. 2023) and <strong>flow matching</strong> (Lipman et al. 2022; SD 3.0) framing generation as straight-line ODE trajectories amenable to 1-4 step inference — potentially superseding multi-step diffusion samplers.</p>
+</li>
+<li>
+<p><strong>Approximate Bayesian Computation</strong> (ABC/likelihood-free inference) is growing for <a href="../Simulation-Based-Inference" class="internal alias" data-slug="Simulation-Based-Inference">Simulation-Based Inference</a> in systems biology and particle physics where likelihoods are intractable but forward simulators exist.</p>
+</li>
+<li>
+<p><strong>Diffusion models for discrete sequences</strong>: discrete DDPM (Austin et al. 2021, D3PM), absorbing diffusion, and masked diffusion models bring sampling-based generation to proteins, molecules, and code, requiring novel discrete ODE/SDE analogues.</p>
+</li>
+<li>
+<p><strong>Test-time compute scaling via sampling</strong>: OpenAI o1/o3 and DeepSeek R1 demonstrate that sampling multiple candidate solutions at test time and selecting the best (best-of-N) or aggregating via majority voting (self-consistency, Wang et al. 2023) substantially improves reasoning accuracy; the sampling temperature, N, and selection criterion are critical hyperparameters.</p>
+</li>
+<li>
+<p><strong>Structured prediction and constrained sampling</strong>: grammar-constrained decoding (Willard et al. 2023, Outlines library; llama.cpp GBNF grammars) enforces valid JSON/Python/SQL output by masking logits to zero for tokens violating the grammar at each step; equivalent to sampling from a conditional distribution p(xₜ | x_{&lt;t}, grammar-valid) defined by a deterministic finite automaton.</p>
+</li>
+<li>
+<p><strong>Adaptive computation and early exit</strong>: speculative decoding is one instance of a broader adaptive sampling family where computation is allocated proportional to difficulty; LLM cascades route easy queries to small fast models and hard queries to large accurate models, using sampling-based uncertainty estimates (token entropy, ensemble disagreement) as routing signals.</p>
+</li>
+<li>
+<p><strong>Protein structure generation via diffusion sampling</strong>: AlphaFold3 and RoseTTAFold Diffusion (Baker Lab, UW) apply diffusion sampling to all-atom protein coordinate spaces; DDIM/DDPM samplers over SE(3) or torsion angle spaces generate diverse backbone conformations; RFdiffusion (Watson et al. 2023, Nature) produced novel protein binders validated experimentally in weeks vs years of rational design.</p>
+</li>
+<li>
+<p><strong>Drug discovery via molecular diffusion</strong>: DiffSBDD, TargetDiff, and DiffDock (Corso et al. 2023) apply SE(3)-equivariant diffusion samplers to molecular docking, generating diverse binding pose distributions rather than a single predicted pose — enabling ensemble docking for drug-lead prioritisation.</p>
+</li>
+<li>
+<p><strong>Sampling for AI safety</strong>: uncertainty quantification via MC dropout, deep ensembles, and MCMC posteriors is used to detect distribution shift and out-of-distribution inputs in safety-critical deployments (Lakshminarayanan et al. 2017); calibrated probability estimates from well-sampled posteriors are required for regulatory compliance under the EU AI Act’s high-risk AI system provisions.</p>
+</li>
+<li>
+<h2 id="uk-context-imperial--edinburgh--ucl--cambridge--manchester">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Cambridge Statistical Laboratory / Cavendish</strong>: John Skilling (Cavendish) developed nested sampling; Will Handley (Cavendish) leads PolyChord and applies it to Planck CMB data, ACT and SPT analyses.</p>
+</li>
+<li>
+<p><strong>MRC Biostatistics Unit Cambridge (BSU)</strong> (Dir: Sylvia Richardson): develops MCMC methods for genomic and clinical trial data, including trans-dimensional samplers for model uncertainty; their software informs NICE health technology assessment.</p>
+</li>
+<li>
+<p><strong>Cambridge Machine Learning Group</strong> (Zoubin Ghahramani, José Miguel Hernández-Lobato): sparse GP inference with MCMC, doubly stochastic variational inference, and flow-based normalising posterior approximations.</p>
+</li>
+<li>
+<p><strong>Edinburgh School of Informatics</strong>: Bayesian and Probabilistic ML group (Dirk Husmeier, Michael Gutmann) working on SMC and ABC for differential equation models in systems biology; Gutmann’s likelihood-free inference underpins simulation-based inference tools across the physical sciences.</p>
+</li>
+<li>
+<p>Edinburgh’s <strong>Institute of Astronomy</strong> applies nested sampling (MultiNest, PolyChord) to exoplanet characterisation and stellar population inference.</p>
+</li>
+<li>
+<p><strong>Imperial College London</strong>: Girolami &amp; Calderhead (2011) JRSS-B paper on Riemannian manifold HMC is one of the most cited MCMC papers of the 2010s; Imperial’s <strong>Centre for Process Systems Engineering</strong> applies LHS and QMC for uncertainty propagation in pharmaceutical manufacturing.</p>
+</li>
+<li>
+<p><strong>UCL Gatsby Computational Neuroscience Unit</strong> (Arthur Gretton, Mark van der Wilk): kernel-based hypothesis testing related to sample quality assessment (MMD, Stein discrepancy); Gaussian process-based surrogate-assisted sampling for expensive likelihoods.</p>
+</li>
+<li>
+<p><strong>UCL Statistics</strong> (Ricardo Silva, Ioanna Manolopoulou): SMC for causal inference and spatiotemporal models.</p>
+</li>
+<li>
+<p><strong>Alan Turing Institute</strong> (multi-site, London): funds Probabilistic Programming theme co-developing BlackJAX; national competence in uncertainty quantification for AI safety.</p>
+</li>
+<li>
+<p><strong>Manchester Mathematics</strong> (Kody Law): MCMC for PDE-constrained inverse problems and ensemble Kalman sampling for climate model calibration.</p>
+</li>
+<li>
+<p><strong>Northern England industrial</strong>: Hartree Centre (Daresbury, Cheshire, UKRI/STFC) applies QMC and LHS for industrial CFD and digital twin calibration; Rolls-Royce (Derby) and BAE Systems (Warton, Lancashire) use nested sampling and MCMC for engineering reliability and sensor fusion in autonomous systems.</p>
+</li>
+<li>
+<p><strong>Leeds and Sheffield</strong>: the <strong>Leeds Institute for Data Analytics</strong> applies MCMC for spatial health data modelling and infectious disease surveillance; Sheffield’s <strong>Department of Automatic Control and Systems Engineering</strong> (ACSE) uses particle filter (SMC) methods for industrial process monitoring and fault detection in steel and chemical manufacturing.</p>
+</li>
+<li>
+<p><strong>Newcastle and North East</strong>: Newcastle University’s <strong>Population Health Sciences Institute</strong> applies Bayesian hierarchical models with NUTS for multi-site clinical trial analysis; the <strong>NIHR Newcastle Biomedical Research Centre</strong> uses MCMC-based Bayesian adaptive trial designs for dose-finding studies in oncology.</p>
+</li>
+<li>
+<p><strong>Cambridge’s broader sampling ecosystem</strong>: beyond the MRC BSU and Cavendish, the <strong>Wellcome Sanger Institute</strong> (Hinxton, Cambridge) applies MCMC-based demographic inference (PSMC, MSMC) for ancient DNA population genetics; the <strong>European Bioinformatics Institute (EMBL-EBI)</strong> uses SMC-based phylogenetic inference (tsinfer, Kelleher et al. 2019) for whole-genome genealogy reconstruction from thousands of sequenced human genomes.</p>
+</li>
+<li>
+<p><strong>Imperial College Statistics</strong>: the <strong>Department of Mathematics, Statistics Section</strong> (Oliver Ratmann, Seth Flaxman) applies MCMC and ABC for HIV transmission network inference and COVID-19 epidemiological modelling; Imperial’s Bayesian phylogenetics group uses BEAST2 (MCMC-based Bayesian evolutionary analysis) for pathogen genomic surveillance, deployed during the Zika, Ebola, and COVID-19 outbreaks in collaboration with Public Health England / UKHSA.</p>
+</li>
+<li>
+<p><strong>UK National Computing Infrastructure for MCMC</strong>: ARCHER2 (UK national HPC, Edinburgh, 750K CPU cores) and Baskerville (Birmingham GPU cluster) support large-scale parallel MCMC for cosmological parameter estimation, genomics, and climate model calibration; the UKRI Probabilistic AI programme (2024-2029, £50M) funds sampling algorithm research across these institutions.</p>
+</li>
+<li>
+<p><strong>Edinburgh’s Machine Learning for Health Clinic</strong> applies Gaussian process-based active learning sampling strategies to NHS EHR data, adaptively selecting clinical records for manual review to improve diagnostic model training efficiency — combining active learning with MCMC posterior uncertainty quantification.</p>
+</li>
+<li>
+<p><strong>Manchester’s Henry Royce Institute for Materials Science</strong> applies nested sampling (NS-Materials, Partay et al.) and MCMC to crystallographic structure prediction from X-ray diffraction data — identifying low-energy crystal polymorphs relevant to pharmaceutical formulation.</p>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Consistency distillation and flow matching</strong> will likely replace multi-step diffusion samplers for image/video generation within 2-3 years, reducing NFE from 20-50 to 1-4 whilst matching quality.</p>
+</li>
+<li>
+<p><strong>Discrete diffusion models</strong> (D3PM, masked diffusion) extend denoising to categorical and structured data (proteins, molecules, code), requiring entirely new sampling strategies adapted to discrete probability simplices.</p>
+</li>
+<li>
+<p>In LLM decoding: speculative decoding with fine-grained tree drafts and mixture-of-draft models will likely achieve 4-8× throughput gains; parallel decoding (Jacobi, lookahead) approaches breaking the autoregressive bottleneck are under active development; controlled generation via classifier guidance and RLHF-shaped sampling will be increasingly prominent as alignment requirements tighten.</p>
+</li>
+<li>
+<p>For MCMC: gradient-informed transport maps (Cabezas et al. 2024) learn normalising flows to precondition the posterior, reducing effective dimensionality for NUTS; stochastic gradient MCMC (SGLD, SGHMC) will scale to billion-parameter posteriors for Bayesian deep learning; measure transport approaches (Marzouk MIT; Baptista ETH) reformulate sampling as deterministic pushforward problems solved by triangular maps.</p>
+</li>
+<li>
+<p><strong>Quantum sampling</strong> (quantum annealing via D-Wave, quantum Monte Carlo on NISQ hardware) remains speculative but is actively investigated for combinatorial optimisation applications where classical MCMC mixes poorly.</p>
+</li>
+<li>
+<p><strong>Neural posterior estimation</strong> (NPE, SBI toolkit) will increasingly replace likelihood-based MCMC for physical science inference, using amortised normalising flows trained on simulations.</p>
+</li>
+<li>
+<p><strong>Simulation-based inference (SBI) at scale</strong>: neural ratio estimation (NRE) and neural posterior estimation (NPE) using transformer-based summary statistic networks (BayesFlow, Radev et al. 2023) will enable Bayesian inference for models with 10M+ parameter simulators (climate, epidemiological, neuroscience ABM models).</p>
+</li>
+<li>
+<p><strong>Sampling for world models</strong>: video generation models (Sora, stable video) are increasingly framed as learned simulators; sampling from these models provides training data for downstream agents — MCMC-like correction of generated trajectories against real-world physics constraints is an open research direction.</p>
+</li>
+<li>
+<p><strong>Amortised MCMC</strong>: learning proposal distributions from data (neuralised MCMC, NeuTra-HMC, Hoffman et al. 2019; transport map MCMC) will reduce the number of gradient evaluations needed for convergence by orders of magnitude, enabling Bayesian inference at GPT-scale.</p>
+</li>
+<li>
+<p><strong>Diffusion samplers for combinatorial optimisation</strong>: score-based generative models applied to discrete graphs (DiffSolver, GFlowNets — Bengio et al. 2021) frame NP-hard combinatorial problems (TSP, protein folding, molecule generation) as sampling problems over exponentially large discrete spaces, with the diffusion sampler exploring the solution space.</p>
+</li>
+<li>
+<p><strong>Sampling under distributional constraints</strong>: constrained diffusion sampling (adding projected gradient steps to enforce conservation laws, physical constraints, or fairness criteria) will be essential for scientific generative models; energy-preserving Hamiltonian diffusion and gauge-equivariant lattice QCD samplers (Cranmer et al. 2023) demonstrate the principle.</p>
+</li>
+<li>
+<p><strong>Test-time scaling laws</strong>: empirical evidence from 2024-2025 (Snell et al. 2024; Brown et al. 2024) shows that allocating more sampling compute at inference (best-of-N, beam search with N=64-1024, self-consistency voting) produces accuracy improvements that follow power-law scaling in the sampling budget — parallel to training-time scaling laws; this drives architectural changes toward models optimised for sample efficiency rather than single-pass accuracy.</p>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>[1]</strong> Metropolis N, Rosenbluth AW, Rosenbluth MN, Teller AH, Teller E (1953). Equation of state calculations by fast computing machines. <em>J. Chem. Phys.</em> 21(6):1087-1092.</p>
+</li>
+<li>
+<p><strong>[2]</strong> Hastings WK (1970). Monte Carlo sampling methods using Markov chains and their applications. <em>Biometrika</em> 57(1):97-109.</p>
+</li>
+<li>
+<p><strong>[3]</strong> Geman S, Geman D (1984). Stochastic relaxation, Gibbs distributions and the Bayesian restoration of images. <em>IEEE TPAMI</em> 6(6):721-741.</p>
+</li>
+<li>
+<p><strong>[4]</strong> Gelfand AE, Smith AFM (1990). Sampling-based approaches to calculating marginal densities. <em>JASA</em> 85(410):398-409.</p>
+</li>
+<li>
+<p><strong>[5]</strong> Duane S, Kennedy AD, Pendleton BJ, Roweth D (1987). Hybrid Monte Carlo. <em>Physics Letters B</em> 195(2):216-222.</p>
+</li>
+<li>
+<p><strong>[6]</strong> Neal RM (2011). MCMC using Hamiltonian dynamics. In: Brooks S et al. (eds) <em>Handbook of Markov Chain Monte Carlo</em>. Chapman &amp; Hall/CRC.</p>
+</li>
+<li>
+<p><strong>[7]</strong> Hoffman MD, Gelman A (2014). The No-U-Turn Sampler: adaptively setting path lengths in Hamiltonian Monte Carlo. <em>JMLR</em> 15(1):1593-1623.</p>
+</li>
+<li>
+<p><strong>[8]</strong> Del Moral P, Doucet A, Jasra A (2006). Sequential Monte Carlo samplers. <em>JRSS-B</em> 68(3):411-436.</p>
+</li>
+<li>
+<p><strong>[9]</strong> Skilling J (2006). Nested sampling for general Bayesian computation. <em>Bayesian Analysis</em> 1(4):833-859.</p>
+</li>
+<li>
+<p><strong>[10]</strong> Robert CP, Casella G (2004). <em>Monte Carlo Statistical Methods</em> (2nd ed.). Springer, New York.</p>
+</li>
+<li>
+<p><strong>[11]</strong> Sobol IM (1967). On the distribution of points in a cube and the approximate evaluation of integrals. <em>USSR Computational Mathematics and Mathematical Physics</em> 7(4):86-112.</p>
+</li>
+<li>
+<p><strong>[12]</strong> McKay MD, Beckman RJ, Conover WJ (1979). Comparison of three methods for selecting values of input variables in the analysis of output from a computer code. <em>Technometrics</em> 21(2):239-245.</p>
+</li>
+<li>
+<p><strong>[13]</strong> Roberts GO, Gelman A, Gilks WR (1997). Weak convergence and optimal scaling of random walk Metropolis algorithms. <em>Ann. Appl. Prob.</em> 7(1):110-120.</p>
+</li>
+<li>
+<p><strong>[14]</strong> Neal RM (1998). Annealed importance sampling. Technical Report CRG-TR-98-1, Dept Computer Science, University of Toronto.</p>
+</li>
+<li>
+<p><strong>[15]</strong> Girolami M, Calderhead B (2011). Riemann manifold Langevin and Hamiltonian Monte Carlo methods. <em>JRSS-B</em> 73(2):123-214.</p>
+</li>
+<li>
+<p><strong>[16]</strong> Fan A, Lewis M, Dauphin Y (2018). Hierarchical neural story generation. <em>ACL 2018</em>. arXiv:1805.04833.</p>
+</li>
+<li>
+<p><strong>[17]</strong> Holtzman A, Buys J, Du L, Forbes M, Choi Y (2020). The curious case of neural text degeneration. <em>ICLR 2020</em>. arXiv:1904.09751.</p>
+</li>
+<li>
+<p><strong>[18]</strong> Basu S, Bhatt M, Parekh V (2021). Mirostat: a neural text decoding algorithm that directly controls perplexity. <em>ICLR 2021</em>. arXiv:2007.14966.</p>
+</li>
+<li>
+<p><strong>[19]</strong> Bradley E et al. (2024). Min-p sampling: diverse and coherent text generation. arXiv:2407.01082.</p>
+</li>
+<li>
+<p><strong>[20]</strong> Hewitt J, Manning CD, Liang P (2022). Truncation sampling as language model desmoothing. <em>EMNLP Findings 2022</em>. arXiv:2210.15191.</p>
+</li>
+<li>
+<p><strong>[21]</strong> Leviathan Y, Kalman M, Matias Y (2023). Fast inference from transformers via speculative decoding. <em>ICML 2023</em>. arXiv:2211.17192.</p>
+</li>
+<li>
+<p><strong>[22]</strong> Chen C, Borgeaud S et al. (2023). Accelerating large language model decoding with speculative sampling. arXiv:2302.01318.</p>
+</li>
+<li>
+<p><strong>[23]</strong> Song J, Meng C, Ermon S (2020). Denoising diffusion implicit models. <em>ICLR 2021</em>. arXiv:2010.02502.</p>
+</li>
+<li>
+<p><strong>[24]</strong> Lu C et al. (2022). DPM-Solver: a fast ODE solver for diffusion probabilistic model sampling. <em>NeurIPS 2022</em>. arXiv:2206.00927.</p>
+</li>
+<li>
+<p><strong>[25]</strong> Lu C et al. (2022). DPM-Solver++: fast solver for guided sampling of diffusion probabilistic models. arXiv:2211.01095.</p>
+</li>
+<li>
+<p><strong>[26]</strong> Karras T, Laine S, Aittala M, Hellsten J, Lehtinen J, Aila T (2022). Elucidating the design space of diffusion-based generative models. <em>NeurIPS 2022</em>. arXiv:2206.00364.</p>
+</li>
+<li>
+<p><strong>[27]</strong> Handley WJ, Hobson MP, Lasenby AN (2015). PolyChord: nested sampling for cosmology. <em>MNRAS Letters</em> 450(1):L61-L65.</p>
+</li>
+<li>
+<p><strong>[28]</strong> Chopin N, Papaspiliopoulos O (2020). <em>An Introduction to Sequential Monte Carlo</em>. Springer Series in Statistics.</p>
+</li>
+<li>
+<p><strong>[Supplementary A]</strong> Welling M, Teh YW (2011). Bayesian learning via stochastic gradient Langevin dynamics. <em>ICML 2011</em>. Foundational scalable MCMC reference.</p>
+</li>
+<li>
+<p><strong>[Supplementary B]</strong> Liu Q, Wang D (2016). Stein variational gradient descent. <em>NeurIPS 2016</em>. arXiv:1608.04471. Deterministic particle sampling via functional gradient flow.</p>
+</li>
+<li>
+<p><strong>[Supplementary C]</strong> Neal RM (2003). Slice sampling. <em>Ann. Statist.</em> 31(3):705-767. Systematic treatment of auxiliary-variable adaptive rejection.</p>
+</li>
+<li>
+<p><strong>[Supplementary D]</strong> Vehtari A, Gelman A, Simpson D, Carpenter B, Bürkner P-C (2021). Rank-normalization, folding, and localization: improved R-hat for assessing convergence. <em>Bayesian Analysis</em> 16(2):667-718.</p>
+</li>
+<li>
+<p><strong>[Supplementary E]</strong> Wang X, Wei J et al. (2023). Self-consistency improves chain of thought reasoning in language models. <em>ICLR 2023</em>. arXiv:2203.11171. Best-of-N / majority vote sampling for LLM reasoning.</p>
+</li>
+<li>
+<p><strong>[Supplementary F]</strong> Watson JL et al. (2023). De novo design of protein structure and function with RFdiffusion. <em>Nature</em> 620:1089-1100. Diffusion sampling for protein binder generation.</p>
+</li>
+<li>
+<p><strong>[Supplementary G]</strong> Bierkens J, Fearnhead P, Roberts G (2019). The Zig-Zag process and super-efficient sampling for Bayesian analysis of big data. <em>Ann. Statist.</em> 47(3):1288-1320. Non-reversible MCMC theory.</p>
+</li>
+<li>
+<p><strong>[Supplementary H]</strong> Cobb AD, Jalaian B (2021). Scaling Hamiltonian Monte Carlo inference for Bayesian neural networks with symmetric splitting. <em>UAI 2021</em>. BNN posterior sampling at scale.</p>
+</li>
+<li>
+<p><strong>[Supplementary I]</strong> Rezende D, Mohamed S (2015). Variational inference with normalizing flows. <em>ICML 2015</em>. arXiv:1505.05770. Flow-based posterior approximation bridging VI and MCMC.</p>
+</li>
+<li>
+<p><strong>[Supplementary J]</strong> Snell C et al. (2024). Scaling LLM test-time compute optimally. arXiv:2408.03314. Empirical scaling laws for sampling-based test-time compute.</p>
+</li>
+<li>
+<p><strong>[Supplementary K]</strong> Lipman Y et al. (2022). Flow matching for generative modelling. <em>ICLR 2023</em>. arXiv:2210.02747. Flow matching formulation enabling 1-step diffusion sampling via straight ODE trajectories.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Domain correction</strong>: none. Page correctly classified as <code>artificial-intelligence</code>; the concept spans statistical computing, probabilistic modelling, LLM decoding, and diffusion model inference — all core AI subdisciplines.</p>
+</li>
+<li>
+<p><strong>Legacy term ID</strong>: AI-2047 (new assignment; no prior code in stub).</p>
+</li>
+<li>
+<p><strong>OWL axiom families</strong>: Compositional 8, Dependency 8, Capability 10, Implementation 12, Reduction 5, plus DisjointClasses (2), AnnotationAssertion (4), Property (5) = 54 total OWL statements.</p>
+</li>
+<li>
+<p><strong>Wikilink count</strong>: 71+ unique wikilinks across 11 relationship types.</p>
+</li>
+<li>
+<p><strong>Reference count</strong>: 28 numbered academic/industry references.</p>
+</li>
+<li>
+<p><strong>Enriched by</strong>: claude-sonnet-4-6, Phase 6 bulk run, 2026-05-17.</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ol>
+<li>Robert CP, Casella G (2004). <em>Monte Carlo Statistical Methods</em> (2nd ed.). Springer.</li>
+<li>Holtzman A et al. (2020). The curious case of neural text degeneration. ICLR 2020. arXiv:1904.09751.</li>
+<li>Karras T et al. (2022). Elucidating the design space of diffusion-based generative models. NeurIPS 2022. arXiv:2206.00364.</li>
+<li>Bradley E et al. (2024). Min-p sampling: diverse and coherent text generation. arXiv:2407.01082.</li>
+<li>Hoffman MD, Gelman A (2014). The No-U-Turn Sampler. JMLR 15(1):1593-1623.</li>
+<li>Leviathan Y et al. (2023). Fast inference from transformers via speculative decoding. ICML 2023.</li>
+<li>Lu C et al. (2022). DPM-Solver. NeurIPS 2022. arXiv:2206.00927.</li>
+<li>Song J, Meng C, Ermon S (2020). DDIM. ICLR 2021. arXiv:2010.02502.</li>
+<li>Skilling J (2006). Nested sampling. Bayesian Analysis 1(4):833-859.</li>
+<li>Del Moral P, Doucet A, Jasra A (2006). Sequential Monte Carlo samplers. JRSS-B 68(3):411-436.</li>
+<li>Handley WJ et al. (2015). PolyChord. MNRAS Letters 450(1):L61-L65.</li>
+<li>Girolami M, Calderhead B (2011). Riemann manifold MCMC. JRSS-B 73(2):123-214.</li>
+<li>Chopin N, Papaspiliopoulos O (2020). Introduction to Sequential Monte Carlo. Springer.</li>
+<li>McKay MD et al. (1979). Latin Hypercube Sampling. Technometrics 21(2):239-245.</li>
+<li>Sobol IM (1967). Low-discrepancy sequences. USSR Comp. Math. 7(4):86-112.</li>
+<li>Metropolis N et al. (1953). J. Chem. Phys. 21(6):1087-1092.</li>
+<li>Hastings WK (1970). Biometrika 57(1):97-109.</li>
+<li>Geman S, Geman D (1984). IEEE TPAMI 6(6):721-741.</li>
+<li>Neal RM (1998). Annealed importance sampling. TR CRG-TR-98-1, U Toronto.</li>
+<li>Basu S et al. (2021). Mirostat. ICLR 2021. arXiv:2007.14966.</li>
+<li>Hewitt J, Manning CD, Liang P (2022). Eta/truncation sampling. EMNLP Findings 2022. arXiv:2210.15191.</li>
+<li>Chen C et al. (2023). Speculative sampling. arXiv:2302.01318.</li>
+<li>Lu C et al. (2022). DPM-Solver++. arXiv:2211.01095.</li>
+<li>Roberts GO, Gelman A, Gilks WR (1997). Optimal scaling RWM. Ann. Appl. Prob. 7(1):110-120.</li>
+<li>Fan A, Lewis M, Dauphin Y (2018). Hierarchical story generation (top-k). ACL 2018. arXiv:1805.04833.</li>
+<li>Neal RM (2011). MCMC using Hamiltonian dynamics. Handbook of MCMC. CRC Press.</li>
+<li>Xu Y et al. (2023). Restart sampling for improving generative processes. NeurIPS 2023. arXiv:2306.14878.</li>
+<li>MRC Biostatistics Unit Cambridge BSU — MCMC methods for health technology assessment. <a href="https://www.mrc-bsu.cam.ac.uk/" class="external">https://www.mrc-bsu.cam.ac.uk/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ol>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4935" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-sampling" data-for="about-sampling">About Sampling</a></li><li class="depth-0"><a href="#componentsarchitecture" data-for="componentsarchitecture">Components/Architecture</a></li><li class="depth-1"><a href="#markov-chain-monte-carlo-mcmc" data-for="markov-chain-monte-carlo-mcmc">Markov Chain Monte Carlo (MCMC)</a></li><li class="depth-1"><a href="#importance-sampling-is-and-self-normalised-variants" data-for="importance-sampling-is-and-self-normalised-variants">Importance Sampling (IS) and Self-Normalised Variants</a></li><li class="depth-1"><a href="#rejection-sampling" data-for="rejection-sampling">Rejection Sampling</a></li><li class="depth-1"><a href="#sequential-monte-carlo-smc" data-for="sequential-monte-carlo-smc">Sequential Monte Carlo (SMC)</a></li><li class="depth-1"><a href="#nested-sampling" data-for="nested-sampling">Nested Sampling</a></li><li class="depth-1"><a href="#latin-hypercube-and-quasi-monte-carlo-sampling" data-for="latin-hypercube-and-quasi-monte-carlo-sampling">Latin Hypercube and Quasi-Monte Carlo Sampling</a></li><li class="depth-1"><a href="#mcmc-diagnostics-and-convergence-assessment" data-for="mcmc-diagnostics-and-convergence-assessment">MCMC Diagnostics and Convergence Assessment</a></li><li class="depth-1"><a href="#variance-reduction-and-control-variates" data-for="variance-reduction-and-control-variates">Variance Reduction and Control Variates</a></li><li class="depth-1"><a href="#probabilistic-programming-languages-and-sampling-infrastructure" data-for="probabilistic-programming-languages-and-sampling-infrastructure">Probabilistic Programming Languages and Sampling Infrastructure</a></li><li class="depth-1"><a href="#stochastic-gradient-and-scalable-mcmc" data-for="stochastic-gradient-and-scalable-mcmc">Stochastic Gradient and Scalable MCMC</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#autoregressive-llm-sampling-strategies" data-for="autoregressive-llm-sampling-strategies">Autoregressive LLM Sampling Strategies</a></li><li class="depth-1"><a href="#diffusion-model-sampling-strategies" data-for="diffusion-model-sampling-strategies">Diffusion Model Sampling Strategies</a></li><li class="depth-1"><a href="#sampling-vs-variational-inference-trade-offs" data-for="sampling-vs-variational-inference-trade-offs">Sampling vs Variational Inference: Trade-offs</a></li><li class="depth-1"><a href="#sampling-in-the-diffusion-model-ecosystem-full-pipeline" data-for="sampling-in-the-diffusion-model-ecosystem-full-pipeline">Sampling in the Diffusion Model Ecosystem: Full Pipeline</a></li><li class="depth-1"><a href="#llm-decoding-strategy-comparison" data-for="llm-decoding-strategy-comparison">LLM Decoding Strategy Comparison</a></li><li class="depth-1"><a href="#stochastic-sampling-in-reinforcement-learning-from-human-feedback-rlhf" data-for="stochastic-sampling-in-reinforcement-learning-from-human-feedback-rlhf">Stochastic Sampling in Reinforcement Learning from Human Feedback (RLHF)</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester" data-for="uk-context-imperial--edinburgh--ucl--cambridge--manchester">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester)</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Anti-Aliasing" class="internal">Anti Aliasing</a></li><li><a href="../pages/Automatic1111" class="internal">Automatic1111</a></li><li><a href="../pages/Autoregressive-Decoding" class="internal">Autoregressive Decoding</a></li><li><a href="../pages/Beam-Search" class="internal">Beam Search</a></li><li><a href="../pages/Classifier-Free-Guidance" class="internal">classifier-free guidance</a></li><li><a href="../pages/Constrained-Decoding" class="internal">Constrained Decoding</a></li><li><a href="../pages/Interpolation" class="internal">Interpolation</a></li><li><a href="../pages/Score-Function" class="internal">Score Function</a></li><li><a href="../working/ComfyUI" class="internal">ComfyUI</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

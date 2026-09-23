@@ -1,0 +1,5 @@
+
+Retraining is the process of updating a deployed machine learning model's parameters using new or additional data, typically triggered when monitoring detects data drift or concept drift that degrades predictive performance. It may involve fine-tuning the existing model on recent data or training a fresh model from scratch on an updated dataset. Retraining cadence and triggers are core concerns of MLOps pipelines that keep production models aligned with the current data distribution.
+
+- ### Provenance
+

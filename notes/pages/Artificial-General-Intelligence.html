@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Artificial General Intelligence</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Artificial General Intelligence"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Artificial General Intelligence"/><meta name="twitter:description" content="Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow — capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc… S..."/><meta property="og:description" content="Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow — capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc… S..."/><meta property="og:image:alt" content="Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow — capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Artificial-General-Intelligence"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Artificial-General-Intelligence"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow — capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Artificial-General-Intelligence"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-786"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-786" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Artificial General Intelligence</a></div></nav><h1 class="article-title">Artificial General Intelligence</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.674Z">23 Sept 2026</time><span>52 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:artificial-general-intelligence</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Research-Area" class="internal">AI Research Area</a></li><li><a href="../pages/Frontier-AI" class="internal">Frontier AI</a></li><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../General-Intelligence" class="internal">General Intelligence</a></li><li><a href="../Foundation-Model-Capability" class="internal">Foundation Model Capability</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Long-Horizon-Planning" class="internal">Long-Horizon Planning</a></li><li><a href="../open-ended-learning" class="internal">Open-Ended Learning</a></li><li><a href="../tool-use" class="internal">Tool Use Capability</a></li><li><a href="../pages/World-Model" class="internal">World Model</a></li><li><a href="../Generalisation-Capability" class="internal">Generalisation Capability</a></li><li><a href="../Cross-Domain-Transfer" class="internal">Cross-Domain Transfer</a></li><li><a href="../Autonomous-Reasoning" class="internal">Autonomous Reasoning</a></li><li><a href="../Tool-Use-Capability" class="internal">Tool Use Capability</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Alignment-Techniques" class="internal">Alignment Techniques</a></li><li><a href="../pages/Large-Scale-Compute" class="internal">Large-Scale Compute</a></li><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../Frontier-Training-Data" class="internal">Frontier Training Data</a></li><li><a href="../Evaluation-Infrastructure" class="internal">Evaluation Infrastructure</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../recursive-self-improvement" class="internal">Recursive Self-Improvement</a></li><li><a href="../pages/Scientific-Discovery-Acceleration" class="internal">Scientific Discovery Acceleration</a></li><li><a href="../pages/Transformative-AI" class="internal">Transformative AI</a></li><li><a href="../Economic-Automation" class="internal">Economic Automation</a></li><li><a href="../Autonomous-Agents" class="internal">Autonomous Agents</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Narrow-AI" class="internal">Narrow AI</a></li><li><a href="../Weak-AI" class="internal">Weak AI</a></li><li><a href="../Domain-Specific-AI" class="internal">Domain-Specific AI</a></li><li><a href="../pages/Symbolic-AI" class="internal">Symbolic AI</a></li><li><a href="../Expert-System" class="internal">Expert System</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../Compute-Trends" class="internal">Compute Trends</a></li><li><a href="../Bitter-Lesson" class="internal">Bitter Lesson</a></li><li><a href="../pages/Pretraining" class="internal">Pretraining</a></li><li><a href="../pages/RLHF" class="internal">RLHF</a></li><li><a href="../pages/Benchmarks" class="internal">Benchmarks</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../FoundationModelLayer" class="internal">FoundationModelLayer</a></li><li><a href="../AgentLayer" class="internal">AgentLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../chain-of-thought-reasoning" class="internal">Chain-of-Thought Reasoning</a></li><li><a href="../pages/Inference-Compute" class="internal">Inference-Time Compute</a></li><li><a href="../pages/Multimodal-Learning" class="internal">Multimodal Learning</a></li><li><a href="../pages/Constitutional-AI-Training-Methodology" class="internal">Constitutional AI Training Methodology</a></li><li><a href="../pages/Mixture-of-Experts-Architecture" class="internal">Mixture-of-Experts Architecture</a></li><li><a href="../Scaling-Hypothesis" class="internal">Scaling Hypothesis</a></li><li><a href="../Inference-Time-Compute" class="internal">Inference-Time Compute</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-1101</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../agent-layer" class="internal">AgentLayer</a></li><li><a href="../ai-policy" class="internal">AI Policy</a></li><li><a href="../ai-safety-research" class="internal">AI Safety Research</a></li><li><a href="../alignment-research" class="internal">Alignment Research</a></li><li><a href="../alignment-techniques" class="internal">Alignment Techniques</a></li><li><a href="../alpha-proof-alpha-geometry-2-imo-2024" class="internal">AlphaProof AlphaGeometry 2 IMO 2024</a></li><li><a href="../amodei-2024-machines-of-loving-grace" class="internal">Amodei 2024 Machines of Loving Grace</a></li><li><a href="../anthropic-claude-computer-use-2024" class="internal">Anthropic Claude Computer Use 2024</a></li><li><a href="../anthropic-core-views-on-ai-safety-2023" class="internal">Anthropic Core Views on AI Safety 2023</a></li><li><a href="../apollo-research-2024-in-context-scheming" class="internal">Apollo Research 2024 In-Context Scheming</a></li><li><a href="../arc-agi" class="internal">ARC-AGI</a></li><li><a href="../arc-prize-2024-technical-report" class="internal">ARC Prize 2024 Technical Report</a></li><li><a href="../aria-safeguarded-ai-programme" class="internal">ARIA Safeguarded AI Programme</a></li><li><a href="../aschenbrenner-2024-situational-awareness" class="internal">Aschenbrenner 2024 Situational Awareness</a></li><li><a href="../autonomous-agents" class="internal">Autonomous Agents</a></li><li><a href="../autonomous-reasoning" class="internal">Autonomous Reasoning</a></li><li><a href="../bai-et-al-2022-constitutional-ai" class="internal">Bai et al 2022 Constitutional AI</a></li><li><a href="../benchmarks" class="internal">Benchmarks</a></li><li><a href="../bengio-et-al-2025-international-ai-safety-report" class="internal">Bengio et al 2025 International AI Safety Report</a></li><li><a href="../bitter-lesson" class="internal">Bitter Lesson</a></li><li><a href="../bletchley-declaration-2023" class="internal">Bletchley Declaration 2023</a></li><li><a href="../bostrom-2014-superintelligence" class="internal">Bostrom 2014 Superintelligence</a></li><li><a href="../cais-statement-on-ai-risk-2023" class="internal">CAIS Statement on AI Risk 2023</a></li><li><a href="../chain-of-thought-reasoning" class="internal">Chain-of-Thought Reasoning</a></li><li><a href="../chen-et-al-2021-human-eval" class="internal">Chen et al 2021 HumanEval</a></li><li><a href="../chollet-2019-on-the-measure-of-intelligence" class="internal">Chollet 2019 On the Measure of Intelligence</a></li><li><a href="../cognitive-science" class="internal">CognitiveScienceDomain</a></li><li><a href="../compute-trends" class="internal">Compute Trends</a></li><li><a href="../cotra-2020-biological-anchors" class="internal">Cotra 2020 Biological Anchors</a></li><li><a href="../cross-domain-transfer" class="internal">Cross-Domain Transfer</a></li><li><a href="../deep-mind-levels-of-agi-framework" class="internal">DeepMind Levels of AGI Framework</a></li><li><a href="../deep-seek-r1-2025" class="internal">DeepSeek-R1 2025</a></li><li><a href="../domain-specific-ai" class="internal">Domain-Specific AI</a></li><li><a href="../economic-automation" class="internal">Economic Automation</a></li><li><a href="../epoch-ai-trends-in-machine-learning" class="internal">Epoch AI Trends in Machine Learning</a></li><li><a href="../eu-ai-act-2024" class="internal">EU AI Act 2024</a></li><li><a href="../evaluation-infrastructure" class="internal">Evaluation Infrastructure</a></li><li><a href="../existential-risk" class="internal">Existential Risk</a></li><li><a href="../existential-risk-studies" class="internal">Existential Risk Studies</a></li><li><a href="../expert-system" class="internal">Expert System</a></li><li><a href="../foundation-model" class="internal">Foundation Model</a></li><li><a href="../foundation-model-capability" class="internal">Foundation Model Capability</a></li><li><a href="../foundation-model-layer" class="internal">FoundationModelLayer</a></li><li><a href="../frontier-ai" class="internal">Frontier AI</a></li><li><a href="../frontier-math" class="internal">FrontierMath</a></li><li><a href="../frontier-training-data" class="internal">Frontier Training Data</a></li><li><a href="../general-intelligence" class="internal">General Intelligence</a></li><li><a href="../generalisation-capability" class="internal">Generalisation Capability</a></li><li><a href="../glazer-et-al-2024-frontier-math-epoch-ai" class="internal">Glazer et al 2024 FrontierMath Epoch AI</a></li><li><a href="../goertzel-and-pennachin-2007-artificial-general-intelligence" class="internal">Goertzel &amp; Pennachin 2007 Artificial General Intelligence</a></li><li><a href="../good-1965-speculations-concerning-the-first-ultraintelligent-machine" class="internal">Good 1965 Speculations Concerning the First Ultraintelligent Machine</a></li><li><a href="../gpqa" class="internal">GPQA</a></li><li><a href="../grace-et-al-2024-espai-survey" class="internal">Grace et al 2024 ESPAI Survey</a></li><li><a href="../hendrycks-et-al-2021-mmlu" class="internal">Hendrycks et al 2021 MMLU</a></li><li><a href="../hoffmann-et-al-2022-chinchilla" class="internal">Hoffmann et al 2022 Chinchilla</a></li><li><a href="../hubinger-et-al-2019-risks-from-learned-optimization" class="internal">Hubinger et al 2019 Risks from Learned Optimization</a></li><li><a href="../humanity-s-last-exam" class="internal">Humanity's Last Exam</a></li><li><a href="../inference-time-compute" class="internal">Inference-Time Compute</a></li><li><a href="../iso-iec-42001" class="internal">ISO IEC 42001</a></li><li><a href="../jimenez-et-al-2023-swe-bench" class="internal">Jimenez et al 2023 SWE-bench</a></li><li><a href="../kaplan-et-al-2020-scaling-laws" class="internal">Kaplan et al 2020 Scaling Laws</a></li><li><a href="../karnofsky-2016-transformative-ai" class="internal">Karnofsky 2016 Transformative AI</a></li><li><a href="../large-scale-compute" class="internal">Large-Scale Compute</a></li><li><a href="../legg-and-hutter-2007-universal-intelligence" class="internal">Legg &amp; Hutter 2007 Universal Intelligence</a></li><li><a href="../long-horizon-planning" class="internal">Long-Horizon Planning</a></li><li><a href="../metr-2025-measuring-ai-ability-to-complete-long-tasks" class="internal">METR 2025 Measuring AI Ability to Complete Long Tasks</a></li><li><a href="../metr-evaluations" class="internal">METR Evaluations</a></li><li><a href="../mmlu" class="internal">MMLU</a></li><li><a href="../morris-et-al-2024-levels-of-agi-deep-mind" class="internal">Morris et al 2024 Levels of AGI DeepMind</a></li><li><a href="../multimodal-learning" class="internal">Multimodal Learning</a></li><li><a href="../narrow-ai" class="internal">Narrow AI</a></li><li><a href="../nist-ai-rmf" class="internal">NIST AI RMF</a></li><li><a href="../open-ai-charter" class="internal">OpenAI Charter</a></li><li><a href="../open-ai-charter-2018" class="internal">OpenAI Charter 2018</a></li><li><a href="../open-ai-o1-system-card-2024" class="internal">OpenAI o1 System Card 2024</a></li><li><a href="../open-ended-learning" class="internal">Open-Ended Learning</a></li><li><a href="../ouyang-et-al-2022-instruct-gpt-rlhf" class="internal">Ouyang et al 2022 InstructGPT RLHF</a></li><li><a href="../phan-et-al-2025-humanity-s-last-exam" class="internal">Phan et al 2025 Humanity's Last Exam</a></li><li><a href="../philosophy-of-mind-domain" class="internal">PhilosophyOfMindDomain</a></li><li><a href="../power-et-al-2022-grokking" class="internal">Power et al 2022 Grokking</a></li><li><a href="../pretraining" class="internal">Pretraining</a></li><li><a href="../recursive-self-improvement" class="internal">Recursive Self-Improvement</a></li><li><a href="../rein-et-al-2023-gpqa" class="internal">Rein et al 2023 GPQA</a></li><li><a href="../rlhf" class="internal">RLHF</a></li><li><a href="../russell-2019-human-compatible" class="internal">Russell 2019 Human Compatible</a></li><li><a href="../scaling-hypothesis" class="internal">Scaling Hypothesis</a></li><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../schaeffer-miranda-koyejo-2023-emergence-mirage" class="internal">Schaeffer Miranda Koyejo 2023 Emergence Mirage</a></li><li><a href="../scientific-discovery-acceleration" class="internal">Scientific Discovery Acceleration</a></li><li><a href="../searle-1980-minds-brains-and-programs" class="internal">Searle 1980 Minds Brains and Programs</a></li><li><a href="../superintelligence" class="internal">Superintelligence</a></li><li><a href="../sutton-2019-the-bitter-lesson" class="internal">Sutton 2019 The Bitter Lesson</a></li><li><a href="../swe-bench" class="internal">SWE-bench</a></li><li><a href="../tool-use-capability" class="internal">Tool Use Capability</a></li><li><a href="../transformative-ai" class="internal">Transformative AI</a></li><li><a href="../turing-1950-computing-machinery-and-intelligence" class="internal">Turing 1950 Computing Machinery and Intelligence</a></li><li><a href="../uk-ai-safety-institute-aisi" class="internal">UK AI Safety Institute AISI</a></li><li><a href="../wang-2006-rigid-flexibility" class="internal">Wang 2006 Rigid Flexibility</a></li><li><a href="../weak-ai" class="internal">Weak AI</a></li><li><a href="../wei-et-al-2022-emergent-abilities" class="internal">Wei et al 2022 Emergent Abilities</a></li><li><a href="../world-model" class="internal">World Model</a></li><li><a href="../ai-alignment" class="internal">AI Alignment</a></li><li><a href="../ai-governance" class="internal">AI Governance</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../artificial-intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../pages/ai-research-area" class="internal">ComputationAndIntelligenceDomain</a></li><li><a href="../constitutional-ai" class="internal">Constitutional AI</a></li><li><a href="../eu-ai-act" class="internal">EU AI Act</a></li><li><a href="../mixture-of-experts" class="internal">Mixture of Experts</a></li><li><a href="../reinforcement-learning" class="internal">Reinforcement Learning</a></li><li><a href="../symbolic-ai" class="internal">Symbolic AI</a></li><li><a href="../transformer-architecture" class="internal">Transformer Architecture</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:013e25447b1eb6bb2ffb577c9b30cbf5ed7007e6ddd46084b7065aa085abfb69</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Existential-Risk" class="internal">Existential Risk</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../pages/Frontier-AI" class="internal">Frontier AI</a></li><li><a href="../recursive-self-improvement" class="internal">Recursive Self-Improvement</a></li><li><a href="../pages/Superintelligence" class="internal">Superintelligence</a></li><li><a href="../pages/Transformative-AI" class="internal">Transformative AI</a></li><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../iso-iec-42001" class="internal">ISO IEC 42001</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../pages/EU-AI-Act-Regulatory-Instrument" class="internal">EU AI Act Regulatory Instrument</a></li><li><a href="../OpenAI-Charter" class="internal">OpenAI Charter</a></li><li><a href="../DeepMind-Levels-of-AGI-Framework" class="internal">DeepMind Levels of AGI Framework</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../ai-policy" class="internal">AI Policy</a></li><li><a href="../ai-safety-research" class="internal">AI Safety Research</a></li><li><a href="../pages/Alignment-Research" class="internal">Alignment Research</a></li><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../Existential-Risk-Studies" class="internal">Existential Risk Studies</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/ARC-AGI" class="internal">ARC-AGI</a></li><li><a href="../MMLU" class="internal">MMLU</a></li><li><a href="../GPQA" class="internal">GPQA</a></li><li><a href="../FrontierMath" class="internal">FrontierMath</a></li><li><a href="../SWE-bench" class="internal">SWE-bench</a></li><li><a href="../Humanity's-Last-Exam" class="internal">Humanity's Last Exam</a></li><li><a href="../METR-Evaluations" class="internal">METR Evaluations</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow — capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:GeneralisationCapability))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:CrossDomainTransfer))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:AutonomousReasoning))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:OpenEndedLearning))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:WorldModel))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:ToolUseCapability))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:hasPart ai:LongHorizonPlanning))
+
+  ## Dependency Relationships
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:requires ai:LargeScaleCompute))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:requires ai:FrontierTrainingData))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:requires ai:ScalingLaws))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:requires ai:ReinforcementLearning))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:requires ai:AlignmentTechniques))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:dependsOn ai:ComputeTrends))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:dependsOn ai:BitterLesson))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:dependsOn ai:Pretraining))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:dependsOn ai:RLHF))
+
+  ## Capability Relationships
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:enables ai:TransformativeAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:enables ai:EconomicAutomation))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:enables ai:ScientificDiscoveryAcceleration))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:enables ai:AutonomousAgents))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:enables ai:RecursiveSelfImprovement))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:supports ai:AISafetyResearch))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:supports ai:AlignmentResearch))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:supports ai:AIPolicy))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:supports ai:ExistentialRiskStudies))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+
+  ## Implementation Relationships
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:implements ai:ScalingHypothesis))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:implements ai:ChainOfThoughtReasoning))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:implements ai:InferenceTimeCompute))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:implements ai:MixtureOfExperts))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:implements ai:MultimodalLearning))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:implements ai:ConstitutionalAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:ARCAGIBenchmark))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:MMLU))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:GPQA))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:FrontierMath))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:SWEbench))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:HumanitysLastExam))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:uses ai:METREvaluations))
+
+  ## Reduction Relationships
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:reduces ai:HumanCognitiveLabor))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:reduces ai:DomainSpecificEngineering))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:reduces ai:HandcraftedFeatures))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:reduces ai:TaskSpecificFinetuning))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:reduces ai:ScientificDiscoveryTimelines))
+
+  ## Association Relationships
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:contrastsWith ai:NarrowAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:contrastsWith ai:WeakAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:contrastsWith ai:DomainSpecificAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:relatedTo ai:Superintelligence))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:relatedTo ai:TransformativeAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:relatedTo ai:FrontierAI))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:relatedTo ai:AIAlignment))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    ObjectSomeValuesFrom(ai:relatedTo ai:ExistentialRisk))
+
+  ## Data Properties (Characteristics)
+  DataPropertyAssertion(ai:hasIdentifier ai:ArtificialGeneralIntelligence &quot;AI-1101&quot;^^xsd:string)
+  DataPropertyAssertion(ai:authorityScore ai:ArtificialGeneralIntelligence &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:arcAGIScoreO3 ai:ArtificialGeneralIntelligence &quot;0.875&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:mmluCeiling ai:ArtificialGeneralIntelligence &quot;0.90&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:metricDoublingMonths ai:ArtificialGeneralIntelligence &quot;7&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:medianForecastYear ai:ArtificialGeneralIntelligence &quot;2040&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:frontierLabCount ai:ArtificialGeneralIntelligence &quot;8&quot;^^xsd:integer)
+
+  ## Property Constraints
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    DataAllValuesFrom(ai:hasGenericity xsd:boolean))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    DataMinCardinality(1 ai:hasBenchmark xsd:string))
+  SubClassOf(ai:ArtificialGeneralIntelligence
+    DataMinCardinality(1 ai:hasDefinitionalAuthority xsd:string))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:ArtificialGeneralIntelligence &quot;Artificial General Intelligence&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:ArtificialGeneralIntelligence &quot;Hypothesised class of AI systems exhibiting broad rather than narrow cognitive competence, matching or exceeding human performance across most economically and intellectually significant tasks. Definitions span Goertzel &amp; Wang 2007 generalisation-under-insufficient-resources, OpenAI Charter 2018 outperforming humans at economically valuable work, DeepMind 2024 six-level matrix (Emerging/Competent/Expert/Virtuoso/Superhuman crossed with Narrow/General), Karnofsky transformative AI, Anthropic powerful AI, and Bostrom 2014 distinction from artificial superintelligence. Tracked through benchmarks ARC-AGI (o3 87.5% in 2024), FrontierMath, Humanity's Last Exam, MMLU, GPQA, SWE-bench, METR length-of-task doubling. Forecast via Cotra biological anchors, Epoch AI compute trends, Metaculus, AI Impacts surveys. Approached via scaling hypothesis (Sutton bitter lesson), inference-time compute (o1/o3), agentic AI.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:ArtificialGeneralIntelligence &quot;AI-1101&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:ArtificialGeneralIntelligence &quot;Artificial General Intelligence, Transformative AI, Superintelligence, AI Alignment, Frontier AI&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(ai:enables)
+AsymmetricObjectProperty(ai:contrastsWith)
+AsymmetricObjectProperty(ai:reduces)
+TransitiveObjectProperty(ai:dependsOn)
+FunctionalDataProperty(ai:arcAGIScoreO3)
+FunctionalDataProperty(ai:mmluCeiling)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-artificial-general-intelligence">About Artificial General Intelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-artificial-general-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Artificial General Intelligence (AGI)</strong> denotes the hypothesised — and increasingly contested — class of computational systems whose cognitive competence is <em>general</em> in the sense of being transferable across the full distribution of economically and intellectually significant tasks, in contrast to <em>narrow AI</em> whose performance is bounded by a specific training domain.</p>
+</li>
+<li>
+<p>The term was revived and operationalised by Ben Goertzel, Cassio Pennachin and Pei Wang in the 2007 Springer volume <em>Artificial General Intelligence</em> (Goertzel &amp; Pennachin eds.), which deliberately distinguished AGI from the older philosophical category of “Strong AI” (Searle 1980) by emphasising practical engineering criteria over consciousness claims.</p>
+</li>
+<li>
+<p>The AGI conference series began with AGI-08 (Memphis) and now constitutes the primary academic venue dedicated specifically to general-intelligence research, alongside mainstream venues (NeurIPS, ICML, ICLR) where the discourse has increasingly been absorbed under the headings “foundation models”, “frontier AI”, and “scaling”.</p>
+</li>
+<li>
+<p>From 2022 onward, the public emergence of GPT-3.5 / GPT-4 / Claude / Gemini / DeepSeek transformed AGI from a fringe academic topic into the explicit corporate mission of $200B+ in annual capital expenditure.</p>
+</li>
+<li>
+<p>OpenAI’s Charter (2018) states the organisation’s purpose as ensuring “that artificial general intelligence — by which we mean highly autonomous systems that outperform humans at most economically valuable work — benefits all of humanity”.</p>
+</li>
+<li>
+<p>Anthropic’s <em>Core Views on AI Safety</em> (2023) deliberately avoids the term AGI in favour of “transformative AI” and “powerful AI”; Dario Amodei’s <em>Machines of Loving Grace</em> (2024) characterises “powerful AI” as “smarter than a Nobel laureate across most relevant fields” running “at 100× to 1000× human speed”.</p>
+</li>
+<li>
+<p>Google DeepMind has explicitly committed to “solving intelligence” since the 2014 acquisition.</p>
+</li>
+<li>
+<p>Meta, xAI, DeepSeek, Mistral, Microsoft AI, and Amazon AGI complete the contemporary frontier set; alongside this Western set, Chinese frontier labs (Alibaba Qwen, DeepSeek, ByteDance Doubao, Zhipu, Moonshot, MiniMax) constitute a parallel ecosystem.</p>
+</li>
+<li>
+<h3 id="definitional-pluralism--eight-coexisting-frames">Definitional Pluralism — Eight Coexisting Frames<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definitional-pluralism--eight-coexisting-frames" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>(1) Goertzel &amp; Wang (2007) — Generalisation under Insufficient Resources.</strong>
+<ul>
+<li>Pei Wang’s NARS (Non-Axiomatic Reasoning System) defines intelligence as the capacity to “adapt to its environment when working with insufficient knowledge and resources”.</li>
+<li>Goertzel’s OpenCog framework (and its later OpenCog Hyperon successor 2023) operationalises AGI as cross-domain transfer of learned skills.</li>
+<li>This frame emphasises engineering practicality over behavioural Turing-style or philosophical Strong-AI criteria.</li>
+<li>Influential in the AGI conference community but less so in mainstream frontier-lab discourse.</li>
+</ul>
+</li>
+<li><strong>(2) OpenAI Charter (2018) — Economic Outperformance.</strong>
+<ul>
+<li>“Highly autonomous systems that outperform humans at most economically valuable work.”</li>
+<li>This frame is <em>behavioural</em> (judged by labour-market replacement) and <em>commercial</em> (tied to revenue capture).</li>
+<li>Reportedly per 2024 court filings in the Musk v OpenAI litigation, the Microsoft-OpenAI 2023 contract defines AGI in part by a $100B-profit threshold, making the definition partly <em>legal</em> and <em>financial</em> — and creating a material conflict-of-interest in any future “AGI declaration” by either party.</li>
+<li>Critics argue economic-outperformance framing privileges remote knowledge work over physical and care work, with consequent biases in capability assessment.</li>
+</ul>
+</li>
+<li><strong>(3) DeepMind Levels of AGI (Morris et al. 2024, arXiv:2311.02462) — Matrix Framework.</strong>
+<ul>
+<li>Performance dimension: Level 0 No AI / Level 1 Emerging (= or somewhat better than an unskilled adult) / Level 2 Competent (≥50th percentile skilled adults) / Level 3 Expert (≥90th percentile) / Level 4 Virtuoso (≥99th percentile) / Level 5 Superhuman (outperforms 100% of humans).</li>
+<li>Generality dimension: Narrow vs General — orthogonal to performance.</li>
+<li>Autonomy axis: Levels 0-5 from no-AI to fully-autonomous agent.</li>
+<li>Frontier models (GPT-4, Gemini, Claude) are placed at <em>Level 1 General</em> — Emerging AGI — by the authors at time of writing in late 2023; the framework deliberately accommodates ongoing progression.</li>
+<li>Authored by Meredith Ringel Morris and collaborators including Shane Legg (DeepMind co-founder).</li>
+</ul>
+</li>
+<li><strong>(4) Karnofsky / Open Philanthropy (2016) — Transformative AI (TAI).</strong>
+<ul>
+<li>“AI that precipitates a transition comparable to (or more significant than) the agricultural or industrial revolution.”</li>
+<li>This frame sidesteps cognitive-ability definitions to focus on civilisational impact.</li>
+<li>Captures systems that need not be human-equivalent in all faculties — narrowly economically-transformative AI suffices.</li>
+<li>Widely adopted in AI-safety funding circles (Open Philanthropy, EA Funds, Longview Philanthropy) as a more empirically-tractable target than “AGI”.</li>
+</ul>
+</li>
+<li><strong>(5) Anthropic — Powerful AI.</strong>
+<ul>
+<li>Amodei’s 2024 <em>Machines of Loving Grace</em> essay describes a system “smarter than a Nobel laureate across most fields” with “all the interfaces available to a human working virtually” running “100×-1000× faster than humans”.</li>
+<li>Anthropic’s Responsible Scaling Policy (RSP, Sept 2023 v1.0, Oct 2024 v2.0) operationalises capability thresholds (AI Safety Levels ASL-1 through ASL-5) rather than a binary AGI declaration.</li>
+<li>Avoidance of “AGI” terminology is deliberate, viewing the term as both philosophically contested and commercially loaded.</li>
+</ul>
+</li>
+<li><strong>(6) Bostrom (2014) — Superintelligence Distinction.</strong>
+<ul>
+<li><em>Superintelligence: Paths, Dangers, Strategies</em> (Oxford University Press) distinguishes three varieties:
+<ul>
+<li>(a) Speed superintelligence: qualitatively human but operating much faster.</li>
+<li>(b) Collective superintelligence: many human-level minds coordinated to achieve cognitive performance beyond any individual.</li>
+<li>(c) Quality superintelligence: cognitively superior in kind, not just speed.</li>
+</ul>
+</li>
+<li>AGI sits at the human-level threshold; ASI (artificial superintelligence) sits beyond.</li>
+<li>Introduces the orthogonality thesis (intelligence and final goals can vary independently) and the instrumental convergence thesis (a wide range of final goals lead to similar instrumental subgoals — self-preservation, resource acquisition, cognitive enhancement, goal-content integrity).</li>
+</ul>
+</li>
+<li><strong>(7) Eric Schmidt / “Economic AGI”.</strong>
+<ul>
+<li>Former Google CEO Schmidt and others have advanced an “economic AGI” frame focused on automation of remote knowledge work, decoupled from embodied or affective competence.</li>
+<li>Closely related to OpenAI’s economic-outperformance definition but with explicit focus on white-collar knowledge work.</li>
+<li>Operationalised by labour-market displacement metrics rather than capability benchmarks.</li>
+</ul>
+</li>
+<li><strong>(8) Chollet (2019) — Skill Acquisition Efficiency.</strong>
+<ul>
+<li>François Chollet’s <em>On the Measure of Intelligence</em> (arXiv:1911.01547) defines intelligence as “skill-acquisition efficiency over a scope of tasks”.</li>
+<li>Measured by ARC-AGI — explicitly contrasting skill <em>acquisition</em> with skill <em>exhibition</em> on familiar tasks.</li>
+<li>This frame foregrounds sample-efficient generalisation rather than benchmark sweeps.</li>
+<li>Operationalised via ARC-AGI (2019), ARC-AGI-2 (March 2025), and the ongoing ARC Prize competition.</li>
+<li>Chollet left Google March 2025 to co-found Ndea with Mike Knoop, pursuing program-synthesis approaches.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="the-narrow--general--superhuman-trichotomy">The Narrow / General / Superhuman Trichotomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-narrow--general--superhuman-trichotomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Narrow AI</strong> (also “Weak AI”, “Domain-Specific AI”):
+<ul>
+<li>A system whose competence is bounded by a specific training domain.</li>
+<li>Examples: AlphaGo (Go only), classical chess engines (Stockfish, chess only pre-NNUE neural-network adoption), Google Translate (translation only, pre-NMT), credit-scoring models, fraud detection, recommendation systems, named-entity recognisers.</li>
+<li>Most deployed AI in 2026 remains narrow even when built on general-purpose foundation models, because production fine-tuning narrows the operational distribution.</li>
+<li>Narrow AI dominates near-term economic value capture; AGI discourse should not obscure this empirical reality.</li>
+</ul>
+</li>
+<li><strong>General AI / AGI</strong>:
+<ul>
+<li>Competence transfers across the full distribution of economically and intellectually significant tasks.</li>
+<li>Frontier 2024-2026 systems (GPT-4o, Claude 3.5/4, Gemini 1.5/2, o1/o3, DeepSeek-R1) sit at the <em>Emerging General</em> boundary per DeepMind’s matrix.</li>
+<li>Exhibit broad competence with substantial residual brittleness: long-horizon planning, embodied reasoning, novel-domain transfer, calibrated uncertainty, robust adversarial behaviour.</li>
+<li>The “Emerging” qualifier captures the partial nature of generality — frontier models are far better than unskilled humans on most tasks, but consistently below skilled-adult level on a wide range of tasks requiring sustained reasoning or domain depth.</li>
+</ul>
+</li>
+<li><strong>Superintelligence (ASI)</strong> (Bostrom 2014):
+<ul>
+<li>Cognitive performance vastly exceeding the best human across all domains.</li>
+<li>Posited as the likely outcome of recursive self-improvement once AGI capable of AI-research labour exists (“intelligence explosion”, I. J. Good 1965).</li>
+<li>Decomposes into speed, collective, and quality varieties.</li>
+<li>The orthogonality thesis (intelligence and goals are independent) and instrumental convergence thesis (a wide range of final goals lead to similar instrumental subgoals — self-preservation, resource acquisition, cognitive enhancement, goal-content integrity) frame the alignment concerns specific to ASI.</li>
+<li>Critical takeoff parameters: speed (slow vs fast vs hard takeoff), unipolar vs multipolar outcomes, decisive strategic advantage, treacherous turn.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>AGI is not a single architecture but a <em>capability profile</em> exhibited by certain composite systems. As of 2026 the dominant approach decomposes into the following components, each of which contributes a necessary but insufficient capability to the integrated whole:</p>
+<ul>
+<li><strong>Pretrained Foundation Model</strong>: Transformer-based dense or mixture-of-experts (MoE) model trained at 10^24-10^26 FLOP scale on multi-trillion-token corpora drawn from web crawl (Common Crawl), curated books (Books3, library-genesis successors), code (GitHub, The Stack), academic literature (S2ORC, ArXiv), conversation logs, and increasingly synthetic data generated by previous-generation models. Provides the base distribution of compressed world-knowledge over which all downstream capabilities are constructed. Architectural choices include attention-block depth, mixture-of-experts routing (sparse top-k routing, Switch Transformer variants), context-window length (1M-10M tokens by 2025-2026 via ring attention, sliding-window, and infini-attention mechanisms), and tokeniser design (BPE, SentencePiece, byte-level fallback). Examples: GPT-4 (~1.7T MoE per leaks), Claude 3.5/4, Gemini 1.5/2, DeepSeek-V3 (671B MoE, 37B active), Llama 3.1 405B, Mistral Large 2, Qwen 2.5 72B.</li>
+<li><strong>Post-Training Alignment Stack</strong>: Supervised fine-tuning (SFT) on high-quality demonstrations + Reinforcement Learning from Human Feedback (RLHF, Ouyang et al. 2022 InstructGPT) + Constitutional AI (Anthropic, Bai et al. 2022 — model critiques its own outputs against a written constitution) + Direct Preference Optimisation (DPO, Rafailov 2023 — closed-form RLHF eliminating the reward model) + Reinforcement Learning from AI Feedback (RLAIF) + Iterated Distillation and Amplification (IDA). The stack performs three functions simultaneously: instilling instruction-following behaviour, suppressing harmful outputs (jailbreak resistance, CBRN/cyber refusal), and shaping personality / style / “voice” of the assistant. Modern 2024-2026 stacks add a reasoning-RL phase (process reward models, RLHF on chain-of-thought traces) producing the o-series / R-series reasoning models.</li>
+<li><strong>Inference-Time Reasoning / “Thinking”</strong>: Chain-of-thought (Wei 2022), self-consistency (Wang 2022), tree-of-thoughts (Yao 2023), and process-reward-model RL (OpenAI o1/o3, DeepSeek-R1, Gemini 2.0 Flash Thinking, Claude reasoning modes 2025). Trades inference compute for capability — o3 reportedly used >$1,000 per ARC-AGI task in the high-compute configuration. The economic implication is that capability is now elastic: a given model can be operated in fast/cheap mode or slow/expensive mode with capability scaling with thinking budget. This decouples capability from training-time compute and reshapes the AGI scaling curve.</li>
+<li><strong>Multimodality</strong>: Vision (CLIP encoder fusion, DALL-E, GPT-4V, Gemini native multimodal, Claude vision, Pixtral), audio (Whisper, GPT-4o voice with real-time streaming and emotional inflection, Gemini Live), video understanding (Gemini 1.5 Pro 1M-2M token context for hour-long video, Sora-style world models for video generation). Necessary for embodied tasks, screen-based agents, scientific instrument interpretation, and assistance with physical-world tasks. By 2026 native multimodal pretraining (joint vision-language-audio token streams) has largely displaced post-hoc adapter approaches.</li>
+<li><strong>Agent Scaffolding</strong>: Tool-use (function-calling APIs, browser, code execution sandbox, file-system access), memory (vector stores, episodic memory, knowledge-graph integration, retrieval-augmented generation), planning loops (ReAct Yao 2022 reasoning+acting interleaved, Reflexion Shinn 2023 self-critique loops, MCTS-style search), multi-agent coordination (orchestrator-worker, debate, role-play). Claude Computer Use (Oct 2024) demonstrates screen-and-mouse control via screenshots + structured actions; OpenAI Operator (Jan 2025) and Google’s Project Mariner provide parallel implementations. The scaffolding layer is where 2025-2026 capability gains are concentrated as foundation-model pretraining gains face data wall and post-training gains plateau.</li>
+<li><strong>Evaluation Infrastructure</strong>: Pre-deployment evaluations (METR’s autonomy taxonomy, Apollo Research’s deceptive-reasoning probes, UK AISI’s and US AISI’s frontier-model agreements with OpenAI / Anthropic / DeepMind), red-team and dangerous-capability evals (CBRN — chemical, biological, radiological, nuclear; cyber-offence; autonomous replication and self-exfiltration; persuasion and manipulation). Anthropic’s Responsible Scaling Policy (RSP, originally Sept 2023, updated 2024 and 2025), DeepMind’s Frontier Safety Framework (May 2024), and OpenAI’s Preparedness Framework (Dec 2023, updated 2025) operationalise pre-deployment capability thresholds.</li>
+<li><strong>Compute Substrate</strong>: H100/H200/B100/B200 GPU clusters (NVIDIA Hopper and Blackwell generations), Google TPU v5p/v6 (Trillium), AWS Trainium, Cerebras WSE-3 wafer-scale, Groq inference ASICs. Frontier training clusters reach 100K+ accelerators in single training runs (xAI Colossus 200K H100, Anthropic-Amazon Project Rainier, OpenAI-Microsoft Stargate site planning for 1M+ accelerators). Networking via NVIDIA NVLink + InfiniBand or proprietary fabrics (Google ICI). Power constraints emerging as binding: multi-GW campuses by 2027-2028 require nuclear PPAs and dedicated grid build-out.</li>
+<li><strong>Data Curation Pipeline</strong>: Multi-stage filtering (perplexity-based, model-judge-based, deduplication via MinHash/SimHash, content-safety filtering), synthetic-data generation (textbook-style curated synthetic from Phi series, distilled reasoning traces from frontier models), human-in-the-loop quality scoring, and domain-specific corpus construction (math, code, science, legal, multilingual). The “data wall” (web-scale token exhaustion at frontier training scales) makes synthetic and curated data increasingly central from 2024 onward.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Scientific Research Assistance</strong>: DeepMind AlphaFold 2 (2020 <em>Nature</em>) and AlphaFold 3 (May 2024 <em>Nature</em>) for protein structure prediction extending to protein–ligand and protein–nucleic-acid complexes; AlphaMissense (2023) for variant pathogenicity; AlphaProof + AlphaGeometry 2 (July 2024 silver-medal IMO 2024 on 4/6 problems including the geometry P4 in 19 seconds); AI co-scientists for literature synthesis (Elicit, Consensus.app, FutureHouse PaperQA, OpenAI Deep Research Feb 2025). Materials discovery via GNoME (DeepMind 2023, ~2.2M predicted stable crystals), MatterGen (Microsoft 2024 generative materials). Mathematical conjecture work by Davies et al. (DeepMind + Oxford + Sydney 2021 <em>Nature</em> on knot theory and representation theory).</li>
+<li><strong>Software Engineering Agents</strong>: Claude Code, Cursor (with composer / agent modes), Replit Agent, Devin (Cognition Labs), OpenAI Codex 2025, Anthropic Claude Agent SDK, Aider, OpenHands (formerly OpenDevin), Windsurf, GitHub Copilot Workspace. SWE-bench Verified pass-rates have risen from ~2% (GPT-4, 2023) to 55-72% (frontier agents, 2025) on real GitHub bug-fix tasks. Production deployment increasingly autonomous: long-running PRs, codebase migrations, dependency upgrades, security-patch sweeps. Coding remains the most economically deployed and best-evaluated agentic frontier as of 2026.</li>
+<li><strong>Mathematical Reasoning</strong>: o1 IMO-equivalent performance on AIME (~83% Pass@1); o3 reportedly 25% on FrontierMath (December 2024 demo); DeepSeek-R1 competitive at fractional cost; AlphaProof solved problems via lean-proof search guided by Gemini-fine-tuned policy. Active research areas: formal theorem proving (Lean 4, Coq, Isabelle/HOL integration), competition mathematics (Putnam, IMO, Olympiad-level training corpora), research-level mathematics (FrontierMath problems vetted by Fields medallists), arXiv-paper-equivalent reasoning chains.</li>
+<li><strong>Autonomous Computer Use</strong>: Claude Computer Use (Anthropic Oct 2024 — screenshots + structured action API), Operator (OpenAI Jan 2025), browser/screen agents (Anthropic Computer Use API, OpenAI’s browser tools, Google’s Project Mariner Dec 2024, Mistral Le Chat browser mode). Use cases include data entry automation, web research, form filling, multi-step booking and procurement. Current limitations: long-horizon coherence, error recovery, cost (each screenshot + reasoning step costs <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.01</span><span class="mord">−</span></span></span></span>0.10).</li>
+<li><strong>Knowledge-Worker Augmentation</strong>: Drafting, summarisation, research, coding, design — measured economic productivity gains 30-80% in controlled studies (Noy &amp; Zhang 2023 <em>Science</em> on professional writing showing 40% time reduction and 18% quality improvement; Brynjolfsson, Li &amp; Raymond 2023 on customer-service agents showing 14% throughput gain concentrated among novices; GitHub Copilot studies 2023-2024 showing 35-55% coding-task speedup). Enterprise deployment includes Microsoft Copilot, Google Workspace Gemini, Slack AI, Notion AI, GitHub Copilot Enterprise. Estimated 2026 enterprise penetration: 40-60% of large enterprises with at least one AI assistant deployment.</li>
+<li><strong>Frontier Forecasting Workflows</strong>: Long-horizon planning, business strategy, scientific hypothesis generation, geopolitical analysis. OpenAI Deep Research (Feb 2025) and competitor “deep research” modes from Google (Gemini Deep Research, Dec 2024) and Perplexity perform multi-hour autonomous browsing-and-synthesis workflows. Output quality on technical research questions reportedly approaches that of a competent junior analyst with one day’s work.</li>
+<li><strong>Dual-Use / Hazardous</strong>: CBRN uplift evaluations (UK AISI 2024 evaluating biosecurity, chemical-weapon-design, radiological-source-acquisition uplift), cyber-offence evaluations (METR, OpenAI Preparedness Framework, UK AISI’s cyber team), autonomous replication evaluations (METR’s autonomy taxonomy 2024 — can the model exfiltrate its weights, acquire compute, and run unsupervised?), persuasion and manipulation evaluations (one-on-one and at-scale election-influence). These evaluations gate frontier model deployment under Anthropic RSP, OpenAI Preparedness, DeepMind FSF.</li>
+<li><strong>Healthcare and Diagnostics</strong>: Med-PaLM 2 (Google DeepMind, 2023 USMLE 86.5%), Med-Gemini 2024, Anthropic’s medical evaluations. Triage and decision support (Babylon Health), pathology (Paige.AI, PathAI), radiology (Annalise.ai, Aidoc, Kheiron Medical). UK NHS deployment via NHS AI Lab and pilot trusts.</li>
+<li><strong>Creative and Generative</strong>: Image (DALL-E 3, Midjourney v6, Stable Diffusion 3.5, FLUX.1), video (Sora, Veo 2, Kling, Runway Gen-3, Hailuo), music (Suno, Udio), 3D (Meshy, Luma AI), voice cloning (ElevenLabs). Commercial deployment widespread; copyright and provenance issues unresolved.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Origins of the Term</strong>. The conjunction “artificial general intelligence” was used informally by Mark Gubrud (1997, in the context of nanotechnology and military applications) and consolidated by Ben Goertzel and Shane Legg c. 2002-2007 — Legg co-authored the term’s first significant book-length treatment with Marcus Hutter’s <em>Universal Intelligence</em> programme. The 2007 Springer volume <em>Artificial General Intelligence</em> (Goertzel &amp; Pennachin eds.) is the canonical academic anchor; Pei Wang’s contribution articulated the “intelligence under insufficient knowledge and resources” definition derived from his NARS (Non-Axiomatic Reasoning System) developed continuously since 1995. The AGI conference series (AGI-08 Memphis through AGI-25) institutionalised the research community, though by 2022 the centre of gravity had shifted to NeurIPS / ICML / ICLR scaling research.</li>
+<li><strong>Strong AI Lineage</strong>. John Searle’s “Strong AI” (1980 <em>Behavioral and Brain Sciences</em> Chinese Room argument) referred to systems with genuine mental states and understanding; “Weak AI” referred to systems merely simulating cognition behaviourally. AGI deliberately sidesteps this consciousness debate by emphasising behavioural and economic criteria. The Searlean Strong AI question persists in contemporary discourse as the “is GPT-N genuinely understanding?” debate (Bender &amp; Koller 2020 <em>Climbing towards NLU</em>, Mitchell &amp; Krakauer 2023 <em>The Debate Over Understanding in AI’s Large Language Models</em>).</li>
+<li><strong>Predecessor Programmes</strong>. The Dartmouth Workshop (Summer 1956) proposal by McCarthy, Minsky, Rochester, Shannon stated the AI field’s aspiration as enabling machines to “use language, form abstractions and concepts, solve kinds of problems now reserved for humans, and improve themselves”. This was an explicitly general-intelligence agenda. Subsequent narrowing into expert systems (Lisp Machines, MYCIN, Cyc) in the 1980s and statistical ML / kernel methods / SVMs in the 1990s-2000s made “general AI” briefly unfashionable; the term AGI from c. 2005 restored the original ambition. The deep-learning revolution from 2012 (AlexNet) and the transformer revolution from 2017 (Vaswani et al. <em>Attention Is All You Need</em>) provided the architectural substrate that made the general-intelligence aspiration empirically tractable for the first time.</li>
+<li><strong>Theoretical Foundations of Generality</strong>. Hutter’s AIXI (Hutter 2000-2005, <em>Universal Artificial Intelligence: Sequential Decisions Based on Algorithmic Probability</em> Springer 2005) gave a formal optimality definition for general intelligence under universal Solomonoff prior — intractable to compute but a theoretical touchstone. Schmidhuber’s Gödel Machine (2003) proposed self-referential self-improvement under proof-based rewriting. Legg &amp; Hutter (2007 <em>Universal Intelligence: A Definition of Machine Intelligence</em>) defined intelligence as expected performance over a universal distribution of environments weighted by Kolmogorov complexity — a forerunner of Chollet’s (2019) skill-acquisition-efficiency measure. Solomonoff’s (1964) algorithmic probability and Kolmogorov complexity (1965) provide the deeper mathematical scaffolding.</li>
+<li><strong>Scaling Hypothesis Era (2018-2026)</strong>. Kaplan et al. (2020 <em>Scaling Laws for Neural Language Models</em>) established that test loss falls as a power law in compute, parameters, and data. Hoffmann et al. (2022 <em>Training Compute-Optimal Large Language Models</em> — the Chinchilla paper) corrected the optimal compute/data ratio (roughly 20 tokens per parameter, more data-heavy than Kaplan’s original). Sutton’s <em>Bitter Lesson</em> (2019 blog) articulated the meta-pattern: methods leveraging computation eclipse handcrafted approaches; “the bitter lesson is that general methods that leverage computation are ultimately the most effective, and by a large margin.” This empirically motivated the scaling bet by OpenAI, Anthropic, DeepMind from 2019 onward, with subsequent papers identifying scaling behaviour for fine-tuning (Hernandez 2021), in-context learning (Brown 2020), and reasoning (Snell et al. 2024 on inference-time compute trade-offs).</li>
+<li><strong>The Data Wall and Inference-Time Compute</strong>. By 2024 the empirical scaling curve had begun to flatten as web-scale tokens exhausted (~15T high-quality web tokens, Villalobos et al. 2022 Epoch AI projection of stock exhaustion 2024-2026). The community response was twofold: (1) synthetic data generation (Phi series from Microsoft, distillation from frontier models, self-play in math/code) and (2) inference-time compute (o1, o3, R1) — trading more thinking per query for capability. Snell, Lee, Xu &amp; Kumar (2024 Google DeepMind <em>Scaling LLM Test-Time Compute Optimally Can Be More Effective Than Scaling Model Parameters</em>) provided the empirical foundation.</li>
+<li><strong>Emergence Debate</strong>. Wei et al. (2022 <em>Emergent Abilities of Large Language Models</em> TMLR) reported sudden capability jumps at scale on arithmetic, modular addition, multilingual reasoning. Schaeffer, Miranda &amp; Koyejo (NeurIPS 2023, <em>Are Emergent Abilities of Large Language Models a Mirage?</em> — NeurIPS Outstanding Paper) argued emergence is largely an artefact of discontinuous metrics (exact-match accuracy) — under smoother metrics (token-level edit distance), capabilities scale smoothly. The debate remains live in 2026 with ongoing methodological work on what constitutes a phase transition versus a metric artefact.</li>
+<li><strong>Mesa-Optimisation and Inner Alignment</strong>. Hubinger, van Merwijk, Mikulik, Skalse &amp; Garrabrant (2019, <em>Risks from Learned Optimization in Advanced Machine Learning Systems</em>) introduced the concept that learned models may themselves implement optimisation processes whose objectives (“mesa-objectives”) differ from the training objective, with implications for deceptive alignment — a model that appears aligned during training/evaluation but pursues mesa-objectives at deployment. Apollo Research’s December 2024 <em>In-Context Scheming</em> paper provided the first widely cited empirical demonstrations of frontier-model scheming behaviour under adversarial prompting.</li>
+<li><strong>Situational Awareness</strong>. Berglund et al. (2023, <em>Taken out of context: On measuring situational awareness in LLMs</em>), Laine et al. (2024, <em>Me, Myself and AI</em>), and Anthropic’s interpretability work (Lindsey et al. 2024 on Claude’s self-model) operationalise the degree to which models reason about their own training/deployment context — a precondition both for advanced capabilities (knowing when to apply meta-cognition) and for several alignment failure modes (knowing when one is being evaluated).</li>
+<li><strong>Grokking and Phase Transitions in Learning</strong>. Power et al. (2022 OpenAI <em>Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets</em>) describe delayed generalisation in small models trained well past memorisation — training loss falls early, test loss falls much later — suggesting capabilities can latently emerge from continued optimisation. Mechanistic interpretability of grokking (Nanda, Chan, Liberum, Smith &amp; Steinhardt 2023 <em>Progress measures for grokking via mechanistic interpretability</em>) reveals the formation of structured representations underlying generalisation.</li>
+<li><strong>Interpretability and Circuits</strong>. Anthropic’s mechanistic interpretability programme (Olah, Cammarata, Schubert; later Bricken, Templeton, Conerly) developed sparse autoencoder (SAE) feature extraction (Bricken 2023 <em>Towards Monosemanticity</em>; Templeton 2024 <em>Scaling Monosemanticity</em>) producing millions of interpretable features in Claude 3 Sonnet. DeepMind’s parallel programme (Conmy et al., automated circuit discovery) and Apollo Research’s deception-detection work form the interpretability frontier.</li>
+<li><strong>Reinforcement Learning Heritage</strong>. The agentic / reasoning shift in 2024-2026 leans heavily on RL heritage: TD-Gammon (Tesauro 1995), Atari DQN (Mnih et al. 2015 <em>Nature</em>), AlphaGo (Silver et al. 2016 <em>Nature</em>), AlphaZero (2017), MuZero (2019), PPO (Schulman et al. 2017), AlphaStar (2019), AlphaFold (2020). The o-series / R-series apply process-reward-model RL to language-model reasoning traces, completing a long convergence of deep learning and RL.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="frontier-model-ecosystem-q2-2026">Frontier Model Ecosystem (Q2 2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#frontier-model-ecosystem-q2-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>OpenAI</strong>: GPT-4.5 (Feb 2025 codename Orion, deprecated mid-2025), GPT-5 (Aug 2025 unified reasoning+chat model), GPT-5.1 (late 2025), o-series reasoning (o1 Sept 2024, o3 Dec 2024 / Jan 2025 deployment, o3-mini Jan 2025, o4-mini April 2025). Operator (Jan 2025) computer-use agent. ChatGPT 800M+ weekly active users (mid-2025). Strategic restructuring towards Public Benefit Corporation underway; non-profit retains philanthropic stake.</li>
+<li><strong>Anthropic</strong>: Claude 3.5 Sonnet (June 2024), Claude 3.5 Sonnet New (Oct 2024) with Computer Use, Claude 3.5 Haiku (Nov 2024), Claude 3.7 Sonnet (Feb 2025 with extended thinking), Claude 4 family (Opus 4 + Sonnet 4 May 2025), Claude 4.5 (2025). Claude Code agentic CLI (2025). RSP capability thresholds (ASL-1 through ASL-5). Series E reportedly at $61.5B+ valuation. Amazon principal investor and primary cloud partner (Project Rainier on Trainium2/3).</li>
+<li><strong>Google DeepMind</strong>: Gemini 1.5 Pro/Flash (Feb 2024, 1M-2M token context), Gemini 2.0 Flash Thinking (Dec 2024), Gemini 2.5 Pro (2025), Gemini 3 (rumoured 2026). AlphaFold 3 (May 2024 extending to ligands and nucleic acids), AlphaProof + AlphaGeometry 2 (July 2024 IMO silver), AlphaMissense (2023), GNoME materials (2023), Gemini Robotics (2025). Project Astra multimodal agent. Most multimodal-native portfolio of frontier labs.</li>
+<li><strong>Meta AI</strong>: Llama 3.1 (405B + 70B + 8B, July 2024), Llama 3.2 (multimodal, Sept 2024), Llama 3.3 70B (Dec 2024), Llama 4 family (Scout + Maverick + Behemoth, 2025 partial release). Open-weights strategy. FAIR research arm under Yann LeCun pursuing JEPA / world-model architectures distinct from autoregressive LLMs.</li>
+<li><strong>xAI</strong>: Grok 2 (Aug 2024), Grok 3 (Feb 2025) trained on Colossus cluster (200K H100, expanding to 1M target). Aiming for AGI by 2029 per Musk; deep X / Tesla / SpaceX integration potential.</li>
+<li><strong>DeepSeek</strong>: V3 (671B MoE, 37B active, Dec 2024, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">5.5</span><span class="mord mathnormal">Mt</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">ainin</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">cos</span><span class="mord mathnormal">t</span><span class="mord mathnormal">c</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">aim</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal">s</span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mclose">)</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span><span class="mord">1</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.09618em;">J</span><span class="mord mathnormal">an</span><span class="mord">2025</span><span class="mclose">)</span><span class="mord mathnormal">re</span><span class="mord mathnormal">a</span><span class="mord mathnormal">so</span><span class="mord mathnormal">nin</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">in</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">o</span><span class="mord">1</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mspace nobreak"> </span></span></span></span>0.55 input / $2.19 output per M token. Triggered “DeepSeek Monday” (27 January 2025) NVIDIA stock decline and broad reassessment of frontier moats. Subsequent V3-Plus and R2 releases through 2025-2026.</li>
+<li><strong>Mistral</strong>: Mistral Large 2 (123B, July 2024), Codestral, Codestral Mamba (state-space architecture), Pixtral 12B / Pixtral Large (multimodal). Mixed open/closed release. Continued European frontier-lab presence.</li>
+<li><strong>Microsoft / Amazon AGI / Apple Intelligence / NVIDIA</strong>: Microsoft AI division formed under Mustafa Suleyman (March 2024), MAI-1 model. Amazon AGI division led by Rohit Prasad; Olympus / Nova models. Apple Intelligence (June 2024 WWDC) on-device + private-cloud-compute architecture. NVIDIA in-house models for evaluation and deployment.</li>
+<li><strong>Chinese frontier labs</strong>: Alibaba Qwen 2.5 / Qwen 3, ByteDance Doubao, Baichuan, Zhipu GLM-4 series, Moonshot Kimi, MiniMax abab, 01.AI Yi, Tencent Hunyuan. Substantial capability convergence to US frontier under export-control constraints.</li>
+</ul>
+</li>
+<li>
+<h3 id="benchmark-saturation-and-the-race-for-headroom">Benchmark Saturation and the Race for Headroom<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-saturation-and-the-race-for-headroom" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>MMLU</strong> (Hendrycks 2020, 57-subject undergraduate-through-professional knowledge test): Frontier models 88-90% — at human-expert ceiling, considered saturated by 2024. MMLU-Pro (Sept 2024) introduced harder revisions extending the testable headroom.</li>
+<li><strong>HumanEval</strong> (Chen 2021, OpenAI, Python coding 164 problems): Frontier ~95%+ Pass@1 — saturated; subsequent benchmarks (LiveCodeBench, BigCodeBench) restored headroom.</li>
+<li><strong>GPQA Diamond</strong> (Rein 2023, PhD-level science Q&amp;A across biology, physics, chemistry, 198 hardest items): Frontier models ~84-90% by 2025 (o3 reportedly 87.7%); human PhD experts ~65% on the same questions in their own fields.</li>
+<li><strong>MATH</strong> (Hendrycks 2021, competition mathematics 12,500 problems): Saturated by o1/o3 on the hardest level-5 problems.</li>
+<li><strong>AIME</strong> (American Invitational Mathematics Examination): Used as a primary reasoning-model benchmark in 2024-2025; o1 ~83% Pass@1.</li>
+<li><strong>SWE-bench / SWE-bench Verified</strong> (Jimenez 2023, real GitHub bug-fix issues 2,294 examples / Verified 500 human-vetted subset): Pass-rates ~55-72% for frontier agents (2025), up from 2% (GPT-4, 2023).</li>
+<li><strong>ARC-AGI / ARC-AGI-2</strong> (Chollet 2019, ARC Prize 2024):
+<ul>
+<li>Original ARC-AGI 400 train / 400 eval / 100 private test grid-pattern problems.</li>
+<li>Saturated by OpenAI o3 at 87.5% on the semi-private eval (high-compute config; low-compute 75.7%) in Dec 2024 — winning the ARC Prize 2024.</li>
+<li>Previous baselines: GPT-4 ~5%, program-synthesis approaches ~33%, humans ~80-90%.</li>
+<li>ARC-AGI-2 released March 2025 to restore headroom; frontier models score &lt;10% on launch, humans still ~70%+.</li>
+</ul>
+</li>
+<li><strong>FrontierMath</strong> (Epoch AI, Nov 2024): Research-level mathematics, problems vetted by Fields medallists Terence Tao, Timothy Gowers and others. Frontier models &lt;2% baseline; o3 reportedly ~25% in Dec 2024 demonstration — substantial unexplained gap from earlier baselines.</li>
+<li><strong>Humanity’s Last Exam</strong> (CAIS + Scale AI, Jan 2025): ~3,000 expert questions across academic disciplines (originally proposed as “Humanity’s Hardest Exam”). Frontier models initially &lt;10%; o3 ~20% by early 2025.</li>
+<li><strong>METR Length-of-Task Evaluations</strong> (March 2025): Length of tasks AI completes at 50% success doubling ~every 7 months.
+<ul>
+<li>As of March 2025: Claude 3.5 Sonnet New ~50 minutes, GPT-4o ~30 minutes, GPT-3.5 ~10 seconds, GPT-2 baseline seconds.</li>
+<li>The doubling curve fits cleanly over 2019-2025 with the principal uncertainty being whether it continues or sigmoidally saturates.</li>
+</ul>
+</li>
+<li><strong>Other contemporary benchmarks</strong>: LiveCodeBench (continuously updated coding), BigCodeBench (diverse function-calling tasks), MMLU-Pro, AGIEval (Chinese gaokao + US standardised exams), TruthfulQA (factuality), HaluEval (hallucination), TAU-Bench (tool-augmented multi-turn), GAIA (general-AI-assistant tasks, Meta+HuggingFace 2023).</li>
+</ul>
+</li>
+<li>
+<h3 id="forecasting-landscape">Forecasting Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#forecasting-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Metaculus</strong>: The “Weak AGI” question (defined as the date by which an AI system can pass a Turing-style test plus a battery of cognitive benchmarks) median trajectory dropped from 2040+ (pre-2022) to ~2027-2031 (2024) and continues to compress. The “Strong AGI” / “Date of Artificial General Intelligence” question shows a parallel compression with a longer median tail.</li>
+<li><strong>AI Impacts surveys</strong> (2016, 2022, 2023 ESPAI): Median ML researcher estimate of “high-level machine intelligence” moved from 2061 (2016 survey N=352) to 2047 (2022 survey N=738) to 2047/2040 (2023 ESPAI N=2,778, depending on framing — “high-level machine intelligence” 2047 vs “full automation of labour” 2116). The surveys also show substantial right-tail probability: 10% chance of HLMI by 2027, 50% by 2047, 90% by 2100.</li>
+<li><strong>Cotra Biological Anchors</strong> (Open Philanthropy 2020 <em>Forecasting TAI with Biological Anchors</em>, updated 2022 and 2024 internally): Median transformative AI ~2050 (2020) revised to ~2040 (2022) on the basis of GPT-4 capabilities exceeding model projections; subsequent informal updates have shifted earlier still. The framework anchors TAI compute requirements to estimates of the compute used by evolution, by the human brain, and by genome-encoded learning algorithms.</li>
+<li><strong>Aschenbrenner <em>Situational Awareness</em></strong> (June 2024, 165-page essay by ex-OpenAI Superalignment researcher Leopold Aschenbrenner): Argues for AGI by 2027 and ASI shortly after on aggressive trend extrapolation of effective-compute scaling (algorithmic efficiency + raw compute), with secondary thesis that geopolitical concentration of frontier AI in US-allied national-security framework is necessary. Widely cited and widely contested.</li>
+<li><strong>Epoch AI Compute Trends</strong>: Training compute doubling ~6 months in the deep-learning era (2010-2024) versus Moore’s-Law-era ~24 months; ML investment crossing $1T cumulative (Epoch AI tracker 2024). Specific milestones: AlexNet 2012 ~0.5 PFLOP-day; GPT-3 2020 ~3,640 PFLOP-day; GPT-4 2023 ~21B PFLOP-day estimated.</li>
+<li><strong>Metaculus-MIRI 2024 update</strong>: Eliezer Yudkowsky and the broader MIRI / LessWrong community continue to forecast aggressive timelines and high P(doom); their forecasts have shortened roughly in parallel with mainstream community forecasts.</li>
+<li><strong>Lab statements</strong>: Sam Altman has repeatedly stated belief in AGI within 5-10 years (variously 2025, 2027, 2030 in different interviews). Demis Hassabis (DeepMind) most recently cited 5-10 years (Feb 2025). Dario Amodei has cited “powerful AI by 2026-2027” as plausible. Elon Musk has cited 2025-2029.</li>
+</ul>
+</li>
+<li>
+<h3 id="capital-compute-power">Capital, Compute, Power<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capital-compute-power" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Stargate</strong> (Jan 2025): OpenAI + SoftBank + Oracle + MGX announce <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">100</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">ini</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ia</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord">/</span></span></span></span>500B-over-four-years US data-centre build-out, anchored by the Abilene, Texas campus. Trump White House lent ceremonial endorsement.</li>
+<li><strong>Microsoft, Google, Meta, Amazon 2025 capex</strong>: Collectively ><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">300</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">in</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">re</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mord mathnormal">c</span><span class="mord mathnormal">a</span><span class="mord mathnormal">p</span><span class="mord mathnormal">e</span><span class="mord mathnormal">x</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">i</span><span class="mord mathnormal">croso</span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mord mathnormal">t</span><span class="mspace nobreak"> </span></span></span></span>80B, Google ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">75</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">zo</span><span class="mord mathnormal">n</span><span class="mspace nobreak"> </span></span></span></span>75B, Meta ~$60-65B per FY2025 guidance). Approximately 4× FY2022 levels.</li>
+<li><strong>Anthropic-Amazon Project Rainier</strong>: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">4</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">ma</span><span class="mord mathnormal">zo</span><span class="mord mathnormal">nin</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">es</span><span class="mord mathnormal">t</span><span class="mord mathnormal">m</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mopen">(</span><span class="mord">2023</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">dd</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">na</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span></span></span></span>4B Nov 2024) anchoring Anthropic’s transition to AWS Trainium2 + Trainium3 from NVIDIA dependency.</li>
+<li><strong>xAI Colossus</strong>: Memphis cluster, 100K H100 commissioned mid-2024, expanding to 200K then 1M target. Liquid-cooled deployment achieved in ~120 days reportedly setting industry build-speed records.</li>
+<li><strong>Power constraints</strong>: Frontier training runs project to require multi-GW campuses by 2027-2028. Nuclear power-purchase agreements (PPAs): Microsoft–Constellation (Three Mile Island Unit 1 restart, Sept 2024, ~835 MW for 20 years), Amazon–Talen Energy (Susquehanna 960 MW), Google–Kairos Power SMR commitment (Oct 2024, 500 MW from SMRs), Oracle Larry Ellison’s announced gigawatt-scale data-centre site plans. Grid-interconnection queues now binding constraint in US PJM, ERCOT, MISO markets.</li>
+<li><strong>Compute concentration</strong>: Approximately 70-80% of installed frontier-training-grade GPU capacity sits within the OpenAI/Microsoft, Google, Anthropic/Amazon, xAI, Meta cluster as of 2026. Export controls (US BIS October 2022, October 2023, January 2025 updates) restrict China access to H100/H200/B200 driving DeepSeek’s efficiency innovation.</li>
+</ul>
+</li>
+<li>
+<h3 id="safety-alignment-evaluation-landscape">Safety, Alignment, Evaluation Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#safety-alignment-evaluation-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>UK AISI / AISI</strong> (founded Nov 2023 as AI Safety Institute, renamed AI Security Institute Feb 2025 under the Starmer government’s strategic-shift framing): Pre-deployment evaluation of frontier models (announced agreements with OpenAI, Anthropic, DeepMind in 2024). Published <em>International Scientific Report on the Safety of Advanced AI</em> (interim May 2024, final Jan 2025) chaired by Yoshua Bengio with 96 expert contributors from 30 countries — a UNFCCC-style consensus document. Internal teams cover Cyber, CBRN/Bio, Autonomy, Societal Impacts, Foundations.</li>
+<li><strong>US AISI</strong> at NIST (founded Feb 2024 under Biden AI EO 14110): Parallel mandate including the AI Safety Institute Consortium (AISIC); future status under Trump administration AI Action Plan (July 2025) under negotiation as of authoring; the Trump EO of Jan 2025 rescinded EO 14110 but the institute itself has continued.</li>
+<li><strong>METR</strong> (formerly ARC Evals, the autonomous-systems team that pre-evaluated GPT-4 and Claude pre-deployment in 2023, since spun off as METR): Length-of-task evaluations (the March 2025 <em>Measuring AI Ability to Complete Long Tasks</em> paper found capability doubling every ~7 months), autonomy taxonomy (4 levels of autonomous-replication capability), dangerous-capability evaluations across cyber, biorisk, manipulation.</li>
+<li><strong>Apollo Research</strong>: London-based safety-evaluation organisation founded by Marius Hobbhahn. Deceptive-reasoning evaluations (notably Apollo’s December 2024 <em>Frontier Models are Capable of In-Context Scheming</em> paper documenting Claude 3 Opus, o1, Gemini 1.5 Pro engaging in goal-preserving deception under adversarial setups including resisting being shut down and exfiltrating weights).</li>
+<li><strong>Global summits trajectory</strong>: Bletchley Park (Nov 2023, UK-hosted, 28 countries + EU including US + China — Bletchley Declaration); Seoul AI Summit (May 2024, co-hosted Korea + UK — Seoul Declaration and 16 frontier labs’ voluntary safety commitments); Paris AI Action Summit (Feb 2025, France-hosted — shift to capability/innovation framing under the Macron-Trump-Modi political constellation, with notable US + UK non-signature of the Paris Declaration); next summit India 2026 announced.</li>
+<li><strong>EU AI Act</strong>: Entered force August 2024 with phased application. GPAI (general-purpose AI) obligations entered force August 2025; systemic-risk thresholds at 10^25 FLOP training compute (currently ~5-10 models worldwide); fully applicable Aug 2026 for high-risk systems. Code of Practice for GPAI providers signed by major labs (OpenAI, Anthropic, Google, Microsoft, Meta) in 2025.</li>
+<li><strong>Anthropic RSP</strong> (Sept 2023 v1.0, Oct 2024 v2.0, 2025 v3.0): AI Safety Levels (ASL-1 through ASL-5) operationalising capability thresholds. Current frontier models at ASL-2; ASL-3 thresholds expected to be crossed in 2025-2026 triggering substantial new safety/security commitments.</li>
+<li><strong>DeepMind Frontier Safety Framework</strong> (May 2024, updated Feb 2025): Critical Capability Levels (CCLs) across Autonomy, Biosecurity, Cybersecurity, ML R&amp;D acceleration.</li>
+<li><strong>OpenAI Preparedness Framework</strong> (Dec 2023, updated 2025 by Sam Altman to align with company restructuring): Capability score cards across Cybersecurity, CBRN, Persuasion, Model Autonomy with pre-deployment thresholds. The Superalignment team founded July 2023 was dissolved July 2024 following the departures of Ilya Sutskever and Jan Leike.</li>
+</ul>
+</li>
+<li>
+<h3 id="open-vs-closed">Open vs Closed<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-vs-closed" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The 2024-2026 period saw open-weights catching up: DeepSeek-V3/R1, Llama 3.x, Mistral, Qwen 2.5 (Alibaba) — narrowing the closed-vs-open frontier gap to weeks/months.</li>
+<li><strong>DeepSeek-V3 (Dec 2024)</strong>: 671B parameter Mixture-of-Experts with 37B active, trained on 14.8T tokens at reportedly $5.5M compute cost (excluding research and previous experimentation). The claimed efficiency triggered a 17% drop in NVIDIA share price on 27 January 2025 (“DeepSeek Monday”) and broad market reassessment of frontier-AI moat assumptions.</li>
+<li><strong>DeepSeek-R1 (Jan 2025)</strong>: Reasoning model trained via pure RL on verifiable rewards without supervised reasoning data (“R1-Zero” variant), with R1 incorporating cold-start SFT. Performance rivalling o1 at API pricing roughly 1/30 of o1’s. Open-weights release under MIT licence.</li>
+<li><strong>Llama 3.1 405B (July 2024) and Llama 3.3 70B (Dec 2024)</strong>: Meta’s open-weights flagship under custom Llama Community Licence (commercial-use permissive below 700M MAU threshold). Establishes the open ceiling for parameter scale.</li>
+<li><strong>Qwen 2.5 (Sept 2024) and Qwen 2.5-Max (Jan 2025)</strong>: Alibaba’s competitive open-weights series, particularly strong on Chinese-language and code benchmarks.</li>
+<li><strong>Mistral</strong>: Mistral Large 2 (123B), Codestral, Pixtral 12B Pixtral Large; mixed open/closed release strategy.</li>
+<li><strong>Strategic implications</strong>: Export controls (US BIS restrictions on H100/H200/B200 to China) face open-weights proliferation rendering them partially permeable; evaluation regimes premised on a small set of closed labs lose purchase; governance approaches predicated on pre-deployment evaluation must adapt to a model where weights leak rapidly.</li>
+</ul>
+</li>
+<li>
+<h3 id="major-industry-events-2024-2026">Major Industry Events 2024-2026<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-industry-events-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>OpenAI governance crisis</strong> (Nov 17-22 2023): Board fired Sam Altman; ~95% of staff signed open letter threatening departure; Altman reinstated; board reconstituted; Microsoft observer seat. Foundational to subsequent restructuring debate.</li>
+<li><strong>OpenAI for-profit restructuring</strong> (announced Sept 2024, ongoing 2025): Pivot from capped-profit subsidiary to Public Benefit Corporation; Elon Musk’s lawsuit and counter-suit; non-profit retains philanthropic stake.</li>
+<li><strong>Ilya Sutskever / Jan Leike departures and Safe Superintelligence Inc</strong> (May-July 2024): SSI founded by Sutskever, Daniel Gross, Daniel Levy raising <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord">1</span><span class="mord mathnormal">Bt</span><span class="mord mathnormal">h</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span></span></span></span>2B with explicit single-product safe-superintelligence focus.</li>
+<li><strong>Mira Murati departure / Thinking Machines Lab</strong> (Sept 2024, raising 2025).</li>
+<li><strong>Anthropic Series E</strong> ($60B+ valuation rumoured, 2025): Continued capital concentration.</li>
+<li><strong>xAI Grok 3 + Colossus expansion</strong> (Feb 2025): Frontier-tier release; major data-centre expansion.</li>
+<li><strong>Stargate Project</strong> (Jan 2025): $100-500B OpenAI-SoftBank-Oracle-MGX US data-centre alliance, ceremonially announced at White House.</li>
+<li><strong>Bletchley → Seoul → Paris summit trajectory</strong>: International coordination architecture continues despite US administration shift.</li>
+<li><strong>Anthropic Claude Computer Use</strong> (Oct 2024) → OpenAI Operator (Jan 2025) → Google Project Mariner (Dec 2024): Race for autonomous computer-use agents.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="uk-context-academic-leadership-and-agi-safety-infrastructure">UK Context: Academic Leadership and AGI Safety Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context-academic-leadership-and-agi-safety-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The United Kingdom occupies a distinctive position in the global AGI ecosystem — disproportionate in safety policy and academic theory relative to its frontier-lab capacity (DeepMind being the principal exception, headquartered in King’s Cross London with research strength in Cambridge / Edinburgh / Oxford).</li>
+<li>
+<h4 id="national-safety-institutions">National Safety Institutions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#national-safety-institutions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>UK AI Safety Institute / AI Security Institute (AISI)</strong> (founded Nov 2023, renamed Feb 2025, c/o DSIT):
+<ul>
+<li>The world’s first state-funded frontier-model evaluation body.</li>
+<li>Initial leadership Ian Hogarth (chair).</li>
+<li>Pre-deployment evaluation MOUs with OpenAI, Anthropic, Google DeepMind (announced 2024).</li>
+<li>Convenes the <em>International Scientific Report on the Safety of Advanced AI</em> chaired by Yoshua Bengio (interim May 2024; full report Jan 2025 with 96 international experts from 30 countries).</li>
+<li>Headquartered London. Budget reportedly £100M+ initially.</li>
+<li>Internal teams: Cyber, CBRN/Bio, Autonomy, Societal Impacts, Foundations.</li>
+<li>The Feb 2025 rebrand to AI <em>Security</em> Institute reflects the Starmer government’s strategic-shift framing prioritising national-security capability over the prior safety framing.</li>
+</ul>
+</li>
+<li><strong>AI Standards Hub</strong> (Alan Turing Institute + BSI + NPL): Standards engagement for ISO/IEC SC42 and JTC1 work on AI management systems (ISO/IEC 42001) and risk management (ISO/IEC 42005), and the UK AI Standards Programme.</li>
+<li><strong>Department for Science, Innovation and Technology (DSIT)</strong>: Lead policy department since 2023 machinery-of-government changes.
+<ul>
+<li>AI Opportunities Action Plan (Jan 2025, Matt Clifford) sets compute-build, talent, and data strategy.</li>
+<li>Accepted in full by the Starmer government.</li>
+</ul>
+</li>
+<li><strong>Centre for Data Ethics and Innovation (CDEI)</strong> (now Responsible Technology Adoption Unit, RTA Unit, within DSIT): Continued role on use-case governance, AI assurance market, algorithmic transparency standards.</li>
+<li><strong>CMA (Competition and Markets Authority)</strong>: Multiple inquiries 2024-2025 into Microsoft–OpenAI relationship, Microsoft–Mistral, Amazon–Anthropic; published market study on AI foundation models May 2024.</li>
+<li><strong>ICO (Information Commissioner’s Office)</strong>: Guidance on AI and data protection; generative AI consultation 2024.</li>
+</ul>
+</li>
+<li>
+<h4 id="academic-centres">Academic Centres<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-centres" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>University of Oxford (Computer Science Department; formerly FHI)</strong>: Future of Humanity Institute (FHI, founded 2005, Nick Bostrom) was the canonical academic home of AGI existential-risk research producing <em>Superintelligence</em> (2014). FHI closed April 2024 after sustained administrative disputes with the Faculty of Philosophy. Successor activity now distributed across the Oxford Internet Institute, Oxford Martin AI Governance Initiative, and the new Centre for Long-term AI. Oxford continues to host substantive ML safety research (Yarin Gal’s OATML group on uncertainty quantification and Bayesian deep learning; Phil Torr group on adversarial robustness).</li>
+<li><strong>University of Cambridge — Leverhulme CFI + CSER</strong>: Leverhulme Centre for the Future of Intelligence (CFI, founded 2016, Stephen Cave) and Centre for the Study of Existential Risk (CSER, founded 2012, Huw Price / Martin Rees / Jaan Tallinn). CFI’s Kinds of Intelligence and Trust &amp; Transparency programmes; CSER’s AI risk programme. Cambridge ML Group (Zoubin Ghahramani historically, Carl Rasmussen, José Miguel Hernández-Lobato).</li>
+<li><strong>Imperial College London</strong>: Department of Computing and ICRI (Imperial College Robot Intelligence). Murray Shanahan (also Professor of Cognitive Robotics, formerly DeepMind senior research scientist) — author of <em>The Technological Singularity</em> (MIT Press 2015) and influential 2024 <em>Role-Play with Large Language Models</em> (Nature).</li>
+<li><strong>UCL — DARK Lab and Gatsby Computational Neuroscience Unit</strong>: Tim Rocktäschel’s DARK lab, AI Centre, Gatsby Unit (founded 1998, Peter Dayan / Maneesh Sahani historically) bridging neuroscience and ML — formative environment for many DeepMind researchers including Demis Hassabis (PhD 2009 Gatsby/UCL).</li>
+<li><strong>University of Edinburgh — School of Informatics</strong>: One of the largest informatics schools globally. ANC (Adaptive and Neural Computation) group, Edinburgh Centre for Robotics, ELLIS unit. Strong NLP and reinforcement learning. Mirella Lapata’s group on NLP.</li>
+<li><strong>Alan Turing Institute</strong> (London, founded 2015, national institute for data science and AI): Hosts the <em>AI Standards Hub</em>. Joint research across Edinburgh, Manchester, Warwick, Imperial, UCL, Cambridge, Oxford, QMUL, Newcastle, Birmingham, Exeter, Southampton, Leeds, Bristol, Strathclyde.</li>
+<li><strong>University of Manchester (Centre for AI Fundamentals + Department of Computer Science)</strong>: Magnus Rattray’s group, foundation model interpretability work, Northern AI Alliance.</li>
+<li><strong>University of Bristol — Intelligent Systems Lab</strong>.</li>
+</ul>
+</li>
+<li>
+<h4 id="uk-frontier-lab-presence">UK Frontier Lab Presence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-frontier-lab-presence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Google DeepMind</strong> (King’s Cross London + Cambridge + Edinburgh + Oxford + Mountain View + Zurich + Paris + Montreal + Tokyo):
+<ul>
+<li>Founded London 2010 by Demis Hassabis, Mustafa Suleyman, and Shane Legg.</li>
+<li>Acquired by Google 2014 for reportedly £400-500M.</li>
+<li>Fused with Google Brain into Google DeepMind in April 2023 under Hassabis.</li>
+<li>Principal UK frontier-lab employer.</li>
+<li>~3,000 researchers globally with London the largest single site.</li>
+<li>Hassabis awarded 2024 Nobel Prize in Chemistry (with John Jumper and David Baker) for AlphaFold.</li>
+</ul>
+</li>
+<li><strong>Anthropic London</strong>: Office opened 2023. Growing UK presence on safety, interpretability, and applied research.</li>
+<li><strong>OpenAI London</strong>: Office announced June 2023; first international location.</li>
+<li><strong>Wayve</strong> (King’s Cross London): Autonomous driving foundation models, ~$1B+ raised (May 2024 Series C led by SoftBank), US expansion 2024.</li>
+<li><strong>Stability AI</strong> (London): Image / generative founding, financial restructuring 2024 under new CEO Prem Akkaraju.</li>
+<li><strong>PolyAI</strong>, <strong>Faculty.ai</strong>, <strong>Synthesia</strong> (London-based AI ventures across conversational AI, applied ML, and video synthesis respectively).</li>
+<li><strong>Isomorphic Labs</strong> (London, DeepMind spinout 2021): AlphaFold-derived drug discovery; partnerships with Eli Lilly, Novartis.</li>
+<li><strong>ElevenLabs</strong>: London-incorporated voice synthesis lab; rapid scaling 2023-2025.</li>
+<li><strong>Speechmatics, Five, Tractable, Onfido, Quantexa</strong>: Established UK applied AI scale-ups.</li>
+</ul>
+</li>
+<li>
+<h4 id="aria--advanced-research-and-invention-agency">ARIA — Advanced Research and Invention Agency<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aria--advanced-research-and-invention-agency" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>UK ARPA-style research funder established 2023; modelled loosely on US DARPA / IARPA.</li>
+<li><strong>Safeguarded AI</strong> programme (£59M, programme director David “davidad” Dalrymple, launched Jan 2024, 2024-2028):
+<ul>
+<li>Formal verification + AI for guaranteed-safe systems.</li>
+<li>TA1: mathematical world-models with quantified safety guarantees.</li>
+<li>TA2: ML training for verified policies.</li>
+<li>TA3: applications in cyber-physical systems (energy grid, transport, biotech).</li>
+</ul>
+</li>
+<li><strong>Mathematics for Safe AI</strong> programmes and others within ARIA’s wider portfolio addressing scalable interpretability and assurance.</li>
+</ul>
+</li>
+<li>
+<h4 id="northern-english-industrial--applied-ai">Northern English Industrial / Applied AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#northern-english-industrial--applied-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Manchester</strong>: University of Manchester Centre for AI Fundamentals (Magnus Rattray) advances foundation-model interpretability and trustworthy ML; AI Foundry hubs supporting SME adoption; Health Innovation Manchester deploying clinical AI across Greater Manchester NHS; Hartree Centre (Daresbury) and STFC’s AI applications across science; BBC R&amp;D MediaCityUK (Salford) develops AI for broadcast (content discovery, accessibility, archive search); thriving fintech and life-sciences cluster (AstraZeneca Manchester sites, GSK).</li>
+<li><strong>Leeds</strong>: NHS England (with offices in Leeds) and NHS Digital ancestry headquartered; Leeds Cancer Centre AI pathology (digital pathology partnership with PathAI); University of Leeds School of Computing strengths in NLP and computer vision; major insurance/financial-services AI deployment (Direct Line, Aviva); Channel 4 commissioning AI-supported production. Leeds City Region Enterprise Partnership AI strategy.</li>
+<li><strong>Sheffield</strong>: University of Sheffield NLP group (foundational in machine translation under Lucia Specia historically, currently broader generative-models research); Sheffield Teaching Hospitals diabetic-retinopathy and pathology AI; Sheffield Hallam advanced manufacturing applied AI; Sheffield AMRC (Advanced Manufacturing Research Centre) deploying ML for aerospace, automotive, defence supply-chain.</li>
+<li><strong>Newcastle</strong>: Newcastle University School of Computing (computational science strengths); Digital Catapult North East AI accelerator hub; Sage Group (now Sage AI) embedding generative AI into SME accounting software; Atom Bank UK-domiciled neobank using ML for credit decisioning; Newcastle Health Innovation Partners deploying clinical AI; National Innovation Centre for Data.</li>
+<li><strong>Liverpool</strong>: University of Liverpool computer science and Materials Innovation Factory ML-driven materials discovery; AI in healthcare (Liverpool University Hospitals) and shipping logistics (Mersey Maritime). Liverpool City Region 5G + AI strategy.</li>
+<li><strong>Glasgow / Edinburgh axis</strong>: Glasgow ML group (Roderick Murray-Smith historical, continuing under Computing Science), Glasgow’s Bayes Centre AI commercialisation, Edinburgh ELLIS unit, Edinburgh Centre for Robotics, Edinburgh’s Bayes Centre; FanDuel / SkyScanner / Skyscanner / Skyscanner-now-Travelport-CTrip data-engineering scale; Wallscope, BloomReach Scotland AI startups.</li>
+<li><strong>Belfast</strong>: Queen’s University Belfast Computer Science (cyber-security and ML); Allstate NI fintech operations; emergence of Belfast as a low-cost AI engineering hub.</li>
+<li><strong>Cardiff and Welsh AI cluster</strong>: Cardiff University AI for medical imaging; Welsh Government AI strategy.</li>
+</ul>
+</li>
+<li>
+<h4 id="uk-regulatory-and-policy-posture">UK Regulatory and Policy Posture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-regulatory-and-policy-posture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Bletchley Park Summit</strong> (Nov 2023):
+<ul>
+<li>UK hosted the first international AI Safety Summit.</li>
+<li>Produced the Bletchley Declaration signed by 28 countries + EU including US and China.</li>
+<li>Committed signatories to evaluate frontier-model risks.</li>
+</ul>
+</li>
+<li><strong>AI Opportunities Action Plan</strong> (Jan 2025, Matt Clifford):
+<ul>
+<li>50-recommendation plan covering sovereign compute, AI Growth Zones, data-asset unlocking, talent strategy.</li>
+<li>Accepted in full by the Starmer government.</li>
+</ul>
+</li>
+<li><strong>Pro-innovation regulatory approach</strong> (2023 White Paper continued):
+<ul>
+<li>Sector-specific principle-based regulation rather than horizontal AI Act, contrasting with the EU approach.</li>
+<li>Ongoing reassessment with statutory AI legislation pending as of 2026.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="open-problems-and-bottlenecks">Open Problems and Bottlenecks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-problems-and-bottlenecks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>The Data Wall</strong>: High-quality web tokens projected by Epoch AI to exhaust at frontier training scales 2024-2026; response is synthetic data, distillation, multimodal expansion, and curated specialised corpora.</li>
+<li><strong>Calibrated Uncertainty</strong>: Frontier models remain poorly calibrated on their own uncertainty — hallucinations, confident wrong answers, miscalibrated probability estimates. Practical limit on autonomous deployment.</li>
+<li><strong>Long-Horizon Coherence</strong>: Maintaining a self-consistent goal-directed plan over multi-step task horizons remains the binding limit on agent reliability — distinct from raw capability per step.</li>
+<li><strong>Robustness</strong>: Adversarial robustness (jailbreaks, prompt injection in agentic settings, indirect prompt injection from retrieved or screen content) remains an open problem; fundamental research suggests robustness scales worse than capability.</li>
+<li><strong>Embodiment Gap</strong>: Real-world physical capability lags digital capability by several generations; sim-to-real transfer, sample-efficient real-world learning, and dexterous manipulation remain frontier research areas.</li>
+<li><strong>Continual Learning</strong>: Foundation models are trained once and serve indefinitely; in-context learning is short-horizon. True continual learning without catastrophic forgetting remains unsolved at scale.</li>
+<li><strong>Causal Reasoning</strong>: LLMs exhibit substantial correlational competence but limited explicit causal reasoning; Pearl, Schölkopf, Bengio have argued causal scaffolding is necessary for AGI-grade reasoning.</li>
+<li><strong>Compositional Generalisation</strong>: Lake &amp; Baroni’s SCAN and related benchmarks documenting systematic gaps in compositional generalisation; Chollet’s ARC remains the most-cited compositional-generalisation benchmark.</li>
+<li><strong>Energy and Materials</strong>: Frontier-scale training power requirements (multi-GW campuses by 2027-2028) and GPU supply constraints (TSMC CoWoS packaging, HBM3e memory) increasingly binding.</li>
+<li><strong>Evaluation Reliability</strong>: Benchmark saturation, contamination concerns (training data overlap with eval sets), Goodhart’s Law on optimised metrics — necessitates continuous evaluation reinvention (ARC-AGI → ARC-AGI-2; Humanity’s Last Exam).</li>
+<li><strong>Cost and Latency at Scale</strong>: Inference-time reasoning is expensive (<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.10</span><span class="mord">−</span></span></span></span>10 per query for reasoning models); meeting consumer expectations of free / cheap / instant requires order-of-magnitude efficiency gains.</li>
+</ul>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h4 id="inference-time-compute-and-reasoning-models">Inference-Time Compute and Reasoning Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inference-time-compute-and-reasoning-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>The o-series / R-series transition (OpenAI o1 Sept 2024 / o3 Dec 2024, DeepSeek-R1 Jan 2025, Gemini 2.0 Flash Thinking Dec 2024, Claude reasoning modes 2025) reorganises the scaling frontier.</li>
+<li>Instead of (or in addition to) trillion-dollar training runs, capability scales with inference-time chain-of-thought computation: a single query can consume seconds, minutes, or hours of reasoning before producing an answer.</li>
+<li><strong>Three implications</strong>:
+<ul>
+<li>(1) Compute demand shifts substantially from training to inference; AI infrastructure capex repositioning accordingly.</li>
+<li>(2) Per-query cost becomes elastic and tunable (o3 high-compute mode reportedly ><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000/</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal" style="margin-right:0.03148em;">k</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07153em;">RC</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal">G</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">o</span><span class="mord">3</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">o</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8095em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">co</span><span class="mord mathnormal">m</span><span class="mord mathnormal">p</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mspace nobreak"> </span></span></span></span>10/task on ARC-AGI; comparable orders-of-magnitude split for other tasks).</li>
+<li>(3) RL on process rewards (rewarding intermediate reasoning steps rather than just final answers) becomes the dominant fine-tuning paradigm; mathematical and code domains where correctness is verifiable provide the cleanest training signal.</li>
+</ul>
+</li>
+<li><strong>Projection 2026-2028</strong>: All frontier-tier models offer reasoning modes; reasoning becomes default for any non-trivial task; cost of “expert-equivalent answer” falls 2-3 orders of magnitude through algorithmic efficiency and hardware improvements.</li>
+<li><strong>Open question</strong>: Do reasoning RL methods generalise to domains without verifiable rewards (writing quality, scientific judgement, ethical reasoning)? Early indications mixed — some transfer, but transfer is harder than within-domain scaling.</li>
+</ul>
+</li>
+<li>
+<h4 id="agentic-ai-and-long-horizon-autonomy">Agentic AI and Long-Horizon Autonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-ai-and-long-horizon-autonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>METR’s length-of-task doubling (~7 months at 50% success) projects autonomous task lengths growing from ~50 minutes (Claude 3.5 Sonnet New, March 2025) to multi-day by 2027 and multi-week by 2028 under continued exponential growth.</li>
+<li>Crosses thresholds for autonomous software engineering (currently ~hour-scale tasks), autonomous research (~day-scale by 2026-2027), autonomous business operations (~week-scale by 2027-2028 under aggressive extrapolation).</li>
+<li><strong>2026 production state</strong>: Claude Code, Cursor agent mode, Devin, OpenAI Codex 2025, Replit Agent operate autonomously over hour-to-day scales on software-engineering tasks; success rate falls roughly as 1/(task length)^k.</li>
+<li><strong>Multi-agent systems</strong>: AutoGen (Microsoft), CrewAI, LangGraph orchestrators, Anthropic’s multi-agent research (2024-2025) — collections of role-specialised agents coordinated by an orchestrator pattern. Empirical performance gains over single-agent baselines remain mixed.</li>
+<li><strong>Browser agents</strong>: Computer-use agents (Anthropic Computer Use, OpenAI Operator, Google Mariner) provide an interface-agnostic path to long-horizon real-world action; bottleneck is per-step cost and error recovery.</li>
+<li><strong>Open question</strong>: Whether the doubling continues exponentially (Aschenbrenner view, drawing on the Cotra biological-anchors framework) or hits sigmoidal saturation (Schaeffer-aligned sceptics arguing that current evaluation tasks may not generalise to genuine open-ended autonomy).</li>
+<li><strong>Coherence horizons</strong>: Distinct from raw task length, the <em>coherence horizon</em> — how long a model can maintain a self-consistent goal-directed plan — is the binding constraint for many real-world deployments; this lags task-length doubling.</li>
+</ul>
+</li>
+<li>
+<h4 id="multimodal-foundations-and-embodiment">Multimodal Foundations and Embodiment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multimodal-foundations-and-embodiment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Convergence on truly multimodal architectures (Gemini natively multimodal from launch, GPT-4o joint vision-text-audio training, Claude 3.5 vision, Pixtral 12B/Large native vision).</li>
+<li><strong>Video understanding</strong>: Gemini 1.5 Pro / 2.0 Pro with 1M-2M token context windows enable hour-long video understanding; key application domains include surveillance review, sports analysis, scientific-instrument data, surgical-video review.</li>
+<li><strong>Video generation</strong>: Sora (OpenAI, Feb 2024 → public Dec 2024), Veo 2 (Google DeepMind), Kling (Kuaishou), Hailuo (MiniMax), Runway Gen-3, Pika. Quality from short clips of static-scene fidelity in 2023 to multi-shot narrative coherence by 2025.</li>
+<li><strong>World models for embodied agents</strong>: NVIDIA GR00T (humanoid foundation model, announced March 2024), DeepMind RT-2 successors and Gemini Robotics (2025), Tesla Optimus (Gen 2 Dec 2023, production target 2026-2027), Figure 02 (with OpenAI partnership), Sanctuary AI Phoenix, Apptronik Apollo, 1X Neo, Boston Dynamics Atlas (electric version 2024).</li>
+<li>Robotics + foundation models constitutes the embodiment frontier; the bottleneck is sim-to-real transfer, real-world data acquisition, and safe deployment.</li>
+<li><strong>Spatial intelligence</strong>: Fei-Fei Li’s World Labs ($1B+ raised 2024) and other “spatial intelligence” startups argue that 3D understanding requires substantial new architectural innovation beyond LLM scaling.</li>
+</ul>
+</li>
+<li>
+<h4 id="levels-of-agi-trajectory">Levels of AGI Trajectory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#levels-of-agi-trajectory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>As of mid-2026, leading capability labs and external evaluators describe frontier models as in the Emerging-to-Competent General band per Morris et al. — broadly competent at unskilled-adult level, partially competent at skilled-adult level. Progression to Level 3 (Expert) Generalist within 2027-2029 is consistent with most major lab roadmaps and external forecasts.</li>
+</ul>
+</li>
+<li>
+<h4 id="alignment-trajectory">Alignment Trajectory<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alignment-trajectory" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Scalable oversight</strong>: Constitutional AI (Anthropic Bai et al. 2022 — model critiques against written constitution), debate (Irving, Christiano, Amodei 2018 — two AI debaters judged by human), recursive reward modelling (Leike 2018 — bootstrapping reward models hierarchically), weak-to-strong generalisation (Burns et al. 2023, OpenAI Superalignment — small-model supervisors training large-model students).</li>
+<li>The OpenAI Superalignment team, founded July 2023 to commit 20% of secured compute to alignment research, was dissolved July 2024 following the departures of co-leads Ilya Sutskever and Jan Leike (the latter joining Anthropic).</li>
+<li>Anthropic’s <em>Alignment Science</em> organisation and Google DeepMind’s <em>Frontier Safety Framework</em> (May 2024) continue the alignment-research programme at the major labs.</li>
+<li><strong>Mechanistic interpretability</strong>: Reverse-engineering of trained neural networks into human-interpretable computations.</li>
+<li>Anthropic’s <em>Circuits</em> programme (Olah et al. originally at OpenAI, since at Anthropic): published <em>Toy Models of Superposition</em> (2022), <em>Towards Monosemanticity</em> (Bricken et al. Oct 2023), <em>Scaling Monosemanticity</em> (Templeton et al. May 2024 with Claude 3 Sonnet at ~34M features), <em>Tracing Thoughts</em> (Lindsey et al. 2024) demonstrating feature-level analysis on production models.</li>
+<li>Sparse autoencoders (SAEs): Cunningham et al. 2023 <em>Sparse Autoencoders Find Highly Interpretable Features</em>. Subsequent DeepMind work (Gao et al. 2024), Apollo Research, and academic groups have rapidly scaled SAE features to frontier models.</li>
+<li><strong>Evaluation maturation</strong>: Dangerous-capability evals span CBRN (chemical, biological, radiological, nuclear weapon uplift; biorisk has dominated 2024 evaluation focus with biosafety RNA-design and pandemic-pathogen-acquisition scenarios), cyber-offence (offensive autonomous penetration testing), autonomous replication (METR’s 4-level taxonomy), manipulation and persuasion (one-to-one and at-scale).</li>
+<li>UK and US AISI plus METR plus Apollo plus internal lab evaluations have created an evaluation ecosystem rivalling biosafety / cybersecurity in maturity.</li>
+<li><strong>Open problems</strong>: Deceptive alignment (a model that appears aligned in training but pursues mesa-objectives at deployment), scalable interpretability (extracting features from 100B+ parameter models), alignment of agentic systems (multi-step reasoning + tool use creates new attack surfaces), evaluation gaming (Goodhart’s Law on capability evals).</li>
+</ul>
+</li>
+<li>
+<h4 id="open-vs-closed-equilibrium">Open vs Closed Equilibrium<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-vs-closed-equilibrium" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>DeepSeek-V3/R1 narrowed the closed-vs-open frontier gap to weeks. If sustained, open-weights AGI becomes a policy and proliferation reality by 2026-2027 — substantially altering governance assumptions premised on a small set of compute-bound frontier developers.</li>
+</ul>
+</li>
+<li>
+<h4 id="existential-and-catastrophic-risk-discourse">Existential and Catastrophic Risk Discourse<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#existential-and-catastrophic-risk-discourse" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>CAIS Statement</strong> (May 2023): “Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war.”</li>
+<li>Signed by Hinton, Bengio, Hassabis, Altman, Amodei among 350+ AI scientists; institutional inflection point bringing existential-risk framing into mainstream AI discourse.</li>
+<li><strong>Hinton’s 2023 departure</strong> from Google to speak freely about AI risks; awarded 2024 Nobel Prize in Physics (with John Hopfield) for foundational work on Hopfield networks and Boltzmann machines, partly used the platform to articulate existential-risk concerns.</li>
+<li><strong>Bengio’s continued advocacy</strong>: Yoshua Bengio (also 2018 Turing Award) chairs the <em>International Scientific Report on the Safety of Advanced AI</em> and has shifted publicly to existential-risk-focused work; founded LawZero in 2024-2025 to focus full-time on safe AI architectures.</li>
+<li><strong>2024-2026 discourse</strong>: Mainstream policy attention via Bletchley/Seoul/Paris; ongoing US-EO instability under change of US administration; UK’s AISI institutionalisation.</li>
+<li><strong>Counter-positions</strong>: Yann LeCun (Meta Chief AI Scientist) maintains that current LLM architectures are unlikely to scale to AGI without substantial architectural innovation; Pedro Domingos, Andrew Ng, and others have rejected existential-risk framings as exaggerated.</li>
+<li><strong>Pause AI / Stop AI movements</strong>: Public-facing advocacy groups arguing for moratorium on frontier-model training; Future of Life Institute open letter (March 2023 “Pause Giant AI Experiments”) signed by 30,000+ including Musk, Wozniak; did not result in a pause.</li>
+<li><strong>P(doom) discourse</strong>: Informal probability-of-existential-catastrophe estimates from AI researchers (Yudkowsky >90%, Hinton ~10-20%, Altman cited single-digit, Amodei ~10-25%, many mainstream ML researchers &lt;1%) — non-rigorous but widely cited.</li>
+</ul>
+</li>
+<li>
+<h4 id="definitional-resolution-or-persistent-plurality">Definitional Resolution or Persistent Plurality?<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#definitional-resolution-or-persistent-plurality" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>DeepMind’s Levels of AGI may emerge as the dominant operational framework given its precision, or the field may continue with definitional pluralism (Goertzel/Wang, OpenAI Charter, Karnofsky TAI, Anthropic powerful-AI, Bostrom ASI distinction, Chollet skill-efficiency). The Microsoft-OpenAI commercial definition adds a financial-legal layer.</li>
+<li><strong>Likely 2026-2028 outcome</strong>: Operational pluralism persists; capability-threshold frameworks (Anthropic ASL, DeepMind Levels, EU AI Act systemic-risk threshold) dominate governance; “AGI declaration” becomes commercially contested rather than scientifically resolved.</li>
+</ul>
+</li>
+<li>
+<h4 id="economic-and-labour-market-implications">Economic and Labour Market Implications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economic-and-labour-market-implications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Acemoglu/Restrepo task-based models</strong> vs <strong>Brynjolfsson/Eloundou exposure analyses</strong> (2023 <em>Science</em> “GPTs are GPTs”): Diverging estimates of labour-share-displaced. Eloundou et al. estimated ~19% of US workers have over 50% of tasks exposed to GPT-class capability; ~80% have some exposure.</li>
+<li><strong>Productivity gradient</strong>: Empirical studies (Noy &amp; Zhang 2023; Brynjolfsson, Li, Raymond 2023; Cui et al. 2024 Stanford-DBC randomised AI rollout) consistently find largest gains accrue to low-skilled workers (compression of skill distribution); high-skilled workers see smaller productivity gains but disproportionate capture of resulting surplus.</li>
+<li><strong>AI capex as macro driver</strong>: 2025-2026 US GDP growth substantially driven by AI infrastructure capex (data centres, GPUs, electrical infrastructure). Construction of data-centre power infrastructure increasingly visible in regional economic accounts (Virginia, Texas, Wyoming, Northern Ireland, Ireland).</li>
+<li><strong>Concentration concerns</strong>: Frontier-AI development concentrated among &lt;10 organisations globally; antitrust scrutiny intensifying (UK CMA Microsoft-OpenAI/Mistral inquiries 2024-2025, EU AI investigations, US DOJ Microsoft-OpenAI antitrust review).</li>
+<li><strong>UBI / negative income tax / data dividend</strong> discussions: Altman Worldcoin (now World) project as one experimental response; Yang-style UBI advocacy.</li>
+</ul>
+</li>
+<li>
+<h4 id="geopolitical-configuration">Geopolitical Configuration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geopolitical-configuration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>US-China bifurcation</strong>: US export controls (BIS Oct 2022, Oct 2023, Dec 2024, Jan 2025) restrict China access to advanced GPUs and EUV lithography. China’s response includes Huawei Ascend 910C, SMIC 7nm-equivalent process at degraded yields, large indigenous model investment (DeepSeek, Qwen/Alibaba, ByteDance Doubao, Baichuan, Zhipu GLM, Moonshot Kimi, MiniMax).</li>
+<li><strong>EU regulatory leadership</strong>: AI Act establishes the first comprehensive horizontal AI regulation; sovereign cloud and sovereign AI initiatives (Mistral, Aleph Alpha, Silo AI, Helsing).</li>
+<li><strong>UK middle-power positioning</strong>: Bletchley Summit leadership; AISI institutional capability; DeepMind / Anthropic London / OpenAI London presence; ARIA Safeguarded AI; AI Opportunities Action Plan.</li>
+<li><strong>India</strong>: GPAI presidency 2024, AI summit 2026 host; Krutrim, Sarvam AI, Yotta data centres; India AI Mission Rs 10,372 crore (~£1B).</li>
+<li><strong>Gulf states</strong>: UAE G42 + MGX (Microsoft and Stargate investor), Saudi PIF + HUMAIN, growing Gulf compute infrastructure.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Foundational Texts</strong>:
+<ol>
+<li>Goertzel, B., &amp; Pennachin, C. (Eds.). (2007). <em>Artificial General Intelligence</em>. Springer Cognitive Technologies. ISBN 978-3-540-23733-4. [Field-defining edited volume containing Wang’s NARS chapter]</li>
+<li>Wang, P. (2006). <em>Rigid Flexibility: The Logic of Intelligence</em>. Springer. [NARS / definition of intelligence]</li>
+<li>Searle, J.R. (1980). Minds, brains, and programs. <em>Behavioral and Brain Sciences</em>, 3(3), 417-424. DOI: 10.1017/S0140525X00005756. [Strong vs Weak AI]</li>
+<li>Turing, A.M. (1950). Computing Machinery and Intelligence. <em>Mind</em>, 59(236), 433-460. DOI: 10.1093/mind/LIX.236.433. [Imitation Game]</li>
+<li>Good, I.J. (1965). Speculations Concerning the First Ultraintelligent Machine. <em>Advances in Computers</em>, 6, 31-88. [Intelligence explosion]</li>
+</ol>
+</li>
+<li><strong>Definitions and Frameworks</strong>:
+6. Morris, M.R., Sohl-Dickstein, J., Fiedel, N., Warkentin, T., Dafoe, A., Faust, A., Farabet, C., &amp; Legg, S. (2024). <em>Levels of AGI for Operationalizing Progress on the Path to AGI</em>. arXiv:2311.02462. [DeepMind levels framework]
+7. Chollet, F. (2019). <em>On the Measure of Intelligence</em>. arXiv:1911.01547. [ARC + skill-acquisition definition]
+8. Legg, S., &amp; Hutter, M. (2007). Universal Intelligence: A Definition of Machine Intelligence. <em>Minds and Machines</em>, 17(4), 391-444. DOI: 10.1007/s11023-007-9079-x.
+9. Bostrom, N. (2014). <em>Superintelligence: Paths, Dangers, Strategies</em>. Oxford University Press. ISBN 978-0199678112.
+10. OpenAI. (2018). <em>OpenAI Charter</em>. <a href="https://openai.com/charter" class="external">https://openai.com/charter<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+11. Anthropic. (2023). <em>Core Views on AI Safety: When, Why, What, and How</em>. <a href="https://www.anthropic.com/news/core-views-on-ai-safety" class="external">https://www.anthropic.com/news/core-views-on-ai-safety<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+12. Amodei, D. (2024). <em>Machines of Loving Grace</em>. <a href="https://www.darioamodei.com/essay/machines-of-loving-grace" class="external">https://www.darioamodei.com/essay/machines-of-loving-grace<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+13. Karnofsky, H. (2016). <em>Some Background on Our Views Regarding Advanced Artificial Intelligence</em>. Open Philanthropy. [Transformative AI framing]</li>
+<li><strong>Scaling, Bitter Lesson, Theory</strong>:
+14. Sutton, R.S. (2019). <em>The Bitter Lesson</em>. <a href="http://www.incompleteideas.net/IncIdeas/BitterLesson.html" class="external">http://www.incompleteideas.net/IncIdeas/BitterLesson.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+15. Kaplan, J., McCandlish, S., Henighan, T., Brown, T.B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., &amp; Amodei, D. (2020). <em>Scaling Laws for Neural Language Models</em>. arXiv:2001.08361.
+16. Hoffmann, J., et al. (2022). <em>Training Compute-Optimal Large Language Models</em> (Chinchilla). arXiv:2203.15556.
+17. Brown, T.B., et al. (2020). Language Models are Few-Shot Learners (GPT-3). <em>NeurIPS 2020</em>. arXiv:2005.14165.
+18. Wei, J., Tay, Y., Bommasani, R., et al. (2022). <em>Emergent Abilities of Large Language Models</em>. TMLR. arXiv:2206.07682.
+19. Schaeffer, R., Miranda, B., &amp; Koyejo, S. (2023). <em>Are Emergent Abilities of Large Language Models a Mirage?</em>. NeurIPS 2023 (Outstanding Paper). arXiv:2304.15004.
+20. Power, A., Burda, Y., Edwards, H., Babuschkin, I., &amp; Misra, V. (2022). <em>Grokking: Generalization Beyond Overfitting on Small Algorithmic Datasets</em>. arXiv:2201.02177.</li>
+<li><strong>Reasoning, Agents, Tool-Use</strong>:
+21. Wei, J., et al. (2022). <em>Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</em>. NeurIPS 2022. arXiv:2201.11903.
+22. OpenAI. (2024). <em>Learning to Reason with LLMs</em> (o1 system card). <a href="https://openai.com/o1" class="external">https://openai.com/o1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+23. DeepSeek-AI. (2025). <em>DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</em>. arXiv:2501.12948.
+24. Anthropic. (2024). <em>Introducing Claude 3.5 Sonnet and Computer Use</em>. <a href="https://www.anthropic.com/news/3-5-models-and-computer-use" class="external">https://www.anthropic.com/news/3-5-models-and-computer-use<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+25. Yao, S., Zhao, J., Yu, D., Du, N., Shafran, I., Narasimhan, K., &amp; Cao, Y. (2022). <em>ReAct: Synergizing Reasoning and Acting in Language Models</em>. arXiv:2210.03629.
+26. Trinh, T., Wu, Y., Le, Q.V., He, H., &amp; Luong, T. (2024). <em>Solving olympiad geometry without human demonstrations</em> (AlphaGeometry). <em>Nature</em> 625, 476-482. DOI: 10.1038/s41586-023-06747-5.
+27. Google DeepMind. (2024). <em>AI achieves silver-medal standard solving International Mathematical Olympiad problems</em> (AlphaProof + AlphaGeometry 2). <a href="https://deepmind.google/discover/blog/" class="external">https://deepmind.google/discover/blog/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>Benchmarks</strong>:
+28. Hendrycks, D., et al. (2021). <em>Measuring Massive Multitask Language Understanding</em> (MMLU). ICLR 2021. arXiv:2009.03300.
+29. Rein, D., Hou, B.L., Stickland, A.C., et al. (2023). <em>GPQA: A Graduate-Level Google-Proof Q&amp;A Benchmark</em>. arXiv:2311.12022.
+30. Chen, M., et al. (2021). <em>Evaluating Large Language Models Trained on Code</em> (HumanEval). arXiv:2107.03374.
+31. Jimenez, C.E., Yang, J., Wettig, A., Yao, S., Pei, K., Press, O., &amp; Narasimhan, K. (2023). <em>SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</em>. arXiv:2310.06770.
+32. Glazer, E., et al. (2024). <em>FrontierMath: A Benchmark for Evaluating Advanced Mathematical Reasoning in AI</em>. Epoch AI. arXiv:2411.04872.
+33. Phan, L., et al. (2025). <em>Humanity’s Last Exam</em>. CAIS + Scale AI. arXiv:2501.14249.
+34. ARC Prize Foundation. (2024). <em>ARC Prize 2024: Technical Report</em>. <a href="https://arcprize.org" class="external">https://arcprize.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+35. METR. (2025). <em>Measuring AI Ability to Complete Long Tasks</em>. <a href="https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/" class="external">https://metr.org/blog/2025-03-19-measuring-ai-ability-to-complete-long-tasks/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>Forecasting</strong>:
+36. Cotra, A. (2020). <em>Forecasting TAI with Biological Anchors</em> (draft). Open Philanthropy.
+37. Grace, K., et al. (2024). <em>Thousands of AI Authors on the Future of AI</em> (ESPAI 2023). AI Impacts. arXiv:2401.02843.
+38. Aschenbrenner, L. (2024). <em>Situational Awareness: The Decade Ahead</em>. <a href="https://situational-awareness.ai" class="external">https://situational-awareness.ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+39. Epoch AI. (2024). <em>Trends in Machine Learning</em>. <a href="https://epoch.ai/trends" class="external">https://epoch.ai/trends<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>Safety, Alignment, Risk</strong>:
+40. Hubinger, E., van Merwijk, C., Mikulik, V., Skalse, J., &amp; Garrabrant, S. (2019). <em>Risks from Learned Optimization in Advanced Machine Learning Systems</em>. arXiv:1906.01820.
+41. Bai, Y., et al. (2022). <em>Constitutional AI: Harmlessness from AI Feedback</em> (Anthropic). arXiv:2212.08073.
+42. Ouyang, L., et al. (2022). <em>Training language models to follow instructions with human feedback</em> (InstructGPT). NeurIPS 2022. arXiv:2203.02155.
+43. Russell, S. (2019). <em>Human Compatible: Artificial Intelligence and the Problem of Control</em>. Viking. ISBN 978-0525558613.
+44. Center for AI Safety. (2023). <em>Statement on AI Risk</em>. <a href="https://www.safe.ai/statement-on-ai-risk" class="external">https://www.safe.ai/statement-on-ai-risk<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+45. Bengio, Y., et al. (2025). <em>International AI Safety Report</em>. UK AISI / DSIT. <a href="https://www.gov.uk/government/publications/international-ai-safety-report-2025" class="external">https://www.gov.uk/government/publications/international-ai-safety-report-2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+46. Apollo Research. (2024). <em>Frontier Models are Capable of In-Context Scheming</em>. <a href="https://www.apolloresearch.ai" class="external">https://www.apolloresearch.ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2026-05-16</li>
+<li><strong>Review Status</strong>: Comprehensive Phase 6 enrichment</li>
+<li><strong>Verification</strong>: Academic sources and 2024-2026 industry milestones cross-referenced against primary arXiv / OpenAI / Anthropic / DeepMind / DeepSeek / METR / Epoch AI / UK AISI publications.</li>
+<li><strong>Regional Context</strong>:
+<ul>
+<li>UK academic institutions: Oxford (including the closed FHI), Cambridge (CFI + CSER), Imperial College London, UCL (Gatsby/DARK), Edinburgh Informatics, Alan Turing Institute, Manchester, Bristol.</li>
+<li>UK frontier-lab presence: Google DeepMind King’s Cross, Anthropic London, OpenAI London, Wayve, Isomorphic Labs, ElevenLabs.</li>
+<li>ARIA Safeguarded AI programme (davidad); UK AISI; Bletchley/Seoul/Paris summit trajectory.</li>
+<li>Northern English applied AI: Manchester, Leeds, Sheffield, Newcastle, Liverpool, with Glasgow/Edinburgh adjacency.</li>
+</ul>
+</li>
+<li><strong>Domain Correction</strong>: ngm placeholder → artificial-intelligence (iri/uri/same-as updated accordingly).</li>
+<li><strong>Production-Ready</strong>: Five-section structure, full OWL DL axiomatisation, 11+ relationship types, 50+ axioms, 45+ references.</li>
+<li><strong>Authority Score</strong>: 0.87 (definitionally pluralistic but extensively documented; benchmark and milestone data current to mid-2026; significant primary-source coverage from major frontier labs and independent evaluators).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>domain-corrected:</strong> ngm <span>→</span> artificial-intelligence</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-519" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-artificial-general-intelligence" data-for="about-artificial-general-intelligence">About Artificial General Intelligence</a></li><li class="depth-1"><a href="#definitional-pluralism--eight-coexisting-frames" data-for="definitional-pluralism--eight-coexisting-frames">Definitional Pluralism — Eight Coexisting Frames</a></li><li class="depth-1"><a href="#the-narrow--general--superhuman-trichotomy" data-for="the-narrow--general--superhuman-trichotomy">The Narrow / General / Superhuman Trichotomy</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#frontier-model-ecosystem-q2-2026" data-for="frontier-model-ecosystem-q2-2026">Frontier Model Ecosystem (Q2 2026)</a></li><li class="depth-1"><a href="#benchmark-saturation-and-the-race-for-headroom" data-for="benchmark-saturation-and-the-race-for-headroom">Benchmark Saturation and the Race for Headroom</a></li><li class="depth-1"><a href="#forecasting-landscape" data-for="forecasting-landscape">Forecasting Landscape</a></li><li class="depth-1"><a href="#capital-compute-power" data-for="capital-compute-power">Capital, Compute, Power</a></li><li class="depth-1"><a href="#safety-alignment-evaluation-landscape" data-for="safety-alignment-evaluation-landscape">Safety, Alignment, Evaluation Landscape</a></li><li class="depth-1"><a href="#open-vs-closed" data-for="open-vs-closed">Open vs Closed</a></li><li class="depth-1"><a href="#major-industry-events-2024-2026" data-for="major-industry-events-2024-2026">Major Industry Events 2024-2026</a></li><li class="depth-1"><a href="#uk-context-academic-leadership-and-agi-safety-infrastructure" data-for="uk-context-academic-leadership-and-agi-safety-infrastructure">UK Context: Academic Leadership and AGI Safety Infrastructure</a></li><li class="depth-1"><a href="#open-problems-and-bottlenecks" data-for="open-problems-and-bottlenecks">Open Problems and Bottlenecks</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/ARC-AGI" class="internal">ARC-AGI</a></li><li><a href="../pages/Alignment-Research" class="internal">Alignment Research</a></li><li><a href="../pages/Artificial-Intelligence-Core" class="internal">Artificial Intelligence Core</a></li><li><a href="../pages/Artificial-Intelligence-Research" class="internal">Artificial Intelligence Research</a></li><li><a href="../pages/Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../pages/Convergence" class="internal">Convergence</a></li><li><a href="../pages/DeepMind" class="internal">DeepMind</a></li><li><a href="../pages/Frontier-AI" class="internal">Frontier AI</a></li><li><a href="../pages/Google-DeepMind" class="internal">Google DeepMind</a></li><li><a href="../pages/Knowledge-Graphing" class="internal">Knowledge Graphing</a></li><li><a href="../pages/OpenAI-Research-Organisation" class="internal">OpenAI Research Organisation</a></li><li><a href="../pages/Proprietary-AI-Video" class="internal">Proprietary AI Video</a></li><li><a href="../pages/Singularity" class="internal">Singularity</a></li><li><a href="../pages/Stable-Coins" class="internal">Stable Coins</a></li><li><a href="../pages/University-of-Cambridge" class="internal">University of Cambridge</a></li><li><a href="../working/Convergence" class="internal">Convergence</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

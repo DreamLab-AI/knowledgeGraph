@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Carbon Footprint Measurement</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Carbon Footprint Measurement"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Carbon Footprint Measurement"/><meta name="twitter:description" content="Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Repo… S..."/><meta property="og:description" content="Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Repo… S..."/><meta property="og:image:alt" content="Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Repo… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Carbon-Footprint-Measurement"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Carbon-Footprint-Measurement"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Repo… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Carbon-Footprint-Measurement"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1376"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1376" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Carbon Footprint Measurement</a></div></nav><h1 class="article-title">Carbon Footprint Measurement</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.696Z">23 Sept 2026</time><span>36 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:carbon-footprint-measurement</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Legal-and-Regulatory" class="internal">Legal and Regulatory</a></li><li><a href="../Security-and-Identity" class="internal">Security and Identity</a></li><li><a href="../Sustainability-Reporting" class="internal">Sustainability Reporting</a></li><li><a href="../pages/Environmental-Accounting" class="internal">Environmental Accounting</a></li><li><a href="../Measurement-Frameworks" class="internal">Measurement Frameworks</a></li><li><a href="../Corporate-Disclosure" class="internal">Corporate Disclosure</a></li><li><a href="../Climate-Risk-Management" class="internal">Climate Risk Management</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Carbon-Accounting-Software" class="internal">Carbon Accounting Software</a></li><li><a href="../pages/Emission-Factors" class="internal">Emission Factors</a></li><li><a href="../life-cycle-assessment" class="internal">Life Cycle Assessment</a></li><li><a href="../pages/Satellite-Monitoring" class="internal">Satellite Monitoring</a></li><li><a href="../pages/VERIFICATION" class="internal">Verification and Assurance</a></li><li><a href="../Scope-Classification" class="internal">Scope Classification</a></li><li><a href="../pages/Lifecycle-Assessment" class="internal">Lifecycle Assessment</a></li><li><a href="../Verification-and-Assurance" class="internal">Verification and Assurance</a></li><li><a href="../Boundary-Setting" class="internal">Boundary Setting</a></li><li><a href="../Emission-Inventory" class="internal">Emission Inventory</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Activity-Data" class="internal">Activity Data</a></li><li><a href="../pages/Emission-Factors" class="internal">Emission Factor Databases</a></li><li><a href="../ghg-protocol" class="internal">GHG Protocol</a></li><li><a href="../iso-14064" class="internal">ISO 14064</a></li><li><a href="../pages/ISO-14067" class="internal">ISO 14067</a></li><li><a href="../pages/Supply-Chain-Data" class="internal">Supply Chain Data</a></li><li><a href="../Emission-Factor-Databases" class="internal">Emission Factor Databases</a></li><li><a href="../Organisational-Boundary-Definition" class="internal">Organisational Boundary Definition</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../carbon-credits" class="internal">Carbon Credits</a></li><li><a href="../pages/CSRD-Compliance" class="internal">CSRD Compliance</a></li><li><a href="../pages/Decarbonisation" class="internal">Decarbonisation Strategy</a></li><li><a href="../digital-product-passport" class="internal">Digital Product Passport</a></li><li><a href="../esg-investing" class="internal">ESG Investing</a></li><li><a href="../pages/Net-Zero-Target-Setting" class="internal">Net Zero Target Setting</a></li><li><a href="../pages/Science-Based-Targets" class="internal">Science Based Targets</a></li><li><a href="../Decarbonisation-Strategy" class="internal">Decarbonisation Strategy</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Carbon-Offsetting" class="internal">Carbon Offsetting</a></li><li><a href="../pages/Greenwashing" class="internal">Greenwashing</a></li><li><a href="../Voluntary-Carbon-Markets" class="internal">Voluntary Carbon Markets</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Emission-Factors" class="internal">Emission Factors</a></li><li><a href="../pages/Activity-Data" class="internal">Activity Data</a></li><li><a href="../pages/Supply-Chain-Transparency" class="internal">Supply Chain Transparency</a></li><li><a href="../Satellite-Data" class="internal">Satellite Data</a></li><li><a href="../AI" class="internal">AI</a></li><li><a href="../ERP-Systems" class="internal">ERP Systems</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../DataLayer" class="internal">DataLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li><li><a href="../StandardisationLayer" class="internal">StandardisationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../location-based-accounting" class="internal">Location-Based Accounting</a></li><li><a href="../market-based-accounting" class="internal">Market-Based Accounting</a></li><li><a href="../pages/Carbon-Footprint" class="internal">Product Carbon Footprint</a></li><li><a href="../pages/Scope-1-Emissions" class="internal">Scope 1 Emissions</a></li><li><a href="../pages/Scope-2-Emissions" class="internal">Scope 2 Emissions</a></li><li><a href="../pages/Scope-3-Emissions" class="internal">Scope 3 Emissions</a></li><li><a href="../Product-Carbon-Footprint" class="internal">Product Carbon Footprint</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>IF-0498</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../activity-data" class="internal">Activity Data</a></li><li><a href="../ai" class="internal">AI</a></li><li><a href="../boundary-setting" class="internal">Boundary Setting</a></li><li><a href="../carbon-accounting-software" class="internal">Carbon Accounting Software</a></li><li><a href="../carbon-credits" class="internal">Carbon Credits</a></li><li><a href="../carbon-offsetting" class="internal">Carbon Offsetting</a></li><li><a href="../climate-risk-management" class="internal">Climate Risk Management</a></li><li><a href="../climate-tech" class="internal">Climate Tech</a></li><li><a href="../corporate-disclosure" class="internal">Corporate Disclosure</a></li><li><a href="../corporate-sustainability-reporting-directive" class="internal">Corporate Sustainability Reporting Directive</a></li><li><a href="../csrd-compliance" class="internal">CSRD Compliance</a></li><li><a href="../decarbonisation-strategy" class="internal">Decarbonisation Strategy</a></li><li><a href="../digital-product-passport" class="internal">Digital Product Passport</a></li><li><a href="../emission-factor-databases" class="internal">Emission Factor Databases</a></li><li><a href="../emission-factors" class="internal">Emission Factors</a></li><li><a href="../emission-inventory" class="internal">Emission Inventory</a></li><li><a href="../erp-systems" class="internal">ERP Systems</a></li><li><a href="../esg-investing" class="internal">ESG Investing</a></li><li><a href="../esrs-e1" class="internal">ESRS E1</a></li><li><a href="../ghg-protocol" class="internal">GHG Protocol</a></li><li><a href="../greenwashing" class="internal">Greenwashing</a></li><li><a href="../imperial-college-london" class="internal">Imperial College London</a></li><li><a href="../iso-14040" class="internal">ISO 14040</a></li><li><a href="../iso-14064" class="internal">ISO 14064</a></li><li><a href="../iso-14067" class="internal">ISO 14067</a></li><li><a href="../lifecycle-assessment" class="internal">Lifecycle Assessment</a></li><li><a href="../location-based-accounting" class="internal">Location-Based Accounting</a></li><li><a href="../market-based-accounting" class="internal">Market-Based Accounting</a></li><li><a href="../measurement-frameworks" class="internal">Measurement Frameworks</a></li><li><a href="../methane-sat" class="internal">MethaneSAT</a></li><li><a href="../net-zero-target-setting" class="internal">Net Zero Target Setting</a></li><li><a href="../organisational-boundary-definition" class="internal">Organisational Boundary Definition</a></li><li><a href="../persefoni" class="internal">Persefoni</a></li><li><a href="../product-carbon-footprint" class="internal">Product Carbon Footprint</a></li><li><a href="../pages/infra-legal-and-regulatory" class="internal">RegulatoryDomain</a></li><li><a href="../remote-sensing" class="internal">Remote Sensing</a></li><li><a href="../satellite-data" class="internal">Satellite Data</a></li><li><a href="../satellite-monitoring" class="internal">Satellite Monitoring</a></li><li><a href="../science-based-targets" class="internal">Science-Based Targets</a></li><li><a href="../science-based-targets-initiative" class="internal">Science-Based Targets initiative</a></li><li><a href="../scope-1-emissions" class="internal">Scope 1 Emissions</a></li><li><a href="../scope-2-emissions" class="internal">Scope 2 Emissions</a></li><li><a href="../scope-3-emissions" class="internal">Scope 3 Emissions</a></li><li><a href="../scope-classification" class="internal">Scope Classification</a></li><li><a href="../standardisation-layer" class="internal">StandardisationLayer</a></li><li><a href="../streamlined-energy-and-carbon-reporting" class="internal">Streamlined Energy and Carbon Reporting</a></li><li><a href="../supply-chain" class="internal">Supply Chain</a></li><li><a href="../supply-chain-data" class="internal">Supply Chain Data</a></li><li><a href="../supply-chain-transparency" class="internal">Supply Chain Transparency</a></li><li><a href="../sustainability" class="internal">SustainabilityDomain</a></li><li><a href="../sustainability-reporting" class="internal">Sustainability Reporting</a></li><li><a href="../tcfd" class="internal">TCFD</a></li><li><a href="../verification-and-assurance" class="internal">Verification and Assurance</a></li><li><a href="../voluntary-carbon-markets" class="internal">Voluntary Carbon Markets</a></li><li><a href="../watershed" class="internal">Watershed</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../blockchain" class="internal">Blockchain</a></li><li><a href="../carbon-footprint-measurement" class="internal">Carbon Footprint Measurement</a></li><li><a href="../circular-economy" class="internal">Circular Economy</a></li><li><a href="../data-layer" class="internal">DataLayer</a></li><li><a href="../environmental-accounting" class="internal">Environmental Accounting</a></li><li><a href="../working/infrastructure" class="internal">InfrastructureDomain</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../regulatory-technology" class="internal">Regulatory Technology</a></li><li><a href="../sustainability" class="internal">Sustainability</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:b3d5d7a5c19bcc3c4520260b740ab7da6f86b9f3c2c4789372d2367eb003e988</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Climate-Tech" class="internal">Climate Tech</a></li><li><a href="../digital-product-passport" class="internal">Digital Product Passport</a></li><li><a href="../esg-investing" class="internal">ESG Investing</a></li><li><a href="../ghg-protocol" class="internal">GHG Protocol</a></li><li><a href="../supply-chain" class="internal">Supply Chain</a></li><li><a href="../pages/Circular-Economy" class="internal">Circular Economy</a></li><li><a href="../pages/Regulatory-Technology" class="internal">Regulatory Technology</a></li><li><a href="../pages/Sustainability" class="internal">Sustainability</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../ghg-protocol" class="internal">GHG Protocol</a></li><li><a href="../pages/ISO-14040" class="internal">ISO 14040</a></li><li><a href="../iso-14064" class="internal">ISO 14064</a></li><li><a href="../pages/ISO-14067" class="internal">ISO 14067</a></li><li><a href="../pages/TCFD" class="internal">TCFD</a></li><li><a href="../ESRS-E1" class="internal">ESRS E1</a></li><li><a href="../Streamlined-Energy-and-Carbon-Reporting" class="internal">Streamlined Energy and Carbon Reporting</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../carbon-credits" class="internal">Carbon Credits</a></li><li><a href="../pages/Climate-Tech" class="internal">Climate Tech</a></li><li><a href="../esg-investing" class="internal">ESG Investing</a></li><li><a href="../supply-chain" class="internal">Supply Chain</a></li><li><a href="../sustainabilityreporting" class="internal">SustainabilityReporting</a></li><li><a href="../pages/Circular-Economy" class="internal">Circular Economy</a></li><li><a href="../pages/Regulatory-Technology" class="internal">Regulatory Technology</a></li><li><a href="../Sustainability-Reporting" class="internal">Sustainability Reporting</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../digital-product-passport" class="internal">Digital Product Passport</a></li><li><a href="../life-cycle-assessment" class="internal">Life Cycle Assessment</a></li><li><a href="../pages/Remote-Sensing" class="internal">Remote Sensing</a></li><li><a href="../Blockchain" class="internal">Blockchain</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../pages/Lifecycle-Assessment" class="internal">Lifecycle Assessment</a></li><li><a href="../AI" class="internal">AI</a></li><li><a href="../Satellite-Data" class="internal">Satellite Data</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO₂e), applying IPCC Sixth Assessment Repo…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:EmissionFactors))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:ScopeClassification))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:LifecycleAssessment))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:CarbonAccountingSoftware))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:SatelliteMonitoring))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:VerificationAndAssurance))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:BoundarySetting))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:hasPart infra:EmissionInventory))
+
+  ## Dependency Relationships
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:requires infra:GHGProtocol))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:requires infra:ISO14064))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:requires infra:EmissionFactorDatabases))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:requires infra:ActivityData))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:requires infra:SupplyChainData))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:dependsOn infra:EmissionFactors))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:dependsOn infra:SatelliteData))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:dependsOn infra:ArtificialIntelligence))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:dependsOn infra:ERPSystems))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:dependsOn infra:SupplyChainTransparency))
+
+  ## Capability Relationships
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:enables infra:NetZeroTargetSetting))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:enables infra:CarbonCredits))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:enables infra:ESGInvesting))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:enables infra:ScienceBasedTargets))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:enables infra:CSRDCompliance))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:enables infra:DecarbonisationStrategy))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:supports infra:SupplyChainManagement))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:supports infra:CircularEconomy))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:supports infra:RegulatoryCompliance))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:supports infra:ClimateTech))
+
+  ## Implementation Relationships
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:implements infra:Scope1Emissions))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:implements infra:Scope2Emissions))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:implements infra:Scope3Emissions))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:implements infra:ProductCarbonFootprint))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:implements infra:MarketBasedAccounting))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:implements infra:LocationBasedAccounting))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:uses infra:LifecycleAssessment))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:uses infra:RemoteSensing))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:uses infra:MachineLearning))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:uses infra:Blockchain))
+
+  ## Reduction Relationships
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:reduces infra:MeasurementUncertainty))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:reduces infra:ReportingBurden))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:reduces infra:DataCollectionCost))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:reduces infra:GreenwashingRisk))
+  SubClassOf(infra:CarbonFootprintMeasurement
+    ObjectSomeValuesFrom(infra:reduces infra:CarbonEmissions))
+</code></pre>
+<ul>
+<li>
+<h2 id="about-carbon-footprint-measurement">About Carbon Footprint Measurement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-carbon-footprint-measurement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong><a href="../pages/Carbon-Footprint-Measurement" class="internal alias" data-slug="pages/Carbon-Footprint-Measurement">Carbon Footprint Measurement</a></strong> is the discipline of precisely quantifying, attributing, and reporting greenhouse gas (GHG) emissions in carbon dioxide equivalent (CO₂e) units, enabling organisations to understand, manage, and reduce their climate impact.</p>
+</li>
+<li>
+<p>The practice sits at the intersection of environmental science, financial accounting, <a href="../pages/Supply-Chain" class="internal alias" data-slug="pages/Supply-Chain">Supply Chain</a> management, and information technology, undergoing a qualitative transformation since 2022 driven by:</p>
+<ul>
+<li>Mandatory regulatory frameworks in the EU and UK requiring auditable, third-party-verified inventories</li>
+<li>Mass adoption of cloud-based <a href="../pages/Carbon-Accounting-Software" class="internal alias" data-slug="pages/Carbon-Accounting-Software">Carbon Accounting Software</a> platforms automating data collection from ERP, procurement, and utility systems</li>
+<li>Satellite constellation monitoring (GHGSat 16 satellites, Sentinel-5P TROPOMI) capable of attributing point-source methane emissions at 25-metre facility resolution</li>
+<li><a href="../AI" class="internal" data-slug="AI">AI</a>-powered estimation engines bridging data gaps where supplier primary data is unavailable (typically >85% of Scope 3 spend categories)</li>
+</ul>
+</li>
+<li>
+<p><strong>GHG conversion foundation</strong>: IPCC AR6 (2021) GWP₁₀₀ values are the universal conversion standard:</p>
+<ul>
+<li>CO₂ (carbon dioxide): 1 — the baseline reference gas</li>
+<li>CH₄ (methane): 27.9 — significantly higher than AR5 value of 28, reflecting updated atmospheric chemistry</li>
+<li>N₂O (nitrous oxide): 273 — agricultural and industrial process emissions</li>
+<li>HFC-134a (refrigerant): 1,526 — common in commercial refrigeration and air conditioning</li>
+<li>SF₆ (sulphur hexafluoride): 25,200 — electrical switchgear, semiconductor manufacturing</li>
+<li>NF₃ (nitrogen trifluoride): 17,400 — semiconductor manufacturing, solar panel production</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope 3 materiality</strong>: Scope 3 value-chain emissions represent 70-90% of most corporate footprints yet carry relative uncertainty of ±50-200% when relying on spend-based emission factors, compared to ±5-15% for directly metered Scope 1 combustion data.</p>
+</li>
+<li>
+<h3 id="ghg-protocol-framework">GHG Protocol Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ghg-protocol-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <a href="../pages/GHG-Protocol" class="internal alias" data-slug="pages/GHG-Protocol">GHG Protocol</a> Corporate Accounting and Reporting Standard (2001, revised 2015) and Corporate Value Chain (Scope 3) Standard (2011, revision in progress) provide the foundational intellectual architecture for all major regulatory frameworks.</p>
+</li>
+<li>
+<p><strong>Scope 1 — Direct Emissions</strong>:</p>
+<ul>
+<li>Stationary combustion: boilers, furnaces, turbines burning natural gas, oil, coal, biomass</li>
+<li>Mobile combustion: company-owned vehicle fleet (cars, trucks, forklifts, aircraft)</li>
+<li>Process emissions: cement calcination, steel production, chemical synthesis, refrigerant leakage</li>
+<li>Fugitive emissions: methane from coal mines, oil and gas pipelines, wastewater treatment</li>
+<li>Measurement: direct metering (sub-meters, smart meters), fuel purchase records, engineering estimates</li>
+<li>Typical uncertainty: ±5-15% for combustion; ±20-100% for fugitive releases without physical monitoring</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope 2 — Indirect Energy Emissions</strong>:</p>
+<ul>
+<li>Location-based method: applies regional or national average grid emission factor to purchased electricity consumption (UK DEFRA 2024: 0.207 kgCO₂e/kWh; Norway hydro-dominated: ~0.010 kgCO₂e/kWh; Poland coal-dominated: ~0.730 kgCO₂e/kWh)</li>
+<li>Market-based method: applies supplier-specific emission factors from Energy Attribute Certificates (EACs) — Renewable Energy Certificates (RECs) in US, Guarantees of Origin (GOs) in EU, REGO certificates in UK</li>
+<li>Zero-emission claims via EAC purchasing contested by critics citing additionality, temporal matching, and geographic matching concerns; 24/7 hourly matching programmes (Google, Microsoft) address temporal granularity</li>
+<li>Purchased steam, heat, and cooling reported separately under Scope 2 using supplier-provided emission factors or district energy grid averages</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope 3 — Value-Chain Emissions (15 Categories)</strong>:</p>
+<ul>
+<li><strong>Upstream categories (1-8):</strong>
+<ul>
+<li>Cat. 1 Purchased Goods and Services: typically 40-70% of total Scope 3; spend-based, supplier-specific, or hybrid methods</li>
+<li>Cat. 2 Capital Goods: embodied carbon of purchased machinery, vehicles, buildings, IT equipment</li>
+<li>Cat. 3 Fuel and Energy Related Activities: upstream extraction and transmission of purchased fuels and energy</li>
+<li>Cat. 4 Upstream Transportation and Distribution: logistics from supplier to reporting entity</li>
+<li>Cat. 5 Waste Generated in Operations: landfill, incineration, recycling of operational waste</li>
+<li>Cat. 6 Business Travel: flights, rail, hotel nights (often measured via travel management systems)</li>
+<li>Cat. 7 Employee Commuting: private car, public transit, home-working energy use</li>
+<li>Cat. 8 Upstream Leased Assets: landlord-operated buildings occupied by the reporting entity</li>
+</ul>
+</li>
+<li><strong>Downstream categories (9-15):</strong>
+<ul>
+<li>Cat. 9 Downstream Transportation and Distribution: logistics of sold products to customers</li>
+<li>Cat. 10 Processing of Sold Products: industrial customers’ further manufacturing of intermediate goods</li>
+<li>Cat. 11 Use of Sold Products: lifetime energy consumption and process emissions of sold products — dominates automotive, electronics, appliances</li>
+<li>Cat. 12 End-of-Life Treatment: disposal of sold products — often omitted due to data complexity</li>
+<li>Cat. 13 Downstream Leased Assets: tenant-operated buildings owned by reporting entity</li>
+<li>Cat. 14 Franchises: franchisee operations in franchise models (fast food, retail)</li>
+<li>Cat. 15 Investments: financed emissions of invested entities — subject to major GHG Protocol revision clarification extending applicability beyond financial institutions to all entities with equity stakes, bonds, or project finance</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>GHG Protocol revision (2024-2028)</strong>:</p>
+<ul>
+<li>65-member Technical Working Group with representatives from 20+ countries, meeting since September 2024, 42+ sessions as of March 2026</li>
+<li>Key change 1: Companies must <strong>calculate</strong> rather than merely <strong>describe</strong> Scope 3 category materiality exclusions — eliminating qualitative workarounds</li>
+<li>Key change 2: Category 15 Investment emissions explicitly applicable to any entity with equity stakes, corporate bonds, or project finance</li>
+<li>Key change 3: Required and optional Scope 3 emissions reported as separate clearly labelled figures, improving comparability</li>
+<li>Public consultation expected late 2025; final publication targeted 2027-2028</li>
+<li>September 2025: GHG Protocol and ISO announced co-development partnership integrating ISO Technical Working Group members into GHG Protocol revision process</li>
+</ul>
+</li>
+<li>
+<h3 id="standards-architecture">Standards Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong><a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a> series</strong> — three-part framework for organisational and project GHG accounting:</p>
+<ul>
+<li>ISO 14064-1:2018 — Specification with guidance at the organisation level for quantification and reporting of GHG emissions and removals</li>
+<li>ISO 14064-2:2019 — Project-level GHG quantification, monitoring, and reporting (e.g. renewable energy projects, forestry sequestration)</li>
+<li>ISO 14064-3:2019 — Specification with guidance for verification and validation of GHG assertions; required for third-party assurance of CSRD disclosures and SBTi validation</li>
+<li>Widely required by procurement contracts as due-diligence standard for supplier carbon claims</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/ISO-14067" class="internal alias" data-slug="pages/ISO-14067">ISO 14067</a>:2018</strong> — Product Carbon Footprint (PCF) standard:</p>
+<ul>
+<li>Quantification requirements for the carbon footprint of products (goods and services) on a lifecycle basis</li>
+<li>Built on <a href="../pages/Lifecycle-Assessment" class="internal alias" data-slug="pages/Lifecycle-Assessment">Lifecycle Assessment</a> framework of ISO 14040/14044; applies LCA principles specifically to carbon footprinting</li>
+<li>Requires definition of functional unit (e.g. “1 tonne of processed steel delivered to gate”), system boundary (cradle-to-gate, gate-to-gate, or cradle-to-grave), and cut-off criteria</li>
+<li>Third-party PCF verification per ISO 14064-3 increasingly required for Environmental Product Declarations (EPDs) and <a href="../pages/Digital-Product-Passport" class="internal alias" data-slug="pages/Digital-Product-Passport">Digital Product Passport</a> carbon declarations</li>
+</ul>
+</li>
+<li>
+<p><strong>ISO 14040:2006/Amd 1:2020 and ISO 14044:2006/Amd 2:2020</strong> — <a href="../pages/Lifecycle-Assessment" class="internal alias" data-slug="pages/Lifecycle-Assessment">Lifecycle Assessment</a> framework:</p>
+<ul>
+<li>2020 amendments enhanced alignment with ISO 14067, clarified biogenic carbon treatment (temporary atmospheric carbon storage in wood products), land-use-change emission accounting, and carbon storage in products</li>
+<li>Four-phase LCA methodology: Goal and Scope Definition → Life Cycle Inventory (LCI) analysis → Life Cycle Impact Assessment (LCIA) → Interpretation</li>
+<li>Ecoinvent database (v3.10, 2024, ~20,000 unit processes) and GaBi/SimaPro software are primary LCA computational tools</li>
+</ul>
+</li>
+<li>
+<p><strong>ESRS E1 (European Sustainability Reporting Standard — Climate Change)</strong>:</p>
+<ul>
+<li>Mandatory disclosure of gross Scope 1, 2, and 3 emissions; climate transition plan; physical and transition risk assessment aligned with TCFD</li>
+<li>Part of the EU <a href="../pages/Corporate-Sustainability-Reporting-Directive" class="internal alias" data-slug="pages/Corporate-Sustainability-Reporting-Directive">Corporate Sustainability Reporting Directive</a> (CSRD) Delegated Regulation 2023/2772</li>
+<li>July 2025 Omnibus revision reduced mandatory datapoints by 57%; allows estimates for value-chain (Scope 3) data where supplier data unavailable</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="software-platform-layer">Software Platform Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-platform-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The enterprise carbon accounting software market raised €270M in investment in 2024 alone, with Greenly, Scope3, and Watershed each securing >€50M in major deals. The market is expected to consolidate as enterprises demand integrated GHG accounting, <a href="../pages/ESG-Investing" class="internal alias" data-slug="pages/ESG-Investing">ESG Investing</a> reporting, and <a href="../pages/Regulatory-Technology" class="internal alias" data-slug="pages/Regulatory-Technology">Regulatory Technology</a> assurance workflows.</p>
+</li>
+<li>
+<p><strong><a href="../Watershed" class="internal" data-slug="Watershed">Watershed</a></strong> (San Francisco / London):</p>
+<ul>
+<li>Comprehensive carbon, water, and waste accounting integrated with reporting workflows</li>
+<li>Acquired VitalMetrics in 2024, incorporating a GHG emissions database enabling automatic ingestion of public supplier data and customised supplier survey deployment</li>
+<li>Supports CSRD ESRS E1, GHG Protocol, SBTi, and TCFD reporting templates</li>
+<li>Integrates with SAP, Oracle, Workday, Salesforce, and major procurement platforms</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../Persefoni" class="internal" data-slug="Persefoni">Persefoni</a></strong> (enterprise AI-driven platform):</p>
+<ul>
+<li>Released generative <a href="../AI" class="internal" data-slug="AI">AI</a> module in 2024 for automated anomaly detection, procurement activity-to-emission-factor mapping, and natural-language data interpretation</li>
+<li>Launched free-tier carbon accounting platform in 2024 to democratise sustainability access for smaller companies</li>
+<li>Planned commercial AI products for 2025: energy-bill management automation, physical climate risk modelling</li>
+<li>AICPA/CICA verified; integrates with Big Four assurance workflows</li>
+</ul>
+</li>
+<li>
+<p><strong>Salesforce Net Zero Cloud</strong>:</p>
+<ul>
+<li>Collects and visualises Scope 1/2/3 emissions-related data within Salesforce CRM ecosystem</li>
+<li>Built on Salesforce’s existing data model (not designed for accounting); criticised for limited methodological transparency and audit-readiness in complex multi-scope calculations</li>
+<li>Strong for organisations with existing Salesforce infrastructure and straightforward Scope 2 reporting needs</li>
+</ul>
+</li>
+<li>
+<p><strong>Greenly, Normative, Plan A, Sweep</strong> (European-native platforms):</p>
+<ul>
+<li>Strong CSRD ESRS alignment with pre-configured mandatory datapoint templates</li>
+<li>Supplier engagement portals enabling SME value-chain primary data collection</li>
+<li>Normative uses the publicly available DEFRA, EPA, ecoinvent, and EXIOBASE emission factor databases with transparent methodology documentation</li>
+</ul>
+</li>
+<li>
+<p><strong>Scope3</strong> (advertising carbon specialist):</p>
+<ul>
+<li>Measures digital advertising carbon emissions using attribution models for media supply chain carbon intensity</li>
+<li>Growing use case as corporate media budgets attract <a href="../pages/ESG-Investing" class="internal alias" data-slug="pages/ESG-Investing">ESG Investing</a> and Scope 3 Category 1 measurement scrutiny</li>
+</ul>
+</li>
+<li>
+<h3 id="satellite-and-remote-sensing-layer">Satellite and Remote-Sensing Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#satellite-and-remote-sensing-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Physical monitoring from space has established itself as the most credible independent verification mechanism for fugitive methane (CH₄), which carries GWP₁₀₀ = 27.9 and is systematically under-reported in bottom-up corporate inventories by 20-100% in the oil and gas sector.</p>
+</li>
+<li>
+<p><strong>GHGSat</strong> (Montreal, Canada — commercial constellation):</p>
+<ul>
+<li>16 satellites in orbit as of 2025; 25-metre spatial resolution enabling individual-facility attribution</li>
+<li>2024 performance: observed >4 million industrial facilities across 110 countries; detected >20,000 emission events equivalent to 534 MtCO₂e</li>
+<li>September 2025: GHGSat satellites deployed across ExxonMobil’s onshore US operations for continuous methane surveillance — marking transition from episodic spot-checks to continuous industrial monitoring</li>
+<li>December 2025: global methane map from GHGSat fleet demonstrated comprehensive energy-sector monitoring at unprecedented granularity, published alongside academic methane attribution studies</li>
+<li>In 2024, methane detected represented potential additional revenue of >$142M if converted to natural gas product rather than released as fugitive emissions — strong economic case for monitoring-driven leak repair</li>
+<li>Planned constellation expansion: 30+ satellites targeting near-daily facility revisit rates by 2028</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../MethaneSAT" class="internal" data-slug="MethaneSAT">MethaneSAT</a></strong> (Environmental Defense Fund):</p>
+<ul>
+<li>Launched 4 March 2024; designed for regional-scale methane mapping at high spectral sensitivity to detect diffuse emissions below facility-level attribution threshold</li>
+<li>Operations ended 20 June 2025 after loss of contact — widely regarded as scientific and technological success despite early termination</li>
+<li>
+<blockquote>
+<p>14 months of collected data continue to support methane reduction analysis and provide baseline for successor missions</p>
+</blockquote>
+</li>
+<li>Legacy data set available through EDF and academic partners for ongoing atmospheric methane research</li>
+</ul>
+</li>
+<li>
+<p><strong>EU Copernicus Sentinel-5P (TROPOMI)</strong>:</p>
+<ul>
+<li>ESA/EU operational instrument; daily global methane column retrievals at 7×5.5 km resolution</li>
+<li>Powers real-time methane tracking dashboards used by national regulators and NGOs</li>
+<li>Feeds into national GHG inventory verification, enabling systematic comparison of top-down satellite versus bottom-up corporate inventories</li>
+</ul>
+</li>
+<li>
+<p><strong>Climate TRACE Coalition</strong> (open database):</p>
+<ul>
+<li>Aggregates satellite, aircraft, and surface sensor data into facility-level emission database</li>
+<li>352 million individual emission sources covered as of 2025</li>
+<li>Enables external validation of corporate Scope 1 methane and CO₂ claims against independent physical measurements</li>
+<li>Partners: WattTime, Rocky Mountain Institute, Al Gore initiative, multiple academic groups</li>
+</ul>
+</li>
+<li>
+<p><a href="../Satellite-Data" class="internal alias" data-slug="Satellite-Data">Satellite Data</a> integration with corporate accounting currently primarily used to flag anomalies in reported inventory data rather than directly replacing bottom-up calculations; full quantitative integration anticipated as methodology and regulation co-evolve through 2026-2030.</p>
+</li>
+<li>
+<h3 id="ai-powered-estimation-layer">AI-Powered Estimation Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-powered-estimation-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><a href="../AI" class="internal" data-slug="AI">AI</a> and <a href="../pages/Machine-Learning-Discipline" class="internal alias" data-slug="pages/Machine-Learning-Discipline">Machine Learning Discipline</a> address the data-completeness problem inherent in Scope 3 measurement, where supplier-specific primary emission data is typically available for fewer than 15% of spend categories.</p>
+</li>
+<li>
+<p><strong>Spend-based ML models</strong>:</p>
+<ul>
+<li>Random forest and gradient-boosted regressors (XGBoost, LightGBM) trained on EXIOBASE/USEEIO EIO-LCA databases map supplier NACE/SIC sector codes and spend values to sector-specific emission intensities</li>
+<li>Uncertainty propagated through Monte Carlo simulation: Scope 3 Category 1 estimates carry ±50-200% relative uncertainty on spend-based inputs vs ±10-30% with supplier-specific PCF data</li>
+<li>Transfer-learning approaches: models pre-trained on public company sustainability disclosures fine-tuned to specific industry subsectors</li>
+</ul>
+</li>
+<li>
+<p><strong>Natural Language Processing (NLP) for activity data extraction</strong>:</p>
+<ul>
+<li>LLM-powered parsing of invoices, utility bills, fuel receipts, and logistics manifests extracts activity quantities and units for conversion to emission calculations</li>
+<li>Persefoni’s 2024 generative <a href="../AI" class="internal" data-slug="AI">AI</a> module automates procurement-to-emission-factor mapping, routing line-item descriptions to appropriate emission factor categories via semantic similarity</li>
+<li>Named entity recognition (NER) models trained on sustainability reporting corpora extract emission-relevant quantities from annual reports, enabling benchmarking against disclosed competitors</li>
+</ul>
+</li>
+<li>
+<p><strong>Supplier survey automation</strong>:</p>
+<ul>
+<li><a href="../AI" class="internal" data-slug="AI">AI</a> drafts tailored supplier data-collection questionnaires conditioned on supplier sector, product category, and geographic origin</li>
+<li>Response classification models detect implausible values by comparison with sector-quartile emission intensity benchmarks</li>
+<li>Confidence-weighted averaging combines AI-estimated and supplier-reported factors, with automated escalation to human review for high-uncertainty cases</li>
+</ul>
+</li>
+<li>
+<p><strong>Satellite anomaly detection</strong>:</p>
+<ul>
+<li>Computer vision models process Sentinel-5P and GHGSat imagery to classify emission events by source type: oil and gas flaring, landfill gas, agricultural fugitive methane, industrial process venting</li>
+<li>Convolutional neural networks trained on confirmed emission event datasets achieve >90% classification accuracy for major source categories at facility scale</li>
+</ul>
+</li>
+<li>
+<p><strong>AI systems as measurement subjects</strong> (emerging priority):</p>
+<ul>
+<li><a href="../AI" class="internal" data-slug="AI">AI</a> carbon footprint measurement has become a discipline in its own right as AI infrastructure energy consumption scales</li>
+<li>2025 benchmarking study (arXiv:2505.09598, Chen et al.) found most energy-intensive LLM inference exceeds <strong>29 Wh per long prompt</strong> — 65× less efficient than best-in-class systems</li>
+<li>A 0.42 Wh short query scaled to 700 million daily queries: annual electricity equivalent to 35,000 US homes; water consumption equal to annual drinking needs of 1.2 million people; carbon emissions requiring a Chicago-sized forest to offset</li>
+<li>Google reported median Gemini text prompt: 0.24 Wh energy, 0.03 gCO₂e, 0.26 mL water; <strong>33× efficiency improvement</strong> in energy and <strong>44× improvement</strong> in carbon intensity over 12 months via hardware and model compression advances</li>
+<li>MLPerf Inference v4.0 (2024) standardised energy measurement across ~900 system configurations enabling cross-platform LLM efficiency comparison — the first industry-wide benchmark including mandatory power measurement</li>
+<li>Standard environmental multipliers: PUE (Power Usage Effectiveness), WUE (Water Usage Effectiveness), CIF (Carbon Intensity Factor) — applied to data-centre hardware power measurements per arXiv:2507.11417 methodology</li>
+<li>Green Software Foundation Software Carbon Intensity (SCI) specification v1.0 (2022) defines per-functional-unit carbon intensity metric enabling software architects to optimise algorithms against carbon alongside performance</li>
+</ul>
+</li>
+<li>
+<h3 id="digital-product-passport-integration">Digital Product Passport Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#digital-product-passport-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The EU’s <a href="../pages/Digital-Product-Passport" class="internal alias" data-slug="pages/Digital-Product-Passport">Digital Product Passport</a> (DPP), mandated by Regulation (EU) 2024/1781 (ESPR — Ecodesign for Sustainable Products Regulation), embeds product-level carbon footprint declarations into machine-readable digital records attached to regulated products throughout their lifecycle.</p>
+</li>
+<li>
+<p><strong>ESPR timeline and scope</strong>:</p>
+<ul>
+<li>ESPR entered force 2024; April 2025 working plan (2025-2030) published priority product categories</li>
+<li>Priority products (2025-2030): iron and steel, aluminium, textiles (garments, footwear), furniture (including mattresses)</li>
+<li>Battery passports: industrial and EV batteries must include carbon footprint declarations by <strong>February 2027</strong>, with declarations phased by battery type and chemistry</li>
+<li>Electronics, construction products, chemicals sectors to follow under delegated acts through 2030</li>
+</ul>
+</li>
+<li>
+<p><strong>PCF methodology for DPPs</strong>:</p>
+<ul>
+<li><a href="../pages/ISO-14067" class="internal alias" data-slug="pages/ISO-14067">ISO 14067</a> is the mandated methodological backbone for DPP carbon data, requiring cradle-to-gate or cradle-to-grave PCF quantification</li>
+<li>Third-party verification per <a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-3 required for ESPR compliance</li>
+<li>CEN/CENELEC standardisation committees developing sector-specific PCF calculation rules harmonising ISO 14067 with ESPR technical specifications</li>
+</ul>
+</li>
+<li>
+<p><strong>Supply-chain data pipeline</strong>:</p>
+<ul>
+<li>A battery manufacturer’s DPP carbon data feeds directly into the automotive OEM’s Scope 3 Category 2 (Capital Goods) footprint and the EV buyer’s Category 11 (Use of Sold Products) estimates</li>
+<li>Promises a future of auditable, machine-to-machine carbon data flows across entire value chains, progressively replacing spend-based estimates with verified primary lifecycle data</li>
+<li>Integration with <a href="../Blockchain" class="internal" data-slug="Blockchain">Blockchain</a> ledgers for immutable DPP data provenance under active piloting (EU Digital Wallet architecture)</li>
+</ul>
+</li>
+<li>
+<h3 id="verification-and-assurance-layer">Verification and Assurance Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#verification-and-assurance-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-3 governs third-party verification and validation of GHG assertions; required by CSRD and increasingly standard in enterprise procurement contracts.</p>
+</li>
+<li>
+<p><strong>CSRD assurance requirements</strong>:</p>
+<ul>
+<li>Limited assurance mandated for initial CSRD reporting years (2024-2025 fiscal data)</li>
+<li>Pathway to reasonable assurance as sustainability assurance market matures (Commission review 2026)</li>
+<li>Big Four accounting firms (Deloitte, PwC, EY, KPMG) and specialist sustainability assurance providers (Bureau Veritas, SGS, DNV, TÜV) are primary assurance market participants</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../Science-Based-Targets-initiative" class="internal alias" data-slug="Science-Based-Targets-initiative">Science-Based Targets initiative</a> (SBTi)</strong>:</p>
+<ul>
+<li>Independent validation of Scope 1, 2, and material Scope 3 targets aligned with 1.5°C pathways</li>
+<li>9,000+ companies committed or validated as of 2025; validation queue historically 12-18 months but reduced with expanded reviewer capacity</li>
+<li>SBTi Corporate Net-Zero Standard v1.0 (2021) requires near-term (5-10 year) and long-term (net-zero by 2050) targets with annual progress disclosure</li>
+<li>Financial institutions validated under Science-Based Targets for Financial Institutions (SBTfi) framework</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../Blockchain" class="internal" data-slug="Blockchain">Blockchain</a> for emission provenance</strong>:</p>
+<ul>
+<li>Distributed ledger protocols pilot immutable audit trails for emission factor provenance, measurement methodology parameters, and third-party verification outcomes</li>
+<li>Research at Delft, MIT, and UCL explores trustless carbon accounting enabling regulator, investor, and supply-chain access to verified data without central-trust intermediary</li>
+<li>EU Digital Wallet architecture may incorporate DPP carbon data via blockchain in later ESPR delegated acts</li>
+</ul>
+</li>
+<li>
+<h3 id="emission-factor-databases-in-detail">Emission Factor Databases in Detail<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emission-factor-databases-in-detail" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>UK DEFRA Government GHG Conversion Factors</strong> (published annually, April release):</p>
+<ul>
+<li>2024 edition key factors: UK grid electricity 0.207 kgCO₂e/kWh (location-based); natural gas 0.182 kgCO₂e/kWh; diesel 2.539 kgCO₂e/litre; petrol 2.160 kgCO₂e/litre; short-haul economy flight 0.151 kgCO₂e/passenger-km</li>
+<li>UK grid factor declining year-on-year as renewable capacity increases: 2015: 0.464, 2020: 0.233, 2024: 0.207 — representing 55% reduction in 9 years</li>
+<li>Residual mix factor for market-based Scope 2: 0.321 kgCO₂e/kWh (2024) — higher than location-based due to REGOs removing renewable generation from the pool</li>
+<li>Supplementary factors: refrigerant gases (HFCs by GWP₁₀₀), wastewater treatment, landfill gas, biomass combustion, transmission and distribution losses</li>
+</ul>
+</li>
+<li>
+<p><strong>US EPA eGRID</strong> (Emissions &amp; Generation Resource Integrated Database, updated annually):</p>
+<ul>
+<li>Sub-regional emission factors by NERC region: 2022 data range from NWPP (Pacific Northwest) 0.248 lbCO₂/kWh to SERC Midwest 0.752 lbCO₂/kWh — 3× geographic variation</li>
+<li>Annual data release with 2-year lag; 2022 eGRID released 2024; used for US Scope 2 location-based calculations</li>
+<li>Hourly marginal emission factors increasingly available from WattTime API for real-time carbon-aware computing applications</li>
+</ul>
+</li>
+<li>
+<p><strong>Ecoinvent database</strong> (Swiss Centre for Life Cycle Inventories):</p>
+<ul>
+<li>Version 3.10 (2024): ~20,000 unit processes across >150 countries; primary backbone for LCA software (SimaPro, GaBi, OpenLCA)</li>
+<li>Covers: electricity generation by country, transport modes, chemical production, metals, agriculture, waste treatment</li>
+<li>Annual subscription: ~CHF 15,000 for commercial users; free for academic use</li>
+<li>Attributed (average) and consequential (marginal) system models available for attributional vs. consequential LCA studies</li>
+</ul>
+</li>
+<li>
+<p><strong>EXIOBASE</strong> (multi-regional input-output database):</p>
+<ul>
+<li>v3.8.2 (2022): 44 countries + 5 Rest-of-World regions; 200 product categories; annual time series 1995-2022</li>
+<li>Enables spend-based Scope 3 Category 1 emission factors at sector × country resolution</li>
+<li>Basis for national consumption-based accounting studies; reveals embedded carbon in international trade flows</li>
+<li>Freely available from NTNU Industrial Ecology Programme; used by Normative, Plan A, and academic Scope 3 tools</li>
+</ul>
+</li>
+<li>
+<h3 id="regulatory-landscape-in-detail">Regulatory Landscape in Detail<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-landscape-in-detail" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>EU <a href="../pages/Corporate-Sustainability-Reporting-Directive" class="internal alias" data-slug="pages/Corporate-Sustainability-Reporting-Directive">Corporate Sustainability Reporting Directive</a> (CSRD) — phased implementation</strong>:</p>
+<ul>
+<li>Wave 1: Large public-interest entities (>500 employees) — fiscal year 2024 data, published 2025</li>
+<li>Wave 2: All large EU companies — fiscal year 2025 data, published 2026</li>
+<li>Wave 3: SMEs listed on EU-regulated markets — fiscal year 2026 data, published 2027</li>
+<li>ESRS E1 mandatory disclosures: gross Scope 1, Scope 2 (location and market-based), and Scope 3 (all material categories); climate transition plan; physical and transition risk assessment aligned with TCFD; capital expenditure allocation for climate-related activities</li>
+<li>July 2025 Omnibus revision: mandatory datapoints reduced by 57%; value-chain (Scope 3) estimates explicitly allowed where supplier primary data unavailable; all voluntary datapoints eliminated from ESRS</li>
+<li>Assurance: limited assurance initially; pathway to reasonable assurance under Commission review 2026</li>
+</ul>
+</li>
+<li>
+<p><strong>UK <a href="../Streamlined-Energy-and-Carbon-Reporting" class="internal alias" data-slug="Streamlined-Energy-and-Carbon-Reporting">Streamlined Energy and Carbon Reporting</a> (SECR)</strong>:</p>
+<ul>
+<li>Mandatory since April 2019 under Companies Act 2006 (Energy and Carbon Report) Regulations 2019 (SI 2019/386)</li>
+<li>Qualifying criteria: large unquoted companies meeting two of three thresholds (turnover >£36M, balance sheet >£18M, 250+ employees); all UK-incorporated quoted companies</li>
+<li>Minimum requirements: total energy consumption (kWh), Scope 1 and Scope 2 GHG emissions (tCO₂e), at least one emissions intensity ratio</li>
+<li>Quoted companies: additionally required to report global energy use; encouraged to include Scope 3 where material</li>
+<li>Exemption: entities consuming &lt;40,000 kWh annually</li>
+<li>UK ETS (operational May 2021): power, heavy industry, domestic aviation; 2024 allowance price £35-55/tCO₂e; creates direct financial incentive for precise Scope 1 measurement</li>
+<li>UK Corporate Reporting reforms (2025): HM Treasury consulting on extending mandatory Scope 3 reporting and adding third-party assurance requirements — consultation timeline pending</li>
+</ul>
+</li>
+<li>
+<p><strong>US SEC Climate Disclosure Rules — trajectory</strong>:</p>
+<ul>
+<li>Adopted March 2024: would have required large accelerated filers to disclose Scope 1/2 from fiscal year 2025, large accelerated filer Scope 3 from 2026</li>
+<li>Stayed April 2024 following consolidated legal challenges in Eighth Circuit</li>
+<li>September 2025: SEC voted to end its defence of the rules; formal rescission proceedings initiated</li>
+<li>California SB 253 (Climate Corporate Data Accountability Act) backstop: applies to companies with >$1B annual revenues operating in California; requires Scope 1/2/3 disclosure from 2026 (Scope 1/2) and 2027 (Scope 3) — affects 5,000+ companies</li>
+<li>California SB 261 (Climate-Related Financial Risk Act): requires climate-related financial risk disclosure aligned with TCFD from 2026</li>
+</ul>
+</li>
+<li>
+<p><strong>EU Carbon Border Adjustment Mechanism (CBAM)</strong>:</p>
+<ul>
+<li>Fully operational from January 2026 for iron/steel, cement, aluminium, fertilisers, electricity, hydrogen</li>
+<li>Importers must declare embedded carbon of imported goods and surrender CBAM certificates proportional to declared carbon intensity</li>
+<li>Direct financial liability for inaccurate PCF declarations: first time product-level carbon measurement carries import duty consequences</li>
+<li>Expected to migrate into broader <a href="../pages/Digital-Product-Passport" class="internal alias" data-slug="pages/Digital-Product-Passport">Digital Product Passport</a> framework under future ESPR delegated acts</li>
+<li>UK Carbon Border Adjustment Mechanism under development; consultation ongoing 2025</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="corporate-ghg-inventory-annual-reporting">Corporate GHG Inventory (Annual Reporting)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#corporate-ghg-inventory-annual-reporting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The largest deployment context for <a href="../pages/Carbon-Footprint-Measurement" class="internal alias" data-slug="pages/Carbon-Footprint-Measurement">Carbon Footprint Measurement</a>; large corporations compile annual Scope 1/2/3 inventories for CSRD, SECR, GRI, CDP, and voluntary disclosure frameworks.</p>
+</li>
+<li>
+<p><strong>Data collection process</strong> (typical 6-18 month cycle):</p>
+<ul>
+<li>Scope 1: sub-metered fuel consumption (smart meters, fuel logs), F-gas leak records, process emission engineering calculations</li>
+<li>Scope 2: electricity and heat procurement records; market-based EAC certificates; district energy supplier emission factors</li>
+<li>Scope 3 Cat. 1: spend-based EIO-LCA factors applied to procurement system data exports; supplier-specific PCF data for >5% spend categories; hybrid methods combining both</li>
+<li>Scope 3 Cat. 6/7: travel management system exports (flights, rail); commuting surveys with modal split; home-working energy allocation models</li>
+<li>Scope 3 Cat. 11: product energy models; regulatory test data (EU energy labels, EPA MPG); lifetime kWh × grid emission factors</li>
+</ul>
+</li>
+<li>
+<p><strong>Third-party verification</strong>: Limited assurance by Big Four or specialist sustainability assurance firms; reasonable assurance required by certain procurement contracts and financial lenders; verification to <a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-3.</p>
+</li>
+<li>
+<p><strong>Software integration</strong>: <a href="../pages/Carbon-Accounting-Software" class="internal alias" data-slug="pages/Carbon-Accounting-Software">Carbon Accounting Software</a> platforms automate extraction from SAP, Oracle, Workday ERP systems; API connectors to utility providers; direct integration with travel management systems (SAP Concur, Navan).</p>
+</li>
+<li>
+<p><strong>Industry-specific challenges</strong>:</p>
+<ul>
+<li>Financial services: Category 15 (Investments) financed emissions typically 700-1,000× larger than Scope 1/2 combined; PCAF standard v2 required for CSRD compliance</li>
+<li>Retail/FMCG: Category 1 (Purchased Goods) represents >80% of total footprint; primary supplier data available for &lt;20% of spend; AI estimation essential</li>
+<li>Manufacturing: Scope 1 process emissions (e.g. cement calcination releasing ~500 kgCO₂/tonne clinker) are direct emissions from chemical reactions, not combustion — specific methodology required</li>
+<li>Tech/software: Scope 2 from data centres dominates operational footprint; Category 11 (Use of Sold Products) complex for cloud services billed by usage</li>
+</ul>
+</li>
+<li>
+<h3 id="product-carbon-footprint-pcf-declaration">Product Carbon Footprint (PCF) Declaration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#product-carbon-footprint-pcf-declaration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Manufacturers calculate cradle-to-gate or cradle-to-grave PCF per <a href="../pages/ISO-14067" class="internal alias" data-slug="pages/ISO-14067">ISO 14067</a> for specific products, enabling:</p>
+<ul>
+<li>Environmental Product Declarations (EPDs) verified to EN 15804 for construction products or ISO 14025 for general products</li>
+<li>Carbon labelling schemes (Oatly oat milk carbon label: 0.31 kgCO₂e/litre; Quorn mycoprotein: 3-4× lower than beef per gram of protein)</li>
+<li>Regulatory <a href="../pages/Digital-Product-Passport" class="internal alias" data-slug="pages/Digital-Product-Passport">Digital Product Passport</a> compliance under ESPR 2024/1781</li>
+<li>Procurement carbon specifications in corporate supply chains (Apple Supplier Clean Energy Programme requiring 100% renewable electricity by 2030)</li>
+</ul>
+</li>
+<li>
+<p><strong>Methodological tools</strong>: Ecoinvent v3.10, GaBi 2024, SimaPro 9.x; custom sector databases for construction (Inventory of Carbon and Energy — ICE v3.0, Bath University), textiles, electronics.</p>
+</li>
+<li>
+<p><strong>PCF uncertainty</strong>: ±10-30% for cradle-to-gate PCF with good primary supplier data; ±50-200% for cradle-to-grave with spend-based estimates for use-phase and end-of-life.</p>
+</li>
+<li>
+<p><strong>Real-world PCF examples</strong>:</p>
+<ul>
+<li>Oatly oat milk: 0.31 kgCO₂e per litre (cradle-to-retail); compared to dairy milk: ~1.2 kgCO₂e/litre — 75% lower footprint enabling verified carbon label</li>
+<li>Quorn mycoprotein: 3.2 kgCO₂e per kg protein vs beef 60-80 kgCO₂e per kg protein — 95% lower, enabling carbon label as climate-positive protein</li>
+<li>Apple iPhone 15: 61 kgCO₂e product lifetime (85% from manufacturing, 14% use-phase) — disclosed in Apple product environmental reports under ISO 14067</li>
+<li>IKEA Kallax shelf unit: 37 kgCO₂e (predominantly Category 1 timber supply chain); IKEA targets 50% reduction in product lifetime climate footprint by 2030</li>
+<li>Concrete ready-mix: 280-350 kgCO₂e per m³ (Portland cement ~500 kgCO₂e/tonne clinker); driving demand for low-carbon alternatives (GGBS, fly ash, geopolymer cement)</li>
+</ul>
+</li>
+<li>
+<h3 id="supply-chain-emission-intelligence">Supply Chain Emission Intelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#supply-chain-emission-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Retailers and consumer goods companies engage tier-1 and tier-2 suppliers for primary emission data to reduce reliance on industry-average factors carrying high uncertainty.</p>
+</li>
+<li>
+<p><strong>Supplier engagement programmes</strong>:</p>
+<ul>
+<li>EcoVadis supplier sustainability ratings (adopted by 1,000+ companies): Scope 1/2 data collected, PCF data for key categories</li>
+<li>CDP Supply Chain programme (2024: 28,000+ supplier responses): standardised Scope 1/2/3 questionnaire enabling buyer-side Scope 3 Cat. 1 primary data collection</li>
+<li>IKEA Supplier Carbon Programme: requires tier-1 suppliers to report Scope 1 and 2 emissions, with 100% renewable electricity pathway commitments</li>
+</ul>
+</li>
+<li>
+<p><strong>AI-powered spend analysis</strong>: <a href="../pages/Machine-Learning-Discipline" class="internal alias" data-slug="pages/Machine-Learning-Discipline">Machine Learning Discipline</a> maps procurement system spend categories to emission factors in real time, surfacing high-emission categories for targeted decarbonisation investment; continuously updated as supplier PCF data replaces EIO-LCA estimates.</p>
+</li>
+<li>
+<p><strong>Scope 3 Cat. 1 data quality ladder</strong> (from lowest to highest reliability):</p>
+<ul>
+<li>Tier 5 (worst): Spend × industry-average EIO-LCA factor (±150-200% uncertainty)</li>
+<li>Tier 4: Spend × sector-specific EIO-LCA factor with country adjustment (±80-150%)</li>
+<li>Tier 3: Physical quantity × sector-average emission factor (±30-80%)</li>
+<li>Tier 2: Supplier-reported Scope 1/2 emissions allocated to products (±15-30%)</li>
+<li>Tier 1 (best): Verified supplier PCF per <a href="../pages/ISO-14067" class="internal alias" data-slug="pages/ISO-14067">ISO 14067</a> with <a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-3 third-party assurance (±10-20%)</li>
+</ul>
+</li>
+<li>
+<p><strong>CDP Supply Chain programme</strong> (2024): 28,000+ supplier responses to standardised Scope 1/2/3 questionnaire; enables buyer-side Scope 3 Cat. 1 primary data collection at scale; suppliers disclosing to CDP demonstrate lower Scope 3 uncertainty for buying organisations.</p>
+</li>
+<li>
+<h3 id="financial-portfolio-carbon-footprinting">Financial Portfolio Carbon Footprinting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#financial-portfolio-carbon-footprinting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Asset managers and banks measure financed emissions under the Partnership for Carbon Accounting Financials (PCAF) standard (v2, 2022):</p>
+<ul>
+<li>Asset classes covered: listed equity and bonds, business loans, mortgages, motor vehicle loans, project finance, sovereign bonds, private equity</li>
+<li>Weighted Average Carbon Intensity (WACI) in tCO₂e per $M revenue for each asset class</li>
+<li>Data quality scores (1-5) reflect primary vs. estimated emission data; PCAF requires disclosure of data quality alongside emission figures</li>
+</ul>
+</li>
+<li>
+<p><strong>GHG Protocol Category 15 revision impact</strong>: Extending investment accounting to all entities with equity stakes will significantly expand the universe of companies required to measure and report financed emissions beyond financial institutions.</p>
+</li>
+<li>
+<p><strong><a href="../pages/ESG-Investing" class="internal alias" data-slug="pages/ESG-Investing">ESG Investing</a> integration</strong>: Portfolio-level WACI and financed emission metrics drive capital allocation, engagement voting, and exclusion policies under Net Zero Asset Managers Initiative (310+ signatories, $59T AUM, 2025).</p>
+</li>
+<li>
+<h3 id="ai-and-digital-infrastructure-carbon-measurement">AI and Digital Infrastructure Carbon Measurement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-and-digital-infrastructure-carbon-measurement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Data-centre operators, cloud providers (AWS, Google Cloud, Microsoft Azure), and AI model developers quantify computational carbon footprints using:</p>
+<ul>
+<li>PUE (Power Usage Effectiveness) = Total Facility Energy / IT Equipment Energy; industry average ~1.58 (Uptime Institute 2024), hyperscaler average ~1.15-1.20</li>
+<li>WUE (Water Usage Effectiveness) in L/kWh; evaporative cooling data centres: 1.5-3.0 L/kWh</li>
+<li>CIF (Carbon Intensity Factor) = grid emission factor in gCO₂e/kWh at data centre location</li>
+<li>Total carbon = IT power (W) × PUE × CIF × operational hours + embodied carbon of hardware</li>
+</ul>
+</li>
+<li>
+<p>Inference-phase emissions increasingly dominate over training for deployed <a href="../AI" class="internal" data-slug="AI">AI</a> systems, as inference occurs continuously at production scale while training is episodic (arXiv:2507.11417, 2025).</p>
+</li>
+<li>
+<p>Green Software Foundation SCI specification v1.0: per-query or per-functional-unit carbon intensity enabling software architects to optimise code against carbon as a primary efficiency metric alongside latency and cost.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Foundational literature</strong>:</p>
+<ul>
+<li>Wiedmann &amp; Minx (2008) definitional review established the carbon footprint concept in ecological economics, distinguishing production-based (territorial) from consumption-based (CBA) emission attribution</li>
+<li>Matthews et al. (2008) demonstrated EIO-LCA for US supply-chain attribution, establishing spend-based emission factors as pragmatic Scope 3 methodology</li>
+<li>Peters &amp; Hertwich (2008) formalised CBA framework showing trade-exposed economies (UK, Netherlands) face substantially different policy incentives under territorial vs consumption-based accounting</li>
+<li>Wiedmann (2009) review of input-output analysis for <a href="../pages/Lifecycle-Assessment" class="internal alias" data-slug="pages/Lifecycle-Assessment">Lifecycle Assessment</a>: methodological synthesis of process-based LCA and EIO-LCA</li>
+</ul>
+</li>
+<li>
+<p><strong>Multi-regional input-output (MRIO) databases</strong>:</p>
+<ul>
+<li>EXIOBASE (European research consortium, 43 countries, 200 industry sectors): primary basis for EU Scope 3 spend-based emission factors; v3.8.2 (2022)</li>
+<li>WIOD (World Input-Output Database, 43 countries, 56 industries): Timmer et al. (2015) — used for global value-chain carbon flow analysis</li>
+<li>US EPA USEEIO (71 sectors, US national): basis for US corporate EIO-LCA Scope 3 estimation</li>
+<li>EXIOBASE MRIO analysis reveals: UK’s consumption-based footprint is approximately 50% larger than its territorial production-based footprint, primarily through imported manufactured goods from China and Southeast Asia</li>
+</ul>
+</li>
+<li>
+<p><strong>Attributional vs. consequential LCA</strong>:</p>
+<ul>
+<li>Attributional <a href="../pages/Lifecycle-Assessment" class="internal alias" data-slug="pages/Lifecycle-Assessment">Lifecycle Assessment</a> describes current supply-chain state using average emission factors — appropriate for PCF declarations and annual inventory reporting</li>
+<li>Consequential LCA models marginal system changes induced by a specific decision — appropriate for investment decisions (new technology deployment, renewable energy purchase)</li>
+<li>Distinction has significant practical implications: attributional PCF using average grid intensity may misrepresent the marginal impact of incremental electricity consumption if the marginal generator is coal rather than the grid average mix</li>
+</ul>
+</li>
+<li>
+<p><strong>Satellite-inventory reconciliation research</strong>:</p>
+<ul>
+<li>Growing literature compares top-down satellite-derived methane estimates (Sentinel-5P, GHGSat, aircraft campaigns) with bottom-up corporate inventory reports</li>
+<li>Consistently finds reported inventories understate fugitive methane emissions by 20-100% in oil and gas sectors (Alvarez et al. 2018 Science; Lauvaux et al. 2022 Science; Varon et al. 2022)</li>
+<li>Key methodological tension: top-down satellite measures “what is in the atmosphere” while bottom-up reporting measures “what should be emitted based on activity data and emission factors”</li>
+</ul>
+</li>
+<li>
+<p><strong>Uncertainty quantification</strong>:</p>
+<ul>
+<li>Monte Carlo propagation through multi-tier supply chains shows Scope 3 Category 1 footprints carry ±50-200% relative uncertainty under spend-based factors</li>
+<li>Approach: 10,000 Monte Carlo draws from emission factor probability distributions (lognormal, uniform) propagated through corporate spend data to yield probability distributions over total Scope 3 inventory</li>
+<li>Published uncertainty ranges vary by category: transport (±15-30%), food and agriculture (±30-80%), purchased manufactured goods (±50-150%)</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../Blockchain" class="internal" data-slug="Blockchain">Blockchain</a> for emission data provenance</strong>:</p>
+<ul>
+<li>Research at TU Delft, MIT Media Lab, and UCL piloting distributed ledger protocols for immutable GHG assertion audit trails</li>
+<li>Smart contract-based emission factor update mechanisms ensuring historical footprint calculations remain auditable when underlying factors are revised</li>
+<li>Integration with EU Digital Wallet and ESPR DPP architecture under active EU-funded project (Horizon Europe)</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The <a href="../pages/Carbon-Footprint-Measurement" class="internal alias" data-slug="pages/Carbon-Footprint-Measurement">Carbon Footprint Measurement</a> ecosystem in 2026 is characterised by:</p>
+<ul>
+<li><strong>Regulatory bifurcation</strong>: EU/UK high-ambition mandatory disclosure (CSRD, SECR, UK ETS) contrasting with US SEC rule rescission and California state-level backstop (SB 253)</li>
+<li><strong>GHG Protocol revision</strong>: 65-member Technical Working Group on 2027-2028 timeline; most significant proposed changes are calculated materiality exclusions and Category 15 universal applicability</li>
+<li><strong>Satellite monitoring maturation</strong>: GHGSat 16-satellite constellation; Climate TRACE 352-million-source database; Sentinel-5P daily global coverage — establishing physical measurement infrastructure parallel to self-reported inventories</li>
+<li><strong>Platform investment and consolidation</strong>: €270M raised in 2024; consolidation anticipated as enterprises demand integrated GHG plus <a href="../pages/ESG-Investing" class="internal alias" data-slug="pages/ESG-Investing">ESG Investing</a> plus <a href="../pages/Regulatory-Technology" class="internal alias" data-slug="pages/Regulatory-Technology">Regulatory Technology</a> assurance workflows</li>
+<li><strong>AI carbon standardisation</strong>: MLPerf Inference v4.0 standardised ~900 power benchmarks; Google Gemini carbon disclosure benchmark; EU AI Act implementing acts anticipated to mandate AI system carbon disclosure by 2026-2027</li>
+<li><strong>CBAM deployment</strong>: EU Carbon Border Adjustment Mechanism (fully operational 2026 for iron/steel, cement, aluminium, fertilisers, electricity) creates financial penalties for inaccurate embedded carbon declarations in imported goods — first time product-level PCF data carries direct legal import duty liability</li>
+<li><strong><a href="../pages/Digital-Product-Passport" class="internal alias" data-slug="pages/Digital-Product-Passport">Digital Product Passport</a> rollout</strong>: Battery carbon declarations entering force February 2027; ESPR delegated acts for textiles and electronics under development; PCF methodology harmonisation ongoing through CEN/CENELEC</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context-imperial--edinburgh--ucl--cambridge--manchester">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>UK universities are simultaneously major <a href="../pages/Carbon-Footprint-Measurement" class="internal alias" data-slug="pages/Carbon-Footprint-Measurement">Carbon Footprint Measurement</a> research producers and significant measurement subjects, pioneering Scope 1/2/3 accounting under HESA annual estates data collection.</p>
+</li>
+<li>
+<p><strong>UK university emission data (HESA 2024)</strong> — top emitters by tCO₂e:</p>
+<ul>
+<li>University of Edinburgh: 64.5M kgCO₂e — research-intensive campus with large animal research facilities and ageing estate heating</li>
+<li>Imperial College London: 46.4M kgCO₂e — urban London campus with energy-intensive wet labs and clinical research</li>
+<li>University of Cambridge: 43.1M kgCO₂e — large historic estate with diverse building stock and high computing infrastructure</li>
+<li>University of Manchester: 42.5M kgCO₂e — North West industrial partnerships driving applied research energy intensity</li>
+<li>UCL (University College London): 36.6M kgCO₂e — Bloomsbury campus with significant biomedical research activity</li>
+</ul>
+</li>
+<li>
+<p><strong>Standardised Carbon Emissions Framework (SCEF)</strong> (EAUC — Environmental Association for Universities and Colleges):</p>
+<ul>
+<li>Common methodology for UK HEI Scope 1, 2, and 3 measurement, enabling cross-institution benchmarking</li>
+<li>Adopted by 150+ UK HEIs; annual submission to HESA estates data collection</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/Imperial-College-London" class="internal alias" data-slug="pages/Imperial-College-London">Imperial College London</a></strong> research contributions:</p>
+<ul>
+<li>UK’s largest carbon capture and storage (CCS) research programme: 30+ professionals across chemical engineering, geology, and law/policy departments</li>
+<li>Grantham Institute for Climate Change: foundational policy research on consumption-based accounting, carbon pricing design, carbon border adjustment mechanisms; contributes directly to UK Treasury and BEIS policy processes</li>
+<li>Carbon footprint methodology: full Scope 1, 2, and 3 accounting published annually; net-zero target for Scope 1 and 2 by 2040</li>
+<li>NHS partnership: Hamlyn Centre applying active <a href="../AI" class="internal" data-slug="AI">AI</a> sensing to clinical waste stream characterisation for Scope 3 Category 5 measurement</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Edinburgh</strong> research contributions:</p>
+<ul>
+<li>Scottish Carbon Capture and Storage (SCCS) Centre: UK’s largest CCS consortium, 75+ researchers; quantifies geological CO₂ storage capacity underpinning negative-emission project accounting under <a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-2</li>
+<li>LCA methodology for negative emissions technologies: direct air capture, enhanced weathering, biochar — contributing to emerging methodological standards for carbon removal credit quantification</li>
+<li>Real-time estate sub-metering: Edinburgh pioneered granular half-hourly energy sub-metering across campus estate as model for Scope 2 precision, reducing estimated vs. metered energy discrepancy from ±25% to ±3%</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Manchester</strong> contributions:</p>
+<ul>
+<li>Tyndall Centre for Climate Change Research (joint Manchester/UEA/Southampton): seminal work on UK consumption-based carbon budgets, equity in carbon budget allocation between sectors, corporate Scope 3 accountability frameworks</li>
+<li>Industrial Biotechnology Innovation Centre (Manchester/Edinburgh): LCA methodology for bio-based materials, bioenergy with CCS (BECCS) accounting</li>
+<li>N8 Research Partnership facilitates collaborative <a href="../pages/Carbon-Footprint-Measurement" class="internal alias" data-slug="pages/Carbon-Footprint-Measurement">Carbon Footprint Measurement</a> methodology research across eight Northern research universities</li>
+</ul>
+</li>
+<li>
+<p><strong>Cambridge Centre for Environment, Energy and Natural Resource Governance (C-EENRG)</strong>:</p>
+<ul>
+<li>Foundational work on carbon accounting for the financial sector; legal architecture of net-zero commitments; carbon pricing instrument design</li>
+<li>Contributed to UK Climate Change Committee (CCC) methodology for progress reports against UK carbon budgets</li>
+</ul>
+</li>
+<li>
+<p><strong>UCL Energy Institute</strong>:</p>
+<ul>
+<li>UCL Energy Models series: UK energy system models informing BEIS national energy and carbon projections</li>
+<li>Building-energy carbon modelling and retrofit carbon payback analysis; Scope 3 Category 3 and Category 13 methodology for property sector</li>
+<li>UCL Plastic Waste Innovation Hub: <a href="../pages/Lifecycle-Assessment" class="internal alias" data-slug="pages/Lifecycle-Assessment">Lifecycle Assessment</a> methodology for plastic waste management, informing <a href="../pages/Circular-Economy" class="internal alias" data-slug="pages/Circular-Economy">Circular Economy</a> carbon accounting</li>
+</ul>
+</li>
+<li>
+<p><strong>Northern English industrial context</strong>:</p>
+<ul>
+<li>British Steel (Scunthorpe) and TATA Steel (Port Talbot): among UK’s highest Scope 1 emitters in manufacturing; both subject to UK ETS allowance obligations (2024 price £35-55/tCO₂e), driving high-precision blast furnace and basic oxygen steelmaking CO₂ measurement</li>
+<li>Teesside petrochemical cluster (Ineos, Sabic, Wilton Centre): one of UK’s highest Scope 1 emission concentrations; HyNet North West hydrogen and CCS project (planned operational 2026-2028) depends on precise Scope 1 CH₄/CO₂ measurement for carbon project accounting under <a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-2</li>
+<li>North West automotive supply chain (serving JLR Halewood, Vauxhall Ellesmere Port): applies Scope 3 Category 1 PCF measurement to meet OEM procurement carbon specifications and EU CBAM battery passport requirements</li>
+<li>Manchester, Leeds, and Sheffield digital and fintech clusters: data-centre operators and tech companies reporting PUE-adjusted carbon metrics; <a href="../AI" class="internal" data-slug="AI">AI</a> inference facilities subject to emerging Software Carbon Intensity measurement obligations</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Real-time and continuous monitoring</strong>:</p>
+<ul>
+<li>Transition from annual self-reported inventories to continuous physical measurement combining IoT sub-metering, <a href="../Satellite-Data" class="internal alias" data-slug="Satellite-Data">Satellite Data</a>, and <a href="../AI" class="internal" data-slug="AI">AI</a> fusion models</li>
+<li>GHGSat 30+ satellite constellation by 2028: near-daily facility revisit rates across global oil and gas, enabling real-time corporate Scope 1 methane monitoring</li>
+<li>Real-time carbon dashboards enabling intra-year emission anomaly detection and correction before annual inventory consolidation</li>
+<li>Continuous monitoring will reduce the temporal lag between emissions occurring and being measured from ~18 months to near real-time for major Scope 1 sources</li>
+</ul>
+</li>
+<li>
+<p><strong>Primary data proliferation via <a href="../pages/Digital-Product-Passport" class="internal alias" data-slug="pages/Digital-Product-Passport">Digital Product Passport</a></strong>:</p>
+<ul>
+<li>ESPR DPP requirements expanding through 2030 across textiles, electronics, furniture, chemicals</li>
+<li>Machine-readable PCF data propagating through <a href="../pages/Supply-Chain" class="internal alias" data-slug="pages/Supply-Chain">Supply Chain</a> networks, progressively replacing spend-based estimates with verified ISO 14067 lifecycle data</li>
+<li>High-confidence Scope 3 Category 1 measurement at enterprise scale becomes technically feasible when DPP PCF declarations reach critical mass across major spend categories</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/Circular-Economy" class="internal alias" data-slug="pages/Circular-Economy">Circular Economy</a> and waste carbon integration</strong>:</p>
+<ul>
+<li>Carbon accounting methodology for recycled content, waste diversion, and material circularity flows maturing under EU Circular Economy Action Plan</li>
+<li>Scope 3 Category 12 (End-of-Life Treatment) data quality improving as waste management operators deploy DPP-linked reporting</li>
+<li>Avoided emission credits for circular material flows under revised GHG Protocol guidance</li>
+</ul>
+</li>
+<li>
+<p><strong>Nature and biological carbon accounting</strong>:</p>
+<ul>
+<li>TNFD (Taskforce on Nature-related Financial Disclosures) recommendations (2023) creating demand for ecosystem sink capacity accounting alongside emission reduction</li>
+<li>Soil carbon measurement via direct sampling and remote sensing integration into corporate land-use Scope 1/3 inventories</li>
+<li>EU Nature Restoration Law creating legal obligations for ecosystem carbon flow accounting in agricultural and forestry supply chains</li>
+</ul>
+</li>
+<li>
+<p><strong>Consumption-based accounting mainstreaming</strong>:</p>
+<ul>
+<li>GHG Protocol calculated-materiality requirement for Scope 3 shifting corporate reporting closer to CBA, revealing footprint contributions previously hidden in value chains</li>
+<li><a href="../AI" class="internal" data-slug="AI">AI</a>-powered multi-tier supply-chain tracing (using customs, procurement, and financial data) progressively operationalising CBA at enterprise scale</li>
+</ul>
+</li>
+<li>
+<p><strong>AI system carbon disclosure standardisation</strong>:</p>
+<ul>
+<li>Green Software Foundation SCI specification, EU AI Act implementing acts, and voluntary industry frameworks converging toward mandatory per-query or per-functional-unit carbon intensity disclosure for commercial <a href="../AI" class="internal" data-slug="AI">AI</a> services by 2027</li>
+<li><a href="../pages/Machine-Learning-Discipline" class="internal alias" data-slug="pages/Machine-Learning-Discipline">Machine Learning Discipline</a> model registries expected to require embodied carbon declarations analogous to DPP product declarations</li>
+<li>Creating an entirely new <a href="../pages/Regulatory-Technology" class="internal alias" data-slug="pages/Regulatory-Technology">Regulatory Technology</a> surface for the AI sector around carbon intensity of digital infrastructure</li>
+<li>MLCommons and Green Software Foundation co-developing unified benchmark methodology harmonising MLPerf power measurements with SCI carbon intensity calculations</li>
+</ul>
+</li>
+<li>
+<p><strong>Interoperability and open data standards</strong>:</p>
+<ul>
+<li>Open supply chain carbon data formats emerging: PACT (Partnership for Carbon Transparency) network data model v2.0 enables machine-readable PCF exchange between buyer and seller systems</li>
+<li>WBCSD Pathfinder Framework (v2.0, 2023): technical standard for PCF data exchange using standardised JSON schema; adopted by Catena-X (automotive), Pulp and Paper industry, electronics sector consortia</li>
+<li><a href="../Blockchain" class="internal" data-slug="Blockchain">Blockchain</a>-anchored carbon data registries piloted by DENA (German Energy Agency), ClimateCheck, and Verra for verified emission data provenance across multi-tier <a href="../pages/Supply-Chain" class="internal alias" data-slug="pages/Supply-Chain">Supply Chain</a> networks</li>
+<li><a href="../pages/Circular-Economy" class="internal alias" data-slug="pages/Circular-Economy">Circular Economy</a> material-flow tracing systems (e.g. Circularise DPP platform) extending from product identity to embedded carbon, enabling closed-loop carbon accounting for recycled content</li>
+</ul>
+</li>
+<li>
+<p><strong>Carbon removal and negative emission accounting</strong>:</p>
+<ul>
+<li>IPCC negative emission technologies (NETs) — direct air capture (DAC), bioenergy with CCS (BECCS), enhanced weathering, soil carbon — require <a href="../pages/Lifecycle-Assessment" class="internal alias" data-slug="pages/Lifecycle-Assessment">Lifecycle Assessment</a>-based accounting to distinguish genuine atmospheric CO₂ removal from avoided emission or carbon storage displacement</li>
+<li>Emerging Voluntary Carbon Market standards (Verra VCS, Gold Standard, ICROA) developing MRV (Measurement, Reporting, Verification) protocols integrating satellite monitoring with ground-truth sampling for high-integrity <a href="../pages/Carbon-Credits" class="internal alias" data-slug="pages/Carbon-Credits">Carbon Credits</a></li>
+<li>UK Government’s Woodland Carbon Code and Peatland Code: government-backed standards for UK nature-based carbon sequestration projects; third-party verification per <a href="../pages/ISO-14064" class="internal alias" data-slug="pages/ISO-14064">ISO 14064</a>-3 required for UK Carbon Units issuance</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Wiedmann, T. &amp; Minx, J. (2008). A Definition of ‘Carbon Footprint’. ISAUK Research Report 07-01. Ecological Economics Reviews.</p>
+</li>
+<li>
+<p>Matthews, H.S., Hendrickson, C.T. &amp; Weber, C.L. (2008). The Importance of Carbon Footprint Estimation Boundaries. Environmental Science &amp; Technology, 42(16), 5839-5842.</p>
+</li>
+<li>
+<p>Peters, G.P. &amp; Hertwich, E.G. (2008). CO₂ Embodied in International Trade with Implications for Global Climate Policy. Environmental Science &amp; Technology, 42(5), 1401-1407.</p>
+</li>
+<li>
+<p>Alvarez, R.A. et al. (2018). Assessment of methane emissions from the US oil and gas supply chain. Science, 361(6398), 186-188.</p>
+</li>
+<li>
+<p>Timmer, M.P. et al. (2015). An Illustrated User Guide to the World Input-Output Database: the Case of Global Automotive Production. Review of International Economics, 23(3), 575-605.</p>
+</li>
+<li>
+<p>Crippa, M. et al. (2024). GHG emissions of all world countries. JRC Science for Policy Report. European Commission, Joint Research Centre.</p>
+</li>
+<li>
+<p>GHG Protocol (2024). Scope 3 Standard — Standard Development Plan 1 (December 2024). World Resources Institute / WBCSD.</p>
+</li>
+<li>
+<p>GHG Protocol (2025, December). Corporate Standard Revisions: Phase 1 Progress Update. World Resources Institute.</p>
+</li>
+<li>
+<p>ISO (2018). ISO 14064-1:2018 Greenhouse gases — Part 1: Specification with guidance at the organization level for quantification and reporting of greenhouse gas emissions and removals.</p>
+</li>
+<li>
+<p>ISO (2019). ISO 14064-3:2019 Greenhouse gases — Part 3: Specification with guidance for the verification and validation of greenhouse gas assertions.</p>
+</li>
+<li>
+<p>ISO (2018). ISO 14067:2018 Greenhouse gases — Carbon footprint of products — Requirements and guidelines for quantification.</p>
+</li>
+<li>
+<p>ISO (2006, amended 2020). ISO 14040:2006/Amd 1:2020 Environmental management — Life cycle assessment — Principles and framework.</p>
+</li>
+<li>
+<p>ISO (2006, amended 2020). ISO 14044:2006/Amd 2:2020 Environmental management — Life cycle assessment — Requirements and guidelines.</p>
+</li>
+<li>
+<p>European Commission (2022). Directive (EU) 2022/2464 (CSRD). Official Journal L 322.</p>
+</li>
+<li>
+<p>European Commission (2023). Commission Delegated Regulation (EU) 2023/2772 (ESRS), supplementing Directive 2013/34/EU as regards sustainability reporting standards.</p>
+</li>
+<li>
+<p>European Commission (2024). Regulation (EU) 2024/1781 (ESPR). Official Journal of the European Union.</p>
+</li>
+<li>
+<p>European Commission (2025). ESRS Revision — Omnibus 2 Package, July 2025. Reduction of mandatory datapoints by 57%.</p>
+</li>
+<li>
+<p>HM Government (2019). The Companies Act 2006 (Energy and Carbon Report) Regulations 2019. SI 2019/386.</p>
+</li>
+<li>
+<p>Partnership for Carbon Accounting Financials (PCAF) (2022). Global GHG Accounting and Reporting Standard for the Financial Industry, Part A — Financed Emissions. Second Edition.</p>
+</li>
+<li>
+<p>Science-Based Targets initiative (2021). SBTi Corporate Net-Zero Standard v1.0.</p>
+</li>
+<li>
+<p>GHGSat (2024). Annual Impact Report: 4 Million Facilities, 534 MtCO₂e Detected. GHGSat Inc.</p>
+</li>
+<li>
+<p>Environmental Defense Fund (2025). MethaneSAT Mission Report: March 2024–June 2025. EDF.</p>
+</li>
+<li>
+<p>Climate TRACE Coalition (2025). Climate TRACE Inventory 2025: 352 Million Individual Emission Sources.</p>
+</li>
+<li>
+<p>Chen, Z. et al. (2025). How Hungry is AI? Benchmarking Energy, Water, and Carbon Footprint of LLM Inference. arXiv:2505.09598.</p>
+</li>
+<li>
+<p>Li, Y. et al. (2025). Quantifying the Energy Consumption and Carbon Emissions of LLM Inference via Simulations. arXiv:2507.11417.</p>
+</li>
+<li>
+<p>Google Cloud (2025). Measuring the environmental impact of AI inference. Google Cloud Blog.</p>
+</li>
+<li>
+<p>Green Software Foundation (2022). Software Carbon Intensity (SCI) Specification v1.0.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Domain correction</strong>: Original stub assigned <code>domain:: blockchain</code>, <code>legacy-term-id:: BC-0498</code>. Corrected to <code>domain:: infrastructure</code>, <code>legacy-term-id:: IF-0498</code>. Updated <code>iri::</code>, <code>uri::</code>, <code>same-as::</code>, and <code>owl-class::</code> to use <code>infrastructure:</code> namespace and <code>infra:</code> OWL prefix throughout. <a href="../pages/Carbon-Footprint-Measurement" class="internal alias" data-slug="pages/Carbon-Footprint-Measurement">Carbon Footprint Measurement</a> has no definitional dependency on blockchain; blockchain is one potential provenance/verification tool but not the primary ontological classification.</p>
+</li>
+<li>
+<p><strong>OWL axiom count</strong>: 45 SubClassOf axioms across 5 families: Compositional (8), Dependency (10), Capability (10), Implementation (10), Reduction (5).</p>
+</li>
+<li>
+<p><strong>Wikilink count</strong>: 82 unique wikilinks across 11 relationship types in Relationships and Content sections.</p>
+</li>
+<li>
+<p><strong>Reference count</strong>: 27 academic, regulatory, and specification references in Research &amp; Literature.</p>
+</li>
+<li>
+<p><strong>Enrichment model</strong>: claude-sonnet-4-6</p>
+</li>
+<li>
+<p><strong>Enrichment date</strong>: 2026-05-17</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>domain-correction:</strong> blockchain (BC-0498) <span>→</span> infrastructure (IF-0498)</li>
+<li>DataPropertyAssertion(infra:hasIdentifier infra:CarbonFootprintMeasurement “IF-0498”^^xsd:string)</li>
+<li>DataPropertyAssertion(infra:authorityScore infra:CarbonFootprintMeasurement “0.87”^^xsd:decimal)</li>
+<li>DataPropertyAssertion(infra:scopeCount infra:CarbonFootprintMeasurement “3”^^xsd:integer)</li>
+<li>DataPropertyAssertion(infra:scope3Categories infra:CarbonFootprintMeasurement “15”^^xsd:integer)</li>
+<li>DataPropertyAssertion(infra:ghgSatSatellites infra:CarbonFootprintMeasurement “16”^^xsd:integer)</li>
+<li>DataPropertyAssertion(infra:softwareInvestment2024MEUR infra:CarbonFootprintMeasurement “270”^^xsd:integer)</li>
+<li>DataPropertyAssertion(infra:sbtiCommittedCompanies infra:CarbonFootprintMeasurement “9000”^^xsd:integer)</li>
+<li>DataPropertyAssertion(infra:climateTRACEsources infra:CarbonFootprintMeasurement “352000000”^^xsd:integer)</li>
+<li>AnnotationAssertion(rdfs:label infra:CarbonFootprintMeasurement “Carbon Footprint Measurement”@en)</li>
+<li>AnnotationAssertion(rdfs:comment infra:CarbonFootprintMeasurement “Systematic quantitative methodology for calculating total GHG emissions attributable to an organisation, product, or activity in tCO₂e, applying GHG Protocol three-scope framework, ISO 14064/14067/14040 standards, AI-powered estimation, and satellite monitoring (GHGSat 16-satellite constellation), enabling CSRD/SECR compliance, SBTi target validation, carbon credit market operations, ESG portfolio carbon intensity analysis, and Digital Product Passport carbon declarations under EU ESPR 2024/1781.”@en)</li>
+<li>AnnotationAssertion(dcterms:identifier infra:CarbonFootprintMeasurement “IF-0498”^^xsd:string)</li>
+<li>AnnotationAssertion(dcterms:subject infra:CarbonFootprintMeasurement “GHG Protocol, Scope 3, ISO 14064, Lifecycle Assessment, Satellite Monitoring, CSRD, Carbon Accounting”@en)</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-943" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-carbon-footprint-measurement" data-for="about-carbon-footprint-measurement">About Carbon Footprint Measurement</a></li><li class="depth-1"><a href="#ghg-protocol-framework" data-for="ghg-protocol-framework">GHG Protocol Framework</a></li><li class="depth-1"><a href="#standards-architecture" data-for="standards-architecture">Standards Architecture</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-1"><a href="#software-platform-layer" data-for="software-platform-layer">Software Platform Layer</a></li><li class="depth-1"><a href="#satellite-and-remote-sensing-layer" data-for="satellite-and-remote-sensing-layer">Satellite and Remote-Sensing Layer</a></li><li class="depth-1"><a href="#ai-powered-estimation-layer" data-for="ai-powered-estimation-layer">AI-Powered Estimation Layer</a></li><li class="depth-1"><a href="#digital-product-passport-integration" data-for="digital-product-passport-integration">Digital Product Passport Integration</a></li><li class="depth-1"><a href="#verification-and-assurance-layer" data-for="verification-and-assurance-layer">Verification and Assurance Layer</a></li><li class="depth-1"><a href="#emission-factor-databases-in-detail" data-for="emission-factor-databases-in-detail">Emission Factor Databases in Detail</a></li><li class="depth-1"><a href="#regulatory-landscape-in-detail" data-for="regulatory-landscape-in-detail">Regulatory Landscape in Detail</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#corporate-ghg-inventory-annual-reporting" data-for="corporate-ghg-inventory-annual-reporting">Corporate GHG Inventory (Annual Reporting)</a></li><li class="depth-1"><a href="#product-carbon-footprint-pcf-declaration" data-for="product-carbon-footprint-pcf-declaration">Product Carbon Footprint (PCF) Declaration</a></li><li class="depth-1"><a href="#supply-chain-emission-intelligence" data-for="supply-chain-emission-intelligence">Supply Chain Emission Intelligence</a></li><li class="depth-1"><a href="#financial-portfolio-carbon-footprinting" data-for="financial-portfolio-carbon-footprinting">Financial Portfolio Carbon Footprinting</a></li><li class="depth-1"><a href="#ai-and-digital-infrastructure-carbon-measurement" data-for="ai-and-digital-infrastructure-carbon-measurement">AI and Digital Infrastructure Carbon Measurement</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester" data-for="uk-context-imperial--edinburgh--ucl--cambridge--manchester">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester)</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Adoption-of-Convergent-Technologies" class="internal">Adoption of Convergent Technologies</a></li><li><a href="../pages/Carbon-Footprint-Measurement" class="internal">Carbon Footprint Measurement</a></li><li><a href="../pages/Death-of-the-Internet" class="internal">Death of the Internet</a></li><li><a href="../pages/Economics" class="internal">Economics</a></li><li><a href="../pages/Fashion" class="internal">Fashion</a></li><li><a href="../pages/GHG-Protocol" class="internal">ghg protocol</a></li><li><a href="../pages/Predictive-Maintenance" class="internal">Predictive Maintenance</a></li><li><a href="../pages/Proprietary-Large-Language-Models" class="internal">Proprietary Large Language Models</a></li><li><a href="../pages/Sustainability" class="internal">Sustainability</a></li><li><a href="../pages/SustainabilityReporting" class="internal">sustainabilityreporting</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

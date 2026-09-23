@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Text-to-Image Generation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Text-to-Image Generation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Text-to-Image Generation"/><meta name="twitter:description" content="Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically employing diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and capt..."/><meta property="og:description" content="Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically employing diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and capt..."/><meta property="og:image:alt" content="Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically employing diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and capt..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Text-to-Image-Generation"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Text-to-Image-Generation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically employing diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and capt..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Text-to-Image-Generation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-7612"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-7612" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Text to Image Generation</a></div></nav><h1 class="article-title">Text-to-Image Generation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.921Z">23 Sept 2026</time><span>8 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:text-to-image-generation</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.74</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Image-Generation" class="internal">Image Generation</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../text-encoder" class="internal">Text Encoder</a></li><li><a href="../denoising-network" class="internal">Denoising Network</a></li><li><a href="../Image-Decoder" class="internal">Image Decoder</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Large-Scale-Pretraining" class="internal">Large-Scale Pretraining</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../Image-Caption-Dataset" class="internal">Image-Caption Dataset</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li><li><a href="../pages/Text-to-Video-Generation" class="internal">Text-to-Video Generation</a></li><li><a href="../pages/Image-Editing" class="internal">Image Editing</a></li><li><a href="../pages/Synthetic-Data-Generation" class="internal">Synthetic Data Generation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../c2pa" class="internal">C2PA</a></li><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Intellectual-Property-Rights-Framework" class="internal">Intellectual Property</a></li><li><a href="../pages/Synthetic-Media" class="internal">Synthetic Media</a></li><li><a href="../pages/Intellectual-Property" class="internal">Intellectual Property</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Image-Recognition" class="internal">Image Recognition</a></li><li><a href="../pages/Generative-Adversarial-Network" class="internal">Generative Adversarial Network</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:text-to-image-generation</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Generative-AI" class="internal">Generative AI</a></li><li><a href="../pages/Stable-Diffusion-Image-Model" class="internal">Stable Diffusion</a></li><li><a href="../pages/Fine-Tuning" class="internal">Fine Tuning</a></li><li><a href="../pages/LoRa" class="internal">LoRA</a></li><li><a href="../pages/KOHYA-Dreambooth-and-similar" class="internal">DreamBooth</a></li><li><a href="../pages/Content-Moderation" class="internal">Content Moderation</a></li><li><a href="../Stable-Diffusion" class="internal">Stable Diffusion</a></li><li><a href="../DreamBooth" class="internal">DreamBooth</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../latent-diffusion" class="internal">Latent Diffusion</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../pages/Cross-Attention" class="internal">Cross Attention</a></li><li><a href="../pages/Variational-Autoencoder" class="internal">Variational Autoencoder</a></li><li><a href="../clip" class="internal">CLIP</a></li><li><a href="../pages/Contrastive-Learning" class="internal">Contrastive Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Text-to-image generation is a class of generative AI techniques that synthesise photorealistic or stylised images from natural-language textual descriptions, typically employing diffusion models, autoregressive transformers, or hybrid architectures trained on large paired datasets of images and captions. The synthesis process encodes a text prompt into a conditioning latent representation, then iteratively denoises random noise into structured visual output guided by that signal through cross-attention mechanisms. Leading systems such as DALL-E 3, Stable Diffusion XL, Midjourney, Imagen, and Flux exemplify the paradigm across proprietary and open-weight deployment modes. The field intersects creative tooling, computer vision, multimodal AI, and contested questions of copyright, consent, and synthetic media provenance.</p>
+<ul>
+<li>
+<h3 id="overview">Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Text-to-image generation represents one of the most visible breakthroughs in applied <a href="../pages/Generative-AI" class="internal alias" data-slug="pages/Generative-AI">Generative AI</a>, enabling any user with a natural-language description to produce high-quality images within seconds. The field evolved from earlier generative approaches—GANs, VAEs, and autoregressive pixel models—but reached mainstream viability through the integration of <a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">diffusion-based</a> architectures with large-scale <a href="../pages/Contrastive-Learning" class="internal alias" data-slug="pages/Contrastive-Learning">Contrastive Learning</a> text-image encoders such as <a href="../pages/CLIP" class="internal" data-slug="pages/CLIP">CLIP</a>.</li>
+<li>Why it matters:
+<ul>
+<li>Democratises image creation by removing barriers of artistic skill or software expertise</li>
+<li>Compresses creative iteration cycles from hours to seconds in professional workflows</li>
+<li>Generates training data for other machine-learning tasks (<a href="../pages/Synthetic-Data-Generation" class="internal alias" data-slug="pages/Synthetic-Data-Generation">Synthetic Data Generation</a>)</li>
+<li>Drives downstream development of <a href="../pages/Text-to-Video-Generation" class="internal alias" data-slug="pages/Text-to-Video-Generation">Text-to-Video Generation</a>, image-to-3D, and multimodal agents</li>
+<li>Creates legal, ethical, and epistemic challenges around media authenticity and creator rights</li>
+</ul>
+</li>
+<li>How it works at a high level:
+<ul>
+<li>A <a href="../pages/Text-Encoder" class="internal alias" data-slug="pages/Text-Encoder">Text Encoder</a> (commonly <a href="../pages/CLIP" class="internal" data-slug="pages/CLIP">CLIP</a> or T5) maps the input prompt to a dense token embedding sequence</li>
+<li>A denoising network (U-Net or <a href="../pages/Diffusion-Transformer" class="internal alias" data-slug="pages/Diffusion-Transformer">Diffusion Transformer</a>) iteratively refines Gaussian noise in latent or pixel space, attending to text tokens via <a href="../pages/Cross-Attention" class="internal" data-slug="pages/Cross-Attention">Cross-Attention</a> at each denoising step</li>
+<li>A <a href="../pages/Variational-Autoencoder" class="internal alias" data-slug="pages/Variational-Autoencoder">Variational Autoencoder</a> decoder maps the final latent vector back to full-resolution pixel space</li>
+<li>Guidance techniques (classifier-free guidance, CFG scale) amplify the influence of the text conditioning versus the unconditional prior</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="key-components">Key Components<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Text Encoder</strong>
+<ul>
+<li>Converts the natural-language prompt into a fixed or variable-length vector representation</li>
+<li><a href="../pages/CLIP" class="internal" data-slug="pages/CLIP">CLIP</a> text encoder (OpenAI) is widely used; T5-XXL is favoured in <a href="../Imagen" class="internal" data-slug="Imagen">Imagen</a> and Flux-family models for richer semantic grounding</li>
+<li>Token embeddings are passed into <a href="../pages/Cross-Attention" class="internal" data-slug="pages/Cross-Attention">Cross-Attention</a> layers of the denoising backbone</li>
+</ul>
+</li>
+<li><strong>Denoising Network / Score Model</strong>
+<ul>
+<li>Originally U-Net architectures (convolutional with skip connections) used in <a href="../Stable-Diffusion" class="internal alias" data-slug="Stable-Diffusion">Stable Diffusion</a> and DALL-E 2</li>
+<li><a href="../pages/Diffusion-Transformer" class="internal alias" data-slug="pages/Diffusion-Transformer">Diffusion Transformer</a> (DiT) architectures replaced U-Nets as the dominant backbone by 2024, benefiting from improved <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> scaling laws</li>
+<li>Performs the iterative reverse diffusion process: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6389em;vertical-align:-0.2083em;"></span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3011em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="mbin mtight">−</span><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.2083em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathnormal">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">θ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathnormal">x</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">t</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">c</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.5806em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2806em;"><span style="top:-2.55em;margin-left:-0.0359em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathnormal">ϵ</span></span></span></span></li>
+</ul>
+</li>
+<li><strong>Latent Space Compression</strong>
+<ul>
+<li><a href="../pages/Latent-Diffusion" class="internal alias" data-slug="pages/Latent-Diffusion">Latent Diffusion</a> operates on a compressed latent representation produced by a <a href="../pages/Variational-Autoencoder" class="internal alias" data-slug="pages/Variational-Autoencoder">Variational Autoencoder</a>, reducing computational cost by a factor of ~64× versus pixel-space diffusion</li>
+<li>The VAE encodes images to latents during training and decodes them back to pixels during inference</li>
+</ul>
+</li>
+<li><strong>Conditioning Mechanisms</strong>
+<ul>
+<li>Classifier-free guidance (CFG): the model is jointly trained with and without text conditioning; at inference, the conditional and unconditional predictions are interpolated to control adherence</li>
+<li>IP-Adapter, ControlNet, and image-reference conditioning extend text prompts with visual exemplars</li>
+<li>Negative prompts specify concepts to suppress during generation</li>
+</ul>
+</li>
+<li><strong>Sampling Schedulers</strong>
+<ul>
+<li>DDPM (original), DDIM (deterministic), DPM-Solver, PNDM, and UniPC are common samplers that trade off speed versus quality across 10–50 denoising steps</li>
+</ul>
+</li>
+<li><strong>Fine-Tuning Techniques</strong>
+<ul>
+<li><a href="../LoRA" class="internal" data-slug="LoRA">LoRA</a> (Low-Rank Adaptation): lightweight parameter-efficient adapters for domain or style specialisation</li>
+<li><a href="../DreamBooth" class="internal" data-slug="DreamBooth">DreamBooth</a>: subject-specific fine-tuning from 3–20 reference images; binds a custom token to a specific person, object, or style</li>
+<li>Textual inversion: embeds a new concept into the text encoder’s token space without modifying model weights</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="architectures-and-systems">Architectures and Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#architectures-and-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Stable Diffusion (Stability AI, CompVis)</strong>
+<ul>
+<li>Open-weight latent diffusion model family; SDXL, SD 3, and SD 3.5 extend resolution and quality</li>
+<li>Has spawned the largest ecosystem of community fine-tunes (CivitAI), ControlNets, and derivative tools</li>
+</ul>
+</li>
+<li><strong>DALL-E 2 / DALL-E 3 (OpenAI)</strong>
+<ul>
+<li>DALL-E 2 used CLIP embeddings with diffusion; DALL-E 3 integrated instruction-following via GPT-4 prompt rewriting, achieving precise text rendering and compositional accuracy</li>
+</ul>
+</li>
+<li><strong>Imagen / Imagen 2 (Google DeepMind)</strong>
+<ul>
+<li>Uses cascaded pixel-space diffusion conditioned on T5-XXL text embeddings; emphasised photorealism and text fidelity</li>
+</ul>
+</li>
+<li><strong>Midjourney</strong>
+<ul>
+<li>Proprietary system accessible via Discord; known for aesthetic quality and stylistic coherence; architecture undisclosed</li>
+</ul>
+</li>
+<li><strong>Flux (Black Forest Labs)</strong>
+<ul>
+<li>DiT-architecture open model released in 2024; notable for multi-aspect-ratio generation and strong prompt adherence</li>
+</ul>
+</li>
+<li><strong>Adobe Firefly</strong>
+<ul>
+<li>Commercially safe model trained on licensed and public-domain data; integrated into Creative Cloud suite</li>
+</ul>
+</li>
+<li><strong>Kandinsky, PixArt, DeepFloyd IF</strong>
+<ul>
+<li>Research-focused or community-maintained alternatives demonstrating architectural diversity</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="applications-and-use-cases">Applications and Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications-and-use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Creative Industries</strong>
+<ul>
+<li>Concept art and mood boarding for film, game, and product design</li>
+<li>Illustration and editorial imagery for publishing and digital media</li>
+<li>Fashion design visualisation and virtual sampling</li>
+</ul>
+</li>
+<li><strong>Marketing and Advertising</strong>
+<ul>
+<li>Rapid prototyping of campaign visuals; A/B testing at scale with variant imagery</li>
+<li>Localised imagery generation without reshoots</li>
+</ul>
+</li>
+<li><strong>Education and Research</strong>
+<ul>
+<li>Generating visualisations of abstract scientific concepts or historical reconstructions</li>
+<li>Augmenting datasets for downstream <a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a> models</li>
+</ul>
+</li>
+<li><strong>Healthcare and Accessibility</strong>
+<ul>
+<li>Generating medical illustrations; producing accessible visual aids from descriptive text</li>
+</ul>
+</li>
+<li><strong>Game and Virtual World Development</strong>
+<ul>
+<li>Texture generation, asset prototyping, and environment concept exploration</li>
+<li>Feeding downstream <a href="../pages/Text-to-3D" class="internal" data-slug="pages/Text-to-3D">Text-to-3D</a> pipelines with reference imagery</li>
+</ul>
+</li>
+<li><strong>Synthetic Data Generation</strong>
+<ul>
+<li>Producing labelled training corpora for object detection, segmentation, and classification models</li>
+<li>Domain randomisation for robotic perception systems</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="standards-and-context">Standards and Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards-and-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>C2PA (Coalition for Content Provenance and Authenticity)</strong>
+<ul>
+<li>Technical standard for attaching tamper-evident cryptographic manifests to generated images, enabling downstream verification of AI origin</li>
+<li>Adopted by Adobe, Microsoft, Sony, and major platforms; integrated into <a href="../Stable-Diffusion" class="internal alias" data-slug="Stable-Diffusion">Stable Diffusion</a> pipelines via Firefly and Adobe tools</li>
+<li>Directly relevant to combating non-consensual deepfakes and synthetic media misuse</li>
+</ul>
+</li>
+<li><strong>EU AI Act (2024)</strong>
+<ul>
+<li>Classifies AI-generated synthetic media as a transparency obligation; platforms must label AI-generated images that could mislead the public</li>
+<li>Providers of general-purpose AI models (GPAI) with text-to-image capabilities must publish training data summaries</li>
+</ul>
+</li>
+<li><strong>US Copyright Office Guidance</strong>
+<ul>
+<li>Ruled that purely AI-generated images without sufficient human creative authorship are not eligible for copyright protection (2023 guidance)</li>
+<li>Litigation (Andersen v. Stability AI; Getty Images v. Stability AI) is shaping training-data legality</li>
+</ul>
+</li>
+<li><strong>LAION Datasets</strong>
+<ul>
+<li>LAION-400M and LAION-5B are web-scraped image-text datasets widely used to train foundational text-to-image models; subject to ongoing legal scrutiny</li>
+</ul>
+</li>
+<li><strong>RLHF and Safety Filtering</strong>
+<ul>
+<li>Reinforcement Learning from Human Feedback and safety classifiers are deployed at inference time to suppress harmful or non-consensual content</li>
+<li>NSFW filtering, concept erasure, and watermarking (SynthID by Google) are standard enterprise controls</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="technical-evolution">Technical Evolution<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-evolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Pre-2020</strong>: GAN-based text-to-image (StackGAN, AttnGAN) produced low-resolution outputs with limited compositional fidelity</li>
+<li><strong>2021</strong>: DALL-E 1 (autoregressive dVAE), CLIP released by OpenAI; VQGAN+CLIP community workflows emerge</li>
+<li><strong>2022</strong>: DALL-E 2 (diffusion + CLIP), Imagen, Stable Diffusion 1.x released publicly; open-weight ecosystem begins</li>
+<li><strong>2023</strong>: SDXL, DALL-E 3 (GPT-4 rewriter), Midjourney v5/v6; photorealism and prompt adherence improve markedly; legal challenges escalate</li>
+<li><strong>2024</strong>: Stable Diffusion 3, Flux (DiT), DALL-E 4/GPT-4o native image generation; video models (Sora, Runway, Kling) extend paradigm to motion; EU AI Act enters force</li>
+<li><strong>2025–2026</strong>: Real-time generation on consumer hardware; character consistency and multi-reference conditioning mature; on-device deployment via distilled models</li>
+</ul>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The frontier has shifted from standalone diffusion models to natively multimodal image systems: OpenAI replaced DALL-E 3 with gpt-image-1 (23 April 2025), then GPT Image 1.5 (16 December 2025) and GPT Image 2 (April 2026), the latter topping the Artificial Analysis text-to-image arena at roughly 1,370 Elo.</li>
+<li>Black Forest Labs released the FLUX.2 series on 25 November 2025 (Pro, Flex, Dev and the Apache-2.0 Klein variant, with FLUX.2 [max] following 16 December 2025), displacing Stable Diffusion as the most-loaded open-weight base model in ComfyUI and Forge; Stable Diffusion 3.5 (October 2024) remains the second most-deployed open family.</li>
+<li>Google made Imagen 4 generally available on 14 August 2025 but is now retiring the entire Imagen line on 17 August 2026, steering users to its Gemini-native “Nano Banana” image models (Nano Banana 2 / Gemini 3.1 Flash Image shipped 26 February 2026).</li>
+<li>Midjourney moved off Discord-only access: v7 became the default on 17 June 2025, V8.1 became default in June 2026, and an official API arrived in late 2025 / 2026 after years of unofficial-only access.</li>
+<li>Reliable in-image text rendering, long the signature failure mode, is now broadly considered solved across GPT Image, Imagen, Ideogram 3.0 and FLUX.2, and per-image API pricing has commoditised to roughly USD 0.01–0.17 depending on tier.</li>
+<li>The EU AI Act’s Article 50 transparency obligations became enforceable on 2 August 2026, requiring providers to machine-readable-mark synthetic image output and deployers to visibly label deepfakes, with the supporting Code of Practice published 10 June 2026.</li>
+<li>The mandated marking stack layers C2PA Content Credentials with imperceptible pixel watermarking such as Google SynthID; systems already on the market get a grace period to 2 December 2026 and cross-vendor watermark detection is due by February 2027, with non-compliance fines up to EUR 15 million or 3% of worldwide turnover.</li>
+<li>Open frontier challenges as of 2026 include watermark robustness against re-uploads and screenshots, provenance metadata being stripped or forgeable, copyright-safe training data (favouring indemnified offerings like Adobe Firefly and FLUX.2 Klein), and the persistent gap between machine-readable marking and actual deepfake detection.</li>
+</ul>
+</li>
+<li>
+<h3 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<ol>
+<li>Gradually (2026). The 9 Best AI Image Generation Models in 2026. <a href="https://www.gradually.ai/en/ai-image-models/" class="external">https://www.gradually.ai/en/ai-image-models/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Yenra (2026). Text-to-Image AI in 2026: From Diffusion Breakthrough to Editing. <a href="https://yenra.com/ai/text-to-image/" class="external">https://yenra.com/ai/text-to-image/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Artificial Analysis (2026). Text to Image Leaderboard — Top AI Image Models. <a href="https://artificialanalysis.ai/image/leaderboard/text-to-image" class="external">https://artificialanalysis.ai/image/leaderboard/text-to-image<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Netarx (2026). EU AI Act Article 50: What Deepfake Compliance Requires Now. <a href="https://www.netarx.com/blog/eu-ai-act-article-50-what-deepfake-compliance" class="external">https://www.netarx.com/blog/eu-ai-act-article-50-what-deepfake-compliance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>ComplianceHub (2026). Watermarks and Metadata: How to Actually Comply With the EU AI Act (Code of Practice, Article 50). <a href="https://compliancehub.wiki/eu-ai-act-marking-labelling-code-of-practice-article-50-2026/" class="external">https://compliancehub.wiki/eu-ai-act-marking-labelling-code-of-practice-article-50-2026/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-5569" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#overview" data-for="overview">Overview</a></li><li class="depth-0"><a href="#key-components" data-for="key-components">Key Components</a></li><li class="depth-0"><a href="#architectures-and-systems" data-for="architectures-and-systems">Architectures and Systems</a></li><li class="depth-0"><a href="#applications-and-use-cases" data-for="applications-and-use-cases">Applications and Use Cases</a></li><li class="depth-0"><a href="#standards-and-context" data-for="standards-and-context">Standards and Context</a></li><li class="depth-0"><a href="#technical-evolution" data-for="technical-evolution">Technical Evolution</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#references" data-for="references">References</a></li><li class="depth-0"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/CLIP-Encoder" class="internal">CLIP Encoder</a></li><li><a href="../pages/CLIP" class="internal">clip</a></li><li><a href="../pages/ComfyUI-API-Specification" class="internal">ComfyUI API Specification</a></li><li><a href="../pages/Concept-Art" class="internal">Concept Art</a></li><li><a href="../pages/DALL-E-3" class="internal">DALL-E 3</a></li><li><a href="../pages/Neural-Network-Latent-Space" class="internal">Neural Network Latent Space</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

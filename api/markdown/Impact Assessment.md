@@ -1,0 +1,20 @@
+
+Impact assessment is a structured process for evaluating the likely effects of a policy, project, technology or decision before it is adopted, and for monitoring effects once implemented. It identifies affected stakeholders, weighs benefits against harms and risks, and informs decisions on whether and how to proceed, with mitigations where necessary. Domain-specific variants include environmental, privacy, data-protection and algorithmic impact assessments.
+
+- ### Overview
+  - Impact assessment operationalises accountability by forcing decision-makers to articulate, before acting, who and what may be affected and how. The process typically scopes the intervention, identifies and consults stakeholders, analyses potential positive and negative consequences across dimensions such as economy, environment, rights and society, and proposes mitigations. Findings are documented for scrutiny and revisited through monitoring once the intervention is live.
+- ### Key aspects
+  - Scoping the intervention and its boundaries
+  - Stakeholder identification and consultation
+  - Benefit, harm and risk analysis
+  - Mitigation and alternatives appraisal
+  - Documentation, transparency and review
+  - Domain variants: environmental, privacy, algorithmic
+- ### Applications
+  - Privacy and data-protection impact assessments
+  - Algorithmic and AI system impact reviews
+  - Environmental impact assessments for projects
+  - Regulatory and policy ex-ante appraisal
+  - Change management for organisational decisions
+- ### Provenance
+

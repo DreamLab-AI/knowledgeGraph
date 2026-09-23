@@ -1,0 +1,114 @@
+
+A monitoring system is an integrated observability platform that continuously collects, aggregates, and evaluates telemetry signals — metrics, logs, traces, and events — from target environments spanning software services, physical infrastructure, AI models, and distributed systems, in order to detect anomalies, assess operational health, and trigger alerts or automated remediation responses. It encompasses data-collection agents, instrumentation SDKs, time-series storage engines, query and alerting pipelines, and visualisation dashboards that together form a closed-loop feedback mechanism for operational reliability. Monitoring systems implement the three pillars of observability (metrics, logs, traces) and serve as the foundational layer for site reliability engineering, incident management, and compliance auditing in modern distributed architectures.
+
+- ### Overview
+  - Monitoring systems emerged from simple SNMP-based network polling in the 1990s, matured through centralised log aggregation (Splunk, ELK stack), and evolved into the modern observability paradigm that explicitly separates metrics, logs, and traces.
+  - The shift from monolithic applications to [[Microservices]] and [[Cloud Infrastructure|cloud-native]] deployments dramatically increased the cardinality and velocity of signals that must be tracked, driving demand for purpose-built [[Time-Series Database|time-series databases]] and [[Stream Processing]] pipelines.
+  - A contemporary monitoring system closes the loop: instrument → collect → store → query → alert → respond. Each phase may be distributed across vendors or consolidated into a unified platform (e.g. Datadog, New Relic, Grafana Cloud).
+  - Why it matters:
+    - Operational reliability — rapid detection of service degradation before users are affected.
+    - Regulatory compliance — audit trails and continuous controls evidence for finance, healthcare, and energy sectors.
+    - Cost governance — resource utilisation tracking for [[Capacity Planning]] and cloud spend optimisation.
+    - AI accountability — [[AI Monitoring]] for model drift, data quality, and fairness metrics.
+
+- ### Key Components
+  - **Instrumentation layer**
+    - SDKs, agents, or eBPF probes that emit [[Metrics]], structured logs, and spans from application code or kernel space.
+    - [[OpenTelemetry]] provides a vendor-neutral API and SDK specification covering all three signal types (GA status for traces, metrics, and logs).
+    - Sidecar patterns (e.g. Envoy, Dapr) inject telemetry without modifying application code in [[Service Mesh]] architectures.
+  - **Transport / collection layer**
+    - Push gateways, pull scrapers (Prometheus model), or streaming collectors forward signals to storage.
+    - [[Message Broker|Message brokers]] (Kafka, Pulsar) buffer high-volume telemetry and decouple producers from consumers.
+    - [[Data Pipeline]] orchestration ensures reliable delivery and schema validation.
+  - **Storage layer**
+    - [[Time-Series Database|Time-series databases]] (Prometheus, VictoriaMetrics, InfluxDB, Thanos) optimised for high write throughput and range queries.
+    - Object storage backends (S3-compatible) for long-term retention and cost-efficient archival.
+    - Columnar stores (ClickHouse, Apache Parquet) for deep analytical queries over historical telemetry.
+  - **Query and alerting layer**
+    - Query languages: PromQL, MetricsQL, InfluxQL, LogQL.
+    - [[Alerting System]] components evaluate rules continuously and route notifications through channels (PagerDuty, Opsgenie, Slack).
+    - [[Service Level Objective|SLO]] tracking engines compute error-budget burn rates and suppress noise through multi-window alerting.
+  - **Visualisation layer**
+    - [[Monitoring Dashboard|Dashboards]] (Grafana, Kibana, Datadog) render time-series charts, heatmaps, and topology maps.
+    - Correlation views link metrics spikes to concurrent log events and traces for rapid root-cause analysis.
+    - [[Anomaly Detection]] overlays apply statistical or ML models to flag deviations without manual threshold tuning.
+  - **Remediation layer**
+    - Auto-remediation runbooks triggered by alerts (restarting pods, scaling replicas, rerouting traffic).
+    - [[Incident Management]] integration opens tickets, pages on-call engineers, and tracks mean-time-to-resolution.
+    - [[AIOps]] platforms apply ML to correlate signals across thousands of services and suppress duplicate alerts.
+
+- ### Mechanisms
+  - **Pull vs push collection**
+    - Pull (Prometheus): the monitoring server scrapes targets at intervals; simpler discovery, but targets must be reachable.
+    - Push (StatsD, Graphite, OTLP): agents push to a receiver; better for short-lived jobs and firewalled environments.
+  - **Sampling and cardinality control**
+    - High-cardinality label spaces (e.g. per-user IDs) can exhaust time-series databases; head-based and tail-based [[Distributed Tracing|trace sampling]] reduce volume while preserving signal.
+    - Adaptive sampling adjusts rates dynamically based on error rate or latency anomalies.
+  - **Correlation across signal types**
+    - Exemplars link metric data points to representative trace IDs, enabling drill-down from a latency spike to the exact request trace.
+    - Unified query interfaces (Grafana correlations, OpenTelemetry semantic conventions) standardise label naming across signals.
+  - **eBPF-based continuous profiling**
+    - Extended Berkeley Packet Filter probes attach to kernel and user-space functions without recompilation, enabling always-on CPU, memory, and I/O profiling.
+    - Tools: Parca, Pyroscope, Polar Signals. Particularly valuable in [[Cloud Infrastructure|Kubernetes]] environments.
+
+- ### Applications and Use Cases
+  - **Site Reliability Engineering**
+    - SLO/SLA tracking — error-budget dashboards alert when burn rate exceeds thresholds, triggering freeze on releases.
+    - [[Chaos Engineering]] integration — synthetic failure injection validates that monitoring correctly detects and alerts on faults.
+    - Post-incident review — timeline reconstruction from correlated metrics, logs, and traces.
+  - **AI and ML Operations**
+    - [[AI Monitoring]] for production model health: prediction latency, throughput, error rates.
+    - [[Model Drift Detection]] — statistical tests (PSI, KL divergence) on input feature distributions and output label distributions compared against training baselines.
+    - [[Machine Learning Operations|MLOps]] pipelines surface data quality metrics alongside model performance in unified dashboards.
+    - [[Compliance Monitoring]] for AI systems under emerging regulatory frameworks (EU AI Act audit trails).
+  - **Cloud and Kubernetes infrastructure**
+    - Node, pod, and container resource metrics via kube-state-metrics, cadvisor.
+    - Autoscaler feedback loops use CPU/memory metrics from the monitoring system to scale deployments horizontally.
+    - Multi-cloud cost attribution via tagged metrics correlated with billing APIs.
+  - **Security monitoring**
+    - Integration with [[Security Information and Event Management|SIEM]] systems — log streams forwarded for threat detection.
+    - Runtime anomaly detection flags unusual process trees, network connections, or privilege escalations using [[Anomaly Detection]] ML models.
+    - Continuous controls monitoring for [[Compliance Monitoring]] in regulated industries (PCI-DSS, HIPAA, SOC 2).
+  - **Industrial and IoT environments**
+    - SCADA and OT network telemetry ingested alongside IT metrics for unified operational visibility.
+    - Edge monitoring agents with local buffering handle intermittent connectivity.
+    - Predictive maintenance uses [[Predictive Analytics]] on sensor time-series to forecast equipment failure.
+
+- ### Standards and Context
+  - **OpenTelemetry (CNCF)**
+    - Vendor-neutral specification for instrumentation APIs, SDKs, and the OTLP wire protocol.
+    - Covers traces (stable), metrics (stable), and logs (stable as of 2024), enabling single-agent deployment across all signal types.
+    - Governance: Cloud Native Computing Foundation (CNCF) graduated project.
+  - **Prometheus**
+    - De-facto standard for Kubernetes metrics collection; pull-based scrape model, PromQL query language.
+    - CNCF graduated project; widely supported across cloud providers and Kubernetes distributions.
+  - **W3C Trace Context**
+    - Standardises propagation of trace identifiers across HTTP and messaging boundaries, enabling end-to-end [[Distributed Tracing]] across heterogeneous services.
+  - **SNMP (Simple Network Management Protocol)**
+    - Legacy standard (RFC 3411–3418) still prevalent in network device monitoring; increasingly supplemented by gNMI/gRPC streaming telemetry.
+  - **OpenMetrics**
+    - IETF-adjacent specification extending Prometheus exposition format; aims to standardise metric wire format for interoperability.
+  - **CIS Controls / NIST SP 800-137**
+    - NIST SP 800-137 (Information Security Continuous Monitoring) defines frameworks for continuous monitoring in federal and regulated environments.
+    - CIS Control 8 (Audit Log Management) mandates centralised log collection and retention as a foundational security control.
+  - **Relevant bodies**: CNCF (monitoring, tracing working groups), IETF (OpenMetrics, telemetry), NIST, ISO/IEC 27001 (Annex A — monitoring controls).
+
+- ### Current Landscape (2026)
+  - OpenTelemetry (OTel) has consolidated as the de-facto instrumentation standard for monitoring systems — now the second-largest CNCF project after Kubernetes — with the CNCF survey reporting roughly 78% of organisations running OTel in production in 2026, up from around 52% a year earlier, and the project working towards full CNCF graduation.
+  - Telemetry signals reached maturity: logs hit general availability alongside metrics and traces at KubeCon Europe 2025 (unified over OTLP), Semantic Conventions were stabilised for HTTP and databases (PostgreSQL, MySQL, MariaDB, SQL Server), and profiling became a formal OTLP signal in Collector v1.30.0, standardising a fourth pillar of monitoring.
+  - eBPF-based zero-code instrumentation went mainstream: Grafana donated Beyla to OpenTelemetry as OpenTelemetry eBPF Instrumentation (OBI), which shipped its first alpha release in November 2025, and Google Kubernetes Engine Autopilot enabled eBPF-based observability by default in February 2026.
+  - AI-driven monitoring shifted from dashboards to autonomous operations: the Elastic 2026 landscape report finds 85% of organisations now use generative AI for observability (projected to reach 98% within two years), with agentic AI adoption at roughly 23% and use cases centred on automated log/metric/trace correlation, root-cause analysis and guarded auto-remediation, though 95% of practitioners insist AI must show its reasoning.
+  - Monitoring of AI itself became a first-class concern: OpenTelemetry released experimental GenAI Semantic Conventions (e.g. gen_ai.request.model, gen_ai.usage.input_tokens/output_tokens) with the first experimental agent-tracing conventions landing around March 2026 and support in Datadog (v1.37+) and Grafana, letting teams standardise token cost, model-version drift and agent-decision traces across OpenAI, Anthropic, AWS Bedrock and Azure AI.
+  - Cost governance and vendor risk dominate procurement: the Elastic survey reports 67% of teams hit unexpected observability overages and 96% are actively cutting costs, pushing flat-rate and consumption-based alternatives (Uptrace, Better Stack) against Datadog's per-host model, while consolidation raised risk — ServiceNow's Cloud Observability (Lightstep) reaches end of life by March 2026.
+  - Open frontier challenges as of 2026 include telemetry signal-to-noise and data-value-over-volume filtering, securing autonomous remediation with adequate guardrails, instrumenting AI-native pipelines (GPU utilisation, KV-cache hit rates, RAG retrieval precision) that legacy APM was never designed for, and emerging efforts to treat carbon footprint of AI and cloud workloads as a monitored SLO.
+
+- ### References
+  - 1. IBM (2026). Observability trends 2026. https://www.ibm.com/think/insights/observability-trends
+  - 2. Grafana Labs (2026). Observability Survey 2026. https://grafana.com/observability-survey/
+  - 3. Uptrace (2026). Top 10 Observability Tools in 2026: APM Platforms. https://uptrace.dev/tools/top-observability-tools
+  - 4. Elastic / Dimensional Research (2026). The Landscape of Observability in 2026. https://www.elastic.co/pdf/dimensional-research-2026-landscape-observability-white-paper.pdf
+  - 5. Grafana Labs (2026). OpenTelemetry and Grafana Labs: What's new and what's next in 2026. https://grafana.com/blog/opentelemetry-and-grafana-labs-whats-new-and-whats-next-in-2026/
+  - 6. OpenTelemetry (2025). AI Agent Observability - Evolving Standards and Best Practices. https://opentelemetry.io/blog/2025/ai-agent-observability/
+
+- ### Provenance
+

@@ -1,0 +1,34 @@
+
+The detection and simulation of contact events between virtual objects and real-world physical elements in mixed and augmented reality environments. Virtual-physical collision systems generate haptic alerts, visual boundary warnings, and passthrough camera activations to prevent user injury and to produce physically plausible interactions between digital content and the real world.
+
+- ### Semantic Classification
+
+- ### Content
+
+  - ## Overview
+  - Virtual physical collision systems detect and manage interactions between digital content and real-world objects. In VR, guardian/chaperone systems warn users of physical boundaries. In AR, collision detection enables virtual objects to interact realistically with real surfaces. Haptic feedback enhances immersion by simulating touch sensations.
+  - ## Technical Details
+  - ### Detection Methods
+		- **Depth Sensing**: LiDAR, structured light, stereo cameras
+		- **Room Mapping**: Guardian/chaperone boundary systems
+		- **Object Recognition**: ML-based surface detection
+		- **Hand Tracking**: Collision with virtual objects
+  - ### Response Types
+		- Visual boundary warnings
+		- Haptic feedback through controllers
+		- Audio cues and alerts
+		- Object physics reactions
+  - ### Safety Features
+		- Passthrough camera activation
+		- Boundary proximity warnings
+		- Automatic pause on collision
+		- Guardian boundary customization
+  - ## Applications
+  - VR play space safety
+  - AR object placement realism
+  - Haptic interaction design
+  - Industrial training safety
+  - Mixed reality gaming
+
+- ### Provenance
+

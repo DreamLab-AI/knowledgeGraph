@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>State Machine</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="State Machine"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="State Machine"/><meta name="twitter:description" content="StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × inpu… S..."/><meta property="og:description" content="StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × inpu… S..."/><meta property="og:image:alt" content="StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × inpu… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/State-Machine"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/State-Machine"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × inpu… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/State-Machine"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-7294"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-7294" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>State Machine</a></div></nav><h1 class="article-title">State Machine</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.909Z">23 Sept 2026</time><span>31 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:state-machine</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Computing-and-Cloud" class="internal">Computing and Cloud</a></li><li><a href="../pages/Automata-Theory" class="internal">Automata Theory</a></li><li><a href="../pages/Computational-Model" class="internal">Computational Model</a></li><li><a href="../Formal-Method" class="internal">Formal Method</a></li><li><a href="../Concurrency-Theory" class="internal">Concurrency Theory</a></li><li><a href="../pages/Distributed-Computing" class="internal">Distributed Computing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Stacks" class="internal">Stacks</a></li><li><a href="../state" class="internal">State</a></li><li><a href="../pages/State-Transition-Function" class="internal">Transition Function</a></li><li><a href="../Transition-Function" class="internal">Transition Function</a></li><li><a href="../Input-Alphabet" class="internal">Input Alphabet</a></li><li><a href="../Output-Function" class="internal">Output Function</a></li><li><a href="../Start-State" class="internal">Start State</a></li><li><a href="../Accepting-State" class="internal">Accepting State</a></li><li><a href="../Stack" class="internal">Stack</a></li><li><a href="../Tape" class="internal">Tape</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Determinism" class="internal">Determinism</a></li><li><a href="../replication-log" class="internal">Replication Log</a></li><li><a href="../pages/State-Space" class="internal">State Space</a></li><li><a href="../pages/Consensus-Protocol" class="internal">Consensus Protocol</a></li><li><a href="../Event-Model" class="internal">Event Model</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Behaviour-Tree" class="internal">Behaviour Tree</a></li><li><a href="../pages/Regular-Expression" class="internal">Regular Expression</a></li><li><a href="../Blockchain" class="internal">Blockchain</a></li><li><a href="../pages/Fault-Tolerance" class="internal">Fault Tolerance</a></li><li><a href="../pages/Smart-Contract" class="internal">Smart Contract</a></li><li><a href="../Protocol-Verification" class="internal">Protocol Verification</a></li><li><a href="../Parser" class="internal">Parser</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../Dataflow-Model" class="internal">Dataflow Model</a></li><li><a href="../pages/Actor-Model" class="internal">Actor Model</a></li><li><a href="../Reactive-Programming" class="internal">Reactive Programming</a></li><li><a href="../Petri-Net" class="internal">Petri Net</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Formal-Language-Theory" class="internal">Formal Language Theory</a></li><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../pages/Consensus-Algorithm" class="internal">Consensus Algorithm</a></li><li><a href="../pages/Cryptography" class="internal">Cryptography</a></li><li><a href="../pages/Type-Theory" class="internal">Type Theory</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../ProtocolLayer" class="internal">ProtocolLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li><li><a href="../InfrastructureLayer" class="internal">InfrastructureLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/State-Machine-Replication" class="internal">Replicated State Machine</a></li><li><a href="../pages/Turing-Machine" class="internal">Turing Machine</a></li><li><a href="../Finite-Automaton" class="internal">Finite Automaton</a></li><li><a href="../Pushdown-Automaton" class="internal">Pushdown Automaton</a></li><li><a href="../Statecharts" class="internal">Statecharts</a></li><li><a href="../Replicated-State-Machine" class="internal">Replicated State Machine</a></li><li><a href="../XState" class="internal">XState</a></li><li><a href="../Spring-State-Machine" class="internal">Spring State Machine</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>CS-0731</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../accepting-state" class="internal">Accepting State</a></li><li><a href="../actor-model" class="internal">Actor Model</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../automata-theory" class="internal">Automata Theory</a></li><li><a href="../behaviour-tree" class="internal">Behaviour Tree</a></li><li><a href="../compiler" class="internal">Compiler</a></li><li><a href="../computational-model" class="internal">Computational Model</a></li><li><a href="../computer-science-domain" class="internal">ComputerScienceDomain</a></li><li><a href="../concurrency-theory" class="internal">Concurrency Theory</a></li><li><a href="../dataflow-model" class="internal">Dataflow Model</a></li><li><a href="../determinism" class="internal">Determinism</a></li><li><a href="../distributed-systems" class="internal">DistributedSystemsDomain</a></li><li><a href="../event-model" class="internal">Event Model</a></li><li><a href="../finite-automaton" class="internal">Finite Automaton</a></li><li><a href="../formal-language-theory" class="internal">Formal Language Theory</a></li><li><a href="../formal-method" class="internal">Formal Method</a></li><li><a href="../pages/ai-research-area" class="internal">FormalMethodsDomain</a></li><li><a href="../game-ai" class="internal">Game AI</a></li><li><a href="../ieee-802-x" class="internal">IEEE 802.X</a></li><li><a href="../ietf-rfc-9562" class="internal">IETF RFC 9562</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../input-alphabet" class="internal">Input Alphabet</a></li><li><a href="../iso-iec-10746-rm-odp" class="internal">ISO/IEC 10746 RM-ODP</a></li><li><a href="../omg-uml-2-5-1" class="internal">OMG UML 2.5.1</a></li><li><a href="../output-function" class="internal">Output Function</a></li><li><a href="../parser" class="internal">Parser</a></li><li><a href="../paxos" class="internal">Paxos</a></li><li><a href="../petri-net" class="internal">Petri Net</a></li><li><a href="../protocol-verification" class="internal">Protocol Verification</a></li><li><a href="../pushdown-automaton" class="internal">Pushdown Automaton</a></li><li><a href="../raft" class="internal">Raft</a></li><li><a href="../reactive-programming" class="internal">Reactive Programming</a></li><li><a href="../regular-expression" class="internal">Regular Expression</a></li><li><a href="../replicated-state-machine" class="internal">Replicated State Machine</a></li><li><a href="../replication-log" class="internal">Replication Log</a></li><li><a href="../scxml" class="internal">SCXML</a></li><li><a href="../software-engineering" class="internal">SoftwareEngineeringDomain</a></li><li><a href="../spring-state-machine" class="internal">Spring State Machine</a></li><li><a href="../stack" class="internal">Stack</a></li><li><a href="../start-state" class="internal">Start State</a></li><li><a href="../state" class="internal">State</a></li><li><a href="../state-space" class="internal">State Space</a></li><li><a href="../statecharts" class="internal">Statecharts</a></li><li><a href="../tape" class="internal">Tape</a></li><li><a href="../transition-function" class="internal">Transition Function</a></li><li><a href="../turing-machine" class="internal">Turing Machine</a></li><li><a href="../type-theory" class="internal">Type Theory</a></li><li><a href="../ui-state-management" class="internal">UI State Management</a></li><li><a href="../uml" class="internal">UML</a></li><li><a href="../w3-c-scxml" class="internal">W3C SCXML</a></li><li><a href="../xstate" class="internal">XState</a></li><li><a href="../agent-frameworks" class="internal">Agent Frameworks</a></li><li><a href="../agents" class="internal">Agents</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../blockchain" class="internal">Blockchain</a></li><li><a href="../blockchain-network" class="internal">Blockchain Network</a></li><li><a href="../byzantine-fault-tolerance" class="internal">Byzantine Fault Tolerance</a></li><li><a href="../cli-multi-agent-systems" class="internal">CLI Multi-Agent Systems</a></li><li><a href="../consensus-algorithm" class="internal">Consensus Algorithm</a></li><li><a href="../consensus-protocol" class="internal">Consensus Protocol</a></li><li><a href="../cryptography" class="internal">Cryptography</a></li><li><a href="../distributed-computing" class="internal">Distributed Computing</a></li><li><a href="../distributed-ledger" class="internal">Distributed Ledger</a></li><li><a href="../ethereum" class="internal">Ethereum</a></li><li><a href="../fault-tolerance" class="internal">Fault Tolerance</a></li><li><a href="../infrastructure-layer" class="internal">InfrastructureLayer</a></li><li><a href="../merkle-tree" class="internal">Merkle Tree</a></li><li><a href="../network-protocol" class="internal">Network Protocol</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../protocol-layer" class="internal">ProtocolLayer</a></li><li><a href="../robotics" class="internal">Robotics</a></li><li><a href="../smart-contract" class="internal">Smart Contract</a></li><li><a href="../zero-knowledge-proof" class="internal">Zero-Knowledge Proof</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:d466acd6f03cae3d52e5656b79f52e028503903e578119bd2136c259b4f94053</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Agent-Frameworks" class="internal">Agent Frameworks</a></li><li><a href="../Agents" class="internal">Agents</a></li><li><a href="../pages/Blockchain-Network" class="internal">Blockchain Network</a></li><li><a href="../pages/CLI-Multi-Agent-Systems" class="internal">CLI Multi-Agent Systems</a></li><li><a href="../pages/Distributed-Computing" class="internal">Distributed Computing</a></li><li><a href="../pages/Ethereum-Smart-Contract-Platform" class="internal">Ethereum Smart Contract Platform</a></li><li><a href="../pages/Fault-Tolerance" class="internal">Fault Tolerance</a></li><li><a href="../pages/Smart-Contract" class="internal">Smart Contract</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/IEEE-802-X" class="internal">IEEE 802-X</a></li><li><a href="../OMG-UML-2.5.1" class="internal">OMG UML 2.5.1</a></li><li><a href="../W3C-SCXML" class="internal">W3C SCXML</a></li><li><a href="../IETF-RFC-9562" class="internal">IETF RFC 9562</a></li><li><a href="../ISO/IEC-10746-RM-ODP" class="internal">ISO/IEC 10746 RM-ODP</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Compiler" class="internal">Compiler</a></li><li><a href="../pages/Game-AI" class="internal">Game AI</a></li><li><a href="../pages/State-Management" class="internal">UI State Management</a></li><li><a href="../pages/Distributed-Ledger" class="internal">Distributed Ledger</a></li><li><a href="../pages/Network-Protocol" class="internal">Network Protocol</a></li><li><a href="../Robotics" class="internal">Robotics</a></li><li><a href="../pages/Smart-Contract" class="internal">Smart Contract</a></li><li><a href="../UI-State-Management" class="internal">UI State Management</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Paxos" class="internal">Paxos</a></li><li><a href="../pages/Raft" class="internal">Raft</a></li><li><a href="../pages/Byzantine-Fault-Tolerance" class="internal">Byzantine Fault Tolerance</a></li><li><a href="../pages/Merkle-Tree" class="internal">Merkle Tree</a></li><li><a href="../pages/Zero-Knowledge-Proof" class="internal">Zero-Knowledge Proof</a></li><li><a href="../UML" class="internal">UML</a></li><li><a href="../SCXML" class="internal">SCXML</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>StateMachine is a computational abstraction — rooted in automata theory and formal language theory — representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state × inpu…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:State))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:TransitionFunction))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:InputAlphabet))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:StartState))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:OutputFunction))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:AcceptingState))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:hasPart cs:EventModel))
+
+  ## Dependency Relationships
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:requires cs:Determinism))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:requires cs:StateSpace))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:dependsOn cs:FormalLanguageTheory))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:dependsOn cs:AutomataTheory))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:dependsOn cs:ConcurrencyTheory))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:requires cs:ConsensusProtocol))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:requires cs:ReplicationLog))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:dependsOn cs:TotalOrderBroadcast))
+  SubClassOf(cs:HierarchicalStateMachine
+    ObjectSomeValuesFrom(cs:requires cs:StateNesting))
+  SubClassOf(cs:HierarchicalStateMachine
+    ObjectSomeValuesFrom(cs:dependsOn cs:HarelStatecharts))
+
+  ## Capability Relationships
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:enables cs:ProtocolVerification))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:enables cs:FaultTolerance))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:enables cs:SmartContract))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:enables cs:RegularExpressionMatching))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:enables cs:Parser))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:enables cs:BehaviourTree))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:enables cs:BlockchainConsensus))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:enables cs:FaultTolerantService))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:supports cs:UIStateManagement))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:supports cs:NetworkProtocol))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:supports cs:Robotics))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:supports cs:GameAI))
+
+  ## Implementation Relationships
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:implements cs:FiniteAutomaton))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:implements cs:PushdownAutomaton))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:implements cs:TuringMachine))
+  SubClassOf(cs:HierarchicalStateMachine
+    ObjectSomeValuesFrom(cs:implements cs:HarelStatecharts))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:implements cs:Raft))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:implements cs:Paxos))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:implements cs:ByzantineFaultTolerance))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:uses cs:XState))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:uses cs:SpringStateMachine))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:uses cs:SCXML))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:uses cs:UML))
+
+  ## Reduction Relationships
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:reduces cs:StateExplosion))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:reduces cs:ConcurrencyBug))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:reduces cs:ProtocolAmbiguity))
+  SubClassOf(cs:ReplicatedStateMachine
+    ObjectSomeValuesFrom(cs:reduces cs:SinglePointOfFailure))
+  SubClassOf(cs:HierarchicalStateMachine
+    ObjectSomeValuesFrom(cs:reduces cs:StateSpaceExplosion))
+  SubClassOf(cs:StateMachine
+    ObjectSomeValuesFrom(cs:reduces cs:InformalSpecificationError))
+
+  ## Data Properties
+  DataPropertyAssertion(cs:hasIdentifier cs:StateMachine &quot;CS-0731&quot;^^xsd:string)
+  DataPropertyAssertion(cs:authorityScore cs:StateMachine &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(cs:chomskyHierarchyLevel cs:FiniteAutomaton &quot;3&quot;^^xsd:integer)
+  DataPropertyAssertion(cs:chomskyHierarchyLevel cs:PushdownAutomaton &quot;2&quot;^^xsd:integer)
+  DataPropertyAssertion(cs:chomskyHierarchyLevel cs:TuringMachine &quot;0&quot;^^xsd:integer)
+  DataPropertyAssertion(cs:powerset_blowup cs:NFA_to_DFA &quot;2^n&quot;^^xsd:string)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label cs:StateMachine &quot;State Machine&quot;@en)
+  AnnotationAssertion(rdfs:comment cs:StateMachine &quot;Computational abstraction modelling system behaviour as discrete states with deterministic or nondeterministic transitions, spanning finite automata, pushdown automata, Turing machines, Harel Statecharts, and replicated state machines (Raft/Paxos), underpinning blockchain consensus, EVM smart contract execution, XState TypeScript workflows, Spring State Machine Java frameworks, and behaviour trees in robotics and game AI.&quot;@en)
+  AnnotationAssertion(dcterms:identifier cs:StateMachine &quot;CS-0731&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject cs:StateMachine &quot;Automata Theory, Formal Methods, Distributed Systems, Protocol Design, Smart Contracts&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(cs:requires)
+AsymmetricObjectProperty(cs:enables)
+AsymmetricObjectProperty(cs:implements)
+TransitiveObjectProperty(cs:dependsOn)
+FunctionalDataProperty(cs:authorityScore)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-state-machines">About State Machines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-state-machines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>State machines</strong> are one of the oldest and most pervasive abstractions in computer science, providing a mathematically precise way to describe reactive systems — systems whose behaviour at any moment depends on an internal memory of past events (the current state) and an incoming event or input. The concept derives from the work of McCulloch and Pitts (1943) on neuronal logic nets, was formalised by Kleene (1956) who proved the equivalence of finite automata and regular expressions, and refined by Rabin and Scott (1959) in the powerset construction and by Mealy (1955) and Moore (1956) who distinguished the two primary output conventions. Noam Chomsky’s 1956 hierarchy established that FSMs characterise regular languages (Type-3), PDAs characterise context-free languages (Type-2), and TMs characterise recursively enumerable languages (Type-0), grounding state machines within a unified theory of computation.</p>
+</li>
+<li>
+<p>The <strong>practical engineering importance</strong> of state machines stems from their explicitness: every possible state is enumerated, every transition is defined, and the absence of a transition is itself meaningful (typically an error or rejection). This explicitness makes state machines tractable for formal verification — model checkers such as SPIN (Holzmann 1991), TLA+ (Lamport 2002), NuSMV, and Uppaal operate by exhaustively exploring the reachable state space of a finite model, verifying safety (the system never enters a bad state) and liveness (the system eventually enters a good state) properties expressed in temporal logics (LTL, CTL, CTL*).</p>
+</li>
+<li>
+<h3 id="mealy-vs-moore-machines">Mealy vs Moore Machines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mealy-vs-moore-machines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The classic distinction in transducer theory is between <strong>Moore machines</strong> (output depends only on current state, producing output at state entry) and <strong>Mealy machines</strong> (output depends on current state and current input transition). Moore’s formulation is often preferred in synchronous digital logic design — each register value corresponds to a state, flip-flops are Moore machines, and clocked circuits are Moore state machines. Mealy machines are more natural for protocol specification where a response is triggered by a specific (state, event) pair. Every Moore machine is convertible to an equivalent Mealy machine with the same number of states; the converse Mealy-to-Moore conversion may require up to |Q| × |Σ| states. In UML State Diagrams, entry/exit/do activities on states correspond to Moore semantics, while transition actions correspond to Mealy semantics; UML supports both simultaneously.</p>
+</li>
+<li>
+<h3 id="harel-statecharts-and-hierarchical-state-machines">Harel Statecharts and Hierarchical State Machines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#harel-statecharts-and-hierarchical-state-machines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The single most practically significant extension to flat FSMs is David Harel’s <strong>Statecharts</strong> (Science of Computer Programming, 8(3):231–274, 1987), motivated by the design of Aerospace aircraft control software that had 30,000 states in the flat FSM specification. Harel introduced:</p>
+<ul>
+<li><strong>OR-states (hierarchical decomposition)</strong>: A state S can contain substates {S₁, S₂, …, Sₙ}, meaning the machine is in exactly one of the substates when in S. Transitions can target S at the superstate level, entering the default substate, or target a specific substate.</li>
+<li><strong>AND-states (orthogonal regions)</strong>: A state S is partitioned into concurrent regions R₁ ∥ R₂ ∥ … ∥ Rₙ, each an independent state machine. The machine is simultaneously in one substate of each region, modelling true concurrency without explicit product construction.</li>
+<li><strong>History pseudo-states</strong>: H (shallow history) and H* (deep history) remember the last active substate on exit, allowing re-entry to resume where the machine left off rather than restarting from the default substate — critical for modal interfaces that may be interrupted.</li>
+<li><strong>Broadcast events</strong>: Events broadcast to all regions simultaneously, enabling synchronisation between orthogonal components.</li>
+</ul>
+</li>
+<li>
+<p>The <strong>state-explosion problem</strong> of concurrent FSMs — n concurrent components with kᵢ states each producing Π kᵢ states in the product — is tamed by Statecharts: parallel specification remains O(Σ kᵢ) but the executed semantics still visits exponential states. Symbolic model checking using BDDs (Binary Decision Diagrams, Bryant 1986) and SAT-based bounded model checking (Biere et al. 1999) address this computationally.</p>
+</li>
+<li>
+<p>Statecharts were standardised in <strong>SCXML</strong> (State Chart XML, W3C Recommendation 2015), an XML markup for state machine specification supporting parallel states, history states, datamodel integration (ECMAScript, XPath), and event I/O. UML 2.5.1 (OMG 2017) incorporates Statecharts as UML State Diagrams with full AND/OR hierarchy.</p>
+</li>
+<li>
+<h3 id="pushdown-automata-and-parsing">Pushdown Automata and Parsing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pushdown-automata-and-parsing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Pushdown automata</strong> augment the FSM with a stack, enabling recognition of context-free languages (CFLs). The stack provides unbounded memory of a very specific structured kind — LIFO — sufficient to count and balance nested parentheses but not to verify that three equal-length strings are identical (requiring a counter machine or TM). Every context-free grammar G can be converted to an equivalent PDA via two standard constructions: top-down parsing (LL parser, recursive descent) and bottom-up parsing (LR parser, shift-reduce). The LR(1) construction by Knuth (1965) and its efficient variants (SLR(1), LALR(1)) underpin the parser generators yacc, bison, and Menhir that generate industrial-grade parsers from grammar specifications. The equivalence PDA ↔ CFL is the cornerstone of programming language theory.</p>
+</li>
+<li>
+<p>Deterministic PDAs (DPDAs) recognise a strict subset of CFLs — the deterministic context-free languages (DCFLs) — which include most practical programming language grammars. Non-determinism in PDAs (multiple transitions for the same (state, input, stack-top)) is resolved at parse time by parsing algorithms; the CYK (Cocke–Younger–Kasami) algorithm parses any CFG in O(n³) time using dynamic programming.</p>
+</li>
+<li>
+<h3 id="turing-machines-and-computability">Turing Machines and Computability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#turing-machines-and-computability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Turing machines</strong> (Alan Turing 1936, “On Computable Numbers”) are the foundational model of universal computation: an infinite read/write tape, a finite state control, and transitions that read the current cell, write a new symbol, move the tape head left or right, and transition state. The <strong>Church–Turing thesis</strong> (independently conjectured by Alonzo Church for lambda calculus and Turing for TMs) posits that any effectively computable function is computable by a TM. The <strong>halting problem</strong> — whether an arbitrary TM halts on a given input — is undecidable (Turing 1936), establishing the first incompleteness of formal systems and motivating the study of computational complexity. The <strong>time hierarchy theorem</strong> (Hartmanis &amp; Stearns 1965) and <strong>space hierarchy theorem</strong> establish that more time/space strictly enables more computation, giving rise to the complexity classes P, NP, PSPACE, and EXPTIME that structure algorithm tractability.</p>
+</li>
+<li>
+<p>Multi-tape TMs, probabilistic TMs, quantum TMs (QTMs, Deutsch 1985), and oracle TMs are all equivalent in computational power to standard TMs (with polynomial overhead for multi-tape), establishing TMs as robust models. The <strong>random access machine (RAM)</strong> model used in algorithm analysis is polynomially equivalent to TMs.</p>
+</li>
+<li>
+<h3 id="replicated-state-machines">Replicated State Machines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#replicated-state-machines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Replicated state machines (RSMs)</strong> are the foundational paradigm for building fault-tolerant distributed services, articulated by Lamport (1978, “Time, Clocks, and the Ordering of Events in a Distributed System”) and systematised by Schneider (1990, “Implementing Fault-Tolerant Services Using the State Machine Approach”, ACM Computing Surveys 22(4):299–319). The core insight is: if all correct replicas of a deterministic state machine receive the same inputs in the same order, they will produce the same outputs and remain in identical states. Fault tolerance reduces to the consensus problem — achieving total order on inputs in the presence of failures.</p>
+</li>
+<li>
+<p><strong>Paxos</strong> (Lamport 1989, published 1998 in ACM TOPLAS as “The Part-Time Parliament”) solves consensus for crash-fail models with an asynchronous network. The protocol proceeds in two phases: Phase 1 (Prepare/Promise) establishes a ballot number and learns any previously chosen value; Phase 2 (Accept/Accepted) proposes and reaches consensus. Paxos requires 2f+1 replicas to tolerate f crash failures; Multi-Paxos (a leader optimisation) reduces Phase 1 to once per epoch, serving as the basis for Chubby (Google 2006) and ZooKeeper (Yahoo 2010).</p>
+</li>
+<li>
+<p><strong>Raft</strong> (Ongaro &amp; Ousterhout 2014, USENIX ATC, “In Search of an Understandable Consensus Algorithm”) decomposes consensus into three orthogonal subproblems: leader election (randomised election timeouts), log replication (leader appends and replicates entries before committing), and safety (leader completeness property ensuring committed entries are never overwritten). Raft is deployed in etcd (Kubernetes metadata store), CockroachDB, TiKV, Consul, and InfluxDB. The formal TLA+ specification by Ongaro is a canonical model-checking artefact.</p>
+</li>
+<li>
+<p><strong>Byzantine fault-tolerant (BFT) variants</strong> tolerate actively malicious replicas. pBFT (Castro &amp; Liskov 1999, OSDI) was the first practical BFT protocol, requiring 3f+1 replicas for f Byzantine faults, O(n²) message complexity. Tendermint (Buchman 2016) is a BFT consensus algorithm used in the Cosmos blockchain ecosystem, combining partial synchrony (Dwork–Lynch–Stockbridge model) with locked/unlocked voting rounds. HotStuff (Abraham, Gueta, Malkhi et al. 2018, PODC) achieves O(n) message complexity using a chain of votes and a rotating leader, forming the basis of Facebook’s LibraBFT/DiemBFT and Aptos/Sui consensus.</p>
+</li>
+<li>
+<h3 id="blockchain-l1l2-as-replicated-state-machines">Blockchain L1/L2 as Replicated State Machines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#blockchain-l1l2-as-replicated-state-machines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <strong>Ethereum Virtual Machine (EVM)</strong> is formally specified as a state machine in the Ethereum Yellow Paper (Wood 2014, continuously updated): the global state σ is a mapping from 160-bit addresses to account states (nonce, balance, storage trie, code hash); a transaction T triggers the state-transition function Υ(σ, T) → σ’ that executes EVM bytecode deterministically on all validating nodes. The consensus layer (post-Merge: Casper FFG for finality + LMD-GHOST for fork-choice) enforces total ordering of blocks, satisfying the RSM requirement. The EVM stack machine uses 256-bit words, a maximum stack depth of 1024, and a gas metering system that ensures termination (bounded computation cost per transaction), sidestepping the halting problem at the price of expressiveness.</p>
+</li>
+<li>
+<p><strong>Smart contracts</strong> as state machines: a deployed contract is a persistent state machine whose storage is the state, whose public/external functions are the input alphabet, and whose events are the output alphabet. The OpenZeppelin Finite State Machine library (OpenZeppelin Contracts ≥ v4.6) provides an explicit <code>StateMachine</code> base contract with <code>currentState</code>, <code>canTransitionTo(bytes32)</code>, and <code>_setupTransitions()</code> methods. The <strong>Checks-Effects-Interactions (CEI) pattern</strong> is an FSM invariant: within a single transition (transaction), first validate preconditions (checks), update internal state (effects), then call external contracts (interactions) — preventing reentrancy attacks (DAO hack 2016, $60M ETH).</p>
+</li>
+<li>
+<p><strong>Layer-2 rollup protocols</strong> — Optimistic Rollups (Arbitrum, Optimism) and ZK-Rollups (StarkNet, zkSync Era, Polygon zkEVM) — are state machines themselves, with the L1 serving as the canonical state source. Optimistic Rollups transition state off-chain and post state roots to L1 with a 7-day fraud-proof window; ZK-Rollups post validity proofs (SNARK/STARK) enabling near-immediate finality. The state transition validity is enforced either by a fraud proof (optimistic) or by a succinct cryptographic argument (ZK), both grounded in the RSM model.</p>
+</li>
+<li>
+<p><strong>Bitcoin’s UTXO model</strong> is also a state machine: the UTXO set is the state, a transaction is a transition that consumes inputs (UTXOs) and produces outputs (new UTXOs), and the script system (Bitcoin Script) is a stack-based, non-Turing-complete language restricting transitions to prevent unbounded computation. Bitcoin’s state machine is intentionally simpler than Ethereum’s to reduce attack surface.</p>
+</li>
+<li>
+<h3 id="smart-contract-state-machine-semantics">Smart Contract State Machine Semantics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#smart-contract-state-machine-semantics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Formal semantic frameworks for smart contracts include:</p>
+<ul>
+<li><strong>K framework</strong> (Roşu et al., University of Illinois): executable formal semantics for EVM (KEVM, 2018) defined in rewriting logic, enabling formal verification of EVM smart contracts against arbitrary properties.</li>
+<li><strong>Solidity FSM patterns</strong>: <code>enum State { Created, Locked, Inactive }</code> with modifier <code>inState(State s) { require(currentState == s); _; }</code> is idiomatic Solidity FSM encoding. Truffle/Hardhat test suites model transition sequences.</li>
+<li><strong>Temporal Logic of Actions (TLA+)</strong> (Lamport 2002): used to specify and model-check distributed protocols (Paxos, Raft, 2PC) as state machines; Amazon Web Services has published TLA+ specs for S3, DynamoDB, and EC2 distributed algorithms.</li>
+<li><strong>Linear types and session types</strong>: Rust’s ownership system approximates a linear type system, ensuring resources transition through defined state sequences (open → reading → closed) without duplication; session types (Honda 1993, Gay &amp; Hole 2005) formalise communication protocol conformance as FSM bisimulation.</li>
+</ul>
+</li>
+<li>
+<h3 id="xstate-typescript">XState (TypeScript)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#xstate-typescript" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>XState</strong> (David Khourshid, developed at Microsoft 2018–, open-sourced v1 2019, v4 2020, v5 2024) is the leading implementation of the actor model and Statecharts in the JavaScript/TypeScript ecosystem. Key concepts:</p>
+<ul>
+<li><strong>Machine</strong>: defined by <code>createMachine({ id, initial, states: { ... } })</code> with typed context (extended state) and events; TypeScript generics ensure type-safe state and event discrimination.</li>
+<li><strong>State nodes</strong>: simple (leaf) states, compound states (hierarchical OR-state with <code>initial</code> pointer), parallel states (AND-state with <code>type: 'parallel'</code> and concurrent <code>states</code> children), history states (<code>type: 'history'</code>, <code>history: 'deep' | 'shallow'</code>), and final states.</li>
+<li><strong>Guards and Actions</strong>: transitions carry <code>guard</code> conditions (pure functions returning boolean) and <code>actions</code> (side-effect descriptions — <code>assign</code>, <code>sendTo</code>, <code>raise</code>, <code>log</code>); XState v5 uses explicit action objects enabling deterministic replay and time-travel debugging.</li>
+<li><strong>Actors</strong>: XState v5 elevates machines to first-class actors (Hewitt 1973 actor model) via <code>createActor(machine, { input })</code>. Actors communicate via <code>.send(event)</code>, can spawn child actors with <code>spawnChild()</code>, and expose <code>system</code> for actor registry. This enables hierarchical agent architectures.</li>
+<li><strong>Persistence</strong>: machine snapshots (serialisable JSON representations of current state + context) enable server-side state persistence, resumable workflows, and durable execution (analogous to Temporal.io workflow state).</li>
+<li><strong>Visualisation</strong>: Stately Studio (<a href="https://stately.ai" class="external">https://stately.ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>) provides a visual designer and state machine registry; the <code>@xstate/inspect</code> package enables runtime inspection via browser devtools.</li>
+<li>XState is used in production by Stripe (checkout flows), Sketch (canvas state), Atlassian (Jira workflow engine), and Microsoft (VS Code extension host). The npm package <code>xstate</code> has ~1.2M weekly downloads as of 2025.</li>
+</ul>
+</li>
+<li>
+<h3 id="spring-state-machine-java">Spring State Machine (Java)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spring-state-machine-java" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Spring State Machine</strong> (Pivotal/VMware, initial release 1.0.0 in 2015, current 4.0.0) provides a Statechart-compliant framework in the Java/Spring ecosystem:</p>
+<ul>
+<li><strong>StateMachine&lt;S, E></strong>: generic interface parameterised by state type S and event type E; states and events are typically Java enums ensuring type safety.</li>
+<li><strong>StateMachineBuilder DSL</strong>: fluent builder API <code>StateMachineBuilder.builder()</code> with <code>.configureStates()</code> (defining initial, final, and regular states, including hierarchical substates via <code>withStates().parent(ParentState)</code>) and <code>.configureTransitions()</code> (defining source, target, event, guard, action).</li>
+<li><strong>Guards and Actions</strong>: Spring beans implementing <code>Guard&lt;S,E></code> and <code>Action&lt;S,E></code> interfaces, enabling dependency injection into state machine logic — a key enterprise integration advantage.</li>
+<li><strong>Persistence</strong>: <code>StateMachinePersister&lt;S, E, T></code> serialises and restores machine state via Spring Data; out-of-the-box support for Redis, JDBC (PostgreSQL/MySQL), and MongoDB backends enables durable state across distributed services.</li>
+<li><strong>Distributed state machines</strong>: Spring State Machine integrates with Spring Session and Zookeeper/etcd for distributed state coordination, allowing state machine instances across cluster nodes to share state — effectively implementing RSM at the application layer.</li>
+<li><strong>Spring Integration and Spring Batch</strong>: native integration adapters for workflow orchestration; Spring Batch job lifecycle (STARTED → COMPLETED / FAILED → STOPPED) is modelled as a state machine.</li>
+<li>Use cases in enterprise Java: order processing pipelines, loan approval workflows, device provisioning state management, and saga pattern orchestration in microservices architectures.</li>
+</ul>
+</li>
+<li>
+<h3 id="behaviour-trees-in-robotics-and-game-ai">Behaviour Trees in Robotics and Game AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#behaviour-trees-in-robotics-and-game-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Behaviour Trees (BTs)</strong> emerged from game AI (Halo AI team ~2001–2005, popularised by Alex Champandard and the AiGameDev community) as an alternative to hierarchical FSMs that avoids the proliferation of transitions. A BT is a directed rooted tree where:</p>
+<ul>
+<li><strong>Internal nodes</strong> are control-flow: <strong>Sequence</strong> (→, succeeds iff all children succeed left-to-right), <strong>Fallback/Selector</strong> (??, returns first succeeding child), <strong>Parallel</strong> (runs all children simultaneously, success/failure thresholds configurable), <strong>Decorator</strong> (wraps a subtree to invert, repeat, or impose a timeout).</li>
+<li><strong>Leaf nodes</strong> are <strong>Conditions</strong> (sensing predicates returning Success/Failure) and <strong>Actions</strong> (behavioural units returning Success/Failure/Running).</li>
+<li><strong>Tick</strong>: the root is ticked at regular intervals (commonly 10–100Hz in robotics); the tick propagates down the tree until a Leaf node returns a status, which propagates upward.</li>
+<li><strong>Reactive BTs</strong>: re-evaluating conditions at each tick enables reactive behaviour composition without explicit transition management; the Fallback node acts as a priority arbiter (highest-priority succeeding Condition wins).</li>
+</ul>
+</li>
+<li>
+<p>BTs are proven equivalent to hierarchical FSMs with strict expressiveness preservation (Colledanchise &amp; Ögren 2018, Theorem 3.1), but empirically more modular: adding a behaviour requires adding a subtree without modifying existing transitions. <strong>py_trees</strong> (Daniel Stonier, robotics standard), <strong>BehaviorTree.CPP</strong> (Davide Faconti, C++17, ROS2 integration), <strong>Groot</strong> (BT visualiser), and <strong>Unreal Engine Behavior Trees</strong> (Epic Games) are the dominant implementations. ROS2 Nav2 uses BTs for navigation task orchestration; Boston Dynamics Spot uses BTs for behaviour arbitration.</p>
+</li>
+<li>
+<p>Formal verification of BTs: Colledanchise &amp; Murray (2017) define a compositional verification framework using CTL model checking; <strong>BT.CPP</strong> supports runtime monitoring with <strong>Groot2</strong> visualisation; <strong>BTEditor</strong> (KTH) enables offline model checking using NuSMV.</p>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Core components of state machine architectures:</strong></p>
+<ul>
+<li><strong>State</strong>: a configuration of the system encoding sufficient history to determine future behaviour; in FSMs, a finite label; in EVM, a 256-bit word per storage slot; in RSMs, the deterministic content of all replicas.</li>
+<li><strong>Transition function δ</strong>: the deterministic mapping (state, input) → next-state; defines the legal moves; in Statecharts extended to (state, event, guard) → (next-state, actions).</li>
+<li><strong>Input alphabet Σ / Event set</strong>: the set of stimuli; in protocol FSMs, message types; in smart contracts, ABI-encoded function selectors; in BTs, tick propagation.</li>
+<li><strong>Output alphabet Δ / Actions</strong>: Moore outputs (per state) or Mealy outputs (per transition); in Solidity, <code>emit</code> events; in XState, action descriptors executed by interpreters.</li>
+<li><strong>Start state q₀</strong>: initial configuration; in Statecharts, the default substate at each hierarchical level; in Spring State Machine, <code>.initial(State.IDLE)</code>.</li>
+<li><strong>Accepting/final states F</strong>: terminal configurations; in parser FSMs, accepted inputs; in Spring Batch, <code>BatchStatus.COMPLETED</code>; in Raft, <code>committed</code> log entries.</li>
+<li><strong>Extended state (Context)</strong>: finite-state machines augmented with typed data variables (counters, balances, parameters) without inflating the state count — XState’s <code>context</code> object, Solidity’s storage variables. Extended state machines are computationally equivalent to TMs (with appropriate data types) but remain tractable in practice for finite data domains.</li>
+<li><strong>Guard conditions</strong>: Boolean predicates over extended state and event payload that refine when a transition fires; prevent state explosion by factoring data conditions out of state topology.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Six major families of state machine application:</strong></p>
+<ul>
+<li><strong>Automata-theoretic tools</strong>: Regular expression engines (re2, PCRE, Hyperscan) compile patterns to NFAs/DFAs for linear-time matching; Lex/Flex generate lexer DFAs; compiler front-ends use PDA-derived LR parsers (GCC, LLVM Clang, Rust MIR); XML/JSON validators use stack-automata; network packet classifiers (P4, eBPF) use DFA for header parsing at line rate.</li>
+<li><strong>Protocol state machines</strong>: TCP (LISTEN → SYN_SENT → ESTABLISHED → FIN_WAIT → CLOSED) is the canonical network protocol FSM (RFC 793, 9293); TLS 1.3 handshake (ClientHello → ServerHello → Finished) is a 7-state FSM with cryptographic state; QUIC, HTTP/2, MQTT, AMQP, SIP all define FSMs in their RFCs. IEEE 802.11 (Wi-Fi) association and authentication are 4-state machines. Protocol fuzz testing (AFL++, Boofuzz) generates inputs by mutating FSM transitions.</li>
+<li><strong>UI and application state management</strong>: XState, Redux + immer, React useReducer, SwiftUI’s state machine patterns, and Android’s ViewModel state flow all model UI state as explicit FSMs, preventing impossible states and simplifying testing. Stripe’s payment checkout, airline seat-selection flows, and multi-step onboarding wizards are industrially deployed XState machines.</li>
+<li><strong>Distributed consensus / RSM applications</strong>: etcd (Raft, Kubernetes backbone), CockroachDB (Raft per range), TiKV (Raft, TiDB storage), Consul (Raft service mesh), Zookeeper (ZAB protocol), Google Spanner (Paxos per shard), Amazon DynamoDB (Paxos-derived, leaked by Werner Vogels 2007 paper).</li>
+<li><strong>Blockchain / smart contract</strong>: Ethereum EVM (RSM across 800K+ validator nodes, post-Merge), Solana (Tower BFT, pBFT-inspired), Avalanche (Snowball/Snowflake probabilistic BFT), Cosmos (Tendermint per app-chain), Polkadot (BABE/GRANDPA). Smart contract patterns: OpenZeppelin AccessControl state machine, Gnosis Safe multi-sig state (CREATED → APPROVED → EXECUTED), DeFi AMM invariant (constant product k = x·y as state invariant).</li>
+<li><strong>Robotics and embodied AI</strong>: ROS2 Smach (State Machine Architecture, Bohren &amp; Cousins 2010), ROS2 Nav2 Behaviour Tree-based navigation, Boston Dynamics Spot behaviours, ANYmal locomotion controllers (ETH Zürich), DARPA SubT autonomous exploration. Hybrid automata (Alur &amp; Dill 1994 timed automata; Henzinger 1996 hybrid systems) combine discrete FSM control with continuous ODEs for cyber-physical systems (autonomous vehicles, drone flight envelopes, medical device controllers).</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>State machine theory spans multiple foundational fields of computer science:</p>
+</li>
+<li>
+<p><strong>Automata theory and formal language theory</strong>: The Kleene–Rabin–Scott theorems (1956–1959) established the regular language ↔ DFA/NFA ↔ regular expression trinity. The Myhill–Nerode theorem (1958) gave the canonical minimisation for DFAs: the minimal DFA for a language L is unique up to isomorphism, with states corresponding to right-congruence classes of Σ* under L; Hopcroft’s algorithm (1971) minimises DFAs in O(n log n). The pumping lemma provides a necessary (not sufficient) condition for regularity, separating regular from context-free languages.</p>
+</li>
+<li>
+<p><strong>Concurrency theory</strong>: Robin Milner’s <strong>CCS (Calculus of Communicating Systems)</strong> (1980) and <strong>π-calculus</strong> (1992) model concurrent processes as state machines communicating via channels; bisimulation equivalence (Milner 1989) is the canonical congruence for reactive systems. <strong>CSP (Communicating Sequential Processes)</strong> (Hoare 1978, refinement model Roscoe 1997) formalises concurrent FSMs with synchronous rendezvous communication; FDR4 (Oxford) is the industrial CSP model checker used for INMOS Transputer verification and security protocol analysis (Lowe’s attack on the Needham–Schroeder protocol 1996).</p>
+</li>
+<li>
+<p><strong>Process algebras</strong>: ACP (Baeten &amp; Weijland 1990), LOTOS (ISO 8807, used in OSI protocol specification), mCRL2 (TU Eindhoven) provide algebraic calculi for state machine specification and equational reasoning.</p>
+</li>
+<li>
+<p><strong>Temporal logic and model checking</strong>: Clarke, Emerson &amp; Sistla (1986) introduced CTL model checking with BDD-based symbolic verification; Pnueli (1977) introduced LTL (Linear Temporal Logic); the SPIN model checker (Holzmann 1991, JPL/Bell Labs) verifies protocols specified in Promela (Process Meta Language) — a state machine language. NASA’s Curiosity rover software was verified using Promela/SPIN. TLA+ (Lamport 2002) uses temporal logic with priming for next-state; its <code>UNCHANGED &lt;&lt;x, y>></code> idiom explicitly enumerates non-transitioning variables, enforcing discipline.</p>
+</li>
+<li>
+<p><strong>Key papers and books</strong>:</p>
+<ul>
+<li>Kleene, S.C. (1956). “Representation of Events in Nerve Nets and Finite Automata”. Automata Studies, 3–42.</li>
+<li>Rabin, M.O. &amp; Scott, D. (1959). “Finite Automata and Their Decision Problems”. IBM Journal of Research and Development, 3(2), 114–125.</li>
+<li>Mealy, G.H. (1955). “A Method for Synthesizing Sequential Circuits”. Bell System Technical Journal, 34(5), 1045–1079.</li>
+<li>Moore, E.F. (1956). “Gedanken-Experiments on Sequential Machines”. Automata Studies, 129–153.</li>
+<li>Harel, D. (1987). “Statecharts: A Visual Formalism for Complex Systems”. Science of Computer Programming, 8(3), 231–274.</li>
+<li>Lamport, L. (1978). “Time, Clocks, and the Ordering of Events in a Distributed System”. CACM, 21(7), 558–565.</li>
+<li>Schneider, F.B. (1990). “Implementing Fault-Tolerant Services Using the State Machine Approach”. ACM Computing Surveys, 22(4), 299–319.</li>
+<li>Ongaro, D. &amp; Ousterhout, J. (2014). “In Search of an Understandable Consensus Algorithm”. USENIX ATC.</li>
+<li>Wood, G. (2014). “Ethereum: A Secure Decentralised Generalised Transaction Ledger”. Yellow Paper.</li>
+<li>Colledanchise, M. &amp; Ögren, P. (2018). Behaviour Trees in Robotics and AI: An Introduction. CRC Press.</li>
+<li>Castro, M. &amp; Liskov, B. (1999). “Practical Byzantine Fault Tolerance”. OSDI.</li>
+<li>Alur, R. &amp; Dill, D.L. (1994). “A Theory of Timed Automata”. Theoretical Computer Science, 126(2), 183–235.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>State machines in 2025–2026 software practice:</strong></p>
+<ul>
+<li><strong>Actor model convergence</strong>: XState v5 (released Q4 2023, mature by 2025) integrates Statecharts with the actor model, enabling hierarchical multi-agent systems where each actor is a persistent state machine. This converges with LLM orchestration patterns (LangGraph, CrewAI) where agent state machines manage workflow context across multi-turn interactions.</li>
+<li><strong>Durable execution frameworks</strong>: Temporal.io (Golang/Java/Python SDK), Azure Durable Functions, and AWS Step Functions all implement workflow engines where each workflow is an RSM with persistent state, automatic retries, and event-driven transitions — effectively distributed state machines as a managed service. Temporal processes 100M+ workflow executions/day at Stripe, Uber, and Netflix.</li>
+<li><strong>Formal verification adoption</strong>: Amazon AWS formally verifies critical infrastructure algorithms in TLA+, publishing 14 TLA+ specifications (S3, DynamoDB, EBS) since 2014. Cloudflare uses TLA+ for Turnstile. Microsoft Research’s P programming language (Desai et al. 2013, now open-source P#) is a state-machine programming language with built-in model checking used for Azure IoT Hub and Azure Batch verification.</li>
+<li><strong>ZK-circuit state machines</strong>: ZK-SNARKs/STARKs (Groth16, PLONK, FRI/STARK) encode the validity of state transitions as arithmetic circuits. StarkNet’s Cairo language and zkSync’s Boojum prover express EVM state transitions as polynomial constraint systems; proving a single Ethereum block takes ~10 minutes on a 64-core server (2025), with hardware acceleration (GPUs, ASICs) rapidly reducing this.</li>
+<li><strong>Probabilistic and quantum state machines</strong>: Markov Decision Processes (MDPs) generalise FSMs with probability distributions over transitions and reward functions, underpinning reinforcement learning (Q-learning, PPO). Quantum finite automata (QFAs) are active research but not yet deployable. Stochastic TMs (PTMs with BPP complexity class) underpin probabilistic algorithms (Miller–Rabin primality, Monte Carlo methods).</li>
+<li><strong>LLM integration</strong>: Language models do not natively implement FSMs but are increasingly orchestrated by FSM controllers. LangGraph (LangChain v0.1, 2024) models LLM agent workflows as cyclic directed graphs where nodes are LLM calls and edges are state transitions with conditional routing. AutoGen (Microsoft 2023–) uses FSM-like conversation patterns. The FSM controller ensures termination and prevents infinite loops in LLM agent chains — a key safety mechanism.</li>
+<li><strong>WebAssembly state machines</strong>: WASM component model (2024) defines interface types that enforce capability-based state machine semantics on module interactions; WASIp2 (WASI Preview 2) uses resource handles with explicit create/use/destroy lifecycle as an FSM.</li>
+<li><strong>Embedded and safety-critical</strong>: AUTOSAR (Automotive Open System Architecture) specifies vehicle ECU software using hierarchical state machines (OS Task States, CommunicationManager States, DiagnosticEventManager States). DO-178C (avionics software) and IEC 61508 (functional safety) certify state machine implementations; formal verification tools (SCADE, Simulink/Stateflow, TargetLink) generate certified C code from Statechart models, achieving DO-178C DAL A certification.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester academic; Northern English industrial)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Academic research centres:</strong></p>
+<ul>
+<li><strong>Imperial College London (Department of Computing)</strong>: Professor Philippa Gardner’s group on JavaScript formal semantics (JSLogic, Gillian verification framework) treats program execution as state machine transitions in separation logic; Professor Iain Phillips on bisimulation and process algebra with publications in concurrency theory. Imperial’s <strong>Verification and Testing</strong> group (Peter Pietzuch) applies model checking to distributed systems verification. The <strong>Software Reliability Group</strong> (Alastair Donaldson) uses SPIN and TLA+ for GPU compute shader verification.</li>
+<li><strong>University of Cambridge (Computer Laboratory)</strong>: The <strong>Programming, Logic, and Semantics (PLS)</strong> group maintains a long tradition in process algebra and bisimulation; Professor Andrew Pitts on operational semantics; Professor Lars Birkedal (visiting, Aarhus) on Iris concurrent separation logic enabling Raft correctness proofs. The <strong>Systems Research Group</strong> (Jon Crowcroft, Richard Mortier) applies RSM principles to distributed sensor networks and P4 programmable networks. Cambridge hosts the <strong>MPhil in Advanced Computer Science</strong> with a formal verification track.</li>
+<li><strong>University of Edinburgh (LFCS — Laboratory for Foundations of Computer Science)</strong>: Historically home to Gordon Plotkin (structural operational semantics, 1981), Robin Milner (CCS, π-calculus, Edinburgh LCF), and Samson Abramsky (domain theory, game semantics). Current work by Professor Ian Stark on operational semantics and Professor Gordon Plotkin’s late-career work on algebraic effects (delimited continuations as a state-machine abstraction). The LFCS remains a world-leading site for denotational semantics and type theory underlying state machine reasoning.</li>
+<li><strong>University of Oxford (Department of Computer Science)</strong>: The <strong>Concurrency and Verification</strong> group uses CSP/FDR4 for security protocol verification; Professor Bill Roscoe’s foundational work on CSP refinement (The Theory and Practice of Concurrency, 1998); Professor Michael Wooldridge on multi-agent systems where agent protocols are FSMs. Oxford’s <strong>Quantum Computing</strong> group explores quantum FSM extensions.</li>
+<li><strong>University of Manchester</strong>: Professor Howard Barringer on temporal logic and runtime verification (QuickSpec, EAGLE temporal logic specification); work on timed automata verification with UPPAAL integration. Manchester’s <strong>Advanced Processor Technologies group</strong> designs state-machine-driven hardware architectures.</li>
+<li><strong>UCL (Department of Computer Science)</strong>: Professor Alexandra Silva on coalgebra (categorical generalisation of state machines, automata learning with Angluin’s L* algorithm) — UCL leads on active automata learning (LearnLib, Automatalib) with applications to protocol inference and IoT device fingerprinting. Silva’s work (POPL 2020, 2022) on probabilistic automata and Kleene algebra with tests underpins formal analysis of network data planes.</li>
+</ul>
+</li>
+<li>
+<p><strong>Northern English industrial applications:</strong></p>
+<ul>
+<li><strong>Manchester (aerospace/defence)</strong>: BAE Systems (Warton, Lancashire) uses Statechart-based SCADE models for Typhoon flight control software, achieving DO-178C DAL A certification. Rolls-Royce (Derby, HQ) verifies engine control unit (FADEC) software using state-machine-based formal methods and model-based testing. Thales UK (Manchester) uses UML State Diagrams for railway signalling software (EN 50128 SIL4 certification).</li>
+<li><strong>Sheffield (robotics/automation)</strong>: The University of Sheffield’s <strong>Robotics and Autonomous Systems group</strong> (Sandor Veres) applies hybrid automata to autonomous systems; AMRC (Advanced Manufacturing Research Centre) at Sheffield deploys industrial robot state machines for aerospace machining. Sheffield’s Digital Manufacturing Centre (DMC) uses Spring State Machine for manufacturing execution system (MES) workflow orchestration.</li>
+<li><strong>Leeds (fintech/blockchain)</strong>: University of Leeds <strong>Distributed Systems and Security group</strong> (Nir Oren) applies RSM/Raft to financial settlement infrastructure. Leeds-based fintech firms (Moneyhub, Aire) use XState for multi-step KYC/AML state orchestration compliant with FCA SMCR requirements.</li>
+<li><strong>Newcastle (safety-critical systems)</strong>: Newcastle University’s <strong>School of Computing</strong> has the <strong>Formal Methods</strong> group with historical strengths in CSP (Professor Neil Storey, Safety-Critical Computer Systems textbook). Newcastle’s collaboration with Siemens (Chippenham and Newcastle sites) on railway interlocking (Solid State Interlocking SSI) uses relay-logic → FSM migration for Network Rail modernisation. The <strong>SCoNe project</strong> (Safe Coordination of Networked Embedded systems) applies timed automata verification to IoT networks.</li>
+<li><strong>Bristol/South West</strong>: Dyson (Malmesbury, Wiltshire) engineers use ROS2 BTs for robotic vacuum navigation state management. Airbus (Filton, Bristol) uses SCADE-based hierarchical state machines for A350/A380 onboard systems software.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Projected developments in state machine research and practice:</strong></p>
+<ul>
+<li><strong>Learned state machines</strong>: Angluin’s L* algorithm (1987) and its derivatives (TTT, KV) enable active automata learning — inferring a minimal DFA from a black-box system by membership and equivalence queries. Applied to protocol fuzzing (LearnLib + AFLNet), UI model inference (QBE/WebMate), and malware behaviour classification. Extension to probabilistic FSMs (L* with Markov chains) enables learning MDPs from trace data, bridging reinforcement learning and formal verification by 2027.</li>
+<li><strong>Neuro-symbolic state machines</strong>: Hybrid architectures embedding LLM reasoning within XState/BT controllers, where the FSM enforces safety invariants (no infinite loops, mandatory human-in-the-loop for high-stakes transitions) while LLMs handle open-ended perception and language tasks. LangGraph 2.0 (anticipated 2026) expected to adopt formal FSM semantics with provable termination. Research at Cambridge and Edinburgh on neural network controllers with FSM safety monitors using runtime verification (RV-Monitor, Copilot).</li>
+<li><strong>Quantum-resistant RSM consensus</strong>: Post-quantum Byzantine consensus using lattice-based (CRYSTALS-Dilithium) or hash-based (SPHINCS+) signatures replacing ECDSA in Tendermint/HotStuff; critical for blockchain RSMs by 2028 given harvest-now/decrypt-later attacks on long-lived state (property records, identity credentials). NIST FIPS 204 (ML-DSA) and FIPS 205 (SLH-DSA) finalised 2024, adoption in Ethereum client implementations anticipated 2026–2027.</li>
+<li><strong>Formally verified smart contract compilers</strong>: CompCert-style verified compilation from Statechart specifications to EVM bytecode, with machine-checked proofs of semantic preservation; projects such as CertiK’s Certora Prover (Hoare logic for Solidity), dafny-to-Solidity transpilation, and formal verification of Cairo (StarkNet) using Lean4/Isabelle/HOL anticipated to reach production use by 2027.</li>
+<li><strong>Continuous verification in CI/CD</strong>: Integration of TLA+ / Alloy model checking as CI/CD gates (GitHub Actions steps) checking state machine invariants on every commit — Amazon’s CBMC (C Bounded Model Checker), AWS CDK’s policy verification, and automated Raft TLA+ checking in distributed database CI pipelines. Expected mainstream adoption in cloud-native toolchains by 2026–2028.</li>
+<li><strong>Edge-AI behaviour trees with guaranteed latency</strong>: BT execution on microcontrollers (ARM Cortex-M4, RISC-V) with worst-case execution time (WCET) analysis (AbsInt’s aiT, OTAWA) for safety-critical robotics; ROS2 real-time executor (rolling releases 2024–2026) enabling deterministic BT ticking at 1kHz on embedded targets. Certified BT libraries for ISO 26262 ASIL D automotive applications anticipated 2026–2028.</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Foundational papers:</strong></p>
+<ul>
+<li>Kleene, S.C. (1956). “Representation of Events in Nerve Nets and Finite Automata”. Princeton Automata Studies, 3–42.</li>
+<li>Mealy, G.H. (1955). “A Method for Synthesizing Sequential Circuits”. Bell System Technical Journal, 34(5), 1045–1079.</li>
+<li>Rabin, M.O. &amp; Scott, D. (1959). “Finite Automata and Their Decision Problems”. IBM Journal R&amp;D, 3(2), 114–125.</li>
+<li>Harel, D. (1987). “Statecharts: A Visual Formalism for Complex Systems”. Science of Computer Programming, 8(3), 231–274.</li>
+<li>Lamport, L. (1978). “Time, Clocks, and the Ordering of Events in a Distributed System”. CACM, 21(7), 558–565.</li>
+<li>Lamport, L. (1998). “The Part-Time Parliament”. ACM TOPLAS, 16(2), 133–169.</li>
+<li>Schneider, F.B. (1990). “Implementing Fault-Tolerant Services Using the State Machine Approach”. ACM Computing Surveys, 22(4), 299–319.</li>
+<li>Ongaro, D. &amp; Ousterhout, J. (2014). “In Search of an Understandable Consensus Algorithm (Raft)“. USENIX ATC 2014.</li>
+<li>Castro, M. &amp; Liskov, B. (1999). “Practical Byzantine Fault Tolerance”. OSDI 1999.</li>
+<li>Alur, R. &amp; Dill, D.L. (1994). “A Theory of Timed Automata”. Theoretical Computer Science, 126(2), 183–235.</li>
+</ul>
+</li>
+<li>
+<p><strong>Books and specifications:</strong></p>
+<ul>
+<li>Hopcroft, J.E., Motwani, R. &amp; Ullman, J.D. (2006). Introduction to Automata Theory, Languages, and Computation. 3rd ed. Pearson.</li>
+<li>Sipser, M. (2012). Introduction to the Theory of Computation. 3rd ed. Cengage.</li>
+<li>Milner, R. (1989). Communication and Concurrency. Prentice Hall.</li>
+<li>Colledanchise, M. &amp; Ögren, P. (2018). Behaviour Trees in Robotics and AI: An Introduction. CRC Press.</li>
+<li>Lamport, L. (2002). Specifying Systems: The TLA+ Language and Tools for Hardware and Software Engineers. Addison-Wesley.</li>
+<li>Wood, G. (2014, updated 2024). Ethereum: A Secure Decentralised Generalised Transaction Ledger (Yellow Paper). ethereum.github.io/yellowpaper.</li>
+<li>OMG (2017). UML 2.5.1 Specification. Object Management Group.</li>
+<li>W3C (2015). SCXML: State Chart XML. W3C Recommendation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Industry / implementation:</strong></p>
+<ul>
+<li>Khourshid, D. (2024). XState v5 Documentation. stately.ai/docs.</li>
+<li>VMware (2024). Spring State Machine Reference Documentation 4.0. spring.io/projects/spring-state-machine.</li>
+<li>OpenZeppelin (2024). OpenZeppelin Contracts v5 StateMachine pattern documentation. docs.openzeppelin.com.</li>
+<li>Ongaro, D. (2014). Raft TLA+ Specification. GitHub: ongardie/raft.tla.</li>
+<li>Desai, A. et al. (2013). “P: Safe Asynchronous Event-Driven Programming”. ACM PLDI 2013.</li>
+<li>Angluin, D. (1987). “Learning Regular Sets from Queries and Counterexamples”. Information and Computation, 75(2), 87–106.</li>
+</ul>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Domain correction</strong>: <code>infrastructure</code> → <code>computer-science</code>. The stub used the generic <code>infrastructure</code> domain inherited from the migration pipeline. State Machine is fundamentally a computer-science / formal-methods concept spanning automata theory, concurrency theory, protocol design, and distributed systems — not an infrastructure concept. IRI updated from <code>http://narrativegoldmine.com/infrastructure#StateMachine</code> to <code>http://narrativegoldmine.com/computer-science#StateMachine</code>; URI, <code>same-as</code>, and <code>owl-class</code> updated correspondingly; legacy-term-id CS-0731 assigned (computer-science prefix).</li>
+<li><strong>Coverage</strong>: Mealy/Moore machines, DFA/NFA/PDA/TM (full Chomsky hierarchy), Harel Statecharts (AND/OR/history/broadcast), SCXML/UML 2.5.1, replicated state machines (Lamport 1978, Schneider 1990), Paxos/Multi-Paxos, Raft, pBFT/Tendermint/HotStuff, EVM as RSM (Yellow Paper), UTXO Bitcoin FSM, L2 rollup state machines, Solidity FSM patterns (CEI, OpenZeppelin), smart contract formal semantics (K framework, TLA+), XState v5 (actor model, createActor, Stately Studio), Spring State Machine 4.0 (persistence, distributed), behaviour trees (BTs: Sequence/Fallback/Parallel/Decorator, py_trees, BehaviorTree.CPP, ROS2 Nav2), automata learning (L*), UK academic context (LFCS Edinburgh/Milner/Plotkin, Oxford CSP/FDR4, Imperial/Gillian, Cambridge PLS, UCL/Silva automata learning, Manchester timed automata), UK industrial (BAE/Rolls-Royce SCADE DO-178C, Thales railway SIL4, Sheffield AMRC, Newcastle SSI Network Rail, Leeds fintech XState).</li>
+<li><strong>Word count</strong>: ~11,200 words</li>
+<li><strong>Line count</strong>: ~640 lines</li>
+<li><strong>OWL axioms</strong>: 41</li>
+<li><strong>Wikilink relationships</strong>: 68</li>
+<li><strong>References</strong>: 27</li>
+<li><strong>Enrichment date</strong>: 2026-05-17T12:00:00Z</li>
+<li><strong>Worker model</strong>: claude-sonnet-4-6</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Kleene, S.C. (1956). “Representation of Events in Nerve Nets and Finite Automata”. Automata Studies, Princeton.</li>
+<li>Rabin, M.O. &amp; Scott, D. (1959). “Finite Automata and Their Decision Problems”. IBM Journal of R&amp;D.</li>
+<li>Mealy, G.H. (1955). “A Method for Synthesizing Sequential Circuits”. Bell System Technical Journal.</li>
+<li>Moore, E.F. (1956). “Gedanken-Experiments on Sequential Machines”. Automata Studies, Princeton.</li>
+<li>Harel, D. (1987). “Statecharts: A Visual Formalism for Complex Systems”. Science of Computer Programming, 8(3).</li>
+<li>Lamport, L. (1978). “Time, Clocks, and the Ordering of Events in a Distributed System”. CACM, 21(7).</li>
+<li>Lamport, L. (1998). “The Part-Time Parliament”. ACM TOPLAS, 16(2).</li>
+<li>Schneider, F.B. (1990). “Implementing Fault-Tolerant Services Using the State Machine Approach”. ACM Computing Surveys, 22(4).</li>
+<li>Ongaro, D. &amp; Ousterhout, J. (2014). “In Search of an Understandable Consensus Algorithm”. USENIX ATC.</li>
+<li>Castro, M. &amp; Liskov, B. (1999). “Practical Byzantine Fault Tolerance”. OSDI 1999.</li>
+<li>Alur, R. &amp; Dill, D.L. (1994). “A Theory of Timed Automata”. Theoretical Computer Science, 126(2).</li>
+<li>Wood, G. (2014). “Ethereum: A Secure Decentralised Generalised Transaction Ledger”. Yellow Paper.</li>
+<li>Colledanchise, M. &amp; Ögren, P. (2018). Behaviour Trees in Robotics and AI. CRC Press.</li>
+<li>Hopcroft, J.E., Motwani, R. &amp; Ullman, J.D. (2006). Introduction to Automata Theory. 3rd ed. Pearson.</li>
+<li>Milner, R. (1989). Communication and Concurrency. Prentice Hall.</li>
+<li>Hoare, C.A.R. (1978). “Communicating Sequential Processes”. CACM, 21(8).</li>
+<li>Lamport, L. (2002). Specifying Systems: The TLA+ Language. Addison-Wesley.</li>
+<li>Holzmann, G.J. (1991). Design and Validation of Computer Protocols. Prentice Hall.</li>
+<li>Angluin, D. (1987). “Learning Regular Sets from Queries and Counterexamples”. Information and Computation, 75(2).</li>
+<li>OMG (2017). UML 2.5.1 Specification.</li>
+<li>W3C (2015). SCXML State Chart XML Recommendation.</li>
+<li>Khourshid, D. (2024). XState v5 Documentation. stately.ai.</li>
+<li>VMware (2024). Spring State Machine Reference 4.0. spring.io.</li>
+<li>OpenZeppelin (2024). Contracts v5 StateMachine Documentation. docs.openzeppelin.com.</li>
+<li>Ongaro, D. (2014). Raft TLA+ Specification. GitHub: ongardie/raft.tla.</li>
+<li>Desai, A. et al. (2013). “P: Safe Asynchronous Event-Driven Programming”. ACM PLDI.</li>
+<li>Sipser, M. (2012). Introduction to the Theory of Computation. 3rd ed. Cengage.</li>
+<li><strong>domain-correction:</strong> infrastructure <span>→</span> computer-science</li>
+<li><strong>iri-correction:</strong> <a href="http://narrativegoldmine.com/infrastructure#StateMachine" class="external">http://narrativegoldmine.com/infrastructure#StateMachine<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <span>→</span> <a href="http://narrativegoldmine.com/computer-science#StateMachine" class="external">http://narrativegoldmine.com/computer-science#StateMachine<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><strong>uri-correction:</strong> urn:visionclaw:concept:infrastructure:state-machine <span>→</span> urn:visionclaw:concept:computer-science:state-machine</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-5322" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-state-machines" data-for="about-state-machines">About State Machines</a></li><li class="depth-1"><a href="#mealy-vs-moore-machines" data-for="mealy-vs-moore-machines">Mealy vs Moore Machines</a></li><li class="depth-1"><a href="#harel-statecharts-and-hierarchical-state-machines" data-for="harel-statecharts-and-hierarchical-state-machines">Harel Statecharts and Hierarchical State Machines</a></li><li class="depth-1"><a href="#pushdown-automata-and-parsing" data-for="pushdown-automata-and-parsing">Pushdown Automata and Parsing</a></li><li class="depth-1"><a href="#turing-machines-and-computability" data-for="turing-machines-and-computability">Turing Machines and Computability</a></li><li class="depth-1"><a href="#replicated-state-machines" data-for="replicated-state-machines">Replicated State Machines</a></li><li class="depth-1"><a href="#blockchain-l1l2-as-replicated-state-machines" data-for="blockchain-l1l2-as-replicated-state-machines">Blockchain L1/L2 as Replicated State Machines</a></li><li class="depth-1"><a href="#smart-contract-state-machine-semantics" data-for="smart-contract-state-machine-semantics">Smart Contract State Machine Semantics</a></li><li class="depth-1"><a href="#xstate-typescript" data-for="xstate-typescript">XState (TypeScript)</a></li><li class="depth-1"><a href="#spring-state-machine-java" data-for="spring-state-machine-java">Spring State Machine (Java)</a></li><li class="depth-1"><a href="#behaviour-trees-in-robotics-and-game-ai" data-for="behaviour-trees-in-robotics-and-game-ai">Behaviour Trees in Robotics and Game AI</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial" data-for="uk-context-imperial--edinburgh--ucl--cambridge--manchester-academic-northern-english-industrial">UK Context (Imperial / Edinburgh / UCL / Cambridge / Manchester academic; Northern English industrial)</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Game-Mechanics" class="internal">Game Mechanics</a></li><li><a href="../pages/Multi-Agent-Orchestration-Frameworks" class="internal">Multi-Agent Orchestration Frameworks</a></li><li><a href="../pages/Simulation" class="internal">Simulation</a></li><li><a href="../pages/Workflow-Automation" class="internal">workflow automation</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

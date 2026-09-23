@@ -1,0 +1,72 @@
+
+MiCA (Markets in Crypto-Assets Regulation, EU 2023/1114) is the European Union's comprehensive legal framework governing crypto-assets not already covered by existing financial services legislation such as MiFID II. It classifies crypto-assets into three categories — utility tokens, asset-referenced tokens (ARTs), and e-money tokens (EMTs) — imposing tiered obligations on issuers including mandatory white-paper disclosures, capital adequacy requirements, and reserve safeguards for stablecoins. Crypto-asset service providers (CASPs) — encompassing exchanges, custodians, portfolio managers, and advisers — must obtain authorisation from a national competent authority with passporting rights across the EU single market. MiCA entered into force in June 2023 with stablecoin provisions applying from June 2024 and the full CASP regime from December 2024, making it one of the world's first end-to-end crypto regulatory regimes.
+
+- ### Overview
+  - MiCA was proposed by the European Commission in September 2020 as part of the [[EU Digital Finance Strategy]] and adopted by co-legislators in April 2023. Its central aim is to eliminate regulatory fragmentation across EU member states — where previously each jurisdiction applied disparate national regimes — by creating a single [[EU Passporting]] mechanism: a CASP authorised in one member state may operate across the entire [[EU Single Market]].
+  - The regulation responds to the proliferation of [[Stablecoin]]s, the collapse of certain algorithmic token projects, and growing systemic risk concerns within centralised [[Cryptocurrency Exchange]] platforms. It is explicitly technology-neutral but asset-class specific, and deliberately excludes [[Non-Fungible Token]]s (unless they have fungible investment characteristics) and [[Decentralised Finance]] protocols lacking an identifiable issuer.
+  - Two European supervisory authorities share responsibility: the [[European Banking Authority]] (EBA) regulates significant ARTs and EMTs, while the [[European Securities and Markets Authority]] (ESMA) oversees CASPs and issues technical standards across the board.
+
+- ### Key Components
+  - #### Asset Classification
+    - **Utility Tokens** — tokens granting access to a product or service on a [[Distributed Ledger Technology]] platform; lightest disclosure requirements.
+    - **[[Asset-Referenced Token]]s (ARTs)** — tokens referencing a basket of assets (currencies, commodities, other crypto-assets); requires [[EBA]] authorisation if significant; strict reserve and redemption rules.
+    - **[[E-Money Token]]s (EMTs)** — tokens referencing a single fiat currency; functionally equivalent to [[Electronic Money]] and regulated accordingly; issuers must hold equivalent funds in segregated reserve accounts.
+  - #### Crypto-Asset White Paper
+    - All public offerings require a mandatory [[Crypto-Asset White Paper]] with prescribed contents: token economics, issuer identity, rights conferred, technology description, risk factors, and environmental sustainability data (reflecting [[EU Taxonomy Regulation]] alignment).
+    - White papers must be notified to the [[National Competent Authority]] but are not pre-approved for most token types (liability rests with the issuer).
+  - #### CASP Authorisation & Passporting
+    - Entities providing custody, exchange, brokerage, advisory, or portfolio management services for crypto-assets must apply to a home-state regulator for CASP status.
+    - Once authorised, passporting under [[EU Passporting]] rules allows cross-border service provision with only notification (not re-authorisation) in host states.
+    - Minimum capital requirements scale by service type; custody providers face additional requirements on segregation and insurance.
+  - #### Significant Stablecoin Regime
+    - ARTs and EMTs classified as "significant" (exceeding thresholds for user base, transaction volume, or market capitalisation) are transferred to direct [[EBA]] supervision.
+    - Significant issuers face daily transaction limits, enhanced liquidity buffers, interoperability requirements, and closer monitoring by the [[European Systemic Risk Board]].
+  - #### Market Abuse Framework
+    - MiCA introduces crypto-specific prohibitions on insider trading, unlawful disclosure of inside information, and market manipulation — mirroring the [[Market Abuse Regulation]] (MAR) provisions that apply to securities.
+    - CASPs must maintain surveillance systems, report suspicious transactions, and publish inside information promptly.
+  - #### Consumer Protection
+    - Retail-oriented disclosure obligations, right-of-withdrawal for utility tokens in primary offerings (14-day cooling-off), and prohibition on certain high-risk marketing techniques.
+    - Best execution and conflicts-of-interest requirements extend duties familiar from [[MiFID II]] into the crypto context.
+
+- ### Mechanisms
+  - **Regulatory Arbitrage Prevention** — single rulebook eliminates jurisdiction shopping within the EU; combined with the [[Transfer of Funds Regulation]] (TFR/Travel Rule) requiring CASPs to transmit originator and beneficiary data on transfers, aligned with [[FATF Travel Rule]].
+  - **AML Integration** — MiCA is complemented by [[Anti-Money Laundering]] directives (AMLD6 and the forthcoming AML Regulation); CASPs are obligated entities under AML law, must perform [[Know Your Customer]] (KYC) checks and submit [[Suspicious Activity Report]]s.
+  - **Technical Standards** — ESMA and EBA publish Regulatory Technical Standards (RTS) and Implementing Technical Standards (ITS) detailing authorisation procedures, white-paper templates, and CASP operational requirements; these are delegated acts with legally binding force.
+  - **Supervisory Colleges** — for cross-border CASPs and significant token issuers, supervisory colleges of home and host regulators coordinate to avoid supervisory gaps.
+
+- ### Applications / Use Cases
+  - **[[Cryptocurrency Exchange]]s** — major centralised exchanges operating in the EU (Coinbase, Bitstamp, Kraken EU entities) obtained or applied for CASP licences, restructuring compliance programmes around MiCA's operational standards.
+  - **[[Stablecoin]] Issuers** — Circle (USDC) and Société Générale (EUR CoinVertible) adapted reserve and redemption structures to meet ART/EMT requirements; Tether paused Euro-denominated EURT issuance pending compliance assessment.
+  - **Institutional [[Digital Asset]] Custody** — banks and trust companies leveraging MiCA to offer regulated crypto custody services within their existing MiFID II licence structures where permitted.
+  - **[[Tokenisation]] of Real-World Assets** — MiCA's framework for ARTs provides a pathway for tokenised bonds and commodities where the underlying basket meets the ART definition, complementing the [[DLT Pilot Regime]] for tokenised securities.
+  - **[[Central Bank Digital Currency]] Interoperability** — MiCA creates a regulatory environment that supervisors expect will eventually need to interface with the [[Digital Euro]] project overseen by the [[European Central Bank]].
+  - **RegTech Compliance Tools** — a wave of [[RegTech]] providers built automated white-paper generation, transaction monitoring, and travel-rule compliance tooling specifically targeting MiCA obligations.
+
+- ### Standards & Context
+  - **Legislative Instrument** — [[Regulation (EU) 2023/1114 on Markets in Crypto-Assets]], published in the Official Journal of the EU, 9 June 2023; directly applicable in all member states without transposition.
+  - **Companion Legislation** — [[Digital Operational Resilience Act]] ([[DORA]]) (EU 2022/2554) applies concurrently to CASPs as ICT-regulated entities; [[Transfer of Funds Regulation]] (TFR, EU 2023/1113) extends [[FATF Travel Rule]] to crypto; [[AML Regulation]] package (2024) will supersede AMLD6 obligations.
+  - **DLT Pilot Regime** — [[Regulation (EU) 2022/858]] creates a sandbox for [[Distributed Ledger Technology]]-based trading and settlement infrastructure, complementing MiCA for tokenised financial instruments under [[MiFID II]] scope.
+  - **Global Context** — MiCA has emerged as a reference model for comparable initiatives: the UK's [[Financial Services and Markets Act 2023]] crypto regime, Hong Kong's VASP licensing regime, Singapore's [[MAS Digital Token]] framework, and [[IOSCO]] crypto policy recommendations all reference or contrast with MiCA.
+  - **[[OECD]] Crypto-Asset Reporting Framework (CARF)** — a separate tax-reporting standard requiring CASPs to report user transaction data to tax authorities, operationally bundled with MiCA compliance programmes but legally distinct.
+  - **Supervisory Bodies** — [[EBA]] (significant ARTs and EMTs), [[ESMA]] (CASPs and technical standards), [[European Systemic Risk Board]] (ESRB, macro-prudential monitoring of significant stablecoins), and national competent authorities (NCAs, e.g. BaFin in Germany, AMF in France, CBI in Ireland).
+  - **Exclusions** — [[Non-Fungible Token]]s with unique characteristics, [[Decentralised Finance]] with no identifiable issuer, intra-group tokens, and instruments already regulated under [[MiFID II]], [[Solvency II]], or the [[Capital Requirements Regulation]] are outside MiCA's scope.
+
+- ### Current Landscape (2026)
+  - MiCA became fully applicable on 1 July 2026 when the last national grandfathering windows closed; ESMA's public register listed roughly 309 authorised CASPs (up from about 102 in December 2025), around 19 authorised e-money-token issuers, and still no authorised asset-referenced-token (ART) issuer as of Q1-Q3 2026.
+  - The transition was sharply selective: only about 210 of the 1,200-plus firms that held pre-MiCA national VASP registrations converted to full CASP authorisation (a roughly 17 per cent conversion rate), and ten member states including Italy, Poland, Portugal and Estonia had produced zero public CASP authorisations by mid-2026.
+  - ESMA's 17 January 2025 statement forced CASPs to stop trading and brokerage of non-compliant stablecoins by end-January 2025 (sell-only until end-Q1 2025), triggering a delisting wave: Coinbase from December 2024, Crypto.com in January 2025 and Binance removing nine stablecoins including USDT, TUSD and DAI for EEA users on 31 March 2025.
+  - Circle emerged as the compliance winner, holding an ACPR electronic-money-institution licence (July 2024) for USDC and EURC and gaining full CASP authorisation from France's AMF on 20 April 2026; USDC and EURC are the only top-ten stablecoins fully MiCA-compliant, while Tether declined authorisation (citing the reserve requirement to hold a large share of deposits in EU banks) and USDT remains excluded from EU-regulated venues.
+  - Major venues secured passports through varied hubs: Coinbase via Luxembourg's CSSF (June 2025, the first US exchange authorised) and later Ireland, Kraken via Ireland and Luxembourg, Bitpanda (Austria), Bitvavo (Netherlands), OKX and Crypto.com via Malta's MFSA, Bitstamp (Luxembourg), Revolut via Cyprus's CySEC, and Binance passporting across all 27 states after redomiciling its EU entity.
+  - Standards-setting continued through 2025-2026 Commission Delegated and Implementing Regulations fleshing out RTS/ITS (e.g. 2025/299 on continuity, 2025/305-306 on CASP authorisation applications, 2025/1140 on record-keeping), and ESMA guidelines on staff knowledge and competence took effect on 28 January 2026.
+  - The frontier debate is supervisory architecture: the Commission's Market Integration and Supervision Package proposes transferring direct supervision of all CASPs (and crypto market-abuse oversight) from national competent authorities to ESMA, reflecting concerns about regulatory arbitrage and uneven enforcement across member states.
+  - Open challenges as of 2026 include the total absence of authorised ART issuers, the enforcement burden of winding down significant unauthorised providers after the 1 July hard cut (no extensions, per ESMA's 17 April 2026 statement), and the perimeter gap whereby self-custody and DeFi remain outside MiCA, leaving USDT liquid off-venue despite delisting.
+
+- ### References
+  - 1. Cryptoeconomics (2026). European Union — MiCA jurisdiction tracker (transitional period ended 1 July 2026; 309 authorised CASPs). https://cryptoeconomics.com/jurisdictions/european-union/
+  - 2. ESMA (2026). Public Statement: ESMA calls on unauthorised crypto-asset service providers to wind down orderly (MiCA transitional period ends 1 July 2026). https://www.esma.europa.eu/sites/default/files/2026-06/ESMA75-113276571-1710_Public_Statement_MiCA_transitional_period_ends.pdf
+  - 3. European Systemic Risk Board (2025). Crypto-assets and decentralised finance (EMT issuance and stablecoin delisting under MiCAR). https://www.esrb.europa.eu/pub/pdf/reports/esrb.report202510_cryptoassets.en.pdf
+  - 4. Yahoo Finance / Traceegroup (2026). July 1 MiCA Deadline Looms: conversion rates, CASP licences and Circle vs Tether. https://finance.yahoo.com/markets/crypto/articles/july-1-mica-deadline-looms-103215096.html
+  - 5. Latham & Watkins LLP (2026). MiCA: Requirements for CASPs — regulation tracker (2025-2026 Delegated/Implementing Regulations; ESMA supervision proposal). https://www.lw.com/en/markets-in-crypto-assets-regulation-tracker/mica-requirements-casps
+
+- ### Provenance
+

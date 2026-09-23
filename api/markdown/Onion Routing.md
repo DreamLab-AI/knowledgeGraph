@@ -1,0 +1,12 @@
+
+Onion routing is an anonymous-communication technique in which messages are wrapped in successive layers of encryption and relayed through a sequence of intermediary nodes, each of which removes one layer to learn only the next hop. Because no single relay knows both the source and destination, onion routing conceals the network path and protects communication metadata. It is the basis of the Tor network and is adapted in systems such as the Lightning Network for private multi-hop payment forwarding.
+
+- ### Content
+  - Onion routing attacks a problem that ordinary encryption leaves unsolved: even when message contents are encrypted, the metadata of who is talking to whom, when, and how much remains exposed and is often more revealing than the content itself. By routing traffic through a chain of relays and ensuring no single relay sees the whole path, onion routing breaks the linkage between sender and receiver that traffic analysis depends on.
+
+  - The construction is layered like an onion. The sender selects a path of relays and encrypts the message in nested layers, one per relay, using each relay's public key. As the packet travels, each relay decrypts its outermost layer, revealing only the address of the next hop and an inner ciphertext it cannot read, then forwards it. The first relay knows the sender but not the destination; the last knows the destination but not the sender; and the middle relays know neither endpoint.
+
+  - Tor is the most prominent deployment, building circuits of three relays — entry, middle, and exit — to give millions of users anonymous access to the internet and to host hidden services reachable only within the network. Onion routing provides strong protection against local and single-relay adversaries, though it is not a panacea: a global adversary able to observe both ends of a circuit can attempt traffic-correlation attacks, and exit nodes see unencrypted destination traffic unless end-to-end encryption is also used.
+
+  - The technique generalises well beyond web browsing. The Lightning Network adapts onion routing so that a multi-hop payment's intermediary nodes each learn only their adjacent hops, preserving the privacy of who is paying whom across the payment graph. In both anonymity networks and private payments, onion routing embodies a powerful principle: distributing knowledge across mutually distrusting relays so that privacy and censorship resistance emerge from the structure of the protocol rather than from trusting any single party.
+

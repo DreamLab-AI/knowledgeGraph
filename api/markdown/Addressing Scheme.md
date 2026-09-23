@@ -1,0 +1,8 @@
+
+An addressing scheme is a systematic convention for assigning, structuring, and resolving identifiers that locate resources, nodes, or content within a namespace. Schemes range from hierarchical and human-readable forms such as IP addresses and URLs to flat cryptographic forms such as content hashes and public-key fingerprints. The defining properties of an addressing scheme are its uniqueness guarantees, its resolution mechanism, and whether addresses are location-based, identity-based, or content-derived. Addressing schemes underpin routing, naming, and reference integrity across networked and decentralised systems.
+
+- ### Content
+  - Addressing schemes divide broadly into location-based and content-based families. Location-based schemes such as IP addressing and DNS hostnames identify where a resource currently resides, requiring update when the resource moves. Content-based schemes derive the address from a cryptographic hash of the content, yielding immutable, self-verifying references that decouple identity from location.
+
+  - In decentralised systems the choice of addressing scheme determines censorship resistance, deduplication behaviour, and verifiability. Content-addressed stores such as IPFS guarantee that retrieving an address yields exactly the intended bytes, while identity-based schemes such as DIDs allow stable references to mutable resources controlled by a key holder.
+

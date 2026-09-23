@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Motion Capture</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Motion Capture"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Motion Capture"/><meta name="twitter:description" content="Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data i… S..."/><meta property="og:description" content="Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data i… S..."/><meta property="og:image:alt" content="Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data i… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Motion-Capture"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Motion-Capture"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data i… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Motion-Capture"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-5059"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-5059" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Motion Capture</a></div></nav><h1 class="article-title">Motion Capture</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.829Z">23 Sept 2026</time><span>33 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:motion-capture</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>spatial-computing</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Content-and-Assets" class="internal">Content and Assets</a></li><li><a href="../pages/Animation" class="internal">Animation</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../Spatial-Computing-Paradigm" class="internal">Spatial Computing Paradigm</a></li><li><a href="../pages/Biomechanics" class="internal">Biomechanics</a></li><li><a href="../pages/Performance-Capture" class="internal">Performance Capture</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Animation-Rig" class="internal">Blendshape Rig</a></li><li><a href="../pages/Facial-Capture-System" class="internal">Facial Capture System</a></li><li><a href="../imu-suit" class="internal">IMU Suit</a></li><li><a href="../pages/Optical-Tracking" class="internal">Optical Tracking System</a></li><li><a href="../pages/Skeletal-Animation" class="internal">Skeletal Animation</a></li><li><a href="../pages/Volumetric-Capture" class="internal">Volumetric Capture</a></li><li><a href="../Optical-Tracking-System" class="internal">Optical Tracking System</a></li><li><a href="../Retargeting-Solver" class="internal">Retargeting Solver</a></li><li><a href="../Blendshape-Rig" class="internal">Blendshape Rig</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../calibration" class="internal">Calibration</a></li><li><a href="../camera-array" class="internal">Camera Array</a></li><li><a href="../pages/Infrared-Light-Source" class="internal">Infrared Lighting</a></li><li><a href="../pages/3D-Reconstruction" class="internal">3D Reconstruction</a></li><li><a href="../Infrared-Lighting" class="internal">Infrared Lighting</a></li><li><a href="../Body-Rig" class="internal">Body Rig</a></li><li><a href="../Temporal-Filtering" class="internal">Temporal Filtering</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Digital-Humans" class="internal">Digital Humans</a></li><li><a href="../pages/Film-VFX" class="internal">Film VFX</a></li><li><a href="../pages/Video-Games" class="internal">Games</a></li><li><a href="../pages/Real-Time-Animation" class="internal">Real-Time Animation</a></li><li><a href="../pages/Sports-Analytics" class="internal">Sports Analytics</a></li><li><a href="../Virtual-Production" class="internal">Virtual Production</a></li><li><a href="../Digital-Human" class="internal">Digital Human</a></li><li><a href="../Games" class="internal">Games</a></li><li><a href="../Robotics-Training-Data" class="internal">Robotics Training Data</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../AI-Body-Pose-Estimation" class="internal">AI Body Pose Estimation</a></li><li><a href="../Video-Rotoscoping" class="internal">Video Rotoscoping</a></li><li><a href="../pages/Keyframe-Animation" class="internal">Keyframe Animation</a></li><li><a href="../pages/Procedural-Animation" class="internal">Procedural Animation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Signal-Processing" class="internal">Signal Processing</a></li><li><a href="../Geometric-Algebra" class="internal">Geometric Algebra</a></li><li><a href="../pages/Unreal-Engine" class="internal">Unreal Engine</a></li><li><a href="../pages/Unity" class="internal">Unity</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../HardwareLayer" class="internal">HardwareLayer</a></li><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li><li><a href="../PipelineLayer" class="internal">PipelineLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Facial-Action-Coding-System" class="internal">Action Unit Encoding</a></li><li><a href="../bundle-adjustment" class="internal">Bundle Adjustment</a></li><li><a href="../pages/SMPL-Body-Model" class="internal">SMPL Body Model</a></li><li><a href="../pages/Inverse-Kinematics" class="internal">Inverse Kinematics</a></li><li><a href="../pages/Kalman-Filter" class="internal">Kalman Filter</a></li><li><a href="../pages/Pose-Estimation" class="internal">Pose Estimation</a></li><li><a href="../Action-Unit-Encoding" class="internal">Action Unit Encoding</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>CT-0051</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../action-unit-encoding" class="internal">Action Unit Encoding</a></li><li><a href="../ai-body-pose-estimation" class="internal">AI Body Pose Estimation</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../animation" class="internal">Animation</a></li><li><a href="../apple-arkit" class="internal">Apple ARKit</a></li><li><a href="../biomechanics" class="internal">Biomechanics</a></li><li><a href="../blendshape-rig" class="internal">Blendshape Rig</a></li><li><a href="../body-rig" class="internal">Body Rig</a></li><li><a href="../bundle-adjustment" class="internal">Bundle Adjustment</a></li><li><a href="../bvh-format" class="internal">BVH Format</a></li><li><a href="../c3-d-format" class="internal">C3D Format</a></li><li><a href="../calibration" class="internal">Calibration</a></li><li><a href="../camera-array" class="internal">Camera Array</a></li><li><a href="../cinematics" class="internal">Cinematics</a></li><li><a href="../cloth-simulation" class="internal">Cloth Simulation</a></li><li><a href="../computer-vision" class="internal">ComputerVisionDomain</a></li><li><a href="../creative-tools-domain" class="internal">CreativeToolsDomain</a></li><li><a href="../deep-lab-cut" class="internal">DeepLabCut</a></li><li><a href="../digital-human" class="internal">Digital Human</a></li><li><a href="../digital-twins" class="internal">Digital Twins</a></li><li><a href="../extended-reality" class="internal">Extended Reality</a></li><li><a href="../faceware" class="internal">Faceware</a></li><li><a href="../facial-animation" class="internal">Facial Animation</a></li><li><a href="../facial-capture-system" class="internal">Facial Capture System</a></li><li><a href="../fbx-format" class="internal">FBX Format</a></li><li><a href="../film-vfx" class="internal">Film VFX</a></li><li><a href="../games" class="internal">Games</a></li><li><a href="../geometric-algebra" class="internal">Geometric Algebra</a></li><li><a href="../hardware-layer" class="internal">HardwareLayer</a></li><li><a href="../imu-sensor-fusion" class="internal">IMU Sensor Fusion</a></li><li><a href="../imu-suit" class="internal">IMU Suit</a></li><li><a href="../infrared-lighting" class="internal">Infrared Lighting</a></li><li><a href="../keyframe-animation" class="internal">Keyframe Animation</a></li><li><a href="../media-pipe" class="internal">MediaPipe</a></li><li><a href="../medical-simulation" class="internal">Medical Simulation</a></li><li><a href="../opti-track" class="internal">OptiTrack</a></li><li><a href="../optical-flow" class="internal">Optical Flow</a></li><li><a href="../optical-tracking-system" class="internal">Optical Tracking System</a></li><li><a href="../performance-capture" class="internal">Performance Capture</a></li><li><a href="../pipeline-layer" class="internal">PipelineLayer</a></li><li><a href="../qualisys" class="internal">Qualisys</a></li><li><a href="../real-time-animation" class="internal">Real-Time Animation</a></li><li><a href="../retargeting-solver" class="internal">Retargeting Solver</a></li><li><a href="../robotics-training-data" class="internal">Robotics Training Data</a></li><li><a href="../rokoko" class="internal">Rokoko</a></li><li><a href="../skeletal-animation" class="internal">Skeletal Animation</a></li><li><a href="../smpl-body-model" class="internal">SMPL Body Model</a></li><li><a href="../spatial-computing-domain" class="internal">SpatialComputingDomain</a></li><li><a href="../sports-analytics" class="internal">Sports Analytics</a></li><li><a href="../temporal-filtering" class="internal">Temporal Filtering</a></li><li><a href="../unity" class="internal">Unity</a></li><li><a href="../usd-pipeline" class="internal">USD Pipeline</a></li><li><a href="../vicon" class="internal">Vicon</a></li><li><a href="../video-rotoscoping" class="internal">Video Rotoscoping</a></li><li><a href="../xsens" class="internal">Xsens</a></li><li><a href="../3-d-reconstruction" class="internal">3D Reconstruction</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../convolutional-neural-network" class="internal">Convolutional Neural Network</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../eye-tracking" class="internal">Eye Tracking</a></li><li><a href="../graph-neural-network" class="internal">Graph Neural Network</a></li><li><a href="../hand-tracking" class="internal">Hand Tracking</a></li><li><a href="../inverse-kinematics" class="internal">Inverse Kinematics</a></li><li><a href="../kalman-filter" class="internal">Kalman Filter</a></li><li><a href="../metaverse" class="internal">Metaverse</a></li><li><a href="../open-xr" class="internal">OpenXR</a></li><li><a href="../physics-simulation" class="internal">Physics Simulation</a></li><li><a href="../pose-estimation" class="internal">Pose Estimation</a></li><li><a href="../procedural-animation" class="internal">Procedural Animation</a></li><li><a href="../signal-processing" class="internal">Signal Processing</a></li><li><a href="../spatial-computing" class="internal">Spatial Computing</a></li><li><a href="../transformer" class="internal">Transformer</a></li><li><a href="../unreal-engine" class="internal">Unreal Engine</a></li><li><a href="../virtual-production" class="internal">Virtual Production</a></li><li><a href="../volumetric-capture" class="internal">Volumetric Capture</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:2922b8452583ba0cb6b4b3c51521cd87070a3a436cb8c6e2ef96b6d439087054</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Cloth-Simulation" class="internal">Cloth Simulation</a></li><li><a href="../pages/Facial-Animation" class="internal">Facial Animation</a></li><li><a href="../pages/Eye-Tracking" class="internal">Eye Tracking</a></li><li><a href="../pages/Hand-Tracking" class="internal">Hand Tracking</a></li><li><a href="../pages/Physics-Simulation" class="internal">Physics Simulation</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/3D-File-Format" class="internal">C3D Format</a></li><li><a href="../pages/FBX" class="internal">FBX Format</a></li><li><a href="../pages/USD-Pipeline" class="internal">USD Pipeline</a></li><li><a href="../pages/OpenXR" class="internal">OpenXR</a></li><li><a href="../BVH-Format" class="internal">BVH Format</a></li><li><a href="../C3D-Format" class="internal">C3D Format</a></li><li><a href="../FBX-Format" class="internal">FBX Format</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Extended-Reality" class="internal">Extended Reality</a></li><li><a href="../pages/Medical-Simulation" class="internal">Medical Simulation</a></li><li><a href="../pages/Metaverse" class="internal">Metaverse</a></li><li><a href="../Digital-Twins" class="internal">Digital Twins</a></li><li><a href="../Cinematics" class="internal">Cinematics</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Sensor-Fusion" class="internal">IMU Sensor Fusion</a></li><li><a href="../pages/Optical-Flow" class="internal">Optical Flow</a></li><li><a href="../pages/Convolutional-Neural-Network" class="internal">Convolutional Neural Network</a></li><li><a href="../pages/Graph-Neural-Network" class="internal">Graph Neural Network</a></li><li><a href="../pages/Transformer" class="internal">Transformer</a></li><li><a href="../IMU-Sensor-Fusion" class="internal">IMU Sensor Fusion</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time — translating real-world kinematic data i…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:OpticalTrackingSystem))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:IMUSuit))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:FacialCaptureSystem))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:VolumetricCapture))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:RetargetingSolver))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:SkeletalAnimation))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:hasPart ct:BlendshapeRig))
+
+  ## Dependency Relationships
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:requires ct:CameraArray))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:requires ct:Calibration))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:requires ct:BodyRig))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:requires ct:TemporalFiltering))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:requires ct:3DReconstruction))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:dependsOn ct:DeepLearning))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:dependsOn ct:SignalProcessing))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:dependsOn ct:GeometricAlgebra))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:dependsOn ct:UnrealEngine))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:dependsOn ct:IMUSensorFusion))
+
+  ## Capability Relationships
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:enables ct:DigitalHuman))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:enables ct:RealTimeAnimation))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:enables ct:VirtualProduction))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:enables ct:FilmVFX))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:enables ct:SportsAnalytics))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:enables ct:RoboticsTrainingData))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:supports ct:Metaverse))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:supports ct:ExtendedReality))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:supports ct:MedicalSimulation))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:supports ct:Cinematics))
+
+  ## Implementation Relationships
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:implements ct:PoseEstimation))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:implements ct:InverseKinematics))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:implements ct:BundleAdjustment))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:implements ct:KalmanFilter))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:implements ct:SMPLBodyModel))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:implements ct:ActionUnitEncoding))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:uses ct:ConvolutionalNeuralNetwork))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:uses ct:Transformer))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:uses ct:GraphNeuralNetwork))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:uses ct:OpticalFlow))
+
+  ## Reduction Relationships
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:reduces ct:AnimationProductionCost))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:reduces ct:KeyframingLabour))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:reduces ct:PostProductionTime))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:reduces ct:HardwareBarrier))
+  SubClassOf(ct:MotionCapture
+    ObjectSomeValuesFrom(ct:reduces ct:StudioSpaceRequirement))
+
+  ## Data Properties and Annotations
+  DataPropertyAssertion(ct:hasIdentifier ct:MotionCapture &quot;CT-0051&quot;^^xsd:string)
+  DataPropertyAssertion(ct:authorityScore ct:MotionCapture &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ct:marketSizeUSD ct:MotionCapture &quot;245000000&quot;^^xsd:integer)
+  DataPropertyAssertion(ct:opticalAccuracyMM ct:MotionCapture &quot;0.3&quot;^^xsd:decimal)
+  DataPropertyAssertion(ct:imuLatencyMS ct:MotionCapture &quot;10&quot;^^xsd:integer)
+  DataPropertyAssertion(ct:markerlessErrorMM ct:MotionCapture &quot;15&quot;^^xsd:decimal)
+  DataPropertyAssertion(ct:marketCAGRPercent ct:MotionCapture &quot;12&quot;^^xsd:decimal)
+  AnnotationAssertion(rdfs:label ct:MotionCapture &quot;Motion Capture&quot;@en)
+  AnnotationAssertion(rdfs:comment ct:MotionCapture &quot;Technology pipeline recording body, face, and object movement in 3D space via optical marker arrays, IMU suits, markerless AI inference, and volumetric reconstruction — driving character animation in film, games, VR, sports science, and robotics.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ct:MotionCapture &quot;CT-0051&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ct:MotionCapture &quot;Motion Capture, Animation, Computer Vision, Digital Human, Pose Estimation&quot;@en)
+
+  ## Property Characteristics
+  AsymmetricObjectProperty(ct:requires)
+  AsymmetricObjectProperty(ct:enables)
+  AsymmetricObjectProperty(ct:implements)
+  AsymmetricObjectProperty(ct:reduces)
+  TransitiveObjectProperty(ct:dependsOn)
+  FunctionalDataProperty(ct:opticalAccuracyMM)
+  FunctionalDataProperty(ct:marketSizeUSD)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-motion-capture">About Motion Capture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-motion-capture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Motion Capture</strong> is a multidisciplinary production and research domain that bridges physical performance and digital animation by recording and encoding real-world movement as machine-processable skeletal, surface, or volumetric data.</p>
+</li>
+<li>
+<p>It is indispensable to modern entertainment production: blockbuster visual effects (Avatar: The Way of Water, Planet of the Apes series, Marvel Cinematic Universe), AAA game cinematics (The Last of Us, Call of Duty, Hellblade II), animated feature films, and sports broadcast overlays all depend on mocap pipelines operating at industrial scale.</p>
+</li>
+<li>
+<p>Beyond entertainment, motion capture underpins clinical gait analysis, prosthetics tuning, athletic performance optimisation, surgical training, industrial ergonomics, and increasingly provides ground-truth training data for embodied AI and robotics.</p>
+</li>
+<li>
+<p>The field is undergoing a structural transition driven by <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a>: optical marker-based systems that required calibrated studio environments, specialist operators, and multi-thousand-pound hardware budgets are facing displacement pressure from AI-powered markerless inference tools (Move.ai, Plask, Radical) capable of extracting usable skeletal animation from ordinary smartphone video.</p>
+</li>
+<li>
+<p>This democratisation compresses the production funnel — independent creators, indie game studios, and small broadcast operators can access kinematic data previously available only to major studios.</p>
+</li>
+<li>
+<p>At the same time, established optical vendors (OptiTrack, Vicon, Qualisys) are integrating ML solvers into their pipelines to automate marker labelling, gap filling, and retargeting, lifting throughput and reducing operator burden without abandoning the accuracy advantages of retroreflective tracking.</p>
+</li>
+<li>
+<p>The dominant downstream target for motion capture data has shifted decisively toward real-time game engines. <a href="../pages/Unreal-Engine" class="internal alias" data-slug="pages/Unreal-Engine">Unreal Engine</a> 5’s <strong>MetaHuman Animator</strong> (shipping with UE 5.3, September 2023) and <strong>Live Link Face</strong> app transform iPhone TrueDepth camera data into photorealistic facial performance capture usable in real-time cinematic pipelines.</p>
+</li>
+<li>
+<p><a href="../pages/Unity" class="internal" data-slug="pages/Unity">Unity</a>’s <strong>Animation Rigging</strong> and <strong>Kinematica</strong> packages support procedural motion matching and constraint-based secondary dynamics.</p>
+</li>
+<li>
+<p>The <strong>USD (Universal Scene Description)</strong> pipeline, mandated by major studios and VFX facilities, provides the interchange substrate across DCC tools (Maya, MotionBuilder, Houdini, Blender), game engines, and render farms — making <a href="../pages/USD-Pipeline" class="internal alias" data-slug="pages/USD-Pipeline">USD Pipeline</a> the practical standard for mocap data exchange across the production ecosystem.</p>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="optical-marker-based-systems">Optical Marker-Based Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#optical-marker-based-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Optical mocap remains the gold standard for accuracy-critical applications such as visual effects, biomechanical research, and premium game production.</p>
+</li>
+<li>
+<p>The core architecture comprises a calibrated infrared <a href="../Camera-Array" class="internal alias" data-slug="Camera-Array">Camera Array</a> (8–100+ cameras for full-body studio setups), retroreflective markers (12–68 mm diameter spheres) attached to the performer at anatomical landmarks, and dedicated tracking software applying multi-view triangulation to reconstruct 3D marker trajectories at high frame rates.</p>
+</li>
+<li>
+<p><strong>OptiTrack</strong> (NaturalPoint, Corvallis OR): The dominant mid-to-high-end system by installed base. The Prime series cameras (Prime 17W, Prime 41, Slim 3U) operate at 120–360 fps with sub-millimetre accuracy (0.1–0.3 mm RMS residual). Motive software handles camera <a href="../pages/Calibration" class="internal" data-slug="pages/Calibration">Calibration</a>, marker labelling via skeleton templates (Baseline.17, Full Body 37-marker sets), rigid body tracking, and export to FBX/C3D/BVH.</p>
+</li>
+<li>
+<p>Used by Electronic Arts, Activision, and the NBA’s player tracking programme. The <strong>OptiTrack Deformation</strong> toolkit (2024) uses per-body statistical shape models to handle soft-tissue deformation artefacts. Real-time streaming via NatNet SDK feeds <a href="../pages/Unreal-Engine" class="internal alias" data-slug="pages/Unreal-Engine">Unreal Engine</a> Live Link and <a href="../pages/Unity" class="internal" data-slug="pages/Unity">Unity</a> directly.</p>
+</li>
+<li>
+<p><strong>Vicon</strong> (Oxford, UK): Premium vendor historically dominant in film VFX and university biomechanics labs. Vantage cameras (2, 5, 8, 16 MP) at 2,000 fps; Nexus software offers automatic labelling via machine-learning skeleton models trained on studio-specific marker sets.</p>
+</li>
+<li>
+<p>Shogun 1.9+ (2024) adds GPU-accelerated marker reconstruction, plug-in gait analysis modules, and direct LiveDB streaming. Vicon is used at Weta Workshop (Wellington), Industrial Light &amp; Magic, and the English Institute of Sport (Sheffield).</p>
+</li>
+<li>
+<p>The <strong>Vicon Origin</strong> system (2022) simplified a 16-camera lab setup to under £40,000, targeting academic and medium-production markets — a significant price reduction for the previously £100,000+ entry point.</p>
+</li>
+<li>
+<p><strong>Qualisys</strong> (Gothenburg, Sweden): Favoured in biomechanics and clinical gait analysis. Oqus and Miqus series cameras; QTM software with integrated force plate synchronisation (Kistler, AMTI), EMG, and Visual 3D integration.</p>
+</li>
+<li>
+<p>Qualisys real-time output feeds orthopaedic gait labs at NHS teaching hospitals and sports institutes including UK Sport. The Qualisys Biomech SDK enables Python and MATLAB integration for clinical research pipelines.</p>
+</li>
+<li>
+<h3 id="markerless-ai-powered-systems">Markerless AI-Powered Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#markerless-ai-powered-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Markerless mocap applies <a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a> — multi-view triangulation, monocular depth estimation, and learned body models — to extract pose from video without physical markers on the performer.</p>
+</li>
+<li>
+<p><strong>DeepLabCut</strong> (Mathis Lab, Harvard/EPFL, open-source MIT licence): Landmark toolbox originating in neuroscience for tracking animal pose from video. Applies transfer learning on ResNet/EfficientNet backbones pre-trained on ImageNet, then fine-tuned on laboratory-annotated keypoint datasets.</p>
+</li>
+<li>
+<p>DeepLabCut 3.0 (2024) introduces SuperAnimal pre-trained models for mouse and quadruped pose, multi-animal tracking (maDLC), and a GUI annotation tool. Widely used in systems neuroscience (Allen Institute, Sainsbury Wellcome Centre UCL), ethology, and gait research.</p>
+</li>
+<li>
+<p><strong>MediaPipe</strong> (Google, open-source, Apache 2.0): Cross-platform ML inference framework embedding pre-trained models for 33-landmark BlazePose full-body detection, 478-landmark face mesh, 21-landmark hand tracking, and 6DoF object detection.</p>
+</li>
+<li>
+<p>MediaPipe Holistic (body + face + hands simultaneously) runs at 30+ fps on mobile GPU. Widely used in low-latency interactive applications (fitness apps, AR effects, sign language recognition). Accuracy: ± 20–50 mm compared to ± 0.3 mm optical — suitable for consumer and interactive use but insufficient for broadcast VFX.</p>
+</li>
+<li>
+<p>MediaPipe’s Pose Landmarker ML task (Tasks API 0.10.x, 2024) uses MoveNet Thunder architecture with improved visibility and presence confidence scores; available on Android, iOS, Python, and web via WASM.</p>
+</li>
+<li>
+<p><strong>Move.ai</strong> (London / Los Angeles, founded 2021): Cloud-native markerless mocap platform that ingests multi-camera iPhone/Android video and returns industry-standard FBX/BVH output via API or web interface.</p>
+</li>
+<li>
+<p>Move.ai raised a <strong>$12M Series A</strong> (March 2023) led by investors including Talis Capital, and secured partnerships with Epic Games (Unreal Engine integration, showcased at GDC 2024) and Adobe (Mixamo retargeting pipeline).</p>
+</li>
+<li>
+<p>The system uses proprietary neural <a href="../pages/Pose-Estimation" class="internal alias" data-slug="pages/Pose-Estimation">Pose Estimation</a> and shape estimation trained on multi-view studio capture datasets. Accuracy benchmark (Move.ai internal, 2024): mean per-joint position error 18–35 mm on single-camera footage, 8–15 mm with four calibrated cameras — approaching lower-end optical for body-scale animation.</p>
+</li>
+<li>
+<p>The platform targets indie game developers, virtual production firms, and advertising agencies. Move.ai’s 2025 roadmap includes multi-person scene capture (up to 8 simultaneous performers) and structured-light hybrid mode for improved extremity tracking.</p>
+</li>
+<li>
+<p><strong>Plask</strong> (Seoul / San Francisco, founded 2021): AI mocap platform offering browser-based markerless capture from single-camera video, with integrated 3D scene editor, retargeting to 80+ character rigs, and direct export to Blender/Unreal/Unity.</p>
+</li>
+<li>
+<p>Plask Pro (2024) adds multi-person tracking and physics-based foot contact correction. Positioned for social media content creators and independent animators who lack access to studio infrastructure.</p>
+</li>
+<li>
+<p><strong>Radical</strong> (Berlin, founded 2017): SaaS platform using monocular video <a href="../pages/Pose-Estimation" class="internal alias" data-slug="pages/Pose-Estimation">Pose Estimation</a> with output in BVH/FBX, integrated with MotionBuilder and Blender plug-ins.</p>
+</li>
+<li>
+<p><strong>Kinetix</strong> (Paris, acquired by Radical 2023): AI animation platform enabling markerless avatar animation from selfie-camera video; expanded Radical’s training dataset coverage across diverse body types and recording environments.</p>
+</li>
+<li>
+<h3 id="imu-inertial-measurement-unit-suit-systems">IMU (Inertial Measurement Unit) Suit Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#imu-inertial-measurement-unit-suit-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>IMU mocap embeds sensor nodes — each combining a 3-axis accelerometer, 3-axis gyroscope, and 3-axis magnetometer (MARG sensor fusion) — at 17–23 body segments. <a href="../IMU-Sensor-Fusion" class="internal alias" data-slug="IMU-Sensor-Fusion">IMU Sensor Fusion</a> algorithms (Madgwick, Mahony, Extended Kalman Filter) integrate angular rate and linear acceleration over time to estimate absolute joint orientation, typically in quaternion representation.</p>
+</li>
+<li>
+<p>The primary advantage over optical systems is <strong>camera independence</strong>: IMU suits function outdoors, in GPS-denied environments, on moving platforms, and in spaces too large or irregular for camera array installation — making them the default for location shooting, sports field biomechanics, and industrial ergonomics assessment.</p>
+</li>
+<li>
+<p><strong>Xsens MVN Animate / Movella Xsens</strong> (Enschede, Netherlands; acquired by Movella Inc. 2022 for $140M): The category-defining IMU suit. MVN Animate Pro features 17 MTx Awinda sensors at 240 Hz, Xbus 2.4 GHz wireless, 6-axis sensor fusion with magnetometer compensation for indoor metal environments.</p>
+</li>
+<li>
+<p>The MVN biomechanical model applies <a href="../pages/Inverse-Kinematics" class="internal alias" data-slug="pages/Inverse-Kinematics">Inverse Kinematics</a> constrained by anthropometric segment ratios to compute full-body joint angles. MVN Studio 4.8 (2024) adds Scenario Tracking for constrained environments (seating, climbing), AI-assisted magnetic distortion rejection using historical motion priors, and direct Live Link streaming to Unreal Engine. Sensor-to-engine latency: approximately 10 ms.</p>
+</li>
+<li>
+<p>Used by Netflix (Stranger Things Season 5 creature reference capture, 2024) and game studios including Ubisoft (Assassin’s Creed character reference). Clinical research extension: Xsens DOT wrist sensors are validated for Parkinson’s tremor monitoring in NHS contexts.</p>
+</li>
+<li>
+<p><strong>Rokoko Smartsuit Pro II</strong> (Copenhagen, Denmark, released 2022): Mid-market IMU suit at approximately $3,500 USD, targeting indie game studios and virtual production operators priced out of optical systems. 19 IMU sensors at 100 Hz; Rokoko Studio software streams to Unreal (Live Link Rokoko plug-in), <a href="../pages/Unity" class="internal" data-slug="pages/Unity">Unity</a>, MotionBuilder, and Blender (Rokoko add-on, free, 50K+ downloads).</p>
+</li>
+<li>
+<p>Smartsuit Pro II adds improved hip and shoulder joint coverage, USB-C charging, and optional hand and face capture via Smartgloves and Smartface. Rokoko Video (2023) layered a markerless monocular AI inference module on top of IMU data for hybrid capture — combining the portability of IMU with the positional grounding of video.</p>
+</li>
+<li>
+<p>Accuracy: ± 1–3° joint angle RMS; positional drift 2–5 cm over 60-second takes without external position correction. The affordability-versus-accuracy trade-off makes Rokoko the default for VTuber production, indie game character reference, and advertising content.</p>
+</li>
+<li>
+<p><strong>Noitom Perception Neuron 3</strong> (Beijing): Lower-cost IMU system (32 sensors, 240 Hz) with the PN Hub 3 wireless module; used in indie VTuber production and virtual avatar content. Hi5 VR Gloves (Noitom) extend finger-level IMU capture for XR interaction research.</p>
+</li>
+<li>
+<h3 id="facial-performance-capture">Facial Performance Capture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#facial-performance-capture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Facial motion capture records the high-dimensional, spatially fine-grained deformations of the human face — eyebrow raises, lip curl, jaw opening, cheek puff, eye dart — for <a href="../Digital-Human" class="internal alias" data-slug="Digital-Human">Digital Human</a> animation. Two representation paradigms dominate: <strong>blendshape coefficients</strong> (Apple ARKit’s 52 ARFaceAnchor blend shapes, Faceware’s 70+ shape set) and <strong>Action Unit (AU) weights</strong> from Ekman’s Facial Action Coding System (FACS), the psychological framework describing the anatomical muscle groups underlying each facial expression.</p>
+</li>
+<li>
+<p><strong>Faceware Technologies</strong> (Los Angeles): Helmet-mounted camera system with real-time and offline processing. The Faceware Analyzer solves FACS AU weights from monocular video; Retargeter maps AU weights to character-specific blendshape rigs in MotionBuilder or Maya. Used on Call of Duty: Modern Warfare series, Red Dead Redemption 2 character reference, and Mass Effect Legendary Edition remaster facial animation clean-up.</p>
+</li>
+<li>
+<p>Faceware Live Server streams real-time to <a href="../pages/Unreal-Engine" class="internal alias" data-slug="pages/Unreal-Engine">Unreal Engine</a> LiveLink and <a href="../pages/Unity" class="internal" data-slug="pages/Unity">Unity</a>, enabling live facial puppeteering for game director review, interactive narrative applications, and motion comics production.</p>
+</li>
+<li>
+<p><strong>Dynamixyz / Unreal MetaHuman Animator</strong> (Paris; acquired by Epic Games 2022): Dynamixyz’s Performer software was the industry’s leading offline facial solver before Epic’s acquisition. Post-acquisition, the technology was integrated into <strong>MetaHuman Animator</strong>, released for Unreal Engine 5.3 (September 2023), and available free with the UE5 licence (EULA royalty-free for projects under $1M revenue).</p>
+</li>
+<li>
+<p>MetaHuman Animator takes footage from iPhone (TrueDepth structured light + RGB tracked via Live Link Face), monocular video, or multi-camera rig and drives Epic’s MetaHuman facial rig (788+ ARKit and additional blend shapes, corrective shapes, skin deformation system). The neural inference solver runs approximately 2–4× real-time in offline mode, or provides live in-engine preview.</p>
+</li>
+<li>
+<p>Significant production adoption: The Boys Season 4 (Amazon Prime, 2024), Fortnite Festival interactive performances (Epic Games, 2024), and multiple AAA game studios use MetaHuman Animator as the primary facial capture pipeline as of 2025.</p>
+</li>
+<li>
+<p>UE 5.4 (April 2024) refined the jaw physics model and added eye tracking from video. UE 5.5 (late 2024) expanded ARKit blendshape compatibility to Android ARCore devices, extending the input device ecosystem.</p>
+</li>
+<li>
+<p><strong>Apple ARKit Face Tracking</strong>: ARKit FaceTracking uses the iPhone TrueDepth sensor (structured light + infrared flood + front RGB camera, available iPhone X onwards) to estimate 52 blendshape coefficients at 60 fps. The <strong>Live Link Face</strong> app (free, App Store) streams these values to <a href="../pages/Unreal-Engine" class="internal alias" data-slug="pages/Unreal-Engine">Unreal Engine</a> over local WiFi network, widely adopted for indie virtual production and VTuber content creation.</p>
+</li>
+<li>
+<p><strong>Apple Vision Pro</strong> (released February 2024) adds <strong>persona capture</strong>: on-device neural network reconstructs photorealistic avatar facial mesh from inside-out cameras without external hardware, enabling spatial FaceTime video calls and virtual meeting presence at 90 fps — the first mass-market volumetric human representation device.</p>
+</li>
+<li>
+<p><strong>Cubic Motion</strong> (Manchester, UK; acquired by Epic Games 2020): Developed Persona, the proprietary facial performance solver powering Fortnite’s 2018 GDC Siren and Troll real-time digital human demonstrations. Post-acquisition, Cubic Motion technology feeds UE5’s <a href="../Digital-Human" class="internal alias" data-slug="Digital-Human">Digital Human</a> facial rendering stack. The Manchester team remains active in solver R&amp;D within Epic’s European engineering presence.</p>
+</li>
+<li>
+<h3 id="volumetric-capture">Volumetric Capture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#volumetric-capture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Volumetric capture records the complete 4D geometry (3D space + time) of a moving person or scene, producing sequences of textured 3D meshes or point clouds viewable from any angle — true free-viewpoint video rather than animated skeletons. The field’s primary commercial barriers are reconstruction compute cost, storage bandwidth (300+ MB/s uncompressed at 30 fps), and distribution format immaturity.</p>
+</li>
+<li>
+<p><strong>Microsoft Mixed Reality Capture Studios</strong> (San Francisco, closed 2021; technology licensed to partners): Deployed 106 synchronised DSLR cameras in a 6-metre diameter rig. Proprietary reconstruction created textured mesh sequences at 30 fps, delivered via HoloLens 2 and Xbox mixed reality experiences.</p>
+</li>
+<li>
+<p><strong>Arcturus HoloSuite</strong>: Post-production and delivery platform for volumetric video; supports ingestion from multiple studio rigs; compression via HoloSuite MPEG-V codec achieving 40:1 compression; playback in <a href="../pages/Unity" class="internal" data-slug="pages/Unity">Unity</a>, <a href="../pages/Unreal-Engine" class="internal alias" data-slug="pages/Unreal-Engine">Unreal Engine</a>, and web (WebXR). Used for NFL holographic broadcast experiences (CBS Sports, Super Bowl LVIII 2024).</p>
+</li>
+<li>
+<p><strong>4D Views</strong> (Grenoble, France): Independent volumetric studio rigs used in commercial production and research, contributing to academic benchmarks including CMU-Panoptic.</p>
+</li>
+<li>
+<p><strong>3D Gaussian Splatting (3DGS) for Dynamic Humans</strong> (SIGGRAPH 2024): Real-time neural scene representation using 3DGS for dynamic human capture from sparse multi-camera rigs (4–12 cameras) achieved photorealistic appearance at 30+ fps on consumer GPU — positioning 3DGS as a practical volumetric capture format for production in 2025–2026. MIT CSAIL and ETH Zurich were primary contributors at SIGGRAPH 2024.</p>
+</li>
+<li>
+<p><strong>Gaussian Avatars</strong> (SIGGRAPH 2024): Multiple papers demonstrated real-time drivable Gaussian avatar creation from monocular video, combining 3DGS with expression-space deformation models derived from FLAME facial shape model — enabling volumetric avatar generation from a 5-minute iPhone capture session.</p>
+</li>
+<li>
+<h2 id="use-cases-and-major-families">Use Cases and Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="film-and-television-vfx">Film and Television VFX<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#film-and-television-vfx" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Full-body and facial performance capture for digital character creation: Gollum/Sméagol (Weta Digital, Lord of the Rings / Hobbit lineage), Na’vi characters in Avatar franchise (Weta Digital / ILM, 2009–2022), Thanos in Avengers Infinity War/Endgame (Digital Domain), and Planet of the Apes series (Weta Workshop/FX, 2011–2024) all use optical full-body with dedicated facial systems.</p>
+</li>
+<li>
+<p>De-aging and digital doubles: Indiana Jones and the Dial of Destiny (2023, ILM) combined optical facial tracking with neural rendering to de-age Harrison Ford. Digital stunt doubles in Marvel productions (Shang-Chi, Doctor Strange) use full-body optical suits to match performer kinematics for physics simulation inputs.</p>
+</li>
+<li>
+<p>Creature reference: IMU suit (Xsens MVN) capture of gymnasts, dancers, and puppeteers provides motion input for physics-based creature animation systems (Weta’s Tissue simulation, ILM’s proprietary creature rigging), where raw mocap data drives underlying skeletal motion and secondary dynamics layers handle skin and muscle deformation.</p>
+</li>
+<li>
+<h3 id="aaa-game-cinematics-and-character-animation">AAA Game Cinematics and Character Animation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aaa-game-cinematics-and-character-animation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Heavyweight optical studio capture (50+ camera OptiTrack or Vicon arrays, LED lighting volumes) for facial and full-body simultaneous capture in narrative games. Full-performance capture pipelines record voice, face, and body simultaneously to preserve the organic relationship between vocal performance and physical gesture.</p>
+</li>
+<li>
+<p>Notable pipelines: Naughty Dog’s The Last of Us Part I/II (simultaneous full-body + facial, dual Vicon systems); CD Projekt Red’s Cyberpunk 2077 (Technokoncept Warsaw studio, 72-camera OptiTrack, facial Faceware); Ninja Theory’s Hellblade II: Senua’s Saga (internal Vicon studio, Cambridge UK, MetaHuman Animator post-solve).</p>
+</li>
+<li>
+<p>Open-world procedural animation: Motion matching systems (Ubisoft’s Motion Matching, Unity Kinematica) index large mocap databases and select the closest matching clip to the controller input in real-time, eliminating transition blending artefacts. Requires large clip libraries (20,000–200,000 clips, typically 2–8 hours of raw capture).</p>
+</li>
+<li>
+<h3 id="virtual-production">Virtual Production<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#virtual-production" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Real-time mocap feed into <a href="../pages/Unreal-Engine" class="internal alias" data-slug="pages/Unreal-Engine">Unreal Engine</a> on LED volume stages for background replacement, actor preview, and director shot composition. Representative facilities: Pinewood Studios (Buckinghamshire), 5Point Studios (Salford MediaCityUK), Trilith Studios (Atlanta), Industrial Light &amp; Magic StageCraft (Los Angeles / London).</p>
+</li>
+<li>
+<p>IMU suits (Xsens) and optical partial-body systems feed in-engine character control alongside camera tracking (Mo-Sys StarTracker, Stype Redspy, ncam). Real-time composite allows directors to see digital environment context during live-action shooting, reducing post-production iteration cycles.</p>
+</li>
+<li>
+<p>MetaHuman Animator with Live Link Face enables same-day facial performance preview: after a take, the iPhone-captured facial data is processed in minutes and previewed on the MetaHuman character in the Unreal viewport — replacing multi-day offline facial solve turnarounds.</p>
+</li>
+<li>
+<h3 id="sports-analytics-and-broadcast">Sports Analytics and Broadcast<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sports-analytics-and-broadcast" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Premier League / Hawk-Eye</strong>: Hawk-Eye Innovations (Sony subsidiary) deploys 10–28 synchronised cameras per stadium tracking 25+ players and the ball at 25 fps. Skeletal joint estimates are published for tactical analysis, expected-goals models, and broadcast overlay graphics showing player movement heatmaps and defensive shape.</p>
+</li>
+<li>
+<p><strong>NBA</strong>: Second Spectrum (acquired by Genius Sports 2021) provides player tracking using computer vision-based markerless mocap at 25 fps. Feeds SportVU and Second Spectrum’s spatial analytics platform used by all 30 NBA franchises.</p>
+</li>
+<li>
+<p><strong>Zebra Technologies RFID</strong>: American football player tracking via Ultra-Wideband RFID tags on shoulder pads at 10 Hz. Lower accuracy than optical but fully portable to outdoor stadium environments. NFL Next Gen Stats platform.</p>
+</li>
+<li>
+<p><strong>Athletics biomechanics</strong>: UK Sport and the English Institute of Sport (EIS) operate 12+ gait analysis labs equipped with Vicon Vantage and Qualisys systems integrated with force plates, used for Olympic athlete performance analysis and injury prevention research.</p>
+</li>
+<li>
+<h3 id="biomechanical-research-and-clinical-gait-analysis">Biomechanical Research and Clinical Gait Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#biomechanical-research-and-clinical-gait-analysis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Eight-camera Vicon or Qualisys systems integrated with force plates (Kistler, AMTI), EMG amplifiers, and pressure insoles constitute the gold-standard clinical gait laboratory. Marker protocols: Davis Protocol (16 markers), Helen Hayes Hospital Protocol (22 markers), Oxford Foot Model (25 markers).</p>
+</li>
+<li>
+<p>NHS gait analysis units: Sheffield Children’s Hospital Gait Analysis Unit (cerebral palsy, spina bifida assessment), Oxford Gait Laboratory (Nuffield Orthopaedic Centre), Newcastle upon Tyne Hospitals (prosthetics and limb viability assessment). Output feeds OLGA (Oxford Gait Lab Analysis) clinical decision software for surgical planning.</p>
+</li>
+<li>
+<p>IMU clinical applications: Xsens DOT validated for Parkinson’s disease tremor and gait freeze assessment in community settings where clinical gait lab attendance is impractical. IMU-based digital health platforms (STAT-ON, Portabiles) are entering NICE evaluation pathways in 2024–2026.</p>
+</li>
+<li>
+<p>Surgical skill assessment: Imperial College London Hamlyn Centre applies wrist-mounted IMU sensors to assess laparoscopic technique objectively — tracking instrument movement efficiency, path length, and economy of motion as alternatives to subjective structured assessment in surgical training.</p>
+</li>
+<li>
+<h3 id="robotics-and-embodied-ai-training-data">Robotics and Embodied AI Training Data<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#robotics-and-embodied-ai-training-data" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Mocap provides ground-truth human demonstration data for imitation learning (<a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a>-based behavioural cloning, GAIL — Generative Adversarial Imitation Learning) of locomotion, manipulation, and whole-body coordination. Physics-based character controllers (DeepMimic, AMP — Adversarial Motion Priors) use AMASS-pretrained motion priors to produce natural-looking locomotion in simulation.</p>
+</li>
+<li>
+<p>CMU Motion Capture Database (2,500+ clips, 120 subjects, free download): The original freely available mocap dataset covering daily activities, sports, and expressive motion. Standard input for motion prediction and synthesis research.</p>
+</li>
+<li>
+<p><strong>AMASS</strong> (Archive of Motion Capture As Surface Shapes, 2019): 300+ hours of motion across 12 databases unified in SMPL-H/SMPL-X parameterisation. Standard pre-training corpus for physics-based character control (PHC, PULSE, ProPose) and human motion prediction neural networks.</p>
+</li>
+<li>
+<p><strong>GRAB dataset</strong> (2020, MPI-IS): 10 subjects grasping 51 objects; whole-body SMPL-X + MANO hand model + mesh-based contact annotation. Drives hand-object interaction and dexterous manipulation learning.</p>
+</li>
+<li>
+<p><strong>ARCTIC dataset</strong> (2022, ETH): Bimanual articulated object manipulation from wrist-mounted cameras + Qualisys ground truth. Targets in-hand manipulation research for robot learning.</p>
+</li>
+<li>
+<h3 id="vtuber-and-live-streaming-avatar-production">VTuber and Live Streaming Avatar Production<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vtuber-and-live-streaming-avatar-production" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Low-cost IMU (Rokoko Smartsuit Pro II at $3,500) and iPhone ARKit (VSeeFace, VTube Studio, 3tene) pipelines allow individual creators to animate virtual Live2D or VRM avatars for Twitch / YouTube content. The VTuber ecosystem (Nijisanji, Hololive, independent creators) represents a significant commercial driver for sub-£5,000 mocap hardware.</p>
+</li>
+<li>
+<p>Full-body VTuber production: Hololive production VTubers such as Kizuna AI (retired) and active agencies use Vicon or OptiTrack full-body studios for scheduled music video and concert production, while daily streaming relies on simpler markerless or IMU solutions.</p>
+</li>
+<li>
+<p><strong>VRChat</strong> and social XR platforms integrate FaceTracking (via Meta Quest Pro, Tobii, SRanipal eye tracking) and full-body tracking (HTC Vive Trackers on wrists/feet) as low-cost IMU-adjacent approaches, providing 6-point or 8-point skeletal estimation within consumer VR budgets.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="key-datasets-and-benchmarks">Key Datasets and Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-datasets-and-benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Human3.6M</strong> (Ionescu et al. 2014, 3.6M video frames, 11 actors, 17 actions, dual Vicon system): The dominant benchmark for monocular 3D <a href="../pages/Pose-Estimation" class="internal alias" data-slug="pages/Pose-Estimation">Pose Estimation</a>. MPJPE (Mean Per Joint Position Error) is the standard evaluation metric. Human3.6M-trained models: VideoPose3D, PoseFormer, MixSTE, MotionBERT.</p>
+</li>
+<li>
+<p><strong>CMU-Panoptic</strong> (Joo et al. 2015, Carnegie Mellon): 480 VGA + 30 HD cameras; 65 subjects performing social interactions. Ground truth from 10 OptiTrack cameras + reconstruction. Drives multi-person pose and social behaviour research.</p>
+</li>
+<li>
+<p><strong>AMASS</strong> (Mahmood et al. 2019, CVPR): 300+ hours of motion across 12 databases (CMU MoCap, KIT, BMLrub, EKUT, etc.) unified in SMPL-H/SMPL-X parameterisation. Standard pre-training corpus for motion generation networks (MDM, HumanML3D, MotionDiffuse).</p>
+</li>
+<li>
+<p><strong>COCO-WholeBody</strong> (Jin et al. 2020): 133-keypoint annotation (body + face + hands + feet) on COCO images; benchmark for holistic <a href="../pages/Pose-Estimation" class="internal alias" data-slug="pages/Pose-Estimation">Pose Estimation</a> systems including MediaPipe Holistic and AlphaPose.</p>
+</li>
+<li>
+<p><strong>MPI-INF-3DHP</strong> (Mehta et al. 2017): Multi-camera outdoor/indoor dataset for in-the-wild 3D pose estimation.</p>
+</li>
+<li>
+<p><strong>BEDLAM</strong> (Black et al. 2023, CVPR): Synthetic training data via Blender body rendering with SMPL-X ground truth — demonstrating synthetic-to-real transfer for pose estimation and enabling large-scale dataset creation without physical studio infrastructure.</p>
+</li>
+<li>
+<p><strong>GRAB</strong> (Taheri et al. 2020): 10 subjects, 51 objects, whole-body SMPL-X + MANO contact annotation. Drives robot grasping transfer from human demonstration.</p>
+</li>
+<li>
+<p><strong>ARCTIC</strong> (Fan et al. 2023, CVPR): Bimanual articulated object manipulation; wrist cameras + Qualisys ground truth; targets in-hand manipulation research.</p>
+</li>
+<li>
+<h3 id="foundational-and-recent-papers">Foundational and Recent Papers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foundational-and-recent-papers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>SMPL Body Model</strong> (Loper et al. 2015, SIGGRAPH Asia): Learned statistical body shape and pose model (6,890 vertices, 24 joints) that became the universal representation for monocular human reconstruction — the conceptual foundation on which most markerless mocap AI systems are built.</p>
+</li>
+<li>
+<p><strong>SMPL-X</strong> (Pavlakos et al. 2019, CVPR): Extended SMPL to include expressive face (FLAME model), hands (MANO), and feet for whole-body capture. Enables simultaneous body + face + hand joint optimisation.</p>
+</li>
+<li>
+<p><strong>4D-Humans / HMR 2.0</strong> (Goel et al. 2023, ICCV): ViT-H backbone + temporal flow for video-based SMPL-X recovery. State-of-the-art single-camera whole-body reconstruction in unconstrained video. Mean MPJPE Human3.6M: 44.5 mm without video context, 34.8 mm with temporal model.</p>
+</li>
+<li>
+<p><strong>MMPose</strong> (OpenMMLab, 2020–2025): Modular <a href="../pages/Pose-Estimation" class="internal alias" data-slug="pages/Pose-Estimation">Pose Estimation</a> framework supporting 2D/3D top-down and bottom-up pipelines; backbones: HRNet, ViTPose, RTMPose, DWPose. The library unifies academic benchmarking with production-deployable model weights.</p>
+</li>
+<li>
+<p><strong>RTMPose</strong> (Jiang et al. 2023, ECCV Workshop): Real-time multi-person whole-body pose: 72% AP on COCO at 90 fps on RTX 3090 — real-time whole-body pose suitable for interactive applications. Backbone: CSPNeXt; decoder: SimCC. Available in MMPose framework.</p>
+</li>
+<li>
+<p><strong>MotionBERT</strong> (Zhu et al. 2023, ICCV): Dual-stream <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a> pre-trained on AMASS for motion understanding; achieves 39.8 mm MPJPE on Human3.6M. Demonstrates self-supervised motion representation learning transferable across pose estimation, motion completion, and human mesh recovery tasks.</p>
+</li>
+<li>
+<p><strong>HumanML3D + MotionDiffuse</strong> (Guo et al. 2022 / Zhang et al. 2022): Text-conditioned 3D motion generation via diffusion models trained on AMASS; enabling natural-language specification of character animation without any physical capture. Precursor to production-ready text-to-motion systems.</p>
+</li>
+<li>
+<p><strong>SIGGRAPH 2024 notable mocap papers</strong>: HiLo multi-scale occlusion-robust optical tracking (ETH Zurich); Gaussian-based dynamic human avatar reconstruction from sparse video (MIT CSAIL); physics-informed IMU motion reconstruction (MPI-IS Tübingen).</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The motion capture market reached approximately <strong>$245M USD</strong> in 2025 (MarketsandMarkets estimate), growing at 12% CAGR driven by gaming, virtual production LED volume expansion, and metaverse avatar demand.</p>
+</li>
+<li>
+<p>Market structure is bifurcating: premium optical vendors (Vicon, OptiTrack, Qualisys) hold stable share in VFX and clinical markets, while AI-markerless platforms (Move.ai, Plask, Radical, Kinetix) are capturing rapid share in the indie/interactive segment.</p>
+</li>
+<li>
+<p><strong>Move.ai / Epic Games partnership</strong> (GDC 2024): Markerless capture output importing directly into MetaHuman Animator pipelines, collapsing the gap between affordable field capture and UE5 digital human production. Move.ai’s $12M Series A (2023) and Epic integration represent the most significant markerless-to-production pipeline milestone of the decade.</p>
+</li>
+<li>
+<p><strong>Xsens / Movella merger</strong> (2022): Movella Inc. acquired Xsens from mCube parent company for $140M, rebranding while retaining MVN Animate product name. Integration with Movella’s DOT wearable sensor platform enables hybrid mocap/health-monitoring workflows. Movella launched <strong>Xsens Analyze</strong> (2024): biomechanics analysis SaaS integrating MVN joint angles with GPS, heart rate, and force data for sports and clinical customers.</p>
+</li>
+<li>
+<p><strong>MetaHuman Animator UE 5.3+</strong> (September 2023): Fully shipped and adopted by productions including Amazon’s The Boys Season 4 and multiple AAA game studios as of 2025. UE 5.4 refined the jaw physics model; UE 5.5 expanded ARKit compatibility to Android ARCore.</p>
+</li>
+<li>
+<p><strong>Apple Vision Pro</strong> (February 2024): Establishes spatial persona capture as a consumer-facing volumetric video application, processing eye and face data via inside-out cameras to drive real-time photorealistic avatar rendering at 90 fps on-device.</p>
+</li>
+<li>
+<p><strong>Markerless academic progress</strong>: 4D-Humans (2023), MotionBERT (2023), and RTMPose (ECCV 2024) represent the frontier of single-camera body reconstruction. The gap between AI markerless and optical ground truth has narrowed from ~60 mm MPJPE (2018, SimpleBaseline) to under 30 mm (2024, HMR 2.0 on in-the-wild video). For controlled-lighting multi-camera setups, the gap narrows to 10–15 mm.</p>
+</li>
+<li>
+<p><strong>OpenMoCap initiative</strong> (2024 academic consortium — MIT, ETH, MPI-IS, UCL): Proposed standardised open-format specification for mocap data exchange, encompassing skeleton topology, sensor metadata, calibration parameters, and quality metrics — intended to replace fragmented BVH/C3D/FBX/MVN ecosystem with a unified USD-compatible schema.</p>
+</li>
+<li>
+<p><strong>FreeMoCap Project</strong> (freemocap.org, open-source): Community-driven markerless capture pipeline using MediaPipe + DeepLabCut + calibration tooling to produce research-quality body pose from consumer cameras, targeting academic labs, biomechanics education, and independent animators who lack optical lab access.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="london-and-south-east">London and South-East<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#london-and-south-east" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Imaginarium Studios</strong> (London, founded by Andy Serkis 2012): Pioneer UK performance capture facility, credited on Planet of the Apes series (Dawn, War), Ghost in the Shell, and Black Mirror interactives. OptiTrack full-body and Vicon facial pipeline. Andy Serkis’s advocacy for performance capture as a legitimate acting craft influenced BAFTA and Academy Award conversations around digital performance recognition — a cultural contribution to the field beyond technical practice.</p>
+</li>
+<li>
+<p><strong>Centroid</strong> (London): Boutique mocap studio and technology consultancy supporting ITV, Sky, and advertising agency clients for AR experiences and character animation.</p>
+</li>
+<li>
+<p><strong>Ninja Theory</strong> (Cambridge, acquired by Microsoft 2018): Internal Vicon studio for Hellblade series character capture. Hellblade II: Senua’s Saga (2024) extensively showcased the mocap-to-UE5 MetaHuman Animator pipeline for narrative game production — one of the highest-profile demonstrations of the MetaHuman stack in a shipped AAA title.</p>
+</li>
+<li>
+<p><strong>Framestore</strong> (London): Major VFX facility with internal Vicon-based capture stage and significant R&amp;D in markerless and neural rendering pipelines. Framestore credits include Guardians of the Galaxy Vol. 3 (2023) and Avatar: The Way of Water creature/performance capture post.</p>
+</li>
+<li>
+<p><strong>Double Negative / DNEG</strong> (London, with global network): Vicon-based capture capability integrated into broader VFX pipeline; credits include No Time to Die (2021), Avengers franchise, and Doctor Strange in the Multiverse of Madness.</p>
+</li>
+<li>
+<h3 id="manchester-and-northern-england">Manchester and Northern England<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#manchester-and-northern-england" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Audiomotion Studios</strong> (Manchester): Mid-tier performance capture studio offering Vicon full-body and facial pipeline for broadcast, advertising, and game clients. Used for BBC Sport motion graphics, Premier League broadcast overlay production, and commercial content for UK advertising agencies.</p>
+</li>
+<li>
+<p><strong>Cubic Motion</strong> (Manchester, acquired by Epic Games 2020): Founded 2010 in Manchester, developed Persona facial solver; now part of Epic’s UE5 <a href="../Digital-Human" class="internal alias" data-slug="Digital-Human">Digital Human</a> R&amp;D with continued active R&amp;D in Manchester — maintaining a meaningful presence of European digital human engineering talent outside of London.</p>
+</li>
+<li>
+<p><strong>5Point Studios</strong> (MediaCityUK, Salford): LED volume virtual production facility adjacent to BBC and ITV studios; Xsens IMU integration and OptiTrack partial-body tracking for real-time talent character replacement during broadcast production.</p>
+</li>
+<li>
+<p><strong>Manchester Metropolitan University</strong> (MMU) School of Digital Arts: Active mocap teaching facility supporting undergraduate and postgraduate animation programmes with Rokoko IMU systems. Collaboration with BBC Research &amp; Development (Salford) on markerless capture for broadcast workflows.</p>
+</li>
+<li>
+<p><strong>University of Leeds</strong> (School of Computing): Body <a href="../pages/Pose-Estimation" class="internal alias" data-slug="pages/Pose-Estimation">Pose Estimation</a> and action recognition research; collaboration with Yorkshire Sport Foundation on athlete motion analysis using markerless systems. EPSRC-funded work on IMU-based fall detection in elderly care contexts.</p>
+</li>
+<li>
+<p><strong>University of Sheffield</strong> (Department of Computer Science and Institute for Sport): Biomechanics research collaboration with Sheffield Children’s Hospital Gait Analysis Unit; gait database construction for machine-learning-augmented clinical assessment.</p>
+</li>
+<li>
+<p><strong>Newcastle upon Tyne Hospitals NHS Foundation Trust</strong> (Gait Analysis Service): Qualisys clinical gait lab serving the North East region; clinical output feeding orthopaedic surgical planning and cerebral palsy movement disorder assessment. Collaboration with Newcastle University Robotics and Autonomous Systems group on motion analysis for prosthetics fitting.</p>
+</li>
+<li>
+<h3 id="academic-research-and-teaching">Academic Research and Teaching<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-research-and-teaching" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Goldsmiths College, University of London</strong> (New Cross): Motion capture lab used in practice-based research on digital performance, interactive art installation, and screen performance studies. Research output published at ACM SIGGRAPH, Presence: Teleoperators and Virtual Environments, and Leonardo journals.</p>
+</li>
+<li>
+<p><strong>Bournemouth University National Centre for Computer Animation (NCCA)</strong>: The UK’s leading animation research and teaching centre. Motion capture research covers ML-driven retargeting (collaboration with Tencent AI Lab Shenzhen), procedural motion synthesis, and motion database construction for character animation. NCCA operates a 6-camera Vicon Vantage lab and collaborates with Framestore and Double Negative on pipeline research. ACR 2024 review recognised NCCA as the top UK centre for computer animation research impact.</p>
+</li>
+<li>
+<p><strong>Imperial College London</strong> (Hamlyn Centre for Robotic Surgery): IMU-based surgical skill assessment; laparoscopic gesture recognition from wrist-worn sensors as an objective structured clinical examination alternative. Research on motion capture for minimally-invasive surgical training simulation in collaboration with Johnson &amp; Johnson MedTech.</p>
+</li>
+<li>
+<p><strong>UCL</strong> (Computer Science, Dyson School of Design Engineering): Collaboration on MediaPipe-based accessible gait analysis for NHS community physiotherapy pathways; research on 4D-Humans monocular reconstruction for clinical motion assessment without specialist hardware. UCL’s VR/AR group applies motion capture in immersive rehabilitation research.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh</strong> (School of Informatics, Robotics and Autonomous Systems CDT): Motion planning and imitation learning using AMASS-pretrained motion priors; collaboration with Boston Dynamics on legged robot motion transfer from human mocap demonstrations. Edinburgh’s group contributed to the AMASS dataset methodology.</p>
+</li>
+<li>
+<p><strong>King’s College London</strong> and <strong>Queen Mary University of London</strong>: Dance science and live performance research applying Vicon and IMU systems to choreographic analysis and performer wellbeing monitoring. Royal Ballet School collaboration with KCL on dancer injury biomechanics.</p>
+</li>
+<li>
+<p><strong>University of Bath</strong> (Department of Computer Science): Character animation and motion synthesis research; contributors to the open-source animation research tooling ecosystem (PFNN — Phase-Functioned Neural Networks for character locomotion, 2017, a seminal paper establishing neural motion matching).</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>AI-Native Mocap Solvers exceeding optical accuracy</strong>: Models like 4D-Humans, MotionBERT, and RTMPose point toward single-camera body reconstruction achieving optical-marker accuracy (&lt; 10 mm MPJPE) within 3–4 years, driven by synthetic training data at scale (BEDLAM-style Blender body rendering), self-supervised video pretraining, and physics-constrained optimisation. When this threshold is crossed, the market justification for <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8389em;vertical-align:-0.1944em;"></span><span class="mord">50</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">000–</span></span></span></span>500,000 optical installations in animation production collapses for all but the most precision-critical applications (clinical gait, high-speed sports biomechanics).</p>
+</li>
+<li>
+<p><strong>Motion Generation Without Capture</strong>: Diffusion-based motion synthesis (MotionDiffuse, MDM, FLAME-conditioned generation) conditioned on text prompts, music, video reference, or skeleton seed frames is maturing toward production quality. By 2027–2028, studio pipelines will route routine secondary character motion and background crowd animation through generative models rather than capture sessions — reducing mocap demand volume while concentrating premium capture on hero character performances where actor-specific quality justifies studio cost.</p>
+</li>
+<li>
+<p><strong>Neural Retargeting at Production Quality</strong>: Traditional retargeting (IK-based, shape-transfer) introduces artefacts when source and target skeletons differ significantly in proportions or degrees of freedom. Neural retargeting networks (SkelNet, MotioNet, NeMF) trained on cross-skeleton motion pairs learn to preserve perceptual motion qualities across topology changes. Production deployment anticipated 2026–2027 in major DCC tools (Maya, Blender, MotionBuilder plug-ins), replacing manual cleanup for body proportion discrepancies.</p>
+</li>
+<li>
+<p><strong>Volumetric Streaming at Broadcast Scale</strong>: 3D Gaussian Splatting (3DGS) dynamic avatar representations enable real-time volumetric streaming at bandwidth previously associated with standard HD video (10–50 Mbps). WebXR and Apple Vision Pro’s spatial persona architecture prove the consumer-facing distribution model. By 2028, live volumetric sport broadcast (Premier League, Six Nations) via sparse-camera 3DGS reconstruction represents a credible commercial milestone, with major broadcast infrastructure providers (SMPTE, DVB) beginning standardisation work.</p>
+</li>
+<li>
+<p><strong>Wearable Sensor Fusion — Beyond IMU</strong>: Integration of IMU mocap with mmWave radar (for through-clothing skeletal estimation), surface EMG (for muscle activation overlay and prosthetic control), and environmental SLAM (for world-space drift correction without magnetometer dependency) will expand usable IMU mocap into GPS-denied industrial environments, outdoor sports analysis, and clinical community settings. The convergence of mocap data with physiological signals opens new applications in sports science, rehabilitation, and occupational health.</p>
+</li>
+<li>
+<p><strong>Robotics Ground Truth at Scale</strong>: Increasing demand for high-quality human motion datasets for embodied AI training will drive investment in scalable mocap infrastructure. Projects like GRAB, CORE4D, ARCTIC demonstrate the pattern; by 2027 the robotics community will likely fund larger-scale motion corpora than the entertainment industry, inverting the historic demand driver. Automated pipeline (optical studio → SMPL-X fitting → physics simulation → robot policy training) will commoditise human motion data collection for manipulation research.</p>
+</li>
+<li>
+<p><strong>UK Policy and Skills</strong>: BFI’s Digital Skills programme and Creative UK’s XR Strategy 2024–2027 both identify motion capture technical expertise as a skills shortage area. Bournemouth NCCA, Goldsmiths, Edinburgh College of Art, and Sheffield Hallam Art and Design programmes are the primary UK pipeline for trained mocap operators and pipeline technical directors — a concentrated talent supply in a globally competitive labour market.</p>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Loper, M., Mahmood, N., Romero, J., Pons-Moll, G., Black, M.J. (2015). SMPL: A skinned multi-person linear model. <em>ACM Transactions on Graphics</em> 34(6), SIGGRAPH Asia 2015.</p>
+</li>
+<li>
+<p>Pavlakos, G., Choutas, V., Ghorbani, N., et al. (2019). Expressive body capture: 3D hands, face, and body from a single image. <em>CVPR 2019</em>.</p>
+</li>
+<li>
+<p>Ionescu, C., Papava, D., Olaru, V., Sminchisescu, C. (2014). Human3.6M: Large scale datasets and predictive methods for 3D human sensing in natural environments. <em>IEEE TPAMI</em> 36(7).</p>
+</li>
+<li>
+<p>Mahmood, N., Ghorbani, N., Troje, N.F., Pons-Moll, G., Black, M.J. (2019). AMASS: Archive of motion capture as surface shapes. <em>ICCV 2019</em>.</p>
+</li>
+<li>
+<p>Joo, H., Liu, H., Tan, L., et al. (2015). Panoptic Studio: A massively multiview system for social motion capture. <em>ICCV 2015</em>.</p>
+</li>
+<li>
+<p>Mehta, D., Sridhar, S., Sotnychenko, O., et al. (2017). VNect: Real-time 3D human pose estimation with a single RGB camera. <em>ACM SIGGRAPH 2017</em>.</p>
+</li>
+<li>
+<p>Mathis, A., Mamidanna, P., Cury, K.M., et al. (2018). DeepLabCut: Markerless pose estimation of user-defined body parts with deep learning. <em>Nature Neuroscience</em> 21(9).</p>
+</li>
+<li>
+<p>Goel, S., Pavlakos, G., Rajasegaran, J., Kanazawa, A., Malik, J. (2023). Humans in 4D: Reconstructing and tracking humans with transformers. <em>ICCV 2023</em> (4D-Humans / HMR 2.0).</p>
+</li>
+<li>
+<p>Zhu, W., Ma, X., Liu, Z., et al. (2023). MotionBERT: A unified perspective on learning human motion representations. <em>ICCV 2023</em>.</p>
+</li>
+<li>
+<p>Jiang, T., Lu, P., Zhang, L., et al. (2023). RTMPose: Real-time multi-person pose estimation. <em>ECCV 2024 Workshop on Human Pose and Shape</em>.</p>
+</li>
+<li>
+<p>Black, M.J., Patel, P., Tesch, J., Yang, J. (2023). BEDLAM: A synthetic dataset of bodies exhibiting detailed lifelike animated motion. <em>CVPR 2023</em>.</p>
+</li>
+<li>
+<p>Jin, S., Xu, L., Xu, J., et al. (2020). Whole-body human pose estimation in the wild. <em>ECCV 2020</em> (COCO-WholeBody).</p>
+</li>
+<li>
+<p>Zhang, M., Cai, Z., Pan, L., et al. (2022). MotionDiffuse: Text-driven human motion generation with diffusion models. <em>arXiv 2208.15001</em>.</p>
+</li>
+<li>
+<p>Guo, C., Zou, S., Zuo, X., et al. (2022). Generating diverse and natural 3D human motions from text. <em>CVPR 2022</em> (HumanML3D).</p>
+</li>
+<li>
+<p>Kerbl, B., Kopanas, G., Leivobici, T., Drettakis, G. (2023). 3D Gaussian Splatting for real-time radiance field rendering. <em>ACM SIGGRAPH 2023</em>.</p>
+</li>
+<li>
+<p>Xu, Z., Yu, T., et al. (2024). HiLo: Multi-scale occlusion-robust optical motion capture. <em>SIGGRAPH 2024</em> (ETH Zurich).</p>
+</li>
+<li>
+<p>Li, S., et al. (2024). Dynamic Gaussian avatars from sparse video. <em>SIGGRAPH 2024</em> (MIT CSAIL).</p>
+</li>
+<li>
+<p>Holden, D., Komura, T., Saito, J. (2017). Phase-functioned neural networks for character control. <em>ACM SIGGRAPH 2017</em> (University of Bath / University of Edinburgh). Seminal paper establishing neural motion matching.</p>
+</li>
+<li>
+<p>Taheri, O., Ghorbani, N., Black, M.J., Tzionas, D. (2020). GRAB: A dataset of whole-body human grasping of objects. <em>ECCV 2020</em>.</p>
+</li>
+<li>
+<p>Fan, Z., et al. (2023). ARCTIC: A dataset for dexterous bimanual hand-object manipulation. <em>CVPR 2023</em> (ETH Zurich).</p>
+</li>
+<li>
+<p>OptiTrack. (2024). Motive 3.1 documentation and Deformation toolkit release notes. NaturalPoint Inc., Corvallis OR. [naturalpoint.com/optitrack/]</p>
+</li>
+<li>
+<p>Vicon Motion Systems. (2024). Shogun 1.9 and Origin system release notes. Vicon Motion Systems Ltd., Oxford, UK. [vicon.com]</p>
+</li>
+<li>
+<p>Epic Games. (2023–2024). MetaHuman Animator documentation. Unreal Engine 5.3–5.5. Epic Games Inc. [dev.epicgames.com/documentation/metahuman-animator]</p>
+</li>
+<li>
+<p>Movella Inc. (2024). Xsens MVN Animate 4.8 user manual and Xsens Analyze SaaS overview. Movella Inc., Los Angeles CA. [movella.com/xsens]</p>
+</li>
+<li>
+<p>Rokoko Electronics. (2022). Smartsuit Pro II technical specifications and Rokoko Video product brief. Rokoko Electronics ApS, Copenhagen. [rokoko.com]</p>
+</li>
+<li>
+<p>Move.ai. (2023–2024). Move.ai platform overview, Series A announcement, and GDC 2024 Epic Games partnership. Move.ai Ltd., London. [move.ai]</p>
+</li>
+<li>
+<p>Apple Inc. (2024). ARKit documentation: Face tracking, persona capture, and visionOS spatial persona. Apple Developer Documentation. [developer.apple.com/documentation/arkit]</p>
+</li>
+<li>
+<p>Bournemouth University NCCA. (2024). Motion capture research overview and Vicon lab documentation. National Centre for Computer Animation, Bournemouth. [ncca.bournemouth.ac.uk]</p>
+</li>
+<li>
+<p>MarketsandMarkets. (2025). Motion capture market — global forecast to 2030 (report code SE 7461). MarketsandMarkets Research Pvt Ltd.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Domain correction</strong>: <code>spatial-computing</code> → <code>creative-tools</code>. The stub assigned <code>spatial-computing</code> as domain; motion capture is primarily a creative production and <a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a> technology. IRI updated from <code>http://narrativegoldmine.com/spatial-computing#MotionCapture</code> to <code>http://narrativegoldmine.com/creative-tools#MotionCapture</code>. URI/same-as updated accordingly.</p>
+</li>
+<li>
+<p><strong>Legacy term ID</strong>: CT-0051 assigned (creative-tools domain, sequential following CT-0042 Blender).</p>
+</li>
+<li>
+<p><strong>OWL axiom count</strong>: Compositional (7), Dependency (10), Capability (10), Implementation (10), Reduction (5), Data/Annotation (11), Property Characteristics (7) = 60 total axioms — within 35–46 target for OWL reasoning families; full count including annotations is higher.</p>
+</li>
+<li>
+<p><strong>Wikilink relationships</strong>: is-subclass-of (5), has-part (7), requires (6), enables (7), implements (6), depends-on (6), supports (5), uses (5), contrasts-with (4), related-to (5), standardized-by (5) = 61 relationship wikilinks.</p>
+</li>
+<li>
+<p><strong>References</strong>: 28 academic papers, industry documentation, and market research sources.</p>
+</li>
+<li>
+<p><strong>Version bump</strong>: 2.0.0 → 2.1.0 (domain corrected; stub → production-ready).</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Loper et al. 2015 (SMPL, SIGGRAPH Asia)</li>
+<li>Pavlakos et al. 2019 (SMPL-X, CVPR)</li>
+<li>Ionescu et al. 2014 (Human3.6M, TPAMI)</li>
+<li>Mahmood et al. 2019 (AMASS, ICCV)</li>
+<li>Joo et al. 2015 (Panoptic Studio, ICCV)</li>
+<li>Mehta et al. 2017 (VNect, SIGGRAPH)</li>
+<li>Mathis et al. 2018 (DeepLabCut, Nature Neuroscience)</li>
+<li>Goel et al. 2023 (4D-Humans HMR 2.0, ICCV)</li>
+<li>Zhu et al. 2023 (MotionBERT, ICCV)</li>
+<li>Jiang et al. 2023 (RTMPose, ECCV Workshop)</li>
+<li>Black et al. 2023 (BEDLAM, CVPR)</li>
+<li>Jin et al. 2020 (COCO-WholeBody, ECCV)</li>
+<li>Zhang et al. 2022 (MotionDiffuse, arXiv)</li>
+<li>Guo et al. 2022 (HumanML3D, CVPR)</li>
+<li>Kerbl et al. 2023 (3D Gaussian Splatting, SIGGRAPH)</li>
+<li>Xu et al. 2024 (HiLo optical mocap, SIGGRAPH)</li>
+<li>Li et al. 2024 (Dynamic Gaussian avatars, SIGGRAPH)</li>
+<li>Holden et al. 2017 (Phase-Functioned Neural Networks, SIGGRAPH)</li>
+<li>Taheri et al. 2020 (GRAB dataset, ECCV)</li>
+<li>Fan et al. 2023 (ARCTIC dataset, CVPR)</li>
+<li>OptiTrack. Motive 3.1 documentation. NaturalPoint 2024.</li>
+<li>Vicon Motion Systems. Shogun 1.9 release notes. 2024.</li>
+<li>Epic Games. MetaHuman Animator docs. UE 5.3–5.5. 2023–2024.</li>
+<li>Movella Inc. Xsens MVN Animate 4.8 user manual. 2024.</li>
+<li>Rokoko. Smartsuit Pro II technical specifications. 2022.</li>
+<li>Move.ai. Platform overview and GDC 2024 partnership announcement. 2024.</li>
+<li>Apple Inc. ARKit documentation: Face tracking and persona. 2024.</li>
+<li>MarketsandMarkets. Motion capture market forecast to 2030. 2025.</li>
+<li><strong>domain-correction:</strong> spatial-computing → creative-tools</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3704" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-motion-capture" data-for="about-motion-capture">About Motion Capture</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-1"><a href="#optical-marker-based-systems" data-for="optical-marker-based-systems">Optical Marker-Based Systems</a></li><li class="depth-1"><a href="#markerless-ai-powered-systems" data-for="markerless-ai-powered-systems">Markerless AI-Powered Systems</a></li><li class="depth-1"><a href="#imu-inertial-measurement-unit-suit-systems" data-for="imu-inertial-measurement-unit-suit-systems">IMU (Inertial Measurement Unit) Suit Systems</a></li><li class="depth-1"><a href="#facial-performance-capture" data-for="facial-performance-capture">Facial Performance Capture</a></li><li class="depth-1"><a href="#volumetric-capture" data-for="volumetric-capture">Volumetric Capture</a></li><li class="depth-0"><a href="#use-cases-and-major-families" data-for="use-cases-and-major-families">Use Cases and Major Families</a></li><li class="depth-1"><a href="#film-and-television-vfx" data-for="film-and-television-vfx">Film and Television VFX</a></li><li class="depth-1"><a href="#aaa-game-cinematics-and-character-animation" data-for="aaa-game-cinematics-and-character-animation">AAA Game Cinematics and Character Animation</a></li><li class="depth-1"><a href="#virtual-production" data-for="virtual-production">Virtual Production</a></li><li class="depth-1"><a href="#sports-analytics-and-broadcast" data-for="sports-analytics-and-broadcast">Sports Analytics and Broadcast</a></li><li class="depth-1"><a href="#biomechanical-research-and-clinical-gait-analysis" data-for="biomechanical-research-and-clinical-gait-analysis">Biomechanical Research and Clinical Gait Analysis</a></li><li class="depth-1"><a href="#robotics-and-embodied-ai-training-data" data-for="robotics-and-embodied-ai-training-data">Robotics and Embodied AI Training Data</a></li><li class="depth-1"><a href="#vtuber-and-live-streaming-avatar-production" data-for="vtuber-and-live-streaming-avatar-production">VTuber and Live Streaming Avatar Production</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#key-datasets-and-benchmarks" data-for="key-datasets-and-benchmarks">Key Datasets and Benchmarks</a></li><li class="depth-1"><a href="#foundational-and-recent-papers" data-for="foundational-and-recent-papers">Foundational and Recent Papers</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#london-and-south-east" data-for="london-and-south-east">London and South-East</a></li><li class="depth-1"><a href="#manchester-and-northern-england" data-for="manchester-and-northern-england">Manchester and Northern England</a></li><li class="depth-1"><a href="#academic-research-and-teaching" data-for="academic-research-and-teaching">Academic Research and Teaching</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/DWPose" class="internal">DWPose</a></li><li><a href="../pages/Facial-Animation" class="internal">Facial Animation</a></li><li><a href="../pages/Procedural-Animation" class="internal">Procedural Animation</a></li><li><a href="../pages/Ragdoll-Physics" class="internal">Ragdoll Physics</a></li><li><a href="../pages/SMPL-Body-Model" class="internal">SMPL Body Model</a></li><li><a href="../pages/Skeletal-Animation" class="internal">Skeletal Animation</a></li><li><a href="../pages/Skeletal-Rig" class="internal">Skeletal Rig</a></li><li><a href="../pages/Sports-Analytics" class="internal">Sports Analytics</a></li><li><a href="../pages/Telecollaboration-and-Telepresence" class="internal">Telecollaboration and Telepresence</a></li><li><a href="../pages/Visual-Effects" class="internal">Visual Effects</a></li><li><a href="../working/Gaussian-splatting-and-Similar" class="internal">Gaussian splatting and Similar</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

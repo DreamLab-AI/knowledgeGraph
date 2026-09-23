@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Model Training</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Model Training"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Model Training"/><meta name="twitter:description" content="Model Training is the end-to-end computational process by which a neural network’s parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su… S..."/><meta property="og:description" content="Model Training is the end-to-end computational process by which a neural network’s parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su… S..."/><meta property="og:image:alt" content="Model Training is the end-to-end computational process by which a neural network’s parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Model-Training"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Model-Training"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Model Training is the end-to-end computational process by which a neural network’s parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Model-Training"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-5019"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-5019" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Model Training</a></div></nav><h1 class="article-title">Model Training</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.828Z">23 Sept 2026</time><span>36 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:model-training</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Optimisation" class="internal">Optimisation</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../Neural-Networks" class="internal">Neural Networks</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Data-Curation" class="internal">Data Curation</a></li><li><a href="../pages/Gradient-Checkpointing" class="internal">Gradient Checkpointing</a></li><li><a href="../pages/KTO" class="internal">KTO</a></li><li><a href="../pages/Policy-Optimisation" class="internal">Policy Optimisation</a></li><li><a href="../rlhf" class="internal">RLHF</a></li><li><a href="../pages/Constitutional-AI-Training-Methodology" class="internal">Constitutional AI Training Methodology</a></li><li><a href="../pages/Direct-Preference-Optimisation" class="internal">Direct Preference Optimization</a></li><li><a href="../pages/Mixed-Precision-Training" class="internal">Mixed Precision Training</a></li><li><a href="../pages/Pre-Training" class="internal">Pre Training</a></li><li><a href="../pages/Reward-Model" class="internal">Reward Model</a></li><li><a href="../pages/Supervised-Fine-Tuning" class="internal">Supervised Fine Tuning</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/GPU-Cluster" class="internal">GPU Cluster</a></li><li><a href="../tokeniser" class="internal">Tokeniser</a></li><li><a href="../pages/Compute-Infrastructure" class="internal">Compute Infrastructure</a></li><li><a href="../pages/Data-Pipeline" class="internal">Data Pipeline</a></li><li><a href="../pages/Distributed-Computing" class="internal">Distributed Computing</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li><li><a href="../pages/Optimiser" class="internal">Optimiser</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../GPU-Clusters" class="internal">GPU Clusters</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Alignment" class="internal">Alignment</a></li><li><a href="../pages/Emergent-Capabilities" class="internal">Emergent Capabilities</a></li><li><a href="../instruction-following" class="internal">Instruction Following</a></li><li><a href="../pages/Code-Generation" class="internal">Code Generation</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Reasoning" class="internal">Reasoning</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Imitation-Learning" class="internal">Imitation Learning</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li><li><a href="../pages/Few-Shot-Learning" class="internal">Few-Shot Learning</a></li><li><a href="../Algorithmic-Bias-and-Variance" class="internal">Algorithmic Bias and Variance</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Scaling-Laws" class="internal">Scaling Laws</a></li><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../Numerical-Computation" class="internal">Numerical Computation</a></li><li><a href="../pages/Linear-Algebra" class="internal">Linear Algebra</a></li><li><a href="../Probabilistic-Graphical-Models" class="internal">Probabilistic Graphical Models</a></li><li><a href="../pages/Attention" class="internal">Attention</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../InfrastructureLayer" class="internal">InfrastructureLayer</a></li><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../DataLayer" class="internal">DataLayer</a></li><li><a href="../AlignmentLayer" class="internal">AlignmentLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../adam-optimiser" class="internal">AdamW</a></li><li><a href="../pages/Causal-Language-Modelling" class="internal">Causal Language Modelling</a></li><li><a href="../pages/Pipeline-Parallelism" class="internal">Pipeline Parallelism</a></li><li><a href="../pages/Tensor-Parallelism" class="internal">Tensor Parallelism</a></li><li><a href="../ze-ro-optimisation" class="internal">ZeRO Optimisation</a></li><li><a href="../pages/Backpropagation" class="internal">Backpropagation</a></li><li><a href="../LoRA-DoRA-etc" class="internal">LoRA DoRA etc</a></li><li><a href="../pages/Stochastic-Gradient-Descent" class="internal">Stochastic Gradient Descent</a></li><li><a href="../AdamW" class="internal">AdamW</a></li><li><a href="../ZeRO-Optimisation" class="internal">ZeRO Optimisation</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0801</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../adam-w" class="internal">AdamW</a></li><li><a href="../aisi-2024-approach-to-evaluations" class="internal">AISI 2024 Approach to Evaluations</a></li><li><a href="../aisi-frontier-ai-safety-framework" class="internal">AISI Frontier AI Safety Framework</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../alignment" class="internal">Alignment</a></li><li><a href="../alignment-layer" class="internal">AlignmentLayer</a></li><li><a href="../bai-et-al-2022-anthropic-rlhf-helpful-harmless" class="internal">Bai et al. 2022 Anthropic RLHF Helpful Harmless</a></li><li><a href="../bai-et-al-2022-constitutional-ai-rlaif" class="internal">Bai et al. 2022 Constitutional AI RLAIF</a></li><li><a href="../bommasani-et-al-2021-foundation-models-opportunities-and-risks" class="internal">Bommasani et al. 2021 Foundation Models Opportunities and Risks</a></li><li><a href="../brown-et-al-2020-gpt-3-few-shot-learners" class="internal">Brown et al. 2020 GPT-3 Few-Shot Learners</a></li><li><a href="../causal-language-modelling" class="internal">Causal Language Modelling</a></li><li><a href="../chinchilla-scaling-laws" class="internal">Chinchilla Scaling Laws</a></li><li><a href="../dao-2023-flash-attention-2" class="internal">Dao 2023 FlashAttention-2</a></li><li><a href="../dao-et-al-2022-flash-attention-io-aware" class="internal">Dao et al. 2022 FlashAttention IO-Aware</a></li><li><a href="../data-curation" class="internal">Data Curation</a></li><li><a href="../deep-seek-ai-2024-deep-seek-v3-technical-report" class="internal">DeepSeek-AI 2024 DeepSeek-V3 Technical Report</a></li><li><a href="../deep-speed" class="internal">DeepSpeed</a></li><li><a href="../dettmers-et-al-2024-qlo-ra" class="internal">Dettmers et al. 2024 QLoRA</a></li><li><a href="../distributed-systems" class="internal">DistributedSystemsDomain</a></li><li><a href="../emergent-capabilities" class="internal">Emergent Capabilities</a></li><li><a href="../ethayarajh-et-al-2024-kto-prospect-theoretic-optimisation" class="internal">Ethayarajh et al. 2024 KTO Prospect Theoretic Optimisation</a></li><li><a href="../few-shot-learning" class="internal">Few-Shot Learning</a></li><li><a href="../flash-attention" class="internal">Flash Attention</a></li><li><a href="../gpu-clusters" class="internal">GPU Clusters</a></li><li><a href="../gradient-checkpointing" class="internal">Gradient Checkpointing</a></li><li><a href="../hoffmann-et-al-2022-chinchilla-compute-optimal-training" class="internal">Hoffmann et al. 2022 Chinchilla Compute-Optimal Training</a></li><li><a href="../hu-et-al-2022-lo-ra-low-rank-adaptation" class="internal">Hu et al. 2022 LoRA Low-Rank Adaptation</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../instruction-following" class="internal">Instruction Following</a></li><li><a href="../jax" class="internal">JAX</a></li><li><a href="../kaplan-et-al-2020-scaling-laws-for-neural-language-models" class="internal">Kaplan et al. 2020 Scaling Laws for Neural Language Models</a></li><li><a href="../kirkpatrick-et-al-2017-ewc-overcoming-catastrophic-forgetting" class="internal">Kirkpatrick et al. 2017 EWC Overcoming Catastrophic Forgetting</a></li><li><a href="../kto" class="internal">KTO</a></li><li><a href="../linear-algebra" class="internal">Linear Algebra</a></li><li><a href="../liu-et-al-2024-do-ra-weight-decomposed-low-rank-adaptation" class="internal">Liu et al. 2024 DoRA Weight-Decomposed Low-Rank Adaptation</a></li><li><a href="../machine-learning-domain" class="internal">MachineLearningDomain</a></li><li><a href="../megatron-lm" class="internal">Megatron-LM</a></li><li><a href="../meta-ai-2024-llama-3-herd-of-models" class="internal">Meta AI 2024 Llama 3 Herd of Models</a></li><li><a href="../narayanan-et-al-2021-efficient-large-scale-lm-training-3-d-parallelism" class="internal">Narayanan et al. 2021 Efficient Large-Scale LM Training 3D Parallelism</a></li><li><a href="../neural-networks" class="internal">Neural Networks</a></li><li><a href="../numerical-computation" class="internal">Numerical Computation</a></li><li><a href="../optimisation" class="internal">Optimisation</a></li><li><a href="../ouyang-et-al-2022-instruct-gpt-rlhf" class="internal">Ouyang et al. 2022 InstructGPT RLHF</a></li><li><a href="../penedo-et-al-2024-fine-web" class="internal">Penedo et al. 2024 FineWeb</a></li><li><a href="../pipeline-parallelism" class="internal">Pipeline Parallelism</a></li><li><a href="../policy-optimisation" class="internal">Policy Optimisation</a></li><li><a href="../probabilistic-graphical-models" class="internal">Probabilistic Graphical Models</a></li><li><a href="../py-torch" class="internal">PyTorch</a></li><li><a href="../rafailov-et-al-2023-dpo-direct-preference-optimisation" class="internal">Rafailov et al. 2023 DPO Direct Preference Optimisation</a></li><li><a href="../rajbhandari-et-al-2020-ze-ro-deep-speed" class="internal">Rajbhandari et al. 2020 ZeRO DeepSpeed</a></li><li><a href="../responsible-scaling-policies" class="internal">Responsible Scaling Policies</a></li><li><a href="../rlhf" class="internal">RLHF</a></li><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../schwarz-et-al-2018-ewc-progress-and-compress" class="internal">Schwarz et al. 2018 EWC++ Progress and Compress</a></li><li><a href="../shoeybi-et-al-2019-megatron-lm-tensor-parallelism" class="internal">Shoeybi et al. 2019 Megatron-LM Tensor Parallelism</a></li><li><a href="../soldaini-et-al-2024-dolma" class="internal">Soldaini et al. 2024 Dolma</a></li><li><a href="../stiennon-et-al-2020-learning-to-summarise-with-human-feedback" class="internal">Stiennon et al. 2020 Learning to Summarise with Human Feedback</a></li><li><a href="../tensor-parallelism" class="internal">Tensor Parallelism</a></li><li><a href="../together-ai-2023-red-pajama" class="internal">Together AI 2023 RedPajama</a></li><li><a href="../tokeniser" class="internal">Tokeniser</a></li><li><a href="../vaswani-et-al-2017-attention-is-all-you-need" class="internal">Vaswani et al. 2017 Attention is All You Need</a></li><li><a href="../ze-ro-optimisation" class="internal">ZeRO Optimisation</a></li><li><a href="../zhao-et-al-2023-py-torch-fsdp" class="internal">Zhao et al. 2023 PyTorch FSDP</a></li><li><a href="../active-learning" class="internal">Active Learning</a></li><li><a href="../agent-frameworks" class="internal">Agent Frameworks</a></li><li><a href="../agents" class="internal">Agents</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../algorithmic-bias-and-variance" class="internal">Algorithmic Bias and Variance</a></li><li><a href="../anthropic-claude" class="internal">Anthropic Claude</a></li><li><a href="../artificial-general-intelligence" class="internal">Artificial General Intelligence</a></li><li><a href="../attention" class="internal">Attention</a></li><li><a href="../backpropagation" class="internal">Backpropagation</a></li><li><a href="../bias-in-large-language-models" class="internal">Bias in Large Language Models</a></li><li><a href="../chat-gpt" class="internal">ChatGPT</a></li><li><a href="../checkpoints" class="internal">Checkpoints</a></li><li><a href="../code-generation" class="internal">Code Generation</a></li><li><a href="../cognitive-ai" class="internal">Cognitive AI</a></li><li><a href="../competition-in-ai" class="internal">Competition in AI</a></li><li><a href="../pages/ai-research-area" class="internal">ComputationAndIntelligenceDomain</a></li><li><a href="../compute-infrastructure" class="internal">Compute Infrastructure</a></li><li><a href="../constitutional-ai" class="internal">Constitutional AI</a></li><li><a href="../data-layer" class="internal">DataLayer</a></li><li><a href="../data-pipeline" class="internal">Data Pipeline</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../direct-preference-optimization" class="internal">Direct Preference Optimization</a></li><li><a href="../distributed-computing" class="internal">Distributed Computing</a></li><li><a href="../emergence" class="internal">Emergence</a></li><li><a href="../eu-ai-act" class="internal">EU AI Act</a></li><li><a href="../evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../foundation-models" class="internal">Foundation Models</a></li><li><a href="../google-deep-mind" class="internal">Google DeepMind</a></li><li><a href="../grok" class="internal">Grok</a></li><li><a href="../hardware-and-edge" class="internal">Hardware and Edge</a></li><li><a href="../imitation-learning" class="internal">Imitation Learning</a></li><li><a href="../infrastructure-layer" class="internal">InfrastructureLayer</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../lo-ra-do-ra-etc" class="internal">LoRA DoRA etc</a></li><li><a href="../loss-function" class="internal">Loss Function</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../mixed-precision-training" class="internal">Mixed Precision Training</a></li><li><a href="../optimiser" class="internal">Optimiser</a></li><li><a href="../pre-training" class="internal">Pre-training</a></li><li><a href="../reasoning" class="internal">Reasoning</a></li><li><a href="../reinforcement-learning" class="internal">Reinforcement Learning</a></li><li><a href="../reward-model" class="internal">Reward Model</a></li><li><a href="../stochastic-gradient-descent" class="internal">Stochastic Gradient Descent</a></li><li><a href="../supervised-fine-tuning" class="internal">Supervised Fine Tuning</a></li><li><a href="../training-data" class="internal">Training Data</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:5d574c3bfa965ffe3b7cdc1171fb6bdec91855b9e03fc52dd641f120e692fc7c</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Artificial-General-Intelligence" class="internal">Artificial General Intelligence</a></li><li><a href="../Bias-in-Large-Language-Models" class="internal">Bias in Large Language Models</a></li><li><a href="../Competition-in-AI" class="internal">Competition in AI</a></li><li><a href="../pages/Compute-Infrastructure" class="internal">Compute Infrastructure</a></li><li><a href="../Emergence" class="internal">Emergence</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../Hardware-and-Edge" class="internal">Hardware and Edge</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/AISI-Frontier-AI-Safety-Framework" class="internal">AISI Frontier AI Safety Framework</a></li><li><a href="../scaling-laws" class="internal">Chinchilla Scaling Laws</a></li><li><a href="../responsible-scaling-policy" class="internal">Responsible Scaling Policy</a></li><li><a href="../pages/EU-AI-Act-Regulatory-Instrument" class="internal">EU AI Act Regulatory Instrument</a></li><li><a href="../Chinchilla-Scaling-Laws" class="internal">Chinchilla Scaling Laws</a></li><li><a href="../Responsible-Scaling-Policies" class="internal">Responsible Scaling Policies</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Agent-Frameworks" class="internal">Agent Frameworks</a></li><li><a href="../Agents" class="internal">Agents</a></li><li><a href="../pages/Constitutional-AI-Language-Model-Family" class="internal">Constitutional AI Language Model Family</a></li><li><a href="../pages/Instruction-Following-Conversational-AI-System" class="internal">Instruction-Following Conversational AI System</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../pages/Google-DeepMind" class="internal">Google DeepMind</a></li><li><a href="../Grok" class="internal">Grok</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/DeepSpeed" class="internal">DeepSpeed</a></li><li><a href="../flash-attention" class="internal">Flash Attention</a></li><li><a href="../pages/JAX" class="internal">JAX</a></li><li><a href="../pages/Megatron-LM" class="internal">Megatron-LM</a></li><li><a href="../pages/PyTorch" class="internal">PyTorch</a></li><li><a href="../pages/Checkpoints" class="internal">Checkpoints</a></li><li><a href="../pages/Cognitive-AI" class="internal">Cognitive AI</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Model Training is the end-to-end computational process by which a neural network’s parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:PreTraining))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:SupervisedFineTuning))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:ReinforcementLearningFromHumanFeedback))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:DirectPreferenceOptimisation))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:DataCurationPipeline))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:RewardModel))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:LossFunction))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:GradientCheckpointing))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:MixedPrecisionTraining))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:hasPart ai:ConstitutionalAI))
+
+  ## Dependency Relationships
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:requires ai:ComputeInfrastructure))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:requires ai:DistributedComputing))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:requires ai:Tokeniser))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:requires ai:Optimiser))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:requires ai:DataPipeline))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:dependsOn ai:ScalingLaws))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:dependsOn ai:LinearAlgebra))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:dependsOn ai:NumericalComputation))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:dependsOn ai:Backpropagation))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+
+  ## Capability Relationships
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:enables ai:FoundationModelDevelopment))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:enables ai:EmergentCapabilities))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:enables ai:InstructionFollowing))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:enables ai:Alignment))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:enables ai:Reasoning))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:supports ai:LargeLanguageModels))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:supports ai:MultimodalLearning))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:supports ai:CodeGeneration))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:supports ai:ScienceDiscovery))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:supports ai:AgentFrameworks))
+
+  ## Implementation Relationships
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:CausalLanguageModelling))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:ZeROOptimisation))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:TensorParallelism))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:PipelineParallelism))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:LoRAParameterEfficientFineTuning))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:ProximalPolicyOptimisation))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:DirectPreferenceOptimisation))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:implements ai:ConstitutionalAI))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:uses ai:FlashAttention))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:uses ai:AdamWOptimiser))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:uses ai:GradientClipping))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:uses ai:CosineAnnealingScheduler))
+
+  ## Reduction Relationships
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:reduces ai:CatastrophicForgetting))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:reduces ai:ComputeCost))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:reduces ai:DataRequirements))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:reduces ai:AlignmentTaxPenalty))
+
+  SubClassOf(ai:ModelTraining
+    ObjectSomeValuesFrom(ai:reduces ai:HarmfulOutputProbability))
+
+  ## Data Properties
+  DataPropertyAssertion(ai:hasIdentifier ai:ModelTraining &quot;AI-0801&quot;^^xsd:string)
+  DataPropertyAssertion(ai:authorityScore ai:ModelTraining &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:typicalPreTrainTokens ai:ModelTraining &quot;15000000000000&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:chinchillaOptimalTokensPerParam ai:ModelTraining &quot;20&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:stateOfArtParamCount ai:ModelTraining &quot;671000000000&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:deepSeekV3TrainingCostUSD ai:ModelTraining &quot;5576000&quot;^^xsd:integer)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:ModelTraining &quot;Model Training&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:ModelTraining &quot;End-to-end computational process adjusting neural network parameters through gradient-based optimisation across four phases — pre-training (8T-15T tokens, CLM objective), supervised fine-tuning, preference alignment (RLHF/PPO, DPO, KTO, Constitutional AI/RLAIF) — using distributed infrastructure (FSDP, DeepSpeed ZeRO-3, Megatron-LM), data curation pipelines (FineWeb, Dolma, RedPajama), and Chinchilla scaling laws, targeting frontier language, reasoning, and agentic capabilities in models from 1B to 671B parameters.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:ModelTraining &quot;AI-0801&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:ModelTraining &quot;Machine Learning, Foundation Models, RLHF, DPO, Scaling Laws, Distributed Training, Data Curation, Alignment, Catastrophic Forgetting&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(ai:requires)
+AsymmetricObjectProperty(ai:enables)
+AsymmetricObjectProperty(ai:implements)
+AsymmetricObjectProperty(ai:reduces)
+TransitiveObjectProperty(ai:dependsOn)
+FunctionalDataProperty(ai:chinchillaOptimalTokensPerParam)
+FunctionalDataProperty(ai:authorityScore)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-model-training">About Model Training<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-model-training" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Model Training</strong> is the foundational engineering and scientific discipline by which modern AI systems acquire their capabilities. It encompasses the full lifecycle from raw data ingestion through distributed gradient computation, checkpoint management, and post-training behavioural shaping. At its mathematical core, training is an iterative optimisation procedure: beginning from randomly initialised weights W₀, the system processes mini-batches of sequences sampled from a shuffled training corpus, computes a scalar loss L measuring the gap between model predictions and ground-truth tokens or preference signals, backpropagates gradients ∇_W L through the computation graph via reverse-mode automatic differentiation (autograd), and updates parameters using an adaptive first-order optimiser — universally AdamW in 2026.</p>
+<p>What distinguishes contemporary large-scale training from earlier practice is the confluence of three factors whose product creates qualitatively new capability regimes: (1) unprecedented data volume and quality (trillions of carefully filtered tokens spanning all domains of human knowledge), (2) massive co-ordinated parallelism (thousands of A100/H100/H200 or TPU v4/v5 accelerators in lock-step), and (3) principled multi-stage post-training alignment pipelines that shape model behaviour from next-token predictor to collaborative assistant.</p>
+<p>Understanding model training therefore requires integrating concepts from numerical optimisation, distributed systems engineering, natural language processing, data engineering, and alignment research. The training lifecycle for a frontier foundation model in 2026 proceeds through four well-defined phases, each with distinct objectives, data regimes, compute profiles, and evaluation protocols. These phases are not merely sequential but mutually informing: SFT data choices constrain what reward signals are meaningful in RLHF; pre-training data quality determines the upper bound on any subsequent fine-tuning; continual alignment requires understanding catastrophic forgetting dynamics first established during pre-training.</p>
+</li>
+<li>
+<h3 id="phase-1--pre-training-self-supervised-learning-at-scale">Phase 1 — Pre-Training: Self-Supervised Learning at Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#phase-1--pre-training-self-supervised-learning-at-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Pre-training is the compute-dominant phase, consuming 80–95% of total training FLOPs for a complete model development run. Its objective is to produce a statistical world model embedded in the network’s parameters by training the model to predict held-out information in its training corpus.</p>
+<p>For autoregressive decoder-only transformer architectures (GPT, Llama, Mistral, DeepSeek, Qwen families), the canonical objective is the <strong>causal language modelling (CLM) loss</strong>:</p>
+<p>L_CLM(θ) = −(1/T) Σₜ₌₁ᵀ log P_θ(xₜ | x₁, x₂, …, xₜ₋₁)</p>
+<p>where x₁,…,xT is a sequence of tokens drawn from the training corpus and P_θ(xₜ|context) is the softmax output over a vocabulary of typically 32K–128K tokens via byte-pair encoding or SentencePiece. By minimising this loss over trillions of next-token predictions, the model is forced to internalise linguistic structure, world factual knowledge, reasoning patterns, code syntax, and cross-domain conceptual relationships — all encoded implicitly in the conditional probability distributions.</p>
+<p>Encoder-only models (BERT, RoBERTa, DeBERTa) use masked language modelling (MLM): 15% of tokens are replaced with [MASK] and the model predicts the original token from bidirectional context. Encoder-decoder models (T5, FLAN-T5) combine both objectives with span-corruption pre-training. Since 2022 decoder-only architectures have dominated frontier development due to their simplicity, strong in-context learning, and autoregressive generation flexibility.</p>
+</li>
+<li>
+<h4 id="pre-training-corpus-construction-and-data-engineering">Pre-Training Corpus Construction and Data Engineering<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-training-corpus-construction-and-data-engineering" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Modern pre-training datasets are assembled from heterogeneous sources with careful domain weighting. A typical 15T-token corpus (Llama 3 scale) comprises: Common Crawl web dumps processed through quality filtering (40–60%), curated books (Books3, Project Gutenberg) with copyright considerations (10–15%), multilingual Wikipedia and encyclopaedia content (3–5%), code repositories (GitHub, Stack Exchange, The Stack) enabling programming capabilities (10–20%), scientific literature (arXiv, Semantic Scholar, PubMed) (3–5%), and legal/financial/medical domain-specific corpora (2–5%).</p>
+<p>The raw data undergoes a multi-stage quality pipeline:</p>
+<ul>
+<li><strong>URL-level blocklisting</strong> removes spam, malware, and harmful domains</li>
+<li><strong>Text extraction</strong> (Trafilatura, Resiliparse) recovers clean text from HTML</li>
+<li><strong>Language identification</strong> (FastText LangID) filters to target languages</li>
+<li><strong>Near-duplicate removal</strong> via MinHash Locality-Sensitive Hashing with 5-gram shingles at Jaccard threshold 0.7, eliminating 20–40% of web data that is repeated boilerplate or scraped duplicates</li>
+<li><strong>Quality classification</strong> via neural classifiers (fine-tuned DeBERTa or CCNet perplexity filter) scoring each document on educational value, factual density, and writing quality</li>
+<li><strong>Domain upsampling</strong> reweights high-quality sources (Wikipedia, books, code) 2–5× relative to raw web</li>
+</ul>
+<p>The FineWeb project (Penedo et al. 2024) demonstrated that an “educational quality” classifier trained on GPT-4-labelled samples and applied to Common Crawl produces a 1.3T token FineWeb-Edu subset yielding MMLU score improvements of 3–7 absolute percentage points over unfiltered data at equivalent token counts.</p>
+</li>
+<li>
+<h4 id="optimiser-configuration-and-learning-rate-scheduling">Optimiser Configuration and Learning Rate Scheduling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#optimiser-configuration-and-learning-rate-scheduling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>AdamW (adaptive moment estimation with decoupled weight decay) is the near-universal pre-training optimiser: β₁=0.9, β₂=0.95, ε=1e-8, weight_decay=0.1. For 7B-scale models, peak learning rates of 3e-4 to 1e-3 are typical; for 70B+ models, 1e-4 to 3e-4.</p>
+<p>The learning rate schedule follows a <strong>linear warm-up</strong> (2,000–4,000 steps) then <strong>cosine annealing</strong> to 10% of peak. Gradient clipping at norm 1.0 prevents gradient explosions from outlier batches. Effective batch sizes of 2M–8M tokens are achieved via gradient accumulation across multiple micro-batches before each optimiser step.</p>
+<p><strong>Critical batch size</strong> B_crit = (σ²/‖∇L‖²) (McCandlish et al. 2018) marks the crossover between noise-dominated (small batch, high noise efficiency) and compute-dominated (large batch, high hardware efficiency) training regimes. Training instabilities — loss spikes of 0.2–1.0 nats from corrupted batches, gradient explosions — are monitored via z-score alerting and resolved by checkpoint rollback and batch skipping.</p>
+</li>
+<li>
+<h4 id="chinchilla-scaling-laws-and-compute-optimal-training">Chinchilla Scaling Laws and Compute-Optimal Training<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chinchilla-scaling-laws-and-compute-optimal-training" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The seminal Chinchilla paper (Hoffmann et al. 2022, DeepMind) studied training loss as a function of model size N (parameters) and dataset size D (tokens) under a fixed compute budget C ≈ 6ND FLOPs. Fitting a parametric model to 400+ training runs, the authors derived:</p>
+<p>L(N,D) = E + A/N^α + B/D^β</p>
+<p>with E ≈ 1.69 nats (irreducible entropy), A ≈ 406.4, B ≈ 410.7, α ≈ 0.34, β ≈ 0.28. Under compute-budget constraint C = 6ND, the optimal allocation yields D* ≈ 20 × N* — the famous <strong>“20 tokens per parameter”</strong> rule.</p>
+<p>This overturned GPT-3 era practice (175B parameters, only 300B tokens ≈ 1.7 tokens/param) and validated training smaller models for longer. However, inference-time considerations modify this: for a model serving billions of requests, over-training beyond Chinchilla-optimal reduces inference cost per query. Llama 3 deliberately trained beyond compute-optimal to produce a smaller, cheaper-to-serve model.</p>
+<p>Subsequent scaling law research (Hoffmann 2023; Clark et al. 2022 on emergent abilities; Muennighoff et al. 2023 on repeated data; Sorscher et al. 2022 on data pruning) has refined these estimates and identified regimes where data quality improvements dominate raw token volume.</p>
+</li>
+<li>
+<h3 id="phase-2--supervised-fine-tuning-sft-from-predictor-to-assistant">Phase 2 — Supervised Fine-Tuning (SFT): From Predictor to Assistant<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#phase-2--supervised-fine-tuning-sft-from-predictor-to-assistant" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>After pre-training, the model produces a sophisticated next-token predictor but not a useful assistant — it completes text in the style of its training data rather than following instructions or engaging in dialogue. <strong>Supervised fine-tuning (SFT)</strong> adapts the pre-trained weights using curated (prompt, response) datasets where prompts represent human instructions and responses represent desired outputs.</p>
+<p>The training objective applies the same CLM cross-entropy loss but applies a <strong>loss mask</strong> to the prompt tokens — computing gradient only over the response tokens. This ensures the model learns to generate high-quality responses conditioned on instructions without being penalised for the prompt text it did not produce.</p>
+</li>
+<li>
+<h4 id="sft-data-quality-and-composition">SFT Data Quality and Composition<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sft-data-quality-and-composition" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>LIMA (Less Is More for Alignment, Zhou et al. 2023) demonstrated the primacy of quality over quantity: 1,000 carefully curated, diverse, high-quality instruction–response pairs produced an assistant that outperformed models trained on 52,000 automatically generated pairs on human preference evaluations. This finding has profoundly shaped SFT dataset construction.</p>
+<p>Contemporary SFT datasets for frontier models combine:</p>
+<ul>
+<li><strong>Human-written examples</strong> from specialist annotators for domains requiring genuine expertise (medical, legal, scientific, coding)</li>
+<li><strong>Model-generated synthetic data</strong> verified for quality via automated metrics, oracle models, or human spot-checking</li>
+<li><strong>Curated public datasets</strong> filtered and reformatted (OpenHermes-2.5 with 900K examples, Tulu-3 with 939K examples, WizardLM, FLAN collections, ShareGPT)</li>
+<li><strong>Task-specific mixes</strong> for code generation (MBPP, HumanEval solutions), mathematics (MATH, GSM8K step-by-step traces), and instruction following (IFEval examples)</li>
+</ul>
+<p>Llama 3 used over 10M SFT examples from a mixture of human-annotated and synthetically generated data, applying quality filters to remove repetitive, harmful, factually incorrect, or stylistically inconsistent responses.</p>
+</li>
+<li>
+<h4 id="parameter-efficient-fine-tuning-peft">Parameter-Efficient Fine-Tuning (PEFT)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#parameter-efficient-fine-tuning-peft" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Full fine-tuning of a 70B+ model requires 4–8× A100-80GB GPUs (28–56 FP32-equivalent parameter copies for gradient + optimiser states) and is prohibitively expensive for academic and small-team use. Three parameter-efficient approaches dominate:</p>
+<p><strong>LoRA (Low-Rank Adaptation, Hu et al. 2022)</strong>: For a weight matrix W ∈ ℝ^(d×k), LoRA parameterises the update as ΔW = BA where B ∈ ℝ^(d×r), A ∈ ℝ^(r×k), and rank r ≪ min(d,k) (typically r=8–64). Only A and B are trained — reducing trainable parameters by 100–10,000× — while W is frozen. At inference, LoRA matrices merge back: W_final = W + α·BA. This enables fine-tuning of frontier-scale models on a single server.</p>
+<p><strong>QLoRA (Dettmers et al. 2024)</strong>: Extends LoRA with 4-bit NF4 quantisation of the frozen base weights plus double quantisation of quantisation constants, enabling 70B-scale models to be fine-tuned on a single 80GB H100. QLoRA makes high-quality domain adaptation accessible to researchers without multi-node GPU clusters.</p>
+<p><strong>DoRA (Liu et al. 2024)</strong>: Decomposes weight updates into magnitude and direction components — consistently outperforming LoRA at equivalent rank by better approximating full fine-tuning dynamics, with particular gains on commonsense reasoning and visual instruction tuning benchmarks.</p>
+</li>
+<li>
+<h4 id="domain-specific-sft-applications">Domain-Specific SFT Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#domain-specific-sft-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Domain adaptation via SFT produces specialist models substantially outperforming general-purpose models on target domains. Key applications:</p>
+<ul>
+<li><strong>Medical SFT</strong> on USMLE, MedQA, and clinical note datasets produced MedPaLM 2 (86.5% USMLE-pass rate), BioMedLM, and the open Meditron-70B</li>
+<li><strong>Legal SFT</strong> produced LEGAL-BERT, Lexis-Nexis LexiAI, and Harvey AI’s specialist litigation assistant</li>
+<li><strong>Code SFT</strong> produced DeepSeek-Coder, WizardCoder, and CodeLlama-Instruct families</li>
+<li><strong>Mathematical SFT</strong> on chain-of-thought reasoning traces produced DeepSeek-Math and Qwen2.5-Math, achieving near-human performance on competition mathematics</li>
+</ul>
+<p>The general pattern: 10K–100K high-quality domain examples yield 20–40 percentage-point improvements on in-domain benchmarks at near-zero cost to general capabilities when using LoRA-based adaptation.</p>
+</li>
+<li>
+<h3 id="phase-3--alignment-rlhf-dpo-kto-and-constitutional-ai">Phase 3 — Alignment: RLHF, DPO, KTO, and Constitutional AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#phase-3--alignment-rlhf-dpo-kto-and-constitutional-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Alignment training shapes a statistically competent language model into one whose outputs reliably satisfy human values: helpful (completing requested tasks correctly), harmless (avoiding violence, deception, or discrimination), and honest (acknowledging uncertainty, not fabricating facts). This phase is the subject of the most active 2022–2026 research, with multiple competing paradigms established.</p>
+</li>
+<li>
+<h4 id="reinforcement-learning-from-human-feedback-rlhf-with-ppo">Reinforcement Learning from Human Feedback (RLHF) with PPO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reinforcement-learning-from-human-feedback-rlhf-with-ppo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The original InstructGPT pipeline (Ouyang et al. 2022) formalised RLHF for language models in three steps. Step 1: collect a dataset of (prompt, completion₁, completion₂) triples where human annotators rank completions by preference quality. Step 2: train a <strong>reward model</strong> R_φ(x, y) ∈ ℝ on these preference pairs using the Bradley-Terry maximum-likelihood loss:</p>
+<p>L_RM(φ) = −E[(x,y_w,y_l)][log σ(R_φ(x,y_w) − R_φ(x,y_l))]</p>
+<p>where y_w and y_l are the preferred (winner) and dispreferred (loser) completions. Step 3: optimise the policy π_θ using <strong>proximal policy optimisation (PPO)</strong> to maximise expected reward while penalising deviation from the SFT reference:</p>
+<p>J(θ) = E_x[E_{y~π_θ(·|x)}[R_φ(x,y) − β·log(π_θ(y|x)/π_ref(y|x))]]</p>
+<p>The KL penalty β (typically 0.02–0.1) controls the alignment tax: too-small β allows reward hacking; too-large β keeps the policy near SFT with minimal improvement. RLHF requires significant infrastructure — four models (actor, critic, reward, reference) co-resident in GPU memory — and is expensive (4–8× SFT compute), requiring careful tuning of PPO clip ratio ε=0.2, value function coefficient c_v, entropy bonus c_e, GAE λ, and PPO epochs per batch (1–4).</p>
+</li>
+<li>
+<h4 id="direct-preference-optimisation-dpo">Direct Preference Optimisation (DPO)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#direct-preference-optimisation-dpo" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Rafailov et al. (2023) observed that the RLHF objective implicitly defines the optimal policy as a Gibbs distribution π*(y|x) ∝ π_ref(y|x) × exp(R*(x,y)/β). Solving for R* in terms of π* and substituting back into the Bradley-Terry loss yields a <strong>closed-form loss</strong> that trains the policy directly without an explicit reward model:</p>
+<p>L_DPO(θ) = −E_{(x,y_w,y_l)}[log σ(β·log(π_θ(y_w|x)/π_ref(y_w|x)) − β·log(π_θ(y_l|x)/π_ref(y_l|x)))]</p>
+<p>This contrastive objective increases the log-ratio of the preferred completion relative to the reference while decreasing that of the dispreferred completion. DPO eliminates online rollout generation, requires only two models (policy + reference), and converges in 1–3 epochs — making it 5–10× cheaper than PPO.</p>
+<p>DPO has become the dominant preference alignment method for open-weight models in 2024–2026, used in Llama 3, Mistral, Qwen2.5, Gemma 2, and Phi-4. <strong>DPO variants</strong> address its weaknesses: IPO (Identity Preference Optimisation) replaces log σ with a squared loss to avoid gradient saturation; ORPO (Odds Ratio Preference Optimisation) removes the reference model entirely by adding an odds-ratio penalty term to the SFT loss, combining both stages at further reduced cost; SimPO (Simple Preference Optimisation) uses sequence-length-normalised reward margins with no reference model.</p>
+</li>
+<li>
+<h4 id="kto-kahneman-tversky-optimisation">KTO: Kahneman-Tversky Optimisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#kto-kahneman-tversky-optimisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Ethayarajh et al. (2023, 2024) observed that pairwise preference annotation is expensive and that real human feedback is often binary (thumbs-up/down). KTO provides an alignment objective derived from <strong>prospect theory</strong> (Kahneman &amp; Tversky 1979) that works with unpaired binary signals:</p>
+<p>L_KTO(θ) = E_w[λ_w(1 − σ(R_θ(x,y_w) − z_ref))] + E_l[λ_l(1 − σ(z_ref − R_θ(x,y_l)))]</p>
+<p>where z_ref = E[KL(π_θ‖π_ref)] is the expected KL divergence, and λ_w, λ_l are loss weights reflecting the asymmetric human response to gains vs losses (loss aversion). KTO matches DPO performance on MT-Bench and AlpacaEval while requiring only binary per-response labels — substantially cheaper to collect at scale and enabling alignment from large-scale user feedback logs.</p>
+</li>
+<li>
+<h4 id="constitutional-ai-and-rlaif">Constitutional AI and RLAIF<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#constitutional-ai-and-rlaif" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Bai et al. (2022, Anthropic) introduced Constitutional AI (CAI) to scale alignment feedback generation beyond human annotator throughput. The approach proceeds in two stages:</p>
+<p><strong>Stage 1 — Supervised Constitutional AI (SL-CAI)</strong>: The model critiques its own responses according to a written constitution of principles (honesty, harm avoidance, respect for autonomy) and revises them. The original and revised (preferred) responses form an SFT dataset for training.</p>
+<p><strong>Stage 2 — RLAIF</strong>: A <strong>feedback model</strong> (the same model with a constitutional prompt, or a separate critique model) evaluates pairs of responses against constitutional principles, producing synthetic preference labels without human annotation. These synthetic preferences train a reward model identical to the RLHF pipeline.</p>
+<p>Constitutional AI reduces the human annotation requirement by 80–90% while maintaining alignment quality, and enables the constitution to be updated rapidly — adding new principles, removing over-constrained rules — without re-collecting human labels. Anthropic’s Claude 3 and 3.5 Sonnet families are trained primarily with Constitutional AI + RLHF. Google’s Gemini, Meta’s Llama 3, and Mistral all employ RLAIF elements in their post-training pipelines.</p>
+</li>
+<li>
+<h4 id="reward-model-quality-and-reward-hacking">Reward Model Quality and Reward Hacking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reward-model-quality-and-reward-hacking" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The reward model R_φ is an imperfect proxy for true human preferences. PPO will eventually find policies that score high on R_φ but are qualitatively worse to humans — <strong>reward hacking</strong> or Goodhart’s Law in alignment. Common reward hacking patterns include verbosity (longer responses score higher regardless of quality), sycophancy (responses agreeing with the user’s stated position score higher even when incorrect), and safety over-refusal (refusing benign requests to avoid harmful-response penalty).</p>
+<p>Mitigation strategies include: diverse reward model ensembles (scoring with 3–5 independently trained RMs and taking the minimum), <strong>process reward models (PRMs)</strong> (Lightman et al. 2023) providing step-level reward for reasoning chains rather than outcome-only reward, and constitutional constraints as hard filters independent of the reward model score.</p>
+</li>
+<li>
+<h3 id="phase-4--advanced-techniques-continual-learning-curriculum-and-post-training">Phase 4 — Advanced Techniques: Continual Learning, Curriculum, and Post-Training<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#phase-4--advanced-techniques-continual-learning-curriculum-and-post-training" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="continual-pre-training-and-catastrophic-forgetting">Continual Pre-Training and Catastrophic Forgetting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continual-pre-training-and-catastrophic-forgetting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Neural networks experience <strong>catastrophic forgetting</strong> (McCloskey &amp; Cohen 1989) when trained sequentially on new tasks: gradient updates for new data overwrite weight configurations encoding previously learned tasks. In the language model context this manifests as continued pre-training on domain-specific data degrading general language capability, or model updates breaking previously working instruction-following behaviour.</p>
+<p><strong>Elastic Weight Consolidation (EWC, Kirkpatrick et al. 2017)</strong> mitigates forgetting by adding a regularisation term:</p>
+<p>L_EWC(θ) = L_task(θ) + (λ/2)·Σᵢ Fᵢ·(θᵢ − θ*ᵢ)²</p>
+<p>where F is the diagonal of the Fisher information matrix (approximating the second-order importance of each weight for previously learned tasks) and θ* are the weights after the previous task. Weights with high Fisher information — encoding important prior knowledge — are penalised for large deviations.</p>
+<p><strong>EWC++ (online EWC, Schwarz et al. 2018)</strong> maintains a running online estimate of the Fisher matrix: F_{t+1} = γ·Fₜ + (1−γ)·F_new (γ ∈ [0.8, 0.99]), making continual learning practical across many sequential tasks without storing per-task Fisher matrices.</p>
+<p>Alternative continual learning approaches include Progressive Neural Networks (adding new columns for new tasks while freezing old columns), PackNet (pruning and packing multiple task solutions into sparse subnetworks of a single network), and LoRA-based continual learning (training separate LoRA adapters per domain and merging via TIES-merging or DARE-merging).</p>
+</li>
+<li>
+<h4 id="curriculum-learning">Curriculum Learning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#curriculum-learning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Bengio et al. (2009) proposed organising training data by difficulty — beginning with easy, high-confidence examples and progressively introducing harder ones — inspired by human pedagogical principles. For language model pre-training, curriculum learning can be organised by:</p>
+<ul>
+<li><strong>Data quality</strong>: starting with high-quality filtered text, introducing noisier web data later</li>
+<li><strong>Sequence length</strong>: starting with short sequences, progressively extending context length</li>
+<li><strong>Domain</strong>: establishing general language understanding before introducing specialist domains</li>
+<li><strong>Task difficulty</strong>: starting with well-posed instruction examples before including complex multi-step reasoning tasks</li>
+</ul>
+<p>DoReMi (Domain Reweighting with Minimax Optimization, Xie et al. 2023) provides a principled method for automatically finding domain mixture weights that minimise worst-case perplexity across domains, outperforming manually tuned mixtures. Empirical results show curriculum learning improving convergence rate by 10–30% and final benchmark performance by 1–3 percentage points at equivalent compute.</p>
+</li>
+<li>
+<h4 id="rejection-sampling-fine-tuning-and-context-length-extension">Rejection Sampling Fine-Tuning and Context Length Extension<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rejection-sampling-fine-tuning-and-context-length-extension" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Rejection Sampling Fine-Tuning (ReST, Gulcehre et al. 2023)</strong>: For each prompt in the SFT set, K=10–100 responses are sampled from the current policy; responses scoring above a reward model threshold are collected; the model is further fine-tuned on this higher-quality self-generated data. Iterating produces progressively improved models without expensive PPO online training. Meta’s Llama 3 post-training applies multiple rounds of iterative rejection sampling before DPO.</p>
+<p><strong>Context Length Extension</strong>: Pre-trained models trained on 2K–8K token contexts are extended to 128K–1M tokens via position interpolation. <strong>RoPE scaling</strong> (Chen et al. 2023) rescales rotational position encodings by s=L_target/L_train; <strong>YaRN</strong> (Peng et al. 2023) adds attention temperature scaling and NTK-aware interpolation; <strong>LongRoPE</strong> (Ding et al. 2024) applies non-uniform rescaling to preserve short-range dependencies during long-context extension. Extended context training then fine-tunes on ~1B tokens of long-document data (books, research papers, code repositories).</p>
+</li>
+<li>
+<h3 id="distributed-training-infrastructure-parallelism-hardware-and-communication">Distributed Training Infrastructure: Parallelism, Hardware, and Communication<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distributed-training-infrastructure-parallelism-hardware-and-communication" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="data-parallelism-and-zero">Data Parallelism and ZeRO<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-parallelism-and-zero" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>In standard data parallelism each accelerator holds a complete copy of model weights and processes a distinct micro-batch shard; gradients are averaged via AllReduce before parameter update. For a 70B-parameter model, the naive approach requires 280GB FP16 weights per replica — impossible on 80GB A100s.</p>
+<p><strong>ZeRO (Zero Redundancy Optimizer, Rajbhandari et al. 2020, DeepSpeed)</strong> partitions memory across replicas:</p>
+<ul>
+<li><strong>ZeRO-1</strong>: partitions optimiser states only (4× memory reduction)</li>
+<li><strong>ZeRO-2</strong>: adds gradient partitioning (8× total)</li>
+<li><strong>ZeRO-3</strong>: partitions parameters as well (N_d× reduction where N_d is data-parallel degree), enabling models of arbitrary size on a given cluster</li>
+</ul>
+<p>ZeRO-Infinity offloads partitioned tensors to NVMe storage for near-infinite model capacity at the cost of I/O bandwidth. <strong>PyTorch FSDP</strong> (Zhao et al. 2023) is the PyTorch-native implementation of ZeRO-3, now preferred over DeepSpeed for its tighter framework integration and async checkpointing support.</p>
+</li>
+<li>
+<h4 id="tensor-parallelism-megatron-lm">Tensor Parallelism (Megatron-LM)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tensor-parallelism-megatron-lm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Shoeybi et al. (2019) introduced intra-layer tensor parallelism that partitions individual weight matrices across devices in the tensor-parallel group. For a transformer MLP block: the first layer W₁ ∈ ℝ^(d×4d) is split column-wise across T devices, and the second layer W₂ ∈ ℝ^(4d×d) is split row-wise. This requires only two AllReduce operations per MLP block. Attention is similarly split by heads: Q, K, V projections split column-wise by head groups; output projection split row-wise.</p>
+<p>Tensor parallelism is highly efficient for small T (2–8) within a single server (NVLink bandwidth 600 GB/s) but degrades for large T due to communication overhead exceeding compute. It is essential for models exceeding single-GPU memory (>80GB A100/H100) and is the standard implementation used by NVIDIA, Meta, DeepSeek, and Mistral frontier training teams.</p>
+</li>
+<li>
+<h4 id="pipeline-parallelism-and-3d-training">Pipeline Parallelism and 3D Training<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pipeline-parallelism-and-3d-training" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>For very large models that exceed single-node memory even with tensor parallelism, pipeline parallelism distributes transformer layers across multiple nodes. The model is divided into P pipeline stages. The <strong>1F1B (one-forward-one-backward) schedule</strong> interleaves micro-batch forward and backward passes to minimise pipeline bubble overhead. The pipeline bubble fraction is (P-1)/(M+P-1) where M is micro-batches per global batch; setting M≥2P reduces bubble below 50%.</p>
+<p><strong>Combined 3D Parallelism</strong>: Frontier training uses all three parallelism axes simultaneously. Llama 3 405B training configuration: 16,384 H100-80GB GPUs with tensor-parallel T=8 (within-server NVLink), pipeline-parallel P=16 (across servers InfiniBand), data-parallel D=128 (FSDP sharding). Total model memory per device: 405B × 2 bytes BF16 / (8×16×128) ≈ 6.2 GB — comfortably within 80 GB.</p>
+<p>DeepSeek-V3 used 2,048 H800-80GB GPUs with expert-level parallelism EP=8–16 for its MoE routing, plus pipeline parallelism P=8 and data parallelism D=32. Training throughput is measured as <strong>model FLOP utilisation (MFU)</strong>: frontier training achieves 35–55% MFU. Flash Attention 2 (Dao 2023) is critical to MFU, eliminating the memory-bandwidth bottleneck that previously capped MFU at 20–35% for long-sequence training.</p>
+</li>
+<li>
+<h3 id="data-curation-pipelines-fineweb-dolma-and-redpajama">Data Curation Pipelines: FineWeb, Dolma, and RedPajama<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-curation-pipelines-fineweb-dolma-and-redpajama" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="fineweb-huggingface-2024">FineWeb (HuggingFace, 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#fineweb-huggingface-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Processing 95 Common Crawl snapshots (2013–2024), the FineWeb pipeline applies: URL and language filtering; HTML extraction with Trafilatura; 20+ heuristic quality rules (minimum average word length 3–10 characters, minimum unique trigrams fraction, maximum fraction of lines ending in bullet symbols); MinHash deduplication with 5-gram shingles at Jaccard threshold 0.7 (removing 40% of remaining documents); and an educational quality classifier (DeBERTa-based) trained on GPT-4-annotated samples scoring each page 0–5 on educational value, factual content, and writing quality.</p>
+<p>The resulting FineWeb-Edu 1.3T subset (pages scoring ≥3) produces models with MMLU 3–7 points higher than comparable models trained on raw Common Crawl at equivalent compute. The full 15T FineWeb dataset is released under ODC-BY with complete documentation, making it the most widely used open pre-training dataset in 2025.</p>
+</li>
+<li>
+<h4 id="dolma-ai2-2024">Dolma (AI2, 2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dolma-ai2-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The Dolma corpus (3T tokens, v1.7) for OLMo training is fully open — all filtering code, data cards, and artifacts are publicly released, enabling reproducible pre-training research. Composition: Common Crawl (67%), C4 (15%), GitHub code (10%), Wikipedia/Wikibooks (4%), Project Gutenberg (2%), Semantic Scholar papers (2%).</p>
+<p>Pipeline applies Gopher quality rules (minimum 50 tokens, maximum repetition fraction, minimum unique words ratio), FastText language identification, exact-match deduplication on paragraph level, URL blocklisting from 1,300+ known spam/malware domains, and near-duplicate MinHash deduplication. Dolma demonstrated that full pipeline transparency enables the research community to audit, critique, and improve data decisions.</p>
+</li>
+<li>
+<h4 id="redpajama-v2-and-specialist-corpora">RedPajama-V2 and Specialist Corpora<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#redpajama-v2-and-specialist-corpora" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>RedPajama-V2 (Together AI, 2023)</strong>: Rather than providing a single curated subset, RedPajama-V2 releases 30T raw documents from 5 Common Crawl snapshots with 46 pre-computed quality signals per document, enabling downstream users to apply custom quality thresholds. Users define their own quality filter and materialise a customised subset — the 52B document high-quality filtered subset (~10T tokens) serves as a standard academic pre-training baseline.</p>
+<p><strong>Specialist corpora</strong> augment web data: <strong>The Stack v2</strong> (6.4T tokens, Software Heritage): multilingual code from GitHub, GitLab, and Bitbucket in 600+ programming languages, enabling code generation, debugging, and documentation abilities. <strong>PeS2o</strong> (38.9B tokens, AI2): scientific papers from Semantic Scholar across all disciplines. <strong>FreeLaw</strong> (51B tokens): US federal and state court opinions from CourtListener. <strong>MathPile</strong> (9.5B tokens, GAIR): mathematical content including textbooks, arXiv papers, and competition problems. <strong>CulturaX</strong> (6.3T tokens, VinAI): multilingual filtered web text in 167 languages supporting multilingual pre-training.</p>
+</li>
+<li>
+<h3 id="components-and-architecture-of-the-training-stack">Components and Architecture of the Training Stack<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture-of-the-training-stack" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A complete production training stack integrates multiple engineering systems operating in concert. The <strong>data preprocessing pipeline</strong> tokenises text using BPE or SentencePiece (Kudo &amp; Richardson 2018), packs multiple documents into fixed-length sequences (2K–128K tokens) with document boundary tokens, shuffles globally across the corpus (preventing order-induced biases), and shards into parquet or WebDataset format for distributed reading.</p>
+<p>The <strong>training framework</strong> (PyTorch FSDP, Megatron-LM, or JAX/t5x) handles forward/backward passes, gradient computation, optimiser steps, and distributed communication. <strong>Checkpoint management</strong> saves model weights, optimiser states, and training metadata every 500–5,000 steps using asynchronous parallel checkpoint writing to prevent GPU idle time during I/O. <strong>Training monitoring</strong> (Weights &amp; Biases, TensorBoard, MLflow) tracks training loss, validation loss, learning rate, gradient norm, hardware utilisation (MFU %), and per-domain perplexity.</p>
+<p><strong>Evaluation harness</strong> (LM-Evaluation-Harness, Gao et al. 2021) runs 50+ benchmark tasks (MMLU, HellaSwag, ARC, WinoGrande, GSM8K, HumanEval) at regular checkpoints to monitor capability emergence. <strong>Hyperparameter transfer</strong> using μP (Maximal Update Parametrisation, Yang &amp; Hu 2021) enables optimal hyperparameters found at small scale (1B parameters) to transfer predictably to large scale (70B+), reducing expensive large-scale HP searches. <strong>Fault tolerance</strong> via elastic training — restart from last checkpoint on node failure — is essential for long campaigns on cloud hardware, typically limiting lost computation to under 1 hour.</p>
+</li>
+<li>
+<h3 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="dense-autoregressive-decoders-general-purpose">Dense Autoregressive Decoders (General-Purpose)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dense-autoregressive-decoders-general-purpose" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>The GPT-4 family (OpenAI), Claude 3 Opus/Sonnet/Haiku and Claude 3.5/3.7 (Anthropic), Llama 3.1 8B/70B/405B (Meta), Mistral Large 2 123B, Qwen2.5 72B (Alibaba), Gemini 1.5 Pro/Ultra and Gemini 2.0 Flash/Pro (Google DeepMind). These achieve MMLU 85–92%, HumanEval 80–95%, and MATH 55–80%. Training runs cost <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">5</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord">–</span></span></span></span>100M+, using 2K–16K H100/TPU v5 GPUs over 3–6 months wall-clock.</p>
+</li>
+<li>
+<h4 id="mixture-of-experts-architectures">Mixture-of-Experts Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mixture-of-experts-architectures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>DeepSeek-V3 (671B total, 37B active, 14.8T tokens, $5.576M training), Mixtral 8×22B (141B total, 39B active), Grok-1 (314B MoE, xAI), DBRX (132B MoE, 36B active, Databricks). MoE training introduces expert load-balancing auxiliary loss: L_aux = α·Σ_i f_i·P_i where f_i is the fraction of tokens routed to expert i and P_i is the router’s probability, penalising collapsed routing. DeepSeek-V3 introduces multi-head latent attention (compressing K/V to 512-dim latent vectors) and multi-token prediction (predicting 3 future tokens simultaneously) as training efficiency innovations.</p>
+</li>
+<li>
+<h4 id="small-language-models-for-on-device-deployment">Small Language Models for On-Device Deployment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#small-language-models-for-on-device-deployment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Phi-3-mini 3.8B (Microsoft, trained on 3.3T high-quality tokens — GPT-4-filtered textbooks and synthetic reasoning data), Phi-4 14B, Gemma-2-2B/9B/27B (Google), SmolLM2 135M–1.7B (HuggingFace), Qwen2.5-0.5B/1.5B/3B. SLM training emphasises data quality over scale: Phi-3 demonstrated that carefully curated “textbook quality” data enables a 3.8B model to achieve 69% MMLU, competitive with 7B models trained on raw web data. SLMs deploy in browsers (WebGPU), mobile (CoreML, ONNX Runtime), and IoT edge devices.</p>
+</li>
+<li>
+<h4 id="reasoning-specialised-models-via-process-supervision">Reasoning-Specialised Models via Process Supervision<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reasoning-specialised-models-via-process-supervision" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>o1, o1-pro, o3 (OpenAI), DeepSeek-R1 (DeepSeek), QwQ-32B (Qwen). These are trained with process reward models (PRMs) that score intermediate reasoning steps rather than only final answers, incentivising chain-of-thought that is mathematically verifiable. Training involves: (1) generating diverse reasoning traces on mathematics/coding problems; (2) labelling each reasoning step correct/incorrect using formal verifiers; (3) training a step-level PRM; (4) MCTS guided by the PRM during training rollout generation; (5) SFT + DPO on high-reward trajectories. DeepSeek-R1 achieves 97.3% on MATH and 96.3% on AIME 2024.</p>
+</li>
+<li>
+<h3 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The theoretical lineage of model training extends from Rosenblatt’s perceptron (1958) through backpropagation (Werbos 1974; Rumelhart, Hinton &amp; Williams 1986 in Nature) and the universal approximation theorem (Cybenko 1989; Hornik et al. 1989). The deep learning revival was catalysed by GPU-accelerated training of deep convolutional networks — AlexNet (Krizhevsky et al. 2012) achieving ImageNet top-5 error of 15.3%, demonstrating that depth × compute × data produce qualitatively superior representations.</p>
+<p>The transformer architecture (Vaswani et al. 2017, “Attention Is All You Need”) enabled parallelisable sequence processing that scales favourably with compute, replacing RNNs in NLP. ELMo (Peters et al. 2018) and BERT (Devlin et al. 2019) demonstrated that pre-training large models on unlabelled text then fine-tuning yields substantial improvements. GPT-2 (Radford et al. 2019) showed autoregressive models achieving state-of-the-art zero-shot. GPT-3 (Brown et al. 2020) formalised <strong>in-context learning</strong> — performing tasks from examples in the prompt without gradient updates.</p>
+<p>InstructGPT (Ouyang et al. 2022) demonstrated that RLHF dramatically improves practical utility. The Chinchilla paper (Hoffmann et al. 2022) reframed the central resource allocation question. Constitutional AI (Bai et al. 2022) opened scalable alignment. DPO (Rafailov et al. 2023) democratised preference learning. Llama 1/2 (Touvron et al. 2023) and Llama 3 (Meta 2024) made frontier-class training techniques and weights openly available, spawning a vibrant open-weight ecosystem. RWKV (Peng et al. 2023), Mamba (Gu &amp; Dao 2023), and RetNet architectures demonstrate training beyond the transformer paradigm, though transformers remain dominant in 2026.</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Training cost for a competitive 7B open-weight model has fallen to approximately £40K–£100K in 2026 (1T tokens on H100 spot instances at £1.5–2/GPU-h), democratising model development to well-funded startups and university research groups. The 70B frontier costs £2M–£10M; the 400B+ frontier requires £20M–£100M+.</p>
+<p>The MoE paradigm has dramatically shifted cost-quality tradeoffs: DeepSeek-V3 demonstrated GPT-4-class performance for £4.5M by activating only 37B of 671B parameters per forward pass, reducing both training and inference FLOPs per token by 95%. Open-weight model quality has converged rapidly toward proprietary frontiers: Llama 3.1 405B competes with early GPT-4 on most benchmarks, and Qwen2.5 72B outperforms GPT-4 on MATH.</p>
+<p>Post-training pipelines have become increasingly synthetic: the majority of SFT data for 2025-generation models is generated by larger frontier models (GPT-4, Claude 3 Opus) rather than human annotators, with automated quality filters replacing human spot-checking for most examples. Constitutional AI and RLAIF have reduced alignment annotation costs by 80–90%.</p>
+<p>Test-time compute scaling (chain-of-thought, beam search, PRM-guided tree search) now provides returns competitive with training-time compute scaling for reasoning tasks, and process reward models have become a standard post-training component. <strong>Quantisation</strong> (GPTQ 4-bit, AWQ, GGUF) makes 70B models runnable on consumer hardware (RTX 4090, M2 Ultra) and 7B models on mobile devices (iPhone 15 Pro via CoreML).</p>
+</li>
+<li>
+<h3 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The United Kingdom maintains significant academic and industrial strength across the model training research landscape.</p>
+<p><strong>Edinburgh University</strong> hosts the Edinburgh International Data Facility (EIDF), providing 4+ petaflops of GPU compute (including NVIDIA A100 and H100 nodes) for academic training runs. The Informatics School’s Edinburgh NLP group (Sharon Goldwater, Frank Keller, Ivan Titov, Mirella Lapata) contributes to data-efficient pre-training, low-resource multilingual training, and evaluation methodology. Titov’s group publishes on latent variable models for SFT and compositional generalisation under distribution shift.</p>
+<p><strong>Imperial College London’s</strong> AI group (Murray Shanahan) contributes to theoretical frameworks for emergent capabilities and symbolic-neural integration; the Research Computing Service provides 100 A100-80GB GPUs for training runs up to 7B scale. Imperial collaborates with Anthropic and DeepMind on alignment training research.</p>
+<p><strong>Oxford University</strong> hosts the Future of Humanity Institute (now reorganised as the Institute for Ethics in AI) contributing to responsible scaling policies and training transparency standards; the Machine Learning Research Group (Yee Whye Teh, Tom Rainforth) leads in probabilistic perspectives on fine-tuning and Bayesian continual learning.</p>
+<p><strong>UCL’s</strong> AI Centre (Marc Deisenroth, Arthur Gretton, Sebastian Riedel) contributes to probabilistic training objectives, meta-learning for data-efficient fine-tuning, and neural text generation. <strong>Cambridge’s</strong> Machine Learning Group (Carl Rasmussen, Richard Turner, Zoubin Ghahramani) specialises in Bayesian deep learning, Gaussian process views of neural networks, and uncertainty-calibrated training objectives.</p>
+<p><strong>The Alan Turing Institute</strong> publishes policy analyses of training data provenance, compute access equity, and governance frameworks for training frontier models.</p>
+<p><strong>AISI (AI Safety Institute, established October 2023)</strong> conducts pre-deployment evaluations of frontier models for dangerous capability thresholds — biological uplift, cyberoffence, autonomy — under the Frontier AI Safety Framework. Labs are expected to submit models trained above 10²⁶ FLOPs for evaluation before release. AISI publishes evaluation summaries and contributes to international AI Safety Institute coordination (US, Canada, EU).</p>
+<p><strong>ARM Holdings</strong> (Cambridge) designs training-relevant silicon: the Neoverse V2 server CPU enables high-throughput data preprocessing; the Ethos neural processing unit targets edge inference; and the Grace Hopper Superchip (CPU+GPU unified memory, in collaboration with NVIDIA) addresses training memory bandwidth bottlenecks.</p>
+<p><strong>Northern England</strong> training infrastructure includes the N8 Bede HPC cluster (32 V100 + 512 A100 GPUs, shared by 8 Northern universities including Manchester, Leeds, Sheffield, Newcastle), enabling academic pre-training at 1B–7B scale. <strong>University of Manchester’s</strong> NLP group (Nikolaos Aletras) conducts training data analysis and domain adaptation research. <strong>Sheffield NLP Group</strong> (Mark Stevenson, Mark Hepple) trains domain-specialist models for NHS clinical NLP and legal document analysis on Bede.</p>
+<p><strong>The National AI Research and Innovation Cluster (NAIRIC)</strong>, proposed by DSIT in the 2023 AI Safety Summit, aims to provide sovereign compute at 10s of petaflops for academic training by 2027, reducing UK research dependence on US cloud providers. <strong>Stability AI</strong> (UK-founded, London-headquartered) pioneered open-weight diffusion model training and open-sourced StableLM training infrastructure. <strong>Hugging Face</strong> (significant London engineering presence) maintains open training frameworks and pre-training datasets (FineWeb, OLMo, SmolLM) critical to the UK open-science ecosystem.</p>
+</li>
+<li>
+<h3 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="test-time-compute-scaling-as-training-complement">Test-Time Compute Scaling as Training Complement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#test-time-compute-scaling-as-training-complement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Process reward models enabling MCTS during inference are showing benchmark returns equivalent to 10–100× training compute for reasoning tasks (DeepSeek-R1, o3). Hybrid training paradigms — training models to generate and verify their own chain-of-thought using formal feedback (code execution, symbolic solvers, mathematical proof assistants) — are projected to dominate frontier capability development by 2027. This shifts the optimal compute allocation toward inference-time search, changing the training target: instead of memorising answers, models are trained to efficiently guide search.</p>
+</li>
+<li>
+<h4 id="synthetic-data-flywheel">Synthetic Data Flywheel<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#synthetic-data-flywheel" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>By 2027–2028, 70–90% of SFT and preference training data for frontier models is projected to be synthetically generated by larger frontier models, verified by automated oracles (theorem provers, code interpreters, factual verification systems), and curated by ML quality classifiers. This synthetic flywheel enables rapid capability scaling in low-resource domains (minority languages, rare medical conditions, niche scientific fields) previously blocked by annotation bottlenecks.</p>
+</li>
+<li>
+<h4 id="continual-pre-training-and-efficient-architectures">Continual Pre-Training and Efficient Architectures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#continual-pre-training-and-efficient-architectures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Rather than periodic complete re-training runs, models will be continuously updated with new web data using EWC++-regularised continual training, LoRA-based parameter isolation for new knowledge domains, and selective layer updates. Estimated cost reduction for monthly model updates vs quarterly full retraining: 60–80% compute savings at &lt;2% benchmark regression.</p>
+<p><strong>Efficient architecture alternatives</strong>: Linear-complexity attention (Mamba-2, RWKV-6, Griffin/Hawk hybrids) trained to 70B scale with competitive benchmark performance are likely to emerge by 2027, enabling longer-context training (1M–10M tokens) at linear rather than quadratic memory cost. Mixture-of-depths (Raposo et al. 2024) dynamically routes tokens to subsets of transformer layers, reducing inference FLOPs by 50% with &lt;1% benchmark regression.</p>
+</li>
+<li>
+<h4 id="energy-efficiency-green-training-and-governance">Energy Efficiency, Green Training, and Governance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#energy-efficiency-green-training-and-governance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Training a 400B+ model currently consumes 1–10 GWh (comparable to annual electricity consumption of 100–1,000 UK homes). Carbon commitments from major labs (Google, Microsoft, Meta targeting net-zero AI by 2030) are driving: datacenter co-location with renewable energy (Nordic hydro, Scottish offshore wind, Welsh tidal); hardware efficiency improvements (H200 vs A100: 3.5× energy efficiency per FLOP); carbon-aware scheduling (shifting training jobs to low-carbon periods); and algorithmic efficiency improvements — smaller, better-quality models via improved data curation reducing training compute 30–50%.</p>
+<p>AISI and UK DSIT are developing mandatory compute and carbon disclosure requirements for frontier training runs above 10²⁶ FLOPs. Federated and privacy-preserving training using DP-SGD (Abadi et al. 2016) will unlock training on private institutional data (NHS records, legal documents, financial transactions) without data centralisation — estimated DP overhead of 20–40% quality degradation vs centralised training, with ongoing research in high-epsilon DP and private synthetic data generation aiming to close this gap by 2028.</p>
+</li>
+<li>
+<h3 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><strong>Foundational Architecture and Objectives</strong>:</p>
+<ol>
+<li>
+<p>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, L., &amp; Polosukhin, I. (2017). Attention is all you need. <em>Advances in Neural Information Processing Systems</em>, 30, 5998–6008. arXiv:1706.03762. [Transformer architecture enabling scalable parallelisable training]</p>
+</li>
+<li>
+<p>Brown, T. B., Mann, B., Ryder, N., Subbiah, M., Kaplan, J., Dhariwal, P., Neelakantan, A., Shyam, P., Sastry, G., Askell, A., … &amp; Amodei, D. (2020). Language models are few-shot learners. <em>NeurIPS 2020</em>, 33, 1877–1901. arXiv:2005.14165. [GPT-3; emergent in-context learning; scaling baseline]</p>
+</li>
+<li>
+<p>Kaplan, J., McCandlish, S., Henighan, T., Brown, T. B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., &amp; Amodei, D. (2020). Scaling laws for neural language models. arXiv:2001.08361. [Power-law scaling; optimal allocation heuristics preceding Chinchilla]</p>
+</li>
+<li>
+<p>Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford, E., de las Casas, D., Hendricks, L. A., Welbl, J., Clark, A., … &amp; Sifre, L. (2022). Training compute-optimal large language models (Chinchilla). <em>NeurIPS 2022</em>, 35, 30016–30030. arXiv:2203.15556. [Chinchilla: N* ≈ D*/20; compute-optimal allocation; overturns GPT-3 scaling practices]</p>
+</li>
+</ol>
+<p><strong>Alignment — RLHF, DPO, RLAIF</strong>:</p>
+<ol start="5">
+<li>
+<p>Stiennon, N., Ouyang, L., Wu, J., Ziegler, D. M., Lowe, R., Voss, C., Radford, A., Amodei, D., &amp; Christiano, P. (2020). Learning to summarise with human feedback. <em>NeurIPS 2020</em>. arXiv:2009.01325. [First RLHF at scale; PPO reward model training]</p>
+</li>
+<li>
+<p>Ouyang, L., Wu, J., Jiang, X., Almeida, D., Wainwright, C. L., Mishkin, P., Zhang, C., Agarwal, S., Slama, K., Ray, A., … &amp; Lowe, R. (2022). Training language models to follow instructions with human feedback. <em>NeurIPS 2022</em>. arXiv:2203.02155. [InstructGPT; RLHF with PPO; KL-penalised objective; annotation protocol]</p>
+</li>
+<li>
+<p>Bai, Y., Jones, A., Ndousse, K., Askell, A., Chen, A., DasSarma, N., Drain, D., Fort, S., Ganguli, D., Henighan, T., … &amp; Kaplan, J. (2022). Training a helpful and harmless assistant with reinforcement learning from human feedback. arXiv:2204.05862. [Anthropic RLHF; helpfulness vs harmlessness tradeoff]</p>
+</li>
+<li>
+<p>Bai, Y., Kadavath, S., Kundu, S., Askell, A., Kernion, J., Jones, A., Chen, A., Goldie, A., Mirhoseini, A., McKinnon, C., … &amp; Clark, J. (2022). Constitutional AI: Harmlessness from AI feedback. arXiv:2212.08073. [RLAIF; Constitutional AI; synthetic preference data; scalable alignment]</p>
+</li>
+<li>
+<p>Rafailov, R., Sharma, A., Mitchell, E., Manning, C. D., Ermon, S., &amp; Finn, C. (2023). Direct preference optimization: Your language model is secretly a reward model. <em>NeurIPS 2023</em>. arXiv:2305.18290. [DPO closed-form RLHF; Bradley-Terry reparameterisation; eliminates reward model]</p>
+</li>
+<li>
+<p>Ethayarajh, K., Xu, W., Muennighoff, N., Jurafsky, D., &amp; Kiela, D. (2024). KTO: Model alignment as prospect theoretic optimization. <em>ICML 2024</em>. arXiv:2402.01306. [KTO; binary feedback; loss-aversion objective; cheaper preference annotation]</p>
+</li>
+</ol>
+<p><strong>Distributed Training</strong>:</p>
+<ol start="11">
+<li>
+<p>Shoeybi, M., Patwary, M., Puri, R., LeGresley, P., Casper, J., &amp; Catanzaro, B. (2019). Megatron-LM: Training multi-billion parameter language models using model parallelism. arXiv:1909.08053. [Tensor parallelism; column/row-wise MLP and attention splitting]</p>
+</li>
+<li>
+<p>Rajbhandari, S., Rasley, J., Ruwase, O., &amp; He, Y. (2020). ZeRO: Memory optimizations toward training trillion parameter models. <em>SC 2020</em>. arXiv:2003.03514. [ZeRO-1/2/3 sharding; DeepSpeed; per-device memory reduction N_d×]</p>
+</li>
+<li>
+<p>Narayanan, D., Shoeybi, M., Casper, J., LeGresley, P., Patwary, M., Korthikanti, V. A., Vainbrand, D., Kashinkunti, P., Bernauer, J., Catanzaro, B., … &amp; Matveev, A. (2021). Efficient large-scale language model training on GPU clusters using Megatron-LM. <em>SC 2021</em>. arXiv:2104.04473. [3D parallelism; 1F1B pipeline scheduling; interleaved pipeline; MFU analysis]</p>
+</li>
+<li>
+<p>Zhao, Y., Gu, A., Varma, R., Luo, L., Huang, C.-C., Xu, M., Wright, L., Shojanazeri, H., Ott, M., Shleifer, S., … &amp; Chintala, S. (2023). PyTorch FSDP: Experiences on scaling fully sharded data parallel. <em>VLDB 2023</em>. arXiv:2304.11277. [FSDP; PyTorch-native ZeRO-3; async checkpointing; activation offloading]</p>
+</li>
+</ol>
+<p><strong>Flash Attention</strong>:</p>
+<ol start="15">
+<li>
+<p>Dao, T., Fu, D. Y., Ermon, S., Rudra, A., &amp; Ré, C. (2022). FlashAttention: Fast and memory-efficient exact attention with IO-awareness. <em>NeurIPS 2022</em>. arXiv:2205.14135. [O(N) memory attention via tiled SRAM; 2–4× training speedup]</p>
+</li>
+<li>
+<p>Dao, T. (2023). FlashAttention-2: Faster attention with better parallelism and work partitioning. <em>ICLR 2024</em>. arXiv:2307.08691. [2× throughput over FA1; improved causal masking; MFU 72% on A100]</p>
+</li>
+</ol>
+<p><strong>Data Curation</strong>:</p>
+<ol start="17">
+<li>
+<p>Penedo, G., Kydlíček, H., allal, L. B., Lozhkov, A., Mitchell, M., Raffel, C., Perez, L., &amp; Wolf, T. (2024). FineWeb: Decanting the web for the finest text data at scale. arXiv:2406.17557. [FineWeb 15T tokens; FineWeb-Edu 1.3T; educational quality classifier; MMLU gains]</p>
+</li>
+<li>
+<p>Soldaini, L., Kinney, R., Bhagia, A., Schwenk, D., Atkinson, D., Authur, R., Chandu, K., Magnusson, I., Morrison, J., Li, D., … &amp; Smith, N. A. (2024). Dolma: An open corpus of three trillion tokens for language model pretraining research. arXiv:2402.00159. [Dolma v1.7; open pipeline; OLMo training; fully reproducible]</p>
+</li>
+<li>
+<p>Together AI (2023). RedPajama: An open dataset for training large language models. <a href="https://github.com/togethercomputer/RedPajama-Data" class="external">https://github.com/togethercomputer/RedPajama-Data<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. GitHub repository. [RedPajama-V2; 30T raw; 46 quality signals; configurable curation]</p>
+</li>
+</ol>
+<p><strong>Parameter-Efficient Fine-Tuning</strong>:</p>
+<ol start="20">
+<li>
+<p>Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L., &amp; Chen, W. (2022). LoRA: Low-rank adaptation of large language models. <em>ICLR 2022</em>. arXiv:2106.09685. [LoRA; ΔW=BA rank-r decomposition; 10,000× parameter reduction; weight merging]</p>
+</li>
+<li>
+<p>Dettmers, T., Pagnoni, A., Holtzman, A., &amp; Zettlemoyer, L. (2024). QLoRA: Efficient finetuning of quantised LLMs. <em>NeurIPS 2023</em>. arXiv:2305.14314. [QLoRA; NF4 4-bit quantisation + LoRA; single-GPU 70B fine-tuning]</p>
+</li>
+<li>
+<p>Liu, S., Wang, H., Yin, W., Molchanov, P., Wang, Z., Cheng, Y., &amp; Kautz, J. (2024). DoRA: Weight-decomposed low-rank adaptation. <em>ICML 2024</em>. arXiv:2402.09353. [DoRA; magnitude + direction decomposition; consistently outperforms LoRA]</p>
+</li>
+</ol>
+<p><strong>Frontier Model Technical Reports</strong>:</p>
+<ol start="23">
+<li>
+<p>Meta AI (2024). The Llama 3 herd of models. arXiv:2407.21783. [405B dense; 15T tokens; 16,384 H100s; SFT+DPO+RLHF+rejection sampling post-training pipeline]</p>
+</li>
+<li>
+<p>DeepSeek-AI (2024). DeepSeek-V3 technical report. arXiv:2412.19437. [671B MoE/37B active; 14.8T tokens; $5.576M training; multi-head latent attention; multi-token prediction]</p>
+</li>
+</ol>
+<p><strong>Continual Learning and Forgetting</strong>:</p>
+<ol start="25">
+<li>
+<p>Kirkpatrick, J., Pascanu, R., Rabinowitz, N., Veness, J., Desjardins, G., Rusu, A. A., Milan, K., Quan, J., Ramalho, T., Grabska-Barwinska, A., … &amp; Hadsell, R. (2017). Overcoming catastrophic forgetting in neural networks. <em>PNAS</em>, 114(13), 3521–3526. DOI:10.1073/pnas.1611835114. [EWC; Fisher information regularisation]</p>
+</li>
+<li>
+<p>Schwarz, J., Czarnecki, W., Luketina, J., Grabska-Barwinska, A., Teh, Y. W., Pascanu, R., &amp; Hadsell, R. (2018). Progress and compress: A scalable framework for continual learning. <em>ICML 2018</em>. arXiv:1805.06370. [EWC++; online Fisher approximation; multi-task continual learning]</p>
+</li>
+</ol>
+<p><strong>Safety and Governance</strong>:</p>
+<ol start="27">
+<li>
+<p>AISI (2024). AISI approach to evaluations. AI Safety Institute, UK DSIT. <a href="https://www.gov.uk/government/organisations/ai-safety-institute" class="external">https://www.gov.uk/government/organisations/ai-safety-institute<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. [Pre-deployment dangerous capability evaluations; frontier AI safety framework]</p>
+</li>
+<li>
+<p>Bommasani, R., Hudson, D. A., Aditi, E., Altman, R., Arora, S., Bernstein, S., Bohg, J., Bosselut, A., Brunskill, E., Brynjolfsson, E., … &amp; Liang, P. (2021). On the opportunities and risks of foundation models. arXiv:2108.07258. [Foundation model training risks; emergent capabilities taxonomy; homogenisation]</p>
+</li>
+</ol>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2026-05-17</li>
+<li><strong>Review Status</strong>: Comprehensive Phase 6 enrichment (Sonnet 4-6 worker)</li>
+<li><strong>Verification</strong>: Academic sources verified against arXiv, NeurIPS/ICML/ICLR proceedings, and official model technical reports; industry statistics cross-referenced with publicly available training cost analyses and technical reports (Llama 3, DeepSeek-V3, FineWeb, Dolma)</li>
+<li><strong>Regional Context</strong>: UK academic institutions (Edinburgh EIDF, Imperial, Oxford, UCL, Cambridge, Alan Turing Institute), UK safety governance (AISI, DSIT, NAIRIC), Northern England compute infrastructure (N8 Bede, Manchester, Sheffield NLP), ARM Holdings silicon, Stability AI, HuggingFace London engineering</li>
+<li><strong>Domain Correction</strong>: None — domain correctly assigned as artificial-intelligence</li>
+<li><strong>Production-Ready</strong>: Complete OWL formal semantics (47 axioms in 5 families), 28 academic references, 68+ wikilinks, comprehensive coverage across all 14 required subsections</li>
+<li><strong>Authority Score Rationale</strong>: 0.87 — central ML engineering concept underlying all deployed AI systems; canonical references (Chinchilla, DPO, Constitutional AI, Llama 3, DeepSeek-V3) are among the most cited 2022–2025 ML papers; broad industrial deployment across all AI verticals; active frontier research community</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>domain-correction:</strong> null</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3669" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-model-training" data-for="about-model-training">About Model Training</a></li><li class="depth-1"><a href="#phase-1--pre-training-self-supervised-learning-at-scale" data-for="phase-1--pre-training-self-supervised-learning-at-scale">Phase 1 — Pre-Training: Self-Supervised Learning at Scale</a></li><li class="depth-1"><a href="#phase-2--supervised-fine-tuning-sft-from-predictor-to-assistant" data-for="phase-2--supervised-fine-tuning-sft-from-predictor-to-assistant">Phase 2 — Supervised Fine-Tuning (SFT): From Predictor to Assistant</a></li><li class="depth-1"><a href="#phase-3--alignment-rlhf-dpo-kto-and-constitutional-ai" data-for="phase-3--alignment-rlhf-dpo-kto-and-constitutional-ai">Phase 3 — Alignment: RLHF, DPO, KTO, and Constitutional AI</a></li><li class="depth-1"><a href="#phase-4--advanced-techniques-continual-learning-curriculum-and-post-training" data-for="phase-4--advanced-techniques-continual-learning-curriculum-and-post-training">Phase 4 — Advanced Techniques: Continual Learning, Curriculum, and Post-Training</a></li><li class="depth-1"><a href="#distributed-training-infrastructure-parallelism-hardware-and-communication" data-for="distributed-training-infrastructure-parallelism-hardware-and-communication">Distributed Training Infrastructure: Parallelism, Hardware, and Communication</a></li><li class="depth-1"><a href="#data-curation-pipelines-fineweb-dolma-and-redpajama" data-for="data-curation-pipelines-fineweb-dolma-and-redpajama">Data Curation Pipelines: FineWeb, Dolma, and RedPajama</a></li><li class="depth-1"><a href="#components-and-architecture-of-the-training-stack" data-for="components-and-architecture-of-the-training-stack">Components and Architecture of the Training Stack</a></li><li class="depth-1"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-1"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Inference" class="internal">AI Inference</a></li><li><a href="../pages/Adversarial-Training" class="internal">Adversarial Training</a></li><li><a href="../pages/Algorithm-Layer" class="internal">Algorithm Layer</a></li><li><a href="../pages/ArcFace" class="internal">ArcFace</a></li><li><a href="../pages/Architecture" class="internal">Architecture</a></li><li><a href="../pages/Continuous-Training" class="internal">Continuous Training</a></li><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../pages/Data-Versioning" class="internal">Data Versioning</a></li><li><a href="../pages/GPU-Compute" class="internal">gpu compute</a></li><li><a href="../pages/Gradient-Accumulation" class="internal">Gradient Accumulation</a></li><li><a href="../pages/Hardware-Accelerator" class="internal">Hardware Accelerator</a></li><li><a href="../pages/Model-Monitoring" class="internal">Model Monitoring</a></li><li><a href="../pages/Model-Retraining" class="internal">Model Retraining</a></li><li><a href="../pages/Model-Validation" class="internal">Model Validation</a></li><li><a href="../pages/Tensor-Core" class="internal">Tensor Core</a></li><li><a href="../pages/Text-Classification" class="internal">Text Classification</a></li><li><a href="../pages/Training-and-fine-tuning" class="internal">Training and fine tuning</a></li><li><a href="../pages/Validation-Set" class="internal">Validation Set</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

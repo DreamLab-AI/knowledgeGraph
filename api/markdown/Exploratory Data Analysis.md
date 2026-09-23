@@ -1,0 +1,25 @@
+
+Exploratory data analysis (EDA) is the practice of summarising, visualising, and interrogating a dataset to understand its structure, distributions, relationships, and anomalies before formal modelling. Introduced as a discipline by John Tukey, it emphasises graphical methods and descriptive statistics to generate hypotheses rather than confirm them. EDA is an early, iterative phase of the data-science workflow that informs data cleaning, feature engineering, and model selection.
+
+- **Exploratory Data Analysis** (EDA) is the [[Data Analysis]] phase in which an analyst summarises and visualises a dataset to understand it before modelling.
+- It draws on [[Data Visualisation]] and descriptive statistics to surface distributions, relationships, and anomalies.
+- It is an early stage of [[Data Science]] that informs [[Data Cleaning]], [[Feature Engineering]], and model choice.
+- ### Overview
+- EDA was formalised by John Tukey, who argued that looking at data openly and graphically should precede confirmatory inference.
+- Rather than testing a fixed hypothesis, EDA is hypothesis-generating: it asks what the data can reveal about its own shape, quality, and structure.
+- A typical EDA pass computes summary statistics, plots univariate distributions, examines pairwise relationships, identifies outliers and missing values, and probes for patterns or clusters.
+- The insights gained guide downstream decisions — which features to construct, which transformations to apply, which models are plausible, and where the data may mislead.
+- EDA is inherently iterative and interactive, often performed in notebook environments that interleave code, output, and narrative.
+- ### Key aspects
+- Descriptive statistics: central tendency, spread, and distribution shape.
+- Visualisation: histograms, box plots, scatter plots, and correlation views via [[Data Visualisation]].
+- Outlier and anomaly detection: spotting values that distort analysis.
+- Missingness assessment: understanding gaps that drive [[Data Cleaning]].
+- Structure discovery: clustering and [[Dimensionality Reduction]] to reveal latent structure.
+- ### Applications
+- Preparing data for supervised and [[Unsupervised Learning]] models.
+- Validating data quality before building a [[Feature Engineering]] pipeline.
+- Informing [[Predictive Analytics]] by revealing relationships and confounders.
+- Communicating dataset characteristics to stakeholders early in a project.
+- ### Provenance
+

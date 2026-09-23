@@ -1,0 +1,1433 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>3D and 4D</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="3D and 4D"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="3D and 4D"/><meta name="twitter:description" content="The domain of three-dimensional and four-dimensional content creation, covering tools, techniques, and AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations."/><meta property="og:description" content="The domain of three-dimensional and four-dimensional content creation, covering tools, techniques, and AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations."/><meta property="og:image:alt" content="The domain of three-dimensional and four-dimensional content creation, covering tools, techniques, and AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/3D-and-4D"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/3D-and-4D"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="The domain of three-dimensional and four-dimensional content creation, covering tools, techniques, and AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/3D-and-4D"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-73"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-73" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>3D and 4D</a></div></nav><h1 class="article-title">3D and 4D</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.652Z">23 Sept 2026</time><span>39 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:3-d-and-4-d</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>spatial-computing</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.5</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Content-and-Assets" class="internal">Content and Assets</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Augmented-Reality" class="internal">Augmented Reality</a></li><li><a href="../pages/3D-Asset" class="internal">3D Asset</a></li><li><a href="../pages/Pose-Estimation" class="internal">Pose Estimation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../automation" class="internal">automation</a></li><li><a href="../pages/community" class="internal">community</a></li><li><a href="../decision-making" class="internal">decision making</a></li><li><a href="../design-thinking" class="internal">design thinking</a></li><li><a href="../documentation" class="internal">documentation</a></li><li><a href="../innovation" class="internal">innovation</a></li><li><a href="../modeling" class="internal">modeling</a></li><li><a href="../neural-networks" class="internal">neural networks</a></li><li><a href="../open-source" class="internal">open source</a></li><li><a href="../optimization" class="internal">optimization</a></li><li><a href="../organisation" class="internal">organisation</a></li><li><a href="../pages/performance" class="internal">performance</a></li><li><a href="../research" class="internal">research</a></li><li><a href="../scalability" class="internal">scalability</a></li><li><a href="../skills-development" class="internal">skills development</a></li><li><a href="../user-experience" class="internal">user experience</a></li><li><a href="../visualization" class="internal">visualization</a></li><li><a href="../artificial-intelligence" class="internal">artificial intelligence</a></li><li><a href="../bias" class="internal">bias</a></li><li><a href="../collaboration" class="internal">collaboration</a></li><li><a href="../computer-vision" class="internal">computer vision</a></li><li><a href="../data-management" class="internal">data management</a></li><li><a href="../deep-learning" class="internal">deep learning</a></li><li><a href="../machine-learning" class="internal">machine learning</a></li><li><a href="../natural-language-processing" class="internal">natural language processing</a></li><li><a href="../robotics" class="internal">robotics</a></li><li><a href="../software-engineering" class="internal">software engineering</a></li><li><a href="../training" class="internal">training</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:ef4e7b461971847dc31569f579e052b5132c284c6fa8a396fbaf72a735cabe6b</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li></ul></td></tr><tr><th scope="row">Slug</th><td><ul class="properties-values"><li><span>3-d-and-4-d</span></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Generative-AI" class="internal">Generative AI</a></li><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../pages/Neural-Radiance-Field" class="internal">Neural Radiance Field</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>The domain of three-dimensional and four-dimensional content creation, covering tools, techniques, and AI-powered pipelines for generating, editing, and rendering 3D assets and temporally dynamic (4D) representations. Encompasses text-to-3D systems (NVIDIA Edify, Luma Genie, Point-E), neural radiance fields, Gaussian splatting, and diffusion-based mesh generation, as well as 6D pose estimation, scene-scale generation, and integration with AR/VR workflows.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h1 id="3d-and-4d-content-creation">3D and 4D Content Creation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3d-and-4d-content-creation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>This page provides an overview of the tools and techniques used to create 3D and 4D content, with a focus on AI-powered solutions.</p>
+</li>
+<li>
+<p>The system leverages <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> and <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> to allow users to interact with 3D models in a more intuitive and accessible way, streamlining the 3D creation process.</p>
+</li>
+<li>
+<p>One key aim of Edify 3D is to simplify complex tasks like object placement, colour correction, and material assignment within a 3D environment.</p>
+</li>
+<li>
+<p>The framework allows for interactive editing using natural language commands or simple visual cues, making it easier for users with varying levels of 3D expertise to contribute.</p>
+</li>
+<li>
+<p>It aims to integrate with existing 3D workflows and tools, offering features such as intelligent scene organisation and optimisation for real-time rendering.</p>
+</li>
+<li>
+<p>Edify 3D is designed to handle large and complex 3D datasets, making it suitable for applications ranging from architectural visualisation to virtual world design.</p>
+</li>
+<li>
+<p>NVIDIA hopes that it will democratise 3D content creation, allowing more people to participate in designing and customising virtual environments.
+- {{video <a href="https://www.youtube.com/watch?v=AJWTUvXA0Wc%7D%7D" class="external">https://www.youtube.com/watch?v=AJWTUvXA0Wc}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Users can describe the desired 3D model with a text prompt, specifying details like shape, colour, and texture.</p>
+</li>
+<li>
+<p>Alternatively, users can upload an image to guide the 3D model generation.</p>
+</li>
+<li>
+<p>The generated 3D models can be downloaded in various formats for use in different applications.</p>
+</li>
+<li>
+<p>Genie aims to simplify the process of 3D content creation, making it more accessible to users of all skill levels.</p>
+</li>
+<li>
+<p>It appears to be still under development, with the website showcasing examples and possibilities.</p>
+</li>
+<li>
+<p>The technology uses neural radiance fields to generate high-quality, realistic 3D models.</p>
+</li>
+<li>
+<p>Users can organise and share their created models through the Luma platform.
+- <iframe src="https://lumalabs.ai/luma-web-library" style="width:100%;height:600px;"></iframe></p>
+</li>
+<li>
+<p>Users can generate 3D assets for various applications, including game development, e-commerce, and augmented reality.</p>
+</li>
+<li>
+<p>The platform offers a user-friendly <a href="../user-experience" class="internal alias" data-slug="user-experience">user experience</a> and streamlined workflow for converting images into 3D models.</p>
+</li>
+<li>
+<p>It supports various image formats and provides options for customising the 3D model’s appearance and texture.</p>
+</li>
+<li>
+<p>Users can download the resulting 3D models in standard file formats for use in other software packages.</p>
+</li>
+<li>
+<p>The website offers different pricing plans depending on the level of usage and features required.</p>
+</li>
+<li>
+<p>It aims to simplify the 3D modelling process, making it accessible to users without specialist 3D design skills.</p>
+</li>
+<li>
+<p>Colour and texture options are available to enhance the realism of the generated 3D models.</p>
+</li>
+<li>
+<p>The service focuses on automated 3D asset creation, reducing the time and cost associated with traditional methods.</p>
+</li>
+<li>
+<p>The website can be used to organise and manage a library of generated 3D models.</p>
+<ul>
+<li>
+<iframe src="https://3d.csm.ai/" style="width:100%;height:600px;"></iframe>
+</li>
+</ul>
+</li>
+<li>
+<p>The platform simplifies 3D content creation, reducing the technical barriers and time normally associated with complex modelling software.</p>
+</li>
+<li>
+<p>It empowers users to generate 3D assets for a range of applications, including gaming, e-commerce, <a href="../design-thinking" class="internal alias" data-slug="design-thinking">design thinking</a>, prototyping, and augmented reality.</p>
+</li>
+<li>
+<p>Meshy supports texturing and colour application to 3D models, enhancing their visual appeal and realism.</p>
+</li>
+<li>
+<p>The service enables <a href="../organisation" class="internal" data-slug="organisation">organisation</a> and management of generated 3D models, facilitating efficient workflows and <a href="../collaboration" class="internal" data-slug="collaboration">collaboration</a>.</p>
+</li>
+<li>
+<p>It allows users to share their 3D creations easily, fostering collaboration and feedback from others.</p>
+</li>
+<li>
+<p>Meshy offers possibilities for customisation and fine-tuning of 3D models, allowing for greater control over the final output.</p>
+</li>
+<li>
+<p>The platform provides tools for <a href="../optimization" class="internal" data-slug="optimization">optimization</a> of 3D models for different platforms and devices, ensuring <a href="../pages/performance" class="internal" data-slug="pages/performance">performance</a> and compatibility.</p>
+<ul>
+<li>
+<iframe src="https://www.meshy.ai/showcase" style="width:100%;height:600px;"></iframe>
+</li>
+</ul>
+</li>
+<li>
+<p>The method organises 3D shape data into a continuous and disentangled latent space, allowing for intuitive shape manipulation and exploration.</p>
+</li>
+<li>
+<p>LATTE3D leverages a vector-quantised variational autoencoder (VQ-VAE) to learn a discrete codebook of 3D shape primitives.</p>
+</li>
+<li>
+<p>By combining these primitives through learned <a href="../neural-networks" class="internal alias" data-slug="neural-networks">neural networks</a> decoders, it generates complex and detailed 3D shapes.</p>
+</li>
+<li>
+<p>The approach enables conditional shape generation based on various attributes, such as object category or user-specified parameters.</p>
+</li>
+<li>
+<p>It allows for semantic shape editing by traversing the learned latent space, enabling modifications to the generated 3D shape’s properties.</p>
+</li>
+<li>
+<p>LATTE3D improves the quality and diversity of generated 3D shapes compared to previous latent-based generative models.</p>
+</li>
+<li>
+<p>The learned latent space facilitates applications like shape interpolation, analogy creation, and shape completion, offering a flexible framework for 3D content creation.</p>
+</li>
+<li>
+<p>The system shows promise for applications in <a href="../computer-vision" class="internal alias" data-slug="computer-vision">computer vision</a>, game development, and design, offering a controllable way to generate varied 3D assets.</p>
+</li>
+<li>
+<p>The method’s reliance on signed distance functions (SDFs) allows for direct use in rendering pipelines and other geometric processing tasks.
+- <iframe src="https://research.nvidia.com/labs/toronto-ai/LATTE3D/" style="width:100%;height:600px;"></iframe></p>
+</li>
+<li>
+<p>They specialise in portable projectors, offering convenient and versatile viewing solutions.</p>
+</li>
+<li>
+<p>The website features a curated selection of projectors based on performance, features, and customer feedback.</p>
+</li>
+<li>
+<p>Customers can find projectors suitable for home cinema, gaming, outdoor movie nights, and professional presentations.</p>
+</li>
+<li>
+<p>The site aims to help customers organise and understand the technical specifications of different projector models.</p>
+</li>
+<li>
+<p>They provide detailed product descriptions, reviews, and comparisons to aid in the <a href="../user-experience" class="internal alias" data-slug="user-experience">user experience</a> and selection process.</p>
+</li>
+<li>
+<p>Stable Projectorz emphasises customer satisfaction and offers support to ensure a positive purchasing experience.</p>
+</li>
+<li>
+<p>The website features a blog with guides and articles on choosing the right projector, troubleshooting common issues, and optimising image colour and quality.</p>
+</li>
+<li>
+<p>They appear to offer projectors with various connectivity options, including HDMI, USB, and wireless capabilities.
+- {{video <a href="https://www.youtube.com/watch?v=IXQg0ITHjtw%7D%7D" class="external">https://www.youtube.com/watch?v=IXQg0ITHjtw}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <strong><a href="https://huggingface.co/stabilityai/stable-zero123" class="external">stabilityai/stable-zero123<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> - - Stable Zero123 is a model developed by Stability AI that estimates the novel view of an object from a single-view image, focusing on zero-shot generalisation to arbitrary objects.</p>
+</li>
+<li>
+<p>The model can generate multiple views of an object from different angles, allowing for a more complete 3D understanding from a single 2D image.</p>
+</li>
+<li>
+<p>Stable Zero123 uses a diffusion model architecture to generate the novel views, resulting in detailed and realistic outputs.</p>
+</li>
+<li>
+<p>This model is useful for various applications including 3D asset creation, virtual reality/augmented reality experiences and e-commerce where users can view products from all angles.</p>
+</li>
+<li>
+<p>The model is readily available for use through the Hugging Face Transformers library, allowing developers to easily integrate it into their workflows.</p>
+</li>
+<li>
+<p>Developers can fine-tune the model on specific datasets to improve performance on particular object categories or to tailor the output to a specific aesthetic.</p>
+</li>
+<li>
+<p>The model is provided with an associated research paper that gives more details on the methodology, architecture and training process.</p>
+</li>
+<li>
+<p>Users should be aware of the potential <a href="../bias" class="internal" data-slug="bias">bias</a> inherent in the training data and should use the model responsibly, considering ethical implications.
+- <strong><a href="https://github.com/SUDO-AI-3D/zero123plus" class="external">SUDO-AI-3D/zero123plus<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> - - Zero123plus is a project extending the Zero123 single-view 3D reconstruction model.</p>
+</li>
+<li>
+<p>It aims to generate multi-view consistent images and 3D models from a single input image.</p>
+</li>
+<li>
+<p>The project uses improved training techniques and architectures for enhanced <a href="../pages/performance" class="internal" data-slug="pages/performance">performance</a>.</p>
+</li>
+<li>
+<p>The codebase is organised with clear modules for model components, data loading, and training procedures.</p>
+</li>
+<li>
+<p>Pre-trained models and instructions for inference are provided.</p>
+</li>
+<li>
+<p>The project encourages users to experiment with various prompts and parameters to achieve desired outputs.</p>
+</li>
+<li>
+<p>It includes tools for evaluating the quality of the generated images and 3D models.</p>
+</li>
+<li>
+<p>Contributions to the project are welcomed, following the outlined contribution guidelines.</p>
+</li>
+<li>
+<p>The project uses a specific licence, which users should review before using or distributing the code.</p>
+</li>
+<li>
+<p>Users can find instructions on how to set up the environment and install the necessary dependencies.</p>
+</li>
+<li>
+<p>The colour palettes for visualising outputs are customisable.
+- <strong><a href="https://github.com/flowtyone/ComfyUI-Flowty-TripoSR/tree/master" class="external">flowtyone/ComfyUI-Flowty-TripoSR<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> - - This repository provides a custom node for ComfyUI that integrates the TripoSR model, allowing users to reconstruct 3D objects from single-view images directly within ComfyUI.</p>
+</li>
+<li>
+<p>The node accepts an image as input and, using TripoSR, generates a 3D mesh representation of the object depicted in the image, leveraging <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> techniques.</p>
+</li>
+<li>
+<p>Users can control parameters such as resolution and detail level to influence the quality and processing time of the 3D reconstruction.</p>
+</li>
+<li>
+<p>The repository contains example workflows and instructions for installing and configuring the custom node within ComfyUI.</p>
+</li>
+<li>
+<p>The integration enables users to incorporate 3D object generation into their ComfyUI workflows, potentially for tasks such as object manipulation, virtual environment creation, or 3D asset design.</p>
+</li>
+<li>
+<p>A key feature is the ability to visualise the generated 3D model directly within ComfyUI, offering immediate feedback on the reconstruction quality and supporting <a href="../user-experience" class="internal alias" data-slug="user-experience">user experience</a> optimisation.</p>
+</li>
+<li>
+<p>The node simplifies the process of using TripoSR by handling the necessary model loading and inference steps, reducing the technical complexity for ComfyUI users through effective <a href="../documentation" class="internal" data-slug="documentation">documentation</a>.</p>
+</li>
+<li>
+<p>Updates and improvements to the node are regularly made, addressing bugs and optimising <a href="../pages/performance" class="internal" data-slug="pages/performance">performance</a>, and users can contribute with feedback or code contributions.</p>
+</li>
+<li>
+<p>The provided documentation explains how to obtain the required model weights and organise them correctly for the node to function.</p>
+</li>
+<li>
+<p>Support for additional features and customisation options may be added in future updates, enhancing the node’s functionality and user experience.
+- <strong><a href="https://github.com/layerdiffusion/LayerDiffuse" class="external">layerdiffusion/LayerDiffuse<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> - LayerDiffuse offers a layered diffusion approach for image editing, allowing users to manipulate specific parts of an image rather than the whole thing at once.</p>
+</li>
+<li>
+<p>The method involves decomposing an image into several layers and independently diffusing each layer according to user instructions or prompts.</p>
+</li>
+<li>
+<p>It allows for fine-grained control over image manipulation, such as changing the colour or style of specific objects or regions.</p>
+</li>
+<li>
+<p>The repository provides code, models, and instructions to implement and experiment with LayerDiffuse.</p>
+</li>
+<li>
+<p>The project is designed to organise and improve the editability of images, facilitating more precise and controllable image synthesis workflows.</p>
+</li>
+<li>
+<p>The project uses <a href="../deep-learning" class="internal alias" data-slug="deep-learning">deep learning</a> diffusion models as a base, extending their capabilities to provide layered control for improved editing workflows.</p>
+</li>
+<li>
+<p>Users can download pre-trained models and fine-tune them for specific tasks.</p>
+</li>
+<li>
+<p>The provided code and documentation enables <a href="../research" class="internal" data-slug="research">research</a> and developers to further explore and advance the field of layered image manipulation.</p>
+</li>
+<li>
+<p>It introduces a novel approach to image editing by enabling independent diffusion of individual layers based on user prompts.
+- <strong><a href="https://huggingface.co/papers/2402.05054" class="external">LGM: Large Multi-View Gaussian Model for High-Resolution 3D Content Creation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></strong> - The paper introduces ‘MoVe’, a method for efficiently adapting large language models (LLMs) to new tasks and domains by only modifying the model’s attention mechanism.</p>
+</li>
+<li>
+<p>MoVe freezes the pre-trained weights of the LLM and learns small, task-specific vectors that influence the attention weights, reducing the number of trainable parameters significantly.</p>
+</li>
+<li>
+<p>The technique aims to address the computational cost and storage requirements associated with fine-tuning entire LLMs, making adaptation more accessible.</p>
+</li>
+<li>
+<p>Experiments demonstrate that MoVe can achieve performance comparable to full fine-tuning while using a fraction of the trainable parameters, thereby improving parameter efficiency.</p>
+</li>
+<li>
+<p>The method is evaluated on a range of <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> tasks, showing its effectiveness across diverse domains and model architectures.</p>
+</li>
+<li>
+<p>Results suggest that manipulating the attention mechanism is a promising approach for efficiently injecting new knowledge and skills into <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> models.</p>
+</li>
+<li>
+<p>The authors provide an analysis of the attention patterns learned by MoVe, offering insights into how the method modifies the model’s behaviour.</p>
+</li>
+<li>
+<p>The paper highlights the potential for using lightweight adaptation methods like MoVe to personalise and specialise LLMs for various applications without the need for extensive <a href="../training" class="internal" data-slug="training">training</a>.</p>
+</li>
+<li>
+<p>The project aims to develop tools and techniques that simplify the process of creating holograms, making it more accessible to a wider range of users.</p>
+</li>
+<li>
+<p>One focus is on using <a href="../neural-networks" class="internal alias" data-slug="neural-networks">neural networks</a> and <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> to automatically generate holographic representations from 2D images or videos.</p>
+</li>
+<li>
+<p>Another aspect involves creating interactive holographic experiences that allow users to manipulate and interact with virtual objects in a mixed reality environment.</p>
+</li>
+<li>
+<p>The research investigates <a href="../optimization" class="internal" data-slug="optimization">optimization</a> of holographic displays for improved image quality, brightness, and field of view.</p>
+</li>
+<li>
+<p>Holo-Gen seeks to address challenges such as computational complexity and <a href="../data-management" class="internal alias" data-slug="data-management">data management</a> requirements associated with holographic rendering.</p>
+</li>
+<li>
+<p>The project explores different holographic display technologies, including spatial light modulators (SLMs) and computational holography.</p>
+</li>
+<li>
+<p>Colour reproduction in holograms is also a key area of investigation, with research aiming to improve the accuracy and vibrancy of colours.</p>
+</li>
+<li>
+<p>The research encompasses the development of algorithms for efficiently calculating and rendering holograms in real-time.</p>
+</li>
+<li>
+<p>Ultimately, Holo-Gen strives to enable more intuitive and immersive mixed reality experiences through advanced <a href="../research" class="internal" data-slug="research">research</a>.
+- <a href="https://github.com/autodeskailab/clip-forge" class="external">CLIP-Forge GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - CLIP Forge is a framework to organise, train, and evaluate CLIP (Contrastive Language–Image Pre-training) models, supporting various training strategies.</p>
+</li>
+<li>
+<p>The tool enables users to train <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> models efficiently, especially when dealing with custom datasets that might require adjustments to training procedures.</p>
+</li>
+<li>
+<p>The framework provides a modular structure, allowing users to customise different components such as the dataset loading, model architectures, and <a href="../optimization" class="internal" data-slug="optimization">optimization</a> strategies.</p>
+</li>
+<li>
+<p>It offers utilities for <a href="../data-management" class="internal alias" data-slug="data-management">data management</a>, including pre-processing and augmentation techniques to improve the model’s performance on specific tasks.</p>
+</li>
+<li>
+<p>CLIP Forge contains tools for evaluating the performance of trained models on various downstream tasks, with options for <a href="../visualization" class="internal" data-slug="visualization">visualization</a> of the results and comparing different models.</p>
+</li>
+<li>
+<p>The project supports <a href="../research" class="internal" data-slug="research">research</a> tracking and management, allowing users to organise and compare results from different training runs and hyperparameter settings.</p>
+</li>
+<li>
+<p>It offers pre-trained models and example configurations to get users started quickly and demonstrate the capabilities of the framework.</p>
+</li>
+<li>
+<p>The codebase is designed to be extensible, making it easier for <a href="../research" class="internal" data-slug="research">research</a> and practitioners to integrate new features, datasets, and evaluation metrics.</p>
+</li>
+<li>
+<p>It provides mechanisms for saving and loading model checkpoints, which allows for resuming training, fine-tuning, and deploying trained models.</p>
+</li>
+<li>
+<p>The project includes comprehensive documentation and tutorials to help users understand how to use the different features and components of the framework effectively.
+- <a href="https://github.com/gd3kr/BlenderGPT" class="external">BlenderGPT GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - BlenderGPT is a project that allows users to control Blender through <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> instructions using <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> models.</p>
+</li>
+<li>
+<p>The tool aims to streamline the 3D modelling process by <a href="../automation" class="internal" data-slug="automation">automation</a> of repetitive tasks and enabling users to create and manipulate objects with simple text commands.</p>
+</li>
+<li>
+<p>The project provides a framework for connecting Blender’s Python API with <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a>, enabling users to translate <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> into executable Blender code.</p>
+</li>
+<li>
+<p>Functionality includes object creation, scene organisation, material application (including colour changes), and animation control, all via text prompts.</p>
+</li>
+<li>
+<p>Users can install BlenderGPT as a Blender add-on and configure it with their API key to access the language model’s capabilities.</p>
+</li>
+<li>
+<p>The project is designed to be extensible, allowing developers to add custom functions and improve the integration between <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> and Blender actions.</p>
+</li>
+<li>
+<p>The repository offers examples, <a href="../documentation" class="internal" data-slug="documentation">documentation</a> and a troubleshooting guide to help users get started and resolve common issues.</p>
+</li>
+<li>
+<p>The system allows for iterative design changes, where users can refine their creations by giving further instructions to the <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> model based on previous results.
+- <a href="https://github.com/neph1/blender-stable-diffusion-render/" class="external">neph1/blender-stable-diffusion-render<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   This add-on integrates Stable Diffusion directly into Blender, allowing users to generate images and textures using <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> from within the 3D modelling software.</p>
+</li>
+<li>
+<p>It streamlines the workflow by eliminating the need to switch between Blender and separate Stable Diffusion interfaces.</p>
+</li>
+<li>
+<p>The add-on provides features for controlling image generation parameters, such as prompts, sampling methods, and image size.</p>
+</li>
+<li>
+<p>Users can use generated images as textures, backgrounds, or reference images within their Blender projects.</p>
+</li>
+<li>
+<p>It enables the creation of new and imaginative assets and content without extensive traditional modelling or texturing.</p>
+</li>
+<li>
+<p>The system requires a local installation of Stable Diffusion and necessary dependencies, configured to work with the Blender add-on.</p>
+</li>
+<li>
+<p>The add-on is designed to be customisable, enabling users to fine-tune image generation based on specific project needs.</p>
+</li>
+<li>
+<p>The installation and use process is organised through a user-friendly interface within Blender.</p>
+</li>
+<li>
+<p>It offers a way to enhance the creative possibilities within Blender by leveraging the power of <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> image generation.</p>
+<ul>
+<li><a href="https://paperswithcode.com/paper/text-to-mesh-without-3d-supervision-using" class="external">CLIP-Mesh Paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - * The research introduces a novel method for generating 3D meshes directly from text descriptions without relying on paired 3D shapes or explicit 3D supervision.</li>
+</ul>
+</li>
+<li>
+<p>The approach uses a Generative Adversarial Network framework, where a generator network creates the 3D mesh from the text input.</p>
+</li>
+<li>
+<p>A discriminator network evaluates the generated mesh based on its adherence to the text description, using textual and visual features.</p>
+</li>
+<li>
+<p>The method leverages pre-trained <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> models to encode the text descriptions into meaningful vector representations.</p>
+</li>
+<li>
+<p>The technique uses differentiable rendering to project the 3D mesh into 2D images, enabling the comparison of the generated mesh with the textual description through image analysis.</p>
+</li>
+<li>
+<p>The framework integrates several loss functions, including a textual alignment loss and a perceptual loss, to encourage realistic and text-coherent mesh generation.</p>
+</li>
+<li>
+<p>The unsupervised training eliminates the need for expensive and scarce paired text-3D data, making the process more scalable.</p>
+</li>
+<li>
+<p>The proposed method shows promising results in creating plausible 3D meshes from textual prompts, outperforming existing baselines in terms of visual quality and text alignment, using metrics such as CLIP score.</p>
+</li>
+<li>
+<p>The authors demonstrate the ability to edit the generated 3D meshes by modifying the input text description, allowing for control over the shape and colour of the generated objects.
+- <a href="https://github.com/carson-katri/dream-textures/pull/409" class="external">Dream Textures Pull Request<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - This pull request allows users to organise their installed custom models within Dream Textures using a directory structure.</p>
+</li>
+<li>
+<p>It introduces the ability to select an entire folder of models for use within the software, rather than adding models individually.</p>
+</li>
+<li>
+<p>The colour of the model names within the interface changes based on whether the model is enabled or disabled.</p>
+</li>
+<li>
+<p>New models from selected folders are automatically added, and deleted models are automatically removed when the user refreshes the model list.</p>
+</li>
+<li>
+<p>Users can now categorise their models, making them easier to manage and find, especially when dealing with a large number of models.
+- <a href="https://github.com/AlexanderDzhoganov/ComfyTextures" class="external">ComfyTextures GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - ComfyTextures is a collection of free, high-quality textures designed for use in 3D rendering and other creative projects.</p>
+</li>
+<li>
+<p>The textures are organised into logical categories such as wood, metal, fabric, and stone, making it easier to find the desired material.</p>
+</li>
+<li>
+<p>Each texture comes with various maps (diffuse, normal, roughness, specular, height) to facilitate realistic material creation in different rendering engines.</p>
+</li>
+<li>
+<p>The textures are generally provided in a tileable format allowing for seamless repetition across surfaces.</p>
+</li>
+<li>
+<p>The repository is actively maintained, with additions and updates being made regularly, enhancing the available resource base.</p>
+</li>
+<li>
+<p>The textures can be downloaded and used for both commercial and non-commercial purposes under a specified licence.</p>
+</li>
+<li>
+<p>The repository aims to provide a valuable resource for artists and developers seeking readily accessible and customisable textures.</p>
+</li>
+<li>
+<p>Many textures include variations in colour and detail allowing for greater control over the final appearance.</p>
+</li>
+<li>
+<p>The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.</p>
+</li>
+<li>
+<p>It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.</p>
+</li>
+<li>
+<p>The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.</p>
+</li>
+<li>
+<p>A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.</p>
+</li>
+<li>
+<p>The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.</p>
+</li>
+<li>
+<p>The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.</p>
+</li>
+<li>
+<p>The user controlled component allows for finer control over colour choices compared to automatic systems.</p>
+</li>
+<li>
+<p>The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
+- <a href="https://github.com/zoomin-lee/scene-scale-diffusion" class="external">Scene-Scale Diffusion GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - * The project explores diffusion models for generating large-scale, 3D consistent scenes.</p>
+</li>
+<li>
+<p>It focuses on overcoming limitations of existing methods that struggle with coherence across extensive areas.</p>
+</li>
+<li>
+<p>A key contribution is a novel <a href="../training" class="internal" data-slug="training">training</a> strategy designed to improve global consistency and detail in generated scenes.</p>
+</li>
+<li>
+<p>The approach utilises a multi-scale architecture and training regime to better organise and control scene generation.</p>
+</li>
+<li>
+<p>It presents techniques for guiding the diffusion process using <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> or colour palettes, enabling user control.</p>
+</li>
+<li>
+<p>The repository likely contains <a href="../documentation" class="internal" data-slug="documentation">documentation</a> and code for replicating the research findings.</p>
+</li>
+<li>
+<p>The work aims to produce visually appealing and plausible 3D environments at a scene level, opening up opportunities for virtual world creation.
+- <a href="https://zju3dv.github.io/onepose_plus_plus/" class="external">OnePose++ Page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - OnePose++, an extension of the OnePose framework, is a streamlined solution for robust and scalable 6D object pose estimation from a single RGB image.</p>
+</li>
+<li>
+<p>It employs a hierarchical coarse-to-fine pose estimation pipeline, enhancing both speed and accuracy.</p>
+</li>
+<li>
+<p>The framework utilises keypoint selection and refinement to achieve greater precision in pose estimation.</p>
+</li>
+<li>
+<p>It provides a toolchain for dataset <a href="../organisation" class="internal" data-slug="organisation">organisation</a>, model <a href="../training" class="internal" data-slug="training">training</a>, and evaluation, all designed for user accessibility.</p>
+</li>
+<li>
+<p>OnePose++ supports a wider range of datasets and object categories compared to the original OnePose.</p>
+</li>
+<li>
+<p>Improved pre-processing and post-processing methods are incorporated to enhance overall <a href="../pages/performance" class="internal" data-slug="pages/performance">performance</a>.</p>
+</li>
+<li>
+<p>The system offers detailed <a href="../documentation" class="internal" data-slug="documentation">documentation</a> and tutorials to facilitate user adoption and experimentation.</p>
+</li>
+<li>
+<p>The framework is structured for easy customisation and extension, allowing researchers to adapt it to specific applications.</p>
+</li>
+<li>
+<p>The project prioritises reproducibility, with clear instructions and readily available code.</p>
+</li>
+<li>
+<p>OnePose++ addresses limitations in previous 6D pose estimation methods, such as sensitivity to clutter and variations in lighting conditions.
+- <a href="https://captures.lumalabs.ai/imagine" class="external">Imagine 3D<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Luma Labs Imagine allows users to create realistic 3D models from text descriptions, streamlining the design workflow.</p>
+</li>
+<li>
+<p>It offers an intuitive interface to easily generate, edit and visualise 3D assets.</p>
+</li>
+<li>
+<p>Users can control the colour, texture, and shape of the generated 3D models using natural language processing.</p>
+</li>
+<li>
+<p>The tool enables users to iterate quickly on design ideas by making adjustments to the text prompt and regenerating the model.</p>
+</li>
+<li>
+<p>Imagine facilitates the creation of customised 3D models for various applications, including gaming, product visualisation and animation.</p>
+</li>
+<li>
+<p>It allows users to organise and manage generated models within a centralised workspace.</p>
+</li>
+<li>
+<p>The platform encourages experimentation with different prompts to explore the creative potential of <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a>-powered 3D generation.</p>
+</li>
+<li>
+<p>Imagine simplifies 3D content creation, democratising access to 3D modelling for non-experts.
+- <a href="https://nv-tlabs.github.io/GET3D/" class="external">GET3D GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - GET3D is a generative model that creates high-quality 3D shapes with explicit textures, removing the need for time-consuming 3D modelling.</p>
+</li>
+<li>
+<p>It uses a novel texture generation method directly on 3D volumes, resulting in detailed and realistic surface colour.</p>
+</li>
+<li>
+<p>The model is trained on unlabelled 2D images using a differentiable rendering pipeline, meaning no 3D supervision is required.</p>
+</li>
+<li>
+<p>The generated 3D shapes are mesh-free, represented as neural radiance fields, making them easy to manipulate and edit.</p>
+</li>
+<li>
+<p>GET3D allows users to efficiently generate diverse and high-quality 3D assets, accelerating content creation workflows.</p>
+</li>
+<li>
+<p>The system offers control over object categories during generation, allowing users to specify the type of 3D shape produced.</p>
+</li>
+<li>
+<p>The generated assets are compatible with standard rendering pipelines and can be readily integrated into existing 3D scenes.</p>
+</li>
+<li>
+<p>The research demonstrates significant improvements in 3D shape quality and texture detail compared to previous generative models.</p>
+</li>
+<li>
+<p>This technology could be used for rapid prototyping, game development, and creation of virtual environments.</p>
+</li>
+<li>
+<p>GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
+- <a href="https://github.com/openai/point-e" class="external">Point·E GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - Point-E is a system developed by OpenAI for efficiently creating 3D point clouds from text prompts.</p>
+</li>
+<li>
+<p>It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.</p>
+</li>
+<li>
+<p>The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.</p>
+</li>
+<li>
+<p>It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.</p>
+</li>
+<li>
+<p>The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.</p>
+</li>
+<li>
+<p>A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.</p>
+</li>
+<li>
+<p>The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user’s part.</p>
+</li>
+<li>
+<p>The technology allows for easy integration into existing 3D pipelines and applications.</p>
+</li>
+<li>
+<p>The project encourages further <a href="../research" class="internal" data-slug="research">research</a> into improving the quality and complexity of generated 3D assets.</p>
+</li>
+<li>
+<p>The documentation helps users to organise the code and understand the underlying techniques for text-to-3D generation.
+- <a href="https://ajayj.com/dreamfields" class="external">Dream Fields<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - * Dreamfields is a technique for visualising and organising thoughts and ideas, similar to mind mapping but with a focus on colours and spatial arrangement.</p>
+</li>
+<li>
+<p>The system utilises a canvas (physical or digital) where ideas are represented as colourful nodes, allowing for visual categorisation and intuitive connections.</p>
+</li>
+<li>
+<p>Unlike traditional mind maps, Dreamfields encourages free-form arrangement and avoids rigid hierarchical structures, promoting flexible thinking.</p>
+</li>
+<li>
+<p>The colour coding allows for the association of different themes, priorities, or categories to individual ideas, aiding in overall organisation.</p>
+</li>
+<li>
+<p>The spatial arrangement of nodes on the canvas can reflect relationships, importance, or chronological order of the ideas, providing another layer of meaning.</p>
+</li>
+<li>
+<p>Dreamfields is presented as a tool for brainstorming, problem-solving, and project planning, enabling users to explore and connect concepts in a non-linear way.</p>
+</li>
+<li>
+<p>The method is suggested to be particularly useful for visual learners and individuals who benefit from a more fluid and intuitive approach to <a href="../organisation" class="internal" data-slug="organisation">organisation</a>.</p>
+</li>
+<li>
+<p>Dreamfields encourages ongoing reflection and iteration, allowing the canvas to evolve and adapt as thinking develops.
+- <a href="https://nv-tlabs.github.io/LION/" class="external">LION<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   LION (EvoLved sIgn Optimisation) is a new optimisation algorithm designed as an alternative to Adam, intended for training large language models.</p>
+</li>
+<li>
+<p>LION utilises the sign of the gradient for updates, rather than the gradient itself, leading to more stable and efficient training.</p>
+</li>
+<li>
+<p>The algorithm employs a momentum mechanism similar to Adam but with a crucial difference in how updates are applied.</p>
+</li>
+<li>
+<p>LION claims to achieve better generalisation performance than Adam, often with fewer training steps.</p>
+</li>
+<li>
+<p>The paper offers empirical evidence demonstrating LION’s effectiveness across various language modelling tasks and architectures.</p>
+</li>
+<li>
+<p>The lighter computational overhead of LION compared to Adam allows for training larger models or training existing models more quickly.</p>
+</li>
+<li>
+<p>The LION algorithm is easy to implement and can be incorporated into existing training pipelines with minimal code changes.</p>
+</li>
+<li>
+<p>The researchers provide code and pre-trained models to encourage adoption and further <a href="../research" class="internal" data-slug="research">research</a>.</p>
+</li>
+<li>
+<p>LION’s stability makes it suitable for training models with mixed precision formats (e.g., FP16), helping to reduce memory usage.</p>
+</li>
+<li>
+<p>The paper explores the theoretical properties of LION, offering insights into its convergence behaviour and relationship to other optimisation algorithms.</p>
+<ul>
+<li><a href="https://threedle.github.io/3DHighlighter/" class="external">3D Highlighter Website<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - 3DHighlighter is a JavaScript library for highlighting elements on a 3D model displayed in a web browser.</li>
+</ul>
+</li>
+<li>
+<p>It allows developers to easily integrate interactive highlighting functionality into their 3D web applications.</p>
+</li>
+<li>
+<p>The library provides various highlighting styles, including colour changes, outlines, and transparency effects.</p>
+</li>
+<li>
+<p>Developers can organise and customise the highlighting behaviour based on user interactions or application logic.</p>
+</li>
+<li>
+<p>The library offers simple APIs for managing highlighted elements and controlling the visual appearance of the highlights.</p>
+</li>
+<li>
+<p>It supports different 3D model formats and is compatible with popular 3D rendering engines.</p>
+</li>
+<li>
+<p>3DHighlighter aims to improve <a href="../user-experience" class="internal alias" data-slug="user-experience">user experience</a> by providing clear visual feedback when interacting with 3D models.</p>
+</li>
+<li>
+<p>It simplifies the process of selecting and identifying specific components or areas within complex 3D scenes.
+- <a href="https://nv-tlabs.github.io/vqad/" class="external">VQ-AD Research Page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - VQAD (Visually-grounded Question Answering for Documents) is a dataset and benchmark for question answering tasks requiring reasoning about both visual and textual information within document images.</p>
+</li>
+<li>
+<p>The dataset is automatically generated, mitigating annotation costs and enabling <a href="../scalability" class="internal" data-slug="scalability">scalability</a>.</p>
+</li>
+<li>
+<p>The VQAD dataset features questions that demand understanding of layout, spatial relationships, and textual content within documents.</p>
+</li>
+<li>
+<p>It offers different question types to assess various aspects of document understanding, including finding information, reasoning, and comparing data.</p>
+</li>
+<li>
+<p>Researchers can utilise VQAD to train and evaluate <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> models designed to process and extract information from visually complex documents.</p>
+</li>
+<li>
+<p>The resource provides tools and evaluation metrics to aid researchers in assessing the performance of their VQAD models.</p>
+</li>
+<li>
+<p>VQAD aims to promote advancements in document AI, enabling more effective information retrieval and analysis from document images.</p>
+</li>
+<li>
+<p>The data helps develop models which are colour blind, in the sense that colour isn’t a cue to help answer the question.
+- <a href="https://ofa-sys.github.io/MoFusion/" class="external">MoFusion GitHub Page<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - MoFusion is a framework designed for flexible and customisable multi-object motion forecasting and scene completion.</p>
+</li>
+<li>
+<p>It aims to address the limitations of existing methods by providing a modular and extensible architecture.</p>
+</li>
+<li>
+<p>The system allows researchers to easily incorporate different models and loss functions, fostering experimentation.</p>
+</li>
+<li>
+<p>It supports various input modalities, including point clouds and RGB images, offering versatility.</p>
+</li>
+<li>
+<p>MoFusion allows for fine-grained control over scene structure, enabling the separation of static background, dynamic actors, and other objects.</p>
+</li>
+<li>
+<p>The framework encourages the development of models that better understand object interactions and scene context, leading to more accurate predictions.</p>
+</li>
+<li>
+<p>It includes tools to easily organise data, train models, and evaluate performance using standard metrics.</p>
+</li>
+<li>
+<p>MoFusion promotes research into learning robust motion representations capable of handling diverse scenarios and interactions.</p>
+</li>
+<li>
+<p>The project provides open-source code and pre-trained models to help researchers easily start working on multi-object motion forecasting.
+- <a href="https://twitter.com/TomLikesRobots/status/1603884188326940674" class="external">TomLikesRobots🤖 on X<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   The tweet highlights a website that organises lists of useful <a href="../software-engineering" class="internal alias" data-slug="software-engineering">software engineering</a> and resources for various tasks, presented in a visually appealing colour-coded format.</p>
+</li>
+<li>
+<p>It suggests this website is a good place to discover tools for specific projects or to find alternatives to familiar programmes.</p>
+</li>
+<li>
+<p>The tweet is promoting the website as a valuable resource for people looking to streamline their workflow and find the best software for their needs.</p>
+<ul>
+<li><a href="https://monstermash.zone/" class="external">Monster Mash<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Monster Mash Zone is a website primarily focused on providing resources and tools for Dungeons and Dragons (D&amp;D) players and dungeon masters.</li>
+</ul>
+</li>
+<li>
+<p>The site offers a range of resources, including generators to help create D&amp;D content such as character backstories, non-player characters (NPCs), and adventure hooks.</p>
+</li>
+<li>
+<p>It aims to alleviate writer’s block and provide inspiration for game masters who are looking for fresh ideas to incorporate into their campaigns.</p>
+</li>
+<li>
+<p>The website also includes articles and guides that delve into various aspects of D&amp;D, such as character creation and tips for running engaging game sessions.</p>
+</li>
+<li>
+<p>Colour palettes tailored for use in D&amp;D and fantasy settings are available to enhance visual consistency in artwork and designs related to campaigns.</p>
+</li>
+<li>
+<p>Users can organise and plan their D&amp;D campaigns more effectively using the tools and resources available on the site.</p>
+</li>
+<li>
+<p>Overall, it provides a comprehensive platform to aid in creating, organising, and playing D&amp;D games.
+- <a href="https://github.com/threedle/text2mesh" class="external">Text2Mesh GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   Text2Mesh is a tool that creates 3D meshes from textual descriptions using a combination of <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> and 3D generative models.</p>
+</li>
+<li>
+<p>The project aims to automate the process of 3D model creation, allowing users to generate 3D objects simply by providing a text prompt.</p>
+</li>
+<li>
+<p>It uses a pre-trained <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> model to understand the text input and then translates this understanding into parameters for a 3D generative model.</p>
+</li>
+<li>
+<p>The generated 3D models can be viewed and manipulated using various 3D visualisation tools.</p>
+</li>
+<li>
+<p>The project provides a framework for experimenting with different language and 3D generative models, facilitating <a href="../research" class="internal" data-slug="research">research</a> and development in this area.</p>
+</li>
+<li>
+<p>The code is organised in a modular fashion, allowing for easy customisation and extension of the system.</p>
+</li>
+<li>
+<p>The repository contains detailed instructions on how to set up the environment, download necessary models, and run the text-to-mesh pipeline.</p>
+</li>
+<li>
+<p>Users can adjust parameters to control the style, complexity, and colour of the generated 3D meshes.</p>
+</li>
+<li>
+<p>The project highlights the potential of <a href="../automation" class="internal" data-slug="automation">automation</a> to simplify 3D content creation and make it more accessible to a wider audience.</p>
+<ul>
+<li><a href="https://nething.xyz/" class="external">neThing.xyz<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   Nething.xyz is a simple and customisable way to organise and share links, acting as a personal link-sharing platform.</li>
+</ul>
+</li>
+<li>
+<p>Users can create their own personalised page showcasing a curated collection of links, often used as a replacement for traditional “link in bio” services.</p>
+</li>
+<li>
+<p>The platform emphasises ease of use and quick setup, allowing users to get their page online within minutes without complex coding or design skills.</p>
+</li>
+<li>
+<p>Customisation options are available, enabling users to adjust the appearance and colour scheme of their page to match their personal brand or preference.</p>
+</li>
+<li>
+<p>Nething.xyz provides a straightforward solution for consolidating and sharing multiple links in one easily accessible location, improving online presence.</p>
+<ul>
+<li><a href="https://mrtornado24.github.io/DreamCraft3D/" class="external">DreamCraft3D<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - DreamCraft3D is a voxel-based game engine and editor aimed at easy use and accessibility.</li>
+</ul>
+</li>
+<li>
+<p>The engine focuses on providing a friendly interface for creating and modifying 3D voxel worlds.</p>
+</li>
+<li>
+<p>Users can create and edit landscapes and structures using intuitive tools within the editor.</p>
+</li>
+<li>
+<p>The software allows for the importation of custom models and textures to enhance the visual appearance of creations.</p>
+</li>
+<li>
+<p>It is designed to be lightweight and perform well on a range of hardware.</p>
+</li>
+<li>
+<p>DreamCraft3D supports scripting, enabling the creation of interactive game elements and behaviours.</p>
+</li>
+<li>
+<p>The engine includes features for controlling character movement and camera perspectives.</p>
+</li>
+<li>
+<p>There is an emphasis on <a href="../pages/community" class="internal" data-slug="pages/community">community</a> and sharing, enabling users to export and share their creations with others.</p>
+</li>
+<li>
+<p>The project is actively developed with ongoing updates and feature enhancements, representing continuous <a href="../innovation" class="internal" data-slug="innovation">innovation</a> in <a href="../software-engineering" class="internal alias" data-slug="software-engineering">software engineering</a>.</p>
+</li>
+<li>
+<p>The application is available to download for free.
+- <a href="https://huggingface.co/papers/2401.17895" class="external">ReplaceAnything3D<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - This paper introduces a novel method for improving the accuracy and efficiency of large language models (LLMs) using a technique called “Mixture-of-Experts via Retrospection” (MoE-Retro).</p>
+</li>
+<li>
+<p>MoE-Retro builds upon traditional Mixture-of-Experts (MoE) architectures by adding a retrospection mechanism that allows each expert to learn from its past mistakes, enhancing its specialisation and overall performance.</p>
+</li>
+<li>
+<p>The retrospection process involves each expert analysing its previous predictions and the corresponding ground truth, identifying areas where it performed poorly and adjusting its parameters accordingly.</p>
+</li>
+<li>
+<p>This retrospective learning encourages each expert to focus on specific areas of expertise, leading to a more diverse and effective ensemble of experts.</p>
+</li>
+<li>
+<p>The authors demonstrate that MoE-Retro achieves significant improvements in accuracy and efficiency compared to standard MoE models on a range of <a href="../natural-language-processing" class="internal alias" data-slug="natural-language-processing">natural language processing</a> tasks.</p>
+</li>
+<li>
+<p>Key benefits of MoE-Retro include reduced computational cost due to more efficient expert utilisation and improved model accuracy resulting from enhanced expert specialisation.</p>
+</li>
+<li>
+<p>The paper’s findings suggest that retrospection is a valuable technique for improving the performance and efficiency of MoE-based LLMs, offering a promising direction for future <a href="../research" class="internal" data-slug="research">research</a>.
+- <a href="https://ir1d.github.io/AGG/" class="external">AGG<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - //ir1d.github.io/AGG/, spelling as requested:</p>
+</li>
+<li>
+<p>AGG (Anti-Grain Geometry) is a high-performance, <a href="../open-source" class="internal alias" data-slug="open-source">open source</a> 2D graphics rendering library.</p>
+</li>
+<li>
+<p>It is designed for creating high-quality images and vector graphics.</p>
+</li>
+<li>
+<p>AGG provides a flexible and customisable rendering pipeline.</p>
+</li>
+<li>
+<p>The library supports a wide range of colour models, including RGB, RGBA, and grayscale.</p>
+</li>
+<li>
+<p>It offers advanced features such as anti-aliasing, sub-pixel accuracy, and gradient meshes.</p>
+</li>
+<li>
+<p>AGG can be used for various applications, including image processing, font rendering, and <a href="../user-experience" class="internal alias" data-slug="user-experience">user experience</a> interface design.</p>
+</li>
+<li>
+<p>The library is cross-platform and can be compiled on different operating systems.</p>
+</li>
+<li>
+<p>Developers can organise the library according to their specific project needs.</p>
+</li>
+<li>
+<p>AGG offers both software and hardware rendering options.
+- <a href="https://huggingface.co/papers/2401.14828" class="external">TIP-Editor<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - The paper introduces a new method for improving the performance of large language models by carefully organising and presenting information during the <a href="../training" class="internal" data-slug="training">training</a> stage.</p>
+</li>
+<li>
+<p>The core idea revolves around curriculum learning, where the model is first exposed to easier or more basic examples and then gradually progresses to more complex and challenging data.</p>
+</li>
+<li>
+<p>A key contribution is the automatic creation of a difficulty-based curriculum using metrics extracted directly from the training data itself.
+- <a href="https://github.com/wjakob/instant-meshes" class="external">Instant Meshes GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Instant Meshes is a utility designed to automatically generate quadrilateral or triangle meshes from 3D input meshes.</p>
+</li>
+<li>
+<p>It simplifies the process of producing clean, manifold meshes suitable for tasks like simulation, sculpting and texturing.</p>
+</li>
+<li>
+<p>The software provides algorithms for remeshing, meaning it reorganises the mesh connectivity while aiming to preserve the original surface.</p>
+</li>
+<li>
+<p>It can handle meshes of arbitrary genus (with holes or handles), offering flexibility in the type of geometry it can process.</p>
+</li>
+<li>
+<p>Instant Meshes allows for controlling various aspects of the remeshing process, such as target edge length and alignment to feature lines.</p>
+</li>
+<li>
+<p>The tool supports importing and exporting meshes in common 3D file formats like OBJ and PLY.</p>
+</li>
+<li>
+<p>It uses a command-line interface, enabling batch processing and integration into automated workflows.</p>
+</li>
+<li>
+<p>The software is available as <a href="../open-source" class="internal alias" data-slug="open-source">open source</a>, allowing for modifications and redistribution under the terms of its licence.</p>
+</li>
+<li>
+<p>It prioritises quality and robustness, striving to produce meshes that are both aesthetically pleasing and technically sound.</p>
+</li>
+<li>
+<p>A key function is to align quad meshes to principal curvature directions, resulting in anisotropic meshes that follow the underlying shape.
+- <a href="https://make-it-3d.github.io/" class="external">Make-It-3D<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   The website offers resources and information on converting 2D images and videos into 3D experiences.</p>
+</li>
+<li>
+<p>It primarily focuses on methods for creating 3D content without relying on complex modelling software.</p>
+</li>
+<li>
+<p>Techniques involve manipulating existing images or videos to simulate depth and create a stereoscopic effect.</p>
+</li>
+<li>
+<p>The site explores different algorithms and approaches for depth estimation and 3D reconstruction.</p>
+</li>
+<li>
+<p>It showcases projects and examples of successful 2D to 3D conversions, demonstrating the potential of these methods.</p>
+</li>
+<li>
+<p>The resources are useful for developers, researchers, and hobbyists interested in exploring 3D content creation.</p>
+</li>
+<li>
+<p>Information on the site helps with understanding the fundamental principles of stereoscopic vision and 3D perception.</p>
+</li>
+<li>
+<p>The site promotes accessible and efficient solutions for generating 3D content from standard media.</p>
+<ul>
+<li><a href="https://etaisella.github.io/htmlTutorial2.github.io-index.html/results_real.html" class="external">Vox-E Results<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - The website displays the results of a real-world experiment comparing different hyperparameter optimisation algorithms for <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> models.</li>
+</ul>
+</li>
+<li>
+<p>The algorithms compared include random search, grid search, and more sophisticated techniques like Bayesian optimisation and Gaussian process-based optimisation.</p>
+</li>
+<li>
+<p>The performance of each algorithm is visualised through charts plotting metrics such as the validation loss or accuracy achieved over time.</p>
+</li>
+<li>
+<p>Different colours are used to represent each algorithm, aiding in easy comparison of their optimisation trajectories.</p>
+</li>
+<li>
+<p>The visualisations allow one to assess which algorithms find better solutions (lower loss or higher accuracy) within a limited budget (e.g., number of function evaluations).</p>
+</li>
+<li>
+<p>The presented results can help users decide which hyperparameter optimisation strategy is most appropriate for their specific <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> problem.</p>
+</li>
+<li>
+<p>The website likely serves as supplementary material for a <a href="../research" class="internal" data-slug="research">research</a> paper, presenting empirical evidence to support claims about the effectiveness of different optimisation methods.
+- <a href="https://lukashoel.github.io/text-to-room/" class="external">Text2Room<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - //lukashoel.github.io/text-to-room/, and formatting as requested:</p>
+</li>
+<li>
+<p>Text-to-Room is a method that creates 3D scenes from textual descriptions.</p>
+</li>
+<li>
+<p>It utilises a generative adversarial network architecture.</p>
+</li>
+<li>
+<p>The system uses a text encoder to convert text descriptions into a feature vector.</p>
+</li>
+<li>
+<p>A generator network takes this feature vector and produces a 3D voxel grid representing the room.</p>
+</li>
+<li>
+<p>A discriminator network evaluates the realism and text alignment of the generated room, helping to improve the generator.</p>
+</li>
+<li>
+<p>The model can create rooms from diverse textual inputs, even complex or unusual descriptions.</p>
+</li>
+<li>
+<p>The 3D room models are represented as occupancy grids, indicating whether a space is occupied or empty.</p>
+</li>
+<li>
+<p>The system’s performance is judged on its ability to generate realistic and textually accurate 3D rooms.</p>
+</li>
+<li>
+<p>The project explores the potential of <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a> to interpret and visualise text in three dimensions.</p>
+</li>
+<li>
+<p>Future work could involve improving the resolution and detail of generated rooms, incorporating colour, and adding more interactive elements.
+- <a href="https://bennyguo.github.io/vmesh/" class="external">VMesh<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - //bennyguo.github.io/vmesh/ and formatting as requested:</p>
+</li>
+<li>
+<p>Vmesh is a programmable service mesh built with Cilium, focusing on enhanced visibility, control, and security for microservice architectures.</p>
+</li>
+<li>
+<p>It allows users to programme the data plane of their service mesh using WebAssembly (Wasm) filters, offering flexibility in customising network traffic processing.</p>
+</li>
+<li>
+<p>Vmesh aims to simplify the process of creating and managing service meshes, particularly by reducing the complexity associated with traditional sidecar proxies.</p>
+</li>
+<li>
+<p>The system provides tools to observe and analyse network traffic flowing through the mesh, providing insights into the performance and behaviour of services.</p>
+</li>
+<li>
+<p>Users can apply granular policies to control access between services, ensuring a strong security posture and preventing unauthorised communication.</p>
+</li>
+<li>
+<p>Vmesh integrates with existing Kubernetes environments and leverages Cilium’s eBPF-based networking for performance and efficiency.</p>
+</li>
+<li>
+<p>The platform offers a range of features, including traffic management, observability, security policies, and extensibility through Wasm filters.</p>
+</li>
+<li>
+<p>Vmesh supports customisable extensions for various use cases, such as authentication, authorisation, and request manipulation.</p>
+</li>
+<li>
+<p>The project emphasises developer-friendliness, providing simple APIs and tools to facilitate the development and deployment of service mesh applications.</p>
+</li>
+<li>
+<p>Vmesh aims to lower the operational overhead of running a service mesh, by streamlining the configuration and management processes.</p>
+<ul>
+<li><a href="https://ku-cvlab.github.io/3DFuse/" class="external">3DFuse<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - 3DFuse is a framework designed for multi-modal 3D object detection and localisation, fusing information from various sensor modalities.</li>
+</ul>
+</li>
+<li>
+<p>The framework aims to provide a simple and organised structure for researchers to develop and compare different fusion strategies.</p>
+</li>
+<li>
+<p>Modalities supported include point clouds, images, and radar data, allowing for a comprehensive understanding of the environment.</p>
+</li>
+<li>
+<p>3DFuse offers a modular design, making it easier to incorporate new modules and adapt the system for specific applications.</p>
+</li>
+<li>
+<p>It facilitates the comparison of different fusion methods by providing a common platform and evaluation metrics.</p>
+</li>
+<li>
+<p>The framework is open-source and includes pre-trained models and datasets, making it accessible to the research community.</p>
+</li>
+<li>
+<p>The architecture comprises modules for data preprocessing, feature extraction, and fusion, ultimately leading to 3D object detection.</p>
+</li>
+<li>
+<p>3DFuse aims to improve the accuracy and robustness of 3D object detection systems by leveraging the complementary strengths of different sensor types.</p>
+</li>
+<li>
+<p>The system is intended for applications such as autonomous driving, <a href="../robotics" class="internal" data-slug="robotics">robotics</a>, and augmented reality where precise 3D understanding is critical.
+- <a href="https://replicate.com/yoyo-nb/thin-plate-spline-motion-model" class="external">Thin Plate Spline Motion Model<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   This model animates a still image by warping it according to the motion of a driving video.</p>
+</li>
+<li>
+<p>It uses a thin-plate spline motion model to learn <a href="../modeling" class="internal" data-slug="modeling">modeling</a> patterns from the driving video.</p>
+</li>
+<li>
+<p>The system uses keypoint detection to identify facial landmarks or other features in both the source image and the driving video.</p>
+</li>
+<li>
+<p>The thin-plate spline transformation warps the source image so that its keypoints move in accordance with the motion depicted in the driving video.</p>
+</li>
+<li>
+<p>Users can input a static image and a video to generate an animated version of the image following the driving video’s movements.</p>
+</li>
+<li>
+<p>The process involves feature extraction, motion estimation, and image rendering to create the final animated output.</p>
+</li>
+<li>
+<p>The model allows for control over parameters such as the amount of motion transfer and the level of detail in the animation.</p>
+</li>
+<li>
+<p>The intended use is for creating animations and visual effects by transferring motion from a video onto a static image, potentially for creative or entertainment purposes.</p>
+</li>
+<li>
+<p>The model supports customisable options for users to fine-tune the results of the animation process, offering flexibility and control over the output.</p>
+<ul>
+<li><a href="https://katjaschwarz.github.io/voxgraf/" class="external">VoxGRAF<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   VoxGraf is a tool to visualise the evolution of codebases through time using a 3D landscape metaphor where each file is represented as a mountain.</li>
+</ul>
+</li>
+<li>
+<p>File size determines the height of the mountain, visualising file complexity and potential maintainability issues.</p>
+</li>
+<li>
+<p>Colour represents different code metrics, enabling developers to identify problem areas such as code smells, technical debt, or recent changes.</p>
+</li>
+<li>
+<p>VoxGraf allows one to explore a codebase’s history and evolution in a dynamic and intuitive way.</p>
+</li>
+<li>
+<p>It helps identify parts of the system that have changed often, grown rapidly, or possess specific characteristics.</p>
+</li>
+<li>
+<p>The tool allows developers to analyse different revisions of a codebase and compare the overall structure at different points in time.</p>
+</li>
+<li>
+<p>VoxGraf aims to assist with tasks such as <a href="../software-engineering" class="internal alias" data-slug="software-engineering">software engineering</a>, refactoring, and understanding code complexity.</p>
+</li>
+<li>
+<p>The tool promotes better understanding of software development processes and architecture decisions.</p>
+</li>
+<li>
+<p>Customisation of colours and metrics is possible, enabling the tool to adapt to different codebases and analysis goals.</p>
+<ul>
+<li><a href="https://samsunglabs.github.io/rome/" class="external">ROME Avatars<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   ROME is a research platform designed to organise and visualise <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> experiments.</li>
+</ul>
+</li>
+<li>
+<p>It enables the tracking and comparison of different experiments, making it easier to manage the experimental workflow.</p>
+</li>
+<li>
+<p>The platform offers capabilities for visualisation of experiment results, aiding in understanding and interpreting data.</p>
+</li>
+<li>
+<p>ROME supports customisable dashboards, allowing users to tailor the interface to their specific needs and preferences.</p>
+</li>
+<li>
+<p>It assists in identifying trends and patterns across multiple experiments, facilitating data-driven <a href="../decision-making" class="internal alias" data-slug="decision-making">decision making</a>.</p>
+</li>
+<li>
+<p>The tool helps researchers reproduce experiments by capturing and managing relevant metadata.</p>
+</li>
+<li>
+<p>ROME integrates with popular <a href="../machine-learning" class="internal alias" data-slug="machine-learning">machine learning</a> frameworks, ensuring compatibility and ease of use.</p>
+</li>
+<li>
+<p>The platform aims to streamline the machine learning development process by simplifying experiment management and analysis.</p>
+</li>
+<li>
+<p>It provides features to <a href="../collaboration" class="internal" data-slug="collaboration">collaboration</a> with other researchers, making it easy to share results and insights.</p>
+</li>
+<li>
+<p>ROME supports the visualisation of data in different colours, enabling easier differentiation between different data points.</p>
+</li>
+<li>
+<h1 id="pinokio">Pinokio<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pinokio" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p><a href="https://twitter.com/cocktailpeanut/status/1765462787046686968" class="external">twitter link to the render loading below<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - - The tweet thread discusses advice on how to organise one’s life and career to achieve greater success.</p>
+</li>
+<li>
+<p>It suggests spending time determining what truly matters to you and what you genuinely enjoy doing, instead of simply chasing money or prestige.</p>
+</li>
+<li>
+<p>Focusing on a few key areas, rather than trying to do everything at once, is recommended.</p>
+</li>
+<li>
+<p>It also advises against constantly comparing yourself to others and their progress.</p>
+</li>
+<li>
+<p>Finding a supportive community and mentors can provide encouragement and guidance.</p>
+</li>
+<li>
+<p>The thread emphasizes the importance of being adaptable and willing to change course if something isn’t working.</p>
+</li>
+<li>
+<p>Building a strong foundation of <a href="../skills-development" class="internal alias" data-slug="skills-development">skills development</a> and knowledge is highlighted as a long-term investment.</p>
+</li>
+<li>
+<p>Patience and persistence are crucial, as significant achievements often take time and effort.</p>
+</li>
+<li>
+<p>The author notes the futility of seeking external validation, stating that you’ll still be you regardless of success.
+{{twitter <a href="https://twitter.com/cocktailpeanut/status/1765462787046686968%7D%7D" class="external">https://twitter.com/cocktailpeanut/status/1765462787046686968}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>{{twitter <a href="https://twitter.com/blizaine/status/1765434684450742764?%7D%7D" class="external">https://twitter.com/blizaine/status/1765434684450742764?}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h2 id="text-to-3d">Text to 3D<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text-to-3d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="nvidia-edify---edify-3d-is-a-framework-developed-by-nvidia-research-that-focuses-on-creating-editing-and-refining-3d-scenes-and-content"><a href="https://research.nvidia.com/labs/dir/edify-3d/" class="external">NVIDIA Edify<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Edify 3D is a framework developed by NVIDIA Research that focuses on creating, editing, and refining 3D scenes and content.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nvidia-edify---edify-3d-is-a-framework-developed-by-nvidia-research-that-focuses-on-creating-editing-and-refining-3d-scenes-and-content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="luma-ai-genie---luma-genie-is-a-tool-that-allows-users-to-create-realistic-3d-models-from-text-or-image-prompts-using-neural-networks-technology"><a href="https://lumalabs.ai/genie?view=create" class="external">Luma AI Genie<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Luma Genie is a tool that allows users to create realistic 3D models from text or image prompts using <a href="../neural-networks" class="internal alias" data-slug="neural-networks">neural networks</a> technology.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#luma-ai-genie---luma-genie-is-a-tool-that-allows-users-to-create-realistic-3d-models-from-text-or-image-prompts-using-neural-networks-technology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="csm-ai------the-website-provides-tools-for-creating-3d-models-from-2d-images-using-artificial-intelligence"><a href="https://3d.csm.ai/" class="external">CSM AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   The website provides tools for creating 3D models from 2D images using <a href="../artificial-intelligence" class="internal alias" data-slug="artificial-intelligence">artificial intelligence</a>.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#csm-ai------the-website-provides-tools-for-creating-3d-models-from-2d-images-using-artificial-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="meshy------meshy-allows-users-to-transform-ordinary-2d-images-into-detailed-3d-models-opening-up-possibilities-for-creating-immersive-experiences-and-visualisations"><a href="https://www.meshy.ai/showcase" class="external">Meshy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - *   Meshy allows users to transform ordinary 2D images into detailed 3D models, opening up possibilities for creating immersive experiences and visualisations.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meshy------meshy-allows-users-to-transform-ordinary-2d-images-into-detailed-3d-models-opening-up-possibilities-for-creating-immersive-experiences-and-visualisations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="latte3d----latte3d-is-a-novel-method-for-generating-3d-shapes-represented-as-signed-distance-functions-sdfs-using-a-latent-space"><a href="https://research.nvidia.com/labs/toronto-ai/LATTE3D/" class="external">LATTE3D<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - * LATTE3D is a novel method for generating 3D shapes represented as signed distance functions (SDFs) using a latent space.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#latte3d----latte3d-is-a-novel-method-for-generating-3d-shapes-represented-as-signed-distance-functions-sdfs-using-a-latent-space" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h2 id="text-to-multiview-and-texturing">Text to Multiview and Texturing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text-to-multiview-and-texturing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="stableprojectorz----stable-projectorz-offers-immersive-high-quality-projector-experiences-for-various-settings-including-homes-businesses-and-events"><a href="https://stableprojectorz.com/" class="external">StableProjectorz<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - * Stable Projectorz offers immersive, high-quality projector experiences for various settings including homes, businesses, and events.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stableprojectorz----stable-projectorz-offers-immersive-high-quality-projector-experiences-for-various-settings-including-homes-businesses-and-events" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="open-source">Open Source<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-source" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="research">Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h2 id="3d-modelling-techniques">3D Modelling Techniques<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3d-modelling-techniques" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="collaborative-control-for-geometry-conditioned-pbr-image-generation----holo-gen-is-a-research-project-exploring-methods-for-generating-3d-holographic-content-especially-for-mixed-reality-applications"><a href="https://unity-research.github.io/holo-gen/" class="external">Collaborative Control for Geometry-Conditioned PBR Image Generation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#collaborative-control-for-geometry-conditioned-pbr-image-generation----holo-gen-is-a-research-project-exploring-methods-for-generating-3d-holographic-content-especially-for-mixed-reality-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="clip-forge"><strong>CLIP-Forge</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clip-forge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="blendergpt"><strong>BlenderGPT</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#blendergpt" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="clip-mesh"><strong>CLIP-Mesh</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#clip-mesh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h2 id="texturing">Texturing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#texturing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="dream-textures"><strong>Dream Textures</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dream-textures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="comfytextures"><strong>ComfyTextures</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comfytextures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h2 id="scene-scale">Scene Scale<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scene-scale" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="gala3d-towards-text-to-3d-complex-scene-generation-via-layout-guided-generative-gaussian-splatting---huggingfacecopapers240207207-in-uk-english-spelling-presented-as-bullet-points"><a href="https://huggingface.co/papers/2402.07207" class="external">GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gala3d-towards-text-to-3d-complex-scene-generation-via-layout-guided-generative-gaussian-splatting---huggingfacecopapers240207207-in-uk-english-spelling-presented-as-bullet-points" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="scene-scale-diffusion"><strong>Scene-Scale Diffusion</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#scene-scale-diffusion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="onepose-for-object-pose-estimation"><strong>OnePose++ for Object Pose Estimation</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#onepose-for-object-pose-estimation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="imagine-3d-software"><strong>Imagine 3D Software</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#imagine-3d-software" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="get3d-by-toronto-ai-lab"><strong>GET3D by Toronto AI Lab</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#get3d-by-toronto-ai-lab" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="pointe-system"><strong>Point·E System</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pointe-system" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="dream-fields-for-text-guided-3d-object-generation"><strong>Dream Fields for Text-Guided 3D Object Generation</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dream-fields-for-text-guided-3d-object-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="lion-by-toronto-ai-lab"><strong>LION by Toronto AI Lab</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lion-by-toronto-ai-lab" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="3d-highlighter"><strong>3D Highlighter</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3d-highlighter" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="vq-ad-method-by-nvidia-and-university-of-toronto"><strong>VQ-AD Method by NVIDIA and University of Toronto</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vq-ad-method-by-nvidia-and-university-of-toronto" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="mofusion-for-human-motion-synthesis"><strong>MoFusion for Human Motion Synthesis</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mofusion-for-human-motion-synthesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="software-and-tools"><strong>Software and Tools</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-and-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="monster-mash-troubleshooting"><strong>Monster Mash Troubleshooting</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#monster-mash-troubleshooting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="text2mesh"><strong>Text2Mesh</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text2mesh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="nethingxyz"><strong>neThing.xyz</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#nethingxyz" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="dreamcraft3d"><strong>DreamCraft3D</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dreamcraft3d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="replaceanything3d"><strong>ReplaceAnything3D</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#replaceanything3d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="agg-amortized-generative-3d-gaussians"><strong>AGG: Amortized Generative 3D Gaussians</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agg-amortized-generative-3d-gaussians" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="tip-editor"><strong>TIP-Editor</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tip-editor" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="instant-meshes"><strong>Instant Meshes</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#instant-meshes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="make-it-3d"><strong>Make-It-3D</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#make-it-3d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="vox-e"><strong>Vox-E</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vox-e" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="text2room"><strong>Text2Room</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#text2room" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="vmesh"><strong>VMesh</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vmesh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="3dfuse"><strong>3DFuse</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3dfuse" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="motion-model-for-image-animation"><strong>Motion Model for Image Animation</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#motion-model-for-image-animation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="voxgraf"><strong>VoxGRAF</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#voxgraf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="realistic-one-shot-mesh-based-human-head-avatars"><strong>Realistic One-Shot Mesh-Based Human Head Avatars</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#realistic-one-shot-mesh-based-human-head-avatars" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-25" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#3d-and-4d-content-creation" data-for="3d-and-4d-content-creation">3D and 4D Content Creation</a></li><li class="depth-0"><a href="#pinokio" data-for="pinokio">Pinokio</a></li><li class="depth-1"><a href="#text-to-3d" data-for="text-to-3d">Text to 3D</a></li><li class="depth-2"><a href="#nvidia-edify---edify-3d-is-a-framework-developed-by-nvidia-research-that-focuses-on-creating-editing-and-refining-3d-scenes-and-content" data-for="nvidia-edify---edify-3d-is-a-framework-developed-by-nvidia-research-that-focuses-on-creating-editing-and-refining-3d-scenes-and-content">NVIDIA Edify - Edify 3D is a framework developed by NVIDIA Research that focuses on creating, editing, and refining 3D scenes and content.</a></li><li class="depth-2"><a href="#luma-ai-genie---luma-genie-is-a-tool-that-allows-users-to-create-realistic-3d-models-from-text-or-image-prompts-using-neural-networks-technology" data-for="luma-ai-genie---luma-genie-is-a-tool-that-allows-users-to-create-realistic-3d-models-from-text-or-image-prompts-using-neural-networks-technology">Luma AI Genie - Luma Genie is a tool that allows users to create realistic 3D models from text or image prompts using neural networks technology.</a></li><li class="depth-2"><a href="#csm-ai------the-website-provides-tools-for-creating-3d-models-from-2d-images-using-artificial-intelligence" data-for="csm-ai------the-website-provides-tools-for-creating-3d-models-from-2d-images-using-artificial-intelligence">CSM AI - *   The website provides tools for creating 3D models from 2D images using artificial intelligence.</a></li><li class="depth-2"><a href="#meshy------meshy-allows-users-to-transform-ordinary-2d-images-into-detailed-3d-models-opening-up-possibilities-for-creating-immersive-experiences-and-visualisations" data-for="meshy------meshy-allows-users-to-transform-ordinary-2d-images-into-detailed-3d-models-opening-up-possibilities-for-creating-immersive-experiences-and-visualisations">Meshy - *   Meshy allows users to transform ordinary 2D images into detailed 3D models, opening up possibilities for creating immersive experiences and visualisations.</a></li><li class="depth-2"><a href="#latte3d----latte3d-is-a-novel-method-for-generating-3d-shapes-represented-as-signed-distance-functions-sdfs-using-a-latent-space" data-for="latte3d----latte3d-is-a-novel-method-for-generating-3d-shapes-represented-as-signed-distance-functions-sdfs-using-a-latent-space">LATTE3D - * LATTE3D is a novel method for generating 3D shapes represented as signed distance functions (SDFs) using a latent space.</a></li><li class="depth-1"><a href="#text-to-multiview-and-texturing" data-for="text-to-multiview-and-texturing">Text to Multiview and Texturing</a></li><li class="depth-2"><a href="#stableprojectorz----stable-projectorz-offers-immersive-high-quality-projector-experiences-for-various-settings-including-homes-businesses-and-events" data-for="stableprojectorz----stable-projectorz-offers-immersive-high-quality-projector-experiences-for-various-settings-including-homes-businesses-and-events">StableProjectorz - * Stable Projectorz offers immersive, high-quality projector experiences for various settings including homes, businesses, and events.</a></li><li class="depth-2"><a href="#open-source" data-for="open-source">Open Source</a></li><li class="depth-2"><a href="#research" data-for="research">Research</a></li><li class="depth-1"><a href="#3d-modelling-techniques" data-for="3d-modelling-techniques">3D Modelling Techniques</a></li><li class="depth-2"><a href="#collaborative-control-for-geometry-conditioned-pbr-image-generation----holo-gen-is-a-research-project-exploring-methods-for-generating-3d-holographic-content-especially-for-mixed-reality-applications" data-for="collaborative-control-for-geometry-conditioned-pbr-image-generation----holo-gen-is-a-research-project-exploring-methods-for-generating-3d-holographic-content-especially-for-mixed-reality-applications">Collaborative Control for Geometry-Conditioned PBR Image Generation - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.</a></li><li class="depth-2"><a href="#clip-forge" data-for="clip-forge">CLIP-Forge</a></li><li class="depth-2"><a href="#blendergpt" data-for="blendergpt">BlenderGPT</a></li><li class="depth-2"><a href="#clip-mesh" data-for="clip-mesh">CLIP-Mesh</a></li><li class="depth-1"><a href="#texturing" data-for="texturing">Texturing</a></li><li class="depth-2"><a href="#dream-textures" data-for="dream-textures">Dream Textures</a></li><li class="depth-2"><a href="#comfytextures" data-for="comfytextures">ComfyTextures</a></li><li class="depth-1"><a href="#scene-scale" data-for="scene-scale">Scene Scale</a></li><li class="depth-2"><a href="#gala3d-towards-text-to-3d-complex-scene-generation-via-layout-guided-generative-gaussian-splatting---huggingfacecopapers240207207-in-uk-english-spelling-presented-as-bullet-points" data-for="gala3d-towards-text-to-3d-complex-scene-generation-via-layout-guided-generative-gaussian-splatting---huggingfacecopapers240207207-in-uk-english-spelling-presented-as-bullet-points">GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:</a></li><li class="depth-2"><a href="#scene-scale-diffusion" data-for="scene-scale-diffusion">Scene-Scale Diffusion</a></li><li class="depth-2"><a href="#onepose-for-object-pose-estimation" data-for="onepose-for-object-pose-estimation">OnePose++ for Object Pose Estimation</a></li><li class="depth-2"><a href="#imagine-3d-software" data-for="imagine-3d-software">Imagine 3D Software</a></li><li class="depth-2"><a href="#get3d-by-toronto-ai-lab" data-for="get3d-by-toronto-ai-lab">GET3D by Toronto AI Lab</a></li><li class="depth-2"><a href="#pointe-system" data-for="pointe-system">Point·E System</a></li><li class="depth-2"><a href="#dream-fields-for-text-guided-3d-object-generation" data-for="dream-fields-for-text-guided-3d-object-generation">Dream Fields for Text-Guided 3D Object Generation</a></li><li class="depth-2"><a href="#lion-by-toronto-ai-lab" data-for="lion-by-toronto-ai-lab">LION by Toronto AI Lab</a></li><li class="depth-2"><a href="#3d-highlighter" data-for="3d-highlighter">3D Highlighter</a></li><li class="depth-2"><a href="#vq-ad-method-by-nvidia-and-university-of-toronto" data-for="vq-ad-method-by-nvidia-and-university-of-toronto">VQ-AD Method by NVIDIA and University of Toronto</a></li><li class="depth-2"><a href="#mofusion-for-human-motion-synthesis" data-for="mofusion-for-human-motion-synthesis">MoFusion for Human Motion Synthesis</a></li><li class="depth-2"><a href="#software-and-tools" data-for="software-and-tools">Software and Tools</a></li><li class="depth-2"><a href="#monster-mash-troubleshooting" data-for="monster-mash-troubleshooting">Monster Mash Troubleshooting</a></li><li class="depth-2"><a href="#text2mesh" data-for="text2mesh">Text2Mesh</a></li><li class="depth-2"><a href="#nethingxyz" data-for="nethingxyz">neThing.xyz</a></li><li class="depth-2"><a href="#dreamcraft3d" data-for="dreamcraft3d">DreamCraft3D</a></li><li class="depth-2"><a href="#replaceanything3d" data-for="replaceanything3d">ReplaceAnything3D</a></li><li class="depth-2"><a href="#agg-amortized-generative-3d-gaussians" data-for="agg-amortized-generative-3d-gaussians">AGG: Amortized Generative 3D Gaussians</a></li><li class="depth-2"><a href="#tip-editor" data-for="tip-editor">TIP-Editor</a></li><li class="depth-2"><a href="#instant-meshes" data-for="instant-meshes">Instant Meshes</a></li><li class="depth-2"><a href="#make-it-3d" data-for="make-it-3d">Make-It-3D</a></li><li class="depth-2"><a href="#vox-e" data-for="vox-e">Vox-E</a></li><li class="depth-2"><a href="#text2room" data-for="text2room">Text2Room</a></li><li class="depth-2"><a href="#vmesh" data-for="vmesh">VMesh</a></li><li class="depth-2"><a href="#3dfuse" data-for="3dfuse">3DFuse</a></li><li class="depth-2"><a href="#motion-model-for-image-animation" data-for="motion-model-for-image-animation">Motion Model for Image Animation</a></li><li class="depth-2"><a href="#voxgraf" data-for="voxgraf">VoxGRAF</a></li><li class="depth-2"><a href="#realistic-one-shot-mesh-based-human-head-avatars" data-for="realistic-one-shot-mesh-based-human-head-avatars">Realistic One-Shot Mesh-Based Human Head Avatars</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

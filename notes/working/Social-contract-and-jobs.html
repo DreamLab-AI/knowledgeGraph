@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Social contract and jobs</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Social contract and jobs"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Social contract and jobs"/><meta name="twitter:description" content="AI compresses tasks, reorganises firms, and redistributes bargaining power."/><meta property="og:description" content="AI compresses tasks, reorganises firms, and redistributes bargaining power."/><meta property="og:image:alt" content="AI compresses tasks, reorganises firms, and redistributes bargaining power."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/working/Social-contract-and-jobs"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/working/Social-contract-and-jobs"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="AI compresses tasks, reorganises firms, and redistributes bargaining power."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="working/Social-contract-and-jobs"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-8744"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-8744" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../working/">working</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Social contract and jobs</a></div></nav><h1 class="article-title">Social contract and jobs</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.961Z">23 Sept 2026</time><span>32 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Note</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:58.55607396Z</span></span></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><ul>
+<li></li>
+<li>AI compresses tasks, reorganises firms, and redistributes bargaining power. The central question is not whether AI exposure exists, but whether cheaper cognition expands demand for services quickly enough, in what sectors, and under what institutional arrangements that expansion translates into decent human work rather than higher margins and tighter control by capital: <a href="https://arxiv.org/html/2602.16078v3" class="external">arXiv: AI as Coordination-Compressing Capital<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Some people like clear, bounded, repetitive work. A humane AI transition cannot assume that “worthwhile work” means dynamic, entrepreneurial, creative, or high-agency work. The social question is not just whether new jobs appear, but whether people retain choice, dignity, income, apprenticeship routes, and bargaining power.</li>
+<li>
+<h2 id="working-thesis">Working thesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#working-thesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>AI will not simply “take the jobs”.</li>
+<li>AI will take tasks, compress roles, create new service models, and reorganise power.</li>
+<li>The most important fight is over whether AI becomes:
+<ul>
+<li>a labour-replacing surveillance layer owned by platforms;</li>
+<li>or a productivity layer that expands access, supports human expertise, and funds a broader social settlement.</li>
+</ul>
+</li>
+<li>The human-centred position is not anti-AI. It is anti-extraction.</li>
+<li>The desirable future is not “nobody works”. It is that people have more real choice over work, care, learning, creativity, leisure, and dignity.</li>
+</ul>
+</li>
+<li>
+<h2 id="explicitly-developed-under-a-for-profit-model">Explicitly developed under a for-profit model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#explicitly-developed-under-a-for-profit-model" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Frontier AI is being developed primarily inside a profit, platform, advertising, cloud, surveillance, and enterprise-automation economy. The risk is not only technical unemployment; it is that productivity gains accrue to model owners, compute owners, cloud providers, and firms with market power.</li>
+<li>The old line that “AI companies are building human-replacement machines” is too crude, but it captures something real. Firms do have incentives to reduce headcount, suppress wages, automate coordination, and convert tacit employee knowledge into institutional software.</li>
+<li>The relevant distinction is:
+<ul>
+<li><strong>task substitution</strong> — AI performs work previously done by humans;</li>
+<li><strong>role redesign</strong> — jobs remain, but become smaller, more monitored, or more dependent on AI systems;</li>
+<li><strong>demand expansion</strong> — cheaper cognition makes previously unaffordable or impossible services viable.</li>
+</ul>
+</li>
+<li>AI should be understood not only as a labour-supply shock but also as <strong>coordination-compressing capital</strong>: it lowers the cost not only of writing, summarising, coding, searching, and documenting, but also of coordination, monitoring, and standardisation inside firms: <a href="https://arxiv.org/html/2602.16078v3" class="external">arXiv: AI as Coordination-Compressing Capital<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Once coordination gets cheaper, firms do not need to eliminate occupations outright to change labour outcomes. They can redesign roles, reduce headcount per unit of output, centralise decision rights, monitor workers more intensively, and convert tacit employee knowledge into institutional software.</li>
+<li>The stronger concern is not “there will be no jobs”. It is:
+<ul>
+<li>thinner firms;</li>
+<li>weaker bargaining power;</li>
+<li>fewer entry-level rungs;</li>
+<li>skill compression;</li>
+<li>more winner-take-most platforms;</li>
+<li>more worker surveillance;</li>
+<li>a political lag between disruption and protection.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="what-the-evidence-actually-shows">What the evidence actually shows<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-the-evidence-actually-shows" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The evidence base remains early and uneven, but several patterns are now reasonably clear.</li>
+<li><strong>Adoption is real and accelerating.</strong> The UK Government’s <a href="https://assets.publishing.service.gov.uk/media/6960ef384343a0da370869b7/AI_Labour_Market_Survey_2025_report.pdf" class="external">AI Labour Market Survey 2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> found LLM use at work rising sharply, with use concentrated among younger, more educated, and higher-income workers and in customer service, marketing, and IT. US data shows 55% of Americans and 37% of workers using generative AI tools by early 2026. Adoption curves look like the early personal computer — fast-spreading consumer technology, not a hedge-fund secret edge.</li>
+<li><strong>Productivity gains are real at the task level but heterogeneous.</strong> Brynjolfsson, Li, and Raymond found that a generative AI assistant increased customer-support productivity by 14% on average — with a 34% boost for novice and low-skilled workers and minimal effect for expert workers. A 2-month-tenure agent with AI matched the performance of a 6-month-tenure agent without: <a href="https://www.nber.org/papers/w31161" class="external">Brynjolfsson, Li &amp; Raymond: Generative AI at Work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. This inverts the doomer prediction: AI compresses the skill distribution rather than widening it.</li>
+<li><strong>Firm-level and macro labour effects remain modest.</strong> A large Denmark-based study found widespread chatbot adoption and measurable time savings, yet no significant effect on earnings or recorded hours — with confidence intervals ruling out effects larger than 1%: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5250742" class="external">Large Language Models, Small Labor Market Effects<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. Daron Acemoglu’s macroeconomic modelling estimates a 0.66% increase in total factor productivity over ten years — about 0.06% per year — comparable to a single decade of normal technological change. Productivity gains that small cannot produce mass unemployment.</li>
+<li><strong>AI-adopting firms are concentrated and skill-intensive.</strong> Research finds that AI-adopting firms are larger, more productive, and more skill-intensive, concentrated in IT and scientific activities rather than evenly spread through the economy: <a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.20251047" class="external">AEA: How Different Uses of AI Shape Labor Demand<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. PwC’s 2025 AI Jobs Barometer, based on close to a billion job ads, reported faster productivity growth in AI-exposed industries, continuing job growth even in many highly automatable roles, and a sizeable wage premium for AI skills: <a href="https://www.pwc.com/gx/en/issues/artificial-intelligence/job-barometer/2025/report.pdf" class="external">PwC: 2025 Global AI Jobs Barometer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. Workers with AI-related skills command wage premiums above 50%.</li>
+<li><strong>The IMF warns that gains may not be broadly shared</strong> without active fiscal and social policy: <a href="https://www.imf.org/en/Publications/Staff-Discussion-Notes/Issues/2024/06/11/Broadening-the-Gains-from-Generative-AI-The-Role-of-Fiscal-Policies-549639" class="external">IMF: Broadening the Gains from Generative AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.imf.org/en/Blogs/Articles/2024/06/17/fiscal-policy-can-help-broaden-the-gains-of-ai-to-humanity" class="external">IMF blog: Fiscal Policy Can Help Broaden the Gains<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. The same PwC evidence can be read two ways: as proof that augmentation and demand expansion are real, and as proof that gains are being captured mainly by already-advantaged workers, larger firms, and sectors with the capacity to reorganise quickly.</li>
+<li>Anthropic’s Economic Index studies actual AI use rather than only forecasts and points toward a mixed pattern of automation and augmentation, with task-level effects varying heavily by occupation and use case: <a href="https://www.anthropic.com/economic-index" class="external">Anthropic Economic Index<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.anthropic.com/research/labor-market-impacts" class="external">Anthropic: Labor market impacts of AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>McKinsey’s future-of-work analysis is useful because it talks about <strong>hours and transitions</strong>, not only “jobs”. It estimates that activities accounting for up to 30% of US work hours could be automated by 2030, with large occupational transitions concentrated in office support, customer service, food service, and lower-wage work: <a href="https://www.mckinsey.com/mgi/our-research/generative-ai-and-the-future-of-work-in-america" class="external">McKinsey: Generative AI and the Future of Work in America<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Goldman Sachs’ original 2023 thesis — roughly 300 million full-time-equivalent jobs exposed globally — remains one of the canonical “big number” sources: <a href="https://www.goldmansachs.com/insights/articles/generative-ai-could-raise-global-gdp-by-7-percent" class="external">Goldman Sachs: Generative AI could raise global GDP by 7%<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. Its later framing is more measured: exposure is not the same as disappearance, and adoption speed matters: <a href="https://www.goldmansachs.com/insights/articles/how-will-ai-affect-the-us-labor-market" class="external">Goldman Sachs: How Will AI Affect the US Labor Market?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Microsoft’s Work Trend Index frames the “frontier firm” as a workplace rebuilt around human-agent teams. Treat this as both evidence and sales literature: useful for seeing where enterprise AI is going, but not neutral about whether the transition is good for workers: <a href="https://www.microsoft.com/en-us/worklab/work-trend-index" class="external">Microsoft Work Trend Index<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="the-doomer-mistake-a-historical-pattern">The doomer mistake: a historical pattern<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-doomer-mistake-a-historical-pattern" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>AI doomerism — the argument that AI will hollow out the labour market and leave humanity economically redundant — has become the consensus mood of 2026. It does not survive contact with the evidence.</li>
+<li>The doomer position rests on four claims, each unsupported or contradicted by the data the doomer camp routinely cites:
+<ul>
+<li>that AI represents a categorical break from prior automation, making historical analogies invalid;</li>
+<li>that productivity gains from AI will accrue only to capital, not to workers;</li>
+<li>that the labour market is showing early signs of structural collapse rather than ordinary sectoral rotation;</li>
+<li>that a new social contract is required to manage an inevitable surplus of unemployable humans.</li>
+</ul>
+</li>
+<li>The strongest version of the doomer case: <em>“Productivity growth and wealth creation are being divorced from jobs and income. Previous technologies augmented human labour; AI substitutes for it. When machines become more economical than humans at both physical and cognitive work, there is simply no role left for humans to escape forward into.”</em> (Composite of OpenAI policy paper and Susskind, A World Without Work.)</li>
+<li>This argument is the oldest mistake in labour economics, restated for 2026. Every generation of technological disruption produces a high-status intellectual movement convinced that this time the historical pattern will break. It is always wrong.</li>
+<li><strong>Historical precedents for “this time is different”:</strong>
+<ul>
+<li>1589 — mechanical knitting frame: Elizabeth I refused the patent; predicted mass unemployment of hand knitters. Knitting industry expanded; textile employment grew for two centuries.</li>
+<li>1810s — power loom: Luddites predicted weaving as a trade would be destroyed. 98% labour reduction per yard of cloth; cloth consumption surged; textile employment quadrupled.</li>
+<li>1900 — mechanised agriculture: predicted permanent rural unemployment. US farm employment fell from 41% to 2% of workforce by 2000; total employment grew by ~150 million.</li>
+<li>1930s — Keynes warned of “technological unemployment” lasting generations. Postwar boom followed; lowest unemployment of the 20th century.</li>
+<li>1980s–90s — ATM machines: predicted bank tellers would be extinct. Tellers per branch fell from ~21 to ~13; branches multiplied; total teller employment rose ~10–15%.</li>
+<li>1980s — spreadsheet software: predicted two million bookkeeping jobs destroyed. Bookkeeping declined; financial analyst, auditor, and accountant roles grew by millions.</li>
+<li>2016 — Geoffrey Hinton: “Stop training radiologists now.” Radiology employment grew; the field is currently short-staffed.</li>
+</ul>
+</li>
+<li>The pattern is consistent enough to constitute a law: when a technology reduces the cost of performing a task, demand for the output of that task expands, and the residual human tasks become more valuable.</li>
+<li>The doomer counter-argument is structurally invariant across all of these episodes: previous technologies replaced some tasks but left the cognitive frontier untouched; AI replaces the cognitive frontier itself. Elizabeth I’s advisors did not think knitters could become factory operators. Keynes did not think factory operators could become software engineers. The argument’s structure is invariant; only the territory shifts.</li>
+<li>Current AI systems are extraordinarily good at codified cognitive work — the kind of work that can be specified, examined, and trained on. They are markedly worse at tacit knowledge, novel-context judgement, embodied skill, and what David Autor calls “expert intuition.” The entry-level cohort is being displaced precisely because entry-level work is codified work.</li>
+<li><strong>What the data actually shows on the entry-level finding:</strong> Stanford Digital Economy Lab’s Canaries in the Coal Mine? (2025) found that workers aged 22–25 in the most AI-exposed occupations experienced a 13% relative decline in employment since late 2022 — extending to nearly 20% for developer employment in the Stanford AI Index 2026. But overall employment in AI-exposed occupations has grown robustly. The Dallas Fed was explicit: this “suggests only a slight impact on the aggregate unemployment rate so far,” driven primarily by fewer people transitioning into employment rather than by layoffs. This is a labour market where the bottom rungs of one ladder have been removed. Not civilisational.</li>
+<li><strong>Why doomerism dominates despite the evidence:</strong>
+<ul>
+<li><em>Commercial incentive</em>: AI labs benefit from the narrative that their technology is so powerful it requires a redesign of civilisation. It justifies valuations, regulatory capture, and the displacement of accountability onto governments. “Our product will break society, so society should pay us to break it carefully” is a remarkable business model.</li>
+<li><em>Cognitive availability</em>: displaced workers are visible; created jobs are not. The doomer narrative has a constant supply of vivid anecdotes; the rebuttal has only diffuse statistics.</li>
+<li><em>Status defence</em>: AI is uniquely threatening to the high-credentialed knowledge class — journalists, lawyers, consultants, academics — who shape the discourse. The agricultural mechanisation of 1900 was a story about somebody else. The current automation wave is a story about the people writing the story.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="multiple-things-can-be-true-at-once">Multiple things can be true at once<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multiple-things-can-be-true-at-once" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Silicon Valley may be right that many tasks are automatable.</li>
+<li><a href="../Robotics" class="internal" data-slug="Robotics">Robotics</a> will cause enormous real disruption, much of it still unclear.</li>
+<li>Economists may be right that demand expands when production gets cheaper, as it tends to do.</li>
+<li>Labour movements may be right that the transition is brutal without bargaining power.</li>
+<li>The dispute is not really “jobs or no jobs”. It is about:
+<ul>
+<li>who owns the machines;</li>
+<li>who owns the data;</li>
+<li>who controls deployment;</li>
+<li>who captures the productivity gains;</li>
+<li>who bears the transition cost.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="elasticity-rather-than-apocalypse">Elasticity rather than apocalypse<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#elasticity-rather-than-apocalypse" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Most public debate still treats AI as a labour-supply shock: systems perform tasks once done by people, so employment falls. A stronger framework treats AI as both a substitution shock and a demand shock, because lower cognitive costs can make previously unaffordable, inaccessible, or too-complex services newly viable.</li>
+<li>The old doom model assumes a fixed lump of work: AI does the work, so humans do less. The stronger economic model asks whether cheaper cognition expands what people and firms want to buy.</li>
+<li>The under-reported component is demand elasticity. When cognition becomes cheaper, the relevant economic question becomes: which kinds of demand expand, which new service models become feasible, and who captures the surplus? The answer determines whether AI creates broader access and new middle-skill roles or instead produces thinner firms, fewer entry-level rungs, weaker labour share, and stronger platform concentration.</li>
+<li>Alex Imas’s <a href="https://aleximas.substack.com/p/what-will-be-scarce" class="external">What will be scarce?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> is the cleanest articulation of this newer frame. If AI makes many forms of production cheap, then value may shift toward what remains scarce: <a href="../provenance" class="internal" data-slug="provenance">provenance</a>, human involvement, <a href="../working/Privacy,-Trust-and-Safety" class="internal alias" data-slug="working/Privacy,-Trust-and-Safety">Privacy, Trust and Safety</a>, taste, relationship, embodied <a href="../presence" class="internal" data-slug="presence">presence</a>, and status.</li>
+<li>Ezra Klein’s <a href="https://www.inquirer.com/opinion/commentary/ai-jobs-unemployment-silicon-valley-20260511.html" class="external">Why the AI job apocalypse probably won’t happen<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> brings that argument into mainstream political discourse. The important move is not blind optimism; it is the claim that economists are more sceptical of permanent mass unemployment than the AI labs’ own marketing implies.</li>
+<li>Jasmine Sun’s <a href="https://www.realclearmarkets.com/2026/05/01/silicon_valley_is_bracing_for_a_permanent_underclass_1180097.html" class="external">Silicon Valley Is Bracing for a Permanent Underclass<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> represents the other pole: people close to AI development increasingly fear that ordinary people lose economic leverage as software and robotics improve. This is valuable because it captures the worldview inside parts of Silicon Valley, even if that worldview is probably distorted.</li>
+</ul>
+</li>
+<li>
+<h2 id="demand-elasticity-where-new-work-may-come-from">Demand elasticity: where new work may come from<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#demand-elasticity-where-new-work-may-come-from" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>If AI reduces the price of cognitive services, standard economics suggests quantity demanded may rise — but the size of that rise depends on the elasticity of demand, the degree of unmet need, the presence of institutional bottlenecks, and whether people actually value AI-only delivery or still require human accountability, trust, or embodied presence.</li>
+<li>Many services are under-consumed today not because people do not want them, but because they are too expensive, too scarce, too confusing, too geographically constrained, or too intermittent. AI can relax those constraints by lowering the cost of documentation, triage, translation, navigation, and personalisation.</li>
+<li>The elasticity framework makes AI a question of economic design rather than technological destiny. See also <a href="../Efficiency-AI-vs-Growth-AI" class="internal alias" data-slug="Efficiency-AI-vs-Growth-AI">Efficiency AI vs Growth AI</a>.
+<ul>
+<li><strong>Price elasticity</strong>: lower-cost cognitive services can attract buyers previously priced out, especially small firms and lower-income households. Example: small businesses buying design, legal, analytics, or marketing support that used to be unaffordable.</li>
+<li><strong>Access elasticity</strong>: AI reduces provider scarcity, geography, waiting lists, or institutional bottlenecks, allowing more people to consume services with latent demand.</li>
+<li><strong>Complexity elasticity</strong>: AI makes opaque systems navigable — taxes, benefits, immigration, healthcare, insurance, procurement, compliance.</li>
+<li><strong>Continuity elasticity</strong>: services move from episodic to continuous — health monitoring, coaching, financial planning, education, care coordination.</li>
+<li><strong>Personalisation elasticity</strong>: people move from generic products to versions tailored to their context.</li>
+<li><strong>Relational elasticity</strong>: in some domains, AI may expand the market for human-delivered services because trust, judgement, accountability, or provenance become more valuable when routine production is cheap.</li>
+</ul>
+</li>
+<li>This turns the AI jobs question into an economy-design question: which sectors have suppressed demand because services are too expensive, too scarce, too confusing, too generic, or too episodic?</li>
+<li><strong>Likely expansion sectors:</strong>
+<ul>
+<li>infrastructure buildout for data, compute, <a href="../Energy-and-Power" class="internal alias" data-slug="Energy-and-Power">Energy and Power</a>, and <a href="../Robotics" class="internal" data-slug="Robotics">Robotics</a>;</li>
+<li><a href="../training" class="internal" data-slug="training">training</a> and bespoke education;</li>
+<li><a href="../Health" class="internal" data-slug="Health">Health</a> navigation and preventative care;</li>
+<li>elder care and family coordination;</li>
+<li>mental health and peer support;</li>
+<li>small-business professional services;</li>
+<li>legal self-help plus human escalation;</li>
+<li><a href="../working/Privacy,-Trust-and-Safety" class="internal alias" data-slug="working/Privacy,-Trust-and-Safety">Privacy, Trust and Safety</a> and <a href="../Governance-and-safeguarding" class="internal alias" data-slug="Governance-and-safeguarding">Governance and safeguarding</a>;</li>
+<li>bespoke human-made goods, events, hospitality, and experience design.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="the-apprenticeship-problem">The apprenticeship problem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-apprenticeship-problem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>One of the most important risks is not outright technological unemployment but the erosion of entry-level pathways. Many junior workers learn by doing the exact routine documentation, drafting, coordination, and analytical tasks that AI can now partially automate.</li>
+<li>If those tasks disappear from beginner roles, firms may still employ senior staff while cutting the bottom rungs that once supplied future expertise. Even if AI makes more services affordable, a system that destroys apprenticeship routes may still produce a brittle economy with fewer ways to build skill, weaker bargaining power for new entrants, and a long-run shortage of experienced human workers.</li>
+<li>The most exposed work is not always the least skilled. Generative AI reaches into writing, coding, marketing, legal support, administrative coordination, customer service, HR, translation, analytics, and management reporting.</li>
+<li>AI can also compress skill differences. The Brynjolfsson customer-support study suggests novices benefit most, which can democratise expertise, but may also reduce the wage premium for experience if firms treat AI output as a substitute for developed skill: <a href="https://www.nber.org/papers/w31161" class="external">Brynjolfsson, Li &amp; Raymond: Generative AI at Work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Anthropic’s 2026 labour-market analysis highlighted signs that hiring of younger workers in at-risk roles may be slowing even in the absence of a broad unemployment spike: <a href="https://www.anthropic.com/research/labor-market-impacts" class="external">Anthropic: Labor market impacts of AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>The UK Department for Education analysis estimates significant exposure across professional and administrative work: <a href="https://assets.publishing.service.gov.uk/media/656856b8cc1ec500138eef49/Gov.UK_Impact_of_AI_on_UK_Jobs_and_Training.pdf" class="external">UK DfE: Impact of AI on UK Jobs and Training<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. See also <a href="../working/Layoff-tracker-and-threatened-roles" class="internal alias" data-slug="working/Layoff-tracker-and-threatened-roles">Layoff tracker and threatened roles</a>.</li>
+<li>Recent UK labour-market work on AI skills and training points to a need for stronger projections, skills investment, and institutional support rather than assuming that market-led adoption will naturally generate robust progression routes: <a href="https://www.gov.uk/government/publications/ai-skills-for-life-and-work-labour-market-and-skills-projections/ai-skills-for-life-and-work-labour-market-and-skills-projections" class="external">UK Gov: AI Skills for Life and Work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>The most important distinction is exposure vs displacement:</strong>
+<ul>
+<li>tasks are exposed;</li>
+<li>roles are redesigned;</li>
+<li>occupations transition;</li>
+<li>bargaining power shifts;</li>
+<li>some workers are displaced.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="creative-tech-and-the-supply-demand-mismatch">Creative tech and the supply-demand mismatch<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#creative-tech-and-the-supply-demand-mismatch" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Creative tech is one of the least straightforward sectors in the AI transition. It is often presented as a beneficiary because generative tools lower the cost of image production, editing, pre-visualisation, prototyping, asset creation, localisation, and post-production, and because the UK has an established base in film, television, games, music, design, VFX, advertising, and creative software.</li>
+<li>But creative markets are not simple cases of suppressed demand waiting to be unlocked. In many creative domains, supply was already abundant before generative AI. The binding constraints were attention, distribution, commissioning budgets, trust, intellectual property, and the ability to convert audience interest into durable income. Lowering production costs further may therefore increase output far more than it increases paid demand.</li>
+<li>That is the core supply-demand mismatch. AI can flood markets with more music, images, scripts, trailers, design variants, and marketing assets, but the number of audience hours, commissioning slots, editorial budgets, and cultural gatekeepers does not expand at the same rate. In such markets, cheaper supply does not automatically create more paid creative work; it can instead intensify competition, push prices down, and shift value toward platforms, aggregators, and owners of distribution.</li>
+<li>This makes creative tech different from sectors such as healthcare, where unmet need is obviously large and demand is often suppressed by cost and access barriers. In creative industries, AI may expand experimentation and lower barriers to entry while still weakening average earnings for creators if monetisable demand does not grow in parallel.</li>
+<li><strong>The UK evidence:</strong>
+<ul>
+<li>The Creative Industries Policy and Evidence Centre has highlighted skills mismatches across the UK creative industries: <a href="https://pec.ac.uk/wp-content/uploads/2025/02/Creative-PEC-Skills-mismatches-in-the-UKs-Creative-Industries-12-Feb-2025.pdf" class="external">Creative PEC: Skills Mismatches in UK’s Creative Industries<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. Later PEC work reported rapidly rising demand for workers combining creativity with AI-related capabilities — suggesting growth in hybrid roles, but not a broad-based expansion in paid creative labour: <a href="https://pec.ac.uk/wp-content/uploads/2025/11/DP-AI-and-Creativity-1.pdf" class="external">Creative PEC: Demand for Creativity and AI Skills<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>The CoSTAR Foresight Lab (Goldsmiths) warned that generative AI offers real workflow gains across the screen sector but also poses significant legal, ethical, skills, and business-model risks, particularly where copyright is undermined and worker displacement is treated as a cost-saving opportunity rather than part of a transition strategy: <a href="https://www.gold.ac.uk/news/2025/costar-ai-report-/" class="external">Goldsmiths / CoSTAR: AI Threats to UK Screen Sector<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>IPPR’s analysis found that AI exposure is high in the UK and transitions will require active policy support: <a href="https://ippr-org.files.svdcdn.com/production/Downloads/Transformed_by_AI_March24_2024-03-27-121003_kxis.pdf" class="external">IPPR: Transformed by AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li><strong>The copyright fight is central, not peripheral.</strong> If model developers can train on creative work without meaningful transparency, consent, or compensation, AI improves supply-side efficiency by drawing value out of the sector while weakening the revenue base that supports original creation. UK unions, industry bodies, and policy researchers have argued that the design of copyright and licensing rules will determine whether AI complements British creative production or erodes it: <a href="https://www.theguardian.com/technology/2025/mar/03/uk-unions-creative-industry-workers-artificial-intelligence-ai-copyright" class="external">The Guardian: UK Unions Call for Action<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://newsmediauk.org/blog/2025/02/25/uk-creative-industries-launch-make-it-fair-campaign/" class="external">NMA: Make it Fair campaign<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>The employment upside in creative tech</strong> is likely to come less from mass expansion of traditional creative roles and more from a narrower set of hybrid occupations: AI-assisted producers, workflow designers, rights and licensing specialists, creative toolchain engineers, provenance and authenticity services, and human-led premium creative work where originality, reputation, taste, and live or embodied presence remain central to value.</li>
+<li>Demand may expand in adjacent categories — localisation, rapid prototyping, niche content production, virtual production, accessible tools for independent creators, AI-enabled services sold to brands and studios — but in core expressive markets, the likely immediate effect is often not unmet demand being unlocked, but oversupply colliding with scarce attention and fragile monetisation.</li>
+</ul>
+</li>
+<li>
+<h2 id="the-human-premium">The human premium<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-human-premium" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The AGI objection is: “won’t AI just eat the new jobs too?” The better question is not “can AI perform the task?” but “does AI-only delivery satisfy the demand?”</li>
+<li>The <strong>human premium</strong> is the portion of economic value that remains attached to human involvement even when AI can perform many underlying tasks. It is not merely residual sentimentality — it may be a precondition for demand expansion in domains where people will not buy fully automated services at scale without accountable humans in the loop. This is especially true where the service affects health, legal rights, education, employment, money, or personal safety.</li>
+<li>Sources of human premium:
+<ul>
+<li><strong>Relationship</strong>: continuity, memory, accumulated trust.</li>
+<li><strong>Embodied presence</strong>: someone physically there with you.</li>
+<li><strong>Trust</strong>: a human validates, interprets, reassures, or challenges.</li>
+<li><strong>Accountability</strong>: someone signs off, escalates, owns risk, and can be blamed or sued.
+<ul>
+<li>I’ve been talking about humans meeting humans in public places where they can be assured they’re talking to a real person, a bag of meat they can sue, both backed by swarms of agents, for years now.</li>
+</ul>
+</li>
+<li><strong>Translation</strong>: someone turns messy human desire into usable AI-mediated work.</li>
+<li><strong>Behaviour change</strong>: people often need human accountability to act on advice.</li>
+<li><strong>Provenance and status</strong>: “human-made” or “human-delivered” is part of the value.</li>
+</ul>
+</li>
+<li>This aligns with David Autor’s argument that AI could rebuild parts of the middle class if it extends expertise rather than replacing workers. AI can extend the reach of expertise by allowing more workers with complementary training to perform portions of higher-stakes work, but only when systems are designed to support workers rather than replace them. Autor is explicit that this is not a forecast; it is a possibility that depends on institutions and deployment choices: <a href="https://www.noemamag.com/how-ai-could-help-rebuild-the-middle-class" class="external">David Autor: AI Could Actually Help Rebuild the Middle Class<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.nber.org/papers/w32140" class="external">NBER: Applying AI to Rebuild Middle Class Jobs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Martin Ford’s “safe” categories still map well to the human premium:
+<ul>
+<li>genuine creatives making new ideas;</li>
+<li>sophisticated interpersonal relationships;</li>
+<li>physically demanding and complex work.</li>
+</ul>
+</li>
+<li>The future may not reward humans for being worse machines; it may reward humans for being visibly, accountably, relationally human. But this optimistic path is not automatic. Without institutions, the same technology can deskill work, weaken wages, and turn human beings into low-paid exception handlers for machines.</li>
+<li>See also <a href="https://www.nytimes.com/2024/02/14/opinion/ai-economy-jobs-colleges.html" class="external">The A.I. Economy Will Make Jobs More Human<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="new-role-families">New role families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#new-role-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The most plausible new jobs are not all “prompt engineer” jobs. They are domain jobs made viable by AI.</li>
+<li>Role families to watch:
+<ul>
+<li><strong>Navigators</strong> — help people move through systems too complex to face alone: healthcare, law, benefits, education, immigration, finance.</li>
+<li><strong>Continuous support workers</strong> — provide human follow-through around AI-monitored systems.</li>
+<li><strong>AI-augmented service operators</strong> — deliver cheaper professional services to markets that were previously priced out.</li>
+<li><strong>Data and operations specialists</strong> — keep AI-mediated services reliable inside real institutions.</li>
+<li><strong>QA, safety, compliance, and audit workers</strong> — test whether AI systems are legal, fair, safe, secure, and accountable.</li>
+<li><strong>Escalation specialists</strong> — handle the difficult cases that AI routes upward.</li>
+<li><strong>Human provenance workers</strong> — craftspeople, performers, hosts, teachers, guides, carers, coaches, and experts whose humanity is part of the product.</li>
+</ul>
+</li>
+<li>The risk is that these roles are made precarious, surveilled, and low-paid. The opportunity is that they become new middle-skill, middle-income work.</li>
+</ul>
+</li>
+<li>
+<h2 id="healthcare-as-the-clearest-elasticity-case">Healthcare as the clearest elasticity case<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#healthcare-as-the-clearest-elasticity-case" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="../Health" class="internal" data-slug="Health">Health</a> has almost every demand elasticity globally, though perhaps somewhat less in the UK and Europe because of different public provision models.
+<ul>
+<li>People would consume more care if it were cheaper or access were easier.</li>
+<li>People need help navigating complexity.</li>
+<li>Preventative and continuous care are under-supplied.</li>
+<li>People value personalisation, relationship, and trust.</li>
+</ul>
+</li>
+<li>AI can reduce the cost of surveillance, documentation, summarisation, triage, and personalised follow-up. That can expand demand not only for software, but also for new kinds of human work:
+<ul>
+<li>continuous care, care-plan, and outcome specialists;</li>
+<li>health-data operations specialists;</li>
+<li>medication and adherence coordinators;</li>
+<li>family-care liaisons;</li>
+<li>AI safety and escalation reviewers.</li>
+</ul>
+</li>
+<li>The AI layer watches, summarises, flags, routes, documents, and predicts. The human layer listens, reassures, interprets, challenges, escalates, and remains accountable.</li>
+<li>This is the pattern that much of the public debate misses. The question is not whether AI can automate pieces of healthcare, but whether lower cognitive costs can make a thicker layer of human-supported continuous care viable. If payment systems, liability rules, and staffing models route the gains into service expansion, employment can grow around the new layer; if they route the gains only into cost cutting, labour will be compressed instead.</li>
+<li>This is not guaranteed. It depends on reimbursement, liability, regulation, health-system capacity, and whether institutions choose human-centred design over pure cost cutting.</li>
+</ul>
+</li>
+<li>
+<h2 id="the-uk-frame">The UK frame<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-uk-frame" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The UK is a particularly useful case because it combines a service-heavy economy, a large creative sector, substantial exposure in professional and administrative work, and a policy environment that remains more fragmented and sector-led than the EU’s broader regulatory model.</li>
+<li>The DfE analysis estimated especially high exposure in professional occupations, associate professional roles, and administrative work — reinforcing the point that generative AI reaches into white-collar task bundles rather than only into low-paid routine labour: <a href="https://assets.publishing.service.gov.uk/media/656856b8cc1ec500138eef49/Gov.UK_Impact_of_AI_on_UK_Jobs_and_Training.pdf" class="external">UK DfE: Impact of AI on UK Jobs and Training<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>The UK has a long-standing productivity problem, weak recent wage growth, regional inequalities, and a labour market with large numbers of workers in service roles where AI may compress tasks without automatically generating higher-quality employment. The key issue is less whether the UK adopts AI at all than whether adoption expands socially useful demand and strengthens domestic capability, or instead deepens dependence on foreign model providers while weakening local bargaining power and entry-level work: <a href="https://www.gov.uk/government/publications/ai-skills-for-life-and-work-labour-market-and-skills-projections/ai-skills-for-life-and-work-labour-market-and-skills-projections" class="external">UK Gov: AI Skills for Life and Work<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>A service-led economy can benefit from lower cognitive costs in law, finance, marketing, education, health administration, and public services, but those gains can still be captured by a small number of platforms, consultancies, and large employers unless institutions deliberately support diffusion, training, and labour standards.</li>
+<li>The UK case brings the elasticity-versus-capture tension into sharp focus. In a service-led economy with a globally significant creative base, AI could either support broader access, stronger domestic capability, and new hybrid forms of human-centred work — or it could intensify extraction from workers and creators while value accrues to foreign model firms, platforms, and domestic incumbents. The practical question is not whether AI arrives, but which institutional settlement decides who benefits.</li>
+</ul>
+</li>
+<li>
+<h2 id="potential-impact-on-cities">Potential impact on cities<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#potential-impact-on-cities" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The strongest research does not show knowledge work simply “leaving cities for data centres”. It shows a split:
+<ul>
+<li>human work becomes more hybrid and spatially distributed;</li>
+<li>the computational substrate of work becomes concentrated in data-centre infrastructure, likely where energy is cheap or latency is paramount;</li>
+<li>city centres lose some five-day commuter gravity;</li>
+<li>metropolitan regions remain important because hybrid work still values access to urban networks, culture, clients, care, and amenities.</li>
+</ul>
+</li>
+<li>Remote work initially disperses activity away from city centres, but much of the movement remains inside the same metro area. <a href="https://www.pnas.org/doi/10.1073/pnas.2408930121" class="external">Ramani/Bloom: How working from home reshapes cities<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> show that many households leaving big-city centres moved to suburbs of the same city. This supports a hybrid metropolitan model rather than a rural-exodus model.</li>
+<li><a href="https://ideas.repec.org/p/pra/mprapa/113108.html" class="external">Liu &amp; Su: WFH and agglomeration economies<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> find that high-WFH occupations saw a decline in the urban wage premium and some employment movement from large to smaller cities. This suggests remote work weakens some agglomeration economies, especially those based on relationship-building, knowledge spillovers, and physical interaction.</li>
+<li><a href="https://sheffield.ac.uk/economics/research/impact-and-knowledge-exchange/how-does-remote-working-affect-our-local-economies" class="external">University of Sheffield: remote working and local economies<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> estimates that remote working shifts retail and hospitality spending out of the largest city centres in England and Wales, moving activity toward residential suburbs and changing the geography of service work.</li>
+<li>The UK Department for Transport argues that agglomeration must be broken into sharing, matching, and learning effects. Remote work directly affects labour-market matching and can reduce the agglomeration benefits of transport improvements: <a href="https://assets.publishing.service.gov.uk/media/6706382c30536cb927482e4d/dft-remote-working-agglomeration-report.pdf" class="external">DfT: Remote working and agglomeration<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Data centres become the industrial hinterland of knowledge work: essential, capital-intensive, low-footfall, power-hungry, and politically contested.
+<ul>
+<li>Data centres underpin cloud computing, AI, public services, and economic activity, but they do not replace the social density of the city. They convert knowledge work into energy, water, land, cooling, fibre, substations, tax, and planning pressure: <a href="https://researchbriefings.files.parliament.uk/documents/POST-PN-0762/POST-PN-0762.pdf" class="external">UK POSTnote: What are data centres and how sustainable are they?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Data centres affect energy grids, water systems, land use, quality of life, and local cost recovery. The question is whether they create long-term prosperity or simply shift infrastructure risk onto residents: <a href="https://www.wri.org/insights/us-data-center-growth-impacts" class="external">WRI: 7 ways data centers affect communities<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Data-centre electricity demand is projected to rise sharply, with AI-focused centres growing faster: <a href="https://www.iea.org/reports/key-questions-on-energy-and-ai/executive-summary" class="external">IEA: Key Questions on Energy and AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. See also <a href="../Energy-and-Power" class="internal alias" data-slug="Energy-and-Power">Energy and Power</a>.</li>
+</ul>
+</li>
+<li>The city living model shifts from “live near the office” to “live within access range of networks, culture, clients, care, and amenities”.</li>
+<li>The CBD becomes less of a compulsory work machine and more of a high-value interaction, culture, governance, and experience district.</li>
+</ul>
+</li>
+<li>
+<h2 id="power-privacy-and-personal-sovereignty">Power, privacy, and personal sovereignty<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#power-privacy-and-personal-sovereignty" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>AI concentrates power where there is compute, data, distribution, cloud infrastructure, model access, and enterprise integration.</li>
+<li>The privacy problem is now larger than targeted advertising. AI systems ingest, infer, summarise, predict, and act on behalf of institutions. They can become an ambient management layer.</li>
+<li>Risks:
+<ul>
+<li>algorithmic management and workplace surveillance;</li>
+<li>automated performance evaluation;</li>
+<li>opaque hiring and firing systems;</li>
+<li>AI-generated manipulation and hyper-personalisation;</li>
+<li>model-mediated access to information;</li>
+<li>copyright extraction and uncompensated training data;</li>
+<li>safety theatre replacing binding accountability.</li>
+</ul>
+</li>
+<li>The lesson from Cambridge Analytica was not fully absorbed. Voluntary commitments are not enough when the business model rewards behavioural prediction and persuasion.</li>
+<li>At the very least, these firms are operating inside advertising, platform, cloud, and enterprise-retention models. If the soft power of <a href="../pages/Generative-AI" class="internal alias" data-slug="pages/Generative-AI">Generative AI</a> is used for hyper-personalised advertising, persuasion, and behavioural steering, the result could be dystopian.</li>
+<li>The EU AI Act entered into force on 1 August 2024 and established a risk-based framework with obligations for high-risk systems and transparency rules for certain AI uses, including recruitment and medical software: <a href="https://commission.europa.eu/news-and-media/news/ai-act-enters-force-2024-08-01_en" class="external">EU AI Act enters into force<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" class="external">European Commission: AI Act<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> — though recently Germany especially seems to be losing confidence in an idea they helped spearhead.</li>
+<li>The UK remains more cautious and sector-led, with copyright still unresolved: <a href="https://www.gov.uk/government/consultations/copyright-and-artificial-intelligence" class="external">UK Gov: Copyright and Artificial Intelligence consultation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.gov.uk/government/publications/report-and-impact-assessment-on-copyright-and-artificial-intelligence/report-on-copyright-and-artificial-intelligence" class="external">UK Gov: Report on Copyright and AI 2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.gov.uk/government/publications/ai-opportunities-action-plan/ai-opportunities-action-plan" class="external">UK AI Opportunities Action Plan<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>The US approach is more contested and leans toward national competitiveness, infrastructure, and security review rather than a single comprehensive AI law: <a href="https://www.ai.gov/" class="external">America’s AI Action Plan<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.whitehouse.gov/wp-content/uploads/2025/07/Americas-AI-Action-Plan.pdf" class="external">White House AI Action Plan PDF<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>See also <a href="../working/Privacy,-Trust-and-Safety" class="internal alias" data-slug="working/Privacy,-Trust-and-Safety">Privacy, Trust and Safety</a>, <a href="../working/Politics,-Law,-Privacy" class="internal alias" data-slug="working/Politics,-Law,-Privacy">Politics, Law, Privacy</a>, <a href="../Governance-and-safeguarding" class="internal alias" data-slug="Governance-and-safeguarding">Governance and safeguarding</a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="labour-movements-and-bottom-up-governance">Labour movements and bottom-up governance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#labour-movements-and-bottom-up-governance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Governments are too slow to respond alone. This will likely be shaped through bottom-up labour movements, sector-by-sector bargaining, litigation, procurement rules, and professional standards.</li>
+<li>The Writers Guild remains the best early example of worker bargaining over AI. Its 2023 agreement established protections around credit, compensation, and the use of AI in writing work: <a href="https://www.wga.org/contracts/know-your-rights/artificial-intelligence" class="external">WGA: Artificial Intelligence<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, <a href="https://www.brookings.edu/articles/hollywood-writers-went-on-strike-to-protect-their-livelihoods-from-generative-ai-their-remarkable-victory-matters-for-all-workers/" class="external">Brookings: Hollywood writers’ AI victory<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>This is probably the model: not waiting for governments to understand the technology, but bargaining over:
+<ul>
+<li>consent;</li>
+<li>disclosure;</li>
+<li>pay;</li>
+<li>credit;</li>
+<li>training data;</li>
+<li>monitoring;</li>
+<li>redeployment;</li>
+<li>human review;</li>
+<li>apprenticeship protection.</li>
+</ul>
+</li>
+<li>The social contract needs to be renegotiated at multiple levels:
+<ul>
+<li>law;</li>
+<li>unions;</li>
+<li>procurement;</li>
+<li>professional standards;</li>
+<li>education;</li>
+<li>tax (this is under strain in a world of borderless AI agents);</li>
+<li>welfare;</li>
+<li>platform governance.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="renegotiating-the-social-contract">Renegotiating the social contract<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#renegotiating-the-social-contract" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The political task is to stop treating AI as either destiny or apocalypse. It is a deployment struggle.</li>
+<li>The new social contract should answer:
+<ul>
+<li>Who owns the productivity gains?</li>
+<li>Who has the right to refuse automation?</li>
+<li>Who gets retraining, and who pays?</li>
+<li>What happens to entry-level work?</li>
+<li>What must remain human-reviewed?</li>
+<li>When must AI use be disclosed?</li>
+<li>How are creators compensated when their work trains models?</li>
+<li>How do we tax capital substitution for labour?</li>
+<li>How do we protect people who prefer stable, repetitive, bounded work?</li>
+</ul>
+</li>
+<li>The Federal Reserve’s scenario-based approach is useful because it refuses a single forecast and instead treats AI as a set of possible labour-market paths depending on adoption, diffusion, institutions, and policy: <a href="https://www.federalreserve.gov/newsevents/speech/barr20250509a.htm" class="external">Federal Reserve: Artificial Intelligence and the Labor Market<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>The “desirable future” frame matters. The question is not only what is technically possible. It is what society chooses to make normal.</li>
+</ul>
+</li>
+<li>
+<h2 id="the-art-of-the-desirable-vs-imposed-futures">The art of the desirable vs imposed futures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-art-of-the-desirable-vs-imposed-futures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><a href="https://www.linkedin.com/in/helen-wilding-griffiths-8885ba45/" class="external">Helen Wilding<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> highlights a crucial aspect often missed by “tech bros exploring the art of the possible”: some people genuinely prefer clearly defined, repetitive roles.</li>
+<li>It is not for a privileged minority to dictate what counts as worthwhile work and unilaterally reshape the employment landscape, removing options that many find fulfilling.</li>
+<li>The transition to an AI-driven future must be guided by <a href="https://tomcheesewright.com/the-art-of-the-probable-the-possible-and-the-desirable" class="external">the art of the desirable<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, fostering social consensus and prioritising individual choice rather than imposing a singular vision of progress. The “art of the desirable” framework demands that we consider the needs and desires of all workers, not just those who thrive in dynamic, creative environments.
+<ul>
+<li><strong>Protecting choice</strong>: individuals should have the option to pursue roles that suit their preferences, whether those roles involve repetitive tasks or complex problem-solving.</li>
+<li><strong>Investing in human-centred training</strong>: reskilling should not focus only on technical AI skills, but also communication, empathy, critical thinking, and judgement.</li>
+<li><strong>Fostering social dialogue</strong>: the future of work should be determined through open discussion involving workers, policymakers, and technologists.</li>
+<li><strong>Prioritising wellbeing and fulfilment</strong>: the new social contract must value mental health, fair wages, reasonable working hours, and social dignity, especially during transitions.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="a-new-valuation-for-human-capital">A new valuation for human capital<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#a-new-valuation-for-human-capital" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>AI may raise the value of certain human capabilities precisely because it makes technical production cheaper.</li>
+<li>Human capabilities likely to become more valuable:
+<ul>
+<li>trust-building;</li>
+<li>taste;</li>
+<li>judgement;</li>
+<li>care;</li>
+<li>embodied skill;</li>
+<li>facilitation;</li>
+<li>conflict resolution;</li>
+<li>accountability;</li>
+<li>teaching;</li>
+<li>translation between humans and systems;</li>
+<li>knowing what is worth doing.</li>
+</ul>
+</li>
+<li>This connects to the relationship economy and the human premium. The future may not reward humans for being worse machines; it may reward humans for being visibly, accountably, relationally human.</li>
+<li>But this optimistic path is not automatic. Without institutions, the same technology can deskill work, weaken wages, and turn human beings into low-paid exception handlers for machines.</li>
+<li>See also <a href="https://www.nytimes.com/2024/02/14/opinion/ai-economy-jobs-colleges.html" class="external">The A.I. Economy Will Make Jobs More Human<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li>
+<h1 id="notes-and-fragments-to-develop">Notes and fragments to develop<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#notes-and-fragments-to-develop" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<h2 id="adjacent-theme-virtual-reality-ai-and-elder-care">Adjacent theme: <a href="../pages/Virtual-Reality" class="internal alias" data-slug="pages/Virtual-Reality">Virtual Reality</a>, AI, and elder care<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#adjacent-theme-virtual-reality-ai-and-elder-care" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Elder care is one of the strongest examples of technology expanding human care rather than replacing it.</li>
+<li>VR and mixed reality may reduce isolation and provide stimulation, memory support, travel-like experiences, and social connection for older adults.</li>
+<li>Sources:
+<ul>
+<li><a href="https://news.stanford.edu/2022/12/14/vr-real-impact-study-finds/" class="external">Stanford News: Where and who you are in VR has a real impact<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://vhil.stanford.edu/sites/g/files/sbiybj29011/files/media/file/moore-et-al-2023-from-65-to-103-older-adults-experience-virtual-reality-differently-depending-on-their-age-evidence.pdf" class="external">Stanford VHIL paper: Older adults experience VR differently depending on age<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="public-perception-and-backlash">Public perception and backlash<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#public-perception-and-backlash" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>There are signs of a growing public backlash against AI, driven by perceived unreliability, copyright extraction, job fears, surveillance, and cultural degradation.
+<ul>
+<li><a href="https://newatlas.com/technology/ai-index-report-negatives/" class="external">The bad and the ugly: AI is harmful, unreliable and running out of data<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.bloodinthemachine.com/p/ai-really-is-smoke-and-mirrors" class="external">AI really is smoke and mirrors<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.wsj.com/tech/ai/the-ai-revolution-is-already-losing-steam-a93478b1" class="external">The AI Revolution Is Already Losing Steam<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Polls and surveys are noisy, but the overall pattern is consistent: many workers use AI and find it productive, while also becoming more worried that it could replace or devalue their work.</li>
+<li>Useful survey clusters to revisit:
+<ul>
+<li>CNBC polling on productivity and worker concern;</li>
+<li>Beamery on AI in UK recruitment;</li>
+<li>edX on executive expectations for skills and entry-level work;</li>
+<li>Asana on workers’ estimate that a large share of tasks are replaceable;</li>
+<li>Deloitte, LinkedIn, Microsoft, and ServiceNow on worker preparedness and training gaps.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li><a href="../working/Layoff-tracker-and-threatened-roles" class="internal alias" data-slug="working/Layoff-tracker-and-threatened-roles">Layoff tracker and threatened roles</a></li>
+<li><a href="../Singularity" class="internal" data-slug="Singularity">Singularity</a></li>
+<li><a href="../Money" class="internal" data-slug="Money">Money</a></li>
+<li><a href="../Equity" class="internal" data-slug="Equity">Equity</a></li>
+<li><a href="../Cyber-Security-and-Military" class="internal alias" data-slug="Cyber-Security-and-Military">Cyber Security and Military</a></li>
+<li><a href="../working/Humans,-Avatars-,-Character" class="internal alias" data-slug="working/Humans,-Avatars-,-Character">Humans, Avatars , Character</a></li>
+<li><a href="../OpenAI" class="internal" data-slug="OpenAI">OpenAI</a></li>
+<li><a href="../Artificial-Intelligence" class="internal alias" data-slug="Artificial-Intelligence">Artificial Intelligence</a></li>
+<li><a href="../working/Social-contract-and-jobs" class="internal alias" data-slug="working/Social-contract-and-jobs">Social contract and jobs</a></li>
+<li><a href="https://twitter.com/bgurley/status/1786073617316360670" class="external">Bill Gurley on X: What’s really happening in the background around AI regulation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><img src="../assets/GMlofTGaYAMjN0v_1714807755332_0.jpeg" alt="GMlofTGaYAMjN0v.jpeg"/>{:height 907, :width 1097}</li>
+</ul>
+</li>
+<li>Silicon Valley is already showing signs of fetishising AI; this belongs in <a href="../Singularity" class="internal" data-slug="Singularity">Singularity</a>.
+<ul>
+<li><img src="../assets/Screenshot_2024-05-09_082635_1715239685308_0.png" alt="Screenshot 2024-05-09 082635.png"/>{:width 480, :height 136}</li>
+</ul>
+</li>
+<li>AI and Universal Basic Income
+<ul>
+<li><img src="../assets/image_1734796224681_0.png" alt="image.png"/></li>
+<li>Sam Altman talking UBI at 50 minutes.</li>
+<li>{{video <a href="https://youtu.be/nSM0xd8xHUM?t=3002%7D%7D" class="external">https://youtu.be/nSM0xd8xHUM?t=3002}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>CEO and management disruption:
+<ul>
+<li><a href="https://hbr.org/2024/09/ai-can-mostly-outperform-human-ceos" class="external">AI Can Mostly Outperform Human CEOs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.sciencedaily.com/releases/2015/10/151022192337.htm" class="external">CEO effect on firm performance mostly due to chance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.ft.com/content/389e505c-a1cc-4176-a592-dd1d0fa171b8" class="external">AI is already changing management — companies must decide how<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Software and developer disruption:
+<ul>
+<li>AWS CEO Matt Garman reportedly told employees that most developers may stop coding directly as AI changes software work.</li>
+<li>The better framing is probably not “developers disappear”, but “coding becomes less of the scarce skill; product judgement, architecture, customer understanding, and agent orchestration become more important”.</li>
+</ul>
+</li>
+<li>Other useful links:
+<ul>
+<li><a href="https://time.com/7016801/ai-jobs/" class="external">AI May Not Steal Many Jobs After All<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.nature.com/articles/s41599-024-02647-9" class="external">The impact of artificial intelligence on employment: the role of virtual agglomeration<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://osf.io/preprints/osf/hdjpk" class="external">OSF Preprints: The Uneven Impact of Generative AI on Entrepreneurial Performance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://autonomy.work/portfolio/the-shorter-working-week-a-report-from-autonomy-in-collaboration-with-members-of-the-4-day-week-campaign/" class="external">The Shorter Working Week: Autonomy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://fortune.com/europe/2023/12/02/nobel-prize-economist-christopher-pissarides-chatgpt-workplace-automation-one-year-launch/" class="external">Nobel laureate Chris Pissarides on AI and the four-day week<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://fortune.com/2023/04/20/ibm-ceo-work-ai-artificial-intelligence-careers-tech-arvind-krishna/" class="external">IBM CEO on working hand in hand with AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.forbes.com/sites/thomasbrewster/2024/04/23/axon-ai-police-reports-/" class="external">Taser Company Axon Is Selling AI That Turns Body Cam Audio Into Police Reports<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.turing.ac.uk/news/ai-key-future-national-security-decision-making-brings-its-own-risks" class="external">AI key to future national security decision making, but brings its own risks<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/html/2602.16078v3" class="external">arXiv: AI as Coordination-Compressing Capital<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://pubs.aeaweb.org/doi/pdfplus/10.1257/pandp.20251047" class="external">AEA: How Different Uses of AI Shape Labor Demand<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5250742" class="external">SSRN: Large Language Models, Small Labor Market Effects<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://assets.publishing.service.gov.uk/media/6960ef384343a0da370869b7/AI_Labour_Market_Survey_2025_report.pdf" class="external">UK Gov: AI Labour Market Survey 2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-6408" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#working-thesis" data-for="working-thesis">Working thesis</a></li><li class="depth-1"><a href="#explicitly-developed-under-a-for-profit-model" data-for="explicitly-developed-under-a-for-profit-model">Explicitly developed under a for-profit model</a></li><li class="depth-1"><a href="#what-the-evidence-actually-shows" data-for="what-the-evidence-actually-shows">What the evidence actually shows</a></li><li class="depth-1"><a href="#the-doomer-mistake-a-historical-pattern" data-for="the-doomer-mistake-a-historical-pattern">The doomer mistake: a historical pattern</a></li><li class="depth-1"><a href="#multiple-things-can-be-true-at-once" data-for="multiple-things-can-be-true-at-once">Multiple things can be true at once</a></li><li class="depth-1"><a href="#elasticity-rather-than-apocalypse" data-for="elasticity-rather-than-apocalypse">Elasticity rather than apocalypse</a></li><li class="depth-1"><a href="#demand-elasticity-where-new-work-may-come-from" data-for="demand-elasticity-where-new-work-may-come-from">Demand elasticity: where new work may come from</a></li><li class="depth-1"><a href="#the-apprenticeship-problem" data-for="the-apprenticeship-problem">The apprenticeship problem</a></li><li class="depth-1"><a href="#creative-tech-and-the-supply-demand-mismatch" data-for="creative-tech-and-the-supply-demand-mismatch">Creative tech and the supply-demand mismatch</a></li><li class="depth-1"><a href="#the-human-premium" data-for="the-human-premium">The human premium</a></li><li class="depth-1"><a href="#new-role-families" data-for="new-role-families">New role families</a></li><li class="depth-1"><a href="#healthcare-as-the-clearest-elasticity-case" data-for="healthcare-as-the-clearest-elasticity-case">Healthcare as the clearest elasticity case</a></li><li class="depth-1"><a href="#the-uk-frame" data-for="the-uk-frame">The UK frame</a></li><li class="depth-1"><a href="#potential-impact-on-cities" data-for="potential-impact-on-cities">Potential impact on cities</a></li><li class="depth-1"><a href="#power-privacy-and-personal-sovereignty" data-for="power-privacy-and-personal-sovereignty">Power, privacy, and personal sovereignty</a></li><li class="depth-1"><a href="#labour-movements-and-bottom-up-governance" data-for="labour-movements-and-bottom-up-governance">Labour movements and bottom-up governance</a></li><li class="depth-1"><a href="#renegotiating-the-social-contract" data-for="renegotiating-the-social-contract">Renegotiating the social contract</a></li><li class="depth-1"><a href="#the-art-of-the-desirable-vs-imposed-futures" data-for="the-art-of-the-desirable-vs-imposed-futures">The art of the desirable vs imposed futures</a></li><li class="depth-1"><a href="#a-new-valuation-for-human-capital" data-for="a-new-valuation-for-human-capital">A new valuation for human capital</a></li><li class="depth-0"><a href="#notes-and-fragments-to-develop" data-for="notes-and-fragments-to-develop">Notes and fragments to develop</a></li><li class="depth-1"><a href="#adjacent-theme-virtual-reality-ai-and-elder-care" data-for="adjacent-theme-virtual-reality-ai-and-elder-care">Adjacent theme: Virtual Reality, AI, and elder care</a></li><li class="depth-1"><a href="#public-perception-and-backlash" data-for="public-perception-and-backlash">Public perception and backlash</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../working/Agents" class="internal">Agents</a></li><li><a href="../working/Death-of-the-Internet" class="internal">Death of the Internet</a></li><li><a href="../working/Education-and-AI" class="internal">Education and AI</a></li><li><a href="../working/Introduction-to-me" class="internal">Introduction to me</a></li><li><a href="../working/Safety-and-alignment" class="internal">Safety and alignment</a></li><li><a href="../working/Sam-Hammond" class="internal">Sam Hammond</a></li><li><a href="../working/Social-contract-and-jobs" class="internal">Social contract and jobs</a></li><li><a href="../working/Soon-Next-Later-(AI-futurology)" class="internal">Soon-Next-Later (AI futurology)</a></li><li><a href="../working/Speech-and-voice" class="internal">Speech and voice</a></li><li><a href="../working/State-of-the-art-in-AI" class="internal">State of the art in AI</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Interaction Design</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Interaction Design"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Interaction Design"/><meta name="twitter:description" content="Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems — determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences — with the goal of creating products that are usable, efficient, and sat..."/><meta property="og:description" content="Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems — determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences — with the goal of creating products that are usable, efficient, and sat..."/><meta property="og:image:alt" content="Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems — determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences — with the goal of creating products that are usable, efficient, and sat..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Interaction-Design"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Interaction-Design"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems — determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences — with the goal of creating products that are usable, efficient, and sat..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Interaction-Design"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-4203"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-4203" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Interaction Design</a></div></nav><h1 class="article-title">Interaction Design</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.799Z">23 Sept 2026</time><span>16 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:interaction-design</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>spatial-computing</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.74</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Human-Computer-Interaction" class="internal">Human Computer Interaction</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Human-Computer-Interaction" class="internal">Human Computer Interaction</a></li><li><a href="../pages/User-Experience-Design" class="internal">User Experience Design</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Affordance" class="internal">Affordance</a></li><li><a href="../pages/Feedback-Mechanism" class="internal">Feedback Mechanism</a></li><li><a href="../pages/Error-Recovery" class="internal">Error Recovery</a></li><li><a href="../Interaction-Flow" class="internal">Interaction Flow</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Cognitive-Science" class="internal">Cognitive Science</a></li><li><a href="../pages/User-Research" class="internal">User Research</a></li><li><a href="../pages/Prototyping" class="internal">Prototyping</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Product-Design" class="internal">Product Design</a></li><li><a href="../pages/Accessible-Design" class="internal">Accessible Design</a></li><li><a href="../pages/Inclusive-Design" class="internal">Inclusive Design</a></li><li><a href="../Conversational-Interface" class="internal">Conversational Interface</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Spatial-User-Interfaces" class="internal">Spatial User Interface</a></li><li><a href="../natural-language-interface" class="internal">Natural Language Interface</a></li><li><a href="../pages/Multimodal-Interaction" class="internal">Multimodal Interaction</a></li><li><a href="../Spatial-User-Interface" class="internal">Spatial User Interface</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:interaction-design</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../user-experience" class="internal">User Experience</a></li><li><a href="../pages/User-Interface" class="internal">User Interface</a></li><li><a href="../Accessibility" class="internal">Accessibility</a></li><li><a href="../pages/Usability-Testing" class="internal">Usability Testing</a></li><li><a href="../pages/Design-Systems" class="internal">Design System</a></li><li><a href="../Design-System" class="internal">Design System</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Information-Architecture" class="internal">Information Architecture</a></li><li><a href="../pages/Mental-Model" class="internal">Mental Model</a></li><li><a href="../pages/Task-Analysis" class="internal">Task Analysis</a></li><li><a href="../Wireframing" class="internal">Wireframing</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Interaction design (IxD) is the practice of defining and shaping the dynamic behaviour of interactive systems — determining how they respond to user inputs, communicate state and feedback, and guide users through task sequences — with the goal of creating products that are usable, efficient, and satisfying across diverse contexts. It encompasses the design of interaction flows, affordances, timing, error recovery patterns, and multi-modal input modalities across digital, physical, spatial, and conversational interfaces. Interaction design is distinguished from visual design by its focus on behaviour over time rather than static composition, and from software engineering by its concern for the human experience of system use rather than technical implementation. As interactive surfaces expand into AR, VR, voice, and AI-mediated interfaces, the field continuously develops new design vocabularies, prototyping methods, and evaluation heuristics to address emergent interaction paradigms.</p>
+<ul>
+<li>
+<h3 id="overview">Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Historical origins</strong> — Interaction design as a named discipline emerged from the convergence of industrial design, cognitive psychology, and software engineering in the late 1980s.
+<ul>
+<li>Bill Moggridge and Bill Verplank coined the term “interaction design” to distinguish the design of software behaviour from hardware form and graphic composition.</li>
+<li>Intellectual foundations include J.J. Gibson’s ecological theory of affordances (1979), which established that perceived action possibilities emerge from the relationship between an artefact and its user.</li>
+<li>Don Norman’s “The Design of Everyday Things” (1988) applied affordance theory to everyday objects and digital interfaces, introducing the vocabulary of mapping, constraint, and feedback.</li>
+<li>Xerox PARC’s research into direct manipulation interfaces, WYSIWYG editing, and gestural input during the 1970s–1980s provided the first systematic exploration of interactive software behaviour.</li>
+<li>The term was formalised through Moggridge’s founding of IDEO and the publication of “Designing Interactions” (2007), which documented the discipline’s canonical history through practitioner interviews.</li>
+</ul>
+</li>
+<li><strong>Scope and boundaries</strong> — interaction design occupies a specific layer within the broader <a href="../pages/User-Experience-Design" class="internal alias" data-slug="pages/User-Experience-Design">User Experience Design</a> stack.
+<ul>
+<li>It focuses on behaviour over time: sequences of actions, state transitions, feedback loops, and error recovery — rather than visual composition or content strategy.</li>
+<li>It is distinguished from <a href="../pages/Information-Architecture" class="internal alias" data-slug="pages/Information-Architecture">Information Architecture</a> (structural organisation of content) by its emphasis on dynamic behaviour rather than static hierarchy.</li>
+<li>It is distinguished from visual or graphic design by its concern for system responsiveness and temporal dynamics rather than aesthetic composition.</li>
+<li>It is distinguished from software engineering by its focus on the human experience of interaction rather than the computational mechanism.</li>
+<li>In practice, interaction designers work between user researchers (who surface needs) and visual designers and engineers (who realise solutions).</li>
+</ul>
+</li>
+<li><strong>Why it matters</strong> — poor interaction design creates friction, cognitive overload, and error that reduce productivity, erode user trust, and drive product abandonment.
+<ul>
+<li>The cost of fixing interaction design failures in shipped software is substantially higher than catching them during iterative design and prototyping phases.</li>
+<li>Safety-critical systems (medical devices, aviation interfaces, automotive controls) rely on structured <a href="../pages/Interaction-Design" class="internal alias" data-slug="pages/Interaction-Design">Interaction Design</a> processes mandated by regulation to prevent human error with potentially fatal consequences.</li>
+<li>As digital products become the primary channel for government services, financial products, healthcare, and education, interaction design quality directly shapes equity of access and outcomes.</li>
+</ul>
+</li>
+<li><strong>Scale of the discipline</strong> — interaction design is practised globally across consumer technology, enterprise software, healthcare, automotive, and public sector domains.
+<ul>
+<li>The Interaction Design Association (IxDA) has tens of thousands of members across more than 100 countries.</li>
+<li>Undergraduate and graduate programmes in interaction design exist at major design and technical universities worldwide (Carnegie Mellon, RCA, TU Delft, MIT Media Lab).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="key-components">Key Components<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="../pages/Affordance" class="internal" data-slug="pages/Affordance">Affordance</a></strong> — perceptual signals embedded in interface elements that communicate what actions they support (clickability, draggability, editability, swipeability).
+<ul>
+<li>Derived from Gibson’s ecological psychology and operationalised for UI design by Don Norman.</li>
+<li>Distinguishes perceived affordances (what the user believes is possible) from actual affordances (what the system actually supports) — misalignment between the two is a primary source of interaction error.</li>
+<li>In digital interfaces, affordances are necessarily signified rather than physical: visual styling, iconography, cursor changes, and motion cues serve as signifiers of available actions.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Feedback-Mechanism" class="internal alias" data-slug="pages/Feedback-Mechanism">Feedback Mechanism</a></strong> — system responses that confirm user actions have been registered, communicate progress, and signal state changes.
+<ul>
+<li>Encompasses visual (animation, colour change, progress bars), auditory (notification sounds, voice confirmation), haptic (vibration patterns on mobile), and temporal (latency, response time) feedback modalities.</li>
+<li>Absence of feedback is a leading cause of user error and repeated input: users who receive no confirmation of an action often repeat it, creating duplicate submissions or unintended state changes.</li>
+<li>Feedback design must account for the latency budget: human perception of causality requires response within approximately 100ms for actions to feel instantaneous.</li>
+</ul>
+</li>
+<li><strong><a href="../Interaction-Flow" class="internal alias" data-slug="Interaction-Flow">Interaction Flow</a></strong> — the structured sequence of states and transitions a user moves through to accomplish a task goal.
+<ul>
+<li>Represented as state diagrams, task flows, <a href="../User-Journey" class="internal alias" data-slug="User-Journey">User Journey</a> maps, or screen-to-screen flow diagrams during the design phase.</li>
+<li>Happy path flows must be complemented with exception paths: error states, empty states, loading states, and edge cases that represent the full behavioural surface of a system.</li>
+<li>Flow design directly determines learnability: systems with consistent, predictable flow patterns are learned faster and retained longer.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Mental-Model" class="internal alias" data-slug="pages/Mental-Model">Mental Model</a></strong> — the user’s internal representation of how a system works, formed from prior experience with analogous systems and signals from the current interface.
+<ul>
+<li>Interaction design aligns the interface’s presented conceptual model with users’ existing mental models to reduce learning cost and error.</li>
+<li>Mental model mismatches are a primary cause of novice user difficulty: when the system behaves unexpectedly relative to the user’s model, error and frustration follow.</li>
+<li>Mental models are domain-specific and vary across user populations — a design that aligns with expert mental models may confuse novices and vice versa.</li>
+</ul>
+</li>
+<li><strong>Constraints</strong> — design elements that limit the set of possible actions at a given moment, preventing errors and guiding users toward correct interaction paths.
+<ul>
+<li>Physical constraints (greyed-out controls, disabled fields), logical constraints (form validation, step gating), semantic constraints (contextual availability of actions), and cultural constraints (convention-driven expectations).</li>
+<li>Constraints encode domain rules and workflow logic into the interaction surface, reducing the cognitive burden on users to remember what is valid.</li>
+</ul>
+</li>
+<li><strong>Mapping</strong> — the spatial or conceptual relationship between controls and the effects they produce.
+<ul>
+<li>Natural mapping exploits users’ existing spatial and causal expectations (e.g., up/down arrows increasing/decreasing a value, spatially arranged controls corresponding to spatially arranged outputs).</li>
+<li>Poor mapping forces users to learn arbitrary control-effect associations, increasing cognitive load and error rate.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Error-Recovery" class="internal alias" data-slug="pages/Error-Recovery">Error Recovery</a></strong> — mechanisms that detect, report, and allow recovery from user errors, minimising the cost of mistakes.
+<ul>
+<li>Includes undo/redo systems, confirmation dialogs before irreversible actions, inline validation that catches errors before submission, and graceful degradation when systems are in unexpected states.</li>
+<li>Design for error recovery acknowledges that errors are inevitable: the goal is to make errors detectable, understandable, and reversible rather than to prevent all error through constraint alone.</li>
+</ul>
+</li>
+<li><strong>Timing and animation</strong> — temporal properties of transitions, loading states, and response latency that communicate system responsiveness and guide attention between states.
+<ul>
+<li>Governed by principles from motion design, film editing, and perception psychology: easing curves, transition durations, and spatial continuity all affect perceived quality and comprehensibility.</li>
+<li>Excessive animation impairs performance perception; insufficient animation creates jarring state changes that disrupt user orientation within a flow.</li>
+</ul>
+</li>
+<li><strong><a href="../Wireframing" class="internal" data-slug="Wireframing">Wireframing</a> and <a href="../pages/Prototyping" class="internal" data-slug="pages/Prototyping">Prototyping</a></strong> — design artefacts that externalise interaction concepts for review, testing, and handoff before engineering investment is committed.
+<ul>
+<li>Low-fidelity: paper sketches, digital wireframes (Balsamiq, Figma low-fi) — rapid, cheap, good for structural exploration.</li>
+<li>High-fidelity: interactive prototypes (Figma, ProtoPie, Framer, coded React prototypes) — realistic enough to support <a href="../pages/Usability-Testing" class="internal alias" data-slug="pages/Usability-Testing">Usability Testing</a> with representative users.</li>
+<li>Prototyping fidelity should match the evaluation question: structural questions need low fidelity; detailed interaction questions require high fidelity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="mechanisms-and-methods">Mechanisms and Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mechanisms-and-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="../pages/User-Research" class="internal alias" data-slug="pages/User-Research">User Research</a></strong> — the empirical foundation of interaction design practice, providing evidence about user goals, tasks, environmental constraints, and <a href="../pages/Mental-Model" class="internal alias" data-slug="pages/Mental-Model">Mental Model</a> structures.
+<ul>
+<li>Generative methods (ethnographic observation, contextual inquiry, diary studies, interviews) surface unmet needs and establish the design problem space.</li>
+<li>Evaluative methods (<a href="../pages/Usability-Testing" class="internal alias" data-slug="pages/Usability-Testing">Usability Testing</a>, A/B testing, remote unmoderated testing) validate design solutions against user behaviour.</li>
+<li>Continuous discovery models integrate user research into product development cycles rather than confining it to project initiation phases.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Task-Analysis" class="internal alias" data-slug="pages/Task-Analysis">Task Analysis</a></strong> — systematic decomposition of user goals into the sub-tasks, decisions, and actions required to achieve them.
+<ul>
+<li>Hierarchical task analysis (HTA) produces a tree structure of goal-task-action relationships, revealing which steps require the most design attention.</li>
+<li>Cognitive task analysis (CTA) — particularly the Critical Decision Method — surfaces the decision-making and knowledge structures underlying expert performance, essential for designing complex professional tools.</li>
+<li><a href="../pages/Task-Analysis" class="internal alias" data-slug="pages/Task-Analysis">Task Analysis</a> outputs directly inform <a href="../Interaction-Flow" class="internal alias" data-slug="Interaction-Flow">Interaction Flow</a> design: each task node maps to a corresponding interface state.</li>
+</ul>
+</li>
+<li><strong>Interaction modelling</strong> — the construction of formal or semi-formal representations of intended system behaviour.
+<ul>
+<li>State-transition diagrams represent all possible system states and the events that trigger transitions between them — essential for ensuring completeness of behavioural coverage.</li>
+<li>Sequence diagrams and <a href="../User-Journey" class="internal alias" data-slug="User-Journey">User Journey</a> maps represent the temporal experience of a specific user navigating a specific task.</li>
+<li>Scenario-based design (Carroll, 1995) uses narrative scenarios to ground interaction models in realistic use contexts.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Usability-Testing" class="internal alias" data-slug="pages/Usability-Testing">Usability Testing</a></strong> — structured evaluation sessions in which representative users attempt realistic tasks with a prototype or live system under observation.
+<ul>
+<li>Think-aloud protocol: users verbalise their reasoning as they interact, surfacing <a href="../pages/Mental-Model" class="internal alias" data-slug="pages/Mental-Model">Mental Model</a> assumptions and points of confusion.</li>
+<li>Moderated (researcher present and able to probe) vs. unmoderated (remote, asynchronous, scalable) formats serve different evaluation needs.</li>
+<li>Formative testing (during design) identifies problems to fix; summative testing (post-launch) benchmarks performance against standards or competitors.</li>
+</ul>
+</li>
+<li><strong>Heuristic evaluation</strong> — expert review of an interface against established usability principles to identify violations without requiring user participants.
+<ul>
+<li>Nielsen’s 10 usability heuristics (visibility of system status, match between system and real world, user control and freedom, consistency and standards, error prevention, recognition over recall, flexibility and efficiency, aesthetic and minimalist design, help users recognise/diagnose/recover from errors, help and documentation).</li>
+<li>Shneiderman’s 8 golden rules of interface design provide a complementary set of principles for form-based and menu-driven systems.</li>
+<li>Expert reviews are fast and inexpensive but miss user-population-specific issues that only emerge in testing with actual users.</li>
+</ul>
+</li>
+<li><strong>Cognitive walkthrough</strong> — structured expert analysis that walks through a task step-by-step, asking at each step whether users will know what to do, whether they will notice the correct action, whether they will understand the <a href="../pages/Feedback-Mechanism" class="internal alias" data-slug="pages/Feedback-Mechanism">Feedback Mechanism</a>, and whether they can interpret progress toward their goal.</li>
+<li><strong>Eye-tracking and biometric studies</strong> — instrumented evaluation methods capturing attention patterns, fixation duration, and physiological arousal.
+<ul>
+<li>Eye-tracking reveals which interface elements attract attention, which are missed, and how reading patterns vary by user expertise.</li>
+<li>Electrodermal activity (EDA) and heart rate variability (HRV) can quantify cognitive load and stress — useful for safety-critical interaction design evaluation.</li>
+</ul>
+</li>
+<li><strong><a href="../Design-System" class="internal alias" data-slug="Design-System">Design System</a> integration</strong> — the codification of interaction design decisions into reusable component libraries with documented behavioural specifications.
+<ul>
+<li>Interaction patterns (modal dialogs, date pickers, data tables, form validation) are specified once in the <a href="../Design-System" class="internal alias" data-slug="Design-System">Design System</a> and instantiated consistently across products.</li>
+<li>Design tokens encode spacing, timing, and motion values that maintain behavioural consistency without requiring per-component specification.</li>
+<li>Handoff documentation bridges interaction design specifications to engineering implementation, reducing interpretation gaps.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="applications-and-use-cases">Applications and Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications-and-use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Web and mobile applications</strong> — the primary commercial domain of interaction design practice.
+<ul>
+<li>E-commerce checkout flows, social media feed interactions, form design, navigation patterns, and onboarding sequences are canonical interaction design problems.</li>
+<li>Platform guidelines (Apple Human Interface Guidelines, Google Material Design 3, Microsoft Fluent Design System) codify platform-specific interaction conventions, creating shared expectations across applications on each platform.</li>
+<li>Mobile-specific constraints — touch targets, thumb reachability zones, variable connectivity, interruption patterns — require adaptation of desktop interaction models rather than simple translation.</li>
+</ul>
+</li>
+<li><strong>Enterprise and professional software</strong> — complex multi-role workflows where interaction design must balance power-user efficiency with discoverability for occasional users.
+<ul>
+<li>ERP systems (SAP, Oracle), CRM platforms (Salesforce), analytics dashboards (Tableau, Looker), and developer tools (VS Code, Jira) represent the scale and complexity of enterprise interaction design.</li>
+<li>Command palette patterns, keyboard shortcut systems, and progressive disclosure mechanisms allow expert users to accelerate without confusing novices.</li>
+<li>Role-based interaction design addresses the fact that different user roles have different task frequencies, expertise levels, and decision-making contexts within the same system.</li>
+</ul>
+</li>
+<li><strong><a href="../Conversational-Interface" class="internal alias" data-slug="Conversational-Interface">Conversational Interface</a> and <a href="../Natural-Language-Interface" class="internal alias" data-slug="Natural-Language-Interface">Natural Language Interface</a></strong> — a rapidly expanding subfield driven by LLM-powered chatbots and voice assistants.
+<ul>
+<li>Key design challenges: communicating system uncertainty (confidence levels, hedging language), managing off-topic or ambiguous inputs, designing prompt guidance that helps users formulate effective queries, and supporting multi-turn conversation repair.</li>
+<li>Intent resolution design: when user intent is ambiguous, how should the system disambiguate — by asking clarifying questions, by attempting the most probable interpretation, or by presenting alternatives?</li>
+<li>Failure mode design: graceful handling of hallucination risk, refusal responses, and capability boundary communication are interaction design problems with no prior screen-UI equivalent.</li>
+</ul>
+</li>
+<li><strong><a href="../Spatial-User-Interface" class="internal alias" data-slug="Spatial-User-Interface">Spatial User Interface</a> and <a href="../pages/Multimodal-Interaction" class="internal alias" data-slug="pages/Multimodal-Interaction">Multimodal Interaction</a></strong> — interaction design for AR/VR and mixed-reality environments.
+<ul>
+<li>AR headsets (HoloLens 2, Apple Vision Pro, Meta Quest 3) introduce gaze-based selection, hand-tracking, pinch gestures, spatial anchoring, and the integration of virtual elements with physical environments.</li>
+<li>Key constraints: field of view limitations, depth perception for 3D selection, fatigue from sustained gestural input, and the need to avoid occluding important real-world elements with virtual UI.</li>
+<li>No established design canon: the field is actively developing heuristics for spatial interaction through conference research (IEEE VR, ACM CHI, ISMAR) and practitioner experimentation.</li>
+</ul>
+</li>
+<li><strong>Automotive and embedded systems</strong> — safety-critical interaction design under strict attentional constraints.
+<ul>
+<li>ADAS (advanced driver assistance system) interfaces must communicate system state (lane keeping, adaptive cruise, collision warnings) without demanding sustained driver attention.</li>
+<li>NHTSA and UNECE regulations constrain glance duration and head-down time, imposing hard limits on <a href="../Interaction-Flow" class="internal alias" data-slug="Interaction-Flow">Interaction Flow</a> complexity for in-vehicle tasks.</li>
+<li>Multimodal redundancy (visual + auditory + haptic) is a design requirement for safety-critical state communication.</li>
+</ul>
+</li>
+<li><strong>Medical devices and clinical software</strong> — interaction design under regulatory mandate.
+<ul>
+<li>IEC 62366-1 (usability engineering for medical devices) requires documented use specification, task analysis, formative and summative evaluation — a structured <a href="../pages/Interaction-Design" class="internal alias" data-slug="pages/Interaction-Design">Interaction Design</a> process traceable to safety evidence.</li>
+<li>Clinical decision support interfaces must communicate uncertainty and evidence quality without creating alert fatigue that causes clinicians to ignore important warnings.</li>
+<li>Electronic health record (EHR) systems (Epic, Cerner) have become major contexts for interaction design research, given documented links between poor EHR <a href="../pages/Usability" class="internal" data-slug="pages/Usability">Usability</a> and clinician burnout.</li>
+</ul>
+</li>
+<li><strong>AI-augmented design tooling</strong> — generative models applied to interaction design workflows.
+<ul>
+<li>Tools such as Figma AI, Adobe Firefly, Galileo AI, and Uizard use generative models to propose interface layouts, generate component variants, and conduct automated <a href="../Accessibility" class="internal" data-slug="Accessibility">Accessibility</a> audits.</li>
+<li>Automated <a href="../pages/Usability-Testing" class="internal alias" data-slug="pages/Usability-Testing">Usability Testing</a> simulation — AI agents that navigate interfaces and report usability issues — is an emerging area that may compress the evaluation cycle.</li>
+<li>The role of the interaction designer shifts toward design direction, evaluation curation, and ethical oversight rather than component-level generation.</li>
+</ul>
+</li>
+<li><strong>Physical and tangible interaction</strong> — interaction design at the boundary of digital and physical.
+<ul>
+<li>Tangible user interfaces (TUI) — physical objects that control digital systems — require interaction design that bridges physical manipulation affordances with digital state and feedback.</li>
+<li>IoT device controls (smart home, industrial sensors) require interaction design for devices with constrained displays, limited input modalities, and intermittent connectivity.</li>
+<li>Interactive installations and museum exhibits require interaction design for walk-up-and-use contexts with no prior training, extremely varied user populations, and degraded attentional contexts.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="cognitive-and-theoretical-foundations">Cognitive and Theoretical Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cognitive-and-theoretical-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Ecological psychology (Gibson, 1979)</strong> — the theory that perception is action-oriented: organisms perceive environments in terms of the actions they afford. Applied to interaction design as the <a href="../pages/Affordance" class="internal" data-slug="pages/Affordance">Affordance</a> concept.</li>
+<li><strong>Activity theory (Vygotsky, Leont’ev, Engeström)</strong> — frames human activity in terms of goals, actions, operations, and the tools and community context that mediate them. Provides a framework for analysing complex work practices that interaction design must support.</li>
+<li><strong>Distributed cognition (Hutchins, 1995)</strong> — argues that cognitive processes are distributed across individuals, artefacts, and environments rather than residing solely in individual minds. Grounds the design of shared workspaces, dashboards, and collaborative tools.</li>
+<li><strong>Fitts’ Law</strong> — a mathematical model predicting the time to acquire a UI target as a function of target size and distance. Foundational for touch target sizing guidelines, toolbar layout, and pointing device design.</li>
+<li><strong>Hick’s Law</strong> — the time to make a decision increases logarithmically with the number of choices. Motivates progressive disclosure, contextual menus, and the reduction of concurrent options in <a href="../Interaction-Flow" class="internal alias" data-slug="Interaction-Flow">Interaction Flow</a> design.</li>
+<li><strong>Miller’s Law (7±2)</strong> — working memory capacity is approximately 7 items. Motivates chunking of information and the grouping of related controls in interface design.</li>
+<li><strong>Gestalt principles</strong> — perceptual organisation principles (proximity, similarity, continuity, closure) that determine how users group interface elements into meaningful structures. Directly applied in visual <a href="../pages/Information-Architecture" class="internal alias" data-slug="pages/Information-Architecture">Information Architecture</a> and layout.</li>
+<li><strong>Dual-process theory (Kahneman)</strong> — the distinction between fast, automatic System 1 processing and slow, deliberate System 2 processing. Interaction design exploits System 1 for habitual interactions and scaffolds System 2 for novel or consequential decisions.</li>
+</ul>
+</li>
+<li>
+<h3 id="standards-and-context">Standards and Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards-and-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>ISO 9241</strong> — foundational international standard family for ergonomics of human-system interaction.
+<ul>
+<li>Part 11: usability definitions and framework.</li>
+<li>Part 110: dialogue principles (suitability for task, self-descriptiveness, conformity with user expectations, learnability, controllability, error tolerance, suitability for personalisation).</li>
+<li>Part 171: guidance on software <a href="../Accessibility" class="internal" data-slug="Accessibility">Accessibility</a>.</li>
+<li>Part 210: “Human-centred design for interactive systems” (formerly ISO 13407) — the primary process standard for interaction design, defining the iterative lifecycle of user research, requirements specification, design, and evaluation.</li>
+</ul>
+</li>
+<li><strong>IEC 62366-1:2015</strong> — usability engineering process standard for medical devices, mandating structured interaction design and evaluation activities traceable to patient safety evidence.</li>
+<li><strong>WCAG 2.2</strong> — Web Content <a href="../Accessibility" class="internal" data-slug="Accessibility">Accessibility</a> Guidelines, W3C Recommendation (October 2023), defining testable success criteria for accessible interaction behaviour across four principles: Perceivable, Operable, Understandable, Robust.</li>
+<li><strong>WCAG 3.0</strong> — next-generation accessibility guidelines in development at W3C/WAI, introducing an outcome-based scoring model rather than binary pass/fail criteria.</li>
+<li><strong>ETSI EN 301 549</strong> — European <a href="../Accessibility" class="internal" data-slug="Accessibility">Accessibility</a> standard for ICT products and services, harmonising WCAG criteria with EU procurement law and the European Accessibility Act.</li>
+<li><strong>Section 508 (US)</strong> — US federal accessibility standard requiring that electronic and information technology procured or developed by the US government be accessible, referencing WCAG 2.0 Level AA criteria.</li>
+<li><strong>Apple Human Interface Guidelines</strong> — platform interaction standards for iOS, iPadOS, macOS, watchOS, tvOS, and visionOS (spatial computing). De facto standards for respective ecosystems.</li>
+<li><strong>Google Material Design 3</strong> — design system and interaction specification for Android and web, defining component behaviour, motion principles, and adaptive layout patterns.</li>
+<li><strong>Microsoft Fluent Design System</strong> — interaction and visual design system for Windows and cross-platform Microsoft products.</li>
+<li><strong>IDEO Human-Centred Design methodology</strong> — design thinking process framework widely used to situate interaction design within broader innovation and service design practice.</li>
+<li><strong>Design Council Double Diamond</strong> — UK design process framework (Discover, Define, Develop, Deliver) that provides a shared vocabulary for interaction design within multidisciplinary product teams.</li>
+<li><strong>Interaction Design Association (IxDA)</strong> — primary professional body for the discipline, organising the annual Interaction conference and maintaining the global practitioner community.</li>
+<li><strong>ACM CHI (Conference on Human Factors in Computing Systems)</strong> — the premier academic venue for interaction design and HCI research, publishing the canonical research literature for the field.</li>
+<li><strong>Nielsen Norman Group</strong> — research and consultancy organisation that has produced the most widely cited practitioner-facing heuristics, guidelines, and empirical studies in interaction design, including the formative work on usability heuristics, web usability, and mental models.</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3078" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#overview" data-for="overview">Overview</a></li><li class="depth-0"><a href="#key-components" data-for="key-components">Key Components</a></li><li class="depth-0"><a href="#mechanisms-and-methods" data-for="mechanisms-and-methods">Mechanisms and Methods</a></li><li class="depth-0"><a href="#applications-and-use-cases" data-for="applications-and-use-cases">Applications and Use Cases</a></li><li class="depth-0"><a href="#cognitive-and-theoretical-foundations" data-for="cognitive-and-theoretical-foundations">Cognitive and Theoretical Foundations</a></li><li class="depth-0"><a href="#standards-and-context" data-for="standards-and-context">Standards and Context</a></li><li class="depth-0"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Affordance" class="internal">Affordance</a></li><li><a href="../pages/Cognitive-Load" class="internal">Cognitive Load</a></li><li><a href="../pages/Ergonomics" class="internal">Ergonomics</a></li><li><a href="../pages/Error-Recovery" class="internal">Error Recovery</a></li><li><a href="../pages/Gamification" class="internal">Gamification</a></li><li><a href="../pages/Heuristic-Evaluation" class="internal">Heuristic Evaluation</a></li><li><a href="../pages/Interaction-Design" class="internal">Interaction Design</a></li><li><a href="../pages/Think-Aloud-Protocol" class="internal">Think Aloud Protocol</a></li><li><a href="../pages/Usability" class="internal">Usability</a></li><li><a href="../pages/User-Experience" class="internal">user experience</a></li><li><a href="../pages/User-Interface" class="internal">User Interface</a></li><li><a href="../pages/Visual-Design" class="internal">Visual Design</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

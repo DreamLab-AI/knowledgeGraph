@@ -1,0 +1,12 @@
+
+Climate Modelling is the scientific discipline of constructing mathematical and computational representations of Earth's climate system to simulate past, present, and future climate states. Models range from simple energy-balance equations to high-resolution coupled atmosphere-ocean-land-ice systems running on supercomputing infrastructure. They underpin global projections published by the Intergovernmental Panel on Climate Change and inform policy decisions on emissions reduction and adaptation. Machine learning is increasingly integrated to accelerate parameterisation and downscaling. Outputs feed directly into carbon accounting, sustainability planning, and digital twin applications.
+
+- ### Content
+  - Climate models have evolved from simple one-dimensional radiation-balance calculations in the 1960s to present-day Earth System Models (ESMs) that couple atmospheric circulation, ocean heat transport, sea-ice dynamics, terrestrial carbon cycles, and atmospheric chemistry. The resolution of leading models has improved from hundreds of kilometres to a few kilometres in regional configurations, enabling representation of extreme weather events critical to adaptation planning.
+
+  - The computational cost of running ESMs at high resolution demands purpose-built supercomputing facilities and optimised parallelisation strategies. High-Performance Computing centres such as ECMWF and NCAR allocate dedicated clusters for model integration, post-processing, and ensemble analysis. Increasingly, GPU acceleration is applied to sub-components such as radiation schemes, reducing wall-clock time by an order of magnitude.
+
+  - Machine learning methods are transforming climate modelling practice. Neural network emulators trained on high-resolution model output can reproduce the statistical behaviour of expensive sub-grid parameterisations at a fraction of the computational cost. Downscaling models use convolutional architectures to produce local-scale projections from coarse global model output, providing the granularity needed by urban planners and infrastructure engineers.
+
+  - Climate model output is a foundational input to carbon accounting, sustainability disclosure frameworks, and physical risk assessments required under regulations such as TCFD. Organisations embed model-derived hazard projections—flooding probability, heat stress days, wildfire risk—into their long-term capital planning and supply chain resilience programmes, making climate modelling a core enterprise intelligence function.
+

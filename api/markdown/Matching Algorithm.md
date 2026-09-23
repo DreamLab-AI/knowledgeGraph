@@ -1,0 +1,3 @@
+
+A matching algorithm is a computational procedure that identifies correspondences between two sets of entities — such as records, participants or resources — according to a similarity or compatibility criterion, ranging from exact-key joins to probabilistic and graph-based matching. In master data management it links duplicate or related records referring to the same real-world entity across data sources; in resource-allocation contexts, such as barter or exchange systems, it pairs supply with demand to satisfy mutual constraints. Matching algorithms vary widely in complexity, from simple rule-based comparisons to optimisation-based approaches such as the stable-marriage and bipartite-matching algorithms.
+

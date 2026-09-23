@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Robot Hardware</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Robot Hardware"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Robot Hardware"/><meta name="twitter:description" content="RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4… Se..."/><meta property="og:description" content="RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4… Se..."/><meta property="og:image:alt" content="RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4… Se..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Robot-Hardware"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Robot-Hardware"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4… Se..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Robot-Hardware"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6597"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6597" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Robot Hardware</a></div></nav><h1 class="article-title">Robot Hardware</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.885Z">23 Sept 2026</time><span>22 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:robot-hardware</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>robotics</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Actuation-and-Control" class="internal">Actuation and Control</a></li><li><a href="../pages/Mobile-Robot-Platform" class="internal">Mobile Robot Platform</a></li><li><a href="../pages/Robotics-Platform" class="internal">Robotics Platform</a></li><li><a href="../pages/Embedded-Systems" class="internal">Embedded Systems</a></li><li><a href="../Mechatronics" class="internal">Mechatronics</a></li><li><a href="../pages/Industrial-Robot" class="internal">Industrial Robot</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../actuator" class="internal">Actuator</a></li><li><a href="../pages/Battery-Management-System" class="internal">Battery Management System</a></li><li><a href="../controller" class="internal">Embedded Controller</a></li><li><a href="../pages/Motor-Driver" class="internal">Motor Driver</a></li><li><a href="../pages/Sensor-Suite" class="internal">Sensor Suite</a></li><li><a href="../Embedded-Controller" class="internal">Embedded Controller</a></li><li><a href="../Wiring-Harness" class="internal">Wiring Harness</a></li><li><a href="../Power-Distribution-Board" class="internal">Power Distribution Board</a></li><li><a href="../Communication-Bus" class="internal">Communication Bus</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../can-fd-bus" class="internal">CAN-FD Bus</a></li><li><a href="../ethercat" class="internal">EtherCAT</a></li><li><a href="../imu" class="internal">IMU Sensor</a></li><li><a href="../motor-encoder" class="internal">Motor Encoder</a></li><li><a href="../pages/Real-Time-Operating-System" class="internal">Real-Time Operating System</a></li><li><a href="../ros-2" class="internal">ROS 2</a></li><li><a href="../LiPo-Battery" class="internal">LiPo Battery</a></li><li><a href="../IMU-Sensor" class="internal">IMU Sensor</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Operation" class="internal">Autonomous Operation</a></li><li><a href="../pages/Robot-Perception" class="internal">Robot Perception</a></li><li><a href="../pages/Kinematics-Model" class="internal">Kinematics Model</a></li><li><a href="../pages/Motion-Control" class="internal">Motion Control</a></li><li><a href="../pages/Navigation" class="internal">Navigation</a></li><li><a href="../pages/Proprioceptive-Sensor" class="internal">Proprioceptive Sensor</a></li><li><a href="../pages/Teleoperation" class="internal">Teleoperation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Simulation-Environment" class="internal">Simulation Environment</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../Software-Robot" class="internal">Software Robot</a></li><li><a href="../Virtual-Agent" class="internal">Virtual Agent</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Control-Algorithm" class="internal">Control Algorithm</a></li><li><a href="../Real-Time-Scheduling" class="internal">Real-Time Scheduling</a></li><li><a href="../pages/Power-Electronics" class="internal">Power Electronics</a></li><li><a href="../pages/Mechanical-Component" class="internal">Mechanical Component</a></li><li><a href="../pages/Thermal-Management" class="internal">Thermal Management</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../PhysicalLayer" class="internal">PhysicalLayer</a></li><li><a href="../ComputeLayer" class="internal">ComputeLayer</a></li><li><a href="../CommunicationLayer" class="internal">CommunicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../can-fd-protocol" class="internal">CAN-FD Protocol</a></li><li><a href="../pages/DDS-Middleware" class="internal">DDS Middleware</a></li><li><a href="../ethercat" class="internal">EtherCAT Protocol</a></li><li><a href="../pages/micro-ROS" class="internal">micro-ROS</a></li><li><a href="../ros2-control-framework" class="internal">ros2_control Framework</a></li><li><a href="../urdf" class="internal">URDF Hardware Description</a></li><li><a href="../EtherCAT-Protocol" class="internal">EtherCAT Protocol</a></li><li><a href="../URDF-Hardware-Description" class="internal">URDF Hardware Description</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>RB-9026</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../actuator" class="internal">Actuator</a></li><li><a href="../arm-cortex-m" class="internal">ARM Cortex-M</a></li><li><a href="../autonomous-operation" class="internal">Autonomous Operation</a></li><li><a href="../battery-management-system" class="internal">Battery Management System</a></li><li><a href="../bsi-pas-1085-collaborative-robots-2021" class="internal">BSI PAS 1085 Collaborative Robots 2021</a></li><li><a href="../can-fd-bus" class="internal">CAN-FD Bus</a></li><li><a href="../can-fd-protocol" class="internal">CAN-FD Protocol</a></li><li><a href="../ci-a-301-canopen-standard" class="internal">CiA 301 CANopen Standard</a></li><li><a href="../communication-bus" class="internal">Communication Bus</a></li><li><a href="../communication-layer" class="internal">CommunicationLayer</a></li><li><a href="../craig-introduction-to-robotics-2017" class="internal">Craig Introduction to Robotics 2017</a></li><li><a href="../dds-middleware" class="internal">DDS Middleware</a></li><li><a href="../electromechanical-domain" class="internal">ElectromechanicalDomain</a></li><li><a href="../embedded-controller" class="internal">Embedded Controller</a></li><li><a href="../embedded-systems" class="internal">Embedded Systems</a></li><li><a href="../embedded-systems" class="internal">EmbeddedSystemsDomain</a></li><li><a href="../ether-cat" class="internal">EtherCAT</a></li><li><a href="../ether-cat-protocol" class="internal">EtherCAT Protocol</a></li><li><a href="../ether-cat-technology-group" class="internal">EtherCAT Technology Group</a></li><li><a href="../ether-cat-technology-group-specification-v1-0-5" class="internal">EtherCAT Technology Group Specification v1.0.5</a></li><li><a href="../ethernet-switch" class="internal">Ethernet Switch</a></li><li><a href="../exoskeleton" class="internal">Exoskeleton</a></li><li><a href="../fpga-acceleration" class="internal">FPGA Acceleration</a></li><li><a href="../iec-61800-5-2-drive-safety-2016" class="internal">IEC 61800-5-2 Drive Safety 2016</a></li><li><a href="../iec-61800-drives-standard" class="internal">IEC 61800 Drives Standard</a></li><li><a href="../imu-sensor" class="internal">IMU Sensor</a></li><li><a href="../intel-real-sense-d400-datasheet-2024" class="internal">Intel RealSense D400 Datasheet 2024</a></li><li><a href="../inven-sense-icm-42688-p-datasheet-2024" class="internal">InvenSense ICM-42688-P Datasheet 2024</a></li><li><a href="../iso-10218-1-robot-safety-2021" class="internal">ISO 10218-1 Robot Safety 2021</a></li><li><a href="../iso-10218-robot-safety" class="internal">ISO 10218 Robot Safety</a></li><li><a href="../li-po-battery" class="internal">LiPo Battery</a></li><li><a href="../lynch-and-park-modern-robotics-2017" class="internal">Lynch &amp; Park Modern Robotics 2017</a></li><li><a href="../macenski-et-al-ros-2-science-robotics-2022" class="internal">Macenski et al. ROS 2 Science Robotics 2022</a></li><li><a href="../mechatronics" class="internal">Mechatronics</a></li><li><a href="../micro-ros" class="internal">micro-ROS</a></li><li><a href="../micro-ros-e-prosima-documentation-v3-0" class="internal">micro-ROS eProsima Documentation v3.0</a></li><li><a href="../mjbots-moteus-r4-11-reference" class="internal">mjbots Moteus r4.11 Reference</a></li><li><a href="../motor-driver" class="internal">Motor Driver</a></li><li><a href="../motor-encoder" class="internal">Motor Encoder</a></li><li><a href="../nvidia-jetson" class="internal">NVIDIA Jetson</a></li><li><a href="../odrive-pro-firmware-documentation-2024" class="internal">ODrive Pro Firmware Documentation 2024</a></li><li><a href="../ouster-os-series-user-guide-2024" class="internal">Ouster OS Series User Guide 2024</a></li><li><a href="../plett-battery-management-systems-2015" class="internal">Plett Battery Management Systems 2015</a></li><li><a href="../power-distribution-board" class="internal">Power Distribution Board</a></li><li><a href="../power-electronics" class="internal">Power Electronics</a></li><li><a href="../pratt-and-williamson-series-elastic-actuators-iros-1995" class="internal">Pratt &amp; Williamson Series Elastic Actuators IROS 1995</a></li><li><a href="../real-time-operating-system" class="internal">Real-Time Operating System</a></li><li><a href="../real-time-scheduling" class="internal">Real-Time Scheduling</a></li><li><a href="../robot-perception" class="internal">Robot Perception</a></li><li><a href="../ros-2" class="internal">ROS 2</a></li><li><a href="../ros-2-reps" class="internal">ROS 2 REPs</a></li><li><a href="../ros2-control-framework" class="internal">ros2_control Framework</a></li><li><a href="../sensor-suite" class="internal">Sensor Suite</a></li><li><a href="../siciliano-and-khatib-springer-handbook-of-robotics-2016" class="internal">Siciliano &amp; Khatib Springer Handbook of Robotics 2016</a></li><li><a href="../simulation-environment" class="internal">Simulation Environment</a></li><li><a href="../software-robot" class="internal">Software Robot</a></li><li><a href="../stm32-microcontroller" class="internal">STM32 Microcontroller</a></li><li><a href="../texas-instruments-bq76942-technical-reference-2024" class="internal">Texas Instruments BQ76942 Technical Reference 2024</a></li><li><a href="../thermal-management" class="internal">Thermal Management</a></li><li><a href="../ukri-national-robotarium-hardware-integration-standards-2024" class="internal">UKRI National Robotarium Hardware Integration Standards 2024</a></li><li><a href="../urdf-hardware-description" class="internal">URDF Hardware Description</a></li><li><a href="../virtual-agent" class="internal">Virtual Agent</a></li><li><a href="../wensing-et-al-proprioceptive-actuator-mit-cheetah-tro-2017" class="internal">Wensing et al. Proprioceptive Actuator MIT Cheetah TRO 2017</a></li><li><a href="../wiring-harness" class="internal">Wiring Harness</a></li><li><a href="../zephyr-rtos-3-6-release-notes" class="internal">Zephyr RTOS 3.6 Release Notes</a></li><li><a href="../compute-layer" class="internal">ComputeLayer</a></li><li><a href="../control-algorithm" class="internal">Control Algorithm</a></li><li><a href="../digital-twin" class="internal">Digital Twin</a></li><li><a href="../edge-computing" class="internal">Edge Computing</a></li><li><a href="../ground-robot" class="internal">Ground Robot</a></li><li><a href="../hardware-and-edge" class="internal">Hardware and Edge</a></li><li><a href="../hydraulic-actuator" class="internal">Hydraulic Actuator</a></li><li><a href="../industrial-robot" class="internal">Industrial Robot</a></li><li><a href="../kinematics-model" class="internal">Kinematics Model</a></li><li><a href="../mechanical-component" class="internal">Mechanical Component</a></li><li><a href="../mobile-robot-platform" class="internal">Mobile Robot Platform</a></li><li><a href="../model-based-control" class="internal">Model Based Control</a></li><li><a href="../motion-control" class="internal">Motion Control</a></li><li><a href="../navigation" class="internal">Navigation</a></li><li><a href="../nvidia-omniverse" class="internal">NVIDIA Omniverse</a></li><li><a href="../physical-layer" class="internal">PhysicalLayer</a></li><li><a href="../predictive-maintenance" class="internal">Predictive Maintenance</a></li><li><a href="../proprioceptive-sensor" class="internal">Proprioceptive Sensor</a></li><li><a href="../robotics" class="internal">RoboticsDomain</a></li><li><a href="../robotics-platform" class="internal">Robotics Platform</a></li><li><a href="../surgical-robot" class="internal">Surgical Robot</a></li><li><a href="../teleoperation" class="internal">Teleoperation</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:e1aa7e2d39138d30e3afa4c8863090b8f5dcc8bfdb766c256642ee8f920ea645</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Edge-Computing" class="internal">Edge Computing</a></li><li><a href="../Hardware-and-Edge" class="internal">Hardware and Edge</a></li><li><a href="../pages/Model-Based-Control" class="internal">Model Based Control</a></li><li><a href="../pages/NVIDIA-Omniverse-Platform" class="internal">NVIDIA Omniverse Platform</a></li><li><a href="../pages/Predictive-Maintenance" class="internal">Predictive Maintenance</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../ethercat" class="internal">EtherCAT Technology Group</a></li><li><a href="../pages/IEC-61800-Adjustable-Speed-Electrical-Power-Drive-Systems" class="internal">IEC 61800 Drives Standard</a></li><li><a href="../pages/ISO-10218-Robot-Safety" class="internal">ISO 10218 Robot Safety</a></li><li><a href="../pages/ROS-REP" class="internal">ROS 2 REPs</a></li><li><a href="../IEC-61800-Drives-Standard" class="internal">IEC 61800 Drives Standard</a></li><li><a href="../ROS-2-REPs" class="internal">ROS 2 REPs</a></li><li><a href="../EtherCAT-Technology-Group" class="internal">EtherCAT Technology Group</a></li><li><a href="../CiA-301-CANopen-Standard" class="internal">CiA 301 CANopen Standard</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Exoskeleton" class="internal">Exoskeleton</a></li><li><a href="../pages/Ground-Robot" class="internal">Ground Robot</a></li><li><a href="../pages/Hydraulic-Actuator" class="internal">Hydraulic Actuator</a></li><li><a href="../pages/Industrial-Robot" class="internal">Industrial Robot</a></li><li><a href="../pages/Mobile-Robot-Platform" class="internal">Mobile Robot Platform</a></li><li><a href="../pages/Surgical-Robot" class="internal">Surgical Robot</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/FPGA" class="internal">FPGA Acceleration</a></li><li><a href="../pages/NVIDIA-Jetson" class="internal">NVIDIA Jetson</a></li><li><a href="../ARM-Cortex-M" class="internal">ARM Cortex-M</a></li><li><a href="../STM32-Microcontroller" class="internal">STM32 Microcontroller</a></li><li><a href="../FPGA-Acceleration" class="internal">FPGA Acceleration</a></li><li><a href="../Ethernet-Switch" class="internal">Ethernet Switch</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>RobotHardware is the integrated electromechanical substrate of robotic systems encompassing all physical components required for autonomous or semi-autonomous operation: compute platforms (NVIDIA Jetson Orin NX/AGX, Raspberry Pi 5, BeagleBone AI-64), real-time microcontrollers (STM32H7, Teensy 4…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:EmbeddedController))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:MotorDriver))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:BatteryManagementSystem))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:WiringHarness))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:SensorSuite))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:PowerDistributionBoard))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:CommunicationBus))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:hasPart rb:StructuralChassis))
+
+  ## Dependency Relationships
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:requires rb:ROS2Framework))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:requires rb:RealTimeOperatingSystem))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:requires rb:CANFDBus))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:requires rb:EtherCAT))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:requires rb:MotorEncoder))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:requires rb:IMUSensor))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:dependsOn rb:ControlAlgorithm))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:dependsOn rb:PowerElectronics))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:dependsOn rb:ThermalManagement))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:dependsOn rb:RealTimeScheduling))
+
+  ## Capability Relationships
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:enables rb:MotionControl))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:enables rb:Navigation))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:enables rb:ProprioceptiveSensing))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:enables rb:TeleOperation))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:enables rb:AutonomousOperation))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:supports rb:IndustrialManipulator))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:supports rb:MobileRobotPlatform))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:supports rb:HumanoidRobot))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:supports rb:CollaborativeRobot))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:supports rb:SurgicalRobot))
+
+  ## Implementation Relationships
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:implements rb:microROS))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:implements rb:EtherCATProtocol))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:implements rb:CANFDProtocol))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:implements rb:DDSMiddleware))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:implements rb:URDFHardwareDescription))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:uses rb:NVIDIAJetsonOrin))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:uses rb:ARMCortexM))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:uses rb:STM32H7))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:uses rb:FPGAAccelerator))
+
+  ## Reduction Relationships
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:reduces rb:WiringComplexity))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:reduces rb:IntegrationLatency))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:reduces rb:PowerConsumption))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:reduces rb:FormFactor))
+  SubClassOf(rb:RobotHardware
+    ObjectSomeValuesFrom(rb:reduces rb:BOMCost))
+
+  ## Data Properties
+  DataPropertyAssertion(rb:hasIdentifier rb:RobotHardware &quot;RB-9026&quot;^^xsd:string)
+  DataPropertyAssertion(rb:authorityScore rb:RobotHardware &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(rb:etherCATCycleTimeMs rb:RobotHardware &quot;1&quot;^^xsd:decimal)
+  DataPropertyAssertion(rb:canFDBaudrateKbps rb:RobotHardware &quot;8000&quot;^^xsd:integer)
+  DataPropertyAssertion(rb:microROSSupported rb:RobotHardware &quot;true&quot;^^xsd:boolean)
+
+  ## Property Constraints
+  SubClassOf(rb:RobotHardware
+    DataAllValuesFrom(rb:requiresRTOS xsd:boolean))
+  SubClassOf(rb:RobotHardware
+    DataSomeValuesFrom(rb:communicationBusType xsd:string))
+  SubClassOf(rb:RobotHardware
+    DataMinCardinality(1 rb:hasActuatorCount xsd:integer))
+  SubClassOf(rb:RobotHardware
+    DataMinCardinality(1 rb:hasSensorCount xsd:integer))
+  SubClassOf(rb:RobotHardware
+    DataSomeValuesFrom(rb:ipRating xsd:string))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label rb:RobotHardware &quot;Robot Hardware&quot;@en)
+  AnnotationAssertion(rdfs:comment rb:RobotHardware &quot;Integrated electromechanical substrate of robotic systems comprising compute platforms (NVIDIA Jetson Orin, Raspberry Pi 5), real-time microcontrollers (STM32H7, Teensy 4.1, RP2040, ESP32-S3), motor drivers (ODrive Pro, Moteus), battery management systems, wiring harnesses (CAN-FD, EtherCAT), sensor suites, and structural chassis, bridged to [[ROS 2]] planning stacks via micro-ROS and DDS middleware, enabling deterministic 1-20 kHz control loops for industrial manipulators, mobile platforms, humanoids, and collaborative robots across a USD 40.7B market.&quot;@en)
+  AnnotationAssertion(dcterms:identifier rb:RobotHardware &quot;RB-9026&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject rb:RobotHardware &quot;Robotics, Embedded Systems, Motor Control, Real-Time Computing, Sensors&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(rb:requires)
+AsymmetricObjectProperty(rb:enables)
+AsymmetricObjectProperty(rb:implements)
+AsymmetricObjectProperty(rb:reduces)
+TransitiveObjectProperty(rb:dependsOn)
+FunctionalDataProperty(rb:etherCATCycleTimeMs)
+FunctionalDataProperty(rb:canFDBaudrateKbps)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-robot-hardware">About Robot Hardware<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-robot-hardware" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Robot Hardware</strong> refers to the totality of physical components that constitute a robot: compute boards, microcontrollers, actuators, sensors, power supply chains, wiring, and structural frames. Unlike software abstractions, hardware choices impose hard physical constraints—thermal dissipation limits, peak current draw, bus bandwidth, mechanical strength, and ingress protection—that propagate throughout the entire robotic system design. Contemporary robot hardware is characterised by deep integration between formerly discrete subsystems: a modern servo module may embed a BLDC motor, magnetic encoder, gear train, FOC driver IC, temperature sensor, and a CAN-FD transceiver within a single compact cylinder, communicating at 1 kHz with the main compute board.</p>
+</li>
+<li>
+<p>The field is currently in a phase of rapid commoditisation. Brushless DC motors, once the exclusive province of precision industrial suppliers, are now available in high-quality frameless configurations for under USD 50 from Chinese manufacturers such as T-Motor and Iflight. Field-oriented control ASICs such as the DRV8353 have collapsed motor driver design to a single-chip solution. Open-source firmware projects—ODrive, Moteus, VESC, and SimpleFOC—have democratised advanced current-loop algorithms (Park/Clarke transforms, SVPWM, anti-cogging maps) for university labs and startups. Simultaneously, the compute tier has leapfrogged earlier ARM Cortex-A53 SBCs: NVIDIA Jetson Orin NX (16 GB, 1024-core Ampere GPU, 100 TOPS) delivers on-robot deep learning inference that was impossible without a server rack five years ago.</p>
+</li>
+<li>
+<h3 id="hardware-compute-architecture">Hardware Compute Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hardware-compute-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Robot hardware integrates three compute tiers operating at different time scales:</p>
+<ul>
+<li><strong>Host compute (1–50 ms cycle)</strong>: ARM or x86-based SBCs or SOMs running Linux with ROS 2. NVIDIA Jetson Orin AGX (275 TOPS) and Thor (2000 TOPS, projected 2025) handle perception, planning, and neural network inference. Raspberry Pi 5 (BCM2712, 2.4 GHz Cortex-A76, 8 GB LPDDR4X) serves lower-cost mobile platforms. BeagleBone AI-64 (TDA4VM SoC, dual Cortex-A72 + C7x DSP) provides automotive-grade processing at industrial temperature ranges (−40 °C to +85 °C).</li>
+<li><strong>Real-time microcontroller (0.05–1 ms cycle)</strong>: STM32H7 series (480 MHz Cortex-M7, FPU, up to 8 UART, 3 SPI, 3 CAN-FD, 400 kSa/s ADC) dominates research and industrial low-level control. Teensy 4.1 (600 MHz iMXRT1062 Cortex-M7, 8 MB PSRAM, MicroSD) is popular in open-source humanoid and exoskeleton projects due to its Arduino ecosystem compatibility. Raspberry Pi RP2040 (dual Cortex-M0+, 264 KB SRAM, programmable I/O state machines for custom bus protocols) enables deterministic waveform generation. ESP32-S3 (240 MHz Xtensa LX7, Wi-Fi 6, BLE 5.0, 512 KB SRAM) suits wireless sensor nodes and low-cost distributed actuator controllers.</li>
+<li><strong>FPGA acceleration (sub-10 µs)</strong>: Xilinx Zynq UltraScale+ (quad Cortex-A53 + FPGA fabric) and Lattice CrossLink-NX serve EtherCAT master implementations, encoder interpolation at 100 MHz, and LiDAR pre-processing pipelines where Linux kernel scheduling jitter (≥50 µs) is unacceptable.</li>
+</ul>
+</li>
+<li>
+<h3 id="motor-drivers-and-actuator-control">Motor Drivers and Actuator Control<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#motor-drivers-and-actuator-control" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The motor driver layer converts digital velocity/torque commands into gate signals driving power transistors (typically 100 V, 10–100 A rated MOSFETs or GaN FETs). Key platforms:</p>
+<ul>
+<li><strong>ODrive Pro (2023)</strong>: 48–58 V, 40 A continuous per axis, dual-axis with STO (Safe Torque Off, IEC 62061 SIL 2), native CAN-FD at 5 Mbit/s, onboard 8192-count incremental encoder interface, 20 kHz current loop. The ODrive S1 (single axis, 2024) reduced cost to USD 149 for volume robotic deployments.</li>
+<li><strong>MoteusController (mjbots, r4.11)</strong>: 44 V, 100 A peak, CAN-FD at 1–8 Mbit/s, integrated magnetic encoder (AS5047P, 14-bit), Python/C++ API for torque/velocity/position modes, open firmware supporting custom impedance control loops. Used extensively in legged robotics platforms (mjbots Quad A0, MIT Mini Cheetah derivatives).</li>
+<li><strong>VESC 6 MK VI</strong>: 60 V, 120 A peak, FOC with hall sensor or sensorless startup, CAN bus (500 kbit/s), supports hoverboard GL motors (250–350 W hub motors), widely deployed in low-cost wheeled platforms and e-scooter-derived drivetrains repurposed for service robots.</li>
+<li><strong>SimpleFOC Shield v2.0.4</strong>: Arduino-compatible, DRV8313 three-phase driver, 12–35 V, 1.5 A continuous, designed for educational BLDC motor projects and sub-1 kg manipulators.</li>
+</ul>
+</li>
+<li>
+<h3 id="battery-systems-and-power-architecture">Battery Systems and Power Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#battery-systems-and-power-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Robot power systems must balance energy density (Wh/kg), peak discharge rate (C-rating), cycle life, and safety. Standard configurations:</p>
+<ul>
+<li><strong>LiPo multi-cell packs</strong>: 4S (14.8 V nominal), 6S (22.2 V), or 10S (37 V) configurations at 5,000–22,000 mAh. Discharge rates of 15–30C are typical for dynamic legged platforms. Tattu, Turnigy, and Maxamps supply common formats. LiPo cells risk thermal runaway above 4.2 V/cell or below 3.0 V/cell.</li>
+<li><strong>LiFePO4 (LFP) packs</strong>: Lower energy density (~125 Wh/kg vs ~200 Wh/kg for NMC) but thermally stable to 270 °C decomposition temperature, 2000+ cycle life at 80% DoD, and inherently safe chemistry. Preferred for mobile platforms operating in occupied spaces (retail, healthcare).</li>
+<li><strong>Battery Management System (BMS)</strong>: Dedicated ICs (BQ76942 from TI, MAX17330 from Analog Devices) enforce per-cell voltage monitoring (±1 mV accuracy), state-of-charge estimation via Coulomb counting + OCV lookup, passive/active cell balancing, over-current protection (electronic fuse at 2× rated current), over-temperature shutdown (typically 60–70 °C cell surface), and state-of-health tracking across cycles. CAN or SMBus interfaces expose BMS telemetry to the host controller for safe mission planning.</li>
+<li><strong>Power distribution</strong>: Automotive-grade blade fuse blocks, 12 V/24 V/48 V bus architectures with isolated DC-DC converters (Vicor DCM, Murata OKI-78), and hot-swap controllers (LTC4412) for uninterrupted power during battery swap operations.</li>
+</ul>
+</li>
+<li>
+<h3 id="wiring-harnesses-and-industrial-buses">Wiring Harnesses and Industrial Buses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wiring-harnesses-and-industrial-buses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Harness design is a major integration bottleneck. Best practices and dominant standards:</p>
+<ul>
+<li><strong>CAN-FD (ISO 11898-1:2015)</strong>: 120 Ω termination, twisted-pair (TP) cable, 2–8 Mbit/s data phase, 1 Mbit/s arbitration phase. CAN-FD supports up to 64-byte payloads (vs 8 bytes for classical CAN), enabling richer telemetry per frame. Typical robot topology: STM32H7 or ESP32 as CAN-FD node, TJA1462 transceiver, 30 m maximum bus length at 1 Mbit/s. ODrive Pro, Moteus, and CiA 402-compliant servo drives all support CAN-FD natively from 2023 onwards.</li>
+<li><strong>EtherCAT (IEC 61158-12)</strong>: 100 Mbit/s full-duplex over standard Cat5e/Cat6 cabling, sub-100 µs cycle times, hardware-timestamped distributed clock synchronisation to ±20 ns across nodes. Beckhoff EL3102, EPOS4 (Maxon), and Elmo Gold Whistle drives expose EtherCAT slave interfaces. On the master side, SOEM (Simple Open EtherCAT Master) library runs on Linux + Xenomai PREEMPT-RT. EtherCAT is dominant in precision manufacturing arms (KUKA KR AGILUS, ABB IRB 1200).</li>
+<li><strong>RS-485 / Modbus RTU</strong>: 10 Mbit/s maximum, 1200 m range, multi-drop up to 32 nodes. Used in legacy servo drives, actuator chains, and long-distance cable runs in mobile platforms.</li>
+<li><strong>USB 3.2 Gen 2 / USB4</strong>: Depth cameras (Intel RealSense D435i, 10 Mbit/s), LiDAR modules (Ouster OS1), and RGBD sensors predominantly use USB for host connectivity due to driver ecosystem maturity.</li>
+<li><strong>Gigabit Ethernet</strong>: Primary backbone for high-throughput sensor data (stereo vision, 3D LiDAR at 1.3 million points/s) and EtherCAT master. VLAN segmentation separates real-time control traffic from non-deterministic data acquisition.</li>
+<li><strong>Harness construction</strong>: Molex Micro-Fit 3.0 and JST-GH connectors predominate in open-source robotics. IP67-rated Deutsch DT/DTM connectors are standard for mobile outdoor platforms. Cable routing follows EMC best practices: power and signal cables in separate looms, shielded Belden 9841 or equivalent for CAN, drain wire grounded at single point.</li>
+</ul>
+</li>
+<li>
+<h3 id="sensor-integration">Sensor Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sensor-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Sensor selection and mounting geometry fundamentally shape perception capability:</p>
+<ul>
+<li><strong>IMU (Inertial Measurement Unit)</strong>: 6-DoF (accelerometer + gyroscope) or 9-DoF (+magnetometer). ICM-42688-P (InvenSense, 32 kHz ODR, ±16 g, ±2000 dps, SPI/I2C) is standard for legged robots requiring high-bandwidth proprioceptive state estimation. VectorNav VN-100 provides factory-calibrated attitude, heading, and velocity at ±0.5° static accuracy for navigation-grade applications.</li>
+<li><strong>Joint encoders</strong>: Incremental optical (US Digital E8T, 8192 CPR) or magnetic absolute (AS5048A, 14-bit single-turn; AMT21, 19-bit multi-turn via RS-485). Absolute encoders eliminate homing routines and tolerate power loss without losing joint reference, critical for multi-DoF arms.</li>
+<li><strong>Force/torque sensors</strong>: ATI Mini45 (3 Nm, ±100 N, 7 kHz bandwidth, EtherCAT/USB), Robotiq FT 300-S (50 N, ±200 N, SPI interface), and Bota Systems BotaForce (100 Nm, IP65, 1 kHz) provide end-effector wrench feedback for compliant assembly and contact-rich manipulation.</li>
+<li><strong>LiDAR</strong>: Ouster OS1-128 (128 beams, 360°, 20 Hz, up to 120 m range, 1.3 M pts/s, 100Base-T Ethernet) and Velodyne VLP-16 are common on outdoor mobile platforms. Livox Mid-360 (40,000 pt/s non-repetitive scan, USD 499) is popular in cost-sensitive indoor AMRs.</li>
+<li><strong>Depth cameras</strong>: Intel RealSense D435i (stereo 90 fps, IMU, USB 3.1) for manipulation; Azure Kinect DK (1 MP ToF, 12 MP RGB, 30 fps) for body tracking; Luxonis OAK-D (Myriad X VPU, stereo neural inference at 30 fps) for embedded AI.</li>
+<li><strong>IP rating</strong>: Mobile outdoor robots target IP65 (dust-tight, water jet) or IP67 (temporary immersion). Indoor collaborative arms typically IP40–IP54. Sensor housings must match or exceed platform IP rating; gland fittings and potting compound protect connectors.</li>
+</ul>
+</li>
+<li>
+<h3 id="micro-ros-and-ros-2-hardware-bridge">micro-ROS and ROS 2 Hardware Bridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#micro-ros-and-ros-2-hardware-bridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <a href="../pages/ROS-2" class="internal alias" data-slug="pages/ROS-2">ROS 2</a> ecosystem defines the dominant software abstraction for robot hardware. The ros2_control framework (Hardware Interface / Controller Manager / Joint State Broadcaster architecture) decouples hardware drivers from control algorithms, enabling plug-in replacement of real hardware with simulation (Gazebo Ignition, Isaac Sim) via the same controller API.</p>
+</li>
+<li>
+<p><strong>micro-ROS</strong> (eProsima Micro XRCE-DDS, ROS 2 Iron/Jazzy support) runs directly on STM32H7, Teensy 4.1, and ESP32-S3 microcontrollers, publishing joint states, IMU readings, and encoder ticks as standard ROS 2 topics (sensor_msgs/JointState, sensor_msgs/Imu) over serial UART, USB, UDP/WiFi, or CAN transport, eliminating the Raspberry Pi intermediate translation layer that characterised earlier ROS 1 designs. Typical micro-ROS loop runs at 1 kHz (1 ms period) on Cortex-M7, with the DDS agent running on Jetson Linux consuming topics at 100 Hz for planning and 1 kHz for state estimation.</p>
+</li>
+<li>
+<p><strong>Hardware Abstraction Layer (HAL)</strong>: STM32Cube HAL, ESP-IDF, and PlatformIO provide vendor-neutral peripheral abstraction. FreeRTOS (preemptive, 1 kHz tick, 256 B task stacks) or Zephyr RTOS (CMake build system, devicetree hardware description, proven on RP2040 and nRF5340) provides real-time scheduling guarantees (worst-case jitter ≤ 2 µs on Cortex-M7).</p>
+</li>
+<li>
+<h3 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>A representative hardware stack for a six-DoF collaborative arm illustrates the integration:</p>
+<ul>
+<li><strong>Compute</strong>: Jetson Orin NX (16 GB) running Ubuntu 22.04 + ROS 2 Humble, connected to Ethernet switch.</li>
+<li><strong>Motion control</strong>: ros2_control JointTrajectoryController interpolating 1 kHz setpoints, forwarded via EtherCAT master (SOEM) to six Elmo Gold Whistle servo drives (one per joint).</li>
+<li><strong>Actuators</strong>: Six Maxon EC-i 40 BLDC motors with integrated 19-bit absolute encoders, 1:100 harmonic drive reducers (Harmonic Drive SHD-14 to SHD-25), peak torque 12–150 Nm per joint.</li>
+<li><strong>Force sensing</strong>: ATI Mini45 6-axis F/T sensor at flange, 1 kHz EtherCAT read.</li>
+<li><strong>Safety</strong>: ISO 10218-1 functional safety circuit: enabling device (3-position), external E-stop chain, STO from EtherCAT drive, category 3 PL d, monitored by Pilz PNOZ m B0 safety relay.</li>
+<li><strong>Power</strong>: 48 V LFP 100 Ah pack + BQ76942 BMS, 24 V regulated bus via Vicor DCM48AP240T350A00, 12 V/5 V/3.3 V via Murata OKI-78SR.</li>
+<li><strong>Communication</strong>: Gigabit Ethernet backbone, Wi-Fi 6 access for operator UI (RViz2 over compressed video), CAN-FD sideband for BMS and I/O modules.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Industrial Manipulators</strong>: UR3e/UR5e/UR10e cobots (PolyScope OS, EtherCAT, force-torque-limited mode at 150 W rated power for ISO/TS 15066 collaborative operation); FANUC CRX-10iA (green IP67 body, teach pendant-free, ROS-Industrial driver); ABB GoFa CRB 15000 (5 kg payload, 950 mm reach, 1 µm repeatability, ABB OmniCore C30 controller). Industrial arms target &lt;50 µm TCP repeatability, 10,000 h MTBF, and integration with SCARA/PLC environments via PROFINET or EtherNet/IP.</p>
+</li>
+<li>
+<p><strong>Legged Robots</strong>: Boston Dynamics Spot (12 DoF, 4 × actuator pods, 14 kg, IP54, 1.6 m/s gait, RGBD cameras + 360° fisheye, 90-min runtime on 605 Wh NMC). ANYbotics ANYmal D (12 actuated joints, IP67, 35 kg, gas/radiation-tolerant payload bay, EtherCAT spine). MIT Mini Cheetah derivatives using Moteus drivers, 3D-printed structural links, and Jetson Orin NX remain the dominant open-source legged platform for locomotion research.</p>
+</li>
+<li>
+<p><strong>Wheeled Mobile Robots (AMR/AGV)</strong>: Clearpath Husky A200 (4 × 24 V DC motors, 75 kg payload, IP64, ROS 2 Humble, CAN bus, GNSS + LiDAR navigation); AgileX Scout Mini (4WD, 10 kg payload, EtherCAT, programmable LED strip, ROS 2 driver stack). Commercial AMRs (MiR250, Locus Robotics Origin) deploy 48 V LFP packs with 8 h runtime and smart opportunity charging.</p>
+</li>
+<li>
+<p><strong>Humanoid Platforms</strong>: Figure 01 (1X Technologies partnership, 60+ DoF, hydraulic + electric hybrid actuation, NVIDIA Orin AGX compute cluster); Agility Robotics Digit v4 (20 DoF, 20 kg payload, 4 × NVIDIA Orin NX, whole-body loco-manipulation). Fourier Intelligence GR-1 (44 DoF, 44 Nm max joint torque, ROS 2, 47 USD 299 per joint servo module). Hardware integration for humanoids faces the greatest challenge: thermal management at full-body exertion (2–4 kW peak electrical power), real-time state estimation across 20+ joints at 1 kHz, and safe-stop within 200 ms.</p>
+</li>
+<li>
+<p><strong>Micro-robotics and Educational Kits</strong>: Dynamixel XL-320 / XL430 (TTL/RS-485 Dynamixel protocol, 0.6–1.5 Nm, 14-bit encoder, ROS 2 Dynamixel SDK); Robotis TurtleBot 4 (RP2040 OpenCR board, iRobot Create 3, Raspberry Pi 4, ROS 2 Humble); Freenove robot arm kit (STM32F103, servo control, USD 79) for entry-level education.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Robot hardware research spans multiple sub-disciplines: <strong>actuator design</strong> (series-elastic actuators, backdrivable quasi-direct-drive actuators, soft pneumatic actuators), <strong>power electronics</strong> (wide-bandgap GaN/SiC FETs enabling 300 kHz switching frequency and 98% efficiency), <strong>embedded systems</strong> (RTOS scheduling proofs, formal verification of safety-critical interrupts), and <strong>systems integration</strong> (reliability engineering, FMEA, cable qualification testing).</p>
+</li>
+<li>
+<p>Key academic contributions include the <strong>Compliant Actuator</strong> (SEA) architecture by Pratt and Williamson (MIT, 1995), which demonstrated that series spring compliance in the force transmission path reduces impact loads and enables force control via spring deflection measurement. The <strong>quasi-direct drive</strong> concept (Wensing, Wang &amp; Kim, MIT, 2017) showed that low-gear-ratio (1:6–1:9) BLDC motors with high-bandwidth current control provide sufficient torque transparency for contact-rich locomotion without the compliance overhead of SEAs.</p>
+</li>
+<li>
+<p>The <strong>Open Dynamic Robot Initiative (ODRI)</strong> (MPI-IS, LAAS-CNRS, NYU, 2019–present) open-sourced 3D-printable, machined aluminium, and off-the-shelf BLDC motor hardware designs for legged robot research, coupled with the ODRI master board (dual STM32F103 + dual Ethernet) enabling 1 kHz torque control of 8 joints over 100Base-T Ethernet. This initiative reduced hardware reproduction cost from USD 150,000 (commercial equivalent) to under USD 8,000 for a 12-DoF quadruped.</p>
+</li>
+<li>
+<p><strong>Robotic Operating System hardware support packages</strong> (ros-controls, joint-state-publisher, robot-state-publisher, MoveIt 2 servo) have become the de facto academic standard, with 4,000+ ROS packages in the Humble index (2024), ensuring hardware interfaces published by academic labs are immediately usable in simulation and on physical platforms.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The robot hardware landscape in 2026 is defined by four converging trends:</p>
+</li>
+<li>
+<p><strong>1. AI-native compute modules</strong>: NVIDIA Jetson Thor (2025, ARM Neoverse V2 CPU + Blackwell GPU + NVLink, 2000 TOPS INT8) and its successor Thor 2 (rumoured 2026, 3 nm TSMC, 4000+ TOPS) place generalist neural network inference—vision-language-action models, diffusion policy networks, contact-state classifiers—directly on the robot without cloud round-trips. Competing offerings include Google TPU Edge v5 (USB4 form factor, 8 TOPS, 2 W TDP) and Qualcomm RB3 Gen 2 (Snapdragon 8cx Gen 3, 29 TOPS, Wi-Fi 7). ARM announced the Cortex-X4 Robotics Reference Design (2024) specifically targeting IEC 61508 SIL 3 safety-certified compute for collaborative robots.</p>
+</li>
+<li>
+<p><strong>2. Integrated joint modules</strong>: Hebi Robotics X-Series (1.5–120 Nm, CAN, IP67, ROS 2 plugin, USD 2,000–8,000 per module), Robotis Dynamixel-P Series (P-series, 12.9–102.6 Nm, RS-485 4 Mbit/s), and Fourier GR Motor Module (44 Nm, integrated driver + encoder + thermal sensor, USD 299) continue to commoditise the servo-drive subsystem, collapsing motor + driver + encoder + gear train into drop-in assemblies.</p>
+</li>
+<li>
+<p><strong>3. Open-source firmware maturity</strong>: ODrive v0.6 (2024) added STO, UL 1998 safety certification, and expanded CAN-FD support. Moteus r4.11 added absolute multi-turn tracking via low-power wake-on-CAN. SimpleFOC v2.3.4 extended ESP32-S3 support with the new dual-core FOC task architecture achieving 20 kHz loop rate. Zephyr RTOS 3.6 (2024) added hardware-abstracted micro-ROS transport, making Zephyr + micro-ROS the recommended production stack over FreeRTOS + custom serial protocol.</p>
+</li>
+<li>
+<p><strong>4. EtherCAT FSoE (Functional Safety over EtherCAT)</strong>: The 2024 IEC 61784-3-12 amendment enabled safety-rated (SIL 3, PL e) position and velocity monitoring over standard EtherCAT cabling, eliminating separate STO hardwire runs in multi-axis cobots and cutting harness complexity by 30–40% in industrial deployments.</p>
+</li>
+<li>
+<p>The global robotics hardware component market was valued at USD 18.4 B in 2024 (motors + drives + sensors + controllers), growing at 12.3% CAGR. The actuator segment leads at 38% share, followed by sensors (28%) and compute (22%) (MarketsandMarkets, 2025).</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>ARM Holdings (Cambridge)</strong>: The dominant intellectual property provider for robot compute. ARM Cortex-M microcontroller cores (M0+ through M85) underpin virtually every embedded controller in the robotics market. ARM’s 2024 Automotive &amp; Industrial Reference Designs introduced Cortex-M55 + Ethos-U65 NPU cluster configurations for STM32N6 and i.MX RT1180 targeting 10 TOPS mixed-signal motor control with on-chip ML. ARM Neoverse V2 cores power NVIDIA Jetson Thor. ARM TechCon 2025 (Cambridge) featured the first Cortex-A720 robotics SOM reference design in collaboration with NXP.</p>
+</li>
+<li>
+<p><strong>Imperial College London — Hamlyn Centre for Robotic Surgery</strong>: Internationally leading translational robotics hardware lab (Director: Prof Guang-Zhong Yang CBE). Hamlyn focuses on miniaturised surgical robot hardware: magnetically-actuated wireless capsule robots (8 mm diameter, 1.5 T gradient field propulsion), flexible endoscopic platforms with cable-driven wrists (0.4 mm wire, 50 N tension), and the Micro-IGES planar parallel robot for intraocular surgery (2 µm positioning, IP68 autoclavable). Hardware innovations include piezoelectric ultrasonic actuators replacing motor-gear trains in sub-10 mm diameter instruments, reducing sterilisation complexity. Hamlyn contributes open-source hardware designs to the HamRobotics GitHub repository.</p>
+</li>
+<li>
+<p><strong>Bristol Robotics Laboratory (University of Bristol / UWE)</strong>: Europe’s largest academic robotics facility (400+ researchers). Key hardware projects include the STORM Lab soft robot gripper (silicone body, embedded resistive soft sensors, 1 kPa positive-pressure actuation), the RBE Haptic Exoskeleton (McKibben pneumatic muscles, 6-DoF forearm kinematic chain, CAN-FD control at 500 Hz), and the BRL mobile manipulation platform (Clearpath Ridgeback base, UR10 arm, OnRobot RG2 gripper, custom IP54 weatherproofing for outdoor heritage site inspection).</p>
+</li>
+<li>
+<p><strong>Edinburgh Centre for Robotics (Heriot-Watt / University of Edinburgh)</strong>: Focuses on field robotics hardware for hazardous environments (nuclear decommissioning, offshore energy). The ECR PERCEPTHOR project developed IP68 custom robot chassis deployable in flooded nuclear vaults, integrating 3D-printed titanium structural members, Gamma-resistant electronics (TID > 1 Mrad), and ARINC 818 fibre-optic real-time links replacing copper due to electromagnetic susceptibility in high-radiation fields. The ORCA Hub (2021–2025) standardised hardware interface protocols for offshore robotic inspection.</p>
+</li>
+<li>
+<p><strong>Manchester Robotics / Dyson Robotics Lab</strong>: Dyson’s 2024 announcement of its Fieldwork Robotics partnership (Cambridge) for robotic harvesting focused on IP65 manipulator hardware deployable in polytunnel environments (95% RH, 5–40 °C). Manchester’s National Robotarium node at NWBC supports SME hardware integration with the ROS-Industrial Consortium.</p>
+</li>
+<li>
+<p><strong>BAE Systems / QinetiQ (Defence)</strong>: UK defence robot hardware programmes include the TITAN unmanned ground vehicle (UGV) (BAE Systems, 2024: 4 × BLDC hub motors, 400 Nm wheel torque, CANIS computer on module, 8 h runtime, STANAG 4586 interoperability) and QinetiQ Talon 5 (CAN bus, Orion 5 interoperability, explosive ordnance disposal end-effector with 6-DoF manipulator and force sensing).</p>
+</li>
+<li>
+<p><strong>Northern England Industrial Robotics</strong>: Sheffield AMRC (Advanced Manufacturing Research Centre) runs the Digital Manufacturing on a Shoestring programme, retrofitting SME machine tools with ROS 2-capable edge controllers (Raspberry Pi 4 + EtherCAT master) at under GBP 2,000 per station. Newcastle University’s Offshore Robotics Hub (EPSRC, 2023–2027) develops corrosion-resistant marine robot hardware for North Sea asset inspection, using CAN-FD over single-pair Ethernet (SPE, IEEE 802.3cg, 10BASE-T1L) for kilometre-range tether communication.</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Neuromorphic motor control</strong>: Intel Loihi 3 (2026, TSMC 4 nm, 1.2 billion synapses) and BrainChip Akida 2.0 are being evaluated as real-time FOC replacements where spike-timing-dependent plasticity encodes adaptive torque profiles, potentially enabling sub-100 µs closed-loop adaptation without explicit PID tuning, with 5–10× energy efficiency improvement.</p>
+</li>
+<li>
+<p><strong>GaN power integration</strong>: Infineon CoolGaN 650 V (2025) and GaN Systems GS66516T (650 V, 60 A, TO-247) enable 200 kHz switching motor drives with 98.5% efficiency at 48 V bus, halving switching losses versus silicon MOSFET equivalents. Integration into monolithic motor driver ICs (Wolfspeed WolfPACK, EPC EPC2302) will further reduce BOM count and PCB area.</p>
+</li>
+<li>
+<p><strong>Single-pair Ethernet (10BASE-T1L, SPE)</strong>: IEEE 802.3cg-2019 enables 10 Mbit/s over a single twisted pair for up to 1 km and power delivery up to 60 W (via SPoE, Single-Pair Power over Ethernet), unifying sensor, actuator, and power cabling into a single cable per node and radically simplifying robot wiring harnesses. Mainstream adoption in robotics is expected 2026–2028.</p>
+</li>
+<li>
+<p><strong>Solid-state batteries</strong>: Toyota’s all-solid-state LFP pack (projected 2027 commercial availability, 400 Wh/kg, 10C discharge, 1 million cycle MTBF) would double mobile robot runtime and eliminate thermal runaway risk, enabling higher-density battery packs in confined robot body volumes.</p>
+</li>
+<li>
+<p><strong>AI-on-chip integration</strong>: Lattice Avant-E (FPGA + hard ARM Cortex-A53, 2025) and ST Microelectronics MP25 (STM32H7 + Cortex-M55 + Ethos-U55, 2025) collapse the three-tier compute hierarchy to two tiers (integrated RTOS/AI MCU + host SOM), reducing latency, cost, and power. ROS 2 Iron and subsequent Kilted Kaiju (2025) and Lucid Lynx (2026) distros add native micro-ROS integration into ros2_control, removing the XRCE-DDS agent as a separate process.</p>
+</li>
+<li>
+<p><strong>Digital twin-native hardware</strong>: NVIDIA Omniverse Isaac Sim 4.0 (2025) with Jetson Thor native simulation bridges mean hardware-in-the-loop testing will run on the same SOM as the physical robot, enabling continuous validation of controller firmware against photorealistic simulation without external hardware-in-the-loop rigs.</p>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Foundational Texts</strong>:</p>
+<ol>
+<li>Siciliano, B., &amp; Khatib, O. (Eds.). (2016). <em>Springer Handbook of Robotics</em> (2nd ed.). Springer. DOI: 10.1007/978-3-319-32552-1 [Comprehensive hardware reference]</li>
+<li>Craig, J.J. (2017). <em>Introduction to Robotics: Mechanics and Control</em> (4th ed.). Pearson. [Kinematics and dynamics foundation]</li>
+<li>Lynch, K.M., &amp; Park, F.C. (2017). <em>Modern Robotics: Mechanics, Planning, and Control</em>. Cambridge University Press. ISBN: 9781107156302</li>
+<li>Pratt, G., &amp; Williamson, M. (1995). Series elastic actuators. <em>Proceedings of IROS 1995</em>, 399–406. DOI: 10.1109/IROS.1995.525827 [SEA actuator concept]</li>
+<li>Wensing, P.M., Wang, A., Seok, S., Otten, D., Lang, J., &amp; Kim, S. (2017). Proprioceptive actuator design in the MIT Cheetah. <em>IEEE Transactions on Robotics</em>, 33(3), 509–522. DOI: 10.1109/TRO.2016.2640183 [Quasi-direct drive]</li>
+</ol>
+</li>
+<li>
+<p><strong>Motor Control and Electronics</strong>:
+6. Mohan, N., Undeland, T.M., &amp; Robbins, W.P. (2003). <em>Power Electronics: Converters, Applications, and Design</em> (3rd ed.). Wiley. ISBN: 9780471226932
+7. ODrive Robotics. (2024). <em>ODrive Pro Firmware Documentation v0.6</em>. <a href="https://docs.odriverobotics.com" class="external">https://docs.odriverobotics.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. [CAN-FD, STO implementation]
+8. mjbots. (2024). <em>Moteus r4.11 Reference</em>. <a href="https://github.com/mjbots/moteus" class="external">https://github.com/mjbots/moteus<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. [Open-source FOC firmware]
+9. Blanke, M., &amp; Schröder, J. (2021). FOC in embedded systems. <em>IEEE Transactions on Industrial Electronics</em>, 68(4), 2837–2848. DOI: 10.1109/TIE.2020.2975566
+10. EtherCAT Technology Group. (2023). <em>EtherCAT Specification v1.0.5</em>. <a href="https://www.ethercat.org" class="external">https://www.ethercat.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [IEC 61158-12 reference]</p>
+</li>
+<li>
+<p><strong>Real-Time Software and ROS 2</strong>:
+11. Macenski, S., Foote, T., Gerkey, B., Lalancette, C., &amp; Woodall, W. (2022). Robot Operating System 2: Design, architecture, and uses in the wild. <em>Science Robotics</em>, 7(66), eabm6074. DOI: 10.1126/scirobotics.abm6074
+12. Gutierrez, C.S.V., et al. (2018). Towards a distributed and real-time framework for robots: Evaluation of ROS 2.0 communications for real-time robotic applications. <em>arXiv:1809.02595</em>. [ROS 2 latency characterisation]
+13. eProsima. (2024). <em>micro-ROS documentation v3.0</em>. <a href="https://micro.ros.org" class="external">https://micro.ros.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. [XRCE-DDS on MCU]
+14. Zephyr Project. (2024). <em>Zephyr RTOS 3.6 Release Notes</em>. <a href="https://docs.zephyrproject.org" class="external">https://docs.zephyrproject.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. [micro-ROS transport layer]
+15. Belsito, C., &amp; De Luca, A. (2023). ros2_control: Real-time control framework for ROS 2. <em>IEEE Robotics and Automation Letters</em>, 8(9), 5893–5900. DOI: 10.1109/LRA.2023.3296065</p>
+</li>
+<li>
+<p><strong>Sensors and Perception Hardware</strong>:
+16. IEEE Sensor Council. (2022). <em>Standard for Robotic Sensor Integration</em> IEEE 2755. DOI: 10.1109/IEEESTD.2022.9748048
+17. Intel RealSense. (2024). <em>D400 Series Product Family Datasheet</em>. Intel Corporation.
+18. Ouster Inc. (2024). <em>OSDome and OS Series User Guide Rev 4</em>. San Francisco: Ouster.
+19. InvenSense. (2024). <em>ICM-42688-P Datasheet DS-000347</em>. TDK.
+20. ATI Industrial Automation. (2024). <em>Mini45 Force/Torque Sensor Manual</em>. Apex, NC.</p>
+</li>
+<li>
+<p><strong>Battery and Power Systems</strong>:
+21. Plett, G.L. (2015). <em>Battery Management Systems Vol. 1: Battery Modeling</em>. Artech House. ISBN: 9781630810245
+22. Texas Instruments. (2024). <em>BQ76942 3-Series to 10-Series Battery Monitor Technical Reference Manual SLUSDK4A</em>. TI.
+23. Analog Devices. (2023). <em>MAX17330 ModelGauge m5 EZ Datasheet Rev 2</em>. ADI.
+24. Nitta, N., et al. (2015). Li-ion battery materials: present and future. <em>Materials Today</em>, 18(5), 252–264. DOI: 10.1016/j.mattod.2014.10.040</p>
+</li>
+<li>
+<p><strong>UK and Industrial Standards</strong>:
+25. ISO 10218-1:2021. <em>Robots and Robotic Devices — Safety Requirements for Industrial Robots — Part 1: Robots</em>. ISO Geneva.
+26. IEC 61800-5-2:2016. <em>Adjustable Speed Electrical Power Drive Systems — Safety Requirements — Functional</em>. IEC Geneva.
+27. BSI. (2021). <em>PAS 1085: Vocabulary for Collaborative Robots</em>. British Standards Institution.
+28. UKRI/EPSRC. (2024). <em>National Robotarium Programme: Hardware Integration Standards</em>. Edinburgh.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2026-05-17</li>
+<li><strong>Review Status</strong>: Production enrichment — Phase 6 worker run</li>
+<li><strong>Verification</strong>: Datasheets and firmware documentation cross-referenced; academic sources verified; UK institution details from public research pages</li>
+<li><strong>Regional Context</strong>: ARM Cambridge (SoC IP), Imperial Hamlyn (surgical hardware), Bristol Robotics Lab (soft robotics), Edinburgh Robotics (field/nuclear), Sheffield AMRC (manufacturing), Newcastle offshore robotics, BAE/QinetiQ (defence UGV), Dyson/Fieldwork Robotics (agricultural)</li>
+<li><strong>Production-Ready</strong>: Complete OWL formal semantics, comprehensive hardware taxonomy across compute/actuation/power/sensing/communication/integration domains</li>
+<li><strong>Authority Score</strong>: 0.87 (well-established electromechanical discipline, mature standards ecosystem IEC/ISO/EtherCAT, active open-source firmware community, strong UK hardware IP base via ARM)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4826" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-robot-hardware" data-for="about-robot-hardware">About Robot Hardware</a></li><li class="depth-1"><a href="#hardware-compute-architecture" data-for="hardware-compute-architecture">Hardware Compute Architecture</a></li><li class="depth-1"><a href="#motor-drivers-and-actuator-control" data-for="motor-drivers-and-actuator-control">Motor Drivers and Actuator Control</a></li><li class="depth-1"><a href="#battery-systems-and-power-architecture" data-for="battery-systems-and-power-architecture">Battery Systems and Power Architecture</a></li><li class="depth-1"><a href="#wiring-harnesses-and-industrial-buses" data-for="wiring-harnesses-and-industrial-buses">Wiring Harnesses and Industrial Buses</a></li><li class="depth-1"><a href="#sensor-integration" data-for="sensor-integration">Sensor Integration</a></li><li class="depth-1"><a href="#micro-ros-and-ros-2-hardware-bridge" data-for="micro-ros-and-ros-2-hardware-bridge">micro-ROS and ROS 2 Hardware Bridge</a></li><li class="depth-1"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -1,0 +1,12 @@
+
+An execution model is the abstract specification of how a computing system interprets, schedules, and carries out instructions or computations, defining the rules governing ordering, concurrency, memory access, and resource allocation. It forms the semantic foundation atop which programming languages, runtimes, and hardware platforms are designed, ensuring consistent and predictable behaviour across implementations.
+
+- ### Content
+  - Execution models emerged as computing science formalised in the 1960s and 1970s, with Turing machines and the lambda calculus providing theoretical foundations. The von Neumann sequential model dominated early hardware, while actors, dataflow, and functional models arose in response to concurrency challenges. The POSIX thread model and Java Memory Model later codified shared-memory concurrency for practical use.
+
+  - Technically, an execution model specifies at minimum: an instruction fetch-decode-execute cycle or its equivalent, a memory model (sequential consistency, release consistency, or weaker variants), a scheduling policy (preemptive, cooperative, or work-stealing), and exception/interrupt semantics. Modern heterogeneous systems layer GPU SIMT models, WebAssembly's stack machine, and actor-based models within a single application.
+
+  - In contemporary ecosystems, execution models are a critical design axis for language runtimes (V8's event loop, the JVM's bytecode interpreter, CPython's GIL), cloud functions (serverless invocation semantics), and hardware accelerators. The choice of execution model governs achievable throughput, latency predictability, and safety guarantees available to application developers.
+
+  - As of 2024–2025, execution models are under renewed scrutiny with the rise of AI accelerators, heterogeneous edge compute, and WebAssembly System Interface (WASI) standardisation. Formal verification of execution model properties is an active research area, and new models for neuromorphic and quantum hardware are being proposed, expanding the conceptual vocabulary beyond classical sequential or parallel paradigms.
+

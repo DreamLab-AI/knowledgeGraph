@@ -1,0 +1,12 @@
+
+Thread is an IPv6-based, low-power wireless mesh networking protocol designed for IoT devices in home and commercial environments, using IEEE 802.15.4 as its radio layer and providing self-healing, self-configuring mesh topology with native IP routing, secure device commissioning, and no single point of failure. Thread is managed by the Thread Group and forms the network and transport foundation for the Matter smart-home application protocol.
+
+- ### Content
+  - Thread was developed by a consortium including ARM, Apple, Google/Nest, Samsung, and others, with the Thread Group formed in 2014 and Thread 1.0 specification released in 2015. The protocol addressed limitations of ZigBee Home Automation, particularly the lack of native IP and the complexity of non-IP bridging. Apple's HomeKit and Google's Nest thermostat were among the first commercial deployments, embedding Thread radios in hubs and border routers.
+
+  - Architecturally, Thread nodes adopt roles including Leader (mesh routing table manager), Router (full routing participant), Reed (Router Eligible End Device), End Device, and Sleepy End Device. Leaders are elected dynamically via a REED promotion algorithm. The mesh uses link-state routing (a simplified OSPF-like protocol) with Mesh Local EID (ML-EID) addressing, enabling stable device addressing independent of border router DHCP. Security uses AES-128-CCM* for link-layer encryption and DTLS for commissioning sessions.
+
+  - OpenThread, the open-source Thread implementation maintained by Google and contributed to the Thread Group, is the reference stack integrated into Nordic Semiconductor, Silicon Labs, NXP, and TI system-on-chip platforms. Thread Border Routers are available as standalone devices (OTBR on Raspberry Pi) and are embedded in Apple HomePod mini, Apple TV 4K, Google Nest Hub (2nd gen), and Amazon Echo (4th gen), providing ubiquitous border routing infrastructure in consumer smart-home environments.
+
+  - By 2024–2025, Thread's adoption has accelerated significantly due to Matter's selection of Thread as the mandatory radio for battery-powered Matter devices. Apple, Google, Amazon, and Samsung all ship Thread border routers in mainstream products. Thread 1.4 introduced Extended Pan ID and other improvements. The ecosystem of Thread-certified chips from Nordic, Espressif (ESP-H2), and Silicon Labs is expanding, and Thread is increasingly deployed in commercial building automation, industrial IoT, and healthcare asset tracking alongside its consumer smart-home origins.
+

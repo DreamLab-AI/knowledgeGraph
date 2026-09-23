@@ -1,0 +1,3 @@
+
+NFT trading is the buying, selling, and exchanging of non-fungible tokens on blockchain-based marketplaces or peer-to-peer, typically settled through smart contracts that transfer token ownership and payment atomically. Prices are discovered through fixed-price listings, auctions, or offer-based negotiation, and transactions are recorded immutably on-chain. NFT trading depends on supporting infrastructure such as digital marketplaces and self-custody wallets like MetaMask for signing transactions.
+

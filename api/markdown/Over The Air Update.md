@@ -1,0 +1,21 @@
+
+An over-the-air (OTA) update is the wireless delivery of new software, firmware, or configuration to a deployed device without physical access. OTA mechanisms package an update, transport it over a network, verify its authenticity and integrity, and apply it safely with rollback protection. They are essential to maintaining, securing, and extending the capabilities of fleets of embedded and connected devices throughout their operational life.
+
+- An over-the-air (OTA) update wirelessly delivers software, [[Firmware]], or configuration to deployed devices without physical access. It is a core [[Infrastructure]] capability for connected [[IoT]] estates, relying on [[Wireless Communication]] and [[Encryption]] to deliver verified payloads safely to fleets of connected devices.
+- ### Overview
+- OTA pipelines package an artefact, sign it, distribute it through an update server or content network, and apply it on the device under controlled conditions. Authenticity and integrity checks prevent malicious or corrupted payloads from being installed.
+- Robust OTA designs use A/B (dual-bank) partitions or staged flashing so that a failed or interrupted update can be rolled back to a known-good image, preserving device availability.
+- Fleet-scale rollouts add staged deployment, canary cohorts, and telemetry-driven monitoring to detect regressions before they reach the entire population of devices.
+- ### Mechanisms
+- Cryptographic signing and verification of update images.
+- Dual-bank or A/B partitioning with atomic switchover and rollback.
+- Delta/differential updates to minimise transferred bytes over constrained links.
+- Resumable, interruption-tolerant transport for unreliable networks.
+- Staged and canary rollouts gated by device telemetry.
+- ### Applications
+- Security patching and [[Vulnerability Management]] for deployed [[Embedded Systems]].
+- Feature delivery and remote configuration for [[IoT]] device fleets.
+- Recovery and remediation as part of [[Incident Response]].
+- Firmware lifecycle management for [[Microcontroller]]-based products.
+- ### Provenance
+

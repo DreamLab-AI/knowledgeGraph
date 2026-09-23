@@ -1,0 +1,3 @@
+
+Mastery learning is an instructional strategy in which learners must demonstrate proficiency on a given unit of content before advancing to the next, using formative assessment and targeted remediation to ensure uniformly high achievement rather than a fixed pace of coverage.
+

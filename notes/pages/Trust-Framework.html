@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Trust Framework</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Trust Framework"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Trust Framework"/><meta name="twitter:description" content="Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec… S..."/><meta property="og:description" content="Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec… S..."/><meta property="og:image:alt" content="Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Trust-Framework"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Trust-Framework"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Trust-Framework"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-7851"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-7851" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Trust Framework</a></div></nav><h1 class="article-title">Trust Framework</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.929Z">23 Sept 2026</time><span>24 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:trust-framework</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>blockchain</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Governance-and-Regulation" class="internal">Governance and Regulation</a></li><li><a href="../Framework" class="internal">Framework</a></li><li><a href="../pages/Governance-Framework" class="internal">Governance Framework</a></li><li><a href="../pages/Policy-Framework" class="internal">Policy Framework</a></li><li><a href="../Certification-Scheme" class="internal">Certification Scheme</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../accreditation-body" class="internal">Accreditation Body</a></li><li><a href="../assurance-level" class="internal">Assurance Level</a></li><li><a href="../authentication" class="internal">Authentication</a></li><li><a href="../pages/Conformity-Assessment-Body" class="internal">Conformity Assessment Body</a></li><li><a href="../credential-issuer" class="internal">Credential Issuer</a></li><li><a href="../pages/Federation" class="internal">Federation</a></li><li><a href="../pages/Identity-Proofing" class="internal">Identity Proofing</a></li><li><a href="../pages/Relying-Party" class="internal">Relying Party</a></li><li><a href="../pages/Revocation-Mechanism" class="internal">Revocation Mechanism</a></li><li><a href="../pages/Trust-Anchor" class="internal">Trust Anchor</a></li><li><a href="../Trust-List" class="internal">Trust List</a></li><li><a href="../Trust-Mark" class="internal">Trust Mark</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../conformity-assessment" class="internal">Conformity Assessment</a></li><li><a href="../pages/Cryptographic-Proof" class="internal">Cryptographic Proof</a></li><li><a href="../digital-credentials" class="internal">Digital Credentials</a></li><li><a href="../pages/Policy-Enforcement-Point" class="internal">Policy Enforcement Point</a></li><li><a href="../pages/Audit-Trail" class="internal">Audit Trail</a></li><li><a href="../pages/Identity-Verification" class="internal">Identity Verification</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Credential-Portability" class="internal">Credential Portability</a></li><li><a href="../pages/Cross-Border-Authentication" class="internal">Cross-Border Authentication</a></li><li><a href="../pages/Risk-Based-Authentication" class="internal">Risk-Based Authentication</a></li><li><a href="../selective-disclosure" class="internal">Selective Disclosure</a></li><li><a href="../trust-transitivity" class="internal">Trust Transitivity</a></li><li><a href="../pages/Digital-Identity" class="internal">Digital Identity</a></li><li><a href="../pages/Interoperability" class="internal">Interoperability</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../Security-and-Identity" class="internal">Security and Identity</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Web-of-Trust" class="internal">Web of Trust</a></li><li><a href="../Ad-Hoc-Identity" class="internal">Ad Hoc Identity</a></li><li><a href="../Siloed-Identity" class="internal">Siloed Identity</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Public-Key-Infrastructure" class="internal">Public Key Infrastructure</a></li><li><a href="../pages/Cryptography" class="internal">Cryptography</a></li><li><a href="../pages/Decentralised-Identifiers" class="internal">Decentralised Identifiers</a></li><li><a href="../Identity-Governance" class="internal">Identity Governance</a></li><li><a href="../pages/Data-Protection-Law" class="internal">Data Protection Law</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../GovernanceLayer" class="internal">GovernanceLayer</a></li><li><a href="../PolicyLayer" class="internal">PolicyLayer</a></li><li><a href="../StandardsLayer" class="internal">StandardsLayer</a></li><li><a href="../CertificationLayer" class="internal">CertificationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/eIDAS-2.0" class="internal">eIDAS 2</a></li><li><a href="../pages/NIST-SP-800-63" class="internal">NIST SP 800-63</a></li><li><a href="../openid-connect" class="internal">OpenID Connect</a></li><li><a href="../open-id-federation" class="internal">OpenID Federation</a></li><li><a href="../pages/Trust-over-IP-Stack" class="internal">Trust over IP</a></li><li><a href="../pages/Verifiable-Credentials" class="internal">Verifiable Credentials</a></li><li><a href="../eIDAS-2" class="internal">eIDAS 2</a></li><li><a href="../OpenID-Federation" class="internal">OpenID Federation</a></li><li><a href="../Trust-over-IP" class="internal">Trust over IP</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>IF-0031</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../accreditation-body" class="internal">Accreditation Body</a></li><li><a href="../ad-hoc-identity" class="internal">Ad Hoc Identity</a></li><li><a href="../assurance-level" class="internal">Assurance Level</a></li><li><a href="../authentication" class="internal">Authentication</a></li><li><a href="../certification-layer" class="internal">CertificationLayer</a></li><li><a href="../certification-scheme" class="internal">Certification Scheme</a></li><li><a href="../conformity-assessment" class="internal">Conformity Assessment</a></li><li><a href="../conformity-assessment-body" class="internal">Conformity Assessment Body</a></li><li><a href="../credential-issuer" class="internal">Credential Issuer</a></li><li><a href="../credential-portability" class="internal">Credential Portability</a></li><li><a href="../cross-border-authentication" class="internal">Cross-Border Authentication</a></li><li><a href="../cryptographic-proof" class="internal">Cryptographic Proof</a></li><li><a href="../data-protection-law" class="internal">Data Protection Law</a></li><li><a href="../decentralised-identifiers" class="internal">Decentralised Identifiers</a></li><li><a href="../decentralised-identity" class="internal">Decentralised Identity</a></li><li><a href="../digital-credentials" class="internal">Digital Credentials</a></li><li><a href="../digital-trust-domain" class="internal">DigitalTrustDomain</a></li><li><a href="../dsit" class="internal">DSIT</a></li><li><a href="../e-idas-2" class="internal">eIDAS 2</a></li><li><a href="../etsi" class="internal">ETSI</a></li><li><a href="../european-commission" class="internal">European Commission</a></li><li><a href="../federation" class="internal">Federation</a></li><li><a href="../framework" class="internal">Framework</a></li><li><a href="../governance-layer" class="internal">GovernanceLayer</a></li><li><a href="../identity-and-access-management" class="internal">Identity and Access Management</a></li><li><a href="../identity-governance" class="internal">Identity Governance</a></li><li><a href="../identity-governance-domain" class="internal">IdentityGovernanceDomain</a></li><li><a href="../identity-proofing" class="internal">Identity Proofing</a></li><li><a href="../iso" class="internal">ISO</a></li><li><a href="../iso-iec-17065" class="internal">ISO/IEC 17065</a></li><li><a href="../iso-iec-27001" class="internal">ISO/IEC 27001</a></li><li><a href="../json-web-token" class="internal">JSON Web Token</a></li><li><a href="../nist" class="internal">NIST</a></li><li><a href="../nist-sp-800-63" class="internal">NIST SP 800-63</a></li><li><a href="../open-id-connect" class="internal">OpenID Connect</a></li><li><a href="../open-id-federation" class="internal">OpenID Federation</a></li><li><a href="../policy-enforcement-point" class="internal">Policy Enforcement Point</a></li><li><a href="../policy-framework" class="internal">Policy Framework</a></li><li><a href="../policy-layer" class="internal">PolicyLayer</a></li><li><a href="../privacy-enhancing-technologies" class="internal">Privacy Enhancing Technologies</a></li><li><a href="../regulatory-compliance" class="internal">RegulatoryComplianceDomain</a></li><li><a href="../relying-party" class="internal">Relying Party</a></li><li><a href="../revocation-mechanism" class="internal">Revocation Mechanism</a></li><li><a href="../risk-based-authentication" class="internal">Risk-Based Authentication</a></li><li><a href="../sd-jwt" class="internal">SD-JWT</a></li><li><a href="../selective-disclosure" class="internal">Selective Disclosure</a></li><li><a href="../siloed-identity" class="internal">Siloed Identity</a></li><li><a href="../standards-layer" class="internal">StandardsLayer</a></li><li><a href="../trust-anchor" class="internal">Trust Anchor</a></li><li><a href="../trust-list" class="internal">Trust List</a></li><li><a href="../trust-mark" class="internal">Trust Mark</a></li><li><a href="../trust-over-ip" class="internal">Trust over IP</a></li><li><a href="../trust-transitivity" class="internal">Trust Transitivity</a></li><li><a href="../w3-c" class="internal">W3C</a></li><li><a href="../web-of-trust" class="internal">Web of Trust</a></li><li><a href="../x-509-certificate" class="internal">X.509 Certificate</a></li><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../access-control-system" class="internal">Access Control System</a></li><li><a href="../agents" class="internal">Agents</a></li><li><a href="../aml-kyc-compliance" class="internal">AML KYC Compliance</a></li><li><a href="../audit-trail" class="internal">Audit Trail</a></li><li><a href="../cryptography" class="internal">Cryptography</a></li><li><a href="../digital-identity" class="internal">Digital Identity</a></li><li><a href="../digital-signatures" class="internal">Digital Signatures</a></li><li><a href="../digital-wallet" class="internal">Digital Wallet</a></li><li><a href="../governance-framework" class="internal">Governance Framework</a></li><li><a href="../identity-verification" class="internal">Identity Verification</a></li><li><a href="../interoperability" class="internal">Interoperability</a></li><li><a href="../public-key-infrastructure" class="internal">Public Key Infrastructure</a></li><li><a href="../regulatory-compliance" class="internal">Regulatory Compliance</a></li><li><a href="../self-sovereign-identity" class="internal">Self-Sovereign Identity</a></li><li><a href="../verifiable-credentials" class="internal">Verifiable Credentials</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:185e370082082ff31326faecf3113db8bb54a8e82bfbfd7112941c13e8b28190</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../decentralised-identity" class="internal">Decentralised Identity</a></li><li><a href="../identity-and-access-management" class="internal">Identity and Access Management</a></li><li><a href="../pages/Privacy-Enhancing-Technologies" class="internal">Privacy Enhancing Technologies</a></li><li><a href="../pages/Digital-Wallet" class="internal">Digital Wallet</a></li><li><a href="../pages/Regulatory-Compliance" class="internal">Regulatory Compliance</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../dsit" class="internal">DSIT</a></li><li><a href="../etsi" class="internal">ETSI</a></li><li><a href="../european-commission" class="internal">European Commission</a></li><li><a href="../pages/ISO" class="internal">ISO</a></li><li><a href="../pages/NIST" class="internal">NIST</a></li><li><a href="../pages/W3C" class="internal">W3C</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../pages/Access-Control-System" class="internal">Access Control System</a></li><li><a href="../pages/AML-KYC-Compliance" class="internal">AML KYC Compliance</a></li><li><a href="../pages/Digital-Signatures" class="internal">Digital Signatures</a></li><li><a href="../pages/Self-Sovereign-Identity" class="internal">Self Sovereign Identity</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../iso-iec-17065" class="internal">ISO/IEC 17065</a></li><li><a href="../iso/iec-27001" class="internal">ISO/IEC 27001</a></li><li><a href="../pages/JSON-Web-Token" class="internal">JSON Web Token</a></li><li><a href="../openid-connect" class="internal">OpenID Connect</a></li><li><a href="../pages/SD-JWT" class="internal">SD-JWT</a></li><li><a href="../pages/X.509-Certificate" class="internal">X.509 Certificate</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:TrustAnchor))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:TrustList))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:AssuranceLevel))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:IdentityProofingProcess))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:AuthenticationMechanism))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:FederationProtocol))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:AccreditationBody))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:ConformityAssessmentBody))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:RevocationMechanism))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:hasPart ig:TrustMark))
+
+  ## Dependency Relationships
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:requires ig:IdentityVerification))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:requires ig:DigitalCredentials))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:requires ig:CryptographicProof))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:requires ig:ConformityAssessment))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:requires ig:AuditTrail))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:dependsOn ig:PublicKeyInfrastructure))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:dependsOn ig:Cryptography))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:dependsOn ig:DecentralisedIdentifiers))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:dependsOn ig:DataProtectionLaw))
+
+  ## Capability Relationships
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:enables ig:DigitalIdentity))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:enables ig:CrossBorderAuthentication))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:enables ig:CredentialPortability))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:enables ig:TrustTransitivity))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:enables ig:RiskBasedAuthentication))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:enables ig:SelectiveDisclosure))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:supports ig:AMLKYCCompliance))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:supports ig:AccessControlSystem))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:supports ig:ZeroTrustArchitecture))
+
+  ## Implementation Relationships
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:implements ig:NISTSP80063))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:implements ig:eIDAS2))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:implements ig:OpenIDFederation))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:implements ig:VerifiableCredentials))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:implements ig:OpenIDConnect))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:implements ig:TrustOverIP))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:uses ig:JSONWebToken))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:uses ig:X509Certificate))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:uses ig:SDJWT))
+
+  ## Reduction Relationships
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:reduces ig:IdentityFraud))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:reduces ig:OnboardingFriction))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:reduces ig:ComplianceCost))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:reduces ig:TrustEstablishmentLatency))
+  SubClassOf(ig:TrustFramework
+    ObjectSomeValuesFrom(ig:reduces ig:DataDuplication))
+
+  ## Data Properties
+  DataPropertyAssertion(ig:hasIdentifier ig:TrustFramework &quot;IF-0031&quot;^^xsd:string)
+  DataPropertyAssertion(ig:authorityScore ig:TrustFramework &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ig:globalFrameworkCount ig:TrustFramework &quot;8&quot;^^xsd:integer)
+  DataPropertyAssertion(ig:policyAreasCount ig:TrustFramework &quot;15&quot;^^xsd:integer)
+  DataPropertyAssertion(ig:policyCharacteristicsCount ig:TrustFramework &quot;75&quot;^^xsd:integer)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ig:TrustFramework &quot;Trust Framework&quot;@en)
+  AnnotationAssertion(rdfs:comment ig:TrustFramework &quot;Normative architecture defining policies, technical standards, legal rules, certification requirements, and governance mechanisms for establishing digital trust across ecosystem participants; encompasses UK DIATF/DVS v1.0, EU eIDAS 2 Regulation 2024/1183, NIST SP 800-63-4, Pan-Canadian Trust Framework PCTF, and Trust over IP governance metamodel; implemented via OpenID Federation trust chains, ETSI TS 119 612 trusted lists, W3C Verifiable Credentials 2.0, and ISO/IEC 17065 conformity assessment.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ig:TrustFramework &quot;IF-0031&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ig:TrustFramework &quot;Digital Identity, Trust, Certification, Accreditation, Identity Assurance, eIDAS, NIST&quot;@en)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-trust-frameworks">About Trust Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-trust-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Trust frameworks</strong> are the foundational normative architecture of the digital trust economy. They specify, at multiple abstraction levels — policy, legal, technical, and operational — the rules under which organisations can participate in an ecosystem as identity providers, relying parties, attribute providers, or credential issuers, and the rules under which individuals can have confidence that services claiming conformance with the framework genuinely protect their privacy, security, and rights. The core problem trust frameworks solve is <strong>transitive trust</strong>: two organisations that have never interacted can nonetheless trust assertions made by each other because they both independently satisfy the requirements of a mutually recognised framework, examined and certified by an accredited third party.</p>
+</li>
+<li>
+<p>The architecture of a trust framework typically comprises four interacting layers. The <strong>governance layer</strong> establishes who controls the framework, how rules are changed, what legal instruments bind participants (terms of service, codes of conduct, statutory obligations), and how disputes are resolved. The <strong>policy layer</strong> defines risk taxonomy, assurance levels, permitted use cases, and the mapping between transaction risk and required assurance. The <strong>technical layer</strong> specifies interoperable protocols (OpenID Connect, OpenID Federation, W3C Verifiable Credentials), data formats (SD-JWT, JSON-LD, ISO 18013-5 mDL), and cryptographic requirements. The <strong>certification layer</strong> defines how conformity to policy and technical requirements is assessed — by whom (conformity assessment bodies, CABs), against what standard (ISO/IEC 17065, ISO/IEC 27001), and with what oversight (national accreditation body, e.g. UKAS in the UK, DAkkS in Germany).</p>
+</li>
+<li>
+<h3 id="identity-assurance-architecture">Identity Assurance Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#identity-assurance-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The dominant conceptual vocabulary for identity assurance derives from <strong>NIST SP 800-63</strong>, which disaggregates the identity lifecycle into three independently scalable assurance dimensions. <strong>Identity Assurance Level (IAL)</strong> governs identity proofing — the binding of a claimed digital identity to a real-world person or entity. IAL1 requires no proofing (self-asserted attributes); IAL2 requires remote or in-person verification of reliable identity evidence with photographic and biographical matching; IAL3 requires supervised physical presence with biometric binding and trained personnel, suitable for high-security government and financial use cases. <strong>Authenticator Assurance Level (AAL)</strong> governs the security of the authentication mechanism after identity proofing. AAL1 permits single-factor methods; AAL2 mandates multi-factor authentication and under SP 800-63-4 must offer at least one phishing-resistant MFA option; AAL3 requires hardware-bound cryptographic authenticators (FIDO2 security keys, smart cards) proven phishing-resistant. <strong>Federation Assurance Level (FAL)</strong> governs the security of assertion passing between Identity Provider and Relying Party; FAL1 permits standard bearer assertions (SAML, OIDC ID tokens); FAL2 requires holder-binding preventing assertion replay; FAL3 requires cryptographic presentation proof tying assertion to the holder’s key material.</p>
+</li>
+<li>
+<p>NIST SP 800-63-4 (final draft August 2024, with adoption guidance targeting 2025) introduced explicit recognition of mobile driver’s licences (mDLs, ISO 18013-5) and W3C Verifiable Credentials as valid identity evidence at IAL2 and above, bridging the gap between the traditional assurance framework and the emerging decentralised credential ecosystem.</p>
+</li>
+<li>
+<h3 id="uk-diatf-and-dvs-framework">UK DIATF and DVS Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-diatf-and-dvs-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <strong>UK Digital Identity and Attributes Trust Framework (DIATF)</strong> evolved through alpha, beta, gamma, and in 2026 version 1.0 stages, underpinned by the <strong>Data (Use and Access) Act 2025</strong> which received Royal Assent on 19 June 2025 and brought Part 2 (Digital Verification Services) into force on 1 December 2025. The Act establishes the <strong>Office for Digital Identities and Attributes (OfDIA)</strong> — a new executive body within DSIT — with statutory duties to: publish and maintain the DVS trust framework; operate a public register of certified providers (the DVS Register); oversee the certification scheme; and enforce provider obligations. The official register at digital-identity-services-register.service.gov.uk lists providers certified as Digital Verification Services (DVS).</p>
+</li>
+<li>
+<p>The <strong>gamma 0.4 framework</strong> (final publication June 2025, in force July 2025) represented the last pre-statutory version; the <strong>DVS Trust Framework 1.0</strong> (published March 2026) constitutes the first statutory version. Version 1.0 introduced the <strong>UK CertifID trust mark</strong> — a government-branded signal that a provider has been independently certified and is on the DVS Register — modelled in part on analogous schemes in other markets. Under the Data (Use and Access) Act 2025, only registered DVS providers may display the UK CertifID trust mark; displaying it without registration is a regulatory offence.</p>
+</li>
+<li>
+<p>The certification path requires providers to be audited by a <strong>Conformity Assessment Body (CAB)</strong> approved by OfDIA and then UKAS-accredited under ISO/IEC 17065. <strong>Kantara Initiative</strong> achieved the historic milestone of becoming the first UKAS-accredited CAB for the UK DIATF in November 2025, alongside <strong>BSI Assurance UK</strong> working towards accreditation. UKAS, headquartered in Feltham, Middlesex, is the sole national accreditation body for the UK under Regulation (EC) 765/2008 as retained in UK law; its Digital Sector Accreditation programme manages the CAB recognition pipeline for identity frameworks. Certified providers span Right-to-Work verification, Right-to-Rent verification, DBS criminal record checking, and financial services onboarding against Money Laundering Regulations (MLR) — with DSIT/HM Treasury joint guidance (2025) explicitly confirming DIATF-certified services satisfy MLR identity verification requirements.</p>
+</li>
+<li>
+<h3 id="eu-eidas-2-and-the-eudi-wallet">EU eIDAS 2 and the EUDI Wallet<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eu-eidas-2-and-the-eudi-wallet" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Regulation (EU) 2024/1183</strong> (eIDAS 2, in force 20 May 2024) amends the original eIDAS Regulation 910/2014 and establishes the legal basis for the <strong>European Digital Identity (EUDI) Wallet</strong> — a standardised digital identity wallet that every EU Member State must offer to citizens by May 2026. Each EUDI Wallet instance is issued by or on behalf of a Member State, interoperates with wallets from all other Member States, and supports selective disclosure of attributes from government-issued credentials (driving licence, professional qualification, age attestation, social security number).</p>
+</li>
+<li>
+<p>The technical blueprint is the <strong>Architecture and Reference Framework (ARF)</strong>, maintained by the European Commission’s Digital Building Blocks team on GitHub (eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework); ARF version 2.0 specifies the common architecture, exchange protocols (OpenID4VP, OpenID4VCI, SD-JWT VC), and data formats ensuring wallets issued by one Member State function across all others. The ARF mandates support for <strong>selective disclosure</strong> (users share only minimum necessary attributes), <strong>holder binding</strong> (preventing credential forwarding without the holder’s key), and <strong>wallet attestation</strong> (the wallet itself carries a signed statement of its security properties from the issuing Member State or a certified manufacturer).</p>
+</li>
+<li>
+<p>Trust in the EUDI ecosystem flows through a <strong>Trust List</strong> architecture: each Member State publishes a nationally-supervised trusted list conformant with <strong>ETSI TS 119 612</strong> listing authorised trust service providers (TSPs) offering qualified electronic signatures, qualified timestamps, qualified certificates, and wallet providers. The European Commission maintains the <strong>List of Trusted Lists (LOTL)</strong> aggregating all Member State lists; relying parties can traverse LOTL to validate assertions from any wallet in any Member State without bilateral agreements. Version 2.4.1 of ETSI TS 119 612 (August 2025) aligns the specification with eIDAS 2 service type extensions.</p>
+</li>
+<li>
+<h3 id="openid-federation-and-trust-chains">OpenID Federation and Trust Chains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#openid-federation-and-trust-chains" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>OpenID Federation 1.0</strong> (final specification published by the OpenID Foundation) provides the cryptographic machinery for expressing, discovering, and evaluating trust relationships in large-scale identity federation. Unlike traditional PKI or bilateral federation (where each pair of organisations must establish direct trust), OpenID Federation supports <strong>trust chains</strong> — cryptographically verifiable paths connecting a leaf entity (identity provider or relying party) through zero or more intermediate authorities to a trust anchor, enabling automated trust establishment at internet scale. Entity Statements are signed JSON Web Tokens (JWTs); the trust chain is validated by following issuer claims from leaf to trust anchor, with each intermediate applying policy constraints that narrow the acceptable metadata of downstream entities.</p>
+</li>
+<li>
+<p>The trust anchor plays the role of root CA in PKI: it is the party whose public key is distributed out-of-band and whose signatures bootstrap chain validation. Intermediate authorities enable delegation — a large national federation can designate sector-specific intermediates (healthcare, finance, education) that manage their own sub-federations under the top-level trust anchor’s policy. OpenID Federation 1.1 (draft 01) separates protocol-independent federation machinery (entity statements, trust chains, metadata policies, trust marks, federation endpoints) from the OpenID Connect-specific bindings, enabling reuse in OAuth 2.0 and other protocol contexts. OpenID Federation Wallet Architectures 1.0 (draft 04) applies the federation model to EUDI Wallet trust, directly linking it with eIDAS 2 governance.</p>
+</li>
+<li>
+<h3 id="trust-over-ip-toip-governance-metamodel">Trust over IP (ToIP) Governance Metamodel<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trust-over-ip-toip-governance-metamodel" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <strong>Trust over IP Foundation</strong> (ToIP, founded May 2020, 200+ member organisations) defines a four-layer architecture for internet-scale digital trust combining cryptographic assurance at the machine layers (Layer 1: DID/VDR registries; Layer 2: DIDComm/Trust Spanning Protocol peer-to-peer; Layer 3: Verifiable Credential exchange) with human accountability at the governance layer (Layer 4: Ecosystem governance frameworks). The <strong>Governance Metamodel Specification V1.0</strong> (approved December 2021) provides a master template for ToIP-compliant governance frameworks, specifying required, recommended, and optional components of a governance document set: primary document (governed ecosystem description, controlled document registry), controlled documents (credential governance, trust registry, certification governance), and human governance (membership, roles, dispute resolution, accountability).</p>
+</li>
+<li>
+<p>The <strong>Trust Spanning Protocol (TSP)</strong> Task Force published its first Implementers Draft in April 2024, specifying a Layer 2 protocol serving as the keystone of the ToIP stack — a transport-agnostic secure messaging layer enabling any two principals that have each other’s DID to exchange authenticated, confidential, and optionally anonymised messages without dependence on any centralised intermediary. In 2025, the Coalition for Content Provenance and Authenticity (C2PA) adopted the ToIP governance metamodel for its conformance programme, demonstrating the framework’s applicability beyond digital identity to content authenticity use cases including AI-generated media governance.</p>
+</li>
+<li>
+<h3 id="pan-canadian-trust-framework-pctf">Pan-Canadian Trust Framework (PCTF)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pan-canadian-trust-framework-pctf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <strong>Pan-Canadian Trust Framework (PCTF)</strong>, developed by the Digital ID &amp; Authentication Council of Canada (DIACC), provides a modular certification framework for Canadian public and private sector digital identity services. PCTF is structured around discrete <strong>components</strong> (Verified Person, Verified Organization, Authentication, Consent, Credentials, Notices and Receipts) each of which has separately published Conformance Criteria and reaches maturity through a staged peer-review process: Discussion Draft → Recommended Draft → Final Recommendation. The <strong>Authentication Final Recommendation V1.2</strong> (July 2024) and <strong>Verified Organization Final Recommendation V1.0</strong> (October 2024) represent the most recent completions, with the Authentication component’s readiness signalling eligibility for inclusion in DIACC’s certification programme. PCTF deliberately aligns with international frameworks — NIST SP 800-63, eIDAS levels of assurance, and ISO/IEC 29115 — to support mutual recognition and cross-border interoperability with UK, EU, and US frameworks.</p>
+</li>
+<li>
+<p>In July 2024, OIX (then still operating) and DIACC committed to a joint interoperability workstream, culminating in OIX’s <strong>Digital ID DNA</strong> paper identifying 15 general policy areas, 75 policy characteristics, and 289 possible values across eight frameworks (UK DIATF, EU eIDAS 2, US NIST, Canada PCTF, Sweden BankID, Thailand ETDA, Singapore Singpass, and MOSIP) — the most comprehensive comparative analysis of trust framework interoperability published to 2024.</p>
+</li>
+<li>
+<h3 id="trust-anchors-trust-lists-and-trust-registries">Trust Anchors, Trust Lists, and Trust Registries<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trust-anchors-trust-lists-and-trust-registries" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Trust anchors</strong> are the root cryptographic authorities whose public keys are distributed out-of-band as trusted starting points for chain-of-trust validation. In X.509/PKI, the trust anchor is the root CA certificate embedded in operating system or browser trust stores. In OpenID Federation, the trust anchor’s JWKS is the known-good starting point for trust chain evaluation. In ToIP, each governance framework designates a trust anchor whose DID and public key anchor the ecosystem. In ETSI TSL/eIDAS, the national trust list operator is the trust anchor for that Member State’s qualified trust services, with the European Commission’s LOTL serving as the meta-anchor for cross-border reliance.</p>
+</li>
+<li>
+<p><strong>Trust lists</strong> (Trusted Service Provider Lists, TSLs) are structured, machine-readable registries of entities whose trustworthiness has been established under a specific governance regime. ETSI TS 119 612 defines the XML schema and publication requirements for EU Member State TSLs; ETSI TS 119 615 specifies procedures for using TSLs for certificate validation. Analogous trust registries appear in OpenID Federation (trust anchor’s self-signed entity configuration listing subordinate entities), ToIP (trust registries listing credential schemas and issuer DIDs), and the UK DVS Register (statutory list of certified DVS providers). <strong>Trust registry discovery</strong> — the ability for a relying party to automatically discover whether a given issuer is authorised under a given governance framework — is a key technical challenge addressed differently across frameworks: OpenID Federation uses cryptographic entity statements; ToIP uses DIDDoc-referenced trust registry endpoints; DVS uses a GOV.UK API endpoint over the public internet.</p>
+</li>
+<li>
+<h3 id="w3c-verifiable-credentials-20-and-selective-disclosure">W3C Verifiable Credentials 2.0 and Selective Disclosure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#w3c-verifiable-credentials-20-and-selective-disclosure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The <strong>W3C Verifiable Credentials Data Model 2.0</strong> (published as a W3C Recommendation 15 May 2025) provides the semantic data model for machine-verifiable cryptographic credentials: a credential is a set of claims made by an issuer about a subject, packaged with metadata enabling any verifier to confirm issuer identity, credential integrity, and validity status without contacting the issuer at verification time. VC 2.0 introduces mandatory support for <strong>Data Integrity Proofs</strong> and clarifies the relationship between the abstract data model and concrete serialisations (JSON-LD with Data Integrity, SD-JWT VC).</p>
+</li>
+<li>
+<p><strong>SD-JWT VC</strong> (Selective Disclosure JSON Web Token Verifiable Credentials) has emerged as the dominant format for eIDAS 2/EUDI Wallet credentials, combining JWT compactness with cryptographic selective disclosure — the holder can reveal any subset of credential claims by including only the corresponding disclosure values in a presentation, leaving undisclosed claims unlinkable. SD-JWT VC is specified in IETF draft-ietf-oauth-sd-jwt-vc and referenced by both the ARF and OpenID4VP. This enables privacy-preserving presentations — e.g. proving age ≥ 18 without revealing exact date of birth — that are simultaneously compact, verifiable, and unlinkable across presentations when combined with unlinkability techniques.</p>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>A complete trust framework implementation requires the following functional layers working together:</p>
+</li>
+<li>
+<p><strong>Governance and Legal Layer</strong>: The legal instrument (statute, contract, code of conduct) that binds participants; defines liability allocation, dispute resolution, and framework evolution governance. Examples: Data (Use and Access) Act 2025 for DVS; eIDAS 2 Regulation 2024/1183 for EUDI Wallet; PCTF DIACC governance charter for Pan-Canadian framework.</p>
+</li>
+<li>
+<p><strong>Policy and Assurance Layer</strong>: Risk taxonomy mapping transaction categories to required assurance levels; IAL/AAL/FAL matrices (NIST model) or LoA 1–4 scales (ISO/IEC 29115 model) or equivalent. Includes permitted credential types, acceptable identity evidence, age verification policies, and accessibility requirements.</p>
+</li>
+<li>
+<p><strong>Technical Standards Layer</strong>: Interoperable protocols (OpenID Connect for authentication; OpenID Federation for entity-to-entity trust; OpenID4VCI for credential issuance; OpenID4VP for credential presentation; DIDComm for peer-to-peer messaging); credential formats (SD-JWT VC, ISO 18013-5 mDL, W3C VC JSON-LD); cryptographic algorithms (ECDSA P-256, EdDSA Ed25519, RSA 2048 minimum; FIPS 140-3 for AAL3 authenticators).</p>
+</li>
+<li>
+<p><strong>Certification and Accreditation Layer</strong>: CABs auditing providers against framework requirements; national accreditation body (UKAS in UK, DAkkS in Germany, RvA in Netherlands) granting ISO/IEC 17065 accreditation to CABs; scheme owner (OfDIA in UK, European Commission for eIDAS) approving CABs before UKAS accreditation. Assessment scope covers identity proofing processes, IT security controls (ISO/IEC 27001), biometric data handling (GDPR special category data), liveness detection (ISO 30107-3), and document verification against known-forgery libraries.</p>
+</li>
+<li>
+<p><strong>Trust Registry / Register Layer</strong>: The machine-readable, queryable source of truth about which entities are authorised under the framework. UK: DVS Register (GOV.UK). EU: LOTL + Member State TSLs (ETSI TS 119 612). OpenID Federation: trust anchor entity configuration + subordinate statement cache. ToIP: DIDDoc-referenced trust registry endpoints per governance framework. NIST: no central registry specified — each relying party policy determines accepted CSPs.</p>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Right-to-Work and Right-to-Rent verification (UK)</strong>: Employers and landlords may use DIATF-certified DVS providers to discharge statutory document verification obligations; DSIT/Home Office guidance confirms certified services constitute a valid alternative to physical document inspection. Leading certified providers (per DVS Register 2026): Yoti, Onfido (Entrust), OneID, Experian Identity, TrueLayer, iProov.</p>
+</li>
+<li>
+<p><strong>Financial services onboarding (UK/EU)</strong>: Know Your Customer (KYC) and Anti-Money Laundering (AML) compliance; DSIT/HM Treasury joint guidance (2025) explicitly confirms DIATF-certified services satisfy MLR 2017 identity verification requirements, enabling fully digital customer onboarding with certified assurance. Under eIDAS 2, EUDI Wallet presentations at LoA High satisfy the identity verification requirements of the 4th/5th AML Directives.</p>
+</li>
+<li>
+<p><strong>Cross-border government services (EU)</strong>: eIDAS 2 mandates mutual recognition of notified national eID schemes and EUDI Wallets across Member States for public sector services (e-government, university enrolment, healthcare records access, benefits claim). The ARF specifies 23 PID (Person Identification Data) attributes exchangeable across all Member States.</p>
+</li>
+<li>
+<p><strong>Education credential portability</strong>: ToIP-governed verifiable credential ecosystems for academic degrees; Europass Digital Credentials Infrastructure (EDCI) uses W3C VC data model underpinned by eIDAS qualified signatures for cross-border recognition of diplomas within EU.</p>
+</li>
+<li>
+<p><strong>Healthcare identity and consent (UK)</strong>: NHS Login implements IAL2/AAL2-equivalent assurance for patient-facing digital services; NHS Digital Identity programme aligns with DIATF requirements. CareIdentity Service (CIS2) provides Smartcard-based AAL3-equivalent authentication for clinical staff under NHS England.</p>
+</li>
+<li>
+<p><strong>Content provenance and AI governance</strong>: C2PA adopted ToIP governance metamodel (2025) for its conformance programme, establishing a trust framework over AI-generated and AI-labelled media content — issuers of content provenance assertions are enumerated in a trust list, relying parties validate assertions against certified issuer DIDs.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Trust framework theory draws on multiple research traditions. <strong>Federated identity research</strong> (Winsborough &amp; Li, RBAC federation; Blaze, Feigenbaum &amp; Lacy, PolicyMaker/KeyNote trust management, 1996–1998; Abadi’s calculus of principals) established formal foundations for delegating authority across administrative boundaries. <strong>Sociotechnical systems research</strong> at Edinburgh (Sasse, Inglesant; usability of authentication), UCL (Anderson; security economics), Cambridge (Murdoch, Bohm; transaction authentication, chip-and-PIN failures), and Imperial (Sadeghi, Schneider; trusted computing) directly informs the design of certification schemes balancing security with usability.</p>
+</li>
+<li>
+<p><strong>Identity assurance level theory</strong> formalised by Burr et al. (NIST SP 800-63, 2006 original; revised Grassi et al. 2017) introduced the IAL/AAL/FAL disaggregation; subsequent academic critique (Grassi, Fenton, Lefkovitz, 2017 revision authors; Chadwick et al. UCL identity federation work) drove the move away from fixed LoA to risk-adaptive assurance selection in 800-63-4. The <strong>trust transitivity problem</strong> — whether trust in A and trust in B transitively implies trust in the composition of A and B — remains an open question with negative results from role-based trust management literature (Li &amp; Mitchell 2003, IBM Research) driving the conditional trust assertions model in OpenID Federation’s policy constraint propagation.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The 2024–2026 period marks the transition from pilot to statutory operation for the two largest trust framework programmes globally. <strong>In the UK</strong>, the DVS Trust Framework 1.0 came into force March 2026, the UK CertifID trust mark launched, and the DVS Register transitioned from a DSIT-managed spreadsheet to a live statutory register under OfDIA. Kantara Initiative (first UKAS-accredited CAB, November 2025) and BSI Assurance UK (in accreditation process 2026) constitute the CAB ecosystem; approximately 50+ providers were certified under gamma prior to the 1.0 transition. The framework explicitly supports Age Verification use cases following the Online Safety Act 2023 commencement.</p>
+</li>
+<li>
+<p><strong>In the EU</strong>, eIDAS 2 pilot programmes across Member States (the “Large Scale Pilots” — POTENTIAL, NOBID, EUDIW Consortium, DC4EU) tested EUDI Wallet interoperability across 150+ use cases from 2022–2025. Member States must issue production EUDI Wallets by May 2026. The ARF v2.0 stabilised the core technical specifications; OpenID4VP and SD-JWT VC have converged on IETF standards track. The European Digital Identity Wallet Consortium (EWC) coordinates reference implementation work.</p>
+</li>
+<li>
+<p><strong>Globally</strong>, NIST SP 800-63-4 adoption progresses across US federal agencies under OMB guidance; mDL (ISO 18013-5) deployments in US state DMVs (Arizona, Colorado, Georgia, Maryland, Utah) have created real-world IAL2 credential evidence accepted by NIST-aligned verifiers. The International Trust Framework Interoperability work (OIX DNA analysis, ITU-T SG17 studies, ISO/IEC JTC1 SC27 WG5) aims to establish mutual recognition agreements enabling a UK DIATF-certified individual to be recognised by an eIDAS-relying party and vice versa — the <strong>Global Digital Trust Framework</strong> interoperability layer envisaged by multiple standards bodies.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The UK’s trust framework ecosystem is centred on <strong>OfDIA</strong> within DSIT, responsible for the DVS trust framework, DVS Register, and UK CertifID scheme. <strong>UKAS</strong> (United Kingdom Accreditation Service), headquartered at 2 Pine Trees, Chertsey Lane, Staines-upon-Thames (with operational offices in Feltham), is the national accreditation body (NAB) designated under the Accreditation Regulations 2009; it accredits CABs under ISO/IEC 17065 for the digital identity sector. <strong>Kantara Initiative</strong> (the international digital identity assurance certification body) achieved UKAS accreditation in November 2025 as the first CAB for UK DIATF, auditing providers against the full technical and policy requirements of the DVS Trust Framework. <strong>BSI Assurance UK</strong> (British Standards Institution certification arm) is the second CAB in the accreditation pipeline.</p>
+</li>
+<li>
+<p><strong>Open Identity Exchange (OIX)</strong> — the UK-rooted digital identity cross-sector forum whose UK chapter launched in 2016 and played a formative role in shaping the DIATF through consultations and pilots — ceased operations in August 2024 following its major 2023 “Digital ID DNA” cross-framework interoperability analysis. The identity industry representation function has been partially absorbed into techUK’s Identity and Access Management group and the government’s DIATF industry working groups. <strong>Yoti</strong> (UK company, London) and <strong>OneID</strong> (UK company) are UK-headquartered certified DVS providers, alongside <strong>iProov</strong> (London, biometric liveness detection for DIATF IAL2), which holds both UK DIATF and EU certifications.</p>
+</li>
+<li>
+<p>Northern England’s industrial relevance includes <strong>HMRC Digital</strong> in Washington (Tyne and Wear) and Newcastle processing personal tax identity at scale using Government Gateway credentials aligned with IAL2-equivalent government standards; <strong>NHS Business Services Authority</strong> in Newcastle managing NHS Login identity services for 20M+ users at IAL2; <strong>Lloyds Banking Group</strong> Leeds technology centre deploying DIATF-certified KYC pipelines for retail banking onboarding; <strong>Co-operative Bank</strong> Manchester implementing DIATF-compliant digital onboarding following the 2025 MLR guidance. <strong>Sheffield Hallam University</strong> and <strong>University of Leeds</strong> run active research programmes in digital identity usability and trust framework governance as part of the UKRI Digital Security by Design initiative.</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>EUDI Wallet global reach</strong>: By 2028 the EU aims to extend mutual recognition of EUDI Wallets to third countries under Article 46 eIDAS 2 equivalency decisions; the UK-EU Digital Partnerships track (under the Windsor Framework and subsequent bilateral technology agreements) may establish EUDI Wallet ↔ UK CertifID mutual recognition, creating a de facto transatlantic trust framework.</p>
+</li>
+<li>
+<p><strong>AI agent identity</strong>: As <a href="../Agents" class="internal" data-slug="Agents">Agents</a> proliferate (agentic AI systems acting on behalf of individuals in financial, healthcare, and legal contexts), trust frameworks must address non-human identity: agent credentials issued to AI systems, constrained delegation limiting agent authority within specific scopes, and audit trails satisfying accountability obligations. NIST SP 800-63-4’s IAL/AAL/FAL model is not directly applicable to AI agents; NIST IR 8062 and emerging work from the Cloud Security Alliance explore agent identity governance.</p>
+</li>
+<li>
+<p><strong>Continuous adaptive authentication</strong>: Moving beyond point-in-time identity verification to continuous risk assessment integrating behavioural biometrics, device posture, and network signals within a trust framework’s AAL policy — enabling session-level assurance adjustment without friction-imposing re-authentication.</p>
+</li>
+<li>
+<p><strong>Quantum-safe cryptographic transitions</strong>: PKI and JWT-based trust frameworks depend on RSA/ECDSA cryptography vulnerable to large-scale quantum computers. NIST post-quantum cryptography standards (FIPS 203 ML-KEM, FIPS 204 ML-DSA, August 2024) will require trust framework cryptographic agility provisions; eIDAS 2 and DVS 1.0 both include provisions for cryptographic algorithm updates without full framework revision.</p>
+</li>
+<li>
+<p><strong>Reusable identity portability</strong>: The ITU-T X.1278 standard and emerging “identity wallet portability” requirements would allow individuals to migrate their verified identity credentials between wallet providers without re-proofing — extending the portability principle of the UK DVS scheme to the wallet layer.</p>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The foundational trust management literature (Blaze, Feigenbaum &amp; Lacy, “Decentralized trust management”, IEEE S&amp;P 1996; Rivest &amp; Lampson, SDSI/SPKI 1996; Ellison et al., SPKI Certificate Theory, RFC 2693, 1999) established the conceptual vocabulary. NIST SP 800-63-4 (Grassi et al., NIST 2024 final draft) is the canonical US government digital identity assurance guideline; its predecessor SP 800-63-3 (2017) remains the most widely cited identity assurance standard globally. Cameron’s “Laws of Identity” (2005, Microsoft) introduced the “minimal disclosure” principle now instantiated in SD-JWT VC selective disclosure. The eIDAS 2 ARF (European Commission, v2.0, 2025) is the definitive technical specification for the EUDI Wallet ecosystem. Chadwick et al., “My Private Cloud” (Int. J. Information Security, 2014) provides UK academic treatment of federated identity policy across cloud boundaries. Murdoch &amp; Drimer, “Chip and PIN is Broken” (IEEE S&amp;P 2010, Cambridge Computer Laboratory) demonstrated the failure modes of authentication assurance schemes that lack end-to-end protocol binding — a lesson directly incorporated into FAL3 requirements. Josang’s subjective logic (2016, Springer) provides the formal probabilistic trust calculus underpinning Bayesian trust frameworks. The OIX “Digital ID DNA” analysis (OIX, 2023) provides the most comprehensive cross-framework policy comparison.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Domain correction: <code>infrastructure</code> → <code>identity-governance</code>. The original frontmatter incorrectly classified this concept under <code>infrastructure</code>. Trust frameworks are fundamentally instruments of identity governance — covering certification, accreditation, policy, legal instruments, and assurance level architecture — not generic infrastructure components. IRI, URI, same-as, and owl-class corrected accordingly.</li>
+<li>Legacy term ID assigned: <code>IF-0031</code> (Identity Frameworks ontology series)</li>
+<li>Enrichment worker: <code>claude-sonnet-4-6</code></li>
+<li>Enrichment phase: 6 / bulk run</li>
+<li>Completed: 2026-05-17T10:00:00Z</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<ol>
+<li>NIST SP 800-63-4, “Digital Identity Guidelines”, NIST (final draft August 2024), <a href="https://pages.nist.gov/800-63-4/sp800-63.html" class="external">https://pages.nist.gov/800-63-4/sp800-63.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>European Commission, “Architecture and Reference Framework (ARF) v2.0”, EU Digital Identity Wallet programme (2025), <a href="https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/2.4.0/architecture-and-reference-framework-main/" class="external">https://eu-digital-identity-wallet.github.io/eudi-doc-architecture-and-reference-framework/2.4.0/architecture-and-reference-framework-main/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Regulation (EU) 2024/1183 of the European Parliament and of the Council (eIDAS 2), OJ L 1183, 20 May 2024</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>UK Data (Use and Access) Act 2025, Part 2 (Digital Verification Services), UK Parliament, Royal Assent 19 June 2025, <a href="https://www.legislation.gov.uk/ukpga/2025/18/part/2" class="external">https://www.legislation.gov.uk/ukpga/2025/18/part/2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>DSIT/OfDIA, “UK Digital Verification Services Trust Framework 1.0” (March 2026), <a href="https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0/uk-digital-verification-services-trust-framework-1-0-pre-release" class="external">https://www.gov.uk/government/publications/uk-digital-verification-services-trust-framework-1-0/uk-digital-verification-services-trust-framework-1-0-pre-release<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>DSIT/OfDIA, “Final Gamma (0.4) Trust Framework and Updated Supplementary Codes” (June 2025), <a href="https://enablingdigitalidentity.blog.gov.uk/2025/06/26/sharing-the-final-gamma-0-4-trust-framework-and-updated-supplementary-codes/" class="external">https://enablingdigitalidentity.blog.gov.uk/2025/06/26/sharing-the-final-gamma-0-4-trust-framework-and-updated-supplementary-codes/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>UKAS, “UK Digital Identity and Attributes Trust Framework — Digital Sector Accreditation”, <a href="https://www.ukas.com/accreditation/sectors/digital/" class="external">https://www.ukas.com/accreditation/sectors/digital/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Kantara Initiative, “Kantara Achieves Historic First: Accredited to Certify Against the UK DIATF” (November 2025), <a href="https://kantarainitiative.org/kantara-achieves-historic-first-accredited-to-certify/" class="external">https://kantarainitiative.org/kantara-achieves-historic-first-accredited-to-certify/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>GOV.UK, “Certification Scheme for the UK Digital Identity and Attributes Trust Framework”, <a href="https://www.gov.uk/guidance/certification-scheme-for-the-uk-digital-identity-and-attributes-trust-framework" class="external">https://www.gov.uk/guidance/certification-scheme-for-the-uk-digital-identity-and-attributes-trust-framework<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>GOV.UK, “Digital Identity Services Register”, <a href="https://www.digital-identity-services-register.service.gov.uk/" class="external">https://www.digital-identity-services-register.service.gov.uk/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>ETSI TS 119 612 V2.4.1 (August 2025), “Electronic Signatures and Infrastructures (ESI); Trusted Lists”, <a href="https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf" class="external">https://www.etsi.org/deliver/etsi_ts/119600_119699/119612/02.04.01_60/ts_119612v020401p.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>OpenID Foundation, “OpenID Federation 1.0”, <a href="https://openid.net/specs/openid-federation-1_0.html" class="external">https://openid.net/specs/openid-federation-1_0.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>OpenID Foundation, “OpenID Federation 1.1 — draft 01”, <a href="https://openid.net/specs/openid-federation-1_1-01.html" class="external">https://openid.net/specs/openid-federation-1_1-01.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>OpenID Foundation, “OpenID Federation Wallet Architectures 1.0 — draft 04”, <a href="https://openid.github.io/federation-wallet/main.html" class="external">https://openid.github.io/federation-wallet/main.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Trust over IP Foundation, “ToIP Technology Architecture Specification”, <a href="https://trustoverip.github.io/TechArch/" class="external">https://trustoverip.github.io/TechArch/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Trust over IP Foundation, “Governance Metamodel Specification Companion Guide V1.0” (December 2021), <a href="https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-Companion-Guide-V1.0-2021-12-21.pdf" class="external">https://trustoverip.org/wp-content/uploads/ToIP-Governance-Metamodel-Specification-Companion-Guide-V1.0-2021-12-21.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Trust over IP Foundation, “Trust Spanning Protocol — First Implementers Draft” (April 2024), <a href="https://trustoverip.org/our-work/deliverables/" class="external">https://trustoverip.org/our-work/deliverables/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>DIACC, “Pan-Canadian Trust Framework — Authentication Final Recommendation V1.2” (July 2024), <a href="https://diacc.ca/wp-content/uploads/2024/10/PCTF-Authentication_Final-Rec-V1.2_Compressed_ENG.pdf" class="external">https://diacc.ca/wp-content/uploads/2024/10/PCTF-Authentication_Final-Rec-V1.2_Compressed_ENG.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>DIACC, “Pan-Canadian Trust Framework — Verified Organization Final Recommendation V1.0” (October 2024), <a href="https://diacc.ca/wp-content/uploads/2024/10/PCTF-Verified-Organization_Final-Rec-V1.0_Comrpessed_ENG.pdf" class="external">https://diacc.ca/wp-content/uploads/2024/10/PCTF-Verified-Organization_Final-Rec-V1.0_Comrpessed_ENG.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>OIX, “Digital ID DNA — Interoperability Across Trust Frameworks” (October 2023), <a href="https://openidentityexchange.org/networks/87/item.html?id=708" class="external">https://openidentityexchange.org/networks/87/item.html?id=708<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>W3C Verifiable Credentials Working Group, “Verifiable Credentials Data Model v2.0” (W3C Recommendation, 15 May 2025), <a href="https://www.w3.org/TR/vc-data-model-2.0/" class="external">https://www.w3.org/TR/vc-data-model-2.0/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Grassi P.A. et al., “NIST SP 800-63-3: Digital Identity Guidelines” (2017), National Institute of Standards and Technology</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Blaze M., Feigenbaum J., Lacy J., “Decentralized Trust Management”, IEEE Symposium on Security and Privacy (1996)</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Cameron K., “The Laws of Identity”, Microsoft (2005)</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Murdoch S.J., Drimer S. et al., “Chip and PIN is Broken”, IEEE Symposium on Security and Privacy (2010), University of Cambridge Computer Laboratory</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Jøsang A., “Subjective Logic: A Formalism for Reasoning Under Uncertainty”, Springer (2016)</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>DSIT/HM Treasury, Joint Guidance on DIATF Certification and Money Laundering Regulations (2025), <a href="https://www.techuk.org/resource/digital-id-boost-for-aml-checks-dsit-and-hmt-issue-guidance-for-mlr-compliance.html" class="external">https://www.techuk.org/resource/digital-id-boost-for-aml-checks-dsit-and-hmt-issue-guidance-for-mlr-compliance.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li><strong>domain-correction:</strong> infrastructure → identity-governance</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-5744" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-trust-frameworks" data-for="about-trust-frameworks">About Trust Frameworks</a></li><li class="depth-1"><a href="#identity-assurance-architecture" data-for="identity-assurance-architecture">Identity Assurance Architecture</a></li><li class="depth-1"><a href="#uk-diatf-and-dvs-framework" data-for="uk-diatf-and-dvs-framework">UK DIATF and DVS Framework</a></li><li class="depth-1"><a href="#eu-eidas-2-and-the-eudi-wallet" data-for="eu-eidas-2-and-the-eudi-wallet">EU eIDAS 2 and the EUDI Wallet</a></li><li class="depth-1"><a href="#openid-federation-and-trust-chains" data-for="openid-federation-and-trust-chains">OpenID Federation and Trust Chains</a></li><li class="depth-1"><a href="#trust-over-ip-toip-governance-metamodel" data-for="trust-over-ip-toip-governance-metamodel">Trust over IP (ToIP) Governance Metamodel</a></li><li class="depth-1"><a href="#pan-canadian-trust-framework-pctf" data-for="pan-canadian-trust-framework-pctf">Pan-Canadian Trust Framework (PCTF)</a></li><li class="depth-1"><a href="#trust-anchors-trust-lists-and-trust-registries" data-for="trust-anchors-trust-lists-and-trust-registries">Trust Anchors, Trust Lists, and Trust Registries</a></li><li class="depth-1"><a href="#w3c-verifiable-credentials-20-and-selective-disclosure" data-for="w3c-verifiable-credentials-20-and-selective-disclosure">W3C Verifiable Credentials 2.0 and Selective Disclosure</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Agent-Identity" class="internal">Agent Identity</a></li><li><a href="../pages/Agent-to-Agent-Protocol" class="internal">Agent-to-Agent Protocol</a></li><li><a href="../pages/Agent2Agent-Protocol-(Google-2025)" class="internal">Agent2Agent Protocol (Google 2025)</a></li><li><a href="../pages/Credential-Exchange" class="internal">Credential Exchange</a></li><li><a href="../pages/Decentralized-Identity-Foundation" class="internal">decentralized identity foundation</a></li><li><a href="../pages/EUDI-Wallet" class="internal">EUDI Wallet</a></li><li><a href="../pages/Ethics--and--Law-Layer" class="internal">Ethics &amp; Law Layer</a></li><li><a href="../pages/Federated-Identity" class="internal">Federated Identity</a></li><li><a href="../pages/Single-Sign-On" class="internal">single sign-on</a></li><li><a href="../pages/Trust-Establishment" class="internal">Trust Establishment</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

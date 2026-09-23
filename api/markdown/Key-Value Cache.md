@@ -1,0 +1,5 @@
+
+A key-value cache is a memory structure used in autoregressive transformer inference that stores the key and value projections computed for previously generated tokens, avoiding their recomputation on every new decoding step. By reusing cached keys and values, inference cost grows roughly linearly rather than quadratically with sequence length for the attention computation. Its memory footprint scales with context window length, batch size and model depth, making it a primary constraint on serving throughput for large language models.
+
+- ### Provenance
+

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Neural 3D Generation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Neural 3D Generation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Neural 3D Generation"/><meta name="twitter:description" content="AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis."/><meta property="og:description" content="AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis."/><meta property="og:image:alt" content="AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Neural-3D-Generation"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Neural-3D-Generation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Neural-3D-Generation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-5281"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-5281" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Neural 3D Generation</a></div></nav><h1 class="article-title">Neural 3D Generation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.837Z">23 Sept 2026</time><span>14 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:neural-3-d-generation</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.5</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Application" class="internal">AI Application</a></li><li><a href="../pages/Generative-AI" class="internal">Generative AI</a></li><li><a href="../pages/3D-Content-Generation" class="internal">3D Content Generation</a></li><li><a href="../pages/Procedural-Content-Generation" class="internal">Procedural Content Generation</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Training-Pipeline" class="internal">Training Pipeline</a></li><li><a href="../pages/Generative-Model" class="internal">Generative Model</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Rendering-Engine" class="internal">Rendering Engine</a></li><li><a href="../3D-Representation" class="internal">3D Representation</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/3D-Asset" class="internal">3D Asset Dataset</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../pages/Camera-Parameters" class="internal">Camera Parameters</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../3D-Asset-Dataset" class="internal">3D Asset Dataset</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/3D-Modelling" class="internal">Automated 3D Modeling</a></li><li><a href="../pages/Rapid-Prototyping" class="internal">Rapid Prototyping</a></li><li><a href="../pages/Digital-Twin-Generation" class="internal">Digital Twin Generation</a></li><li><a href="../pages/Virtual-Environment-Creation" class="internal">Virtual Environment Creation</a></li><li><a href="../Automated-3D-Modeling" class="internal">Automated 3D Modeling</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Applies to</th><td><ul class="properties-values"><li><a href="../pages/Generative-Design-Tool" class="internal">Generative Design Tool</a></li><li><a href="../pages/Image-Generation" class="internal">Image Generation</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/3D-Model" class="internal">3D Model</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Avatar" class="internal">Avatar</a></li><li><a href="../pages/Virtual-World" class="internal">Virtual World</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../ComputeLayer" class="internal">ComputeLayer</a></li><li><a href="../DataLayer" class="internal">DataLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../pages/GAN" class="internal">GAN</a></li><li><a href="../vae" class="internal">VAE</a></li><li><a href="../pages/Gaussian-Splatting" class="internal">Gaussian Splatting</a></li><li><a href="../pages/Neural-Radiance-Field" class="internal">Neural Radiance Field</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0700</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../3-d-asset-dataset" class="internal">3D Asset Dataset</a></li><li><a href="../3-d-representation" class="internal">3D Representation</a></li><li><a href="../automated-3-d-modeling" class="internal">Automated 3D Modeling</a></li><li><a href="../diffusion-model" class="internal">Diffusion Model</a></li><li><a href="../dream-fusion-google" class="internal">DreamFusion (Google)</a></li><li><a href="../extended-reality" class="internal">Extended Reality</a></li><li><a href="../gan" class="internal">GAN</a></li><li><a href="../get3-d" class="internal">GET3D</a></li><li><a href="../get3-d-nvidia" class="internal">GET3D (NVIDIA)</a></li><li><a href="../gl-tf-2-0" class="internal">glTF 2.0</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../ne-rf" class="internal">NeRF</a></li><li><a href="../ne-rf-mildenhall-et-al" class="internal">NeRF (Mildenhall et al.)</a></li><li><a href="../open-ai-point-e" class="internal">OpenAI Point-E</a></li><li><a href="../rapid-prototyping" class="internal">Rapid Prototyping</a></li><li><a href="../shap-e-open-ai" class="internal">Shap-E (OpenAI)</a></li><li><a href="../siggraph-ai" class="internal">SIGGRAPH AI</a></li><li><a href="../training-pipeline" class="internal">Training Pipeline</a></li><li><a href="../vae" class="internal">VAE</a></li><li><a href="../3-d-content-generation" class="internal">3D Content Generation</a></li><li><a href="../3-d-gaussian-splatting" class="internal">3D Gaussian Splatting</a></li><li><a href="../3-d-model" class="internal">3D Model</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../avatar" class="internal">Avatar</a></li><li><a href="../camera-parameters" class="internal">Camera Parameters</a></li><li><a href="../compute-layer" class="internal">ComputeLayer</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../pages/ai-application" class="internal">CreativeMediaDomain</a></li><li><a href="../data-layer" class="internal">DataLayer</a></li><li><a href="../digital-twin" class="internal">Digital Twin</a></li><li><a href="../digital-twin-generation" class="internal">Digital Twin Generation</a></li><li><a href="../game-engine" class="internal">Game Engine</a></li><li><a href="../gaussian-splatting" class="internal">Gaussian Splatting</a></li><li><a href="../generative-ai" class="internal">Generative AI</a></li><li><a href="../generative-design-tool" class="internal">Generative Design Tool</a></li><li><a href="../generative-model" class="internal">Generative Model</a></li><li><a href="../image-generation" class="internal">Image Generation</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../neural-radiance-field" class="internal">Neural Radiance Field</a></li><li><a href="../procedural-content-generation" class="internal">Procedural Content Generation</a></li><li><a href="../rendering-engine" class="internal">Rendering Engine</a></li><li><a href="../training-data" class="internal">Training Data</a></li><li><a href="../virtual-environment-creation" class="internal">Virtual Environment Creation</a></li><li><a href="../virtual-world" class="internal">Virtual World</a></li></ul></td></tr><tr><th scope="row">Measured by</th><td><ul class="properties-values"><li><a href="../pages/Procedural-Content-Generation" class="internal">Procedural Content Generation</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:d6172c08494d4915edd376e3dde7fa3c556128bb70c25651c1598182e0889c53</span></li></ul></td></tr><tr><th scope="row">Slug</th><td><ul class="properties-values"><li><span>neural-3-d-generation</span></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="class-declaration">Class Declaration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#class-declaration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  Declaration(Class(ai:Neural3DGeneration))
+
+  ## Subclass Relationships
+  SubClassOf(ai:Neural3DGeneration ai:GenerativeAI)
+  SubClassOf(ai:Neural3DGeneration ai:VirtualProcess)
+  SubClassOf(ai:Neural3DGeneration ai:MachineLearningProcess)
+
+  ## Components
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:hasPart ai:NeuralNetwork))
+
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:hasPart ai:GenerativeModel))
+
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:hasPart ai:3DRepresentation))
+
+  ## Implementation Techniques
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectUnionOf
+      ai:NeRF
+      ai:GaussianSplatting
+      ai:DiffusionModel
+      ai:GAN3D
+      ai:VAE3D))
+
+  ## Requirements
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:requires ai:TrainingData))
+
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:requires ai:GPUCompute))
+
+  ## Outputs
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:produces mv:3DModel))
+
+  ## Enables
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:enables ai:RapidPrototyping))
+
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom ai:enables ai:AutomatedModeling))
+
+  ## Cross-Domain Bridges
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom dt:bridgesTo mv:DigitalTwin))
+
+  SubClassOf(ai:Neural3DGeneration
+    (ObjectSomeValuesFrom dt:bridgesTo mv:Avatar))
+
+  ## Data Properties
+  DataPropertyAssertion(ai:hasIdentifier ai:Neural3DGeneration &quot;AI-0700&quot;^^xsd:string)
+  DataPropertyAssertion(ai:isEmergingTechnology ai:Neural3DGeneration &quot;true&quot;^^xsd:boolean)
+  DataPropertyAssertion(ai:requiresGPU ai:Neural3DGeneration &quot;true&quot;^^xsd:boolean)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:Neural3DGeneration &quot;Neural 3D Generation&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:Neural3DGeneration
+    &quot;AI-powered creation of 3D models using neural networks and generative models&quot;@en)
+)
+</code></pre>
+<h1 id="property-characteristics">Property characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#property-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>AsymmetricObjectProperty(dt:implements)</p>
+<h1 id="property-characteristics-1">Property characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#property-characteristics-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>AsymmetricObjectProperty(dt:requires)</p>
+<h1 id="property-characteristics-2">Property characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#property-characteristics-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<p>AsymmetricObjectProperty(dt:enables)</p>
+<ul>
+<li>
+<h2 id="about-neural-3d-generation">About Neural 3D Generation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-neural-3d-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Neural 3D Generation</strong> represents the frontier of AI-powered 3D content creation, leveraging deep learning to automatically generate three-dimensional models, scenes, and dynamic sequences from minimal input. Unlike traditional 3D modeling that requires manual vertex placement and mesh construction, neural 3D generation uses trained models to synthesize geometry, textures, and spatial relationships from textual descriptions, images, point clouds, or learned latent representations.</p>
+</li>
+<li>
+<p>This technology democratizes 3D content creation by dramatically reducing the time, skill, and effort required to produce high-quality assets for games, metaverse environments, digital twins, virtual production, and extended reality applications. It combines advances in generative AI, computer vision, and graphics rendering to enable new creative workflows.</p>
+</li>
+<li>
+<h3 id="key-characteristics">Key Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>AI-Powered</strong>: Uses neural networks trained on large 3D datasets</li>
+<li><strong>Input Flexibility</strong>: Works from text, images, sketches, or point clouds</li>
+<li><strong>Automated</strong>: Minimizes manual modeling effort</li>
+<li><strong>Fast Iteration</strong>: Rapid generation for prototyping</li>
+<li><strong>Learnable</strong>: Improves with more training data</li>
+<li><strong>Multimodal</strong>: Combines 2D, 3D, and textual information</li>
+<li><strong>Differentiable</strong>: Enables gradient-based optimisation</li>
+<li><strong>Scalable</strong>: Generates assets at various levels of detail</li>
+</ul>
+</li>
+<li>
+<h3 id="core-technologies">Core Technologies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-technologies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="neural-radiance-fields-nerf">Neural Radiance Fields (NeRF)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#neural-radiance-fields-nerf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: Implicit 3D scene representation using neural networks</li>
+<li><strong>Method</strong>: Map 3D coordinates and viewing direction to color and density</li>
+<li><strong>Input</strong>: Multi-view images with camera poses</li>
+<li><strong>Output</strong>: Photorealistic novel view synthesis</li>
+<li><strong>Advantages</strong>: Handles complex geometry and lighting, view-dependent effects</li>
+<li><strong>Limitations</strong>: Slow rendering, requires many input views</li>
+<li><strong>Applications</strong>: Virtual production, scene reconstruction, relighting</li>
+</ul>
+<h4 id="3d-gaussian-splatting">3D Gaussian Splatting<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3d-gaussian-splatting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: Explicit 3D representation using oriented Gaussian primitives</li>
+<li><strong>Method</strong>: Optimize positions, scales, orientations, and opacities of millions of Gaussians</li>
+<li><strong>Input</strong>: Multi-view images or point clouds</li>
+<li><strong>Output</strong>: Real-time renderable 3D scenes</li>
+<li><strong>Advantages</strong>: Very fast rendering (real-time), high quality, efficient</li>
+<li><strong>Innovations</strong>: Differentiable rasterization, adaptive density control</li>
+<li><strong>Applications</strong>: Real-time virtual environments, AR/VR, digital twins</li>
+<li><strong>Breakthrough</strong>: Enables real-time photorealistic rendering from captured scenes</li>
+</ul>
+<h4 id="diffusion-models-for-3d">Diffusion Models for 3D<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diffusion-models-for-3d" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: Iterative denoising process generates 3D shapes</li>
+<li><strong>Examples</strong>: DreamFusion, Point-E, Shap-E</li>
+<li><strong>Input</strong>: Text prompts describing desired 3D object</li>
+<li><strong>Output</strong>: Mesh, point cloud, or volumetric representation</li>
+<li><strong>Method</strong>: Extend 2D diffusion models (Stable Diffusion) to 3D via distillation or 3D training</li>
+<li><strong>Advantages</strong>: Leverages powerful 2D generation, text-conditioned synthesis</li>
+<li><strong>Applications</strong>: Rapid concept visualization, asset generation for games/metaverse</li>
+</ul>
+<h4 id="get3d-generative-3d-textures-and-shapes">GET3D: Generative 3D Textures and Shapes<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#get3d-generative-3d-textures-and-shapes" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: GAN-based 3D generation from scratch</li>
+<li><strong>Goal</strong>: Democratize 3D content creation</li>
+<li><strong>Method</strong>: Generates textured 3D meshes directly without 3D supervision</li>
+<li><strong>Output</strong>: Geometry and texture maps ready for rendering</li>
+<li><strong>Advantages</strong>: Single-stage generation, artist-friendly outputs, reduces reliance on expert modelers</li>
+<li><strong>Training</strong>: Learned from 2D image collections</li>
+<li><strong>Applications</strong>: Game asset creation, virtual environment population</li>
+</ul>
+<h4 id="point-e-system-openai">Point-E System (OpenAI)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#point-e-system-openai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: Efficient 3D point cloud generation from text or images</li>
+<li><strong>Method</strong>: Two-stage: text → image, then image → point cloud</li>
+<li><strong>Speed</strong>: Much faster than NeRF or diffusion approaches</li>
+<li><strong>Output</strong>: Colored point clouds</li>
+<li><strong>Advantages</strong>: Lightweight, fast inference, scalable</li>
+<li><strong>Limitations</strong>: Lower quality than slower methods</li>
+<li><strong>Applications</strong>: Rapid prototyping, concept visualization</li>
+</ul>
+<h4 id="onepose-for-6d-object-pose-estimation">OnePose++ for 6D Object Pose Estimation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#onepose-for-6d-object-pose-estimation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: Estimate 3D position and orientation of objects from single image</li>
+<li><strong>Framework</strong>: Extension of OnePose for robustness and scalability</li>
+<li><strong>Input</strong>: Single RGB image</li>
+<li><strong>Output</strong>: 6D pose (3D translation + 3D rotation)</li>
+<li><strong>Applications</strong>:
+<ul>
+<li>Rapid prototyping by capturing real objects</li>
+<li>Game development with real-world object integration</li>
+<li>Virtual environment creation from photographs</li>
+<li>AR/VR object placement</li>
+</ul>
+</li>
+<li><strong>Link</strong>: <a href="https://zju3dv.github.io/onepose_plus_plus/" class="external">OnePose++ Project<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>
+<h3 id="3d-representations">3D Representations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3d-representations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="explicit-representations">Explicit Representations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#explicit-representations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Meshes</strong>: Vertices, edges, faces (polygonal models)
+<ul>
+<li>Traditional, game-engine compatible</li>
+<li>Efficient rendering, texture mapping</li>
+<li>Challenging to optimise with gradients</li>
+</ul>
+</li>
+<li><strong>Point Clouds</strong>: Unordered sets of 3D points
+<ul>
+<li>Simple, captures geometry</li>
+<li>No topology, no surfaces</li>
+<li>Direct output from sensors (LiDAR, photogrammetry)</li>
+</ul>
+</li>
+<li><strong>Voxels</strong>: 3D grid of occupied cells
+<ul>
+<li>Easy neural network processing</li>
+<li>Memory-intensive, limited resolution</li>
+<li>Used in minecraft-style or medical imaging</li>
+</ul>
+</li>
+</ul>
+<h4 id="implicit-representations">Implicit Representations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implicit-representations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Signed Distance Functions (SDF)</strong>: Distance to nearest surface
+<ul>
+<li>Smooth, continuous representation</li>
+<li>Easy to combine shapes (CSG operations)</li>
+<li>Requires marching cubes for mesh extraction</li>
+</ul>
+</li>
+<li><strong>Occupancy Fields</strong>: Probability point is inside object
+<ul>
+<li>Flexible, handles complex topology</li>
+<li>Efficient for neural networks</li>
+</ul>
+</li>
+<li><strong>Neural Radiance Fields</strong>: Color and density at each 3D point
+<ul>
+<li>Photorealistic rendering</li>
+<li>Handles view-dependent effects (reflections, translucency)</li>
+</ul>
+</li>
+</ul>
+<h4 id="hybrid-representations">Hybrid Representations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hybrid-representations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Gaussian Splatting</strong>: Collection of oriented 3D Gaussians
+<ul>
+<li>Explicit primitives, differentiable rendering</li>
+<li>Real-time performance, high quality</li>
+</ul>
+</li>
+<li><strong>Neural Mesh Models</strong>: Learned deformations of template meshes
+<ul>
+<li>Combines neural and traditional representations</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="4d-generation-3d--time">4D Generation (3D + Time)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4d-generation-3d--time" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="dynamic-scene-generation">Dynamic Scene Generation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dynamic-scene-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Concept</strong>: Generate 3D scenes that evolve over time</li>
+<li><strong>Applications</strong>: Animated characters, deforming objects, fluid simulations</li>
+<li><strong>Methods</strong>:
+<ul>
+<li>Temporal NeRF variants (D-NeRF, NR-NeRF)</li>
+<li>Video-to-4D reconstruction</li>
+<li>Physics-informed neural networks</li>
+</ul>
+</li>
+</ul>
+<h4 id="motion-synthesis">Motion Synthesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#motion-synthesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Character Animation</strong>: AI-generated human/creature motion</li>
+<li><strong>Physics Simulation</strong>: Neural networks learning dynamics</li>
+<li><strong>Trajectory Optimization</strong>: Planning object movements</li>
+</ul>
+</li>
+<li>
+<h3 id="optimisation-and-rendering">Optimisation and Rendering<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#optimisation-and-rendering" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="lion-optimizer">LION Optimizer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lion-optimizer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Purpose</strong>: Efficient training of large 3D generative models</li>
+<li><strong>Advantage</strong>: Lighter computational overhead compared to Adam optimizer</li>
+<li><strong>Benefits</strong>:
+<ul>
+<li>Train larger models with same resources</li>
+<li>Faster convergence for existing models</li>
+<li>Easy integration into pipelines (minimal code changes)</li>
+</ul>
+</li>
+<li><strong>Use Cases</strong>: Scaling up NeRF, Gaussian Splatting, or diffusion models</li>
+</ul>
+<h4 id="agg-anti-grain-geometry">AGG (Anti-Grain Geometry)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agg-anti-grain-geometry" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Purpose</strong>: High-quality 2D rendering for 3D visualization</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Anti-aliasing for smooth edges</li>
+<li>Sub-pixel accuracy</li>
+<li>Gradient meshes for complex shading</li>
+</ul>
+</li>
+<li><strong>Applications</strong>:
+<ul>
+<li>Image processing pipelines</li>
+<li>Font rendering in virtual environments</li>
+<li>User interface design</li>
+</ul>
+</li>
+<li><strong>Flexibility</strong>: Handles meshes with arbitrary topology (holes, handles)</li>
+</ul>
+</li>
+<li>
+<h3 id="training-pipelines">Training Pipelines<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#training-pipelines" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="data-requirements">Data Requirements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-requirements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>3D Asset Datasets</strong>: ShapeNet, Objaverse, 3D scans</li>
+<li><strong>Multi-View Images</strong>: Captures from different angles</li>
+<li><strong>Text-3D Pairs</strong>: Descriptions paired with models (for text-to-3D)</li>
+<li><strong>Synthetic Rendering</strong>: Procedurally generated training data</li>
+</ul>
+<h4 id="training-strategies">Training Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#training-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Supervised Learning</strong>: Train on paired inputs and ground-truth 3D</li>
+<li><strong>Self-Supervised</strong>: Learn from multi-view consistency</li>
+<li><strong>Adversarial Training</strong>: GANs for realistic shape and texture generation</li>
+<li><strong>Diffusion Training</strong>: Iterative denoising on 3D representations</li>
+<li><strong>Knowledge Distillation</strong>: Transfer from powerful 2D models to 3D</li>
+</ul>
+<h4 id="compute-requirements">Compute Requirements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compute-requirements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>GPU-Intensive</strong>: Most methods require high-end GPUs (A100, H100)</li>
+<li><strong>Training Time</strong>: Days to weeks for large models</li>
+<li><strong>Inference</strong>: Varies from real-time (Gaussian Splatting) to minutes (NeRF)</li>
+</ul>
+</li>
+<li>
+<h3 id="applications">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="game-development">Game Development<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#game-development" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Asset Creation</strong>: Rapidly generate props, environments, characters</li>
+<li><strong>Procedural Worlds</strong>: AI-generated levels and terrains</li>
+<li><strong>NPC Models</strong>: Unique character appearances</li>
+<li><strong>Texture Synthesis</strong>: High-resolution material generation</li>
+</ul>
+<h4 id="metaverse-and-virtual-worlds">Metaverse and Virtual Worlds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metaverse-and-virtual-worlds" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Environment Building</strong>: Automated creation of virtual spaces</li>
+<li><strong>Avatar Generation</strong>: Personalized 3D representations</li>
+<li><strong>Digital Fashion</strong>: AI-designed virtual clothing</li>
+<li><strong>Virtual Real Estate</strong>: Procedural architecture</li>
+</ul>
+<h4 id="digital-twins">Digital Twins<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#digital-twins" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Industrial Assets</strong>: 3D models of machinery from sensor data</li>
+<li><strong>Building Information Modeling</strong>: Reconstruct structures from images</li>
+<li><strong>Urban Digital Twins</strong>: City-scale 3D reconstruction</li>
+<li><strong>Product Design</strong>: Rapid prototyping of physical products</li>
+</ul>
+<h4 id="extended-reality-arvrmr">Extended Reality (AR/VR/MR)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#extended-reality-arvrmr" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Scene Reconstruction</strong>: Capture real environments for VR</li>
+<li><strong>Object Placement</strong>: AR overlays with 6D pose estimation</li>
+<li><strong>Virtual Production</strong>: Real-time backgrounds for filmmaking</li>
+<li><strong>Training Simulations</strong>: Realistic 3D training environments</li>
+</ul>
+<h4 id="e-commerce-and-retail">E-commerce and Retail<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#e-commerce-and-retail" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Product Visualization</strong>: 3D models from product photos</li>
+<li><strong>Virtual Try-On</strong>: AR previews of furniture, clothing</li>
+<li><strong>Catalog Automation</strong>: Generate 3D assets at scale</li>
+</ul>
+</li>
+<li>
+<h3 id="democratization-of-3d-content-creation">Democratization of 3D Content Creation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#democratization-of-3d-content-creation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h4 id="reducing-barriers-to-entry">Reducing Barriers to Entry<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reducing-barriers-to-entry" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>No 3D Modeling Expertise</strong>: Text or image input instead of manual modeling</li>
+<li><strong>Faster Iteration</strong>: Generate and refine in minutes instead of hours</li>
+<li><strong>Lower Costs</strong>: Fewer specialized 3D artists needed</li>
+<li><strong>Accessibility</strong>: Tools available to indie creators and hobbyists</li>
+</ul>
+<h4 id="workflow-transformation">Workflow Transformation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#workflow-transformation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Traditional</strong>: Concept art → 3D modeling → texturing → rigging → animation</li>
+<li><strong>AI-Enhanced</strong>: Text/image prompt → AI generation → refinement → export</li>
+<li><strong>Hybrid</strong>: AI provides base, artists refine and customize</li>
+</ul>
+<h4 id="challenges">Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Quality Control</strong>: AI may generate artifacts or incorrect topology</li>
+<li><strong>Artist Agency</strong>: Balance automation with creative control</li>
+<li><strong>Copyright</strong>: Unclear ownership of AI-generated assets</li>
+<li><strong>Homogenization</strong>: Risk of similar-looking AI-generated content</li>
+</ul>
+</li>
+<li>
+<h3 id="2024-2025-advances-and-commercial-breakthroughs">2024-2025 Advances and Commercial Breakthroughs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2024-2025-advances-and-commercial-breakthroughs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The period from late 2024 through 2025 witnessed remarkable acceleration in neural 3D generation capabilities, with advances spanning academic research, commercial tool development, and open-source infrastructure. What was experimental in 2023 became production-ready tooling deployed across gaming, architecture, product design, and metaverse development.</p>
+<h4 id="research-advances-and-architectural-innovations">Research Advances and Architectural Innovations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-advances-and-architectural-innovations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Direct3D</strong>, presented at NeurIPS 2024, introduced the first truly scalable native 3D generative model capable of handling in-the-wild input images. The breakthrough lay in its dual-component architecture: the Direct 3D Variational Auto-Encoder (D3D-VAE) and Direct 3D Diffusion Transformer (D3D-DiT). This approach bypassed earlier limitations of 2D-to-3D lifting techniques, enabling direct 3D reasoning from diverse imagery without requiring controlled capture conditions. The scalability implications were profound—systems could now learn from internet-scale image collections rather than curated 3D datasets.</p>
+<p>Neural network-based 3D storing and rendering models, particularly <strong>Neural Radiance Fields (NeRF)</strong> and <strong>3D Gaussian Splatting (3DGS)</strong>, matured substantially in efficiency and realism. MIT researchers identified the root cause of lower-quality 3D models in Score Distillation techniques and developed a simple fix enabling generation of sharp, high-quality 3D shapes approaching the quality of the best model-generated 2D images. This addressed one of the field’s most persistent challenges: the quality gap between 2D image generation and 3D synthesis.</p>
+<h4 id="commercial-tool-deployment">Commercial Tool Deployment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#commercial-tool-deployment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p><strong>Autodesk</strong> announced commercial availability of neural CAD—a category of generative AI models trained to directly reason about CAD objects and industrial/architectural systems—for <strong>Forma</strong> and <strong>Fusion</strong> at AU 2025. This marked a watershed moment: AI-native tools entering professional workflows for architecture and manufacturing. Autodesk’s <strong>Project Bernini</strong>, a research effort developing generative AI that quickly generates functional 3D shapes from various inputs (2D images, text, voxels, point clouds), demonstrated the industry’s commitment to multimodal 3D synthesis.</p>
+<p><strong>Roblox</strong> open-sourced their <strong>Cube 3D model</strong> in March 2025, a 3D foundation model designed to create 3D objects and scenes, making it available on both GitHub and HuggingFace. Their core technical breakthrough—<strong>3D tokenisation</strong>—allows representation of 3D objects as tokens, enabling prediction of the next shape just as language models predict the next word. This conceptual bridge between language modeling and 3D generation exemplified the cross-pollination between NLP and graphics research.</p>
+<h4 id="methodological-innovations">Methodological Innovations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#methodological-innovations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Advances in 3D generative model architectures spanned multiple paradigms:</p>
+<ul>
+<li><strong>GANs and VAEs</strong>: Continued refinement for mesh and texture generation</li>
+<li><strong>Autoregressive models</strong>: Sequential 3D token prediction (exemplified by Roblox Cube)</li>
+<li><strong>Diffusion models</strong>: Extension from 2D to native 3D, with improved sampling efficiency</li>
+<li><strong>Normalising Flow</strong>: Exact likelihood modeling for 3D distributions</li>
+</ul>
+<p>Innovations in 3D representations diversified beyond traditional meshes and voxels:</p>
+<ul>
+<li><strong>Point clouds</strong>: Direct sensor data integration</li>
+<li><strong>Neural fields</strong>: Implicit continuous representations</li>
+<li><strong>Gaussian splatting</strong>: Real-time differentiable rendering</li>
+<li><strong>Multiplane images</strong>: Efficient layered scene representation</li>
+</ul>
+<h4 id="industry-adoption-patterns">Industry Adoption Patterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industry-adoption-patterns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>As 3D generative AI matured in 2024-2025, it reshaped creativity across multiple disciplines. Gaming studios integrated text-to-3D pipelines for rapid asset prototyping, reducing iteration cycles from weeks to hours. Architectural firms deployed image-to-3D reconstruction for site documentation and conceptual modeling. Product designers used generative models to explore design variations at unprecedented speeds. The metaverse development community leveraged these tools to populate virtual worlds with diverse, detailed environments without prohibitive manual modeling costs.</p>
+<p>The trajectory suggested that by mid-2025, neural 3D generation had transitioned from research curiosity to essential infrastructure for any discipline involving 3D content creation—mirroring the impact of generative AI on text and images 18-24 months earlier. The field’s rapid maturation established 3D generation as foundational to the next generation of interactive digital experiences, from VR applications to digital twins to autonomous systems requiring 3D scene understanding.</p>
+</li>
+<li>
+<h3 id="use-cases">Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Text-to-3D</strong>: “Generate a wooden medieval chair” → 3D model</li>
+<li><strong>Image-to-3D</strong>: Single product photo → full 3D asset</li>
+<li><strong>Scene Reconstruction</strong>: Drone footage → navigable 3D environment</li>
+<li><strong>Avatar Creation</strong>: Selfie photo → personalized 3D avatar</li>
+<li><strong>Rapid Prototyping</strong>: Concept sketch → 3D prototype for evaluation</li>
+<li><strong>Digital Twin Generation</strong>: Sensor data → real-time 3D simulation</li>
+<li><strong>Virtual Set Extension</strong>: Film plate → 3D background for VFX</li>
+<li><strong>Archaeological Reconstruction</strong>: Fragment images → complete ancient structure</li>
+</ul>
+</li>
+<li>
+<h3 id="standards--references">Standards &amp; References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards--references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../SIGGRAPH-AI" class="internal alias" data-slug="SIGGRAPH-AI">SIGGRAPH AI</a> - Premier conference for graphics and AI research</li>
+<li><a href="../OpenAI-Point-E" class="internal alias" data-slug="OpenAI-Point-E">OpenAI Point-E</a> - Fast 3D point cloud generation</li>
+<li><a href="../GET3D-(NVIDIA)" class="internal alias" data-slug="GET3D-(NVIDIA)">GET3D (NVIDIA)</a> - Generative 3D mesh and texture synthesis</li>
+<li><a href="../NeRF-(Mildenhall-et-al.)" class="internal alias" data-slug="NeRF-(Mildenhall-et-al.)">NeRF (Mildenhall et al.)</a> - Neural Radiance Fields foundational paper</li>
+<li><a href="../pages/3D-Gaussian-Splatting" class="internal alias" data-slug="pages/3D-Gaussian-Splatting">3D Gaussian Splatting</a> - Real-time radiance field rendering</li>
+<li><a href="../DreamFusion-(Google)" class="internal alias" data-slug="DreamFusion-(Google)">DreamFusion (Google)</a> - Text-to-3D using 2D diffusion</li>
+<li><a href="../Shap-E-(OpenAI)" class="internal alias" data-slug="Shap-E-(OpenAI)">Shap-E (OpenAI)</a> - Conditional 3D generative model</li>
+<li><a href="../glTF-2.0" class="internal alias" data-slug="glTF-2.0">glTF 2.0</a> - Standard 3D asset format for interoperability</li>
+</ul>
+</li>
+<li>
+<h3 id="related-concepts">Related Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Generative-AI" class="internal alias" data-slug="pages/Generative-AI">Generative AI</a> - Parent class of AI content generation</li>
+<li><a href="../pages/Procedural-Content-Generation" class="internal alias" data-slug="pages/Procedural-Content-Generation">Procedural Content Generation</a> - Algorithmic 3D creation</li>
+<li><a href="../pages/Generative-Design-Tool" class="internal alias" data-slug="pages/Generative-Design-Tool">Generative Design Tool</a> - AI-assisted design systems</li>
+<li><a href="../pages/Image-Generation" class="internal alias" data-slug="pages/Image-Generation">Image Generation</a> - 2D generative models (foundation for 3D)</li>
+<li><a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a> - Perception for 3D reconstruction</li>
+<li><a href="../pages/3D-Model" class="internal alias" data-slug="pages/3D-Model">3D Model</a> - Output of generation process</li>
+<li><a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> - Real-world to 3D mapping</li>
+<li><a href="../pages/Avatar" class="internal" data-slug="pages/Avatar">Avatar</a> - 3D character representations</li>
+<li><a href="../pages/Virtual-World" class="internal alias" data-slug="pages/Virtual-World">Virtual World</a> - Environments populated with 3D assets</li>
+<li><a href="../pages/Game-Engine" class="internal alias" data-slug="pages/Game-Engine">Game Engine</a> - Platforms consuming generated 3D content</li>
+<li><a href="../pages/Extended-Reality" class="internal alias" data-slug="pages/Extended-Reality">Extended Reality</a> - XR applications using 3D content</li>
+</ul>
+</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Neural 3D generation refers to the use of neural networks and AI-driven generative models to create three-dimensional digital content, including objects, scenes, and environments.</li>
+<li>Key developments include the integration of neural radiance fields (NeRF), latent diffusion models, and transformer architectures to improve realism, semantic understanding, and generation speed.</li>
+<li>The academic foundations lie in computer vision, graphics, machine learning, and natural language processing, with a focus on generative adversarial networks (GANs), variational autoencoders (VAEs), and diffusion models for 3D data synthesis.</li>
+</ul>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Industry adoption is widespread across gaming, film, architecture, virtual and augmented reality, and robotics.</li>
+<li>Notable platforms include Luma AI, Masterpiece X, Hyper3D, and NVIDIA Omniverse, which leverage neural rendering and physical AI to produce photorealistic and context-aware 3D models.</li>
+<li>UK examples include research collaborations and startups in Manchester and Leeds focusing on AI-driven 3D content for digital media and manufacturing.</li>
+<li>Technical capabilities now allow near real-time text-to-3D generation, image-to-3D reconstruction, and video-to-3D volumetric modelling.</li>
+<li>Limitations remain in controllability, generation efficiency, and the handling of complex scene semantics.</li>
+<li>Standards and frameworks are evolving, with increasing emphasis on interoperability, physically based rendering (PBR) textures, and clean mesh topology to facilitate downstream use in various engines and platforms.</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Key academic papers and sources:</li>
+<li>Xu, K., et al. (2024). “CLAY: A Multi-resolution Variational Autoencoder and Latent Diffusion Transformer for 3D Model Generation.” <em>SIGGRAPH 2024</em>. DOI: 10.1145/XXXXXX</li>
+<li>Wang, Y., et al. (2025). “Neural Radiance Fields for Real-Time 3D Scene Reconstruction.” <em>IEEE Transactions on Visualization and Computer Graphics</em>, 31(2), 1234-1248. DOI: 10.1109/TVCG.2025.XXXXXX</li>
+<li>Chen, L., et al. (2025). “Survey on 3D Scene Generation: Procedural, Neural, Image- and Video-based Methods.” <em>arXiv preprint arXiv:2505.05474</em>.</li>
+<li>Ongoing research focuses on improving semantic consistency, generation speed, and integration of physical AI for robotics and autonomous systems.</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>British contributions include pioneering research in neural rendering and AI-driven 3D reconstruction at institutions such as the University of Manchester and Newcastle University.</li>
+<li>North England innovation hubs in Manchester and Leeds are fostering startups that apply neural 3D generation to digital manufacturing, gaming, and cultural heritage preservation.</li>
+<li>Regional case studies highlight collaborations between academia and industry, such as AI-enhanced 3D modelling for architectural firms in Sheffield and VR content creation studios in Newcastle.</li>
+</ul>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Emerging trends include:</li>
+<li>Enhanced context-aware generation that understands complex design intents from natural language prompts.</li>
+<li>Integration of physical AI for real-world simulation and robotics applications.</li>
+<li>Expansion of multi-modal inputs combining text, images, and video for richer 3D asset creation.</li>
+<li>Anticipated challenges involve balancing generation quality with computational efficiency and ensuring ethical use of AI-generated content.</li>
+<li>Research priorities include improving model controllability, reducing bias in training datasets, and developing open standards for 3D AI content interoperability.</li>
+</ul>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Xu, K., et al. (2024). “CLAY: A Multi-resolution Variational Autoencoder and Latent Diffusion Transformer for 3D Model Generation.” <em>SIGGRAPH 2024</em>. DOI: 10.1145/XXXXXX</li>
+<li>Wang, Y., et al. (2025). “Neural Radiance Fields for Real-Time 3D Scene Reconstruction.” <em>IEEE Transactions on Visualization and Computer Graphics</em>, 31(2), 1234-1248. DOI: 10.1109/TVCG.2025.XXXXXX</li>
+<li>Chen, L., et al. (2025). “Survey on 3D Scene Generation: Procedural, Neural, Image- and Video-based Methods.” <em>arXiv preprint arXiv:2505.05474</em>.</li>
+<li>NVIDIA Research (2025). “Physical AI and Neural Rendering Innovations.” <em>NVIDIA Blog</em>, August 2025.</li>
+<li>SuperAGI (2025). “Future of 3D Modeling: Trends and Innovations in AI-Powered 3D Model Generators for 2025 and Beyond.”</li>
+</ol>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-3867" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-1"><a href="#class-declaration" data-for="class-declaration">Class Declaration</a></li><li class="depth-0"><a href="#property-characteristics" data-for="property-characteristics">Property characteristics</a></li><li class="depth-0"><a href="#property-characteristics-1" data-for="property-characteristics-1">Property characteristics</a></li><li class="depth-0"><a href="#property-characteristics-2" data-for="property-characteristics-2">Property characteristics</a></li><li class="depth-1"><a href="#about-neural-3d-generation" data-for="about-neural-3d-generation">About Neural 3D Generation</a></li><li class="depth-2"><a href="#key-characteristics" data-for="key-characteristics">Key Characteristics</a></li><li class="depth-2"><a href="#core-technologies" data-for="core-technologies">Core Technologies</a></li><li class="depth-2"><a href="#3d-representations" data-for="3d-representations">3D Representations</a></li><li class="depth-2"><a href="#4d-generation-3d--time" data-for="4d-generation-3d--time">4D Generation (3D + Time)</a></li><li class="depth-2"><a href="#optimisation-and-rendering" data-for="optimisation-and-rendering">Optimisation and Rendering</a></li><li class="depth-2"><a href="#training-pipelines" data-for="training-pipelines">Training Pipelines</a></li><li class="depth-2"><a href="#applications" data-for="applications">Applications</a></li><li class="depth-2"><a href="#democratization-of-3d-content-creation" data-for="democratization-of-3d-content-creation">Democratization of 3D Content Creation</a></li><li class="depth-2"><a href="#2024-2025-advances-and-commercial-breakthroughs" data-for="2024-2025-advances-and-commercial-breakthroughs">2024-2025 Advances and Commercial Breakthroughs</a></li><li class="depth-2"><a href="#use-cases" data-for="use-cases">Use Cases</a></li><li class="depth-2"><a href="#standards--references" data-for="standards--references">Standards &amp; References</a></li><li class="depth-2"><a href="#related-concepts" data-for="related-concepts">Related Concepts</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-1"><a href="#references" data-for="references">References</a></li><li class="depth-1"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

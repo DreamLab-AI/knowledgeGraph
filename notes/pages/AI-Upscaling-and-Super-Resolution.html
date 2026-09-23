@@ -1,0 +1,2486 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>AI Upscaling and Super-Resolution</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="AI Upscaling and Super-Resolution"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI Upscaling and Super-Resolution"/><meta name="twitter:description" content="AI Upscaling and Super-Resolution is a family of deep learning techniques that synthesise plausible high-frequency detail when enlarging images or video frames beyond their native resolution."/><meta property="og:description" content="AI Upscaling and Super-Resolution is a family of deep learning techniques that synthesise plausible high-frequency detail when enlarging images or video frames beyond their native resolution."/><meta property="og:image:alt" content="AI Upscaling and Super-Resolution is a family of deep learning techniques that synthesise plausible high-frequency detail when enlarging images or video frames beyond their native resolution."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/AI-Upscaling-and-Super-Resolution"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/AI-Upscaling-and-Super-Resolution"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="AI Upscaling and Super-Resolution is a family of deep learning techniques that synthesise plausible high-frequency detail when enlarging images or video frames beyond their native resolution."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/AI-Upscaling-and-Super-Resolution"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-444"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-444" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI Upscaling and Super Resolution</a></div></nav><h1 class="article-title">AI Upscaling and Super-Resolution</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.660Z">23 Sept 2026</time><span>26 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:ai-upscaling-and-super-resolution</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.8</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Application" class="internal">AI Application</a></li><li><a href="../pages/Generative-AI" class="internal">Generative AI</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Super-Resolution" class="internal">Super Resolution</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Real-Time-Rendering" class="internal">Real-Time Rendering</a></li><li><a href="../pages/Image-Processing-Software" class="internal">Image Processing Software</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-UPSCALE-001</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../akt" class="internal">AKT</a></li><li><a href="../alex-net" class="internal">AlexNet</a></li><li><a href="../arweave" class="internal">Arweave</a></li><li><a href="../clip" class="internal">CLIP</a></li><li><a href="../cnn" class="internal">CNN</a></li><li><a href="../code-former" class="internal">CodeFormer</a></li><li><a href="../computer-vision" class="internal">ComputerVisionDomain</a></li><li><a href="../control-net" class="internal">ControlNet</a></li><li><a href="../diffusion-model" class="internal">Diffusion Model</a></li><li><a href="../esrgan" class="internal">ESRGAN</a></li><li><a href="../gan" class="internal">GAN</a></li><li><a href="../generator" class="internal">Generator</a></li><li><a href="../gimp" class="internal">GIMP</a></li><li><a href="../google-photos" class="internal">Google Photos</a></li><li><a href="../i-os" class="internal">iOS</a></li><li><a href="../image-to-image" class="internal">Image-to-Image</a></li><li><a href="../ipfs" class="internal">IPFS</a></li><li><a href="../latent-diffusion-model" class="internal">Latent Diffusion Model</a></li><li><a href="../lightroom" class="internal">Lightroom</a></li><li><a href="../mpv" class="internal">MPV</a></li><li><a href="../ne-rf" class="internal">NeRF</a></li><li><a href="../nvidia-shield" class="internal">NVIDIA Shield</a></li><li><a href="../open-cv" class="internal">OpenCV</a></li><li><a href="../photoshop" class="internal">Photoshop</a></li><li><a href="../polygon" class="internal">Polygon</a></li><li><a href="../real-esrgan" class="internal">Real-ESRGAN</a></li><li><a href="../remini" class="internal">Remini</a></li><li><a href="../rndr" class="internal">RNDR</a></li><li><a href="../score-matching" class="internal">Score Matching</a></li><li><a href="../sd-1-5" class="internal">SD 1.5</a></li><li><a href="../sdxl" class="internal">SDXL</a></li><li><a href="../srgan" class="internal">SRGAN</a></li><li><a href="../supir" class="internal">SUPIR</a></li><li><a href="../tensor-core" class="internal">Tensor Core</a></li><li><a href="../tensor-rt" class="internal">TensorRT</a></li><li><a href="../topaz-gigapixel-ai" class="internal">Topaz Gigapixel AI</a></li><li><a href="../unet" class="internal">UNet</a></li><li><a href="../vae" class="internal">VAE</a></li><li><a href="../vgg" class="internal">VGG</a></li><li><a href="../vgg19" class="internal">VGG19</a></li><li><a href="../x-formers" class="internal">xFormers</a></li><li><a href="../you-tube" class="internal">YouTube</a></li><li><a href="../artificial-intelligence" class="internal">AIDomain</a></li><li><a href="../android" class="internal">Android</a></li><li><a href="../bitcoin" class="internal">Bitcoin</a></li><li><a href="../blockchain" class="internal">Blockchain</a></li><li><a href="../comfy-ui" class="internal">ComfyUI</a></li><li><a href="../convolutional-neural-network" class="internal">Convolutional Neural Network</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../ethereum" class="internal">Ethereum</a></li><li><a href="../generative-ai" class="internal">Generative AI</a></li><li><a href="../lightning-network" class="internal">Lightning Network</a></li><li><a href="../lo-ra" class="internal">LoRA</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../prompt-engineering" class="internal">Prompt Engineering</a></li><li><a href="../robot-operating-system" class="internal">Robot Operating System</a></li><li><a href="../signal-processing" class="internal">Signal Processing</a></li><li><a href="../smart-contract" class="internal">Smart Contract</a></li><li><a href="../stable-diffusion" class="internal">Stable Diffusion</a></li><li><a href="../transformer" class="internal">Transformer</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:66caed5f36e2538e7bf6c986b0178bef00b746f43b45ed11dfbf6e0381481b27</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../Display-and-Rendering" class="internal">Display and Rendering</a></li><li><a href="../pages/Neural-Rendering" class="internal">Neural Rendering</a></li><li><a href="../latent-diffusion" class="internal">Latent Diffusion</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Convolutional-Neural-Network" class="internal">Convolutional Neural Network</a></li><li><a href="../pages/Generative-Adversarial-Network" class="internal">Generative Adversarial Network</a></li><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>AI Upscaling and Super-Resolution is a family of deep learning techniques that synthesise plausible high-frequency detail when enlarging images or video frames beyond their native resolution. Methods range from convolutional neural network regressors (SRCNN, ESRGAN) and generative adversarial approaches to diffusion-based reconstruction, enabling applications from consumer photography enhancement to real-time game upscaling (DLSS, FSR) and medical imaging.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>CSSR <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> SOTA  <a href="https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468" class="external">workflow for upscale<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="../assets/ccsr_creative_upscale_1706648180350_0.json" class="internal alias" data-slug="assets/ccsr_creative_upscale_1706648180350_0.json">ccsr_creative_upscale.json</a></p>
+</li>
+<li>
+<p>Might have to install from github <a href="https://github.com/kijai/ComfyUI-CCSR" class="external">kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://github.com/kijai/ComfyUI-SUPIR" class="external">kijai/ComfyUI-SUPIR: SUPIR upscaling wrapper for ComfyUI (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Q9y-7Nwj2ic" class="external">SUPIR: Best Stable Diffusion Super Resolution Upscaler + full workflow. (youtube.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/comfyui/comments/1bh07ke/supir_v2_nodes_from_kijai_are_available_on/" class="external">(2) SUPIR v2 nodes from Kijai are available on manager, and they look brilliant! : comfyui (reddit.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78" class="external">https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://openmodeldb.info/" class="external">OpenModelDB<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://education.civitai.com/civitais-guide-to-image-upscaling/" class="external">Civitai’s Guide to Image Upscaling! - Civitai Education<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h2 id="overview-and-history">Overview and History<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview-and-history" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>AI Upscaling</strong> refers to the application of <a href="../pages/Machine-Learning-Discipline" class="internal alias" data-slug="pages/Machine-Learning-Discipline">Machine Learning Discipline</a> and <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> techniques to increase the resolution of images and videos while preserving or enhancing perceptual quality beyond traditional interpolation methods</p>
+</li>
+<li>
+<p>The field evolved from classical <a href="../pages/Signal-Processing" class="internal alias" data-slug="pages/Signal-Processing">Signal Processing</a> methods (bicubic interpolation, Lanczos) to <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a>-based approaches starting with SRCNN (2014), followed by <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a>-based methods like SRGAN (2017) and ESRGAN (2018), and most recently <a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">Diffusion Model</a>-based super-resolution (2023-2024)</p>
+</li>
+<li>
+<p><strong>Historical Milestones</strong>:</p>
+</li>
+<li>
+<p>2014: SRCNN - First <a href="../pages/Convolutional-Neural-Network" class="internal alias" data-slug="pages/Convolutional-Neural-Network">Convolutional Neural Network</a> for super-resolution (Dong et al.)</p>
+</li>
+<li>
+<p>2016: VDSR and DRCN - Very deep networks with residual learning</p>
+</li>
+<li>
+<p>2017: EDSR wins NTIRE challenge with enhanced deep residual networks</p>
+</li>
+<li>
+<p>2017: SRGAN - First <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a>-based perceptual super-resolution (Ledig et al.)</p>
+</li>
+<li>
+<p>2018: ESRGAN - Enhanced version with improved <a href="../Generator" class="internal" data-slug="Generator">Generator</a> architecture</p>
+</li>
+<li>
+<p>2020: Real-ESRGAN - Practical degradation model for real-world images</p>
+</li>
+<li>
+<p>2021: SwinIR - <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a>-based super-resolution architecture</p>
+</li>
+<li>
+<p>2023: StableSR - <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a>-based upscaling emerges</p>
+</li>
+<li>
+<p>2024: SUPIR and CCSR - Current SOTA using <a href="../Latent-Diffusion-Model" class="internal alias" data-slug="Latent-Diffusion-Model">Latent Diffusion Model</a></p>
+</li>
+<li>
+<p>The transition from <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a>-based to <a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">Diffusion Model</a>-based upscaling [Updated 2025] represents a paradigm shift, with diffusion models providing better texture generation and fewer artifacts at the cost of computational complexity</p>
+</li>
+<li>
+<h2 id="mathematical-foundations">Mathematical Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="super-resolution-problem-formulation">Super-Resolution Problem Formulation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#super-resolution-problem-formulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The classical super-resolution inverse problem models low-resolution (LR) image generation as:</p>
+</li>
+<li>
+<p><strong>Degradation Model</strong>: <code>y = (x ⊗ k) ↓s + n</code></p>
+<ul>
+<li><code>y</code> = low-resolution observed image</li>
+<li><code>x</code> = high-resolution ground truth</li>
+<li><code>k</code> = blur kernel (often Gaussian)</li>
+<li><code>⊗</code> = convolution operation</li>
+<li><code>↓s</code> = downsampling by factor <code>s</code> (e.g., 2x, 4x)</li>
+<li><code>n</code> = additive noise (typically Gaussian)</li>
+</ul>
+</li>
+<li>
+<p>The goal is to recover <code>x̂</code> (estimated high-resolution image) from <code>y</code> by learning inverse mapping <code>f: y → x̂</code> using <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a></p>
+</li>
+<li>
+<h3 id="image-quality-metrics">Image Quality Metrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#image-quality-metrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>PSNR (Peak Signal-to-Noise Ratio)</strong>:</p>
+</li>
+<li>
+<p><code>PSNR = 10 · log₁₀(MAX²/MSE)</code></p>
+</li>
+<li>
+<p><code>MSE = (1/N) Σ(x - x̂)²</code></p>
+</li>
+<li>
+<p>Measured in dB; higher is better</p>
+</li>
+<li>
+<p>Standard metric but correlates poorly with perceptual quality</p>
+</li>
+<li>
+<p>Typical SOTA: 28-32 dB for 4x upscaling on benchmark datasets</p>
+</li>
+<li>
+<p><strong>SSIM (Structural Similarity Index)</strong>:</p>
+</li>
+<li>
+<p><code>SSIM(x,y) = [l(x,y)]^α · [c(x,y)]^β · [s(x,y)]^γ</code></p>
+</li>
+<li>
+<p>Compares luminance, contrast, and structure</p>
+</li>
+<li>
+<p>Range [0,1]; higher is better</p>
+</li>
+<li>
+<p>Better perceptual correlation than PSNR</p>
+</li>
+<li>
+<p>SOTA models achieve 0.85-0.92 SSIM on DIV2K</p>
+</li>
+<li>
+<p><strong>LPIPS (Learned Perceptual Image Patch Similarity)</strong>:</p>
+</li>
+<li>
+<p>Uses pre-trained <a href="../VGG" class="internal" data-slug="VGG">VGG</a> or <a href="../AlexNet" class="internal" data-slug="AlexNet">AlexNet</a> features</p>
+</li>
+<li>
+<p><code>LPIPS = Σ ||φ_l(x) - φ_l(x̂)||²</code></p>
+</li>
+<li>
+<p>Lower is better (measures perceptual distance)</p>
+</li>
+<li>
+<p>Best metric for <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a> and diffusion-based methods</p>
+</li>
+<li>
+<p>Modern models: 0.05-0.15 LPIPS scores</p>
+</li>
+<li>
+<h3 id="loss-functions">Loss Functions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#loss-functions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Pixel Loss (L1/L2)</strong>:</p>
+</li>
+<li>
+<p>L1: <code>L_pixel = |x - x̂|</code></p>
+</li>
+<li>
+<p>L2: <code>L_pixel = ||x - x̂||²</code></p>
+</li>
+<li>
+<p>Optimizes for PSNR but produces smooth, blurry results</p>
+</li>
+<li>
+<p>Used in early methods (SRCNN, VDSR, EDSR)</p>
+</li>
+<li>
+<p><strong>Perceptual Loss</strong>:</p>
+</li>
+<li>
+<p><code>L_perceptual = Σ_l ||φ_l(x) - φ_l(x̂)||²</code></p>
+</li>
+<li>
+<p>Uses <a href="../VGG19" class="internal" data-slug="VGG19">VGG19</a> features from multiple layers</p>
+</li>
+<li>
+<p>Preserves high-level semantic content</p>
+</li>
+<li>
+<p>Critical for <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a>-based methods (SRGAN, ESRGAN)</p>
+</li>
+<li>
+<p><strong>Adversarial Loss</strong> (for <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a>-based upscaling):</p>
+</li>
+<li>
+<p><code>L_adv = E[log D(x)] + E[log(1 - D(G(y)))]</code></p>
+</li>
+<li>
+<p>Discriminator <code>D</code> distinguishes real vs. generated HR images</p>
+</li>
+<li>
+<p>Generator <code>G</code> produces HR images to fool discriminator</p>
+</li>
+<li>
+<p>Enables photorealistic texture synthesis</p>
+</li>
+<li>
+<p>RaGAN (Relativistic GAN) used in ESRGAN improves stability</p>
+</li>
+<li>
+<p><strong>Diffusion Loss</strong> (for <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a> upscaling):</p>
+</li>
+<li>
+<p><code>L_diffusion = E_t[||ε - ε_θ(z_t, t, c)||²]</code></p>
+</li>
+<li>
+<p>Predicts noise <code>ε</code> at timestep <code>t</code></p>
+</li>
+<li>
+<p>Conditioned on LR image <code>c</code> and latent <code>z_t</code></p>
+</li>
+<li>
+<p>SUPIR uses this with <a href="../pages/SDXL" class="internal" data-slug="pages/SDXL">SDXL</a> backbone</p>
+</li>
+<li>
+<h2 id="classical-super-resolution-methods">Classical Super-Resolution Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#classical-super-resolution-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="traditional-interpolation">Traditional Interpolation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#traditional-interpolation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Bicubic Interpolation</strong>:</p>
+</li>
+<li>
+<p>Polynomial interpolation using 4x4 pixel neighborhood</p>
+</li>
+<li>
+<p>Standard baseline for super-resolution benchmarks</p>
+</li>
+<li>
+<p>Fast (real-time) but produces blurry edges</p>
+</li>
+<li>
+<p>Available in all image editing software and <a href="../pages/OpenCV" class="internal" data-slug="pages/OpenCV">OpenCV</a></p>
+</li>
+<li>
+<p>PSNR: ~24-26 dB for 4x upscaling</p>
+</li>
+<li>
+<p><strong>Lanczos Resampling</strong>:</p>
+</li>
+<li>
+<p>Sinc-based kernel with windowing function</p>
+</li>
+<li>
+<p>Better edge preservation than bicubic</p>
+</li>
+<li>
+<p>Used in professional software (<a href="../Photoshop" class="internal" data-slug="Photoshop">Photoshop</a>, <a href="../GIMP" class="internal" data-slug="GIMP">GIMP</a>)</p>
+</li>
+<li>
+<p>Computational cost 2-3x bicubic</p>
+</li>
+<li>
+<p>Still limited by lack of semantic understanding</p>
+</li>
+<li>
+<h3 id="deep-learning-classical-methods">Deep Learning Classical Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deep-learning-classical-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>EDSR (Enhanced Deep Super-Resolution)</strong>:</p>
+</li>
+<li>
+<p>2017 NTIRE challenge winner</p>
+</li>
+<li>
+<p>Deep residual network (32+ ResBlocks)</p>
+</li>
+<li>
+<p>Removed unnecessary batch normalization</p>
+</li>
+<li>
+<p>Single-scale and multi-scale variants</p>
+</li>
+<li>
+<p>PSNR SOTA at release: 34.65 dB (Set5, 2x)</p>
+</li>
+<li>
+<p>Model size: 43M parameters</p>
+</li>
+<li>
+<p>Inference: ~200ms for 720p→1440p on RTX 3090</p>
+</li>
+<li>
+<p><strong>RCAN (Residual Channel Attention Network)</strong>:</p>
+</li>
+<li>
+<p>Introduces channel attention mechanism</p>
+</li>
+<li>
+<p>Residual-in-residual structure</p>
+</li>
+<li>
+<p>Long skip connections for gradient flow</p>
+</li>
+<li>
+<p>2018 NTIRE challenge winner</p>
+</li>
+<li>
+<p>PSNR: 34.74 dB (Set5, 2x)</p>
+</li>
+<li>
+<p>Parameters: 15.6M</p>
+</li>
+<li>
+<p>Used in <a href="../Android" class="internal" data-slug="Android">Android</a> and <a href="../iOS" class="internal" data-slug="iOS">iOS</a> photo enhancement</p>
+</li>
+<li>
+<h3 id="gan-based-methods">GAN-Based Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gan-based-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>ESRGAN (Enhanced Super-Resolution GAN)</strong>:</p>
+</li>
+<li>
+<p>Improved <a href="../SRGAN" class="internal" data-slug="SRGAN">SRGAN</a> with RRDB (Residual-in-Residual Dense Block)</p>
+</li>
+<li>
+<p>Removes batch normalization for better artifact reduction</p>
+</li>
+<li>
+<p>Relativistic discriminator for stable training</p>
+</li>
+<li>
+<p>Network interpolation between PSNR-oriented and GAN-oriented models</p>
+</li>
+<li>
+<p>Perceptual quality far exceeds pixel-based methods</p>
+</li>
+<li>
+<p>Reference implementation: <a href="https://github.com/xinntao/ESRGAN" class="external">xinntao/ESRGAN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Used as backbone for many modern upscalers</p>
+</li>
+<li>
+<p><strong>Real-ESRGAN</strong>:</p>
+</li>
+<li>
+<p>Extends ESRGAN for real-world degradation</p>
+</li>
+<li>
+<p>High-order degradation modeling:</p>
+<ul>
+<li>Multiple blur kernels</li>
+<li>Compression artifacts (JPEG, WebP)</li>
+<li>Camera sensor noise</li>
+<li>Downsampling with aliasing</li>
+</ul>
+</li>
+<li>
+<p>Trained on synthetic degradations matching real-world images</p>
+</li>
+<li>
+<p>Practical applications: <a href="../YouTube" class="internal" data-slug="YouTube">YouTube</a>, <a href="../Google-Photos" class="internal alias" data-slug="Google-Photos">Google Photos</a>, <a href="../Remini" class="internal" data-slug="Remini">Remini</a></p>
+</li>
+<li>
+<p><a href="https://github.com/xinntao/Real-ESRGAN" class="external">xinntao/Real-ESRGAN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - 24K+ GitHub stars</p>
+</li>
+<li>
+<p>Model variants: x2, x4, anime-optimized</p>
+</li>
+<li>
+<p>NCNN implementation for mobile devices</p>
+</li>
+<li>
+<p><strong>Real-ESRGAN Performance</strong>:</p>
+</li>
+<li>
+<p>Input: 512×512 → Output: 2048×2048 (4x)</p>
+</li>
+<li>
+<p>RTX 3090: ~150ms inference</p>
+</li>
+<li>
+<p>RTX 4090: ~90ms inference</p>
+</li>
+<li>
+<p>Apple M2 Max: ~280ms (CoreML)</p>
+</li>
+<li>
+<p>Mobile (Snapdragon 8 Gen 2): ~1.2s</p>
+</li>
+<li>
+<p>VRAM: 4-6GB for 4K upscaling</p>
+</li>
+<li>
+<h2 id="modern-ai-powered-super-resolution">Modern AI-Powered Super-Resolution<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modern-ai-powered-super-resolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="stable-diffusion-based-upscaling">Stable Diffusion-Based Upscaling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stable-diffusion-based-upscaling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>SD Upscale (Ultimate SD Upscale)</strong>:</p>
+</li>
+<li>
+<p>Uses <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a> <a href="../pages/Image-to-Image" class="internal" data-slug="pages/Image-to-Image">Image-to-Image</a> for texture generation</p>
+</li>
+<li>
+<p>Tiled processing for large images (4K, 8K)</p>
+</li>
+<li>
+<p>ControlNet Tile for structure preservation</p>
+</li>
+<li>
+<p>Workflow: LR → <a href="../pages/VAE" class="internal" data-slug="pages/VAE">VAE</a> encode → diffusion → decode → HR</p>
+</li>
+<li>
+<p>Denoise strength: 0.3-0.5 for upscaling (vs. 0.7+ for generation)</p>
+</li>
+<li>
+<p>Preserves original image structure while adding detail</p>
+</li>
+<li>
+<p><strong>Ultimate SD Upscale</strong> features:</p>
+</li>
+<li>
+<p>Seam blending across tiles (no visible grid artifacts)</p>
+</li>
+<li>
+<p>Configurable tile size (512-1024px depending on VRAM)</p>
+</li>
+<li>
+<p>Overlap padding (64-128px) for smooth transitions</p>
+</li>
+<li>
+<p>Multi-pass upscaling (2x → 2x = 4x total)</p>
+</li>
+<li>
+<p>Compatible with <a href="../pages/SDXL" class="internal" data-slug="pages/SDXL">SDXL</a>, <a href="../SD-1.5" class="internal alias" data-slug="SD-1.5">SD 1.5</a>, and custom checkpoints</p>
+</li>
+<li>
+<p><strong>ControlNet Tile</strong>:</p>
+</li>
+<li>
+<p>Specialized <a href="../pages/ControlNet" class="internal" data-slug="pages/ControlNet">ControlNet</a> model for upscaling</p>
+</li>
+<li>
+<p>Extracts low-frequency structure from input</p>
+</li>
+<li>
+<p>Guides diffusion to maintain composition</p>
+</li>
+<li>
+<p>Downsampling factor typically 1-4x</p>
+</li>
+<li>
+<p>Critical for preventing hallucination in upscaling</p>
+</li>
+<li>
+<p><a href="https://huggingface.co/lllyasviel/ControlNet-v1-1-nightly" class="external">lllyasviel/ControlNet-v1-1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h3 id="supir-scaling-up-image-restoration">SUPIR: Scaling-UP Image Restoration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#supir-scaling-up-image-restoration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>SUPIR</strong> (2024 SOTA) uses <a href="../pages/SDXL" class="internal" data-slug="pages/SDXL">SDXL</a> as foundation for super-resolution and restoration:</p>
+</li>
+<li>
+<p>Architecture: <a href="../Latent-Diffusion-Model" class="internal alias" data-slug="Latent-Diffusion-Model">Latent Diffusion Model</a> with <a href="../pages/SDXL" class="internal" data-slug="pages/SDXL">SDXL</a> 1.0 base</p>
+</li>
+<li>
+<p>Training: Two-stage process</p>
+<ul>
+<li>Stage 1: Restoration pre-training on degraded images</li>
+<li>Stage 2: Super-resolution fine-tuning with LoRA</li>
+</ul>
+</li>
+<li>
+<p>Negative prompt guidance for artifact suppression</p>
+</li>
+<li>
+<p>SDXL VAE for high-quality encoding/decoding</p>
+</li>
+<li>
+<p>Model variants: SUPIR-v0Q, SUPIR-v0F (quality vs. fidelity)</p>
+</li>
+<li>
+<p><strong>SUPIR Technical Details</strong>:</p>
+</li>
+<li>
+<p>Input resolution: Up to 2048×2048 in single pass</p>
+</li>
+<li>
+<p>Upscaling factors: 1x-8x (1x for restoration only)</p>
+</li>
+<li>
+<p>VRAM requirements:</p>
+<ul>
+<li>12GB: 1024×1024 output</li>
+<li>24GB: 2048×2048 output</li>
+<li>48GB: 4096×4096 output</li>
+</ul>
+</li>
+<li>
+<p>Inference time: 30-60s per image (RTX 4090, 50 steps)</p>
+</li>
+<li>
+<p>Sampler: DPM++ 2M Karras or DDIM</p>
+</li>
+<li>
+<p><strong>SUPIR Advantages</strong>:</p>
+</li>
+<li>
+<p>Superior texture generation compared to <a href="../pages/GAN" class="internal" data-slug="pages/GAN">GAN</a>-based methods</p>
+</li>
+<li>
+<p>Handles severe degradation (JPEG artifacts, blur, noise)</p>
+</li>
+<li>
+<p>Editable through prompts (add/remove details)</p>
+</li>
+<li>
+<p>Color correction and tone mapping</p>
+</li>
+<li>
+<p>Face enhancement with optional <a href="../pages/CodeFormer" class="internal" data-slug="pages/CodeFormer">CodeFormer</a> integration</p>
+</li>
+<li>
+<p><strong>SUPIR Workflow</strong> (typical):</p>
+</li>
+</ul>
+<pre><code>1. Load degraded image
+2. Encode with SDXL VAE
+3. Add noise for diffusion process
+4. Denoise with SUPIR model (20-50 steps)
+5. Optional: Face restoration pass
+6. Decode to pixel space
+7. Post-process: sharpening, color grading
+</code></pre>
+<ul>
+<li>
+<p><strong>SUPIR Resources</strong>:</p>
+</li>
+<li>
+<p>Paper: “Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild” (Yu et al., 2024)</p>
+</li>
+<li>
+<p>GitHub: <a href="https://github.com/Fanghua-Yu/SUPIR" class="external">Fanghua-Yu/SUPIR<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> implementation: <a href="https://github.com/kijai/ComfyUI-SUPIR" class="external">kijai/ComfyUI-SUPIR<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://www.youtube.com/watch?v=Q9y-7Nwj2ic" class="external">SUPIR: Best Stable Diffusion Super Resolution Upscaler + full workflow. (youtube.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://www.reddit.com/r/comfyui/comments/1bh07ke/supir_v2_nodes_from_kijai_are_available_on/" class="external">(2) SUPIR v2 nodes from Kijai are available on manager, and they look brilliant! : comfyui (reddit.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78" class="external">https://medium.com/@yushantripleseven/supir-image-restoration-cd4f409ccd34#3b78<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h3 id="ccsr-controlled-diffusion-super-resolution">CCSR: Controlled Diffusion Super-Resolution<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ccsr-controlled-diffusion-super-resolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>CCSR</strong> (Controlled and Conditioned Score-based Restoration):</p>
+</li>
+<li>
+<p>Alternative to SUPIR with different architectural approach</p>
+</li>
+<li>
+<p>Score-based diffusion model (similar to <a href="../pages/Score-Matching" class="internal alias" data-slug="pages/Score-Matching">Score Matching</a>)</p>
+</li>
+<li>
+<p>Explicit control over fidelity vs. quality trade-off</p>
+</li>
+<li>
+<p>Faster inference than SUPIR (15-30 steps sufficient)</p>
+</li>
+<li>
+<p>Better preservation of original colors</p>
+</li>
+<li>
+<p><strong>CCSR Architecture</strong>:</p>
+</li>
+<li>
+<p>Base model: Custom <a href="../UNet" class="internal" data-slug="UNet">UNet</a> with cross-attention</p>
+</li>
+<li>
+<p>Conditioning: Low-resolution image via concatenation and cross-attention</p>
+</li>
+<li>
+<p>Control mechanism: Adjustable guidance scale (1.0-7.5)</p>
+</li>
+<li>
+<p>Color correction: Optional auto-adjustment to match input</p>
+</li>
+<li>
+<p>Tile size: 512×512 typical, overlap 64px</p>
+</li>
+<li>
+<p><strong>CCSR Workflow</strong>:</p>
+</li>
+<li>
+<p>CSSR <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> SOTA <a href="https://discord.com/channels/1076117621407223829/1196177599244812468/1196177599244812468" class="external">workflow for upscale<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="../assets/ccsr_creative_upscale_1706648180350_0.json" class="internal alias" data-slug="assets/ccsr_creative_upscale_1706648180350_0.json">ccsr_creative_upscale.json</a></p>
+</li>
+<li>
+<p>Might have to install from github <a href="https://github.com/kijai/ComfyUI-CCSR" class="external">kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Settings: guidance_scale (2.0-4.0), steps (20-30), tile_size (512)</p>
+</li>
+<li>
+<p><strong>CCSR vs. SUPIR Comparison</strong>:</p>
+</li>
+<li>
+<p><strong>Speed</strong>: CCSR 2x faster (15s vs. 30s per image)</p>
+</li>
+<li>
+<p><strong>Texture</strong>: SUPIR more creative, CCSR more conservative</p>
+</li>
+<li>
+<p><strong>Color</strong>: CCSR better color preservation</p>
+</li>
+<li>
+<p><strong>Artifacts</strong>: Similar quality, CCSR fewer oversaturated areas</p>
+</li>
+<li>
+<p><strong>VRAM</strong>: CCSR slightly lower (10GB vs. 12GB for 1K output)</p>
+</li>
+<li>
+<p><strong>Use case</strong>: CCSR for photography, SUPIR for creative enhancement</p>
+</li>
+<li>
+<h3 id="commercial-ai-upscaling-solutions">Commercial AI Upscaling Solutions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#commercial-ai-upscaling-solutions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Magnific AI</strong> (2024):</p>
+</li>
+<li>
+<p>Cloud-based <a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">Diffusion Model</a> upscaling service</p>
+</li>
+<li>
+<p>Proprietary model based on <a href="../pages/SDXL" class="internal" data-slug="pages/SDXL">SDXL</a> architecture</p>
+</li>
+<li>
+<p>Web interface with prompt-guided upscaling</p>
+</li>
+<li>
+<p>Upscaling factors: 2x, 4x, 8x, 16x</p>
+</li>
+<li>
+<p>Creative controls: Structure (0-100), Creativity (0-100)</p>
+</li>
+<li>
+<p>Pricing: $39/month for 2000 credits</p>
+</li>
+<li>
+<p>Target: Professional photographers, digital artists</p>
+</li>
+<li>
+<p>Quality: Often considered best commercial option [Updated 2025]</p>
+</li>
+<li>
+<p><strong>Topaz Gigapixel AI</strong>:</p>
+</li>
+<li>
+<p>Desktop application (Windows, macOS)</p>
+</li>
+<li>
+<p>Proprietary <a href="../CNN" class="internal" data-slug="CNN">CNN</a> architecture trained on millions of images</p>
+</li>
+<li>
+<p>Batch processing support</p>
+</li>
+<li>
+<p>Upscaling: Up to 600% (6x)</p>
+</li>
+<li>
+<p>Face refinement with dedicated models</p>
+</li>
+<li>
+<p>Compression artifact removal</p>
+</li>
+<li>
+<p>Pricing: $99 one-time purchase</p>
+</li>
+<li>
+<p>Used by: Netflix, BBC, professional photographers</p>
+</li>
+<li>
+<p>Performance: GPU-accelerated, ~10s for 4K upscale</p>
+</li>
+<li>
+<p><strong>Topaz Photo AI</strong> (includes upscaling):</p>
+</li>
+<li>
+<p>Combines upscaling, denoising, and sharpening</p>
+</li>
+<li>
+<p>AI-powered autopilot mode</p>
+</li>
+<li>
+<p>RAW file support</p>
+</li>
+<li>
+<p>Integration with <a href="../Lightroom" class="internal" data-slug="Lightroom">Lightroom</a> and <a href="../Photoshop" class="internal" data-slug="Photoshop">Photoshop</a></p>
+</li>
+<li>
+<p>Pricing: $199 (includes Gigapixel features)</p>
+</li>
+<li>
+<h3 id="video-upscaling">Video Upscaling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#video-upscaling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Topaz Video AI</strong>:</p>
+</li>
+<li>
+<p>Temporal-aware super-resolution for video</p>
+</li>
+<li>
+<p>Frame interpolation + upscaling + stabilization</p>
+</li>
+<li>
+<p>Upscaling: SD (480p) → 4K, HD → 8K</p>
+</li>
+<li>
+<p>Models: Artemis (high quality), Proteus (fast)</p>
+</li>
+<li>
+<p>Hardware encoding: NVENC, VideoToolbox, QuickSync</p>
+</li>
+<li>
+<p>Performance:</p>
+<ul>
+<li>RTX 4090: ~15 FPS (1080p→4K)</li>
+<li>M2 Ultra: ~8 FPS</li>
+</ul>
+</li>
+<li>
+<p>Use cases: Film restoration, YouTube upscaling, archival footage</p>
+</li>
+<li>
+<p>Pricing: $299/year</p>
+</li>
+<li>
+<p><strong>RIFE (Real-Time Intermediate Flow Estimation)</strong>:</p>
+</li>
+<li>
+<p>Open-source frame interpolation for video</p>
+</li>
+<li>
+<p>Optical flow-based intermediate frame synthesis</p>
+</li>
+<li>
+<p>30fps → 60fps, 60fps → 120fps</p>
+</li>
+<li>
+<p>Combined with upscaling for smooth high-res video</p>
+</li>
+<li>
+<p>Real-time capable on modern GPUs</p>
+</li>
+<li>
+<p><a href="https://github.com/hzwer/RIFE" class="external">hzwer/RIFE<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - 4.5K stars</p>
+</li>
+<li>
+<p>Used in: SVP (SmoothVideo Project), <a href="../MPV" class="internal" data-slug="MPV">MPV</a> player</p>
+</li>
+<li>
+<p><strong>FILM (Frame Interpolation for Large Motion)</strong>:</p>
+</li>
+<li>
+<p>Google Research project</p>
+</li>
+<li>
+<p>Handles large inter-frame motion better than RIFE</p>
+</li>
+<li>
+<p>Scale-agnostic feature extraction</p>
+</li>
+<li>
+<p>Combined with super-resolution for video enhancement</p>
+</li>
+<li>
+<p><a href="https://github.com/google-research/frame-interpolation" class="external">google-research/frame-interpolation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Video Super-Resolution Challenges</strong>:</p>
+</li>
+<li>
+<p>Temporal consistency: Preventing flickering between frames</p>
+</li>
+<li>
+<p>Optical flow errors: Handling occlusions and disocclusions</p>
+</li>
+<li>
+<p>Computational cost: 4K@60fps = 144M pixels/second processing</p>
+</li>
+<li>
+<p>Memory: Storing multiple frames for temporal models</p>
+</li>
+<li>
+<p>Real-time constraints: Gaming (DLSS, FSR) vs. offline rendering</p>
+</li>
+<li>
+<h2 id="comfyui-workflows-and-integration">ComfyUI Workflows and Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comfyui-workflows-and-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="comfyui-for-ai-upscaling">ComfyUI for AI Upscaling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comfyui-for-ai-upscaling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> is a node-based workflow system for <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a> and related models, providing powerful upscaling capabilities through custom nodes and integrations</p>
+</li>
+<li>
+<p><strong>Core ComfyUI Upscaling Nodes</strong>:</p>
+</li>
+<li>
+<p><code>UltimateSDUpscale</code>: Tiled diffusion-based upscaling</p>
+</li>
+<li>
+<p><code>ImageScaleBy</code>: Classical interpolation (bicubic, Lanczos, nearest)</p>
+</li>
+<li>
+<p><code>VAEEncode/VAEDecode</code>: Latent space processing for <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a></p>
+</li>
+<li>
+<p><code>ControlNetApply</code>: Structure preservation during upscaling</p>
+</li>
+<li>
+<p><code>TilePreprocessor</code>: Prepares images for tiled processing</p>
+</li>
+<li>
+<h3 id="supir-comfyui-integration">SUPIR ComfyUI Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#supir-comfyui-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Installation</strong>:</p>
+</li>
+</ul>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">cd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> ComfyUI/custom_nodes</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">git</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> clone</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> https://github.com/kijai/ComfyUI-SUPIR</span></span>
+<span data-line><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">cd</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> ComfyUI-SUPIR</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">pip</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> install</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> -r</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> requirements.txt</span></span></code></pre></figure>
+<ul>
+<li>
+<p><strong>Required Models</strong>:</p>
+</li>
+<li>
+<p>SUPIR-v0Q.ckpt or SUPIR-v0F.ckpt (~6GB each)</p>
+</li>
+<li>
+<p><a href="../pages/SDXL" class="internal" data-slug="pages/SDXL">SDXL</a> VAE (334MB)</p>
+</li>
+<li>
+<p>Optional: <a href="../pages/CodeFormer" class="internal" data-slug="pages/CodeFormer">CodeFormer</a> for face enhancement (348MB)</p>
+</li>
+<li>
+<p>Download from <a href="https://huggingface.co/Kijai/SUPIR_pruned" class="external">Hugging Face<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>SUPIR Workflow Nodes</strong>:</p>
+</li>
+<li>
+<p><code>SUPIR_model_loader</code>: Loads SUPIR checkpoint and VAE</p>
+</li>
+<li>
+<p><code>SUPIR_encode</code>: Encodes image to latent space</p>
+</li>
+<li>
+<p><code>SUPIR_sample</code>: Diffusion sampling with steps/CFG control</p>
+</li>
+<li>
+<p><code>SUPIR_decode</code>: Decodes latent to high-resolution image</p>
+</li>
+<li>
+<p><code>SUPIR_Tiles</code>: Automatic tiling for large images</p>
+</li>
+<li>
+<p><strong>Typical SUPIR Workflow</strong>:</p>
+</li>
+</ul>
+<pre><code>LoadImage → SUPIR_encode → SUPIR_sample → SUPIR_decode → SaveImage
+                                  ↑
+                         SUPIR_model_loader
+                         (steps: 50, CFG: 7.5)
+</code></pre>
+<ul>
+<li>
+<p><strong>SUPIR Settings Guide</strong>:</p>
+</li>
+<li>
+<p><strong>Steps</strong>: 20-50 (higher = better quality, slower)</p>
+</li>
+<li>
+<p><strong>CFG Scale</strong>: 4.0-9.0 (7.5 recommended)</p>
+</li>
+<li>
+<p><strong>Denoise</strong>: 0.5-1.0 (lower preserves more original)</p>
+</li>
+<li>
+<p><strong>s_stage1</strong>: -1 (auto) or 0-200 (restoration strength)</p>
+</li>
+<li>
+<p><strong>Upscale factor</strong>: 2x recommended, 4x for extreme cases</p>
+</li>
+<li>
+<h3 id="ccsr-comfyui-integration">CCSR ComfyUI Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ccsr-comfyui-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Installation</strong>: <a href="https://github.com/kijai/ComfyUI-CCSR" class="external">kijai/ComfyUI-CCSR: ComfyUI wrapper node for CCSR (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>CCSR Nodes</strong>:</p>
+</li>
+<li>
+<p><code>CCSR_Model_Loader</code>: Loads CCSR diffusion model</p>
+</li>
+<li>
+<p><code>CCSR_Upscale</code>: Main upscaling node</p>
+</li>
+<li>
+<p><code>CCSR_Tile_Simple</code>: Tiled processing wrapper</p>
+</li>
+<li>
+<p><strong>CCSR Creative Upscale Workflow</strong>:</p>
+</li>
+<li>
+<p>Reference: <a href="../assets/ccsr_creative_upscale_1706648180350_0.json" class="internal alias" data-slug="assets/ccsr_creative_upscale_1706648180350_0.json">ccsr_creative_upscale.json</a></p>
+</li>
+<li>
+<p>Features: Color matching, tile processing, adjustable creativity</p>
+</li>
+<li>
+<p>Settings: guidance_scale (2.0-4.0), steps (20-30)</p>
+</li>
+<li>
+<h3 id="ultimate-sd-upscale-workflow">Ultimate SD Upscale Workflow<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ultimate-sd-upscale-workflow" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Multi-stage Upscaling Pipeline</strong>:</p>
+</li>
+</ul>
+<pre><code>1. LoadImage (512×512)
+2. UltimateSDUpscale (→ 1024×1024)
+   - Checkpoint: [[SDXL]] or [[SD 1.5]]
+   - ControlNet: Tile (preprocessor: none, weight 0.5)
+   - Tile size: 512, padding: 32
+   - Denoise: 0.35
+3. UltimateSDUpscale (→ 2048×2048) [second pass]
+   - Denoise: 0.25 (lower for second pass)
+4. Detailer (face enhancement)
+5. Sharpen/Color Grade
+6. SaveImage
+</code></pre>
+<ul>
+<li>
+<p><strong>ControlNet Tile Configuration</strong>:</p>
+</li>
+<li>
+<p>Preprocessor: <code>tile_resample</code> or <code>none</code></p>
+</li>
+<li>
+<p>Control weight: 0.3-0.7 (0.5 default)</p>
+</li>
+<li>
+<p>Start/End: 0.0, 1.0 (full process)</p>
+</li>
+<li>
+<p>Lower weight = more creativity, higher = more fidelity</p>
+</li>
+<li>
+<h3 id="advanced-comfyui-upscaling-techniques">Advanced ComfyUI Upscaling Techniques<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#advanced-comfyui-upscaling-techniques" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Tiled VRAM Management</strong>:</p>
+</li>
+<li>
+<p>For 8GB VRAM: Max tile size 512×512, overlap 64px</p>
+</li>
+<li>
+<p>For 12GB VRAM: Tile 768×768, overlap 96px</p>
+</li>
+<li>
+<p>For 24GB VRAM: Tile 1024×1024, overlap 128px</p>
+</li>
+<li>
+<p>Formula: <code>VRAM_needed ≈ tile_size² × 0.000015 + 6GB</code></p>
+</li>
+<li>
+<p><strong>Multi-model Ensemble</strong>:</p>
+</li>
+<li>
+<p>Pass 1: <a href="../ESRGAN" class="internal" data-slug="ESRGAN">ESRGAN</a> 4x for initial upscale (fast, sharp)</p>
+</li>
+<li>
+<p>Pass 2: <a href="../pages/Stable-Diffusion-Image-Model" class="internal alias" data-slug="pages/Stable-Diffusion-Image-Model">Stable Diffusion Image Model</a> with ControlNet Tile for texture</p>
+</li>
+<li>
+<p>Pass 3: Detail enhancement with <a href="../pages/CodeFormer" class="internal" data-slug="pages/CodeFormer">CodeFormer</a> (faces)</p>
+</li>
+<li>
+<p>Blending: 70% ESRGAN + 30% SD for balanced result</p>
+</li>
+<li>
+<p><strong>Iterative Upscaling</strong>:</p>
+</li>
+<li>
+<p>2x → 2x → 2x = 8x total (vs. direct 8x)</p>
+</li>
+<li>
+<p>Each pass: Lower denoise (0.4 → 0.3 → 0.25)</p>
+</li>
+<li>
+<p>Prevents over-processing and maintains coherence</p>
+</li>
+<li>
+<p>Total time: 3× single-pass, but higher quality</p>
+</li>
+<li>
+<p><strong>Model Database Resources</strong>:</p>
+</li>
+<li>
+<p><a href="https://openmodeldb.info/" class="external">OpenModelDB<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Database of upscaling models</p>
+</li>
+<li>
+<p><a href="https://education.civitai.com/civitais-guide-to-image-upscaling/" class="external">Civitai’s Guide to Image Upscaling! - Civitai Education<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - Comprehensive tutorial</p>
+</li>
+<li>
+<p>Model types: <a href="../ESRGAN" class="internal" data-slug="ESRGAN">ESRGAN</a>, <a href="../pages/Real-ESRGAN" class="internal" data-slug="pages/Real-ESRGAN">Real-ESRGAN</a>, SwinIR, HAT (Hybrid Attention Transformer)</p>
+</li>
+<li>
+<h2 id="applications-by-domain">Applications by Domain<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications-by-domain" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="photography-and-content-creation">Photography and Content Creation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#photography-and-content-creation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Professional Photography</strong>:</p>
+</li>
+<li>
+<p>RAW processing: Upscale from sensor resolution (24MP) to print resolution (100MP+)</p>
+</li>
+<li>
+<p>Crop recovery: 2x-4x upscale of cropped sections</p>
+</li>
+<li>
+<p>Old photo restoration: Scan at 300dpi, upscale to 600-1200dpi</p>
+</li>
+<li>
+<p>Product photography: 4K+ for e-commerce (Amazon requires 2000×2000px minimum)</p>
+</li>
+<li>
+<p>Tools: <a href="../Topaz-Gigapixel-AI" class="internal alias" data-slug="Topaz-Gigapixel-AI">Topaz Gigapixel AI</a>, <a href="../Photoshop" class="internal" data-slug="Photoshop">Photoshop</a> Super Resolution, <a href="../SUPIR" class="internal" data-slug="SUPIR">SUPIR</a></p>
+</li>
+<li>
+<p><strong>Stock Photography</strong>:</p>
+</li>
+<li>
+<p>Microstock platforms (Shutterstock, Adobe Stock) prefer 4K+ (4000×3000px)</p>
+</li>
+<li>
+<p>Upscaling older portfolio images to meet current standards</p>
+</li>
+<li>
+<p>Quality requirements: No visible artifacts, sharp edges</p>
+</li>
+<li>
+<p>Economic impact: 4K images earn 2-3x more per download</p>
+</li>
+<li>
+<p><strong>Print Production</strong>:</p>
+</li>
+<li>
+<p>Magazine covers: 300 DPI at 8.5”×11” = 2550×3300px minimum</p>
+</li>
+<li>
+<p>Billboard printing: 150 DPI at 48’×14’ = 86400×25200px (challenging for AI)</p>
+</li>
+<li>
+<p>Fine art prints: 360 DPI for gallery quality</p>
+</li>
+<li>
+<p>Upscaling strategy: Multiple passes with quality checks</p>
+</li>
+<li>
+<h3 id="medical-imaging">Medical Imaging<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#medical-imaging" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Diagnostic Enhancement</strong>:</p>
+</li>
+<li>
+<p>CT/MRI resolution improvement for radiologist review</p>
+</li>
+<li>
+<p>Challenges: Must preserve diagnostic accuracy, no hallucination</p>
+</li>
+<li>
+<p>Regulatory: FDA clearance required for clinical use (Class II device)</p>
+</li>
+<li>
+<p>Research models: Medical-specific <a href="../ESRGAN" class="internal" data-slug="ESRGAN">ESRGAN</a> trained on DICOM datasets</p>
+</li>
+<li>
+<p>Use cases: Detecting micro-calcifications, tumor margins</p>
+</li>
+<li>
+<p><strong>Pathology</strong>:</p>
+</li>
+<li>
+<p>Whole-slide imaging (WSI) upscaling for digital pathology</p>
+</li>
+<li>
+<p>Gigapixel images: 100,000×100,000 pixels common</p>
+</li>
+<li>
+<p>Tiled processing essential (512×512 tiles)</p>
+</li>
+<li>
+<p>Color accuracy critical for H&amp;E staining interpretation</p>
+</li>
+<li>
+<p>Models: <a href="../pages/Real-ESRGAN" class="internal" data-slug="pages/Real-ESRGAN">Real-ESRGAN</a> with pathology-specific fine-tuning</p>
+</li>
+<li>
+<p><strong>Microscopy</strong>:</p>
+</li>
+<li>
+<p>Super-resolution microscopy via computational methods</p>
+</li>
+<li>
+<p>Combine with <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> for single-shot super-resolution</p>
+</li>
+<li>
+<p>Fluorescence imaging: 4x-8x resolution improvement</p>
+</li>
+<li>
+<p>Research: “Deep learning enables cross-modality super-resolution in fluorescence microscopy” (Wang et al., Nature Methods 2019)</p>
+</li>
+<li>
+<h3 id="satellite-and-aerial-imagery">Satellite and Aerial Imagery<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#satellite-and-aerial-imagery" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Earth Observation</strong>:</p>
+</li>
+<li>
+<p>Commercial satellites: 30cm-1m resolution (WorldView, Pleiades)</p>
+</li>
+<li>
+<p>Public satellites: Landsat (30m), Sentinel-2 (10m)</p>
+</li>
+<li>
+<p>AI upscaling: Enhance 10m → 2.5m for detailed analysis</p>
+</li>
+<li>
+<p>Applications: Urban planning, agriculture monitoring, disaster response</p>
+</li>
+<li>
+<p><strong>Google Earth and Maps</strong>:</p>
+</li>
+<li>
+<p>Combines multiple imagery sources with upscaling</p>
+</li>
+<li>
+<p>Temporal super-resolution: Merge low-res frequent + high-res infrequent</p>
+</li>
+<li>
+<p>Cloud cover removal and scene completion</p>
+</li>
+<li>
+<p>Processing: Petabyte-scale tiled processing infrastructure</p>
+</li>
+<li>
+<p><strong>Military and Intelligence</strong>:</p>
+</li>
+<li>
+<p>Classified capabilities exceed public sector</p>
+</li>
+<li>
+<p>Multi-spectral upscaling (visible + infrared + SAR)</p>
+</li>
+<li>
+<p>Real-time processing for drone reconnaissance</p>
+</li>
+<li>
+<p>Estimated capabilities: Sub-10cm resolution from 1m inputs [2024]</p>
+</li>
+<li>
+<h3 id="gaming-and-real-time-applications">Gaming and Real-Time Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gaming-and-real-time-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>NVIDIA DLSS (Deep Learning Super Sampling)</strong>:</p>
+</li>
+<li>
+<p><a href="../pages/Tensor-Core" class="internal alias" data-slug="pages/Tensor-Core">Tensor Core</a>-based real-time upscaling for RTX GPUs</p>
+</li>
+<li>
+<p>DLSS 4 (2025): Transformer-based Super Resolution, up to 4X Multi Frame Generation; available in 250+ games</p>
+</li>
+<li>
+<p>DLSS 4.5 (announced CES 2026): 2nd-generation transformer Super Resolution model across all RTX GPUs; 6X Dynamic Multi Frame Generation for 240+ FPS at 4K; 400+ supported games</p>
+</li>
+<li>
+<p>Latency: Nvidia Reflex reduces input lag to &lt;50ms</p>
+</li>
+<li>
+<p>Performance: 2x-3x FPS increase with minimal quality loss</p>
+</li>
+<li>
+<p><strong>AMD FSR (FidelityFX Super Resolution)</strong>:</p>
+</li>
+<li>
+<p>FSR 4 (2025): Machine-learning upscaling initially restricted to RDNA 4 (RX 9000-series) hardware using FP8</p>
+</li>
+<li>
+<p>FSR 4.1 (mid-2026): ML-powered upscaling extended to RDNA 3 (RX 7000-series) via INT8 model; RDNA 2 support planned 2027</p>
+</li>
+<li>
+<p>FSR 4.1 supports 300+ games with improved detail retention on thin lines, reduced blurring and smearing</p>
+</li>
+<li>
+<p>Quality modes: Ultra Quality (1.3x), Quality (1.5x), Balanced (1.7x), Performance (2x)</p>
+</li>
+<li>
+<p><strong>Intel XeSS (Xe Super Sampling)</strong>:</p>
+</li>
+<li>
+<p>AI-accelerated upscaling for Intel Arc GPUs</p>
+</li>
+<li>
+<p>DP4a fallback for non-Intel GPUs</p>
+</li>
+<li>
+<p>Similar architecture to DLSS (temporal accumulation)</p>
+</li>
+<li>
+<p>Performance: Between FSR and DLSS in quality</p>
+</li>
+<li>
+<p><strong>Cloud Gaming</strong>:</p>
+</li>
+<li>
+<p>Upscaling compressed 1080p video streams to 4K displays</p>
+</li>
+<li>
+<p>Reduces bandwidth: 1080p@15Mbps vs. 4K@40Mbps</p>
+</li>
+<li>
+<p>Services: GeForce Now, Xbox Cloud Gaming, Amazon Luna</p>
+</li>
+<li>
+<p>Client-side upscaling with <a href="../NVIDIA-Shield" class="internal alias" data-slug="NVIDIA-Shield">NVIDIA Shield</a>, browsers</p>
+</li>
+<li>
+<h3 id="film-and-television-production">Film and Television Production<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#film-and-television-production" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>4K/8K Mastering</strong>:</p>
+</li>
+<li>
+<p>Upscaling HD (1920×1080) masters to UHD (3840×2160) for streaming</p>
+</li>
+<li>
+<p>Film scans: 2K (2048×1556) → 4K (4096×3112) DCI resolution</p>
+</li>
+<li>
+<p>Grain preservation: Film grain must be maintained, not smoothed</p>
+</li>
+<li>
+<p>Tools: Topaz Video AI, proprietary studio systems (ILM, Pixar)</p>
+</li>
+<li>
+<p><strong>Archival Restoration</strong>:</p>
+</li>
+<li>
+<p>Silent films (1920s): 480p scans → 1080p/4K</p>
+</li>
+<li>
+<p>VHS archives: 240p → 720p/1080p</p>
+</li>
+<li>
+<p>Broadcast archives: SD (720×480) → HD</p>
+</li>
+<li>
+<p>Challenges: Interlacing, telecine patterns, variable quality</p>
+</li>
+<li>
+<p>Notable projects: Star Trek TNG remastered, Beatles Get Back (Peter Jackson, 2021)</p>
+</li>
+<li>
+<p><strong>VFX and CGI</strong>:</p>
+</li>
+<li>
+<p>Render time reduction: Render at 50% resolution, upscale with AI</p>
+</li>
+<li>
+<p>Savings: 75% render time for ray-traced scenes</p>
+</li>
+<li>
+<p>Quality: Nearly identical to native 4K in motion</p>
+</li>
+<li>
+<p>Studios: ILM, Weta Digital experimenting with AI upscaling [2024]</p>
+</li>
+<li>
+<h2 id="cross-domain-applications">Cross-Domain Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-domain-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="blockchain-and-nft-integration">Blockchain and NFT Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#blockchain-and-nft-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>NFT High-Resolution Minting</strong>:</p>
+</li>
+<li>
+<p>Problem: Many early NFTs (2021-2022) minted at low resolution (512×512, 1024×1024)</p>
+</li>
+<li>
+<p>Solution: AI upscaling to 4K (4096×4096) or 8K (8192×8192) for high-value collections</p>
+</li>
+<li>
+<p>Use cases:</p>
+<ul>
+<li>CryptoPunks: Upscale 24×24 pixel art to 4K for physical prints</li>
+<li>Bored Ape Yacht Club: Enhance 1024×1024 to 4K for metaverse avatars</li>
+<li>Art Blocks: Upscale generative art outputs for gallery exhibitions</li>
+</ul>
+</li>
+<li>
+<p><strong>Blockchain-Based Image Provenance</strong>:</p>
+</li>
+<li>
+<p>Store original low-res image hash on <a href="../Blockchain" class="internal" data-slug="Blockchain">Blockchain</a> (<a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a>, <a href="../pages/Ethereum-Smart-Contract-Platform" class="internal alias" data-slug="pages/Ethereum-Smart-Contract-Platform">Ethereum Smart Contract Platform</a>)</p>
+</li>
+<li>
+<p>Upscaled versions linked via <a href="../pages/Smart-Contract" class="internal alias" data-slug="pages/Smart-Contract">Smart Contract</a> to prove derivation</p>
+</li>
+<li>
+<p><a href="../pages/IPFS" class="internal" data-slug="pages/IPFS">IPFS</a> storage: Low-res (500KB) on-chain, high-res (50MB) IPFS with CID reference</p>
+</li>
+<li>
+<p>Example workflow:</p>
+<pre><code>1. Mint NFT with 1K image (IPFS: Qm...)
+2. Upscale with SUPIR to 4K
+3. Update NFT metadata to include 4K IPFS CID
+4. Smart contract verifies upscaling timestamp
+</code></pre>
+</li>
+<li>
+<p><strong>Decentralized Rendering Networks</strong>:</p>
+</li>
+<li>
+<p><strong>Render Network (RNDR)</strong>:</p>
+<ul>
+<li>Distributed GPU rendering for upscaling tasks</li>
+<li>Payment: <a href="../RNDR" class="internal" data-slug="RNDR">RNDR</a> token on <a href="../pages/Polygon" class="internal" data-slug="pages/Polygon">Polygon</a> (formerly <a href="../pages/Ethereum-Smart-Contract-Platform" class="internal alias" data-slug="pages/Ethereum-Smart-Contract-Platform">Ethereum Smart Contract Platform</a>)</li>
+<li>Workflow: Upload LR image → Allocate RNDR tokens → Network processes → Download HR</li>
+<li>Cost: ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.50</span><span class="mord">−</span></span></span></span>2.00 per 4K upscale (vs. $0.10 local GPU electricity)</li>
+<li>Benefits: No local GPU required, scalable for batch jobs</li>
+</ul>
+</li>
+<li>
+<p><strong>Akash Network</strong>:</p>
+<ul>
+<li>Deploy <a href="../pages/Node-Based-Diffusion-Pipeline-Interface" class="internal alias" data-slug="pages/Node-Based-Diffusion-Pipeline-Interface">Node-Based Diffusion Pipeline Interface</a> or <a href="../SUPIR" class="internal" data-slug="SUPIR">SUPIR</a> on decentralized cloud</li>
+<li>Pay with <a href="../AKT" class="internal" data-slug="AKT">AKT</a> token</li>
+<li>Cost-effective: 3x cheaper than AWS/Azure for GPU workloads</li>
+</ul>
+</li>
+<li>
+<p><strong>NFT Marketplaces and Upscaling Services</strong>:</p>
+</li>
+<li>
+<p>OpenSea, Rarible: Display NFTs at multiple resolutions</p>
+</li>
+<li>
+<p>AI upscaling on-demand for preview (not stored on-chain)</p>
+</li>
+<li>
+<p>Premium feature: “4K View” for high-value NFTs</p>
+</li>
+<li>
+<p>Economic model: Marketplace covers cost, attracts collectors</p>
+</li>
+<li>
+<p><strong>Micropayments for Upscaling</strong>:</p>
+</li>
+<li>
+<p><a href="../pages/Lightning-Network" class="internal alias" data-slug="pages/Lightning-Network">Lightning Network</a> (<a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a> Layer 2) for per-image payments</p>
+</li>
+<li>
+<p>Pricing: 100-1000 satoshis (~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">0.03</span><span class="mord">−</span></span></span></span>0.30) per upscale</p>
+</li>
+<li>
+<p>Use case: Decentralized upscaling APIs</p>
+</li>
+<li>
+<p>Example: User sends LN invoice → API upscales → Returns HR image</p>
+</li>
+<li>
+<p>Benefits: No account creation, instant settlement, global access</p>
+</li>
+<li>
+<p><strong>On-Chain vs. Off-Chain Storage</strong>:</p>
+</li>
+<li>
+<p>On-chain (expensive): Only metadata + low-res thumbnail (32×32)</p>
+</li>
+<li>
+<p>IPFS (permanent): Medium-res (1K-2K) for persistence</p>
+</li>
+<li>
+<p>Arweave (permanent, paid once): High-res (4K-8K) for archival</p>
+</li>
+<li>
+<p>Filecoin (decentralized): Cold storage for extreme resolutions (16K+)</p>
+</li>
+<li>
+<p>Trade-offs:</p>
+<ul>
+<li><a href="../pages/Ethereum-Smart-Contract-Platform" class="internal alias" data-slug="pages/Ethereum-Smart-Contract-Platform">Ethereum Smart Contract Platform</a>: ~<span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">50</span><span class="mord">−</span></span></span></span>200 to store 1MB on-chain (prohibitive)</li>
+<li><a href="../pages/IPFS" class="internal" data-slug="pages/IPFS">IPFS</a>: Free storage, no permanence guarantee</li>
+<li><a href="../pages/Arweave" class="internal" data-slug="pages/Arweave">Arweave</a>: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7278em;vertical-align:-0.0833em;"></span><span class="mord">5</span><span class="mord">−</span></span></span></span>10 per GB one-time payment</li>
+</ul>
+</li>
+<li>
+<p><strong>Smart Contracts for Upscaling Services</strong>:</p>
+</li>
+<li>
+<p>Automated payments upon delivery verification</p>
+</li>
+<li>
+<p>Quality guarantees: PSNR/SSIM thresholds in contract</p>
+</li>
+<li>
+<p>Escrow: Funds locked until buyer confirms quality</p>
+</li>
+<li>
+<p>Dispute resolution: DAO voting on quality disputes</p>
+</li>
+<li>
+<p>Example (Solidity):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="solidity" data-theme="github-light github-dark"><code data-language="solidity" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">function</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> requestUpscale</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">bytes32</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> imageHash</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">uint8</span><span style="--shiki-light:#E36209;--shiki-dark:#FFAB70;"> factor</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    external</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;"> payable</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    require</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">msg</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">.value </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">>=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> costPerUpscale);</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    emit</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> UpscaleRequest</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">msg.sender</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, imageHash, factor);</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></figure>
+</li>
+<li>
+<h3 id="robotics-and-computer-vision">Robotics and Computer Vision<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#robotics-and-computer-vision" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Robot Vision Enhancement</strong>:</p>
+</li>
+<li>
+<p>Problem: Low-resolution cameras on robots (cost, weight, power constraints)</p>
+</li>
+<li>
+<p>Solution: AI upscaling in perception pipeline</p>
+</li>
+<li>
+<p>Use cases:</p>
+<ul>
+<li>Warehouse robots: Upscale 480p cameras to 1080p for barcode reading</li>
+<li>Agricultural robots: Enhance drone imagery for crop disease detection</li>
+<li>Delivery robots: License plate recognition from 720p cameras</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-Time Constraints</strong>:</p>
+</li>
+<li>
+<p>Latency budget: &lt;100ms for control loop</p>
+</li>
+<li>
+<p>Solutions:</p>
+<ul>
+<li><a href="../pages/TensorRT" class="internal" data-slug="pages/TensorRT">TensorRT</a> optimization: 5-10x inference speedup</li>
+<li>Model quantization: INT8 reduces latency 2-3x</li>
+<li>Selective upscaling: Only upscale ROI (Region of Interest)</li>
+</ul>
+</li>
+<li>
+<p>Hardware: NVIDIA Jetson AGX Orin (2024) runs Real-ESRGAN at 15 FPS (1080p)</p>
+</li>
+<li>
+<p><strong>Autonomous Vehicles</strong>:</p>
+</li>
+<li>
+<p>Camera resolution: 1-2MP per camera (cost and bandwidth)</p>
+</li>
+<li>
+<p>Total cameras: 8-12 for 360° coverage (Tesla, Waymo)</p>
+</li>
+<li>
+<p>Upscaling applications:</p>
+<ul>
+<li>Traffic sign recognition at distance</li>
+<li>Pedestrian facial detail for intent prediction</li>
+<li>Lane marking enhancement in poor weather</li>
+</ul>
+</li>
+<li>
+<p>Waymo example: Upscale 1MP camera feeds to 4MP equivalent for neural network input</p>
+</li>
+<li>
+<p>Challenges: Safety-critical (no hallucination tolerated), real-time (30Hz processing)</p>
+</li>
+<li>
+<p><strong>Satellite and Drone Navigation</strong>:</p>
+</li>
+<li>
+<p>GPS-denied environments: Visual odometry from low-res cameras</p>
+</li>
+<li>
+<p>Upscaling improves feature matching for SLAM (Simultaneous Localization and Mapping)</p>
+</li>
+<li>
+<p>Military drones: Enhance 720p feeds to 4K for target identification</p>
+</li>
+<li>
+<p>Search and rescue: Thermal camera upscaling (low native resolution, 320×240 typical)</p>
+</li>
+<li>
+<p><strong>Medical Robotics</strong>:</p>
+</li>
+<li>
+<p>Surgical robots (da Vinci): Upscale endoscopic camera feeds</p>
+</li>
+<li>
+<p>Benefits: Better visualization without larger cameras (space-constrained)</p>
+</li>
+<li>
+<p>Resolution: 720p cameras → 4K displays for surgeon</p>
+</li>
+<li>
+<p>Latency: &lt;50ms critical (real-time requirement)</p>
+</li>
+<li>
+<p>FDA approval: Requires validation that upscaling doesn’t introduce false positives</p>
+</li>
+<li>
+<p><strong>ROS2 Integration</strong> (<a href="../pages/Robot-Operating-System" class="internal alias" data-slug="pages/Robot-Operating-System">Robot Operating System</a>):</p>
+</li>
+<li>
+<p>ROS2 nodes for real-time upscaling:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="bash" data-theme="github-light github-dark"><code data-language="bash" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">ros2</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> run</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> image_proc</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> upscale_node</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  --model</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> real-esrgan</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  --input</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> /camera/image_raw</span></span>
+<span data-line><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;">  --output</span><span style="--shiki-light:#032F62;--shiki-dark:#9ECBFF;"> /camera/image_upscaled</span></span></code></pre></figure>
+</li>
+<li>
+<p>Latency: 50-100ms added to perception pipeline</p>
+</li>
+<li>
+<p>Bandwidth savings: Transmit 720p over network, upscale at endpoint</p>
+</li>
+<li>
+<p><strong>Industrial Inspection</strong>:</p>
+</li>
+<li>
+<p>Quality control: Detect micro-defects in manufactured parts</p>
+</li>
+<li>
+<p>Upscaling 1MP inspection cameras to 4MP for defect classification</p>
+</li>
+<li>
+<p>Speed: Conveyor belts at 1m/s require 30 FPS processing</p>
+</li>
+<li>
+<p>Models: Custom <a href="../ESRGAN" class="internal" data-slug="ESRGAN">ESRGAN</a> trained on specific defect types (scratches, cracks)</p>
+</li>
+<li>
+<h3 id="xr-and-emerging-technologies">XR and Emerging Technologies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#xr-and-emerging-technologies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>VR Headset Upscaling</strong>:</p>
+</li>
+<li>
+<p><strong>Foveated Rendering</strong> + AI upscaling:</p>
+<ul>
+<li>Render center of vision (fovea) at full resolution</li>
+<li>Render periphery at 25-50% resolution</li>
+<li>Upscale periphery with AI (user doesn’t notice)</li>
+<li>Performance gain: 2-3x FPS</li>
+</ul>
+</li>
+<li>
+<p><strong>Meta Quest 3</strong>:</p>
+<ul>
+<li>Native resolution: 2064×2208 per eye</li>
+<li>Foveated rendering with upscaling reduces GPU load 40%</li>
+<li>Eye tracking enables dynamic foveation</li>
+</ul>
+</li>
+<li>
+<p><strong>Apple Vision Pro</strong>:</p>
+<ul>
+<li>3680×3140 per eye (11.5M pixels total)</li>
+<li>Likely uses temporal upscaling (unconfirmed)</li>
+<li>M2 chip handles real-time processing</li>
+</ul>
+</li>
+<li>
+<p><strong>AR Passthrough Enhancement</strong>:</p>
+</li>
+<li>
+<p>Problem: Camera quality (720p-1080p) lower than display resolution</p>
+</li>
+<li>
+<p>Solution: Real-time upscaling of passthrough video</p>
+</li>
+<li>
+<p>Latency critical: &lt;20ms to prevent motion sickness</p>
+</li>
+<li>
+<p>Quest Pro: Color passthrough at 1080p, likely upscaled to match 1800p displays</p>
+</li>
+<li>
+<p><strong>Neural Rendering and NeRF</strong>:</p>
+</li>
+<li>
+<p><strong><a href="../pages/NeRF" class="internal" data-slug="pages/NeRF">NeRF</a></strong> (Neural Radiance Fields): Represents 3D scenes as neural networks</p>
+</li>
+<li>
+<p>Upscaling application: Render NeRF at low resolution, AI upscale for display</p>
+</li>
+<li>
+<p>Benefits: 4x faster NeRF rendering (bottleneck is volumetric ray marching)</p>
+</li>
+<li>
+<p><strong>Gaussian Splatting</strong> (2023): Alternative to NeRF, faster rendering</p>
+</li>
+<li>
+<p>Combined with upscaling: Real-time 4K novel view synthesis</p>
+</li>
+<li>
+<p><strong>Light Field Displays</strong>:</p>
+</li>
+<li>
+<p>Multi-view displays for glasses-free 3D</p>
+</li>
+<li>
+<p>Requires rendering multiple perspectives (4-64 views)</p>
+</li>
+<li>
+<p>Upscaling: Render at 720p, upscale to 1080p per view</p>
+</li>
+<li>
+<p>Computational savings: 75% reduction in render time</p>
+</li>
+<li>
+<p><strong>Quantum Computing and Future Super-Resolution</strong>:</p>
+</li>
+<li>
+<p>Quantum algorithms for optimization problems (relevant to inverse problems)</p>
+</li>
+<li>
+<p>Quantum annealing for image reconstruction (D-Wave)</p>
+</li>
+<li>
+<p>Timeline: Practical quantum super-resolution 2027-2030 (speculative)</p>
+</li>
+<li>
+<p>Potential: Solve 4K→16K upscaling in quantum superposition</p>
+</li>
+<li>
+<p>Challenges: Quantum decoherence, limited qubit count (current: ~1000 qubits)</p>
+</li>
+<li>
+<p><strong>5G and Edge Computing</strong>:</p>
+</li>
+<li>
+<p><strong>Cloud-based upscaling</strong>:</p>
+<ul>
+<li>Stream 1080p video over 5G (10-20 Mbps)</li>
+<li>Edge server upscales to 4K (40-60 Mbps equivalent quality)</li>
+<li>Saves 50-70% bandwidth</li>
+</ul>
+</li>
+<li>
+<p><strong>Edge deployments</strong>:</p>
+<ul>
+<li>AWS Wavelength, Azure Edge Zones</li>
+<li>Deploy Real-ESRGAN on edge GPUs</li>
+<li>Latency: 10-30ms (vs. 100ms+ cloud)</li>
+</ul>
+</li>
+<li>
+<p><strong>Use cases</strong>:</p>
+<ul>
+<li>Live sports broadcasting (1080p transmission, 4K display)</li>
+<li>Cloud gaming (reduce stream bandwidth)</li>
+<li>Video conferencing (Zoom, Teams upscaling low-res webcams)</li>
+</ul>
+</li>
+<li>
+<p><strong>Mobile Device Upscaling</strong>:</p>
+</li>
+<li>
+<p><strong>Apple Neural Engine</strong>:</p>
+<ul>
+<li>A17 Pro (iPhone 15 Pro): 35 TOPS (trillion operations/sec)</li>
+<li>On-device super-resolution for photos and video</li>
+<li>Used in: Camera app, Photos app, FaceTime</li>
+</ul>
+</li>
+<li>
+<p><strong>Qualcomm Hexagon NPU</strong>:</p>
+<ul>
+<li>Snapdragon 8 Gen 3: 45 TOPS</li>
+<li>Real-time 1080p→4K upscaling at 30 FPS</li>
+</ul>
+</li>
+<li>
+<p><strong>Android implementations</strong>:</p>
+<ul>
+<li>Google Photos: AI upscaling for older photos</li>
+<li>Samsung Gallery: “Remaster” feature uses on-device AI</li>
+</ul>
+</li>
+<li>
+<p><strong>Power efficiency</strong>:</p>
+<ul>
+<li>NPU: 2-5W for upscaling</li>
+<li>GPU: 8-12W (less efficient)</li>
+<li>Thermal management: Limits sustained upscaling on phones</li>
+</ul>
+</li>
+<li>
+<h2 id="technical-implementation">Technical Implementation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#technical-implementation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="model-training-pipeline">Model Training Pipeline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#model-training-pipeline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Dataset Preparation</strong>:</p>
+</li>
+<li>
+<p><strong>Common datasets</strong>:</p>
+<ul>
+<li>DIV2K: 800 training, 100 validation (2K resolution)</li>
+<li>Flickr2K: 2650 images (2K resolution)</li>
+<li>RAISE: 8156 high-resolution RAW images</li>
+<li>ImageNet: 1.2M images (general-purpose pre-training)</li>
+</ul>
+</li>
+<li>
+<p><strong>Synthetic degradation</strong>:</p>
+<ul>
+<li>Blur kernels: Gaussian, motion, defocus</li>
+<li>Downsampling: Bicubic, bilinear, nearest-neighbor</li>
+<li>Noise: Gaussian, Poisson, JPEG compression</li>
+<li>Real-ESRGAN: High-order degradation (blur→resize→noise→JPEG→resize→noise)</li>
+</ul>
+</li>
+<li>
+<p><strong>Training Configuration</strong> (ESRGAN example):</p>
+</li>
+<li>
+<p>Optimizer: Adam (β1=0.9, β2=0.999)</p>
+</li>
+<li>
+<p>Learning rate: 1e-4 (PSNR pre-training), 1e-4 (GAN training)</p>
+</li>
+<li>
+<p>Batch size: 16-32 (depends on GPU VRAM)</p>
+</li>
+<li>
+<p>Iterations: 500K (PSNR) + 400K (GAN)</p>
+</li>
+<li>
+<p>Hardware: 4-8× NVIDIA A100 (40GB), 5-7 days training</p>
+</li>
+<li>
+<p>Loss weights:</p>
+<ul>
+<li>Pixel loss: 1.0 (L1)</li>
+<li>Perceptual loss: 1.0 (VGG features)</li>
+<li>Adversarial loss: 0.1 (discriminator)</li>
+</ul>
+</li>
+<li>
+<p><strong>Fine-Tuning Strategies</strong>:</p>
+</li>
+<li>
+<p>Domain-specific: Anime, faces, landscapes</p>
+</li>
+<li>
+<p>Low-shot learning: 100-500 images for specialized domains</p>
+</li>
+<li>
+<p><a href="../LoRA" class="internal" data-slug="LoRA">LoRA</a> (Low-Rank Adaptation): Fine-tune diffusion models with 1-10% parameters</p>
+</li>
+<li>
+<p>Transfer learning: Start from Real-ESRGAN, fine-tune for specific use case</p>
+</li>
+<li>
+<h3 id="inference-optimization">Inference Optimization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inference-optimization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>TensorRT Acceleration</strong>:</p>
+</li>
+<li>
+<p>Convert PyTorch/ONNX models to TensorRT</p>
+</li>
+<li>
+<p>Speedup: 3-5x on NVIDIA GPUs</p>
+</li>
+<li>
+<p>Optimizations: Kernel fusion, precision calibration (FP16/INT8)</p>
+</li>
+<li>
+<p>Example:</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">import</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tensorrt </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">as</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> trt</span></span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Convert ESRGAN ONNX to TensorRT</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">builder </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> trt.Builder(logger)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">network </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> builder.create_network()</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">parser </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> trt.OnnxParser(network, logger)</span></span>
+<span data-line><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;"># Build engine with FP16 precision</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">config.set_flag(trt.BuilderFlag.</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">FP16</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">engine </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> builder.build_engine(network, config)</span></span></code></pre></figure>
+</li>
+<li>
+<p><strong>ONNX Runtime</strong>:</p>
+</li>
+<li>
+<p>Cross-platform inference (CPU, GPU, DirectML on Windows)</p>
+</li>
+<li>
+<p>Quantization: INT8 reduces model size 4x, latency 2x</p>
+</li>
+<li>
+<p>DirectML: Run on AMD/Intel GPUs via ONNX</p>
+</li>
+<li>
+<p><strong>Model Quantization</strong>:</p>
+</li>
+<li>
+<p>FP32 → FP16: 2x smaller, 1.5-2x faster, minimal quality loss</p>
+</li>
+<li>
+<p>FP32 → INT8: 4x smaller, 2-3x faster, slight quality degradation</p>
+</li>
+<li>
+<p>Post-training quantization: No retraining required</p>
+</li>
+<li>
+<p>Quantization-aware training (QAT): Better quality, requires retraining</p>
+</li>
+<li>
+<p><strong>Tiled Processing for Large Images</strong>:</p>
+</li>
+<li>
+<p>Problem: 8K image (7680×4320) exceeds GPU memory (24GB limit)</p>
+</li>
+<li>
+<p>Solution: Split into 512×512 or 1024×1024 tiles</p>
+</li>
+<li>
+<p>Overlap: 64-128px for seamless blending</p>
+</li>
+<li>
+<p>Blending: Linear interpolation in overlap region</p>
+</li>
+<li>
+<p>Example (Python):</p>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="python" data-theme="github-light github-dark"><code data-language="python" data-theme="github-light github-dark" style="display:grid;"><span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">def</span><span style="--shiki-light:#6F42C1;--shiki-dark:#B392F0;"> tile_process</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">(image, tile_size</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">512</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, overlap</span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;">64</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">):</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    tiles </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> split_into_tiles(image, tile_size, overlap)</span></span>
+<span data-line><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    upscaled_tiles </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> [model(tile) </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">for</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tile </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">in</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> tiles]</span></span>
+<span data-line><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">    return</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> blend_tiles(upscaled_tiles, overlap)</span></span></code></pre></figure>
+</li>
+<li>
+<h3 id="vram-requirements">VRAM Requirements<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vram-requirements" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Memory Consumption by Task</strong>:</p>
+</li>
+<li>
+<p>Real-ESRGAN (4x upscale):</p>
+<ul>
+<li>Input 512×512 → Output 2048×2048: ~4GB VRAM</li>
+<li>Input 1024×1024 → Output 4096×4096: ~10GB VRAM</li>
+</ul>
+</li>
+<li>
+<p>SUPIR (SDXL-based):</p>
+<ul>
+<li>512×512 output: ~8GB VRAM</li>
+<li>1024×1024 output: ~12GB VRAM</li>
+<li>2048×2048 output: ~24GB VRAM</li>
+</ul>
+</li>
+<li>
+<p>Ultimate SD Upscale:</p>
+<ul>
+<li>Tile 512×512: ~8GB (SDXL), ~6GB (SD 1.5)</li>
+<li>Tile 1024×1024: ~16GB (SDXL)</li>
+</ul>
+</li>
+<li>
+<p><strong>VRAM Optimization Techniques</strong>:</p>
+</li>
+<li>
+<p>Gradient checkpointing: Reduce activation memory 50%, slower</p>
+</li>
+<li>
+<p>Mixed precision (FP16): 50% memory reduction</p>
+</li>
+<li>
+<p>Model offloading: Move layers to CPU when not in use</p>
+</li>
+<li>
+<p>Attention slicing: Process attention in chunks (for Transformers)</p>
+</li>
+<li>
+<p><a href="../xFormers" class="internal" data-slug="xFormers">xFormers</a>: Memory-efficient attention implementation</p>
+</li>
+<li>
+<h2 id="performance-metrics-and-benchmarks">Performance Metrics and Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#performance-metrics-and-benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="standard-benchmarks">Standard Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standard-benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Set5, Set14, BSD100</strong>:</p>
+</li>
+<li>
+<p>Small test sets (5, 14, 100 images)</p>
+</li>
+<li>
+<p>Historical use, less relevant today</p>
+</li>
+<li>
+<p>ESRGAN (Set5, 4x): PSNR 32.73 dB, SSIM 0.9011</p>
+</li>
+<li>
+<p><strong>DIV2K Validation</strong> (100 images):</p>
+</li>
+<li>
+<p>Current standard for benchmarking</p>
+</li>
+<li>
+<p>Real-ESRGAN: PSNR 28.5 dB, SSIM 0.82 (4x, realistic degradation)</p>
+</li>
+<li>
+<p>EDSR: PSNR 34.65 dB, SSIM 0.95 (4x, bicubic degradation)</p>
+</li>
+<li>
+<p><strong>RealSR, DRealSR</strong> (real-world images):</p>
+</li>
+<li>
+<p>Tests on actual low-quality images (not synthetic)</p>
+</li>
+<li>
+<p>LPIPS metric more relevant than PSNR</p>
+</li>
+<li>
+<p>SUPIR: LPIPS 0.08 (lower is better)</p>
+</li>
+<li>
+<h3 id="perceptual-quality-assessment">Perceptual Quality Assessment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#perceptual-quality-assessment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>No-Reference Metrics</strong> (when ground truth unavailable):</p>
+</li>
+<li>
+<p>NIQE (Natural Image Quality Evaluator): Lower is better</p>
+</li>
+<li>
+<p>BRISQUE (Blind/Referenceless Image Spatial Quality Evaluator)</p>
+</li>
+<li>
+<p>CLIP-IQA: Uses <a href="../pages/CLIP" class="internal" data-slug="pages/CLIP">CLIP</a> embeddings for quality assessment</p>
+</li>
+<li>
+<p><strong>Human Evaluation</strong>:</p>
+</li>
+<li>
+<p>MOS (Mean Opinion Score): 1-5 scale, humans rate quality</p>
+</li>
+<li>
+<p>Pair-wise comparison: A vs. B, which is better?</p>
+</li>
+<li>
+<p>Used for: Magnific AI, Topaz, SUPIR comparisons</p>
+</li>
+<li>
+<p>Results: SUPIR often wins human preference vs. ESRGAN (65-70% preference)</p>
+</li>
+<li>
+<h3 id="speed-benchmarks-rtx-4090">Speed Benchmarks (RTX 4090)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#speed-benchmarks-rtx-4090" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>1080p → 4K (3840×2160)</strong>:</p>
+</li>
+<li>
+<p>Real-ESRGAN: ~200ms</p>
+</li>
+<li>
+<p>SUPIR (50 steps): ~35s</p>
+</li>
+<li>
+<p>Ultimate SD Upscale (30 steps): ~45s</p>
+</li>
+<li>
+<p>Topaz Gigapixel AI: ~8s</p>
+</li>
+<li>
+<p><strong>512×512 → 2048×2048</strong>:</p>
+</li>
+<li>
+<p>Real-ESRGAN: ~90ms</p>
+</li>
+<li>
+<p>SUPIR: ~12s</p>
+</li>
+<li>
+<p>CCSR (20 steps): ~6s</p>
+</li>
+</ul>
+<h4 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<h3 id="emerging-research-areas">Emerging Research Areas<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emerging-research-areas" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Arbitrary-Scale Super-Resolution</strong>:</p>
+</li>
+<li>
+<p>Current models: Fixed scale (2x, 4x)</p>
+</li>
+<li>
+<p>Goal: Continuous scale (e.g., 3.7x)</p>
+</li>
+<li>
+<p>Approaches: Implicit neural representations (NeRF-like), meta-learning</p>
+</li>
+<li>
+<p>Papers: “Learning Continuous Image Representation with Local Implicit Image Function” (Chen et al., CVPR 2021)</p>
+</li>
+<li>
+<p><strong>Blind Super-Resolution</strong>:</p>
+</li>
+<li>
+<p>Unknown degradation (blur kernel, noise level)</p>
+</li>
+<li>
+<p>Real-world scenario: No knowledge of how LR image was created</p>
+</li>
+<li>
+<p>Current best: Real-ESRGAN, SUPIR</p>
+</li>
+<li>
+<p>Future: Self-supervised learning to estimate degradation</p>
+</li>
+<li>
+<p><strong>Video Super-Resolution</strong>:</p>
+</li>
+<li>
+<p>Temporal consistency remains challenging</p>
+</li>
+<li>
+<p>Recurrent networks (LSTM, GRU) for frame dependencies</p>
+</li>
+<li>
+<p>Optical flow for motion compensation</p>
+</li>
+<li>
+<p>Real-time 4K upscaling: Goal for next-gen consoles (PS6, Xbox, 2028)</p>
+</li>
+<li>
+<p><strong>Efficient Models for Mobile</strong>:</p>
+</li>
+<li>
+<p>Current: Models too large for real-time mobile (100M+ parameters)</p>
+</li>
+<li>
+<p>Research: Knowledge distillation, neural architecture search</p>
+</li>
+<li>
+<p>Target: &lt;10M parameters, &lt;50ms latency on mobile NPU</p>
+</li>
+<li>
+<p>Example: XLSR (Extremely Lightweight Super-Resolution) - 1.5M parameters</p>
+</li>
+<li>
+<h3 id="integration-with-other-technologies">Integration with Other Technologies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-with-other-technologies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong><a href="../pages/Generative-AI" class="internal alias" data-slug="pages/Generative-AI">Generative AI</a> and <a href="../pages/Prompt-Engineering" class="internal alias" data-slug="pages/Prompt-Engineering">Prompt Engineering</a></strong>:</p>
+</li>
+<li>
+<p>Text-guided upscaling: “Make sharper, add details, enhance colors”</p>
+</li>
+<li>
+<p>ControlNet + text prompts for creative upscaling</p>
+</li>
+<li>
+<p>Example: “Upscale this photo and add cinematic lighting”</p>
+</li>
+<li>
+<p><strong>Multimodal Learning</strong>:</p>
+</li>
+<li>
+<p>Combine text, audio, and visual information for context-aware upscaling</p>
+</li>
+<li>
+<p>Example: Upscale video based on audio cues (music → enhance concert footage)</p>
+</li>
+<li>
+<p><strong>Federated Learning for Privacy</strong>:</p>
+</li>
+<li>
+<p>Train models on private medical images without centralization</p>
+</li>
+<li>
+<p>Each hospital trains local model, aggregate updates</p>
+</li>
+<li>
+<p>Preserves patient privacy (GDPR, HIPAA compliance)</p>
+</li>
+</ul>
+<h4 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<h3 id="foundational-papers">Foundational Papers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foundational-papers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>SRCNN</strong> (Dong et al., 2014):</p>
+</li>
+<li>
+<p>“Image Super-Resolution Using Deep Convolutional Networks”</p>
+</li>
+<li>
+<p>First deep learning approach, 3-layer CNN</p>
+</li>
+<li>
+<p>PSNR: 32.75 dB (Set5, 3x)</p>
+</li>
+<li>
+<p>Citation count: 10,000+ (foundational)</p>
+</li>
+<li>
+<p><strong>SRGAN</strong> (Ledig et al., 2017):</p>
+</li>
+<li>
+<p>“Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network”</p>
+</li>
+<li>
+<p>CVPR 2017, introduced perceptual loss and adversarial training</p>
+</li>
+<li>
+<p>Shifted focus from PSNR to perceptual quality</p>
+</li>
+<li>
+<p>Twitter (X/formerly): Viral comparison images showing SRGAN realism</p>
+</li>
+<li>
+<p>Citation count: 7,000+</p>
+</li>
+<li>
+<p><strong>ESRGAN</strong> (Wang et al., 2018):</p>
+</li>
+<li>
+<p>“ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks”</p>
+</li>
+<li>
+<p>ECCV 2018 PIRM Challenge winner</p>
+</li>
+<li>
+<p>RRDB architecture, relativistic discriminator</p>
+</li>
+<li>
+<p>Perceptual index (PI): Lower is better, ESRGAN 2.26 vs. SRGAN 3.46</p>
+</li>
+<li>
+<p>GitHub: <a href="https://github.com/xinntao/ESRGAN" class="external">xinntao/ESRGAN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> - 24K+ stars</p>
+</li>
+<li>
+<h3 id="recent-advances-2023-2024">Recent Advances (2023-2024)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recent-advances-2023-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Real-ESRGAN</strong> (Wang et al., 2021):</p>
+</li>
+<li>
+<p>“Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data”</p>
+</li>
+<li>
+<p>ICCV 2021 Workshop</p>
+</li>
+<li>
+<p>High-order degradation modeling</p>
+</li>
+<li>
+<p>Practical applications: Widely adopted in industry</p>
+</li>
+<li>
+<p><strong>SUPIR</strong> (Yu et al., 2024):</p>
+</li>
+<li>
+<p>“Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild”</p>
+</li>
+<li>
+<p>Arxiv preprint (under review)</p>
+</li>
+<li>
+<p>Uses SDXL (6.6B parameters) as backbone</p>
+</li>
+<li>
+<p>Claims SOTA perceptual quality [Updated 2025]</p>
+</li>
+<li>
+<p><strong>CCSR</strong> (Zhou et al., 2024):</p>
+</li>
+<li>
+<p>“Improving the Stability of Diffusion Models for Content Consistent Super-Resolution”</p>
+</li>
+<li>
+<p>Score-based diffusion for controllable upscaling</p>
+</li>
+<li>
+<p>Arxiv: <a href="https://arxiv.org/abs/2401.00877" class="external">2401.00877<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>SwinIR</strong> (Liang et al., 2021):</p>
+</li>
+<li>
+<p>“SwinIR: Image Restoration Using Swin Transformer”</p>
+</li>
+<li>
+<p>ICCV 2021 Workshop Best Paper</p>
+</li>
+<li>
+<p><a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a>-based architecture (vs. CNN)</p>
+</li>
+<li>
+<p>Competitive with ESRGAN, better for large upscale factors (8x)</p>
+</li>
+<li>
+<h3 id="survey-papers">Survey Papers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#survey-papers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>“Deep Learning for Image Super-Resolution: A Survey”</strong> (Wang et al., 2020):</p>
+</li>
+<li>
+<p>IEEE TPAMI</p>
+</li>
+<li>
+<p>Comprehensive review of 2014-2019 methods</p>
+</li>
+<li>
+<p>Categorizes: Supervised, unsupervised, domain-specific</p>
+</li>
+<li>
+<p><strong>“A Comprehensive Survey on Image Deblurring”</strong> (Zhang et al., 2023):</p>
+</li>
+<li>
+<p>Covers related problem of blur removal (often combined with SR)</p>
+</li>
+</ul>
+<h4 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>Academic Papers</strong>:</p>
+</li>
+<li>
+<p>Dong, C., et al. (2014). “Image Super-Resolution Using Deep Convolutional Networks.” TPAMI.</p>
+</li>
+<li>
+<p>Ledig, C., et al. (2017). “Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network.” CVPR.</p>
+</li>
+<li>
+<p>Wang, X., et al. (2018). “ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks.” ECCV.</p>
+</li>
+<li>
+<p>Wang, X., et al. (2021). “Real-ESRGAN: Training Real-World Blind Super-Resolution with Pure Synthetic Data.” ICCV Workshop.</p>
+</li>
+<li>
+<p>Liang, J., et al. (2021). “SwinIR: Image Restoration Using Swin Transformer.” ICCV Workshop.</p>
+</li>
+<li>
+<p>Yu, F., et al. (2024). “Scaling Up to Excellence: Practicing Model Scaling for Photo-Realistic Image Restoration In the Wild.” Arxiv.</p>
+</li>
+<li>
+<p>Zhou, W., et al. (2024). “Improving the Stability of Diffusion Models for Content Consistent Super-Resolution.” Arxiv.</p>
+</li>
+<li>
+<p><strong>Software and Tools</strong>:</p>
+</li>
+<li>
+<p>xinntao/ESRGAN - <a href="https://github.com/xinntao/ESRGAN" class="external">https://github.com/xinntao/ESRGAN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>xinntao/Real-ESRGAN - <a href="https://github.com/xinntao/Real-ESRGAN" class="external">https://github.com/xinntao/Real-ESRGAN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Fanghua-Yu/SUPIR - <a href="https://github.com/Fanghua-Yu/SUPIR" class="external">https://github.com/Fanghua-Yu/SUPIR<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>kijai/ComfyUI-SUPIR - <a href="https://github.com/kijai/ComfyUI-SUPIR" class="external">https://github.com/kijai/ComfyUI-SUPIR<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>kijai/ComfyUI-CCSR - <a href="https://github.com/kijai/ComfyUI-CCSR" class="external">https://github.com/kijai/ComfyUI-CCSR<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>hzwer/RIFE - <a href="https://github.com/hzwer/RIFE" class="external">https://github.com/hzwer/RIFE<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (frame interpolation)</p>
+</li>
+<li>
+<p>google-research/frame-interpolation - <a href="https://github.com/google-research/frame-interpolation" class="external">https://github.com/google-research/frame-interpolation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Datasets</strong>:</p>
+</li>
+<li>
+<p>DIV2K - <a href="https://data.vision.ee.ethz.ch/cvl/DIV2K/" class="external">https://data.vision.ee.ethz.ch/cvl/DIV2K/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Flickr2K - <a href="https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar" class="external">https://cv.snu.ac.kr/research/EDSR/Flickr2K.tar<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>RAISE - <a href="http://loki.disi.unitn.it/RAISE/" class="external">http://loki.disi.unitn.it/RAISE/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><strong>Commercial Products</strong>:</p>
+</li>
+<li>
+<p>Topaz Gigapixel AI - <a href="https://www.topazlabs.com/gigapixel-ai" class="external">https://www.topazlabs.com/gigapixel-ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Topaz Video AI - <a href="https://www.topazlabs.com/video-ai" class="external">https://www.topazlabs.com/video-ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Magnific AI - <a href="https://magnific.ai/" class="external">https://magnific.ai/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Adobe Photoshop Super Resolution - Built-in feature</p>
+</li>
+<li>
+<p><strong>Educational Resources</strong>:</p>
+</li>
+<li>
+<p>OpenModelDB - <a href="https://openmodeldb.info/" class="external">https://openmodeldb.info/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (model database)</p>
+</li>
+<li>
+<p>Civitai Education - <a href="https://education.civitai.com/civitais-guide-to-image-upscaling/" class="external">https://education.civitai.com/civitais-guide-to-image-upscaling/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>ComfyUI Workflows - <a href="https://comfyworkflows.com/" class="external">https://comfyworkflows.com/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> (community workflows)</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-248" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#overview-and-history" data-for="overview-and-history">Overview and History</a></li><li class="depth-0"><a href="#mathematical-foundations" data-for="mathematical-foundations">Mathematical Foundations</a></li><li class="depth-1"><a href="#super-resolution-problem-formulation" data-for="super-resolution-problem-formulation">Super-Resolution Problem Formulation</a></li><li class="depth-1"><a href="#image-quality-metrics" data-for="image-quality-metrics">Image Quality Metrics</a></li><li class="depth-1"><a href="#loss-functions" data-for="loss-functions">Loss Functions</a></li><li class="depth-0"><a href="#classical-super-resolution-methods" data-for="classical-super-resolution-methods">Classical Super-Resolution Methods</a></li><li class="depth-1"><a href="#traditional-interpolation" data-for="traditional-interpolation">Traditional Interpolation</a></li><li class="depth-1"><a href="#deep-learning-classical-methods" data-for="deep-learning-classical-methods">Deep Learning Classical Methods</a></li><li class="depth-1"><a href="#gan-based-methods" data-for="gan-based-methods">GAN-Based Methods</a></li><li class="depth-0"><a href="#modern-ai-powered-super-resolution" data-for="modern-ai-powered-super-resolution">Modern AI-Powered Super-Resolution</a></li><li class="depth-1"><a href="#stable-diffusion-based-upscaling" data-for="stable-diffusion-based-upscaling">Stable Diffusion-Based Upscaling</a></li><li class="depth-1"><a href="#supir-scaling-up-image-restoration" data-for="supir-scaling-up-image-restoration">SUPIR: Scaling-UP Image Restoration</a></li><li class="depth-1"><a href="#ccsr-controlled-diffusion-super-resolution" data-for="ccsr-controlled-diffusion-super-resolution">CCSR: Controlled Diffusion Super-Resolution</a></li><li class="depth-1"><a href="#commercial-ai-upscaling-solutions" data-for="commercial-ai-upscaling-solutions">Commercial AI Upscaling Solutions</a></li><li class="depth-1"><a href="#video-upscaling" data-for="video-upscaling">Video Upscaling</a></li><li class="depth-0"><a href="#comfyui-workflows-and-integration" data-for="comfyui-workflows-and-integration">ComfyUI Workflows and Integration</a></li><li class="depth-1"><a href="#comfyui-for-ai-upscaling" data-for="comfyui-for-ai-upscaling">ComfyUI for AI Upscaling</a></li><li class="depth-1"><a href="#supir-comfyui-integration" data-for="supir-comfyui-integration">SUPIR ComfyUI Integration</a></li><li class="depth-1"><a href="#ccsr-comfyui-integration" data-for="ccsr-comfyui-integration">CCSR ComfyUI Integration</a></li><li class="depth-1"><a href="#ultimate-sd-upscale-workflow" data-for="ultimate-sd-upscale-workflow">Ultimate SD Upscale Workflow</a></li><li class="depth-1"><a href="#advanced-comfyui-upscaling-techniques" data-for="advanced-comfyui-upscaling-techniques">Advanced ComfyUI Upscaling Techniques</a></li><li class="depth-0"><a href="#applications-by-domain" data-for="applications-by-domain">Applications by Domain</a></li><li class="depth-1"><a href="#photography-and-content-creation" data-for="photography-and-content-creation">Photography and Content Creation</a></li><li class="depth-1"><a href="#medical-imaging" data-for="medical-imaging">Medical Imaging</a></li><li class="depth-1"><a href="#satellite-and-aerial-imagery" data-for="satellite-and-aerial-imagery">Satellite and Aerial Imagery</a></li><li class="depth-1"><a href="#gaming-and-real-time-applications" data-for="gaming-and-real-time-applications">Gaming and Real-Time Applications</a></li><li class="depth-1"><a href="#film-and-television-production" data-for="film-and-television-production">Film and Television Production</a></li><li class="depth-0"><a href="#cross-domain-applications" data-for="cross-domain-applications">Cross-Domain Applications</a></li><li class="depth-1"><a href="#blockchain-and-nft-integration" data-for="blockchain-and-nft-integration">Blockchain and NFT Integration</a></li><li class="depth-1"><a href="#robotics-and-computer-vision" data-for="robotics-and-computer-vision">Robotics and Computer Vision</a></li><li class="depth-1"><a href="#xr-and-emerging-technologies" data-for="xr-and-emerging-technologies">XR and Emerging Technologies</a></li><li class="depth-0"><a href="#technical-implementation" data-for="technical-implementation">Technical Implementation</a></li><li class="depth-1"><a href="#model-training-pipeline" data-for="model-training-pipeline">Model Training Pipeline</a></li><li class="depth-1"><a href="#inference-optimization" data-for="inference-optimization">Inference Optimization</a></li><li class="depth-1"><a href="#vram-requirements" data-for="vram-requirements">VRAM Requirements</a></li><li class="depth-0"><a href="#performance-metrics-and-benchmarks" data-for="performance-metrics-and-benchmarks">Performance Metrics and Benchmarks</a></li><li class="depth-1"><a href="#standard-benchmarks" data-for="standard-benchmarks">Standard Benchmarks</a></li><li class="depth-1"><a href="#perceptual-quality-assessment" data-for="perceptual-quality-assessment">Perceptual Quality Assessment</a></li><li class="depth-1"><a href="#speed-benchmarks-rtx-4090" data-for="speed-benchmarks-rtx-4090">Speed Benchmarks (RTX 4090)</a></li><li class="depth-1"><a href="#emerging-research-areas" data-for="emerging-research-areas">Emerging Research Areas</a></li><li class="depth-1"><a href="#integration-with-other-technologies" data-for="integration-with-other-technologies">Integration with Other Technologies</a></li><li class="depth-1"><a href="#foundational-papers" data-for="foundational-papers">Foundational Papers</a></li><li class="depth-1"><a href="#recent-advances-2023-2024" data-for="recent-advances-2023-2024">Recent Advances (2023-2024)</a></li><li class="depth-1"><a href="#survey-papers" data-for="survey-papers">Survey Papers</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/CodeFormer" class="internal">CodeFormer</a></li><li><a href="../pages/ComfyUI-Workflows" class="internal">ComfyUI Workflows</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

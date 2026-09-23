@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Cybersecurity Risk Management</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Cybersecurity Risk Management"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Cybersecurity Risk Management"/><meta name="twitter:description" content="A structured discipline for identifying, assessing, prioritising, and treating risks to information systems, data assets, and digital infrastructure arising from threats such as malicious actors, system vulnerabilities, and operational failures."/><meta property="og:description" content="A structured discipline for identifying, assessing, prioritising, and treating risks to information systems, data assets, and digital infrastructure arising from threats such as malicious actors, system vulnerabilities, and operational failures."/><meta property="og:image:alt" content="A structured discipline for identifying, assessing, prioritising, and treating risks to information systems, data assets, and digital infrastructure arising from threats such as malicious actors, system vulnerabilities, and operational failures."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Cybersecurity-Risk-Management"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Cybersecurity-Risk-Management"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A structured discipline for identifying, assessing, prioritising, and treating risks to information systems, data assets, and digital infrastructure arising from threats such as malicious actors, system vulnerabilities, and operational failures."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Cybersecurity-Risk-Management"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2080"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2080" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Cybersecurity Risk Management</a></div></nav><h1 class="article-title">Cybersecurity Risk Management</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.723Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:cybersecurity-risk-management</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.9</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../pages/Cybersecurity-Framework" class="internal">Cybersecurity Framework</a></li><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../Information-Security-Management" class="internal">Information Security Management</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Threat-Modelling" class="internal">Threat Modelling</a></li><li><a href="../pages/Vulnerability-Assessment" class="internal">Vulnerability Assessment</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/Risk-Register" class="internal">Risk Register</a></li><li><a href="../pages/Continuous-Monitoring" class="internal">Continuous Monitoring</a></li><li><a href="../pages/Incident-Response" class="internal">Incident Response</a></li><li><a href="../pages/Compliance-Monitoring" class="internal">Compliance Monitoring</a></li><li><a href="../pages/Penetration-Testing" class="internal">Penetration Testing</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Threat-Modelling" class="internal">Threat Modelling</a></li><li><a href="../pages/Vulnerability-Assessment" class="internal">Vulnerability Assessment</a></li><li><a href="../pages/Continuous-Monitoring" class="internal">Continuous Monitoring</a></li><li><a href="../pages/Security-Operations" class="internal">Security Operations</a></li><li><a href="../pages/Security-Operations-Centre" class="internal">Security Operations Centre</a></li><li><a href="../pages/Threat-Detection" class="internal">Threat Detection</a></li><li><a href="../pages/Penetration-Testing" class="internal">Penetration Testing</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Incident-Response" class="internal">Incident Response</a></li><li><a href="../pages/Compliance-Monitoring" class="internal">Compliance Monitoring</a></li><li><a href="../pages/Cyber-Resilience" class="internal">Cyber Resilience</a></li><li><a href="../operational-resilience" class="internal">Operational Resilience</a></li><li><a href="../pages/Accountability" class="internal">Accountability</a></li><li><a href="../pages/Governance" class="internal">Governance</a></li><li><a href="../pages/Resilience" class="internal">Resilience</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Governance" class="internal">Governance</a></li><li><a href="../pages/Security" class="internal">Security</a></li><li><a href="../pages/AI-Risk-Management" class="internal">AI Risk Management</a></li><li><a href="../pages/Compliance-Framework" class="internal">Compliance Framework</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Operational-Resilience" class="internal">Operational Resilience</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Security-Operations" class="internal">Security Operations</a></li><li><a href="../pages/Threat-Detection" class="internal">Threat Detection</a></li><li><a href="../pages/Security-Operations-Centre" class="internal">Security Operations Centre</a></li><li><a href="../pages/SIEM" class="internal">SIEM</a></li><li><a href="../pages/SOAR" class="internal">SOAR</a></li><li><a href="../pages/Continuous-Monitoring" class="internal">Continuous Monitoring</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../information-security-management" class="internal">Information Security Management</a></li><li><a href="../pages/Security-Framework" class="internal">Security Framework</a></li><li><a href="../pages/NIST-Cybersecurity-Framework" class="internal">NIST Cybersecurity Framework</a></li><li><a href="../pages/ISO-27001" class="internal">ISO 27001</a></li><li><a href="../pages/Risk-Assessment-Methodology" class="internal">Risk Assessment Methodology</a></li><li><a href="../pages/Zero-Trust-Architecture" class="internal">Zero Trust Architecture</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../governance" class="internal">Governance</a></li><li><a href="../security" class="internal">Security</a></li><li><a href="../risk-management" class="internal">Risk Management</a></li><li><a href="../information-security-management" class="internal">Information Security Management</a></li><li><a href="../threat-modelling" class="internal">Threat Modelling</a></li><li><a href="../vulnerability-assessment" class="internal">Vulnerability Assessment</a></li><li><a href="../continuous-monitoring" class="internal">Continuous Monitoring</a></li><li><a href="../security-framework" class="internal">Security Framework</a></li><li><a href="../risk-assessment" class="internal">Risk Assessment</a></li><li><a href="../incident-response" class="internal">Incident Response</a></li><li><a href="../compliance-monitoring" class="internal">Compliance Monitoring</a></li><li><a href="../ai-safety" class="internal">AI Safety</a></li><li><a href="../supply-chain-security" class="internal">Supply Chain Security</a></li><li><a href="../penetration-testing" class="internal">Penetration Testing</a></li><li><a href="../nist-cybersecurity-framework" class="internal">NIST Cybersecurity Framework</a></li><li><a href="../iso-27001" class="internal">ISO 27001</a></li><li><a href="../resilience" class="internal">Resilience</a></li><li><a href="../accountability" class="internal">Accountability</a></li><li><a href="../security-operations" class="internal">Security Operations</a></li><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../risk-register" class="internal">Risk Register</a></li><li><a href="../siem" class="internal">SIEM</a></li><li><a href="../soar" class="internal">SOAR</a></li><li><a href="../ai-risk-management" class="internal">AI Risk Management</a></li><li><a href="../cyber-resilience" class="internal">Cyber Resilience</a></li><li><a href="../threat-actor" class="internal">Threat Actor</a></li><li><a href="../threat-detection" class="internal">Threat Detection</a></li><li><a href="../security-operations-centre" class="internal">Security Operations Centre</a></li><li><a href="../compliance-framework" class="internal">Compliance Framework</a></li><li><a href="../ai-governance" class="internal">AI Governance</a></li><li><a href="../operational-resilience" class="internal">Operational Resilience</a></li><li><a href="../risk-assessment-methodology" class="internal">Risk Assessment Methodology</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:cybersecurity-risk-management</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Supply-Chain-Security" class="internal">Supply Chain Security</a></li><li><a href="../pages/Penetration-Testing" class="internal">Penetration Testing</a></li><li><a href="../pages/AI-Risk-Management" class="internal">AI Risk Management</a></li><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Threat-Actor" class="internal">Threat Actor</a></li><li><a href="../pages/Incident-Response" class="internal">Incident Response</a></li><li><a href="../pages/Continuous-Monitoring" class="internal">Continuous Monitoring</a></li><li><a href="../pages/Risk-Assessment-Methodology" class="internal">Risk Assessment Methodology</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/NIST-Cybersecurity-Framework" class="internal">NIST Cybersecurity Framework</a></li><li><a href="../pages/ISO-27001" class="internal">ISO 27001</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Resilience" class="internal">Resilience</a></li><li><a href="../pages/Accountability" class="internal">Accountability</a></li><li><a href="../pages/Governance" class="internal">Governance</a></li><li><a href="../pages/Compliance-Framework" class="internal">Compliance Framework</a></li><li><a href="../pages/Cyber-Resilience" class="internal">Cyber Resilience</a></li><li><a href="../pages/Operational-Resilience" class="internal">Operational Resilience</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Security-Framework" class="internal">Security Framework</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/SIEM" class="internal">SIEM</a></li><li><a href="../pages/SOAR" class="internal">SOAR</a></li><li><a href="../pages/Risk-Register" class="internal">Risk Register</a></li><li><a href="../zero-trust-architecture" class="internal">Zero Trust Architecture</a></li><li><a href="../pages/Threat-Modelling" class="internal">Threat Modelling</a></li><li><a href="../pages/Vulnerability-Assessment" class="internal">Vulnerability Assessment</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>A structured discipline for identifying, assessing, prioritising, and treating risks to information systems, data assets, and digital infrastructure arising from threats such as malicious actors, system vulnerabilities, and operational failures. Cybersecurity risk management integrates threat modelling, vulnerability assessment, control selection, and residual risk acceptance into a repeatable governance cycle aligned with organisational risk appetite. Frameworks such as NIST CSF, ISO 27005, and FAIR provide structured methodologies. It bridges technical security practice with executive governance and regulatory compliance.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:ThreatModelling))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:VulnerabilityAssessment))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:RiskAssessment))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:RiskRegister))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:ContinuousMonitoring))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:IncidentResponse))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:hasPart security:ControlMapping))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:requires security:SecurityOperations))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:requires security:ThreatDetection))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:requires security:SecurityOperationsCentre))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:dependsOn security:SIEM))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:dependsOn security:SOAR))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:dependsOn security:ThreatIntelligence))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:dependsOn security:VulnerabilityDatabase))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:enables security:CyberResilience))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:enables security:OperationalResilience))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:enables security:ComplianceMonitoring))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:enables security:BoardLevelRiskReporting))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:enables security:RegulatoryCompliance))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:enables security:ResidualRiskAcceptance))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:implements security:NISTCybersecurityFramework))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:implements security:ISO27001))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:implements security:FAIRQuantitativeModel))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:implements security:RiskAssessmentMethodology))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:implements security:ZeroTrustArchitecture))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:reducesTo security:RiskAssessment))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:reducesTo security:ControlSelection))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:reducesTo security:ResidualRiskAcceptance))
+</code></pre>
+<h2 id="governance-relationships">Governance Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#governance-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:supports security:Governance))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:supports security:Accountability))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:bridges security:InformationSecurityManagement))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:bridges security:EnterpriseRiskManagement))
+</code></pre>
+<h2 id="contrastive-relationships">Contrastive Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrastive-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectAllValuesFrom(security:contrasts-with security:AISafety))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectAllValuesFrom(security:contrasts-with security:PhysicalSecurity))
+</code></pre>
+<h2 id="regulatory-relationships">Regulatory Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#regulatory-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:standardizedBy security:NISTCybersecurityFramework))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:standardizedBy security:ISO27001))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:standardizedBy security:NCSCCAF))
+
+SubClassOf(security:CybersecurityRiskManagement
+  ObjectSomeValuesFrom(security:complianceWith security:NIS2Directive))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Cybersecurity Risk Management is the systematic, evidence-based practice of understanding, quantifying, and mitigating threats to the confidentiality, integrity, and availability of information systems and the data they process. Unlike ad hoc security patching or perimeter-focused defence, it provides a structured governance layer that connects technical <a href="../pages/Security-Operations" class="internal alias" data-slug="pages/Security-Operations">Security Operations</a> with organisational strategy: every control investment is justified by a documented risk reduction, and every accepted risk is signed off by an accountable risk owner. The discipline has matured considerably since the early 2000s, moving from binary compliance checklists (pass/fail against prescribed standards) toward risk-based and outcomes-based approaches that accommodate the continuously evolving threat landscape. The CIA triad — Confidentiality, Integrity, and Availability — remains the foundational definitional framework for what cybersecurity risk management seeks to protect, and almost all risk taxonomies and control catalogues trace their categorisation logic back to these three properties.</p>
+<p>The economics of cybersecurity risk management are distinctive. Unlike physical safety risks where failure modes are usually well-characterised and probability distributions empirically grounded in historical incident data (engineering reliability data, insurance actuarial tables), cyber risk is shaped by adaptive adversaries who actively probe for and exploit weaknesses in controls. This adversarial dynamic means that historical incident frequencies may systematically underestimate future risk as attackers innovate, and that the effectiveness of a control can degrade rapidly once adversaries develop evasion techniques. Anderson’s foundational 2001 paper on the economics of information security identified three systemic distortions: (1) misaligned incentives, where those who build insecure systems do not bear the full cost of their failures; (2) information asymmetry, where vendors conceal vulnerability information; and (3) externalities, where security failures in one organisation impose costs on others through network effects. These distortions justify regulatory intervention — mandatory incident disclosure, minimum security standards, certification schemes — precisely because market mechanisms alone produce persistent underinvestment in cybersecurity <a href="../pages/Resilience" class="internal" data-slug="pages/Resilience">Resilience</a>.</p>
+<p>The discipline is organised around a management cycle that parallels ISO general management system structures. In the Plan phase, organisations define the scope of the <a href="../pages/Risk-Assessment" class="internal alias" data-slug="pages/Risk-Assessment">Risk Assessment</a>, identify assets and their owners, map the threat landscape (internal threats, external adversaries, environmental risks), and select a risk assessment methodology. In the Do phase, risk assessments are executed — threats enumerated via <a href="../pages/Threat-Modelling" class="internal alias" data-slug="pages/Threat-Modelling">Threat Modelling</a>, vulnerabilities identified via <a href="../pages/Vulnerability-Assessment" class="internal alias" data-slug="pages/Vulnerability-Assessment">Vulnerability Assessment</a> and <a href="../pages/Penetration-Testing" class="internal alias" data-slug="pages/Penetration-Testing">Penetration Testing</a>, likelihood and impact estimated, and risks scored and ranked. In the Check phase, risk treatment plans are implemented (controls deployed, configurations hardened, policies updated, insurance procured), and their effectiveness verified through testing, audit, and <a href="../pages/Continuous-Monitoring" class="internal alias" data-slug="pages/Continuous-Monitoring">Continuous Monitoring</a>. In the Act phase, findings from monitoring, incidents, and external intelligence feed back into the next assessment cycle, updating the <a href="../pages/Risk-Register" class="internal alias" data-slug="pages/Risk-Register">Risk Register</a> and informing governance reporting. This PDCA cycle underpins ISO 27001 certification and ISO 27005 risk management practice alike.</p>
+<p>The conceptual core of cybersecurity risk management is a four-phase cycle — identify, assess, treat, monitor — which is variously formalised across frameworks. NIST CSF 2.0 (released February 2024) expanded the original five-function model (Identify, Protect, Detect, Respond, Recover) by adding a sixth function, Govern, making explicit that cybersecurity strategy, policy, and risk management are executive responsibilities rather than purely operational ones. ISO/IEC 27005:2022 provides complementary guidance on implementing an information security risk management process compatible with ISO/IEC 27001:2022, and explicitly accommodates both qualitative and semi-quantitative analysis methods. The FAIR (Factor Analysis of Information Risk) model layers financial quantification onto this cycle, expressing cyber risk in monetary loss expectancy terms that align with finance and audit language, enabling prioritisation of controls by return on security investment.</p>
+<p>A critical dimension of modern cybersecurity risk management is supply chain and third-party risk. Sophisticated threat actors — nation states and organised criminal groups alike — increasingly target organisations indirectly through their software vendors, managed service providers, and hardware suppliers. The SolarWinds (2020), Kaseya (2021), and MOVEit Transfer (2023) incidents each demonstrated how a compromise in a trusted supplier can propagate laterally across thousands of downstream organisations. Risk managers now routinely conduct vendor risk assessments, apply tiered supplier classifications, and require supply chain organisations to achieve Cyber Essentials certification as a baseline hygiene standard. The UK NCSC’s 2025 Annual Review recorded a record 204 nationally significant cyber incidents in the year to September 2025 — more than double the previous year’s 89 — reinforcing the urgency of systematic risk management practice.</p>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Threat Modelling</strong></p>
+<ul>
+<li>Structured enumeration of adversary profiles, attack surfaces, and likely kill chains</li>
+<li>Methodologies: STRIDE (Spoofing, Tampering, Repudiation, Information Disclosure, Denial of Service, Elevation of Privilege); PASTA (Process for Attack Simulation and Threat Analysis, seven-stage attacker-centric framework); OCTAVE (Operationally Critical Threat, Asset, and Vulnerability Evaluation); ATT&amp;CK-aligned modelling using MITRE ATT&amp;CK framework</li>
+<li>Outputs: data-flow diagrams annotated with threat categories, adversary capability assessments, prioritised attack scenarios</li>
+</ul>
+<p><strong>Vulnerability Assessment and Management</strong></p>
+<ul>
+<li>Continuous discovery of exploitable weaknesses in assets, configurations, code, and third-party components</li>
+<li>Tools: authenticated network scanning (Tenable Nessus, Qualys VMDR, Rapid7 InsightVM); dynamic application security testing (Burp Suite DAST); static analysis (Checkmarx SAST, Semgrep); software composition analysis (Snyk, Dependabot, Black Duck)</li>
+<li>Scoring via CVSS v3.1 and CVSS v4.0 (Common Vulnerability Scoring System); contextualisation via CISA KEV (Known Exploited Vulnerabilities catalogue) prioritises patching based on observed exploitation in the wild</li>
+<li>EPSS (Exploit Prediction Scoring System) supplements CVSS by providing probability estimates of exploitation within 30 days, enabling more nuanced prioritisation beyond base severity</li>
+<li>Vulnerability management metrics: Mean Time to Remediate (MTTR) by severity class; Patch Coverage Rate; Critical Vulnerability Exposure Window</li>
+<li>Cloud configuration management: CSPM (Cloud Security Posture Management) tools (Prisma Cloud, Wiz, Orca Security) continuously assess cloud infrastructure for misconfigurations — a leading cause of cloud data breaches</li>
+<li>Feeds directly into risk treatment prioritisation: high-CVSS vulnerabilities on internet-facing assets with active exploit code in KEV receive emergency patching priority (SLA: 24-48 hours)</li>
+</ul>
+<p><strong>Risk Assessment and Quantification</strong></p>
+<ul>
+<li>Qualitative matrices mapping likelihood × impact (5×5 heat maps) for executive communication</li>
+<li>Semi-quantitative ordinal scales (ISO 27005:2022 approach) providing ranked risk lists</li>
+<li>Quantitative FAIR analysis: decomposing risk into Threat Event Frequency, Vulnerability, and Loss Magnitude (Primary Loss and Secondary Loss) to produce Monte Carlo probability distributions of annualised loss expectancy (ALE)</li>
+<li>Output: prioritised risk register with treatment options (accept, mitigate, transfer, avoid) and cost-benefit analysis</li>
+</ul>
+<p><strong>Control Framework Mapping</strong></p>
+<ul>
+<li>CIS Controls v8.1 (18 control families, 153 safeguards); NIST SP 800-53 Rev. 5 (over 1,000 controls across 20 control families); ISO 27002:2022 (93 controls across 4 themes and 11 clauses)</li>
+<li>Mapping identified risks to specific control identifiers enables structured evidence collection, gap analysis, and audit readiness</li>
+<li>Compensating control documentation required for cases where primary controls are technically or operationally infeasible (e.g. legacy OT systems that cannot be patched)</li>
+<li>Control inheritance: cloud customers inherit controls from cloud service providers under shared responsibility models; these must be explicitly documented and evidenced in compliance programmes</li>
+<li>SCF (Secure Controls Framework) provides a unified control catalogue mapping across 100+ frameworks enabling simultaneous compliance with ISO 27001, NIST CSF, SOC 2, PCI DSS, and HIPAA from a single control set</li>
+<li>Control testing cadence: preventive controls tested annually; detective controls tested quarterly; corrective controls tested per incident; continuous controls validated by automated compliance scanning</li>
+</ul>
+<p><strong>Continuous Monitoring and Detection</strong></p>
+<ul>
+<li>SIEM platforms (Splunk, Microsoft Sentinel, IBM QRadar) aggregate logs from network devices, endpoints, cloud services, and applications; apply correlation rules and ML-based anomaly detection</li>
+<li>SOAR platforms (Palo Alto XSOAR, Splunk SOAR) automate response playbooks: endpoint isolation, credential rotation, firewall rule updates — reducing mean time to respond (MTTR) to under minutes</li>
+<li>Threat intelligence feeds (MISP, TAXII/STIX, commercial threat intel) enrich detection rules with adversary indicators of compromise (IoCs) and tactics, techniques, and procedures (TTPs)</li>
+</ul>
+<p><strong>Governance and Reporting</strong></p>
+<ul>
+<li>Quarterly risk committee reporting: <a href="../pages/Risk-Register" class="internal alias" data-slug="pages/Risk-Register">Risk Register</a> status (open, in-treatment, accepted, closed risks), control effectiveness metrics, overdue remediation actions, and emerging threat briefings</li>
+<li>Board-level cybersecurity dashboards translating technical findings into financial and strategic risk language aligned with enterprise risk management (ERM) risk appetite statements</li>
+<li>Regulatory reporting obligations: NIS2 Directive (significant incident notification within 24 hours initial warning, 72 hours detailed report for EU-service entities); ICO/UK GDPR breach notification (72 hours from awareness); Cyber Security and Resilience Bill obligations for UK CNI operators; SEC cybersecurity disclosure rules (material incident disclosure within 4 business days for US-listed entities)</li>
+<li>Risk appetite statements approved by board: quantitative tolerances for maximum acceptable downtime, maximum tolerable data loss (RPO/RTO), and maximum annualised loss expectancy by business unit and risk category</li>
+<li>Cyber insurance integration: risk quantification outputs (FAIR ALE distributions) inform cyber insurance coverage decisions; insurers increasingly require evidence of risk management maturity (MFA deployment, EDR coverage, patch cadence) as underwriting conditions</li>
+<li>Three Lines of Defence model: Line 1 — operational security controls owned by business units; Line 2 — second-line risk and compliance function providing oversight and frameworks; Line 3 — internal audit providing independent assurance to the board</li>
+<li>Key Risk Indicators (KRIs): metrics providing leading-indicator signals of deteriorating risk posture — e.g. phishing click rates, mean time to patch critical vulnerabilities, percentage of endpoints with current EDR, number of unresolved high-severity findings</li>
+</ul>
+<p><strong>Risk Register Management</strong></p>
+<ul>
+<li>The <a href="../pages/Risk-Register" class="internal alias" data-slug="pages/Risk-Register">Risk Register</a> is the central artefact of cybersecurity risk management: a structured, live document (or platform record) capturing all identified risks with their owner, current rating, treatment status, and acceptance decision</li>
+<li>Standard fields: Risk ID; Description; Asset(s) at risk; Threat source; Vulnerability exploited; Likelihood (qualitative or ALE probability); Impact (qualitative or financial £/$); Inherent risk rating; Control(s) applied; Residual risk rating; Risk owner; Treatment decision (mitigate/accept/transfer/avoid); Target treatment date; Review date; Status</li>
+<li>Risk register reviews typically: monthly operational review (action progress, new risks emerging from incident or threat intelligence); quarterly risk committee (control effectiveness, risk trend analysis, budget implications); annual board presentation (risk appetite alignment, strategic risk posture)</li>
+<li>GRC platform tooling: ServiceNow GRC, Archer, LogicGate, 6clicks, Vanta — provide integrated risk register management with control evidence collection, workflow automation, and regulatory mapping</li>
+</ul>
+<p><strong>Zero Trust Integration</strong></p>
+<ul>
+<li>Classical perimeter defences assume a trusted internal network; <a href="../pages/Zero-Trust-Architecture" class="internal alias" data-slug="pages/Zero-Trust-Architecture">Zero Trust Architecture</a> (ZTA) assumes breach and enforces micro-segmentation, least-privilege access, continuous identity verification, and device health attestation</li>
+<li>Risk management informs ZTA policy: assets carrying the highest-risk data receive the strictest access controls; lateral movement is restricted by dynamic policy engines</li>
+<li><a href="../pages/SIEM" class="internal" data-slug="pages/SIEM">SIEM</a> + <a href="../pages/SOAR" class="internal" data-slug="pages/SOAR">SOAR</a> + ZTA convergence enables automated risk-responsive enforcement: when SIEM detects anomalous credential behaviour, SOAR triggers ZTNA policy engine to revoke session in real time</li>
+<li>ZTA implementation risk: overly aggressive microsegmentation can create availability risks; risk management must balance security control strength against operational continuity requirements</li>
+</ul>
+<h2 id="major-threat-families-and-risk-taxonomy">Major Threat Families and Risk Taxonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-threat-families-and-risk-taxonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Cybersecurity risk management operates against a structured taxonomy of threat categories, each requiring distinct assessment and treatment approaches.</p>
+<p><strong>Social Engineering and Phishing</strong></p>
+<ul>
+<li>Business Email Compromise (BEC) and spear phishing represent the highest-frequency, high-impact threat vector for most organisations — NCSC data shows phishing remains the initial access method in the majority of significant incidents</li>
+<li>Vishing (voice phishing) and smishing (SMS phishing) extend the attack surface beyond email</li>
+<li>AI-generated deepfake audio and video are increasingly used in sophisticated BEC campaigns — a threat vector specifically highlighted in the NCSC 2025 Annual Review</li>
+<li>Risk treatment: security awareness training, email authentication controls (DMARC, DKIM, SPF), anti-phishing email gateways, multi-factor authentication to limit credential compromise impact</li>
+<li>Residual risk monitoring: phishing simulation programmes, click-rate KRIs, reported phishing volume metrics</li>
+</ul>
+<p><strong>Ransomware and Extortion</strong></p>
+<ul>
+<li>Ransomware-as-a-Service (RaaS) groups (LockBit, BlackCat/ALPHV, Clop) operate affiliate models enabling low-sophistication actors to deploy enterprise-grade ransomware</li>
+<li>Double-extortion model: data exfiltration precedes encryption, enabling ransom demand even if backups prevent service disruption</li>
+<li>Triple-extortion extends to DDoS against victims who refuse to pay, and threatening victims’ customers/partners</li>
+<li>Critical risk treatment controls: offline immutable backups tested quarterly; EDR (Endpoint Detection and Response) with behavioural detection on all endpoints; network segmentation limiting lateral movement; incident response playbook with tested recovery procedure</li>
+<li>UK NCSC guidance recommends against ransom payment as it does not guarantee data recovery and funds criminal ecosystems</li>
+</ul>
+<p><strong>Supply Chain and Third-Party Compromise</strong></p>
+<ul>
+<li>Software supply chain attacks target build pipelines, code repositories, and CI/CD systems — compromising a trusted software update mechanism propagates malware to all downstream customers</li>
+<li>Notable incidents: SolarWinds SUNBURST (2020), Kaseya VSA (2021), MOVEit Transfer (2023) each affected thousands of organisations through single vendor compromises</li>
+<li>Hardware supply chain risks: counterfeit components, implanted hardware backdoors in imported equipment — relevant for CNI and defence procurement</li>
+<li>Risk treatment: software bill of materials (SBOM) for all deployed software; vendor tiering with proportionate security assessment depth; <a href="../pages/Supply-Chain-Security" class="internal alias" data-slug="pages/Supply-Chain-Security">Supply Chain Security</a> contractual requirements; continuous monitoring of vendor security posture via attack surface management tools</li>
+<li>NCSC Cyber Essentials certification required as minimum for Tier 3 suppliers; full ISO 27001 or SOC 2 for Tier 1 suppliers with sensitive data access</li>
+</ul>
+<p><strong>Insider Threats</strong></p>
+<ul>
+<li>Malicious insiders (disgruntled employees, compromised accounts with excessive privileges) pose disproportionate risk because they already possess trusted access</li>
+<li>Negligent insiders (accidental data exposure, misconfiguration, falling for phishing) cause the majority of data breaches by frequency</li>
+<li>Risk treatment: least-privilege access principles; privileged access management (PAM) systems; user and entity behaviour analytics (UEBA) within <a href="../pages/SIEM" class="internal" data-slug="pages/SIEM">SIEM</a>; data loss prevention (DLP) tooling; joiners-movers-leavers identity lifecycle processes</li>
+<li>Insider threat monitoring must balance security monitoring obligations with employee privacy rights under UK GDPR — a legal tension requiring documented legitimate interest assessments</li>
+</ul>
+<p><strong>Nation-State and Advanced Persistent Threat (APT) Actors</strong></p>
+<ul>
+<li>State-sponsored groups (categorised by MITRE ATT&amp;CK as specific APT groups: APT28/Fancy Bear attributed to Russia GRU; Lazarus Group attributed to North Korea; APT41 attributed to China MSS) target CNI, defence, finance, and technology sectors</li>
+<li>TTPs: spear phishing for initial access; living-off-the-land (LoTL) techniques using legitimate system tools for lateral movement; persistent backdoors; long dwell times (months to years) before impact</li>
+<li>Risk treatment for high-risk targets: defence-in-depth with multiple independent detection layers; deception technology (honeypots, honeytokens); threat hunting by skilled analysts rather than sole reliance on automated detection; privileged access workstations (PAWs); just-in-time privileged access</li>
+<li>NCSC provides sector-specific threat intelligence briefings to CNI operators and regulated sectors via its CISP (Cyber Security Information Sharing Partnership) platform</li>
+</ul>
+<p><strong>Cloud and API Security Risks</strong></p>
+<ul>
+<li>Cloud misconfiguration is the leading cause of cloud data breaches — exposed S3 buckets, overpermissioned IAM roles, publicly accessible development databases</li>
+<li>API security risks: broken object-level authorisation (BOLA), broken authentication, excessive data exposure — the OWASP API Security Top 10 provides the canonical risk taxonomy</li>
+<li>Shadow IT and unmanaged cloud services expand the attack surface outside the visibility of central security teams</li>
+<li>Risk treatment: CSPM tools for continuous cloud posture monitoring; Infrastructure-as-Code (IaC) scanning in CI/CD pipelines; API gateway with authentication enforcement and rate limiting; cloud-native SIEM integration (AWS Security Hub, Azure Sentinel, GCP Security Command Centre)</li>
+</ul>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Enterprise Security Programme Governance</strong></p>
+<ul>
+<li>Large organisations (financial services, healthcare, energy, defence) use cybersecurity risk management as the governance backbone of their information security programmes</li>
+<li>Quarterly board risk packs translate technical risk register data into executive risk language, using financial loss estimates and regulatory consequence framing</li>
+<li>Annual ISO 27001 audit cycle generates evidence of risk assessment execution, treatment plan completion, and monitoring programme operation</li>
+<li>Enterprise risk management (ERM) integration: cyber risks carried alongside financial, operational, and reputational risk categories in the enterprise risk register, enabling cross-risk prioritisation and board-level holistic risk oversight</li>
+</ul>
+<p><strong>Cloud Migration Risk Assessment</strong></p>
+<ul>
+<li>Cloud migration projects require risk assessments addressing shared responsibility boundaries (AWS/Azure/GCP security of the cloud vs customer security in the cloud), data residency and sovereignty requirements, identity federation risks, and misconfiguration threat surfaces unique to cloud environments</li>
+<li>Risk management gates embedded in DevSecOps pipelines via Infrastructure-as-Code (IaC) scanning tools (Checkov, Terrascan, tfsec) prevent insecure configurations from reaching production</li>
+<li>Cloud risk assessment output: RACI matrix clarifying which controls the CSP owns, which are customer-owned, and which are shared — critical for audit evidence completeness</li>
+<li>Data classification drives cloud security control selection: highly sensitive data categories (health, financial, legal) require encryption at rest and in transit, tokenisation or pseudonymisation where feasible, and access limited to specific geographic regions</li>
+</ul>
+<p><strong>AI System Risk Gating</strong></p>
+<ul>
+<li>Organisations deploying AI models — particularly high-risk AI under the EU AI Act classification — require threat modelling of AI-specific attack surfaces: adversarial input attacks, model inversion (extracting training data from model outputs), membership inference (determining whether specific data was in the training set), prompt injection for LLM-based systems, and data poisoning of training pipelines</li>
+<li>Cybersecurity risk management provides the methodological backbone extended by AI-specific risk taxonomies from NIST AI RMF and the EU AI Act risk classification system</li>
+<li>AI risk register entries capture: model source and version; training data provenance; fine-tuning and RLHF details; known capability limitations; adversarial robustness test results; incident response plan for model misbehaviour</li>
+</ul>
+<p><strong>Third-Party and Supply Chain Risk</strong></p>
+<ul>
+<li>Vendor risk assessment programmes classify suppliers by data access tier: Tier 1 (access to sensitive personal data — full security questionnaire, on-site audit, penetration test requirements); Tier 2 (system access, no personal data — questionnaire and evidence review); Tier 3 (no system or data access — Cyber Essentials certification only)</li>
+<li>Continuous monitoring of vendor cyber posture via attack surface management (ASM) tools supplements periodic point-in-time assessments — tracking exposed services, detected vulnerabilities, and dark web exposure for all critical suppliers</li>
+<li>Contract security schedules specify minimum security standards, right-to-audit clauses, incident notification obligations, and liability allocation for supplier-caused breaches</li>
+</ul>
+<p><strong>Operational Technology (OT) and Critical Infrastructure</strong></p>
+<ul>
+<li>Industrial control systems, SCADA networks, and IoT-heavy environments in energy, water, and transport sectors apply adapted frameworks: IEC 62443 for industrial cybersecurity, NCSC CAF for UK CNI operators</li>
+<li>Safety-critical consequences of availability disruption (power outage, water system contamination, transportation system failure) require integrated safety and security risk assessment</li>
+<li>Patching legacy OT systems without operational downtime is a chronic risk management challenge — compensating controls (network segmentation, unidirectional security gateways, enhanced monitoring) substitute for direct patching where technically infeasible</li>
+<li>IT/OT convergence driven by Industry 4.0 connectivity expands the cyber attack surface into previously air-gapped systems, requiring integrated IT/OT risk management approaches</li>
+</ul>
+<p><strong>Regulatory Compliance and Audit Readiness</strong></p>
+<ul>
+<li>ISO 27001 certification requires documented risk assessment methodology, risk treatment plans, and evidence of ongoing monitoring — all core outputs of cybersecurity risk management; annual surveillance audits and triennial recertification audits assess continuous operation</li>
+<li>UK financial services firms regulated by the FCA and PRA: DORA (Digital Operational Resilience Act) requirements applicable to firms serving EU markets mandate formal risk-based impact tolerance testing and scenario-based resilience testing</li>
+<li>Cyber insurance underwriting increasingly requires evidence of specific cybersecurity control maturity: multi-factor authentication deployment rates, EDR coverage, backup immutability, and risk assessment currency are standard underwriting requirements</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The theoretical foundations of cybersecurity risk management draw from multiple disciplines: information security engineering, risk theory, decision science, economics, and organisational behaviour. Information security risk management formalised in the late 1990s through governmental frameworks: the US Department of Defense developed the DIACAP and later the Risk Management Framework (RMF) processes for federal systems; NIST published SP 800-30 (Guide for Conducting Risk Assessments) in 2002, updated 2012. The Orange Book (DoD Trusted Computer System Evaluation Criteria, 1983) provided early formal security evaluation methodology. Bruce Schneier’s work throughout the 2000s popularised risk-thinking in security practice, articulating the distinction between security theatre (compliance without risk reduction) and genuine security improvement.</p>
+<p>Ross Anderson’s foundational 2001 paper “Why Information Security is Hard — An Economic Perspective” (ACSAC 2001) introduced the economic lens: incentive misalignment (developers bear no cost for insecure code; users bear the cost), information asymmetry (vendors conceal vulnerability data from customers), and externality problems (breaches impose costs on third parties not party to the vendor-customer relationship) each explain chronic underinvestment in security. Anderson and Moore’s 2006 Science paper “The Economics of Information Security” expanded this analysis to cover signalling, moral hazard, and adverse selection in security markets — providing the theoretical justification for mandatory disclosure and minimum standards regulation.</p>
+<p>Hubbard and Seiersen’s “How to Measure Anything in Cybersecurity Risk” (2016) provided the methodological basis for FAIR-style quantitative analysis, applying established actuarial and engineering risk techniques — calibrated probability estimation, Monte Carlo simulation, Bayesian updating — to cyber domains where data is sparse. Their core argument — that calibrated uncertainty (well-calibrated 90% confidence intervals) is epistemically superior to false precision (3-decimal-place CVSS scores from 5×5 matrices) — has driven the quantitative risk management movement.</p>
+<p>Academic attention has turned increasingly to adversarial machine learning risk (Biggio and Roli, 2018 Wild Patterns survey; Papernot et al., 2016 practical black-box attacks) and to AI system risk management as a distinct subdiscipline (NIST AI RMF 1.0, 2023; ISO/IEC 42001:2023; EU AI Act risk classification). Research groups at University College London (Information Security Group led by Prof. Angela Sasse — foundational usable security and human factors research), Royal Holloway (Information Security Group — 25-year applied security research tradition), University of Edinburgh (Security &amp; Privacy research — formal verification and privacy-enhancing technologies), and Imperial College London (Computing Security — systems security and cryptography) contribute to both technical and governance dimensions of cybersecurity risk management. Internationally, Carnegie Mellon’s CyLab (Pittsburgh), MIT CSAIL, and Stanford’s Security Lab produce the most cited foundational research.</p>
+<p>The ISADM framework (Zalewski, Boneh et al., 2024; arXiv:2512.18751) proposed an integrated STRIDE, ATT&amp;CK, and D3FEND model, synthesising threat modelling, adversary behaviour cataloguing, and defensive countermeasure mapping into a unified analytical structure aligned with real-world adversary TTPs observed in operational threat intelligence — a significant methodological advance over using these frameworks in isolation.</p>
+<p>Behavioural cybersecurity is an emerging academic subdiscipline examining how cognitive biases, organisational culture, and incentive structures shape security decision-making. Research by Beautement, Sasse, and Wonham on the Compliance Budget model demonstrates that security policies generate a psychological and practical burden, and that when this burden exceeds users’ capacity, they develop workarounds that create new risk — a critical insight for risk-based proportionality in control selection.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The 2026 cybersecurity risk management landscape is characterised by four converging forces:</p>
+<p><strong>AI-Augmented Attack and Defence</strong></p>
+<ul>
+<li>The NCSC’s AI to 2027 threat assessment warned that AI is expanding attack volume and sophistication: more targeted spear phishing at scale; automated vulnerability scanning; AI-generated malware with polymorphic evasion; deepfake-based social engineering</li>
+<li>Defensive AI: LLM-powered alert triage within <a href="../pages/SIEM" class="internal" data-slug="pages/SIEM">SIEM</a> stacks (reducing tier-1 analyst alert fatigue); anomaly detection using unsupervised ML (UEBA); AI-generated threat hunting hypotheses; automated incident summarisation</li>
+<li>AI assistants are now embedded in enterprise GRC tools, drafting risk statements, mapping controls to regulatory requirements, and generating board-level risk narratives from structured risk register data</li>
+</ul>
+<p><strong>Regulatory Convergence and Expansion</strong></p>
+<ul>
+<li>NIST CSF 2.0 (February 2024): added Govern function; published Implementation Examples and Community Profiles for healthcare, financial services, and CNI; explicitly positioned CSF as a universal framework for all organisation types, not just US critical infrastructure</li>
+<li>UK Cyber Security and Resilience Bill (2025-2026): expands NIS regulations scope; strengthens incident reporting (24-hour notification windows); extends powers to regulate digital infrastructure suppliers; reinforces board accountability</li>
+<li>NCSC CAF 4.0: updated assessment framework underpinning regulatory inspections for 13 UK CNI sectors; provides the language for regulator conversations with CNI operators about cyber risk posture</li>
+<li>EU AI Act (effective August 2026 for GPAI obligations): mandates cybersecurity robustness testing for high-risk AI systems — expanding the risk management remit into AI system security</li>
+</ul>
+<p><strong>Zero Trust and Cloud Convergence</strong></p>
+<ul>
+<li>Cloud-first architectures have rendered classical network perimeters obsolete; <a href="../pages/Zero-Trust-Architecture" class="internal alias" data-slug="pages/Zero-Trust-Architecture">Zero Trust Architecture</a> (identity-centric, device-health-gated, microsegmented) is now the dominant enterprise network security paradigm</li>
+<li>NIST SP 800-207 (Zero Trust Architecture) provides the risk-based implementation framework; CISA Zero Trust Maturity Model 2.0 provides staged adoption guidance for US federal agencies (adopted voluntarily by many UK enterprises)</li>
+<li>Converged XDR (Extended Detection and Response) platforms unify endpoint, network, cloud, and identity telemetry into a single detection and response surface — simplifying risk monitoring across complex hybrid environments</li>
+</ul>
+<p><strong>AI System Risk Integration</strong></p>
+<ul>
+<li>ISO/IEC 42001:2023 (AI Management System Standard) and NIST AI RMF 1.0 (2023) establish governance frameworks for AI systems that are increasingly cited alongside ISO 27001 and NIST CSF in enterprise risk governance programmes</li>
+<li>Organisations developing or deploying <a href="../pages/AI-Governance" class="internal alias" data-slug="pages/AI-Governance">AI Governance</a>-scope AI must maintain AI-specific risk registers capturing model risk, data lineage risk, inference attack risk, and systemic risks from AI supply chain components</li>
+<li>The EU AI Act’s conformity assessment requirements for high-risk AI create a new category of cybersecurity risk assessment obligation: demonstrating robustness against adversarial inputs as a prerequisite for market access</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The United Kingdom maintains a sophisticated national cybersecurity governance ecosystem through the National Cyber Security Centre (NCSC), an arm of GCHQ established in 2016 and headquartered in Victoria, London. The NCSC serves as the UK’s national technical authority on cybersecurity, publishing authoritative guidance, operating the Active Cyber Defence programme (ACD), managing national-level incident response, and operating the Cyber Security Information Sharing Partnership (CISP) platform for private sector threat intelligence sharing. The NCSC publishes the Cyber Assessment Framework (CAF), now at version 4.0, which provides structured outcomes-based assessment guidance for operators of UK Critical National Infrastructure spanning 13 regulated sectors including energy, water, transport, healthcare, and communications. The Cyber Essentials and Cyber Essentials Plus certification schemes provide baseline cybersecurity hygiene standards for smaller organisations; Cyber Essentials certification is required for all UK government suppliers handling personal data, and is increasingly specified as a minimum supply chain security condition in larger enterprise procurement frameworks.</p>
+<p>The UK Cyber Security and Resilience Bill, announced in the 2024 King’s Speech and progressing through Parliament in 2025-2026, represents the most significant expansion of UK cyber regulation since the 2018 NIS Regulations. The Bill expands the scope of regulated entities to cover a broader range of digital infrastructure and service providers; strengthens mandatory incident reporting requirements with reduced notification windows; extends Secretary of State powers to set minimum security standards for high-impact digital service suppliers; and reinforces board accountability for cyber risk governance with explicit accountability expectations. While the UK no longer directly adopts EU regulation post-Brexit, organisations providing services to EU essential entities, operating as managed service providers for EU customers, or as UK subsidiaries of EU parents remain subject to NIS2, creating dual regulatory obligations that UK risk management programmes must accommodate.</p>
+<p>The NCSC’s 2025 Annual Review reported a record 204 nationally significant cyber incidents, more than doubling the prior year’s 89, with ransomware, state-sponsored intrusions against CNI, and AI-accelerated attack techniques as the dominant threat categories. The UK government responded by writing directly to FTSE 350 boards reinforcing personal accountability for cyber risk governance, and by publishing the Cyber Governance Code of Practice (2024) providing structured board-level guidance on cybersecurity responsibilities — a direct parallel to the corporate governance responsibilities under the UK Corporate Governance Code.</p>
+<p>UK academia plays a prominent role in cybersecurity risk research. Royal Holloway (University of London) operates one of the UK’s largest information security research groups and runs the NCSC-certified MSc Information Security programme, producing approximately 150 graduates annually who form a significant part of the UK’s senior security talent pipeline. University College London’s Information Security Group (Prof. Angela Sasse, Prof. Steven Murdoch, and colleagues) conducts foundational research on usable security, privacy-enhancing technologies, and security economics — work directly cited in NCSC guidance on proportionate control design. Lancaster University’s Security Lancaster research institute is a designated NCSC Academic Centre of Excellence in Cyber Security Research (ACE-CSR), with strengths in network security and formal verification. The University of Edinburgh’s Security and Privacy research group contributes to formal methods for security assurance. The Alan Turing Institute, as the UK national institute for data science and AI (based in the British Library, London), contributes to AI-specific security risk research with growing relevance to cybersecurity risk management practice.</p>
+<p>In Northern England, the cybersecurity academic and commercial ecosystem is rapidly developing. The University of Manchester — home to the UK’s first computing pioneer Alan Turing and site of the Manchester Mark 1 (1948) — maintains an active cybersecurity research group within the School of Computer Science, with particular strengths in network security and data privacy. The University of Leeds operates the Centre for Doctoral Training (CDT) in Cyber Security and works with Yorkshire-based financial services and healthcare organisations on applied risk management research. The University of Sheffield’s Computer Science department contributes to security verification and applied cryptography research. Newcastle University (NCSC ACE-CSR designated) focuses on hardware security, side-channel attacks, and security for embedded systems — expertise relevant to the North East’s automotive and advanced manufacturing sectors. The University of York contributes to real-time systems security relevant to the rail and aerospace sectors prominent in the Yorkshire economy.</p>
+<p>The UK’s cybersecurity commercial ecosystem is concentrated in London (particularly Tech City / Shoreditch and the Westminster government cluster) but extends to regional hubs: Manchester’s MediaCityUK and digital corridor along the Oxford Road; Edinburgh’s Silicon Glen; Bristol’s aerospace and defence sector; and Cambridge’s high-tech cluster spanning Arm Holdings (chip security), Darktrace (AI-based threat detection — Cambridge-founded, now London-listed), and a dense ecosystem of security startups. The UK Cybersecurity Council, established 2021, is developing a professional competency framework for cybersecurity practitioners analogous to medical or legal professional regulation — a significant initiative for raising the quality and accountability of cybersecurity risk management practice nationally.</p>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Quantitative risk management at scale</strong></p>
+<ul>
+<li>As FAIR methodology matures and tooling integrates with <a href="../pages/SIEM" class="internal" data-slug="pages/SIEM">SIEM</a> telemetry, automated continuous risk quantification will replace periodic point-in-time assessments</li>
+<li>Risk registers will carry real-time annualised loss expectancy (ALE) values updated by threat intelligence feeds, enabling dynamic control investment decisions</li>
+<li>Automated FAIR analysis will be triggered by new CVE disclosures, threat intelligence reports, and control failures, providing near-real-time risk posture updates</li>
+<li>Cyber risk aggregation models — comparable to actuarial catastrophe models in property insurance — will quantify correlated tail risks across interconnected systems</li>
+</ul>
+<p><strong>AI-native risk management platforms</strong></p>
+<ul>
+<li>Dedicated AI risk management capabilities will be embedded in GRC (Governance, Risk, and Compliance) platforms, applying LLM-driven natural language risk analysis to audit findings, policy documents, and incident reports</li>
+<li>Automated <a href="../pages/Threat-Modelling" class="internal alias" data-slug="pages/Threat-Modelling">Threat Modelling</a> from code repositories and architecture diagrams: AI-powered tools will parse system designs and generate STRIDE-annotated data-flow diagrams and threat catalogues without manual analyst input</li>
+<li>AI-generated remediation playbooks will map identified risks to specific control implementations with configuration-level detail, reducing the analyst expertise barrier for control selection</li>
+<li>The boundary between <a href="../pages/AI-Governance" class="internal alias" data-slug="pages/AI-Governance">AI Governance</a> and cybersecurity risk management will blur as AI systems become pervasive risk subjects requiring their own sub-registers within enterprise risk frameworks</li>
+</ul>
+<p><strong>Post-quantum cryptographic risk</strong></p>
+<ul>
+<li>NIST standardised post-quantum cryptographic algorithms in 2024 (FIPS 203 — ML-KEM/CRYSTALS-Kyber; FIPS 204 — ML-DSA/CRYSTALS-Dilithium; FIPS 205 — SLH-DSA/SPHINCS+), triggering enterprise cryptographic migration planning</li>
+<li>Quantum threat assessment — estimating when cryptographically-relevant quantum computers (CRQCs) will break RSA-2048 and ECC-256 — will become a standard component of cybersecurity risk registers alongside conventional threat categories</li>
+<li>Cryptographic inventory management (cataloguing all deployed cryptographic algorithms, key lengths, and certificate expiry) will emerge as a distinct risk management subdiscipline, requiring automated discovery tools</li>
+<li>“Harvest now, decrypt later” attacks — where adversaries collect encrypted data today intending to decrypt it once quantum computers are available — are already relevant for long-lived sensitive data (national security, medical records, trade secrets)</li>
+</ul>
+<p><strong>OT/IT convergence and cyber-physical risk</strong></p>
+<ul>
+<li>Smart grid, Industry 4.0 manufacturing, connected medical devices (MedTech), and autonomous transport systems create cyber-physical risk surfaces where cybersecurity failures produce physical — potentially fatal — consequences</li>
+<li>Risk management frameworks will integrate safety engineering methods (HAZOP, FMEA, fault-tree analysis, safety integrity level (SIL) assessment) with information security risk methods (STRIDE, FAIR) into unified cyber-physical risk assessment processes</li>
+<li>IEC 62443 (Industrial Automation and Control System Security) and ISO/SAE 21434 (Automotive Cybersecurity) provide sector-specific frameworks that will be increasingly integrated into enterprise risk registers alongside IT-focused ISO 27001</li>
+</ul>
+<p><strong>Mandatory board cyber literacy and director accountability</strong></p>
+<ul>
+<li>Following the UK Cyber Governance Code of Practice (2024) and SEC cybersecurity disclosure rules (US, 2023), boards are required to demonstrate cyber risk governance competence as a fiduciary responsibility</li>
+<li>Director-level cyber risk qualifications and literacy programmes will be developed by professional bodies (ISACA, (ISC)², Chartered Institute of Information Security in the UK)</li>
+<li>Demand for board-level cyber risk advisory services and executive education will grow at business schools including London Business School, Saïd Business School (Oxford), and Judge Business School (Cambridge)</li>
+<li>Personal liability for directors in cases of governance failures enabling significant cyber incidents — analogous to health and safety personal liability — is emerging as a regulatory direction</li>
+</ul>
+<p><strong>Supply chain AI risk and AI-BOM</strong></p>
+<ul>
+<li>As AI models become embedded in enterprise software (AI-powered SaaS applications, embedded ML inference in operational systems), the risk surface expands to include model supply chain attacks</li>
+<li>Attack vectors include: poisoned training data in open-source datasets; malicious fine-tuned models distributed via Hugging Face-equivalent model hubs; vulnerable AI APIs exposing prompt injection pathways; model extraction attacks targeting proprietary models accessed via API</li>
+<li>Cybersecurity risk management will incorporate AI Bill of Materials (AI-BOM) practices analogous to software BOM (SBOM) requirements — documenting all AI models, their training data provenance, and any fine-tuning applied</li>
+<li>This convergence of software supply chain security and AI system <a href="../pages/AI-Risk-Management" class="internal alias" data-slug="pages/AI-Risk-Management">AI Risk Management</a> will produce unified risk assessment methodologies for AI-software hybrid systems in the 2026-2030 timeframe</li>
+</ul>
+<p><strong>Autonomous and Agentic AI Security Risk</strong></p>
+<ul>
+<li>Agentic AI systems — AI agents capable of taking actions in digital environments (browsing, executing code, interacting with APIs) — introduce novel attack surfaces: prompt injection attacks designed to hijack agent behaviour, tool-use exploitation, and cascading failures in multi-agent pipelines</li>
+<li>Cybersecurity risk management frameworks will need to be extended to assess and govern agentic AI deployments, including sandboxing requirements, human-in-the-loop approval gates for high-risk actions, and agent audit logs as evidence artefacts</li>
+<li>The convergence of cybersecurity <a href="../pages/Threat-Modelling" class="internal alias" data-slug="pages/Threat-Modelling">Threat Modelling</a> with AI safety red-teaming methodologies will accelerate as agentic deployments scale in enterprise environments</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Key academic and industry references spanning theoretical foundations, standards, threat landscape, and emerging areas:</p>
+<ol>
+<li>
+<p>NIST. (2024). <em>The NIST Cybersecurity Framework (CSF) 2.0</em> (NIST CSWP 29). National Institute of Standards and Technology. <a href="https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf" class="external">https://nvlpubs.nist.gov/nistpubs/CSWP/NIST.CSWP.29.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>ISO/IEC. (2022). <em>ISO/IEC 27005:2022 — Information security, cybersecurity and privacy protection — Guidance on managing information security risks</em>. International Organisation for Standardisation.</p>
+</li>
+<li>
+<p>Open Group. (2023). <em>The FAIR Model — Factor Analysis of Information Risk</em>. FAIR Institute. <a href="https://www.fairinstitute.org/" class="external">https://www.fairinstitute.org/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>NCSC. (2025). <em>NCSC Annual Review 2025</em>. National Cyber Security Centre, GCHQ. <a href="https://www.ncsc.gov.uk/collection/ncsc-annual-review-2025" class="external">https://www.ncsc.gov.uk/collection/ncsc-annual-review-2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Anderson, R. (2001). <em>Why Information Security is Hard — An Economic Perspective</em>. Proceedings of ACSAC 2001. IEEE.</p>
+</li>
+<li>
+<p>Hubbard, D. W., &amp; Seiersen, R. (2016). <em>How to Measure Anything in Cybersecurity Risk</em>. Wiley.</p>
+</li>
+<li>
+<p>NIST. (2023). <em>AI Risk Management Framework (AI RMF 1.0)</em> (NIST AI 100-1). National Institute of Standards and Technology.</p>
+</li>
+<li>
+<p>NIST. (2020). <em>Zero Trust Architecture</em> (NIST SP 800-207). National Institute of Standards and Technology.</p>
+</li>
+<li>
+<p>Shostack, A. (2014). <em>Threat Modeling: Designing for Security</em>. Wiley.</p>
+</li>
+<li>
+<p>ENISA. (2024). <em>NIS2 Technical Implementation Guidance</em>. European Union Agency for Cybersecurity. <a href="https://www.enisa.europa.eu/publications/nis2-technical-implementation-guidance" class="external">https://www.enisa.europa.eu/publications/nis2-technical-implementation-guidance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>NCSC. (2024). <em>Cyber Assessment Framework (CAF) v4.0</em>. National Cyber Security Centre. <a href="https://www.ncsc.gov.uk/" class="external">https://www.ncsc.gov.uk/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>UK Government. (2025). <em>Cyber Security and Resilience Bill — Policy Paper</em>. HM Government.</p>
+</li>
+<li>
+<p>NIST. (2012). <em>Guide for Conducting Risk Assessments</em> (NIST SP 800-30 Rev. 1). National Institute of Standards and Technology.</p>
+</li>
+<li>
+<p>Papernot, N., McDaniel, P., Goodfellow, I., Jha, S., Berkay Celik, Z., &amp; Swami, A. (2016). <em>Practical Black-Box Attacks against Machine Learning</em>. Proceedings of ASIACCS 2017. ACM.</p>
+</li>
+<li>
+<p>Biggio, B., &amp; Roli, F. (2018). Wild patterns: Ten years after the rise of adversarial machine learning. <em>Pattern Recognition</em>, 84, 317–331.</p>
+</li>
+<li>
+<p>Sadeghi, A.-R., Wachsmann, C., &amp; Waidner, M. (2015). Security and privacy challenges in industrial internet of things. <em>Proceedings of DAC 2015</em>. ACM/IEEE.</p>
+</li>
+<li>
+<p>Ruan, K. (2019). <em>Cybernomics: A Macroeconomic Analysis of Cybersecurity</em>. Springer.</p>
+</li>
+<li>
+<p>Balboni, P., &amp; Macenaite, M. (2013). Privacy by design and anonymisation techniques in action: case of mobile personal data. <em>Computer Law &amp; Security Review</em>, 29(4), 349–360.</p>
+</li>
+<li>
+<p>HM Government Cabinet Office. (2024). <em>Cyber Governance Code of Practice</em>. Crown Copyright.</p>
+</li>
+<li>
+<p>European Commission. (2022). <em>Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 (NIS2 Directive)</em>. Official Journal of the European Union.</p>
+</li>
+<li>
+<p>ISO/IEC. (2022). <em>ISO/IEC 27001:2022 — Information security management systems — Requirements</em>. International Organisation for Standardisation.</p>
+</li>
+<li>
+<p>MITRE. (2024). <em>MITRE ATT&amp;CK Framework v15</em>. The MITRE Corporation. <a href="https://attack.mitre.org/" class="external">https://attack.mitre.org/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Zalewski, M., Boneh, D., &amp; Rescorla, E. (2024). <em>ISADM: An Integrated STRIDE, ATT&amp;CK, and D3FEND Model for Threat Modelling Against Real-World Adversaries</em>. arXiv:2512.18751.</p>
+</li>
+<li>
+<p>CIS. (2023). <em>CIS Controls Version 8.1</em>. Center for Internet Security. <a href="https://www.cisecurity.org/controls/" class="external">https://www.cisecurity.org/controls/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>NIST. (2024). <em>Cybersecurity Framework 2.0: Enterprise Risk Management Integration</em> (NIST SP 1303 Initial Public Draft). NIST.</p>
+</li>
+<li>
+<p>Darktrace. (2024). <em>The Implications of NIS2 on Cybersecurity and AI</em>. Darktrace Blog. <a href="https://www.darktrace.com/blog/the-implications-of-nis2-on-cyber-security-and-ai" class="external">https://www.darktrace.com/blog/the-implications-of-nis2-on-cyber-security-and-ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>NCSC. (2025). <em>AI to 2027: UK Critical Systems Threat Assessment</em>. National Cyber Security Centre. <a href="https://www.ncsc.gov.uk/news/ai-to-2027-threat-assessment" class="external">https://www.ncsc.gov.uk/news/ai-to-2027-threat-assessment<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Nature / Scientific Reports. (2025). <em>ZenGuard: A Machine Learning Based Zero Trust Framework for Context-Aware Threat Mitigation Using SIEM, SOAR and UEBA</em>. Scientific Reports. <a href="https://www.nature.com/articles/s41598-025-20998-4" class="external">https://www.nature.com/articles/s41598-025-20998-4<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ol>
+<p>Additional standards and technical references:</p>
+<ul>
+<li>NIST. (2022). <em>Measuring and Improving Cyber Resilience</em> (NIST IR 8286C). National Institute of Standards and Technology.</li>
+<li>ISO/IEC. (2023). <em>ISO/IEC 42001:2023 — Artificial intelligence management system</em>. International Organisation for Standardisation.</li>
+<li>CISA. (2023). <em>Zero Trust Maturity Model Version 2.0</em>. Cybersecurity and Infrastructure Security Agency.</li>
+<li>Schneier, B. (2003). <em>Beyond Fear: Thinking Sensibly About Security in an Uncertain World</em>. Copernicus Books / Springer.</li>
+<li>Moore, T., &amp; Anderson, R. (2011). <em>Internet security</em>. In M. Cave, S. Majumdar, &amp; I. Vogelsang (Eds.), <em>Handbook of Telecommunications Economics</em>, Vol. 2. North Holland / Elsevier.</li>
+<li>Beautement, A., Sasse, M. A., &amp; Wonham, M. (2008). The compliance budget: Managing security behaviour in organisations. <em>Proceedings of the 2008 Workshop on New Security Paradigms</em>. ACM.</li>
+</ul>
+<h2 id="formal-analysis">Formal Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-analysis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The governance structure of cybersecurity risk management can be formalised as a hierarchical decision system operating across three layers. At the strategic layer, the board defines risk appetite — a bounded tolerance expressed as maximum acceptable annualised financial loss (e.g. £10M across all cyber risk categories) and maximum tolerable downtime for critical services (e.g. 4 hours for tier-1 payment processing). These strategic tolerances cascade into operational risk thresholds that govern which risks require treatment versus acceptance and at what cost ceiling controls are authorised. At the tactical layer, the security function executes risk assessment cycles producing probability distributions over loss event scenarios — ideally Monte Carlo simulations over FAIR decompositions of Threat Event Frequency × Vulnerability × Loss Magnitude. At the operational layer, <a href="../pages/Security-Operations-Centre" class="internal alias" data-slug="pages/Security-Operations-Centre">Security Operations Centre</a> analysts execute detection-response playbooks within <a href="../pages/SIEM" class="internal" data-slug="pages/SIEM">SIEM</a> and <a href="../pages/SOAR" class="internal" data-slug="pages/SOAR">SOAR</a> platforms, generating events and metrics that feed back into the risk assessment cycle.</p>
+<p>The FAIR ontology provides the most rigorous formalisation for cyber risk quantification. It decomposes Loss Event Frequency (LEF) into Threat Event Frequency (TEF) and Vulnerability (V), where V = Threat Capability (TC) / Control Strength (CS). Loss Magnitude is decomposed into Primary Loss (direct operational loss) and Secondary Loss (reputational, regulatory, legal, and competitive losses following a material incident). Monte Carlo simulation across these parameters produces Probable Loss distributions rather than single-point ALE estimates, capturing the heavy tail of catastrophic scenarios that arithmetic means obscure. The Hubbard-Seiersen critique of standard qualitative risk matrices demonstrates that ordinal 5×5 red/amber/green representations consistently misrepresent risk by ignoring probability calibration and encouraging false precision — a systematic cognitive bias that FAIR-based quantitative methods address through empirically calibrated probability intervals.</p>
+<p>Control assurance frameworks can be modelled as directed acyclic graphs (DAGs) mapping attack paths to control nodes, where each control has an estimated detection probability and mitigation efficacy. Bayesian network models have been applied to formalise the probabilistic relationships between threat events, control failures, and loss outcomes, enabling dynamic risk updating as new intelligence or audit findings are incorporated. The NIST Special Publication 800-30 risk model provides a formal taxonomy mapping threat sources, threat events, vulnerabilities, and predisposing conditions into a likelihood-and-impact assessment schema compatible with both qualitative and semi-quantitative approaches.</p>
+<p>The intersection of <a href="../pages/Cybersecurity-Risk-Management" class="internal alias" data-slug="pages/Cybersecurity-Risk-Management">Cybersecurity Risk Management</a> with <a href="../pages/AI-Risk-Management" class="internal alias" data-slug="pages/AI-Risk-Management">AI Risk Management</a> introduces category expansions not captured by classical frameworks. Adversarial machine learning risks (evasion, poisoning, extraction, inference attacks) require probabilistic threat models operating over the ML training and inference pipeline, not just the network perimeter and application stack. The EU AI Act risk classification (unacceptable risk, high risk, limited risk, minimal risk) provides a regulatory risk taxonomy for AI systems that intersects with cybersecurity risk at the classification and conformity assessment stage — systems classified as high-risk under the Act must demonstrate not only functional compliance but also cybersecurity robustness against adversarial attacks.</p>
+<h2 id="risk-framework-comparison">Risk Framework Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#risk-framework-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Framework</th><th>Method</th><th>Primary Output</th><th>Scope</th><th>Quantification</th></tr></thead><tbody><tr><td>NIST CSF 2.0</td><td>Outcomes-based, six functions</td><td>Maturity profile, gap analysis</td><td>All organisations</td><td>Qualitative / tiered</td></tr><tr><td>ISO 27005:2022</td><td>Risk-based, PDCA cycle</td><td>Risk treatment plan</td><td>ISMS context</td><td>Qualitative / semi-quantitative</td></tr><tr><td>FAIR</td><td>Factor-based, probabilistic</td><td>ALE distribution (£/$)</td><td>Enterprise</td><td>Quantitative (Monte Carlo)</td></tr><tr><td>NCSC CAF 4.0</td><td>Indicator-based, 18 outcomes</td><td>Assessed outcome level</td><td>UK CNI operators</td><td>Qualitative (outcome levels)</td></tr><tr><td>OCTAVE Allegro</td><td>Asset-centric, workshop-based</td><td>Risk profile per asset</td><td>Mid-size orgs</td><td>Qualitative</td></tr><tr><td>PASTA</td><td>Attacker-centric, seven stages</td><td>Threat scenarios, risk rating</td><td>Application security</td><td>Semi-quantitative</td></tr><tr><td>STRIDE</td><td>Threat category enumeration</td><td>DFD-annotated threat list</td><td>Application design</td><td>Qualitative</td></tr><tr><td>NIST RMF</td><td>Control-centric, six steps</td><td>Authorisation to Operate (ATO)</td><td>US federal systems</td><td>Semi-quantitative</td></tr></tbody></table></div>
+<p>Each framework addresses distinct use cases:</p>
+<ul>
+<li>NIST CSF 2.0: board-level programme governance, cross-sector communication language, maturity benchmarking</li>
+<li>ISO 27001/27005: ISMS audit readiness, certification, regulatory compliance evidence production</li>
+<li>FAIR: ROI justification for security investment; insurance quantification; board-level financial risk language</li>
+<li>NCSC CAF 4.0: regulatory inspection readiness for UK <a href="../pages/Resilience" class="internal" data-slug="pages/Resilience">Resilience</a>-critical sectors under NIS regulations</li>
+<li>STRIDE and PASTA: developer-level <a href="../pages/Threat-Modelling" class="internal alias" data-slug="pages/Threat-Modelling">Threat Modelling</a> during system design and DevSecOps pipelines</li>
+<li>Mature programmes layer frameworks: NIST CSF for strategic governance, ISO 27001/27005 for compliance assurance, FAIR for investment prioritisation, STRIDE/PASTA for DevSecOps <a href="../pages/Threat-Modelling" class="internal alias" data-slug="pages/Threat-Modelling">Threat Modelling</a>, NCSC CAF for regulatory reporting</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Risk appetite</strong> — The level of cyber risk an organisation is willing to accept in pursuit of its strategic objectives, defined and approved at board level.</li>
+<li><strong>Residual risk</strong> — The risk remaining after controls have been applied; formally accepted by risk owners.</li>
+<li><strong>Annualised Loss Expectancy (ALE)</strong> — Probabilistic estimate of financial loss from a risk event over a twelve-month period; core output of FAIR analysis.</li>
+<li><strong>Threat actor</strong> — An individual or group with the intent and capability to cause a cybersecurity event; classified by motivation (financial, espionage, hacktivism) and sophistication.</li>
+<li><strong>Attack surface</strong> — The totality of exploitable entry points across an organisation’s digital estate: external-facing services, APIs, email, removable media, and supply chain interfaces.</li>
+<li><strong>Control effectiveness</strong> — A measure of how well a security control reduces the likelihood or impact of a threat event; tracked through security metrics and testing.</li>
+<li><strong>MTTR (Mean Time to Respond/Recover)</strong> — Key operational metric measuring average elapsed time from threat detection to containment and restoration.</li>
+<li><strong>Zero Day</strong> — A vulnerability with no available patch at the time of exploitation, representing the highest-urgency risk category requiring compensating control responses.</li>
+<li><strong>Kill chain</strong> — A sequential model of attacker progression from initial access through to impact (Lockheed Martin Cyber Kill Chain; MITRE ATT&amp;CK provides a more granular TTP taxonomy).</li>
+<li><strong>Risk treatment</strong> — One of four decisions for each identified risk: accept (document and monitor), mitigate (apply controls), transfer (insurance, contractual), or avoid (discontinue activity).</li>
+<li><strong>Threat Event Frequency (TEF)</strong> — In FAIR analysis, the probable frequency with which a threat agent will act against an asset within a given timeframe; a key input to loss event frequency estimation.</li>
+<li><strong>Vulnerability</strong> — In FAIR, the probability that a threat event results in loss, defined as the ratio of threat capability to control strength; expressed as a probability between 0 and 1.</li>
+<li><strong>SOC (Security Operations Centre)</strong> — The team and platform infrastructure responsible for continuous monitoring, detection, triage, and initial response to cybersecurity events; feeds the risk management cycle with real-time operational intelligence.</li>
+<li><strong>CVE (Common Vulnerabilities and Exposures)</strong> — A standardised identifier system for publicly disclosed software vulnerabilities; CVSS scores enable risk-prioritised vulnerability treatment.</li>
+<li><strong>PDCA (Plan-Do-Check-Act)</strong> — The ISO management system improvement cycle underpinning ISO 27001 and ISO 27005; risk management operates within this iterative governance structure.</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1465" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#governance-relationships" data-for="governance-relationships">Governance Relationships</a></li><li class="depth-0"><a href="#contrastive-relationships" data-for="contrastive-relationships">Contrastive Relationships</a></li><li class="depth-0"><a href="#regulatory-relationships" data-for="regulatory-relationships">Regulatory Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#major-threat-families-and-risk-taxonomy" data-for="major-threat-families-and-risk-taxonomy">Major Threat Families and Risk Taxonomy</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#formal-analysis" data-for="formal-analysis">Formal Analysis</a></li><li class="depth-0"><a href="#risk-framework-comparison" data-for="risk-framework-comparison">Risk Framework Comparison</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Cybersecurity-Risk-Management" class="internal">Cybersecurity Risk Management</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

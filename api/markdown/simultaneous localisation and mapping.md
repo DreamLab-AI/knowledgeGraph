@@ -1,0 +1,88 @@
+
+Simultaneous Localisation and Mapping (SLAM) is a computational technique by which a mobile robot or autonomous agent concurrently estimates its own pose and constructs a consistent map of a previously unknown environment from sequential sensor observations, resolving the fundamental circular dependency between localisation (which requires a map) and mapping (which requires a known pose). SLAM algorithms process data from sensors such as LiDAR, stereo cameras, RGB-D cameras, and inertial measurement units using probabilistic and optimisation-based frameworks — including extended Kalman filters, particle filters, and pose-graph optimisation — to maintain joint estimates of agent state and environmental structure. The problem is formulated as Bayesian inference over a high-dimensional joint distribution of robot trajectory and landmark positions, typically approximated through factor graphs. SLAM is foundational to autonomous vehicles, mobile robotics, augmented reality, and any system that must navigate without prior maps or GPS.
+
+- ### Overview
+  - SLAM is one of the central unsolved challenges that was formally identified in robotics research in the late 1980s and has since been extended to encompass visual, semantic, and deep-learning-based paradigms.
+  - The problem is formally stated as computing the joint posterior distribution P(x_{1:t}, m | z_{1:t}, u_{1:t}) over robot poses x, a map m, given sensor observations z and control inputs u — a high-dimensional inference problem intractable in the exact form.
+  - Practical SLAM systems apply approximations: linear Gaussian assumptions for [[Kalman Filter]]-based methods, particle representations for [[Particle Filter]] approaches, or factor graph structures solved by iterative optimisation.
+  - SLAM is foundational for any system operating in GPS-denied or uncharted environments, including underground mines, indoor buildings, outer space, the ocean floor, and disaster zones.
+  - The field has matured from laboratory demonstrations to deployed systems in consumer electronics ([[Augmented Reality]] headsets, robot vacuum cleaners) and safety-critical platforms ([[Autonomous Vehicles]], surgical robots).
+  - Contemporary SLAM increasingly integrates [[Deep Learning]] for feature extraction, [[Semantic Mapping]], and [[Loop Closure]] detection via learned embeddings, blurring the boundary between geometric and semantic understanding.
+
+- ### Key Components
+  - #### Sensor Modalities
+    - [[LiDAR]] — provides precise 2D/3D range measurements; backbone of industrial SLAM (Cartographer, LIO-SAM, LOAM).
+    - [[Stereo Camera]] — passive depth estimation using disparity between left and right images; lower cost than LiDAR.
+    - [[RGB-D Camera]] — structured-light or time-of-flight depth alongside colour; widely used in indoor SLAM (ORB-SLAM3, ElasticFusion).
+    - [[Inertial Measurement Unit]] — provides high-rate acceleration and angular velocity; tightly coupled with camera/LiDAR for robustness.
+    - Wheel encoders and [[Odometry]] — dead-reckoning motion estimates used as motion model inputs.
+  - #### Probabilistic Frameworks
+    - [[Extended Kalman Filter]] (EKF-SLAM) — linearises non-linear motion/observation models; tractable only for sparse landmark maps.
+    - [[Unscented Kalman Filter]] (UKF-SLAM) — sigma-point propagation for better non-linearity handling.
+    - [[Particle Filter]] (FastSLAM) — represents the posterior with weighted particles; scales better to large feature sets via Rao-Blackwellisation.
+    - [[Factor Graph]] / [[Pose Graph Optimisation]] — represents all poses and measurements as nodes and edges; solved with GTSAM, g2o, Ceres Solver; scales to city-scale environments.
+  - #### Loop Closure
+    - Loop closure is the act of recognising a previously visited location and applying a correction to remove accumulated drift — the key capability distinguishing SLAM from [[Dead Reckoning]].
+    - Appearance-based methods use [[Bag of Words]] image descriptors (DBoW2, DBoW3) or learned embeddings (NetVLAD).
+    - Geometry verification (RANSAC-based) follows candidate matches to reject false positives.
+    - Without loop closure, errors grow unboundedly with distance; with it, global consistency is maintained.
+  - #### Map Representations
+    - [[Occupancy Grid]] — discretised 2D/3D grid with probabilistic cell occupancy; compact and widely used for path planning.
+    - Landmark / feature map — sparse set of detected features (keypoints, planes, objects) with associated uncertainty.
+    - [[Point Cloud]] — dense, unstructured 3D map produced directly by LiDAR sweeps.
+    - Surfel / mesh map — continuous surface representations used in dense visual SLAM (KinectFusion, ElasticFusion).
+    - [[Semantic Mapping]] — maps augmented with object class labels, enabling semantic navigation queries.
+    - [[Neural Radiance Field]] (NeRF-SLAM) — implicit neural scene representations enabling photorealistic reconstruction during mapping.
+
+- ### Algorithms and Systems
+  - **LiDAR SLAM**: Cartographer (Google, 2D/3D, widely deployed), LOAM (Zhang & Singh), LIO-SAM (tightly-coupled LiDAR-IMU), LeGO-LOAM (lightweight for ground robots), KISS-ICP (fast ICP-based odometry).
+  - **Visual SLAM**: ORB-SLAM3 (monocular/stereo/RGB-D/IMU, [[Factor Graph]]-based), VINS-Mono (monocular-inertial, [[Pose Graph Optimisation]]), DSO (direct sparse odometry), LSD-SLAM (large-scale direct).
+  - **RGB-D SLAM**: KinectFusion (dense GPU tracking), ElasticFusion (surfel-based), BundleFusion (online reconstruction).
+  - **Deep SLAM**: DROID-SLAM (differentiable recurrent), DeepFactor, iMAP, NICE-SLAM (neural implicit), SplaTAM ([[Gaussian Splatting]] representation).
+  - **Backend optimisers**: GTSAM (Georgia Tech), g2o (general graph optimisation), Ceres Solver (Google), iSAM2 (incremental smoothing).
+  - **Datasets & benchmarks**: TUM RGB-D, KITTI, EuRoC MAV, Newer College, MulRan, Hilti SLAM Challenge.
+
+- ### Applications
+  - **[[Autonomous Vehicles]]** — LiDAR and camera SLAM for real-time 3D mapping of urban environments; used alongside HD maps and GPS in autonomous driving stacks.
+  - **Mobile robotics** — robot vacuum cleaners (Roomba, Roborock), warehouse AMRs (Amazon Robotics), legged robots (Boston Dynamics Spot), agricultural robots.
+  - **[[Augmented Reality]]** — ARKit and ARCore on mobile devices use visual-inertial SLAM to anchor digital content to tracked physical surfaces in real time.
+  - **Surgical and medical robots** — endoscopic SLAM for colonoscopy capsule navigation; tool tracking in minimally invasive surgery.
+  - **Drone inspection** — aerial SLAM for infrastructure inspection in GPS-denied environments (tunnels, bridges, indoor facilities).
+  - **Space exploration** — Mars rover localisation (Mars 2020 Perseverance), lunar surface navigation.
+  - **Underwater robotics** — sonar-based SLAM for subsea pipeline inspection and ocean floor mapping.
+  - **[[Digital Twin]] construction** — SLAM-based scanning to create accurate as-built models of buildings and industrial facilities.
+  - **Search and rescue** — autonomous deployment into collapsed structures or disaster zones where prior maps do not exist.
+
+- ### Challenges and Limitations
+  - **Computational scalability** — maintaining the full joint posterior grows O(n²) with landmarks in filtering approaches; factor graph methods address this but require careful marginalisation.
+  - **Dynamic environments** — standard SLAM assumes a static world; moving objects (people, vehicles) violate this and cause spurious measurements requiring outlier rejection or explicit tracking.
+  - **Long-term autonomy** — maps become stale as environments change (furniture moved, construction); lifelong SLAM must update while retaining structural consistency.
+  - **Perceptual aliasing** — visually similar but geometrically distinct places (corridors, open spaces) cause false loop closures.
+  - **Sensor degradation** — LiDAR SLAM fails in featureless environments (open fields, tunnels with uniform walls); visual SLAM degrades in low light.
+  - **Data association** — correctly matching current observations to prior landmarks across all timesteps remains an open problem, particularly in cluttered scenes.
+
+- ### Standards and Context
+  - No single formal ISO or IEEE standard governs SLAM algorithms, though [[ISO 8373]] (robotics vocabulary) and [[IEC 63327]] (autonomous mobile robots) provide definitional context.
+  - The [[Robot Operating System]] (ROS / ROS 2) provides the dominant middleware ecosystem for SLAM deployments; packages such as navigation2 (Nav2) and slam_toolbox are de facto standards in the open-source mobile robotics community.
+  - SLAM algorithm evaluation is community-driven through benchmark competitions: the KITTI Vision Benchmark Suite (autonomous driving), TUM RGB-D Benchmark, EuRoC Micro Aerial Vehicle datasets, and the annual Hilti SLAM Challenge.
+  - Academic venues: ICRA, IROS, CVPR, ECCV, ICCV, and RSS publish the majority of SLAM research; foundational work published in IJRR and IEEE TRO.
+  - Commercial deployment contexts include [[SAE Level 4]] and [[SAE Level 5]] autonomous driving where SLAM-derived localisation must meet safety integrity requirements (ISO 26262 functional safety, SOTIF ISO 21448).
+
+- ### Current Landscape (2026)
+  - The field's centre of gravity has shifted from classical sparse-feature pipelines (ORB-SLAM, DROID-SLAM) to differentiable dense mapping built on 3D Gaussian Splatting (3DGS), which replaced NeRF-style implicit fields because its rasterisation back-end avoids ray marching and reaches real-time rendering (reported up to ~769 FPS) with sub-centimetre ATE on indoor benchmarks such as Replica and TUM-RGBD.
+  - MASt3R-SLAM (Murai et al., CVPR 2025) marked a milestone as the first real-time dense SLAM system built on a learned two-view 3D reconstruction prior (MASt3R), handling uncalibrated in-the-wild monocular video and pushing "foundation-model" priors into the SLAM front-end.
+  - DROID-Splat (ICCV 2025 workshop) fused an end-to-end optical-flow tracker with a 3DGS renderer to hit state-of-the-art tracking and photorealistic reconstruction near real time, exemplifying the 2024-2026 convergence of learned trackers with splatting map representations.
+  - Scaling frontiers advanced on two axes: GigaSLAM (2025) demonstrated the first RGB NeRF/3DGS SLAM for kilometre-scale outdoor driving (KITTI, KITTI-360, 4Seasons, A2D2), while multi-robot collaborative Gaussian SLAM matured with systems like GRAND-SLAM, MNE-SLAM, MAC-Ego3D and MAGS-SLAM (2025-2026) plus new large-area benchmarks (INS >1,000 m2 indoor, DES >276,000 m2 outdoor).
+  - Commercially, visual SLAM is now core infrastructure for spatial computing (Apple Vision Pro), humanoid and warehouse robotics, and ADAS; market trackers put the visual-SLAM segment around USD 2.8-3.3 billion in 2025 with ~14-23% CAGR forecasts, and consolidation is visible in ABB's January 2024 acquisition of Sevensense and NVIDIA/Zivid and Google/SLAMcore integration deals.
+  - Persistent open challenges as of 2026 include robustness in dynamic and non-rigid scenes, compute and memory cost of Gaussian maps on edge platforms (a cited bottleneck for over half of deployed systems), globally consistent loop closure and cross-agent map fusion at scale, and the absence of standardised interoperability for exchanging Gaussian/neural maps between vendors.
+
+- ### References
+  - 1. Murai, R. et al. (2025). MASt3R-SLAM: Real-Time Dense SLAM with 3D Reconstruction Priors (CVPR 2025). https://openaccess.thecvf.com/content/CVPR2025/papers/Murai_MASt3R-SLAM_Real-Time_Dense_SLAM_with_3D_Reconstruction_Priors_CVPR_2025_paper.pdf
+  - 2. Homeyer, C. et al. (2025). DROID-Splat: Combining End-to-End SLAM with 3D Gaussian Splatting (ICCV 2025 Workshop). https://openaccess.thecvf.com/content/ICCV2025W/NeuSLAM/papers/Homeyer_DROID-Splat_Combining_end-to-end_SLAM_with_3D_Gaussian_Splatting_ICCVW_2025_paper.pdf
+  - 3. Deng, K. et al. (2025). GigaSLAM: Large-Scale Monocular SLAM with Hierarchical Gaussian Splats. https://arxiv.org/html/2503.08071v2
+  - 4. Survey (2025). A Survey on Collaborative SLAM with 3D Gaussian Splatting (arXiv). https://arxiv.org/html/2510.23988v1
+  - 5. Tosi, F. et al. (2024/2025). How NeRFs and 3D Gaussian Splatting are Reshaping SLAM: a Survey (arXiv 2402.13255). https://arxiv.org/abs/2402.13255
+  - 6. Market Intelo (2025). Visual SLAM Market Research Report. https://marketintelo.com/report/visual-slam-market
+
+- ### Provenance
+

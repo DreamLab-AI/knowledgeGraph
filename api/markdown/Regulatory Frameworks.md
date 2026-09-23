@@ -1,0 +1,78 @@
+
+Regulatory frameworks are structured, hierarchical systems comprising primary legislation, secondary rules, supervisory authorities, and enforcement mechanisms that collectively govern conduct within a defined sector or jurisdiction. They establish who is subject to regulation, what obligations and prohibitions apply, how compliance is monitored, and what sanctions are available for breach. Frameworks may be rules-based, principles-based, or risk-based in design, and typically span multiple tiers from international treaties and standards through to national law and sector-specific codes of practice. Modern frameworks increasingly address cross-border, technology-mediated activities, creating interoperability requirements between national and supranational regimes.
+
+- ### Overview
+  - Regulatory frameworks exist to correct market failures, protect consumers and citizens, ensure systemic stability, and uphold public interests where market mechanisms alone are insufficient.
+  - A framework is more than a body of rules: it is an ecosystem comprising rule-makers (legislatures, agencies), supervisors (regulators, inspectorates), regulated entities, and mechanisms for [[Accountability]] and redress.
+  - Design choices fall along several axes:
+    - **Rules-based vs principles-based**: rules-based frameworks specify precise obligations; principles-based frameworks set high-level outcomes and allow regulated entities discretion on implementation.
+    - **Ex ante vs ex post**: ex ante frameworks require prior authorisation or approval; ex post frameworks rely on monitoring and retrospective enforcement.
+    - **Sectoral vs horizontal**: sectoral regulation covers a single industry (e.g. finance, pharmaceuticals); horizontal frameworks cut across sectors (e.g. [[Data Protection]], competition law).
+  - Frameworks are not static — they evolve through legislative amendment, judicial interpretation, regulatory guidance, and international harmonisation.
+  - The OECD Regulatory Policy Committee articulates best-practice principles including [[Transparency]], [[Accountability]], [[Interoperability]] of national regimes, and impact assessment prior to rule-making.
+
+- ### Key Components
+  - **Primary legislation** — Acts of Parliament or equivalent statutes that establish the legal basis, objectives, and powers of the framework.
+  - **Secondary legislation and delegated acts** — statutory instruments, regulations, and technical standards that implement primary law in operational detail.
+  - **[[Supervisory Authority]]** — the designated body or bodies responsible for authorisation, monitoring, investigation, and sanction (e.g. financial conduct authorities, data protection authorities).
+  - **[[Regulatory Requirements]]** — the specific obligations imposed on regulated entities, covering capital adequacy, disclosure, product safety, environmental limits, etc.
+  - **[[Enforcement Mechanisms]]** — the range of tools available to supervisors including warnings, fines, licence revocation, criminal prosecution, and civil remedies.
+  - **[[Compliance Obligations]]** — internal processes, controls, and reporting duties that regulated entities must maintain to demonstrate adherence.
+  - **[[Risk Assessment]]** — processes used by both regulators and regulated entities to identify, quantify, and prioritise regulatory risks.
+  - **Regulatory sandboxes and innovation paths** — controlled environments allowing novel products or services to be tested under modified regulatory conditions; closely related to [[AI Governance]] and [[Fintech]].
+  - **[[Audit]] and inspection regimes** — structured reviews of regulated entities' records, systems, and practices to verify compliance.
+  - **Redress and appeals mechanisms** — rights of regulated entities and affected parties to challenge regulatory decisions before tribunals or courts.
+
+- ### Mechanisms
+  - **Authorisation and licensing** — regulated activities cannot be conducted without prior approval, creating a gatekeeping function (e.g. banking licences, medical device approvals).
+  - **Ongoing supervision** — regular supervisory reviews, stress tests, and thematic reviews keep regulators informed of emerging risks.
+  - **Notification and disclosure** — regulated entities must report material events, publish specified information, and maintain records available for inspection; links to [[Transparency]] and [[Data Governance]].
+  - **Equivalence and mutual recognition** — cross-border frameworks achieve interoperability by recognising foreign regulatory systems as equivalent, reducing duplicative compliance burdens; central to [[International Agreements]].
+  - **Proportionality** — the intensity of regulation is calibrated to the nature, scale, and risk profile of the regulated activity.
+  - **Regulatory impact assessment** — cost-benefit analysis conducted before new rules are introduced, embedding evidence-based [[Policy]] making.
+  - **Co-regulation and [[Self-Regulation]]** — hybrid models in which industry bodies develop codes of conduct within a statutory framework, with regulators retaining backstop powers; contrasts with full statutory regulation.
+
+- ### Applications and Use Cases
+  - **Financial services** — the Basel Accords (capital adequacy), MiFID II (markets in financial instruments), and national prudential regulation compose an interlocking global framework governing banks, insurers, and investment firms. Closely linked to [[Risk Management]] and [[Market Integrity]].
+  - **Data and privacy** — the EU General Data Protection Regulation (GDPR) and equivalent national laws establish a horizontal framework for personal data processing, with direct links to [[Data Protection]] and [[Data Governance]].
+  - **Artificial intelligence** — the EU AI Act (2024) and emerging national AI strategies constitute an evolving [[AI Governance]] framework classifying AI systems by risk and imposing conformity assessment obligations; bridges to [[Machine Learning]] and [[Accountability]].
+  - **Pharmaceutical and medical devices** — regulatory pathways (FDA, EMA) require pre-market authorisation, post-market surveillance, and pharmacovigilance; [[Risk Assessment]] is central.
+  - **Telecommunications and spectrum** — national spectrum regulators and the ITU operate frameworks allocating frequencies, licensing operators, and setting interconnection obligations; linked to [[Interoperability]] and [[Standards]].
+  - **Environmental regulation** — emissions trading schemes, environmental impact assessments, and product ecodesign regulations form frameworks aimed at internalising environmental externalities.
+  - **Blockchain and digital assets** — MiCA (Markets in Crypto-Assets Regulation) and national licensing regimes for virtual asset service providers illustrate how traditional regulatory tools are being adapted; [[Smart Contracts]] and on-chain [[Compliance]] mechanisms are emerging implementation tools.
+  - **Supply chain and product safety** — frameworks such as the EU Product Safety Regulation, customs regulations, and traceability requirements impose obligations across entire supply chains, linking to [[Supply Chain Management]] and [[Audit]].
+  - **Occupational health and safety** — sector-specific and horizontal safety frameworks define duty of care, inspection regimes, and incident reporting.
+
+- ### Standards and Context
+  - **OECD Regulatory Policy Framework** — the OECD Recommendation on Regulatory Policy and Governance (2012) sets out twelve principles for good regulatory practice including stakeholder engagement, regulatory impact assessment, and ex post evaluation.
+  - **Better Regulation agenda (EU)** — the European Commission's Better Regulation agenda mandates impact assessments, REFIT reviews, and the One In, One Out principle for new regulatory proposals.
+  - **ISO/IEC standards** — [[ISO Standards]] such as ISO 31000 (risk management) and ISO 37301 (compliance management systems) provide internationally recognised frameworks that intersect with sectoral regulatory requirements.
+  - **Basel Committee on Banking Supervision** — sets global minimum [[Standards]] for bank capital, liquidity, and risk management that national regulators transpose into law.
+  - **Financial Action Task Force (FATF)** — sets anti-money laundering and counter-terrorist financing standards that form a global regulatory framework transposed into national law across 200+ jurisdictions.
+  - **ITU, ETSI, IEEE** — standards bodies whose technical specifications are referenced in or mandated by regulatory frameworks for telecommunications, electronic equipment, and digital infrastructure.
+  - **EU AI Act** — risk-tiered framework (2024) classifying AI systems as unacceptable risk, high-risk, limited risk, or minimal risk, each tier attracting different [[Compliance Obligations]] and [[Enforcement Mechanisms]].
+  - **General Data Protection Regulation (GDPR)** — horizontal EU data [[Regulation]] establishing principles of lawfulness, purpose limitation, data minimisation, and individual rights; template for global [[Data Protection]] frameworks.
+  - **National regulatory bodies** — FCA (UK), SEC, CFTC (US), BaFin (Germany), SEBI (India) and equivalent bodies translate international and supranational frameworks into national rules and supervisory practice.
+
+- ### Synonyms and Variants
+  - Also referred to as [[Regulatory Regime]] or [[Regulatory Architecture]] in policy literature.
+  - Distinct from but closely related to [[Regulatory Requirements]] (the specific obligations within a framework) and [[Compliance]] (the organisational response to those obligations).
+
+- ### Current Landscape (2026)
+  - The EU AI Act (Regulation (EU) 2024/1689) is the reference model for risk-based regulation: it entered into force on 1 August 2024, prohibitions and AI-literacy duties applied from 2 February 2025, general-purpose AI (GPAI) obligations and EU-level governance from 2 August 2025, and the bulk of provisions plus enforcement from 2 August 2026, with high-risk rules phased to 2 December 2027 (Annex III) and 2 August 2028 (Annex I).
+  - The Commission's voluntary GPAI Code of Practice was published on 10 July 2025 covering transparency, copyright and safety/security, and was judged an "adequate" compliance tool by the AI Office and AI Board on 1 August 2025 to bridge the gap until harmonised CEN/CENELEC standards arrive (expected 2027 or later); each Member State must stand up at least one AI regulatory sandbox, with the deadline realigned to 2 August 2027.
+  - The late-2025 "Digital Omnibus" simplification package proposes to align and streamline the AI Act, GDPR and ePrivacy rules, and analysts expect the high-risk AI compliance deadline to slip by up to 16 months from the original August 2026 date via the AI Omnibus amendments.
+  - Regulatory fragmentation is the dominant 2026 theme across finance and data: the EY and Deloitte 2026 outlooks describe a shift from cross-border harmonisation towards nationally driven "localisation", with the US deregulating for growth, the EU pursuing simplification, and the UK prioritising competitiveness (e.g. the Financial Services Growth & Competitiveness Strategy and the Data (Use and Access) Act 2025).
+  - Digital-asset frameworks matured rapidly: the US GENIUS Act became the first federal legal framework for payment stablecoins, while the EU's Digital Operational Resilience Act (DORA) steps up through 2026 and Hong Kong's critical-infrastructure computer-systems ordinance took effect on 1 January 2026; regulators are converging on full reserve backing, clear redemption rights and robust custody.
+  - US state-level AI and privacy rules proliferated: Colorado's AI Act and Texas's Responsible Artificial Intelligence Governance Act take effect in 2026, alongside California's AI Transparency Act and new state privacy laws, deepening a patchwork in the absence of a federal statute.
+  - Open challenges as of 2026 include reconciling divergent US/EU/UK/APAC rulebooks for globally operating firms, delayed technical standards leaving compliance to non-binding codes, the convergence of AI governance with data-protection and cybersecurity regimes (GDPR reopening, NIS2 roll-out), and heightened focus on children's online safety, operational resilience and cross-border data flows amid rising digital-sovereignty pressures.
+
+- ### References
+  - 1. European Commission (2026). AI Act — Regulatory framework for AI. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. EU Artificial Intelligence Act (2026). Implementation Timeline. https://artificialintelligenceact.eu/implementation-timeline/
+  - 3. EY (2025). Global Financial Services Regulatory Outlook 2026: four regulatory shifts. https://www.ey.com/en_gl/insights/financial-services/four-regulatory-shifts-financial-firms-must-watch-in-2026
+  - 4. Deloitte (2025). Financial Services Regulatory Outlook 2026. https://mkto.deloitte.com/rs/712-CNF-326/images/regulatory-outlook-2026.pdf
+  - 5. OneTrust (2026). The 5 trends shaping global privacy and enforcement in 2026. https://www.onetrust.com/blog/the-5-trends-shaping-global-privacy-and-enforcement-in-2026/
+
+- ### Provenance
+

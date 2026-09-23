@@ -1,0 +1,12 @@
+
+Federated social networks are distributed communication platforms composed of independently operated servers that interoperate via shared open protocols, allowing users on different instances to follow, mention, and exchange content across administrative boundaries without centralised ownership. The model contrasts with siloed proprietary networks by enabling user data portability, operator sovereignty, and community-driven moderation policies.
+
+- ### Content
+  - Federated social networking traces to OStatus (2010) and GNU Social, which demonstrated that Atom-feed-based federation could scale across hundreds of instances. The ActivityPub specification, published as a W3C Recommendation in 2018, superseded OStatus and became the de facto interoperability layer for the "Fediverse" — a portmanteau of federated universe — encompassing platforms such as Mastodon, PeerTube, Pixelfed, and Misskey.
+
+  - Technically, each server exposes ActivityPub endpoints for actors (user accounts), their inboxes, and outboxes. When a user on instance A follows a user on instance B, server A delivers Activity objects (Create, Like, Announce) to server B's shared inbox. Servers maintain local copies of remote actors' public keys for HTTP Signature verification, providing spam resistance without centralised certificate authorities. WebFinger maps human-readable handles to actor URLs across domains.
+
+  - The Fediverse ecosystem saw explosive growth following Twitter's acquisition in 2022, with Mastodon instances hosting millions of accounts. Platforms including Flipboard, Threads (Meta), and Ghost adopted ActivityPub federation, expanding the interoperable graph to include mainstream publishers. This brought pressure to address moderation at federation boundaries, spawning server-level blocklists and the FediBlock community coordination effort.
+
+  - In 2024–2025, the Fediverse faces governance maturity challenges: how to coordinate safety policy across thousands of autonomous operators without replicating the power concentration of centralised platforms. The Social Web Working Group at W3C is iterating on ActivityPub 2.0 proposals covering group actors, better content warnings, and improved privacy. Simultaneously, the integration of AI-generated content moderation tools raises questions about algorithmic governance in a decentralised context.
+

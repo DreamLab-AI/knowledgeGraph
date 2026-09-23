@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>DVC</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="DVC"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="DVC"/><meta name="twitter:description" content="DVC (Data Version Control) is an open-source, Git-integrated data and model versioning tool that applies version control semantics to machine learning datasets, trained model artefacts, and reproducible ML pipelines."/><meta property="og:description" content="DVC (Data Version Control) is an open-source, Git-integrated data and model versioning tool that applies version control semantics to machine learning datasets, trained model artefacts, and reproducible ML pipelines."/><meta property="og:image:alt" content="DVC (Data Version Control) is an open-source, Git-integrated data and model versioning tool that applies version control semantics to machine learning datasets, trained model artefacts, and reproducible ML pipelines."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/DVC"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/DVC"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="DVC (Data Version Control) is an open-source, Git-integrated data and model versioning tool that applies version control semantics to machine learning datasets, trained model artefacts, and reproducible ML pipelines."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/DVC"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2119"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2119" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>DVC</a></div></nav><h1 class="article-title">DVC</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.724Z">23 Sept 2026</time><span>38 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:dvc</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.9</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/AI-Infrastructure" class="internal">AI Infrastructure</a></li><li><a href="../pages/MLOps" class="internal">MLOps</a></li><li><a href="../pages/Data-Versioning" class="internal">Data Versioning</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Data-Versioning" class="internal">Data Versioning</a></li><li><a href="../pages/Data-Pipeline" class="internal">Data Pipeline</a></li><li><a href="../pages/ML-Experiment-Tracking" class="internal">Experiment Tracking</a></li><li><a href="../pages/Artifact-Metadata" class="internal">Artifact Metadata</a></li><li><a href="../pages/Data-Lineage" class="internal">Data Lineage</a></li><li><a href="../pages/Experiment-Tracking" class="internal">Experiment Tracking</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Git" class="internal">Git</a></li><li><a href="../remote-storage" class="internal">Remote Storage</a></li><li><a href="../pages/Model-Training" class="internal">Model Training</a></li><li><a href="../pages/Reproducibility" class="internal">Reproducibility</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Reproducibility" class="internal">Reproducibility</a></li><li><a href="../pages/Model-Versioning" class="internal">Model Versioning</a></li><li><a href="../pages/Checkpoints" class="internal">Checkpoints</a></li><li><a href="../ci-cd-pipeline" class="internal">CI/CD Pipeline</a></li><li><a href="../pages/Data-Lineage" class="internal">Data Lineage</a></li><li><a href="../pages/Experiment-Tracking" class="internal">Experiment Tracking</a></li><li><a href="../pages/Hyperparameter-Tuning" class="internal">Hyperparameter Tuning</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/MLflow" class="internal">MLflow</a></li><li><a href="../Pachyderm" class="internal">Pachyderm</a></li><li><a href="../Kubeflow" class="internal">Kubeflow</a></li><li><a href="../Apache-Airflow" class="internal">Apache Airflow</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Git" class="internal">Git</a></li><li><a href="../Amazon-S3" class="internal">Amazon S3</a></li><li><a href="../Google-Cloud-Storage" class="internal">Google Cloud Storage</a></li><li><a href="../Azure-Blob-Storage" class="internal">Azure Blob Storage</a></li><li><a href="../Docker" class="internal">Docker</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../InfrastructureLayer" class="internal">InfrastructureLayer</a></li><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/MLOps" class="internal">MLOps</a></li><li><a href="../pages/Machine-Learning-Pipeline" class="internal">Machine Learning Pipeline</a></li><li><a href="../pages/Continuous-Integration" class="internal">Continuous Integration</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../checkpoints" class="internal">Checkpoints</a></li><li><a href="../mlops" class="internal">MLOps</a></li><li><a href="../data-versioning" class="internal">Data Versioning</a></li><li><a href="../experiment-tracking" class="internal">Experiment Tracking</a></li><li><a href="../ml-flow" class="internal">MLflow</a></li><li><a href="../model-registry" class="internal">Model Registry</a></li><li><a href="../git" class="internal">Git</a></li><li><a href="../data-pipeline" class="internal">Data Pipeline</a></li><li><a href="../continuous-integration" class="internal">Continuous Integration</a></li><li><a href="../machine-learning-discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../ai-infrastructure" class="internal">AI Infrastructure</a></li><li><a href="../weights-and-biases" class="internal">Weights and Biases</a></li><li><a href="../model-versioning" class="internal">Model Versioning</a></li><li><a href="../reproducibility" class="internal">Reproducibility</a></li><li><a href="../artifact-metadata" class="internal">Artifact Metadata</a></li><li><a href="../amazon-s3" class="internal">Amazon S3</a></li><li><a href="../google-cloud-storage" class="internal">Google Cloud Storage</a></li><li><a href="../azure-blob-storage" class="internal">Azure Blob Storage</a></li><li><a href="../hyperparameter-tuning" class="internal">Hyperparameter Tuning</a></li><li><a href="../ci-cd-pipeline" class="internal">CI/CD Pipeline</a></li><li><a href="../feature-store" class="internal">Feature Store</a></li><li><a href="../data-lineage" class="internal">Data Lineage</a></li><li><a href="../model-training" class="internal">Model Training</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../lakeFS" class="internal">lakeFS</a></li><li><a href="../pachyderm" class="internal">Pachyderm</a></li><li><a href="../kubeflow" class="internal">Kubeflow</a></li><li><a href="../airflow" class="internal">Apache Airflow</a></li><li><a href="../kubernetes" class="internal">Kubernetes</a></li><li><a href="../docker" class="internal">Docker</a></li><li><a href="../jupyter" class="internal">Jupyter</a></li><li><a href="../neptune-ai" class="internal">Neptune.ai</a></li><li><a href="../comet-ml" class="internal">Comet ML</a></li><li><a href="../github-actions" class="internal">GitHub Actions</a></li><li><a href="../model-serving" class="internal">Model Serving</a></li><li><a href="../hugging-face-hub" class="internal">Hugging Face Hub</a></li><li><a href="../fine-tuning" class="internal">Fine-tuning</a></li><li><a href="../machine-learning-pipeline" class="internal">Machine Learning Pipeline</a></li><li><a href="../ai-grounded-domain" class="internal">AI-GroundedDomain</a></li><li><a href="../mlops-domain" class="internal">MLOpsDomain</a></li><li><a href="../infrastructure-layer" class="internal">InfrastructureLayer</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:dvc</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/MLflow" class="internal">MLflow</a></li><li><a href="../pages/Weights-and-Biases" class="internal">Weights and Biases</a></li><li><a href="../pages/Model-Registry" class="internal">Model Registry</a></li><li><a href="../pages/Checkpoints" class="internal">Checkpoints</a></li><li><a href="../pages/ML-Experiment-Tracking" class="internal">Experiment Tracking</a></li><li><a href="../pachyderm" class="internal">Pachyderm</a></li><li><a href="../kubeflow" class="internal">Kubeflow</a></li><li><a href="../lakeFS" class="internal">lakeFS</a></li><li><a href="../pages/Experiment-Tracking" class="internal">Experiment Tracking</a></li><li><a href="../Neptune.ai" class="internal">Neptune.ai</a></li><li><a href="../Comet-ML" class="internal">Comet ML</a></li><li><a href="../pages/Kubernetes" class="internal">Kubernetes</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../lakeFS" class="internal">lakeFS</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Model-Serving" class="internal">Model Serving</a></li><li><a href="../pages/Feature-Store" class="internal">Feature Store</a></li><li><a href="../pages/Model-Registry" class="internal">Model Registry</a></li><li><a href="../Fine-tuning" class="internal">Fine-tuning</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../amazon-s3" class="internal">Amazon S3</a></li><li><a href="../google-cloud-storage" class="internal">Google Cloud Storage</a></li><li><a href="../azure-blob-storage" class="internal">Azure Blob Storage</a></li><li><a href="../pages/Git" class="internal">Git</a></li><li><a href="../Jupyter" class="internal">Jupyter</a></li><li><a href="../GitHub-Actions" class="internal">GitHub Actions</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>DVC (Data Version Control) is an open-source, Git-integrated data and model versioning tool that applies version control semantics to machine learning datasets, trained model artefacts, and reproducible ML pipelines. It stores large binary artefacts in external object storage while committing hash-based pointer files to Git, enabling deterministic experiment replay, collaborative data science, and automated CI/CD-driven ML pipelines.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:DataVersioning))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:DataPipeline))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:ExperimentTracking))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:ArtifactMetadata))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:DataLineage))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:RunCache))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:hasPart ai:RemoteStorage))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:requires ai:Git))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:requires ai:RemoteStorage))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:requires ai:ModelTraining))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:requires ai:Reproducibility))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:requires ai:HashAddressing))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:Reproducibility))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:ModelVersioning))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:DataLineage))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:CICDPipeline))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:ExperimentTracking))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:HyperparameterSweep))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:enables ai:DataAuditability))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:implements ai:MLOps))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:implements ai:MachineLearningPipeline))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:implements ai:ContinuousIntegration))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:implements ai:DAGExecution))
+</code></pre>
+<h2 id="support-relationships">Support Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:supports ai:TransferLearning))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:supports ai:DeepLearning))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:supports ai:FineTuning))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:supports ai:ModelServing))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:supports ai:FeatureStore))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:supports ai:ModelRegistry))
+</code></pre>
+<h2 id="contrast-relationships">Contrast Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrast-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:contrastsWith ai:MLflow))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:contrastsWith ai:Pachyderm))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:contrastsWith ai:Kubeflow))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:contrastsWith ai:ApacheAirflow))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:reducesTo ai:DataVersioning))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:reducesTo ai:GitWorkflow))
+SubClassOf(ai:DVC
+  ObjectSomeValuesFrom(ai:reducesTo ai:PipelineOrchestration))
+</code></pre>
+<ul>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC (Data Version Control) is an open-source command-line tool and <a href="../pages/AI-Infrastructure" class="internal alias" data-slug="pages/AI-Infrastructure">AI Infrastructure</a> layer that closes the reproducibility gap in <a href="../pages/Machine-Learning-Discipline" class="internal alias" data-slug="pages/Machine-Learning-Discipline">Machine Learning Discipline</a> by extending <a href="../pages/Git" class="internal" data-slug="pages/Git">Git</a>’s lightweight branching and tagging model to binary artefacts and <a href="../pages/Data-Pipeline" class="internal alias" data-slug="pages/Data-Pipeline">Data Pipeline</a> definitions. Its design philosophy is intentionally conservative: rather than building a new versioning system from scratch, DVC parasites on the well-understood semantics of Git — commits, branches, tags, and stashes — adding only the minimum additional machinery needed to track large binary objects and pipeline execution state.</p>
+</li>
+<li>
+<p>The motivation for DVC’s architecture can be understood through the lens of the reproducibility crisis that became visible in ML research around 2015-2017. Teams working on image classification, NLP, and reinforcement learning consistently found that they could not reproduce results from their own experiments conducted six months earlier, because the combination of code version, training dataset version, and random seed was not recorded together in any system. Code lived in Git; datasets lived on shared network drives with no version history; model weights were overwritten on every training run; and the mapping between a Git commit and the dataset that produced a given model was recorded nowhere except possibly in a researcher’s lab notebook.</p>
+</li>
+<li>
+<p>DVC addresses this through the <code>.dvc</code> pointer file: when <code>dvc add large-dataset.tar.gz</code> is executed, DVC computes the SHA-256 hash of the file, stores a copy in the local cache (<code>.dvc/cache/</code>), creates a tiny <code>large-dataset.tar.gz.dvc</code> YAML file containing the hash and file size, and adds the original file to <code>.gitignore</code>. The <code>.dvc</code> file is committed to Git. When a colleague clones the repository and runs <code>dvc pull</code>, DVC reads the hash from the <code>.dvc</code> file and fetches the exact corresponding object from the configured remote storage — providing the same semantics as <code>git clone</code> + <code>git checkout</code> but for binary files.</p>
+</li>
+<li>
+<p>This design has two important properties. First, it is storage-efficient: the DVC cache uses hard links or symlinks where supported by the filesystem, so multiple branches referencing the same dataset version incur no additional storage cost. Second, it is remote-agnostic: the same pointer file works regardless of whether the remote is <a href="../Amazon-S3" class="internal alias" data-slug="Amazon-S3">Amazon S3</a>, a university NFS share, or a local external hard drive, enabling DVC to span the full spectrum of computing environments from a researcher’s laptop to a cloud HPC cluster.</p>
+</li>
+<li>
+<p>The <code>dvc.yaml</code> pipeline system extends these principles to multi-step ML workflows. The file format is deliberately minimal and human-readable: a typical <code>dvc.yaml</code> for a standard supervised learning pipeline might define five stages — data download, data preprocessing, feature engineering, model training, and model evaluation — each with two to ten declared dependencies and one to three declared outputs. The simplicity of the YAML format is intentional: it should be possible for a new team member to read a <code>dvc.yaml</code> and immediately understand the pipeline’s structure, without deep knowledge of DVC’s internals. Rather than documenting preprocessing steps in a README or shell script that may drift out of sync with the actual commands used, <code>dvc.yaml</code> is the authoritative record of the pipeline: each stage’s command, its declared inputs (both code and data files), its parameter keys (loaded from <code>params.yaml</code>), and its expected outputs are all version-controlled alongside the code. Running <code>dvc repro</code> executes the pipeline in dependency order, skipping stages whose inputs are unchanged, and updates <code>dvc.lock</code> with the hashes of all inputs and outputs. The combination of <code>dvc.yaml</code> and <code>dvc.lock</code> committed to Git provides a complete computational provenance record: any future reader can reconstruct exactly what commands were run, on what input versions, to produce a given model artifact.</p>
+</li>
+<li>
+<p>The experiment management capability — introduced as <code>dvc exp</code> in version 2.7 (2021) and substantially expanded through 2022-2024 — enables parameter sweeps without branching overhead. The DVC team measured that before <code>dvc exp</code>, practitioners conducting hyperparameter sweeps typically resorted to one of three suboptimal approaches: creating a new Git branch per experiment (polluting the branch history with dozens of short-lived branches), modifying <code>params.yaml</code> directly (losing the ability to reproduce prior parameter sets without reverting in Git), or maintaining a separate spreadsheet mapping commit hashes to parameter values (error-prone and easily outdated). The <code>dvc exp</code> system provides a purpose-built solution to each of these anti-patterns while remaining backward-compatible with existing Git and DVC workflows.</p>
+</li>
+<li>
+<p>A key design choice in DVC’s experiment system is the use of <code>git stash</code> as the storage mechanism for experiment entries. This means that DVC experiments are stored in standard Git objects — no DVC-specific database is required — and can be inspected, copied, or migrated using standard Git tools. The <code>dvc exp save</code> command exposes this: it is equivalent to <code>git stash save --include-untracked --message &quot;dvclive: exp-name&quot;</code> followed by metadata recording. This design makes DVC experiments portable across Git hosting platforms and immune to DVC version migrations, as the experiment data format is Git’s built-in stash format.</p>
+</li>
+<li>
+<p>DVC’s metrics system, introduced alongside <code>dvc exp</code>, allows any stage to declare one or more JSON, YAML, or CSV files as metric files in <code>dvc.yaml</code>. After <code>dvc repro</code>, these files are collected and indexed in the experiment stash entry. <code>dvc metrics show</code> presents a table comparing metric values across the current workspace, all named experiments, and any named Git branches or tags, enabling practitioners to track performance across hyperparameter sweeps, model architecture changes, and data augmentation experiments in a single command. The DVCLive library (developed by the DVC team) provides a Python API for logging metrics during training loops that automatically writes metric files compatible with DVC’s metrics collection system, positioning DVC as a lightweight alternative to dedicated experiment tracking servers for teams that prefer Git-native workflows. When <code>dvc exp run --set-param train.learning_rate=0.001</code> is called, DVC creates a temporary Git stash entry, modifies <code>params.yaml</code> with the new parameter value, runs <code>dvc repro</code>, collects the output metrics from the <code>metrics.json</code> files declared in <code>dvc.yaml</code>, and associates all of this with a human-readable experiment name. The experiment lives in the Git stash tree, visible via <code>dvc exp show</code> but invisible to <code>git log</code>, preventing experiment runs from polluting the main commit history. Successful experiments can be promoted to permanent Git branches via <code>dvc exp branch experiment-name branch-name</code>, at which point they become full Git commits with the standard audit trail.</p>
+</li>
+<li>
+<p>First released in 2017 by Dmitry Petrov and Ivan Shcheklein under their company Iterative.ai, DVC emerged in response to the observation that ML experiments were fundamentally unreproducible because teams tracked code in Git but left training datasets and model weights on shared NFS drives with no version history.</p>
+</li>
+<li>
+<p>DVC introduced the <code>.dvc</code> pointer file pattern: a small YAML file committed to Git that records the content hash (MD5 or SHA-256) and remote storage URI of a large binary object, so that <code>dvc pull</code> can fetch the exact version that corresponds to a given Git commit. This design means a single <code>git checkout</code> plus <code>dvc pull</code> reconstructs the complete experiment environment — code, data, and model — with cryptographic integrity guarantees.</p>
+</li>
+<li>
+<p>The second major capability of DVC is its declarative pipeline system. A <code>dvc.yaml</code> file describes each stage of an ML pipeline as a mapping of <code>cmd</code> (the shell command to execute), <code>deps</code> (input files or directories), <code>params</code> (YAML parameter keys from <code>params.yaml</code>), and <code>outs</code> (output artefacts).</p>
+</li>
+<li>
+<p>DVC computes a dependency graph from these declarations and executes stages in topological order, skipping any stage whose inputs and outputs are unchanged since the last run. The <code>dvc.lock</code> file records the exact hash of every input and output after a successful run, making the locked pipeline a complete, auditable record of how any output was produced.</p>
+</li>
+<li>
+<p>When a stage’s cached output hash matches the run cache, DVC skips execution entirely, even if the source code has changed — a powerful mechanism for large datasets or compute-intensive preprocessing stages where rerunning is expensive.</p>
+</li>
+<li>
+<p>The experiment tracking subsystem, substantially enhanced between 2021 and 2024, adds lightweight hyperparameter sweep management on top of the pipeline system. <code>dvc exp run</code> executes the pipeline with modified parameter values (passed via <code>--set-param</code>), commits the resulting metrics and plots as a Git stash entry, and records the mapping in <code>.dvc/tmp/exps/</code>.</p>
+</li>
+<li>
+<p>Users can compare experiments with <code>dvc exp show</code>, generate plots of metric curves with <code>dvc plots show</code>, and promote a successful experiment to a permanent Git branch or tag with <code>dvc exp branch</code>. This design deliberately avoids introducing a separate tracking server — the experiment metadata lives in Git itself.</p>
+</li>
+<li>
+<p>DVC also integrates with server-backed trackers such as <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a>, <a href="../pages/Weights-and-Biases" class="internal alias" data-slug="pages/Weights-and-Biases">Weights and Biases</a>, <a href="../Neptune.ai" class="internal" data-slug="Neptune.ai">Neptune.ai</a>, and <a href="../Comet-ML" class="internal alias" data-slug="Comet-ML">Comet ML</a> when teams require richer dashboards or centralised multi-user access, making it interoperable with the broader <a href="../pages/MLOps" class="internal" data-slug="pages/MLOps">MLOps</a> tool ecosystem rather than a replacement for it.</p>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC’s architecture divides into six subsystems that interact through <a href="../pages/Git" class="internal" data-slug="pages/Git">Git</a> and the file hash index. Understanding these subsystems at a technical level is important for practitioners who need to integrate DVC into existing data engineering or software engineering workflows, as each subsystem has different performance characteristics and operational requirements.</p>
+</li>
+<li>
+<p>The architecture is deliberately layered: each subsystem can be adopted independently, so teams can start with data versioning alone (<code>.dvc</code> files) and progressively add pipeline management, then experiment tracking, without having to adopt the entire system at once. This incremental adoption model has been a key factor in DVC’s uptake in academic and industry environments where introducing new tooling faces significant organisational friction.</p>
+</li>
+<li>
+<p><strong>Content-Addressable Storage (CAS) Layer</strong>: Every file tracked by DVC is identified by its MD5 (default) or SHA-256 hash, stored in the DVC cache at <code>.dvc/cache</code>. Cached objects are referenced by their content hash, so identical files across experiments are stored only once. The remote storage mirrors this CAS layout, meaning pushes and pulls are efficient: only objects absent from the remote are transferred. The cache directory structure uses the first two characters of the hash as a subdirectory (following the Git object store convention), placing the object at <code>.dvc/cache/ab/cdef1234...</code> for a file with hash <code>abcdef1234...</code>. This two-level directory structure limits directory entry counts to at most 256 entries at the top level, improving filesystem performance on systems where directory scanning is slow (some distributed filesystems). For very large models or datasets, DVC also supports chunked file storage where a single large file is split into fixed-size chunks that are independently cached, enabling partial updates when only part of a large file changes.</p>
+</li>
+<li>
+<p><strong>Pointer File Layer (<code>.dvc</code> files and <code>dvc.lock</code>)</strong>: When <code>dvc add dataset.csv</code> is run, DVC writes a <code>dataset.csv.dvc</code> file containing the hash and file size, adds <code>dataset.csv</code> to <code>.gitignore</code>, and stores the cached copy. <code>dvc.lock</code> serves the same role for pipeline outputs: after <code>dvc repro</code>, every output in <code>dvc.yaml</code> gets its hash recorded in <code>dvc.lock</code>, which is committed to Git as the pipeline’s reproducibility receipt.</p>
+</li>
+<li>
+<p><strong>Pipeline Engine (<code>dvc.yaml</code> / <code>dvc repro</code>)</strong>: The pipeline is a DAG of stages. DVC resolves execution order, detects stale stages via hash comparison, fetches missing stage inputs from remote, executes commands in sequence, and updates <code>dvc.lock</code>. The run-cache checks the global hash of all inputs before execution; a cache hit skips the command entirely.</p>
+</li>
+<li>
+<p><strong>Experiment Manager (<code>dvc exp</code>)</strong>: Wraps <code>dvc repro</code> with parameter injection, stash-based branching, metrics collection (<code>dvc.yaml:metrics</code>), and HTML/Vega-Lite plot generation. Integrates with VS Code via the DVC extension for graphical experiment comparison.</p>
+</li>
+<li>
+<p><strong>Remote Storage Abstraction</strong>: DVC ships built-in support for <a href="../Amazon-S3" class="internal alias" data-slug="Amazon-S3">Amazon S3</a> (and S3-compatible stores), <a href="../Google-Cloud-Storage" class="internal alias" data-slug="Google-Cloud-Storage">Google Cloud Storage</a>, <a href="../Azure-Blob-Storage" class="internal alias" data-slug="Azure-Blob-Storage">Azure Blob Storage</a>, SSH/SFTP, HDFS, HTTP servers, and local paths. As of 2024, DVC also supports cloud versioning — delegating file versioning to S3/GCS native object versioning rather than the DVC hash scheme.</p>
+</li>
+<li>
+<p><strong>CML (Continuous Machine Learning)</strong>: A companion open-source tool from Iterative that wraps DVC pipeline execution in CI/CD workflows (<a href="../GitHub-Actions" class="internal alias" data-slug="GitHub-Actions">GitHub Actions</a>, GitLab CI, Bitbucket Pipelines), enabling automated model training, metric comparison in pull request comments, and GPU runner provisioning.</p>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Dataset versioning for regulated industries</strong>: Life-sciences and financial-services teams use DVC to maintain auditable lineage chains between raw data dumps, preprocessing scripts, and model artefacts, satisfying regulatory requirements (EU AI Act model traceability provisions, FDA 21 CFR Part 11 electronic records) without migrating datasets out of existing cloud object stores.</p>
+</li>
+<li>
+<p><strong>Reproducible research in academia</strong>: Research teams at universities including Edinburgh, UCL, and Manchester use DVC alongside institutional HPC clusters to version large-scale NLP corpora, computer-vision benchmark datasets, and genomics files, ensuring that published results can be exactly reproduced by reviewers. DVC’s hash-based integrity checks provide stronger reproducibility guarantees than timestamp-based approaches common in legacy bioinformatics pipelines. The journal Nature Machine Intelligence adopted data sharing policies in 2021 that explicitly recommend versioned dataset storage and provide DVC as one of the exemplary tools for satisfying these requirements, reflecting the tool’s growing recognition in the academic publishing ecosystem.</p>
+</li>
+<li>
+<p><strong>Genomics and bioinformatics pipelines</strong>: DVC is increasingly used in computational biology workflows where reproducibility of data preprocessing is critical for regulatory and publication purposes. Its integration with Snakemake and Nextflow pipelines allows bioinformatics teams to add data versioning without changing their existing workflow management systems. The UK Biobank, one of the world’s largest health research databases, has inspired multiple groups to develop DVC-based dataset versioning schemes for subsets of the biobank data used in specific ML studies, where each DVC commit captures a precise, reproducible slice of the larger dataset.</p>
+</li>
+<li>
+<p><strong>LLM fine-tuning and evaluation pipelines</strong>: As large language model fine-tuning has become a standard ML operation, DVC provides the data management layer for instruction-tuning datasets, RLHF preference data, and evaluation benchmark versions, enabling teams to version the evolving dataset compositions alongside the model weights they produce. Fine-tuning dataset curation is iterative: teams frequently add examples, remove low-quality examples, rebalance categories, and update annotation guidelines. DVC’s ability to version these dataset mutations — and correlate each dataset version with the model checkpoint it produced — is essential for systematic fine-tuning research.</p>
+</li>
+<li>
+<p><strong>CI/CD-driven MLOps</strong>: Engineering teams integrate DVC with <a href="../GitHub-Actions" class="internal alias" data-slug="GitHub-Actions">GitHub Actions</a> or GitLab CI via CML, so every pull request to a model training repository triggers a pipeline run, computes evaluation metrics, and posts a metric diff table in the PR comment. This mirrors standard software CI/CD practice and shifts the review of model quality into the code review workflow.</p>
+</li>
+<li>
+<p><strong>Large-scale computer-vision and NLP model development</strong>: Teams building <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> models on multi-TB video datasets or multi-hundred-GB text corpora use DVC remote storage with chunked file support to manage dataset versions without saturating Git repositories.</p>
+</li>
+<li>
+<p><strong>Transfer learning and fine-tuning workflows</strong>: DVC stages encapsulate the base-model download, <a href="../Fine-tuning" class="internal" data-slug="Fine-tuning">Fine-tuning</a> script, and evaluation steps, and <code>dvc.lock</code> records the exact base-model checkpoint hash used — ensuring that <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> experiments are fully traceable even when the base model is fetched from <a href="../Hugging-Face-Hub" class="internal alias" data-slug="Hugging-Face-Hub">Hugging Face Hub</a>.</p>
+</li>
+<li>
+<p><strong>Genomics and bioinformatics pipelines</strong>: DVC is increasingly used in computational biology workflows where reproducibility of data preprocessing is critical for regulatory and publication purposes. Its integration with Snakemake and Nextflow pipelines allows bioinformatics teams to add data versioning without changing their existing workflow management systems.</p>
+</li>
+<li>
+<p><strong>LLM fine-tuning and evaluation pipelines</strong>: As large language model fine-tuning has become a standard ML operation, DVC provides the data management layer for instruction-tuning datasets, RLHF preference data, and evaluation benchmark versions, enabling teams to version the evolving dataset compositions alongside the model weights they produce.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC emerged from the academic reproducibility crisis in ML, directly addressing concerns raised by Sculley et al.’s landmark 2015 NIPS paper “Hidden Technical Debt in Machine Learning Systems” (Google Brain) which identified the lack of versioned data as a primary source of ML system fragility. The paper’s influence on the ML engineering community was substantial: it shifted discourse from purely technical questions about model accuracy to systemic questions about the engineering practices that sustain reliable ML systems over time. DVC is one of the primary tools that emerged from this discourse, providing the concrete infrastructure that Sculley et al. identified as missing.</p>
+</li>
+<li>
+<p>The tool’s design is grounded in principles from software configuration management and build systems: the pointer-file pattern resembles Git LFS, but DVC’s content-addressable cache and pipeline DAG are more closely related to the Nix/Guix purely functional build model, where every output is a pure function of its inputs and nothing else.</p>
+</li>
+<li>
+<p>Amershi et al.’s 2019 ICSE paper “Software Engineering for Machine Learning: A Case Study” (Microsoft Research) subsequently documented data versioning as a top-5 pain point in industrial ML teams, validating DVC’s core design premise and providing empirical evidence that the problem DVC addresses is pervasive across organisations of all sizes.</p>
+</li>
+<li>
+<p>DVC’s pipeline system draws on the build system literature, specifically the approach of Shake (Neil Mitchell, 2012) which demonstrated correct incremental builds under dynamic dependencies. The run-cache concept mirrors ccache and sccache patterns from C/C++ compilation acceleration.</p>
+</li>
+<li>
+<p>The experiment tracking subsystem has been independently benchmarked against <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a> and <a href="../pages/Weights-and-Biases" class="internal alias" data-slug="pages/Weights-and-Biases">Weights and Biases</a> in several comparative MLOps tool surveys, including the 2022 arXiv survey by Kreuzberger et al. “Machine Learning Operations (MLOps): Overview, Definition, and Architecture” which positioned DVC as the dominant open-source choice for file-system-based artifact versioning.</p>
+</li>
+<li>
+<p>Shankar et al.’s 2022 interview study “Operationalizing Machine Learning” identified data management and versioning as among the top pain points for ML engineers across 18 organisations, and documented DVC as one of the primary tools they deployed to address these challenges.</p>
+</li>
+<li>
+<h2 id="integration-patterns">Integration Patterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-patterns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC is rarely used in isolation; it is typically one component in a larger MLOps tool stack. Understanding the canonical integration patterns helps practitioners combine DVC with other tools without duplication or conflict.</p>
+</li>
+<li>
+<p><strong>DVC + <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a> (metrics tracking)</strong>: The canonical pattern for teams that want Git-native data versioning but require a dedicated experiment tracking dashboard. DVC manages the data layer (<code>.dvc</code> pointer files, <code>dvc.yaml</code> pipeline, <code>dvc.lock</code> reproducibility receipt) while MLflow is called within the training script to log parameters, metrics, and model artifacts via its Python SDK. At the end of a training run, <code>dvc exp save</code> saves a lightweight experiment entry in Git stash while MLflow records the full metrics time-series in its backend database. This separation of concerns allows each tool to be used for its strengths: DVC for data provenance and pipeline management, MLflow for rich metric visualisation and model registry.</p>
+</li>
+<li>
+<p><strong>DVC + <a href="../pages/Weights-and-Biases" class="internal alias" data-slug="pages/Weights-and-Biases">Weights and Biases</a> (dashboard visualisation)</strong>: Similar to the DVC + MLflow pattern, but with W&amp;B as the tracking backend. The <code>wandb</code> library logs training curves, sample predictions, and model artifacts to the W&amp;B cloud platform, while DVC records the dataset version and pipeline structure in Git. The combination is popular in research teams that need collaborative real-time training dashboards (W&amp;B’s primary value) while maintaining Git-based data provenance. W&amp;B’s artifact versioning system and DVC’s data versioning overlap in scope, leading some teams to use DVC for dataset versioning only and W&amp;B for model artifact versioning.</p>
+</li>
+<li>
+<p><strong>DVC + <a href="../GitHub-Actions" class="internal alias" data-slug="GitHub-Actions">GitHub Actions</a> (CI/CD automation)</strong>: The CI/CD pattern automates model training on every pull request. A GitHub Actions workflow runs <code>dvc pull</code> to fetch the dataset version declared in the repository, executes <code>dvc repro</code> to run the pipeline, uses DVCLive or <code>dvc metrics show</code> to format a markdown metric table, and posts it as a PR comment via the GitHub API. The CML (Continuous Machine Learning) library from Iterative automates the metric comparison and comment posting steps, while GitHub’s managed GPU runners (available from 2024) enable training on GPU hardware without managing self-hosted runners. This pattern mirrors standard software CI/CD practices and is gaining adoption in ML engineering teams that have existing DevOps maturity.</p>
+</li>
+<li>
+<p><strong>DVC + HPC clusters (academic research)</strong>: In HPC environments (JADE2, Baskerville, ARCHER2), DVC’s remote storage is typically configured to point to a GPFS or Lustre parallel filesystem path accessible from all compute nodes. A DVC pipeline stage is wrapped in an HPC job script (SLURM, PBS) that is submitted via <code>dvc repro</code> with an appropriate command. Some teams implement a custom DVC stage that submits an HPC job and polls for completion, enabling <code>dvc repro</code> to be run from a login node while execution happens on GPU nodes. The DVC cache on the parallel filesystem is accessible from all nodes, enabling efficient cache hits without data transfer.</p>
+</li>
+<li>
+<p><strong>DVC + <a href="../Docker" class="internal" data-slug="Docker">Docker</a> (reproducible environments)</strong>: For complete computational reproducibility, DVC pipeline stages can be wrapped in Docker containers that pin the exact Python environment, CUDA version, and system library state. <code>dvc.yaml</code> stage commands run <code>docker run ...</code> with the stage’s input volumes mounted. This extends DVC’s reproducibility guarantee from data and code to the execution environment, eliminating the “works on my machine” failure mode caused by environment drift. The <code>dvc repro --run-cache</code> mechanism still applies: if the stage inputs, code, and container image hash are all unchanged, the cached output is returned without re-running the container.</p>
+</li>
+<li>
+<p><strong>DVC + <a href="../lakeFS" class="internal" data-slug="lakeFS">lakeFS</a> (enterprise data lakes)</strong>: Following the November 2025 acquisition, lakeFS and DVC are being integrated to enable DVC pipeline stages to operate directly against lakeFS-managed data lakes rather than individual files. In this pattern, DVC pointer files reference lakeFS commit hashes (which version entire data lake snapshots) rather than individual file hashes. This extends DVC’s data versioning granularity from individual files to arbitrarily large dataset collections, enabling ML teams to version petabyte-scale data lakes with the same Git-native workflow they use for smaller datasets.</p>
+</li>
+<li>
+<h2 id="formal-analysis">Formal Analysis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-analysis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC can be formally modelled as a content-addressable build system operating over a versioned file graph. This framing connects DVC’s design to a well-developed theoretical literature on build systems and functional programming, and provides a formal basis for reasoning about its correctness and efficiency guarantees. The formalism also clarifies the distinction between DVC and alternative approaches such as <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a> (which tracks runs and metrics but does not provide content-addressable data versioning) and <a href="../Kubeflow" class="internal" data-slug="Kubeflow">Kubeflow</a> (which provides orchestration infrastructure but not data provenance). Let G = (V, E) be a directed acyclic graph where V is the set of files and model artefacts and E represents data-flow dependencies declared in <code>dvc.yaml</code>. Each node v ∈ V is labelled with its content hash h(v) = SHA-256(content(v)).</p>
+</li>
+<li>
+<p>A stage s = (cmd_s, deps_s, outs_s) is stale if ∃ d ∈ deps_s such that h(d) ≠ h_lock(d), where h_lock(d) is the hash recorded in <code>dvc.lock</code> from the last successful run. DVC executes the minimal sub-DAG of stale stages using topological sort — equivalent to a monotone build system in the sense of Mokhov et al. (2018).</p>
+</li>
+<li>
+<p>The run-cache further abstracts execution to a pure function Cache: (cmd, {h(dep)}) → {h(out)}; a cache hit short-circuits the command invocation entirely, providing a memoisation layer over pipeline execution that persists across Git branches and experiment stash entries.</p>
+</li>
+<li>
+<p>The pointer-file abstraction induces a bijection between Git commits and dataset versions: given commit c, the set of <code>.dvc</code> files at c uniquely determines the content hashes of all tracked objects, which in turn uniquely identify the remote storage objects. This bijection is the mathematical basis of DVC’s reproducibility guarantee.</p>
+</li>
+<li>
+<p>DVC’s remote storage abstraction can be characterised as a distributed content-addressed store with write-once semantics: once an object with a given hash is written to remote, it is never mutated, only potentially replicated or garbage-collected. This property, combined with <a href="../pages/Git" class="internal" data-slug="pages/Git">Git</a>’s append-only history, provides a provenance chain that is tamper-evident.</p>
+</li>
+<li>
+<p>The experiment comparison operation <code>dvc exp show</code> computes a relational projection over the experiment metadata table, where each row is an experiment identified by its Git stash hash and each column is a metric or parameter. Ranking by a metric value is equivalent to an ORDER BY query over this table. The <code>dvc exp apply</code> operation is a <code>git stash pop</code> followed by a <code>dvc checkout</code> — a multi-version tuple retrieval from the versioned experiment store. This relational interpretation makes clear that DVC’s experiment management subsystem is equivalent in expressiveness to a lightweight columnar experiment database with Git as the storage backend and content-addressing as the indexing mechanism.</p>
+</li>
+<li>
+<p>One important limitation of the DVC formal model is that it assumes deterministic pipeline stages: given the same inputs, a stage always produces the same outputs. In practice, many ML training stages are non-deterministic due to GPU floating-point non-determinism, random seed sensitivity, and framework-level non-determinism in distributed training. DVC addresses this partially through <code>params.yaml</code> (which can include random seeds) and <code>dvc.yaml</code> stage environments (which can pin framework versions), but bitwise reproducibility of model weights across different hardware configurations remains outside DVC’s formal guarantees and requires additional discipline at the experiment level.</p>
+</li>
+<li>
+<p>The run-cache’s correctness guarantee depends on the assumption that the file hash faithfully identifies semantic content: two files with the same hash produce the same output when used as stage inputs. This is guaranteed by the hash function’s collision resistance (SHA-256 is collision-resistant under standard cryptographic assumptions) but could be violated in adversarial contexts where a malicious actor substitutes a file with an identical hash. For non-adversarial research environments, this risk is negligible; for security-sensitive ML systems in production, additional integrity verification layers (e.g., hardware security modules signing dataset hashes) may be warranted.</p>
+</li>
+<li>
+<h2 id="security-and-compliance">Security and Compliance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#security-and-compliance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC’s security posture is shaped by its distributed, Git-native architecture. Unlike server-centric MLOps platforms (Databricks, Vertex AI, SageMaker) that centralise data and experiment metadata in a managed cloud service, DVC stores all metadata in Git and all data in user-controlled storage backends. This architecture has both security advantages and risks that practitioners must understand.</p>
+</li>
+<li>
+<p><strong>Provenance tamper-evidence</strong>: The combination of Git’s cryptographic Merkle tree (where each commit hash is derived from the hashes of its parent commits and all tracked files) and DVC’s SHA-256 content-addressed storage creates a tamper-evident provenance chain. If any tracked dataset file is modified after being committed to DVC, its content hash will change, and the mismatch with the hash in the <code>.dvc</code> file will be detected immediately on <code>dvc status</code> or <code>dvc checkout</code>. This property is valuable for regulatory compliance: it provides a cryptographic audit trail that dataset preprocessing was not altered between the time of an approved experiment and the time of a regulatory submission.</p>
+</li>
+<li>
+<p><strong>Supply chain risk in ML datasets</strong>: The broader ML supply-chain security literature (exemplified by the Hugging Face model repository poisoning incidents of 2023-2024) highlights the risk of downloading datasets or models from untrusted sources. DVC’s hash-based verification provides a partial mitigation: if a dataset is downloaded from a trusted source, its hash is recorded in the <code>.dvc</code> file, and any subsequent substitution of the dataset (whether malicious or accidental) will be detected. However, DVC provides no mechanism for verifying that the original download itself was from an authenticated source — this requires complementary controls such as PGP-signed release archives or SLSA-compliant provenance attestations.</p>
+</li>
+<li>
+<p><strong>Access control</strong>: DVC’s remote storage backends inherit the access control mechanisms of the underlying storage service. Amazon S3 bucket policies, Google Cloud IAM bindings, and Azure RBAC roles all apply normally to DVC remote storage. For multi-team ML platforms, fine-grained access control can be implemented by configuring separate DVC remotes with different access permissions per team or per dataset sensitivity level. DVC does not implement its own access control layer above the remote storage service’s native mechanisms.</p>
+</li>
+<li>
+<p><strong>GDPR and data residency</strong>: For UK and EU organisations subject to GDPR data residency requirements, DVC’s cloud versioning feature (which delegates versioning to native S3/GCS bucket versioning) must be configured to use storage regions compliant with the organisation’s data processing agreements. The pointer-file approach provides an architectural benefit here: the sensitive personal data remains in the organisation-controlled storage backend, while only the non-sensitive hash and metadata is stored in the Git repository, which may be hosted on external platforms (GitHub, GitLab) without triggering data transfer concerns.</p>
+</li>
+<li>
+<p><strong>EU AI Act compliance</strong>: The EU AI Act (entered into force August 2024) imposes documentation and traceability requirements on high-risk AI systems, including requirements to record the training datasets used. DVC’s <code>dvc.lock</code> file, committed to Git, constitutes a machine-readable record of the exact dataset version (identified by cryptographic hash) used to train a given model, satisfying the Act’s data provenance documentation requirements. Organisations building AI Act compliance workflows are adopting DVC as the data management layer that makes this documentation automatic rather than manual.</p>
+</li>
+<li>
+<p><strong>UKCA marking and NHS AI Lab guidance</strong>: In the UK, software as a medical device (SaMD) requires UKCA marking under the UK Medical Devices Regulations 2002 (as amended). NHS AI Lab guidance on AI in health requires documented model development processes including dataset versioning. DVC provides the technical mechanism for satisfying these documentation requirements without the overhead of purpose-built regulatory compliance systems.</p>
+</li>
+<li>
+<h2 id="comparison-with-related-tools">Comparison with Related Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparison-with-related-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC occupies a distinct niche in the MLOps tool ecosystem that is often confused with overlapping but distinct tools. Understanding the precise differences is essential for practitioners selecting tools for their ML infrastructure.</p>
+</li>
+<li>
+<p><strong>DVC vs <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a></strong>: MLflow (Databricks, 2018) focuses on experiment tracking — logging hyperparameters, metrics, artifacts, and model versions in a dedicated database with a web UI. It does not provide Git-integrated data versioning or pipeline management. DVC provides data versioning and pipeline management without a dedicated server, and integrates with MLflow for experiment tracking. The two tools are complementary: DVC manages the data layer, MLflow manages the experiment and model registry layer. Teams frequently use both in the same workflow.</p>
+</li>
+<li>
+<p><strong>DVC vs <a href="../pages/Weights-and-Biases" class="internal alias" data-slug="pages/Weights-and-Biases">Weights and Biases</a></strong>: Weights and Biases (W&amp;B, 2018) is a cloud-hosted experiment tracking and model monitoring platform. Like MLflow, it focuses on metrics, artifact logging, and collaborative dashboards rather than data versioning. DVC integrates with W&amp;B via the <code>wandb</code> logging callbacks in <code>dvc.yaml</code>. W&amp;B is the preferred tracking layer for teams requiring real-time training dashboards and collaborative model evaluation, while DVC provides the underlying data and pipeline provenance.</p>
+</li>
+<li>
+<p><strong>DVC vs <a href="../Pachyderm" class="internal" data-slug="Pachyderm">Pachyderm</a></strong>: Pachyderm is a data versioning and pipeline system that uses <a href="../pages/Kubernetes" class="internal" data-slug="pages/Kubernetes">Kubernetes</a> and <a href="../Docker" class="internal" data-slug="Docker">Docker</a> containers as the execution environment. It provides similar data versioning semantics to DVC but manages the full compute cluster, making it significantly more complex to operate. DVC’s design principle is to use the existing compute environment (the researcher’s laptop, an HPC cluster, a CI/CD runner) without managing container orchestration. Pachyderm is preferred in organisations with existing Kubernetes infrastructure and security requirements for containerised computation.</p>
+</li>
+<li>
+<p><strong>DVC vs <a href="../Kubeflow" class="internal" data-slug="Kubeflow">Kubeflow</a></strong>: Kubeflow is a Kubernetes-native ML platform providing pipeline orchestration, notebook management, model serving, and hyperparameter tuning as integrated components. It requires a Kubernetes cluster to operate and is primarily adopted by large engineering organisations with dedicated MLOps teams. DVC is substantially simpler to adopt and operates without Kubernetes, making it the preferred choice for smaller teams, academic institutions, and organisations without cloud infrastructure.</p>
+</li>
+<li>
+<p><strong>DVC vs <a href="../Apache-Airflow" class="internal alias" data-slug="Apache-Airflow">Apache Airflow</a></strong>: Apache Airflow is a general-purpose workflow orchestration system widely used in data engineering. It provides sophisticated scheduling, dependency management, and monitoring for data pipelines but has minimal ML-specific features (no data versioning, no experiment tracking, no parameter management). DVC is optimised specifically for ML workflows and requires no orchestration server. Teams often use Airflow for upstream data engineering pipelines and DVC for downstream ML training pipelines.</p>
+</li>
+<li>
+<p><strong>DVC vs Git LFS (Large File Storage)</strong>: Git LFS is a Git extension that handles large files by storing them in a separate object store and replacing them with Git pointers. It provides similar data versioning to DVC at the individual file level but has no pipeline, experiment tracking, or remote storage abstraction capabilities. DVC’s pointer files are structurally similar to Git LFS pointers, but DVC supports a much broader range of remote storage backends and adds the pipeline management capabilities that Git LFS lacks.</p>
+</li>
+<li>
+<h2 id="operational-considerations">Operational Considerations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#operational-considerations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Deploying DVC in a team environment requires attention to several operational considerations that are not immediately obvious from the documentation.</p>
+</li>
+<li>
+<p><strong>Cache sharing</strong>: The DVC cache at <code>.dvc/cache/</code> is local by default. On a team with a shared compute cluster, each team member would otherwise independently download identical dataset versions from the remote, wasting time and bandwidth. DVC supports a shared external cache (<code>dvc config cache.dir /path/to/shared/cache</code>) accessible over NFS, allowing cache hits to benefit the entire team. This is particularly valuable on HPC clusters where multiple users train on the same base datasets with different preprocessing parameters.</p>
+</li>
+<li>
+<p><strong>Remote authentication</strong>: DVC’s remote storage backends require appropriate credentials. For <a href="../Amazon-S3" class="internal alias" data-slug="Amazon-S3">Amazon S3</a>, DVC uses standard AWS credential chains (environment variables, IAM roles, <code>~/.aws/credentials</code>). For <a href="../Google-Cloud-Storage" class="internal alias" data-slug="Google-Cloud-Storage">Google Cloud Storage</a>, it uses application default credentials. For <a href="../Azure-Blob-Storage" class="internal alias" data-slug="Azure-Blob-Storage">Azure Blob Storage</a>, it uses connection strings or managed identity. In CI/CD environments, credentials are typically injected as environment variables or IAM role assignments rather than stored in the repository. The <code>dvc remote modify</code> command allows per-remote credential configuration.</p>
+</li>
+<li>
+<p><strong><code>.dvc/config</code> and <code>.dvc/config.local</code></strong>: DVC separates repository-level configuration (<code>.dvc/config</code>, committed to Git) from user-level or environment-level overrides (<code>.dvc/config.local</code>, in <code>.gitignore</code>). This allows the shared configuration to declare the remote URL and shared cache path while allowing individual users to override credentials or local cache locations without affecting other team members.</p>
+</li>
+<li>
+<p><strong>Garbage collection</strong>: As experiments accumulate, the DVC cache and remote storage grow unboundedly. <code>dvc gc</code> removes cached objects that are not referenced by any current branch, tag, or experiment. Running <code>dvc gc --remote</code> extends this to the remote storage. Care must be taken when running garbage collection in collaborative environments: objects referenced by branches that are not present in the local Git clone will be considered unreferenced and may be deleted.</p>
+</li>
+<li>
+<p><strong>Pipeline stage ordering and caching</strong>: DVC’s incremental execution depends on correctly declared dependencies. If a stage has an undeclared dependency on an external resource (a web API, a system library, or an environment variable), DVC will not detect changes in that dependency and will incorrectly serve a cached result. Practitioners must ensure that all stage dependencies — including code files, data files, and configuration files — are declared in <code>dvc.yaml</code>. The <code>dvc params diff</code> command helps audit parameter changes between experiment runs.</p>
+</li>
+<li>
+<p><strong>Integration with <a href="../Jupyter" class="internal" data-slug="Jupyter">Jupyter</a> notebooks</strong>: Jupyter notebooks are executed as single monolithic scripts from DVC’s perspective, with no sub-stage granularity. Teams using Jupyter for exploration typically run <code>dvc repro</code> on a pipeline that calls <code>jupyter nbconvert --execute notebook.ipynb</code> as the stage command, capturing the executed notebook as an output artifact. Alternatively, notebooks are refactored into Python scripts for production DVC pipelines, using the notebook as documentation of the original exploration.</p>
+</li>
+<li>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong><code>.dvc</code> file</strong>: A YAML-format pointer file committed to Git that records the content hash (md5 or sha256), file size, and optional remote path of a DVC-tracked binary object. Acts as the Git-DVC bridge.</p>
+</li>
+<li>
+<p><strong><code>dvc.yaml</code></strong>: The pipeline definition file in YAML format, describing one or more stages as <code>{cmd, deps, params, outs, metrics, plots}</code> mappings. Analogous to a Makefile or Snakefile for ML pipelines.</p>
+</li>
+<li>
+<p><strong><code>dvc.lock</code></strong>: The pipeline lockfile, auto-generated by <code>dvc repro</code>, recording the exact content hashes of every dependency and output after a successful stage execution. Committed to Git as the reproducibility receipt for the pipeline run.</p>
+</li>
+<li>
+<p><strong><code>params.yaml</code></strong>: Conventional name for the hyperparameter configuration file; parameter keys from this file can be declared in <code>dvc.yaml</code> stage <code>params</code> lists and tracked per-experiment by <code>dvc exp</code>.</p>
+</li>
+<li>
+<p><strong>DVC Cache</strong>: The local content-addressable store at <code>.dvc/cache/</code> where all tracked file contents are stored by hash. Shared across Git branches and experiments, enabling efficient branch switching without re-downloading data.</p>
+</li>
+<li>
+<p><strong>Remote</strong>: A configured external storage location (<a href="../Amazon-S3" class="internal alias" data-slug="Amazon-S3">Amazon S3</a>, <a href="../Google-Cloud-Storage" class="internal alias" data-slug="Google-Cloud-Storage">Google Cloud Storage</a>, <a href="../Azure-Blob-Storage" class="internal alias" data-slug="Azure-Blob-Storage">Azure Blob Storage</a>, SSH, etc.) where the DVC cache is mirrored for collaboration. Configured via <code>dvc remote add</code>.</p>
+</li>
+<li>
+<p><strong>Run Cache</strong>: A persistent record mapping (cmd, input-hash-set) → output-hash-set, stored in <code>.dvc/tmp/run-cache/</code>. A cache hit skips stage execution entirely, enabling reuse of expensive computation across experiments.</p>
+</li>
+<li>
+<p><strong><code>dvc exp</code></strong>: The experiment management subsystem, enabling parameter sweeps, experiment comparison, and promotion of experiments to permanent <a href="../pages/Git" class="internal" data-slug="pages/Git">Git</a> branches without polluting the main commit history.</p>
+</li>
+<li>
+<p><strong>CML (Continuous Machine Learning)</strong>: A companion tool from Iterative (now under <a href="../lakeFS" class="internal" data-slug="lakeFS">lakeFS</a> stewardship) that integrates DVC into CI/CD platforms (<a href="../GitHub-Actions" class="internal alias" data-slug="GitHub-Actions">GitHub Actions</a>, GitLab CI) to automate training pipeline execution and metric reporting in pull requests.</p>
+</li>
+<li>
+<p><strong>Cloud Versioning</strong>: A DVC feature (2024) that delegates object versioning to the native versioning mechanism of S3 or GCS rather than DVC hashes, enabling DVC to work alongside teams that already version data in their cloud storage.</p>
+</li>
+<li>
+<p><strong>DataChain</strong>: The successor project by DVC’s original creators (Iterative.ai) targeting unstructured data analytics for large-scale foundation model datasets; positioned as a complement to DVC for multi-modal data curation rather than a replacement for pipeline versioning.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>In November 2025, lakeFS — a Git-for-data platform founded in Tel Aviv and backed by $20 million raised in a July 2025 growth round — acquired the DVC open-source project from Iterative.ai. The acquisition was motivated by a strategic pivot: Dmitry Petrov and Ivan Shcheklein, DVC’s creators, had shifted focus to DataChain, a new Python library for unstructured-data analytics, making DVC maintenance peripheral to Iterative’s roadmap.</p>
+</li>
+<li>
+<p>Under lakeFS, DVC continues as an Apache 2.0 open-source project with its own community and website (dvc.org), while lakeFS contributes engineering resources. The GitHub repository transferred to the <code>treeverse</code> organisation (lakeFS’s parent). The DVC community — measured at tens of thousands of weekly active users and thousands of GitHub stars — welcomed the acquisition as securing long-term maintenance.</p>
+</li>
+<li>
+<p>The broader <a href="../pages/MLOps" class="internal" data-slug="pages/MLOps">MLOps</a> tool landscape in 2026 is characterised by increasing consolidation: cloud providers offer managed ML platforms (AWS SageMaker Pipelines, Google Vertex AI, Azure ML) that replicate DVC’s core versioning and pipeline features within proprietary ecosystems.</p>
+</li>
+<li>
+<p>DVC’s differentiation remains its Git-native, infrastructure-agnostic approach and its ability to operate on local filesystems — critical for air-gapped environments, on-premise HPC clusters, and teams unwilling to commit to a cloud vendor’s managed ML service.</p>
+</li>
+<li>
+<p>The MLOps market was projected at 43% five-year compound growth (Business Insights, 2025), reflecting accelerating enterprise ML adoption that benefits DVC’s installation base. Competing tools such as <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a> (now under Databricks), <a href="../pages/Weights-and-Biases" class="internal alias" data-slug="pages/Weights-and-Biases">Weights and Biases</a>, and <a href="../Kubeflow" class="internal" data-slug="Kubeflow">Kubeflow</a> have similarly expanded their feature sets, but DVC’s Git-native approach occupies a distinct niche in the ecosystem.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>DVC has been adopted across the UK’s leading ML research institutions and in several key sectors of the UK digital economy. The UK’s academic ML community has been particularly receptive to DVC because of the strong emphasis on reproducibility in UK research funding councils’ open science requirements: EPSRC and UKRI mandate data management plans and where possible, data sharing for publicly funded research, and DVC provides a practical mechanism for satisfying these requirements while managing the practical constraints of large binary datasets that cannot be simply posted to a public repository. The Alan Turing Institute, headquartered at the British Library, promotes reproducible ML as a core pillar of its programme and has featured DVC in researcher training materials.</p>
+</li>
+<li>
+<p>University of Edinburgh’s School of Informatics, one of Europe’s largest ML research groups, uses DVC in conjunction with the Edinburgh Compute and Data Facility (ECDF) to version large-scale NLP datasets and align model training runs with published papers.</p>
+</li>
+<li>
+<p>UCL’s Centre for Medical Image Computing (CMIC) applies DVC to version multi-modal neuroimaging datasets, where GDPR compliance requires demonstrable <a href="../pages/Data-Lineage" class="internal alias" data-slug="pages/Data-Lineage">Data Lineage</a> and audit trails for any dataset processed in a research pipeline.</p>
+</li>
+<li>
+<p>The University of Manchester’s department of Computer Science, particularly research groups working on industrial AI and knowledge graphs, has integrated DVC into HPC workflows on the JADE2 and Baskerville GPU clusters operated under EPSRC funding.</p>
+</li>
+<li>
+<p>In Northern England, the N8 Research Partnership (linking Newcastle, Durham, Leeds, Liverpool, Manchester, Sheffield, York, and Lancaster) has adopted shared data management standards that align with DVC’s pointer-file model, enabling cross-institutional dataset sharing without duplicating multi-GB binary files across institutional storage.</p>
+</li>
+<li>
+<p>The NHS AI Lab has additionally explored DVC for clinical-grade AI pipeline traceability, where <a href="../pages/Reproducibility" class="internal" data-slug="pages/Reproducibility">Reproducibility</a> of preprocessing decisions is critical for regulatory submissions under the UKCA marking regime. Imperial College London’s Data Science Institute has incorporated DVC into its postgraduate ML curriculum, training the next generation of UK ML engineers in data versioning best practices.</p>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The landscape for data versioning tools in ML is entering a period of consolidation and integration. The acquisition of DVC by lakeFS, the maturation of <a href="../pages/MLflow" class="internal" data-slug="pages/MLflow">MLflow</a> under Databricks, and the growth of cloud-native ML platform offerings from AWS, Google, and Microsoft all point toward a future where data versioning is an integrated capability of the ML platform rather than a standalone tool. DVC’s future competitive position depends on its ability to differentiate on the dimensions where it has historically led: Git-native operation, infrastructure agnosticism, and the ability to work without a dedicated server or cloud account.</p>
+</li>
+<li>
+<p>Under lakeFS stewardship, DVC is expected to deepen integration with lakeFS’s commit/merge/branch model for large data lakes, offering Git-like branching semantics for Petabyte-scale datasets stored in S3 or HDFS rather than relying purely on hash pointers. This would position DVC as a bridge between file-system-oriented ML workflows and enterprise data platform teams.</p>
+</li>
+<li>
+<p>The growth of foundation model <a href="../Fine-tuning" class="internal" data-slug="Fine-tuning">Fine-tuning</a> workflows creates new DVC use cases: versioning LoRA adapters, GGUF quantised <a href="../pages/Checkpoints" class="internal" data-slug="pages/Checkpoints">Checkpoints</a>, and PEFT adapter configurations alongside the base model hash, so that fine-tuning experiments are fully reproducible without storing multi-hundred-GB base model copies.</p>
+</li>
+<li>
+<p>DVC’s cloud versioning feature — delegating to S3/GCS native versioning — is expected to mature, enabling transparent integration with data lakes managed by tools such as Apache Iceberg or Delta Lake. This convergence with the broader data engineering ecosystem will extend DVC’s reach from ML teams to data engineering teams who manage the upstream sources.</p>
+</li>
+<li>
+<p>CI/CD-native ML is accelerating: the CML integration pattern of triggering GPU training jobs from pull requests is converging with GitHub’s managed GPU runner offering (announced 2024) and GitLab’s AI-powered DAST/SAST pipelines. DVC’s run-cache and lightweight experiment stash model gives it a structural advantage in this environment versus heavier orchestration tools like <a href="../Kubeflow" class="internal" data-slug="Kubeflow">Kubeflow</a> that require <a href="../pages/Kubernetes" class="internal" data-slug="pages/Kubernetes">Kubernetes</a> cluster management.</p>
+</li>
+<li>
+<p>Federated learning and privacy-preserving ML are also emerging use cases, where DVC’s ability to version data pointers without centralising the underlying data makes it attractive for cross-silo experiments where training data cannot leave institutional boundaries — a requirement common in healthcare and financial services ML applications.</p>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<ol>
+<li>Petrov, D. &amp; Shcheklein, I. (2017). <em>DVC: Data Version Control — Git for Data</em>. Iterative.ai blog. <a href="https://dvc.org/blog/dvc-milestone-1-0-release" class="external">https://dvc.org/blog/dvc-milestone-1-0-release<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Sculley, D., Holt, G., Golovin, D., Davydov, E., Phillips, T., Ebner, D., Chaudhary, V., Young, M., Crespo, J.-F., &amp; Dennison, D. (2015). <em>Hidden Technical Debt in Machine Learning Systems</em>. NeurIPS 2015. <a href="https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html" class="external">https://proceedings.neurips.cc/paper/2015/hash/86df7dcfd896fcaf2674f757a2463eba-Abstract.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Amershi, S., Begel, A., Bird, C., DeLine, R., Gall, H., Kamar, E., Nagappan, N., Nushi, B., &amp; Zimmermann, T. (2019). <em>Software Engineering for Machine Learning: A Case Study</em>. ICSE 2019. <a href="https://dl.acm.org/doi/10.1109/ICSE-SEIP.2019.00042" class="external">https://dl.acm.org/doi/10.1109/ICSE-SEIP.2019.00042<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Kreuzberger, D., Kühl, N., &amp; Hirschl, S. (2022). <em>Machine Learning Operations (MLOps): Overview, Definition, and Architecture</em>. arXiv:2205.02302. <a href="https://arxiv.org/abs/2205.02302" class="external">https://arxiv.org/abs/2205.02302<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Mitchell, N. (2012). <em>Shake Before Building: Replacing Make with Haskell</em>. ICFP 2012. <a href="https://dl.acm.org/doi/10.1145/2364527.2364538" class="external">https://dl.acm.org/doi/10.1145/2364527.2364538<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Lwakatare, L. E., Raj, A., Crnkovic, I., Bosch, J., &amp; Olsson, H. H. (2020). <em>Large-scale Machine Learning Systems in Real-world Industrial Settings</em>. EASE 2020. <a href="https://dl.acm.org/doi/10.1145/3383219.3383232" class="external">https://dl.acm.org/doi/10.1145/3383219.3383232<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Zaharia, M., Chen, A., Davidson, A., Ghodsi, A., Hong, S. A., Konwinski, A., Murching, S., Nykodym, T., Ogilvie, P., Parkhe, M., Xie, F., &amp; Zumar, C. (2018). <em>Accelerating the Machine Learning Lifecycle with MLflow</em>. IEEE Data Engineering Bulletin, 41(4). <a href="https://arxiv.org/abs/1810.05208" class="external">https://arxiv.org/abs/1810.05208<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Vartak, M., Subramanyam, H., Lee, W.-E., Viswanathan, S., Huber, S., Bhoja, S., Madden, S., Parameswaran, A., &amp; Tatbul, N. (2016). <em>ModelDB: A System for Machine Learning Model Management</em>. HILDA@SIGMOD. <a href="https://dl.acm.org/doi/10.1145/2939502.2939516" class="external">https://dl.acm.org/doi/10.1145/2939502.2939516<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Breck, E., Polyzotis, N., Roy, S., Whang, S. E., &amp; Zinkevich, M. (2019). <em>Data Validation for Machine Learning</em>. MLSys 2019. <a href="https://proceedings.mlsys.org/paper_files/paper/2019/hash/5b0ddcb4-breck.html" class="external">https://proceedings.mlsys.org/paper_files/paper/2019/hash/5b0ddcb4-breck.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Makinen, S., Skön, J.-P., Mäkinen, J., &amp; Mikkonen, T. (2021). <em>Who Needs MLOps: What Data Scientists Seek to Accomplish and How Can MLOps Help?</em>. arXiv:2103.08942. <a href="https://arxiv.org/abs/2103.08942" class="external">https://arxiv.org/abs/2103.08942<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Hewage, D., Khomh, F., &amp; Adamov, A. (2022). <em>Machine Learning Operations: A Survey on MLOps Tool Support</em>. arXiv:2202.10169. <a href="https://arxiv.org/abs/2202.10169" class="external">https://arxiv.org/abs/2202.10169<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Zhou, Y., Yu, Y., &amp; Ding, B. (2020). <em>Towards MLOps: A Case Study of ML Pipeline Platform</em>. ICSOC 2020. <a href="https://dl.acm.org/doi/10.1007/978-3-030-65310-1_42" class="external">https://dl.acm.org/doi/10.1007/978-3-030-65310-1_42<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Bhatt, U., Blodgett, S., Ghassemi, M., &amp; Wexler, J. (2020). <em>Explainability Requires Reproducibility</em>. ICML 2020 Workshop. <a href="https://arxiv.org/abs/2006.06219" class="external">https://arxiv.org/abs/2006.06219<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>lakeFS. (2025). <em>lakeFS Acquires DVC, Uniting Data Version Control Pioneers</em>. Press Release. <a href="https://lakefs.io/media-mentions/lakefs-acquires-dvc-uniting-data-version-control-pioneers/" class="external">https://lakefs.io/media-mentions/lakefs-acquires-dvc-uniting-data-version-control-pioneers/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>lakeFS. (2025). <em>DVC Joins lakeFS: Your Questions Answered</em>. DVC Blog. <a href="https://dvc.org/blog/dvc-joins-lakefs-your-questions-answered/" class="external">https://dvc.org/blog/dvc-joins-lakefs-your-questions-answered/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Shankar, S., Garcia, R., Hellerstein, J. M., &amp; Parameswaran, A. (2022). <em>Operationalizing Machine Learning: An Interview Study</em>. arXiv:2209.09125. <a href="https://arxiv.org/abs/2209.09125" class="external">https://arxiv.org/abs/2209.09125<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Kim, M., Zimmermann, T., DeLine, R., &amp; Begel, A. (2017). <em>Data Scientists in Software Teams: State of the Practice and Challenges</em>. IEEE TSE 2017. <a href="https://ieeexplore.ieee.org/document/7927993" class="external">https://ieeexplore.ieee.org/document/7927993<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Mokhov, A., Mitchell, N., &amp; Jones, S. P. (2018). <em>Build Systems à la Carte</em>. ICFP 2018. <a href="https://dl.acm.org/doi/10.1145/3236774" class="external">https://dl.acm.org/doi/10.1145/3236774<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Polyzotis, N., Roy, S., Whang, S. E., &amp; Zinkevich, M. (2018). <em>Data Lifecycle Challenges in Production Machine Learning</em>. SIGMOD Record, 47(2). <a href="https://dl.acm.org/doi/10.1145/3299887.3299891" class="external">https://dl.acm.org/doi/10.1145/3299887.3299891<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Schelter, S., Boese, J.-H., Kirschnick, J., Klein, T., &amp; Seufert, S. (2018). <em>Automating Large-Scale Data Quality Verification</em>. VLDB 2018. <a href="https://dl.acm.org/doi/10.14778/3229863.3229867" class="external">https://dl.acm.org/doi/10.14778/3229863.3229867<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>DVC Documentation. (2025). <em>User Guide: Data Management</em>. <a href="https://dvc.org/doc/user-guide/data-management" class="external">https://dvc.org/doc/user-guide/data-management<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>DVC Documentation. (2025). <em>Get Started: Data Pipelines</em>. <a href="https://dvc.org/doc/start/data-pipelines/data-pipelines" class="external">https://dvc.org/doc/start/data-pipelines/data-pipelines<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>DVC Documentation. (2025). <em>Cloud Versioning</em>. <a href="https://dvc.org/doc/user-guide/data-management/cloud-versioning" class="external">https://dvc.org/doc/user-guide/data-management/cloud-versioning<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Wikipedia. (2025). <em>Data Version Control (software)</em>. <a href="https://en.wikipedia.org/wiki/Data_Version_Control_(software)" class="external">https://en.wikipedia.org/wiki/Data_Version_Control_(software)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>DataCamp. (2026). <em>25 Top MLOps Tools You Need to Know in 2026</em>. <a href="https://www.datacamp.com/blog/top-mlops-tools" class="external">https://www.datacamp.com/blog/top-mlops-tools<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Introl. (2025). <em>Model Versioning Infrastructure: Managing ML Artifacts at Scale</em>. <a href="https://introl.com/blog/model-versioning-infrastructure-mlops-artifact-management-guide-2025" class="external">https://introl.com/blog/model-versioning-infrastructure-mlops-artifact-management-guide-2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Clarifai. (2025). <em>End-to-End MLOps Architecture and Workflow</em>. <a href="https://www.clarifai.com/blog/end-to-end-mlops" class="external">https://www.clarifai.com/blog/end-to-end-mlops<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Markaicode. (2025). <em>DVC for ML Reproducibility: Dataset Versioning, Pipeline Stages, and S3 Remote Storage</em>. <a href="https://markaicode.com/dvc-data-versioning-pipeline/" class="external">https://markaicode.com/dvc-data-versioning-pipeline/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1493" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#support-relationships" data-for="support-relationships">Support Relationships</a></li><li class="depth-0"><a href="#contrast-relationships" data-for="contrast-relationships">Contrast Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#integration-patterns" data-for="integration-patterns">Integration Patterns</a></li><li class="depth-0"><a href="#formal-analysis" data-for="formal-analysis">Formal Analysis</a></li><li class="depth-0"><a href="#security-and-compliance" data-for="security-and-compliance">Security and Compliance</a></li><li class="depth-0"><a href="#comparison-with-related-tools" data-for="comparison-with-related-tools">Comparison with Related Tools</a></li><li class="depth-0"><a href="#operational-considerations" data-for="operational-considerations">Operational Considerations</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Checkpoints" class="internal">Checkpoints</a></li><li><a href="../pages/Data-Versioning" class="internal">Data Versioning</a></li><li><a href="../pages/ETSI-Domain:-Data-Management-+-AI" class="internal">ETSI Domain: Data Management + AI</a></li><li><a href="../pages/ML-Experiment-Tracking" class="internal">ML Experiment Tracking</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

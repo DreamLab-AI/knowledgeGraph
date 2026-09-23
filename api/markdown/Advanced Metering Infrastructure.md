@@ -1,0 +1,3 @@
+
+Advanced metering infrastructure (AMI) is the integrated system of smart meters, two-way communication networks and data management software that enables utilities to remotely collect detailed, time-stamped consumption data and to send control signals back to meters and connected devices. It extends earlier automated meter reading by providing bidirectional communication, enabling near-real-time usage data, remote connect/disconnect and dynamic pricing. AMI is a foundational enabler of demand response programmes and smart grid operations, since it supplies the granular consumption data those systems depend on.
+

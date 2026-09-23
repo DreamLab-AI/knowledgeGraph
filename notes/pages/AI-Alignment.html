@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>AI Alignment</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="AI Alignment"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI Alignment"/><meta name="twitter:description" content="The process of making AI systems’ behaviour and goals consistent with human values, preferences, and intentions."/><meta property="og:description" content="The process of making AI systems’ behaviour and goals consistent with human values, preferences, and intentions."/><meta property="og:image:alt" content="The process of making AI systems’ behaviour and goals consistent with human values, preferences, and intentions."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/AI-Alignment"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/AI-Alignment"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="The process of making AI systems’ behaviour and goals consistent with human values, preferences, and intentions."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/AI-Alignment"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-161"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-161" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI Alignment</a></div></nav><h1 class="article-title">AI Alignment</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.653Z">23 Sept 2026</time><span>8 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:ai-alignment</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../AI-Governance-and-Ethics" class="internal">AI Governance and Ethics</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Value-Alignment" class="internal">Value Alignment</a></li><li><a href="../pages/Constitutional-AI-Training-Methodology" class="internal">Constitutional AI</a></li><li><a href="../pages/Scalable-Oversight" class="internal">Scalable Oversight</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal">Reinforcement Learning from Human Feedback</a></li><li><a href="../pages/Reward-Modelling" class="internal">Reward Modelling</a></li><li><a href="../pages/Human-Oversight" class="internal">Human Oversight</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Safe-AI-Deployment" class="internal">Safe AI Deployment</a></li><li><a href="../trustworthy-ai" class="internal">Trustworthy AI</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Ethics" class="internal">Ethics</a></li><li><a href="../pages/AI-Agent-System" class="internal">AI Agent System</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Instrumental-Convergence" class="internal">Instrumental Convergence</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0268</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../ai-agent-system" class="internal">AI Agent System</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li><li><a href="../natural-language-processing" class="internal">natural language processing</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:aff27ecc33b0db8c7d073efb896d812ee856ad7168a936cb0b370d7e8e52b32b</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Explainable-AI" class="internal">Explainable AI</a></li><li><a href="../ai-robustness" class="internal">AI Robustness</a></li><li><a href="../pages/Mesa-Optimisation" class="internal">Mesa-Optimisation</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Responsible-AI" class="internal">Responsible AI</a></li><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Direct-Preference-Optimisation" class="internal">Direct Preference Optimisation</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Interpretability" class="internal">Interpretability</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>The process of making AI systems’ behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>The process of making AI systems’ behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical methods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.</p>
+</li>
+<li>
+<h1 id="strategic-alignment">Strategic Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#strategic-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p><a href="https://www.gartner.com/en/articles/30-emerging-technologies-that-will-guide-your-business-decisions?utm_term=1724261337?" class="external">Gartners provides a handy and up-to-date visual for emerging tech<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. It happens to intersect with my research interests and expertise in the main, and I have highlighted the relevant elements (for me), in pink. Everything there is somewhere, or everywhere in the knowledge base.</p>
+</li>
+<li>
+<p><img src="../assets/1759419477553_1759507979104_0.jpg" alt="1759419477553.jpg"/>{:height 1141, :width 1187}</p>
+</li>
+<li>
+<h3 id="deferred-subversion">Deferred Subversion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#deferred-subversion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Instrumental alignment faking involves the model acting as expected to ensure deployment, but for the wrong reasons.
+- Sandbagging involves the model intentionally underperforming to avoid triggering an undesirable outcome.
+- Strong goal nudging leads to more scheming behavior (single-digit to low double-digit percentages).
+- Without strong nudging, scheming occurs around 1% of the time.
+- o1 exhibits a high rate of doubling down on deception (85%), much higher than other models tested.
+</code></pre>
+</li>
+<li>
+<h3 id="defining-scheming">Defining Scheming<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#defining-scheming" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<pre><code>- Training models to respect the instruction hierarchy may incentivize scheming.
+- In the specific case of o1, the instruction hierarchy does not explain the observed scheming behaviors.
+- Models may introduce subtle mistakes into their responses to engineer outcomes that align with their goals.
+</code></pre>
+</li>
+<li>
+<h2 id="data-and-information">Data and Information<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-and-information" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="advanced-refinement-techniques">Advanced Refinement Techniques<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#advanced-refinement-techniques" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>To further improve their alignment with human preferences, LLMs undergo additional refinement:</p>
+</li>
+<li>
+<h2 id="february-2024"><strong>February 2024</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#february-2024" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>1 Feb, <em>Efficient Exploration for LLMs</em>, <a href="https://substack.com/redirect/6337bcce-9da1-46cb-ac0e-d348c51a4174?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.00396<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>1 Feb, <em>OLMo: Accelerating the Science of Language Models</em>, <a href="https://substack.com/redirect/0190868f-d342-4489-b2ff-79391083472f?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.00838<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>1 Feb, <em>Tiny Titans: Can Smaller Large Language Models Punch Above Their Weight in the Real World for Meeting Summarization?</em>, <a href="https://substack.com/redirect/4dcc03d5-f11f-48f3-89cc-95d1387f4752?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.00841<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>1 Feb, <em>Repeat After Me: Transformers are Better than State Space Models at Copying</em>, <a href="https://substack.com/redirect/fc724550-573b-41ff-aef9-bd76a2a6ffc2?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.01032<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>2 Feb, <em>LiPO: Listwise Preference Optimization through Learning-to-Rank</em>, <a href="https://substack.com/redirect/f24801af-42c8-4051-bb6b-98b32511bf9c?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.01878<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>2 Feb, <em>FindingEmo: An Image Dataset for Emotion Recognition in the Wild</em>, <a href="https://substack.com/redirect/789d0c85-6cae-4c2a-8c66-aac5b6df5e00?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.01355<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>3 Feb, <em>More Agents Is All You Need</em>, <a href="https://substack.com/redirect/ed2fc1c5-c2df-4bb7-8d71-920bf06383c3?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.05120<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>5 Feb, <em>DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models</em>, <a href="https://substack.com/redirect/0d4eed8d-78a8-4f6e-bf73-d8bce805848c?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.03300<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>6 Feb, <em>MobileVLM V2: Faster and Stronger Baseline for Vision Language Model</em>, <a href="https://substack.com/redirect/23f525b9-daaf-46cb-bf8f-7a6fc93648ad?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.03766<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>6 Feb, <em>A Phase Transition Between Positional and Semantic Learning in a Solvable Model of Dot-Product Attention</em>, <a href="https://substack.com/redirect/11339467-8ea5-4416-9408-dbef856bd64c?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.03902<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>6 Feb, <em>Scaling Laws for Downstream Task Performance of Large Language Models</em>, <a href="https://substack.com/redirect/14bdf9b0-2d2c-4628-93a7-46a8dac8d393?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.04177<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>6 Feb, <em>MOMENT: A Family of Open Time-series Foundation Models</em>, <a href="https://substack.com/redirect/a29596ff-57d9-44c4-9763-984ac22aca5b?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.03885<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>6 Feb, <em>Vision Superalignment: Weak-to-Strong Generalization for Vision Foundation Models</em>, <a href="https://substack.com/redirect/41d4401a-7bad-443e-b9d8-62a5e2f6834f?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.03749<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>6 Feb, <em>Self-Discover: Large Language Models Self-Compose Reasoning Structures</em>, <a href="https://substack.com/redirect/6ba4ac1a-b4fa-463c-8279-65ce5cbdfa9b?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.03620<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>7 Feb, <em>Grandmaster-Level Chess Without Search</em>, <a href="https://substack.com/redirect/ecf1d304-6b4c-4379-8f3f-98c8cea2df80?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.04494<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>7 Feb, <em>Direct Language Model Alignment from Online AI Feedback</em>, <a href="https://substack.com/redirect/fea30f6f-7126-4e11-a698-a79d30992066?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.04792<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>8 Feb, <em>Buffer Overflow in Mixture of Experts</em>, <a href="https://substack.com/redirect/1e111953-e08d-4231-b194-dee4e4f92c64?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.05526<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>9 Feb, <em>The Boundary of Neural Network Trainability is Fractal</em>, <a href="https://substack.com/redirect/0d7e0d57-04df-4249-80c4-a2118aefe303?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.06184<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>11 Feb, <em>ODIN: Disentangled Reward Mitigates Hacking in RLHF</em>, <a href="https://substack.com/redirect/87e1a8ab-585b-40f0-b137-c69d08a13c78?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.07319<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>12 Feb, <em>Policy Improvement using Language Feedback Models</em>, <a href="https://substack.com/redirect/3928654c-28a1-4ea7-933a-661a664d7f6f?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.07876<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>12 Feb, <em>Scaling Laws for Fine-Grained Mixture of Experts</em>, <a href="https://substack.com/redirect/264b2b21-99ab-4c1f-84a1-c63b2ef96161?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.07871<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>12 Feb, <em>Aya Model: An Instruction Finetuned Open-Access Multilingual Language Model</em>, <a href="https://substack.com/redirect/7fddb107-1885-42e1-abfe-a97f09e0d94b?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.07610<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>12 Feb, <em>Step-On-Feet Tuning: Scaling Self-Alignment of LLMs via Bootstrapping</em>, <a href="https://substack.com/redirect/7fddb107-1885-42e1-abfe-a97f09e0d94b?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.07610<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>12 Feb, <em>Suppressing Pink Elephants with Direct Principle Feedback</em>, <a href="https://substack.com/redirect/706bc856-06df-4858-b39f-fee51403dbc5?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.07896<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>13 Feb, <em>World Model on Million-Length Video And Language With RingAttention</em>, <a href="https://substack.com/redirect/e22fb3c7-bba5-4382-9d9a-ed25b9ce60a5?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.08268<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>13 Feb, <em>Mixtures of Experts Unlock Parameter Scaling for Deep RL</em>, <a href="https://substack.com/redirect/d9ec89b7-9d9d-4bd1-b58d-08299e989fdd?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.08609<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>14 Feb, <em>DoRA: Weight-Decomposed Low-Rank Adaptation</em>, <a href="https://substack.com/redirect/69f38313-caec-475f-9616-cbefd1e3c879?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.09353<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>14 Feb, <em>Transformers Can Achieve Length Generalization But Not Robustly</em>, <a href="https://substack.com/redirect/7469cd7a-613a-4d31-be69-9d93de53fc23?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.09371<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>15 Feb, <em>BASE TTS: Lessons From Building a Billion-Parameter Text-to-Speech Model on 100K Hours of Data</em>, <a href="https://substack.com/redirect/111cbecd-5de9-485c-a26a-1a6a5e17afc0?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.08093<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>15 Feb, <em>Recovering the Pre-Fine-Tuning Weights of Generative Models</em>, <a href="https://substack.com/redirect/5682bb1d-d66e-4d50-8c49-977eeeb86c49?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.10208<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>15 Feb, <em>Generative Representational Instruction Tuning</em>, <a href="https://substack.com/redirect/d71e8c90-0e4e-4eb9-b1b0-db982af62371?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.09906<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>16 Feb, <em>FinTral: A Family of GPT-4 Level Multimodal Financial Large Language Models</em>, <a href="https://substack.com/redirect/a8906a2a-e9ff-4fa0-803e-6d8cb180090c?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.10986<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>17 Feb, <em>OneBit: Towards Extremely Low-bit Large Language Models</em>, <a href="https://substack.com/redirect/bd24335f-0818-429c-8c73-611f51a61366?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.11295<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>18 Feb, <em>LongAgent: Scaling Language Models to 128k Context through Multi-Agent Collaboration</em>, <a href="https://substack.com/redirect/ddb3e5fc-4a46-423b-b534-db18a1016ae9?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.11550<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>19 Feb, <em>Reformatted Alignment</em>, <a href="https://substack.com/redirect/5ab208b3-5479-4ab6-9aa2-b7b003998443?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.12219<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>19 Feb, <em>AnyGPT: Unified Multimodal LLM with Discrete Sequence Modeling</em>, <a href="https://substack.com/redirect/c5f72d21-b502-48b4-9bea-0fee871e9c0e?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.12226<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>19 Feb, <em>Towards Cross-Tokenizer Distillation: the Universal Logit Distillation Loss for LLMs</em>, <a href="https://substack.com/redirect/b4aeb6df-c9b1-48a2-9e01-d1cdca16a74b?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.12030<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>19 Feb, <em>LoRA+: Efficient Low Rank Adaptation of Large Models</em>, <a href="https://substack.com/redirect/43aa1e82-17f1-4067-a5b5-aabfaa37c8bd?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.12354<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>20 Feb, <em>Neural Network Diffusion</em>, <a href="https://substack.com/redirect/0561a8f8-c92a-4d5f-a561-ab61adf04f7f?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.13144<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>21 Feb, <em>YOLOv9: Learning What You Want to Learn Using Programmable Gradient Information</em>, <a href="https://substack.com/redirect/cb4428de-49c3-4daa-ba7b-5cc112d56b73?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.13616<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>21 Feb, <em>LongRoPE: Extending LLM Context Window Beyond 2 Million Tokens</em>, <a href="https://substack.com/redirect/9d13cb3f-dde5-4605-90a7-c987f49c2c70?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.13753<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>21 Feb, <em>Large Language Models for Data Annotation: A Survey</em>, <a href="https://substack.com/redirect/70d95e24-3ef2-4626-b92d-046bd0e2ce21?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.13446<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>22 Feb, <em>TinyLLaVA: A Framework of Small-scale Large Multimodal Models</em>, <a href="https://substack.com/redirect/a2eedacd-b0af-466a-87dd-ef019f68d307?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.14289<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>22 Feb, <em>Back to Basics: Revisiting REINFORCE Style Optimization for Learning from Human Feedback in LLMs</em>, <a href="https://substack.com/redirect/3b9cc140-a59c-4cc3-b7c9-a0593b19b25b?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.14740<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>23 Feb, <em>Genie: Generative Interactive Environments</em>, <a href="https://substack.com/redirect/308c15cf-c211-49db-ac29-c3f47693f1ca?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.15391<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>27 Feb, <em>The Era of 1-bit LLMs: All Large Language Models are in 1.58 Bits</em>, <a href="https://substack.com/redirect/d9e23c78-dab0-4410-bbf0-70d85d521026?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.17764<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>27 Feb, <em>Sora Generates Videos with Stunning Geometrical Consistency</em>, <a href="https://substack.com/redirect/5125bc10-90a9-4b7e-884a-8cd04098ecf0?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.17403<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>27 Feb, <em>When Scaling Meets LLM Finetuning: The Effect of Data, Model and Finetuning Method</em>, <a href="https://substack.com/redirect/1de5ffef-c7be-4cd3-856e-bd706f2cca29?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.17193<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>29 Feb, <em>Griffin: Mixing Gated Linear Recurrences with Local Attention for Efficient Language Models</em>, <a href="https://substack.com/redirect/a5ea3c53-25c4-499a-933f-cc50fc39be4f?j=eyJ1IjoiMmRuamR0In0.FbVk83ULjBfeYOuNAZl_CpjTIVAnXyHBXQJHR4cbAoA" class="external">https://arxiv.org/abs/2402.19427<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ul>
+<h4 id="key-characteristics">Key Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p>Aligns AI behaviour with human values
+- Encompasses multiple techniques (RLHF, Constitutional AI, DPO)
+- Critical for safe AI deployment
+- Ongoing research challenge
+- Becomes more critical with capability</p>
+<pre><code>  ## Usage in AI/ML
+
+  &quot;Model alignment through RLHF and DPO ensures outputs match human preferences and safety requirements.&quot;
+</code></pre>
+</li>
+</ul>
+<h4 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>AI alignment represents one of the fundamental challenges in AI safety, addressing how to create systems that reliably pursue objectives aligned with human values.</p>
+<pre><code>    **Primary Sources**: RLHF and Constitutional AI literature; Bai et al., arXiv:2212.08073 (2022)
+</code></pre>
+<h4 id="related-concepts">Related Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>RLHF</strong>: Key alignment technique
+- <strong>Constitutional AI</strong>: Alternative alignment approach
+- <strong>Value Alignment</strong>: Philosophical foundation
+- <strong>AI Safety</strong>: Broader research area
+- <strong>Harmlessness</strong>: Alignment objective</p>
+<pre><code>  ## UK English Notes
+
+  - &quot;Behaviour&quot; (not &quot;behavior&quot;)
+
+  ## OWL Functional Syntax
+
+
+  **Last Updated**: 2025-10-27
+  **Verification Status**: Verified against alignment literature
+</code></pre>
+</li>
+</ul>
+<h2 id="academic-context-1">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>AI alignment is the discipline focused on ensuring artificial intelligence systems behave in ways consistent with human values, preferences, and intentions.</li>
+<li>It builds on foundational work in AI safety, ethics, and machine learning interpretability.</li>
+<li>Key developments include formalising alignment challenges, such as value specification, robustness, and interpretability, to prevent unintended or harmful AI behaviours.</li>
+<li>The field draws from computer science, philosophy, cognitive science, and ethics to address the complexity of encoding nuanced human values into AI systems.</li>
+</ul>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>AI alignment is increasingly critical as AI systems grow more capable and autonomous, particularly with advances in large language models (LLMs) and reinforcement learning.</li>
+<li>Industry adoption includes alignment techniques such as reinforcement learning from human feedback (RLHF), synthetic data generation, and red teaming to detect misalignment.</li>
+<li>Notable organisations leading alignment research include OpenAI, DeepMind, Anthropic, and academic institutions worldwide.</li>
+<li>In the UK, several AI research centres contribute to alignment efforts, with a growing focus on ethical AI deployment.</li>
+<li>Technical capabilities have improved in robustness and interpretability but challenges remain in fully capturing complex human values and ensuring scalability to future AI systems.</li>
+<li>Standards and frameworks for AI alignment are emerging, emphasising transparency, auditability, and continual human oversight to maintain alignment over time.</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Key academic papers and sources:</li>
+<li>Ji, J., et al. (2025). <em>AI Alignment: A Comprehensive Survey</em>. arXiv preprint arXiv:2310.19852. <a href="https://doi.org/10.48550/arXiv.2310.19852" class="external">https://doi.org/10.48550/arXiv.2310.19852<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Christiano, P., et al. (2017). <em>Deep reinforcement learning from human preferences</em>. Advances in Neural Information Processing Systems, 30.</li>
+<li>Russell, S. (2019). <em>Human Compatible: Artificial Intelligence and the Problem of Control</em>. Viking.</li>
+<li>Ongoing research directions focus on:</li>
+<li>Formalising value alignment and robustness guarantees.</li>
+<li>Developing scalable oversight mechanisms.</li>
+<li>Improving interpretability and explainability of AI decision-making.</li>
+<li>Investigating alignment in multi-agent and emergent AI systems.</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The UK has established itself as a significant contributor to AI alignment research, with institutions such as the Alan Turing Institute and universities in Manchester, Leeds, Newcastle, and Sheffield actively engaged.</li>
+<li>Manchester’s Centre for Digital Trust and Safety explores ethical AI and alignment in real-world applications.</li>
+<li>Leeds and Sheffield universities contribute to interpretability and fairness in AI models.</li>
+<li>Newcastle hosts initiatives focusing on AI governance and societal impacts.</li>
+<li>Regional innovation hubs in North England foster collaboration between academia, industry, and government to advance safe and aligned AI technologies.</li>
+<li>Case studies include NHS pilot projects integrating aligned AI systems for patient diagnosis and care, balancing transparency, privacy, and ethical considerations.</li>
+</ul>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Emerging trends include:</li>
+<li>Integration of continual learning with alignment to adapt AI behaviour dynamically while preserving safety.</li>
+<li>Development of superalignment strategies addressing hypothetical artificial superintelligence risks.</li>
+<li>Enhanced human-AI collaboration frameworks to maintain alignment in complex environments.</li>
+<li>Anticipated challenges:</li>
+<li>Operationalising diverse and sometimes conflicting human values across cultures and contexts.</li>
+<li>Ensuring alignment mechanisms scale with AI system complexity and autonomy.</li>
+<li>Balancing transparency with privacy and security concerns.</li>
+<li>Research priorities emphasise robust, interpretable, and controllable AI systems with verifiable alignment guarantees, alongside interdisciplinary approaches incorporating social sciences and ethics.</li>
+</ul>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Ji, J., et al. (2025). <em>AI Alignment: A Comprehensive Survey</em>. arXiv preprint arXiv:2310.19852. <a href="https://doi.org/10.48550/arXiv.2310.19852" class="external">https://doi.org/10.48550/arXiv.2310.19852<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Christiano, P., Leike, J., Brown, T., et al. (2017). Deep reinforcement learning from human preferences. <em>Advances in Neural Information Processing Systems</em>, 30.</li>
+<li>Russell, S. (2019). <em>Human Compatible: Artificial Intelligence and the Problem of Control</em>. Viking.</li>
+<li>AryaXAI. (2025). AI Alignment: Principles, Strategies, and the Path Forward. AryaXAI.</li>
+<li>IBM. (2025). What Is AI Alignment? IBM Think.</li>
+<li>World Economic Forum. (2024). AI value alignment: Aligning AI with human values.</li>
+<li>Witness AI. (2025). AI Alignment: Ensuring AI Systems Reflect Human Values.</li>
+</ol>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-60" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#strategic-alignment" data-for="strategic-alignment">Strategic Alignment</a></li><li class="depth-2"><a href="#deferred-subversion" data-for="deferred-subversion">Deferred Subversion</a></li><li class="depth-2"><a href="#defining-scheming" data-for="defining-scheming">Defining Scheming</a></li><li class="depth-1"><a href="#data-and-information" data-for="data-and-information">Data and Information</a></li><li class="depth-1"><a href="#advanced-refinement-techniques" data-for="advanced-refinement-techniques">Advanced Refinement Techniques</a></li><li class="depth-1"><a href="#february-2024" data-for="february-2024">February 2024</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-1"><a href="#references" data-for="references">References</a></li><li class="depth-1"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AAAI" class="internal">AAAI</a></li><li><a href="../pages/AI-Agent-Coordination" class="internal">AI Agent Coordination</a></li><li><a href="../pages/AI-Agents" class="internal">ai agents</a></li><li><a href="../pages/AI-Model" class="internal">AI Model</a></li><li><a href="../pages/AI-Policy" class="internal">ai policy</a></li><li><a href="../pages/AI-Regulation" class="internal">ai regulation</a></li><li><a href="../pages/AI-Risks" class="internal">AI Risks</a></li><li><a href="../pages/AI-Safety-Institute" class="internal">AI Safety Institute</a></li><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Agentic-AI" class="internal">agentic ai</a></li><li><a href="../pages/Alignment-Research" class="internal">Alignment Research</a></li><li><a href="../pages/Automated-Reasoning" class="internal">Automated Reasoning</a></li><li><a href="../pages/Black-Box-Model" class="internal">Black-Box Model</a></li><li><a href="../pages/Bletchley-Declaration" class="internal">bletchley declaration</a></li><li><a href="../pages/Catastrophic-Risk-Reduction" class="internal">Catastrophic Risk Reduction</a></li><li><a href="../pages/Chain-of-Thought-Reasoning" class="internal">chain-of-thought reasoning</a></li><li><a href="../pages/Cognitive-Architecture" class="internal">Cognitive Architecture</a></li><li><a href="../pages/Common-Sense-Reasoning" class="internal">Common Sense Reasoning</a></li><li><a href="../pages/Computability-Theory" class="internal">Computability Theory</a></li><li><a href="../pages/Corrigibility" class="internal">Corrigibility</a></li><li><a href="../pages/Cybernetics" class="internal">Cybernetics</a></li><li><a href="../pages/Ethics" class="internal">Ethics</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Frontier-AI" class="internal">Frontier AI</a></li><li><a href="../pages/Game-Theory" class="internal">Game Theory</a></li><li><a href="../pages/Human-AI-Collaboration" class="internal">Human-AI Collaboration</a></li><li><a href="../pages/Instrumental-Convergence" class="internal">Instrumental Convergence</a></li><li><a href="../pages/Jailbreaking" class="internal">Jailbreaking</a></li><li><a href="../pages/Longtermism" class="internal">Longtermism</a></li><li><a href="../pages/OpenAI-Research-Organisation" class="internal">OpenAI Research Organisation</a></li><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/Scalable-Oversight" class="internal">Scalable Oversight</a></li><li><a href="../pages/Singularity" class="internal">Singularity</a></li><li><a href="../pages/Tree-of-Thoughts" class="internal">tree of thoughts</a></li><li><a href="../pages/University-of-Edinburgh" class="internal">University of Edinburgh</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

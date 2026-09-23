@@ -1,0 +1,78 @@
+
+Data Interoperability is the capability of heterogeneous systems, applications, and data sources to exchange, interpret, and act upon shared data without loss of meaning across organisational and technical boundaries. It encompasses syntactic interoperability (shared formats and wire protocols), semantic interoperability (common vocabularies, ontologies, and data models), and pragmatic interoperability (agreed processes, policies, and trust frameworks). Achieving full data interoperability requires alignment across API contracts, schema registries, identity frameworks, and data governance regimes. It is a foundational property enabling federated analytics, cross-domain knowledge graphs, and open ecosystem integration.
+
+- ### Overview
+  - Data Interoperability has become a central engineering and policy challenge as organisations increasingly operate across heterogeneous clouds, legacy systems, and partner networks. Without it, data becomes trapped in [[Data Silos]], duplicated inconsistently, or lost in translation between incompatible systems.
+  - The concept applies at multiple levels:
+    - **Syntactic** — machines can parse the data (shared grammar, encoding, file format).
+    - **Structural** — data elements are organised consistently (schema alignment, [[Data Model]] compatibility).
+    - **Semantic** — the meaning of terms is agreed upon (shared [[Controlled Vocabulary|controlled vocabularies]], [[Ontology|ontologies]], [[Linked Data]] namespaces).
+    - **Pragmatic** — the context and intended use are shared (workflow agreements, trust frameworks, provenance chains).
+    - **Organisational** — governance, legal, and policy alignment enables actual data exchange in practice.
+  - The FAIR principles (Findable, Accessible, Interoperable, Reusable) codified by the research data community represent a widely adopted framework for operationalising data interoperability across institutional boundaries.
+
+- ### Key Mechanisms
+  - **[[Data Standards]]** — Foundational specifications (ISO, W3C, OASIS) that define common formats, encodings, and exchange protocols.
+  - **[[Schema Registry]]** — Centralised stores of [[Data Schema|data schemas]] (e.g., Apache Avro Schema Registry, AWS Glue) that enforce structural consistency across producers and consumers.
+  - **[[Ontology]] and [[Controlled Vocabulary]]** — Shared concept definitions (e.g., [[OWL]], [[SKOS]], [[RDF]]) that resolve semantic ambiguity between heterogeneous systems.
+  - **[[Linked Data]]** — A set of best practices for publishing structured data on the web using URIs and [[RDF]] triples, enabling graph-level interoperability.
+  - **[[API Contract]]** — Explicit interface agreements (OpenAPI, AsyncAPI, GraphQL schemas) that define how systems exchange data programmatically via [[REST API]] or [[GraphQL]].
+  - **[[Metadata Management]]** — Systematic capture of provenance, lineage, and descriptive metadata that allows consumers to correctly interpret received data.
+  - **[[Identity Management]]** — Stable, resolvable identifiers for entities (persons, organisations, datasets) that allow data about the same real-world object to be joined across systems. [[Decentralised Identifier|Decentralised Identifiers (DIDs)]] extend this to self-sovereign contexts.
+  - **[[Data Mapping]] and [[Schema Alignment]]** — Transformation rules and crosswalks that translate between differing structures (e.g., XSLT, JSON-LD framing, SPARQL CONSTRUCT queries).
+  - **[[Data Catalogue]]** — Discoverable inventories of available datasets with associated metadata, enabling consumers to find interoperable data assets.
+
+- ### Applications and Use Cases
+  - **Healthcare** — Patient records exchanged between hospital systems, insurers, and research platforms via [[HL7 FHIR]] (Fast Healthcare Interoperability Resources), enabling care coordination without costly bespoke integrations.
+  - **Open Government and [[Open Data]]** — Governments publish datasets using common vocabularies (schema.org, DCAT, CSV on the Web) enabling civic technologists and journalists to combine datasets across jurisdictions.
+  - **Financial Services** — Cross-border payment systems and regulatory reporting use ISO 20022 message schemas to ensure that settlement data is machine-readable end-to-end.
+  - **[[Data Mesh]] Architectures** — Distributed ownership of domain data products requires interoperability contracts so that downstream consumers can reliably join data from multiple domain teams without central coordination.
+  - **[[Federated Learning]]** — Training machine-learning models across distributed data partitions requires that feature schemas and label encodings be interoperable even when the raw data cannot leave its custodian.
+  - **[[Supply Chain]] Visibility** — Trading partners across a supply chain use shared EDI standards (X12, EDIFACT) and emerging [[Blockchain]]-based data-sharing platforms to track provenance of goods.
+  - **[[Metaverse]] and [[Spatial Computing]]** — Avatar identity, virtual-asset ownership, and cross-platform scene graphs require interoperable data formats (glTF, USD/USDZ, WebXR Device API) to allow experiences to move between virtual worlds.
+  - **[[Knowledge Graph]] Federation** — Enterprise and public knowledge graphs (Wikidata, schema.org) interoperate via [[Linked Data]] standards to power search, AI reasoning, and [[Question Answering]] systems.
+  - **Scientific Data Sharing** — Research consortia (e.g., CERN, genomics databases) implement FAIR data principles and discipline-specific ontologies to enable reproducible, cross-study analyses.
+  - **[[Internet of Things]] (IoT)** — Sensor streams from heterogeneous devices are harmonised through semantic models (W3C SSN/SOSA, NGSI-LD) enabling unified analytics across smart city and industrial deployments.
+
+- ### Standards and Context
+  - **W3C** — Publishes the core [[Linked Data]] stack: [[RDF]], [[OWL]], [[SPARQL]], [[JSON-LD]], [[SPARQL]], [[SHACL]], and schema.org. The W3C Data on the Web Best Practices Working Group produced formal guidance on dataset publication for interoperability.
+  - **ISO** — ISO 11179 (Metadata Registries) and ISO 8000 (Data Quality) provide foundational standards for data element definition and quality management. ISO 19115 governs geographic metadata.
+  - **OASIS** — Produces [[MQTT]], AMQP, OData, and SAML standards relevant to messaging and identity interoperability.
+  - **FAIR Principles** — Wilkinson et al. (2016) codified Findable, Accessible, Interoperable, Reusable as a cross-disciplinary framework now widely adopted in research data management and adopted by the EU Open Science Cloud.
+  - **DCAT (Data Catalogue Vocabulary)** — W3C recommendation for describing datasets and data services in catalogues, enabling cross-catalogue discovery and machine-readable metadata.
+  - **HL7 FHIR** — Health Level Seven Fast Healthcare Interoperability Resources standard defines RESTful APIs and resource types for healthcare data exchange, now mandated by US CMS rules.
+  - **ISO 20022** — Universal financial industry message schema adopted by SWIFT, TARGET2, and major central bank payment systems for rich, structured payment data.
+  - **OpenAPI / AsyncAPI** — De facto industry standards for describing synchronous REST and asynchronous event-driven API contracts, ensuring interoperability between service producers and consumers.
+  - **W3C Verifiable Credentials** — Provides a standard data model for cryptographically verifiable digital credentials, interoperating with [[Decentralised Identifier]] infrastructure.
+  - **EU Data Act and Data Governance Act** — Regulatory frameworks requiring portability and interoperability for data held by gatekeeper platforms and public sector data holders, creating legal mandates for technical interoperability standards.
+  - **NGSI-LD** — ETSI standard extending JSON-LD for context-information management in smart city and IoT settings, adopted by the EU FIWARE ecosystem.
+
+- ### Challenges and Limitations
+  - **Semantic Drift** — Shared vocabularies evolve independently across organisations, causing silent incompatibilities even when syntactic formats match.
+  - **Governance Asymmetry** — Interoperability requires multi-party agreements on data ownership, liability, and access control that are often harder than the technical problems.
+  - **Scalability of Mapping** — Maintaining point-to-point [[Data Mapping|data mappings]] between N systems grows as O(N²); hub-and-spoke canonical models or [[Knowledge Graph]] approaches reduce this burden.
+  - **Privacy and Confidentiality** — Interoperable data flows create privacy risks if data minimisation, purpose-limitation, and consent mechanisms are not built into the interoperability architecture.
+  - **Legacy System Constraints** — Many enterprise systems were designed without interoperability in mind; retrofitting requires expensive middleware, API gateways, or [[ETL]] pipelines.
+  - **Quality Propagation** — Poor [[Data Quality]] in a source system propagates through interoperable pipelines, potentially corrupting downstream analytics.
+
+- ### Semantic Classification
+
+- ### Current Landscape (2026)
+  - The EU Data Act (Regulation (EU) 2023/2854) became applicable on 12 September 2025, with Chapter VIII (Article 33) imposing binding essential requirements on data-space participants to describe dataset content, formats, vocabularies and API access in machine-readable form, and Chapter VI mandating cloud switching and interoperability, with data-egress and switching charges to be abolished from 12 January 2027.
+  - In health, Regulation (EU) 2025/327 establishing the European Health Data Space (EHDS) entered into force on 26 March 2025; it mandates a FHIR-based European Electronic Health Record Exchange Format (EEHRxF), with the Commission's key implementing acts due by March 2027 and cross-border primary-use exchange of priority category 1 (patient summaries, ePrescriptions) operational from March 2029 via MyHealth@EU.
+  - HL7 Europe published three new FHIR Implementation Guides (R4, R5 and Extensions) in November 2025 as an EHDS technical baseline, and in March 2026 the HL7 Europe/IHE-Europe EURIDICE collaboration extended coordinated IGs to imaging and the EU Health Data API; FHIR R6 opened its first normative ballot in January 2026 with a second in July 2026, and OMOP CDM is the de facto secondary-use model for HealthData@EU.
+  - The Dataspace Protocol reached its stable 2025-1 final release (1.0.0) in July 2025 under the Eclipse Dataspace Working Group, adding an automated Technology Compatibility Kit (TCK) that the IDSA Certification Scheme now uses to extend certification from security/trust to verified protocol compliance; the Eclipse Dataspace Components (EDC) remain the reference connector, adopted by Catena-X.
+  - Gaia-X released its Trust Framework 3.0 "Danube" at the November 2025 Porto Summit, introducing domain and geographic extensions and a unified extensibility mechanism to federate trust across ecosystems and compliance regimes; Estonia's X-Road 8 "Spaceship" (2026) is replacing its custom stack with the Dataspace Protocol stack to interoperate with Gaia-X.
+  - Formal standardisation is consolidating: CEN/CENELEC JTC 25 (established September 2024) is developing the EN 18235 "Trusted Data Transactions" series (Part 1 published; Part 2 final vote July 2026; Part 3 in enquiry, publication expected H1 2027) plus ETSI EN 303 760 (semantic interoperability) and EN 304 199 (data catalogue framework), alongside the international ISO/IEC 20151 data-space standard.
+  - The frontier challenge as of 2026 is cross-ecosystem connector interoperability: EDC, FIWARE, Solid and IDSA connectors remain siloed with no native bridge (a Catena-X participant cannot natively connect to EHDS), self-declared Gaia-X labels lack independent audit, and observers frame the blocker as governance and interoperability rather than technology.
+
+- ### References
+  - 1. European Commission, DG Health (2026). European Health Data Space Regulation (EHDS). https://health.ec.europa.eu/ehealth-digital-health-and-care/european-health-data-space-regulation-ehds_en
+  - 2. HL7 (2026). New HL7 Europe FHIR Implementation Guides to support the European Health Data Space. https://hl7news.hl7.org/2026/01/02/new-hl7-europe-fhir-implementation-guides-to-support-the-european-health-data-space/
+  - 3. International Data Spaces Association (2026). IDSA Data Space Connector Report (Dataspace Protocol 2025-1). https://internationaldataspaces.org/idsa-data-space-connector-report/
+  - 4. Gaia-X (2025). Gaia-X Enters Season 2.0 with Trust Framework 3.0 "Danube" at Summit 2025. https://gaia-x.eu/gaia-x-enters-season-two-of-dataspaces-and-digital-ecosystems-with-summit-2025/
+  - 5. Gaia-X Architecture Working Group (2026). Gaia-X Architecture Document — context (X-Road 8, JTC 25, EN 18235). https://gaia-x.gitlab.io/technical-committee/architecture-working-group/architecture-document/gaia-x_context/
+  - 6. European Commission (2025). Data Act explained — Chapter VIII interoperability, applicable 12 September 2025. https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained
+
+- ### Provenance
+

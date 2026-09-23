@@ -1,0 +1,3 @@
+
+Mathematical Optimisation is the branch of mathematics and computer science concerned with selecting the best element from a set of feasible solutions according to a defined objective function. It encompasses convex and non-convex programming, combinatorial optimisation, gradient-based methods, and evolutionary algorithms. Mathematical optimisation underpins machine learning training, operations research, and engineering design.
+

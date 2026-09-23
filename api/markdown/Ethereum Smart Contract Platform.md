@@ -1,0 +1,14 @@
+
+Ethereum is a decentralised, open-source blockchain platform that introduced Turing-complete smart contracts, enabling programmable, self-executing agreements without trusted intermediaries. Launched in 2015 by Vitalik Buterin and co-founders, it underpins the largest ecosystem of decentralised applications (dApps), decentralised finance (DeFi), and NFT markets. Its transition to proof-of-stake consensus via The Merge in September 2022 dramatically reduced its energy footprint while preserving security.
+
+- ### Content
+  - Ethereum was proposed in a 2013 white paper by Vitalik Buterin and launched in July 2015 after a crowdfunded development phase. Its core innovation was the Ethereum Virtual Machine (EVM), a sandboxed runtime that executes bytecode deterministically across all nodes, enabling developers to deploy arbitrary programs — smart contracts — whose state transitions are recorded immutably on-chain.
+
+  - The platform's native currency, Ether (ETH), pays transaction fees ("gas") and incentivises validators. Prior to The Merge, Ethereum used proof-of-work mining analogous to Bitcoin; the September 2022 transition to the Beacon Chain's proof-of-stake consensus reduced energy consumption by approximately 99.95 % and paved the way for subsequent scalability improvements (proto-danksharding, EIP-4844, full danksharding roadmap).
+
+  - Ethereum's smart-contract layer spawned the ERC-20 fungible-token standard and ERC-721 non-fungible token standard, catalysing the ICO boom of 2017–2018 and the NFT wave of 2020–2022. DeFi protocols — Uniswap, Aave, Compound, MakerDAO — collectively locked billions of dollars in smart-contract collateral, creating on-chain financial primitives (automated market makers, lending pools, algorithmic stablecoins) that operate without custodians.
+
+  - Scalability remains a central engineering challenge. Layer-2 solutions — Optimistic Rollups (Optimism, Arbitrum) and ZK-Rollups (zkSync, StarkNet, Polygon zkEVM) — batch transactions off-chain and post compressed proofs or data to Ethereum's Layer-1, increasing throughput by orders of magnitude while inheriting base-layer security. EIP-4844 ("proto-danksharding"), activated in March 2024, introduced blob-carrying transactions that further reduce L2 data-posting costs.
+
+  - From a regulatory perspective, Ethereum and assets issued on it fall under the EU's Markets in Crypto-Assets (MiCA) framework. Ether itself is classified as a crypto-asset not covered by the stablecoin or e-money token sub-categories, leaving its treatment partly to national competent authorities. The Ethereum Foundation's non-profit structure and the network's decentralised validator set complicate the identification of a single "issuer" responsible for regulatory compliance, a tension that regulators and courts continue to adjudicate.
+

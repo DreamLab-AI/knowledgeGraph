@@ -1,0 +1,69 @@
+
+Threshold cryptography is a branch of cryptography in which a secret — such as a private key, decryption key, or signing capability — is distributed among a set of n parties such that any qualifying subset of at least t parties can jointly perform the cryptographic operation, while no coalition of fewer than t parties can do so alone. The t-of-n structure provides both redundancy and distributed access control: no single party holds complete key material, eliminating single points of compromise from theft, coercion, or insider malfeasance. The three primary primitives are threshold signatures, threshold decryption, and distributed key generation (DKG), with applications spanning cryptocurrency custody, distributed certificate authorities, multi-party computation protocols, and confidential smart contract execution. Modern protocols such as CGGMP21, GG20, and FROST have brought threshold operations to practical round counts suitable for production deployment.
+
+- ### Overview
+  - Threshold cryptography addresses a fundamental tension in key management: a single private key is both a single point of failure (loss means permanent inaccessibility) and a single point of compromise (theft or coercion means permanent exposure). The t-of-n construction resolves this by making the key _distributed_ rather than _centralised_.
+  - The mathematical core is an information-theoretic separation: t shares are computationally sufficient to perform the operation; t−1 shares reveal zero information about the secret, in the Shannon sense. This property is stronger than mere computational hardness — it holds even against computationally unbounded adversaries.
+  - Why it matters:
+    - Eliminates single-custodian risk in high-value key ceremonies (certificate authorities, cryptocurrency exchanges, validator networks)
+    - Provides [[Fault Tolerance]]: operations succeed even if up to n−t parties are offline or compromised
+    - Enables [[Access Control]] policies to be encoded at the cryptographic layer rather than relying on organisational controls alone
+    - Supports [[Byzantine Fault Tolerance]] security models where some participants may behave maliciously rather than merely crashing
+
+- ### Key Components and Mechanisms
+  - **[[Secret Sharing]]**: The foundational primitive. Shamir's scheme uses polynomial interpolation over a finite field: the secret is the constant term of a degree-(t−1) polynomial, and each share is an evaluation of the polynomial at a distinct point. Any t evaluations reconstruct the polynomial; any t−1 reveal nothing.
+  - **[[Distributed Key Generation]] (DKG)**: Enables the group to jointly generate key shares without any trusted dealer ever knowing the private key. Participants exchange verifiable secret shares (VSS) and jointly compute a consistent public key. DKG ceremonies are used in Ethereum [[Distributed Validator Technology]], BLS-based consensus protocols, and certificate authority key ceremonies.
+  - **[[Threshold Signature Scheme]]**: The signing operation is performed collaboratively without reconstructing the private key. Major instantiations:
+    - *Threshold ECDSA* — the dominant scheme for cryptocurrency custody; protocols GG18, GG20, and CGGMP21 have progressively reduced round complexity and improved security proofs
+    - *Threshold Schnorr / FROST* — Flexible Round-Optimised Schnorr Threshold Signatures; fewer rounds, simpler security model, natively compatible with BIP-340 (Taproot) on Bitcoin
+    - *Threshold BLS* — pairing-based signatures with efficient aggregation; widely deployed in [[Blockchain Consensus]] protocols including Ethereum's beacon chain
+  - **Threshold Decryption**: A ciphertext encrypted under a public key can be decrypted only when at least t parties contribute their partial decryption shares. Used in sealed-bid auction systems, private voting, and confidential data escrow.
+  - **Verifiable Secret Sharing (VSS)**: An extension of secret sharing in which share recipients can verify the consistency of their share against a publicly committed polynomial, preventing a malicious dealer from distributing inconsistent shares that cause reconstruction to fail.
+  - **Proactive Secret Sharing**: Shares are periodically refreshed so that an adversary who compromises fewer than t nodes over successive intervals cannot accumulate sufficient information to reconstruct the secret, even if it compromises different sets of nodes in different intervals.
+
+- ### Applications and Use Cases
+  - **Institutional Cryptocurrency Custody**: Exchanges and custodians use threshold ECDSA to distribute signing keys across geographically separated [[Hardware Security Module]]s. A compromise of any single data centre does not expose customer funds. Providers such as Fireblocks, Coinbase Custody, and Copper deploy these protocols at scale.
+  - **[[Distributed Validator Technology]] (DVT)**: Ethereum validators split their BLS signing key across multiple nodes using threshold BLS. A quorum must co-sign each attestation, protecting against accidental double-signing (slashing) and targeted infrastructure attacks. SSV Network and Obol Network are leading DVT implementations.
+  - **Distributed Certificate Authorities**: Root CA private keys are among the highest-value secrets in internet infrastructure. Threshold schemes allow CA key ceremonies to distribute signing capability across multiple HSMs and organisations, so that no single party — and no single regulatory jurisdiction — can unilaterally issue fraudulent certificates.
+  - **[[Smart Contract]] Oracles and Bridges**: Cross-chain bridges and oracle networks use threshold ECDSA or threshold BLS to produce signatures that unlock assets on a destination chain, with the signing key split across a decentralised committee. This prevents a single oracle operator from draining bridged funds.
+  - **[[Privacy-Preserving Technology]] and Secure Enclaves**: Threshold decryption underpins private voting systems (Helios, Belenios), sealed-bid auctions, and confidential data sharing where no single party should be able to decrypt unilaterally.
+  - **[[Decentralised Identity]]**: Threshold schemes enable self-sovereign identity systems where recovery of a DID private key requires collaboration among a user's trusted contacts, without any central custodian.
+  - **Federated AI Model Protection**: Threshold encryption of model weights or training gradients can prevent any single federated node from exfiltrating proprietary model data, bridging to [[Federated Learning]] security.
+
+- ### Standards and Context
+  - **NIST**: The US National Institute of Standards and Technology has published guidance on threshold cryptographic schemes as part of its broader cryptographic standards programme. NIST IR 8214 and its successors address threshold EdDSA and BLS schemes.
+  - **IETF**: Several IETF drafts cover threshold signature schemes, including draft specifications for FROST (RFC-track) and threshold BLS. The Crypto Forum Research Group (CFRG) is the primary venue.
+  - **IEEE P1363**: Provides foundational standards for public-key cryptography on which threshold constructions are built.
+  - **Ethereum EIPs**: Multiple Ethereum Improvement Proposals codify DVT and threshold BLS usage within the beacon chain validator lifecycle.
+  - **BIP-340 (Taproot/Schnorr)**: Bitcoin's adoption of Schnorr signatures enables FROST-based threshold signing that produces output indistinguishable from single-key signatures, improving on-chain privacy compared to legacy multisig.
+  - Threshold cryptography sits at the intersection of academic cryptography research (originating at MIT, Stanford, Weizmann Institute) and industrial deployment by custodians, HSM vendors (Thales, nCipher), and blockchain infrastructure providers.
+
+- ### Security Model and Threat Considerations
+  - The core security assumption is that the adversary controls strictly fewer than t participants. The adversary model extends to:
+    - **Static vs adaptive corruption**: whether the adversary chooses which nodes to compromise before or during the protocol
+    - **Semi-honest vs malicious**: whether compromised nodes follow the protocol faithfully or deviate arbitrarily
+    - **Network adversary**: a powerful network adversary can observe message timing and potentially correlate share submissions
+  - For active security (malicious adversary), t must exceed n/2 for most signature schemes (honest majority). Some protocols achieve security with t ≤ n/3 under specific assumptions.
+  - **Side-channel attacks** on share computation hardware remain a practical threat; constant-time implementations and HSM deployment mitigate this.
+  - **Proactive security** (periodic share refresh) addresses the long-term mobile adversary who can compromise different sets of nodes in different time windows.
+  - **Threshold vs multisig privacy**: On-chain multisig exposes the signing policy to observers; threshold schemes produce a single signature, hiding the custody architecture.
+
+- ### Current Landscape (2026)
+  - NIST published the final NIST IR 8214C, "First Call for Multi-Party Threshold Schemes" (DOI 10.6028/NIST.IR.8214C), on 20 January 2026, after two public drafts (ipd 2023, 2pd March 2025); it organises submissions into Class N (NIST-specified primitives such as threshold ECDSA and EdDSA) and Class S (special primitives including FHE and ZKP), across three phases (Previews, Packages, Analysis).
+  - The call is now mid-flight: MPTS 2026 (26–29 January) hosted 45 talks, Previews Phase 1 posted 26 writeups from 23 teams (185 authors), Phase 2 added 10 more (6–8 July), the Phase 3 preview deadline was 7 August 2026, and the package-submission deadline has been set to 30 November 2026 (postponed from October).
+  - FROST (Flexible Round-Optimised Schnorr Threshold signatures) was standardised as IETF RFC 9591 in June 2024 and is a headline NIST submission (team led by Chelsea Komlo, Waterloo/NEAR), sitting alongside competing Schnorr/EdDSA entries such as Gargos, Fireblocks' Classic Schnorr, and threshold-ECDSA proposals (TECLA, CCGMP, DKLs-based).
+  - Adaptive security has become the live research frontier: Crites et al. (CRYPTO 2025) showed FROST's adaptive security rests on an inherently non-standard assumption, prompting new constructions such as Mask-FROST (Chenzhi Zhu, NTT Research), which achieves adaptive security under only AOMDL in the algebraic group model.
+  - Post-quantum threshold signing advanced with Threshold Raccoon (eprint 2024/184, PQShield with the Ethereum Foundation and others), the first efficient lattice-based threshold signature (~13 KiB signatures, up to 1024 signers) built on Dilithium-style assumptions without heavy threshold FHE.
+  - Industry adoption of TSS-MPC is now mainstream in digital-asset custody: Fireblocks, Coinbase, and Dynamic run distributed key generation with DKLs19 for threshold ECDSA and FROST for EdDSA, reaching dozens-to-hundreds of signatures per second where only single-digit throughput was feasible a few years ago.
+  - Regulatory pressure is building ahead of standards: in an August 2025 cross-industry letter, Fireblocks and partners urged NIST to fast-track a prescriptive Special Publication on Threshold Signature Schemes (achievable within roughly two years), arguing the IR-track timelines are too long and unclear for regulated financial institutions.
+  - Open challenges as of 2026 include closing the gap between deployed TSS and formal NIST guidance, standardising adaptively and actively secure protocols, maturing efficient post-quantum threshold schemes, and handling proactive/dynamic committee refresh and identifiable-abort robustness at scale.
+
+- ### References
+  - 1. NIST (2026). NIST IR 8214C: First Call for Multi-Party Threshold Schemes (final). https://csrc.nist.gov/pubs/ir/8214/c/final
+  - 2. NIST CSRC (2026). Multi-Party Threshold Cryptography — project and NIST Threshold Call status. https://csrc.nist.gov/projects/threshold-cryptography/tcall-1
+  - 3. Connolly, Komlo, Goldberg & Wood / IRTF CFRG (2024). RFC 9591: The Flexible Round-Optimized Schnorr Threshold (FROST) Protocol. https://www.rfc-editor.org/rfc/rfc9591.html
+  - 4. del Pino, Katsumata, Prest, Rossi et al. / PQShield (2024). Threshold Raccoon: Practical Threshold Signatures from Standard Lattice Assumptions. https://eprint.iacr.org/2024/184
+  - 5. Fireblocks (2025). Standardizing MPC Cryptography: A Cross-Industry Call to Action. https://www.fireblocks.com/blog/standardizing-mpc-cryptography-a-cross-industry-call-to-action
+
+- ### Provenance
+

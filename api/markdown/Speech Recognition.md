@@ -1,0 +1,112 @@
+
+Speech Recognition (also called Automatic Speech Recognition, ASR) is the computational task of converting spoken acoustic signals into a textual representation, enabling machines to interpret and act on human voice input. Modern systems use end-to-end deep learning architectures — principally transformer-based encoder-decoder models such as Wav2Vec 2.0 and Whisper — trained on thousands of hours of labelled audio to achieve near-human word-error rates across diverse speakers, languages, and acoustic environments. Key technical challenges include robustness to background noise, speaker variability, dialectal and accent diversity, and code-switching; deployment challenges include latency constraints for real-time streaming, on-device inference under power and memory limits, and domain adaptation for specialised vocabularies such as clinical or legal terminology.
+
+- ### Overview
+  - Speech Recognition transforms the acoustic waveform of human speech into machine-readable text or structured data. It is one of the most commercially deployed AI capabilities, powering [[Virtual Assistant]] platforms (Siri, Alexa, Google Assistant), real-time [[Real-Time Captioning]] services for accessibility, call-centre analytics, and clinical dictation tools.
+  - **Why it matters**
+    - Removes the keyboard/touchscreen barrier to human–computer interaction
+    - Central to [[Voice User Interface]] design and [[Multimodal Interaction]]
+    - Enables [[Accessibility Technology]] for users with motor or visual impairments
+    - Acts as the front-end for downstream NLP tasks: [[Named Entity Recognition]], [[Sentiment Analysis]], [[Language Translation]], [[Question Answering]]
+  - **Evolution of the field**
+    - Early systems (1950s–1990s) used Hidden Markov Models (HMMs) combined with Gaussian Mixture Models for the acoustic model and n-gram [[Language Model]] for decoding
+    - Deep learning (2010s) replaced GMMs with [[Convolutional Neural Network]] and recurrent encoders, with [[Connectionist Temporal Classification]] (CTC) loss enabling alignment-free training
+    - Attention-based encoder-decoder and self-supervised pre-training (Wav2Vec 2.0, HuBERT, Whisper) brought substantial WER reductions and strong multilingual generalisation
+    - On-device compressed models now enable low-latency offline ASR on smartphones and edge hardware
+
+- ### Key Components
+  - **Acoustic Front-End**
+    - Converts raw waveform to feature representations: Mel-frequency cepstral coefficients (MFCCs), log-Mel spectrograms, or learned filterbanks
+    - [[Audio Signal Processing]] — windowing, fast Fourier transform, filterbank application
+    - [[Feature Extraction]] — dimensionality reduction, delta and delta-delta features for temporal dynamics
+  - **Acoustic Model**
+    - Maps audio features to phoneme or subword posterior probabilities
+    - [[Acoustic Model]] — historically GMM-HMM; now predominantly [[Transformer]] or CNN-Transformer hybrid
+    - [[Attention Mechanism]] (self-attention) captures long-range temporal dependencies crucial for speech
+    - [[Connectionist Temporal Classification]] loss function handles variable-length alignment between audio frames and text tokens
+  - **Language Model**
+    - Provides prior probabilities over word sequences to rescore hypotheses during beam search decoding
+    - [[Language Model]] — n-gram, RNN-LM, or large pre-trained LLM used for shallow or deep fusion
+    - Domain-adapted LMs crucial for specialised vocabularies (medical, legal, technical)
+  - **Decoder / Search**
+    - Combines acoustic scores and language model scores using Viterbi or beam search
+    - Lattice or N-best output for downstream reranking or confidence estimation
+  - **Speaker Adaptation**
+    - [[Speaker Diarisation]] separates overlapping voices in multi-speaker settings
+    - Speaker-normalisation techniques (speaker vectors, i-vectors, x-vectors) improve cross-speaker robustness
+  - **End-to-End Models**
+    - Wav2Vec 2.0 / HuBERT: self-supervised [[Neural Network]] pre-training on unlabelled audio, fine-tuned with CTC or sequence-to-sequence objectives
+    - Whisper: large-scale weakly-supervised [[Transformer]] encoder-decoder, trained on 680,000 hours of multilingual audio
+    - [[Model Compression]] — quantisation, pruning, knowledge distillation for on-device deployment
+
+- ### Applications and Use Cases
+  - **Virtual Assistants & Smart Devices**
+    - Wake-word detection followed by cloud or on-device ASR for command interpretation
+    - [[Virtual Assistant]] platforms (Alexa, Siri, Google Assistant, Cortana)
+    - Smart speakers, automotive infotainment, IoT control
+  - **Accessibility**
+    - Real-time closed captioning and subtitling for deaf and hard-of-hearing users
+    - [[Accessibility Technology]] — dictation for users with motor disabilities
+    - [[Real-Time Captioning]] in live events, meetings, broadcasts
+  - **Healthcare**
+    - [[Clinical Documentation]] — physician dictation systems (Nuance Dragon Medical, Suki)
+    - Ambient clinical intelligence: passive transcription of patient–doctor conversations
+  - **Contact Centres & Enterprise**
+    - Automated call routing, transcription, and agent-assist tools
+    - Call quality monitoring and compliance via [[Sentiment Analysis]] of transcripts
+  - **Media & Broadcast**
+    - Automated subtitling, content search, podcast indexing
+    - Broadcast monitoring for rights management
+  - **Education**
+    - Language learning pronunciation feedback
+    - Automated assessment and tutoring systems
+  - **Multilingual & Cross-Lingual**
+    - [[Language Translation]] pipelines: ASR → [[Machine Translation]] → [[Text-to-Speech]]
+    - Code-switching detection in multilingual communities
+  - **Spatial & Immersive Computing**
+    - [[Multimodal Interaction]] in AR/VR environments — voice commands without physical controllers
+    - [[Voice User Interface]] for heads-up operation in mixed-reality workflows
+
+- ### Standards & Context
+  - **NIST Benchmarks**
+    - [[NIST]] has historically organised ASR evaluation campaigns (SWITCHBOARD, CallHome, LibriSpeech) that set standard word-error-rate (WER) benchmarks used industry-wide
+    - The CHiME challenges benchmark noise-robust ASR in realistic conditions
+  - **W3C Web Speech API**
+    - [[W3C Web Speech API]] provides a browser-native JavaScript interface for both ASR and [[Text-to-Speech]], enabling web applications to access speech input without server-side round-trips
+  - **Open Datasets**
+    - LibriSpeech (1,000 h English read speech), CommonVoice (Mozilla, 100+ languages), VoxPopuli (multilingual EU Parliament), AISHELL (Mandarin)
+    - Medical: MTSamples, N2C2 clinical NLP corpora
+  - **Key Metrics**
+    - Word Error Rate (WER): the standard evaluation metric — ratio of (substitutions + deletions + insertions) to total reference words
+    - Character Error Rate (CER) used for agglutinative or character-based languages
+    - Real-Time Factor (RTF) for latency profiling
+  - **Regulatory Context**
+    - Accessibility legislation (ADA, UK Equality Act, EU Web Accessibility Directive) mandates captioning and voice-input support in public-sector digital services
+    - GDPR and HIPAA impose constraints on audio data storage for ASR model training in consumer and healthcare contexts
+  - **Industry Frameworks**
+    - OpenAI Whisper (open-weight multilingual)
+    - Meta MMS (Massively Multilingual Speech) — extends to 1,100+ languages using self-supervised learning
+    - NVIDIA NeMo, Hugging Face transformers — open toolkits for fine-tuning and deployment
+
+- ### Semantic Classification
+
+- ### Current Landscape (2026)
+  - The architecture has consolidated on Conformer/FastConformer encoders paired with LLM decoders: every system that set state of the art in 2025–2026 (FireRedASR2-LLM, Qwen3-ASR, Alibaba Fun-ASR, NVIDIA Canary-Qwen) adopted this pattern, displacing standalone CTC/transducer decoders to the efficiency tier.
+  - NVIDIA's Canary-Qwen-2.5B (FastConformer encoder + Qwen3-1.7B decoder) took the top of the Hugging Face Open ASR Leaderboard around May 2026 at 5.63% average WER and 418x real-time, becoming the open-model English-accuracy leader.
+  - The leaderboard has since compressed to under one WER point at the top: Cohere released Transcribe (2B, Apache 2.0) in March 2026 at 5.42%, IBM shipped Granite Speech 4.1 2B at 5.33% roughly five weeks later, followed by ARK-ASR-3B and MOSS-Transcribe, so licence, language coverage, streaming support and cost per audio-hour now decide model choice rather than rank.
+  - OpenAI did not release a Whisper v4; the latest open checkpoint remains large-v3-turbo (October 2024) and the company shifted to an API-only multimodal path with GPT-4o-transcribe (March 2025), though Whisper's tooling ecosystem (faster-whisper, WhisperX, whisper.cpp) is still unmatched.
+  - Meta's Omnilingual ASR (10 November 2025) pushed massively multilingual coverage to more than 1,600 languages, including around 500 never previously transcribed, with zero-shot in-context extension to over 5,400 languages, released under Apache 2.0 alongside a 7B wav2vec 2.0 model and a 348-language corpus.
+  - Real-time voice-agent ASR matured in parallel: Deepgram shipped Flux for sub-300ms end-of-speech detection, and ElevenLabs' Scribe v2 Realtime reached roughly 150ms latency across 30 languages at 93.5% FLEURS accuracy.
+  - Benchmarking became more rigorous via the Open ASR Leaderboard (arXiv 2510.06961), which by March 2026 compared 86 systems from 26 organisations across 12 datasets with dedicated multilingual and long-form tracks.
+  - Open frontiers as of 2026 include the persistent low-resource and multilingual accuracy gap, model hallucination on noisy long-form audio, streaming latency for agentic use, and a sharp divergence between English and Chinese ecosystems (Whisper large-v3's Chinese CER runs 5–10x behind purpose-built models such as FireRedASR2, which reaches 0.57% CER on AISHELL-1).
+
+- ### References
+  - 1. Ruoqi Jin (2026). ASR in 2025-2026: A Deep Dive into Speech Recognition. https://ruoqijin.com/blog/asr-deep-dive-2025-2026
+  - 2. MarkTechPost (2026). Best Open Speech Recognition (ASR) Models in 2026: WER, Languages, Latency and License Compared. https://www.marktechpost.com/2026/07/23/best-open-speech-recognition-asr-models-in-2026-wer-languages-latency-and-license-compared/
+  - 3. Meta AI / FAIR (2025). Omnilingual ASR: Advancing Automatic Speech Recognition for 1,600+ Languages. https://ai.meta.com/blog/omnilingual-asr-advancing-automatic-speech-recognition/
+  - 4. Srinath et al. (2026). Open ASR Leaderboard: Towards Reproducible and Transparent Multilingual and Long-Form Speech Recognition Evaluation. https://arxiv.org/html/2510.06961v4
+  - 5. Future AGI (2026). Speech-to-Text APIs in 2026: Benchmarks, Pricing and Developer's Decision Guide. https://futureagi.com/blog/speech-to-text-apis-in-2026-benchmarks-pricing-developer-s-decision-guide/
+  - 6. Qwen Team (2026). Qwen3-ASR Technical Report. https://arxiv.org/html/2601.21337v1
+
+- ### Provenance
+

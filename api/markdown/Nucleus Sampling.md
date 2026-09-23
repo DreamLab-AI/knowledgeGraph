@@ -1,0 +1,34 @@
+
+A stochastic decoding strategy for autoregressive language models, also called top-p sampling, that at each step truncates the next-token distribution to the smallest set of tokens whose cumulative probability exceeds a threshold p, renormalises, and samples from that nucleus — adapting the candidate pool to the model's confidence and avoiding both the degenerate repetition of greedy search and the incoherent tail noise of unrestricted sampling.
+
+- ### Semantic Classification
+
+- ### Content
+
+  ## Definition
+
+  **Nucleus sampling** (top-p sampling) was introduced by Holtzman et al. in "The Curious Case of Neural Text Degeneration" (ICLR 2020) to resolve a paradox in neural [[Text Generation]]: likelihood-maximising decoders such as [[Greedy Decoding]] and [[Beam Search]] produce bland, repetitive loops, whilst sampling from the full softmax distribution occasionally draws from its long, unreliable tail and derails into incoherence. The paper's diagnosis — human text is not maximum-likelihood text, and the tail of a language model's distribution is poorly calibrated — motivated truncating the distribution *adaptively* before sampling.
+
+  At each decoding step, tokens are sorted by probability and the **nucleus** V_p is defined as the smallest prefix of that ordering whose cumulative probability exceeds the threshold p (typically 0.9–0.95). Probability mass outside the nucleus is zeroed, the remainder renormalised, and the next token drawn from the result. The key property is adaptivity: when the model is confident, the nucleus may contain only a handful of tokens (behaving almost greedily); when the distribution is flat, the nucleus widens to admit genuine diversity. Fixed top-k sampling, by contrast, keeps exactly k candidates regardless of the distribution's shape — too many when confidence is high, too few when it is low.
+
+  Nucleus sampling composes with temperature scaling (applied to logits before truncation) and has become the default open-ended decoding configuration for [[Large Language Models]]: essentially every mainstream inference API exposes `top_p` alongside `temperature`, with repetition or presence penalties layered on for long-form generation. Deterministic search remains preferable for closed-form tasks (translation, summarisation with beam search historically; greedy for short factual answers), making decoder choice a task-dependent trade-off between fidelity and diversity.
+
+  ## Technical Details
+
+  - **Algorithm**: sort logits descending; compute the cumulative softmax; keep tokens until the cumulative mass first exceeds p; renormalise; sample. Cost is dominated by the sort over the vocabulary, negligible beside the forward pass.
+  - **Interaction with temperature**: temperature τ < 1 sharpens the distribution (shrinking the nucleus); τ > 1 flattens it. Common practice tunes (τ, p) jointly, e.g. τ = 0.7, p = 0.9 for assistants; τ = 1.0, p = 0.95 for creative writing.
+  - **Descendants and refinements**: typical sampling (information-theoretic truncation), locally typical/eta and epsilon sampling (entropy-relative cutoffs), Mirostat (perplexity-targeting adaptive control), and min-p sampling (threshold relative to the top token's probability, popular in open-weights communities since 2023–24 for high-temperature stability) all generalise the same insight: truncate the unreliable tail, keep the reliable head.
+  - **Evaluation**: the original paper showed nucleus-sampled text approaches human perplexity, repetition, and Zipfian statistics far better than beam search (which loops) or pure sampling (which drifts); HUSE and MAUVE later formalised the quality-diversity trade-off decoders navigate.
+
+  ## Current Landscape
+
+  - **Min-p sampling** (Nguyen et al.) was accepted as an ICLR 2025 oral, showing consistent gains over top-p on GPQA, GSM8K, and creative-writing evaluations, especially at temperatures above 1; it is now natively supported in llama.cpp, vLLM, Hugging Face Transformers, Ollama, and most open-source inference engines, with recommended values of 0.05–0.1.
+  - Commercial APIs (OpenAI, Anthropic, Google) still expose **top-p as the primary truncation parameter** and do not offer min-p, so nucleus sampling remains the de facto standard for hosted models, while temperature-plus-min-p has become the prevailing open-weights configuration.
+  - **Top-nσ** (ACL 2025) truncates in logit space using a threshold of max(logit) − n·σ, giving a nucleus that is invariant to temperature — addressing the temperature coupling that afflicts all probability-space truncation methods, min-p and top-p included; Top-H decoding (NeurIPS 2025) continues the line of entropy-aware refinements.
+  - Reasoning-tuned models increasingly ship with **locked or recommended decoding defaults**, narrowing the role of user-side sampler tuning for closed-form tasks while leaving nucleus-family samplers dominant for open-ended generation.
+
+  **Sources**:
+  - https://proceedings.iclr.cc/paper_files/paper/2025/file/afa5f124e36bed5cc2125067005d43f5-Paper-Conference.pdf
+  - https://aclanthology.org/2025.acl-long.528.pdf
+  - https://huggingface.co/papers/2407.01082
+

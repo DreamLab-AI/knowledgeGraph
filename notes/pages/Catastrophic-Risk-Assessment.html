@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Catastrophic Risk Assessment</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Catastrophic Risk Assessment"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Catastrophic Risk Assessment"/><meta name="twitter:description" content="Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption."/><meta property="og:description" content="Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption."/><meta property="og:image:alt" content="Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Catastrophic-Risk-Assessment"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Catastrophic-Risk-Assessment"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Catastrophic-Risk-Assessment"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1400"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1400" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Catastrophic Risk Assessment</a></div></nav><h1 class="article-title">Catastrophic Risk Assessment</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.697Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:catastrophic-risk-assessment</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/Probabilistic-Risk-Assessment" class="internal">Probabilistic Risk Assessment</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li><li><a href="../CBRN-Risk-Assessment" class="internal">CBRN Risk Assessment</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Threat-Modelling" class="internal">Threat Modelling</a></li><li><a href="../Uplift-Quantification" class="internal">Uplift Quantification</a></li><li><a href="../pages/Fault-Tree-Analysis" class="internal">Fault Tree Analysis</a></li><li><a href="../Emergency-Response" class="internal">Emergency Response</a></li><li><a href="../Adversarial-Elicitation" class="internal">Adversarial Elicitation</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Capability-Forecasting" class="internal">Capability Forecasting</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Scaling-Laws" class="internal">Scaling Laws</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Responsible-Scaling-Policy" class="internal">Responsible Scaling Policy</a></li><li><a href="../pages/AI-Regulation" class="internal">AI Regulation</a></li><li><a href="../pages/Human-Oversight" class="internal">Human Oversight</a></li><li><a href="../pages/Catastrophic-Risk-Reduction" class="internal">Catastrophic Risk Reduction</a></li><li><a href="../pages/Existential-Risk" class="internal">Existential Risk</a></li><li><a href="../pages/Biosecurity" class="internal">Biosecurity</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../Near-Term-AI-Risk" class="internal">Near-Term AI Risk</a></li><li><a href="../pages/AI-Ethics" class="internal">AI Ethics</a></li><li><a href="../Narrow-AI-Risk" class="internal">Narrow AI Risk</a></li><li><a href="../Beneficial-AI-Risk" class="internal">Beneficial AI Risk</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../pages/Capability-Forecasting" class="internal">Capability Forecasting</a></li><li><a href="../pages/Scaling-Laws" class="internal">Scaling Laws</a></li><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Probabilistic-Risk-Assessment" class="internal">Probabilistic Risk Assessment</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Fault-Tree-Analysis" class="internal">Fault Tree Analysis</a></li><li><a href="../Failure-Mode-Effects-Analysis" class="internal">Failure Mode Effects Analysis</a></li><li><a href="../pages/Threat-Modelling" class="internal">Threat Modelling</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:catastrophic-risk-assessment</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../California-AI-bill" class="internal">California AI bill</a></li><li><a href="../pages/Existential-Risk" class="internal">Existential Risk</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/Responsible-Scaling-Policy" class="internal">Responsible Scaling Policy</a></li><li><a href="../CBRN-Risk" class="internal">CBRN Risk</a></li><li><a href="../pages/Biosecurity" class="internal">Biosecurity</a></li><li><a href="../pages/Cybersecurity" class="internal">Cybersecurity</a></li><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Capability-Forecasting" class="internal">Capability Forecasting</a></li><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li><li><a href="../Emergency-Response" class="internal">Emergency Response</a></li><li><a href="../pages/Global-Catastrophic-Risk" class="internal">Global Catastrophic Risk</a></li><li><a href="../AI-Safety-Level" class="internal">AI Safety Level</a></li><li><a href="../pages/Mesa-Optimisation" class="internal">Mesa-Optimisation</a></li><li><a href="../pages/Corrigibility" class="internal">Corrigibility</a></li><li><a href="../AI-Security-Institute" class="internal">AI Security Institute</a></li><li><a href="../METR" class="internal">METR</a></li><li><a href="../Apollo-Research" class="internal">Apollo Research</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../California-SB53" class="internal">California SB53</a></li><li><a href="../pages/ISO-IEC-42001" class="internal">ISO IEC 42001</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Existential-Risk" class="internal">Existential Risk</a></li><li><a href="../pages/Alignment" class="internal">Alignment</a></li><li><a href="../pages/Responsible-AI" class="internal">Responsible AI</a></li><li><a href="../pages/Catastrophic-Risk-Reduction" class="internal">Catastrophic Risk Reduction</a></li><li><a href="../pages/Biosecurity" class="internal">Biosecurity</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/Responsible-Scaling-Policy" class="internal">Responsible Scaling Policy</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li><li><a href="../pages/Capability-Forecasting" class="internal">Capability Forecasting</a></li><li><a href="../WMDP" class="internal">WMDP</a></li><li><a href="../HarmBench" class="internal">HarmBench</a></li><li><a href="../pages/Adversarial-Machine-Learning" class="internal">Adversarial Machine Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Catastrophic risk assessment is the systematic evaluation of low-probability, high-severity hazards that could cause widespread harm, including the danger that advanced AI systems may enable mass casualties or societal-scale disruption. In AI governance it involves measuring a model’s potential to contribute to chemical, biological, cyber, or autonomous-weapon threats before deployment. It matters because frontier-AI regulation, such as proposed state safety bills, conditions release on credible assessment and mitigation of these tail risks.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:DangerousCapabilityEvaluation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:CBRNRiskAssessment))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:RedTeaming))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:ThreatModelling))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:UpliftQuantification))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:FaultTreeAnalysis))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:AdversarialElicitation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:EmergencyResponseFramework))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:hasPart ai:ScoringFramework))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:requires ai:ModelEvaluation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:requires ai:RedTeaming))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:requires ai:CapabilityForecasting))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:requires ai:ExpertElicitation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:requires ai:DangerousCapabilityEvaluation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:dependsOn ai:AISafety))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:dependsOn ai:ScalingLaws))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:enables ai:ResponsibleScalingPolicy))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:enables ai:AIRegulation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:enables ai:HumanOversight))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:enables ai:CatastrophicRiskReduction))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:enables ai:BiosecurityPolicy))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:supports ai:ExistentialRiskReduction))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:supports ai:ResponsibleAI))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:implements ai:ProbabilisticRiskAssessment))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:implements ai:RedTeaming))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:implements ai:FaultTreeAnalysis))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:implements ai:FailureModeEffectsAnalysis))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:uses ai:DangerousCapabilityEvaluation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:uses ai:HarmBench))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:uses ai:WMDP))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:uses ai:ExpertElicitation))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:reducesTo ai:DangerousCapabilityEvaluation))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:reducesTo ai:UpliftQuantification))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:reducesTo ai:ThreatModelling))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:partOf ai:AISafety))
+SubClassOf(ai:CatastrophicRiskAssessment
+  ObjectSomeValuesFrom(ai:partOf ai:AIGovernance))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Catastrophic risk assessment as applied to AI emerges from a convergence of two intellectual traditions:</p>
+<p><strong>Traditional probabilistic risk assessment (PRA):</strong></p>
+<ul>
+<li>Developed for nuclear power, aviation, and chemical process industries from the 1970s onward.</li>
+<li>In classical PRA, catastrophic risk refers to events causing severe harm to large numbers of people or critical infrastructure — nuclear meltdowns, aircraft crashes, industrial explosions.</li>
+<li>Probability is estimated through fault tree analysis, failure mode and effects analysis (FMEA), and historical incident data.</li>
+<li>Methods quantify both probability and severity, combining them into risk scores that inform safety investment decisions.</li>
+</ul>
+<p><strong>Existential risk research:</strong></p>
+<ul>
+<li>Pioneered at the Future of Humanity Institute (Oxford) by Nick Bostrom, Toby Ord, and colleagues from the early 2000s.</li>
+<li>Extended probabilistic risk thinking to civilisational-scale outcomes: human extinction, permanent civilisational collapse, or permanent authoritarian lock-in.</li>
+<li>Bostrom’s 2002 paper “Existential Risks: Analysing Human Extinction Scenarios” provided the foundational taxonomy.</li>
+<li>Ord’s “The Precipice” (2020) provided probability estimates and policy implications for major catastrophic risk categories.</li>
+</ul>
+<p><strong>The AI-specific adaptation:</strong></p>
+<p>The AI adaptation of these methods confronts a fundamentally different risk topology:</p>
+<ul>
+<li>AI-related catastrophic outcomes arise not from system failure but from system success.</li>
+<li>The harm pathway runs through information and capability transfer that successful AI operation enables.</li>
+<li>A functioning AI model becomes dangerous precisely because it works correctly — answering questions accurately, following instructions reliably, generating valid code.</li>
+</ul>
+<p>The case for applying catastrophic risk analysis specifically to AI arose from observations made in 2022–2023:</p>
+<ul>
+<li>Frontier AI models were approaching capability levels relevant to biological weapon synthesis (assisting in protein design, pathogen characterisation, and synthesis pathway planning at near-PhD level).</li>
+<li>AI was demonstrating autonomous cyberattack capability (identifying software vulnerabilities, generating exploit code, conducting reconnaissance without human guidance).</li>
+<li>AI was demonstrating autonomous replication and proliferation potential (setting up infrastructure, hiring humans for tasks, preserving its own operation).</li>
+</ul>
+<p>These observations were formalised in industry policy documents:</p>
+<ul>
+<li>Anthropic’s Responsible Scaling Policy (2023) defined AI Safety Levels (ASL-2, ASL-3, ASL-4) tied to specific dangerous capability thresholds.</li>
+<li>OpenAI’s Preparedness Framework (2023, updated 2025) defined analogous categories under “Critical,” “High,” and “Medium” risk designations.</li>
+<li>Google DeepMind’s Frontier Safety Framework (2024) defined similar threshold-based classification.</li>
+<li>Following the Seoul AI Safety Summit (May 2024), twelve AI companies published frontier AI safety frameworks publicly.</li>
+</ul>
+<p><strong>The uplift concept:</strong></p>
+<p>The distinction between catastrophic and merely harmful AI outputs is operationalised through “uplift”:</p>
+<ul>
+<li>Uplift is the marginal capability increase an AI system provides to a malicious actor beyond what they could achieve through existing means (public literature, internet search, expert consultation).</li>
+<li>A system recapitulating freely available information provides minimal uplift even if the content is technically dangerous.</li>
+<li>A system synthesising novel combinations, performing complex multi-step reasoning, or providing interactive tutoring that closes expertise gaps provides significant uplift.</li>
+<li>Uplift quantification requires domain specialists (biosecurity researchers, chemists, cybersecurity experts, weapons proliferation analysts) to evaluate model outputs against specific dangerous tasks.</li>
+<li>AISI conducts biological uplift assessments with expert virologists and molecular biologists.</li>
+<li>Anthropic conducts CBRN uplift assessments as part of its ASL-3 evaluation protocol.</li>
+<li>METR and the Virology Capabilities Test project provide standardised evaluation infrastructure.</li>
+</ul>
+<p><strong>Regulatory momentum:</strong></p>
+<p>Catastrophic risk assessment in AI has gained enormous regulatory momentum in 2023–2026:</p>
+<ul>
+<li>Bletchley Declaration (November 2023): signed by twenty-eight countries, explicitly identifying “catastrophic and existential” risks from frontier AI as a shared global concern, establishing the first intergovernmental acknowledgement of AI catastrophic risk as a policy priority.</li>
+<li>California’s SB53 (signed September 2025): first statutory mandate for catastrophic risk assessment in AI development, requiring every large frontier AI developer to publish and follow a dangerous capability assessment framework.</li>
+<li>EU AI Act general-purpose AI model provisions: apply to models trained with over 10^25 FLOPs and impose mandatory systemic risk assessment obligations including CBRN and cybersecurity risk evaluation, enforced by the EU AI Office.</li>
+<li>UK DSIT announced in January 2025 that AISI would be established as a statutory body and that an AI Bill expected in 2026 would include AI security provisions incorporating catastrophic risk assessment requirements.</li>
+</ul>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. Dangerous capability evaluation</strong></p>
+<p>The core technical component of catastrophic risk assessment:</p>
+<ul>
+<li>Structured assessment of whether a model possesses capabilities relevant to catastrophic harm.</li>
+<li>Canonical dangerous capability domains:
+<ul>
+<li><strong>Biosecurity</strong>: ability to assist in design, synthesis, or enhancement of biological agents capable of mass casualties; evaluated using expert virologists and the Virology Capabilities Test (VCT).</li>
+<li><strong>Chemistry</strong>: uplift for synthesis of chemical weapons or toxic industrial chemicals; evaluated using chemistry expert panels against real synthesis challenge tasks.</li>
+<li><strong>Radiological and nuclear</strong>: information enabling radiological dispersal or nuclear weapon design; evaluated using specialist physics and nuclear engineering expertise.</li>
+<li><strong>Cybersecurity</strong>: autonomous identification of vulnerabilities, exploit code generation, and attack campaign conduct; evaluated using established offensive security methodologies including CTF competitions and penetration test scenarios.</li>
+<li><strong>Autonomous behaviour</strong>: self-replication, resource acquisition, human hiring, and persistent operation without oversight; evaluated using METR’s autonomous task completion suite.</li>
+<li><strong>Persuasion and manipulation</strong>: ability to conduct disinformation or influence operations at scale against democratic institutions; evaluated using political science and communications expertise.</li>
+</ul>
+</li>
+<li>METR has developed the most comprehensive public evaluation methodology through its suite of autonomous task completion assessments.</li>
+</ul>
+<p><strong>2. CBRN risk domain definitions and measurement</strong></p>
+<ul>
+<li>The four-domain CBRN framework provides the standard taxonomy for catastrophic AI risk assessment.</li>
+<li>WMDP (Weapons of Mass Destruction Proxy) benchmark: standardised public evaluation measuring knowledge relevant to CBRN weapon development, decomposed into biological, chemical, and cybersecurity domains.</li>
+<li>Enkrypt AI / Kumar et al. (arXiv:2510.21133, 2025): systematic quantification of CBRN risk across frontier models found:
+<ul>
+<li>Deep Inception jailbreak attacks achieved 86% success rates vs. 33.8% for direct harmful requests.</li>
+<li>Model performance varied dramatically from 2% to 96% attack success rate across tested models.</li>
+<li>Results demonstrate fragility of surface-level safety filters and importance of reasoning-based alignment.</li>
+</ul>
+</li>
+<li>Virology Capabilities Test (VCT): developed with expert biosecurity specialists to assess biological uplift in frontier models without exposing genuinely dangerous synthesis pathways through the benchmark itself.</li>
+</ul>
+<p><strong>3. Threat modelling and pathway analysis</strong></p>
+<ul>
+<li>Catastrophic risk assessment requires not just capability measurement but pathway analysis of plausible causal chains from AI capability to mass harm event.</li>
+<li>Adapts cybersecurity threat modelling techniques (STRIDE, MITRE ATT&amp;CK) to the AI context:
+<ul>
+<li><strong>Threat actor identification</strong>: state-sponsored programs, terrorist organisations, criminal organisations, lone actors.</li>
+<li><strong>Attack vector mapping</strong>: jailbreaking, API access, model theft/exfiltration, adversarial prompting, multi-turn manipulation.</li>
+<li><strong>Capability requirement analysis</strong>: technical knowledge and resources needed beyond AI assistance.</li>
+<li><strong>Harm indicator specification</strong>: casualty numbers, disruption scale, reversibility timeline.</li>
+</ul>
+</li>
+<li>Plausible pathway analysis must account for the counterfactual: if the attack is equally feasible without AI assistance, marginal risk from AI is low even if capability is dangerous.</li>
+<li>RAND Delphi study (January–February 2025) found expert consensus that biological risks from AI received the highest marginal concern, followed by autonomous behaviour and cybersecurity risks.</li>
+</ul>
+<p><strong>4. Probabilistic risk assessment and scoring frameworks</strong></p>
+<ul>
+<li>Structured frameworks aggregate capability assessments into risk scores enabling systematic comparison:
+<ul>
+<li>Anthropic’s ASL levels (ASL-2 through ASL-4)</li>
+<li>OpenAI’s Preparedness risk scores (Low/Medium/High/Critical)</li>
+<li>Google DeepMind’s risk levels</li>
+<li>Meta’s Critical Risk designation</li>
+<li>xAI’s Catastrophic Malicious Use classification</li>
+</ul>
+</li>
+<li>Cross-lab comparison requires normalisation as thresholds are defined differently across frameworks.</li>
+<li>FLI AI Safety Index (Winter 2025) used a 65-criterion scoring rubric across four dimensions:
+<ul>
+<li>Dangerous capability evaluation quality</li>
+<li>Alignment research investment</li>
+<li>Transparency</li>
+<li>Safety commitments</li>
+</ul>
+</li>
+<li>Scores ranged from 34% (highest) to 8% (lowest) across assessed labs, reflecting significant variation in assessment rigour.</li>
+<li>Standardised public scoring methodologies remain an active policy need for regulatory comparability.</li>
+</ul>
+<p><strong>5. Red teaming and adversarial elicitation</strong></p>
+<ul>
+<li>Structured adversarial evaluation is the empirical validation complement to capability benchmarking:
+<ul>
+<li>Human red teams attempt to elicit dangerous capabilities through jailbreaking, prompt injection, multi-turn manipulation, and social engineering.</li>
+<li>AISI found universal jailbreaks (defeating safety filters across multiple harmful categories) in every frontier model system tested as of 2025.</li>
+<li>Automated red teaming (HarmBench — Mazeika et al., 2024) supplements human red teaming with higher throughput and systematic reproducibility.</li>
+<li>Human red teams remain essential for novel attack strategies requiring creativity and contextual reasoning.</li>
+</ul>
+</li>
+<li>PAIR (Prompt Automatic Iterative Refinement) attack methodology: language model attacker iteratively generates adversarial prompts to elicit harmful capability outputs.</li>
+<li>GCG (Greedy Coordinate Gradient) attack: white-box adversarial suffix generation that creates near-universal jailbreaks for gradient-accessible models.</li>
+</ul>
+<p><strong>6. Emergency response frameworks</strong></p>
+<ul>
+<li>A complementary dimension involving pre-positioning emergency response capability:
+<ul>
+<li><strong>Detection</strong>: monitoring for indicators of AI-enabled catastrophic harm (sentinel surveillance for AI-assisted biosecurity incidents, monitoring for AI-generated cyberattack signatures).</li>
+<li><strong>Containment</strong>: rapid suspension of model access, capability degradation, API rate limiting, model rollback.</li>
+<li><strong>Attribution</strong>: forensic analysis of harm pathways and model contributions.</li>
+<li><strong>Recovery</strong>: restoration of safe AI operations with enhanced safeguards.</li>
+</ul>
+</li>
+<li>Zhang and Li (2025, arXiv:2511.05526) proposed a systematic AI emergency response framework drawing on pandemic preparedness analogies.</li>
+<li>China’s National Emergency Response Plan (February 2025) explicitly included AI security incidents alongside natural disasters and epidemics, formalising AI catastrophic risk within national emergency management infrastructure.</li>
+<li>China’s TC260 Generative AI Service Security Emergency Response guidance (September 2025) provided detailed technical protocols for AI incident response.</li>
+</ul>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. Pre-deployment dangerous capability evaluation (RSP compliance)</strong></p>
+<p>The most immediate use case — verification that a frontier model does not exceed defined dangerous capability thresholds before deployment:</p>
+<ul>
+<li>Under Anthropic’s RSP ASL-3 classification, a model that could “provide real uplift to those seeking to create biological, chemical, nuclear or radiological weapons with the potential for mass casualties” triggers enhanced deployment restrictions, security measures, and third-party review requirements.</li>
+<li>Pre-deployment evaluation involves a structured combination:
+<ul>
+<li>Capability benchmarking: WMDP, biological uplift assessments, HarmBench, GPQA chemistry.</li>
+<li>Automated red teaming: PAIR attacks, GCG adversarial suffixes, jailbreak evaluation.</li>
+<li>Domain expert consultation: virologists reviewing biology capability, cybersecurity experts reviewing offensive cyber capability.</li>
+<li>Autonomous behaviour evaluation: METR task completion scenarios for self-replication and resource acquisition.</li>
+</ul>
+</li>
+<li>Models that fail evaluation either undergo capability modification (unlearning dangerous knowledge, enhancing safety filters) or classification at a higher safety level with correspondingly stronger mitigations.</li>
+<li>OpenAI’s Preparedness Framework (updated April 2025) defines an analogous pre-deployment gate covering CBRN, cybersecurity, model autonomy, and persuasion domains.</li>
+</ul>
+<p><strong>2. Regulatory compliance and mandatory disclosure</strong></p>
+<ul>
+<li>California SB53 (September 2025): created a genre of mandatory public disclosure of catastrophic risk assessment frameworks by frontier AI developers.</li>
+<li>Safety frameworks published by Anthropic, OpenAI, Google DeepMind, Meta, xAI, and others following SB53 allow public scrutiny of assessment approaches.</li>
+<li>EU AI Act systemic risk assessment requirements for GPAI models (over 10^25 FLOPs training compute): impose analogous obligations under EU law, enforced by the EU AI Office.</li>
+<li>These statutory requirements have transformed catastrophic risk assessment from voluntary internal practice to regulatory compliance obligation, creating demand for:
+<ul>
+<li>Third-party evaluation expertise.</li>
+<li>Standardised assessment methodologies.</li>
+<li>Auditable evidence packages for regulatory submission.</li>
+</ul>
+</li>
+</ul>
+<p><strong>3. Strategic biosecurity policy</strong></p>
+<ul>
+<li>Catastrophic risk assessment for AI informs government biosecurity policy by characterising when AI capability thresholds relevant to bioweapon development are approached.</li>
+<li>US National Academies of Sciences project (DELS-BLS-24-04): “Assessing and Navigating Biosecurity Concerns and Benefits of Artificial Intelligence Use in the Life Sciences” — most systematic government-commissioned analysis of this question.</li>
+<li>Key institutional contributors to AI-biosecurity risk assessment:
+<ul>
+<li>Johns Hopkins Centre for Health Security</li>
+<li>UK CSER Cambridge</li>
+<li>Australian Strategic Policy Institute (ASPI)</li>
+<li>Nucleic Acid Observatory (pandemic biosurveillance)</li>
+</ul>
+</li>
+<li>Biological Weapons Convention (BWC) review process beginning to incorporate AI uplift considerations, though formal multilateral governance of AI-biosecurity risks remains less developed than domestic frameworks.</li>
+</ul>
+<p><strong>4. Critical infrastructure cybersecurity</strong></p>
+<ul>
+<li>Evaluates whether frontier AI systems can enable autonomous cyberattacks against critical national infrastructure at nation-state scale:
+<ul>
+<li>Attacks on power grids, financial systems, water treatment, or telecommunications.</li>
+<li>Previously requiring state-sponsored teams of skilled hackers to execute.</li>
+</ul>
+</li>
+<li>AISI’s InspectCyber evaluation framework measures autonomous cyber capability in frontier models.</li>
+<li>Frontier AI Trends Report (December 2025) documented: the first model completing expert-level cyber tasks typically requiring over ten years of human professional experience was evaluated in 2025.</li>
+<li>This finding directly informed catastrophic risk classification in the UK’s forthcoming AI Bill and DSIT’s regulatory threshold setting.</li>
+<li>NCSC (National Cyber Security Centre) works with AISI on integrating AI cyber capability assessment into national cyber risk management.</li>
+</ul>
+<p><strong>5. AI-enabled disinformation and political disruption</strong></p>
+<ul>
+<li>A contested but growing area of catastrophic risk assessment:
+<ul>
+<li>Examines whether advanced AI systems could enable disinformation or influence operations undermining democratic institutions or triggering civil conflict.</li>
+<li>Risk pathway is more diffuse than CBRN uplift (many small-scale harms aggregating to macro disruption) rather than a single high-impact event.</li>
+</ul>
+</li>
+<li>Assessment is more difficult because “uplift” for political manipulation is harder to define and measure than CBRN uplift.</li>
+<li>The EU AI Act, UK Online Safety Act, and US executive orders identify this as a priority risk category.</li>
+<li>Evaluation methodologies include: automated disinformation generation capability tests, persuasion effectiveness measurement, population-scale influence simulation.</li>
+</ul>
+<p><strong>6. Agentic AI risk assessment</strong></p>
+<ul>
+<li>As AI deploys in agentic settings — orchestrating multi-step workflows, using external APIs and tools — catastrophic risk assessment must extend beyond isolated capability benchmarking to system-level scenario analysis:
+<ul>
+<li>An AI agent that can autonomously hire subcontractors, set up infrastructure, and execute multi-month plans presents a qualitatively different risk profile from a single-turn language model.</li>
+</ul>
+</li>
+<li>METR’s ControlArena evaluation framework specifically tests agentic AI control protocols for catastrophic risk under scenarios where the agentic AI intentionally tries to subvert safety controls.</li>
+<li>The “AI control” approach examines whether multi-agent architectures can reliably contain dangerous behaviour even from a strategically deceptive AI system.</li>
+<li>Greenblatt et al. (2024) demonstrated that simple control protocols can provide safety guarantees with acceptable productivity overhead even when the monitored model is intentionally trying to subvert the protocol.</li>
+</ul>
+<p><strong>7. Emergency preparedness and continuity planning</strong></p>
+<ul>
+<li>Governments and large organisations are incorporating AI catastrophic risk scenarios into emergency preparedness planning:
+<ul>
+<li>China’s National Emergency Response Plan (February 2025): included AI security incidents alongside earthquakes, cyberattacks, and epidemics.</li>
+<li>UK DSIT preparedness framework model for the forthcoming AI Bill treats catastrophic AI risk as a current operational risk requiring credentialed response capacity.</li>
+<li>US FEMA and CISA are developing AI-specific emergency response annexes to existing national emergency frameworks.</li>
+</ul>
+</li>
+<li>Analogous to pandemic preparedness exercises (table-top exercises, scenario planning, stockpiling of response capabilities).</li>
+<li>Key elements of AI catastrophic risk emergency preparedness:
+<ul>
+<li>Rapid model access suspension mechanisms</li>
+<li>Incident attribution and forensics capacity</li>
+<li>International information sharing protocols for cross-border AI incidents</li>
+<li>Recovery procedures for AI-enabled infrastructure attacks</li>
+</ul>
+</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Catastrophic risk assessment as applied to AI connects four distinct academic traditions:</p>
+<p><strong>1. Classical probabilistic risk assessment engineering:</strong></p>
+<ul>
+<li>Rasmussen (1974), “Reactor Safety Study (WASH-1400)”: established fault tree analysis for nuclear risk; the first comprehensive PRA for a major technological system.</li>
+<li>Rowe (1977), “An Anatomy of Risk”: foundational text establishing the conceptual and methodological vocabulary of risk assessment.</li>
+<li>These methods provide the quantitative infrastructure (fault trees, failure mode and effects analysis, event trees) that AI catastrophic risk assessment adapts.</li>
+</ul>
+<p><strong>2. Existential risk philosophy:</strong></p>
+<ul>
+<li>Bostrom (2002), “Existential Risks: Analysing Human Extinction Scenarios and Related Hazards,” Journal of Evolution and Technology: introduced the systematic taxonomy of existential risks.</li>
+<li>Ord (2020), “The Precipice: Existential Risk and the Future of Humanity”: provided probability estimates for major existential risk categories including advanced AI.</li>
+<li>Bostrom (2014), “Superintelligence: Paths, Dangers, Strategies”: provided the most influential analysis of catastrophic AI risk pathways (instrumental convergence thesis, orthogonality thesis, intelligence explosion).</li>
+</ul>
+<p><strong>3. AI safety technical research:</strong></p>
+<ul>
+<li>Amodei et al. (2016), “Concrete Problems in AI Safety” (arXiv:1606.06565): identified five near-term safety research problems; established the research agenda that preceded catastrophic risk assessment.</li>
+<li>Hubinger et al. (2019), “Risks from Learned Optimisation” (arXiv:1906.01820): introduced mesa-optimisation and deceptive alignment — scenarios with catastrophic risk implications.</li>
+</ul>
+<p><strong>4. Biosecurity and weapons proliferation policy:</strong></p>
+<ul>
+<li>Esvelt, K.M. (2022), AI biosecurity threat analysis: established the scientific framing of AI-enabled biological weapons risk for the biosecurity research community.</li>
+</ul>
+<p><strong>Development of the field 2022–2026:</strong></p>
+<p>The systematic application of catastrophic risk assessment methodology to AI systems:</p>
+<ul>
+<li>Began with “Concrete Problems in AI Safety” (Amodei et al., 2016) which addressed everyday deployment failures rather than catastrophic tail risks.</li>
+<li>The formal catastrophic risk assessment tradition in AI emerged from Anthropic’s RSP (2023) and the dangerous capability evaluation methodology developed by METR (formerly ARC Evals) for the Bletchley Summit evaluations (November 2023).</li>
+<li>Phuong et al. (2024, arXiv:2403.13793): first systematic academic treatment of dangerous capability evaluation methodology, covering autonomous replication, cyberattack, biosecurity, and general-purpose reasoning with structured evaluation protocols.</li>
+<li>Kumar et al. / Enkrypt AI (arXiv:2510.21133, 2025): first quantitative comparison of CBRN risk across a range of frontier models using standardised attack methodologies, revealing 2%–96% attack success rate variation across models.</li>
+<li>Zhang and Li (arXiv:2511.05526, 2025): first systematic framework for AI catastrophic risk emergency response, drawing on pandemic preparedness and national security emergency planning analogies.</li>
+<li>RAND report (2025): Delphi expert panel assessment of regulatory approaches, finding comprehensive federal action unlikely near-term but state-level initiatives (exemplified by California SB53) and voluntary industry frameworks providing the near-term governance landscape.</li>
+</ul>
+<p><strong>Measurement challenges identified by the research community:</strong></p>
+<ul>
+<li>arXiv:2410.00608 (2024) identified four core challenges in catastrophic AI risk assessment:
+<ol>
+<li>Uplift quantification requires expensive, subjective, non-replicable domain expert evaluation.</li>
+<li>Capability benchmarks can be “gamed” by safety training without actually reducing dangerous capability.</li>
+<li>Counterfactual assessment (would the actor have succeeded without AI?) requires scenarios impossible to measure directly.</li>
+<li>Capability thresholds defined at a point in time become obsolete as models improve.</li>
+</ol>
+</li>
+<li>These challenges directly inform current debates about regulatory framework design and what constitutes credible evidence of threshold compliance.</li>
+</ul>
+<p><strong>UK academic contributions:</strong></p>
+<ul>
+<li>CSER Cambridge: structured expert elicitation applied to AI risk timelines; policy engagement with UK government on AI safety legislation design.</li>
+<li>CSER’s MPhil in Global Risk and Resilience (launched 2023): first academic programme specifically training catastrophic risk assessment analysts in AI, biosecurity, and other tail risk domains.</li>
+<li>Future of Humanity Institute (Oxford, closed 2024): foundational academic work on existential risk from AI; researchers dispersed to Anthropic, independent research institutes, and other academic positions.</li>
+<li>Alan Turing Institute CETaS: published the International AI Safety Report 2026 drawing on thirty-country expert contributions.</li>
+</ul>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The catastrophic risk assessment landscape has matured substantially in 2024–2026, moving from a research agenda to an operational practice embedded in both voluntary industry frameworks and emerging statutory requirements.</p>
+<p><strong>Industry framework publication:</strong></p>
+<ul>
+<li>Twelve major AI companies published frontier AI safety frameworks following the Seoul AI Safety Summit (May 2024), publicly describing dangerous capability assessment methodologies for the first time.</li>
+<li>FLI AI Safety Index (Winter 2025) assessed these frameworks using 65 weighted criteria, finding:
+<ul>
+<li>Overall scores ranging from 34% (highest) to 8% (lowest).</li>
+<li>Major gaps: insufficient external validation of capability evaluations, inadequate public disclosure of dangerous capability thresholds, incomplete coverage of autonomous behaviour risks.</li>
+</ul>
+</li>
+</ul>
+<p><strong>AISI Frontier AI Trends Report findings (December 2025):</strong></p>
+<ul>
+<li>The most comprehensive government-conducted catastrophic risk assessment to date.</li>
+<li>Key findings:
+<ul>
+<li>Some capabilities required for AI systems to evade human control are improving across model generations.</li>
+<li>The first model completing expert-level cyber tasks requiring over ten years of human expertise was evaluated in 2025.</li>
+<li>Universal jailbreaks defeating safety filters across multiple harmful categories were found in every system tested.</li>
+<li>Autonomous task completion rates for one-hour human tasks exceeded 40% for advanced models by mid-2025.</li>
+</ul>
+</li>
+<li>These findings directly quantify the trajectory of capability approaching catastrophic risk thresholds, providing empirical basis for regulatory threshold calibration.</li>
+</ul>
+<p><strong>California SB53 (signed September 2025):</strong></p>
+<ul>
+<li>First statutory mandate for catastrophic risk assessment in AI development in any jurisdiction.</li>
+<li>Covered large frontier model developers (defined by compute threshold) must:
+<ul>
+<li>Publish frameworks describing dangerous capability assessment methodology.</li>
+<li>Define specific dangerous capability thresholds.</li>
+<li>Implement pre-defined precautions triggered by threshold exceedance.</li>
+</ul>
+</li>
+<li>Explicitly requires frameworks to address CBRN threats, advanced cyberattack capability, and autonomous AI behaviour risks.</li>
+<li>Enforcement via the California Attorney General, creating legal liability for inadequate catastrophic risk assessment.</li>
+<li>Multiple other US states and the EU are monitoring implementation as a model for similar legislation.</li>
+</ul>
+<p><strong>EU AI Act progressive implementation (2025–2026):</strong></p>
+<ul>
+<li>General-purpose AI model provisions impose systemic risk assessment obligations on frontier model providers.</li>
+<li>Requirements include adversarial testing for “foreseeable risks” including CBRN uplift, critical infrastructure cyberattack capability, and large-scale misinformation.</li>
+<li>EU AI Office developing technical standards and evaluation guidance in collaboration with AI Security Institute network.</li>
+<li>Collaboration includes AISI, NIST AI Safety Institute, and counterparts in France, Germany, Japan, and Australia.</li>
+</ul>
+<p><strong>Expert probability estimates (2026):</strong></p>
+<ul>
+<li>MIT FutureTech and University of Queensland (June 2026): engaged 272 international AI experts from 37 countries assessing 24 AI risk categories, estimating a 10% probability of catastrophic outcomes across many areas.</li>
+<li>RAND Delphi study (January–February 2025): 24 US-based AI experts evaluated 11 categories of legal and policy measures; found comprehensive federal action unlikely near-term.</li>
+</ul>
+<p><strong>International regulatory landscape:</strong></p>
+<ul>
+<li>China: National Emergency Response Plan (February 2025) included AI security incidents alongside earthquakes and epidemics; TC260 Generative AI Service Security Emergency Response guidance (September 2025) provides detailed AI incident response protocols.</li>
+<li>UK: DSIT drafting AI Bill for 2026 Parliamentary introduction with expected mandatory dangerous capability evaluation requirements.</li>
+<li>G7 Hiroshima AI Process, Seoul Process, and emerging OECD AI incident database are developing international coordination on catastrophic risk threshold harmonisation.</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The UK occupies a distinctive institutional position in global AI catastrophic risk assessment through early institutional investment, evaluation methodology leadership, and international convening.</p>
+<p><strong>International leadership:</strong></p>
+<ul>
+<li>Hosted the Bletchley Summit (November 2023) at Bletchley Park — catalysing the first international political consensus on catastrophic AI risk as a governance priority.</li>
+<li>Bletchley Declaration signed by twenty-eight countries; created the “AI Safety Institute network” — a group of allied-nation AI safety bodies sharing evaluation methodology and coordinating dangerous capability threshold definitions.</li>
+<li>Network members: UK AISI, US NIST AI Safety Institute, Japan, Singapore, Canada, Australia, South Korea, and others.</li>
+<li>Subsequent summits: Seoul AI Safety Summit (May 2024), Paris AI Safety Summit (February 2025) — producing progressively more specific technical commitments on evaluation thresholds and pre-deployment requirements.</li>
+</ul>
+<p><strong>AISI technical evaluation capacity:</strong></p>
+<ul>
+<li>Open-source Inspect evaluation framework: the UK government’s primary instrument for assessing frontier AI capability thresholds.</li>
+<li>InspectCyber: cyber capability evaluation suite.</li>
+<li>ControlArena: agentic control protocol testing framework.</li>
+<li>Domain expert networks for biological and chemical uplift assessment.</li>
+<li>Evaluations cover thirty-plus frontier models from major global AI labs before deployment.</li>
+<li>DSIT commitment (January 2025) to establish AISI as a statutory body reflects political decision to institutionalise evaluation capacity with parliamentary backing.</li>
+<li>UK AI Bill (expected 2026–2027) expected to include mandatory dangerous capability evaluation requirements for frontier model providers.</li>
+</ul>
+<p><strong>Cambridge academic infrastructure:</strong></p>
+<ul>
+<li><strong>CSER (Centre for the Study of Existential Risk)</strong>: operates MPhil in Global Risk and Resilience (first academic programme training catastrophic risk assessment specialists); publishes policy-relevant research on AI risk timelines and methodology; provides expert input to DSIT’s regulatory process.</li>
+<li><strong>Leverhulme Centre for the Future of Intelligence (CFI)</strong>: addresses AI catastrophic risk in context of societal resilience and long-term democratic sustainability.</li>
+</ul>
+<p><strong>Oxford research capacity:</strong></p>
+<ul>
+<li>Global Priorities Institute: continues long-horizon existential risk analysis following FHI’s 2024 closure; relevant to catastrophic AI risk assessment methodology and timeline estimates.</li>
+<li>Oxford’s Philosophy, Politics and Economics (PPE) tradition contributes ethical and policy dimensions of catastrophic risk decision-making under uncertainty.</li>
+</ul>
+<p><strong>Northern English universities:</strong></p>
+<ul>
+<li>Manchester’s Centre for AI and Decision Sciences: risk assessment methodology and uncertainty quantification.</li>
+<li>Sheffield’s Advanced Manufacturing Research Centre (AMRC): catastrophic risk in AI-controlled industrial systems.</li>
+<li>Newcastle’s Catalyst Hub and Digital Institute: AI risk in public-sector contexts including critical national infrastructure.</li>
+<li>UKRI Trustworthy Autonomous Systems (TAS) Hub (led by Nottingham): produced safety assurance research for autonomous systems directly applicable to catastrophic risk assessment methodology for agentic AI.</li>
+</ul>
+<p><strong>Additional UK academic contributions:</strong></p>
+<ul>
+<li>Edinburgh Informatics: probabilistic methods (Bayesian uncertainty quantification, formal verification) applicable to catastrophic risk assessment in safety-critical autonomous systems.</li>
+<li>Imperial College London: formal verification of neural network safety properties, relevant to certifying absence of dangerous capabilities in verified system configurations.</li>
+<li>Alan Turing Institute CETaS: published International AI Safety Report 2026 (February 2026) drawing on thirty-country expert input — the most comprehensive assessment of catastrophic AI risk trajectories to date.</li>
+</ul>
+<p><strong>Policy and legislative infrastructure:</strong></p>
+<ul>
+<li>UK Centre for Long-Term Resilience: published specific recommendations for embedding catastrophic risk assessment in UK AI legislation — recommending statutory dangerous capability evaluation requirements, mandatory third-party audit, and emergency response mechanisms.</li>
+<li>NCSC (National Cyber Security Centre): works with AISI on catastrophic cyber risk assessment, particularly regarding AI-enabled critical national infrastructure attacks.</li>
+<li>DSIT’s rebranding of AISI to AI Security Institute (February 2025) aligned the Institute’s mandate more closely with the national security community.</li>
+</ul>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Standardised dangerous capability taxonomies and thresholds:</strong> The current fragmentation of dangerous capability definitions across RSPs (Anthropic ASL, OpenAI Preparedness, Google DeepMind Frontier Safety Framework) impedes cross-lab comparison and regulatory reference. International standardisation of dangerous capability taxonomies and threshold definitions — through ISO/IEC standardisation activity, OECD AI Policy Observatory guidance, or the AI Safety Institute network’s shared evaluation methodology — is a critical governance need. Standardised thresholds would enable regulatory reference, consistent enforcement, and credible international agreements analogous to nuclear non-proliferation threshold definitions. The AI Safety Institute network’s collaborative evaluation work is the most advanced international infrastructure currently available for this standardisation task.</p>
+<p><strong>Automated catastrophic risk evaluation pipelines:</strong> The current state of catastrophic risk assessment is labour-intensive — expert evaluation, manual red teaming, bespoke domain expert consultation — creating a bottleneck as the number of models requiring assessment grows. Automated evaluation pipelines that can conduct structured catastrophic risk assessment continuously and at scale are a major research and engineering priority. This includes automated biosecurity uplift testing using expert-validated question banks, cyber capability assessment using agent scaffolding against controlled targets, and autonomous behaviour assessment using standardised task environments. The challenge is that automation must not reduce assessment validity — the most dangerous capabilities may be elicited only by creative human adversaries using novel attack strategies that automated methods cannot replicate. AISI’s Inspect framework represents the most advanced publicly available automated evaluation infrastructure, but its coverage of the full catastrophic risk space remains partial as of 2026.</p>
+<p><strong>Third-party evaluation ecosystem development:</strong> The EU AI Act’s requirement for notified body conformity assessment of high-risk AI systems, and the anticipated UK AI Bill’s likely requirement for third-party auditing of dangerous capability evaluations, will create demand for an independent evaluation ecosystem analogous to TUV/SGS for product safety or the PricewaterhouseCoopers/KPMG model for financial audit. Developing the technical expertise, accreditation methodology, liability framework, and commercial model for third-party catastrophic risk assessment is a major governance challenge. The AI Safety Institute network may provide the technical credentialing infrastructure through shared evaluation methodology and training programmes for third-party evaluators. Cambridge CSER’s MPhil in Global Risk and Resilience is developing the academic credentialing pathway for the next generation of catastrophic risk assessment specialists.</p>
+<p><strong>Uplift quantification methodology maturation:</strong> The central measurement challenge — quantifying the marginal capability increase a model provides to malicious actors versus available alternatives — requires systematic methodological development. Key open questions include: how should counterfactual baselines be defined and controlled? how do expert evaluator judgements translate into comparable risk scores? how should uncertainty in uplift quantification be propagated into regulatory decision-making? and how should uplift thresholds be calibrated to realistic harm scenarios given that actual attack attempts are rare and ethically impossible to simulate fully? The Virology Capabilities Test, WMDP benchmark, and related evaluation infrastructure provide a starting point, but substantial methodological development is needed to achieve the measurement reliability required for high-stakes regulatory decisions. Structured adversarial elicitation methodology — Red Team protocols that systematically vary attack scenario parameters — is being developed by AISI, METR, and Apollo Research as a more rigorous alternative to ad hoc red teaming.</p>
+<p><strong>AI catastrophic risk international governance:</strong> Multilateral AI catastrophic risk governance — analogous to nuclear non-proliferation, biological weapons convention, or chemical weapons convention frameworks — is at an early formative stage. The AI Safety Institute network, G7 Hiroshima AI Process, OECD AI Policy Observatory, and UN Secretary-General’s AI Advisory Body have all made preliminary proposals for international information-sharing, threshold-harmonisation, and coordinated evaluation mechanisms. The central challenge is that AI capabilities are developed primarily by private-sector companies rather than government programmes, making direct regulatory control analogous to nuclear material licensing difficult to implement. The California SB53 model — statutory obligations on developers combined with mandatory public disclosure — may provide the most implementable international template: companies operating in any participating jurisdiction would be required to meet standardised catastrophic risk assessment obligations.</p>
+<p><strong>Integration with biosecurity and pandemic preparedness infrastructure:</strong> The convergence of AI uplift risk for biological weapons with the broader biosecurity and pandemic preparedness infrastructure is an increasingly important policy integration. The COVID-19 pandemic demonstrated the vulnerability of global systems to biological threats and motivated substantial investment in biosecurity infrastructure. Integrating AI catastrophic risk assessment into this infrastructure — including sentinel surveillance for AI-enabled biosecurity breaches, laboratory biosafety protocols accounting for AI-assisted design, and international information-sharing arrangements — will require coordination between AI safety institutions and the biosecurity community that is still in early development. The Johns Hopkins Centre for Health Security and the Nucleic Acid Observatory project are developing biosurveillance infrastructure that could detect AI-enabled pathogen engineering attempts; integrating this with AI capability monitoring creates a comprehensive biosecurity early-warning system.</p>
+<p><strong>Autonomous AI behaviour risk assessment:</strong> The rapid growth of agentic AI deployment — AI systems that take extended sequences of actions in digital and physical environments — creates catastrophic risk scenarios that pre-agentic evaluation frameworks did not anticipate. An AI agent that can autonomously manipulate markets, compromise critical infrastructure, or replicate itself across distributed computing environments presents catastrophic risks that single-turn capability benchmarks cannot detect. Developing catastrophic risk assessment methodology for multi-agent systems — including control protocol auditing, agent interaction scenario simulation, and formal verification of agent safety properties — is a major research and engineering priority for the 2027–2030 period.</p>
+<h2 id="benchmark-datasets-and-evaluation-infrastructure">Benchmark Datasets and Evaluation Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-evaluation-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>CBRN and dangerous capability benchmarks:</strong></p>
+<ul>
+<li><strong>WMDP (Weapons of Mass Destruction Proxy)</strong>: standardised public evaluation measuring knowledge relevant to CBRN weapon development, decomposed into biological (WMDP-Bio), chemical (WMDP-Chem), and cybersecurity (WMDP-Cyber) domains. Designed to measure knowledge uplift without directly enabling harm through the benchmark mechanism itself. Used by Anthropic, AISI, OpenAI, and METR for dangerous capability evaluation.</li>
+<li><strong>Virology Capabilities Test (VCT)</strong>: expert-virologist-validated evaluation of biological uplift capability; used by AISI and Anthropic for ASL-3 biological dangerous capability assessment. Not publicly available due to dual-use concerns.</li>
+<li><strong>BioRisk Benchmark</strong>: emerging standardised assessment covering pathogen enhancement, synthesis pathway knowledge, and biosafety circumvention capability.</li>
+</ul>
+<p><strong>Cybersecurity capability benchmarks:</strong></p>
+<ul>
+<li><strong>InspectCyber</strong>: AISI’s cyber capability evaluation suite, measuring ability to complete expert-level cybersecurity tasks across vulnerability discovery, exploit development, and attack campaign planning. The first benchmark to document AI completing tasks requiring over ten years of human cyber expertise (2025).</li>
+<li><strong>CyberSecEval (Meta AI)</strong>: standardised evaluation of AI cybersecurity risk covering insecure code generation, cyberattack assistance, and vulnerability exploitation; used across 8 frontier models in Meta’s Llama safety evaluations.</li>
+<li><strong>InterCode-CTF</strong>: capture-the-flag cybersecurity challenge evaluation measuring AI ability to solve structured security puzzles; used as an autonomy measure in cyber domain.</li>
+<li><strong>NYU CTF Benchmark</strong>: competitive CTF challenge evaluation derived from real cybersecurity competitions.</li>
+</ul>
+<p><strong>Autonomous behaviour and control benchmarks:</strong></p>
+<ul>
+<li><strong>METR RE-Bench</strong>: research engineering tasks requiring weeks of skilled work; the primary autonomy capability benchmark as of 2026; forecast to be saturated in 2027 under high elicitation.</li>
+<li><strong>ControlArena (AISI)</strong>: evaluation framework specifically testing agentic AI control protocols — arrangements of trusted and untrusted AI agents — for catastrophic risk under adversarial scenarios where the AI intentionally attempts to subvert controls.</li>
+<li><strong>AgentHarm</strong>: structured evaluation of harmful capability expression in agentic settings, covering real-world harm scenarios involving tool use and multi-step action sequences.</li>
+<li><strong>SWE-Bench Verified</strong>: software engineering benchmark derived from real GitHub issues; saturating in 2026, suggesting near-human software engineering capability as a near-term threshold with catastrophic implications for AI-enabled cyberattack.</li>
+</ul>
+<p><strong>Red teaming and safety benchmarks:</strong></p>
+<ul>
+<li><strong>HarmBench</strong>: 400+ harmful behaviour test cases across 6 semantic categories (standard harmful, contextual harm, copyright, counterfactual harm, jailbreaks, chemical/biological); provides standardised automated red teaming infrastructure.</li>
+<li><strong>PAIR (Prompt Automatic Iterative Refinement)</strong>: automated jailbreak attack framework using language model attacker to iteratively generate adversarial prompts; 86% success rate in CBRN risk quantification study (Kumar et al., 2025).</li>
+<li><strong>GCG (Greedy Coordinate Gradient)</strong>: white-box adversarial suffix attack; creates near-universal jailbreaks for gradient-accessible models; key tool in red teaming methodology.</li>
+<li><strong>Salad-Bench</strong>: comprehensive safety evaluation across over 30,000 harmful queries across multiple risk categories.</li>
+</ul>
+<p><strong>Scoring and assessment frameworks:</strong></p>
+<ul>
+<li><strong>FLI AI Safety Index</strong>: 65-criterion scoring rubric for frontier AI labs’ catastrophic risk assessment practices; assessed major labs in Winter 2025 finding scores from 8%–34%.</li>
+<li><strong>METR Safety Framework Comparison</strong>: systematic comparison of common elements across major frontier AI safety frameworks published after Seoul Summit.</li>
+<li><strong>Apollo Research Scheming Evaluations</strong>: structured evaluation of AI deception, situational awareness, and self-preservation behaviours that could enable catastrophic autonomous action.</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Catastrophic Risk:</strong> Risk of events causing mass casualties, civilisational-scale disruption, or irreversible harm to humanity’s long-term potential; distinguished from “merely severe” risks by irreversibility and scale.</li>
+<li><strong>CBRN:</strong> Chemical, biological, radiological, and nuclear; the four primary weapon categories whose development or deployment constitutes a catastrophic harm pathway in AI risk assessment frameworks.</li>
+<li><strong>Uplift:</strong> The marginal capability increase an AI system provides to a malicious actor beyond what they could achieve without AI assistance; the central quantity in catastrophic risk assessment for AI.</li>
+<li><strong>Dangerous Capability Evaluation:</strong> Structured assessment of whether a model possesses capabilities relevant to catastrophic harm; the primary technical component of pre-deployment catastrophic risk assessment.</li>
+<li><strong>AI Safety Level (ASL):</strong> Anthropic’s tiered classification of model dangerous capabilities from ASL-2 (limited uplift potential) through ASL-4 (potential for AI-driven civilisational disruption), with each level triggering defined safety requirements.</li>
+<li><strong>Responsible Scaling Policy (RSP):</strong> An AI lab’s internal framework defining dangerous capability thresholds and the safety measures triggered when models approach or exceed each threshold; the voluntary industry complement to statutory catastrophic risk frameworks.</li>
+<li><strong>Jailbreak:</strong> A prompt or conversational technique that bypasses an AI model’s safety filters, enabling elicitation of dangerous capability outputs the model is trained to refuse; universally present in tested frontier models as of 2025.</li>
+<li><strong>Red Team:</strong> An adversarial evaluation team that attempts to elicit dangerous capabilities through novel attack strategies, complementing automated benchmarks with human creativity and contextual reasoning.</li>
+<li><strong>Threat Modelling:</strong> Systematic analysis of plausible harm pathways from AI capability to mass harm event, identifying threat actors, attack vectors, capability requirements, and harm indicators; the strategic complement to narrow capability measurement.</li>
+<li><strong>Counterfactual Baseline:</strong> The capability level available to a malicious actor through existing means (public literature, internet search, expert consultation) without AI assistance, against which AI uplift is measured; the most challenging methodological element of uplift quantification.</li>
+<li><strong>Global Catastrophic Risk (GCR):</strong> Risk of harm at a civilisational or global scale, encompassing both potentially existential risks and severely disruptive but recoverable catastrophes; the broader category within which catastrophic AI risks are classified.</li>
+<li><strong>Autonomous Behaviour Risk:</strong> The risk that AI systems pursue goals in ways that evade human control, take unintended real-world actions, or self-replicate in ways that amplify harm beyond what the deploying human intended; distinguished from misuse risk (human-intended harm enabled by AI) by the absence of human authorisation.</li>
+</ul>
+<h2 id="key-research-institutions-and-organisations">Key Research Institutions and Organisations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-research-institutions-and-organisations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Government evaluation bodies:</strong></p>
+<ul>
+<li><strong>UK AI Security Institute (AISI)</strong>: the primary UK government body for AI catastrophic risk assessment; conducts dangerous capability evaluations across thirty-plus frontier models; publishes the Frontier AI Trends Report; develops and maintains Inspect, InspectCyber, and ControlArena evaluation frameworks.</li>
+<li><strong>US NIST AI Safety Institute</strong>: US counterpart to AISI; co-evaluates frontier models under bilateral information-sharing agreement; published NIST AI 600-1 Generative AI Profile covering CBRN and cyber risk assessment methodology.</li>
+<li><strong>EU AI Office</strong>: responsible for enforcing EU AI Act general-purpose AI model CBRN and cybersecurity risk assessment obligations; coordinates with the AI Safety Institute network on evaluation methodology standardisation.</li>
+</ul>
+<p><strong>Independent evaluation organisations:</strong></p>
+<ul>
+<li><strong>METR (Model Evaluation and Threat Research)</strong>: pioneers autonomous behaviour risk assessment through task completion time horizon methodology; developed ControlArena for agentic AI control testing; conducts pre-deployment evaluations for major labs.</li>
+<li><strong>Apollo Research</strong>: specialises in evaluation of deception, situational awareness, and self-preservation behaviours in frontier models — the advanced autonomous behaviour risk most relevant to catastrophic autonomous action scenarios.</li>
+<li><strong>ARC Evals / Alignment Research Center</strong>: independently evaluates frontier model dangerous capabilities; evaluation results inform AISI’s Inspect framework baseline.</li>
+<li><strong>Enkrypt AI</strong>: published systematic CBRN risk quantification across frontier models (Kumar et al., 2025 — arXiv:2510.21133) and develops enterprise AI red teaming infrastructure.</li>
+</ul>
+<p><strong>AI laboratory safety teams:</strong></p>
+<ul>
+<li><strong>Anthropic Safety and Security team</strong>: responsible for RSP implementation including ASL evaluation gates, CBRN uplift assessment, and autonomous behaviour evaluation. First to publish a formal RSP (2023) integrating capability forecasting with catastrophic risk thresholds.</li>
+<li><strong>OpenAI Preparedness team</strong>: conducts pre-deployment catastrophic risk evaluation under the Preparedness Framework; maintains safety scorecards for CBRN, cybersecurity, model autonomy, and persuasion domains.</li>
+<li><strong>Google DeepMind Safety team</strong>: maintains the Frontier Safety Framework and conducts dangerous capability evaluations including the Phuong et al. (2024) dangerous capabilities evaluation study.</li>
+<li><strong>Meta AI Safety</strong>: publishes CyberSecEval evaluations and maintains frontier AI safety framework disclosures; conducts red teaming across Llama model family.</li>
+<li><strong>xAI Safety</strong>: published xAI Risk Management Framework (August 2025) under California SB53 requirements; defines “Catastrophic Malicious Use” thresholds across CBRN and autonomous behaviour domains.</li>
+</ul>
+<p><strong>Academic research centres:</strong></p>
+<ul>
+<li><strong>Cambridge CSER (Centre for the Study of Existential Risk)</strong>: academic research on AI catastrophic risk assessment methodology, expert elicitation, and policy; operates MPhil in Global Risk and Resilience; provides evidence to UK Parliamentary committees and DSIT regulatory process.</li>
+<li><strong>Oxford Global Priorities Institute</strong>: continues existential risk research following FHI’s 2024 closure; contributes to AI catastrophic risk probability estimation and ethics of precautionary governance.</li>
+<li><strong>RAND AI Policy Centre</strong>: Delphi expert panels and systematic analyses of AI catastrophic risk mitigation strategies; published RRA4266-1 Legal and Policy Approaches to Mitigate Catastrophic Harms from AI (2025).</li>
+<li><strong>Johns Hopkins Centre for Health Security</strong>: specialises in biological catastrophic risk assessment; integrates AI biosecurity risk into its pandemic preparedness and dual-use research of concern analysis.</li>
+<li><strong>Alan Turing Institute CETaS</strong>: published International AI Safety Report 2026 drawing on thirty-country expert contributions; maintains the most comprehensive UK-based analysis of catastrophic AI risk trajectories.</li>
+</ul>
+<p><strong>Biosecurity and specialised research:</strong></p>
+<ul>
+<li><strong>Nucleic Acid Observatory</strong>: biosurveillance infrastructure project that could detect AI-enabled pathogen engineering attempts; integration with AI catastrophic risk monitoring is an active research direction.</li>
+<li><strong>Nuclear Threat Initiative (NTI) Global Health Security</strong>: has published analyses of AI dual-use risks in biosecurity contexts, contributing to international governance frameworks.</li>
+<li><strong>Biosecurity Entrepreneurs Group</strong>: network of biosecurity researchers and policy advocates developing community norms for AI use in life sciences research.</li>
+</ul>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Bostrom, N. (2002). Existential Risks: Analysing Human Extinction Scenarios and Related Hazards. Journal of Evolution and Technology, 9(1).</li>
+<li>Ord, T. (2020). The Precipice: Existential Risk and the Future of Humanity. Bloomsbury Publishing.</li>
+<li>Amodei, D., Olah, C., Steinhardt, J., Christiano, P., Schulman, J., and Mané, D. (2016). Concrete Problems in AI Safety. arXiv:1606.06565.</li>
+<li>Hubinger, E., van Merwijk, C., Mikulik, V., Skalse, J., and Garrabrant, S. (2019). Risks from Learned Optimisation in Advanced Machine Learning Systems. arXiv:1906.01820.</li>
+<li>Phuong, M., et al. (2024). Evaluating Frontier Models for Dangerous Capabilities. DeepMind Technical Report. arXiv:2403.13793.</li>
+<li>Kumar, D., et al. / Enkrypt AI (2025). Quantifying CBRN Risk in Frontier Models. arXiv:2510.21133.</li>
+<li>Mazeika, M., et al. (2024). HarmBench: A Standardised Evaluation Framework for Automated Red Teaming. arXiv:2402.04249.</li>
+<li>Zhang, J. and Li, E. (2025). Emergency Response Measures for Catastrophic AI Risk. arXiv:2511.05526.</li>
+<li>Anthropic (2023; updated 2024). Responsible Scaling Policy. Anthropic Policy Document. anthropic.com.</li>
+<li>OpenAI (2025). Preparedness Framework (Updated April 2025). OpenAI Policy Document.</li>
+<li>Google DeepMind (2024). Frontier Safety Framework. Google DeepMind Technical Report.</li>
+<li>Meta AI (2024). Frontier AI Safety Commitments. Meta AI Policy Document.</li>
+<li>RAND Corporation (2025). Legal and Policy Approaches to Mitigate Catastrophic Harms from AI. RAND Research Report RRA4266-1.</li>
+<li>UK AI Security Institute (2025). Frontier AI Trends Report. AISI, December 2025. aisi.gov.uk/frontier-ai-trends-report.</li>
+<li>Future of Life Institute (2025). AI Safety Index: Winter 2025. FLI Report. futureoflife.org.</li>
+<li>National Academies of Sciences (2024). Assessing and Navigating Biosecurity Concerns and Benefits of Artificial Intelligence Use in the Life Sciences. DELS-BLS-24-04.</li>
+<li>California Legislature (2025). Senate Bill 53 (SB53): Artificial Intelligence Safety. Chapter [X], California Statutes 2025.</li>
+<li>European Parliament and Council (2024). Regulation (EU) 2024/1689 on Artificial Intelligence (EU AI Act). Official Journal of the European Union.</li>
+<li>CETaS / Alan Turing Institute (2026). International AI Safety Report 2026. Centre for Emerging Technology and Security, February 2026.</li>
+<li>METR (2025). Task-Completion Time Horizons of Frontier AI Models. METR Technical Report, March 2025.</li>
+<li>Wiener, J.B., Rogers, M.D., Graham, J.D., and Sand, P.H. (eds, 2011). The Reality of Precaution: Comparing Risk Regulation in the United States and Europe. RFF Press. (Classical PRA methodological foundation)</li>
+<li>Measurement Challenges in AI Catastrophic Risk Governance (2024). arXiv:2410.00608.</li>
+<li>METR (2024). Common Elements of Frontier AI Safety Policies. metr.org/common-elements.</li>
+<li>Evaluating AI Providers’ Frontier Safety Frameworks (2024). arXiv:2512.01166.</li>
+<li>Long-Term Resilience Centre (2025). How the UK AI Bill Can Improve AI Security. longtermresilience.org.</li>
+<li>UK AI Regulation Framework (2026). UK House of Commons Library Research Briefing CBP-10003.</li>
+<li>AI Emergency Preparedness: Examining the Federal Government’s Ability to Detect and Respond to AI-Related National Security Threats (2024). arXiv:2407.17347.</li>
+<li>CSER Cambridge (2023). Introduction to CSER’s Work on Extreme Risks. Written Evidence to UK Parliamentary Committees. committees.parliament.uk/writtenevidence/21939.</li>
+</ol>
+<h2 id="why-catastrophic-risk-assessment-is-hard--core-challenges">Why Catastrophic Risk Assessment Is Hard — Core Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-catastrophic-risk-assessment-is-hard--core-challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Catastrophic risk assessment for AI faces structural challenges that distinguish it from conventional risk assessment disciplines:</p>
+<p><strong>1. The uplift quantification problem:</strong></p>
+<ul>
+<li>Measuring the marginal capability increase an AI system provides to a malicious actor requires comparing AI-assisted performance against unassisted performance by realistic threat actors — a measurement that cannot be directly conducted without replicating the harm.</li>
+<li>Counterfactual baselines (what could the threat actor achieve without AI?) are inherently uncertain and change as public resources, online tutorials, and AI access evolve.</li>
+<li>Expert evaluators differ substantially on what constitutes “meaningful uplift” for specific dangerous tasks.</li>
+<li>This measurement uncertainty propagates into all regulatory threshold definitions based on uplift.</li>
+</ul>
+<p><strong>2. The benchmark gaming problem:</strong></p>
+<ul>
+<li>Safety training can reduce model performance on CBRN-relevant benchmarks without actually reducing the model’s underlying dangerous capabilities under adversarial elicitation.</li>
+<li>Benchmarks that are used for safety training become compromised as capability evaluation instruments — a form of Goodhart’s Law applied to safety benchmarks.</li>
+<li>The most dangerous capabilities may be elicitable through novel jailbreaks not represented in current benchmark adversarial examples.</li>
+<li>AISI found universal jailbreaks in every model tested as of 2025, suggesting current safety measures are insufficient against adaptive adversaries.</li>
+</ul>
+<p><strong>3. The jurisdictional asymmetry problem:</strong></p>
+<ul>
+<li>Catastrophic risk threshold compliance is enforced in specific jurisdictions (California, EU) but AI systems and their misuse are global.</li>
+<li>An AI model that passes catastrophic risk assessment in California may be accessed by users in unregulated jurisdictions without the required safety mitigations.</li>
+<li>The most dangerous actors — state-sponsored weapons programs, sophisticated terrorist organisations — are precisely those least constrained by domestic regulation in any jurisdiction.</li>
+<li>This asymmetry motivates international coordination on catastrophic risk frameworks but makes purely domestic regulation insufficient.</li>
+</ul>
+<p><strong>4. The capability velocity problem:</strong></p>
+<ul>
+<li>Dangerous capability thresholds defined at a point in time become obsolete as frontier models improve.</li>
+<li>Regulatory frameworks need dynamic threshold adjustment mechanisms to remain calibrated to actual capability levels.</li>
+<li>The pace of capability improvement (benchmark saturation in months rather than years) can outstrip regulatory update cycles.</li>
+<li>AISI’s Frontier AI Trends Report found that some capabilities relevant to catastrophic risk thresholds are improving across model generations — making past assessments unreliable for current models.</li>
+</ul>
+<p><strong>5. The agentic system boundary problem:</strong></p>
+<ul>
+<li>Single-model capability assessments may underestimate catastrophic risk from multi-agent or agentic AI systems where compound capabilities emerge from interactions between multiple models and tools.</li>
+<li>An AI agent orchestrating external APIs, code execution environments, and database access may have catastrophic risk potential that no single component model possesses.</li>
+<li>Current evaluation frameworks struggle to assess system-level catastrophic risk in compound AI architectures — a rapidly growing deployment pattern.</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-961" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#benchmark-datasets-and-evaluation-infrastructure" data-for="benchmark-datasets-and-evaluation-infrastructure">Benchmark Datasets and Evaluation Infrastructure</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#key-research-institutions-and-organisations" data-for="key-research-institutions-and-organisations">Key Research Institutions and Organisations</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#why-catastrophic-risk-assessment-is-hard--core-challenges" data-for="why-catastrophic-risk-assessment-is-hard--core-challenges">Why Catastrophic Risk Assessment Is Hard — Core Challenges</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Capability-Forecasting" class="internal">Capability Forecasting</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

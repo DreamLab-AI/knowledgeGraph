@@ -1,0 +1,3 @@
+
+Real-time data access is the capability to query and retrieve current, up-to-date data from underlying systems with minimal delay between data generation and availability to consumers. It is typically achieved through data virtualization layers, streaming pipelines, or optimised database query paths that avoid batch-processing latency. Real-time data access underpins applications such as live dashboards, operational monitoring, and time-sensitive decision-making that cannot tolerate stale data.
+

@@ -1,0 +1,70 @@
+
+An instruction-following conversational AI system is a natural language processing architecture trained to interpret, decompose, and execute open-ended user directives within a multi-turn dialogue context, producing contextually coherent and task-appropriate responses. Such systems combine large-scale pre-training on diverse corpora with alignment techniques — notably reinforcement learning from human feedback (RLHF) and instruction fine-tuning — to bridge the gap between raw language modelling capability and safe, helpful behaviour. They are distinguished from earlier rule-based chatbots by their generalisation across task types (summarisation, coding, question-answering, reasoning) without requiring task-specific engineering. Representative instances include OpenAI's ChatGPT, Google's Gemini, and Anthropic's Claude.
+
+- ### Overview
+  - Instruction-following conversational AI systems emerged as the productive synthesis of three prior research threads: large-scale [[Pre Training]] on internet corpora, [[Fine Tuning]] on curated task demonstrations, and preference-based alignment via [[Reinforcement Learning from Human Feedback]].
+  - The defining characteristic is generalisation: a single model trained on diverse instructions can answer factual questions, write and debug code, analyse documents, and engage in extended multi-turn dialogue without mode-switching or specialised modules.
+  - Consumer deployment — exemplified by [[ChatGPT]]'s release in November 2022 — demonstrated that general-purpose [[Conversational AI]] could operate at internet scale, fundamentally shifting public and enterprise expectations of AI capability.
+  - The practical utility of these systems is inseparable from [[Prompt Engineering]]: the skill of formulating instructions that reliably elicit desired model behaviour, a discipline that emerged as a direct consequence of this class's flexibility.
+  - Latent risks — including [[Hallucination in Language Models]], susceptibility to adversarial prompt injection, and potential for misuse — drove parallel research into [[AI Safety]] and triggered regulatory attention, most notably from the [[EU AI Act Regulatory Instrument]].
+
+- ### Key Components
+  - **Foundation model**: a [[Transformer]]-based [[Large Language Models]] pre-trained on web-scale corpora, providing broad world knowledge and linguistic fluency.
+  - **Instruction fine-tuning**: supervised learning on human-authored prompt–response pairs that calibrates the model to follow instructions rather than merely predict next tokens. See [[Instruction Tuning]].
+  - **RLHF alignment**: [[Reinforcement Learning from Human Feedback]] trains a reward model from human preference rankings, then uses this to fine-tune the policy model via proximal policy optimisation (PPO), reducing harmful or unhelpful outputs.
+  - **Context window management**: the system maintains a token-bounded context including the system prompt (operator-defined behaviour), conversation history, and any injected tool outputs, mediating multi-turn coherence.
+  - **System prompt / operator layer**: a privileged instruction prefix that customises model persona, constraints, and allowed capabilities for specific deployments, separating operator control from user interaction.
+  - **Tool-use interface**: modern instances expose a function-calling API that allows the model to invoke external tools (web search, code execution, database queries), enabling [[Agentic Workflow]] behaviour. See [[AI Agents]].
+  - **Safety filters**: a combination of fine-tuning-level refusal behaviour and inference-time classifiers that detect and block policy-violating outputs, essential for consumer deployment.
+
+- ### Mechanisms
+  - **Pre-training**: the backbone [[Large Language Models]] is trained with next-token prediction over trillions of tokens drawn from web pages, books, and code. This establishes knowledge, syntax, and latent reasoning capability.
+  - **Supervised fine-tuning (SFT)**: human annotators produce gold-standard responses to a diverse set of prompts; the model is fine-tuned via cross-entropy loss on these demonstrations, teaching instruction-following format and tone.
+  - **Reward modelling**: a separate model is trained to predict human preference between pairs of model outputs, providing a differentiable signal for subsequent reinforcement learning.
+  - **PPO fine-tuning**: the SFT model is further optimised against the reward model with a KL-divergence penalty that prevents excessive deviation from the SFT baseline, balancing helpfulness and policy compliance.
+  - **Constitutional AI / RLAIF variant**: [[Anthropic Claude]] uses a rule-set (constitution) combined with AI-generated preference labels instead of exclusively human annotation, scaling the alignment process.
+  - **Retrieval augmentation**: production deployments increasingly integrate [[Retrieval-Augmented Generation]] to ground responses in up-to-date or private document collections, partially mitigating the knowledge-cutoff limitation.
+
+- ### Applications & Use Cases
+  - **Software development assistance**: real-time code completion, debugging, test generation, and refactoring across dozens of languages, embedded in IDEs via [[Code Generation]] plugins (e.g. GitHub Copilot Chat).
+  - **Knowledge-work automation**: [[Document Summarisation]], email drafting, meeting notes, and research synthesis — tasks where the model's broad knowledge and fluent generation provide immediate productivity gains.
+  - **Education and tutoring**: adaptive explanations, Socratic questioning, and worked examples across subjects, enabling personalised learning at scale.
+  - **Customer service**: enterprise deployments use instruction-following systems with retrieval augmentation as first-tier support agents, reducing escalation rates.
+  - **Creative writing and content generation**: fiction, marketing copy, and script drafting, where the model's ability to follow detailed stylistic instructions is the primary value.
+  - **Scientific literature review**: structured summarisation of research papers and hypothesis generation, bridging to [[Human-Computer Interaction]] tooling in research platforms.
+  - **Agentic task execution**: within [[Agentic Workflow]] frameworks, instruction-following systems act as the reasoning core that plans, delegates to tools, and synthesises results across multi-step tasks.
+
+- ### Notable Instances
+  - **[[ChatGPT]]** (OpenAI, launched November 2022): the canonical public instance built on [[GPT]]-3.5 and subsequently GPT-4, GPT-4o. Reached 100 million users within two months.
+  - **[[Gemini]]** (Google DeepMind): multimodal instruction-following system integrating text, image, audio, and video understanding, tightly integrated with Google Search and Workspace.
+  - **[[Anthropic Claude]]**: grounded in [[Constitutional AI Training Methodology]], emphasising safety and long-context reasoning; introduced 200k-token context windows. Anthropic uses AI-generated feedback (RLAIF) at scale.
+  - **LLaMA-based open systems** (Meta): open-weight instruction-tuned models (LLaMA 2 Chat, LLaMA 3 Instruct) that democratised deployment of this class beyond proprietary API access.
+  - **Mistral Instruct**: compact European open-weight instruction-following models demonstrating high capability per parameter count.
+
+- ### Standards & Context
+  - **EU AI Act (2024)**: the [[EU AI Act Regulatory Instrument]] classifies general-purpose AI models (including instruction-following systems above compute thresholds) as requiring capability evaluations, transparency reports, and adversarial red-teaming. Providers must maintain model cards and incident-reporting mechanisms.
+  - **NIST AI RMF**: the US National Institute of Standards and Technology's AI Risk Management Framework provides voluntary guidance for trustworthy deployment, including bias evaluation and documentation practices applicable to this class.
+  - **OpenAI Usage Policies**: OpenAI's operator / user permission hierarchy establishes a contractual governance layer above the technical safety controls, influencing how system prompts can restrict or expand model behaviour.
+  - **Model cards & datasheets**: Google's model card standard and Gebru et al.'s datasheet framework provide documentation templates for communicating training data, intended use, and known limitations of instruction-following systems.
+  - **Benchmark suites**: MMLU, HumanEval, MT-Bench, and AlpacaEval are widely used to compare instruction-following systems across reasoning, coding, and instruction-adherence dimensions, though their saturation has prompted development of harder successors (GPQA, SWE-bench).
+  - **[[AI Safety]]** research community (DeepMind, Anthropic, Alignment Forum) has produced Constitutional AI, debate, scalable oversight, and interpretability methods aimed at ensuring instruction-following systems remain aligned as capability scales.
+
+- ### Current Landscape (2026)
+  - Frontier instruction-following capacity roughly 10x'd in a year: Arize's 2026 benchmark found models that lost track of instructions at around 200-300 simultaneous constraints in early 2025 now reliably track around 2,000 (up to 5,000) named constraints per prompt on GPT-5.5 and Gemini 3.1 Pro; OpenAI shipped GPT-5.5 and GPT-5.5 Pro to the API on 24 April 2026, alongside Anthropic's Claude Opus 4.x and Google Gemini 3.1 Pro.
+  - The post-training stack has moved well beyond classic three-stage PPO RLHF: by mid-2026 the typical recipe is SFT then DPO then GRPO with verifiable rewards (RLVR) plus a final PPO/DPO polish, with RLAIF and constitutional AI used to scale label generation and reasoning-focused RLVR (as in o-series and DeepSeek-R1) becoming a primary post-training engine.
+  - Evaluation shifted from saturated benchmarks to harder, agentic ones: IFEval (25 verifiable constraint templates) is saturated with sub-2B models scoring 80%+, prompting IFBENCH (58 out-of-domain constraints, where GPT-4.1 and Claude 3.7 Sonnet score below 50%), the multilingual M-IFEval (French, Japanese, Spanish), and AgentIF (707 real agentic instructions averaging around 11.9 constraints) where current models still perform poorly.
+  - Tool-connectivity standardised on Anthropic's Model Context Protocol (MCP, launched November 2024): OpenAI adopted it in March 2025 and Google DeepMind in April 2025, and by early 2026 it reached roughly 97 million monthly SDK downloads with over 10,000 active public servers, making it the de facto agent-to-tool layer.
+  - Governance went vendor-neutral: Anthropic donated MCP to the Linux Foundation's new Agentic AI Foundation in December 2025 (co-founded with Block and OpenAI, backed by Google, Microsoft, AWS, Cloudflare and Bloomberg), while Google's complementary agent-to-agent (A2A) protocol reached v1.0 in April 2026 with signed Agent Cards and 150-plus production organisations (IBM's ACP having merged into A2A in August 2025).
+  - Regulation tightened around conversational and agentic systems: the EU AI Act's GPAI obligations and Code of Practice took effect on 2 August 2025, the Act became generally applicable on 2 August 2026 (with transparency/AI-content-labelling duties from August 2026), high-risk obligations run to December 2027, and CEN/CENELEC harmonised standards under mandate M/613 remain in draft as of January 2026.
+  - Open challenges as of 2026 centre on reward hacking, sycophancy, length bias and the alignment tax under scaled RLAIF; generalising precise instruction-following to unseen constraints; multi-turn and long-context agentic reliability; and reconciling untraceable behavioural drift in tool-using agents with the AI Act's traceability and human-oversight requirements.
+
+- ### References
+  - 1. Arize AI (2026). Models got an order of magnitude better at following instructions. https://arize.com/blog/llm-instruction-following-benchmark-2026/
+  - 2. Anthropic (2025). Donating the Model Context Protocol and establishing the Agentic AI Foundation. https://www.anthropic.com/news/donating-the-model-context-protocol-and-establishing-of-the-agentic-ai-foundation
+  - 3. TechAhead (2026). MCP vs A2A vs ACP: AI Agent Protocols Explained in 2026. https://www.techaheadcorp.com/blog/mcp-vs-a2a-vs-acp-ai-agent-interoperability-standards/
+  - 4. European Commission (2026). AI Act — Regulatory framework for AI (application dates and obligations). https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 5. Pyatkin et al. / NeurIPS (2025). Generalizing Verifiable Instruction Following (IFBENCH). https://proceedings.neurips.cc/paper_files/paper/2025/file/46499a0622ecf568b72d17b61e45dbd5-Paper-Datasets_and_Benchmarks_Track.pdf
+  - 6. THU-KEG / arXiv (2025). AgentIF: Benchmarking Instruction Following of Large Language Models in Agentic Scenarios. https://arxiv.org/html/2505.16944
+
+- ### Provenance
+

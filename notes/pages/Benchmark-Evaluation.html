@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Benchmark Evaluation</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Benchmark Evaluation"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Benchmark Evaluation"/><meta name="twitter:description" content="Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time."/><meta property="og:description" content="Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time."/><meta property="og:image:alt" content="Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Benchmark-Evaluation"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Benchmark-Evaluation"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Benchmark-Evaluation"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1083"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1083" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Benchmark Evaluation</a></div></nav><h1 class="article-title">Benchmark Evaluation</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.685Z">23 Sept 2026</time><span>54 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:benchmark-evaluation</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.78</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../pages/AI-Evaluation" class="internal">AI Evaluation</a></li><li><a href="../pages/Benchmarking" class="internal">Benchmarking</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../pages/Benchmark-Dataset" class="internal">Benchmark Dataset</a></li><li><a href="../pages/Leaderboard" class="internal">Leaderboard</a></li><li><a href="../pages/Model-Evaluation-Results" class="internal">Model Evaluation Results</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Benchmark-Dataset" class="internal">Benchmark Dataset</a></li><li><a href="../pages/Ground-Truth-Labels" class="internal">Ground Truth Labels</a></li><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../pages/Statistical-Hypothesis-Testing" class="internal">Statistical Hypothesis Testing</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Model-Evaluation-Results" class="internal">Model Evaluation Results</a></li><li><a href="../pages/Leaderboard" class="internal">Leaderboard</a></li><li><a href="../pages/Reproducibility" class="internal">Reproducibility</a></li><li><a href="../pages/Capability-Evaluation" class="internal">Capability Evaluation</a></li><li><a href="../pages/Frontier-Model-Evaluation" class="internal">Frontier Model Evaluation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Human-Evaluation" class="internal">Human Evaluation</a></li><li><a href="../pages/Heuristic-Evaluation" class="internal">Heuristic Evaluation</a></li><li><a href="../pages/AI-Benchmark-Epistemological-Critique" class="internal">AI Benchmark Epistemological Critique</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Data-Annotation" class="internal">Data Annotation</a></li><li><a href="../pages/Data-Quality" class="internal">Data Quality</a></li><li><a href="../pages/Ground-Truth-Labels" class="internal">Ground Truth Labels</a></li><li><a href="../pages/Evaluation-Harness" class="internal">Evaluation Harness</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Layer" class="internal">Evaluation Layer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Benchmark-Standard" class="internal">Benchmark Standard</a></li><li><a href="../pages/Benchmarking" class="internal">Benchmarking</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../model-evaluation" class="internal">Model Evaluation</a></li><li><a href="../benchmark-dataset" class="internal">Benchmark Dataset</a></li><li><a href="../evaluation-metric" class="internal">Evaluation Metric</a></li><li><a href="../evaluation-harness" class="internal">Evaluation Harness</a></li><li><a href="../performance-benchmarks" class="internal">Performance Benchmarks</a></li><li><a href="../leaderboard" class="internal">Leaderboard</a></li><li><a href="../reproducibility" class="internal">Reproducibility</a></li><li><a href="../benchmarking" class="internal">Benchmarking</a></li><li><a href="../model-evaluation-results" class="internal">Model Evaluation Results</a></li><li><a href="../benchmark-standard" class="internal">Benchmark Standard</a></li><li><a href="../ai-benchmark-epistemological-critique" class="internal">AI Benchmark Epistemological Critique</a></li><li><a href="../frontier-model-evaluation" class="internal">Frontier Model Evaluation</a></li><li><a href="../capability-evaluation" class="internal">Capability Evaluation</a></li><li><a href="../human-evaluation" class="internal">Human Evaluation</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../ground-truth-labels" class="internal">Ground Truth Labels</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../data-annotation" class="internal">Data Annotation</a></li><li><a href="../overfitting" class="internal">Overfitting</a></li><li><a href="../bias" class="internal">Bias</a></li><li><a href="../ai-ethics" class="internal">AI Ethics</a></li><li><a href="../statistical-hypothesis-testing" class="internal">Statistical Hypothesis Testing</a></li><li><a href="../cross-validation" class="internal">Cross-Validation</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../training-data" class="internal">Training Data</a></li><li><a href="../supervised-learning" class="internal">Supervised Learning</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../ai-grounded-domain" class="internal">AI-GroundedDomain</a></li><li><a href="../mlcommons" class="internal">MLCommons</a></li><li><a href="../beir-benchmark" class="internal">BEIR Benchmark</a></li><li><a href="../mteb-benchmark" class="internal">MTEB Benchmark</a></li><li><a href="../heuristic-evaluation" class="internal">Heuristic Evaluation</a></li><li><a href="../continuous-integration" class="internal">Continuous Integration</a></li><li><a href="../question-answering" class="internal">Question Answering</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../confounding" class="internal">Confounding</a></li><li><a href="../data-quality" class="internal">Data Quality</a></li><li><a href="../safety-evaluation" class="internal">Safety Evaluation</a></li><li><a href="../model-training" class="internal">Model Training</a></li><li><a href="../red-teaming" class="internal">Red Teaming</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:benchmark-evaluation</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Harness" class="internal">Evaluation Harness</a></li><li><a href="../pages/Benchmark-Standard" class="internal">Benchmark Standard</a></li><li><a href="../pages/AI-Benchmark-Epistemological-Critique" class="internal">AI Benchmark Epistemological Critique</a></li><li><a href="../pages/Frontier-Model-Evaluation" class="internal">Frontier Model Evaluation</a></li><li><a href="../pages/Continuous-Integration" class="internal">Continuous Integration</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../pages/MLCommons" class="internal">MLCommons</a></li><li><a href="../pages/BEIR-Benchmark" class="internal">BEIR Benchmark</a></li><li><a href="../pages/MTEB-Benchmark" class="internal">MTEB Benchmark</a></li><li><a href="../pages/Overfitting" class="internal">Overfitting</a></li><li><a href="../pages/Bias" class="internal">Bias</a></li><li><a href="../pages/AI-Ethics" class="internal">AI Ethics</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/MLCommons" class="internal">MLCommons</a></li><li><a href="../pages/Benchmark-Standard" class="internal">Benchmark Standard</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Question-Answering" class="internal">Question Answering</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Supervised-Learning" class="internal">Supervised Learning</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Evaluation-Metric" class="internal">Evaluation Metric</a></li><li><a href="../pages/Performance-Benchmarks" class="internal">Performance Benchmarks</a></li><li><a href="../pages/Benchmark-Dataset" class="internal">Benchmark Dataset</a></li><li><a href="../pages/Evaluation-Harness" class="internal">Evaluation Harness</a></li><li><a href="../pages/Statistical-Hypothesis-Testing" class="internal">Statistical Hypothesis Testing</a></li><li><a href="../pages/Cross-Validation" class="internal">Cross-Validation</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Benchmark evaluation is the systematic measurement of a model or system against a standardised dataset and scoring protocol so that results are comparable across systems and over time. A benchmark specifies the task, the data splits, the permitted inputs, and the metrics used to rank performance. In machine learning, benchmark evaluation drives the field’s empirical progress, but it is subject to well-known failure modes including train-test contamination, overfitting to leaderboards, and construct validity gaps between the benchmark and the real-world capability it purports to measure.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:EvaluationMetric))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:BenchmarkDataset))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:Leaderboard))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:ModelEvaluationResults))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:ScoringProtocol))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:EvaluationHarness))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasPart ai:StatisticalHypothesisTesting))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:requires ai:BenchmarkDataset))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:requires ai:GroundTruthLabels))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:requires ai:EvaluationMetric))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataAnnotation))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:dependsOn ai:EvaluationHarness))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataQuality))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:dependsOn ai:BenchmarkStandard))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:ModelEvaluationResults))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:Leaderboard))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:Reproducibility))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:CapabilityEvaluation))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:FrontierModelEvaluation))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:TransferLearning))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:enables ai:SafetyEvaluation))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:implements ai:BenchmarkStandard))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:implements ai:Benchmarking))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:uses ai:EvaluationHarness))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:uses ai:PerformanceBenchmarks))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:standardizedBy ai:MLCommons))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:reducesTo ai:ModelEvaluation))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:reducesTo ai:Benchmarking))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:reducesTo ai:StatisticalHypothesisTesting))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:reducesTo ai:PerformanceMeasurement))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:reducesTo ai:EmpiricalValidation))
+</code></pre>
+</li>
+<li>
+<h2 id="provenance-and-governance-relationships">Provenance and Governance Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance-and-governance-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:isGovernedBy ai:BenchmarkStandard))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:isGovernedBy ai:MLCommons))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasDocumentation ai:BenchmarkCard))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:hasDocumentation ai:ModelEvaluationResults))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:qualifiedBy ai:ContaminationAnalysis))
+SubClassOf(ai:BenchmarkEvaluation
+  ObjectSomeValuesFrom(ai:qualifiedBy ai:ConfidenceInterval))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Benchmark evaluation is the empirical backbone of AI progress tracking. Before the advent of shared <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> resources and standardised scoring protocols, the machine learning literature was riddled with non-comparable results: each paper reported performance on different data splits, with different preprocessing pipelines, using different metrics, making it practically impossible to determine whether a proposed method was genuinely superior or merely benefiting from more favourable experimental conditions. This lack of comparability was not merely inconvenient — it made it impossible to identify which algorithmic innovations were actually responsible for performance improvements, because any observed difference between systems could be attributed to data selection, preprocessing choices, or evaluation code rather than to the model architecture or training procedure under study. The field-wide shift to shared benchmark evaluation — beginning in earnest with the UCI Repository, accelerating through MNIST and PASCAL VOC shared tasks, and reaching full institutionalisation with ImageNet ILSVRC and then GLUE/SuperGLUE — gave researchers a common frame of reference that transformed <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> from a loose collection of competing techniques into a cumulative empirical science where progress could be unambiguously identified and credited.</p>
+</li>
+<li>
+<p>The mechanism of benchmark evaluation is deceptively simple in specification but requires considerable care in execution. A developer applies their model to a fixed test set drawn from a <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a>, records performance according to a prescribed <a href="../pages/Evaluation-Metric" class="internal alias" data-slug="pages/Evaluation-Metric">Evaluation Metric</a> (computed by the benchmark’s official scoring code rather than a researcher-defined variant), and submits results to a <a href="../pages/Leaderboard" class="internal" data-slug="pages/Leaderboard">Leaderboard</a> that ranks all submissions on a common scale. The test set is held apart from training data; the scoring code and normalisation procedure are provided by the benchmark organisers; the permitted inputs and any few-shot examples are constrained by the benchmark specification. This protocol enables genuine apples-to-apples comparison across systems developed independently with no shared code, data, or training procedure, in different countries, with different computational resources, by teams with very different research methodologies and theoretical commitments. In practice, maintaining these constraints requires active vigilance: benchmark integrity depends on genuinely sequestered test sets (not published online), transparent reporting of training data provenance (to enable contamination analysis), consistent prompt formatting (which the <a href="../pages/Evaluation-Harness" class="internal alias" data-slug="pages/Evaluation-Harness">Evaluation Harness</a> enforces), and resistance to gaming (such as training directly on leaked test examples, cherry-picking evaluation runs, or exploiting structural regularities in the benchmark’s answer distribution rather than developing genuine capabilities).</p>
+</li>
+<li>
+<p>The significance of benchmark evaluation extends well beyond the academic research community. Industry laboratories use standardised benchmark scores as internal quality gates: a new model checkpoint must match or exceed the predecessor’s scores on task-representative benchmark subsets before it is promoted to production serving, A/B testing, or external release. The failure to do this — deploying models whose benchmark scores look good due to benchmark-specific tuning but whose real-world performance is worse — has been responsible for several high-profile AI product failures. Investors, regulators, journalists, and purchasing organisations use public leaderboard positions to compare competing AI products, making benchmark evaluation scores a commercial and reputational consideration that shapes funding decisions and market dynamics. The UK AI Security Institute (AISI) has built an institutional infrastructure for evaluating frontier models against domain-specific benchmark suites as a mandatory pre-deployment safety gate, establishing benchmark evaluation as a regulatory function rather than merely an academic one. This breadth of downstream consequence has dramatically raised the stakes of benchmark evaluation and correspondingly amplified the incentives to game it — creating the Goodharting dynamic that is the benchmark ecosystem’s central epistemological vulnerability.</p>
+</li>
+<li>
+<p>The historical sociology of benchmark evaluation reveals a characteristic pattern. Each new benchmark begins as a difficult, discriminating test that separates good systems from poor ones by large margins. As the research community focuses attention on it, progress is rapid: better architectures, more data, and benchmark-specific engineering close the gap between leading models and human performance in a matter of years. The benchmark then saturates — top models cluster near the ceiling, small differences in rank reflect noise rather than genuine capability, and the benchmark ceases to produce useful signal. At this point, two pathologies emerge: established systems continue to cite saturated benchmark scores as evidence of capability; and new systems cherry-pick these benchmarks to appear competitive while performing poorly on harder successors. The field then designs a successor benchmark — harder, broader, or more resistant to the gaming strategies that saturated the predecessor — and the cycle restarts. Understanding this cycle is essential: the critical question is not “what is the score?” but “where in its lifecycle is this benchmark, and what does a high score at this stage actually mean?”</p>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="architecture-and-execution-pipeline">Architecture and Execution Pipeline<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#architecture-and-execution-pipeline" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A complete benchmark evaluation pipeline comprises several layers, each of which must be correctly implemented for the results to be valid and comparable across systems:
+<ul>
+<li><strong>Benchmark specification layer</strong>: The task definition, <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> identity and version, permitted input format (zero-shot, few-shot with k examples, chain-of-thought prompting), computation budget constraints (maximum context length, maximum output tokens, temperature), reference scoring code, and result reporting format are all defined in a <a href="../pages/Benchmark-Standard" class="internal alias" data-slug="pages/Benchmark-Standard">Benchmark Standard</a> document maintained by the benchmark’s originating institution. For HELM, this is Stanford CRFM; for lm-evaluation-harness tasks, EleutherAI; for MLPerf and AILuminate, MLCommons. Divergence from the specification in any of these dimensions — for example, using a different prompt template, or applying output normalisation not specified in the standard — can produce scores that are incomparable with the official results.</li>
+<li><strong><a href="../pages/Evaluation-Harness" class="internal alias" data-slug="pages/Evaluation-Harness">Evaluation Harness</a> layer</strong>: Software frameworks automate the procedurally complex and error-prone work of benchmark execution. The EleutherAI Language Model Evaluation Harness (lm-evaluation-harness, open-sourced 2020, substantially expanded 2023–2024) implements hundreds of benchmarks under a unified API supporting autoregressive language models via HuggingFace transformers, vLLM inference servers, and remote API endpoints. Stanford HELM extends this to include efficiency (tokens/second, cost), robustness (performance under text perturbations), fairness (performance across demographic groups), and calibration alongside accuracy. OpenAI Evals provides a framework for custom task-specific evaluation including model-graded and human-graded tasks. Hugging Face lighteval and OLMES (2025) provide further standardisation options. The harness layer handles: loading the <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> from a registry, constructing few-shot prompts from the benchmark’s example pool using the specified selection strategy (random seed, stratified selection), submitting each test item to the model, parsing model outputs using task-specific extraction heuristics (e.g., extracting the letter A/B/C/D from multiple-choice responses, parsing function signatures from code outputs), computing <a href="../pages/Evaluation-Metric" class="internal alias" data-slug="pages/Evaluation-Metric">Evaluation Metric</a> values per item, and aggregating to per-subject, per-task, and overall scores with appropriate confidence intervals.</li>
+<li><strong>Statistical analysis layer</strong>: Raw point estimates are insufficient for rigorous benchmark evaluation. Mature evaluation practice requires: bootstrapped 95% confidence intervals computed over subsampled test sets; per-subcategory breakdowns by subject domain, difficulty tier, question type, language, and demographic group; calibration analysis comparing the model’s predicted confidence scores to empirical accuracy (expected calibration error, reliability diagrams); significance testing using <a href="../pages/Statistical-Hypothesis-Testing" class="internal alias" data-slug="pages/Statistical-Hypothesis-Testing">Statistical Hypothesis Testing</a> (McNemar’s test for paired systems, permutation tests for unpaired comparison) to determine whether observed score differences are statistically reliable; and effect size measures that distinguish practically significant differences from statistically significant but negligible ones.</li>
+<li><strong>Contamination analysis layer</strong>: Pre-evaluation contamination screening is now standard practice — and arguably mandatory — for frontier <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a>. The contamination analysis pipeline includes: n-gram overlap detection between the model’s known or suspected training corpus and the benchmark test set (using MinHash LSH for approximate deduplication at scale); perplexity-based memorisation probes that compare the model’s perplexity on test items against paraphrased controls to detect verbatim memorisation; membership inference attacks that probe whether the model can distinguish seen from unseen data; and mirror-test comparisons (Shi et al., 2024; Golchin &amp; Surdeanu, 2023) that substitute paraphrased clean equivalents of contaminated items and measure the magnitude of score change. A finding of 29.1% contamination in MMLU test items, reported by Johns Hopkins researchers, with associated score drops of up to 13 percentage points on cleaned GSM8K, established contamination analysis as a mandatory component of benchmark evaluation methodology in 2024.</li>
+<li><strong>Reporting and leaderboard layer</strong>: Valid benchmark evaluation results are published with the full experimental provenance needed for replication: model version and commit hash, evaluation harness version, benchmark version and release date, random seed for few-shot example selection, exact prompt template text, any output normalisation steps, hardware and software environment, and the date of evaluation. Submissions to public leaderboards — the Hugging Face Open LLM Leaderboard (powered by lm-evaluation-harness, standardised hardware), LMSYS Chatbot Arena (pairwise human preference voting, 1M+ votes), Stanford HELM (standardised environment, multi-dimensional reporting) — are accompanied by these provenance details to enable downstream users to assess comparability. BenchmarkCards (White et al., 2024) and OLMES (Polo et al., 2025) provide standardised formats for benchmark evaluation reporting that are increasingly adopted by major AI laboratories.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology-glossary">Key Terminology Glossary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology-glossary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Zero-shot evaluation</strong>: Applying a model to benchmark tasks without any task-specific examples in the prompt; tests generalisation from pre-training without task adaptation.</li>
+<li><strong>Few-shot evaluation</strong>: Providing k labelled examples in the prompt before each test item (k=1, 5, or 32 are common choices); tests in-context learning ability.</li>
+<li><strong>Chain-of-thought (CoT) prompting</strong>: Instructing the model to produce a step-by-step reasoning trace before giving its final answer; generally improves performance on multi-step reasoning tasks and is now considered a standard evaluation condition for reasoning benchmarks.</li>
+<li><strong>Pass@k</strong>: For code generation tasks, the probability that at least one of k independently sampled completions passes all unit tests; pass@1 evaluates single-shot correctness, pass@100 evaluates whether a correct solution is achievable.</li>
+<li><strong>Exact match (EM)</strong>: A scoring metric that assigns 1 if the model’s output exactly matches the <a href="../pages/Ground-Truth-Labels" class="internal alias" data-slug="pages/Ground-Truth-Labels">Ground Truth Labels</a> string and 0 otherwise; maximally strict, often combined with F1 overlap.</li>
+<li><strong>Benchmark saturation</strong>: The state in which top-performing models cluster so closely near the performance ceiling that the benchmark cannot reliably discriminate between them; the primary trigger for designing a harder successor benchmark.</li>
+<li><strong>Goodhart’s Law in evaluation</strong>: The phenomenon whereby optimising directly for a benchmark metric causes the metric to lose validity as a measure of the underlying capability it was designed to proxy.</li>
+<li><strong>Evaluation harness</strong>: The software infrastructure that automates loading datasets, formatting prompts, querying models, parsing outputs, and computing metrics in a reproducible and configurable manner.</li>
+<li><strong>Model-as-judge</strong>: Using a capable <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> (typically GPT-4 or Claude) to evaluate the quality of another model’s outputs on open-ended tasks where exact-match metrics are insufficient; subject to self-preference bias and temporal drift as judge model capabilities improve.</li>
+</ul>
+</li>
+<li>
+<h2 id="failure-modes-and-epistemological-critique">Failure Modes and Epistemological Critique<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#failure-modes-and-epistemological-critique" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Benchmark evaluation is subject to a well-documented set of pathologies, collectively analysed under the rubric of <a href="../pages/AI-Benchmark-Epistemological-Critique" class="internal alias" data-slug="pages/AI-Benchmark-Epistemological-Critique">AI Benchmark Epistemological Critique</a>:
+<ul>
+<li><strong>Benchmark contamination / data leakage</strong>: Modern large-scale web crawls used to train frontier models inevitably capture benchmark test items that were published online. By 2026, contamination is the default assumption rather than the exception for any static benchmark in wide circulation. Johns Hopkins researchers found contamination signals in 29.1% of MMLU test items; clean-mirror experiments revealed score drops of up to 13 percentage points for Mistral on GSM8K. This problem effectively retired MMLU, HumanEval, HellaSwag, and WinoGrande from useful frontier discrimination.</li>
+<li><strong>Goodhart’s Law and benchmark <a href="../pages/Overfitting" class="internal" data-slug="pages/Overfitting">Overfitting</a></strong>: When a benchmark becomes the primary optimisation target, researchers invest engineering effort in test-set-specific improvements (prompt engineering, few-shot example curation, answer-format matching) that do not generalise. This “teaching to the test” produces leaderboard numbers that overestimate real capability.</li>
+<li><strong>Construct validity gaps</strong>: The benchmark metric may not capture the dimension of capability that matters in practice. BLEU for machine translation fails to predict human preference; exact-match accuracy for reading comprehension misses partial understanding; pass@1 code generation accuracy does not measure code safety or readability.</li>
+<li><strong>Leaderboard saturation</strong>: When top models cluster near ceiling performance (90%+ accuracy), the benchmark loses discriminative power. MMLU, SuperGLUE, HumanEval, and ARC-Easy all reached this state between 2021–2024, necessitating successors (MMLU-Pro, GPQA, Humanity’s Last Exam, ARC-AGI 2).</li>
+<li><strong>Demographic and linguistic <a href="../pages/Bias" class="internal" data-slug="pages/Bias">Bias</a></strong>: Benchmark test sets systematically under-represent low-resource languages, non-Western cultural contexts, and marginalised populations, causing aggregate scores to mask performance disparities that matter for real-world deployment. Benchmark evaluation studies that report only aggregate accuracy without demographic breakdown are increasingly considered methodologically insufficient.</li>
+<li><strong>Evaluation harness variance</strong>: Different implementations of nominally the same benchmark produce materially different scores due to prompt formatting differences, answer extraction heuristics, tokenisation choices, and few-shot example selection. OLMES (2025) was introduced specifically to standardise these choices.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="major-benchmark-evaluation-protocols">Major Benchmark Evaluation Protocols<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-benchmark-evaluation-protocols" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Static academic benchmarks</strong>: The classical form, where a fixed test set is released alongside training data and benchmark organisers maintain a leaderboard accepting submissions indefinitely. This is the dominant form for most published benchmark evaluation: MMLU (57-subject multiple choice, 14,042 test questions), GPQA Diamond (198 expert-vetted science questions), SQuAD 1.1 and 2.0 (extractive reading comprehension), HumanEval (164 code generation problems), and SWE-bench (2,294 GitHub issue-resolution tasks) all follow this model. Strengths: well-understood, widely reported, easy for third parties to evaluate their systems. Weaknesses: contamination risk grows monotonically with benchmark age and visibility; the test set effectively becomes public domain as more researchers report results, making it available for inclusion in future pre-training corpora.</li>
+<li><strong>Competition and hidden-test benchmarks</strong>: A held-out test set is maintained by organisers who evaluate submitted predictions without revealing the labels to participating teams. The ImageNet LSVRC competition (annual, 2010–2017) operated this way; Kaggle competition benchmarks typically use this model; the ICLR 2024 SWE-bench leaderboard uses a partially hidden test set. Contamination risk is lower because the test examples are never publicly released in their evaluation context; gaming risk is reduced by submission rate limiting (typically one or a few submissions per day) that prevents systematic test-set probing. The tradeoff is higher operational cost for the benchmark maintainer and reduced transparency for submitted systems.</li>
+<li><strong>Dynamic and living benchmarks</strong>: Test content is refreshed periodically or continuously from sources of new content, with models scored only on problems provably published after their known training cutoff. LiveBench (White et al.) refreshes monthly from current events, mathematical competition problems, and coding puzzles; LiveCodeBench (Jain et al.) collects competitive programming problems continuously from LeetCode, AtCoder, and Codeforces, covering 1,055 problems from May 2023 to April 2025 in its initial release. Because test items are drawn from post-cutoff content by construction, contamination is structurally prevented rather than merely controlled for. Weaknesses: historical comparability across evaluation dates is harder to maintain (the benchmark seen by a model evaluated in January 2025 is different from the one seen in June 2026); dynamic benchmarks require ongoing maintenance infrastructure; and the fresh-problem constraint eliminates many classic evaluation paradigms where a fixed corpus enables systematic capability profiling.</li>
+<li><strong>Preference and human-judged evaluation</strong>: Systems are compared pairwise by human raters rather than against a fixed <a href="../pages/Ground-Truth-Labels" class="internal alias" data-slug="pages/Ground-Truth-Labels">Ground Truth Labels</a> standard. LMSYS Chatbot Arena (launched 2023; over 1 million pairwise preference votes from real users as of 2026; blind pairwise comparison across 200+ models) is the premier example. MT-Bench (Zheng et al., 2023) uses GPT-4 as a judge to evaluate open-ended question-answering quality across 80 multi-turn questions in 8 categories; Arena-Hard (Li et al., 2024) extends this to 500 harder questions with higher discriminative power. These approaches capture dimensions of model quality — helpfulness, coherence, appropriate length, stylistic appropriateness, factual accuracy relative to user expectations — that exact-match metrics fundamentally cannot. Weaknesses: preference judgements are subject to rater <a href="../pages/Bias" class="internal" data-slug="pages/Bias">Bias</a> including length bias (preferring longer responses), positional bias (preferring responses in the first position), and self-preference bias (LLM judges preferred responses stylistically similar to their own outputs); and as judge model capabilities improve over time, historical preference ratings become harder to interpret.</li>
+<li><strong>Red-team and adversarial evaluation</strong>: Adversarial examples, jailbreak attempts, capability elicitation prompts, and safety probes are systematically applied to evaluate model robustness, refusal behaviour, and the presence of dangerous capabilities. The UK AI Security Institute has developed proprietary adversarial evaluation suites for cyber, biology, and chemistry domains; ToxiGen (Hartvigsen et al., 2022) tests implicit toxicity across 13 demographic groups; AdvGLUE (Wang et al., 2021) tests NLU robustness under text perturbations; SALAD-Bench (Li et al., 2024) provides 30,000 safety evaluation questions across 6 attack types. This evaluation mode is critical for <a href="../pages/Frontier-Model-Evaluation" class="internal alias" data-slug="pages/Frontier-Model-Evaluation">Frontier Model Evaluation</a> and for safety governance: it tests whether models have capabilities that should be gated rather than whether they perform well on desired tasks. Specialised <a href="../pages/Red-Teaming" class="internal alias" data-slug="pages/Red-Teaming">Red Teaming</a> expertise — combining knowledge of the model architecture, likely training data, and domain-specific harm vectors — is required for high-quality adversarial evaluation.</li>
+<li><strong>Agentic and multi-step evaluation</strong>: As AI systems move beyond single-response generation toward multi-step task completion involving tool use, code execution, web browsing, long-horizon planning, and multi-turn dialogue, benchmark evaluation must be redesigned to evaluate entire task trajectories rather than individual input-output pairs. SWE-bench (multi-step code editing to resolve GitHub issues; the full evaluation requires running tests in a sandboxed execution environment), tau-bench (tool-augmented evaluation of structured API use), OSWorld (GUI agent evaluation in simulated desktop environments), and WebArena (autonomous web navigation task evaluation) represent the emerging paradigm. This mode of evaluation requires evaluation harness infrastructure that can orchestrate execution environments, record multi-step trajectories, and evaluate success at the task level rather than the individual step level — substantially more complex than scoring a single model output against a fixed answer string.</li>
+</ul>
+</li>
+<li>
+<h2 id="benchmark-evaluation-across-modalities-and-domains">Benchmark Evaluation Across Modalities and Domains<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-across-modalities-and-domains" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Benchmark evaluation methodology developed primarily in the context of classification and generation tasks on static image and text data, but has been extended to a wide range of modalities and application domains, each with its distinctive evaluation challenges:</li>
+<li><strong><a href="../pages/Computer-Vision" class="internal alias" data-slug="pages/Computer-Vision">Computer Vision</a> evaluation</strong>: Classification benchmarks (MNIST, CIFAR, ImageNet) use top-1 and top-5 accuracy; object detection benchmarks use mean Average Precision (mAP) at various IoU thresholds (COCO’s primary metric is AP@0.5:0.95); segmentation benchmarks use mean Intersection over Union (mIoU); image generation evaluation uses FID (Fréchet Inception Distance) as a <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a>-free metric comparing generated image distributions to reference distributions. The FID metric requires a reference dataset but not labelled pairs, making it a distinctive form of benchmark evaluation for generative models.</li>
+<li><strong><a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a> evaluation</strong>: Multiple choice benchmarks use accuracy (MMLU, GPQA); span extraction benchmarks use Exact Match and token-level F1 (SQuAD); generation benchmarks use BLEU, ROUGE, METEOR, or BERTScore for reference-based evaluation; code generation benchmarks use pass@k against unit test suites; dialogue and open-ended generation increasingly uses model-as-judge or preference evaluation. The proliferation of metrics across NLP tasks — and the fact that different metrics reward different aspects of output quality — means that benchmark results are not comparable even across tasks nominally measuring the same underlying capability.</li>
+<li><strong>Structured prediction evaluation</strong>: Named entity recognition uses entity-level precision, recall, and F1 (CoNLL 2003 convention); semantic parsing uses exact denotation accuracy or tree-level F1; relation extraction uses relation-level F1; machine translation uses BLEU (for sentence-level comparison), COMET (for model-based comparison), or human direct assessment (DA) scores. Each of these metrics embodies different assumptions about what constitutes a correct prediction and what kinds of errors matter more than others.</li>
+<li><strong>Multimodal evaluation</strong>: Vision-language models are evaluated on visual question answering (VQA accuracy), image captioning (BLEU/CIDEr/SPICE), visual entailment, and chart/document understanding. The MMMU and MMMU-Pro benchmarks evaluate multimodal understanding across university-level subject domains, using a multiple-choice format that enables exact-match scoring while testing complex visual reasoning. Evaluating multimodal generation (image generation, video generation, speech generation) poses additional challenges because reference-based metrics often correlate poorly with human aesthetic judgements.</li>
+<li><strong>Reinforcement learning and agent evaluation</strong>: Reinforcement learning agents are evaluated through cumulative episode reward in simulated environments (Atari, MuJoCo, StarCraft II). AI agent evaluation in language tasks uses task success rate (did the agent complete the assigned task?) and step efficiency (how many steps were required?). These evaluation paradigms require simulation environments rather than static datasets, and results are sensitive to random seed, environment version, and evaluation horizon in ways that static benchmark evaluation is not.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases">Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Research publication and peer comparison</strong>: Benchmark evaluation scores on standard benchmarks are required by major AI venues (NeurIPS, ICLR, ACL, CVPR, EMNLP) as evidence of empirical progress. Without standardised benchmark evaluation, peer comparison between competing approaches is impossible and claims of state-of-the-art are unverifiable — a paper that claims superior performance without benchmark evidence is treated with deep scepticism by reviewers and the broader research community. The selection of which benchmarks to report results on is itself a strategic decision: reporting on benchmarks where your system performs well while omitting benchmarks where it performs poorly (“cherry-picking benchmarks”) is an ethical violation that the community is increasingly alert to; high-quality venues now require authors to compare on a pre-specified set of benchmarks rather than a self-selected subset. The HELM framework (Liang et al., 2022) was explicitly designed to address this by specifying a comprehensive evaluation suite that researchers must report in full rather than selectively.</li>
+<li><strong>Pre-deployment model gating in production AI teams</strong>: Production <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> teams run benchmark evaluation as an automated quality gate in their <a href="../pages/Continuous-Integration" class="internal alias" data-slug="pages/Continuous-Integration">Continuous Integration</a> / continuous evaluation pipeline. A new model checkpoint must match or exceed incumbent benchmark thresholds before it is promoted to A/B testing and then full production deployment. This requires: maintaining a private internal benchmark dataset not available to model developers (to avoid data leakage); defining threshold criteria for each benchmark (minimum acceptable score, maximum regression from previous checkpoint); implementing automated evaluation jobs that run on each training checkpoint; and maintaining human-reviewed escalation processes for cases where benchmarks conflict (e.g., safety score improves but helpfulness score regresses). The benchmark evaluation infrastructure at major AI laboratories (OpenAI, DeepMind, Anthropic, Meta AI) is one of the most complex and carefully maintained parts of their engineering stack.</li>
+<li><strong>Regulatory conformity assessment</strong>: The EU AI Act (applicable from August 2026 for high-risk AI systems) and UK AI governance frameworks reference benchmark evaluation results as part of the evidence package required for conformity assessment. High-risk AI systems in categories including medical devices, critical infrastructure, employment, and judicial support must provide standardised performance evidence that includes evaluation on designated or regulated benchmark datasets. The UK AISI mandates benchmark evaluation across cyber, biology, and chemistry domains as a pre-deployment condition for frontier model providers; this evaluation must be conducted by AISI using its own evaluation infrastructure rather than relying on developer-submitted results. These regulatory use cases create strong demand for benchmark datasets that are independent of developer influence, maintained by recognised governance bodies, and designed to assess societally-relevant capabilities rather than academic benchmarks.</li>
+<li><strong>Public trust and market transparency</strong>: Public leaderboards — the Hugging Face Open LLM Leaderboard (powered by standardised lm-evaluation-harness evaluation on consistent hardware, tracking hundreds of open-source models), LMSYS Chatbot Arena (pairwise human preference voting with 1M+ votes across 200+ models), and llm-stats.com (aggregating 300+ benchmark scores across 100+ models) — allow buyers, journalists, policymakers, and end-users to compare AI products without access to proprietary training details. This transparency function is increasingly referenced in enterprise AI procurement guidelines: organisations purchasing AI services or models routinely request independent benchmark evaluation evidence as part of vendor qualification. The existence of independent, publicly verifiable benchmark evaluation scores is a crucial mechanism for preventing AI performance claims from being purely marketing assertions without evidential basis.</li>
+<li><strong>Foundation model selection for <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> and fine-tuning</strong>: Benchmark evaluation on task-relevant subsets enables practitioners to select the most appropriate pre-trained foundation model for fine-tuning or in-context use. The <a href="../pages/MTEB-Benchmark" class="internal alias" data-slug="pages/MTEB-Benchmark">MTEB Benchmark</a> (Muennighoff et al., EACL 2023; 58 evaluation datasets across 8 tasks including retrieval, clustering, classification, reranking, and semantic textual similarity) is specifically designed to guide selection of text embedding models for production retrieval applications. The HELM benchmark suite similarly enables comparison of foundation models across dimensions relevant to different deployment contexts. Practitioners who skip this evaluation step and select foundation models based on headline MMLU scores or marketing claims often find significant performance disparities on their specific task and domain.</li>
+<li><strong>Safety and alignment measurement for deployed systems</strong>: Benchmark evaluation of model behaviour on safety-relevant corpora provides a systematic and reproducible complement to informal red-teaming. Safety benchmarks address: harmful content generation (ToxiGen, Perspective API dataset); dangerous capability elicitation (AISI cyber, bio, chemistry suites); deceptive reasoning (SelfCheckGPT, TruthfulQA); privacy violation (PrivacyLens); and discriminatory output (Winogender, BBQ Bias Benchmark in Questions). MLCommons AILuminate v1.0 (February 2025) provides a standardised safety benchmark protocol co-developed with the UK, USA, Japan, and Canada AI Safety Institutes, intended to become the standard safety evaluation framework for frontier model providers globally. These safety evaluation results are increasingly included in model cards and technical reports as mandatory disclosures.</li>
+<li><strong>Longitudinal capability tracking and scientific understanding</strong>: Benchmark evaluation over time across multiple model generations enables scientific study of how AI capabilities develop, which architectures and training procedures produce durable improvements, and what the relationship is between scale (parameters, training tokens, compute) and capability. Epoch AI’s database of benchmark results across hundreds of models and dozens of benchmarks has enabled econometric analysis of AI capability trends that would not be possible without standardised benchmark evaluation. This longitudinal function is distinct from the competitive function of leaderboards: it is about understanding the trajectory of capability development rather than ranking current models.</li>
+<li><strong>Diagnostic evaluation and error analysis</strong>: Beyond aggregate scores, benchmark evaluation enables fine-grained diagnostic analysis that identifies model weaknesses and guides improvement efforts. Per-subcategory breakdowns (MMLU by subject domain, SWE-bench by repository, GPQA by scientific discipline) reveal where models are strong and where they fail. Error analysis on test set mistakes — inspecting which types of questions are consistently wrong, which error patterns appear repeatedly, and how errors correlate with model architecture or training data choices — provides actionable guidance for model improvement. Calibration analysis (comparing predicted confidence to empirical accuracy) reveals whether models have appropriate uncertainty about their answers, with implications for downstream decision-making in high-stakes applications.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Benchmark evaluation as a scientific practice has roots in the tradition of competitive evaluation in information retrieval (the TREC tracks at NIST, beginning 1992, which established the sequestered test collection model), natural language processing (MUC named entity recognition shared tasks from 1987, CoNLL shared tasks from 2000), and computer vision (PASCAL VOC, 2005–2012). The formalisation of benchmark practices in <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> was gradual: the UCI Repository (1998) provided a common resource base but not a common evaluation protocol, leaving experimental comparisons dependent on researcher choices of splits and metrics. ImageNet ILSVRC (2010) was the first large-scale computer vision benchmark with a fully standardised submission protocol, organisationally-maintained leaderboard, and annual competition driving systematic year-on-year progress measurement. The transition from the ILSVRC competition model to the continuous-submission leaderboard model (used by GLUE, SQuAD, and most contemporary NLP benchmarks) democratised access to benchmark evaluation but also loosened the governance constraints that competition deadlines imposed.</li>
+<li>Key theoretical and methodological contributions to benchmark evaluation methodology include: Papineni et al. (2002) on BLEU as an automatic evaluation metric for machine translation — the first widely-adopted reference metric in NLP that enabled automated benchmark evaluation at scale; Daume III &amp; Marcu (2005) on domain adaptation benchmarks that test transfer across distributions; Bowman et al. (2015) on adversarial natural language inference (SNLI) as a model for large-scale crowdsourced benchmark construction; Rajpurkar et al. (2016, 2018) on SQuAD reading comprehension and the methodological innovation of including unanswerable questions; Wang et al. (2018, 2019) on GLUE and SuperGLUE as multi-task evaluation frameworks that aggregated multiple tasks into a single score and drove significant NLP progress; and Liang et al. (2022) on HELM as a holistic, multi-dimensional evaluation framework that rejected the single-number paradigm in favour of reporting accuracy, efficiency, robustness, fairness, and calibration as separate dimensions. EleutherAI’s development of the Language Model Evaluation Harness (Gao et al., 2021) provided the critical software infrastructure that made standardised benchmark evaluation practically accessible to researchers without the resources to implement evaluation pipelines from scratch.</li>
+<li>The epistemological critique of benchmark evaluation has been developed through several influential lines of research. Gururangan et al. (NAACL 2018) demonstrated annotation artefacts in NLI benchmarks: models could achieve near-state-of-the-art accuracy using only the hypothesis sentence (ignoring the premise), revealing that the benchmark’s scoring metric rewarded exploitation of annotation biases rather than genuine reasoning. Guo et al. (ICML 2017) documented systematic miscalibration in modern neural network evaluation, showing that high accuracy did not imply reliable uncertainty estimation. McCoy et al. (ACL 2019) showed that NLI models that surpassed human performance on GLUE failed on simple diagnostic examples exposing their reliance on syntactic heuristics, demonstrating that benchmark scores can dramatically overestimate the depth and robustness of model capabilities. Bender et al. (FAccT 2021) argued that performance on language benchmarks reflects statistical co-occurrence pattern matching rather than linguistic understanding, challenging the construct validity of NLU benchmarks at a fundamental level. Kiela et al. (NeurIPS 2021) proposed Dynabench — a dynamic human-in-the-loop benchmark construction paradigm where model-fooling adversarial examples are continuously collected to prevent gaming — as a structural response to these critiques. The contamination problem is documented by Golchin &amp; Surdeanu (arXiv 2023), Shi et al. (ICLR 2024) who developed the DETECT method for training data detection, and Deng et al. (2024) who proposed formal contamination-free evaluation methodology.</li>
+<li>The relationship between benchmark evaluation and progress in <a href="../pages/Supervised-Learning" class="internal alias" data-slug="pages/Supervised-Learning">Supervised Learning</a> research has been studied by Recht et al. (2019), who found that reproducibility gaps between reported benchmark scores and scores on a newly collected test set (ImageNet-V2) were larger than expected, suggesting that even carefully designed benchmarks accumulate subtle domain shift over time as models are tuned to their specific statistics. Evaluation methodology improvements proposed in response include: requiring evaluation on multiple held-out test versions; reporting performance distributions rather than point estimates; distinguishing in-distribution from out-of-distribution generalisation; and standardising the statistical tests used to compare systems (Dror et al., 2018; Dodge et al., 2019). The OLMES standard (Polo et al., 2025) represents the most comprehensive attempt to date to codify these improvements into a unified, mandatory evaluation standard for <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>In 2026, benchmark evaluation occupies a central and contested position in the AI ecosystem, simultaneously serving as the field’s primary mechanism for measuring progress and its most visible source of methodological controversy. Four simultaneous shifts characterise the current landscape, each creating new demands on evaluation methodology and infrastructure.</p>
+</li>
+<li>
+<p><strong>Saturation and succession at accelerating pace</strong>: MMLU, HumanEval, HellaSwag, and WinoGrande have been retired from frontier comparison due to ceiling saturation — top models cluster in the 90s on all four, producing no useful ranking signal for frontier research. Humanity’s Last Exam (HLE, January 2025; 2,500 expert-vetted questions) was explicitly designed to resist saturation, with initial frontier scores below 20%; by May 2026 the leading public score was 46.9%, indicating several more years of discriminative life ahead. ARC-AGI 2 targets abstract reasoning and fluid intelligence rather than knowledge retrieval, with frontier models still well below human performance on visual abstract reasoning puzzles. MMLU-Pro (10-choice, 12,000 graduate-level questions) has itself approached saturation with top models (Gemini 3 Pro at 90.1%, Claude Opus 4.5 at 89.5%) by early 2026. The benchmark lifecycle is compressing: benchmarks that once lasted a decade before saturation now saturate in two to three years, requiring a constant pipeline of harder successor benchmarks. BIG-Bench Hard (Suzgun et al., 2022), GPQA Diamond, and FrontierMath are the current frontier benchmarks resisting saturation, but even these will require successors within five years.</p>
+</li>
+<li>
+<p><strong>Contamination as the default null hypothesis</strong>: By 2026, contamination is the null hypothesis for any static benchmark in wide circulation — the burden of proof has inverted to “prove this evaluation is contamination-free.” Benchmark providers respond with dynamic refresh pipelines (LiveBench monthly, LiveCodeBench continuous), private test sets evaluated only by organisers, and contamination-detection tooling (MinHash LSH, perplexity probes, mirror-test comparisons) integrated as a standard first step in <a href="../pages/Evaluation-Harness" class="internal alias" data-slug="pages/Evaluation-Harness">Evaluation Harness</a> workflows.</p>
+</li>
+<li>
+<p><strong>Institutional governance and professionalisation</strong>: MLCommons AILuminate v1.0 (February 2025) established formal governance for AI safety benchmarks, with methodology rules, disclosure requirements, and result auditing analogous to SPEC. The UK AISI tested 30+ frontier models, finding by 2025 that frontier models surpass PhD-level biology QA performance and complete apprentice-level cyber tasks 50% of the time (up from 10% in early 2024). The Network of AI Safety Institutes (UK, USA, Japan, Canada) achieved the first successful multilateral standardisation of AI safety benchmark evaluation. AAAI 2025 featured a dedicated workshop on Datasets and Evaluators for AI Safety, signalling that benchmark evaluation methodology has become an active specialised research agenda.</p>
+</li>
+<li>
+<p><strong>Agentic evaluation paradigm</strong>: Single-input, single-output benchmark evaluation is being supplemented and in some domains superseded by multi-step agentic evaluation. SWE-bench Verified (500 human-validated GitHub issue-resolution tasks) and SWE-bench Pro (longer-horizon software engineering tasks) require orchestrating entire execution environments; OSWorld evaluates GUI agents across 369 tasks in simulated desktop environments; WebArena evaluates web navigation agents across 812 realistic web tasks; tau-bench evaluates tool-augmented reasoning across 70 structured API environments. SWE-bench saw a 67.3-percentage-point improvement in top-system performance in 2024 alone — from ~5% to ~72% on Verified — reflecting rapid capability gains in code agent systems and demonstrating that agentic capability is advancing faster than the classical benchmark evaluation paradigm anticipated. This rapid progress is itself a measurement challenge: when a benchmark improves by 67 points in a year, interpreting the trajectory requires understanding whether the gain reflects genuine capability improvement, benchmark-specific engineering, or evaluation artefacts specific to the agentic evaluation protocol.</p>
+</li>
+<li>
+<p><strong>Proliferation of evaluation dimensions beyond accuracy</strong>: The HELM framework’s insight — that a single accuracy score is insufficient for responsible AI evaluation — has been broadly adopted. Leading evaluation frameworks in 2026 assess models across: accuracy on task (the classical dimension); efficiency (inference cost, tokens-per-second, energy consumption); robustness under perturbations (typo injection, synonym substitution, translation); calibration (expected calibration error, selective prediction quality); fairness (performance across demographic groups, languages); safety (refusal behaviour, harmful output rate); truthfulness (TruthfulQA, FactScore) and consistency (is the model’s answer stable across paraphrased versions of the same question?). The aggregation of these dimensions into a single comparative ranking remains an unsolved problem, requiring explicit value judgements about the relative importance of different dimensions in different deployment contexts.</p>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>The UK has developed substantial institutional and academic infrastructure for benchmark evaluation, positioning itself as a global leader in the governance and methodology of AI evaluation despite operating in a smaller research economy than the USA or China. The UK AI Safety Institute (AISI, established November 2023 under the Department for Science, Innovation and Technology; continued as the AI Security Institute following the 2024 election) is the world’s first national government body dedicated specifically to frontier model evaluation using benchmark protocols. AISI’s technical evaluation team of 70+ researchers has tested more than 30 frontier models against proprietary domain-specific benchmark suites covering dangerous capability domains (cyber attack assistance; bioweapon uplift in biology; chemical synthesis guidance in chemistry) and has established the principle that frontier models should undergo mandatory independent benchmark evaluation before deployment. AISI’s Frontier AI Trends Report (2025) is the most comprehensive publicly available longitudinal analysis of frontier model capability trajectories based on two years of systematic benchmark evaluation, reporting that frontier models surpassed PhD-level expert performance on biology QA benchmarks by 2025 and can complete apprentice-level cyber tasks 50% of the time (up from 10% in early 2024).</p>
+</li>
+<li>
+<p>The AISI played a central role in the International Network of AI Safety Institutes (UK, USA, Japan, Canada), jointly developing the MLCommons AILuminate v1.0 safety benchmark standard (February 2025) — the first internationally harmonised AI safety evaluation framework. The AISI has also published research on alignment evaluation methodology (arXiv:2604.00788), sabotage evaluation for automated AI R&amp;D, and noise injection probes for detecting sandbagging.</p>
+</li>
+<li>
+<p>The Alan Turing Institute (ATI) coordinates academic benchmark evaluation research through its Data-Centric AI programme and Research Engineering teams. AI UK 2024 (Westminster, March 2024) and AI UK 2025 featured benchmark evaluation methodology, model documentation standards, and evaluation governance as major themes. The ATI’s Research Engineering team has developed evaluation tools for academic researchers and provides training on benchmark evaluation methodology. The ATI also co-funds work on multilingual evaluation, fairness evaluation, and climate AI benchmark development.</p>
+</li>
+<li>
+<p>University research groups have contributed significantly to benchmark evaluation methodology. The University of Edinburgh’s Institute for Language, Cognition and Computation (ILCC) has contributed NLP benchmark evaluation methodology research, including work on annotation quality and the statistical analysis of benchmark results. Oxford’s Department of Computer Science has contributed to robustness and adversarial evaluation methodology, including research on evaluating model robustness under text perturbations and distributional shift. Imperial College London’s Department of Computing has contributed to medical AI benchmark evaluation and clinical NLP benchmark design. Cambridge’s Computer Laboratory has contributed theoretical work on the foundations of benchmark evaluation methodology and the relationship between benchmark performance and real-world capability.</p>
+</li>
+<li>
+<p>Google DeepMind (London headquarters), as one of the world’s leading frontier AI laboratories, is both a major creator of benchmark evaluation datasets (Gemini evaluation suite, ScienceWorld, VIPER) and a major subject of benchmark evaluation by independent parties. DeepMind’s AlphaCode (code generation) and AlphaFold 3 (protein structure prediction) have established benchmark standards in their respective domains. Stability AI, Inflection AI (acquired by Microsoft/returned as Pi), and a growing ecosystem of UK AI startups (Wayve, Synthesia, Magic Pony, now acquired by X/Twitter) are regularly evaluated on public benchmark leaderboards, contributing to the UK’s visibility in international AI capability comparison.</p>
+</li>
+<li>
+<p>The Bank of England developed EcoFinBench (Staff Working Paper No. 1,163, December 2025), a specialised NLP benchmark for economics and finance applications, representing an important model of domain-specific benchmark development by a regulatory institution. The Financial Conduct Authority (FCA) and Prudential Regulation Authority (PRA) are developing AI conformity assessment frameworks that will reference benchmark evaluation as part of regulatory oversight of AI in financial services. The Northern English technology cluster — Manchester, Leeds, Sheffield, Newcastle — supplies data annotation, evaluation service, and benchmark infrastructure companies that underpin benchmark construction pipelines for global AI laboratories, representing a significant part of the UK’s AI services export economy.</p>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Elimination of static contamination-prone benchmarks</strong>: By 2028, the primary evaluation mode for frontier models will be dynamic benchmarks with provably fresh content, supplemented by private held-out evaluations conducted by national AI Safety Institutes and MLCommons. Static benchmarks released in the open literature will be treated as regression and pedagogical tools rather than frontier comparison instruments, and new benchmark releases from major institutions will require dynamic refresh infrastructure as a baseline requirement.</li>
+<li><strong>Multi-agent and societal-impact evaluation</strong>: Benchmark evaluation will expand from individual model assessment to evaluation of multi-agent systems (AI-AI and AI-human interactions), measuring emergent behaviours, coordination failures, deceptive alignment, and systemic risks that single-model benchmarks cannot capture. The development of multi-agent evaluation frameworks requires new theoretical foundations (game theory, mechanism design, social choice theory) beyond the standard single-model supervised learning evaluation paradigm.</li>
+<li><strong>Regulatory integration and mandated protocols</strong>: EU AI Act implementation (August 2026 for high-risk systems) and equivalent UK frameworks will require benchmark evaluation results as mandatory disclosure for high-risk AI systems, driving standardisation of disclosure formats (BenchmarkCards, OLMES) and creating regulatory demand for independent benchmark auditing organisations analogous to financial auditing firms. The UK AISI is well-positioned to develop into this kind of independent evaluation authority.</li>
+<li><strong>Model-as-judge at scale</strong>: LLM-based evaluation (using GPT-4, Claude 4, Gemini Ultra as judges in MT-Bench, Arena-Hard, and custom evaluation tasks) will displace exact-match metrics for open-ended generation tasks in the majority of practical evaluation workflows. This raises important questions about judge model calibration, self-preference bias (LLM judges systematically prefer outputs stylistically similar to their own training data), temporal drift as judge model capabilities improve, and meta-evaluation (how do we evaluate evaluation? — benchmarks for benchmarks). These questions will be actively researched through 2030.</li>
+<li><strong>Embodied and real-world grounded evaluation</strong>: Simulation-based evaluation in high-fidelity virtual environments (AI2-THOR, Habitat 3.0, Isaac Lab, CARLA) and direct physical robot benchmark evaluation will grow as robotics and embodied AI capabilities advance, requiring evaluation infrastructure that interfaces with physical or high-fidelity simulated environments. The challenge of sim-to-real transfer — where performance in simulation does not predict performance in the physical world — will require benchmark datasets that include real-world failure modes and distribution shifts.</li>
+<li><strong>Personalised and population-stratified evaluation</strong>: Aggregate benchmark scores will be supplemented by evaluation disaggregated by user demographic, geographic region, language, and task domain, driven by <a href="../pages/AI-Ethics" class="internal alias" data-slug="pages/AI-Ethics">AI Ethics</a> requirements and regulatory demands for fairness evidence. Per-demographic benchmark evaluation results will become a standard component of model cards and regulatory conformity assessments, requiring <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> designs that include sufficient representation of marginalised groups to support statistically reliable per-group performance estimates.</li>
+<li><strong>Evaluation of reasoning and planning depth</strong>: As frontier models demonstrate increasingly sophisticated reasoning, new benchmark evaluation methodologies will be required that test not just whether models reach correct answers but whether they do so through valid reasoning chains. Formal verification of chain-of-thought outputs, process reward models, and mechanistic interpretability methods will be integrated into benchmark evaluation pipelines to distinguish genuine reasoning from sophisticated pattern matching.</li>
+<li><strong>International coordination and harmonisation</strong>: The proliferation of national AI Safety Institutes (UK AISI, US AISI, Japan AISI, Canada, Singapore, EU AI Office, and emerging bodies in South Korea, Australia, and India) will drive demand for internationally harmonised benchmark evaluation protocols analogous to the ISO or IEC standards in metrology. MLCommons, NIST, and international standards bodies will develop shared evaluation methodologies that enable cross-jurisdictional comparison of model safety and capability assessments.</li>
+</ul>
+</li>
+<li>
+<h2 id="evaluation-harness-implementation-reference">Evaluation Harness Implementation Reference<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-harness-implementation-reference" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="eleutherai-language-model-evaluation-harness-lm-evaluation-harness">EleutherAI Language Model Evaluation Harness (lm-evaluation-harness)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#eleutherai-language-model-evaluation-harness-lm-evaluation-harness" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Maintainer</strong>: EleutherAI, open source, Apache 2.0 licence</li>
+<li><strong>Release</strong>: 2020; substantially expanded 2023–2024 to support 200+ benchmarks</li>
+<li><strong>Supported models</strong>: HuggingFace transformers (local), vLLM inference servers, OpenAI API, Anthropic API, Together AI, Replicate</li>
+<li><strong>Benchmark coverage</strong>: MMLU, MMLU-Pro, HellaSwag, ARC, WinoGrande, GSM8K, HumanEval, MATH, SQuAD, BoolQ, OpenBookQA, TriviaQA, NaturalQuestions, 150+ additional tasks</li>
+<li><strong>Key features</strong>: Configurable few-shot k, prompt templates, output normalisation, metric computation; parallelisation across GPUs via vLLM</li>
+<li><strong>Used by</strong>: Hugging Face Open LLM Leaderboard (standardised hardware: 8×A100); major research labs for model cards; academic papers as standard evaluation protocol</li>
+<li><strong>OLMES compliance</strong>: Post-2025, supports OLMES-standardised evaluation configurations ensuring comparability across implementations</li>
+</ul>
+</li>
+<li>
+<h3 id="stanford-helm-holistic-evaluation-of-language-models">Stanford HELM (Holistic Evaluation of Language Models)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stanford-helm-holistic-evaluation-of-language-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Maintainer</strong>: Stanford Center for Research on Foundation Models (CRFM)</li>
+<li><strong>Release</strong>: Liang et al., 2022 (TMLR 2023)</li>
+<li><strong>Dimensions</strong>: Accuracy, calibration, robustness, fairness, efficiency, and safety — not just accuracy</li>
+<li><strong>Scenario coverage</strong>: 42 scenarios across 7 core categories including question answering, information retrieval, summarisation, and toxicity</li>
+<li><strong>Standardisation</strong>: All models evaluated on standardised hardware (Microsoft Azure); controlled few-shot selection; identical prompt templates</li>
+<li><strong>Distinguishing feature</strong>: Reports per-model performance profiles across all dimensions rather than a single leaderboard rank; enables multi-criteria model selection</li>
+</ul>
+</li>
+<li>
+<h3 id="lmsys-chatbot-arena">LMSYS Chatbot Arena<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#lmsys-chatbot-arena" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Maintainer</strong>: Large Model Systems Organisation (LMSYS), Berkeley</li>
+<li><strong>Launch</strong>: April 2023</li>
+<li><strong>Method</strong>: Blind pairwise preference voting by human users; each vote compares two randomly selected models on the same user prompt</li>
+<li><strong>Scale</strong>: Over 1 million pairwise votes across 200+ models as of mid-2026</li>
+<li><strong>Rating system</strong>: Elo/Bradley-Terry rating computed from pairwise win/loss records</li>
+<li><strong>Coverage</strong>: All major frontier models including GPT-4o, Claude 4, Gemini 1.5 Pro, LLaMA 3.1, Mistral, Qwen, and hundreds of fine-tuned variants</li>
+<li><strong>Distinguishing feature</strong>: Reflects genuine user preferences rather than fixed test-set performance; captures helpfulness, style, and appropriateness that exact-match metrics miss</li>
+<li><strong>Limitation</strong>: Preference raters self-select; possible demographic bias in user base; judge preference may not generalise across user populations</li>
+</ul>
+</li>
+<li>
+<h3 id="mlcommons-mlperf-and-ailuminate">MLCommons MLPerf and AILuminate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mlcommons-mlperf-and-ailuminate" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>MLPerf</strong>: System performance benchmark suite measuring training and inference throughput/latency on standardised ML workloads (ResNet-50, BERT, GPT-3, Stable Diffusion); formal submission rules with auditing; bi-annual results rounds</li>
+<li><strong>AILuminate v1.0</strong> (February 2025): AI safety benchmark co-developed with UK AISI, US AISI, Japan AISI, and Canada AISI; covers hazardous content, privacy, harmful instructions; formal methodology rules and result auditing; the first internationally-harmonised AI safety benchmark standard</li>
+<li><strong>Governance</strong>: Formal working groups with disclosure requirements, methodology rules, result verification, and public result archiving; analogous to SPEC for infrastructure benchmarks</li>
+</ul>
+</li>
+<li>
+<h2 id="benchmark-evaluation-metrics-reference">Benchmark Evaluation Metrics Reference<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-metrics-reference" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Accuracy</strong>: Fraction of test items correctly predicted; primary metric for classification and multiple-choice benchmarks (MMLU, ARC, HellaSwag)</li>
+<li><strong>Exact Match (EM)</strong>: Fraction of responses exactly matching the ground truth string; primary metric for extractive QA (SQuAD, TriviaQA)</li>
+<li><strong>Token-level F1</strong>: Harmonic mean of token precision and recall between predicted and reference spans; secondary metric for SQuAD and similar benchmarks</li>
+<li><strong>BLEU (Bilingual Evaluation Understudy)</strong>: N-gram precision of generated text against one or more references; primary metric for machine translation since 2002; known to correlate imperfectly with human judgements</li>
+<li><strong>ROUGE (Recall-Oriented Understudy for Gisting Evaluation)</strong>: Recall-biased n-gram overlap; primary metric for summarisation; ROUGE-L uses longest common subsequence</li>
+<li><strong>BERTScore</strong>: Uses contextual BERT embeddings to compute token-level cosine similarity between prediction and reference; correlates better with human judgement than n-gram metrics</li>
+<li><strong>Pass@k</strong>: Probability that at least one of k sampled code completions passes all unit tests; primary metric for code generation (HumanEval, MBPP)</li>
+<li><strong>Mean Average Precision (mAP)</strong>: Area under the precision-recall curve averaged across object categories and IoU thresholds; primary metric for object detection (COCO)</li>
+<li><strong>Expected Calibration Error (ECE)</strong>: Average absolute difference between predicted confidence and empirical accuracy, binned; measures reliability of uncertainty estimates</li>
+<li><strong>Win rate</strong>: Fraction of pairwise comparisons won; primary metric for preference-based benchmarks (Chatbot Arena)</li>
+<li><strong>FID (Fréchet Inception Distance)</strong>: Distance between feature distributions of generated and real images; primary metric for image generation quality</li>
+</ul>
+</li>
+<li>
+<h2 id="benchmark-evaluation-best-practices-summary">Benchmark Evaluation Best Practices Summary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-best-practices-summary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Specify evaluation conditions exhaustively</strong>: Document model version, evaluation harness version, benchmark version, prompt format, few-shot count, random seed, and hardware. Results reported without these details cannot be meaningfully compared.</li>
+<li><strong>Run contamination screening before reporting</strong>: Use n-gram overlap analysis, perplexity probes, and mirror-test comparisons to estimate contamination risk. Disclose contamination analysis results alongside performance scores.</li>
+<li><strong>Report confidence intervals, not just point estimates</strong>: Bootstrap over test-set subsamples to report 95% CIs. Small test sets (fewer than 500 items) produce wide CIs that make nominal score differences statistically insignificant.</li>
+<li><strong>Disaggregate scores by subcategory</strong>: Per-subject, per-difficulty, per-language, and per-demographic breakdowns reveal performance disparities invisible in aggregate scores. Aggregate scores alone are insufficient for fair and responsible evaluation.</li>
+<li><strong>Evaluate calibration alongside accuracy</strong>: Expected calibration error and reliability diagrams reveal whether model confidence scores are trustworthy. Highly accurate but poorly calibrated models produce unreliable uncertainty estimates in downstream applications.</li>
+<li><strong>Use multiple benchmarks covering complementary capabilities</strong>: No single benchmark is comprehensive. A model with high MMLU but low SWE-bench performance has a different capability profile than one with the reverse pattern. Multi-benchmark evaluation provides a richer picture.</li>
+<li><strong>Check for statistical significance before claiming improvements</strong>: Score differences below 1–2% on typical benchmarks are often not statistically significant. Use McNemar’s test for paired-model comparison or permutation tests for unpaired comparison.</li>
+<li><strong>Disclose evaluation on benchmarks where the model underperforms</strong>: Selective reporting of benchmark results — reporting only benchmarks where the model is competitive — is an ethical violation. High-quality evaluation reports include all relevant benchmarks in a pre-specified evaluation suite.</li>
+<li><strong>Use the benchmark’s official evaluation code</strong>: Implementing your own scoring code, even for simple tasks, introduces discrepancies. The official evaluation code is the ground truth for what the benchmark measures.</li>
+<li><strong>Apply benchmark-appropriate few-shot selection</strong>: The choice of which k examples to include in few-shot prompts can significantly affect scores. Use the benchmark’s recommended selection procedure (random, stratified, or fixed) consistently.</li>
+</ul>
+</li>
+<li>
+<h2 id="statistical-foundations-of-benchmark-evaluation">Statistical Foundations of Benchmark Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#statistical-foundations-of-benchmark-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="confidence-intervals-and-sample-size">Confidence Intervals and Sample Size<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#confidence-intervals-and-sample-size" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>A benchmark’s discriminative power depends critically on test set size. For a model achieving accuracy p on a test set of size n, the 95% Wilson score CI is approximately ±1.96√(p(1-p)/n).</li>
+<li>At p=0.70, n=500 items: CI = ±0.040 (4pp uncertainty). Two models differing by 2pp are statistically indistinguishable.</li>
+<li>At p=0.70, n=5000 items: CI = ±0.013 (1.3pp uncertainty). Differences of 2–3pp become statistically detectable.</li>
+<li>At p=0.90 (near saturation), the CI narrows but the benchmark still cannot discriminate models within ±2pp — which is the typical range of frontier model clustering at saturation.</li>
+<li>GPQA Diamond’s 198 items produce CIs of ±6–7pp — wide enough that only differences of 10pp+ are statistically significant.</li>
+<li>Implication: many published benchmark comparisons claiming “state-of-the-art” improvements of 1–3pp are not statistically significant at the sample sizes reported.</li>
+</ul>
+</li>
+<li>
+<h3 id="mcnemars-test-for-paired-system-comparison">McNemar’s Test for Paired System Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mcnemars-test-for-paired-system-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>When comparing two models evaluated on the same test set (paired comparison), McNemar’s test is appropriate: it tests whether the number of items that model A gets right and B gets wrong significantly differs from the number A gets wrong and B gets right.</li>
+<li>McNemar’s test is more powerful than an unpaired proportion test because it controls for item difficulty: items that both models get right or both get wrong contribute no information; only the discordant pairs drive the test statistic.</li>
+<li>Dror et al. (2018) demonstrated that McNemar’s test should be the standard for NLP system comparison, yet most published NLP papers in 2024–2026 still report only point estimates without significance tests.</li>
+</ul>
+</li>
+<li>
+<h3 id="bootstrap-resampling-for-confidence-intervals">Bootstrap Resampling for Confidence Intervals<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bootstrap-resampling-for-confidence-intervals" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Bootstrapping is the preferred method for computing confidence intervals on composite benchmark metrics (e.g., BLEU, ROUGE-L, F1 averaged across multiple datasets) because the sampling distribution of these metrics is non-trivial to compute analytically.</li>
+<li>Procedure: resample the test set with replacement B=1000 times; compute the metric on each resample; report the 2.5th and 97.5th percentiles of the B resulting values as the 95% CI.</li>
+<li>Bootstrap CIs are provided by default in the EleutherAI lm-evaluation-harness, HELM, and OLMES-compliant evaluation frameworks; results reported without CIs should be treated with scepticism.</li>
+</ul>
+</li>
+<li>
+<h3 id="statistical-power-and-benchmark-design">Statistical Power and Benchmark Design<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#statistical-power-and-benchmark-design" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Benchmark designers should pre-compute the statistical power of their benchmark to detect meaningful performance differences before release.</li>
+<li>Power analysis: given a desired detectable effect size δ (e.g., 3pp improvement), significance level α (0.05), and desired power (0.80), the required test set size is n ≈ (z_α + z_β)²·p(1-p)/δ².</li>
+<li>For δ=3pp at p=0.70 with α=0.05 and 80% power: n ≈ 1,800 items. Most academic benchmarks with fewer than 1,000 test items are under-powered for detecting 3pp differences.</li>
+<li>Dynamic benchmarks that accumulate test items over time gain statistical power continuously, eventually achieving the ability to detect very small improvements.</li>
+</ul>
+</li>
+<li>
+<h2 id="failure-mode-taxonomy">Failure Mode Taxonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#failure-mode-taxonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="contamination-type-failures">Contamination-Type Failures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contamination-type-failures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Direct contamination</strong>: Test items appear verbatim in pre-training data</li>
+<li><strong>Near-duplicate contamination</strong>: Paraphrases or minor rewrites of test items appear in pre-training data</li>
+<li><strong>Distributional contamination</strong>: The genre, style, or topic distribution of test items is over-represented in pre-training, giving models an unfair advantage even without direct duplication</li>
+<li><strong>Label leakage</strong>: Structured training datasets where the label can be inferred from context that appears in pre-training data</li>
+<li><strong>Temporal contamination</strong>: Models trained after the benchmark’s public release may have seen discussion of specific test items, correct answers, or chain-of-thought demonstrations in community forums</li>
+</ul>
+</li>
+<li>
+<h3 id="gaming-type-failures-goodharting">Gaming-Type Failures (Goodharting)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gaming-type-failures-goodharting" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Benchmark-specific prompt engineering</strong>: Developing prompt templates optimised for a specific benchmark’s quirks rather than general task performance</li>
+<li><strong>Answer format exploitation</strong>: Exploiting predictable patterns in answer option lengths, positions, or vocabulary rather than reasoning from content</li>
+<li><strong>Few-shot example curation</strong>: Manually selecting few-shot examples that happen to trigger the model’s knowledge of the answer rather than demonstrating the task structure</li>
+<li><strong>Calibration gaming</strong>: Tuning model output temperatures to improve calibration metrics without improving underlying accuracy</li>
+<li><strong>Selective benchmark reporting</strong>: Publishing only benchmark results where the model performs well; omitting benchmarks where it underperforms</li>
+</ul>
+</li>
+<li>
+<h3 id="validity-type-failures">Validity-Type Failures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#validity-type-failures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Construct invalidity</strong>: The benchmark metric does not capture the capability it purports to measure (BLEU vs. translation quality)</li>
+<li><strong>Ecological invalidity</strong>: The benchmark task does not resemble the real-world deployment scenarios the model is intended for</li>
+<li><strong>Annotation artefacts</strong>: Systematic biases in annotation enable models to exploit shortcuts rather than develop the targeted capability</li>
+<li><strong>Coverage invalidity</strong>: The benchmark’s evaluation sample is not representative of the target input population</li>
+<li><strong>Metric invalidity</strong>: The chosen <a href="../pages/Evaluation-Metric" class="internal alias" data-slug="pages/Evaluation-Metric">Evaluation Metric</a> does not appropriately weight different types of errors for the deployment context</li>
+</ul>
+</li>
+<li>
+<h3 id="statistical-type-failures">Statistical-Type Failures<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#statistical-type-failures" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Small sample size</strong>: Test sets below 500 items produce wide confidence intervals that render apparent improvements statistically insignificant</li>
+<li><strong>Multiple comparisons</strong>: Evaluating many models on many benchmarks and reporting only the best results inflates apparent performance</li>
+<li><strong>Non-stationarity</strong>: Performance degrades over time as the world changes, but benchmarks remain static (particularly for knowledge-intensive tasks)</li>
+<li><strong>Evaluation harness divergence</strong>: Different implementations of nominally identical benchmarks produce materially different scores due to prompt formatting differences</li>
+</ul>
+</li>
+<li>
+<h2 id="benchmark-evaluation-timeline-key-milestones">Benchmark Evaluation Timeline: Key Milestones<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-timeline-key-milestones" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="pre-2010-shared-dataset-era">Pre-2010: Shared Dataset Era<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pre-2010-shared-dataset-era" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>1992</strong>: TREC (Text REtrieval Conference) at NIST begins — first large-scale standardised IR evaluation with sequestered test collections</li>
+<li><strong>1993</strong>: Penn Treebank annotation standard established; creates structural annotation baseline for syntactic benchmarks</li>
+<li><strong>1998</strong>: UCI Machine Learning Repository (120 datasets); MNIST (60,000 handwritten digit images) released</li>
+<li><strong>2000–2003</strong>: CoNLL shared tasks establish competitive evaluation model in NLP for NER and syntactic chunking</li>
+<li><strong>2005</strong>: PASCAL VOC launches multi-class object detection shared task</li>
+<li><strong>2009</strong>: ImageNet database (14M images, 20K synsets) released; BLEU metric in wide adoption since 2002</li>
+</ul>
+</li>
+<li>
+<h3 id="20102016-ilsvrc-and-deep-learning-revolution">2010–2016: ILSVRC and Deep Learning Revolution<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20102016-ilsvrc-and-deep-learning-revolution" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>2010</strong>: ImageNet ILSVRC competition launches; standardised submission protocol with organisationally-maintained leaderboard</li>
+<li><strong>2012</strong>: AlexNet wins ILSVRC — 10.8pp improvement triggers the deep learning era; GPU-based benchmark evaluation becomes standard</li>
+<li><strong>2014</strong>: VGGNet and GoogLeNet further advance ILSVRC; COCO dataset launches for detection and segmentation</li>
+<li><strong>2016</strong>: SQuAD 1.1 launches — unifies reading comprehension research; BLEU-based machine translation benchmarking institutionalised</li>
+</ul>
+</li>
+<li>
+<h3 id="20172020-nlp-benchmarking-institutionalisation">2017–2020: NLP Benchmarking Institutionalisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20172020-nlp-benchmarking-institutionalisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>2017</strong>: Human performance exceeded on ImageNet; field pivots to NLP benchmarking</li>
+<li><strong>2018</strong>: GLUE benchmark (9 NLU tasks); datasheets for datasets proposed; HellaSwag, WinoGrande established</li>
+<li><strong>2019</strong>: SuperGLUE (8 harder NLU tasks); BERT and RoBERTa exceed human performance on GLUE</li>
+<li><strong>2020</strong>: MMLU (57-subject multitask language understanding) releases; models reach human performance on SuperGLUE; EleutherAI lm-evaluation-harness open-sources</li>
+</ul>
+</li>
+<li>
+<h3 id="20212024-llm-era-benchmark-crisis">2021–2024: LLM Era Benchmark Crisis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20212024-llm-era-benchmark-crisis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>2021</strong>: HumanEval code generation benchmark; BIG-Bench (200+ tasks); HELM framework proposed; contamination concerns emerge</li>
+<li><strong>2022</strong>: BIG-Bench Hard (23 hard tasks); MMLU becomes primary LLM benchmark; HellaSwag saturation</li>
+<li><strong>2023</strong>: GPQA Diamond; ChatGPT competition drives benchmark gaming incentives; LMSYS Chatbot Arena launches; SWE-bench; contamination analysis methodology develops</li>
+<li><strong>2024</strong>: MMLU, HumanEval saturate and retire from frontier; SWE-bench performance grows 67pp in one year; MLCommons AILuminate v0.5; contamination crisis forces rethink</li>
+</ul>
+</li>
+<li>
+<h3 id="20252026-governance-and-dynamic-benchmark-era">2025–2026: Governance and Dynamic Benchmark Era<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#20252026-governance-and-dynamic-benchmark-era" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>January 2025</strong>: Humanity’s Last Exam (HLE) launches — 2,500 expert questions, frontier models below 20%</li>
+<li><strong>February 2025</strong>: MLCommons AILuminate v1.0 — first internationally harmonised AI safety benchmark standard</li>
+<li><strong>2025</strong>: AISI Frontier AI Trends Report; OLMES standard for evaluation harness; LiveBench monthly refresh operational</li>
+<li><strong>Early 2026</strong>: MMLU-Pro approaches saturation; HLE frontier scores at 47%; ARC-AGI 2 resists frontier systems; next generation of benchmarks under design</li>
+</ul>
+</li>
+<li>
+<h2 id="relationship-to-adjacent-concepts">Relationship to Adjacent Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-adjacent-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="benchmark-evaluation-vs-model-evaluation">Benchmark Evaluation vs Model Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-vs-model-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Model-Evaluation" class="internal alias" data-slug="pages/Model-Evaluation">Model Evaluation</a> is the broader category: it includes benchmark evaluation but also online evaluation (A/B testing in production), red-teaming, human preference studies, and domain expert assessment</li>
+<li>Benchmark evaluation specifically requires a fixed <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> with <a href="../pages/Ground-Truth-Labels" class="internal alias" data-slug="pages/Ground-Truth-Labels">Ground Truth Labels</a> and a defined scoring protocol</li>
+<li>Model evaluation without a benchmark is qualitative or based on informal human judgement; benchmark evaluation introduces quantitative comparability</li>
+</ul>
+</li>
+<li>
+<h3 id="benchmark-evaluation-vs-benchmarking">Benchmark Evaluation vs <a href="../pages/Benchmarking" class="internal" data-slug="pages/Benchmarking">Benchmarking</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-vs-benchmarking" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Benchmarking" class="internal" data-slug="pages/Benchmarking">Benchmarking</a> in the general sense measures system performance on representative workloads (throughput, latency, resource utilisation) — it is performance measurement</li>
+<li>Benchmark evaluation in the AI/ML sense measures capability on task-representative examples — it is capability measurement</li>
+<li>Both share the concept of a standardised reference workload and a scoring protocol, but differ in what is being measured and what constitutes “better”</li>
+</ul>
+</li>
+<li>
+<h3 id="benchmark-evaluation-vs-heuristic-evaluation">Benchmark Evaluation vs <a href="../pages/Heuristic-Evaluation" class="internal alias" data-slug="pages/Heuristic-Evaluation">Heuristic Evaluation</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-vs-heuristic-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Heuristic-Evaluation" class="internal alias" data-slug="pages/Heuristic-Evaluation">Heuristic Evaluation</a> in UX/HCI involves expert evaluators assessing a system against usability principles — subjective and qualitative</li>
+<li>Benchmark evaluation is quantitative, reproducible, and data-driven</li>
+<li>The two are complementary: heuristic evaluation identifies failure modes that benchmark evaluation may not measure; benchmark evaluation provides objective, comparative evidence that heuristic evaluation cannot</li>
+</ul>
+</li>
+<li>
+<h3 id="benchmark-evaluation-vs-human-evaluation">Benchmark Evaluation vs <a href="../pages/Human-Evaluation" class="internal alias" data-slug="pages/Human-Evaluation">Human Evaluation</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-evaluation-vs-human-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Human-Evaluation" class="internal alias" data-slug="pages/Human-Evaluation">Human Evaluation</a> uses human raters to assess model outputs on quality dimensions (relevance, fluency, factuality, helpfulness) that automated metrics cannot capture</li>
+<li>Benchmark evaluation uses automated scoring against fixed <a href="../pages/Ground-Truth-Labels" class="internal alias" data-slug="pages/Ground-Truth-Labels">Ground Truth Labels</a>; it is faster and cheaper but may not capture dimensions that matter to real users</li>
+<li>Best practice combines both: automated benchmark evaluation for regression testing and comparative ranking; human evaluation for final quality assessment and alignment verification</li>
+</ul>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Voorhees, E. M., &amp; Harman, D. (1999). Overview of the Eighth Text REtrieval Conference (TREC-8). NIST Special Publication 500-246.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Sang, E. F. T. K., &amp; De Meulder, F. (2003). Introduction to the CoNLL-2003 Shared Task: Language-Independent Named Entity Recognition. CoNLL 2003.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Everingham, M., Van Gool, L., Williams, C. K. I., Winn, J., &amp; Zisserman, A. (2010). The Pascal Visual Object Classes (VOC) Challenge. International Journal of Computer Vision, 88(2), 303–338.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Deng, J., Dong, W., Socher, R., Li, L. J., Li, K., &amp; Fei-Fei, L. (2009). ImageNet: A Large-Scale Hierarchical Image Database. CVPR 2009.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Papineni, K., Roukos, S., Ward, T., &amp; Zhu, W. J. (2002). BLEU: A Method for Automatic Evaluation of Machine Translation. ACL 2002.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Rajpurkar, P., Zhang, J., Lopyrev, K., &amp; Liang, P. (2016). SQuAD: 100,000+ Questions for Machine Comprehension of Text. EMNLP 2016.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Rajpurkar, P., Jia, R., &amp; Liang, P. (2018). Know What You Don’t Know: Unanswerable Questions for SQuAD. ACL 2018.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Wang, A., Singh, A., Michael, J., Hill, F., Levy, O., &amp; Bowman, S. R. (2018). GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding. EMNLP 2018.</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Wang, A., Pruksachatkun, Y., Nangia, N., et al. (2019). SuperGLUE: A Stickier Benchmark for General-Purpose Language Understanding Systems. NeurIPS 2019.</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Hendrycks, D., Burns, C., Basart, S., et al. (2020). Measuring Massive Multitask Language Understanding (MMLU). ICLR 2021.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Chen, M., Tworek, J., Jun, H., et al. (2021). Evaluating Large Language Models Trained on Code (HumanEval). arXiv:2107.03374.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Liang, P., Bommasani, R., Lee, T., et al. (2022). Holistic Evaluation of Language Models (HELM). TMLR 2023.</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Gururangan, S., Swayamdipta, S., Levy, O., Schwartz, R., Bowman, S. R., &amp; Smith, N. A. (2018). Annotation Artifacts in Natural Language Inference Data. NAACL 2018.</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Bender, E. M., Gebru, T., McMillan-Major, A., &amp; Shmitchell, S. (2021). On the Dangers of Stochastic Parrots: Can Language Models Be Too Big? FAccT 2021.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>McCoy, R. T., Pavlick, E., &amp; Linzen, T. (2019). Right for the Wrong Reasons: Diagnosing Syntactic Heuristics in Natural Language Inference. ACL 2019.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Guo, C., Pleiss, G., Sun, Y., &amp; Weinberger, K. Q. (2017). On Calibration of Modern Neural Networks. ICML 2017.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Srivastava, A., et al. (2022). Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models (BIG-Bench). TMLR 2023.</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Jimenez, C. E., Yang, J., Wettig, A., et al. (2024). SWE-bench: Can Language Models Resolve Real-World GitHub Issues? ICLR 2024.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Rein, D., Hou, B. L., Stickland, A. C., et al. (2023). GPQA: A Graduate-Level Google-Proof Q&amp;A Benchmark. arXiv:2311.12022.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Muennighoff, N., Tazi, N., Magne, L., &amp; Reimers, N. (2022). MTEB: Massive Text Embedding Benchmark. EACL 2023.</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Phan, L., et al. (2025). Humanity’s Last Exam. Scale AI / Center for AI Safety. arXiv:2501.14249.</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>MLCommons AI Safety Working Group. (2025). AILuminate v1.0: A Benchmark for AI Safety. MLCommons Technical Report, February 2025. <a href="https://mlcommons.org/working-groups/ai-risk-reliability/" class="external">https://mlcommons.org/working-groups/ai-risk-reliability/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>UK AI Security Institute. (2025). AISI Frontier AI Trends Report 2025. <a href="https://www.aisi.gov.uk/research/aisi-frontier-ai-trends-report-2025" class="external">https://www.aisi.gov.uk/research/aisi-frontier-ai-trends-report-2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>White, J., et al. (2024). BenchmarkCards: Standardized Documentation for Large Language Model Benchmarks. arXiv:2410.12974.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Shi, F., et al. (2024). Detecting Pretraining Data from Large Language Models. ICLR 2024. [contamination detection methodology]</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Golchin, S., &amp; Surdeanu, M. (2023). Time Travel in LLMs: Tracing Data Contamination in Large Language Models. arXiv:2308.08493.</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Bank of England. (2025). EcoFinBench: A Natural Language Processing Benchmark for Economics and Finance. Staff Working Paper No. 1,163, December 2025. <a href="https://www.bankofengland.co.uk/" class="external">https://www.bankofengland.co.uk/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Polo, F. M., et al. (2025). OLMES: A Standard for Language Model Evaluations. arXiv:2406.08446. [evaluation harness standardisation]</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="cross-references-in-this-ontology">Cross-References in This Ontology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-references-in-this-ontology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>See <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> for the data artefact that benchmark evaluation operates on</li>
+<li>See <a href="../pages/Evaluation-Harness" class="internal alias" data-slug="pages/Evaluation-Harness">Evaluation Harness</a> for the software framework automating benchmark evaluation execution</li>
+<li>See <a href="../pages/Model-Evaluation" class="internal alias" data-slug="pages/Model-Evaluation">Model Evaluation</a> for the parent concept of which benchmark evaluation is a specialisation</li>
+<li>See <a href="../pages/Leaderboard" class="internal" data-slug="pages/Leaderboard">Leaderboard</a> for the community ranking infrastructure that benchmark evaluation results populate</li>
+<li>See <a href="../pages/Evaluation-Metric" class="internal alias" data-slug="pages/Evaluation-Metric">Evaluation Metric</a> for the scoring functions applied within benchmark evaluation protocols</li>
+<li>See <a href="../pages/AI-Benchmark-Epistemological-Critique" class="internal alias" data-slug="pages/AI-Benchmark-Epistemological-Critique">AI Benchmark Epistemological Critique</a> for systematic critique of benchmark evaluation validity assumptions</li>
+<li>See <a href="../pages/Frontier-Model-Evaluation" class="internal alias" data-slug="pages/Frontier-Model-Evaluation">Frontier Model Evaluation</a> for high-stakes safety-focused benchmark evaluation of frontier AI systems</li>
+<li>See <a href="../pages/Human-Evaluation" class="internal alias" data-slug="pages/Human-Evaluation">Human Evaluation</a> for preference-based evaluation that complements automated benchmark evaluation</li>
+<li>See <a href="../pages/BEIR-Benchmark" class="internal alias" data-slug="pages/BEIR-Benchmark">BEIR Benchmark</a> and <a href="../pages/MTEB-Benchmark" class="internal alias" data-slug="pages/MTEB-Benchmark">MTEB Benchmark</a> for specific benchmark evaluation instances in this ontology</li>
+<li>See <a href="../pages/Performance-Benchmarks" class="internal alias" data-slug="pages/Performance-Benchmarks">Performance Benchmarks</a> for the infrastructure performance benchmarking counterpart to AI benchmark evaluation</li>
+</ul>
+</li>
+<li>
+<h2 id="interoperability-and-standards-alignment">Interoperability and Standards Alignment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interoperability-and-standards-alignment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>ISO/IEC 25012</strong> (Data Quality Standard): Defines data quality dimensions (accuracy, completeness, consistency, timeliness) applicable to <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> construction and evaluation</li>
+<li><strong>IEEE 2941-2021</strong> (AI Model Representation): Standard for AI model representation including evaluation metadata; aligns with benchmark evaluation reporting requirements</li>
+<li><strong>NIST AI RMF</strong> (AI Risk Management Framework, 2023): References benchmark evaluation as a component of AI risk measurement and governance; influences UK AI governance alignment</li>
+<li><strong>EU AI Act Annex IV</strong> (Technical Documentation): Requires performance evaluation evidence for high-risk AI systems; benchmark evaluation results are a primary form of this evidence</li>
+<li><strong>MLCommons AILuminate v1.0</strong>: Industry safety benchmark standard co-developed with UK, USA, Japan, Canada AI Safety Institutes; operationalises safety-specific benchmark evaluation for regulatory purposes</li>
+<li><strong>OLMES</strong> (Open Language Model Evaluation Standard, 2025): Specifies implementation choices for LLM benchmark evaluation to ensure comparability across evaluation harness implementations</li>
+<li><strong>BenchmarkCards</strong> (White et al., 2024): Documentation standard for benchmark datasets and evaluation protocols; extends datasheets/model cards paradigm to benchmark evaluation reporting</li>
+</ul>
+</li>
+<li>
+<h2 id="summary-responsible-benchmark-evaluation-checklist">Summary: Responsible Benchmark Evaluation Checklist<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#summary-responsible-benchmark-evaluation-checklist" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Pre-evaluation</strong>
+<ul>
+<li>Select benchmarks appropriate for the task and modality</li>
+<li>Ensure model training data does not overlap with the benchmark test split</li>
+<li>Run contamination screening (n-gram overlap, perplexity probes, mirror-test)</li>
+<li>Verify evaluation harness version and benchmark version are current</li>
+<li>Confirm the benchmark is not retired/saturated if frontier comparison is the goal</li>
+</ul>
+</li>
+<li><strong>Evaluation execution</strong>
+<ul>
+<li>Follow the benchmark’s specified prompt format, few-shot count, and output normalisation</li>
+<li>Use the official scoring code; do not re-implement metrics independently</li>
+<li>Record all experimental hyperparameters before running evaluation</li>
+<li>Use deterministic decoding (greedy or fixed seed) for reproducibility</li>
+<li>Run evaluation on the full test set; do not subset for speed</li>
+</ul>
+</li>
+<li><strong>Statistical analysis</strong>
+<ul>
+<li>Compute bootstrapped 95% confidence intervals over test-set subsamples</li>
+<li>Run per-subcategory breakdowns (subject, difficulty, language, demographic)</li>
+<li>Assess calibration (ECE, reliability diagram) alongside accuracy</li>
+<li>Conduct McNemar’s test or permutation test when comparing two systems</li>
+<li>Report effect sizes alongside significance p-values</li>
+</ul>
+</li>
+<li><strong>Reporting</strong>
+<ul>
+<li>Disclose: model version, harness version, benchmark version, hardware, prompt format, random seed</li>
+<li>Report all benchmarks in the pre-specified evaluation suite (no cherry-picking)</li>
+<li>Include confidence intervals alongside every point estimate</li>
+<li>Acknowledge benchmark lifecycle stage (saturated vs actively discriminating)</li>
+</ul>
+</li>
+<li><strong>Documentation</strong>
+<ul>
+<li>Complete a BenchmarkCard or structured evaluation report</li>
+<li>Disclose known failure modes, contamination risk estimates, and limitations</li>
+<li>Archive raw per-item predictions to enable future meta-analysis</li>
+</ul>
+</li>
+<li><strong>Regulatory considerations</strong>
+<ul>
+<li>Verify whether results are required for regulatory disclosure</li>
+<li>Confirm whether independent third-party evaluation is mandated for the system’s risk category</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology-and-glossary">Key Terminology and Glossary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology-and-glossary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Benchmark evaluation</strong>: Systematic measurement of an AI model against a fixed <a href="../pages/Benchmark-Dataset" class="internal alias" data-slug="pages/Benchmark-Dataset">Benchmark Dataset</a> and scoring protocol to produce comparable, reproducible results</li>
+<li><strong>Evaluation harness</strong>: Software framework automating prompt formatting, model querying, output parsing, metric computation, and result aggregation for standardised benchmark evaluation</li>
+<li><strong>Leaderboard</strong>: A publicly maintained ranking of system submissions on a benchmark, ordered by performance metric; the primary mechanism for communicating benchmark evaluation results to the research community</li>
+<li><strong>Benchmark saturation</strong>: State where top models cluster near performance ceiling, rendering the benchmark unable to discriminate frontier systems; triggers succession</li>
+<li><strong>Contamination</strong>: Presence of benchmark test examples in model pre-training data, inflating evaluation scores relative to genuine generalisation; the primary validity threat for static benchmarks by 2026</li>
+<li><strong>Goodhart’s Law</strong>: “When a measure becomes a target, it ceases to be a good measure” — the fundamental epistemological risk of benchmark evaluation at scale</li>
+<li><strong>OLMES</strong>: Open Language Model Evaluation Standard (2025); specifies implementation choices for LLM evaluation (prompt format, few-shot selection, normalisation) to ensure cross-implementation comparability</li>
+<li><strong>AILuminate</strong>: MLCommons AI safety benchmark standard (v1.0, February 2025); first internationally harmonised framework for AI safety evaluation developed with UK, USA, Japan, and Canada AI Safety Institutes</li>
+<li><strong>Dynamic benchmark</strong>: Benchmark whose test content is refreshed continuously or periodically from post-cutoff sources, making contamination structurally impossible</li>
+<li><strong>Model-as-judge</strong>: Using a capable LLM to evaluate open-ended model outputs on dimensions that exact-match metrics cannot assess; enables evaluation of instruction-following and generation quality at scale</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-737" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#provenance-and-governance-relationships" data-for="provenance-and-governance-relationships">Provenance and Governance Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#architecture-and-execution-pipeline" data-for="architecture-and-execution-pipeline">Architecture and Execution Pipeline</a></li><li class="depth-0"><a href="#key-terminology-glossary" data-for="key-terminology-glossary">Key Terminology Glossary</a></li><li class="depth-0"><a href="#failure-modes-and-epistemological-critique" data-for="failure-modes-and-epistemological-critique">Failure Modes and Epistemological Critique</a></li><li class="depth-0"><a href="#major-benchmark-evaluation-protocols" data-for="major-benchmark-evaluation-protocols">Major Benchmark Evaluation Protocols</a></li><li class="depth-0"><a href="#benchmark-evaluation-across-modalities-and-domains" data-for="benchmark-evaluation-across-modalities-and-domains">Benchmark Evaluation Across Modalities and Domains</a></li><li class="depth-0"><a href="#use-cases" data-for="use-cases">Use Cases</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#evaluation-harness-implementation-reference" data-for="evaluation-harness-implementation-reference">Evaluation Harness Implementation Reference</a></li><li class="depth-1"><a href="#eleutherai-language-model-evaluation-harness-lm-evaluation-harness" data-for="eleutherai-language-model-evaluation-harness-lm-evaluation-harness">EleutherAI Language Model Evaluation Harness (lm-evaluation-harness)</a></li><li class="depth-1"><a href="#stanford-helm-holistic-evaluation-of-language-models" data-for="stanford-helm-holistic-evaluation-of-language-models">Stanford HELM (Holistic Evaluation of Language Models)</a></li><li class="depth-1"><a href="#lmsys-chatbot-arena" data-for="lmsys-chatbot-arena">LMSYS Chatbot Arena</a></li><li class="depth-1"><a href="#mlcommons-mlperf-and-ailuminate" data-for="mlcommons-mlperf-and-ailuminate">MLCommons MLPerf and AILuminate</a></li><li class="depth-0"><a href="#benchmark-evaluation-metrics-reference" data-for="benchmark-evaluation-metrics-reference">Benchmark Evaluation Metrics Reference</a></li><li class="depth-0"><a href="#benchmark-evaluation-best-practices-summary" data-for="benchmark-evaluation-best-practices-summary">Benchmark Evaluation Best Practices Summary</a></li><li class="depth-0"><a href="#statistical-foundations-of-benchmark-evaluation" data-for="statistical-foundations-of-benchmark-evaluation">Statistical Foundations of Benchmark Evaluation</a></li><li class="depth-1"><a href="#confidence-intervals-and-sample-size" data-for="confidence-intervals-and-sample-size">Confidence Intervals and Sample Size</a></li><li class="depth-1"><a href="#mcnemars-test-for-paired-system-comparison" data-for="mcnemars-test-for-paired-system-comparison">McNemar’s Test for Paired System Comparison</a></li><li class="depth-1"><a href="#bootstrap-resampling-for-confidence-intervals" data-for="bootstrap-resampling-for-confidence-intervals">Bootstrap Resampling for Confidence Intervals</a></li><li class="depth-1"><a href="#statistical-power-and-benchmark-design" data-for="statistical-power-and-benchmark-design">Statistical Power and Benchmark Design</a></li><li class="depth-0"><a href="#failure-mode-taxonomy" data-for="failure-mode-taxonomy">Failure Mode Taxonomy</a></li><li class="depth-1"><a href="#contamination-type-failures" data-for="contamination-type-failures">Contamination-Type Failures</a></li><li class="depth-1"><a href="#gaming-type-failures-goodharting" data-for="gaming-type-failures-goodharting">Gaming-Type Failures (Goodharting)</a></li><li class="depth-1"><a href="#validity-type-failures" data-for="validity-type-failures">Validity-Type Failures</a></li><li class="depth-1"><a href="#statistical-type-failures" data-for="statistical-type-failures">Statistical-Type Failures</a></li><li class="depth-0"><a href="#benchmark-evaluation-timeline-key-milestones" data-for="benchmark-evaluation-timeline-key-milestones">Benchmark Evaluation Timeline: Key Milestones</a></li><li class="depth-1"><a href="#pre-2010-shared-dataset-era" data-for="pre-2010-shared-dataset-era">Pre-2010: Shared Dataset Era</a></li><li class="depth-1"><a href="#20102016-ilsvrc-and-deep-learning-revolution" data-for="20102016-ilsvrc-and-deep-learning-revolution">2010–2016: ILSVRC and Deep Learning Revolution</a></li><li class="depth-1"><a href="#20172020-nlp-benchmarking-institutionalisation" data-for="20172020-nlp-benchmarking-institutionalisation">2017–2020: NLP Benchmarking Institutionalisation</a></li><li class="depth-1"><a href="#20212024-llm-era-benchmark-crisis" data-for="20212024-llm-era-benchmark-crisis">2021–2024: LLM Era Benchmark Crisis</a></li><li class="depth-1"><a href="#20252026-governance-and-dynamic-benchmark-era" data-for="20252026-governance-and-dynamic-benchmark-era">2025–2026: Governance and Dynamic Benchmark Era</a></li><li class="depth-0"><a href="#relationship-to-adjacent-concepts" data-for="relationship-to-adjacent-concepts">Relationship to Adjacent Concepts</a></li><li class="depth-1"><a href="#benchmark-evaluation-vs-model-evaluation" data-for="benchmark-evaluation-vs-model-evaluation">Benchmark Evaluation vs Model Evaluation</a></li><li class="depth-1"><a href="#benchmark-evaluation-vs-benchmarking" data-for="benchmark-evaluation-vs-benchmarking">Benchmark Evaluation vs Benchmarking</a></li><li class="depth-1"><a href="#benchmark-evaluation-vs-heuristic-evaluation" data-for="benchmark-evaluation-vs-heuristic-evaluation">Benchmark Evaluation vs Heuristic Evaluation</a></li><li class="depth-1"><a href="#benchmark-evaluation-vs-human-evaluation" data-for="benchmark-evaluation-vs-human-evaluation">Benchmark Evaluation vs Human Evaluation</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#cross-references-in-this-ontology" data-for="cross-references-in-this-ontology">Cross-References in This Ontology</a></li><li class="depth-0"><a href="#interoperability-and-standards-alignment" data-for="interoperability-and-standards-alignment">Interoperability and Standards Alignment</a></li><li class="depth-0"><a href="#summary-responsible-benchmark-evaluation-checklist" data-for="summary-responsible-benchmark-evaluation-checklist">Summary: Responsible Benchmark Evaluation Checklist</a></li><li class="depth-0"><a href="#key-terminology-and-glossary" data-for="key-terminology-and-glossary">Key Terminology and Glossary</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Model" class="internal">AI Model</a></li><li><a href="../pages/Artificial-Intelligence-Core" class="internal">Artificial Intelligence Core</a></li><li><a href="../pages/Artificial-Intelligence-Research" class="internal">Artificial Intelligence Research</a></li><li><a href="../pages/Benchmark-Dataset" class="internal">Benchmark Dataset</a></li><li><a href="../pages/Capability-Elicitation" class="internal">Capability Elicitation</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Leaderboard" class="internal">Leaderboard</a></li><li><a href="../pages/Mathematical-Reasoning" class="internal">mathematical reasoning</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

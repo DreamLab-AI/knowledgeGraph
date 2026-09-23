@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Breadth-First Search</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Breadth-First Search"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Breadth-First Search"/><meta name="twitter:description" content="Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source."/><meta property="og:description" content="Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source."/><meta property="og:image:alt" content="Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Breadth-First-Search"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Breadth-First-Search"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Breadth-First-Search"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1247"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1247" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Breadth First Search</a></div></nav><h1 class="article-title">Breadth-First Search</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.691Z">23 Sept 2026</time><span>32 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:breadth-first-search</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>mature</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.62</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Graph-Algorithms" class="internal">Graph Algorithms</a></li><li><a href="../pages/Search-Algorithm" class="internal">Search Algorithm</a></li><li><a href="../pages/Graph-Search" class="internal">Graph Search</a></li><li><a href="../Uninformed-Search" class="internal">Uninformed Search</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Graph-Algorithms" class="internal">Graph Algorithms</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../Queue-Data-Structure" class="internal">Queue Data Structure</a></li><li><a href="../Visited-Set" class="internal">Visited Set</a></li><li><a href="../Frontier" class="internal">Frontier</a></li><li><a href="../Distance-Array" class="internal">Distance Array</a></li><li><a href="../Parent-Pointer-Array" class="internal">Parent Pointer Array</a></li><li><a href="../Adjacency-Representation" class="internal">Adjacency Representation</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Data-Structure" class="internal">Data Structure</a></li><li><a href="../Queue-Data-Structure" class="internal">Queue Data Structure</a></li><li><a href="../pages/Graph-Theory" class="internal">Graph Theory</a></li><li><a href="../Adjacency-List" class="internal">Adjacency List</a></li><li><a href="../Visited-Marker" class="internal">Visited Marker</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Pathfinding" class="internal">Pathfinding</a></li><li><a href="../Shortest-Path" class="internal">Shortest Path</a></li><li><a href="../Connected-Components" class="internal">Connected Components</a></li><li><a href="../Bipartite-Graph-Detection" class="internal">Bipartite Graph Detection</a></li><li><a href="../Web-Crawling" class="internal">Web Crawling</a></li><li><a href="../pages/Social-Network-Analysis" class="internal">Social Network Analysis</a></li><li><a href="../Level-Order-Traversal" class="internal">Level-Order Traversal</a></li><li><a href="../Topological-Sort" class="internal">Topological Sort</a></li><li><a href="../Reachability-Analysis" class="internal">Reachability Analysis</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Depth-First-Search" class="internal">Depth-First Search</a></li><li><a href="../Iterative-Deepening-DFS" class="internal">Iterative Deepening DFS</a></li><li><a href="../pages/A-Star-Algorithm" class="internal">A Star Algorithm</a></li><li><a href="../Greedy-Best-First-Search" class="internal">Greedy Best-First Search</a></li><li><a href="../pages/Dijkstra-Algorithm" class="internal">Dijkstra Algorithm</a></li><li><a href="../pages/Beam-Search-Decoding" class="internal">Beam Search Decoding</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Queue-Data-Structure" class="internal">Queue Data Structure</a></li><li><a href="../pages/Graph-Representation" class="internal">Graph Representation</a></li><li><a href="../Adjacency-List" class="internal">Adjacency List</a></li><li><a href="../Visited-Set" class="internal">Visited Set</a></li><li><a href="../pages/Graph-Theory" class="internal">Graph Theory</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Graph-Algorithms" class="internal">Graph Algorithms</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Search-Algorithm" class="internal">Search Algorithm</a></li><li><a href="../pages/Graph-Search" class="internal">Graph Search</a></li><li><a href="../Uninformed-Search" class="internal">Uninformed Search</a></li><li><a href="../Level-Order-Traversal" class="internal">Level-Order Traversal</a></li><li><a href="../Complete-Search" class="internal">Complete Search</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:breadth-first-search</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Dijkstra-Algorithm" class="internal">Dijkstra Algorithm</a></li><li><a href="../pages/Search-Algorithms" class="internal">Search Algorithms</a></li><li><a href="../pages/Node" class="internal">Node</a></li><li><a href="../pages/AI-Search" class="internal">AI Search</a></li><li><a href="../pages/Computer-Science" class="internal">Computer Science</a></li><li><a href="../Shortest-Path" class="internal">Shortest Path</a></li><li><a href="../pages/Pathfinding" class="internal">Pathfinding</a></li><li><a href="../pages/State-Space-Search" class="internal">State Space Search</a></li><li><a href="../pages/Beam-Search" class="internal">Beam Search</a></li><li><a href="../pages/Monte-Carlo-Tree-Search" class="internal">Monte Carlo Tree Search</a></li><li><a href="../pages/Graph-Neural-Network" class="internal">Graph Neural Network</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../CLRS-Introduction-to-Algorithms" class="internal">CLRS Introduction to Algorithms</a></li><li><a href="../Knuth-Art-of-Computer-Programming" class="internal">Knuth Art of Computer Programming</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Dijkstra-Algorithm" class="internal">Dijkstra Algorithm</a></li><li><a href="../pages/A-Star-Algorithm" class="internal">A Star Algorithm</a></li><li><a href="../Prim-Algorithm" class="internal">Prim Algorithm</a></li><li><a href="../Kahn-Algorithm" class="internal">Kahn Algorithm</a></li><li><a href="../Hopcroft-Karp-Algorithm" class="internal">Hopcroft-Karp Algorithm</a></li><li><a href="../Network-Flow" class="internal">Network Flow</a></li><li><a href="../pages/Beam-Search" class="internal">Beam Search</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Graph-Theory" class="internal">Graph Theory</a></li><li><a href="../pages/Algorithm" class="internal">Algorithm</a></li><li><a href="../Queue-Data-Structure" class="internal">Queue Data Structure</a></li><li><a href="../Adjacency-Representation" class="internal">Adjacency Representation</a></li><li><a href="../BFS-Tree" class="internal">BFS Tree</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Breadth-first search (BFS) is a graph and tree traversal algorithm that explores all neighbours of a node before moving to nodes at the next depth level, expanding the search frontier in order of increasing distance from the source. It is implemented with a first-in-first-out queue and, on unweighted graphs, finds the shortest path in terms of edge count from the start vertex to every reachable vertex. BFS runs in time linear in the number of vertices and edges and is foundational to pathfinding, connectivity analysis and level-order processing.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:hasPart ai:QueueDataStructure))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:hasPart ai:VisitedSet))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:hasPart ai:Frontier))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:hasPart ai:DistanceArray))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:hasPart ai:ParentPointerArray))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:hasPart ai:AdjacencyRepresentation))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:requires ai:QueueDataStructure))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:requires ai:GraphRepresentation))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:requires ai:AdjacencyList))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:dependsOn ai:VisitedSet))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:dependsOn ai:GraphTheory))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:dependsOn ai:FIFOQueue))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:ShortestPath))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:Pathfinding))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:ConnectedComponents))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:BipartiteGraphDetection))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:WebCrawling))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:SocialNetworkAnalysis))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:LevelOrderTraversal))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:enables ai:ReachabilityAnalysis))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:implements ai:SearchAlgorithm))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:implements ai:GraphSearch))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:implements ai:UninformedSearch))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:implements ai:LevelOrderTraversal))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:implements ai:CompleteSearch))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:reducesTo ai:UniformCostSearch))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:reducesTo ai:DijkstraAlgorithm))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:reducesTo ai:LevelOrderTraversal))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:reducesTo ai:MultiSourceBFS))
+</code></pre>
+<h2 id="contrastive-relationships">Contrastive Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrastive-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:contrastsWith ai:DepthFirstSearch))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:contrastsWith ai:IterativeDeepeningDFS))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:contrastsWith ai:AStarAlgorithm))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:contrastsWith ai:BeamSearch))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:contrastsWith ai:GreedyBestFirstSearch))
+SubClassOf(ai:BreadthFirstSearch
+  ObjectSomeValuesFrom(ai:contrastsWith ai:MonteCarlTreeSearch))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Breadth-first search (BFS)</strong> occupies a foundational position in computer science and artificial intelligence as one of the earliest and most broadly applicable graph exploration strategies. Its core insight — that exploring all vertices at the current distance before advancing to greater distances guarantees minimality of the discovered path in terms of edge count — is both intuitively obvious and mathematically rigorous. The algorithm’s historical trajectory began with Konrad Zuse’s 1945 graph-traversal formulations for the Plankalkül language and was independently reinvented for practical maze-routing by Edward F. Moore (1959) and C.Y. Lee (1961). The name “breadth-first search” was popularised by the AI community through the search-strategy taxonomy developed in Nilsson’s “Problem Solving Methods in Artificial Intelligence” (1971) and later canonised in Russell and Norvig’s “Artificial Intelligence: A Modern Approach.” Today BFS is universally taught as the first graph algorithm in undergraduate curricula worldwide and appears as a fundamental primitive in every major algorithms library and competitive programming platform.</p>
+<p>The historical development of BFS reflects the broader maturation of computer science as a discipline. Konrad Zuse, working in near-isolation in wartime Germany, described graph traversal procedures in Plankalkül — the world’s first high-level programming language — but this work remained unknown to the wider community until its 1972 publication. Edward F. Moore, at Bell Laboratories, rediscovered BFS in 1959 while solving the problem of finding the shortest path through an arbitrary maze, motivated by telephone network routing problems. C.Y. Lee, also at Bell Labs, independently applied Moore’s technique in 1961 to circuit board routing, giving BFS one of its earliest and most commercially consequential applications. These parallel discoveries reflect that BFS naturally emerges whenever shortest-path thinking is applied to grid or graph structures — a “discoverable” algorithm whose time had come by the late 1950s.</p>
+<p>In the AI search taxonomy, BFS is the prototypical uninformed (blind) search strategy: it requires no domain-specific knowledge or heuristic estimates, operating purely on the graph topology. This makes it a baseline against which all informed algorithms are measured. BFS is complete (will find a solution if one exists, provided the branching factor and graph are finite) and optimal for unit-cost step problems (finds the shallowest goal). These guarantees come at a space cost: BFS must store the entire frontier, which grows exponentially with depth — O(b^d) where b is the branching factor and d the shallowest goal depth. This space explosion motivated the development of iterative deepening depth-first search (IDDFS), which achieves BFS’s completeness and optimality with DFS’s linear O(bd) space, at the expense of recomputing upper levels of the tree. Despite this limitation, BFS remains the algorithm of choice for shallow graphs, dense networks, and applications where shortest-path optimality is paramount and depth is bounded. In practice, many real-world problems have bounded depth (social network degrees of separation rarely exceed 6, web graph diameter is typically 20–30 hops) where BFS’s space cost is manageable.</p>
+<p>The formal correctness of BFS rests on a simple invariant: when a vertex u is dequeued, d[u] equals the true shortest-path distance from source s to u. This is proved by induction on d[u]. Base case: d[s]=0 when s is enqueued. Inductive step: when u is dequeued, all vertices at distance d[u]−1 have already been dequeued (FIFO ordering ensures level-by-level processing). Every neighbour v of u with d[v]=∞ is discovered now for the first time at distance d[u]+1, which is the shortest possible (any shorter path would have been found at an earlier BFS level). This argument is the prototype for correctness proofs of <a href="../pages/Dijkstra-Algorithm" class="internal alias" data-slug="pages/Dijkstra-Algorithm">Dijkstra Algorithm</a> and <a href="../pages/A-Star-Algorithm" class="internal alias" data-slug="pages/A-Star-Algorithm">A Star Algorithm</a>, showing how BFS’s simplicity generates insight for its successors.</p>
+<p>The relationship between BFS and <a href="../pages/Dijkstra-Algorithm" class="internal alias" data-slug="pages/Dijkstra-Algorithm">Dijkstra Algorithm</a> is particularly illuminating: Dijkstra’s algorithm is exactly BFS on weighted graphs, replacing the FIFO queue with a priority queue ordered by cumulative cost g(v). <a href="../pages/A-Star-Algorithm" class="internal alias" data-slug="pages/A-Star-Algorithm">A Star Algorithm</a> extends Dijkstra by adding a heuristic estimate h(v) to the priority ordering, making the priority f(v) = g(v) + h(v). This hierarchy — BFS → Dijkstra → A* — represents the progression from uninformed to increasingly informed search, each generalising the previous. BFS also underlies many network-level algorithms: Prim’s minimum spanning tree is BFS on edge weights; Kahn’s topological sort is BFS on in-degree counts; the Hopcroft-Karp bipartite matching uses alternating BFS phases to find augmenting paths; and the Edmonds-Karp maximum-flow algorithm uses BFS to find shortest augmenting paths, yielding an O(VE^2) flow algorithm. BFS is thus not merely a standalone algorithm but a substrate from which a large fraction of classical graph algorithms are constructed.</p>
+<p>The scalability of BFS to very large graphs is a major research challenge and engineering concern. Social networks, the Web graph, and biological interaction networks routinely have billions of vertices and hundreds of billions of edges. Running serial BFS on such graphs is infeasible; parallel BFS on multi-core CPUs, GPU clusters, and distributed memory systems is required. The Graph500 benchmark, introduced in 2010, has made parallel BFS the primary measure of supercomputer performance on graph workloads, driving a decade of algorithmic innovation. A key breakthrough was Beamer, Asanović, and Patterson’s “direction-optimising” BFS (SC 2012), which switches between top-down (expanding frontier outward) and bottom-up (checking if any neighbour is in the frontier) phases depending on frontier size, dramatically reducing work on low-diameter graphs such as social networks. As of 2025, optimised implementations process tens of billions of edges per second on commodity multi-core servers. BFSBlitz (2025 FastCode challenge winner) achieves record edge traversal rates using bit-parallel frontier compression.</p>
+<p>BFS occupies an interesting position in the relationship between classical algorithms and modern machine learning. GNNs have partially supplanted classical BFS for feature learning on graphs — GNNs propagate features along edges in a manner analogous to BFS layers but in a learned, differentiable fashion. However, BFS and BFS-derived distance labelling are used as structural features to initialise GNN node embeddings, providing graph-aware inductive biases. The Local Vertex Colouring GNN paper (arXiv:2403.06080, 2024) uses breadth-first colouring (BFC) — a BFS-derived node colouring scheme — to improve the expressivity of message-passing neural networks beyond the Weisfeiler-Lehman test. In the LLM reasoning domain, BFS-style <a href="../pages/Beam-Search-Decoding" class="internal alias" data-slug="pages/Beam-Search-Decoding">Beam Search Decoding</a> and Tree-of-Thought frameworks explore reasoning paths breadth-first to improve answer quality.</p>
+<h2 id="formal-algorithm">Formal Algorithm<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-algorithm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>BFS from source vertex s in graph G=(V,E):</p>
+<p><strong>Initialisation</strong></p>
+<ul>
+<li>For all v in V: colour[v] = WHITE, d[v] = ∞, parent[v] = NIL</li>
+<li>Set colour[s] = GREY, d[s] = 0, parent[s] = NIL</li>
+<li>Enqueue source vertex s into FIFO queue Q</li>
+<li>(For multi-source BFS: enqueue all sources at step 0 with d = 0)</li>
+</ul>
+<p><strong>Main Loop</strong> (while Q is not empty)</p>
+<ul>
+<li>u = Dequeue(Q) — remove the front element</li>
+<li>For each vertex v in Adj[u] (neighbours of u):
+<ul>
+<li>If colour[v] = WHITE (not yet discovered):
+<ul>
+<li>colour[v] = GREY (discovered, in queue)</li>
+<li>d[v] = d[u] + 1</li>
+<li>parent[v] = u</li>
+<li>Enqueue(Q, v)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>colour[u] = BLACK (fully expanded)</li>
+</ul>
+<p><strong>Termination</strong>: Queue Q becomes empty when all reachable vertices have been expanded.</p>
+<p><strong>Result</strong></p>
+<ul>
+<li>d[v] = shortest path distance from s to v (∞ if v unreachable from s)</li>
+<li>parent[v] = predecessor of v on a shortest path from s to v</li>
+<li>Path reconstruction from s to target t: [t, parent[t], parent[parent[t]], …, s] (reversed)</li>
+<li>BFS tree = spanning tree induced by parent[] over all reachable vertices</li>
+</ul>
+<p><strong>Complexity Analysis</strong></p>
+<ul>
+<li>Time: O(V + E)
+<ul>
+<li>Each vertex: enqueued exactly once, dequeued exactly once → O(V) total enqueue/dequeue operations</li>
+<li>Each edge: examined at most twice (once for each endpoint in undirected graph) → O(E) total edge examinations</li>
+<li>Total: O(V + E) — linear in graph size</li>
+</ul>
+</li>
+<li>Space: O(V)
+<ul>
+<li>Queue holds at most all vertices: O(V)</li>
+<li>colour[], d[], parent[] arrays: each O(V)</li>
+<li>Total working memory: O(V)</li>
+</ul>
+</li>
+<li>Branching-factor analysis (implicit state spaces):
+<ul>
+<li>Branching factor b: average number of successors per state</li>
+<li>Shallowest goal depth d: BFS expands O(b^0 + b^1 + … + b^d) = O(b^d) states</li>
+<li>Both time and space are O(b^d) — this exponential space is BFS’s main limitation for deep searches</li>
+</ul>
+</li>
+</ul>
+<p><strong>Correctness Proof (sketch)</strong></p>
+<ul>
+<li>Claim: when vertex v is first dequeued, d[v] = δ(s,v) (true shortest distance)</li>
+<li>Proof by induction on BFS level k = d[v]:
+<ul>
+<li>Base: s is enqueued with d[s] = 0 = δ(s,s) ✓</li>
+<li>Inductive step: assume all vertices at distance k have correct d[] when dequeued</li>
+<li>When vertex u at level k is expanded, it discovers neighbours v at level k+1 for the first time</li>
+<li>Any path from s to v has length ≥ k+1 (since no path can skip a level in BFS order)</li>
+<li>Therefore d[v] = k+1 = δ(s,v) ✓</li>
+</ul>
+</li>
+<li>Consequence: BFS provides shortest paths — optimal for unit-cost edge problems</li>
+</ul>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>FIFO Queue</strong></p>
+<ul>
+<li>The core data structure; determines BFS’s level-by-level exploration order</li>
+<li>Standard implementation as a circular array or doubly-linked list with O(1) enqueue/dequeue</li>
+<li>Array-based queue is cache-friendlier than linked-list queue for dense graphs</li>
+<li>For multi-source BFS, initialise the queue with all source vertices simultaneously</li>
+<li>In parallel BFS, the queue is replaced with a distributed frontier data structure</li>
+</ul>
+<p><strong>Visited / Colour Array</strong></p>
+<ul>
+<li>Boolean or tri-colour (WHITE/GREY/BLACK) array indexed over all vertices</li>
+<li>WHITE = undiscovered, GREY = discovered but not yet expanded, BLACK = fully processed</li>
+<li>Prevents revisiting and allows detection of discovery vs. processing events</li>
+<li>Simple boolean visited[] suffices for most applications; tri-colour needed for edge classification</li>
+<li>In distributed BFS, distributed hash sets or bit-arrays partitioned across machines</li>
+</ul>
+<p><strong>Distance Array (d[v])</strong></p>
+<ul>
+<li>Integer array recording shortest path distance from source to each vertex</li>
+<li>Initialised to infinity (or −1 for unreachable); updated exactly once when vertex first discovered</li>
+<li>Values are guaranteed final at point of vertex discovery in BFS (no re-relaxation needed)</li>
+<li>For multi-source BFS: d[v] = distance from v to nearest source</li>
+</ul>
+<p><strong>Parent / Predecessor Array</strong></p>
+<ul>
+<li>parent[v] records the BFS tree predecessor of vertex v on the shortest path from source</li>
+<li>Path reconstruction: trace parent[] pointers back from target to source, then reverse</li>
+<li>Defines the BFS spanning tree: a subgraph of the input graph containing all tree edges</li>
+</ul>
+<p><strong>BFS Tree and Edge Classification</strong></p>
+<ul>
+<li>BFS spanning tree: all tree edges (u,v) satisfy d[v] = d[u]+1</li>
+<li>In undirected BFS: all non-tree edges are cross edges with d[v] ≤ d[u]+1 (span at most one level)</li>
+<li>In directed BFS: edges can be tree, back (d[v] &lt; d[u]), forward (d[v] > d[u]+1), or cross</li>
+<li>BFS trees are always shortest-path trees: every root-to-leaf path is a shortest path in the graph</li>
+</ul>
+<p><strong>Adjacency Representation</strong></p>
+<ul>
+<li>BFS iterates over the neighbour list of each dequeued vertex</li>
+<li>Adjacency list: O(V+E) total work across entire BFS; preferred for sparse graphs</li>
+<li>Adjacency matrix: O(V) work per vertex expansion, O(V^2) total; only practical for dense small graphs</li>
+<li>Compressed Sparse Row (CSR) format: cache-efficient adjacency list for static graphs; standard in HPC BFS</li>
+</ul>
+<p><strong>Multi-source BFS</strong></p>
+<ul>
+<li>Initialise queue with multiple source vertices simultaneously at distance 0</li>
+<li>Computes nearest-source distances for every vertex: d[v] = min distance from v to any source</li>
+<li>Used in Voronoi partitioning (assign each vertex to nearest facility)</li>
+<li>Used in nearest-facility queries (nearest hospital, nearest charging station)</li>
+<li>Used in bipartite connected component analysis and network load balancing</li>
+</ul>
+<p><strong>Bidirectional BFS</strong></p>
+<ul>
+<li>Run BFS simultaneously from source s (forward) and target t (backward)</li>
+<li>Alternate between expanding one level from each side until the two frontiers meet</li>
+<li>Reduces the explored frontier from O(b^d) to O(b^{d/2}): quadratic speedup in frontier size</li>
+<li>Convergence criterion (Kaindl &amp; Kainz 1997): naive stopping when frontiers intersect is incorrect; must check that the meeting path is truly shortest</li>
+<li>Used in production map routing (Google Maps, Bing Maps) with contraction hierarchies for sub-ms queries</li>
+</ul>
+<p><strong>Direction-Optimising BFS (Beamer, Asanovic, Patterson 2012)</strong></p>
+<ul>
+<li>Top-down phase: for each node u in current frontier, examine all neighbours and add unvisited ones</li>
+<li>Bottom-up phase: for each unvisited node v, check if any of its neighbours is in the frontier</li>
+<li>Switches from top-down to bottom-up when frontier becomes large (> ~5% of graph)</li>
+<li>Bottom-up phase dramatically reduces work on low-diameter graphs (social networks, web graphs)</li>
+<li>The key algorithmic innovation that makes parallel BFS practical for billion-node social graphs</li>
+</ul>
+<h2 id="comparison-with-related-algorithms">Comparison with Related Algorithms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#comparison-with-related-algorithms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>BFS vs. <a href="../pages/Depth-First-Search" class="internal alias" data-slug="pages/Depth-First-Search">Depth-First Search</a></strong>: DFS uses a stack (or recursion) and explores one branch to maximum depth before backtracking. DFS has O(V) space but does not guarantee shortest paths. DFS is preferred for cycle detection, topological sort (Tarjan’s SCC), and constraint satisfaction; BFS is mandatory when shortest paths are required. In AI, DFS is complete for finite graphs but not optimal; BFS is both complete and optimal for unit costs.</p>
+<p><strong>BFS vs. Iterative Deepening DFS (IDDFS)</strong>: IDDFS achieves BFS-level completeness and optimality with DFS’s O(bd) space by repeatedly running depth-limited DFS with increasing depth limits. Each node at depth d is expanded O(b^0 + b^1 + … + b^{d-k}) times across all iterations — the overhead factor is b/(b-1), small for large b. IDDFS is preferred for deep state spaces; BFS is preferred for shallow, dense graphs where the additional overhead of IDDFS is undesirable.</p>
+<p><strong>BFS vs. <a href="../pages/Dijkstra-Algorithm" class="internal alias" data-slug="pages/Dijkstra-Algorithm">Dijkstra Algorithm</a></strong>: Dijkstra is BFS with a priority queue ordered by cumulative weighted path cost g(v). BFS is a degenerate case of Dijkstra when all edge weights equal 1. Dijkstra runs in O((V+E) log V) with binary heap; BFS runs in O(V+E). For unweighted graphs, BFS is strictly faster; for weighted graphs, Dijkstra is necessary.</p>
+<p><strong>BFS vs. <a href="../pages/A-Star-Algorithm" class="internal alias" data-slug="pages/A-Star-Algorithm">A Star Algorithm</a></strong>: A* adds a heuristic h(n) to Dijkstra’s cost, directing search towards the goal with priority f(n) = g(n) + h(n). BFS (and Dijkstra) explore all nodes at increasing cost levels regardless of goal direction. With a good admissible heuristic, A* expands exponentially fewer nodes than BFS for the same problem. BFS is preferred when no meaningful heuristic exists.</p>
+<p><strong>BFS vs. <a href="../pages/Beam-Search-Decoding" class="internal alias" data-slug="pages/Beam-Search-Decoding">Beam Search Decoding</a></strong>: Beam Search is a memory-bounded BFS variant that keeps only the k best nodes (the “beam”) in the frontier at each level. Beam Search is incomplete and non-optimal but practical for very wide frontiers (e.g. natural language generation in large language models). BFS always finds the optimal solution at the cost of potentially exponential memory; beam search sacrifices optimality for tractability.</p>
+<h2 id="use-cases">Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. Shortest Path in Unweighted Graphs</strong>
+BFS computes single-source shortest paths in O(V+E) for unweighted graphs.
+Applications include:</p>
+<ul>
+<li>Network routing: hop count minimisation in router-level routing protocols (e.g. RIP, which uses hop count as its metric)</li>
+<li>Word-ladder puzzles: transform “cold” to “warm” via single-letter substitutions; each valid word is a vertex, edges connect words differing by one letter; BFS finds the minimum-step chain</li>
+<li>Six degrees of separation in social networks: BFS from any person node to discover the shortest acquaintance path to any other person in the network</li>
+<li>Minimum-step solutions to sliding-tile puzzles (8-puzzle, 15-puzzle) at shallow depth before switching to A* or IDA*</li>
+<li>Minimum-hop paths in computer networks, optical networks, and communication graphs</li>
+</ul>
+<p><strong>2. Web Crawling</strong>
+Search engine crawlers (Googlebot, Bingbot, Baidu Spider) use BFS-like frontier expansion to discover web pages systematically.</p>
+<ul>
+<li>The frontier queue holds URLs to visit; each dequeued URL is fetched, parsed for outbound hyperlinks, and newly discovered links are enqueued</li>
+<li>BFS naturally discovers shallow/high-authority pages before deep ones, aligning with PageRank importance heuristics</li>
+<li>Production crawlers use a bounded priority queue combining BFS level with link authority signals</li>
+<li>Politeness constraints (robots.txt compliance, crawl rate limiting) are superimposed on the BFS frontier</li>
+<li>Focused crawling extends BFS with topic relevance filtering to constrain the frontier to topically relevant pages</li>
+</ul>
+<p><strong>3. Social Network Analysis</strong>
+BFS is the foundational algorithm for social graph neighbourhood exploration.</p>
+<ul>
+<li>LinkedIn “People You May Know” and “2nd-degree connections”: BFS from a user node finds all users within k hops</li>
+<li>Facebook social distance computation: BFS computes minimum friendship hops between any two users; “six degrees” studies use BFS-derived histograms</li>
+<li>Twitter follower graph analysis: BFS-based reachability determines information diffusion bounds in the follower network</li>
+<li>Erdős number computation: BFS over the mathematics co-authorship graph from Paul Erdős’s node gives each mathematician’s Erdős number</li>
+<li>“People You May Know” feature scores candidate nodes by BFS distance + mutual friend count, weighted and filtered by ML ranking models</li>
+</ul>
+<p><strong>4. Connected Components and Bipartite Detection</strong>
+In an undirected graph, launching BFS from each unvisited vertex identifies all connected components in O(V+E).</p>
+<ul>
+<li>Component labelling: each BFS from a WHITE vertex colours an entire connected component with a unique label</li>
+<li>Bipartite detection: 2-colour vertices during BFS (alternating RED/BLUE by distance parity); if any edge connects two vertices of the same colour, an odd cycle exists and the graph is not bipartite</li>
+<li>Applications: job-scheduling conflict detection (bipartite = no conflicting constraint cycles), Sudoku validity checking (bipartite constraint graph), matching problem feasibility</li>
+<li>Network partition analysis: connected component structure reveals isolated subnetworks, facilitating fault diagnosis</li>
+</ul>
+<p><strong>5. Circuit Board Routing (Lee’s Algorithm)</strong>
+Lee (1961) applied BFS to VLSI printed-circuit-board routing.</p>
+<ul>
+<li>Grid cells represent routing locations; blocked cells (obstacles, existing traces) are impassable</li>
+<li>BFS from a source pin expands through the routing grid; goal is the target pin’s cell</li>
+<li>Produces a shortest-path route (minimum wire length in terms of grid steps) avoiding all obstacles</li>
+<li>Modern EDA tools (Cadence, Synopsys) use BFS-derived maze routing as a fallback for complex net topologies where analytic routing fails</li>
+<li>The original Lee’s algorithm has O(V) space for the grid; hierarchical variants reduce complexity for billion-cell modern VLSI designs</li>
+</ul>
+<p><strong>6. AI Game Playing and State-Space Search</strong>
+BFS is used for state-space search in deterministic, fully observable environments with small branching factors.</p>
+<ul>
+<li>8-puzzle and 15-puzzle: BFS finds optimal solutions at shallow depths (≤15 moves for 8-puzzle)</li>
+<li>Corn-maze, grid-maze, and labyrinth problems: BFS finds exit paths with minimum steps</li>
+<li>Base algorithm for IDDFS: BFS determines the correct depth threshold for iterative deepening</li>
+<li>Bidirectional BFS for two-player games at shallow depth: meet-in-the-middle approach halves search space</li>
+<li>In NPC pathfinding on unweighted tile maps, BFS provides a simple correct baseline; A* is used when weights (terrain cost) are present</li>
+</ul>
+<p><strong>7. Network Topology Discovery and Spanning Trees</strong>
+Network management tools use BFS to map router adjacencies and compute spanning trees for loop-free broadcast.</p>
+<ul>
+<li>Spanning Tree Protocol (STP) in Ethernet networks: BFS-derived tree construction from a root bridge eliminates switching loops</li>
+<li>OSPF (Open Shortest Path First): each router runs Dijkstra (= BFS on weighted graph) on the link-state database to compute its shortest-path tree to all other routers</li>
+<li>Network topology discovery: SNMP-based network management tools use BFS over LLDP/CDP adjacency data to build network topology maps</li>
+<li>Broadcast tree construction: BFS from a gateway router computes the broadcast spanning tree for multicast routing</li>
+</ul>
+<p><strong>8. Parallel and GPU BFS for Graph Analytics</strong>
+Large-scale graph processing systems implement parallel BFS for trillion-edge web graphs and social networks.</p>
+<ul>
+<li>GraphX (Apache Spark), Ligra (shared-memory), Gunrock (GPU), BFSBlitz (manycore): all implement parallel BFS as a core primitive</li>
+<li>Graph500 supercomputer benchmark: BFS is the primary workload; leading entries process >100 teraedge-traversals per second</li>
+<li>As of 2025, optimised parallel BFS achieves 9.5× speedup over serial on 48-thread CPU servers</li>
+<li>BFSBlitz (FastCode 2025 winner): record 9.3 billion edges per second on dense synthetic graphs using bit-parallel frontier compression</li>
+<li>GPU BFS for dynamic networks (Euro-Par 2024): maintains BFS trees under streaming edge arrivals</li>
+</ul>
+<h2 id="benchmark-datasets-and-performance-standards">Benchmark Datasets and Performance Standards<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-performance-standards" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Graph500 Benchmark</strong></p>
+<ul>
+<li>The primary HPC benchmark for graph analytics; BFS is the core workload</li>
+<li>Problem specification: generate a random Kronecker graph of scale s (2^s vertices) and 16×2^s edges, then run BFS from 64 random start vertices and report Traversed Edges Per Second (TEPS)</li>
+<li>Graph500 scale levels: Toy (26 vertices), Mini (29), Small (232), Medium (236), Large (239), Huge (242)</li>
+<li>2025 rankings: leading petascale HPC systems achieve >100 teraedge-traversals per second on scale-42 inputs</li>
+<li>The benchmark evaluates memory bandwidth, irregular access patterns, and parallel communication overhead — not floating-point throughput</li>
+</ul>
+<p><strong>Moving AI Lab Pathfinding Benchmarks (BFS Baseline)</strong></p>
+<ul>
+<li>Nathan Sturtevant’s benchmark suite provides 2D grid maps where BFS serves as the unweighted shortest-path baseline</li>
+<li>Dragon Age Origins maps (156 maps), StarCraft maps (75 maps), Baldur’s Gate maps (75 maps)</li>
+<li>Random grid maps at varying obstacle densities (5%–40% blocked cells)</li>
+<li>BFS node expansion counts and path lengths serve as the optimality lower bound; A* and JPS are measured against BFS-optimal solutions</li>
+<li>Available at: <a href="https://movingai.com/benchmarks/" class="external">https://movingai.com/benchmarks/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+<p><strong>Graph Processing System Benchmarks</strong></p>
+<ul>
+<li>GAP Benchmark Suite (Beamer 2015): 6 graph kernels including BFS on 6 real-world graphs (road network, Twitter, web crawl, kron synthetic, urand, LiveJournal)</li>
+<li>GraphChallenge: HPC and ML graph algorithm challenges including BFS performance on static and dynamic graphs</li>
+<li>LDBC Social Network Benchmark: BFS-based shortest-path queries on synthetic social network graphs</li>
+<li>Stanford Large Network Dataset Collection (SNAP): BFS-derived metrics (diameter, clustering) on 100+ real social and web graphs</li>
+</ul>
+<p><strong>Social Network Datasets for BFS Analysis</strong></p>
+<ul>
+<li>Twitter follow graph (1.5 billion edges): BFS-based degree-of-separation analysis; most pairs are within 4.67 hops (2012 study)</li>
+<li>Facebook friendship graph: BFS showed average degrees of separation ~3.5 (2016 study); the “six degrees” finding validated</li>
+<li>SNAP ego-networks: BFS from ego nodes to characterise local neighbourhood structure in Facebook, Twitter, Google+ networks</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>BFS was first described (implicitly) by Konrad Zuse in 1945 in his Plankalkül PhD thesis, though not published until 1972. Edward F. Moore independently described it in 1959 for finding the shortest path through a maze. C.Y. Lee applied Moore’s algorithm to PCB routing in 1961, giving the algorithm its first major industrial application. The graph-theoretic formalisation in terms of the BFS tree and level structure, with proofs of shortest-path correctness and time complexity, appeared in Shimon Even’s graph theory textbooks of the 1970s. The standard computer science presentation appears in Cormen, Leiserson, Rivest, and Stein’s “Introduction to Algorithms” (CLRS), where BFS is the first algorithm presented in the graph section and serves as a pedagogical introduction to graph analysis techniques including BFS trees, shortest path distances, and graph colouring.</p>
+<p>AI-specific analysis of BFS as a search strategy appears in Nilsson (1971) and was definitively treated in Russell and Norvig’s “Artificial Intelligence: A Modern Approach” (1st edition 1995, 4th edition 2020), which establishes BFS as the canonical example of uninformed, complete, optimal (for unit costs) tree search. Chapter 3 presents BFS alongside DFS, IDDFS, and UCS in a unified search taxonomy that defines the vocabulary used in AI education globally.</p>
+<p>The parallel BFS literature grew rapidly after the Graph500 benchmark was introduced in 2010, establishing BFS as the primary performance metric for HPC graph processing. Major academic contributions include Agarwal et al. (2010) on scalable parallel BFS on multicore processors; Buluc and Madduri (2011) on distributed-memory parallel BFS using 2D graph partitioning; Shun and Blelloch’s Ligra framework (2013) for shared-memory parallel graph algorithms with direction-optimisation; and the Gunrock GPU graph analytics system (Wang et al., 2016) providing a high-level abstraction for GPU-parallel BFS. Beamer, Asanović, and Patterson’s direction-optimising BFS (SC 2012) was the key algorithmic breakthrough for low-diameter (social network style) graphs.</p>
+<p>Bidirectional BFS optimisation was analysed theoretically by Pohl (1971) and extended by numerous researchers. The key insight — that bidirectional BFS requires O(b^{d/2}) instead of O(b^d) node expansions — has been exploited in production map routing (Google Maps, Bing Maps, HERE) since the early 2000s. Kaindl and Kainz (1997) showed that naive bidirectional BFS may terminate suboptimally and established correct termination conditions. Modern bidirectional BFS in map routing uses contraction hierarchies (Geisberger et al., 2008).</p>
+<p>The theoretical complexity of BFS has been studied from the perspective of space-efficient computation. Elmasry et al. (2013) and subsequent papers showed that BFS can be implemented in sublinear working space. The 2016 paper (arXiv:1606.04718) established improved space-efficient BFS running in linear time and O(V log log V) bits. The 2025 semi-external BFS paper (arXiv:2507.12925) addresses BFS on graphs where vertices fit in memory but edge lists must be streamed from disk, relevant for web-scale graph processing on single machines.</p>
+<p>GNN research has rekindled theoretical interest in BFS. The Local Vertex Colouring GNN paper (arXiv:2403.06080, 2024) uses breadth-first colouring (BFC) schemes that mirror BFS level structure to initialise node features, improving GNN expressivity beyond the 1-WL Weisfeiler-Lehman test. Parallel Cluster-BFS (ALENEX 2025) exploits graph cluster structure for faster BFS convergence on real-world power-law graphs. The Graph500 2025 edition lists petascale systems processing trillion-vertex BFS traversals.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>BFS remains universally taught in undergraduate algorithms curricula and is one of the most used graph primitives in production software. Key developments as of 2024–2026:</p>
+<p><strong>High-Performance Parallel BFS</strong></p>
+<ul>
+<li>Graph500 benchmark (2025): petascale HPC systems (Frontier at ORNL, Leonardo in Europe) process trillion-vertex BFS traversals, with leading entries exceeding 100 teraedge-traversals per second</li>
+<li>BFSBlitz (2025, ACM FastCode winner): record edge traversal rates using bit-parallel frontier compression on manycore systems</li>
+<li>Optimised Parallel BFS with Adaptive Strategies (FastCode 2025, ACM DL 10.1145/3711708.3723449): 9.5× speedup, 9.3 billion edges/second on 48-thread server</li>
+<li>Parallel Cluster-BFS (ALENEX 2025): hierarchical parallel BFS exploiting cluster structure, 2–5× improvement on power-law graphs</li>
+<li>GPU-Accelerated BFS for Dynamic Networks (Euro-Par 2024): BFS tree maintenance under continuous edge insertions/deletions, targeting real-time social network monitoring</li>
+</ul>
+<p><strong>BFS in Graph Neural Networks</strong></p>
+<ul>
+<li>Local Vertex Colouring GNNs (arXiv:2403.06080, 2024): BFS-derived breadth-first colouring improves GNN expressivity beyond 1-WL Weisfeiler-Lehman test</li>
+<li>BFS level structure used as structural position encodings in Graph Transformers (2024–2025), improving long-range dependency modelling</li>
+<li>BFS distance labels as node features in knowledge graph embedding models, providing topological context for entity representation</li>
+</ul>
+<p><strong>BFS in LLM Reasoning</strong></p>
+<ul>
+<li>Tree-of-Thought (Yao et al., 2023): BFS-style exploration of multi-step reasoning paths improves LLM performance on mathematical and logical tasks</li>
+<li>Graph-of-Thought paradigm (2024): explicit BFS-like exploration over knowledge graph neighbourhoods for complex QA</li>
+<li><a href="../pages/Beam-Search-Decoding" class="internal alias" data-slug="pages/Beam-Search-Decoding">Beam Search Decoding</a> in LLMs: bounded-frontier BFS over token sequences; BFS informs the theoretical analysis of beam search completeness and optimality trade-offs</li>
+<li>RAG (retrieval-augmented generation) with knowledge graph BFS: multi-hop BFS over knowledge graph neighbourhoods enables retrieval of multi-step reasoning paths rather than single documents</li>
+</ul>
+<p><strong>Space-Efficient and Streaming BFS</strong></p>
+<ul>
+<li>Semi-external BFS (arXiv:2507.12925, 2025): BFS on graphs where vertices fit in RAM but edges must be streamed from disk, enabling web-scale single-machine processing</li>
+<li>Approximate BFS via HyperBall and HyperANF sketching: sublinear-space approximation of BFS-derived distance distribution statistics for trillion-vertex web graphs</li>
+<li>Quantum BFS proposals: theoretical quadratic speedup using Grover-search-enhanced frontier expansion; circuit designs emerging but no near-term hardware demonstrations</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The UK has strong historical and contemporary contributions to graph algorithms research, with particular strengths in HPC graph processing, network science, and algorithm engineering.</p>
+<p>The University of Edinburgh’s EPCC hosts ARCHER2, the UK national HPC system, where BFS-based Graph500 benchmarking is a primary workload. Edinburgh’s Informatics department has contributed to efficient graph traversal on non-standard architectures.</p>
+<p>The University of Manchester has deep historical connections to early computing (Mark 1, 1948) and maintains a strong algorithms engineering group. Manchester’s Datacentre Research Group applies BFS-based graph analytics to network topology discovery and failure propagation modelling in data centre infrastructures — a significant industrial context given Manchester’s role as a major UK data centre hub.</p>
+<p>Imperial College London’s Systems and Algorithms Laboratory (SALSA) researches cache-efficient BFS implementations and high-performance graph algorithms with applications to smart grid resilience (power network BFS-based reachability) and financial contagion modelling (counterparty network BFS).</p>
+<p>The University of Cambridge Computer Laboratory teaches BFS as the entry point for graph analysis in its advanced algorithms courses. Cambridge’s networks and operating systems group applies BFS-based topology mapping to distributed systems design. Cambridge also has strong connections to ARM (Cambridge), whose processor architectures are optimised for irregular memory access patterns characteristic of BFS workloads.</p>
+<p>Newcastle University’s Digital Civics and urban informatics research uses BFS-derived algorithms for urban mobility network analysis, public transport reachability studies, and social infrastructure mapping — determining access to services within k-hop distance from residential areas in Newcastle, Sunderland, and Middlesbrough.</p>
+<p>The University of Leeds’ transport research group applies BFS to multimodal transport network analysis in the West Yorkshire Combined Authority area, studying reachability of destinations by public transport and informing service planning decisions.</p>
+<p>DeepMind (London) uses graph traversal extensively in AlphaFold’s protein-contact graph analysis, in game tree search for AlphaGo/AlphaZero, and in knowledge graph reasoning for Sparrow and Gemini. BT Group (formerly British Telecom) has historically used BFS-derived routing algorithms for telephone network management and currently deploys BFS-based network topology discovery in its broadband infrastructure management systems across the UK.</p>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Dynamic graph BFS</strong> (2026–2028): Algorithms that maintain shortest-path BFS trees under continuous edge insertions and deletions, critical for real-time social network monitoring, fraud detection, and infrastructure resilience analysis. Euro-Par 2024 GPU work provides the starting point; theoretical lower bounds for dynamic BFS are still being established. Expected deployment in streaming graph platforms by 2028.</p>
+<p><strong>Quantum BFS</strong> (post-2030): Quadratic speedup in BFS frontier expansion on quantum computers using Grover-search. Practical quantum BFS circuits designed and simulated, but near-term hardware (100–1000 noisy qubits) lacks coherence for practical advantage. Realistic quantum BFS advantage post-2030 on fault-tolerant hardware.</p>
+<p><strong>Approximate BFS for web-scale graphs</strong>: Sketching and sampling methods (HyperBall for distance distribution, HyperANF for neighbourhood function estimation) provide approximate BFS-derived statistics in sublinear space. These will become increasingly important as graph sizes exceed distributed system capacity.</p>
+<p><strong>BFS as GNN structural bias</strong> (2024–2027): Using BFS level structure as inductive bias for GNN message-passing schedules, either by BFS-ordering aggregation or incorporating BFS distance features. Exphormer (2023) and BFS-based graph transformers (2024–2025) are early examples; broader integration expected through 2027.</p>
+<p><strong>Distributed streaming BFS</strong>: BFS on continuously arriving graph streams in distributed systems (Apache Kafka + GraphX pipelines) with applications to real-time fraud detection, network intrusion analysis, and social network trend monitoring. Incremental streaming BFS with O(1) amortised time per edge arrival is an active research target.</p>
+<p><strong>BFS-guided RAG</strong> (2025–2027): Structured BFS over knowledge graph neighbourhoods as a retrieval mechanism for multi-hop retrieval-augmented generation. Systems like Microsoft GraphRAG (2024) already use community detection (derived from BFS components) for hierarchical knowledge retrieval; BFS-guided multi-hop RAG will evolve into a standard technique for complex QA by 2027.</p>
+<p><strong>BFS on heterogeneous graphs</strong>: Extending BFS to heterogeneous graphs with multiple vertex and edge types (knowledge graphs, social-biological networks), requiring type-specific traversal rules and resulting in multi-type BFS trees. Relevant to biomedical knowledge graphs and enterprise data graphs for multi-modal AI systems.</p>
+<p><strong>Neuromorphic BFS</strong> (2027–2030): Mapping BFS onto neuromorphic computing architectures (Intel Loihi 3, IBM NorthPole) where parallel neuron firing naturally implements BFS-like level-by-level activation propagation. Early experiments show 100× energy efficiency improvement over GPU BFS for sparse graphs with irregular access patterns.</p>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Zuse, K. (1945/1972). “Plankalkül.” <em>Gesellschaft für Mathematik und Datenverarbeitung</em>, Bonn. [First implicit BFS description]</li>
+<li>Moore, E.F. (1959). “The Shortest Path Through a Maze.” <em>Proceedings of the International Symposium on the Theory of Switching</em>, 285–292. [Independent BFS invention]</li>
+<li>Lee, C.Y. (1961). “An Algorithm for Path Connection and Its Applications.” <em>IRE Transactions on Electronic Computers</em>, 10(3), 346–365. [PCB routing BFS application]</li>
+<li>Nilsson, N.J. (1971). <em>Problem-Solving Methods in Artificial Intelligence</em>. McGraw-Hill, New York. [AI search taxonomy; BFS as uninformed search]</li>
+<li>Even, S. (1979). <em>Graph Algorithms</em>. Computer Science Press, Rockville. [Classical graph algorithms textbook]</li>
+<li>Pohl, I. (1971). “Bi-directional Search.” <em>Machine Intelligence</em>, 6, 127–140. [Bidirectional BFS theory]</li>
+<li>Cormen, T.H., Leiserson, C.E., Rivest, R.L., and Stein, C. (2009). <em>Introduction to Algorithms</em>, 3rd ed. MIT Press. [CLRS canonical BFS chapter]</li>
+<li>Russell, S. and Norvig, P. (2020). <em>Artificial Intelligence: A Modern Approach</em>, 4th ed. Pearson. [AI search taxonomy with BFS as uninformed baseline]</li>
+<li>Hopcroft, J. and Karp, R. (1973). “An n^{5/2} Algorithm for Maximum Matchings in Bipartite Graphs.” <em>SIAM Journal on Computing</em>, 2(4), 225–231. [Hopcroft-Karp uses BFS phases]</li>
+<li>Kahn, A.B. (1962). “Topological Sorting of Large Networks.” <em>Communications of the ACM</em>, 5(11), 558–562. [Kahn’s topological sort uses BFS]</li>
+<li>Agarwal, V. et al. (2010). “Scalable Graph Exploration on Multicore Processors.” <em>SC 2010 Proceedings</em>. [Early parallel BFS]</li>
+<li>Buluc, A. and Madduri, K. (2011). “Parallel Breadth-First Search on Distributed Memory Systems.” <em>SC 2011</em>. [Distributed parallel BFS with 2D partitioning]</li>
+<li>Beamer, S., Asanović, K., and Patterson, D. (2012). “Direction-Optimizing Breadth-First Search.” <em>SC 2012</em>. [Direction-optimising BFS for low-diameter graphs; key breakthrough]</li>
+<li>Shun, J. and Blelloch, G.E. (2013). “Ligra: A Lightweight Graph Processing Framework for Shared Memory.” <em>PPoPP 2013</em>. [Shared-memory parallel graph algorithms]</li>
+<li>Wang, Y. et al. (2016). “Gunrock: A High-Performance Graph Processing Library on the GPU.” <em>ACM PPoPP 2016</em>. arXiv:1701.01170. [GPU BFS benchmark]</li>
+<li>Graph500 Steering Committee. (2010–2025). “Graph500 Benchmark Specification.” <a href="https://graph500.org" class="external">https://graph500.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. [Primary BFS supercomputer benchmark]</li>
+<li>Kaindl, H. and Kainz, G. (1997). “Bidirectional Heuristic Search Reconsidered.” <em>Journal of Artificial Intelligence Research</em>, 7, 283–317. [Correct termination conditions for bidirectional BFS]</li>
+<li>Geisberger, R. et al. (2008). “Contraction Hierarchies: Faster and Simpler Hierarchical Routing in Road Networks.” <em>WEA 2008</em>. [Enables sub-ms routing via bidirectional BFS on contracted graphs]</li>
+<li>Peng, Y. et al. (2024). “GPU-Accelerated BFS for Dynamic Networks.” <em>Euro-Par 2024: Parallel Processing</em>, Springer. <a href="https://dl.acm.org/doi/10.1007/978-3-031-69583-4_6" class="external">https://dl.acm.org/doi/10.1007/978-3-031-69583-4_6<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>BFSBlitz: A Highly Parallel Graph System for Breadth-First Search. (2025). <em>Proceedings of the 1st FastCode Programming Challenge</em>. ACM. <a href="https://dl.acm.org/doi/10.1145/3711708.3723444" class="external">https://dl.acm.org/doi/10.1145/3711708.3723444<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Optimized Parallel Breadth-First Search with Adaptive Strategies. (2025). <em>Proceedings of the 1st FastCode Programming Challenge</em>. ACM. <a href="https://dl.acm.org/doi/10.1145/3711708.3723449" class="external">https://dl.acm.org/doi/10.1145/3711708.3723449<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Parallel Cluster-BFS and Applications to Shortest Paths. (2025). <em>ALENEX 2025 Proceedings</em>. SIAM. <a href="https://doi.org/10.1137/1.9781611978339.4" class="external">https://doi.org/10.1137/1.9781611978339.4<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Efficient Semi-External Breadth-First Search. (2025). arXiv:2507.12925. [Space-efficient BFS for massive graphs]</li>
+<li>Improved Space Efficient Linear Time Algorithms for BFS, DFS and Applications. (2016). arXiv:1606.04718. [Space-optimal BFS]</li>
+<li>Local Vertex Colouring Graph Neural Networks. (2024). arXiv:2403.06080. [BFS colouring in GNNs; beyond 1-WL expressivity]</li>
+<li>Parallel Breadth-First Search and Exact Shortest Paths. (2022). arXiv:2210.16351. [Theoretical parallel BFS complexity]</li>
+<li>Skiena, S.S. (2020). <em>The Algorithm Design Manual</em>, 3rd ed. Springer. [BFS applications chapter]</li>
+<li>Applications of Graph Theory to Social Networks. (2024). <em>REST Publisher</em>. [BFS in social graph analysis; LinkedIn, Facebook use cases]</li>
+</ol>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>BFS tree</strong></p>
+<ul>
+<li>The spanning tree of BFS-discovered edges; all tree edges (u,v) satisfy d[v] = d[u]+1</li>
+<li>Defines the structure of shortest paths from the source to all reachable vertices</li>
+<li>Every root-to-leaf path in the BFS tree is a shortest path in the original graph</li>
+<li>In undirected graphs: non-tree edges can only connect vertices within the same level or adjacent levels</li>
+</ul>
+<p><strong>Level / BFS layer</strong></p>
+<ul>
+<li>The set of all vertices at distance k from the source; written L_k = {v : d[v] = k}</li>
+<li>BFS processes levels in strictly increasing order: L_0, L_1, L_2, …</li>
+<li>The queue at any moment contains at most two consecutive levels (level k and level k+1)</li>
+<li>Level structure is the defining property that gives BFS its shortest-path guarantee</li>
+</ul>
+<p><strong>Frontier</strong></p>
+<ul>
+<li>The current set of GREY (discovered but not yet expanded) vertices held in the FIFO queue</li>
+<li>At any moment during BFS, the frontier spans at most two consecutive levels (k and k+1)</li>
+<li>Frontier size determines BFS space requirement: O(|L_k| + |L_{k+1}|) at level k</li>
+<li>In parallel BFS: the frontier is partitioned across processors or GPU threads</li>
+</ul>
+<p><strong>Shortest path (unweighted)</strong></p>
+<ul>
+<li>The path from source s to vertex v with minimum edge count; BFS finds this optimally in O(V+E)</li>
+<li>The first time BFS reaches v, it uses the shortest route (minimum number of hops)</li>
+<li>For weighted graphs, BFS does NOT find the minimum-weight path — Dijkstra or A* is required</li>
+<li>On unit-weight graphs, BFS shortest path = minimum-weight path</li>
+</ul>
+<p><strong>Direction-optimising BFS</strong></p>
+<ul>
+<li>Beamer et al.’s (SC 2012) technique switching between top-down and bottom-up phases</li>
+<li>Top-down: for each frontier vertex u, check all of u’s neighbours and enqueue unvisited ones</li>
+<li>Bottom-up: for each unvisited vertex v, check if any of v’s neighbours is in the frontier</li>
+<li>Switches to bottom-up when frontier size > ~5% of total vertices (heuristic threshold)</li>
+<li>Reduces work from O(frontier × average degree) to O(unvisited vertices) during large-frontier phases</li>
+<li>Critically important for power-law graphs (social networks) where frontier can be very large</li>
+</ul>
+<p><strong>Multi-source BFS</strong></p>
+<ul>
+<li>BFS initialised from multiple source vertices simultaneously at distance 0</li>
+<li>Computes the nearest-source distance for every reachable vertex: d[v] = min_{s in Sources} δ(s,v)</li>
+<li>Used for Voronoi partitioning (assign each vertex to nearest facility)</li>
+<li>Used for nearest-facility queries (nearest hospital, nearest emergency service)</li>
+<li>Used in graph partitioning: multi-source BFS from k seeds produces a k-partition of the graph</li>
+</ul>
+<p><strong>Bidirectional BFS</strong></p>
+<ul>
+<li>BFS run from source s (forward) and target t (backward) simultaneously</li>
+<li>Optimal meeting-in-the-middle strategy: reduces frontier size from O(b^d) to O(2×b^{d/2})</li>
+<li>Requires careful convergence criterion (Kaindl &amp; Kainz 1997) to guarantee shortest path optimality</li>
+<li>Used in production map routing with contraction hierarchies for sub-millisecond queries on continental road networks</li>
+</ul>
+<p><strong><a href="../pages/Beam-Search-Decoding" class="internal alias" data-slug="pages/Beam-Search-Decoding">Beam Search Decoding</a></strong></p>
+<ul>
+<li>Memory-bounded BFS variant keeping only the k best frontier nodes (the “beam”) per level</li>
+<li>Used in language model sequence decoding: k = beam width, levels = token positions</li>
+<li>Sacrifices completeness (may miss the optimal sequence) and optimality for tractability on very wide frontiers</li>
+<li>BFS is the theoretical limit of beam search as k → ∞ (complete search)</li>
+</ul>
+<p><strong>Graph500</strong></p>
+<ul>
+<li>The primary HPC benchmark for graph analytics, measuring supercomputer performance on graph workloads</li>
+<li>Core workload: BFS from 64 random start vertices on a large Kronecker random graph</li>
+<li>Performance metric: Traversed Edges Per Second (TEPS) — edges explored per second of wall time</li>
+<li>Representative of irregular memory access patterns (cache misses, random DRAM accesses) in real graphs</li>
+<li>2025 Top-10 systems achieve >100 TTEPS (tera-traversed-edges-per-second) on scale-42 inputs</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-858" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#contrastive-relationships" data-for="contrastive-relationships">Contrastive Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#formal-algorithm" data-for="formal-algorithm">Formal Algorithm</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#comparison-with-related-algorithms" data-for="comparison-with-related-algorithms">Comparison with Related Algorithms</a></li><li class="depth-0"><a href="#use-cases" data-for="use-cases">Use Cases</a></li><li class="depth-0"><a href="#benchmark-datasets-and-performance-standards" data-for="benchmark-datasets-and-performance-standards">Benchmark Datasets and Performance Standards</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Depth-First-Search" class="internal">Depth-First Search</a></li><li><a href="../pages/Graph-Search" class="internal">Graph Search</a></li><li><a href="../pages/State-Space-Search" class="internal">State Space Search</a></li><li><a href="../pages/Tree-of-Thoughts" class="internal">tree of thoughts</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

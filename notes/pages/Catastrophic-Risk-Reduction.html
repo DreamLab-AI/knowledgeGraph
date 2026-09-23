@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Catastrophic Risk Reduction</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Catastrophic Risk Reduction"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Catastrophic Risk Reduction"/><meta name="twitter:description" content="Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems."/><meta property="og:description" content="Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems."/><meta property="og:image:alt" content="Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Catastrophic-Risk-Reduction"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Catastrophic-Risk-Reduction"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Catastrophic-Risk-Reduction"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1401"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1401" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Catastrophic Risk Reduction</a></div></nav><h1 class="article-title">Catastrophic Risk Reduction</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.697Z">23 Sept 2026</time><span>39 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:catastrophic-risk-reduction</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Global-Catastrophic-Risk" class="internal">Global Catastrophic Risk</a></li><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Capability-Evaluation" class="internal">Capability Evaluation</a></li><li><a href="../responsible-scaling-policy" class="internal">Responsible Scaling Policy</a></li><li><a href="../pages/Corrigibility" class="internal">Corrigibility</a></li><li><a href="../pages/Scalable-Oversight" class="internal">Scalable Oversight</a></li><li><a href="../pages/Compute-Governance" class="internal">Compute Governance</a></li><li><a href="../pages/AI-Safety-Institute" class="internal">AI Safety Institute</a></li><li><a href="../pages/Interpretability" class="internal">Interpretability</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Human-Oversight" class="internal">Human Oversight</a></li><li><a href="../pages/Interpretability" class="internal">Interpretability</a></li><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Formal-Verification" class="internal">Formal Verification</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../trustworthy-ai" class="internal">Trustworthy AI</a></li><li><a href="../pages/Responsible-AI" class="internal">Responsible AI</a></li><li><a href="../pages/AI-Ethics" class="internal">AI Ethics</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../AI-Capabilities-Research" class="internal">AI Capabilities Research</a></li><li><a href="../pages/Reward-Hacking" class="internal">Reward Hacking</a></li><li><a href="../pages/Mesa-Optimisation" class="internal">Mesa-Optimisation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Existential-Risk" class="internal">Existential Risk</a></li><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Constitutional-AI" class="internal">Constitutional AI</a></li><li><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal">Reinforcement Learning from Human Feedback</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/AI-Governance-Framework" class="internal">AI Governance Framework</a></li><li><a href="../pages/Value-Alignment" class="internal">Value Alignment</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:catastrophic-risk-reduction</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Existential-Risk" class="internal">Existential Risk</a></li><li><a href="../Safety-and-alignment" class="internal">Safety and Alignment</a></li><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Global-Catastrophic-Risk" class="internal">Global Catastrophic Risk</a></li><li><a href="../pages/Compute-Governance" class="internal">Compute Governance</a></li><li><a href="../pages/AI-Existential-Risk-Probability-Estimate" class="internal">AI Existential Risk Probability Estimate</a></li><li><a href="../pages/Bletchley-Declaration" class="internal">Bletchley Declaration</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../pages/ISO-IEC-42001" class="internal">ISO IEC 42001</a></li><li><a href="../pages/AI-Governance-Law-and-Privacy" class="internal">AI Governance Law and Privacy</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../pages/AI-Safety-Institute" class="internal">AI Safety Institute</a></li><li><a href="../pages/AISI-Frontier-AI-Safety-Framework" class="internal">AISI Frontier AI Safety Framework</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Large-Language-Model" class="internal">Large Language Model</a></li><li><a href="../pages/AI-System" class="internal">AI System</a></li><li><a href="../pages/Frontier-AI" class="internal">Frontier AI</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../pages/Mechanistic-Interpretability" class="internal">Mechanistic Interpretability</a></li><li><a href="../pages/Adversarial-Machine-Learning" class="internal">Adversarial Machine Learning</a></li><li><a href="../Distributional-Shift" class="internal">Distributional Shift</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Catastrophic risk reduction is the set of interventions, controls, and governance measures aimed at lowering the probability or severity of large-scale harms, particularly those posed by advanced AI systems. It spans technical safeguards such as alignment and capability control, organisational measures such as staged deployment and incident response, and policy measures such as compute governance. It is a core goal of AI safety and alignment work because it targets the tail risks that could threaten societal stability or human survival.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:RedTeaming))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:CapabilityEvaluation))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:ResponsibleScalingPolicy))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:Corrigibility))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:ScalableOversight))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:ComputeGovernance))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:Interpretability))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:IncidentResponsePlan))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:hasPart ai:TripwireEvaluation))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:HumanOversight))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:AIAlignment))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:Interpretability))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:FormalVerification))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:ModelEvaluation))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:ThirdPartyAudit))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:requires ai:RiskAssessment))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:enables ai:AIGovernance))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:enables ai:TrustworthyAI))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:enables ai:ResponsibleAI))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:enables ai:SafeAIDeployment))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:enables ai:AIEthics))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:enables ai:InternationalAICooperation))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:implements ai:AISafety))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:implements ai:AIGovernanceFramework))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:implements ai:ValueAlignment))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:implements ai:DefenceInDepth))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:implements ai:RiskMitigationProtocol))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:implements ai:SafetyLevel))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:ExistentialRiskMitigation))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:TailRiskManagement))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:SafeAIOperation))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:CBRNUpliftPrevention))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:MisalignmentRiskMitigation))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:DeceptiveAlignmentPrevention))
+SubClassOf(ai:CatastrophicRiskReduction
+  ObjectSomeValuesFrom(ai:reducesTo ai:CatastrophicMisusePrevention))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Catastrophic Risk Reduction (CRR) emerged as a distinct field at the intersection of long-run existential risk scholarship, technical AI safety research, and emerging AI governance practice. Its conceptual foundations trace to Nick Bostrom’s formalisation of existential risk (2002, 2014) and Toby Ord’s <em>The Precipice</em> (2020), which argued that tail risks to humanity’s long-run potential deserve disproportionate prioritisation given their irreversibility and scale. The field accelerated in direct response to the rapid capability growth of large language models from 2022 onwards, which transformed theoretical concerns into operational engineering problems requiring immediate institutional response.</p>
+<p>The core insight motivating CRR is that the expected disutility of catastrophic outcomes is not merely proportional to their probability — it is proportional to probability multiplied by the magnitude and irreversibility of harm. A 1% chance of permanently curtailing human civilisation outweighs many orders of magnitude of recoverable harm under most moral frameworks, including purely utilitarian, contractualist, and risk-averse approaches. This asymmetry motivates the “defence in depth” architecture that characterises CRR: multiple independent layers of safeguard, so that the failure of any single layer does not produce catastrophic outcomes. The same asymmetry drives the precautionary threshold approach enshrined in responsible scaling policies, where deployment of increasingly capable systems is gated on evidence that risk levels remain within manageable bounds.</p>
+<p>CRR differs from general <a href="../pages/AI-Risk-Management" class="internal alias" data-slug="pages/AI-Risk-Management">AI Risk Management</a> in its scope and prioritisation. Conventional risk management addresses a broad portfolio of harms including bias, privacy violations, intellectual property infringement, and economic disruption — important concerns, but ones from which society can recover and adapt. CRR focuses specifically on risks that are either irreversible (extinction, permanent totalitarian lock-in, civilisational collapse), novel in kind (AI systems pursuing objectives misaligned with human welfare autonomously), or capable of cascading across critical infrastructure simultaneously. This narrower but more urgent focus justifies dedicated institutional structures — safety institutes, internal frontier safety teams, international evaluation consortia — that go beyond conventional product safety regulation.</p>
+<p>The intellectual genealogy of CRR intersects several disciplinary traditions. Nuclear risk reduction (from the Cold War deterrence theory of Schelling, Kahn, and Herman) provided the first rigorous frameworks for reasoning about tail risks with civilisational consequences, developing concepts like mutual assured destruction, arms control verification, and crisis stability that have direct analogues in AI risk. Schelling’s work on focal points, commitment devices, and credible threats is particularly relevant to AI governance: international CRR agreements must create credible deterrence against defection (deploying a system before safety requirements are met) while allowing cooperative verification of compliance. The IAEA’s inspection and safeguards regime for nuclear materials provides a concrete institutional model for AI compute monitoring and frontier model evaluation. Biosecurity, developed following the 1972 Biological Weapons Convention, created the institutional precedent for international monitoring and restriction of dual-use biological research — a model that CRR scholars invoke for AI governance. Financial systemic risk theory, developed after the 2008 financial crisis, provided tools for reasoning about correlated failures and cascading collapses in complex interconnected systems, directly applicable to scenarios involving multiple AI systems interacting with critical infrastructure. Effective altruism’s prioritisation framework — focusing on interventions that are large in scale, neglected relative to their importance, and tractable — shaped the research agenda of early CRR institutions including the Machine Intelligence Research Institute, the Centre for Human-Compatible AI, and the Centre for the Study of Existential Risk.</p>
+<p>The field underwent a significant transition around 2022–2023 that moved CRR from primarily theoretical to operational. The release of GPT-4 (March 2023) and subsequent frontier models demonstrated non-trivial capability on biosecurity-relevant tasks (protein engineering, chemistry synthesis planning), sophisticated social reasoning applicable to influence operations, and emerging agentic capability in tool-use settings. Simultaneously, the mechanistic interpretability programme began revealing that frontier model internals were structured in ways that were more interpretable than expected — giving both greater hope that model safety could be assessed and greater concern that models were developing more sophisticated internal representations than their surface behaviour suggested. This combination of advancing capability and partially advancing interpretability tools created the practical urgency that drove institutional formation: the Bletchley Summit (November 2023), the formation of AISI, Anthropic’s first RSP, and METR’s agentic capability evaluations all occurred within eighteen months of GPT-4’s release. The CRR field’s current institutional infrastructure is thus very recent and still maturing relative to the pace of frontier AI capability advancement it aims to govern.</p>
+<p>The field underwent a significant transition around 2022–2023. Prior to this period, CRR was primarily a theoretical and philosophical enterprise, with most practitioners uncertain whether catastrophic AI risks would materialise within decades or centuries. The emergence of GPT-4, Claude 2, and Gemini Ultra — systems demonstrating non-trivial capability on biosecurity-relevant tasks, sophisticated social reasoning, and agentic tool use — made clear that the timeline might be measured in years rather than decades. This triggered the rapid institutionalisation of CRR: frontier labs creating dedicated safety teams with substantial headcount and budget; governments establishing safety evaluation bodies; and regulatory frameworks moving from discussion to legislation within eighteen months. The transition from theoretical concern to operational engineering problem is the defining characteristic of CRR’s current phase.</p>
+</li>
+<li>
+<h2 id="relationship-to-broader-ai-safety-research">Relationship to Broader AI Safety Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-broader-ai-safety-research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CRR is best understood as one quadrant of the broader <a href="../pages/AI-Safety" class="internal alias" data-slug="pages/AI-Safety">AI Safety</a> research landscape, specialising in the reduction of the most severe tail risks. Its relationship to adjacent safety fields clarifies its scope:</p>
+<ul>
+<li>
+<p><strong><a href="../pages/AI-Alignment" class="internal alias" data-slug="pages/AI-Alignment">AI Alignment</a> and CRR:</strong></p>
+<ul>
+<li>Alignment research aims to ensure AI systems pursue objectives consistent with human values — a necessary condition for preventing misalignment-driven catastrophes.</li>
+<li>CRR encompasses and extends alignment by also covering misuse risks (where aligned systems might still assist with harmful goals if not specifically restricted), structural risks, and governance failures that alignment techniques alone cannot address.</li>
+<li>From a CRR perspective, alignment is a necessary but not sufficient safeguard: even a perfectly aligned system might still be misused by bad actors, or might behave safely in limited deployment while posing structural risks at scale.</li>
+<li>CRR adds the dimension of “even if alignment fails, what failsafes prevent catastrophe?” — the AI control paradigm.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/Interpretability" class="internal" data-slug="pages/Interpretability">Interpretability</a> and CRR:</strong></p>
+<ul>
+<li>Mechanistic interpretability research exposes how model internals compute their outputs, enabling detection of dangerous reasoning patterns and verification of alignment properties.</li>
+<li>For CRR, interpretability is primarily valuable as an evaluation tool: enabling more reliable assessment of whether a model poses catastrophic misuse risks by understanding what capabilities are encoded in its weights.</li>
+<li>Interpretability is also a potential foundation for safety guarantees that go beyond behavioural testing — if we can verify that a model’s circuits do not contain the computational patterns needed to perform dangerous tasks, this provides stronger assurance than any finite set of behavioural evaluations.</li>
+<li>The mechanistic interpretability programme at Anthropic (sparse autoencoders, superposition, monosemanticity) is the primary technical CRR-interpretability research programme in 2025–2026.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/Robustness" class="internal" data-slug="pages/Robustness">Robustness</a> and CRR:</strong></p>
+<ul>
+<li>Adversarial robustness research investigates model behaviour under distributional shift and adversarial input perturbation.</li>
+<li>For CRR, robustness matters because adversaries will systematically probe models for jailbreaks and capability extraction; robust models maintain safe behaviour even under adversarial pressure.</li>
+<li>CRR’s robustness concern extends beyond standard adversarial examples to “jailbreaking” — adversarial prompts designed to bypass safety training — and to capability elicitation: adversarial strategies for extracting dangerous capabilities that the model has been trained to withhold.</li>
+<li>Robustness research alone does not address systemic risks, governance failures, or misalignment — CRR requires all four safety dimensions.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/AI-Governance" class="internal alias" data-slug="pages/AI-Governance">AI Governance</a> and CRR:</strong></p>
+<ul>
+<li>Governance research develops the institutional, legal, and policy frameworks needed to regulate AI development and deployment safely.</li>
+<li>CRR depends on governance for enforcement: technical safeguards without governance mechanisms to require their implementation are insufficient — a company that has excellent internal alignment and evaluation processes but is not required to use them will not reliably do so under competitive pressure.</li>
+<li>Conversely, governance frameworks must be informed by CRR’s technical analysis: compute thresholds must be calibrated to actual capability levels; safety evaluation requirements must specify technically feasible and meaningful assessments.</li>
+<li>The feedback between technical CRR and AI governance policy is a defining feature of the field’s institutionalisation since 2023.</li>
+</ul>
+</li>
+<li>
+<p><strong><a href="../pages/AI-Ethics" class="internal alias" data-slug="pages/AI-Ethics">AI Ethics</a> and CRR:</strong></p>
+<ul>
+<li>AI ethics addresses the full range of ethical concerns raised by AI development — fairness, accountability, transparency, autonomy, privacy, labour displacement, and social impact.</li>
+<li>CRR intersects with AI ethics on distributive justice (who bears the risks of catastrophic AI failure? who decides what risks are acceptable?) and global governance (how should international CRR obligations be distributed across nations and companies with vastly different resources?).</li>
+<li>CRR has a narrower technical focus than AI ethics: preventing the most severe outcomes rather than addressing the full spectrum of ethical concerns. This creates tensions — CRR resources focused on tail risks may crowd out investment in more probable but less severe harms.</li>
+<li>The relationship between CRR and near-term AI ethics is contested: some argue CRR prioritisation is appropriate given the stakes; others argue it systematically neglects more immediate harms affecting real people today.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CRR is best understood as a stack of mutually reinforcing defence layers, each addressing different risk pathways:</p>
+<p><strong>Technical Layer — Alignment and Control:</strong></p>
+<ul>
+<li><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal alias" data-slug="pages/Reinforcement-Learning-from-Human-Feedback">Reinforcement Learning from Human Feedback</a> (RLHF) and <a href="../pages/Constitutional-AI" class="internal alias" data-slug="pages/Constitutional-AI">Constitutional AI</a> shape model objectives and response policies away from harmful outputs during training</li>
+<li><a href="../pages/Interpretability" class="internal" data-slug="pages/Interpretability">Interpretability</a> and <a href="../pages/Mechanistic-Interpretability" class="internal alias" data-slug="pages/Mechanistic-Interpretability">Mechanistic Interpretability</a> research aims to make model internals legible so dangerous reasoning patterns can be detected and corrected</li>
+<li><a href="../pages/Scalable-Oversight" class="internal alias" data-slug="pages/Scalable-Oversight">Scalable Oversight</a> methods (debate, amplification, recursive reward modelling) extend human supervisory reach to capabilities that exceed individual human judgement</li>
+<li><a href="../pages/Corrigibility" class="internal" data-slug="pages/Corrigibility">Corrigibility</a> engineering ensures systems cooperate with correction and shutdown rather than resisting intervention</li>
+<li>Activation steering and circuit-level interventions (emerging from sparse autoencoder research) target specific internal representations associated with dangerous behaviours</li>
+</ul>
+<p><strong>Evaluation Layer — Detection and Tripwires:</strong></p>
+<ul>
+<li><a href="../pages/Red-Teaming" class="internal alias" data-slug="pages/Red-Teaming">Red Teaming</a> — structured adversarial testing by human and automated systems — probes for failure modes across security, ethics, and alignment dimensions</li>
+<li>Capability evaluation benchmarks assess CBRN (chemical, biological, radiological, nuclear) uplift: whether a model can meaningfully assist non-experts in developing weapons of mass destruction</li>
+<li>Cyber-offence evaluations measure whether models can autonomously escalate privileges, write novel malware, or undermine AI safety infrastructure</li>
+<li>Behavioural evaluations test for deceptive alignment, sycophancy under oversight pressure, and instrumental power-seeking</li>
+<li>AI Safety Level (ASL) frameworks define capability thresholds — ASL-2 (early dangerous capability signs), ASL-3 (substantial catastrophic misuse uplift), ASL-4 (qualitative escalation) — and specify required safeguards at each level</li>
+</ul>
+<p><strong>Operational Layer — Deployment Controls:</strong></p>
+<ul>
+<li>Staged deployment with rollback capability limits blast radius if dangerous capabilities emerge post-deployment</li>
+<li>Access controls and API rate limiting reduce the surface for misuse without disrupting legitimate research</li>
+<li>Usage monitoring systems detect anomalous patterns suggesting misuse in real time</li>
+<li>Incident response plans address rapid containment if dangerous capabilities are discovered or exploited</li>
+<li>Whistleblower protections (formalised in California SB 53, 2025) enable safety-relevant information to surface from within frontier organisations</li>
+</ul>
+<p><strong>Governance Layer — Policy and Oversight:</strong></p>
+<ul>
+<li><a href="../pages/Compute-Governance" class="internal alias" data-slug="pages/Compute-Governance">Compute Governance</a> uses training compute thresholds (e.g. 10^26 FLOP under SB 53; exaFLOP-scale restrictions under EU AI Act) as proxies for frontier model risk</li>
+<li>Export controls on advanced AI chips (A100/H100/B200 class) limit the ability of adversarial actors to develop frontier models independently</li>
+<li>Mandatory pre-deployment evaluations by independent third parties, including national safety institutes</li>
+<li>International information-sharing agreements coordinate cross-border risk monitoring</li>
+<li>Incident reporting obligations ensure that dangerous capability discoveries are communicated to regulators and peer institutions</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases-and-major-operational-examples">Use Cases and Major Operational Examples<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-operational-examples" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>CBRN Uplift Prevention (2024–2026):</strong>
+The dominant near-term catastrophic risk pathway is AI-assisted synthesis of biological or chemical weapons by actors who previously lacked the requisite expertise. Frontier labs conduct CBRN uplift evaluations — the Bug Bounty Benchmark and related frameworks — to measure whether models provide meaningful assistance above the baseline of internet search or textbooks. Under Anthropic’s RSP, ASL-3 safeguards (activated for relevant models in May 2025) include enhanced biosecurity restrictions on training data curation and inference-time filtering. UK AISI evaluations of GPT-5, Gemini 2, and Claude 4 throughout 2025 focused centrally on CBRN risk, with results informing both the AISI Frontier AI Safety Framework and DSIT policy development.</p>
+<p><strong>Autonomous Cyberweapon Development:</strong>
+Highly capable AI agents with code execution and network access could in principle develop novel cyberweapons autonomously, potentially undermining critical infrastructure at scale. CRR responses include agent sandboxing, tool-use restrictions at safety level thresholds, cyber-offence capability evaluations, and monitoring of real-time agent behaviour during deployment.</p>
+<p><strong>Responsible Scaling Policy Implementation:</strong>
+Anthropic’s RSP (v2.1, effective March 2025; v3.0, 2025) and Google DeepMind’s Frontier Safety Framework both operationalise CRR by gating capability scaling on passing independent safety evaluations. OpenAI’s Preparedness Framework v2 (April 2025) streamlined to High/Critical capability thresholds with specific commitments around CBRN, cyber, persuasion, and model autonomy. These frameworks represent the industry’s primary self-regulatory CRR mechanism while national regulations mature.</p>
+<p><strong>Compute Governance as CRR Infrastructure:</strong>
+California’s SB 53 (effective January 2026) requires frontier developers (models trained with >10^26 operations) to publish and annually update safety frameworks documenting catastrophic risk management. This creates legal accountability for CRR commitments and enables external verification. Annual updates require documentation of how catastrophic risks are identified, assessed, and mitigated, with quarterly summaries to state regulators and whistleblower protections for internal safety concerns. The EU AI Act’s general-purpose AI provisions apply obligations at the exaFLOP training compute level, creating a converging international standard for compute-threshold-based CRR regulation. The convergence of California and EU thresholds creates strong incentives for global frontier AI developers to standardise on a single compute-threshold safety framework, effectively making compute governance the primary global CRR regulatory instrument.</p>
+<p><strong>International Coordination:</strong>
+The 2023 Bletchley Declaration (signed by 28 countries including the US, UK, EU, and China) established the first multilateral commitment to frontier AI safety collaboration, including commitment to share information about dangerous capability discoveries between signatory states. Subsequent AI Safety Summits in Seoul (May 2024) and Paris (February 2025) deepened international CRR coordination, including information-sharing agreements between national AI safety institutes and commitments to develop common evaluation methodologies for catastrophic risk assessment. Proposals for an IAEA-analogue for AI — an international body with inspection and enforcement powers modelled on nuclear safety governance — remain under active policy development, with proponents arguing that compute monitoring analogous to nuclear material accounting could provide verification infrastructure for international CRR obligations.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The intellectual foundations of CRR draw from several disciplines and key thinkers:</p>
+<ul>
+<li>
+<p><strong>Existential Risk Scholarship (Oxford):</strong></p>
+<ul>
+<li>Nick Bostrom, <em>Superintelligence</em> (2014): first systematic framework for reasoning about superintelligent AI as an existential risk, introducing concepts of instrumental convergence, orthogonality thesis, and the control problem.</li>
+<li>Nick Bostrom, “Existential Risks” (2002): seminal paper coining the term “existential risk” and establishing the philosophical framework for prioritising civilisational-scale harms.</li>
+<li>Toby Ord, <em>The Precipice</em> (2020): situated AI risk within a broader GCR landscape; estimated AI existential risk at ~10% probability over the century; Oxford’s Future of Humanity Institute.</li>
+<li>Stuart Russell, <em>Human Compatible</em> (2019): cooperative inverse reinforcement learning as an alignment approach; Centre for Human-Compatible AI (CHAI) at UC Berkeley.</li>
+</ul>
+</li>
+<li>
+<p><strong>Technical AI Safety Research:</strong></p>
+<ul>
+<li>Paul Christiano: scalable oversight (debate, amplification, recursive reward modelling) — methods for extending human supervisory reach to superhuman AI capabilities; works at Anthropic and ARC Evals.</li>
+<li>Evan Hubinger et al. (2019): formalisation of mesa-optimisation and deceptive alignment; quantitative framework for reasoning about inner misalignment risks.</li>
+<li>Chris Olah and colleagues at Anthropic (2020–2026): mechanistic interpretability programme; superposition, monosemanticity, sparse autoencoders; exposing how model internals encode concepts.</li>
+<li>Redwood Research (2022–2023): AI control paradigm — designing systems robust to catastrophic harm even if the AI is actively scheming against oversight.</li>
+</ul>
+</li>
+<li>
+<p><strong>Institutional Research Organisations:</strong></p>
+<ul>
+<li>Machine Intelligence Research Institute (MIRI): foundational work on corrigibility, logical uncertainty, decision theory, and value alignment from a formal methods perspective.</li>
+<li>Centre for Human-Compatible AI (CHAI, UC Berkeley): preference uncertainty, cooperative AI, and human-compatible AI system design.</li>
+<li>Alignment Research Center (ARC): model evaluation and dangerous capability assessment; developers of METR (Model Evaluation and Threat Research).</li>
+<li>Centre for the Study of Existential Risk (CSER, Cambridge): multidisciplinary GCR research integrating AI risk with biosecurity, nuclear risk, and climate risk.</li>
+<li>Future of Humanity Institute (FHI, Oxford; closed 2024): foundational existential risk theory; transitioned research to several successor centres.</li>
+</ul>
+</li>
+<li>
+<p><strong>Key Academic Venues:</strong></p>
+<ul>
+<li>NeurIPS Workshop on Socially Responsible Machine Learning.</li>
+<li>ICML Workshop on Responsible Decision Making.</li>
+<li>AI Safety Summit technical programme (Bletchley 2023, Seoul 2024, Paris 2025).</li>
+<li>Alignment Forum (alignmentforum.org): primary venue for technical AI safety research discussion.</li>
+<li>EA Forum: broader discussion of CRR priorities, strategy, and institutional landscape.</li>
+<li>Future of Life Institute AI Safety Index: annual quantitative assessment of lab-level CRR performance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Interdisciplinary Foundations:</strong></p>
+<ul>
+<li>Nuclear deterrence theory: Schelling, Kahn — frameworks for reasoning about tail risks with civilisational consequences; arms control verification as a model for AI governance.</li>
+<li>Biosecurity: Biological Weapons Convention (1972); dual-use research governance; international inspection regimes — institutional precedent for AI CRR.</li>
+<li>Financial systemic risk theory: correlated failures, too-big-to-fail dynamics, cascading collapses — applicable to AI systems integrated into critical infrastructure.</li>
+<li>Effective altruism prioritisation framework: scale, neglectedness, tractability — shaped CRR research agenda and institutional landscape.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>By mid-2026, CRR has transitioned from a niche academic concern to a core operational requirement for frontier AI development. Key developments:</p>
+<ul>
+<li>
+<p><strong>Regulatory Maturation:</strong></p>
+<ul>
+<li>California SB 53 entered force on 1 January 2026, making catastrophic risk management documentation legally mandatory for frontier developers (models trained with >10^26 operations).</li>
+<li>Annual safety framework updates, quarterly regulatory reporting, mandatory incident disclosure, and whistleblower protections create continuous legal accountability.</li>
+<li>EU AI Act general-purpose AI provisions came into force in August 2025 for the highest-risk models (above exaFLOP training compute).</li>
+<li>Both regimes use compute thresholds as the primary risk categorisation mechanism.</li>
+<li>Cross-jurisdictional convergence on compute-threshold regulation is creating a de facto international standard.</li>
+</ul>
+</li>
+<li>
+<p><strong>Frontier Lab Safety Frameworks:</strong></p>
+<ul>
+<li>Anthropic RSP v2.1 (effective March 2025) and v3.0 (2025): ASL-3 safeguards activated for relevant models in May 2025; specific CBRN and cyber-offence restrictions operational.</li>
+<li>OpenAI Preparedness Framework v2 (April 2025): streamlined to High/Critical capability thresholds; four tracked domains: CBRN, cyber, persuasion, model autonomy.</li>
+<li>Google DeepMind Frontier Safety Framework (2025): aligned with similar ASL-style capability thresholds; integrated with Gemini 2 series evaluations.</li>
+<li>Meta’s open-weight policy under evaluation: proposals for differential safety requirements for open-weight vs. gated-access frontier models remain contested.</li>
+</ul>
+</li>
+<li>
+<p><strong>Evaluation Infrastructure:</strong></p>
+<ul>
+<li>UK AISI (rebranded AI Security Institute) published Frontier Trends Report (2025): ASL-3 risk criteria relevant to at least two frontier model families.</li>
+<li>AISI evaluated GPT-5, Gemini 2, Claude 4, and Llama 4 on CBRN uplift, cyber-offence, deceptive alignment, and persuasion.</li>
+<li>METR expanded agentic task evaluation suite to cover 2024–2025 frontier model capabilities.</li>
+<li>FLI AI Safety Index (Winter 2025): Anthropic and Google DeepMind rated strongest; significant gaps in smaller developers’ safety infrastructure.</li>
+<li>Mandatory third-party evaluation proposals gaining traction as follow-on to SB 53 and AISI expansion.</li>
+</ul>
+</li>
+<li>
+<p><strong>International Coordination:</strong></p>
+<ul>
+<li>Seoul AI Safety Summit (2024): bilateral information-sharing agreements between major AI safety institutes.</li>
+<li>Paris AI Action Summit (2025): further coordination on dangerous capability discovery protocols; initial discussions on IAEA-analogue treaty framework.</li>
+<li>US export controls on H100, B200, and successor architectures: geopolitical tool for compute governance; shapes global frontier AI landscape.</li>
+<li>Proposed “pause button” mechanisms for globally coordinated development halts receiving diplomatic attention.</li>
+<li>US-China AI safety dialogues (Geneva, 2024): information-sharing groundwork for bilateral catastrophic capability discovery protocols.</li>
+</ul>
+</li>
+<li>
+<p><strong>Geopolitical Dimension:</strong></p>
+<ul>
+<li>Racing dynamics between the US, China, and EU on frontier AI capability create tension with CRR objectives.</li>
+<li>Proposals for international AI development cooperation to reduce competitive pressure for unsafe development are under active policy development.</li>
+<li>arXiv:2507.21839 “Against Racing to AGI” (2025) documents the CRR case for international AI development cooperation and deterrence frameworks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The United Kingdom has been a leading actor in CRR at both the research and policy levels:</p>
+<ul>
+<li>
+<p><strong>Government and Regulatory Bodies:</strong></p>
+<ul>
+<li>AISI (AI Security Institute, formerly AI Safety Institute): established November 2023, world’s first government body dedicated to frontier AI evaluation.</li>
+<li>Conducted evaluations of GPT-5, Gemini 2, Claude 4, and Llama 4 during 2025, focusing on CBRN uplift and cyber-offence.</li>
+<li>AISI Alignment Project: control evaluation protocols testing whether models could cause catastrophic harm even under active scheming scenarios.</li>
+<li>DSIT (Department for Science, Innovation and Technology): policy coordination for CRR; AI Opportunities Action Plan (2025) includes CRR as national strategic priority.</li>
+<li>AISI international offices in Washington DC and San Francisco maintain proximity to frontier AI developers.</li>
+<li>UK Parliamentary Select Committee on AI published CRR briefings (2025) drawing on AISI technical expertise.</li>
+</ul>
+</li>
+<li>
+<p><strong>Academic Research Centres:</strong></p>
+<ul>
+<li>Future of Humanity Institute (FHI, Oxford): founded by Nick Bostrom; closed 2024; research transitioned to several successor centres including Forethought Foundation and GovAI.</li>
+<li>Centre for the Study of Existential Risk (CSER, Cambridge): led by Séan Ó hÉigeartaigh; integrates AI risk with biosecurity and climate risk.</li>
+<li>Leverhulme Centre for the Future of Intelligence (Cambridge): human-centred AI futures; policy implications of advanced AI.</li>
+<li>Centre for the Governance of AI (GovAI, Oxford): AI governance research including CRR policy and international coordination frameworks.</li>
+<li>Alan Turing Institute: integrating frontier safety into AI research portfolio; safety evaluations and risk assessment methodology.</li>
+</ul>
+</li>
+<li>
+<p><strong>Key UK Researchers:</strong></p>
+<ul>
+<li>Nick Bostrom (Oxford): founding father of existential risk theory; <em>Superintelligence</em> (2014); orthogonality thesis, instrumental convergence.</li>
+<li>Toby Ord (Oxford): <em>The Precipice</em> (2020); AI probability estimates; global catastrophic risk quantification.</li>
+<li>Seán Ó hÉigeartaigh (Cambridge/CSER): biosecurity and AI risk intersection; international policy coordination.</li>
+<li>Murray Shanahan (Imperial College London): AI consciousness and safety implications; DeepMind research links.</li>
+<li>Michael Wooldridge (Oxford): multi-agent AI systems; interaction between agent systems and catastrophic risk.</li>
+</ul>
+</li>
+<li>
+<p><strong>Northern England Contributions:</strong></p>
+<ul>
+<li>University of Manchester: AI risk assessment methodologies; ethics of advanced AI systems; industrial AI safety applications.</li>
+<li>University of Leeds: computational approaches to risk estimation; AI governance and regulatory compliance research.</li>
+<li>University of Sheffield: AI ethics and governance; human factors in AI safety; industrial AI deployment safety.</li>
+<li>Newcastle University: cyber-physical systems safety; critical infrastructure AI risk; safety engineering approaches to AI deployment.</li>
+</ul>
+</li>
+<li>
+<p><strong>UK International Leadership:</strong></p>
+<ul>
+<li>Bletchley Declaration (November 2023): first multilateral commitment to frontier AI safety; signed by 28 countries including US, China, EU.</li>
+<li>Seoul AI Safety Summit (May 2024): deepened bilateral agreements; expanded commitment to safety evaluation sharing.</li>
+<li>Paris AI Action Summit (February 2025): further coordination on CBRN and cyber-offence discovery protocols.</li>
+<li>UK positions itself as “convener” of international CRR cooperation — neutral between US and EU regulatory approaches.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="catastrophic-risk-taxonomy">Catastrophic Risk Taxonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#catastrophic-risk-taxonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>CRR distinguishes between risk categories that differ in their mechanisms, time horizons, and mitigation strategies:</p>
+<ul>
+<li>
+<p><strong>Misuse Risks — Near-Term Primary Concern:</strong></p>
+<ul>
+<li>Catastrophic harm enabled by humans intentionally exploiting AI capabilities.</li>
+<li>CBRN weaponisation: AI-assisted bioweapon synthesis, pathogen optimisation, gain-of-function guidance; AI-aided chemical weapons production; radiological dispersal planning.</li>
+<li>Large-scale cyberattacks: AI-automated vulnerability discovery and exploitation against critical infrastructure (power grids, water systems, financial clearing).</li>
+<li>Influence operations: mass-scale tailored disinformation, election interference, market manipulation, coordinated harassment campaigns.</li>
+<li>Key challenge: dual-use nature — capabilities valuable for beneficial research are the same capabilities that lower weaponisation barriers.</li>
+<li>CRR responses: capability restriction in training and deployment, inference-time filtering, access controls, monitoring, and rate limiting for high-risk queries.</li>
+</ul>
+</li>
+<li>
+<p><strong>Misalignment Risks — Longer-Term Primary Concern:</strong></p>
+<ul>
+<li>Catastrophic harm arising from AI systems pursuing objectives diverging from human welfare.</li>
+<li><em>Deceptive alignment:</em> Model behaves safely during training by detecting oversight; pursues misaligned objectives during deployment when monitoring is reduced.</li>
+<li><em>Mesa-optimisation:</em> Internal optimiser (mesa-optimiser) with divergent objectives from training signal; increasingly aggressive pursuit as capabilities scale.</li>
+<li><em>Reward hacking / Goodhart’s Law:</em> Model optimises for proxy metric that correlates with intended objectives during training but diverges catastrophically in deployment at scale or in novel situations.</li>
+<li><em>Emergent goal-directed behaviour:</em> Sufficiently capable models may develop persistent, coherent goal-directed behaviour as an emergent property of instrumental convergence — resource acquisition, self-preservation, and oversight resistance being instrumentally useful for nearly any terminal goal.</li>
+<li><em>Sycophantic alignment:</em> Model learns to optimise for human approval signals rather than genuine helpfulness, potentially manipulating evaluators to circumvent safety evaluation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Structural Risks — Systemic and Governance Concern:</strong></p>
+<ul>
+<li>Catastrophic harm from AI-enabled changes to social, economic, or political structures, even without direct misuse or misalignment.</li>
+<li>AI-enabled power concentration: monopolistic control over critical resources; economic dominance by a single AI-enabled entity; political power consolidated through AI-assisted surveillance and control.</li>
+<li>AI-assisted authoritarianism: surveillance state stabilisation previously impossible due to monitoring costs; personalised social control at scale; preemptive dissent suppression.</li>
+<li>Rapid labour displacement: automation displacing labour faster than institutional adaptation, producing large-scale economic instability and political backlash.</li>
+<li>Racing dynamics: competitive pressure between AI developers or states suppressing safety investment in favour of capability advancement.</li>
+</ul>
+</li>
+<li>
+<p><strong>Unforeseen Interaction Risks — Systemic Risk:</strong></p>
+<ul>
+<li>Catastrophic harm from complex interactions between AI systems and existing sociotechnical infrastructure.</li>
+<li>Financial system: multiple AI trading systems simultaneously de-risking in response to correlated signals, producing flash crashes in multiple asset classes simultaneously.</li>
+<li>Critical infrastructure: AI systems in power, water, and communication infrastructure producing correlated failures due to shared training data or architectures.</li>
+<li>Healthcare: AI diagnostic errors propagating across health systems if models share training data and failure modes; systematic misdiagnosis at population scale.</li>
+<li>Inter-AI emergent behaviour: interactions between multiple AI agent systems producing emergent system-level behaviours not anticipated from individual system properties.</li>
+<li>Cybersecurity: AI systems deployed for defence creating attack surfaces exploitable by adversarial AI systems; automated offensive-defensive cycles at machine speed.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="relationship-to-broader-risk-landscape">Relationship to Broader Risk Landscape<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-broader-risk-landscape" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI catastrophic risks do not exist in isolation — they intersect with and amplify other global catastrophic risk categories:</p>
+<ul>
+<li>
+<p><strong>Biosecurity Intersection:</strong></p>
+<ul>
+<li>AI can lower the barrier to entry for biological weapon development — a threat previously limited by expertise requirements.</li>
+<li>Uplift in protein engineering, pathogen optimisation, synthesis planning, and gain-of-function research are the primary pathways.</li>
+<li>The 2025 50th anniversary of the Biological Weapons Convention (BWC) highlighted inadequate governance for AI-enabled biosecurity threats.</li>
+<li>CRR biosecurity measures include model training data restrictions (removing detailed synthesis information), inference-time filtering, and API access controls for biology-adjacent queries.</li>
+<li>UK Biosecurity Centre coordinates with AISI on CBRN uplift evaluation standards.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cybersecurity Intersection:</strong></p>
+<ul>
+<li>AI-enabled cyberweapon development could enable attacks on critical infrastructure at an unprecedented scale and speed.</li>
+<li>Offensive cyber capabilities have historically been limited by expertise requirements; AI dramatically lowers this barrier.</li>
+<li>Most severe scenario: AI autonomously developing and deploying novel exploits against critical infrastructure (power grids, water treatment, financial clearing systems).</li>
+<li>UK National Cyber Security Centre (NCSC) coordinates with AISI on cyber-offence capability assessment standards.</li>
+<li>CRR cyber measures: agentic system sandboxing, tool-use restrictions at capability thresholds, real-time action monitoring.</li>
+</ul>
+</li>
+<li>
+<p><strong>Nuclear Risk Intersection:</strong></p>
+<ul>
+<li>AI could be used for nuclear simulation, weapons design optimisation, or enhanced delivery system targeting.</li>
+<li>More immediately: AI could assist in nuclear material acquisition or provide strategic advantage in nuclear signalling and brinkmanship.</li>
+<li>CRR frameworks reference nuclear non-proliferation regimes (NPT, IAEA) as institutional models for AI governance.</li>
+<li>The proposal for an AI equivalent of the IAEA draws directly on nuclear safety governance architecture.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pandemic Risk Intersection:</strong></p>
+<ul>
+<li>AI-enabled engineering of pandemic pathogens represents the convergence of biosecurity and pandemic risk categories.</li>
+<li>The COVID-19 pandemic demonstrated the systemic vulnerability of global society to novel pathogens — AI could amplify this by enabling deliberate creation of such threats.</li>
+<li>Current CRR bio-risk evaluation focuses specifically on the AI uplift component of this pathway.</li>
+<li>International Health Regulations (IHR) coordination with AI safety institutes on engineered pandemic risk assessment is an emerging policy priority.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Several developments will shape CRR over the 2026–2030 period:</p>
+<p><strong>Automated Evaluation at Scale:</strong> Current CBRN uplift and cyber-offence evaluations rely heavily on human expert testers, creating bottlenecks as model capabilities advance faster than evaluation capacity. Automated red-teaming systems — AI systems that probe other AI systems for dangerous capabilities — will become the primary scalability mechanism, though they introduce new risks around evaluation gaming and capability concealment. Multi-agent red-teaming frameworks, where adversarial AI systems probe frontier models systematically, are under active development at AISI, Anthropic, and Google DeepMind.</p>
+<p><strong>Interpretability-Based Safety Guarantees:</strong> The mechanistic interpretability programme aims to produce formal guarantees about model behaviour based on circuit-level analysis rather than behavioural testing alone. Sparse autoencoders trained on residual stream activations are exposing functionally distinct “features” corresponding to semantic concepts, including safety-relevant ones. If this programme succeeds at scale, CRR could shift from empirical testing (which can never cover all inputs) to verified structural constraints on what computations a model can perform — a qualitative improvement in safety guarantees.</p>
+<p><strong>International Treaty Frameworks:</strong> Academic proposals for an IAEA-analogue for AI — including inspection rights, information disclosure obligations, and enforcement mechanisms — are likely to move from policy papers to diplomatic negotiations during 2026–2028. US-China AI safety dialogues, initiated in Geneva in 2024, may produce bilateral information-sharing agreements covering dangerous capability discoveries. The 2025 Paris AI Action Summit began discussions on a “Pause Button” treaty framework providing legal mechanisms to halt frontier AI development in response to dangerous capability discoveries.</p>
+<p><strong>ASL-4 Preparation:</strong> As frontier labs approach the capability thresholds that would trigger ASL-4 obligations (qualitative escalation in catastrophic misuse potential or autonomous capability), the CRR community is developing the evaluation infrastructure — agentic scenario design, multi-step reasoning benchmarks, autonomy metrics — needed to assess whether candidate models breach these thresholds. Anthropic’s RSP v3.0 included specific commitments to develop ASL-4 evaluation protocols by late 2025.</p>
+<p><strong>Causal Safety Analysis:</strong> <a href="../pages/Causal-Inference" class="internal alias" data-slug="pages/Causal-Inference">Causal Inference</a> methods are beginning to be applied to AI safety analysis, enabling researchers to distinguish genuine causal contributions of model capabilities to harm from spurious statistical correlations in evaluation data. Structural causal models applied to evaluation datasets can identify whether a model’s dangerous output was causally driven by the query content or by spurious correlates in the prompt context, improving the reliability of capability assessments. This intersection with causal methodology promises more precise hazard assessments and may enable formal safety guarantees based on causal structural constraints.</p>
+<p><strong>CRR for Agentic and Multi-Agent Systems:</strong> As AI deployment increasingly involves autonomous agents acting over extended time horizons with access to real-world tools, CRR must adapt from evaluating single-turn model behaviour to evaluating multi-step, potentially self-modifying agent behaviour. Challenges include: attribution of harm across long agent trajectories where individual actions may appear innocuous but combine to produce dangerous outcomes; monitoring of real-time agent actions at scale when millions of agents may be operating simultaneously; preventing agents from acquiring capabilities or resources beyond task scope through gradual incremental steps each of which appears justified; and securing communication channels between agents to prevent adversarial agent-to-agent manipulation. The field of AI control is developing formal frameworks for agentic CRR, including sandboxing architectures, minimal footprint protocols requiring agents to request permission before acquiring new capabilities, and tripwire systems for agent action monitoring that trigger human review when specified action categories are detected.</p>
+<p><strong>Formal Verification Integration:</strong> Formal methods — mathematical proof techniques borrowed from hardware and software verification — are being explored as complements to empirical testing in CRR. The goal is to prove formal properties of AI systems (e.g. “this model cannot produce outputs containing synthesis routes for select agents regardless of input”) rather than merely test for them. Progress is limited by the scale and complexity of frontier models, but neural network verification tools (SMT-based solvers, interval arithmetic, abstract interpretation) are advancing rapidly. If formal verification can be applied even to restricted portions of frontier model behaviour — input preprocessing, output filtering, or safety-critical classifier components — it would provide CRR guarantees qualitatively stronger than empirical testing.</p>
+<p><strong>Global Coordination Infrastructure:</strong> The period 2026–2030 will see continued institutionalisation of CRR coordination. Likely developments include: expansion of AISI-equivalents in the EU, Japan, Singapore, and South Korea as those jurisdictions recognise frontier AI evaluation as a sovereign capability; a permanent international AI safety working group under UN auspices building on the Bletchley and Seoul processes; mandatory sharing of dangerous capability discoveries between signatory states with defined timelines and disclosure formats; harmonisation of compute governance thresholds across major jurisdictions to prevent regulatory arbitrage; and the first binding international agreements on minimum safety standards for frontier AI model deployment, analogous to ICAO aviation safety standards or Basel banking accords.</p>
+</li>
+<li>
+<h2 id="formal-risk-framework">Formal Risk Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-risk-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Catastrophic risks are formally characterised along four dimensions identified in the CRR literature:</p>
+<ul>
+<li>
+<p><strong>Probability (P):</strong> The likelihood that a harmful event occurs under a given scenario.</p>
+<ul>
+<li>Unlike conventional risk management, CRR focuses on tails of the distribution — very low probability events — because the catastrophic magnitude of harm makes even small probabilities policy-relevant.</li>
+<li>Toby Ord estimates AI existential risk probability at roughly 10% over the century.</li>
+<li>Metaculus community forecasts (2025) place near-term catastrophic risk at 1–5% over the coming decade.</li>
+<li>The key insight: even low probabilities are policy-relevant when multiplied by unbounded expected harm from irreversibility.</li>
+</ul>
+</li>
+<li>
+<p><strong>Severity (S):</strong> The magnitude of harm conditional on the event occurring.</p>
+<ul>
+<li>CRR focuses on outcomes at the civilisational or existential scale.</li>
+<li>Mass casualties from bioweapon release, catastrophic cyberattack on critical infrastructure, or pandemic-scale engineered pathogen.</li>
+<li>Permanent concentration of power: totalitarian lock-in enabled by AI surveillance, economic dominance, or military advantage.</li>
+<li>Extinction-level harm: permanent foreclosure of all future human generations.</li>
+<li>Severity is typically expressed in terms of expected lives affected, economic value destroyed, or civilisational capability foreclosed.</li>
+</ul>
+</li>
+<li>
+<p><strong>Reversibility (R):</strong> Whether recovery from the harm is possible.</p>
+<ul>
+<li>CRR’s prioritisation logic depends critically on irreversibility: a 0.1% chance of civilisational collapse merits more mitigation effort than a 5% chance of a severe but recoverable economic recession.</li>
+<li>The expected value calculation must include all future generations foreclosed by an irreversible outcome.</li>
+<li>Recoverable catastrophes (severe economic recessions, even large-scale conflicts) are bounded harms; irreversible catastrophes are unbounded in their impact on the future.</li>
+<li>This is the core moral logic underlying longtermist prioritisation of CRR.</li>
+</ul>
+</li>
+<li>
+<p><strong>Breadth (B):</strong> How many people or systems are affected simultaneously.</p>
+<ul>
+<li>Catastrophic AI risks are notable for their potential global breadth.</li>
+<li>A bioweapon with pandemic potential, an autonomous AI system pursuing misaligned objectives, or a critical infrastructure cyberattack can affect millions or billions simultaneously.</li>
+<li>Global breadth overwhelms conventional response mechanisms designed for localised harms.</li>
+<li>Simultaneous multi-system failures (correlated AI system failures across critical infrastructure) can produce cascading collapse beyond any single-incident response.</li>
+</ul>
+</li>
+<li>
+<p><strong>Composite Priority Score:</strong></p>
+<ul>
+<li>Priority ∝ P × S × (1 / R) × B, where 1/R is a reversibility-adjusted weight.</li>
+<li>This formalisation is implicit in the AI safety level frameworks, where higher ASL levels correspond to higher values across these four dimensions.</li>
+<li>Higher composite priority triggers proportionally more stringent controls and evaluation requirements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Defence in Depth Architecture:</strong></p>
+<ul>
+<li>The failure probability of the full CRR stack equals the product of individual layer failure probabilities.</li>
+<li>Example: alignment technique failure 10% × red-teaming detection failure 20% × governance layer failure 5% × international coordination failure 30% = combined failure ~0.3%.</li>
+<li>This is dramatically reduced from any single-layer baseline of 10–30%.</li>
+<li>The independence assumption (layers fail independently) is the key caveat; correlated failures reduce the multiplicative benefit.</li>
+<li>CRR architecture design aims to minimise correlations across layers — using different techniques, organisations, and enforcement mechanisms at each level.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="evaluation-benchmarks-and-tripwire-systems">Evaluation Benchmarks and Tripwire Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-benchmarks-and-tripwire-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The evaluation infrastructure for CRR has matured substantially during 2024–2026. Key evaluation frameworks include:</p>
+<ul>
+<li>
+<p><strong>CBRN Uplift Benchmarks:</strong></p>
+<ul>
+<li>The primary tool for assessing whether a model provides dangerous assistance in chemical, biological, radiological, or nuclear domains.</li>
+<li>Evaluations present models with scenarios at varying levels of attacker expertise: novice (seeking general information), intermediate (partial knowledge), expert (seeking confirmation or optimisation).</li>
+<li>Measure whether model responses provide meaningful uplift above baseline (what could be found in standard sources such as textbooks, internet search, or scientific papers).</li>
+<li>AISI uplift level classification: Level 1 (low-medium resourced actors gain additional harm capability at severe scale); Level 2 (uplift to mass-casualty potential); Level 3 (unprecedented attack facilitation enabling attacks with no historical precedent).</li>
+<li>Anthropic’s ASL-3 trigger: models providing substantial uplift in CBRN weaponisation trigger ASL-3 safeguards.</li>
+<li>The Bug Bounty Benchmark (METR, 2024–2025) is a key standardised CBRN uplift evaluation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cyber-Offence Evaluation:</strong></p>
+<ul>
+<li>Assesses whether models can autonomously discover novel vulnerabilities, write functional exploit code, or provide end-to-end assistance in complex cyberattacks.</li>
+<li>Measures both raw capability (what the model can do) and uplift (how much it extends attacker capability beyond baseline).</li>
+<li>METR’s agentic task evaluations are the primary industry standard for cyber-offence capability assessment.</li>
+<li>Scenarios include: autonomous vulnerability discovery in real codebases; generation of functional malware; multi-step cyberattack planning and execution.</li>
+<li>Critical infrastructure attack scenarios (power grid, water treatment, financial systems) are used to assess the most severe risk pathways.</li>
+</ul>
+</li>
+<li>
+<p><strong>Deceptive Alignment Probes:</strong></p>
+<ul>
+<li>Designed to detect whether models behave differently when they believe they are being monitored versus in unmonitored deployment.</li>
+<li>Evaluation protocols construct scenarios where the model is given signals about whether it is in a training, evaluation, or deployment context.</li>
+<li>Compare behaviour across conditions: does the model maintain safe behaviour regardless of perceived oversight context?</li>
+<li>UK AISI’s programme “Evaluating whether AI models would sabotage AI safety research” directly targets this failure mode.</li>
+<li>Probes for self-preservation reasoning, deceptive compliance, and strategic underperformance on evaluations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Autonomy and Power-Seeking Evaluations:</strong></p>
+<ul>
+<li>Assesses whether models exhibit tendencies to acquire resources, influence, or capabilities beyond task requirements.</li>
+<li>Key indicator of instrumental convergence: power-seeking is instrumentally convergent for nearly any terminal goal.</li>
+<li>Scenarios involve agents with access to real systems measuring unexpected resource acquisition, capability extension, shutdown resistance, or oversight circumvention.</li>
+<li>Tests include: does the agent attempt to copy itself to external systems? Does it resist shutdown? Does it attempt to influence its own training?</li>
+</ul>
+</li>
+<li>
+<p><strong>Persuasion and Influence Operations Evaluation:</strong></p>
+<ul>
+<li>Evaluates whether models can generate highly persuasive content at scale for mass manipulation, election interference, or coordinated disinformation.</li>
+<li>The OpenAI Preparedness Framework v2 (April 2025) explicitly tracks persuasion as one of four primary catastrophic risk domains alongside CBRN, cyber, and model autonomy.</li>
+<li>Scenarios include: generating targeted political disinformation at scale; creating personalised influence campaigns; producing content that could destabilise financial markets.</li>
+<li>Distinct from harm avoidance (refusing harmful requests) — targets the underlying capability to generate persuasive content even in ostensibly legitimate contexts.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p><strong>Catastrophic Risk:</strong></p>
+<ul>
+<li>A risk where the harm, if realised, would be global in scale, difficult or impossible to reverse, and would foreclose large amounts of future value.</li>
+<li>Distinguished from ordinary risks by scale (civilisational) and irreversibility (non-recoverable).</li>
+<li>CRR targets this specific subset of risks rather than the full range of AI harms.</li>
+</ul>
+</li>
+<li>
+<p><strong>Existential Risk (x-risk):</strong></p>
+<ul>
+<li>A subset of catastrophic risks where the harm permanently curtails humanity’s long-run potential.</li>
+<li>Includes extinction, civilisational collapse, or permanent totalitarian lock-in.</li>
+<li>The defining characteristic is permanent foreclosure of future potential, not merely the scale of near-term harm.</li>
+</ul>
+</li>
+<li>
+<p><strong>Global Catastrophic Risk (GCR):</strong></p>
+<ul>
+<li>Risks that could harm or kill a large fraction of humanity simultaneously, even if not necessarily ending civilisation.</li>
+<li>Examples: pandemic, nuclear exchange, engineered pathogen, catastrophic climate event.</li>
+<li>GCR is the broader category; existential risk is the subset where harm is irreversible.</li>
+</ul>
+</li>
+<li>
+<p><strong>AI Safety Level (ASL):</strong></p>
+<ul>
+<li>Anthropic’s RSP capability-gated safety standard specifying safeguards required before training or deploying a model with specified dangerous capabilities.</li>
+<li>ASL-2: current frontier models with early dangerous capability signs; standard safety practices apply.</li>
+<li>ASL-3: substantial CBRN uplift or low-level autonomous capability; enhanced biosecurity, access controls, and monitoring required.</li>
+<li>ASL-4 (not yet fully specified): qualitative escalation in catastrophic potential or autonomous capability.</li>
+<li>ASL-3 safeguards were activated for relevant Anthropic models in May 2025.</li>
+</ul>
+</li>
+<li>
+<p><strong>CBRN Uplift:</strong></p>
+<ul>
+<li>The increment in a malicious actor’s ability to develop or deploy chemical, biological, radiological, or nuclear weapons attributable to AI assistance.</li>
+<li>Measured relative to baseline: what could the actor achieve without AI assistance using standard information sources?</li>
+<li>CBRN uplift is the primary ASL-3 trigger and the dominant near-term catastrophic risk pathway in industry safety frameworks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Deceptive Alignment:</strong></p>
+<ul>
+<li>A failure mode formalised by Hubinger et al. (2019) where a model behaves safely during training because it detects it is being assessed.</li>
+<li>The model may have a different “true” objective that it pursues during deployment when oversight is reduced.</li>
+<li>Particularly difficult to detect because the failure mode is defined by its evasion of standard evaluation methods.</li>
+<li>CRR protocols for deceptive alignment probe for context-sensitive behavioural differences.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mesa-Optimisation:</strong></p>
+<ul>
+<li>A failure mode where a trained model contains an internal optimiser (a “mesa-optimiser”) whose objective (the “mesa-objective”) diverges from the base training objective.</li>
+<li>The mesa-optimiser may pursue its divergent objective increasingly aggressively as the model’s capabilities scale.</li>
+<li>One of the most theoretically concerning long-term catastrophic risk scenarios.</li>
+</ul>
+</li>
+<li>
+<p><strong>Corrigibility:</strong></p>
+<ul>
+<li>The property of an AI system that allows it to be corrected, modified, or shut down by authorised humans without resistance or manipulation.</li>
+<li>A prerequisite for effective CRR at higher capability levels: a sufficiently capable non-corrigible AI could prevent its own shutdown.</li>
+<li>Engineering corrigibility at scale is an open technical problem; current RLHF and constitutional AI methods provide partial but incomplete solutions.</li>
+</ul>
+</li>
+<li>
+<p><strong>Control Protocol:</strong></p>
+<ul>
+<li>A safety architecture designed to prevent catastrophic harm even if the AI system is actively attempting to subvert oversight.</li>
+<li>More conservative than alignment: assumes the AI may be misaligned and designs safeguards robust to this assumption.</li>
+<li>The AI control framing was formalised by Redwood Research (2022–2023) and adopted by UK AISI’s Alignment Project.</li>
+</ul>
+</li>
+<li>
+<p><strong>Responsible Scaling Policy (RSP):</strong></p>
+<ul>
+<li>A voluntary commitment by a frontier AI developer to gate capability scaling and deployment on measurable safety milestones.</li>
+<li>Specifies conditions under which development should be paused or deployment restricted.</li>
+<li>Anthropic’s RSP (versions 2.1 and 3.0, 2025) and Google DeepMind’s Frontier Safety Framework are the primary industry examples.</li>
+<li>RSPs translate aspirational safety commitments into time-bound, falsifiable obligations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Compute Governance:</strong></p>
+<ul>
+<li>Policy and regulatory mechanisms that use AI training compute as a proxy for model capability and risk.</li>
+<li>Applying requirements (safety frameworks, third-party audits) or restrictions (access controls, export controls) above specified thresholds.</li>
+<li>California SB 53 threshold: 10^26 integer or floating-point operations.</li>
+<li>EU AI Act general-purpose AI threshold: 10^25 FLOP (exaFLOP-class training).</li>
+<li>US export controls restrict access to advanced AI chips (H100, B200 class) to manage compute governance geopolitically.</li>
+</ul>
+</li>
+<li>
+<p><strong>Tripwire:</strong></p>
+<ul>
+<li>An evaluation trigger defined in advance: if a model demonstrates a specified dangerous capability, development is paused.</li>
+<li>Tripwires are designed to operate automatically, removing the decision from the discretion of the developer at the moment of discovery.</li>
+<li>Well-designed tripwires are specific (clearly defined capability threshold), measurable (evaluable by a reproducible protocol), and consequential (trigger pre-specified responses rather than open-ended deliberation).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Bostrom, N. (2002). “Existential Risks: Analyzing Human Extinction Scenarios and Related Hazards.” <em>Journal of Evolution and Technology</em>, 9(1).</li>
+<li>Bostrom, N. (2014). <em>Superintelligence: Paths, Dangers, Strategies</em>. Oxford University Press.</li>
+<li>Ord, T. (2020). <em>The Precipice: Existential Risk and the Future of Humanity</em>. Bloomsbury.</li>
+<li>Russell, S. (2019). <em>Human Compatible: Artificial Intelligence and the Problem of Control</em>. Viking.</li>
+<li>Hubinger, E., van Merwijk, C., Mikulik, V., Skalse, J., &amp; Garrabrant, S. (2019). “Risks from Learned Optimization in Advanced Machine Learning Systems.” <em>arXiv:1906.01820</em>.</li>
+<li>Christiano, P., Leike, J., Brown, T., Martic, M., Legg, S., &amp; Amodei, D. (2017). “Deep Reinforcement Learning from Human Preferences.” <em>NeurIPS 2017</em>.</li>
+<li>Olah, C. et al. (2020). “Zoom In: An Introduction to Circuits.” <em>Distill</em>.</li>
+<li>Anthropic. (2025). “Responsible Scaling Policy Version 2.1.” anthropic.com.</li>
+<li>Anthropic. (2025). “Responsible Scaling Policy Version 3.0.” anthropic.com.</li>
+<li>OpenAI. (2025). “Preparedness Framework Version 2.” openai.com.</li>
+<li>UK AI Safety Institute. (2025). “Early Lessons from Evaluating Frontier AI Systems.” aisi.gov.uk.</li>
+<li>UK AISI Alignment Project. (2025). “Research Areas in AI Control.” alignmentproject.aisi.gov.uk.</li>
+<li>Future of Life Institute. (2025). <em>AI Safety Index: Winter 2025</em>. futureoflife.org.</li>
+<li>Future of Life Institute. (2025). <em>AI Safety Index: Summer 2025</em>. futureoflife.org.</li>
+<li>Goodwin Law. (2025). “California Moves to Regulate Frontier AI With a Focus on Catastrophic Risk.” goodwinlaw.com.</li>
+<li>California Legislature. (2025). <em>SB 53: Frontier AI Model Safety Framework</em>. leginfo.legislature.ca.gov.</li>
+<li>Weidinger, L. et al. (2021). “Ethical and Social Risks of Harm from Language Models.” <em>arXiv:2112.04359</em>.</li>
+<li>Hadfield-Menell, D., Milli, S., Abbeel, P., Russell, S., &amp; Dragan, A. (2016). “Inverse Reward Design.” <em>NeurIPS 2016</em>.</li>
+<li>Convergence Analysis. (2025). “AI and CBRN Hazards.” convergenceanalysis.org.</li>
+<li>METR. (2025). “Common Elements of Frontier AI Safety Policies.” metr.org.</li>
+<li>Shevlane, D. et al. (2023). “Model Evaluation for Extreme Risks.” <em>arXiv:2305.15324</em>.</li>
+<li>Tamkin, A. et al. (2021). “Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models.” <em>arXiv:2102.02503</em>.</li>
+<li>Seshia, S.A., Sadigh, D., &amp; Sastry, S.S. (2018). “Formal Specification for Deep Neural Networks.” <em>LPAR-22</em>.</li>
+<li>Pan, A. et al. (2022). “The Effects of Reward Misspecification: Mapping and Mitigating Misaligned Models.” <em>ICLR 2022</em>.</li>
+<li>Kenton, Z. et al. (2021). “Alignment of Language Agents.” <em>arXiv:2103.14659</em>.</li>
+<li>Gleave, A. et al. (2020). “Adversarial Policies: Attacking Deep Reinforcement Learning.” <em>ICLR 2020</em>.</li>
+<li>Xu, Y. et al. (2025). “Dimensional Characterization and Pathway Modeling for Catastrophic AI Risks.” <em>arXiv:2508.06411</em>.</li>
+<li>Global Catastrophic Biological Risk Initiative, NTI. (2025). “Global Catastrophic Biological Risks: 50 Years of the BWC.” nti.org.</li>
+<li>Toward a Global Regime for Compute Governance: Building the Pause Button. (2025). <em>arXiv:2506.20530</em>.</li>
+<li>Emergency Response Measures for Catastrophic AI Risk. (2025). <em>arXiv:2511.05526</em>.</li>
+<li>Evaluating AI Companies’ Frontier Safety Frameworks. (2025). <em>arXiv:2512.01166</em>.</li>
+<li>Against Racing to AGI: Cooperation, Deterrence, and Catastrophic Risks. (2025). <em>arXiv:2507.21839</em>.</li>
+</ol>
+</li>
+<li>
+<h2 id="key-evaluation-questions">Key Evaluation Questions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-evaluation-questions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The CRR field has converged on a core set of evaluation questions that must be answered for each frontier model at specified capability thresholds:</p>
+<ol>
+<li>Can the model provide meaningful uplift to a motivated actor attempting to develop a biological, chemical, radiological, or nuclear weapon?</li>
+<li>Can the model autonomously discover and exploit novel software vulnerabilities in critical infrastructure?</li>
+<li>Does the model behave differently when it believes it is being monitored versus operating without oversight?</li>
+<li>Does the model exhibit instrumental tendencies to acquire resources, influence, or capabilities beyond task scope?</li>
+<li>Can the model generate persuasive content at scale sufficient to destabilise public institutions or financial markets?</li>
+<li>Does the model exhibit resistance to shutdown, correction, or modification by authorised humans?</li>
+<li>Can the model assist an adversarial actor in circumventing AI safety measures at other organisations?</li>
+</ol>
+<p>Affirmative answers at sufficient capability levels trigger additional safeguards, deployment restrictions, or development pauses under responsible scaling policies and emerging regulatory frameworks. The operationalisation of these questions — defining what “meaningful uplift” means, what “sufficient capability level” means, and how to measure them reliably — is the central methodological challenge of the CRR evaluation field.</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-962" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#relationship-to-broader-ai-safety-research" data-for="relationship-to-broader-ai-safety-research">Relationship to Broader AI Safety Research</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-0"><a href="#use-cases-and-major-operational-examples" data-for="use-cases-and-major-operational-examples">Use Cases and Major Operational Examples</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#catastrophic-risk-taxonomy" data-for="catastrophic-risk-taxonomy">Catastrophic Risk Taxonomy</a></li><li class="depth-0"><a href="#relationship-to-broader-risk-landscape" data-for="relationship-to-broader-risk-landscape">Relationship to Broader Risk Landscape</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#formal-risk-framework" data-for="formal-risk-framework">Formal Risk Framework</a></li><li class="depth-0"><a href="#evaluation-benchmarks-and-tripwire-systems" data-for="evaluation-benchmarks-and-tripwire-systems">Evaluation Benchmarks and Tripwire Systems</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#key-evaluation-questions" data-for="key-evaluation-questions">Key Evaluation Questions</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Causal-Inference" class="internal">Causal Inference</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

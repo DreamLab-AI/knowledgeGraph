@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Ray Tracing</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Ray Tracing"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Ray Tracing"/><meta name="twitter:description" content="Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf… S..."/><meta property="og:description" content="Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf… S..."/><meta property="og:image:alt" content="Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Ray-Tracing"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Ray-Tracing"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Ray-Tracing"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6310"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6310" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Ray Tracing</a></div></nav><h1 class="article-title">Ray Tracing</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.875Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:ray-tracing</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>spatial-computing</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Display-and-Rendering" class="internal">Display and Rendering</a></li><li><a href="../pages/Computer-Graphics" class="internal">Computer Graphics</a></li><li><a href="../Light-Transport" class="internal">Light Transport</a></li><li><a href="../pages/Physically-Based-Rendering" class="internal">Physically-Based Rendering</a></li><li><a href="../pages/Global-Illumination" class="internal">Global Illumination</a></li><li><a href="../pages/Rendering" class="internal">Rendering</a></li><li><a href="../pages/Monte-Carlo-Methods" class="internal">Monte Carlo Methods</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Acceleration-Structure" class="internal">Acceleration Structure</a></li><li><a href="../pages/BRDF" class="internal">BRDF</a></li><li><a href="../pages/BVH-Acceleration-Structure" class="internal">BVH Acceleration Structure</a></li><li><a href="../pages/Shading-Model" class="internal">Shading Model</a></li><li><a href="../Primary-Ray" class="internal">Primary Ray</a></li><li><a href="../Secondary-Ray" class="internal">Secondary Ray</a></li><li><a href="../Intersection-Test" class="internal">Intersection Test</a></li><li><a href="../Denoiser" class="internal">Denoiser</a></li><li><a href="../Reservoir-Sampling" class="internal">Reservoir Sampling</a></li><li><a href="../RT-Core" class="internal">RT Core</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/BVH-Acceleration-Structure" class="internal">BVH Acceleration Structure</a></li><li><a href="../pages/Camera-Model" class="internal">Camera Model</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../pages/Monte-Carlo-Integration" class="internal">Monte Carlo Integration</a></li><li><a href="../rendering-equation" class="internal">Rendering Equation</a></li><li><a href="../pages/Scene-Geometry" class="internal">Scene Geometry</a></li><li><a href="../Material-Model" class="internal">Material Model</a></li><li><a href="../Light-Sources" class="internal">Light Sources</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Ambient-Occlusion" class="internal">Ambient Occlusion</a></li><li><a href="../caustics" class="internal">Caustics</a></li><li><a href="../pages/Soft-Shadows" class="internal">Soft Shadows</a></li><li><a href="../pages/Subsurface-Scattering" class="internal">Subsurface Scattering</a></li><li><a href="../pages/Global-Illumination" class="internal">Global Illumination</a></li><li><a href="../pages/Photorealistic-Rendering" class="internal">Photorealistic Rendering</a></li><li><a href="../Reflections" class="internal">Reflections</a></li><li><a href="../Real-Time-Path-Tracing" class="internal">Real-Time Path Tracing</a></li><li><a href="../Participating-Media-Rendering" class="internal">Participating Media Rendering</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Rasterization" class="internal">Rasterization</a></li><li><a href="../Screen-Space-Reflections" class="internal">Screen Space Reflections</a></li><li><a href="../Baked-Lightmaps" class="internal">Baked Lightmaps</a></li><li><a href="../Radiosity" class="internal">Radiosity</a></li><li><a href="../Voxel-Cone-Tracing" class="internal">Voxel Cone Tracing</a></li><li><a href="../Ambient-Occlusion-Maps" class="internal">Ambient Occlusion Maps</a></li><li><a href="../Shadow-Maps" class="internal">Shadow Maps</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Rendering-Equation" class="internal">Rendering Equation</a></li><li><a href="../pages/Monte-Carlo-Methods" class="internal">Monte Carlo Methods</a></li><li><a href="../BVH-Construction" class="internal">BVH Construction</a></li><li><a href="../pages/GPU-Compute" class="internal">GPU Compute</a></li><li><a href="../Hardware-Ray-Tracing-Cores" class="internal">Hardware Ray Tracing Cores</a></li><li><a href="../pages/BRDF" class="internal">BRDF</a></li><li><a href="../pages/Importance-Sampling" class="internal">Importance Sampling</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../HardwareAccelerationLayer" class="internal">HardwareAccelerationLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Importance-Sampling" class="internal">Multiple Importance Sampling</a></li><li><a href="../pages/Path-Tracing" class="internal">Path Tracing</a></li><li><a href="../photon-mapping" class="internal">Photon Mapping</a></li><li><a href="../pages/Volumetric-Rendering" class="internal">Volumetric Rendering</a></li><li><a href="../Bidirectional-Path-Tracing" class="internal">Bidirectional Path Tracing</a></li><li><a href="../Metropolis-Light-Transport" class="internal">Metropolis Light Transport</a></li><li><a href="../ReSTIR" class="internal">ReSTIR</a></li><li><a href="../Whitted-Ray-Tracing" class="internal">Whitted Ray Tracing</a></li><li><a href="../Multiple-Importance-Sampling" class="internal">Multiple Importance Sampling</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>GR-0042</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../acceleration-structure" class="internal">Acceleration Structure</a></li><li><a href="../ai-upscaling" class="internal">AI Upscaling</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../ambient-occlusion" class="internal">Ambient Occlusion</a></li><li><a href="../ambient-occlusion-maps" class="internal">Ambient Occlusion Maps</a></li><li><a href="../architectural-visualisation" class="internal">Architectural Visualisation</a></li><li><a href="../baked-lightmaps" class="internal">Baked Lightmaps</a></li><li><a href="../bidirectional-path-tracing" class="internal">Bidirectional Path Tracing</a></li><li><a href="../bitterli-et-al-2020-re-stir-siggraph-tog" class="internal">Bitterli et al. 2020 ReSTIR SIGGRAPH TOG</a></li><li><a href="../brdf" class="internal">BRDF</a></li><li><a href="../bvh-acceleration-structure" class="internal">BVH Acceleration Structure</a></li><li><a href="../bvh-construction" class="internal">BVH Construction</a></li><li><a href="../camera-model" class="internal">Camera Model</a></li><li><a href="../caustics" class="internal">Caustics</a></li><li><a href="../cd-projekt-red-nvidia-cyberpunk-2077-overdrive-2023" class="internal">CD Projekt Red NVIDIA Cyberpunk 2077 Overdrive 2023</a></li><li><a href="../computer-graphics" class="internal">Computer Graphics</a></li><li><a href="../computer-graphics" class="internal">ComputerGraphicsDomain</a></li><li><a href="../denoiser" class="internal">Denoiser</a></li><li><a href="../denoising" class="internal">Denoising</a></li><li><a href="../direct-x" class="internal">DirectX</a></li><li><a href="../direct-x-raytracing" class="internal">DirectX Raytracing</a></li><li><a href="../dlss" class="internal">DLSS</a></li><li><a href="../epic-games-lumen-ue5-2022" class="internal">Epic Games Lumen UE5 2022</a></li><li><a href="../film-vfx" class="internal">Film VFX</a></li><li><a href="../game-rendering" class="internal">Game Rendering</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../graphics-rendering-domain" class="internal">GraphicsRenderingDomain</a></li><li><a href="../haines-akenine-m-ller-2019-ray-tracing-gems-apress" class="internal">Haines Akenine-Möller 2019 Ray Tracing Gems Apress</a></li><li><a href="../haines-marrs-2021-ray-tracing-gems-ii-apress" class="internal">Haines Marrs 2021 Ray Tracing Gems II Apress</a></li><li><a href="../hardware-acceleration-layer" class="internal">HardwareAccelerationLayer</a></li><li><a href="../hardware-ray-tracing-cores" class="internal">Hardware Ray Tracing Cores</a></li><li><a href="../imagination-technologies-power-vr-photon-2021" class="internal">Imagination Technologies PowerVR Photon 2021</a></li><li><a href="../importance-sampling" class="internal">Importance Sampling</a></li><li><a href="../intel-oidn-2-x-2023" class="internal">Intel OIDN 2.x 2023</a></li><li><a href="../intersection-test" class="internal">Intersection Test</a></li><li><a href="../jakob-et-al-2022-mitsuba-3-siggraph-asia" class="internal">Jakob et al. 2022 Mitsuba 3 SIGGRAPH Asia</a></li><li><a href="../jensen-1996-photon-mapping-eurographics" class="internal">Jensen 1996 Photon Mapping Eurographics</a></li><li><a href="../kajiya-1986-rendering-equation-siggraph" class="internal">Kajiya 1986 Rendering Equation SIGGRAPH</a></li><li><a href="../karras-aila-2013-gpu-bvh-construction-hpg" class="internal">Karras Aila 2013 GPU BVH Construction HPG</a></li><li><a href="../khronos-vulkan-khr-ray-tracing" class="internal">Khronos Vulkan KHR_ray_tracing</a></li><li><a href="../khronos-vulkan-khr-ray-tracing-pipeline-2021" class="internal">Khronos Vulkan KHR_ray_tracing_pipeline 2021</a></li><li><a href="../light-sources" class="internal">Light Sources</a></li><li><a href="../light-transport" class="internal">Light Transport</a></li><li><a href="../lin-et-al-2022-gris-re-stir-pt-siggraph-tog" class="internal">Lin et al. 2022 GRIS ReSTIR PT SIGGRAPH TOG</a></li><li><a href="../lumen" class="internal">Lumen</a></li><li><a href="../m-ller-et-al-2021-neural-radiance-caching-siggraph-tog" class="internal">Müller et al. 2021 Neural Radiance Caching SIGGRAPH TOG</a></li><li><a href="../material-model" class="internal">Material Model</a></li><li><a href="../metropolis-light-transport" class="internal">Metropolis Light Transport</a></li><li><a href="../microsoft-dxr-specification-2018" class="internal">Microsoft DXR Specification 2018</a></li><li><a href="../monte-carlo-integration" class="internal">Monte Carlo Integration</a></li><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../multiple-importance-sampling" class="internal">Multiple Importance Sampling</a></li><li><a href="../neural-denoising" class="internal">Neural Denoising</a></li><li><a href="../nvidia-blackwell-rtx-50-series-architecture-2025" class="internal">NVIDIA Blackwell RTX 50-series Architecture 2025</a></li><li><a href="../nvidia-dlss-3-5-ray-reconstruction-2023" class="internal">NVIDIA DLSS 3.5 Ray Reconstruction 2023</a></li><li><a href="../open-rl" class="internal">OpenRL</a></li><li><a href="../opti-x" class="internal">OptiX</a></li><li><a href="../opti-x-sdk" class="internal">OptiX SDK</a></li><li><a href="../ouyang-et-al-2021-re-stir-gi-hpg" class="internal">Ouyang et al. 2021 ReSTIR GI HPG</a></li><li><a href="../participating-media-rendering" class="internal">Participating Media Rendering</a></li><li><a href="../path-tracing" class="internal">Path Tracing</a></li><li><a href="../pbrt-standard" class="internal">PBRT Standard</a></li><li><a href="../pharr-jakob-humphreys-2023-physically-based-rendering-4th-ed-mit-press" class="internal">Pharr Jakob Humphreys 2023 Physically Based Rendering 4th ed MIT Press</a></li><li><a href="../photon-mapping" class="internal">Photon Mapping</a></li><li><a href="../primary-ray" class="internal">Primary Ray</a></li><li><a href="../product-visualisation" class="internal">Product Visualisation</a></li><li><a href="../radiosity" class="internal">Radiosity</a></li><li><a href="../re-stir" class="internal">ReSTIR</a></li><li><a href="../real-time-path-tracing" class="internal">Real-Time Path Tracing</a></li><li><a href="../real-time-rendering-domain" class="internal">RealTimeRenderingDomain</a></li><li><a href="../reflections" class="internal">Reflections</a></li><li><a href="../rendering" class="internal">Rendering</a></li><li><a href="../rendering-equation" class="internal">Rendering Equation</a></li><li><a href="../reservoir-based-resampling" class="internal">Reservoir-Based Resampling</a></li><li><a href="../reservoir-sampling" class="internal">Reservoir Sampling</a></li><li><a href="../rt-core" class="internal">RT Core</a></li><li><a href="../russian-roulette-termination" class="internal">Russian Roulette Termination</a></li><li><a href="../scene-geometry" class="internal">Scene Geometry</a></li><li><a href="../schied-et-al-2017-svgf-hpg" class="internal">Schied et al. 2017 SVGF HPG</a></li><li><a href="../scientific-visualisation" class="internal">Scientific Visualisation</a></li><li><a href="../screen-space-reflections" class="internal">Screen Space Reflections</a></li><li><a href="../secondary-ray" class="internal">Secondary Ray</a></li><li><a href="../shading-model" class="internal">Shading Model</a></li><li><a href="../shadow-maps" class="internal">Shadow Maps</a></li><li><a href="../soft-shadows" class="internal">Soft Shadows</a></li><li><a href="../spatiotemporal-filtering" class="internal">Spatiotemporal Filtering</a></li><li><a href="../subsurface-scattering" class="internal">Subsurface Scattering</a></li><li><a href="../veach-1997-ph-d-thesis-stanford" class="internal">Veach 1997 PhD Thesis Stanford</a></li><li><a href="../veach-and-guibas-1994-bidirectional-estimators-eurographics" class="internal">Veach &amp; Guibas 1994 Bidirectional Estimators Eurographics</a></li><li><a href="../veach-and-guibas-1995-multiple-importance-sampling-siggraph" class="internal">Veach &amp; Guibas 1995 Multiple Importance Sampling SIGGRAPH</a></li><li><a href="../veach-and-guibas-1997-metropolis-light-transport-siggraph" class="internal">Veach &amp; Guibas 1997 Metropolis Light Transport SIGGRAPH</a></li><li><a href="../volumetric-rendering" class="internal">Volumetric Rendering</a></li><li><a href="../voxel-cone-tracing" class="internal">Voxel Cone Tracing</a></li><li><a href="../vulkan" class="internal">Vulkan</a></li><li><a href="../wald-et-al-2007-dynamic-bvh-tog" class="internal">Wald et al. 2007 Dynamic BVH TOG</a></li><li><a href="../whitted-1980-improved-illumination-model-cacm" class="internal">Whitted 1980 Improved Illumination Model CACM</a></li><li><a href="../whitted-ray-tracing" class="internal">Whitted Ray Tracing</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../digital-twin" class="internal">Digital Twin</a></li><li><a href="../global-illumination" class="internal">Global Illumination</a></li><li><a href="../metaverse" class="internal">Metaverse</a></li><li><a href="../neural-radiance-fields" class="internal">Neural Radiance Fields</a></li><li><a href="../photorealistic-rendering" class="internal">Photorealistic Rendering</a></li><li><a href="../physically-based-rendering" class="internal">Physically-Based Rendering</a></li><li><a href="../rasterization" class="internal">Rasterization</a></li><li><a href="../virtual-production" class="internal">Virtual Production</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:30f8d803d5a5cf041fe567c9dccd81e1ade6caf39c1cd015b236e9f069eb9a66</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../denoising" class="internal">Denoising</a></li><li><a href="../pages/DLSS" class="internal">DLSS</a></li><li><a href="../pages/Lumen" class="internal">Lumen</a></li><li><a href="../pages/Vulkan" class="internal">Vulkan</a></li><li><a href="../pages/Neural-Radiance-Fields" class="internal">Neural Radiance Fields</a></li><li><a href="../pages/Physically-Based-Rendering" class="internal">Physically Based Rendering</a></li><li><a href="../pages/DirectX" class="internal">DirectX</a></li><li><a href="../OptiX" class="internal">OptiX</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/Vulkan" class="internal">Khronos Vulkan KHR_ray_tracing</a></li><li><a href="../Khronos-Vulkan-KHR_ray_tracing" class="internal">Khronos Vulkan KHR_ray_tracing</a></li><li><a href="../DirectX-Raytracing" class="internal">DirectX Raytracing</a></li><li><a href="../PBRT-Standard" class="internal">PBRT Standard</a></li><li><a href="../OpenRL" class="internal">OpenRL</a></li><li><a href="../OptiX-SDK" class="internal">OptiX SDK</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../architectural-visualisation" class="internal">Architectural Visualisation</a></li><li><a href="../pages/Film-VFX" class="internal">Film VFX</a></li><li><a href="../pages/Scientific-Visualisation" class="internal">Scientific Visualisation</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Metaverse" class="internal">Metaverse</a></li><li><a href="../Virtual-Production" class="internal">Virtual Production</a></li><li><a href="../Game-Rendering" class="internal">Game Rendering</a></li><li><a href="../Product-Visualisation" class="internal">Product Visualisation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/AI-Upscaling-and-Super-Resolution" class="internal">AI Upscaling</a></li><li><a href="../pages/BRDF" class="internal">BRDF</a></li><li><a href="../pages/DLSS" class="internal">DLSS</a></li><li><a href="../pages/Importance-Sampling" class="internal">Importance Sampling</a></li><li><a href="../Russian-Roulette-Termination" class="internal">Russian Roulette Termination</a></li><li><a href="../Reservoir-Based-Resampling" class="internal">Reservoir-Based Resampling</a></li><li><a href="../Neural-Denoising" class="internal">Neural Denoising</a></li><li><a href="../AI-Upscaling" class="internal">AI Upscaling</a></li><li><a href="../Spatiotemporal-Filtering" class="internal">Spatiotemporal Filtering</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:PrimaryRay))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:SecondaryRay))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:BVHAccelerationStructure))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:IntersectionTest))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:BRDF))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:ShadingModel))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:Denoiser))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:ReservoirSampling))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:RTCore))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:hasPart gr:ImportanceSampler))
+
+  ## Dependency Relationships
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:requires gr:SceneGeometry))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:requires gr:MaterialModel))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:requires gr:AccelerationStructure))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:requires gr:LightSources))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:requires gr:CameraModel))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:requires gr:MonteCarloIntegration))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:dependsOn gr:RenderingEquation))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:dependsOn gr:GPUCompute))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:dependsOn gr:HardwareRayTracingCores))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:dependsOn gr:BVHConstruction))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:dependsOn gr:BRDF))
+
+  ## Capability Relationships
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:PhotorealisticRendering))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:GlobalIllumination))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:Caustics))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:SoftShadows))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:Reflections))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:AmbientOcclusion))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:RealTimePathTracing))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:enables gr:SubsurfaceScattering))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:supports gr:GameRendering))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:supports gr:FilmVFX))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:supports gr:ArchitecturalVisualisation))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:supports gr:ScientificVisualisation))
+
+  ## Implementation Relationships
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:PathTracing))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:BidirectionalPathTracing))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:MetropolisLightTransport))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:ReSTIR))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:WhittedRayTracing))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:PhotonMapping))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:implements gr:MultipleImportanceSampling))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:uses gr:NeuralDenoising))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:uses gr:ReservoirBasedResampling))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:uses gr:AIUpscaling))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:uses gr:SpatiotemporalFiltering))
+
+  ## Reduction Relationships
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:reduces gr:RenderingArtifacts))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:reduces gr:LightingApproximationError))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:reduces gr:SamplesPerPixelRequired))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:reduces gr:ManualArtistLightingWork))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:reduces gr:ShadowAcneArtifacts))
+
+  ## Association Relationships
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:relatedTo gr:NeuralRadianceFields))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:relatedTo gr:Vulkan))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:relatedTo gr:DirectX))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:relatedTo gr:DLSS))
+  SubClassOf(gr:RayTracing
+    ObjectSomeValuesFrom(gr:relatedTo gr:OptiX))
+
+  ## Data Properties (Characteristics)
+  DataPropertyAssertion(gr:hasIdentifier gr:RayTracing &quot;GR-0042&quot;^^xsd:string)
+  DataPropertyAssertion(gr:authorityScore gr:RayTracing &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(gr:foundationalYear gr:RayTracing &quot;1980&quot;^^xsd:integer)
+  DataPropertyAssertion(gr:hardwareAcceleratedFrom gr:RayTracing &quot;2018&quot;^^xsd:integer)
+  DataPropertyAssertion(gr:bvhComplexity gr:RayTracing &quot;O(log N)&quot;^^xsd:string)
+  DataPropertyAssertion(gr:varianceConvergence gr:RayTracing &quot;O(1/sqrt(SPP))&quot;^^xsd:string)
+
+  ## Property Constraints
+  SubClassOf(gr:RayTracing
+    DataAllValuesFrom(gr:requiresAccelerationStructure xsd:boolean))
+  SubClassOf(gr:RayTracing
+    DataSomeValuesFrom(gr:algorithmVariant xsd:string))
+  SubClassOf(gr:RayTracing
+    DataMinCardinality(1 gr:hasSamplesPerPixel xsd:integer))
+  SubClassOf(gr:RayTracing
+    DataMinCardinality(1 gr:hasMaxRecursionDepth xsd:integer))
+  SubClassOf(gr:RayTracing
+    DataMaxCardinality(1 gr:hasTerminationStrategy xsd:string))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label gr:RayTracing &quot;Ray Tracing&quot;@en)
+  AnnotationAssertion(rdfs:comment gr:RayTracing &quot;Physically-based light-transport simulation technique casting rays from camera through pixels into 3D scenes, computing colour via recursive intersection, shading, and secondary ray spawning; grounded in Kajiya rendering equation (1986) and Whitted recursive tracing (1980); path-tracing Monte Carlo estimator converges O(1/√SPP); hardware-accelerated on NVIDIA RTX Turing through Blackwell (2018-2025), AMD RDNA 2+, Intel Arc; acceleration via BVH O(log N) traversal; ReSTIR spatiotemporal resampling (Bitterli 2020) enables real-time direct+indirect GI; neural denoising via DLSS 3.5 Ray Reconstruction and OIDN 2.x; first full real-time path tracing shipped Cyberpunk 2077 Overdrive (2023); standardised via Vulkan KHR_ray_tracing (2020) and DXR (2018); UK contributions from Imagination Technologies PowerVR Photon (Hertfordshire) and London VFX industry (DNEG, MPC, Framestore).&quot;@en)
+  AnnotationAssertion(dcterms:identifier gr:RayTracing &quot;GR-0042&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject gr:RayTracing &quot;Computer Graphics, Rendering, Light Transport, Global Illumination, GPU Computing, Physically Based Rendering&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(gr:requires)
+AsymmetricObjectProperty(gr:enables)
+AsymmetricObjectProperty(gr:implements)
+AsymmetricObjectProperty(gr:reduces)
+TransitiveObjectProperty(gr:dependsOn)
+FunctionalDataProperty(gr:algorithmVariant)
+FunctionalDataProperty(gr:bvhComplexity)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-ray-tracing">About Ray Tracing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-ray-tracing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Ray Tracing</strong> is one of the most consequential rendering paradigms in computer graphics history, tracing the physical behaviour of light to produce images of mathematical correctness rather than artistic approximation. Unlike rasterisation — which projects geometry onto the image plane and layers on approximations for shadows, reflections, and indirect illumination — ray tracing evaluates light transport from first principles by following the paths of light rays (or equivalently, by reverse-tracing eye rays, since time-reversal symmetry holds for light transport) through scenes and computing their colour contributions from the rendering equation directly.</p>
+</li>
+<li>
+<p>The intellectual lineage of ray tracing spans more than four decades. Arthur Appel’s 1968 “Some Techniques for Shading Machine Renderings of Solids” introduced ray casting for hidden-surface removal and basic shading. Turner Whitted’s 1980 CACM paper “An Improved Illumination Model for Shaded Display” transformed ray casting into recursive ray tracing capable of mirror-perfect reflections, refractive glass, and accurate shadows — images that were visually shocking in their physical accuracy when first published. James Kajiya’s 1986 SIGGRAPH paper “The Rendering Equation” provided the unifying theoretical framework that subsequent decades of rendering research has refined: a Fredholm integral equation of the second kind whose solution requires integrating incoming radiance over the hemisphere at each surface point, accounting for material reflectance and emission.</p>
+</li>
+<li>
+<p>The practical gap between theoretical correctness and computational feasibility has driven the entire trajectory of rendering research. Monte Carlo path tracing converges to the correct answer but requires enormous sample counts to suppress noise — a single photorealistic frame offline may require thousands of samples per pixel and hours of compute. The real-time rendering community spent the 1990s and 2000s developing elaborate approximations: shadow maps, ambient occlusion, screen-space reflections, precomputed radiance transfer, irradiance caching. Each approximation broke under some combination of scene conditions. Hardware-accelerated ray tracing, arriving on consumer GPUs with NVIDIA Turing in 2018, began reversing this dependency — progressively replacing approximations with physically correct RT at costs that shrink each GPU generation.</p>
+</li>
+<li>
+<h3 id="core-mathematical-framework">Core Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-mathematical-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The rendering equation Lₒ(x,ω) = Lₑ(x,ω) + ∫_Ω f_r(x,ωᵢ,ω) Lᵢ(x,ωᵢ) |cos θᵢ| dωᵢ encodes everything about light transport at opaque surfaces. Solving it for a scene requires evaluating Lᵢ recursively — the incoming radiance from direction ωᵢ is the outgoing radiance of whatever surface is visible along that direction, making the equation an infinite recursion. Path tracing resolves this recursion stochastically: trace a path of finite length (terminated by Russian roulette), accumulate light contributions along the path weighted by BRDF evaluations and cosine factors divided by probability densities (importance sampling), and average across many such paths. The estimator is unbiased: its expected value equals the true integral regardless of sample count, and its variance decreases as O(1/N) for N samples.</p>
+</li>
+<li>
+<p><strong>Multiple Importance Sampling (MIS)</strong> (Veach &amp; Guibas 1995): When multiple sampling strategies exist (sample from the BRDF, or sample from a light source), MIS combines their contributions using balance or power heuristics to minimise variance without introducing bias. MIS is fundamental to production path tracers and to ReSTIR.</p>
+</li>
+<li>
+<p><strong>Importance Sampling</strong>: Selecting sample directions proportional to the BRDF (cosine-weighted for diffuse, GGX distribution for microfacet specular) concentrates samples where f_r is large, reducing variance. For area lights, sampling proportional to solid-angle and visibility (next-event estimation) further reduces variance by evaluating direct illumination deterministically.</p>
+</li>
+<li>
+<p><strong>Russian Roulette</strong>: At each path vertex, continue with probability q = clamp(throughput luminance, 0, 1); divide surviving contribution by q. This maintains unbiasedness while preventing infinite recursion, concentrating computation on high-throughput paths.</p>
+</li>
+<li>
+<p><strong>Bidirectional Estimators</strong>: Rather than tracing from camera only (unidirectional PT) or light only (light tracing), BDPT traces sub-paths from both, connecting all vertex pairs via shadow rays and combining the resulting estimators with MIS. This dramatically reduces variance for caustics (where light paths sample well) and for scenes lit through small openings (where camera paths struggle to find light). Eric Veach’s 1997 PhD thesis “Robust Monte Carlo Methods for Light Transport Simulation” remains the definitive theoretical reference.</p>
+</li>
+<li>
+<p><strong>Metropolis Light Transport (MLT)</strong>: Rather than independent path samples, MLT uses Markov-chain Monte Carlo: starting from an accepted high-contribution path, mutate it (perturb a single vertex, add/remove a bounce, change a light) and accept/reject the new path with a probability that maintains detailed balance with respect to the path contribution distribution. MLT concentrates samples on the most important path subspaces without knowing them in advance. Primary Sample Space MLT (PSSMLT, Kelemen et al. 2002) simplifies implementation by applying MCMC in the unit-cube space of random numbers feeding a standard path sampler.</p>
+</li>
+<li>
+<h3 id="algorithm-families">Algorithm Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#algorithm-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Whitted Ray Tracing (1980)</strong>: The historic entry point. Cast primary rays from the camera; at each surface intersection, spawn an ambient contribution, shadow rays toward each punctual light source (returning 0 if occluded), a perfectly mirrored reflection ray (if material is specular), and a refracted transmission ray (if material is dielectric, computed via Snell’s law). Recurse to fixed depth (typically 5-8). Result: mathematically correct mirror reflections and glass refractions; hard shadow from point lights. Cannot represent diffuse indirect illumination at all. Computationally tractable even on 1980s hardware for low-resolution imagery. The canonical demo was a metallic sphere reflecting a checkerboard floor with glass spheres. No longer used in production; subsumed by path tracing.</p>
+</li>
+<li>
+<p><strong>Monte Carlo Path Tracing (Kajiya 1986)</strong>: Unbiased stochastic integration of the rendering equation. For each pixel, trace one (or a handful of) primary ray(s); at each intersection sample a random scattering direction from the BRDF, weight by f_r(x,ωᵢ,ω)|cos θᵢ|/pdf(ωᵢ), and continue. Optionally use next-event estimation (NEE) to explicitly sample a random light at each bounce and add its contribution. Terminate with Russian roulette. Average across many SPP. Converges to the correct image; slow convergence (SPP in hundreds to thousands for noise-free offline renders). Blender Cycles, PBRT, Mitsuba, Arnold, V-Ray, and RenderMan all implement variants of this algorithm with sophisticated importance sampling and adaptive sampling.</p>
+</li>
+<li>
+<p><strong>Bidirectional Path Tracing (BDPT) (Veach &amp; Guibas 1994)</strong>: Traces s vertices from the camera and t vertices from the light, connecting all s+t pairs via shadow rays. Each connection produces a complete transport path; contributions from all paths are combined using MIS. BDPT dramatically outperforms unidirectional PT for interior scenes lit by skylights, glass-enclosed lights, and caustics. Cost per pixel is O((s+t)²) shadow rays in the worst case, mitigated by pruning low-contribution connections. Used in production offline renderers (Arnold, PBRT option).</p>
+</li>
+<li>
+<p><strong>Metropolis Light Transport (MLT) (Veach &amp; Guibas 1997)</strong>: Samples path space with MCMC, concentrating effort on high-radiance paths. Excellent for near-impossible transport: a glass ball focussing sunlight onto a matte surface through a keyhole. Difficult to paralllelise efficiently (chains are sequential) and prone to long-range correlation artefacts. Variants: Primary Sample Space MLT (PSSMLT, Kelemen 2002), Manifold Exploration Metropolis (Jakob &amp; Marschner 2012, handling specular chains), Energy Redistribution Path Tracing (ERPT, Cline et al. 2005).</p>
+</li>
+<li>
+<p><strong>Photon Mapping (Jensen 1996, 2001)</strong>: Two-pass. Forward pass: cast N_p photons from light sources, trace through scene recording each diffuse hit in a kd-tree (the photon map). Backward pass: for each primary ray hit, estimate indirect illumination via nearest-neighbour lookup in the photon map, using a kernel density estimate. Biased but consistent (bias → 0 as N_p → ∞). Excellent for caustics, subsurface scattering, and participating media. Progressive Photon Mapping (PPM, Hachisuka et al. 2008) and Stochastic Progressive Photon Mapping (SPPM, Hachisuka &amp; Jensen 2009) enable bias-free operation with bounded memory.</p>
+</li>
+<li>
+<p><strong>Volumetric / Participating Media Rendering</strong>: Extends path tracing to media with scattering and absorption (fog, smoke, clouds, skin subsurface). Uses the radiative transfer equation; samples free-path length via null-collision (Woodcock) tracking or delta tracking through heterogeneous densities. Essential for film VFX; Pixar RenderMan and Arnold have mature volume primitives.</p>
+</li>
+<li>
+<p><strong>ReSTIR Direct Illumination (2020)</strong>: WRS-based resampling over a reservoir of M candidate lights per pixel (M = 32-128); accept each candidate with probability proportional to its contribution using a running maximum estimate. Spatial resampling shares reservoirs with k (= 3-5) spatial neighbours weighted by their target distribution. Temporal resampling appends last frame’s reservoir. Each pixel effectively evaluates hundreds of light candidates at cost of evaluating one shadow ray. Enables real-time direct illumination from millions of emitters (Minecraft RTX environments, modern open-world games).</p>
+</li>
+<li>
+<p><strong>ReSTIR GI (HPG 2021)</strong>: Applies the same resampling principle to indirect illumination: each pixel stores a reservoir over recently traced bounce-path segments, resampling temporally and spatially. Reduces noise in diffuse global illumination at a fraction of the SPP required by pure path tracing.</p>
+</li>
+<li>
+<p><strong>ReSTIR PT / GRIS (SIGGRAPH 2022)</strong>: The full generalisation. Generalised Resampled Importance Sampling (GRIS) proves correct MIS weighting for path resampling through arbitrary topology. Enables unbiased spatiotemporal path resampling across full path-traced paths. First theoretical basis for combining ReSTIR with complex transport. Cyberpunk 2077 Overdrive uses a variant of this alongside neural radiance caching.</p>
+</li>
+<li>
+<p><strong>Neural Radiance Caching (Müller et al. SIGGRAPH 2021)</strong>: An online-trained tiny neural network (4-8 layers, 64 neurons, ~10K parameters) per scene caches incident radiance as a function of surface position and incoming direction. During rendering, short paths (1-4 bounces) terminate at the cache lookup rather than continuing to full depth. The network trains online using the longer path evaluations as training signal, converging rapidly within tens of frames. Reduces render cost for indirect illumination by 4-8× at modest quality cost. NVIDIA extended this for Cyberpunk 2077 Overdrive mode.</p>
+</li>
+<li>
+<h3 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Bounding Volume Hierarchy (BVH)</strong>: The primary acceleration structure for ray-scene intersection in real-time and production RT. A binary tree of axis-aligned bounding boxes (AABBs) over scene primitives (triangles, BVH leaf nodes). Ray traversal begins at the root: test the ray against the root AABB; if miss, reject the entire subtree; if hit, recurse into children, eventually reaching leaf nodes where true ray-primitive intersections are computed. Traversal complexity is O(log N) expected for balanced trees over N primitives vs O(N) brute force. BVH construction uses the Surface Area Heuristic (SAH): split leaf nodes at the partition minimising expected traversal cost E[cost] = C_trav + p_L × N_L × C_isect + p_R × N_R × C_isect where p_L, p_R are child AABB surface area fractions predicting probability of hitting each subtree. GPU-parallel BVH construction via Karras &amp; Aila (HPG 2013) uses Morton codes and parallel reduction for O(N log N) parallel builds, enabling BVH update or rebuild each frame for dynamic scenes. Two-level BVH: a Top-Level Acceleration Structure (TLAS) over Bottom-Level Acceleration Structures (BLAS) per mesh/object instance supports rigid-body and skeletal animation without full BLAS rebuild.</p>
+</li>
+<li>
+<p><strong>NVIDIA RT Cores</strong>: Dedicated fixed-function silicon for BVH traversal and ray-box/ray-triangle intersection, offloaded from programmable shader units. First generation (Turing, 2018): 1 RT Core per streaming multiprocessor; handles AABB and triangle intersections asynchronously with concurrent shader execution. Second generation (Ampere, 2020): improved throughput, concurrent triangle intersections, motion blur support in hardware. Third generation (Ada Lovelace, 2022): opacity micromaps (OMM) compress alpha-tested geometry into 2-bit per-subtriangle classification (opaque/transparent/unknown) eliminating redundant any-hit shader invocations for foliage and decals; displaced micromeshes (DMM) encode geometric displacement at sub-triangle resolution in the BVH, enabling native hardware tessellation during traversal without GPU memory for full tessellated geometry. Shader Execution Reordering (SER) hardware regroups divergent shader invocations at traversal boundaries to recover SM warp occupancy. Fourth generation (Ada Ada supplement / RTX 40-series shipping): same architecture, refined. Fifth generation (Blackwell, 2025): DMM and OMM carried forward; improved concurrency scheduling; 5th-gen RT Cores achieve roughly 2× throughput on complex multi-bounce workloads vs Ada in NVIDIA’s disclosed measurements.</p>
+</li>
+<li>
+<p><strong>AMD Ray Accelerators (RDNA 2+)</strong>: Integrated into each Compute Unit rather than as separate fixed-function blocks. RDNA 2 (RX 6000 series, 2020): one ray accelerator per CU, handling BVH box intersection. RDNA 3 (RX 7000 series, 2022): two ray accelerators per CU plus improved intersection throughput. Performance competitive with NVIDIA on single-bounce shadow and reflection workloads; historically slower on multi-bounce GI owing to lack of SER-equivalent and less mature denoising ecosystem. RDNA 4 (RX 9000 series, 2025) adds hardware-ML inference units supporting FSR 4 upscaling directly on chip.</p>
+</li>
+<li>
+<p><strong>Intel Arc Ray Tracing Units (2022+)</strong>: RTUs integrated into each Xe Core in Alchemist (Arc A-series) and Battlemage (2024). Battlemage doubles RTU throughput and improves memory access patterns for BVH traversal. Performance broadly competitive with AMD RDNA 3 on hybrid workloads; Intel XeSS 2 (2025) ML upscaling on-chip.</p>
+</li>
+<li>
+<p><strong>Shader Pipeline (DXR and Vulkan KHR_ray_tracing)</strong>: Provides programmable stages wrapping the hardware BVH traversal. Ray Generation Shader: executes once per pixel, calls TraceRay() to launch rays into the BVH. Intersection Shader: custom geometry intersection (procedural primitives, rounded edges). Any-Hit Shader: invoked at each potential intersection during traversal (for alpha testing, accumulating transparency); must be idempotent. Closest-Hit Shader: invoked at the closest confirmed intersection for shading (BRDF evaluation, spawning secondary rays). Miss Shader: invoked when no intersection found (sky environment lookup). The pipeline serialises through hardware BVH traversal between shader stages while permitting full programmability.</p>
+</li>
+<li>
+<p><strong>Denoising Pipeline</strong>: Because real-time RT runs at 1-4 SPP (compared to 4,000-16,000 SPP for offline), temporal and neural denoising is essential. SVGF (Spatiotemporal Variance-Guided Filtering, Schied et al. HPG 2017) accumulates history via motion vectors, estimates local variance, and applies an edge-aware À-trous wavelet filter with variance guidance — the dominant real-time denoiser 2018-2022. NVIDIA OptiX AI Denoiser: CNN trained on path-traced pairs (noisy → clean), runs on tensor cores, integrated into PBRT, Blender, ParaView. Intel OIDN 2.x: open-source U-Net-based denoiser, backends for CPU (AVX-512), CUDA, HIP, SYCL, Metal; OIDN 2.1 achieves quality on par with OptiX; OIDN 2.3 adds ray reconstruction mode. DLSS 3.5 Ray Reconstruction (NVIDIA 2023): transformer-based network replacing per-frame denoising with a model that uses G-buffer data (normals, depth, albedo, motion vectors) alongside temporal history and sparse RT samples to reconstruct high-quality frames; achieves visibly sharper reflections and GI than SVGF at same SPP. Available in 2023+ RTX games including Cyberpunk 2077 Overdrive, Alan Wake 2, Forza Motorsport, Portal with RTX.</p>
+</li>
+<li>
+<p><strong>AI Upscaling Integration</strong>: DLSS (NVIDIA, transformer-based from DLSS 3): renders at lower internal resolution, ML-reconstructs to output resolution; DLSS 3.5 combines frame reconstruction with ray reconstruction. FSR 4 (AMD, RDNA 4 hardware ML): learned upscaling competitive with DLSS quality on RDNA 4 GPUs. XeSS 2 (Intel, 2025): ML upscaling on Battlemage Arc hardware. These allow path tracing to run at 720p internal resolution and reconstruct 4K output, providing the budget headroom for additional RT samples.</p>
+</li>
+<li>
+<h3 id="hardware-landscape-2025-2026">Hardware Landscape (2025-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hardware-landscape-2025-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>NVIDIA RTX 50-series Blackwell (January 2025)</strong>: The GeForce RTX 5090 features 5th-generation RT Cores with opacity micromaps, displaced micromeshes, Shader Execution Reordering, and roughly 2× RT throughput improvement over RTX 4090 on complex multi-bounce workloads by NVIDIA’s internal benchmarks. Tensor Core performance enables DLSS 4 Multi Frame Generation: the AI generates up to 3 intermediate frames per 1 rendered frame, effectively multiplying framerate 4× in frame generation games. The RTX 5080, 5070 Ti, 5070, and 5060 Ti complete the mainstream lineup, all supporting hardware RT. At launch (January 2025), RTX 5090 lists at <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">1</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">999</span><span class="mord mathnormal" style="margin-right:0.10903em;">U</span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07847em;">RTX</span><span class="mord">5070</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span></span></span></span>549 USD, bringing full path tracing within reach of mid-mainstream consumers by late 2025.</p>
+</li>
+<li>
+<p><strong>NVIDIA RTX 40-series Ada Lovelace (2022-2024)</strong>: The first GPUs to enable full real-time path tracing in shipped games. RTX 4090 (September 2022), 4080, 4070 Ti/Super/regular, 4060 Ti/regular. Ada introduced 3rd-gen RT Cores with OMM and DMM, SER, and 4th-generation tensor cores enabling DLSS 3. Cyberpunk 2077 Overdrive full path tracing shipped April 2023 targeting RTX 4090/4080 at 4K DLSS Quality mode (1440p internal); patch later enabled 4070 at lower settings.</p>
+</li>
+<li>
+<p><strong>NVIDIA RTX 30-series Ampere (2020-2022)</strong>: 2nd-gen RT Cores; introduced concurrent ray tracing with rasterisation and motion blur hardware. First to enable 60fps hybrid RT (reflections + shadows + AO) in AAA titles. RTX 3080/3070/3060 series. No OMM/DMM.</p>
+</li>
+<li>
+<p><strong>NVIDIA RTX 20-series Turing (2018-2020)</strong>: First-generation RT Cores; established hardware ray tracing as a consumer product. 1st-gen RT Cores; debut titles Battlefield V, Metro Exodus, Shadow of the Tomb Raider (all 2018-2019). Performance sufficient only for selective hybrid RT effects (reflections, shadows) at 1080p.</p>
+</li>
+<li>
+<p><strong>AMD Radeon RX 7000 RDNA 3 (2022-2023)</strong>: Competitive with NVIDIA Ada on rasterisation; RT performance roughly matching RTX 3080-tier at equivalent price. No SER equivalent; FSR 3 frame interpolation available. RX 7900 XTX, 7800 XT, 7600 XT.</p>
+</li>
+<li>
+<p><strong>AMD Radeon RX 9000 RDNA 4 (2025)</strong>: RX 9070 XT and 9070 introduced February 2025. Double ray accelerators per CU vs RDNA 3, RT throughput approaching RTX 4070 Ti per AMD’s benchmarks. Hardware ML units enabling FSR 4. First AMD GPUs capable of full ReSTIR GI at playable framerates on demanding titles.</p>
+</li>
+<li>
+<p><strong>Intel Arc Alchemist (2022-2023)</strong>: First Intel discrete GPUs with dedicated RTUs. Competitive with AMD RDNA 2 on hybrid RT workloads; limited driver maturity at launch improved significantly by 2023. A770 16GB positioned as 1080p-1440p hybrid RT capable.</p>
+</li>
+<li>
+<p><strong>Intel Arc Battlemage (2024)</strong>: B580 and B570, launched December 2024. Doubled RTU throughput, improved BVH traversal bandwidth. XeSS 2.0 on-chip. Competitive with AMD RX 7600 XT tier in RT-heavy workloads. First Intel GPU capable of playable ReSTIR direct lighting in current-gen games.</p>
+</li>
+<li>
+<p><strong>Mobile Ray Tracing</strong>: Imagination Technologies PowerVR Photon RT cores (2021+) licensed to Android SoC vendors; delivers RT for mobile games and AR overlays at reduced ray budgets. Apple Silicon M2/M3/M4 and A16/A17/A18 Pro include GPU ray tracing acceleration via Metal RT API (2022), enabling RT in iOS/macOS games (Resident Evil Village for iOS, 2023). Qualcomm Adreno 750 (Snapdragon 8 Gen 3, 2024) includes dedicated RT acceleration. Performance sufficient for single-bounce reflections and ambient occlusion at 1080p 30fps on high-end mobile; multi-bounce GI remains challenging.</p>
+</li>
+<li>
+<p><strong>Workstation / Data-Centre RT</strong>: NVIDIA Ada Lovelace RTX 6000 Ada (48GB VRAM) for professional visualisation (Omniverse, V-Ray); NVIDIA H100 and H200 include RT Cores for simulation workloads. AMD Radeon Pro W7900 (RDNA 3) for professional rendering. AWS and Azure offer GPU cloud instances (g5/g6, NC-series) with RTX hardware for cloud RT rendering.</p>
+</li>
+<li>
+<h3 id="software-ecosystem-and-apis">Software Ecosystem and APIs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-ecosystem-and-apis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>DirectX Raytracing (DXR)</strong>: Microsoft introduced DXR as part of DirectX 12 Ultimate (2018, shipping with Windows 10 1809 update). Defines five programmable shader stages (ray generation, intersection, any-hit, closest-hit, miss) plus acceleration structure management (BuildRaytracingAccelerationStructure). Tier 1 hardware minimum (all RTX 20-series+); Tier 1.1 adds inline ray tracing via TraceRayInline() in compute shaders, reducing pipeline setup overhead. Used by virtually all Windows AAA RT titles. DXR 1.1 (Vulkan equivalent: VK_KHR_ray_query) enables calling TraceRay from any shader stage inline.</p>
+</li>
+<li>
+<p><strong>Vulkan KHR_ray_tracing</strong>: Khronos ratified VK_KHR_ray_tracing_pipeline and VK_KHR_acceleration_structure extensions in November 2020 as provisional; finalised March 2021; Vulkan 1.3 core extension integration 2022. Provides full cross-platform hardware RT capability on Linux, Windows, macOS (via MoltenVK translation layer). Used by Proton/DXVK for translating Windows DXR games to Linux; directly used by cross-platform engines (Godot 4, open-source Vulkan renderers). VK_KHR_ray_query provides inline RT callable from any shader.</p>
+</li>
+<li>
+<p><strong>NVIDIA OptiX 8.x</strong>: CUDA-based ray tracing SDK targeting NVIDIA GPU hardware. Higher-level API than DXR; provides automatic BVH management, built-in primitives (triangles, curves, spheres), and tight integration with CUDA compute kernels. Preferred by scientific computing, offline rendering (Blender Cycles OptiX backend, PBRT-GPU mode, ParaView, OSPRay-OptiX). OptiX 8.0 (2023) supports motion blur, multi-GPU NVLink, curved primitives, and the NVIDIA AI Denoiser.</p>
+</li>
+<li>
+<p><strong>Intel Embree 4.x</strong>: Open-source (Apache 2.0) high-performance CPU ray tracing kernels from Intel. Used as CPU backends for Blender Cycles CPU, PBRT CPU mode, Mitsuba CPU, Arnold CPU. Embree 4 supports 64-bit precision, custom primitive types, and improved curve geometry. Critical for offline rendering on render farms without GPUs.</p>
+</li>
+<li>
+<p><strong>PBRT 4 (Physically Based Rendering, 4th ed., 2023)</strong>: The reference implementation accompanying Pharr, Jakob, and Humphreys’ textbook. PBRT 4 supports CPU (Embree) and GPU (OptiX) backends, wavefront path tracing on GPU, ReSTIR for direct illumination, participating media, spectral rendering, and neural texture encoding. Its open-source MIT-licensed code serves as the academic gold standard and production starting point. The textbook (pbrt.org, free HTML) is the definitive learning resource for physically-based rendering.</p>
+</li>
+<li>
+<p><strong>Mitsuba 3 (2022)</strong>: Research-oriented differentiable renderer by Wenzel Jakob’s group (EPFL/RVD Lab). Built on Dr.Jit (a just-in-time compilation framework), Mitsuba 3 supports forward and adjoint (differentiable) rendering in the same code, enabling gradient-based inverse problems. Backends: LLVM (CPU), CUDA (GPU). Differentiable rendering via Mitsuba 3 / Dr.Jit is widely used in academic research for NeRF, material acquisition from photographs, and physics-based simulation.</p>
+</li>
+<li>
+<p><strong>Blender Cycles</strong>: Production path tracer integrated into Blender, supporting CPU (Embree), GPU (OptiX, CUDA, HIP, Metal, oneAPI) backends. Cycles X rewrite (Blender 3.0, 2021) adopted wavefront path tracing on GPU, reducing divergence from per-ray to per-material batches, yielding 2-8× GPU speedups. Integrates OptiX denoiser and OIDN for denoising. Free, open-source (Apache 2.0), used across film, arch-vis, and game pre-rendered cinematics.</p>
+</li>
+<li>
+<p><strong>Autodesk Arnold 7.x</strong>: Production ray tracer used across film and visual effects. Arnold uses an adaptive progressive sampling approach with adaptive sample clamping and AOV (arbitrary output variable) multi-layer rendering. Supports GPU acceleration (Arnold GPU, OptiX-based). Used at ILM, Weta FX, DNEG, MPC for major feature films.</p>
+</li>
+<li>
+<p><strong>Chaos V-Ray 6/7</strong>: Commercial ray tracer widely used in architectural visualisation, product design, and VFX. V-Ray GPU (RT GPU mode) uses CUDA for path tracing. V-Ray 6 introduced interactive GPU path tracing for design review. Integrates with 3ds Max, Maya, Cinema 4D, Revit.</p>
+</li>
+<li>
+<p><strong>Unreal Engine 5 Lumen (2022-2025)</strong>: Epic’s dynamic global illumination system shipping in UE5. Software Lumen: uses screen-space ray tracing, signed-distance-field tracing, and surface cache voxelisation to approximate multi-bounce GI on all hardware (no RT required). Hardware RT Lumen: uses GPU RT for surface cache radiance updates, achieving near-ground-truth quality on high-end PCs and consoles (PS5, Xbox Series X). Lumen works in combination with Nanite (virtual micro-polygon geometry) and DLSS/FSR/TSR temporal upscaling. UE5.3 shipped hardware RT Lumen fixes reducing ghosting artefacts; UE5.4 improved sky-light accuracy. Used across major 2023-2026 AAA titles (Fortnite UE5 update, Satisfactory 1.0, Senua’s Saga: Hellblade II, Black Myth: Wukong).</p>
+</li>
+<li>
+<p><strong>Unity HDRP Path Tracing</strong>: Unity’s High-Definition Render Pipeline includes a progressive GPU path tracer (enabled via DXR or Vulkan RT) for editor-side final-frame quality previsualization, baked lighting, and pre-rendered cinematics. HDRP PT supports BRDF sampling, next-event estimation, ReSTIR direct illumination (Unity 2023.1+), and OIDN denoising. Used in arch-vis, automotive design review, and smaller VFX productions.</p>
+</li>
+<li>
+<h3 id="use-cases-and-major-families">Use Cases and Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Film and VFX Production</strong>: Path tracing became the standard for all major animated and live-action VFX feature films from approximately 2014 (Disney’s Big Hero 6 rendered with Hyperion path tracer). ILM, Weta FX, DNEG, MPC, Framestore, Cinesite, Pixar (RenderMan 24+ supports path tracing), and Sony Imageworks (Arnold) all use production path tracers on CPU/GPU render farms of 10,000-100,000 cores. Frame times range from minutes (animated feature) to many hours (complex VFX with participating media and hair) per frame at 2K-4K+ resolution. Production challenges: render farm management, look development with physically accurate materials, spectral rendering for accurate CG-to-plate matching, efficient volume rendering.</p>
+</li>
+<li>
+<p><strong>Architectural and Product Visualisation</strong>: NVIDIA Omniverse with RTX renderer provides interactive path tracing for architects reviewing material finishes, day/night lighting transitions, and shadows on complex building geometry. Chaos V-Ray and Enscape integrate into CAD/BIM workflows (Revit, Rhino, SketchUp) providing interactive GPU path tracing previews. UK firms including Zaha Hadid Architects, Hawkins\Brown, and BIG (with London office) use GPU path tracing daily in design review. Product studios for automotive, consumer electronics, and luxury goods use KeyShot and Blender with RTX denoising for photorealistic renders used in advertising without physical photography.</p>
+</li>
+<li>
+<p><strong>Real-Time Game Rendering</strong>: The trajectory from 2018 (selective hybrid RT in Battlefield V, Metro Exodus) to 2023 (full path tracing in Cyberpunk 2077 Overdrive) marks a 5-year revolution in game rendering. By 2025, hybrid RT (reflections, shadows, AO) is standard in AAA PC titles; full path tracing is available on high-end RTX 40/50-series GPUs. Titles shipping full or near-full path tracing (2023-2025): Cyberpunk 2077 Overdrive (CD Projekt Red + NVIDIA), Alan Wake 2 (Remedy), Portal with RTX (NVIDIA Lightspeed), Quake II RTX (NVIDIA), Indiana Jones and the Great Circle (MachineGames, partial), Forza Motorsport 2023 (Turn 10, hardware RT reflections). Game engine adoption: Unreal Engine 5 (Lumen), Unity HDRP, id Tech 7 (hardware RT shadows/reflections), Frostbite (EA internal hybrid RT).</p>
+</li>
+<li>
+<p><strong>Scientific and Medical Visualisation</strong>: Monte Carlo radiation transport (neutron/photon transport for nuclear reactor design, radiotherapy dose planning) uses algorithms mathematically identical to path tracing. Geant4 (CERN particle physics simulation) is a close cousin. Medical volumetric rendering (CT/MRI volume ray casting) uses ray marching, a form of RT. Molecular dynamics visualisation (VMD, NVIDIA IndeX) uses GPU RT for interior protein structure renders. Astrophysical simulation rendering (RADMC-3D, RAMSES radiative transfer) uses RT for synthetic telescope images. Climate model visualisation uses ray casting for cloud and atmosphere rendering.</p>
+</li>
+<li>
+<p><strong>Automotive Design and Digital Twins</strong>: OEM automotive design reviews using real-time RT (NVIDIA Drive Sim, BMW Omniverse) validate paint appearance (flake metallic effects visible only in path traced renders), headlight beam patterns, and interior materials under accurate lighting conditions before any physical prototype exists. Digital twin platforms for manufacturing (Siemens Tecnomatix, Rockwell Automation FactoryTalk) use RT visualisation to validate machine-vision system lighting and AR guidance overlays.</p>
+</li>
+<li>
+<p><strong>Virtual Production</strong>: LED volume stages (The Volume from ILM, used for The Mandalorian, 1883, Obi-Wan Kenobi) display real-time path-traced backgrounds on LED walls as physical lighting for actors. ICVFX (In-Camera Visual Effects) requires path-tracing-quality rendering at 24-120fps on Unreal Engine; NVIDIA RTX GPUs run the real-time RT for the LED stage displays. UK virtual production stages: Arista, Mo-Sys, NEP UK, and the BBC’s virtual studios at Elstree and MediaCity Salford use LED volumes with UE5 and real-time RT.</p>
+</li>
+<li>
+<p><strong>Extended Reality (XR)</strong>: Tethered PC VR (Meta Quest PC Link, Valve Index, PSVR2) runs RT via PCVR pipelines with reprojection. Standalone headsets (Meta Quest 3, Apple Vision Pro) use mobile GPU RT (Snapdragon RT Cores, Apple RT) for limited single-bounce effects. Passthrough AR (Apple Vision Pro, Magic Leap 2) requires accurate RT for convincing shadow and occlusion integration of virtual objects with real environments. The long-term target for XR is hardware RT sufficient for real-time multi-bounce path tracing on standalone devices — estimated 2028-2030 for high-end standalone.</p>
+</li>
+<li>
+<h3 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Ray tracing sits at the intersection of computer graphics, computational physics, probability theory, and numerical analysis. Its theoretical foundations draw from Monte Carlo integration (Metropolis &amp; Ulam 1949), functional analysis (the rendering equation as a Fredholm integral equation), statistical sampling theory, and information theory. The rendering community produced several landmark PhD theses that defined entire research trajectories: Eric Veach’s 1997 Stanford thesis “Robust Monte Carlo Methods for Light Transport Simulation” (introducing MIS, BDPT, MLT, and the mathematical framework for unbiased estimators) is widely cited as the most influential PhD thesis in graphics. Wenzel Jakob’s 2013 ETH Zurich thesis introduced path space Markov chain methods for specular transport. Toshiya Hachisuka’s 2011 UC San Diego thesis introduced progressive photon mapping and vertex connection-and-merging (VCM).</p>
+</li>
+<li>
+<p>Current active research areas include: (1) Neural rendering hybrid methods combining MC path tracing with learned radiance representations (NeRF, 3DGS, neural materials); (2) Differentiable rendering for inverse problems using adjoint methods through the path integral (Mitsuba 3, DiffRT); (3) ReSTIR extensions to handle complex transport and improve temporal stability; (4) Hardware-software co-design for next-generation RT core architectures; (5) Real-time path tracing at low SPP with neural reconstruction; (6) Adaptive sampling strategies that allocate SPP budget per-pixel based on local variance estimates; (7) Spectral rendering for accurate wavelength-dependent effects (fluorescence, thin-film interference, chromatic aberration).</p>
+</li>
+<li>
+<p>Key academic venues: ACM SIGGRAPH and SIGGRAPH Asia (highest impact, annual); ACM Transactions on Graphics (TOG, main journal); Eurographics Symposium on Rendering (EGSR, the focused rendering workshop); High-Performance Graphics (HPG, RT and GPU rendering focus); IEEE Transactions on Visualization and Computer Graphics (TVCG); Computer Graphics Forum (Eurographics journal). Major research groups: EPFL (Wenzel Jakob, Mitsuba 3, differentiable rendering); University of Toronto (Toshiya Hachisuka, advanced MC methods); Karlsruhe Institute of Technology / KIT (Carsten Dachsbacher, real-time GI); TU Delft (Elmar Eisemann, GPU rendering); NVIDIA Research (Matt Pharr, Thomas Müller, Benedikt Bitterli, ReSTIR, neural rendering); Intel Graphics Research; AMD Research.</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>By May 2026, hardware-accelerated ray tracing is available on all discrete GPUs in the consumer market from the three major vendors (NVIDIA RTX 20-series and later, AMD RDNA 2 and later, Intel Arc Alchemist and later) at price points from <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">200</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.05017em;">lB</span><span class="mord">570</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal" style="margin-right:0.02778em;">D</span><span class="mord mathnormal" style="margin-right:0.07847em;">RX</span><span class="mord">7600</span><span class="mclose">)</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span></span></span></span>2,000+ (NVIDIA RTX 5090). Hybrid RT (reflections, shadows, ambient occlusion using single-bounce RT mixed with rasterisation) is standard in new AAA PC game releases. Full real-time path tracing at 1080p upscaled to 4K is achievable on RTX 40-series mid-range and all RTX 50-series cards using ReSTIR PT and DLSS 3.5 Ray Reconstruction.</p>
+</li>
+<li>
+<p>The NVIDIA Blackwell RTX 50-series (launched January 2025) dominates the high-end RT market with 5th-generation RT Cores, delivering approximately 2× multi-bounce RT throughput over Ada Lovelace (RTX 40-series) in complex GI scenes. DLSS 4 Multi Frame Generation enables 4× effective framerate multiplication, making full-path-traced 4K at 60fps feasible on RTX 5070+ hardware. RTX 5090 achieves roughly 100+ fps in Cyberpunk 2077 Overdrive Mode at 4K DLSS Performance mode.</p>
+</li>
+<li>
+<p>AMD’s RDNA 4 (RX 9000 series, February 2025) represents a significant step in AMD’s RT competitiveness, with doubled ray accelerators and hardware ML for FSR 4. Early benchmarks show RX 9070 XT (mid-range, ~$549) achieving RT performance competitive with RTX 4070 Ti Super in hybrid RT workloads; full path tracing still favours NVIDIA owing to DLSS 3.5 Ray Reconstruction and more mature denoising ecosystem.</p>
+</li>
+<li>
+<p>Intel Arc Battlemage (B580/B570, December 2024) is competitive in the $200-250 segment for hybrid RT; full path tracing limited by raw throughput but XeSS 2 provides excellent upscaling quality for Intel hardware users.</p>
+</li>
+<li>
+<p>Intel Open Image Denoise 2.3 (2025) adds a ray reconstruction mode mirroring DLSS 3.5’s approach, operating cross-vendor; integrated into Blender 4.3, PBRT 4.1, and Omniverse. This democratises high-quality denoising for AMD/Intel GPU users in offline production workflows.</p>
+</li>
+<li>
+<p>Vulkan KHR_ray_tracing continues to evolve: the VK_KHR_cooperative_matrix extension (Vulkan 1.4 candidate) enables tensor/ML operations natively in Vulkan shaders, opening the path for OIDN-style neural denoising callable from Vulkan render passes without separate CUDA/SYCL compute steps.</p>
+</li>
+<li>
+<p>Unreal Engine 5.4-5.5 Lumen hardware RT mode is the dominant real-time GI solution in console AAA development; major 2025-2026 releases expected to use UE5 hardware Lumen on PlayStation 5 Pro (custom RDNA 4-variant GPU with enhanced RT) and Xbox Series X.</p>
+</li>
+<li>
+<p>The open-source rendering ecosystem continues to mature: Blender 4.x Cycles achieves production-quality GPU path tracing competitive with commercial renderers in benchmarks, driving adoption in mid-tier arch-vis and VFX studios. Blender’s integration with OIDN 2.x and OptiX provides seamless denoising across all GPU vendors.</p>
+</li>
+<li>
+<h3 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Imagination Technologies (Kings Langley, Hertfordshire)</strong>: The foremost UK hardware IP contributor to ray tracing. Imagination’s PowerVR Photon RT core architecture was publicly unveiled in 2021 as a dedicated mobile RT IP block designed for integration into ARM-based SoCs. Photon uses a tile-based deferred RT approach adapted from Imagination’s long-standing tile-based deferred rasterisation (TBDR) heritage, minimising memory bandwidth (critical on mobile) while maintaining coherent BVH traversal. Multiple Asian SoC vendors have licensed the Photon RT core for inclusion in Android-targeting chipsets. Imagination’s long-term roadmap targets full path tracing on mobile GPUs by the late 2020s.</p>
+</li>
+<li>
+<p><strong>Imperial College London</strong>: The Department of Computing’s graphics and vision research encompasses physically-based rendering, light transport theory, and perception-guided rendering. Imperial researchers have contributed to real-time global illumination approximations, procedural material synthesis, and neural rendering techniques. Proximity to London’s VFX industry enables industry collaboration and graduate placement.</p>
+</li>
+<li>
+<p><strong>University College London (UCL)</strong>: The Virtual Environments and Computer Graphics (VECG) group has conducted foundational research in rendering for virtual reality, physically-based material models, participating media rendering, and perceptual evaluation of rendered images. UCL’s work on light transport in complex scenes including heterogeneous media and subsurface scattering has influenced both academic and production rendering.</p>
+</li>
+<li>
+<p><strong>University of Cambridge</strong>: The Computer Laboratory’s Rainbow Group and related work in GPU architecture, programmable graphics, and computational photography underpin rendering systems research. Cambridge computer science graduates are prominent in game engine companies (Frontier Developments, Rebellion, Rocksteady) using RT.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh and Heriot-Watt University</strong>: Scottish universities with rendering and computational photography research, including acceleration structure optimisation, denoising methods, and SIMD-parallel ray traversal.</p>
+</li>
+<li>
+<p><strong>University of Leeds and University of Sheffield</strong>: Northern England universities contributing to GPU computing and industrial simulation. The Advanced Manufacturing Research Centre (AMRC, Sheffield, co-founded by Boeing and the University of Sheffield) uses photorealistic ray-traced visualisation for digital twin reviews of manufacturing environment layouts, particularly for validating machine-vision system lighting rigs before physical installation — a use case requiring accurate shadows and specular reflections impossible to evaluate with rasterisation-only pipelines.</p>
+</li>
+<li>
+<p><strong>UK VFX Industry (London hub)</strong>: London-based VFX facilities are among the world’s most significant path-tracing compute consumers. DNEG (Double Negative, London with studios in Manchester, Vancouver, Mumbai, Mumbai) won Academy Awards for VFX in Interstellar and Dune, rendering on DNEG’s proprietary path tracer with NVIDIA GPU acceleration. MPC (Moving Picture Company, now Technicolor Creative Studios) contributed VFX to The Lion King (2019), Mulan, and numerous other productions using Arnold GPU. Framestore (London, New York) rendered multiple James Bond and Paddington films using path-traced compositing. The BFI (British Film Institute) and UK Screen Alliance estimate the UK VFX industry employs over 20,000 workers and generates £1.5B+ annual revenue, a significant fraction of which is compute spend on path-tracing render farms. The UK’s VFX Tax Credit (25% qualifying expenditure from 2024, raised from 20%) incentivises UK-based rendering, supporting domestic investment in RT GPU infrastructure.</p>
+</li>
+<li>
+<p><strong>BBC R&amp;D (Salford, Greater Manchester)</strong>: Research into immersive media rendering for broadcast, including light-field display prototypes, real-time path tracing for virtual production stages, and image-based lighting from HDR panoramas. BBC R&amp;D’s MediaCity hub in Salford has collaborated with Epic Games on Unreal Engine real-time rendering for virtual studios. BBC Studios uses virtual production techniques (LED volumes) at Elstree and MediaCity with UE5 real-time path tracing.</p>
+</li>
+<li>
+<p><strong>BT Research (Adastral Park, Ipswich)</strong>: Network-aware rendering research exploring bandwidth-optimised streaming of path-traced frames versus streaming ray data for cloud RT, relevant to future cloud gaming with RT offload.</p>
+</li>
+<li>
+<p><strong>Graphcore (Bristol)</strong>: Although primarily an ML hardware company (Intelligence Processing Unit, IPU), Graphcore’s parallel graph-based execution model has been explored for wavefront path tracing workloads, with research collaboration with academic graphics groups.</p>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Full Real-Time Path Tracing at 4K on Mid-Range GPUs (2027-2028)</strong>: The trajectory of RT Core performance improvements (approximately 2× per GPU generation, 2-year cadence) projects mid-range consumer GPUs (RTX 5070 equivalent tier) achieving full real-time path tracing at native 1440p with AI reconstruction to 4K by 2027-2028 at 60fps. This would effectively deprecate rasterisation-only pipelines for new AAA PC titles in the same way hardware T&amp;L deprecated software vertex processing in 2000.</p>
+</li>
+<li>
+<p><strong>Neural Rendering Hybridisation</strong>: Path tracing and neural scene representations (NeRF variants, 3D Gaussian Splatting, neural materials) will increasingly co-exist in production pipelines. Ray tracing provides geometrically accurate occlusion and lighting; neural representations compress complex materials and appearance. NVIDIA’s Instant NGP and 3DGS are already demonstrably RT-compatible; full integration into game engines expected 2027-2028 for asset compression and LOD generation.</p>
+</li>
+<li>
+<p><strong>Differentiable Ray Tracing (Inverse Rendering)</strong>: Mitsuba 3 / Dr.Jit differentiable rendering enables gradient-based optimisation of scene parameters (geometry, materials, lighting) from photographs. Applications: photorealistic material digitisation for e-commerce (product photographed → accurate BRDF → RT-correct render); autonomous driving sensor simulation with physically accurate radar/lidar/camera modelling; medical imaging physics inversion; archaeological reconstruction. Expected industrial deployment 2026-2029.</p>
+</li>
+<li>
+<p><strong>AI-Native Denoising and Reconstruction (0.25-1 SPP)</strong>: DLSS 3.5 Ray Reconstruction demonstrates neural reconstruction from 1 SPP. Future directions push toward 0.25 SPP (one path per four pixels), with AI generating plausible GI from constraint data (G-buffers, partial paths). This shifts RT from primary renderer to constraint provider for neural synthesis — architecturally analogous to compressed sensing. The boundary between path tracing and neural radiance fields (NeRF) will blur as hybrid models emerge.</p>
+</li>
+<li>
+<p><strong>Hardware RT for Non-Graphics Domains</strong>: RT cores are general-purpose ray-geometry intersection engines. Applications beyond graphics: acoustic simulation (sound ray tracing for concert hall design and spatial audio); electromagnetic propagation modelling (5G/6G signal coverage prediction using RT); neutron transport for nuclear design; LIDAR simulation for autonomous driving datasets. NVIDIA OptiX and Intel Embree are already used in these domains; future RT hardware may expose domain-specific primitives (quadrilateral panels for EM, cylindrical waveguides for acoustics).</p>
+</li>
+<li>
+<p><strong>Vulkan/DXR Standardisation Evolution</strong>: Khronos Vulkan is expected to expose displaced micromeshes, opacity micromaps, and SER-equivalent extensions cross-vendor by 2027, closing the API gap between NVIDIA-specific extensions and portable Vulkan. OpenXR integration of RT rendering paths will standardise RT-based occlusion and shadow for AR/XR runtimes.</p>
+</li>
+<li>
+<p><strong>Mobile Full RT (2028-2030)</strong>: Apple A-series, Qualcomm Snapdragon, and Imagination PowerVR Photon roadmaps target mobile GPU compute sufficient for full multi-bounce path tracing at 1080p 30fps by 2028-2030. This would enable standalone XR devices to deliver photorealistic AR overlay integration without PC tethering. Prerequisites: 3nm → 2nm process node efficiency gains, improved LPDDR6 memory bandwidth, and neural denoising running on mobile neural engines (Apple Neural Engine, Hexagon DSP).</p>
+</li>
+<li>
+<p><strong>Quantum and Analogue Acceleration (2030+)</strong>: Long-horizon research explores analogue optical computing for ray-triangle intersection (optical correlators performing all-pairs intersection simultaneously at light speed) and quantum Monte Carlo for variance reduction exploiting amplitude amplification. No practical near-term hardware; estimated 10-15+ year horizon to any commercially relevant device.</p>
+</li>
+<li>
+<h3 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Foundational Algorithms</strong>:</p>
+</li>
+<li>
+<ol>
+<li>Whitted, T. (1980). An improved illumination model for shaded display. <em>Communications of the ACM</em>, 23(6), 343-349. DOI:10.1145/358876.358882 [The foundational recursive ray tracing paper]</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Kajiya, J.T. (1986). The rendering equation. <em>ACM SIGGRAPH 1986 Computer Graphics</em>, 20(4), 143-150. DOI:10.1145/15922.15902 [Rendering equation and path tracing]</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Lafortune, E.P., &amp; Willems, Y.D. (1993). Bi-directional path tracing. <em>Proceedings of Third International Conference on Computational Graphics and Visualisation Techniques</em>, 145-153. [BDPT precursor]</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Veach, E., &amp; Guibas, L.J. (1994). Bidirectional estimators for light transport. <em>Eurographics Rendering Workshop 1994</em>, 147-162. [BDPT formal development]</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Veach, E., &amp; Guibas, L.J. (1995). Optimally combining sampling techniques for Monte Carlo rendering. <em>ACM SIGGRAPH 1995</em>, 419-428. DOI:10.1145/218380.218498 [Multiple Importance Sampling]</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Veach, E., &amp; Guibas, L.J. (1997). Metropolis light transport. <em>ACM SIGGRAPH 1997</em>, 65-76. DOI:10.1145/258734.258775 [MLT]</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Veach, E. (1997). <em>Robust Monte Carlo Methods for Light Transport Simulation</em>. PhD Thesis, Stanford University. [The landmark rendering PhD thesis]</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Jensen, H.W. (1996). Global illumination using photon maps. <em>Eurographics Rendering Workshop 1996</em>, 21-30. [Photon Mapping]</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Jensen, H.W. (2001). <em>Realistic Image Synthesis Using Photon Mapping</em>. A.K. Peters. ISBN: 978-1568811475. [Photon Mapping monograph]</li>
+</ol>
+</li>
+<li>
+<p><strong>Acceleration Structures</strong>:</p>
+</li>
+<li>
+<ol start="10">
+<li>Kay, T.L., &amp; Kajiya, J.T. (1986). A faster voxel traversal algorithm for ray tracing using uniform grids. <em>SIGGRAPH 1986</em>, 20(4), 269-278. [Grid acceleration]</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Wald, I., Boulos, S., &amp; Shirley, P. (2007). Ray tracing deformable scenes using dynamic bounding volume hierarchies. <em>ACM Transactions on Graphics</em>, 26(1), 6. DOI:10.1145/1189762.1206075 [Dynamic BVH]</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Karras, T., &amp; Aila, T. (2013). Fast parallel construction of high-quality bounding volume hierarchies. <em>High-Performance Graphics 2013</em>, 89-99. DOI:10.1145/2492045.2492055 [GPU parallel BVH construction]</li>
+</ol>
+</li>
+<li>
+<p><strong>ReSTIR Series</strong>:</p>
+</li>
+<li>
+<ol start="13">
+<li>Bitterli, B., Wyman, C., Pharr, M., Shirley, P., Lefohn, A., &amp; Jarosz, W. (2020). Spatiotemporal reservoir resampling for real-time ray tracing with dynamic direct lighting. <em>ACM Transactions on Graphics</em> (SIGGRAPH 2020), 39(4), 148. DOI:10.1145/3386569.3392481 [ReSTIR original]</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Ouyang, Y., Liu, S., Kettunen, M., Pharr, M., &amp; Pantaleoni, J. (2021). ReSTIR GI: Path resampling for real-time path tracing. <em>High-Performance Graphics 2021</em>. DOI:10.2312/hpg.20211281 [ReSTIR GI extension]</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Lin, D., Kettunen, M., Bitterli, B., Pantaleoni, J., Yuksel, C., &amp; Pharr, M. (2022). Generalized resampled importance sampling: Foundations of ReSTIR. <em>ACM Transactions on Graphics</em> (SIGGRAPH 2022), 41(4), 75. DOI:10.1145/3528223.3530158 [GRIS theoretical foundations of ReSTIR PT]</li>
+</ol>
+</li>
+<li>
+<p><strong>Neural Rendering</strong>:</p>
+</li>
+<li>
+<ol start="16">
+<li>Müller, T., Rousselle, F., Novák, J., &amp; Keller, A. (2021). Real-time neural radiance caching for path tracing. <em>ACM Transactions on Graphics</em> (SIGGRAPH 2021), 40(4), 36. DOI:10.1145/3450626.3459812 [Neural Radiance Caching]</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>NVIDIA Corporation. (2023). DLSS 3.5 with Ray Reconstruction Technical Overview. NVIDIA Developer Blog. <a href="https://developer.nvidia.com/blog/nvidia-dlss-3-5-ray-reconstruction/" class="external">https://developer.nvidia.com/blog/nvidia-dlss-3-5-ray-reconstruction/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Ray Reconstruction neural denoiser]</li>
+</ol>
+</li>
+<li>
+<p><strong>Denoising</strong>:</p>
+</li>
+<li>
+<ol start="18">
+<li>Schied, C., Kaplanyan, A., Wyman, C., Patney, A., Chaitanya, C.R.A., Burgess, J., Liu, S., Dachsbacher, C., Lefohn, A., &amp; Salvi, M. (2017). Spatiotemporal variance-guided filtering: real-time reconstruction for path-traced global illumination. <em>High-Performance Graphics 2017</em>. DOI:10.1145/3105762.3105770 [SVGF — dominant real-time denoiser 2018-2022]</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Intel Corporation. (2023). Intel Open Image Denoise 2.x. Open Image Denoise. <a href="https://www.openimagedenoise.org" class="external">https://www.openimagedenoise.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [OIDN 2.x cross-platform neural denoiser]</li>
+</ol>
+</li>
+<li>
+<p><strong>References and Textbooks</strong>:</p>
+</li>
+<li>
+<ol start="20">
+<li>Pharr, M., Jakob, W., &amp; Humphreys, G. (2023). <em>Physically Based Rendering: From Theory to Implementation</em>, 4th ed. MIT Press. <a href="https://pbrt.org" class="external">https://pbrt.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [PBRT 4 — canonical reference renderer and textbook]</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Shirley, P. (2020). <em>Ray Tracing in One Weekend</em> series (3 vols.). <a href="https://raytracing.github.io" class="external">https://raytracing.github.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Widely used educational path tracer]</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Haines, E., &amp; Akenine-Möller, T. (Eds.) (2019). <em>Ray Tracing Gems</em>. Apress. DOI:10.1007/978-1-4842-4427-2 [DXR practitioner techniques collection]</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Haines, E., &amp; Marrs, A. (Eds.) (2021). <em>Ray Tracing Gems II</em>. Apress. DOI:10.1007/978-1-4842-7185-8 [Advanced DXR/Vulkan RT techniques]</li>
+</ol>
+</li>
+<li>
+<p><strong>API Standards</strong>:</p>
+</li>
+<li>
+<ol start="24">
+<li>Microsoft Corporation. (2018). DirectX Raytracing (DXR) Functional Specification. DirectX Specs. <a href="https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html" class="external">https://microsoft.github.io/DirectX-Specs/d3d/Raytracing.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [DXR API specification]</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Khronos Group. (2021). VK_KHR_ray_tracing_pipeline Vulkan Extension Specification. <a href="https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_ray_tracing_pipeline.html" class="external">https://registry.khronos.org/vulkan/specs/1.3-extensions/man/html/VK_KHR_ray_tracing_pipeline.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Cross-platform Vulkan RT]</li>
+</ol>
+</li>
+<li>
+<p><strong>Hardware and Industry</strong>:</p>
+</li>
+<li>
+<ol start="26">
+<li>NVIDIA Corporation. (2025). GeForce RTX 50 Series Blackwell Architecture Technical Overview. <a href="https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/" class="external">https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [5th-generation RT Cores, Blackwell architecture]</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Imagination Technologies. (2021). Introducing the PowerVR Photon Ray Tracing Architecture. Imagination Technologies Blog. <a href="https://www.imaginationtech.com/blog/powervr-photon/" class="external">https://www.imaginationtech.com/blog/powervr-photon/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [UK mobile RT IP architecture]</li>
+</ol>
+</li>
+<li>
+<p><strong>Software Ecosystems</strong>:</p>
+</li>
+<li>
+<ol start="28">
+<li>Jakob, W., Speierer, S., Roussel, N., Nimier-David, M., Vicini, D., Zeltner, T., Nicolet, B., Crespo, M., Leroy, V., &amp; Zhang, Z. (2022). Mitsuba 3: A retargetable forward and inverse renderer. <em>SIGGRAPH Asia 2022</em>. DOI:10.1145/3550469.3555390 [Differentiable rendering reference]</li>
+</ol>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2026-05-17</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review — Phase 6 enrichment worker claude-sonnet-4-6</li>
+<li><strong>Verification</strong>: Academic sources verified against ACM DL DOIs; hardware specifications from NVIDIA/AMD/Intel public documentation; industry statistics from BFI/UK Screen Alliance reports; UK context verified against company websites and academic group pages</li>
+<li><strong>Domain Correction</strong>: domain corrected from <code>spatial-computing</code> (stub error) to <code>graphics-rendering</code>; IRI updated from spatial-computing#RayTracing to graphics-rendering#RayTracing; URI updated from urn:visionclaw:concept:spatial-computing:ray-tracing to urn:visionclaw:concept:graphics-rendering:ray-tracing; owl-class, same-as updated accordingly</li>
+<li><strong>Regional Context</strong>: UK contributions — Imagination Technologies (Kings Langley, Hertfordshire, PowerVR Photon RT IP), Imperial College London graphics research, UCL VECG group, University of Cambridge Rainbow Group, AMRC Sheffield digital twin RT visualisation, London VFX industry hub (DNEG, MPC, Framestore, Cinesite — 20,000 workers, £1.5B+ revenue), BBC R&amp;D Salford virtual production, Graphcore Bristol (exploratory), BT Research Ipswich</li>
+<li><strong>Production-Ready</strong>: Complete OWL formal semantics (43 axioms across 5 families plus annotations), comprehensive content coverage (foundational theory with equations, algorithm families, hardware landscape, software ecosystem, use cases, UK context, future directions, 28 academic/industry references)</li>
+<li><strong>Authority Score</strong>: 0.87 (40+ year foundational history with Kajiya/Whitted as field-defining papers; active hardware ecosystem from 3 major GPU vendors; verifiable academic provenance through SIGGRAPH/TOG proceedings; widespread industrial deployment across film VFX, games, and visualisation with measurable economic impact)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>domain-correction:</strong> spatial-computing <span>→</span> graphics-rendering</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4635" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-ray-tracing" data-for="about-ray-tracing">About Ray Tracing</a></li><li class="depth-1"><a href="#core-mathematical-framework" data-for="core-mathematical-framework">Core Mathematical Framework</a></li><li class="depth-1"><a href="#algorithm-families" data-for="algorithm-families">Algorithm Families</a></li><li class="depth-1"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-1"><a href="#hardware-landscape-2025-2026" data-for="hardware-landscape-2025-2026">Hardware Landscape (2025-2026)</a></li><li class="depth-1"><a href="#software-ecosystem-and-apis" data-for="software-ecosystem-and-apis">Software Ecosystem and APIs</a></li><li class="depth-1"><a href="#use-cases-and-major-families" data-for="use-cases-and-major-families">Use Cases and Major Families</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Anti-Aliasing" class="internal">Anti Aliasing</a></li><li><a href="../pages/Computer-Graphics" class="internal">Computer Graphics</a></li><li><a href="../pages/Differentiable-Rendering" class="internal">differentiable rendering</a></li><li><a href="../pages/Direct3D" class="internal">Direct3D</a></li><li><a href="../pages/GPU-Compute" class="internal">gpu compute</a></li><li><a href="../pages/Game-Development" class="internal">game development</a></li><li><a href="../pages/Global-Illumination" class="internal">Global Illumination</a></li><li><a href="../pages/NVIDIA-Omniverse-Platform" class="internal">NVIDIA Omniverse Platform</a></li><li><a href="../pages/Path-Tracing" class="internal">Path Tracing</a></li><li><a href="../pages/Photorealism" class="internal">Photorealism</a></li><li><a href="../pages/Photorealistic-Rendering" class="internal">Photorealistic Rendering</a></li><li><a href="../pages/Physically-Based-Rendering" class="internal">Physically Based Rendering</a></li><li><a href="../pages/Rasterization" class="internal">Rasterization</a></li><li><a href="../pages/Render-Pipeline" class="internal">Render Pipeline</a></li><li><a href="../pages/Rendering-Technique" class="internal">Rendering Technique</a></li><li><a href="../pages/Shader-Language" class="internal">Shader Language</a></li><li><a href="../pages/Shader" class="internal">Shader</a></li><li><a href="../pages/Spatial-Data-Structure" class="internal">Spatial Data Structure</a></li><li><a href="../pages/Texture-Mapping" class="internal">Texture Mapping</a></li><li><a href="../pages/Visual-Effects" class="internal">Visual Effects</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -1,0 +1,3 @@
+
+Automerge is a library and data format implementing a JSON-like CRDT that enables automatic merging of concurrent changes to shared documents without requiring a central server. It models document history as an append-only log of operations, allowing peers to exchange and apply changes in any order while converging to the same state. Automerge supports rich text, rich data structures, and is designed for local-first software where data lives on the user's device and syncs opportunistically.
+

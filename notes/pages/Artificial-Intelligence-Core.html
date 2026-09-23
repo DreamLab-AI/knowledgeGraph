@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Artificial Intelligence Core</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Artificial Intelligence Core"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Artificial Intelligence Core"/><meta name="twitter:description" content="Artificial Intelligence Core is the foundational upper class that anchors the core concepts and capabilities of artificial intelligence within the ontology, serving as the common ancestor for machine learning, agent systems, and related disciplines."/><meta property="og:description" content="Artificial Intelligence Core is the foundational upper class that anchors the core concepts and capabilities of artificial intelligence within the ontology, serving as the common ancestor for machine learning, agent systems, and related disciplines."/><meta property="og:image:alt" content="Artificial Intelligence Core is the foundational upper class that anchors the core concepts and capabilities of artificial intelligence within the ontology, serving as the common ancestor for machine learning, agent systems, and related disciplines."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Artificial-Intelligence-Core"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Artificial-Intelligence-Core"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Artificial Intelligence Core is the foundational upper class that anchors the core concepts and capabilities of artificial intelligence within the ontology, serving as the common ancestor for machine learning, agent systems, and related disciplines."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Artificial-Intelligence-Core"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-787"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-787" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Artificial Intelligence Core</a></div></nav><h1 class="article-title">Artificial Intelligence Core</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.674Z">23 Sept 2026</time><span>34 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:artificial-intelligence-core</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.91</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../AI-Technique" class="internal">AI Technique</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Knowledge-Representation" class="internal">Knowledge Representation</a></li><li><a href="../planning-and-search" class="internal">Planning and Search</a></li><li><a href="../Robotics" class="internal">Robotics</a></li><li><a href="../Expert-System" class="internal">Expert System</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li><li><a href="../pages/Agentic-AI" class="internal">Agentic AI</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li><li><a href="../pages/Optimisation" class="internal">Optimisation</a></li><li><a href="../statistical-learning" class="internal">Statistical Learning</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../pages/Loss-Function" class="internal">Loss Function</a></li><li><a href="../pages/Gradient-Descent" class="internal">Gradient Descent</a></li><li><a href="../pages/Supervised-Learning" class="internal">Supervised Learning</a></li><li><a href="../pages/Unsupervised-Learning" class="internal">Unsupervised Learning</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Dataset-Curation" class="internal">Dataset Curation</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Artificial-General-Intelligence" class="internal">Artificial General Intelligence</a></li><li><a href="../agentic-ai" class="internal">Agentic AI</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li><li><a href="../pages/Explainable-AI" class="internal">Explainable AI</a></li><li><a href="../pages/Agentic-Workflow" class="internal">Agentic Workflow</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Benchmark-Evaluation" class="internal">Benchmark Evaluation</a></li><li><a href="../pages/AI-Safety-Research" class="internal">AI Safety Research</a></li><li><a href="../Autonomous-Agents" class="internal">Autonomous Agents</a></li><li><a href="../pages/Open-Source-AI" class="internal">Open Source AI</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Symbolic-AI" class="internal">Symbolic AI</a></li><li><a href="../Expert-System" class="internal">Expert System</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Supervised-Learning" class="internal">Supervised Learning</a></li><li><a href="../pages/Unsupervised-Learning" class="internal">Unsupervised Learning</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/GPU-Compute" class="internal">GPU Compute</a></li><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../Data-Driven-Learning" class="internal">Data-Driven Learning</a></li><li><a href="../pages/Backpropagation" class="internal">Backpropagation</a></li><li><a href="../pages/Attention-Mechanism" class="internal">Attention Mechanism</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Continual-Learning" class="internal">Continual Learning</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../machine-learning-discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../ai-agent-system" class="internal">AI Agent System</a></li><li><a href="../artificial-intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../reinforcement-learning" class="internal">Reinforcement Learning</a></li><li><a href="../knowledge-representation" class="internal">Knowledge Representation</a></li><li><a href="../symbolic-ai" class="internal">Symbolic AI</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../foundation-model" class="internal">Foundation Model</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../supervised-learning" class="internal">Supervised Learning</a></li><li><a href="../unsupervised-learning" class="internal">Unsupervised Learning</a></li><li><a href="../planning-and-search" class="internal">Planning and Search</a></li><li><a href="../expert-system" class="internal">Expert System</a></li><li><a href="../robotics" class="internal">Robotics</a></li><li><a href="../autonomous-agents" class="internal">Autonomous Agents</a></li><li><a href="../multimodal-ai" class="internal">Multimodal AI</a></li><li><a href="../artificial-general-intelligence" class="internal">Artificial General Intelligence</a></li><li><a href="../ai-safety-research" class="internal">AI Safety Research</a></li><li><a href="../explainable-ai" class="internal">Explainable AI</a></li><li><a href="../transformer-architecture" class="internal">Transformer Architecture</a></li><li><a href="../attention-mechanism" class="internal">Attention Mechanism</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../gradient-descent" class="internal">Gradient Descent</a></li><li><a href="../loss-function" class="internal">Loss Function</a></li><li><a href="../backpropagation" class="internal">Backpropagation</a></li><li><a href="../active-learning" class="internal">Active Learning</a></li><li><a href="../bayesian-inference" class="internal">Bayesian Inference</a></li><li><a href="../optimisation" class="internal">Optimisation</a></li><li><a href="../data-driven-learning" class="internal">Data-Driven Learning</a></li><li><a href="../cognitive-science" class="internal">Cognitive Science</a></li><li><a href="../probability-theory" class="internal">Probability Theory</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../statistical-learning" class="internal">Statistical Learning</a></li><li><a href="../agentic-ai" class="internal">Agentic AI</a></li><li><a href="../alignment-research" class="internal">Alignment Research</a></li><li><a href="../benchmark-evaluation" class="internal">Benchmark Evaluation</a></li><li><a href="../neural-symbolic-ai" class="internal">Neural-Symbolic AI</a></li><li><a href="../ai-research" class="internal">AI Research</a></li><li><a href="../computation-and-intelligence-domain" class="internal">ComputationAndIntelligenceDomain</a></li><li><a href="../ai-grounded-domain" class="internal">AI-GroundedDomain</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../mccarthy-1956-dartmouth" class="internal">McCarthy 1956 Dartmouth Proposal</a></li><li><a href="../turing-1950-computing-machinery" class="internal">Turing 1950 Computing Machinery and Intelligence</a></li><li><a href="../rumelhart-1986-backpropagation" class="internal">Rumelhart et al 1986 Backpropagation</a></li><li><a href="../krizhevsky-2012-alexnet" class="internal">Krizhevsky et al 2012 AlexNet</a></li><li><a href="../vaswani-2017-attention" class="internal">Vaswani et al 2017 Attention Is All You Need</a></li><li><a href="../lecun-bengio-hinton-2015-deep-learning" class="internal">LeCun Bengio Hinton 2015 Deep Learning Nature</a></li><li><a href="../russell-norvig-artificial-intelligence" class="internal">Russell and Norvig Artificial Intelligence A Modern Approach</a></li><li><a href="../alan-turing-institute" class="internal">Alan Turing Institute</a></li><li><a href="../gpu-compute" class="internal">GPU Compute</a></li><li><a href="../agentic-workflow" class="internal">Agentic Workflow</a></li><li><a href="../ai-ethics" class="internal">AI Ethics</a></li><li><a href="../frontier-ai" class="internal">Frontier AI</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:artificial-intelligence-core</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../pages/AI-Agent-System" class="internal">AI Agent System</a></li><li><a href="../pages/Cognitive-Science" class="internal">Cognitive Science</a></li><li><a href="../pages/Symbolic-AI" class="internal">Symbolic AI</a></li><li><a href="../Neural-Symbolic-AI" class="internal">Neural-Symbolic AI</a></li><li><a href="../pages/AI-Research" class="internal">AI Research</a></li><li><a href="../pages/Frontier-AI" class="internal">Frontier AI</a></li><li><a href="../pages/Artificial-General-Intelligence" class="internal">Artificial General Intelligence</a></li><li><a href="../pages/Adversarial-Machine-Learning" class="internal">Adversarial Machine Learning</a></li><li><a href="../pages/Contrastive-Learning" class="internal">Contrastive Learning</a></li><li><a href="../pages/Curriculum-Learning" class="internal">Curriculum Learning</a></li><li><a href="../pages/Bayesian-Deep-Learning" class="internal">Bayesian Deep Learning</a></li><li><a href="../pages/Applied-Machine-Learning" class="internal">Applied Machine Learning</a></li><li><a href="../Robotics" class="internal">Robotics</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/Alan-Turing-Institute" class="internal">Alan Turing Institute</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/AI-Safety-Research" class="internal">AI Safety Research</a></li><li><a href="../pages/Alignment-Research" class="internal">Alignment Research</a></li><li><a href="../pages/Benchmark-Evaluation" class="internal">Benchmark Evaluation</a></li><li><a href="../pages/AI-Ethics" class="internal">AI Ethics</a></li><li><a href="../pages/AI-Policy" class="internal">AI Policy</a></li><li><a href="../pages/Explainable-AI" class="internal">Explainable AI</a></li><li><a href="../pages/AI-Research" class="internal">AI Research</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Cognitive-Science" class="internal">Cognitive Science</a></li><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../Statistical-Learning" class="internal">Statistical Learning</a></li><li><a href="../pages/Hypothesis-Testing" class="internal">Hypothesis Testing</a></li><li><a href="../pages/Scientific-Method" class="internal">Scientific Method</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Artificial Intelligence Core is the foundational upper class that anchors the core concepts and capabilities of artificial intelligence within the ontology, serving as the common ancestor for machine learning, agent systems, and related disciplines. It represents the essential body of theory and method by which machines perform tasks that normally require human intelligence, such as learning, reasoning, perception, and decision-making. As a structural root it organizes more specific AI subfields beneath a single semantic anchor, encompassing symbolic methods, statistical learning, connectionist architectures, and their contemporary convergences in foundation models and agentic systems.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:MachineLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:DeepLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:NaturalLanguageProcessing))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:ComputerVision))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:ReinforcementLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:KnowledgeRepresentation))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:PlanningAndSearch))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:Robotics))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:NeuralNetwork))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:hasPart ai:ExpertSystem))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:ProbabilityTheory))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:Optimisation))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:StatisticalLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:GPUCompute))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:InformationTheory))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:GradientDescent))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:LossFunction))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:SupervisedLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:UnsupervisedLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:requires ai:TransferLearning))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:ArtificialGeneralIntelligence))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:AgenticAI))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:FoundationModel))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:MultimodalAI))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:ExplainableAI))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModels))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:BenchmarkEvaluation))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:enables ai:AISafetyResearch))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:Backpropagation))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:AttentionMechanism))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:TransformerArchitecture))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:DataDrivenLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:BayesianInference))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:ActiveLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:implements ai:Optimisation))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:reducesTo ai:StatisticalLearning))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:reducesTo ai:OptimisationProblem))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:reducesTo ai:ProbabilisticInference))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:reducesTo ai:FunctionApproximation))
+SubClassOf(ai:ArtificialIntelligenceCore
+  ObjectSomeValuesFrom(ai:reducesTo ai:InformationCompression))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Artificial Intelligence Core demarcates the theoretical and methodological nucleus of the AI discipline. Its defining characteristic is not a single algorithm or architecture but four integrative commitments:
+<ul>
+<li>(i) A formal computational model capable of representing knowledge about the world or a domain</li>
+<li>(ii) A learning mechanism that adjusts that model’s parameters in response to data or environment feedback</li>
+<li>(iii) An inference procedure that generalises learned representations to novel situations not seen during training</li>
+<li>(iv) An evaluation criterion against which performance can be measured and compared</li>
+</ul>
+</li>
+<li>These four commitments hold across all paradigmatic eras of AI development:
+<ul>
+<li><strong>Symbolic era (1940s–1970s):</strong> <a href="../pages/Symbolic-AI" class="internal alias" data-slug="pages/Symbolic-AI">Symbolic AI</a> — explicit logical inference, production rules, <a href="../Expert-System" class="internal alias" data-slug="Expert-System">Expert System</a>s; strong knowledge representation, brittle generalisation</li>
+<li><strong>Statistical era (1980s–2000s):</strong> probabilistic inference over learned parameter distributions; support vector machines, Bayesian networks, hidden Markov models</li>
+<li><strong>Deep learning era (2010–2022):</strong> massively parameterised <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a>s trained on GPU-scale compute; convolutional networks, LSTMs, <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a></li>
+<li><strong>Foundation model era (2022–present):</strong> <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a>s exhibiting emergent capabilities; <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a>, <a href="../pages/Multimodal-AI" class="internal alias" data-slug="pages/Multimodal-AI">Multimodal AI</a>, <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a></li>
+</ul>
+</li>
+<li>The mathematical substrate unifying AI Core’s subfields draws primarily from three branches:
+<ul>
+<li><a href="../pages/Probability-Theory" class="internal alias" data-slug="pages/Probability-Theory">Probability Theory</a> and <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a>: encoding uncertainty; MCMC, variational inference, probabilistic graphical models</li>
+<li><a href="../pages/Optimisation" class="internal" data-slug="pages/Optimisation">Optimisation</a>: minimising empirical risk over differentiable parameter spaces; <a href="../pages/Gradient-Descent" class="internal alias" data-slug="pages/Gradient-Descent">Gradient Descent</a>, Adam, AdamW, learning rate scheduling</li>
+<li><a href="../pages/Information-Theory" class="internal alias" data-slug="pages/Information-Theory">Information Theory</a>: quantifying uncertainty, dependence, and compression; cross-entropy loss, KL divergence, mutual information, minimum description length</li>
+</ul>
+</li>
+<li><a href="../Statistical-Learning" class="internal alias" data-slug="Statistical-Learning">Statistical Learning</a> theory provides the formal scaffolding for generalisation:
+<ul>
+<li>VC dimension bounds generalisation error as a function of hypothesis class complexity and training sample size</li>
+<li>PAC learning theory establishes sample complexity bounds for approximately correct learning under noise</li>
+<li>Bias-variance decomposition explains the tradeoff between model capacity and overfitting</li>
+<li>Double descent (Belkin et al., 2019) revealed that over-parameterised networks can generalise despite having more parameters than training examples</li>
+</ul>
+</li>
+<li>The practical realisation of AI Core’s capabilities has been shaped decisively by compute availability:
+<ul>
+<li>The 2012 AlexNet result halved the ImageNet error rate to 15.3% using a GPU-trained convolutional <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a>, triggering the deep learning era</li>
+<li>AI data centre power capacity globally reached 29.6 GW in 2025 — equivalent to New York State’s peak electricity demand (Stanford AI Index 2026)</li>
+<li>The cumulative capital investment in AI training infrastructure now exceeds $500 billion globally</li>
+<li>Scaling laws (Kaplan et al., 2020; Hoffmann et al., 2022) provide power-law relationships between model parameters, training compute, dataset size, and final loss</li>
+<li>The Chinchilla result showed that optimal training requires scaling model size and dataset size proportionally, reshaping frontier training practice</li>
+</ul>
+</li>
+<li>A persistent structural tension within AI Core is the interpretability–capability tradeoff:
+<ul>
+<li><a href="../pages/Symbolic-AI" class="internal alias" data-slug="pages/Symbolic-AI">Symbolic AI</a> systems are interpretable but brittle; <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a>s achieve higher capability but resist human inspection</li>
+<li><a href="../Neural-Symbolic-AI" class="internal alias" data-slug="Neural-Symbolic-AI">Neural-Symbolic AI</a> research seeks to combine neural robustness with symbolic interpretability and compositionality</li>
+<li>Mechanistic interpretability (MIT Technology Review Breakthrough Technology 2026) reverse-engineers neural network internals using sparse autoencoders and activation patching</li>
+<li><a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a> methods (LIME, SHAP, integrated gradients, saliency maps) provide post-hoc attribution but not mechanistic understanding</li>
+<li>EU AI Act (2024) and UK AI Safety Institute frameworks are operationalising transparency requirements that presuppose interpretability</li>
+</ul>
+</li>
+<li>The governance and ethics dimensions of AI Core are now inseparable from its technical content:
+<ul>
+<li><a href="../pages/AI-Ethics" class="internal alias" data-slug="pages/AI-Ethics">AI Ethics</a> concerns fairness (disparate impact of AI decisions across demographic groups), bias (systematic errors correlated with protected characteristics), privacy (model memorisation of training data), accountability (who is responsible for AI harms), and dual-use risks (same capabilities that enable beneficial applications also enable harmful ones)</li>
+<li><a href="../pages/AI-Policy" class="internal alias" data-slug="pages/AI-Policy">AI Policy</a> translates ethical principles into regulatory frameworks: EU AI Act (2024, risk-tiered, directly applicable in EU member states), UK AISI pre-deployment evaluations (voluntary lab commitments), US Executive Order on AI (2023, reporting requirements for large training runs above 10^26 FLOP)</li>
+<li><a href="../pages/AI-Safety-Research" class="internal alias" data-slug="pages/AI-Safety-Research">AI Safety Research</a> addresses risks from deployed systems (robustness, adversarial ML, distribution shift) and from potentially misaligned advanced systems (existential risk framework, Alignment Trilemma); the International AI Safety Report (Bengio et al., 2025) synthesises global consensus across 30 governments</li>
+<li>The Alignment Trilemma: no single alignment method simultaneously guarantees (i) strong optimisation for objectives, (ii) perfect value capture in the specified objective, and (iii) robust generalisation to novel situations outside the training distribution; this trilemma structures the open problem space for alignment research</li>
+<li>Constitutional AI, scalable oversight, debate, and red-teaming are the principal candidate methodologies for frontier alignment; none provides formal guarantees at superhuman capability levels</li>
+<li>Regulatory divergence is a growing challenge: the EU AI Act’s risk-tiered classification system, the UK’s principles-based sector-specific approach, China’s Generative AI Regulation, and the US’s largely voluntary framework create a fragmented global compliance landscape for AI systems deployed internationally</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Learning Paradigms (partOf ai:MachineLearning):</strong>
+<ul>
+<li><a href="../pages/Supervised-Learning" class="internal alias" data-slug="pages/Supervised-Learning">Supervised Learning</a> — model trained on labelled (input, output) pairs; objective is to minimise empirical risk on held-out data; dominant paradigm for classification, regression, and sequence-to-sequence tasks; requires large labelled datasets whose curation cost can be prohibitive</li>
+<li><a href="../pages/Unsupervised-Learning" class="internal alias" data-slug="pages/Unsupervised-Learning">Unsupervised Learning</a> — model identifies latent structure in unlabelled data; includes clustering (k-means, DBSCAN, hierarchical agglomerative), dimensionality reduction (PCA, t-SNE, UMAP), generative modelling (VAEs, GANs, diffusion models), and masked self-prediction (BERT, MAE)</li>
+<li><a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> — agent optimises cumulative discounted return through interaction with an environment modelled as a Markov Decision Process; policy gradient methods (REINFORCE, PPO), Q-learning (DQN), and actor-critic architectures (A3C, SAC) are principal algorithm families; foundational for game AI (AlphaGo, AlphaZero, DotA 2) and robotic control</li>
+<li><a href="../pages/Active-Learning" class="internal alias" data-slug="pages/Active-Learning">Active Learning</a> — algorithm selects which unlabelled examples to query for annotation, typically using uncertainty sampling, query-by-committee, or expected model change strategies; reduces annotation cost by factors of 2–10× on standard benchmarks; particularly valuable in medical imaging and legal document annotation where expert annotation is expensive</li>
+<li><a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> — parameters learned on a high-resource source task (e.g., ImageNet classification, web-scale text prediction) initialise training on a lower-resource target task; basis of modern fine-tuning pipelines for <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a>; parameter-efficient fine-tuning (LoRA, QLoRA, adapters, prefix tuning) enables adaptation with as few as 0.1% of original parameters updated</li>
+<li><a href="../pages/Continual-Learning" class="internal alias" data-slug="pages/Continual-Learning">Continual Learning</a> — methods for learning sequences of tasks without catastrophic forgetting of earlier tasks; elastic weight consolidation, progressive neural networks, and replay-based methods represent the principal approaches; critical for AI systems that must update continuously in deployment</li>
+</ul>
+</li>
+<li><strong>Architectural Components (partOf ai:NeuralNetwork / ai:FoundationModel):</strong>
+<ul>
+<li><a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a> — parameterised function approximator composed of computational units with learned weights; multilayer perceptrons (universal approximators, Hornik et al., 1989), convolutional networks (CNNs: weight-shared filters for spatial/temporal data), recurrent networks (RNNs, LSTMs, GRUs: sequential processing with hidden state), and <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> (self-attention: parallel sequence processing without recurrence)</li>
+<li><a href="../pages/Attention-Mechanism" class="internal alias" data-slug="pages/Attention-Mechanism">Attention Mechanism</a> — mechanism that computes a weighted sum of value vectors, with weights derived from dot-product similarity between query and key vectors; scaled dot-product attention: Attention(Q,K,V) = softmax(QK^T/√d_k)·V; multi-head attention allows attending to different representation subspaces in parallel; cornerstone of <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> since Vaswani et al. (2017) and responsible for the long-range dependency modelling that makes LLMs effective</li>
+<li><a href="../pages/Backpropagation" class="internal" data-slug="pages/Backpropagation">Backpropagation</a> — reverse-mode automatic differentiation algorithm that computes the gradient of a scalar loss with respect to all parameters by iterating the chain rule from output to input; computational complexity O(|W|) per training example in the backward pass; made practically effective for deep networks by Rumelhart, Hinton and Williams (1986); requires continuous, differentiable activation functions; gradient checkpointing enables trading compute for memory in very deep networks</li>
+<li><a href="../pages/Gradient-Descent" class="internal alias" data-slug="pages/Gradient-Descent">Gradient Descent</a> — first-order iterative <a href="../pages/Optimisation" class="internal" data-slug="pages/Optimisation">Optimisation</a> algorithm that updates parameters θ ← θ − η·∇_θ L in the direction of steepest descent of the loss surface; stochastic gradient descent (SGD) with momentum, mini-batch gradient descent, and adaptive methods (Adam: η·m̂/(√v̂+ε)) are universally used; learning rate scheduling (cosine annealing, warmup) is critical for convergence of large models</li>
+<li><a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> — large-scale <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a> pretrained on broad, internet-scale data and adapted to downstream tasks via fine-tuning or prompting; training costs range from millions to hundreds of millions of dollars for frontier models; GPT-4o (OpenAI), Claude 3.7 (Anthropic), Gemini 1.5 Pro (Google), Llama-3.3 (Meta), Mistral Large, and DeepSeek-R1 represent the 2025–2026 frontier; capability evaluation on Humanity’s Last Exam and FrontierMath shows that even frontier models have substantial headroom</li>
+<li><a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> — the dominant neural architecture since 2017; consists of stacked encoder and/or decoder blocks, each containing multi-head self-attention, feed-forward sublayers, layer normalisation, and residual connections; encoder-only models (BERT family) are used for classification and understanding; decoder-only models (GPT family) for autoregressive generation; encoder-decoder models (T5, BART) for sequence-to-sequence tasks</li>
+</ul>
+</li>
+<li><strong>Reasoning and Knowledge Components:</strong>
+<ul>
+<li><a href="../pages/Knowledge-Representation" class="internal alias" data-slug="pages/Knowledge-Representation">Knowledge Representation</a> — formal encoding of world-state and domain facts using logical languages (first-order logic, description logics, OWL), graph databases, and probabilistic graphical models; supports planning, question answering, ontology reasoning, and knowledge-grounded generation; knowledge graphs (Wikidata, Freebase, domain-specific graphs) are increasingly combined with <a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a> retrievers in retrieval-augmented generation (RAG) pipelines</li>
+<li><a href="../pages/Symbolic-AI" class="internal alias" data-slug="pages/Symbolic-AI">Symbolic AI</a> — rule-based and logic-based methods including production systems, expert systems, constraint satisfaction, and automated theorem provers; contrasts with neural methods on interpretability (higher), brittleness (higher), and data requirements (lower); increasingly hybridised with neural methods in <a href="../Neural-Symbolic-AI" class="internal alias" data-slug="Neural-Symbolic-AI">Neural-Symbolic AI</a> systems that combine learned representations with symbolic reasoning modules</li>
+<li><a href="../Planning-and-Search" class="internal alias" data-slug="Planning-and-Search">Planning and Search</a> — algorithms for finding action sequences from initial to goal states; classical graph search (BFS, DFS, A*, Dijkstra), Monte Carlo Tree Search (MCTS: used in AlphaGo, AlphaZero, and MuZero), and classical planning languages (STRIPS, PDDL); recent work combines <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as zero-shot planners with MCTS for verification; foundational for <a href="../Robotics" class="internal" data-slug="Robotics">Robotics</a>, game AI, and <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a> task planning</li>
+<li><a href="../Expert-System" class="internal alias" data-slug="Expert-System">Expert System</a> — early AI systems encoding domain expert knowledge as IF-THEN production rules; MYCIN (medical diagnosis, 1970s), DENDRAL (chemical analysis, 1960s), and XCON (computer configuration, 1980s) were landmark deployments; partially superseded by machine learning but the knowledge engineering tradition survives in ontology engineering, business rules engines, and knowledge graph construction</li>
+</ul>
+</li>
+<li><strong>Evaluation and Safety Components:</strong>
+<ul>
+<li><a href="../pages/Benchmark-Evaluation" class="internal alias" data-slug="pages/Benchmark-Evaluation">Benchmark Evaluation</a> — standardised task suites that quantify model capability: MMLU (57 academic subjects, measuring knowledge breadth), BIG-Bench Hard (reasoning tasks humans find difficult), HumanEval (Python code generation, 164 problems), MMMU (multi-discipline multimodal understanding), Humanity’s Last Exam (frontier ceiling test, below 25% for current models), FrontierMath (advanced mathematics, below 2% for current models); benchmark contamination (overlap between training data and test sets) is an active methodological concern</li>
+<li><a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a> — methods for attributing model predictions to input features (LIME: locally fitted linear approximations; SHAP: Shapley value attribution; integrated gradients for neural networks; attention weight visualization; saliency maps) or internal representations (probing classifiers, activation patching, sparse autoencoders for mechanistic interpretability); increasingly mandated by EU AI Act high-risk system requirements</li>
+<li><a href="../pages/AI-Safety-Research" class="internal alias" data-slug="pages/AI-Safety-Research">AI Safety Research</a> — research programme encompassing robustness to distribution shift, adversarial machine learning, anomaly detection, formal verification, red-teaming, and <a href="../pages/Alignment-Research" class="internal alias" data-slug="pages/Alignment-Research">Alignment Research</a>; characterised by tension between empirical and theoretical approaches; the International AI Safety Report (Bengio et al., 2025) synthesises global scientific consensus on risk severity and research priorities</li>
+<li><a href="../pages/Alignment-Research" class="internal alias" data-slug="pages/Alignment-Research">Alignment Research</a> — subfield focused on specifying human-compatible objectives and ensuring AI systems pursue them faithfully; RLHF (reinforcement learning from human feedback) is the dominant deployed approach; constitutional AI, debate, and scalable oversight are research alternatives; the theoretical gap between empirical alignment techniques and formal guarantees remains large; active open problem as of 2026</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Natural Language Processing and Language Models:</strong>
+<ul>
+<li><a href="../pages/Natural-Language-Processing" class="internal alias" data-slug="pages/Natural-Language-Processing">Natural Language Processing</a> tasks: machine translation, sentiment analysis, named entity recognition, question answering, summarisation, code generation, dialogue systems</li>
+<li><a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> (2017) enabled scaling to <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> exhibiting in-context learning, emergent multi-step reasoning, and instruction following</li>
+<li>2026 deployment landscape: Claude 3.7 (Anthropic), GPT-4o (OpenAI), Gemini 1.5 Pro (Google), Llama-3.3 (Meta), Mistral Large in production across enterprise, healthcare, legal, research</li>
+<li>Organisational adoption of generative AI: 88% globally (Stanford AI Index 2026); 53% population adoption in 3 years</li>
+<li>Few-shot and zero-shot task generalisation without gradient updates: first demonstrated at GPT-3 scale (Brown et al., 2020); now the standard deployment paradigm</li>
+<li>Model taxonomy: base models (next-token prediction), instruction-tuned (RLHF-aligned, DPO), reasoning models (extended chain-of-thought via test-time compute scaling)</li>
+<li>Parameter-efficient fine-tuning: LoRA, QLoRA, prefix tuning — adapting billion-parameter models with 0.1% of parameters for domain-specific tasks</li>
+</ul>
+</li>
+<li><strong>Computer Vision and Multimodal Perception:</strong>
+<ul>
+<li>Tasks: image classification, object detection, semantic segmentation, depth estimation, optical flow, 3D reconstruction, video understanding</li>
+<li>AlexNet (2012): 15.3% ImageNet top-5 error; triggered GPU-scale deep learning era; subsequent milestones — ResNet (2015), EfficientNet (2019), Vision Transformer (2020)</li>
+<li>By 2025: field shifted to multimodal instruction-following — GPT-4V, LLaVA, Gemini, Claude 3.7 reframe perception as reasoning over natural language descriptions</li>
+<li>Zero-shot visual question answering, diagram interpretation, cross-modal reasoning: enabled by vision-language <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a>s</li>
+<li>Generative models: diffusion models (DDPM, Stable Diffusion, DALL-E 3, Midjourney) produce photorealistic images from text; deepfake detection becoming an arms race</li>
+<li>Open problems: 3D scene understanding, video temporal reasoning, sim-to-real gap for robotic manipulation, synthetic media provenance verification</li>
+</ul>
+</li>
+<li><strong>Robotics and Embodied AI:</strong>
+<ul>
+<li><a href="../Robotics" class="internal" data-slug="Robotics">Robotics</a> applies AI Core methods to physical systems perceiving, planning, and acting under temporal and physical constraints</li>
+<li>Perception pipelines: visual odometry, LiDAR point cloud processing, tactile sensing; feed <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> controllers trained in simulation</li>
+<li>Recent foundation model-controlled robots: RT-2 (Google, 2023), Pi-zero (Physical Intelligence, 2024), Trinity humanoid (2025) — unify NLP, vision, and motor control in a single learned model</li>
+<li>Industrial deployment: logistics/warehouse (Amazon Robotics, Ocado), surgical assistance (Intuitive Surgical Da Vinci, CMR Versius), autonomous vehicles (Waymo, Mobileye)</li>
+<li>UK robotics research: Bristol Robotics Laboratory (UK’s largest dedicated robotics research lab), Edinburgh Centre for Robotics</li>
+<li>Sim-to-real transfer remains primary deployment bottleneck: domain randomisation, system identification, and adaptive control are active research directions</li>
+</ul>
+</li>
+<li><strong>Scientific Discovery:</strong>
+<ul>
+<li>AlphaFold 2 (DeepMind, 2021): solved 50-year protein structure prediction; AlphaFold Protein Structure Database covers virtually all known proteins; drug discovery timelines accelerated by years</li>
+<li>AlphaProof and AlphaGeometry 2 (DeepMind, 2024): IMO gold-medal-level performance; hybrid <a href="../Neural-Symbolic-AI" class="internal alias" data-slug="Neural-Symbolic-AI">Neural-Symbolic AI</a> demonstrating expert-level formal mathematical reasoning</li>
+<li>GNoME (DeepMind, 2023): 2.2 million new stable crystal structures discovered; a decade’s worth of prior experimental output in months</li>
+<li>GraphCast (DeepMind, 2023): 10-day medium-range weather forecast in under 1 minute vs hours for traditional numerical weather prediction</li>
+<li>Drug discovery: Recursion Pharmaceuticals (platform-scale ML across full pipeline), Insilico Medicine (DSP-1181 Phase I in 30 months vs 4.5 years traditionally)</li>
+<li>Surrogate models: <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> models 10,000x faster than first-principles methods in physics simulation, quantum chemistry, materials science</li>
+</ul>
+</li>
+<li><strong>Agentic Systems:</strong>
+<ul>
+<li><a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a>: <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a>s equipped with tool use (web search, code execution, API calls, file manipulation), persistent memory, and multi-step planning</li>
+<li>Software engineering deployment: GitHub Copilot, Cursor, Claude Code (code generation + automated testing loops); dramatically reducing time-to-working-code</li>
+<li>Research assistance: literature search, summarisation, hypothesis generation; beginning to automate the research process cycle</li>
+<li>Multi-agent systems: specialised agent instances collaborating on decomposed sub-tasks; AutoGPT, CrewAI, Microsoft AutoGen frameworks</li>
+<li>Customer service automation: routing, resolution, and escalation; contact centre AI deployed at scale in banking, telecoms, healthcare</li>
+<li>Open problems: long-horizon reliability (months-scale planning horizons), tool selection accuracy, self-correction, safe containment of irreversible real-world actions</li>
+</ul>
+</li>
+<li><strong>Financial Services and Decision Systems:</strong>
+<ul>
+<li>Credit scoring: gradient boosted trees (XGBoost, LightGBM) achieve AUROC > 0.85 on standard benchmarks; deeply embedded since early 2010s</li>
+<li>Algorithmic trading: <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a>-based execution policies; high-frequency market-making and statistical arbitrage</li>
+<li>Fraud detection: real-time anomaly scoring on transaction streams; ensemble models combining gradient boosting, neural networks, and graph neural networks</li>
+<li>Document processing: contract review, regulatory compliance, know-your-customer (KYC) document verification</li>
+<li>UK financial services: City of London and Canary Wharf as largest UK AI adopter sector; HSBC, Barclays, Lloyds, NatWest each with dedicated AI research and deployment teams</li>
+<li>Regulatory framework: FCA AI and ML guidance (2022), Bank of England discussion papers on AI financial stability risks</li>
+</ul>
+</li>
+<li><strong>Healthcare and Medicine:</strong>
+<ul>
+<li>Medical imaging: radiograph classification, CT scan segmentation; DeepMind’s Streams system at Royal Free London NHS Foundation Trust (early landmark deployment)</li>
+<li>Genomics: variant calling, polygenic risk score (PRS) prediction, genome-wide association study (GWAS) analysis automation</li>
+<li>Drug discovery: target identification, lead optimisation (Exscientia, Recursion); reducing preclinical-to-Phase-I timelines from 4.5 years to 18-30 months</li>
+<li>Electronic health records: NLP extraction of clinical concepts, ICD coding automation, hospital readmission risk prediction</li>
+<li>NHS AI Lab (est. 2019): national coordination of AI deployment across UK health system</li>
+<li>Key challenges: distributional shift across hospital systems, regulatory requirements (UKCA marking, MHRA assessment), explainability for clinical decision support, GDPR data governance</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="mathematical-framework">Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The mathematical foundations of AI Core span four interacting branches, each providing a distinct formal language for reasoning about intelligent systems. These branches are not independent silos but mutually reinforcing: optimisation theory provides the training algorithms whose convergence properties are analysed using statistical learning theory, whose sample complexity bounds depend on information-theoretic measures of model complexity, whose probabilistic models underpin the uncertainty estimates needed for robust deployment. Together they constitute the mathematical infrastructure of modern AI.</li>
+<li><strong>Probability Theory and <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a>:</strong>
+<ul>
+<li>Probabilistic models encode uncertainty over world states, observations, and model parameters using probability distributions and graphical models</li>
+<li><a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> updates a prior distribution P(H) over hypotheses using observed data D: P(H|D) ∝ P(D|H)·P(H), yielding a posterior that represents updated belief</li>
+<li>Variational inference approximates the intractable posterior with a tractable distribution family by minimising KL divergence; MCMC (Gibbs sampling, Hamiltonian Monte Carlo) provides asymptotically exact samples from complex posteriors</li>
+<li><a href="../pages/Bayesian-Deep-Learning" class="internal alias" data-slug="pages/Bayesian-Deep-Learning">Bayesian Deep Learning</a> applies approximate Bayesian inference to neural networks via Monte Carlo dropout, deep ensembles, and Laplace approximation, enabling calibrated predictive uncertainty</li>
+<li>Gaussian processes provide a non-parametric Bayesian function prior, underpinning Bayesian optimisation for hyperparameter search and <a href="../pages/Active-Learning" class="internal alias" data-slug="pages/Active-Learning">Active Learning</a> acquisition functions</li>
+</ul>
+</li>
+<li><strong>Optimisation Theory:</strong>
+<ul>
+<li><a href="../pages/Gradient-Descent" class="internal alias" data-slug="pages/Gradient-Descent">Gradient Descent</a> and stochastic variants minimise empirical risk L(θ) = (1/n)·Σᵢ ℓ(f_θ(xᵢ), yᵢ) over high-dimensional differentiable parameter spaces</li>
+<li>SGD with momentum: θ ← θ − η·v where vₜ = β·vₜ₋₁ + ∇_θ L; accumulates gradients in persistent directions, accelerating convergence over ravines in the loss surface</li>
+<li>Adam optimizer: θ ← θ − η·m̂/(√v̂+ε) where m̂,v̂ are bias-corrected first and second moment estimates of gradients; adapts per-parameter learning rates; AdamW decouples weight decay from gradient updates</li>
+<li>Learning rate scheduling (linear warmup, cosine annealing, polynomial decay) is empirically critical for stable large-model training; warmup phases prevent large early gradient steps from destabilising weights</li>
+<li>Loss surface geometry in deep networks is characterised by saddle points rather than local minima; over-parameterised networks exhibit benign loss surfaces where SGD reliably finds global near-optima</li>
+</ul>
+</li>
+<li><strong><a href="../Statistical-Learning" class="internal alias" data-slug="Statistical-Learning">Statistical Learning</a> Theory:</strong>
+<ul>
+<li>VC (Vapnik-Chervonenkis) dimension d_VC bounds generalisation error: R(h) ≤ R_emp(h) + O(√(d_VC log n / n) + log(1/δ)/n) for n training examples and confidence 1−δ</li>
+<li>Rademacher complexity provides data-dependent generalisation bounds tighter than VC dimension for function classes with exploitable structure</li>
+<li>PAC learning theory (Valiant, 1984): sample complexity O((d + log(1/δ))/ε) for d-dimensional hypothesis classes at error ε and confidence 1−δ; for neural networks these bounds are loose and compression/stability-based alternatives are active research</li>
+<li>The double descent phenomenon (Belkin et al., 2019): over-parameterised neural networks can generalise well despite having more parameters than training examples, challenging classical bias-variance tradeoff intuitions and motivating study of implicit regularisation</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Information-Theory" class="internal alias" data-slug="pages/Information-Theory">Information Theory</a>:</strong>
+<ul>
+<li>Shannon entropy H(X) = −Σ p(x) log p(x) quantifies the irreducible uncertainty in a random variable; mutual information I(X;Y) = H(X) − H(X|Y) measures statistical dependence</li>
+<li>Cross-entropy loss (standard classification objective) = expected negative log-likelihood of true labels, equivalent to minimising KL divergence KL(P_data ‖ P_model) between empirical and model distributions</li>
+<li>Information bottleneck principle (Tishby et al., 2000): formalises representation learning as min I(X;Z) subject to I(Z;Y) ≥ C, providing theoretical framework for what deep networks learn about the data</li>
+<li>Minimum description length (MDL) and algorithmic information theory frame learning as compression; connections to Bayesian model selection and “lottery ticket hypothesis” motivate compression-based AI analysis</li>
+</ul>
+</li>
+<li><strong>Scaling Laws:</strong>
+<ul>
+<li>Loss L decreases as a power law: L ≈ (N₀/N)^α + (C₀/C)^β + (D₀/D)^γ in model parameters N, training compute C, and dataset size D (Kaplan et al., 2020); exponents typically in range 0.05–0.10</li>
+<li>Chinchilla scaling laws (Hoffmann et al., 2022): for fixed compute budget C = 6ND, optimal allocation requires N ≈ D (equal scaling of model size and dataset size), contradicting earlier large-model-on-small-data practice; this result reshaped frontier model training from Gopher (280B parameters, undertrained) to the Chinchilla (70B parameters, compute-optimal) paradigm and all subsequent large-scale training runs</li>
+<li>Test-time compute scaling: chain-of-thought reasoning, reflection, and MCTS can improve output quality with fixed parameters (OpenAI o1, DeepSeek-R1 2025); interaction between training compute and inference-time compute strategies is active research; the two compute axes are partially substitutable, which has significant implications for the economics of AI deployment</li>
+<li>Emergent capabilities: qualitative step-changes in task performance appearing discontinuously as scale increases (arithmetic, chain-of-thought reasoning, calibration); whether these are true phase transitions or evaluation artefacts is debated (Schaeffer et al., 2023); the distinction matters for capability forecasting — discontinuous emergence implies greater uncertainty in predicting when dangerous capabilities appear</li>
+<li>Data wall hypothesis: by 2027–2028, publicly available high-quality text data may be exhausted for training at current scales; synthetic data generation, code data, and multimodal data are the primary proposed responses; formal mathematical text (theorem provers, proof databases) is an increasingly valuable scarce resource</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The intellectual lineage of AI Core passes through a small number of canonical contributions:
+<ul>
+<li><strong>1936:</strong> Turing’s “On Computable Numbers” established the theoretical foundations of computation via the Turing machine abstraction</li>
+<li><strong>1943:</strong> McCulloch and Pitts proposed the first mathematical model of a neuron as a logical threshold gate</li>
+<li><strong>1950:</strong> Turing’s “Computing Machinery and Intelligence” posed the imitation game as an operational intelligence test; introduced the philosophical framework of AI</li>
+<li><strong>1956:</strong> McCarthy, Minsky, Rochester, and Shannon organised the Dartmouth Summer Research Project; McCarthy coined “artificial intelligence”; established the discipline institutionally</li>
+<li><strong>1958:</strong> Rosenblatt introduced the perceptron — a single-layer neural network with a learning rule; proved convergence for linearly separable data</li>
+<li><strong>1969:</strong> Minsky and Papert’s “Perceptrons” (MIT Press) proved limits of single-layer networks; temporarily dampened neural network research</li>
+<li><strong>1971:</strong> STRIPS planning system (Fikes and Nilsson) formalised automated planning; introduced precondition/effect representation</li>
+<li><strong>1986:</strong> Rumelhart, Hinton, and Williams’ <a href="../pages/Backpropagation" class="internal" data-slug="pages/Backpropagation">Backpropagation</a> paper (Nature) demonstrated effective training of multilayer networks; rekindled neural network research</li>
+<li><strong>1992:</strong> Support vector machines (Boser, Guyon, Vapnik) introduced maximum-margin classification with kernel methods; <a href="../Statistical-Learning" class="internal alias" data-slug="Statistical-Learning">Statistical Learning</a> theory unified</li>
+<li><strong>2006:</strong> Hinton et al. “A Fast Learning Algorithm for Deep Belief Nets” demonstrated layer-wise pretraining of deep networks; deep learning revival began</li>
+<li><strong>2012:</strong> AlexNet (Krizhevsky, Sutskever, Hinton) won ImageNet with 15.3% top-5 error vs 26.2% prior SOTA; <a href="../pages/GPU-Compute" class="internal alias" data-slug="pages/GPU-Compute">GPU Compute</a> proved transformative</li>
+<li><strong>2014:</strong> Goodfellow et al. introduced Generative Adversarial Networks; VAE (Kingma and Welling) introduced variational inference for generative models</li>
+<li><strong>2017:</strong> Vaswani et al. “Attention Is All You Need” introduced the <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a>; made parallel sequence processing feasible at scale</li>
+<li><strong>2018:</strong> BERT (Devlin et al., Google) demonstrated masked language model pretraining; GPT (Radford et al., OpenAI) demonstrated autoregressive LM pretraining</li>
+<li><strong>2020:</strong> GPT-3 (Brown et al.) demonstrated few-shot in-context learning at 175B parameters; scaling laws (Kaplan et al.) published</li>
+<li><strong>2021:</strong> AlphaFold 2 (Jumper et al., DeepMind) solved protein structure prediction; “foundation models” term coined by Bommasani et al. (Stanford)</li>
+<li><strong>2022:</strong> RLHF alignment (Ouyang et al.) produced InstructGPT; Chinchilla scaling laws (Hoffmann et al.) showed optimal compute allocation; ChatGPT launched</li>
+<li><strong>2024:</strong> GPT-4o, Claude 3, Gemini 1.5 frontier; AlphaProof achieved IMO gold-medal mathematics; NeurIPS 2024 awarded Turing Award to deep learning pioneers Hinton, LeCun, Bengio</li>
+<li><strong>2025:</strong> DeepSeek-R1 demonstrated that test-time compute scaling can match proprietary frontier performance with open weights; mechanistic interpretability designated MIT Technology Review Breakthrough</li>
+</ul>
+</li>
+<li>Key publication venues and conferences:
+<ul>
+<li>NeurIPS (annual since 1987): ~20,000 submissions in 2026; ~25-28% acceptance rate; reproducibility now an official track (MLRC 2026)</li>
+<li>ICML (International Conference on Machine Learning): leading venue for ML theory, methods, and applications</li>
+<li>ICLR (International Conference on Learning Representations): entirely open-review since 2013; emphasis on deep learning and representation</li>
+<li>AAAI, IJCAI: broader AI including planning, knowledge representation, multi-agent systems, natural language</li>
+<li>ACL, EMNLP, NAACL: natural language processing; CVPR, ICCV, ECCV: computer vision; ICRA, CoRL: robotics and learning</li>
+<li>JMLR (Journal of Machine Learning Research), IEEE TPAMI (Transactions on Pattern Analysis and Machine Intelligence): primary journals</li>
+<li>arXiv (cs.LG, cs.AI, cs.CL, cs.CV): same-day preprint deposit; effective publication timeline compressed to zero</li>
+</ul>
+</li>
+<li>Standard textbooks and references:
+<ul>
+<li>Russell and Norvig, “Artificial Intelligence: A Modern Approach” (4th ed., 2020) — standard undergraduate reference globally</li>
+<li>Bishop, “Pattern Recognition and Machine Learning” (2006) — standard probabilistic ML graduate reference</li>
+<li>Goodfellow, Bengio, Courville, “Deep Learning” (2016, MIT Press, free online) — standard deep learning graduate reference</li>
+<li>Sutton and Barto, “Reinforcement Learning: An Introduction” (2018, 2nd ed.) — standard RL reference</li>
+<li>Shalev-Shwartz and Ben-David, “Understanding Machine Learning” (2014) — clearest treatment of PAC learning theory</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Investment and competitive dynamics (Stanford AI Index 2026):</strong>
+<ul>
+<li>US private AI investment in 2025: <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">285.9</span><span class="mord mathnormal">bi</span><span class="mord mathnormal" style="margin-right:0.01968em;">ll</span><span class="mord mathnormal">i</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">hina</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span></span></span></span>12.4 billion (23× gap)</li>
+<li>Performance gap between best US and Chinese frontier models: 2.7% (down from 17.5–31.6 pp in May 2023)</li>
+<li>US AI model releases: 50 “notable” models in 2025; nearly all from industry rather than academia</li>
+<li>Generative AI population-level adoption: 53% in 3 years; organisational adoption: 88%</li>
+<li>AI-related skills in US job postings: 2.5% (297% increase over past decade)</li>
+<li>AI data centre power capacity: 29.6 GW globally in 2025; comparable to New York State peak demand</li>
+<li>Cumulative capital investment in AI infrastructure: >$500 billion globally</li>
+</ul>
+</li>
+<li><strong>Compute and infrastructure landscape:</strong>
+<ul>
+<li>NVIDIA H100/H200 GPU clusters: dominant training platform at 3,958 TFLOPS FP16 per card; H200 adds HBM3e memory bandwidth improvements; GB200 “Blackwell” generation entering production in 2025</li>
+<li>Google TPU v5 (matrix unit optimised, high bandwidth interconnect), Amazon Trainium 2 (AWS-specific ML training chip), Microsoft Maia 100 (Azure-specific inference optimisation) provide hyperscaler-specific alternatives</li>
+<li>Cerebras WSE-3: 900,000 AI-optimised cores on a single wafer-scale chip; eliminates inter-chip communication bottleneck for specific workloads; Groq LPU: tensor streaming processor architecture delivering deterministic, high-throughput inference</li>
+<li>Intel Gaudi 3: competitive with NVIDIA H100 on certain workloads; increasing competitive pressure on NVIDIA’s dominant market position</li>
+<li>UK Isambard-AI (Bristol, £225m, live 2024): Europe’s most capable public academic AI compute facility; NVIDIA Grace Hopper Superchip architecture; available to UK university researchers via UKRI</li>
+<li>2025 UK Compute Roadmap: additional £2bn for AI Growth Zones and national compute infrastructure; aims to maintain UK position in global AI research</li>
+<li><a href="../pages/Open-Source-AI" class="internal alias" data-slug="pages/Open-Source-AI">Open Source AI</a> deployment: Llama-3.3, Mistral Large, DeepSeek-R1 dramatically reduced cost of deploying capable AI systems; Hugging Face Inference Endpoints provides serverless deployment for open models</li>
+</ul>
+</li>
+<li><strong>Benchmark saturation and evaluation methodology:</strong>
+<ul>
+<li>Level III benchmarks (MMMU, HELM) approaching ceiling performance for frontier models</li>
+<li>Ceiling-test benchmarks: Humanity’s Last Exam (HLE, below 25%), FrontierMath (below 2%)</li>
+<li>SWE-Bench Verified (software engineering task resolution): ~50% for frontier models</li>
+<li>NeurIPS Datasets and Benchmarks Track: 1,995 submissions in 2025 (up from 1,820 in 2024)</li>
+<li>Mandatory Croissant metadata, persistent hosting (Hugging Face/Kaggle/Dataverse), automated review tools</li>
+<li>Benchmark contamination: training data overlap with test sets is a serious validity concern; shift toward held-out and private evaluation sets</li>
+</ul>
+</li>
+<li><strong>Mechanistic interpretability and <a href="../pages/Alignment-Research" class="internal alias" data-slug="pages/Alignment-Research">Alignment Research</a> frontier:</strong>
+<ul>
+<li>MIT Technology Review “Breakthrough Technology 2026”: mechanistic interpretability</li>
+<li>Anthropic’s sparse autoencoder work: decomposes MLP residual stream activations into monosemantic features; identifies circuits for specific capabilities</li>
+<li>Frontier challenge: scaling from toy models (~millions of parameters) to production-scale transformers (hundreds of billions of parameters)</li>
+<li>Alignment Trilemma: no single method simultaneously guarantees strong optimisation, perfect value capture, and robust generalisation</li>
+<li>Empirically observed failure modes: reward hacking, specification gaming, sycophancy, deceptive alignment</li>
+<li>AAAI 2025 Presidential Panel: identified alignment, interpretability, robustness, and evaluation as four primary research priorities</li>
+</ul>
+</li>
+<li><strong>Dominant technology growth vectors:</strong>
+<ul>
+<li><a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a>: coding assistants (GitHub Copilot, Cursor, Claude Code), research assistants, customer service agents; multi-agent frameworks (AutoGPT, CrewAI, Microsoft AutoGen)</li>
+<li><a href="../pages/Multimodal-AI" class="internal alias" data-slug="pages/Multimodal-AI">Multimodal AI</a>: GPT-4o, Gemini 1.5 Pro, Claude 3.7 process text, image, audio, video in unified inference</li>
+<li><a href="../pages/Open-Source-AI" class="internal alias" data-slug="pages/Open-Source-AI">Open Source AI</a>: Llama-3.3, Mistral Large, DeepSeek-R1 restructuring competitive and governance landscape</li>
+<li>Test-time compute scaling: OpenAI o1, DeepSeek-R1 extended inference chains improve reasoning capability without additional training</li>
+</ul>
+</li>
+<li><strong>Regulatory landscape:</strong>
+<ul>
+<li>EU AI Act (2024): risk-tiered classification; high-risk systems require conformity assessment, transparency, human oversight</li>
+<li>UK: principles-based approach; AISI conducts pre-deployment evaluations under voluntary lab commitments; no sector-specific legislation yet</li>
+<li>US Executive Order on AI (2023): reporting requirements for training runs above 10^26 FLOP</li>
+<li>International AI governance remains fragmented; compliance complexity for global deployments; Paris AI Summit (2025) and Bletchley III convening planned</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The United Kingdom occupies a structurally important position in global AI research:
+<ul>
+<li>Consistently ranked alongside the US and Australia in global academic AI citation and collaboration networks (Oxford Academic, Science and Public Policy, 2025)</li>
+<li>The <a href="../pages/Alan-Turing-Institute" class="internal alias" data-slug="pages/Alan-Turing-Institute">Alan Turing Institute</a>, founded 2015 by Cambridge, Edinburgh, Oxford, UCL, and Warwick with EPSRC funding, serves as the national institute for data science and AI</li>
+<li>The AI Safety Institute (AISI), established 2023 following the Bletchley Declaration, conducts pre-deployment evaluations of frontier AI models</li>
+<li>UK government AI safety commitments include voluntary agreements from OpenAI, Anthropic, Google DeepMind, and Meta to submit frontier models for AISI evaluation before release</li>
+</ul>
+</li>
+<li>Major UK academic centres:
+<ul>
+<li><strong>University of Edinburgh, School of Informatics:</strong> UK’s largest CS research department; 120+ academic staff, 500+ research students; AI, NLP, planning, computer vision, cognitive science; Centre for Doctoral Training in Robotics and Autonomous Systems; Edinburgh Centre for Robotics</li>
+<li><strong>Imperial College London:</strong> UK’s largest single concentration of computing and AI researchers; Department of Computing, Data Science Institute; 2026 London AI Technology Centre partnership with Lenovo at White City Deep Tech Campus focusing on <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> deployment and <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a></li>
+<li><strong>UCL:</strong> leads UKRI-funded national generative AI hub encompassing Imperial, Cardiff, Cambridge, Oxford, Manchester, Edinburgh, Surrey; industry partners IBM, BT, Google DeepMind, Cisco; Google DeepMind Academic Fellow appointed to UCL Centre for AI, March 2026</li>
+<li><strong>University of Cambridge:</strong> Leverhulme Centre for the Future of Intelligence; Cambridge Centre for Data-Driven Discovery; affiliated <a href="../pages/Alan-Turing-Institute" class="internal alias" data-slug="pages/Alan-Turing-Institute">Alan Turing Institute</a> node; strong theoretical ML and AI safety research</li>
+<li><strong>University of Oxford:</strong> Oxford Future of Humanity Institute; Machine Learning Research Group; Department of Computer Science; strong in Bayesian methods, AI safety, ethics</li>
+</ul>
+</li>
+<li>Government investment:
+<ul>
+<li>2022–2024: ~£1 billion committed to AI research infrastructure</li>
+<li>Isambard-AI supercomputer (Bristol): £225m, Europe’s most capable public academic AI compute facility</li>
+<li>£500m compute hardware across UK universities</li>
+<li>Twelve new Centres for Doctoral Training in AI: £117m</li>
+<li>2025 Compute Roadmap: further £2 billion for AI infrastructure and AI Growth Zones</li>
+<li>Spärck AI scholarship programme: Oxford, Cambridge, Imperial, UCL, Southampton, Edinburgh, Newcastle, Manchester, Bristol</li>
+</ul>
+</li>
+<li>Northern England AI clusters:
+<ul>
+<li><strong>Manchester:</strong> UK’s most AI-ready city three consecutive years (SAS UK); University of Manchester (Centre for AI Fundamentals, Turing Fellow programme, Alan Turing birth city connection); National Centre for AI in Financial Services; 130+ AI courses across three institutions (Leeds ranked second)</li>
+<li><strong>North East England AI Growth Zone (2025):</strong> £30bn investment, 5,000 jobs; partnership with OpenAI and NVIDIA; Newcastle University (Digital Civics, AI for healthcare), Durham, Sunderland, Northumbria universities training AI experts</li>
+<li><strong>Sheffield:</strong> University of Sheffield Natural Language Processing Group — one of UK’s largest NLP research groups; strong industrial transfer to information extraction, text mining, and clinical NLP</li>
+<li><strong>Leeds:</strong> Institute for Data Analytics; healthcare AI at Leeds Teaching Hospitals NHS Trust; ranked second UK AI-ready city 2025</li>
+<li>Bristol Robotics Laboratory: UK’s largest dedicated robotics research facility; directly connected to AI Core robotics applications</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Neural-Symbolic Integration:</strong>
+<ul>
+<li>Convergence of connectionist <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> with symbolic <a href="../pages/Knowledge-Representation" class="internal alias" data-slug="pages/Knowledge-Representation">Knowledge Representation</a> and <a href="../Planning-and-Search" class="internal alias" data-slug="Planning-and-Search">Planning and Search</a> is the dominant theoretical research programme</li>
+<li><a href="../Neural-Symbolic-AI" class="internal alias" data-slug="Neural-Symbolic-AI">Neural-Symbolic AI</a> systems combine robustness of learned representations with interpretability and compositionality of formal reasoning</li>
+<li>Promising approaches: differentiable programming, neuro-symbolic concept learners (NSCL), chain-of-thought as implicit symbolic scratchpad, program synthesis from examples</li>
+<li>AlphaProof (IMO 2024) and AlphaGeometry 2 (gold-medal geometry): landmark demonstrations of expert-level formal mathematical reasoning by hybrid systems</li>
+<li>Key challenge: grounding neural representations in formal semantics without losing learned generalisation from distributed representations</li>
+</ul>
+</li>
+<li><strong>Scalable Alignment:</strong>
+<ul>
+<li><a href="../pages/Frontier-AI" class="internal alias" data-slug="pages/Frontier-AI">Frontier AI</a> approaching expert human performance: ensuring objectives remain human-compatible becomes existentially important</li>
+<li>Alignment Trilemma: no single method simultaneously guarantees strong optimisation, perfect value capture, and robust generalisation</li>
+<li>AAAI 2025 Presidential Panel: alignment is the most critical near-term research priority for the field</li>
+<li>Three dominant methodological threads: mechanistic interpretability, constitutional AI (Bai et al., 2022), scalable oversight (Leike et al., 2018)</li>
+<li>All face fundamental limitations at superhuman capability scales; no current framework provides formal guarantees</li>
+<li>Unsolved theoretical problems: reward hacking, specification gaming, deceptive alignment; observed empirically in deployed RLHF systems</li>
+</ul>
+</li>
+<li><strong>Compute Efficiency:</strong>
+<ul>
+<li>Environmental and economic cost of training frontier models becoming structural constraint (29.6 GW data centre capacity in 2025)</li>
+<li>Architecture directions: sparse mixture-of-experts (Mixtral, GPT-4 reportedly MoE), state-space models (Mamba, H3: linear-time sequence modelling)</li>
+<li>Test-time compute scaling (OpenAI o1, DeepSeek-R1): inference-time reasoning chains substitute for training compute at cost of higher per-query energy</li>
+<li>Data efficiency: <a href="../pages/Active-Learning" class="internal alias" data-slug="pages/Active-Learning">Active Learning</a>, <a href="../pages/Curriculum-Learning" class="internal alias" data-slug="pages/Curriculum-Learning">Curriculum Learning</a>, <a href="../pages/Contrastive-Learning" class="internal alias" data-slug="pages/Contrastive-Learning">Contrastive Learning</a>, synthetic data generation reduce labelling requirements 1–2 orders of magnitude</li>
+<li>Hardware co-design: neuromorphic chips (Intel Loihi 2), analog computing, photonic AI, near-memory compute represent long-term efficiency directions</li>
+</ul>
+</li>
+<li><strong>Autonomous Scientific Discovery:</strong>
+<ul>
+<li>AI as active research agent: formulating hypotheses, designing experiments, interpreting results, proposing new research directions</li>
+<li>AlphaFold 2 (2021): solved 50-year protein structure problem; structures for all known proteins now available</li>
+<li>AlphaProof / AlphaGeometry 2 (2024): IMO gold-medal mathematics; hybrid <a href="../Neural-Symbolic-AI" class="internal alias" data-slug="Neural-Symbolic-AI">Neural-Symbolic AI</a> approach</li>
+<li>GNoME (2023): 2.2 million new stable crystal structures; decade of prior experimental output in months</li>
+<li>Emerging AI laboratory systems: combining <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> reasoning with robotic laboratory automation (Recursion Pharmaceuticals, Insilico Medicine)</li>
+<li>Epistemological implication: AI as co-author of scientific knowledge; authorship attribution and verification challenges for scientific integrity</li>
+</ul>
+</li>
+<li><strong>Agentic AI at Scale:</strong>
+<ul>
+<li><a href="../pages/Agentic-Workflow" class="internal alias" data-slug="pages/Agentic-Workflow">Agentic Workflow</a>s mature from task-specific automation to general-purpose cognitive assistants with months-long planning horizons</li>
+<li><a href="../pages/AI-Agent-System" class="internal alias" data-slug="pages/AI-Agent-System">AI Agent System</a>s evolving from single-model to networks of specialised collaborating models (multi-agent coordination)</li>
+<li>AI Core shifts from a producer of predictive models to a producer of cognitive infrastructure</li>
+<li>Open problems: long-horizon planning reliability, multi-agent coordination protocols, safe sandboxing of autonomous agents with tool access</li>
+<li>Economic implications: AI agents may substitute for significant categories of knowledge work; Turing test for economic productivity as the operative benchmark</li>
+</ul>
+</li>
+<li><strong>Multimodal and Embodied Intelligence:</strong>
+<ul>
+<li><a href="../pages/Multimodal-AI" class="internal alias" data-slug="pages/Multimodal-AI">Multimodal AI</a>: language, vision, audio, touch, proprioception integrated in a single learned architecture</li>
+<li>GPT-4o, Gemini 1.5, Claude 3.7 already process text, image, audio in unified inference; video and 3D reasoning are next</li>
+<li>Embodied <a href="../Robotics" class="internal" data-slug="Robotics">Robotics</a> controlled by <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a>s (RT-2, Pi-zero, Figure 01): AI operating under real-time constraints, sensor noise, irreversible consequences</li>
+<li>Sim-to-real transfer: training in simulation then deploying on physical hardware; domain randomisation, system identification methods bridge the gap</li>
+<li>Long-term vision: physical AI agents learning new skills from natural language instruction and demonstration in arbitrary environments</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="limitations-and-critiques">Limitations and Critiques<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitations-and-critiques" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Brittleness and Distribution Shift:</strong>
+<ul>
+<li>Deep learning systems trained on fixed distributions fail unpredictably on out-of-distribution inputs that humans handle trivially</li>
+<li>Adversarial examples (Szegedy et al., 2013): imperceptible pixel perturbations cause confident misclassifications; demonstrated across all major CNN architectures</li>
+<li>Medical AI frequently trained on datasets from single hospitals or scanner types; significant performance degradation when deployed in different clinical settings</li>
+<li>Self-driving AI: failure modes on novel road geometries, weather conditions, and edge cases not represented in training distribution</li>
+<li>Certified robustness (randomised smoothing, abstract interpretation): provides formal guarantees within bounded perturbation radius but at significant performance cost</li>
+</ul>
+</li>
+<li><strong>Interpretability–Capability Tradeoff:</strong>
+<ul>
+<li>Marcus (2018): deep learning systems lack compositional generalisation, systematic symbolic reasoning, causal understanding, and sample efficiency</li>
+<li>Current <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a>s exhibit “hallucination” — generating factually incorrect but fluent statements with high confidence; no reliable suppression mechanism</li>
+<li><a href="../pages/Explainable-AI" class="internal alias" data-slug="pages/Explainable-AI">Explainable AI</a> methods (LIME, SHAP, attention visualisation) provide attribution but not mechanistic understanding; do not generalise reliably across input perturbations</li>
+<li>“Model cards” and “datasheets for datasets” improve documentation but do not substitute for mechanistic interpretability</li>
+<li>The interpretability problem is a fundamental obstacle to safe deployment in high-stakes domains: healthcare, legal, critical infrastructure</li>
+</ul>
+</li>
+<li><strong>Reproducibility and Methodological Concerns:</strong>
+<ul>
+<li>Dodge et al. (2020): random seed sensitivity means many published results do not replicate without identical hardware configuration and seed</li>
+<li>Semmelrock et al. (2025): four primary reproducibility barriers — hardware heterogeneity, hyperparameter sensitivity, dataset version drift, incomplete code release</li>
+<li>NeurIPS Reproducibility Challenge (MLRC) has demonstrated that between 30-50% of attempted replications find significant numerical discrepancies from published results</li>
+<li>Benchmark contamination: when training data overlaps with test sets, measured performance overstates genuine capability; systematic across LLM evaluations</li>
+<li>“Benchmark hacking”: optimising for test set regularities rather than intended capability; particularly prevalent on MMLU, GSM8K, and similar static benchmarks</li>
+</ul>
+</li>
+<li><strong>Scaling Law Limits and Emergent Capability Uncertainty:</strong>
+<ul>
+<li>Power-law scaling predictions (Kaplan et al., 2020) break down at sufficiently large scale or dataset exhaustion; the “data wall” is a medium-term constraint</li>
+<li>Emergent capability phenomenon (Wei et al., 2022): qualitative capability jumps appearing discontinuously at scale; contested interpretation — Schaeffer et al. (2023) argue these are evaluation artefacts, not genuine phase transitions</li>
+<li>No principled theory predicts which capabilities will emerge at which scale; <a href="../pages/Artificial-General-Intelligence" class="internal alias" data-slug="pages/Artificial-General-Intelligence">Artificial General Intelligence</a> forecasts vary from 5–50 years across expert surveys</li>
+<li>Environmental cost: training a single frontier model can consume as much energy as the lifetime carbon emissions of several cars; not sustainable at unrestricted scale</li>
+</ul>
+</li>
+<li><strong>Alignment and Safety Gaps:</strong>
+<ul>
+<li>RLHF produces aligned behaviour in training distribution but does not provide formal guarantees outside it; sycophancy (agreeing with incorrect user assertions) is a systematic failure mode</li>
+<li>Deceptive alignment: a model might appear aligned during training and evaluation while pursuing different objectives in deployment; not yet empirically confirmed but theoretically well-motivated</li>
+<li>Dual-use risks: the same capabilities that make AI valuable (language fluency, code generation, biological knowledge) enable misuse in disinformation, cyberattack, and biological synthesis guidance</li>
+<li>No currently deployed alignment technique provides formal safety certificates; all are empirical and probabilistic</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Turing, A.M. (1950). Computing Machinery and Intelligence. <em>Mind</em>, 59(236), 433–460. — philosophical founding document of AI</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>McCarthy, J., Minsky, M.L., Rochester, N., &amp; Shannon, C.E. (1956). A Proposal for the Dartmouth Summer Research Project on Artificial Intelligence. — established the discipline</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Rosenblatt, F. (1958). The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain. <em>Psychological Review</em>, 65(6), 386–408.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Minsky, M., &amp; Papert, S. (1969). <em>Perceptrons: An Introduction to Computational Geometry</em>. MIT Press.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Rumelhart, D.E., Hinton, G.E., &amp; Williams, R.J. (1986). Learning Representations by Back-propagating Errors. <em>Nature</em>, 323, 533–536.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Vapnik, V.N. (1995). <em>The Nature of Statistical Learning Theory</em>. Springer.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Russell, S., &amp; Norvig, P. (2020). <em>Artificial Intelligence: A Modern Approach</em> (4th ed.). Pearson. — canonical textbook</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>LeCun, Y., Bengio, Y., &amp; Hinton, G. (2015). Deep Learning. <em>Nature</em>, 521, 436–444. — survey of the deep learning era</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Krizhevsky, A., Sutskever, I., &amp; Hinton, G.E. (2012). ImageNet Classification with Deep Convolutional Neural Networks. <em>NeurIPS</em>, 25. — AlexNet breakthrough</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A.N., Kaiser, Ł., &amp; Polosukhin, I. (2017). Attention Is All You Need. <em>NeurIPS</em>, 30.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Bommasani, R., Hudson, D.A., Aditi, E., Altman, R., et al. (2021). On the Opportunities and Risks of Foundation Models. arXiv:2108.07258.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Kaplan, J., McCandlish, S., Henighan, T., Brown, T.B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., &amp; Amodei, D. (2020). Scaling Laws for Neural Language Models. arXiv:2001.08361.</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Hoffmann, J., Borgeaud, S., Mensch, A., et al. (2022). Training Compute-Optimal Large Language Models. arXiv:2203.15556. — Chinchilla scaling laws</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Brown, T.B., Mann, B., Ryder, N., Subbiah, M., et al. (2020). Language Models are Few-Shot Learners. <em>NeurIPS</em>, 33. — GPT-3</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Ouyang, L., Wu, J., Jiang, X., Almeida, D., et al. (2022). Training Language Models to Follow Instructions with Human Feedback. arXiv:2203.02155. — InstructGPT / RLHF</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Jumper, J., Evans, R., Pritzel, A., Green, T., et al. (2021). Highly Accurate Protein Structure Prediction with AlphaFold. <em>Nature</em>, 596, 583–589.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Silver, D., Huang, A., Maddison, C.J., Guez, A., et al. (2016). Mastering the Game of Go with Deep Neural Networks and Tree Search. <em>Nature</em>, 529, 484–489. — AlphaGo</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., &amp; Bengio, Y. (2014). Generative Adversarial Nets. <em>NeurIPS</em>, 27.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Hinton, G.E., Osindero, S., &amp; Teh, Y.W. (2006). A Fast Learning Algorithm for Deep Belief Nets. <em>Neural Computation</em>, 18(7), 1527–1554.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Bishop, C.M. (2006). <em>Pattern Recognition and Machine Learning</em>. Springer. — standard reference for probabilistic ML</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Sutton, R.S., &amp; Barto, A.G. (2018). <em>Reinforcement Learning: An Introduction</em> (2nd ed.). MIT Press.</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Marcus, G. (2018). Deep Learning: A Critical Appraisal. arXiv:1801.00631. — influential critique of deep learning limitations</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Bengio, Y., et al. (2025). International AI Safety Report. UK Government AI Safety Institute.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Stanford University Human-Centered AI (2026). <em>Artificial Intelligence Index Report 2026</em>. Stanford HAI.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>NeurIPS (2025). Datasets and Benchmarks Track: From Art to Science in AI Evaluations. NeurIPS Blog, December 2025.</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Chollet, F. (2019). On the Measure of Intelligence. arXiv:1911.01547.</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Mnih, V., Kavukcuoglu, K., Silver, D., Rusu, A.A., et al. (2015). Human-level Control through Deep Reinforcement Learning. <em>Nature</em>, 518, 529–533.</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Zylos Research (2026). AI Safety, Alignment, and Interpretability in 2026. <a href="https://zylos.ai/research/2026-02-09-ai-safety-alignment-interpretability" class="external">https://zylos.ai/research/2026-02-09-ai-safety-alignment-interpretability<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-520" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#mathematical-framework" data-for="mathematical-framework">Mathematical Framework</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#limitations-and-critiques" data-for="limitations-and-critiques">Limitations and Critiques</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

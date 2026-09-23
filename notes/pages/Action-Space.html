@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Action Space</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Action Space"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Action Space"/><meta name="twitter:description" content="The action space in reinforcement learning and control theory is the complete set of actions available to an agent at any given decision step, defining the boundaries of what the agent may do when interacting with its environment."/><meta property="og:description" content="The action space in reinforcement learning and control theory is the complete set of actions available to an agent at any given decision step, defining the boundaries of what the agent may do when interacting with its environment."/><meta property="og:image:alt" content="The action space in reinforcement learning and control theory is the complete set of actions available to an agent at any given decision step, defining the boundaries of what the agent may do when interacting with its environment."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Action-Space"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Action-Space"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="The action space in reinforcement learning and control theory is the complete set of actions available to an agent at any given decision step, defining the boundaries of what the agent may do when interacting with its environment."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Action-Space"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-552"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-552" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Action Space</a></div></nav><h1 class="article-title">Action Space</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.664Z">23 Sept 2026</time><span>43 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:action-space</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.87</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/State-Space" class="internal">State Space</a></li><li><a href="../pages/Markov-Decision-Process" class="internal">Markov Decision Process</a></li><li><a href="../pages/Control-Theory" class="internal">Control Theory</a></li><li><a href="../pages/Optimisation" class="internal">Optimisation</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../discrete-action" class="internal">Discrete Action</a></li><li><a href="../continuous-action" class="internal">Continuous Action</a></li><li><a href="../pages/Policy-Gradient-Methods" class="internal">Policy Gradient Methods</a></li><li><a href="../pages/Value-Function" class="internal">Value Function</a></li><li><a href="../Exploration-Exploitation" class="internal">Exploration-Exploitation</a></li><li><a href="../Action-Masking" class="internal">Action Masking</a></li><li><a href="../Action-Factorisation" class="internal">Action Factorisation</a></li><li><a href="../Action-Embedding" class="internal">Action Embedding</a></li><li><a href="../Parameterised-Action" class="internal">Parameterised Action</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Environment-Model" class="internal">Environment Model</a></li><li><a href="../pages/Simulation-Environment" class="internal">Simulation Environment</a></li><li><a href="../pages/Reward-Function" class="internal">Reward Function</a></li><li><a href="../pages/Markov-Decision-Process" class="internal">Markov Decision Process</a></li><li><a href="../Transition-Dynamics" class="internal">Transition Dynamics</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Policy-Optimisation" class="internal">Policy Optimisation</a></li><li><a href="../pages/Reinforcement-Learning-Algorithm" class="internal">Reinforcement Learning Algorithm</a></li><li><a href="../pages/Deep-Reinforcement-Learning" class="internal">Deep Reinforcement Learning</a></li><li><a href="../safe-reinforcement-learning" class="internal">Safe Reinforcement Learning</a></li><li><a href="../Hierarchical-Reinforcement-Learning" class="internal">Hierarchical Reinforcement Learning</a></li><li><a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal">Multi-Agent Reinforcement Learning</a></li><li><a href="../pages/Combinatorial-Optimisation" class="internal">Combinatorial Optimisation</a></li><li><a href="../pages/Autonomous-Robot" class="internal">Autonomous Robot</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Inverse-Reinforcement-Learning" class="internal">Inverse Reinforcement Learning</a></li><li><a href="../pages/Curriculum-Learning" class="internal">Curriculum Learning</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Environment-Model" class="internal">Environment Model</a></li><li><a href="../pages/Simulation-Environment" class="internal">Simulation Environment</a></li><li><a href="../pages/GPU-Acceleration" class="internal">GPU Acceleration</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Model-Based-Reinforcement-Learning" class="internal">Model-Based Reinforcement Learning</a></li><li><a href="../pages/Control-Theory" class="internal">Control Theory</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../state-space" class="internal">State Space</a></li><li><a href="../reinforcement-learning" class="internal">Reinforcement Learning</a></li><li><a href="../markov-decision-process" class="internal">Markov Decision Process</a></li><li><a href="../reward-function" class="internal">Reward Function</a></li><li><a href="../policy-optimisation" class="internal">Policy Optimisation</a></li><li><a href="../reinforcement-learning-algorithm" class="internal">Reinforcement Learning Algorithm</a></li><li><a href="../environment-model" class="internal">Environment Model</a></li><li><a href="../reinforcement-learning-for-robotics" class="internal">Reinforcement Learning for Robotics</a></li><li><a href="../deep-reinforcement-learning" class="internal">Deep Reinforcement Learning</a></li><li><a href="../policy-gradient-methods" class="internal">Policy Gradient Methods</a></li><li><a href="../proximal-policy-optimisation" class="internal">Proximal Policy Optimisation</a></li><li><a href="../value-function" class="internal">Value Function</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../multi-agent-reinforcement-learning" class="internal">Multi-Agent Reinforcement Learning</a></li><li><a href="../simulation-environment" class="internal">Simulation Environment</a></li><li><a href="../autonomous-robot" class="internal">Autonomous Robot</a></li><li><a href="../game-ai" class="internal">Game AI</a></li><li><a href="../combinatorial-optimisation" class="internal">Combinatorial Optimisation</a></li><li><a href="../exploration-exploitation" class="internal">Exploration-Exploitation</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../control-theory" class="internal">Control Theory</a></li><li><a href="../optimisation" class="internal">Optimisation</a></li><li><a href="../hierarchical-reinforcement-learning" class="internal">Hierarchical Reinforcement Learning</a></li><li><a href="../reinforcement-learning-from-human-feedback" class="internal">Reinforcement Learning from Human Feedback</a></li><li><a href="../domain-randomisation" class="internal">Domain Randomisation</a></li><li><a href="../gpu-acceleration" class="internal">GPU Acceleration</a></li><li><a href="../sample-efficiency" class="internal">Sample Efficiency</a></li><li><a href="../reward-shaping" class="internal">Reward Shaping</a></li><li><a href="../curriculum-learning" class="internal">Curriculum Learning</a></li><li><a href="../autonomous-vehicle" class="internal">Autonomous Vehicle</a></li><li><a href="../computer-vision" class="internal">Computer Vision</a></li><li><a href="../agentic-ai" class="internal">Agentic AI</a></li><li><a href="../temporal-difference" class="internal">Temporal Difference</a></li><li><a href="../transfer-learning" class="internal">Transfer Learning</a></li><li><a href="../model-based-reinforcement-learning" class="internal">Model-Based Reinforcement Learning</a></li><li><a href="../graph-neural-network" class="internal">Graph Neural Network</a></li><li><a href="../inverse-reinforcement-learning" class="internal">Inverse Reinforcement Learning</a></li><li><a href="../safe-reinforcement-learning" class="internal">Safe Reinforcement Learning</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:action-space</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Reward-Function" class="internal">Reward Function</a></li><li><a href="../pages/Markov-Decision-Process" class="internal">Markov Decision Process</a></li><li><a href="../pages/Control-Theory" class="internal">Control Theory</a></li><li><a href="../exploration-exploitation" class="internal">Exploration-Exploitation</a></li><li><a href="../pages/Reward-Shaping" class="internal">Reward Shaping</a></li><li><a href="../pages/Sample-Efficiency" class="internal">Sample Efficiency</a></li><li><a href="../pages/Transfer-Learning" class="internal">Transfer Learning</a></li><li><a href="../pages/Domain-Randomisation" class="internal">Domain Randomisation</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal">Multi-Agent Reinforcement Learning</a></li><li><a href="../pages/Computer-Vision" class="internal">Computer Vision</a></li><li><a href="../pages/Deep-Reinforcement-Learning" class="internal">Deep Reinforcement Learning</a></li><li><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal">Reinforcement Learning from Human Feedback</a></li><li><a href="../Hierarchical-Reinforcement-Learning" class="internal">Hierarchical Reinforcement Learning</a></li><li><a href="../pages/State-Space" class="internal">State Space</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/Markov-Decision-Process" class="internal">Markov Decision Process</a></li><li><a href="../Gymnasium" class="internal">Gymnasium</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning-for-Robotics" class="internal">Reinforcement Learning for Robotics</a></li><li><a href="../pages/Game-AI" class="internal">Game AI</a></li><li><a href="../pages/Autonomous-Vehicle" class="internal">Autonomous Vehicle</a></li><li><a href="../pages/Combinatorial-Optimisation" class="internal">Combinatorial Optimisation</a></li><li><a href="../pages/Agentic-AI" class="internal">Agentic AI</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning-for-Robotics" class="internal">Reinforcement Learning for Robotics</a></li><li><a href="../pages/Policy-Gradient-Methods" class="internal">Policy Gradient Methods</a></li><li><a href="../pages/Proximal-Policy-Optimisation" class="internal">Proximal Policy Optimisation</a></li><li><a href="../Temporal-Difference" class="internal">Temporal Difference</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Graph-Neural-Network" class="internal">Graph Neural Network</a></li><li><a href="../pages/Value-Function" class="internal">Value Function</a></li><li><a href="../pages/Reward-Function" class="internal">Reward Function</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>The action space in reinforcement learning and control theory is the complete set of actions available to an agent at any given decision step, defining the boundaries of what the agent may do when interacting with its environment. It may be discrete—a finite enumeration of choices—or continuous—a real-valued manifold such as joint torques or steering angles—and its structure fundamentally determines which learning algorithms are applicable and how efficiently a policy can be discovered.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:DiscreteAction))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:ContinuousAction))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:HybridActionDimension))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:ActionMask))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:ActionFactorisation))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:ParameterisedAction))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:hasPart ai:ActionEmbedding))</span></span></code></pre></figure>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:requires ai:EnvironmentModel))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:requires ai:SimulationEnvironment))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:requires ai:RewardFunction))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:requires ai:StateSpace))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:requires ai:MarkovDecisionProcess))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:requires ai:TransitionDynamics))</span></span></code></pre></figure>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:PolicyOptimisation))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:ReinforcementLearningAlgorithm))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:DeepReinforcementLearning))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:SafeReinforcementLearning))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:HierarchicalReinforcementLearning))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:ExplorationExploitation))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:enables ai:MultiAgentReinforcementLearning))</span></span></code></pre></figure>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:implements ai:ReinforcementLearning))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:implements ai:ControlTheory))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:implements ai:MarkovDecisionProcess))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:implements ai:PolicyGradientMethods))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:implements ai:TemporalDifference))</span></span></code></pre></figure>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:reducesTo ai:StateSpace))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:reducesTo ai:Optimisation))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:reducesTo ai:DecisionVariable))</span></span></code></pre></figure>
+<h2 id="support-relationships">Support Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:supports ai:ReinforcementLearningForRobotics))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:supports ai:GameAI))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:supports ai:AutonomousVehicle))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:supports ai:AgenticAI))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:supports ai:CombinatorialOptimisation))</span></span></code></pre></figure>
+<h2 id="contrast-relationships">Contrast Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrast-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:contrastsWith ai:InverseReinforcementLearning))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:contrastsWith ai:CurriculumLearning))</span></span></code></pre></figure>
+<h2 id="related-relationships">Related Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#related-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<figure data-rehype-pretty-code-figure><pre tabindex="0" data-language="manchester-owl" data-theme="github-light github-dark"><code data-language="manchester-owl" data-theme="github-light github-dark" style="display:grid;"><span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:RewardFunction))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:ExplorationExploitation))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:SampleEfficiency))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:TransferLearning))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:DomainRandomisation))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:LargeLanguageModels))</span></span>
+<span data-line><span>SubClassOf(ai:ActionSpace</span></span>
+<span data-line><span>  ObjectSomeValuesFrom(ai:relatedTo ai:MultiAgentReinforcementLearning))</span></span></code></pre></figure>
+<h2 id="mathematical-framework">Mathematical Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The formal characterisation of the action space within the MDP framework involves the following key mathematical objects and relationships:</p>
+<p><strong>MDP Tuple</strong>: M = (S, A, P, R, γ) where:</p>
+<ul>
+<li>S is the state space (finite, countable, or continuous)</li>
+<li>A is the action space (the subject of this article)</li>
+<li>P: S × A × S → [0,1] is the transition probability kernel, where P(s’|s,a) gives the probability of transitioning to state s’ when taking action a in state s</li>
+<li>R: S × A → ℝ is the reward function mapping state-action pairs to scalar rewards</li>
+<li>γ ∈ [0,1) is the discount factor weighting future rewards</li>
+</ul>
+<p><strong>Policy</strong>: π: S → Δ(A) for stochastic policies, or π: S → A for deterministic policies, where Δ(A) is the probability simplex over A (for discrete A) or a probability density on A (for continuous A).</p>
+<p><strong>Bellman Optimality Equations</strong>: The optimal value function V*(s) = max_{a∈A} [R(s,a) + γ Σ_{s’} P(s’|s,a) V*(s’)] for finite A; for continuous A, the max is replaced by sup and summation by integration. The optimal policy π* selects the maximising action: π*(s) = argmax_{a∈A} Q*(s,a), where Q*(s,a) = R(s,a) + γ Σ_{s’} P(s’|s,a) V*(s’).</p>
+<p><strong>Policy Gradient Theorem</strong> (Sutton et al., 2000): For a parameterised stochastic policy π_θ over A, the gradient of the expected return J(θ) = E_π[G_t] with respect to θ is: ∇_θ J(θ) = E_{s∼d^π, a∼π_θ} [∇_θ log π_θ(a|s) Q^π(s,a)], where d^π is the discounted state visitation distribution. This theorem holds for both discrete and continuous A and is the foundation of all policy gradient algorithms.</p>
+<p><strong>Entropy-Regularised Objective</strong> (SAC): The maximum-entropy RL objective over A augments expected return with an entropy term: J(π) = E_{(s,a)∼ρ_π} [R(s,a) - α log π(a|s)], where α > 0 is the temperature parameter. This objective encourages the policy to be as stochastic as possible whilst achieving high reward, effectively broadening the exploratory distribution over A. The optimal policy for this objective is π*(a|s) ∝ exp(Q*(s,a)/α), a Boltzmann distribution over A.</p>
+<p><strong>Action Space Dimensionality and Sample Complexity</strong>: For tabular MDPs with finite A, Q-learning achieves ε-optimal Q-values with O(|S||A|H³/ε²) samples under the generative model setting (Azar et al., 2013), where H is the effective horizon. The linear dependence on |A| illustrates why large discrete action spaces (|A| > 10³) require function approximation rather than tabular methods. For continuous A ⊆ ℝᵈ, sample complexity bounds from Gaussian process RL scale as O(C_f · H²/ε²) where C_f is the effective capacity of the reward function under the GP kernel—independent of |A| but dependent on the geometry of A through the kernel.</p>
+<p><strong>Control Barrier Functions for Safe Action Spaces</strong>: Given a safety constraint set C ⊆ S, a Control Barrier Function h: S → ℝ with h(s) ≥ 0 for s ∈ C and h(s) &lt; 0 otherwise is used to filter unsafe actions. The safe action set at state s is A_safe(s) = {a ∈ A: ∂h/∂s · f(s,a) + αh(s) ≥ 0} for some class-K function α, ensuring that the system remains in C under any safe policy. Quadratic Programming (QP) safety filters project policy actions onto A_safe(s) in real time with O(d²) computation, enabling hard safety guarantees in continuous action spaces without modifying the RL training objective. Formally, given an MDP M = (S, A, P, R, γ), the action space A determines the functional form of the policy π: S → Δ(A), where Δ(A) denotes the probability simplex over A for stochastic policies, or a deterministic mapping for deterministic policies. When A is finite and small—as in the classic grid-world or Atari game controller with 18 actions—tabular representations and <a href="../Temporal-Difference" class="internal alias" data-slug="Temporal-Difference">Temporal Difference</a> methods such as Q-learning are computationally tractable, achieving sample complexity bounds of O(|S||A|/ε²) under certain mixing conditions. When A is a compact subset of ℝᵈ—as in MuJoCo locomotion tasks with d ∈ {6, 17, 23, 38} joint dimensions—value-based methods are infeasible and <a href="../pages/Policy-Gradient-Methods" class="internal alias" data-slug="pages/Policy-Gradient-Methods">Policy Gradient Methods</a> parameterise the policy as a Gaussian or flow-based distribution over A, with actor-critic architectures providing variance reduction via <a href="../pages/Value-Function" class="internal alias" data-slug="pages/Value-Function">Value Function</a> baselines.</p>
+<p>The theoretical analysis of action space structure dates to Richard Bellman’s 1957 formulation of dynamic programming, which cast sequential decision problems in terms of a state space, a control (action) space, transition laws, and a return function to be optimised. Howard’s 1960 policy iteration algorithm provided the first constructive procedure for computing optimal policies over finite action spaces. The generalisation to continuous control was addressed by Pontryagin’s maximum principle (1962) in the deterministic setting, and by the Hamilton-Jacobi-Bellman equation for stochastic control. The modern <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> framework synthesised these ideas with machine learning, beginning with Watkins’s Q-learning (1989) for finite action spaces and Williams’s REINFORCE (1992) for continuous policy gradient estimation. Silver et al. (2014) introduced the deterministic policy gradient theorem, enabling efficient gradient computation for continuous action spaces without sampling from the policy, and Lillicrap et al. (2016) scaled this to deep neural function approximators in the DDPG algorithm.</p>
+<p>A critical but often underappreciated aspect of action space engineering is its interaction with exploration. In discrete spaces, ε-greedy exploration and Thompson sampling are standard, but they scale poorly with |A|. In continuous spaces, entropy-maximising algorithms such as Soft Actor-Critic (SAC) maintain an entropy bonus in the objective to prevent premature policy collapse, achieving state-of-the-art results across robotics benchmarks whilst remaining robust to hyperparameter choices. The entropy coefficient effectively controls the width of the exploratory distribution over A, and tuning it automatically (as in the automatic temperature adjustment variant of SAC) enables practitioners to avoid the manual tuning burden that hindered earlier continuous-control algorithms. By 2025, SAC and its variants have become the de facto standard for continuous action spaces in robotics and industrial control, whilst <a href="../pages/Proximal-Policy-Optimisation" class="internal alias" data-slug="pages/Proximal-Policy-Optimisation">Proximal Policy Optimisation</a> (PPO) remains dominant for discrete and mixed spaces due to its stability, simplicity, and compatibility with both action space types.</p>
+<p>The design of an action space must also account for the curse of dimensionality. A robotic hand with 24 degrees of freedom and a per-joint torque range of [-10, 10] Nm defines a 24-dimensional continuous hypercube as the nominal action space. Naively sampling from this space during exploration is catastrophically inefficient—the volume of the admissible polytope grows exponentially with dimension, and random policies almost never produce meaningful contact forces. Structured action spaces mitigate this via several mechanisms. Curriculum-based action space shaping begins training with a restricted sub-space (e.g., only wrist joints) and progressively expands access to the full space as the policy matures, exploiting the compositional structure of motor skills. Action space normalisation—linearly mapping physical actuator ranges to a canonical [-1, 1]ᵈ hypercube—eliminates the scale asymmetries that otherwise bias gradient-based <a href="../pages/Policy-Gradient-Methods" class="internal alias" data-slug="pages/Policy-Gradient-Methods">Policy Gradient Methods</a>. Stochastic embedding of actions into a lower-dimensional latent manifold (latent action representations) has been shown to reduce effective dimensionality by factors of 5–20 in dexterous manipulation benchmarks, enabling algorithms like SAC to converge in 10× fewer environment interactions.</p>
+<p>The relationship between action space topology and policy representability is a deep but often implicit theme in <a href="../pages/Deep-Reinforcement-Learning" class="internal alias" data-slug="pages/Deep-Reinforcement-Learning">Deep Reinforcement Learning</a> research. A policy network mapping observations to actions must be expressive enough to represent the optimal policy, which in turn depends on the geometry of the action space. For unimodal continuous action distributions—typical in locomotion—Gaussian policy networks are sufficient. For multi-contact manipulation, where multiple qualitatively distinct grasps may be equally valid, unimodal Gaussians fundamentally cannot represent the optimal policy distribution; energy-based models, normalising flows, or diffusion-based policies are necessary. The 2023 emergence of diffusion policy (Chi et al., RSS 2023) marked the practical arrival of expressive multi-modal continuous action distributions in real robotic systems: a denoising diffusion model conditioned on visual observations generates action sequences whose distribution captures the multi-modality of expert demonstrations, achieving state-of-the-art on 11 out of 12 real-world manipulation tasks in the RoboMimic benchmark.</p>
+<p>Action space structure also interacts with <a href="../pages/Model-Based-Reinforcement-Learning" class="internal alias" data-slug="pages/Model-Based-Reinforcement-Learning">Model-Based Reinforcement Learning</a> in subtle ways. When a learned world model is used for planning or policy gradient computation, the action space determines the planning horizon and branching factor. In discrete action spaces with large |A|, Monte Carlo tree search (MCTS) requires sophisticated pruning (as in AlphaGo/AlphaZero) to be tractable. In continuous action spaces, gradient-based planning through differentiable world models (DreamerV3, TD-MPC2) is feasible but sensitive to the curvature of the action space—ill-conditioned action manifolds produce noisy gradients that destabilise planning. Action space normalisation and regularisation are thus critical preprocessing steps in model-based methods, a fact often elided in published benchmarking results. The ongoing development of unified model-based and model-free frameworks that adapt their planning strategy based on local action space geometry represents an important open research direction as of 2026.</p>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Action spaces are classified along several dimensions, each imposing distinct algorithmic requirements:</p>
+<ul>
+<li>
+<p><strong>Discrete action spaces</strong>: A = {a₁, a₂, …, aₙ} is a finite set. Value-based methods (DQN, Rainbow, C51, IQN) compute Q(s,aᵢ) for all i simultaneously via a shared neural backbone, exploiting the finite cardinality to avoid sampling. The key advantage is that the argmax over Q-values selects a greedy action in O(|A|) time, which is computationally trivial for |A| up to ~10,000 actions. Beyond that, structured action selection is needed. Action masking—setting Q(s,aᵢ) = -∞ for invalid actions before the argmax—enforces hard constraints without any penalty engineering and is now standard in combinatorial settings including vehicle routing, job-shop scheduling, register allocation in compilers, and chip floorplanning. HAAM-RL (2024) demonstrated that heuristic-informed action masking reduces the effective exploration space by up to 78% in colour-batching re-sequencing problems, converging in one-tenth the episodes of unmasked baselines. The MaskablePPO library in Stable-Baselines3 provides a production-ready implementation used in dozens of published industrial applications by 2025. A further enhancement is invalid action shielding, where a safety layer projects policy outputs onto the set of valid actions after the fact, providing runtime safety guarantees without constraining the training objective.</p>
+</li>
+<li>
+<p><strong>Continuous action spaces</strong>: A ⊆ ℝᵈ is a compact manifold, with d typically ranging from 2 (simple navigation) to 38 (full-body humanoid). Policy gradient methods—DDPG, TD3, SAC, PPO—are applicable. TD3 (Fujimoto et al., 2018) addresses overestimation bias in continuous Q-function estimation via clipped double Q-learning and delayed policy updates, achieving superior performance on dense-reward locomotion tasks (HalfCheetah-v4: ~12,000 reward vs DDPG’s ~8,000). SAC (Haarnoja et al., 2018) adds maximum-entropy regularisation with a configurable temperature parameter α that trades off between reward maximisation and entropy maximisation, outperforming TD3 on manipulation and dexterous hand tasks where the policy must maintain multi-modal distributions over A (Ant-v4: ~6,000 reward with SAC vs ~5,000 with TD3 under standard hyperparameters). Normalising flows and diffusion models have been applied to parameterise policies over complex, multi-modal continuous action distributions in manipulation: diffusion policy (Chi et al., 2023) demonstrated 83.3% success on the Push-T task compared to 60% for Gaussian policy baselines. Coarse-to-fine action selection (arXiv 2407.07787, 2024) hierarchically refines continuous actions from a coarse grid to fine-grained continuous values, combining the stability of discrete action selection with the precision of continuous control.</p>
+</li>
+<li>
+<p><strong>Multi-discrete action spaces</strong>: A = A₁ × A₂ × … × Aₖ where each Aᵢ is a separate finite set of choices made simultaneously (e.g., selecting a unit type, a target grid cell, and an action mode in a strategy game). Multi-head network architectures output logits over each dimension independently, optionally conditioned on previous dimensions to model inter-dimension correlations (autoregressive factorisation). In StarCraft II, AlphaStar’s autoregressive decomposition splits the action space into: action function type (|A₁| = 573), delay (|A₂| = 128), queued flag (|A₃| = 2), selected units (|A₄| up to 64 units chosen from screen), target unit (|A₅| up to 500 entities), and target position (|A₆| = 128×128 grid). This reduces the effective branching factor from 10⁶ to the sum of marginal action dimensions, enabling tractable sampling.</p>
+</li>
+<li>
+<p><strong>Parameterised action spaces</strong>: A = {(k, xₖ) : k ∈ K, xₖ ∈ Xₖ} combines discrete action type selection k with a continuous parameter vector xₖ that is specific to action type k. This structure arises naturally in RoboCup (kick type × kick direction), robotics assembly (grasp type × grasp pose), and real-time strategy games (ability type × target coordinates). P-DQN (Xiong et al., 2018) handles this by executing DQN over k given fixed xₖ outputs from an actor, alternating between DQN and actor updates. HyAR (2022) learns a compact latent embedding of the discrete-continuous dependence via a conditional VAE, achieving 15.3% improvement on the RoboCup simulation task over P-DQN. The 2026 CHDP paper (arXiv 2601.05675) applied cooperative diffusion policies to parameterised action spaces, modelling both discrete and continuous components jointly via a shared denoising process and achieving state-of-the-art on all three standard parameterised action benchmarks.</p>
+</li>
+<li>
+<p><strong>Hierarchical action spaces</strong>: Macro-actions (options, skills, sub-goals) decompose a long-horizon task into temporally abstracted decisions, each of which may itself define a sub-action-space operating at a finer granularity. <a href="../Hierarchical-Reinforcement-Learning" class="internal alias" data-slug="Hierarchical-Reinforcement-Learning">Hierarchical Reinforcement Learning</a> frameworks such as HIRO (Nachum et al., 2018) and the Options Framework (Sutton et al., 1999) address credit assignment in tasks where single-step rewards are uninformative over hundreds of timesteps, such as navigation in large mazes, multi-step object manipulation, and natural language-instructed task completion. The high-level policy selects sub-goals or macro-actions; the low-level policy executes them in the physical action space. The division between high-level and low-level action spaces is itself a design choice—too coarse and the high-level policy cannot express the necessary strategy; too fine and the credit assignment problem recurs.</p>
+</li>
+<li>
+<p><strong>Graph-structured action spaces</strong>: In combinatorial <a href="../pages/Optimisation" class="internal" data-slug="pages/Optimisation">Optimisation</a> problems (e.g., travelling salesman, vehicle routing, graph colouring, chip placement), the action space is defined over graph entities and evolves dynamically as the solution is constructed one element at a time. <a href="../pages/Graph-Neural-Network" class="internal alias" data-slug="pages/Graph-Neural-Network">Graph Neural Network</a> encoders embed the partial solution state as node and edge features, and pointer network or attention-based decoders select the next action from the remaining available graph nodes. Neural combinatorial optimisation (Kool et al., 2019; Kwon et al., 2020 with POMO) has closed much of the gap with classical exact (Gurobi, CPLEX) and heuristic (LKH-3, OR-Tools) solvers, with POMO achieving within 0.1% of optimal on TSP-100 instances. Google’s 2023 AlphaDev work on assembly code optimisation discovered faster sorting algorithms using RL over a graph-structured action space of assembly instructions, reducing 3-element sort latency by 70% against the best known hand-coded implementation—a striking demonstration of action space design for <a href="../pages/Combinatorial-Optimisation" class="internal alias" data-slug="pages/Combinatorial-Optimisation">Combinatorial Optimisation</a>.</p>
+</li>
+<li>
+<p><strong>Natural language action spaces</strong>: Emergent in 2023–2026 with the rise of LLM-based agents. When an LLM agent generates free-form text as its action—a web search query, a code snippet, a database query, a message to another agent—the action space is in principle the set of all finite strings over the vocabulary, a countably infinite but sparse space. Constrained decoding via formal grammars (outlines, LMQL, Guidance), JSON schema enforcement, and function-calling APIs (OpenAI tool use, Anthropic tool blocks) impose structured restrictions on this space, converting the free-text action space into a quasi-finite parameterised space. Empirical results from 2024 show that structured action space constraints reduce hallucinated API calls in tool-using agents by 40–60% relative to unconstrained free-text generation, whilst reducing average token count by 15–25%.</p>
+</li>
+</ul>
+<p><strong>Action space design checklist for practitioners</strong>: (1) Is the action space continuous, discrete, or hybrid—choose algorithm family accordingly. (2) Are there hard constraints on valid actions—if so, implement action masking or projection at the earliest opportunity. (3) Is the nominal action space higher-dimensional than necessary—apply action space compression or factorisation. (4) Does the optimal policy have multi-modal structure—if so, use expressive policy classes (flows, diffusion) not Gaussians. (5) Does the task have long-horizon credit assignment challenges—consider hierarchical action decomposition. (6) Is sim-to-real transfer required—normalise action magnitudes and add action smoothness penalties to the reward to reduce jerk.</p>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Robotics and dexterous manipulation</strong>: Boston Dynamics, Google DeepMind Robotics, and academic labs at ETH Zurich, CMU, and UCL operate with continuous 6–23 DOF action spaces for whole-body locomotion and multi-fingered manipulation. The design choices are non-trivial: joint torque control gives the policy maximum physical expressiveness but demands accurate torque sensing and introduces stability challenges; end-effector velocity control (Cartesian space actions) is safer and more intuitive but removes low-level force control capability. Sim-to-real transfer relies on <a href="../pages/Domain-Randomisation" class="internal alias" data-slug="pages/Domain-Randomisation">Domain Randomisation</a> over action space parameters (motor friction, gear ratios, torque limits, control frequency) to ensure that policies trained in simulation remain robust when deployed on physical hardware with its associated latency (typically 10–30 ms control cycle), actuator hysteresis, and joint limit discontinuities. The 2023 introduction of diffusion policy (Chi et al.) and flow matching policies for imitation learning opened a path to richer multimodal action distributions without explicit policy gradient estimation, enabling policies to represent the diverse grasps an expert might choose for the same object. Google DeepMind’s RT-2 (2023) and Pi-0 (2024) further demonstrated robot vision-language-action models that tokenise motor commands alongside text, unifying discrete and continuous action modalities in a single autoregressive architecture and achieving zero-shot generalisation to unseen object-task combinations.</p>
+<p><strong>Game AI and strategy games</strong>: Atari ALE (discrete, 18 actions), StarCraft II (multi-discrete, ~10⁶ effective combinations), and Go (discrete, ~10¹⁷ legal positions) span the full range of discrete action space complexity. AlphaStar (Vinyals et al., 2019) handled StarCraft II’s multi-discrete action space with an autoregressive decomposition—selecting action type, target unit, queuing modifier, and target location sequentially—reducing the effective branching factor from millions to the cardinality of each sub-dimension, whilst a pointer network over observed entities provided O(1) scaling with the number of units. Dota 2’s action space (Berner et al., 2019) comprised approximately 170,000 possible actions per hero per timestep, addressed via a mixed discrete-continuous factorisation with independent heads for each action dimension. The <a href="../pages/Game-AI" class="internal alias" data-slug="pages/Game-AI">Game AI</a> challenge of 2020–2025 has shifted from single-player discrete games towards multi-player, real-time, partially observable environments where the joint action space of multiple agents is the principal scalability bottleneck, motivating <a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal alias" data-slug="pages/Multi-Agent-Reinforcement-Learning">Multi-Agent Reinforcement Learning</a> research into factored joint action spaces and independent action spaces with communication channels.</p>
+<p><strong>Autonomous driving and navigation</strong>: Continuous acceleration [−4, 4] m/s² and steering [−π/4, π/4] rad action spaces are standard in high-fidelity simulators (CARLA, SUMO, Highway-env, nuPlan). Safety constraints—speed limits, collision avoidance zones, traffic rules—are enforced either by projecting sampled actions onto the feasible set via a safety layer (CBF-based shields, potential fields), by augmenting the action space with safety annotations that trigger override logic, or via constrained <a href="../Safe-Reinforcement-Learning" class="internal alias" data-slug="Safe-Reinforcement-Learning">Safe Reinforcement Learning</a> formulations that add penalty terms for constraint violations. The industry shift towards end-to-end learning pipelines—Wayve’s GAIA-1 world model (2023) and LINGO-2 action model (2024), Comma.ai’s OpenPilot—challenges the structured hand-designed action space paradigm: these systems learn latent action representations from raw video observations, bypassing the need for explicit human action space specification. Wayve raised $1.05 billion in Series C funding in May 2024, in part on the strength of end-to-end continuous action space learning for urban UK driving scenarios.</p>
+<p><strong>LLM alignment and tool-using agents</strong>: <a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal alias" data-slug="pages/Reinforcement-Learning-from-Human-Feedback">Reinforcement Learning from Human Feedback</a> for <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> operates over a tokenised action space of vocabulary size ~50,000–130,000 tokens per decoding step, effectively an astronomically large discrete action space (|A| ≈ 10⁵). The RLHF pipeline (Ouyang et al., 2022 InstructGPT) addresses this by computing the KL divergence between the RL policy and a supervised fine-tuning reference policy, preventing the policy from drifting into regions of the action space where the reward model is unreliable. The PPO update in RLHF uses the per-token log probabilities as continuous rewards, treating the entire generation episode as a single action trajectory through the token action space. In tool-using <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a> systems, the action space is constrained to a finite but potentially large set of API call signatures defined by JSON schema specifications; constrained decoding (LMQL, Outlines, function-calling APIs) ensures that only syntactically valid tool invocations are generated, improving reliability by 40–60% relative to unconstrained generation in 2024 ReAct and LATS benchmarks.</p>
+<p><strong>Financial and energy market trading</strong>: Discrete order type selection (market, limit, cancel, modify) and continuous size/price actions are combined in hybrid parameterised action spaces. The challenge is that financial markets exhibit non-stationary reward signals, meaning that action spaces calibrated on historical data may be suboptimal in live trading. FLAG-TRADER (2025) demonstrated LLM-guided RL for equity trading with prompt-injected action space descriptions—the LLM generates high-level trading rationale that conditions the RL agent’s continuous position-sizing action space—improving Sharpe ratio by 12% over DQN baselines on US equity datasets. Energy system control (power grid frequency regulation, demand response) employs continuous action spaces over controllable generation and load assets, with action space constraints encoding grid stability requirements. Recent work on battery storage dispatch optimisation (2024, MDPI Applied Sciences) uses SAC with normalised action spaces over megawatt-scale battery charge/discharge rates, achieving 8–15% cost reduction over rule-based baselines in UK grid balancing simulations.</p>
+<p><strong>Healthcare and clinical decision support</strong>: Action spaces in clinical settings require extreme safety discipline. Drug dosing RL (sepsis treatment, ventilator management, insulin dosing) operates over continuous dose action spaces with hard safety constraints on maximum doses and rate-of-change limits. The MIMIC-III sepsis cohort has been used to train offline RL policies (conservative Q-learning, batch-constrained QL) that recommend treatment actions from a discrete set of vasopressor and fluid bolus combinations; evaluation against clinician practice shows that learned policies outperform average clinician decisions in survival outcomes when evaluated with importance-sampling counterfactual estimators, though direct deployment has not yet been approved by regulatory bodies. The action space in these settings must explicitly encode the no-action or watchful-waiting option as a valid low-cost alternative to intervention, which naive RL formulations often under-sample.</p>
+<p><strong>Combinatorial optimisation at industrial scale</strong>: Action spaces defined over combinatorial search spaces—graph nodes, permutations, bin-packing assignments—are addressed by neural combinatorial optimisation methods. Google DeepMind’s AlphaDev (2023) used an RL agent with an action space of assembly instruction insertion/replacement operations to discover a 3-element sorting algorithm that is 70% faster than the previously known best. Delivery logistics (DHL, Ocado in the UK) uses RL over vehicle routing action spaces to optimise last-mile delivery, with action masking enforcing capacity, time-window, and traffic constraint satisfaction. The 2025 survey on RL for industrial combinatorial optimisation (MDPI Applied Sciences) identifies action masking combined with constructive heuristic guidance as the dominant engineering pattern achieving production-grade performance across 15+ problem families.</p>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The theoretical foundation of action space analysis rests on three pillars: the MDP formalism (Bellman 1957; Puterman 1994), optimal control theory (Pontryagin 1962; Bertsekas 1995), and statistical learning theory applied to function approximation in large action spaces. The field’s development tracks the evolution of its computational substrate: early discrete action space work (Q-learning, 1989; REINFORCE, 1992) required only modest compute; modern continuous action space research (SAC, 2018; diffusion policy, 2023) routinely uses hundreds of GPU-hours; and the emerging robot foundation model paradigm (RT-2, 2023; Pi-0, 2024) requires thousands of TPU-hours for pretraining.</p>
+<p>Key theoretical milestones include:</p>
+<ul>
+<li>Bellman (1957) and Puterman (1994) formalised the MDP framework, establishing action space as a first-class mathematical object with the Bellman optimality conditions expressing the relationship between state-action values and the optimal policy.</li>
+<li>Howard (1960) proved that policy iteration converges to the optimal policy over finite action spaces in a finite number of iterations, a result whose extension to continuous spaces required approximation theory.</li>
+<li>Pontryagin et al. (1962) developed the maximum principle for continuous-time optimal control, establishing conditions for optimal action selection in continuous action manifolds; this is the foundational result underlying all gradient-based continuous action space RL.</li>
+<li>Sutton &amp; Barto (1998, 2018) provided the canonical textbook treatment of action space typology and its algorithmic implications, distinguishing discrete from continuous cases and introducing the policy gradient theorem in accessible form.</li>
+<li>Silver et al. (2014) on deterministic policy gradients established the off-policy gradient estimator for deterministic continuous policies, enabling data-efficient continuous action space learning; this result spawned DDPG, TD3, and SAC.</li>
+<li>Mnih et al. (2015) on DQN demonstrated deep Q-networks across Atari’s 18-action discrete space, achieving human-level performance on 49 out of 57 games and establishing the benchmark ecosystem for discrete action space RL research.</li>
+<li>Schulman et al. (2017) on PPO provided a practical, stable algorithm covering both discrete and continuous action spaces using a clipped surrogate objective; PPO remains the most widely deployed policy gradient method as of 2025, used in RLHF for all major LLMs.</li>
+<li>Haarnoja et al. (2018) on SAC introduced entropy-regularised continuous action space learning with automatic temperature tuning, demonstrating that a single algorithm with default hyperparameters could match or exceed specialised methods across 6 continuous control benchmarks.</li>
+<li>Vinyals et al. (2019) on AlphaStar demonstrated autoregressive decomposition of multi-discrete action spaces at the level of the world’s best StarCraft II players, with an action space of ~570 discrete types combined with spatial and entity pointer selections.</li>
+<li>Nachum et al. (2018) HIRO introduced hierarchical action spaces for robot navigation with significant improvements in sparse-reward settings, showing that a 3-dimensional sub-goal action space for the high-level policy could reduce the effective planning horizon from hundreds to tens of steps.</li>
+<li>Chi et al. (2023) on diffusion policy established that multi-modal continuous action distributions trained via denoising score matching could outperform Gaussian policy baselines on 11/12 real robot manipulation tasks, opening the diffusion-as-policy research direction.</li>
+</ul>
+<p>UK academic contributions are significant and geographically distributed: David Silver (UCL, Google DeepMind) co-developed deterministic policy gradients, AlphaGo’s action space representation, and AlphaStar’s multi-discrete decomposition; UCL’s Centre for Artificial Intelligence continues publishing on continuous action space theory. The Edinburgh Centre for Robotics (a partnership between Edinburgh and Heriot-Watt Universities) publishes on safe exploration in continuous action spaces for physical outdoor service robots, with field trials in Scottish hillside and urban environments. Imperial College London’s Aerial Robotics Lab and Hamlyn Centre for Medical Robotics address continuous action space control for UAV formation flight and minimally invasive surgical tool manipulation respectively. The FAIR-SPACE Hub, led by Surrey with Imperial and Edinburgh as key partners, explores hierarchical action spaces for autonomous planetary robotics, with results on sample-efficient grasping in unstructured terrain presented at ICRA 2024 and IROS 2025. The University of Cambridge’s Computational and Biological Learning Lab (CBL) has contributed theoretical analysis of action-conditioned sequence models relevant to discrete action space language generation. The Alan Turing Institute’s Programme on Safe and Ethical AI, with nodes at Manchester, Leeds, and Edinburgh, funds research on action space constraint satisfaction with formal safety guarantees.</p>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>As of mid-2026, action space research has bifurcated into two dominant threads. The first is robotics-focused: robot foundation models such as Google DeepMind’s RT-2 and Pi-0 operate over tokenised or diffusion-based action spaces that unify language and motor control, enabling zero-shot generalisation across manipulation tasks without per-task action space redesign. These models treat robot actions as tokens in a shared vocabulary with language tokens, effectively collapsing the distinction between discrete language actions and continuous motor commands. The second thread concerns <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a>: LLM-based autonomous agents operating over API call, code execution, and web browser action spaces have proliferated in enterprise deployments (Salesforce Agentforce, Microsoft Copilot Studio, Google Agentspace), each requiring custom action space schemas that balance expressiveness with safety and auditability.</p>
+<p>Action masking for constraint satisfaction has matured from a research technique to an engineering standard: the 2024 HAAM-RL paper and associated industrial applications demonstrated consistent 30–78% reductions in sample complexity across scheduling, routing, and packing problems. The open-source MaskablePPO extension in Stable-Baselines3 provides production-ready action masking for discrete spaces. <a href="../pages/GPU-Acceleration" class="internal alias" data-slug="pages/GPU-Acceleration">GPU Acceleration</a> via Isaac Gym and MuJoCo MJX now enables training with millions of parallel environment instances, shifting the bottleneck from sample complexity to action space parameterisation quality.</p>
+<p>Hybrid parameterised action spaces remain an active research frontier: the CHDP paper (2026, arXiv 2601.05675) introduced cooperative hybrid diffusion policies that jointly model discrete and continuous action dimensions using denoising diffusion probabilistic models, achieving new state-of-the-art results on parameterised action benchmark tasks. The intersection of continuous-time RL (Hamiltonian flow formulations, arXiv 2602.14587) and continuous action spaces is emerging as a theoretically rich area with implications for optimal control synthesis.</p>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>United Kingdom contributions to action space research span academia and industry. At UCL, David Silver’s group (now primarily at Google DeepMind, with formal UCL affiliation) produced foundational work on deterministic policy gradients and AlphaGo’s action space representation; UCL’s Robotics Institute continues research on contact-rich manipulation action spaces. Imperial College London’s Hamlyn Centre for Surgical Robotics and Aerial Robotics Lab publish on continuous action space control for minimally invasive surgery and UAV navigation respectively. The Edinburgh Centre for Robotics (a partnership between Edinburgh and Heriot-Watt Universities) focuses on safe exploration in continuous action spaces for outdoor service robots, with field trials in Scottish terrain.</p>
+<p>In Northern England, the University of Manchester’s School of Engineering and the Sheffield Robotics Institute address industrial action spaces for collaborative robot (cobot) assembly and inspection tasks. The National Robotarium in Edinburgh (opened 2022, £22.4M UKRI investment) provides infrastructure for physical testing of RL policies with continuous action spaces in a safe environment. The Alan Turing Institute, headquartered in London but with nodes at Manchester, Leeds, and Edinburgh, funds research programmes on safe <a href="../Safe-Reinforcement-Learning" class="internal alias" data-slug="Safe-Reinforcement-Learning">Safe Reinforcement Learning</a> with provable action space constraint satisfaction, directly relevant to UK Government priorities around safe AI deployment. UK industry applications include BP and Shell using continuous action space RL for process control optimisation, and Wayve (Cambridge-based) deploying end-to-end continuous action space RL for autonomous vehicles in London’s urban environment, having raised $1.05 billion in Series C funding in May 2024.</p>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The period 2026–2030 is expected to see action space research mature along four trajectories. First, the unification of language and motor action spaces in robot foundation models will advance substantially: successor models to RT-2 and Pi-0 are expected to demonstrate reliable generalisation across household manipulation tasks requiring semantically structured discrete-continuous hybrid action spaces that ground natural language commands directly to motor primitives, bypassing hand-designed action abstraction layers. The key technical challenge is the co-training of language and motor modalities on mismatched action spaces—text has an effective action space of ~100K tokens per step whilst motor control uses a 20–40 dimensional continuous manifold—which demands new architectural techniques for action modality fusion. Companies including Physical Intelligence (Pi), Apptronik, Figure AI, and Boston Dynamics are all pursuing variants of this vision in their robot learning stacks.</p>
+<p>Second, <a href="../Safe-Reinforcement-Learning" class="internal alias" data-slug="Safe-Reinforcement-Learning">Safe Reinforcement Learning</a> will bring formal guarantees into continuous action space policies for safety-critical deployment: Lyapunov-based and Control Barrier Function (CBF) safe policy synthesis methods are being integrated into standard RL training pipelines via differentiable safety layers that project policy outputs onto provably safe action subsets. This will enable certified safety certificates for deployed robotic manipulation and <a href="../pages/Autonomous-Vehicle" class="internal alias" data-slug="pages/Autonomous-Vehicle">Autonomous Vehicle</a> systems, satisfying regulatory requirements expected from the UK’s Product Safety and Telecommunications Infrastructure (PSTI) Act and EU Machinery Regulation for autonomously acting devices. The UK government’s AI Safety Institute is expected to publish formal action space safety requirements for high-risk AI systems within this period.</p>
+<p>Third, the action space design problem for <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a> will be formalised and standardised: tool-use action space schemas analogous to OpenAPI specifications for web services will emerge as the industry standard for composable, verifiable, auditable agent tool chains. The NIST AI Agent Standards Initiative, launched February 2026, will produce specifications for agent action logs and action space schemas by 2027–2028. This standardisation will enable action space compatibility auditing—checking whether a proposed agent tool suite can compose with an existing agent ecosystem without ambiguity or conflict—analogous to how OpenAPI tooling validates REST API compatibility.</p>
+<p>Fourth, learned action space representations—wherein the agent’s effective action space is itself a trainable object rather than a fixed design choice—will transition from research prototypes to deployable systems. Latent action representation methods (latent action spaces, action tokenisation for diffusion models) demonstrated in 2024–2025 that compressing a large nominal action space to a low-dimensional manifold adapted to the task distribution can reduce <a href="../pages/Sample-Efficiency" class="internal alias" data-slug="pages/Sample-Efficiency">Sample Efficiency</a> requirements by up to 20× whilst improving the quality of discovered policies. The challenge of preventing the learned action space from collapsing to degenerate modes—analogous to the posterior collapse problem in VAEs—remains an active research problem. Token-based action representations that treat motor commands as elements of a shared vocabulary with language tokens are the most promising direction, given the empirical success of RT-2 and Pi-0 and the theoretical support from <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> research showing that joint representation spaces enable cross-domain generalisation.</p>
+<p>Fifth and finally, multi-agent action spaces will require attention at scale: as AI systems are deployed in multi-agent settings (autonomous vehicle fleets, multi-robot warehouses, distributed energy market participants), the joint action space grows exponentially with the number of agents. <a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal alias" data-slug="pages/Multi-Agent-Reinforcement-Learning">Multi-Agent Reinforcement Learning</a> research will produce practical factored joint action space representations—exploiting conditional independence structures in the interaction graph—and distributed coordination protocols (attention-based communication, implicit coordination via action prediction) that achieve near-optimal joint policies without centralised action enumeration.</p>
+<h2 id="evaluation-and-benchmarks">Evaluation and Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-and-benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Evaluating action space design choices requires careful distinction between algorithm performance (measured on the benchmark) and action space quality (measured by the sensitivity of algorithm performance to action space choices). Standard evaluation practice uses:</p>
+<ul>
+<li>
+<p><strong>Continuous control benchmarks (DMControl / MuJoCo)</strong>:</p>
+<ul>
+<li>HalfCheetah-v4: d=6 action dimensions, dense reward; canonical benchmark for SAC vs TD3 comparison</li>
+<li>Hopper-v4: d=3 action dimensions, sparse-ish reward; sensitive to policy stability</li>
+<li>Walker2d-v4: d=6 action dimensions; reward landscape benefits from smooth action space normalisation</li>
+<li>Ant-v4: d=8 action dimensions; tests scaling of algorithms to moderate dimensionality</li>
+<li>Humanoid-v4: d=17 action dimensions; exposes limitations of Gaussian policies; diffusion policy advantages most visible here</li>
+<li>Dog-Run (DMControl): d=38 action dimensions; extreme continuous action challenge; requires latent action compression</li>
+<li>Results reported as average episode return ± standard deviation over 10 seeds at 1M, 3M, or 10M environment steps</li>
+<li>D4RL offline RL benchmark provides fixed dataset variants for offline continuous action evaluation</li>
+</ul>
+</li>
+<li>
+<p><strong>Discrete action space benchmarks</strong>:</p>
+<ul>
+<li>Atari-57: 18-action ALE environments; canonical discrete benchmark; DQN, Rainbow, C51, IQN, DrQ-v2 standard comparisons</li>
+<li>NetHack Learning Environment (NLE): ~90 action types × ~25,000 contextual menu options; exposes limitations of flat discrete action methods</li>
+<li>MiniGrid / BabyAI: 7-action grid worlds with sparse reward; tests credit assignment in small discrete spaces</li>
+<li>Crafter: 17-action crafting environment; tests long-horizon planning with discrete action sequences</li>
+</ul>
+</li>
+<li>
+<p><strong>Hybrid and parameterised action benchmarks</strong>:</p>
+<ul>
+<li>Platform-2D (RoboCup 2D half-field offense): discrete kick type + continuous kick direction</li>
+<li>Hard Goal, Hard Platform, Goal v2: standard parameterised action space suite from Fan et al. (2019)</li>
+<li>King of Glory: mobile MOBA with parameterised action space; HyAR (2022) achieved 51.4% win rate vs 43.2% for P-DQN baseline</li>
+<li>Results: average episodic return over 500K–2M environment steps, 5 seeds</li>
+</ul>
+</li>
+<li>
+<p><strong>Combinatorial optimisation benchmarks (graph action spaces)</strong>:</p>
+<ul>
+<li>TSP-20/50/100/1000: travelling salesman on random Euclidean instances; optimality gap vs Concorde exact solver</li>
+<li>CVRP-50/100: capacitated vehicle routing; optimality gap vs LKH-3 heuristic</li>
+<li>JSSP-6×6 / 10×10: job-shop scheduling; makespan relative to critical path lower bound</li>
+<li>Graph Colouring, Bin Packing, Knapsack: additional standard CO benchmarks</li>
+<li>POMO (2020) achieves optimality gap of 0.07% on TSP-100 vs 2.1% for Attention Model (Kool et al., 2019)</li>
+</ul>
+</li>
+<li>
+<p><strong>LLM agent benchmarks (natural language / API action spaces)</strong>:</p>
+<ul>
+<li>ALFWorld: household text-based task completion; success rate over 134 test tasks</li>
+<li>WebArena: browser-based task completion on 4 live web apps; success rate over 812 tasks</li>
+<li>AgentBench: 8-environment multi-domain agent evaluation covering OS, DB, KG, web browsing, lateral thinking</li>
+<li>LATS/ReAct: tool-use agent frameworks; structured vs unstructured action space comparison</li>
+</ul>
+</li>
+</ul>
+<p>Ablation studies within these benchmarks reveal key insights about action space design:</p>
+<ul>
+<li>Removing action masking from PPO on CVRP-100 increases solution cost by 12–18%</li>
+<li>Switching from Gaussian to diffusion policy on Push-T real robot task: 60% → 83% success rate</li>
+<li>Replacing raw joint angles with normalised torques in Ant-v4: 35% reduction in SAC training time to convergence</li>
+<li>Adding action smoothness penalty (L2 penalty on successive action differences) in HalfCheetah: 8% improvement in sim-to-real transfer success in independent UCL evaluation</li>
+<li>Reducing action space from 573 to 314 types in StarCraft II (removing non-applicable units): AlphaStar training speed improved by 23% with no change in peak Elo</li>
+<li>Latent action compression (8D → 2D) in robotic assembly task: 15× reduction in SAC sample complexity with 94% of original task performance</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Bellman, R. (1957). <em>Dynamic Programming</em>. Princeton University Press.</li>
+<li>Puterman, M. L. (1994). <em>Markov Decision Processes: Discrete Stochastic Dynamic Programming</em>. Wiley.</li>
+<li>Williams, R. J. (1992). Simple statistical gradient-following algorithms for connectionist reinforcement learning. <em>Machine Learning</em>, 8(3–4), 229–256.</li>
+<li>Watkins, C. J. C. H., &amp; Dayan, P. (1992). Q-learning. <em>Machine Learning</em>, 8(3–4), 279–292.</li>
+<li>Sutton, R. S., &amp; Barto, A. G. (2018). <em>Reinforcement Learning: An Introduction</em> (2nd ed.). MIT Press.</li>
+<li>Mnih, V., et al. (2015). Human-level control through deep reinforcement learning. <em>Nature</em>, 518(7540), 529–533.</li>
+<li>Silver, D., et al. (2014). Deterministic policy gradient algorithms. <em>ICML 2014</em>, 387–395.</li>
+<li>Lillicrap, T. P., et al. (2016). Continuous control with deep reinforcement learning (DDPG). <em>ICLR 2016</em>.</li>
+<li>Schulman, J., et al. (2017). Proximal policy optimization algorithms. <em>arXiv:1707.06347</em>.</li>
+<li>Haarnoja, T., et al. (2018). Soft actor-critic: Off-policy maximum entropy deep reinforcement learning. <em>ICML 2018</em>.</li>
+<li>Fujimoto, S., Hoof, H., &amp; Meger, D. (2018). Addressing function approximation error in actor-critic methods (TD3). <em>ICML 2018</em>.</li>
+<li>Vinyals, O., et al. (2019). Grandmaster level in StarCraft II using multi-agent reinforcement learning. <em>Nature</em>, 575(7782), 350–354.</li>
+<li>Xiong, J., et al. (2018). Parametrized deep Q-networks learning: Reinforcement learning with discrete-continuous hybrid action space. <em>arXiv:1810.06394</em>.</li>
+<li>Zhou, H., et al. (2022). HyAR: Addressing discrete-continuous action reinforcement learning via hybrid action representation. <em>ICLR 2022</em>.</li>
+<li>Kool, W., et al. (2019). Attention, learn to solve routing problems! <em>ICLR 2019</em>.</li>
+<li>Chi, C., et al. (2023). Diffusion policy: Visuomotor policy learning via action diffusion. <em>RSS 2023</em>.</li>
+<li>Shi, F., et al. (2024). Heuristic Algorithm-based Action Masking Reinforcement Learning (HAAM-RL) with ensemble inference method. <em>arXiv:2403.14110</em>.</li>
+<li>Makoviychuk, V., et al. (2021). Isaac Gym: High performance GPU-based physics simulation for robot learning. <em>NeurIPS 2021 Datasets &amp; Benchmarks</em>.</li>
+<li>Sutton, R. S., et al. (2000). Policy gradient methods for reinforcement learning with function approximation. <em>NeurIPS 2000</em>.</li>
+<li>Berner, C., et al. (2019). Dota 2 with large scale deep reinforcement learning. <em>arXiv:1912.06680</em>.</li>
+<li>Nachum, O., et al. (2018). Data-efficient hierarchical reinforcement learning. <em>NeurIPS 2018</em>.</li>
+<li>Wu, T., et al. (2026). Cooperative Hybrid Diffusion Policies for Reinforcement Learning in Parameterized Action Space. <em>arXiv:2601.05675</em>.</li>
+<li>Zeng, L., et al. (2026). Decoupled Continuous-Time Reinforcement Learning via Hamiltonian Flow. <em>arXiv:2602.14587</em>.</li>
+<li>Dou, Z., et al. (2025). FLAG-TRADER: Fusion LLM-Agent with gradient-based reinforcement learning for market trading. <em>ACL Findings 2025</em>.</li>
+<li>Silver, D., et al. (2016). Mastering the game of Go with deep neural networks and tree search. <em>Nature</em>, 529(7587), 484–489.</li>
+<li>Andrychowicz, M., et al. (2020). Learning dexterous in-hand manipulation. <em>International Journal of Robotics Research</em>, 39(1), 3–20.</li>
+<li>MDPI Applied Sciences (2025). A systematic review on reinforcement learning for industrial combinatorial optimization problems. <em>Applied Sciences</em>, 15(3), 1211.</li>
+<li>ICO (2024). Enabling businesses in the UK economy 2024/25. Information Commissioner’s Office.</li>
+</ol>
+<h2 id="action-space-design-patterns-and-anti-patterns">Action Space Design Patterns and Anti-Patterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#action-space-design-patterns-and-anti-patterns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Experienced RL practitioners have developed a set of design patterns that consistently improve training stability and policy quality. These patterns are rarely documented in papers (which report the final design, not the design process) but are extensively shared in industry blogs, competition post-mortems, and Slack/Discord communities:</p>
+<p><strong>Recommended design patterns</strong>:</p>
+<ul>
+<li>
+<p><em>Normalise all action dimensions to [-1, 1]</em>: Unnormalised actions (e.g., joint torques in N·m ranging from -200 to +200) create asymmetric gradient landscapes that slow convergence. Normalisation to [-1, 1] at the environment level, with denormalisation to physical units inside the step() function, is a near-universal best practice. Failure to normalise is one of the most common causes of inexplicably poor SAC performance on custom robotic environments.</p>
+</li>
+<li>
+<p><em>Use action smoothing for sim-to-real transfer</em>: Adding a penalty term β||aₜ - aₜ₋₁||² to the reward function discourages high-frequency action oscillation (jerk) that physical actuators cannot execute faithfully. Without this, policies trained in simulation often fail on hardware due to latency-induced action chattering. The penalty coefficient β should be tuned to be large enough to suppress jerk but small enough not to dominate the task reward.</p>
+</li>
+<li>
+<p><em>Implement action masking from the start in discrete settings</em>: Adding action masking as an afterthought (after training converges in an unmasked environment) rarely produces the same sample efficiency gains as masking-from-the-start. The mask changes the gradient landscape fundamentally; the policy learned without masking has already committed to patterns that may not generalise to the masked setting.</p>
+</li>
+<li>
+<p><em>Separate high-level from low-level actions in hierarchical settings</em>: When the task naturally decomposes into abstract strategy and concrete execution (e.g., “navigate to object” vs “pick up object”), implementing a <a href="../Hierarchical-Reinforcement-Learning" class="internal alias" data-slug="Hierarchical-Reinforcement-Learning">Hierarchical Reinforcement Learning</a> architecture with separate action spaces at each level consistently outperforms monolithic flat action spaces on tasks with H > 100 timesteps, even when the flat space is tractable.</p>
+</li>
+<li>
+<p><em>Test action space sensitivity early</em>: Before investing in algorithm tuning, run a grid search over 3–5 action space parameterisations (different normalisation schemes, action repeat frequencies, action discretisation resolutions) with fixed hyperparameters. Action space choice can change terminal performance by 50–300%; hyperparameter tuning within a poor action space is wasted compute.</p>
+</li>
+</ul>
+<p><strong>Anti-patterns to avoid</strong>:</p>
+<ul>
+<li>
+<p><em>Over-discrete continuous actions</em>: Discretising a continuous action space into coarse bins (e.g., 3 thrust levels: low/medium/high) to use value-based methods loses fine-grained control information and produces jerky, suboptimal policies. Use policy gradient methods for continuous actions.</p>
+</li>
+<li>
+<p><em>Redundant actions</em>: Including actions that are always dominated by other actions (e.g., a “wait” action that produces zero reward when any other action produces positive reward) wastes representational capacity and slows convergence. Prune dominated actions using domain knowledge before training.</p>
+</li>
+<li>
+<p><em>Unnested parameterised actions</em>: Parameterised action spaces where the parameter dimension is the same for all action types (e.g., all actions take a 2D coordinate parameter, even when the parameter is meaningless for some action types) waste the policy network’s representational capacity and introduce spurious gradient signal.</p>
+</li>
+<li>
+<p><em>Too-frequent action repetition</em>: In high-frequency control loops (e.g., 1000 Hz robot control), training a new policy decision at every timestep is unnecessary and computationally prohibitive. Action repeat (executing the same action for k consecutive timesteps, k ∈ {2,4,8}) reduces the effective decision frequency whilst preserving control quality; Frame-skip in Atari uses k=4 by default.</p>
+</li>
+<li>
+<p><em>Ignoring action space in reward shaping</em>: Reward shaping terms that reference absolute action magnitudes (e.g., penalising action values above a threshold in physical units) may behave unexpectedly if the action space normalisation changes during development. All reward shaping terms should reference normalised action values or action differences, not physical unit magnitudes.</p>
+</li>
+</ul>
+<h2 id="relationship-to-other-mdp-components">Relationship to Other MDP Components<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-other-mdp-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The action space does not exist in isolation; its design must be co-designed with the other MDP components:</p>
+<ul>
+<li>
+<p><strong>Action space ↔ State space</strong>: The state space must contain sufficient information for the policy to select appropriate actions. If the state omits information needed to distinguish when action A is better than action B, the resulting policy will be stochastic (randomising between A and B), inflating entropy and reducing performance. For robotics, this often means including proprioceptive state (joint angles, velocities) even when task completion could theoretically be assessed from camera alone. Partial observability (POMDPs) further complicates action selection, since the policy cannot observe the true state directly; recurrent or memory-augmented policies (LSTMs, Transformers with context windows) must infer effective states from observation histories before mapping to actions.</p>
+</li>
+<li>
+<p><strong>Action space ↔ Reward function</strong>: The <a href="../pages/Reward-Function" class="internal alias" data-slug="pages/Reward-Function">Reward Function</a> must provide a gradient signal distinguishing good from bad actions at the resolution of the action space. If the reward function cannot distinguish between two nearby actions in a continuous space, the policy gradient provides no useful signal for choosing between them. This coupling motivates <a href="../pages/Reward-Shaping" class="internal alias" data-slug="pages/Reward-Shaping">Reward Shaping</a> as a tool to amplify reward signal in regions of the action space where the task reward is sparse. <a href="../pages/Curriculum-Learning" class="internal alias" data-slug="pages/Curriculum-Learning">Curriculum Learning</a> complements reward shaping by initially restricting the agent to a restricted sub-region of A where the reward landscape is more favourable, then progressively expanding access to the full action space as the policy matures.</p>
+</li>
+<li>
+<p><strong>Action space ↔ <a href="../pages/Environment-Model" class="internal alias" data-slug="pages/Environment-Model">Environment Model</a></strong>: The environment’s transition dynamics P(s’|s,a) must be smooth with respect to a in continuous action spaces for gradient-based algorithms to work; discontinuous transitions (e.g., a contact force that suddenly causes a robot arm to slip) create non-differentiable regions in the action space that must be handled by model-free rather than model-based methods. In <a href="../pages/Model-Based-Reinforcement-Learning" class="internal alias" data-slug="pages/Model-Based-Reinforcement-Learning">Model-Based Reinforcement Learning</a>, the learned world model must accurately represent the action-conditional transition distribution; errors in the model near the boundaries of the action space (where physical limits cause non-linearities) propagate into planning errors and suboptimal policies.</p>
+</li>
+<li>
+<p><strong>Action space ↔ <a href="../Exploration-Exploitation" class="internal" data-slug="Exploration-Exploitation">Exploration-Exploitation</a> strategy</strong>: The relationship between action space structure and exploration efficiency determines the practical sample complexity. In very high-dimensional continuous action spaces (d > 20), uniform exploration is exponentially inefficient; structured exploration (count-based bonuses operating in learned state-action clusters, curiosity-driven bonuses based on world model prediction error, information-gain-based exploration via Bayesian neural networks) is necessary. In very large discrete spaces (|A| > 1000), ε-greedy exploration visits each action too infrequently; Thompson sampling over uncertainty estimates or Upper Confidence Bound (UCB) methods adapted to neural function approximators provide more directed exploration.</p>
+</li>
+<li>
+<p><strong>Action space ↔ <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a></strong>: Learned policies are transferable across environments only if the source and target environments share compatible action spaces. When the action spaces differ (e.g., a robot with 6 DOF training and then deploying on a 7 DOF robot), action space embedding methods that project the target action space into a compatible representation with the source are required. Cross-embodiment <a href="../pages/Transfer-Learning" class="internal alias" data-slug="pages/Transfer-Learning">Transfer Learning</a> is an active 2024–2026 research area, with Google DeepMind’s cross-robot policy transfer work demonstrating that SAC policies trained on one robot morphology can be transferred to another via learned action space adapters. Robot foundation models (RT-2, Pi-0) achieve cross-embodiment transfer by learning a shared tokenised action representation that abstracts over specific joint configurations.</p>
+</li>
+<li>
+<p><strong>Action space ↔ Safety constraints</strong>: <a href="../Safe-Reinforcement-Learning" class="internal alias" data-slug="Safe-Reinforcement-Learning">Safe Reinforcement Learning</a> frameworks must account for the geometry of the safe action subset A_safe(s) ⊆ A, which varies with state. Static safe action masks (removing permanently unsafe actions) are straightforward to implement; state-dependent safety filters (CBF-based projection, model predictive safety certification) require real-time computation of A_safe(s) at each timestep. The computational overhead of safety filtering scales with the dimensionality of A and the complexity of the constraint set; for d > 10 and non-convex constraint sets, QP-based projection becomes impractical without approximation.</p>
+</li>
+</ul>
+<h2 id="simulation-environments-for-action-space-research">Simulation Environments for Action Space Research<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#simulation-environments-for-action-space-research" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The development and evaluation of action space methods relies on a rich ecosystem of simulation environments that provide standardised interfaces:</p>
+<ul>
+<li>
+<p><strong>MuJoCo</strong> (DeepMind, now open source):</p>
+<ul>
+<li>Physics simulator providing continuous action space control tasks</li>
+<li>DMControl suite: 28 benchmark tasks spanning locomotion, manipulation, and balance</li>
+<li>MuJoCo MJX (2024): GPU-accelerated parallelism over millions of environment instances</li>
+<li>Standard: continuous action spaces in Box(low, high, shape=(d,)) with d ranging from 1 (pendulum) to 38 (dog)</li>
+<li>Used in: SAC, TD3, DDPG, PPO benchmark papers</li>
+</ul>
+</li>
+<li>
+<p><strong>Isaac Gym / Isaac Lab</strong> (NVIDIA):</p>
+<ul>
+<li>GPU-accelerated robotics simulator: 4,096+ parallel environment instances on single H100</li>
+<li>Enables continuous action space robot policy training in hours vs days</li>
+<li>Supports: Franka arm (7-DOF), Allegro hand (16-DOF), Anymal quadruped (12-DOF), Humanoid (28-DOF)</li>
+<li>Standard for <a href="../pages/Reinforcement-Learning-for-Robotics" class="internal alias" data-slug="pages/Reinforcement-Learning-for-Robotics">Reinforcement Learning for Robotics</a> dexterous manipulation and locomotion research</li>
+</ul>
+</li>
+<li>
+<p><strong>Gymnasium</strong> (Farama Foundation):</p>
+<ul>
+<li>Standardised Python API: <code>action_space.sample()</code>, <code>env.step(action)</code>, action space descriptors</li>
+<li>Discrete(n): n-element finite discrete action space</li>
+<li>Box(low, high, shape): bounded continuous action manifold in ℝᵈ</li>
+<li>MultiDiscrete(nvec): multi-dimensional discrete action space (vector of n discrete dimensions)</li>
+<li>Nearly all published RL research targets Gymnasium-compatible environments</li>
+</ul>
+</li>
+<li>
+<p><strong>PettingZoo</strong> (Farama Foundation):</p>
+<ul>
+<li>Multi-agent extension of Gymnasium</li>
+<li>Standardised joint and independent action space interfaces</li>
+<li>Supports competitive (Atari multi-player), cooperative (MPE), and mixed-motive settings</li>
+<li>Essential for <a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal alias" data-slug="pages/Multi-Agent-Reinforcement-Learning">Multi-Agent Reinforcement Learning</a> action space research</li>
+</ul>
+</li>
+<li>
+<p><strong>Minari</strong> (Farama Foundation):</p>
+<ul>
+<li>Standardised offline RL dataset collection and loading API</li>
+<li>Historical trajectory datasets (s, a, r, s’, done tuples) for offline action space learning</li>
+<li>D4RL datasets (hopper, walker, antmaze, kitchen) available via Minari</li>
+</ul>
+</li>
+<li>
+<p><strong>SMAC / SMACv2</strong> (StarCraft Multi-Agent Challenge):</p>
+<ul>
+<li>Cooperative multi-agent with factored joint discrete action spaces</li>
+<li>Each agent selects from ~6 unit-type-dependent discrete actions</li>
+<li>SMACv2 (2022) adds stochasticity and procedural map generation for robustness evaluation</li>
+</ul>
+</li>
+<li>
+<p><strong>OpenSpiel</strong> (DeepMind):</p>
+<ul>
+<li>Game-theoretic environments including extensive-form games with large discrete action trees</li>
+<li>Chess (4,096 possible moves), Go (~250 legal moves), Poker (~10³ action nodes)</li>
+<li>Perfect for adversarial and game-theoretic action selection research</li>
+</ul>
+</li>
+<li>
+<p><strong>NetHack Learning Environment (NLE)</strong>:</p>
+<ul>
+<li>Roguelike game: ~90 action types × contextual menu selections ≈ 25,000 effective actions</li>
+<li>Premier challenge for scaling discrete action selection to realistic combinatorial complexity</li>
+<li>Used in NeurIPS 2021 and 2023 NetHack Challenge competitions</li>
+</ul>
+</li>
+<li>
+<p><strong>WebArena / OSWorld</strong>:</p>
+<ul>
+<li>Browser/OS-level task environments with natural language action spaces (browser clicks, typing, API calls)</li>
+<li>WebArena (2023): 812 tasks across shopping, CMS, coding repositories, knowledge portals</li>
+<li>OSWorld (2024): 369 tasks across 5 operating system environments with computer-use action space</li>
+<li>Standard benchmarks for <a href="../pages/Agentic-AI" class="internal alias" data-slug="pages/Agentic-AI">Agentic AI</a> structured action space evaluation</li>
+</ul>
+</li>
+<li>
+<p><strong>CARLA Autonomous Driving Simulator</strong>:</p>
+<ul>
+<li>High-fidelity urban driving simulation with continuous acceleration/steering action spaces</li>
+<li>Optional discrete action space wrappers for discrete RL methods</li>
+<li>UK urban road layouts and traffic patterns available in community map packs</li>
+<li>Used by Wayve and other UK autonomous driving companies for action space policy development</li>
+</ul>
+</li>
+</ul>
+<h2 id="open-source-libraries-and-tools">Open Source Libraries and Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-source-libraries-and-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Practitioner access to action space methods is mediated by a mature ecosystem of open-source libraries:</p>
+<ul>
+<li>
+<p><strong>Stable-Baselines3</strong> (DLR-RM, 2020):</p>
+<ul>
+<li>Clean PyTorch implementations of PPO, SAC, TD3, A2C, DDPG with Gymnasium-compatible action space handling</li>
+<li>MaskablePPO extension for discrete action masking; ActionNoise wrappers for continuous exploration</li>
+<li>Most widely used reference implementation for RL research; 8,000+ GitHub stars as of 2025</li>
+</ul>
+</li>
+<li>
+<p><strong>RLlib</strong> (Ray, Anyscale):</p>
+<ul>
+<li>Distributed RL library supporting discrete, continuous, and multi-agent action spaces at scale</li>
+<li>Native support for parameterised and multi-discrete action spaces via custom policy heads</li>
+<li>Integrates with Ray Tune for hyperparameter search over action space configurations</li>
+</ul>
+</li>
+<li>
+<p><strong>CleanRL</strong> (2022):</p>
+<ul>
+<li>Single-file clean implementations of PPO, SAC, TD3, DQN for study and modification</li>
+<li>Particularly useful for understanding action space handling in policy gradient implementations</li>
+<li>Each algorithm is &lt;500 lines; action space branches are explicit and auditable</li>
+</ul>
+</li>
+<li>
+<p><strong>tianshou</strong> (Tsinghua AI Lab):</p>
+<ul>
+<li>Comprehensive RL library with explicit support for hybrid discrete-continuous action spaces</li>
+<li>Provides reference implementations for P-DQN, HyAR, MPDQN, and extensions</li>
+<li>Native support for Gymnasium and PettingZoo action space APIs</li>
+</ul>
+</li>
+<li>
+<p><strong>or-gym</strong> (Hubbs et al.):</p>
+<ul>
+<li>Operations research environments (vehicle routing, inventory management, bin packing, supply chain)</li>
+<li>Combinatorial discrete action spaces with action masking support</li>
+<li>Standard for combinatorial <a href="../pages/Optimisation" class="internal" data-slug="pages/Optimisation">Optimisation</a> RL research in industry</li>
+</ul>
+</li>
+<li>
+<p><strong>Sample Factory</strong> (2022):</p>
+<ul>
+<li>High-throughput asynchronous RL framework enabling 100,000+ environment frames per second for discrete action spaces</li>
+<li>Designed for large-scale discrete action space experiments (VizDoom, NetHack, Atari)</li>
+</ul>
+</li>
+<li>
+<p><strong>Acme</strong> (DeepMind):</p>
+<ul>
+<li>Research-grade distributed RL library; reference implementations of D4PG, MPO, and other continuous action algorithms</li>
+<li>Modular actor/learner architecture enables scalable continuous action space experimentation</li>
+</ul>
+</li>
+<li>
+<p><strong>Diffusion Policy library</strong> (Columbia Robotics Lab):</p>
+<ul>
+<li>Reference implementation of Chi et al. (2023) diffusion policy for visuomotor imitation learning</li>
+<li>Supports continuous action spaces with UNet and Transformer denoising architectures</li>
+</ul>
+</li>
+</ul>
+<h2 id="summary-of-key-properties">Summary of Key Properties<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#summary-of-key-properties" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Property</th><th>Discrete Action Space</th><th>Continuous Action Space</th><th>Hybrid / Parameterised</th></tr></thead><tbody><tr><td>Algorithm family</td><td>Value-based (DQN, Rainbow)</td><td>Policy gradient (SAC, TD3, PPO)</td><td>P-DQN, HyAR, CHDP</td></tr><tr><td>Exploration</td><td>ε-greedy, Thompson sampling</td><td>Entropy maximisation (SAC), noise injection</td><td>Separate strategies per dimension</td></tr><tr><td>Constraint enforcement</td><td>Action masking</td><td>Safety projection (CBF-QP)</td><td>Combined masking + projection</td></tr><tr><td>Scalability bottleneck</td><td></td><td>A</td><td>(cardinality)</td></tr><tr><td>Policy representation</td><td>Softmax head over A</td><td>Gaussian / flow / diffusion</td><td>Multi-head with conditioning</td></tr><tr><td>Transfer learning</td><td>Action-space alignment</td><td>Morphology embedding</td><td>Cross-type adapters</td></tr><tr><td>Primary UK application</td><td><a href="../pages/Game-AI" class="internal alias" data-slug="pages/Game-AI">Game AI</a>, scheduling, NLP</td><td><a href="../pages/Reinforcement-Learning-for-Robotics" class="internal alias" data-slug="pages/Reinforcement-Learning-for-Robotics">Reinforcement Learning for Robotics</a>, autonomous vehicles</td><td>RoboCup, strategy games, trading</td></tr></tbody></table></div>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-336" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#support-relationships" data-for="support-relationships">Support Relationships</a></li><li class="depth-0"><a href="#contrast-relationships" data-for="contrast-relationships">Contrast Relationships</a></li><li class="depth-0"><a href="#related-relationships" data-for="related-relationships">Related Relationships</a></li><li class="depth-0"><a href="#mathematical-framework" data-for="mathematical-framework">Mathematical Framework</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#evaluation-and-benchmarks" data-for="evaluation-and-benchmarks">Evaluation and Benchmarks</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#action-space-design-patterns-and-anti-patterns" data-for="action-space-design-patterns-and-anti-patterns">Action Space Design Patterns and Anti-Patterns</a></li><li class="depth-0"><a href="#relationship-to-other-mdp-components" data-for="relationship-to-other-mdp-components">Relationship to Other MDP Components</a></li><li class="depth-0"><a href="#simulation-environments-for-action-space-research" data-for="simulation-environments-for-action-space-research">Simulation Environments for Action Space Research</a></li><li class="depth-0"><a href="#open-source-libraries-and-tools" data-for="open-source-libraries-and-tools">Open Source Libraries and Tools</a></li><li class="depth-0"><a href="#summary-of-key-properties" data-for="summary-of-key-properties">Summary of Key Properties</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Action-Executor" class="internal">Action Executor</a></li><li><a href="../pages/Adaptive-Behaviour" class="internal">Adaptive Behaviour</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

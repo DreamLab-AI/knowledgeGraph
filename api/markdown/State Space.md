@@ -1,0 +1,12 @@
+
+A state space is the mathematical set of all possible configurations (states) of a dynamical system, together with the transition rules that govern how the system evolves from one state to another over time. In control theory it is represented by first-order differential or difference equations relating state variables, inputs, and outputs; in artificial intelligence it denotes the complete set of system configurations that a search or planning algorithm may explore.
+
+- ### Content
+  - The state space approach to linear systems was developed by Rudolf Kalman in the early 1960s, superseding classical transfer-function methods for multi-input multi-output (MIMO) systems. Kalman's 1960 paper introducing the optimal linear filter and his 1961 work on controllability and observability criteria provided the foundational theory that drove advances in aerospace guidance and chemical process control throughout the 1960s and 1970s.
+
+  - Key properties examined in state space analysis include controllability (can any state be reached from any other via control inputs?), observability (can the full state be inferred from outputs alone?), stability (do eigenvalues of A lie in the left half-plane for continuous-time systems?), and minimality (absence of uncontrollable or unobservable modes). Tools such as pole placement and the Linear Quadratic Regulator (LQR) synthesise feedback gains directly from state space matrices.
+
+  - In AI, state spaces underlie classical search (A*, BFS, DFS), where states are nodes and transitions are edges. Partially observable Markov Decision Processes (POMDPs) extend state space planning to settings where the true state is not directly observable, requiring belief-state tracking. Model-based reinforcement learning learns state transition models explicitly, enabling planning via rollouts through the learned state space.
+
+  - From 2022 onward, state space models (SSMs) have attracted significant research interest as alternatives to Transformer attention for long-sequence modelling. The Mamba architecture (2023) introduced selective state spaces with hardware-aware implementations, achieving competitive performance on language and audio tasks with linear rather than quadratic scaling in sequence length, making SSMs a rapidly growing area in deep learning research.
+

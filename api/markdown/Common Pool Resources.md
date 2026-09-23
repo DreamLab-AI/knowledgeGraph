@@ -1,0 +1,12 @@
+
+Natural or human-made resources that are non-excludable to a defined community but rival in consumption, meaning one actor's use diminishes availability for others. Classic examples include fisheries, groundwater, pastures, and shared spectrum; digital analogues include shared compute pools and open training datasets. Sustainable governance requires institutions that constrain extraction without full privatisation or state control.
+
+- ### Content
+  - The concept of common pool resources was popularised by Garrett Hardin's 1968 essay "The Tragedy of the Commons", which argued that shared pasture would inevitably be overgrazed by self-interested herders. Hardin offered only two solutions: privatisation or government regulation. Ostrom's fieldwork — studying Swiss alpine meadows, Japanese forests, Spanish irrigation systems, and New England lobster fisheries — revealed a third path: robust self-governing institutions crafted by the communities themselves.
+
+  - Ostrom's design principles for durable CPR institutions include clearly defined user boundaries, rules adapted to local conditions, collective choice arrangements that include resource users, effective monitoring, graduated sanctions for rule violation, and accessible conflict resolution mechanisms. These principles have been formalised into game-theoretic and computational models that identify when cooperative equilibria are stable. Key variables include resource boundaries, user group size, monitoring costs, and communication opportunities.
+
+  - Digital commons introduce new CPR dynamics. Open-source codebases and shared training datasets exhibit rivalry when compute or contributor attention is scarce. Shared AI compute clusters, federated learning consortia, and decentralised physical infrastructure networks (DePIN) can be modelled as CPRs requiring governance rules analogous to Ostrom's principles. Blockchain-based smart contracts offer mechanisms for automatic enforcement of extraction quotas and contribution requirements.
+
+  - In 2024–2025, AI infrastructure has become a significant CPR arena. Shared GPU clusters governed by academic consortia, open model weights under licensing regimes, and scientific datasets managed by multi-institutional alliances all face classic CPR challenges: how to ensure equitable access, prevent free-riding, sustain contribution, and handle resource exhaustion. Emerging frameworks applying Ostrom's principles to AI resource governance are being developed by institutions including the Alan Turing Institute and AI commons initiatives.
+

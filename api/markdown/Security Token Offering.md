@@ -1,0 +1,81 @@
+
+A Security Token Offering (STO) is a regulated capital-raising mechanism in which blockchain-based digital tokens representing ownership rights, equity interests, debt obligations, revenue participation, or other financial entitlements are issued and sold to investors in compliance with applicable securities law. STOs require issuers to satisfy jurisdictional regulatory frameworks — such as the SEC's Regulation D or Regulation S exemptions in the United States, or MiFID II and EU prospectus rules in Europe — including investor accreditation verification, Know Your Customer and Anti-Money Laundering checks, and mandatory disclosure obligations. Unlike Initial Coin Offerings, which frequently issued utility tokens, STOs embed compliance logic directly into programmable smart contracts on distributed ledger platforms, automating transfer restrictions, cap-table management, and dividend or interest distributions. The STO model bridges traditional capital markets infrastructure with blockchain-based asset tokenisation, enabling fractional ownership of previously illiquid assets such as real estate, private equity, and infrastructure funds.
+
+- ### Overview
+  - Security Token Offerings emerged from the regulatory aftermath of the 2017–2018 [[Initial Coin Offering]] boom, during which many token sales were later judged by regulators to constitute unregistered securities offerings. STOs address this directly: the issuer acknowledges that the token is a security, registers with or claims an exemption from the relevant regulator, and structures the offering accordingly.
+  - The core proposition is the application of [[Programmable Compliance]] to capital market instruments. Rather than relying purely on contractual and custodial enforcement, transfer restrictions, investor eligibility checks, and corporate-action logic are encoded in the token's [[Smart Contract]], running automatically on-chain without intermediary action.
+  - STOs are relevant across multiple asset classes: company equity, corporate and sovereign debt, real estate fractional interests, infrastructure project revenue rights, private equity fund units, and fine art or collectibles. The common thread is replacing paper-based or centralised register-based record-keeping with an immutable on-chain ledger.
+  - The maturity of the STO market is characterised as "emerging": the legal and technical frameworks are well understood, regulated exchanges and transfer agents for [[Security Token]]s exist (e.g. tZERO, SIX Digital Exchange, SDX), but secondary-market liquidity remains thin relative to traditional securities markets.
+
+- ### Key Components
+  - **[[Security Token]]** — the on-chain representation of the financial entitlement; must satisfy the relevant legal definition of a security (e.g. the Howey Test in the US).
+  - **[[Smart Contract]]** — executable code on a blockchain that encodes transfer restrictions, corporate-action logic (dividends, voting), and compliance checks; commonly built on [[Ethereum]] or permissioned chains such as [[Hyperledger Fabric]].
+  - **[[Know Your Customer]]** (KYC) — identity verification of investors before onboarding, typically integrating regulated identity providers.
+  - **[[Anti-Money Laundering]]** (AML) — screening of investors and transactions against sanctions lists and watchlists; a legal requirement in all major jurisdictions.
+  - **[[Investor Accreditation]]** — verification that investors meet wealth or income thresholds required by exemption rules such as SEC Regulation D.
+  - **[[Identity Verification]]** — digital-identity infrastructure linking real-world identity to blockchain wallet addresses; often implemented using decentralised identity standards.
+  - **[[Distributed Ledger Technology]]** — the underlying consensus infrastructure; public blockchains ([[Ethereum]], [[Polygon]]) or permissioned networks ([[Hyperledger Fabric]], [[Corda]]) are both used.
+  - **[[Digital Wallet]]** — investor-side custody of the security token, either self-custodied or held at a regulated custodian.
+  - **Token Standards** — security-specific token standards ([[ERC-1400]], [[ERC-3643]]) extend the base ERC-20 standard with partition management, controller roles, and forced transfer functions needed for regulatory compliance.
+  - **Issuance Platform** — STO issuance platforms (e.g. Securitize, Tokeny, Polymath) provide end-to-end pipelines combining smart contract deployment, KYC/AML orchestration, investor onboarding portals, and cap-table management.
+  - **Transfer Agent** — the regulated entity responsible for maintaining the register of security holders; in an STO, this function is partially or fully automated by the smart contract and on-chain ledger.
+
+- ### Regulatory Frameworks
+  - **United States** — STOs most commonly use SEC Regulation D (Rule 506b/506c) for private placements to accredited investors, Regulation S for offshore offerings, or Regulation A+ for smaller public offerings. The SEC has provided guidance that most tokens meeting the Howey Test are securities.
+  - **European Union** — The EU Markets in Crypto-Assets Regulation ([[MiCA]]) provides a harmonised framework; security tokens remain governed by MiFID II, the Prospectus Regulation, and national competent authority rules. The EU DLT Pilot Regime enables experimentation with DLT-settled securities.
+  - **Switzerland** — FINMA issued guidance early; DLT-specific securities law amendments under the [[Swiss DLT Act]] created a specific "ledger-based security" category.
+  - **United Kingdom** — Post-Brexit, the FCA governs; security tokens are treated as specified investments under FSMA 2000. The UK [[Financial Conduct Authority]] sandbox has hosted multiple STO pilots.
+  - **Singapore** — The MAS Payment Services Act and Securities and Futures Act (SFA) govern digital token offerings; MAS has published detailed guidance on security tokens.
+  - **Regulatory Sandboxes** — Multiple jurisdictions run [[Regulatory Sandbox]] programmes allowing STO pilots under relaxed but monitored conditions, accelerating regulatory learning.
+
+- ### Token Standards and Technical Architecture
+  - **[[ERC-1400]]** — the leading Ethereum security token standard (ERC-1400/1410/1644/1643 family); introduces partitions (tranches), controller roles for forced transfers, and document management. Developed by Polymath, now widely adopted.
+  - **[[ERC-3643]]** — the T-REX (Token for Regulated EXchanges) standard; embeds on-chain identity registry via the ONCHAINID framework, enabling automated transfer compliance checks at execution time.
+  - **Permissioned Chains** — [[Hyperledger Fabric]] and [[Corda]] are used for institutional STOs where all participants are known and throughput/finality requirements exceed public-chain capabilities.
+  - **Programmable Corporate Actions** — dividends, interest payments, voting, and redemptions can be automated via smart contracts, reducing reconciliation overhead and settlement latency from T+2 to near-instant.
+  - **Interoperability** — cross-chain bridges and atomic swap protocols are being developed to allow secondary trading of security tokens across different blockchain platforms.
+
+- ### Applications and Use Cases
+  - **Real Estate Tokenisation** — fractional ownership of commercial or residential property, enabling retail investor access to previously illiquid real estate assets.
+  - **Private Equity Tokenisation** — fund units issued as security tokens, enabling secondary market transfers without requiring full fund redemption.
+  - **Venture Capital** — early-stage company equity issued as security tokens, providing liquidity options for founders and employees via regulated secondary markets.
+  - **Debt Instruments** — corporate bonds, green bonds, and structured credit products issued on-chain, reducing issuance costs and settlement complexity.
+  - **Infrastructure Financing** — revenue-participation tokens for infrastructure projects (renewable energy plants, toll roads) allowing public investment in long-duration assets.
+  - **Art and Collectibles** — fractional tokenisation of high-value art enabling shared ownership and price discovery.
+  - **[[Decentralised Finance]] Integration** — security tokens used as collateral in DeFi lending protocols (where regulations permit), bridging regulated capital markets and decentralised liquidity.
+  - **Central Bank Digital Currency Interaction** — STOs are expected to interact with wholesale [[Central Bank Digital Currency]] settlement infrastructure as it matures.
+
+- ### Standards and Context
+  - **ERC-1400 / ERC-1410 / ERC-1644 / ERC-1643** — the Polymath-originated Ethereum security token standard family defining partition management, forced transfers, and document storage. See [[ERC-1400]].
+  - **ERC-3643 (T-REX)** — on-chain identity-linked compliance standard, developed by Tokeny Solutions, now an Ethereum Improvement Proposal. See [[ERC-3643]].
+  - **ISO 20022** — the financial messaging standard increasingly adopted for cross-border securities settlement; some STO platforms target ISO 20022 compatibility for integration with SWIFT infrastructure.
+  - **IOSCO** — the International Organisation of Securities Commissions has published reports on [[Digital Asset]] market integrity and cross-border regulatory coordination relevant to STOs.
+  - **[[MiCA]] (Markets in Crypto-Assets Regulation)** — EU harmonised framework covering crypto-assets; security tokens remain under existing securities law but MiCA clarifies asset-referenced and e-money token treatment, reducing regulatory ambiguity.
+  - **FATF Travel Rule** — the [[Financial Action Task Force]] Travel Rule requires virtual asset service providers to transmit originator and beneficiary information with transactions, directly applicable to STO custody and transfer operations.
+  - **DLT Pilot Regime (EU)** — enables issuance, trading, and settlement of tokenised securities on DLT infrastructure under a temporary regulatory framework to build evidence for permanent rules.
+  - **SEC FinHub** — the SEC's Strategic Hub for Innovation and Financial Technology engages with STO issuers and platforms on no-action letters and guidance.
+
+- ### Contrasts with Related Fundraising Mechanisms
+  - **[[Initial Coin Offering]] (ICO)** — typically issues utility tokens representing access rights to a platform or service; largely unregulated, high failure rate, regulatory crackdown from 2018 onward; STOs are the regulated successor.
+  - **[[Initial Public Offering]] (IPO)** — traditional equity capital raise via registered stock exchange; highly regulated, expensive, and limited to larger companies; STOs target a broader issuer base with lower overhead.
+  - **[[Initial DEX Offering]] (IDO)** — permissionless token launch on a decentralised exchange; minimal compliance, no investor protections; direct contrast to the STO compliance model.
+  - **[[Regulation Crowdfunding]] (Reg CF)** — SEC-authorised small-scale public fundraising; shares some STO characteristics but uses traditional equity instruments rather than blockchain tokens.
+
+- ### Current Landscape (2026)
+  - On 28 January 2026 the staff of the SEC's Divisions of Corporation Finance, Investment Management, and Trading and Markets issued a joint statement confirming that federal securities laws apply to a tokenised security regardless of whether ownership is recorded on-chain or off-chain, settling the long-standing legal-status question for STOs.
+  - Regulated market rails opened rapidly in the first half of 2026: the SEC approved a Nasdaq rule change (March 2026) to trade tokenised forms of listed securities on its main order book, FINRA approved the first broker-dealer custody of tokenised securities with atomic settlement (May 2026), and DTCC received SEC no-action relief for a DTC tokenisation pilot covering Russell 1000 equities, Treasuries and major ETFs.
+  - On-chain real-world-asset value (excluding stablecoins) reached roughly $31–36 billion by mid-2026 (rwa.xyz reported $33.5B in July 2026), about 4x early-2025 levels, led by tokenised Treasuries and private credit, with tokenised equities the fastest-growing new category; Securitize listed on the NYSE (SECZ) in July 2026 at a $1.25B valuation as the first pure-play tokenisation IPO.
+  - Regulation D Rule 506(c) remains the dominant US pathway, used in an estimated 80–85% of US STO issuances, and the January 2025 reversal of Staff Accounting Bulletin 121 (via SAB 122) removed a key balance-sheet barrier to bank participation in tokenised-asset custody; 12+ Alternative Trading Systems for digital securities held SEC registration as of Q1 2026.
+  - Standards consolidated around compliance-embedded tokens: ERC-3643 (formerly Tokeny's T-REX) for permissioned securities, with ERC-7943 (uRWA) reaching Final status in May 2026 as a neutral RWA standard and Switzerland's CMTA CMTAT adding support for it.
+  - International frameworks matured in parallel: the EU completed MiCA's transition (with tokenised securities remaining under MiFID II/the Prospectus Regulation), the EU Listing Act (Regulation 2024/2809) set a single €12m prospectus-exemption threshold from 5 June 2026, MAS replaced its 2020 digital-token guidance with a new Guide on the Tokenisation of Capital Markets Products (November 2025), and South Korea legislated tokenised securities in January 2026 (effective February 2027).
+  - Open challenges as of 2026 include the absence of any completed formal SEC rulemaking on exchange-listing eligibility for tokenised securities, stalled US market-structure legislation (the CLARITY/Digital Asset Market Structure Act awaits a Senate floor vote after passing the House in July 2025), fragmented secondary-market liquidity, and jurisdictional patchwork with China still banning STOs outright.
+
+- ### References
+  - 1. AmericaTokenization (2026). Security Token Offerings in 2026: Market Structure and Outlook. https://americatokenization.com/securities/security-token-offerings-2026/
+  - 2. Stobox (2026). The State of RWA Tokenization — 2026 Mid-Year Report. https://www.stobox.io/reports/state-of-rwa-2026
+  - 3. Buzko Legal (2026). Legal Guide to Real-World Assets (RWA) Tokenization. https://www.buzko.legal/content-eng/legal-guide-to-real-world-assets-rwa-tokenization
+  - 4. Otonomos (2026). Security Token Regulations Demystified (2026 Update). https://helpdesk.otonomos.com/docs/security-token-regulations-demystified
+  - 5. European Central Bank (2026). Towards an efficient and integrated digital capital market in Europe. https://www.ecb.europa.eu/press/financial-stability-publications/macroprudential-bulletin/html/ecb.mpbu202604_02.en.html
+
+- ### Provenance
+

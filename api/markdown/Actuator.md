@@ -1,0 +1,87 @@
+
+An actuator is a transducer that converts a stored or supplied energy form — electrical, hydraulic, pneumatic, or thermochemical — into controlled mechanical motion or force, functioning as the output effector in any closed-loop control chain. Actuators execute commands issued by a controller by producing joint rotations, linear displacements, gripping forces, or compliant deformations, and their dynamic properties (torque density, bandwidth, backdrivability, stiffness) fundamentally bound a system's achievable speed, precision, payload capacity, and intrinsic safety during physical interaction. The choice of actuation technology cascades through every level of system design, from mechanical linkage geometry and energy storage requirements to real-time control law selection and safety-rated force limitation.
+
+- ### Overview
+  - Actuators sit at the boundary between the computational (cyber) domain and the physical world — they are the means by which digital control signals become real forces and movements.
+  - Unlike passive mechanical elements, actuators are driven components: they consume energy (electrical, hydraulic pressure, compressed air, or chemical) and convert it into kinetic or potential mechanical energy on demand.
+  - The concept spans scales from microscale MEMS actuators in lab-on-chip devices to the giant hydraulic pistons in heavy construction equipment and industrial presses.
+  - Key performance dimensions that differentiate actuator technologies include:
+    - **Torque/force density** — force output per unit mass or volume
+    - **Bandwidth** — maximum frequency of controllable motion cycles
+    - **Backdrivability** — how easily external loads can move the actuator back-drive (relevant to safety and force control)
+    - **Stiffness** — relationship between load and deflection; high stiffness gives precision, compliance gives safety
+    - **Efficiency** — ratio of mechanical output power to input energy
+  - Actuators are always paired with [[Sensor]] elements (encoders, load cells, torque sensors) and a [[Control System]] to form the complete servo loop. Without closed-loop feedback, only open-loop control is achievable, which is insufficient for precision tasks.
+
+- ### Key Components and Mechanisms
+  - **Electric Servo Actuator (Rotary)**
+    - The dominant type in modern [[Industrial Robot]] arms and [[Collaborative Robot]] platforms.
+    - Consists of a brushless DC or AC motor, a gear reduction stage (harmonic drive, planetary gearbox, or cycloidal drive), and an [[Encoder]] for position and velocity feedback.
+    - Controlled by a motor drive that generates PWM voltage profiles; the outer control loop runs a [[PID Controller]] or model-based controller to track commanded trajectories.
+    - Harmonic drives provide very high gear ratios (50:1–160:1) in a compact form, enabling high joint torques with minimal backlash — essential for precision assembly tasks.
+  - **Hydraulic Actuator**
+    - Uses pressurised fluid (typically mineral oil) acting on a piston or vane to produce linear or rotary motion.
+    - Offers exceptionally high force-to-weight ratios, making them preferred for heavy-load [[Mobile Robot]] platforms, construction machinery, and high-torque humanoid joints (e.g., Boston Dynamics Atlas).
+    - Drawbacks include hydraulic leak risk, requirement for a hydraulic power unit, and difficulty achieving fine position control due to fluid compressibility and seal friction.
+    - Electrohydrostatic actuators (EHAs) integrate the pump and motor directly, improving efficiency and reducing plumbing complexity.
+  - **Pneumatic Actuator**
+    - Driven by compressed air, these are lightweight, low-cost, and inherently safe in explosive environments.
+    - Widely used in gripper mechanisms, pick-and-place [[Industrial Automation]] cells, and food-handling robots where contamination risks rule out hydraulic oil.
+    - Air compressibility makes fine position control difficult; typically operate in bang-bang (open/close) mode or with proportional valves for approximate position control.
+    - Soft pneumatic actuators — inflatable elastomeric bellows or bending chambers — form the basis of many [[Soft Robotics]] end-effectors.
+  - **Series Elastic Actuator (SEA)**
+    - Interposes a calibrated compliant spring element between a stiff motor-gearbox unit and the output joint.
+    - Spring deflection, measured by [[Encoder]] or Hall sensor, provides accurate torque estimation without a torque sensor.
+    - Improves shock tolerance, reduces reflected inertia to the environment, and naturally implements [[Impedance Control]], making SEAs popular in rehabilitation exoskeletons and research cobots.
+    - Tradeoff: the compliance limits closed-loop bandwidth compared to stiff electric drives.
+  - **Linear Actuator**
+    - Produces translational rather than rotary output; includes ball-screw drives, lead-screw drives, rack-and-pinion systems, and linear motors.
+    - Direct-drive linear motors (voice coil, linear induction) eliminate mechanical transmission losses and backlash but require precise magnetic guidance.
+    - Found in [[CNC Machine Tool]] axes, precision stages, and Cartesian gantry robots.
+  - **Smart / Soft Actuators (Emerging)**
+    - Shape-memory alloys (SMA) contract upon heating above a transition temperature; high stress outputs in tiny packages but slow thermal cycling limits bandwidth.
+    - Electroactive polymers (EAP) and dielectric elastomers deform under electric field; offer muscle-like strain properties relevant to [[Wearable Robotics]].
+    - Pneumatic soft actuators made from silicone or textile-reinforced elastomers enable [[Soft Robotics]] grippers that conform to delicate objects.
+    - These technologies bridge from classical engineering into [[Biomimetics]] and [[Soft Robotics]].
+
+- ### Applications and Use Cases
+  - **Industrial Robot Arms** — Six-axis articulated arms (e.g., KUKA, ABB, FANUC) use electric servo actuators at every joint; coordinated by a [[Robot Controller]] running real-time [[Motion Planning]] and torque control loops to achieve sub-millimetre repeatability in automotive welding and electronic assembly.
+  - **Collaborative Robots (Cobots)** — Torque-sensing electric actuators or SEAs allow power-and-force limiting compliance, enabling safe operation alongside humans without physical guards; standardised by ISO/TS 15066.
+  - **Exoskeletons and Prosthetics** — Lightweight electric and pneumatic actuators assist or restore limb function; [[Human Robot Interaction]] quality is dominated by actuator backdrivability and [[Impedance Control]] fidelity.
+  - **Autonomous Vehicles (Steering and Braking)** — Electromechanical actuators replace hydraulic systems in steer-by-wire and brake-by-wire architectures, enabling [[Autonomous Vehicle]] control without a mechanical connection to the driver.
+  - **Aerospace and Defence** — Electrohydrostatic and electromechanical actuators operate flight control surfaces; meet DO-178C / DO-254 certification. High power density and failure-mode determinism are essential.
+  - **Medical Robotics** — Miniaturised electric and pneumatic actuators drive [[Surgical Robot]] instruments (e.g., da Vinci system); must satisfy IEC 60601 electrical safety and sterilisability requirements.
+  - **Soft Goods Handling** — Pneumatic soft actuators in gripper fingers allow e-commerce fulfilment robots to handle irregular, fragile objects without fixturing.
+  - **Construction and Mining Equipment** — Large hydraulic cylinders deliver the extreme forces required for excavator booms and drill heads; increasingly paired with electro-hydraulic proportional valves and [[Digital Twin]] simulation for predictive maintenance.
+  - **Consumer Electronics Manufacturing** — Voice coil linear actuators position hard-disk read heads and optical lens assemblies with nanometre precision.
+  - **IoT and Smart Infrastructure** — HVAC valve actuators, motorised blinds, and smart-lock mechanisms represent the long tail of [[Internet of Things]] applications where low-power, compact electric actuators operate on edge controllers.
+
+- ### Standards and Context
+  - **ISO 10218-1 / ISO 10218-2** — Safety requirements for industrial robots; drive requirements for torque and power limiting.
+  - **ISO/TS 15066** — Collaborative robot safety; specifies force and pressure limits directly linked to actuator output characteristics.
+  - **IEC 61800 series** — Adjustable-speed electrical power drive systems covering the [[Power Electronics]] side of electric actuator drive.
+  - **ANSI/RIA R15.06** — North-American implementation of ISO robot safety; applies to actuator selection and testing.
+  - **DO-178C / DO-254** — Software and hardware certification for airborne actuator control systems.
+  - **IEC 60601** — Medical electrical equipment safety applying to surgical and rehabilitation robotic actuators.
+  - **IEEE 1872 (Ontologies for Robotics and Automation)** — Provides formal vocabulary for actuator types, consistent with this ontology's classification under `robo-actuation-and-control`.
+  - Standardisation bodies involved: ISO TC 299 (Robotics), IEC TC 22 (Power Electronics), IEEE Robotics and Automation Society.
+
+- ### Current Landscape (2026)
+  - The humanoid-robot boom has become the dominant driver of actuator R&D: the 2025-2026 wave of designs has decisively standardised on all-electric actuation (frameless torque motor plus strain-wave/harmonic-drive or planetary-roller-screw reduction with integrated torque, position and encoder feedback), displacing the hydraulics that defined early legged robots such as the pre-2024 Boston Dynamics Atlas.
+  - Tesla began Optimus mass production in January 2026; its Gen 3 hands relocate all 25 actuators per hand into the forearm, driving 22 degrees of freedom per hand (50 actuators total) through wrist-routed tendons with fingertip tactile sensors, mirroring Figure AI's in-house-designed Figure 03 hand (fingertip force sensing down to ~3 grams) unveiled in the same period.
+  - Major suppliers are locking in the supply chain: Schaeffler premiered a purpose-built two-stage planetary-gear actuator (60-250 Nm, back-driveable) for humanoids at CES 2026 and signed a five-year preferred-supply agreement covering over 50% of a partner's joint-actuator needs, while ABB, Festo, Moog, SMC and Harmonic Drive Systems together held roughly 42% of the broader robotics-actuator market in 2025.
+  - Market sizing reflects the surge: analysts put the 2025 robotics-actuator market near USD 17.1 billion (ABB leading at ~15% share), with the narrower humanoid-actuator segment growing fast (one forecast projects roughly USD 290 million in 2025 to USD 16.97 billion by 2032); electric actuation held ~57% of actuation-type share and rotary designs ~61% in 2025.
+  - Soft and artificial-muscle actuation matured on the research frontier: Keplinger's group at CU Boulder advanced HASEL electrohydraulic artificial muscles, and a 2024 Science Advances "HALVE" design cut driving voltage ~5-6x while reaching ~50 W/kg power density and near-mammalian-muscle strain rates, though efficiency (~20-30%) and high-voltage drive still bar mass deployment.
+  - New motor architectures are targeting weight and torque density: at the 2026 Robotics Summit, Quanten Technologies showed dynamically reconfigurable multi-phase motors claiming ~30% weight savings over conventional three-phase BLDC, and Festo introduced its BionicSoftActuator 2.0 (Automatica 2025) with 98% stroke repeatability at 40% lower air consumption.
+  - Open challenges as of 2026 centre on hitting the industry's five performance thresholds — power density above 100 Nm/kg, force-control accuracy under 1% of rated torque, sub-1 ms whole-body control latency, 4-plus hours of runtime, and sub-USD 30,000 unit cost — with actuators (still 1-3 kW per leg, limiting battery life to 2-4 hours) and thermal management remaining the binding constraints on humanoid commercialisation.
+
+- ### References
+  - 1. The Dynamics (2026). Actuators and hands of humanoid robots. https://thedynamics.ai/articles/humanoid-actuators
+  - 2. optimusk.blog (2026). Tesla Optimus Hardware: Actuators, Hands & Sensors (2026). https://optimusk.blog/blog/tesla-optimus-hardware-specs/
+  - 3. Global Market Insights (2026). Robotics Actuators Market Size & Share 2026-2035. https://www.gminsights.com/industry-analysis/robotics-actuators-market
+  - 4. Schaeffler (2026). Schaeffler presents innovative planetary gear actuator for humanoid robots (CES 2026). https://www.schaeffler.com/en/media/press-releases/press-releases-detail.jsp?id=88156672
+  - 5. PatSnap (2026). Humanoid robot actuators: 530,554+ patents analysed. https://www.patsnap.com/resources/blog/articles/humanoid-robot-actuators-530554-patents-analysed/
+  - 6. Rothemund et al., Science Advances (2024). Low-voltage electrohydraulic (HALVE) actuators for untethered robotics. https://www.science.org/doi/10.1126/sciadv.adi9319
+
+- ### Provenance
+

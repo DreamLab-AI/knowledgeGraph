@@ -1,0 +1,3 @@
+
+Computerised adaptive testing (CAT) is an assessment method that selects each subsequent question based on a test-taker's performance on previous items, converging on an estimate of ability with fewer questions than a fixed-form test. It relies on item response theory to model the probability of a correct answer as a function of item difficulty and estimated learner ability, updating the estimate after every response. CAT is widely used in standardised testing and adaptive learning platforms because it shortens test duration while improving measurement precision at the extremes of the ability range. It is closely related to Bayesian knowledge tracing, which similarly updates a learner model from sequential evidence.
+

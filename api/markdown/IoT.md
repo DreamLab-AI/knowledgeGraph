@@ -1,0 +1,92 @@
+
+The Internet of Things (IoT) is a networked ecosystem of physical devices — sensors, actuators, microcontrollers, and embedded processors — connected via IP-based communication protocols to collect, exchange, and act upon data with minimal direct human intervention. IoT extends digital connectivity into the physical world by binding heterogeneous hardware through standardised messaging protocols such as MQTT and CoAP, gateway middleware for local aggregation, and cloud or on-premises analytics platforms. It spans consumer, industrial, agricultural, and healthcare domains, each imposing distinct constraints on power, latency, security, and regulatory compliance. The discipline integrates edge computing, machine learning inference, and digital twin modelling to close feedback loops between the physical and digital realms.
+
+- ### Overview
+  - IoT bridges the physical and digital realms at scale, attaching computation and network capability to objects that previously had none.
+  - The term was coined by Kevin Ashton in 1999 in the context of RFID-linked supply chain tracking, though networked embedded control systems predated the phrase by decades in industrial automation.
+  - Architectural significance: IoT differs from conventional computing by operating under resource constraints (limited CPU, RAM, battery), heterogeneous radio environments, and deployment scales reaching billions of endpoints.
+  - Economic importance: IoT provides real-time physical-world data that enables closed-loop automation, condition-based maintenance, and data-driven supply chain optimisation across virtually every industry vertical.
+  - The discipline has matured from point connectivity solutions into a platform discipline encompassing device lifecycle management, over-the-air firmware updates, identity provisioning, and telemetry data pipelines.
+  - Security has become the dominant challenge: constrained devices often lack hardware cryptographic accelerators, firmware update paths are absent or insecure, and default credentials persist in deployed fleets.
+
+- ### Key Components
+  - **Device Layer**
+    - [[Sensor]]s — transducers converting physical phenomena (temperature, pressure, light, motion, chemical concentration) to digital signals.
+    - [[Actuator]]s — electromechanical components (relays, motors, valves) that translate digital commands into physical action.
+    - [[Embedded System]]s — microcontroller-based compute platforms (ARM Cortex-M, RISC-V, ESP32) that host firmware and local logic.
+    - Resource-constrained MCUs operate at milliwatts for years on battery or energy harvesting, necessitating duty-cycling and compressed data formats.
+  - **Connectivity Layer**
+    - [[LPWAN]] (Low-Power Wide-Area Network) protocols — [[LoRaWAN]], NB-IoT, LTE-M — enable kilometre-range battery-powered connectivity.
+    - Short-range radios — Zigbee (IEEE 802.15.4), Z-Wave, Bluetooth Low Energy, Wi-Fi — serve indoor mesh and consumer device scenarios.
+    - [[MQTT]] (Message Queuing Telemetry Transport) — lightweight publish-subscribe protocol over TCP/IP, dominant in IoT messaging.
+    - [[CoAP]] (Constrained Application Protocol) — RESTful protocol for highly constrained nodes, often transported over UDP with DTLS security.
+    - 5G network slicing offers ultra-reliable low-latency communications (URLLC) for industrial control and autonomous vehicle applications.
+  - **Gateway and Edge Layer**
+    - [[IoT Gateway]]s perform protocol translation, local filtering, and data aggregation, reducing upstream bandwidth requirements.
+    - [[Edge Computing]] nodes run ML inference, stream processing, and local storage, reducing latency and cloud dependency.
+    - Time-Sensitive Networking (TSN) extensions to Ethernet deliver deterministic sub-millisecond latency for hard real-time industrial control.
+  - **Cloud and Application Layer**
+    - [[Cloud Computing]] platforms (AWS IoT Core, Azure IoT Hub, Google Cloud IoT) manage device registries, message routing, and analytics pipelines.
+    - [[Time-Series Data]] stores (InfluxDB, TimescaleDB) persist high-frequency telemetry for historical analysis and model training.
+    - [[Digital Twin]] platforms maintain virtual replicas of physical assets, enabling simulation, anomaly detection, and operational optimisation.
+
+- ### Architecture Patterns
+  - **Four-tier reference model**: device → connectivity → gateway/edge → cloud/application.
+  - **Publish-subscribe telemetry**: devices publish sensor readings to a broker (e.g. MQTT broker); downstream subscribers (analytics, dashboards, actuator controllers) consume only relevant topics.
+  - **Command-and-control**: bidirectional messaging channels allow cloud platforms to push firmware updates, configuration changes, and actuation commands down to devices.
+  - **Offline-first edge**: [[Edge Computing]] nodes buffer and process data locally during network outages, synchronising with the cloud on reconnection.
+  - **Device shadow / desired-reported state**: a cloud-side document tracks the last-known device state and desired configuration, decoupling device connectivity from application logic.
+
+- ### Applications and Use Cases
+  - **Industrial IoT (IIoT)**: manufacturing execution systems, [[Predictive Maintenance]] for rotating machinery, energy monitoring, and OPC-UA integration with SCADA systems. Highest per-device business value, driving adoption of [[Distributed Systems]] reliability patterns.
+  - **Smart Buildings and Facilities**: HVAC control, occupancy sensing, energy management, access control, and fire/life safety systems integrated via BACnet/IP and emerging Matter gateways.
+  - **[[Smart City]]**: connected street lighting, waste bin monitoring, environmental air quality sensing, traffic signal optimisation, and parking management using [[LPWAN]] backhaul.
+  - **[[Supply Chain Management]]**: real-time asset tracking with RFID, GPS, and BLE beacons; cold-chain temperature monitoring with automated alert escalation; dock-door load sensing for warehouse automation.
+  - **[[Precision Agriculture]]**: soil-moisture and nutrient sensors, weather stations, drone imagery pipelines, and automated irrigation controllers reducing water consumption and optimising yield.
+  - **Healthcare and Wearables**: continuous glucose monitors, cardiac event recorders, fall-detection wearables, remote patient monitoring for chronic disease management, and hospital asset tracking.
+  - **Consumer Smart Home**: smart thermostats, door locks, lighting, appliances, and security cameras integrated through voice assistants and the [[Matter Standard]] application layer.
+  - **Fleet and Transport**: OBD-II telematics, cold-chain trailers, railway axle condition monitoring, and autonomous vehicle sensor fusion.
+
+- ### Security Considerations
+  - IoT presents an enlarged attack surface because billions of devices with long field lifetimes often run outdated firmware with unpatched CVEs.
+  - Key vulnerabilities: hard-coded credentials, unencrypted local traffic, absent certificate pinning, insecure firmware update mechanisms, and physical access to debug ports (JTAG, UART).
+  - Mitigations: hardware root of trust (TPM, secure element), TLS 1.3 for transport, [[Device Identity]] provisioning via X.509 certificates, code signing for OTA firmware, and network segmentation (IoT VLAN isolation).
+  - Regulatory environment: EU Cyber Resilience Act (2024) mandates vulnerability disclosure programmes and minimum patching commitments for connected product manufacturers. US Executive Order 14028 promotes IoT labelling schemes and NIST guidelines (NISTIR 8259A).
+  - [[Blockchain]] has been proposed for decentralised device identity and audit trails, though production adoption remains limited.
+
+- ### Standards and Governance
+  - **[[Matter Standard]]** (formerly Project CHIP): unified application layer for consumer IoT, managed by the Connectivity Standards Alliance (CSA), adopted by Apple, Google, Amazon, and Samsung. Released 2022; v1.3 adds energy management and EV charging profiles.
+  - **[[oneM2M]]**: global standards partnership (ETSI, TSDSI, ATIS, TTA, CCSA, ARIB, TTC) producing a horizontal service layer specification for device management, security, and semantic interoperability.
+  - **[[IEEE 802.15.4]]**: MAC and PHY standard underlying Zigbee, Thread, 6LoWPAN, and WirelessHART, defining the low-rate WPAN radio interface.
+  - **IETF standards**: CoAP (RFC 7252), MQTT v5 (OASIS), 6LoWPAN (RFC 4944), DTLS 1.3 (RFC 9147) for constrained environments.
+  - **IEC 62443**: industrial cybersecurity standard series specifying security levels for IACS (Industrial Automation and Control Systems) including IoT-integrated plant.
+  - **W3C Web of Things (WoT)**: Thing Description (TD) specification for semantic interoperability, allowing heterogeneous devices to be described and discovered through machine-readable metadata.
+  - **ETSI EN 303 645**: baseline cybersecurity standard for consumer IoT, underpinning the EU Cyber Resilience Act and UK Product Security and Telecommunications Infrastructure Act (PSTI).
+
+- ### Convergence with Adjacent Technologies
+  - **[[Edge Computing]]**: the shift of ML inference and stream analytics to near-device nodes is the defining architectural trend in IoT, reducing latency, cloud costs, and data egress volumes.
+  - **[[Machine Learning]]**: TinyML frameworks (TensorFlow Lite Micro, Edge Impulse) enable anomaly detection, keyword spotting, and image classification directly on microcontrollers, closing the actuation loop without cloud round-trips.
+  - **[[Digital Twin]]**: IoT telemetry feeds real-time synchronisation of asset twins in platforms such as Azure Digital Twins, enabling simulation-based predictive maintenance and process optimisation.
+  - **[[Blockchain]]**: decentralised ledgers are explored for immutable audit logs of IoT sensor readings (e.g. food provenance, emissions reporting), though on-chain latency and cost constrain real-time use.
+  - **[[Spatial Computing]]**: AR overlays contextualised by live IoT data enable field technicians to visualise sensor readings, asset status, and maintenance history spatially via HMDs.
+  - **[[5G]]**: network slicing and URLLC modes promise deterministic low-latency connectivity for industrial control and collaborative robotics beyond what current LPWAN or Wi-Fi provide.
+
+- ### Current Landscape (2026)
+  - The Connectivity Standards Alliance closed the residential interoperability gap fast: Matter 1.4 (November 2024) added energy management and Enhanced Multi-Admin, Matter 1.5 (20 November 2025) added camera streaming over RTSP plus solar/battery/heat-pump energy clusters, and Matter 1.6 (June 2026) introduced NFC-based commissioning (setup before power-on), Joint Fabric for co-administered networks, and thermostat suggestions.
+  - Security certification has hardened in parallel: the CSA's Product Security 1.1 specification (June 2026) extends scope from individual devices to complete IoT systems, adds two assurance levels (self-assessment reviewed by an Authorised Test Laboratory versus independent ATL testing), and maps onto the EU Radio Equipment Directive harmonised standards and Singapore's labelling scheme.
+  - Regulation has shifted IoT security from optional to mandatory: the EU Radio Equipment Directive cybersecurity requirements (via EN 18031) became mandatory on 1 August 2025, and the EU Cyber Resilience Act (in force since 10 December 2024) phases in reporting duties from 11 September 2026 and full obligations from 11 December 2027, with fines up to EUR 15 million or 2.5% of global turnover.
+  - In the US the FCC launched the voluntary Cyber Trust Mark on 7 January 2025 (built on NIST IR 8425), and Executive Order 14306 (June 2025) pushed it toward de-facto mandatory by directing federal agencies to prioritise procurement of labelled devices from 2027; rollout has since faced administrative delays. Universal default passwords are now effectively illegal for new devices across the UK, EU and Japan, with mandated multi-year update support and SBOMs becoming standard.
+  - Markets keep scaling: IoT Analytics put connected IoT devices at 21.1 billion by end-2025 (up 13% YoY) and the enterprise IoT market at USD 324 billion, projecting 14% growth for 2026. Ericsson reported roughly 4.5 billion cellular IoT connections at end-2025.
+  - Connectivity is consolidating around 5G RedCap as the mid-tier bridge as 2G/3G sunset: 14 operators had launched RedCap commercially by end-2025 (the Apple Watch range adopted it), eRedCap modules arrive in 2026, and IoT Analytics projects RedCap chipset shipments at an 82% CAGR to 2030. Satellite-cellular hybrid modules are emerging for always-on remote links.
+  - The open frontier is intelligence at the edge: IoT Analytics estimates under 1% of the 21.1 billion connections carried a true edge-AI accelerator (NPU/GPU) as of December 2025, so TinyML on-device inference, secure lifecycle/update governance at fleet scale, and fragmented cross-jurisdiction compliance remain the key unsolved challenges.
+
+- ### References
+  - 1. Connectivity Standards Alliance / 9to5Mac (2026). Matter 1.6 and Product Security 1.1 officially announced — here's what's new. https://9to5mac.com/2026/06/17/matter-1-6-and-product-security-1-1-officially-announced-heres-whats-new/
+  - 2. Amazon Web Services (2026). Adopting the Matter standard for IoT device makers (updated for Matter 1.5). https://docs.aws.amazon.com/pdfs/prescriptive-guidance/latest/strategy-matter-standard/strategy-matter-standard.pdf
+  - 3. IoT M2M Council (2026). Global Cybersecurity Regulation in 2025. https://iotm2mcouncil.org/iot-library/news/iot-security-public-policy/global-cybersecurity-regulation-in-2025/
+  - 4. European Commission (2026). Cyber Resilience Act — Shaping Europe's digital future. https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+  - 5. IoT Analytics (2026). State of enterprise IoT: From IoT to autonomous connected operations. https://iot-analytics.com/state-of-enterprise-iot-from-iot-autonomous-connected-operations/
+  - 6. Ericsson (2026). IoT connections outlook — Ericsson Mobility Report. https://www.ericsson.com/en/reports-and-papers/mobility-report/dataforecasts/iot-connections-outlook
+
+- ### Provenance
+

@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Fault Tolerance</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Fault Tolerance"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Fault Tolerance"/><meta name="twitter:description" content="System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi… S..."/><meta property="og:description" content="System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi… S..."/><meta property="og:image:alt" content="System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Fault-Tolerance"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Fault-Tolerance"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Fault-Tolerance"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-3165"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-3165" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Fault Tolerance</a></div></nav><h1 class="article-title">Fault Tolerance</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.762Z">23 Sept 2026</time><span>46 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:fault-tolerance</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Computing-and-Cloud" class="internal">Computing and Cloud</a></li><li><a href="../pages/Software-Engineering" class="internal">Software Engineering</a></li><li><a href="../Dependability" class="internal">Dependability</a></li><li><a href="../System-Property" class="internal">System Property</a></li><li><a href="../pages/Reliability-Engineering" class="internal">Reliability Engineering</a></li><li><a href="../pages/Resilience" class="internal">Resilience</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../failure-detector" class="internal">Failure Detector</a></li><li><a href="../pages/Health-Monitoring" class="internal">Health Monitoring</a></li><li><a href="../pages/Quorum" class="internal">Quorum</a></li><li><a href="../pages/Redundancy" class="internal">Redundancy</a></li><li><a href="../pages/Replication" class="internal">Replication</a></li><li><a href="../pages/Write-Ahead-Logging" class="internal">Write Ahead Log</a></li><li><a href="../pages/Consensus-Mechanism" class="internal">Consensus Mechanism</a></li><li><a href="../pages/Checkpointing" class="internal">Checkpointing</a></li><li><a href="../Recovery-Procedure" class="internal">Recovery Procedure</a></li><li><a href="../Heartbeat" class="internal">Heartbeat</a></li><li><a href="../Write-Ahead-Log" class="internal">Write Ahead Log</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Idempotency" class="internal">Idempotency</a></li><li><a href="../pages/Monitoring-System" class="internal">Monitoring System</a></li><li><a href="../time-synchronisation" class="internal">Time Synchronisation</a></li><li><a href="../pages/Network-Layer" class="internal">Network Layer</a></li><li><a href="../pages/Storage-Infrastructure" class="internal">Storage Infrastructure</a></li><li><a href="../Failure-Model" class="internal">Failure Model</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Data-Consistency" class="internal">Data Consistency</a></li><li><a href="../pages/Disaster-Recovery" class="internal">Disaster Recovery</a></li><li><a href="../durability" class="internal">Durability</a></li><li><a href="../high-availability" class="internal">High Availability</a></li><li><a href="../pages/Zero-Downtime-Deployment" class="internal">Zero Downtime Deployment</a></li><li><a href="../Continued-Operation" class="internal">Continued Operation</a></li><li><a href="../Automatic-Recovery" class="internal">Automatic Recovery</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Reliability-Engineering" class="internal">Reliability Engineering</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../Best-Effort-Retry" class="internal">Best-Effort Retry</a></li><li><a href="../Single-Point-of-Failure" class="internal">Single Point of Failure</a></li><li><a href="../Simple-Replication" class="internal">Simple Replication</a></li><li><a href="../High-Availability-without-Byzantine-resilience" class="internal">High Availability without Byzantine resilience</a></li><li><a href="../Crash-Only-Recovery-without-consensus" class="internal">Crash-Only Recovery without consensus</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Distributed-Systems-Theory" class="internal">Distributed Systems Theory</a></li><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../Error-Correcting-Codes" class="internal">Error Correcting Codes</a></li><li><a href="../pages/Cryptography" class="internal">Cryptography</a></li><li><a href="../Network-Protocols" class="internal">Network Protocols</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Hardware-Layer" class="internal">Hardware Layer</a></li><li><a href="../Operating-System-Layer" class="internal">Operating System Layer</a></li><li><a href="../pages/Middleware-Layer" class="internal">Middleware Layer</a></li><li><a href="../pages/Application-Layer" class="internal">Application Layer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/HotStuff" class="internal">HotStuff</a></li><li><a href="../pages/Paxos" class="internal">Paxos</a></li><li><a href="../pages/PBFT" class="internal">PBFT</a></li><li><a href="../pages/Raft" class="internal">Raft</a></li><li><a href="../tendermint" class="internal">Tendermint</a></li><li><a href="../pages/Two-Phase-Commit" class="internal">Two-Phase Commit</a></li><li><a href="../pages/State-Machine-Replication" class="internal">State Machine Replication</a></li><li><a href="../Triple-Modular-Redundancy" class="internal">Triple Modular Redundancy</a></li><li><a href="../Chain-Replication" class="internal">Chain Replication</a></li><li><a href="../Primary-Backup" class="internal">Primary-Backup</a></li><li><a href="../SWIM" class="internal">SWIM</a></li><li><a href="../Phi-Accrual-Detector" class="internal">Phi Accrual Detector</a></li><li><a href="../N-Version-Programming" class="internal">N-Version Programming</a></li><li><a href="../Recovery-Blocks" class="internal">Recovery Blocks</a></li><li><a href="../Sagas" class="internal">Sagas</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>IF-1071</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../aerospace-avionics" class="internal">Aerospace Avionics</a></li><li><a href="../arp4754-a" class="internal">ARP4754A</a></li><li><a href="../automatic-recovery" class="internal">Automatic Recovery</a></li><li><a href="../autonomous-vehicles" class="internal">Autonomous Vehicles</a></li><li><a href="../avizienis-laprie-randell-landwehr-2004-dependability-taxonomy" class="internal">Avizienis Laprie Randell Landwehr 2004 Dependability Taxonomy</a></li><li><a href="../best-effort-retry" class="internal">Best-Effort Retry</a></li><li><a href="../beyer-jones-petoff-murphy-2016-google-sre-book" class="internal">Beyer Jones Petoff Murphy 2016 Google SRE Book</a></li><li><a href="../brewer-2000-podc-keynote-cap" class="internal">Brewer 2000 PODC Keynote CAP</a></li><li><a href="../buchman-kwon-milosevic-2018-tendermint" class="internal">Buchman Kwon Milosevic 2018 Tendermint</a></li><li><a href="../burrows-2006-chubby-osdi" class="internal">Burrows 2006 Chubby OSDI</a></li><li><a href="../byzantine-generals-problem" class="internal">Byzantine Generals Problem</a></li><li><a href="../candea-fox-2003-crash-only-software-hot-os" class="internal">Candea Fox 2003 Crash-Only Software HotOS</a></li><li><a href="../cap-theorem" class="internal">CAP Theorem</a></li><li><a href="../castro-liskov-1999-pbft-osdi" class="internal">Castro Liskov 1999 PBFT OSDI</a></li><li><a href="../chain-replication" class="internal">Chain Replication</a></li><li><a href="../chandra-toueg-1996-unreliable-failure-detectors" class="internal">Chandra Toueg 1996 Unreliable Failure Detectors</a></li><li><a href="../chandy-lamport-1985-distributed-snapshots" class="internal">Chandy Lamport 1985 Distributed Snapshots</a></li><li><a href="../chaos-engineering" class="internal">Chaos Engineering</a></li><li><a href="../checkpointing" class="internal">Checkpointing</a></li><li><a href="../continued-operation" class="internal">Continued Operation</a></li><li><a href="../corbett-et-al-2012-spanner-osdi" class="internal">Corbett et al 2012 Spanner OSDI</a></li><li><a href="../crash-only-recovery-without-consensus" class="internal">Crash-Only Recovery without consensus</a></li><li><a href="../das-gupta-motivala-2002-swim-dsn" class="internal">Das Gupta Motivala 2002 SWIM DSN</a></li><li><a href="../data-consistency" class="internal">Data Consistency</a></li><li><a href="../de-candia-et-al-2007-dynamo-sosp" class="internal">DeCandia et al 2007 Dynamo SOSP</a></li><li><a href="../dependability" class="internal">Dependability</a></li><li><a href="../disaster-recovery" class="internal">Disaster Recovery</a></li><li><a href="../distributed-consensus" class="internal">Distributed Consensus</a></li><li><a href="../distributed-systems" class="internal">DistributedSystemsDomain</a></li><li><a href="../distributed-systems-theory" class="internal">Distributed Systems Theory</a></li><li><a href="../distributed-training" class="internal">Distributed Training</a></li><li><a href="../dixit-et-al-2021-silent-data-corruptions-at-scale" class="internal">Dixit et al 2021 Silent Data Corruptions at Scale</a></li><li><a href="../do-178-c" class="internal">DO-178C</a></li><li><a href="../durability" class="internal">Durability</a></li><li><a href="../erasure-coding" class="internal">Erasure Coding</a></li><li><a href="../error-correcting-codes" class="internal">Error Correcting Codes</a></li><li><a href="../eventual-consistency" class="internal">Eventual Consistency</a></li><li><a href="../failure-detector" class="internal">Failure Detector</a></li><li><a href="../failure-model" class="internal">Failure Model</a></li><li><a href="../financial-trading-systems" class="internal">Financial Trading Systems</a></li><li><a href="../fischer-lynch-paterson-1985-flp-impossibility" class="internal">Fischer Lynch Paterson 1985 FLP Impossibility</a></li><li><a href="../flp-impossibility" class="internal">FLP Impossibility</a></li><li><a href="../garcia-molina-salem-1987-sagas-sigmod" class="internal">Garcia-Molina Salem 1987 Sagas SIGMOD</a></li><li><a href="../gilbert-lynch-2002-cap-formal-proof" class="internal">Gilbert Lynch 2002 CAP Formal Proof</a></li><li><a href="../hamming-codes" class="internal">Hamming Codes</a></li><li><a href="../hardware-layer" class="internal">Hardware Layer</a></li><li><a href="../hawblitzel-et-al-2015-iron-fleet-sosp" class="internal">Hawblitzel et al 2015 IronFleet SOSP</a></li><li><a href="../hayashibara-et-al-2004-phi-accrual-srds" class="internal">Hayashibara et al 2004 Phi Accrual SRDS</a></li><li><a href="../health-monitoring" class="internal">Health Monitoring</a></li><li><a href="../heartbeat" class="internal">Heartbeat</a></li><li><a href="../heartbeat-protocol" class="internal">Heartbeat Protocol</a></li><li><a href="../high-availability" class="internal">High Availability</a></li><li><a href="../high-availability-without-byzantine-resilience" class="internal">High Availability without Byzantine resilience</a></li><li><a href="../hochschild-et-al-2021-cores-dont-count-hot-os" class="internal">Hochschild et al 2021 Cores Dont Count HotOS</a></li><li><a href="../hot-stuff" class="internal">HotStuff</a></li><li><a href="../hunt-et-al-2010-zoo-keeper-usenix-atc" class="internal">Hunt et al 2010 ZooKeeper USENIX ATC</a></li><li><a href="../idempotency" class="internal">Idempotency</a></li><li><a href="../iec-61508" class="internal">IEC 61508</a></li><li><a href="../ieee-1633" class="internal">IEEE 1633</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../iso-26262" class="internal">ISO 26262</a></li><li><a href="../knight-leveson-1986-n-version-independence" class="internal">Knight Leveson 1986 N-Version Independence</a></li><li><a href="../lamport-1998-part-time-parliament-paxos" class="internal">Lamport 1998 Part-Time Parliament Paxos</a></li><li><a href="../lamport-2001-paxos-made-simple" class="internal">Lamport 2001 Paxos Made Simple</a></li><li><a href="../lamport-clocks" class="internal">Lamport Clocks</a></li><li><a href="../lamport-shostak-pease-1982-byzantine-generals" class="internal">Lamport Shostak Pease 1982 Byzantine Generals</a></li><li><a href="../linearisability" class="internal">Linearisability</a></li><li><a href="../liskov-cowling-2012-viewstamped-replication" class="internal">Liskov Cowling 2012 Viewstamped Replication</a></li><li><a href="../llama-team-2024-llama-3-technical-report" class="internal">Llama Team 2024 Llama 3 Technical Report</a></li><li><a href="../medical-devices" class="internal">Medical Devices</a></li><li><a href="../mohan-et-al-1992-aries-recovery" class="internal">Mohan et al 1992 ARIES Recovery</a></li><li><a href="../monitoring-system" class="internal">Monitoring System</a></li><li><a href="../n-version-programming" class="internal">N-Version Programming</a></li><li><a href="../narrative-gold-mine" class="internal">Narrative Gold Mine</a></li><li><a href="../network-protocols" class="internal">Network Protocols</a></li><li><a href="../nist-sp-800-160" class="internal">NIST SP 800-160</a></li><li><a href="../ongaro-ousterhout-2014-raft-usenix-atc" class="internal">Ongaro Ousterhout 2014 Raft USENIX ATC</a></li><li><a href="../operating-system-layer" class="internal">Operating System Layer</a></li><li><a href="../patterson-gibson-katz-1988-raid-sigmod" class="internal">Patterson Gibson Katz 1988 RAID SIGMOD</a></li><li><a href="../paxos" class="internal">Paxos</a></li><li><a href="../pbft" class="internal">PBFT</a></li><li><a href="../phi-accrual-detector" class="internal">Phi Accrual Detector</a></li><li><a href="../primary-backup" class="internal">Primary-Backup</a></li><li><a href="../quorum" class="internal">Quorum</a></li><li><a href="../raft" class="internal">Raft</a></li><li><a href="../randell-1975-system-structure-software-fault-tolerance" class="internal">Randell 1975 System Structure Software Fault Tolerance</a></li><li><a href="../recovery-blocks" class="internal">Recovery Blocks</a></li><li><a href="../recovery-procedure" class="internal">Recovery Procedure</a></li><li><a href="../redundancy" class="internal">Redundancy</a></li><li><a href="../reed-solomon-coding" class="internal">Reed-Solomon Coding</a></li><li><a href="../reliability-engineering" class="internal">Reliability Engineering</a></li><li><a href="../replication" class="internal">Replication</a></li><li><a href="../sagas" class="internal">Sagas</a></li><li><a href="../schneider-1990-state-machine-replication-tutorial" class="internal">Schneider 1990 State Machine Replication Tutorial</a></li><li><a href="../simple-replication" class="internal">Simple Replication</a></li><li><a href="../single-point-of-failure" class="internal">Single Point of Failure</a></li><li><a href="../site-reliability-engineering" class="internal">Site Reliability Engineering</a></li><li><a href="../swim" class="internal">SWIM</a></li><li><a href="../system-property" class="internal">System Property</a></li><li><a href="../tendermint" class="internal">Tendermint</a></li><li><a href="../time-synchronisation" class="internal">Time Synchronisation</a></li><li><a href="../triple-modular-redundancy" class="internal">Triple Modular Redundancy</a></li><li><a href="../two-phase-commit" class="internal">Two-Phase Commit</a></li><li><a href="../van-renesse-schneider-2004-chain-replication-osdi" class="internal">van Renesse Schneider 2004 Chain Replication OSDI</a></li><li><a href="../vector-clocks" class="internal">Vector Clocks</a></li><li><a href="../verbitski-et-al-2017-aurora-sigmod" class="internal">Verbitski et al 2017 Aurora SIGMOD</a></li><li><a href="../von-neumann-1956-probabilistic-logics-tmr" class="internal">von Neumann 1956 Probabilistic Logics TMR</a></li><li><a href="../write-ahead-log" class="internal">Write Ahead Log</a></li><li><a href="../yin-et-al-2019-hot-stuff-podc" class="internal">Yin et al 2019 HotStuff PODC</a></li><li><a href="../zero-downtime-deployment" class="internal">Zero Downtime Deployment</a></li><li><a href="../application-layer" class="internal">Application Layer</a></li><li><a href="../blockchain" class="internal">Blockchain</a></li><li><a href="../cloud-computing" class="internal">Cloud Computing</a></li><li><a href="../consensus-mechanism" class="internal">Consensus Mechanism</a></li><li><a href="../cryptography" class="internal">Cryptography</a></li><li><a href="../gossip-protocol" class="internal">Gossip Protocol</a></li><li><a href="../working/infrastructure" class="internal">InfrastructureDomain</a></li><li><a href="../middleware-layer" class="internal">Middleware Layer</a></li><li><a href="../network-layer" class="internal">Network Layer</a></li><li><a href="../resilience" class="internal">Resilience</a></li><li><a href="../state-machine-replication" class="internal">State Machine Replication</a></li><li><a href="../storage-infrastructure" class="internal">Storage Infrastructure</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:616c58cd73d424a65afa23eed43afab75ae60d1be8e1e4f0ac79373c5c66bbc6</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Byzantine-Generals-Problem" class="internal">Byzantine Generals Problem</a></li><li><a href="../pages/CAP-Theorem" class="internal">CAP Theorem</a></li><li><a href="../pages/Chaos-Engineering" class="internal">Chaos Engineering</a></li><li><a href="../pages/Distributed-Consensus" class="internal">Distributed Consensus</a></li><li><a href="../pages/Eventual-Consistency" class="internal">Eventual Consistency</a></li><li><a href="../pages/FLP-Impossibility" class="internal">FLP Impossibility</a></li><li><a href="../pages/Linearizability" class="internal">Linearisability</a></li><li><a href="../pages/Site-Reliability-Engineering" class="internal">Site Reliability Engineering</a></li><li><a href="../Linearisability" class="internal">Linearisability</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ARP4754A" class="internal">ARP4754A</a></li><li><a href="../pages/DO-178C" class="internal">DO-178C</a></li><li><a href="../iec-61508" class="internal">IEC 61508</a></li><li><a href="../pages/ISO-26262" class="internal">ISO 26262</a></li><li><a href="../NIST-SP-800-160" class="internal">NIST SP 800-160</a></li><li><a href="../IEEE-1633" class="internal">IEEE 1633</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Avionics" class="internal">Aerospace Avionics</a></li><li><a href="../pages/Autonomous-Vehicle" class="internal">Autonomous Vehicle</a></li><li><a href="../distributed-training" class="internal">Distributed Training</a></li><li><a href="../pages/Financial-Trading" class="internal">Financial Trading Systems</a></li><li><a href="../pages/Medical-Devices" class="internal">Medical Devices</a></li><li><a href="../Blockchain" class="internal">Blockchain</a></li><li><a href="../pages/Cloud-Computing" class="internal">Cloud Computing</a></li><li><a href="../Aerospace-Avionics" class="internal">Aerospace Avionics</a></li><li><a href="../Autonomous-Vehicles" class="internal">Autonomous Vehicles</a></li><li><a href="../Financial-Trading-Systems" class="internal">Financial Trading Systems</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../erasure-coding" class="internal">Erasure Coding</a></li><li><a href="../hamming-codes" class="internal">Hamming Codes</a></li><li><a href="../pages/Reed-Solomon-Codes" class="internal">Reed-Solomon Coding</a></li><li><a href="../pages/Vector-Clocks" class="internal">Vector Clocks</a></li><li><a href="../pages/Gossip-Protocol" class="internal">Gossip Protocol</a></li><li><a href="../Heartbeat-Protocol" class="internal">Heartbeat Protocol</a></li><li><a href="../Lamport-Clocks" class="internal">Lamport Clocks</a></li><li><a href="../Reed-Solomon-Coding" class="internal">Reed-Solomon Coding</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:Redundancy))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:Replication))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:ConsensusMechanism))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:FailureDetector))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:Checkpointing))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:RecoveryProcedure))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:HealthMonitoring))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:hasPart infra:Quorum))</p>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:requires infra:FailureModel))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:requires infra:StorageInfrastructure))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:requires infra:NetworkLayer))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:requires infra:TimeSynchronisation))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:requires infra:Idempotency))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:dependsOn infra:DistributedSystemsTheory))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:dependsOn infra:InformationTheory))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:dependsOn infra:ErrorCorrectingCodes))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:dependsOn infra:NetworkProtocols))</p>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:enables infra:HighAvailability))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:enables infra:DataConsistency))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:enables infra:ContinuedOperation))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:enables infra:AutomaticRecovery))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:enables infra:Durability))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:enables infra:DisasterRecovery))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:supports infra:CloudComputing))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:supports infra:Blockchain))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:supports infra:AerospaceAvionics))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:supports infra:DistributedTraining))</p>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:TripleModularRedundancy))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:Paxos))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:Raft))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:PBFT))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:HotStuff))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:Tendermint))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:ChainReplication))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:StateMachineReplication))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:SWIM))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:implements infra:PhiAccrualDetector))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:uses infra:Heartbeat))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:uses infra:GossipProtocol))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:uses infra:ErasureCoding))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:uses infra:WriteAheadLog))</p>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:reduces infra:SinglePointOfFailure))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:reduces infra:MeanTimeToRecovery))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:reduces infra:Downtime))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:reduces infra:DataLossRisk))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:reduces infra:ServiceDegradation))</p>
+<h2 id="association-relationships">Association Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#association-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:relatedTo infra:CAPTheorem))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:relatedTo infra:FLPImpossibility))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:relatedTo infra:ByzantineGeneralsProblem))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:relatedTo infra:SiteReliabilityEngineering))
+SubClassOf(infra:FaultTolerance
+ObjectSomeValuesFrom(infra:relatedTo infra:ChaosEngineering))</p>
+<h2 id="data-properties-characteristics">Data Properties (Characteristics)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#data-properties-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>DataPropertyAssertion(infra:hasIdentifier infra:FaultTolerance “IF-1071”^^xsd:string)
+DataPropertyAssertion(infra:authorityScore infra:FaultTolerance “0.87”^^xsd:decimal)
+DataPropertyAssertion(infra:minByzantineReplicas infra:FaultTolerance “3”^^xsd:integer)
+DataPropertyAssertion(infra:byzantineQuorumFormula infra:FaultTolerance “3f+1”^^xsd:string)
+DataPropertyAssertion(infra:crashQuorumFormula infra:FaultTolerance “2f+1”^^xsd:string)
+DataPropertyAssertion(infra:s3DurabilityNines infra:FaultTolerance “11”^^xsd:integer)
+DataPropertyAssertion(infra:auroraReplicaCount infra:FaultTolerance “6”^^xsd:integer)</p>
+<h2 id="property-characteristics">Property Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#property-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AsymmetricObjectProperty(infra:requires)
+AsymmetricObjectProperty(infra:enables)
+AsymmetricObjectProperty(infra:implements)
+AsymmetricObjectProperty(infra:reduces)
+TransitiveObjectProperty(infra:dependsOn)
+FunctionalDataProperty(infra:byzantineQuorumFormula)</p>
+<h2 id="annotations">Annotations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#annotations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AnnotationAssertion(rdfs:label infra:FaultTolerance “Fault Tolerance”@en)
+AnnotationAssertion(rdfs:comment infra:FaultTolerance “System property denoting capability to continue correct service in the presence of component failures via redundancy, replication, consensus, failure detection, and recovery, bounded by FLP, CAP, and Byzantine Generals impossibility results. Encompasses hardware (TMR, ECC, RAID), software (N-version, recovery blocks, micro-reboots), and distributed (Paxos, Raft, PBFT, HotStuff, SMR, chain replication) realisations across cloud (Spanner, ZooKeeper, etcd, S3, Aurora), aerospace (DO-178C, ARP4754A triple-redundant flight computers), and AI/ML training (DeepSpeed, FSDP, NCCL fault recovery at hyperscale).”@en)
+AnnotationAssertion(dcterms:identifier infra:FaultTolerance “IF-1071”^^xsd:string)
+AnnotationAssertion(dcterms:subject infra:FaultTolerance “Distributed Systems, Dependability, Consensus, Replication, Reliability Engineering”@en)</p>
+<ul>
+<li>
+<h2 id="about-fault-tolerance">About Fault Tolerance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-fault-tolerance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Fault Tolerance</strong> is the discipline within dependability engineering concerned with the design of systems that continue to deliver correct service in the presence of faults — latent defects in hardware, software, configuration, environment, or operator action that may manifest as observable failures.</p>
+</li>
+<li>
+<p>Where <strong>reliability</strong> measures the probability of failure-free operation over an interval, and <strong>availability</strong> measures the fraction of time a system is up, fault tolerance is the <em>mechanism</em> class by which both are achieved. The two are sometimes confused; the distinction matters because availability is a measurable outcome whilst fault tolerance is a body of engineering technique.</p>
+</li>
+<li>
+<p>The discipline is anchored in three impossibility results that delimit what is achievable:</p>
+<ul>
+<li>The <strong>Byzantine Generals problem</strong> (Lamport, Shostak &amp; Pease 1982) establishing that consensus among n processes tolerating f arbitrarily-faulty processes requires n ≥ 3f+1, dropping to n ≥ 2f+1 with unforgeable digital signatures.</li>
+<li>The <strong>FLP impossibility</strong> (Fischer, Lynch &amp; Paterson 1985) proving no deterministic asynchronous protocol can guarantee consensus in the presence of even a single crash failure — implying that every real consensus algorithm trades off liveness, safety, or asynchrony assumptions.</li>
+<li>The <strong>CAP theorem</strong> (Brewer 2000; Gilbert &amp; Lynch 2002) proving that under network partition a system must sacrifice either consistency or availability — formalised in the PACELC refinement (Abadi 2012) to cover the non-partitioned case as well.</li>
+</ul>
+</li>
+<li>
+<p>Every production fault-tolerant system is, viewed correctly, a particular engineering compromise within the trade-space these results define.</p>
+</li>
+<li>
+<p>The <strong>fault → error → failure</strong> chain (Avizienis, Laprie, Randell &amp; Landwehr 2004 <em>IEEE TDSC</em>) is the canonical conceptual model:</p>
+<ul>
+<li>A <strong>fault</strong> is a defect — a buffer-overflow bug, a stuck-at-zero gate, a crossed wire, a misconfigured route, a forgotten authentication token.</li>
+<li>When activated, the fault produces an <strong>error</strong>: incorrect internal state.</li>
+<li>If the error propagates to the service interface, it becomes a <strong>failure</strong>: incorrect output observed by the client.</li>
+</ul>
+</li>
+<li>
+<p>Fault tolerance intervenes at the error stage — detecting incorrect state and masking or recovering from it before failure manifests externally.</p>
+</li>
+<li>
+<p>This is operationalised through four families of technique:</p>
+<ul>
+<li><strong>Fault avoidance</strong> — rigorous development practice to prevent fault introduction (code reviews, type systems, formal methods).</li>
+<li><strong>Fault removal</strong> — verification and testing to eliminate residual faults (fuzzing, model checking, chaos engineering).</li>
+<li><strong>Fault forecasting</strong> — quantitative failure-rate prediction (reliability block diagrams, Markov models, fault trees).</li>
+<li><strong>Fault tolerance proper</strong> — runtime mechanisms that continue service despite active faults — the subject of this article.</li>
+</ul>
+</li>
+<li>
+<p>The economic argument for fault tolerance follows from the unforgiving arithmetic of large-scale systems:</p>
+<ul>
+<li>A datacentre running 100,000 servers with individual annualised failure rates of 4% will see eleven server failures per day.</li>
+<li>A Llama 3 training run on 16,384 NVIDIA H100 GPUs reports approximately a 50% per-day job interruption rate (Meta AI 2024).</li>
+<li>Amazon S3’s 11-nines durability target implies an expected object loss rate of one object per 100 billion stored per year.</li>
+</ul>
+</li>
+<li>
+<p>At hyperscale, <em>the question is not whether components will fail but how the system behaves when they do</em>. The discipline has moved from a niche concern in aerospace and telephony to a mass-market requirement underlying cloud computing, financial trading, autonomous vehicles, and every smartphone with synchronised cloud storage.</p>
+</li>
+<li>
+<h3 id="core-theoretical-foundations">Core Theoretical Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-theoretical-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="the-byzantine-generals-problem-lamport-shostak--pease-1982">The Byzantine Generals Problem (Lamport, Shostak &amp; Pease 1982)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-byzantine-generals-problem-lamport-shostak--pease-1982" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Formalises consensus under arbitrary (malicious or random) failure. Several Byzantine army divisions surround an enemy city; loyal generals must agree on a coordinated plan despite traitors among them sending conflicting messages. The result: if f generals may be traitors, at least 3f+1 generals total are required, and at least f+1 rounds of communication. Signed (authenticated) messages relax the requirement to 2f+1 with cryptographic signatures and unforgeable authentication. The theorem applies directly to replicated state machines tolerating Byzantine failures—silently incorrect computation, not merely crash—giving the 3f+1 lower bound underlying PBFT, HotStuff, Tendermint, and every blockchain BFT consensus.</p>
+</li>
+<li>
+<h4 id="flp-impossibility-fischer-lynch--paterson-1985">FLP Impossibility (Fischer, Lynch &amp; Paterson 1985)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#flp-impossibility-fischer-lynch--paterson-1985" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>“Impossibility of Distributed Consensus with One Faulty Process,” <em>Journal of the ACM</em> 32(2). In an asynchronous distributed system (no bound on message delay, no synchronised clocks), no deterministic consensus protocol can guarantee both <em>safety</em> (agreement, validity, integrity) and <em>liveness</em> (termination) even when only a single process may crash. The proof constructs an infinite execution in which a single slow process can always be confused with a crashed one, indefinitely deferring agreement. Practical consequence: every real consensus algorithm circumvents FLP by adding <strong>partial synchrony</strong> (Dwork, Lynch &amp; Stockmeyer 1988—eventual GST after which message delay is bounded), <strong>randomisation</strong> (Ben-Or 1983, common-coin protocols), or <strong>failure detectors</strong> (Chandra &amp; Toueg 1996) that may give wrong answers but eventually stabilise.</p>
+</li>
+<li>
+<h4 id="chandra-toueg-failure-detector-hierarchy-1996">Chandra-Toueg Failure Detector Hierarchy (1996)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chandra-toueg-failure-detector-hierarchy-1996" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>“Unreliable Failure Detectors for Reliable Distributed Systems,” <em>Journal of the ACM</em> 43(2). Introduces failure detectors as oracles that maintain a list of suspected processes with two completeness/accuracy properties. The hierarchy spans Perfect (P—never wrong), Eventually Perfect (♦P—eventually never wrong), Strong (S—eventually identifies at least one correct process), and Eventually Strong (♦S—the weakest detector sufficient to solve consensus). Proves ♦S is the <em>weakest</em> failure detector enabling asynchronous consensus, formally bridging the FLP impossibility and practical consensus algorithms (Paxos implicitly assumes ♦S).</p>
+</li>
+<li>
+<h4 id="cap-theorem-brewer-2000-gilbert--lynch-2002">CAP Theorem (Brewer 2000; Gilbert &amp; Lynch 2002)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cap-theorem-brewer-2000-gilbert--lynch-2002" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Eric Brewer’s PODC 2000 keynote conjectured—and Gilbert &amp; Lynch’s 2002 <em>ACM SIGACT News</em> paper formally proved—that a distributed data store cannot simultaneously provide <strong>Consistency</strong> (every read receives the most recent write or an error), <strong>Availability</strong> (every request receives a response), and <strong>Partition tolerance</strong> (the system continues despite network message loss). Under partition (which network engineers regard as inevitable), a system must choose CP (consistency-preferring, e.g. ZooKeeper, etcd, Spanner) or AP (availability-preferring, e.g. Cassandra, DynamoDB with eventual consistency, Dynamo). The PACELC refinement (Abadi 2012) extends this to the non-partitioned case: even in normal operation a system trades latency (L) for consistency (C).</p>
+</li>
+<li>
+<h4 id="state-machine-replication-schneider-1990">State Machine Replication (Schneider 1990)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#state-machine-replication-schneider-1990" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<p>Fred Schneider’s “Implementing fault-tolerant services using the state machine approach: A tutorial” (<em>ACM Computing Surveys</em> 22(4)) formalises the replicated-state-machine paradigm: model a service as a deterministic state machine, replicate it across n nodes, and use an atomic broadcast (total-order multicast) to deliver client commands in the same order to every replica. Provided replicas start in the same state and process the same sequence of deterministic commands, they remain in the same state. This abstraction is the foundation of Paxos, Raft, Viewstamped Replication, PBFT, and every modern replicated database. The commands-vs-state separation is so fundamental that “the SMR approach” is now shorthand for an entire architectural family.</p>
+</li>
+<li>
+<h3 id="failure-models--taxonomy">Failure Models — Taxonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#failure-models--taxonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The choice of <strong>failure model</strong> determines which algorithms are applicable and what guarantees they can provide. Cristian (1991) and later Hadzilacos &amp; Toueg (1994) catalogued the canonical hierarchy. The models are ordered roughly from most-benign to most-adversarial; an algorithm correct under a stronger (more adversarial) model is automatically correct under the weaker ones.</p>
+</li>
+<li>
+<p><strong>Fail-Stop</strong> (Schlichting &amp; Schneider 1983):</p>
+<ul>
+<li>A process either operates correctly or halts permanently.</li>
+<li>Halting is <em>reliably detectable</em> by other processes.</li>
+<li>The friendliest model — and rarely true in practice.</li>
+<li>Requires explicit hardware/software support (e.g., self-checking pairs, watchdog circuits with broadcast death notifications).</li>
+</ul>
+</li>
+<li>
+<p><strong>Crash (fail-silent)</strong>:</p>
+<ul>
+<li>A process halts permanently but its halting is not directly detectable — must be inferred via timeouts.</li>
+<li>The standard model for Paxos, Raft, ZooKeeper, etcd, and most production distributed databases.</li>
+<li>Closer to reality than fail-stop, but assumes the process never resumes — true only with durable death (hardware destruction, container removal).</li>
+</ul>
+</li>
+<li>
+<p><strong>Crash-Recovery</strong>:</p>
+<ul>
+<li>A process may crash and later restart, possibly losing volatile state.</li>
+<li>Recovery requires durable storage (write-ahead logs, snapshot files) so the recovering process can reconstruct its committed state.</li>
+<li>The model assumed by most real-world consensus implementations — Multi-Paxos with stable storage, Raft with persistent log + snapshot.</li>
+<li>Introduces subtle correctness pitfalls: a crashed-then-recovered process must remember its previous votes / promises to avoid violating safety.</li>
+</ul>
+</li>
+<li>
+<p><strong>Omission</strong>:</p>
+<ul>
+<li>A process may fail to send or receive specific messages while otherwise operating correctly.</li>
+<li>Sub-categories: send-omission (drops outgoing messages), receive-omission (drops incoming), general-omission (both).</li>
+<li>Models lossy networks and overloaded processes that drop messages under saturation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Timing (performance)</strong>:</p>
+<ul>
+<li>A process responds correctly but late, violating real-time guarantees.</li>
+<li>Critical in safety-critical real-time systems (avionics, automotive ABS, medical infusion pumps) where a late answer is a wrong answer.</li>
+<li>Distinguished from omission because the message eventually arrives, but after a deadline.</li>
+</ul>
+</li>
+<li>
+<p><strong>Byzantine (arbitrary)</strong>:</p>
+<ul>
+<li>A process may behave arbitrarily — incorrect output, contradictory messages to different recipients, collusion with other faulty processes.</li>
+<li>Models adversarial environments: blockchains, mutually-distrusting parties, supply-chain attacks, compromised nodes.</li>
+<li>Also models the more mundane reality of memory corruption, undetected bit-flips, and software defects producing silent data corruption (SDC).</li>
+<li>Google (Hochschild et al. 2021 HotOS “Cores that don’t count”) and Meta (Dixit et al. 2021) have documented that SDC is endemic at hyperscale — a small but persistent fraction of CPU cores produce arithmetically wrong results on specific instruction patterns, undetected by ECC.</li>
+<li>The implication: even within a single datacentre, the failure model is creeping toward Byzantine, justifying defensive cross-checking even outside adversarial contexts.</li>
+</ul>
+</li>
+<li>
+<p><strong>Hybrid models</strong> (Verissimo &amp; Casimiro 2002 “The Timely Computing Base Model and Architecture”):</p>
+<ul>
+<li>Combine assumptions across system layers — synchronous control plane atop asynchronous data plane, fail-silent core within a Byzantine periphery.</li>
+<li>The <em>wormhole</em> abstraction enables hybrid timed/untimed reasoning underpinning safety-critical systems.</li>
+<li>Used to architect systems where a small trusted timing core (a wormhole) provides bounded guarantees to a much larger untrusted body.</li>
+</ul>
+</li>
+<li>
+<h3 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="hardware-fault-tolerance">Hardware Fault Tolerance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hardware-fault-tolerance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Triple Modular Redundancy (TMR)</strong>:
+<ul>
+<li>Three identical replicas execute the same computation; a majority voter outputs the agreed result, masking any single fault.</li>
+<li>Foundational analysis: von Neumann 1956 “Probabilistic logics and the synthesis of reliable organisms from unreliable components.”</li>
+<li>NMR generalises to 2k+1 replicas tolerating k faults; reliability gain has diminishing returns past k=2.</li>
+<li>Used in space-grade computers (Voyager, Cassini, Mars rovers), nuclear instrumentation, safety-critical industrial control.</li>
+<li>Voter circuit itself must be reliable — typically built from radiation-hardened logic with its own redundancy.</li>
+</ul>
+</li>
+<li><strong>Error-Correcting Codes (ECC)</strong>:
+<ul>
+<li>Hamming(72,64) single-error-correct double-error-detect codes are standard in server-grade DRAM.</li>
+<li>SECDED corrects 1-bit errors, detects 2-bit errors at modest space overhead (12.5% redundancy).</li>
+<li>Chipkill (IBM 1997) tolerates an entire DRAM chip failure, important as DRAM densities grow.</li>
+<li>Galois-field Reed-Solomon codes underpin RAID-6, CD/DVD, QR codes, deep-space communication.</li>
+<li>Voyager 1 and 2 use concatenated Reed-Solomon (255,223) + convolutional codes to achieve reliable communication at 0.16 bits/second from 24 billion km.</li>
+</ul>
+</li>
+<li><strong>RAID</strong> (Patterson, Gibson &amp; Katz 1988, “A Case for Redundant Arrays of Inexpensive Disks”):
+<ul>
+<li>RAID-1 mirrors — full duplication, fastest rebuild, 100% storage overhead.</li>
+<li>RAID-5 striped parity — tolerates one disk loss, ~(N-1)/N efficiency.</li>
+<li>RAID-6 double-parity — tolerates two disk losses, important as rebuild times grow with disk capacity (multi-TB disks take 8-24 hours to rebuild).</li>
+<li>RAID-10 mirrored stripes — both performance and redundancy, 50% storage overhead.</li>
+<li>Modern hyperscalers have largely moved beyond traditional RAID to per-object erasure coding (Reed-Solomon, Local Reconstruction Codes — Huang et al. USENIX ATC 2012) achieving better space efficiency at the cost of higher rebuild compute.</li>
+</ul>
+</li>
+<li><strong>Self-Checking Pairs &amp; Lockstep Execution</strong>:
+<ul>
+<li>Two CPUs execute identical instructions in lockstep; a comparator halts on divergence.</li>
+<li>NonStop systems (Tandem, later Compaq, now HPE) pioneered this in 1976.</li>
+<li>Modern equivalents in IBM Z-Series mainframes: PU sparing, instruction retry, redundant arrays of independent memory.</li>
+<li>Automotive safety MCUs (Infineon AURIX TC3xx, NXP S32) include lockstep cores as standard ASIL-D building blocks.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="software-fault-tolerance">Software Fault Tolerance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-fault-tolerance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>N-Version Programming</strong> (Avizienis 1985):
+<ul>
+<li>Independent teams implement the same specification in different languages/compilers/algorithms.</li>
+<li>A majority voter selects the output at runtime.</li>
+<li>Designed to tolerate <em>design faults</em> (common-mode software bugs) that survive testing.</li>
+<li>Empirical evidence mixed: Knight &amp; Leveson (1986) “An Experimental Evaluation of the Assumption of Independence in Multiversion Programming” showed independently-developed versions exhibit correlated failures, undermining the statistical-independence assumption.</li>
+<li>Still deployed in critical avionics: Airbus A320/A380 flight control software written by separate teams in different languages (Ada, C) to reduce dissimilarity correlation.</li>
+<li>The cost (multiple development teams) limits use to genuinely safety-critical applications.</li>
+</ul>
+</li>
+<li><strong>Recovery Blocks</strong> (Randell 1975 <em>IEEE TSE</em>):
+<ul>
+<li>Primary alternate executes; an acceptance test validates output.</li>
+<li>On test failure, state is restored from a checkpoint and the secondary alternate executes.</li>
+<li>On further failure, the system reports irrecoverable failure.</li>
+<li>Provides backward error recovery using checkpointed state.</li>
+<li>The historical complement to N-version programming — sequential rather than parallel redundancy.</li>
+</ul>
+</li>
+<li><strong>Crash-Only Software / Micro-Reboots</strong> (Candea &amp; Fox 2003-2004):
+<ul>
+<li>Design components such that crash and restart is the <em>only</em> recovery path — no graceful shutdown, no special-case cleanup.</li>
+<li>The crash-recovery path is exercised constantly during normal operation, eliminating recovery-code bug-rot.</li>
+<li>Recursive restartability: restart the smallest containing component, escalate if that fails.</li>
+<li>Adopted as design discipline in:
+<ul>
+<li>Erlang/OTP supervisor trees (“let it crash” philosophy).</li>
+<li>Kubernetes pod lifecycle (livenessProbe → kill → restart).</li>
+<li>Most microservice patterns with stateless service tiers.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Exception Handling &amp; Forward Error Recovery</strong>:
+<ul>
+<li>Structured exception handlers transform errors into recoverable states without rollback.</li>
+<li>Java’s <code>try/catch/finally</code> with checked exceptions for predictable error paths.</li>
+<li>Erlang’s link/monitor mechanism propagating failure across process boundaries.</li>
+<li>Rust’s <code>Result&lt;T,E></code> discipline with <code>panic!</code> for unrecoverable invariant violations.</li>
+<li>Go’s explicit error returns with <code>defer/recover</code> for panic interception.</li>
+</ul>
+</li>
+<li><strong>Software Rejuvenation</strong>:
+<ul>
+<li>Periodic preventive restart of long-running software to defuse latent state corruption (memory leaks, fragmentation, file-descriptor exhaustion).</li>
+<li>Used in telephony systems (T-Mobile, AT&amp;T historical), browser tabs (Chrome’s per-tab process model), Erlang’s hot-code-swap with periodic supervisor restart.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="distributed-fault-tolerance">Distributed Fault Tolerance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distributed-fault-tolerance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Paxos</strong> (Lamport 1998 “The Part-Time Parliament” <em>ACM TOCS</em> 16(2); 2001 “Paxos Made Simple”):
+<ul>
+<li>Proposer, acceptor, and learner roles negotiate consensus in two phases (Prepare/Promise, Accept/Accepted).</li>
+<li>Single-decree Paxos agrees on one value; Multi-Paxos chains instances under a stable leader for log replication.</li>
+<li>Notoriously difficult to implement correctly — Chubby’s implementation reports (Chandra, Griesemer &amp; Redstone 2007 PODC) document the gap between paper and production.</li>
+<li>Variants and refinements:
+<ul>
+<li>Fast Paxos (Lamport 2005) — one fewer message round in the common case.</li>
+<li>Generalised Paxos (Lamport 2005) — commutative commands can commit out-of-order.</li>
+<li>EPaxos (Moraru, Andersen &amp; Kaminsky 2013) — egalitarian, no fixed leader, exploits command commutativity.</li>
+<li>Flexible Paxos (Howard, Malkhi &amp; Spiegelman 2016) — quorums need only intersect across phases, not within.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Raft</strong> (Ongaro &amp; Ousterhout 2014 USENIX ATC “In Search of an Understandable Consensus Algorithm”):
+<ul>
+<li>Decomposes consensus into leader election, log replication, and safety properties.</li>
+<li>Single leader at any term; followers replicate log entries; new leader must have all committed entries.</li>
+<li>Strong-leader design simplifies reasoning at the cost of write-throughput bottlenecking at the leader.</li>
+<li>Adopted by etcd (backing Kubernetes), Consul, TiKV, CockroachDB, MongoDB (since 3.2 replica sets), RethinkDB, Apache Kafka KRaft mode.</li>
+<li>The understandability claim is empirically supported — Ongaro &amp; Ousterhout’s user study showed students learned Raft significantly better than Paxos.</li>
+<li>Membership-change protocol (joint consensus or single-server change) is a subtle source of bugs in implementations.</li>
+</ul>
+</li>
+<li><strong>Viewstamped Replication</strong> (Oki &amp; Liskov 1988; Liskov &amp; Cowling 2012 “Viewstamped Replication Revisited”):
+<ul>
+<li>Independently developed contemporaneously with Paxos.</li>
+<li>Structurally similar but cast in primary-backup terms with explicit views.</li>
+<li>Underappreciated historically; the 2012 revision clarified the protocol and demonstrated equivalence with Multi-Paxos.</li>
+<li>Influential in the design of state-machine-replication systems in academic teaching contexts.</li>
+</ul>
+</li>
+<li><strong>PBFT</strong> (Castro &amp; Liskov 1999 OSDI “Practical Byzantine Fault Tolerance”):
+<ul>
+<li>The first practical BFT consensus protocol, demonstrated on a Byzantine-fault-tolerant NFS implementation.</li>
+<li>Three-phase commit (pre-prepare, prepare, commit) with 3f+1 replicas tolerating f Byzantine faults.</li>
+<li>View-change protocol handles primary failure.</li>
+<li>Throughput at small replica counts (4-10) sufficient for many applications — measured at thousands of operations per second on 1999 hardware.</li>
+<li>Quadratic message complexity O(n²) per consensus limits scalability beyond ~20 replicas.</li>
+</ul>
+</li>
+<li><strong>HotStuff</strong> (Yin, Malkhi, Reiter, Gueta &amp; Abraham 2019 PODC “HotStuff: BFT Consensus in the Lens of Blockchain”):
+<ul>
+<li>Linear view-change complexity through a three-phase commit chained pipeline.</li>
+<li>Each phase aggregates votes into a threshold signature, achieving O(n) message complexity per decision.</li>
+<li>Pipelined design overlaps phases for high throughput.</li>
+<li>Underlies Diem (formerly Libra), Aptos, Sui — the latter two among the highest-TPS production blockchains.</li>
+<li>Inspired a generation of follow-up work: Fast-HotStuff, HotStuff-2, Jolteon, Ditto.</li>
+</ul>
+</li>
+<li><strong>Tendermint</strong> (Buchman 2016 MSc thesis; Buchman, Kwon &amp; Milosevic 2018 “The latest gossip on BFT consensus”): BFT consensus with round-robin proposer rotation, immediate finality (no probabilistic finality as in Bitcoin/Ethereum PoW). Foundation of Cosmos Hub, Binance Chain, Celestia, and the ABCI application interface popularising application-blockchain separation.</li>
+<li><strong>Chain Replication</strong> (van Renesse &amp; Schneider 2004 OSDI “Chain Replication for Supporting High Throughput and Availability”): Replicas arranged in a linear chain; writes flow head→tail, reads served by tail (which has the most stable state). Provides strong consistency at lower latency variance than Paxos-based replication. Underpins Microsoft Azure Storage tiers, Hibari, FAWN-KV.</li>
+<li><strong>Quorum Systems</strong> (Gifford 1979 weighted voting; Dynamo 2007 sloppy quorums): Read quorum R and write quorum W chosen such that R+W>N (overlapping quorums) gives strong consistency; R+W≤N permits eventual consistency with weaker guarantees. Cassandra and DynamoDB expose this trade-off as a per-operation parameter (ONE / QUORUM / ALL).</li>
+</ul>
+</li>
+<li>
+<h3 id="failure-detection">Failure Detection<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#failure-detection" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The discipline of failure detection sits at the heart of fault-tolerant design: every recovery mechanism is gated by the question <em>“is the suspect process actually dead, or merely slow?”</em> — and in an asynchronous distributed system, this question is fundamentally undecidable. The practical art is engineering detectors whose mistakes degrade gracefully.</p>
+</li>
+<li>
+<p><strong>Heartbeats</strong>: Periodic “I am alive” messages between processes. Tunable interval Δ (typically 100 ms to several seconds) and timeout T (typically 3-10× Δ). Trade-off: short Δ/T → fast detection, high false-positive rate; long Δ/T → slow detection, low false-positive rate. Standard in nearly every distributed system; the wrong default for high-latency networks. Networks with bimodal latency distributions (occasional 100-500 ms tail spikes from GC pauses, network microbursts, or kernel scheduling) defeat fixed-timeout detectors; this is the failure mode the Phi-Accrual detector was invented to address.</p>
+</li>
+<li>
+<p><strong>SWIM — Scalable Weakly-consistent Infection-style Process</strong> (Das, Gupta &amp; Motivala 2002 DSN): A gossip-based failure detector with O(log N) detection time at O(N) total messages per detection round. Combines three mechanisms: direct ping with suspicion timer, indirect ping via K randomly-selected relays (typically K=3) to disambiguate node failure from network partition, and infection-style gossip dissemination of membership changes piggy-backed onto routine pings. The total message load remains constant per node regardless of cluster size — a property that makes SWIM uniquely scalable. Used in HashiCorp Memberlist (the substrate of Consul, Nomad, Serf), Hazelcast in-memory grid, Uber’s Ringpop, and as the inspiration for Lifeguard (Dadgar &amp; Sridhar 2018 — addressing aggressive false positives under congestion by introducing a “nack” mechanism and adaptive suspicion).</p>
+</li>
+<li>
+<p><strong>Phi (φ) Accrual Failure Detector</strong> (Hayashibara, Défago, Yared &amp; Katayama 2004 SRDS): Outputs a continuous suspicion level φ rather than binary up/down. Models heartbeat inter-arrival times as a probability distribution (often empirically modelled as normal or exponential); φ is the negative log of the probability that a heartbeat would not have arrived by now given the historical distribution. Applications choose their own threshold (typical φ=8 corresponds to ~10⁻⁸ false-positive probability under normal-distribution assumptions, φ=12 to ~10⁻¹²). The detector adapts automatically to changing network conditions: a network experiencing higher jitter widens the inferred distribution and tolerates longer gaps before flagging suspicion. Adopted by Cassandra, Akka Cluster, ScyllaDB, and many Erlang/OTP-derived clustering libraries.</p>
+</li>
+<li>
+<p><strong>Chandra-Toueg Hierarchy</strong> (1996): Formal classification of detectors by two orthogonal properties — <em>completeness</em> (every faulty process is eventually suspected by every correct process) and <em>accuracy</em> (correct processes are not falsely suspected, in various senses). The full hierarchy: Perfect (P — strong completeness + strong accuracy), Eventually Perfect (♦P — strong completeness + eventual strong accuracy), Strong (S), Eventually Strong (♦S), Weak (W — weak completeness), Eventually Weak (♦W). The seminal result: ♦S is the <em>weakest</em> failure detector that allows asynchronous consensus to be solved, and Paxos can be re-stated as a Chandra-Toueg consensus algorithm using ♦S. This bridges the theoretical impossibility (FLP) and the practical reality (Paxos works because real systems behave as if ♦S is available eventually after GST).</p>
+</li>
+<li>
+<p><strong>Practical Tuning</strong>: Modern systems combine techniques — etcd uses Raft’s randomised election timeouts (default 1000-1500 ms) which functionally serves as a heartbeat detector at the consensus level; Kubernetes layered detection has the kubelet emit heartbeats every 10 seconds with a 40-second timeout, the cloud controller manager checks node health every 5 seconds, and pod liveness/readiness probes operate at per-container granularity. The result is a multi-tier detection system with different time constants tuned to different recovery actions: probe failure → container restart (seconds); kubelet timeout → node eviction (tens of seconds); zonal failure → cluster failover (minutes).</p>
+</li>
+<li>
+<h3 id="recovery-mechanisms">Recovery Mechanisms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#recovery-mechanisms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Recovery transforms a faulty system back into a correct one. The discipline distinguishes <strong>backward recovery</strong> (return to a previously-correct state via checkpoint or log replay) from <strong>forward recovery</strong> (construct a new correct state from partial information, typical of exception handlers and compensation logic). Most production systems combine both.</p>
+</li>
+<li>
+<p><strong>Checkpointing</strong>: Periodic snapshot of process state to durable storage; on failure, restart from the most recent checkpoint. Sync vs async (does the application block until checkpoint complete?); coordinated vs uncoordinated (are checkpoints across processes synchronised, or does each process checkpoint independently and rely on message-log replay to fill gaps?). Coordinated checkpointing avoids the <strong>domino effect</strong> where uncoordinated checkpoints force cascading rollback. The Chandy-Lamport (1985) algorithm for distributed snapshots takes a globally-consistent snapshot of asynchronously communicating processes without halting them, by injecting marker messages through every FIFO channel and capturing channel state as the messages-in-flight between snapshot points. Modern incarnations: DMTCP for HPC checkpoint-restart on Top500 supercomputers, CRIU (Checkpoint/Restore in Userspace) for Linux containers (used by Podman, runC, OpenVZ for live migration), NVIDIA cuCheckpoint for GPU state including device-resident tensors and CUDA streams, Apache Flink’s distributed snapshot protocol (an industrial adaptation of Chandy-Lamport) for exactly-once stream processing.</p>
+</li>
+<li>
+<p><strong>Write-Ahead Logging (WAL)</strong>: Every state change is durably logged <em>before</em> the in-memory state is updated; on crash, replay the log from the last checkpoint. ARIES — Algorithm for Recovery and Isolation Exploiting Semantics (Mohan, Haderle, Lindsay, Pirahesh &amp; Schwarz 1992 <em>ACM TODS</em> 17(1)) — is the canonical algorithm, characterised by three phases (analysis, redo, undo), the use of compensation log records (CLRs) to make undo idempotent, and physiological logging (physical addressing, logical updates) for performance. ARIES is the basis of every modern OLTP database (PostgreSQL WAL, Oracle redo log, SQL Server transaction log, MySQL InnoDB redo log, DB2 recovery). The complexity of ARIES — the paper runs 70 pages — is famously underappreciated; correctness under crash, restart, and crash-during-restart scenarios requires careful invariant maintenance that few engineers reproduce from first principles. The WAL design has been extended to columnar (Delta Lake, Iceberg) and event-streaming (Kafka, Pulsar) systems where the log itself is the primary durable artefact.</p>
+</li>
+<li>
+<p><strong>Sagas</strong> (Garcia-Molina &amp; Salem 1987 SIGMOD “Sagas”): Decompose a long-lived transaction into a sequence of compensable sub-transactions T₁, T₂, …, Tₙ. If T_k fails, execute compensations C_{k-1}, C_{k-2}, …, C_1 in reverse order to undo committed work. Saga consistency is <em>semantic</em> (the business outcome is correct) rather than <em>physical</em> (a single atomic transaction); intermediate states are visible. The dominant pattern for cross-microservice consistency where two-phase commit is impractical — booking systems (Booking.com, Expedia, Airbnb), e-commerce checkout (cart → reserve inventory → charge payment → reserve shipping → confirm; if shipping fails, refund payment and release inventory), supply-chain workflows, payment-rail orchestration. Modern orchestrators implementing saga patterns: AWS Step Functions (state machines with retry/catch/compensation), Temporal (durable execution with deterministic replay), Cadence (Uber-originated), Camunda (BPMN-based), Zeebe, Conductor (Netflix), Apache Airflow (in workflow-orchestration form).</p>
+</li>
+<li>
+<p><strong>Two-Phase Commit (2PC)</strong> (Gray 1978; Lampson &amp; Sturgis 1976): Coordinator sends <em>prepare</em> to all participants; if all vote yes, coordinator sends <em>commit</em>; otherwise <em>abort</em>. Properties: atomicity (all-or-nothing across participants), but blocking under coordinator failure — participants in <em>prepared</em> state cannot unilaterally commit or abort, must wait for coordinator recovery. This blocking motivated <strong>Three-Phase Commit (3PC)</strong> (Skeen 1981) adding a <em>pre-commit</em> phase — but 3PC only works under synchronous timing assumptions that rarely hold in real networks, and is rarely deployed in practice. The modern alternative is to use Paxos/Raft <em>for the commit decision itself</em> (Spanner, CockroachDB, FoundationDB), making the commit logic itself fault-tolerant rather than relying on a single coordinator.</p>
+</li>
+<li>
+<p><strong>Idempotency &amp; Exactly-Once Semantics</strong>: A recurring recovery primitive — design operations such that re-execution produces the same effect as a single execution. Achieved via deduplication tokens (Stripe idempotency keys), monotonic operation IDs (Kafka producer idempotence), versioned writes with compare-and-set semantics, or pure functional state transitions. Exactly-once is achievable end-to-end only with careful coordination between the message-delivery layer (at-least-once + dedup) and the state-update layer (idempotent or transactionally aligned with the message commit).</p>
+</li>
+<li>
+<h3 id="major-production-systems">Major Production Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-production-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="google-spanner--truetime-corbett-et-al-2012-osdi">Google Spanner &amp; TrueTime (Corbett et al. 2012 OSDI)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#google-spanner--truetime-corbett-et-al-2012-osdi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Globally-distributed strongly-consistent SQL database — among the first production systems to offer both strong consistency <em>and</em> global geographic distribution.</li>
+<li>The breakthrough is <strong>TrueTime</strong>: a GPS- and atomic-clock-backed time API exposing a bounded-uncertainty interval <code>[earliest, latest]</code> rather than a single timestamp.</li>
+<li>Spanner waits out the uncertainty interval (typically 1-7 ms) before committing, guaranteeing <strong>external consistency</strong> (linearisability with global wall-clock ordering).</li>
+<li>Uses Paxos for shard replication, two-phase commit across Paxos groups for cross-shard transactions.</li>
+<li>Underlies Google’s advertising platform, AdWords spend-management, Google Photos, and (since 2017) is exposed externally as Cloud Spanner.</li>
+<li>CockroachDB and YugabyteDB are open-source spiritual successors with comparable architectural ambition.</li>
+</ul>
+</li>
+<li>
+<h4 id="chubby-burrows-2006-osdi">Chubby (Burrows 2006 OSDI)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chubby-burrows-2006-osdi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>“The Chubby lock service for loosely-coupled distributed systems.”</li>
+<li>Five-replica Paxos cluster providing coarse-grained advisory locks and a small reliable filesystem.</li>
+<li>Used by GFS, BigTable, MapReduce, and most internal Google services for leader election and metadata storage.</li>
+<li>The lessons paper documented surprises:
+<ul>
+<li>Clients use Chubby as a name service (storing more data than designed).</li>
+<li>Session-related bugs dominate production failures.</li>
+<li>Implementation effort underestimated by an order of magnitude — a recurring theme in consensus engineering.</li>
+<li>The performance characteristics drove client design more than the API surface did.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h4 id="apache-zookeeper-hunt-konar-junqueira--reed-2010-usenix-atc">Apache ZooKeeper (Hunt, Konar, Junqueira &amp; Reed 2010 USENIX ATC)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#apache-zookeeper-hunt-konar-junqueira--reed-2010-usenix-atc" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Open-source coordination service inspired by Chubby, using the Zab consensus protocol (Junqueira, Reed &amp; Serafini 2011 DSN).</li>
+<li>Provides hierarchical znodes, watches (notifications on change), ephemeral nodes (auto-removed on session expiry).</li>
+<li>The default coordination layer for Hadoop YARN, HBase, Kafka (until Kafka KRaft replaced ZooKeeper in 3.x), Solr, Druid.</li>
+<li>Typically deployed as 3 or 5 replica ensembles; larger ensembles slow writes without proportional reliability benefit.</li>
+</ul>
+</li>
+<li>
+<h4 id="etcd-coreos-now-cncf">etcd (CoreOS, now CNCF)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#etcd-coreos-now-cncf" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Distributed Raft-based key-value store.</li>
+<li>The metadata backbone of every Kubernetes cluster — every pod, service, configmap, secret is an etcd key.</li>
+<li>Typical clusters run 3 or 5 replicas across availability zones.</li>
+<li>Read scaling via local leases; write scaling via batching.</li>
+<li>Operational characteristics dominated by disk fsync latency — SSD essential, NVMe preferred for write-heavy workloads.</li>
+<li>Watch-based notification model drives a large portion of Kubernetes controller-manager design.</li>
+</ul>
+</li>
+<li>
+<h4 id="hashicorp-consul">HashiCorp Consul<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hashicorp-consul" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Service mesh and key-value store.</li>
+<li>Uses Raft for the server tier and SWIM (Serf library) for the gossip-based agent tier.</li>
+<li>Service discovery, health checks, secrets (Vault integration), and L7 routing (Consul Connect).</li>
+<li>Operates at significantly larger membership scales than ZooKeeper/etcd because of the gossip layer — clusters of 10,000+ agents reported in production.</li>
+</ul>
+</li>
+<li>
+<h4 id="amazon-aurora-verbitski-et-al-2017-sigmod">Amazon Aurora (Verbitski et al. 2017 SIGMOD)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#amazon-aurora-verbitski-et-al-2017-sigmod" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Cloud-native relational database (MySQL- and PostgreSQL-compatible engines).</li>
+<li>Decouples compute from storage; the storage layer replicates each 10 GB segment 6 ways across 3 Availability Zones (2 copies per AZ).</li>
+<li>Quorum: write to 4 of 6 (tolerates loss of one AZ + one disk); read from 3 of 6.</li>
+<li>Targets 99.99% availability and 11×9s durability per stored object.</li>
+<li>The architectural innovation: offload WAL processing entirely to storage — the compute node ships redo records, the storage node applies them locally and serves reads.</li>
+<li>Aurora Global Database extends to cross-region replication with sub-second cross-region replica lag.</li>
+</ul>
+</li>
+<li>
+<h4 id="amazon-s3-murray-et-al-2024-sosp-retrospective">Amazon S3 (Murray et al. 2024 SOSP retrospective)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#amazon-s3-murray-et-al-2024-sosp-retrospective" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Object storage with advertised 99.999999999% (11 nines) annual object durability.</li>
+<li>Achieved through:
+<ul>
+<li>Cross-zone erasure coding (Reed-Solomon and proprietary local-reconstruction-code variants).</li>
+<li>Continuous integrity scrubbing — every object’s checksum re-verified on a rolling cadence.</li>
+<li>Engineered to survive concurrent failure of two facilities (AZs).</li>
+</ul>
+</li>
+<li>The 11-nines figure is a probabilistic objective derived from the failure-rate analysis, not a tested guarantee.</li>
+<li>Operationally exposes strong read-after-write consistency since 2020 (previously eventual on overwrites).</li>
+<li>Underlies a substantial fraction of public internet storage — data lake foundations (Delta Lake, Iceberg), ML training datasets, backup archives.</li>
+</ul>
+</li>
+<li>
+<h4 id="cassandra--dynamodb">Cassandra &amp; DynamoDB<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cassandra--dynamodb" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>AP-side CAP exemplars derived from the Dynamo paper (DeCandia et al. 2007 SOSP).</li>
+<li>Tunable consistency (R + W vs N) exposed as per-operation parameter.</li>
+<li>Merkle-tree anti-entropy repair for asynchronous reconciliation.</li>
+<li>Hinted handoff for transient failures.</li>
+<li>Vector clocks (Dynamo) or last-write-wins with logical clocks (Cassandra) for conflict resolution.</li>
+<li>DynamoDB has since added strongly-consistent reads, global tables, and transactions (using a coordinator-based 2PC).</li>
+<li>Cassandra has added lightweight transactions (Paxos-based) for compare-and-set semantics.</li>
+</ul>
+</li>
+<li>
+<h4 id="apache-kafka--kraft">Apache Kafka &amp; KRaft<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#apache-kafka--kraft" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Distributed append-only commit log; the de-facto event-streaming substrate.</li>
+<li>Replication via leader-follower with in-sync-replica (ISR) sets; producer waits for <code>acks=all</code> (all ISRs ack) for durability.</li>
+<li>Originally relied on ZooKeeper for metadata coordination; KRaft (Kafka Raft Metadata mode, 2022) replaces ZooKeeper with an internal Raft cluster.</li>
+<li>Underpins data pipelines at LinkedIn, Netflix, Uber, Airbnb, and most of the modern data stack.</li>
+</ul>
+</li>
+<li>
+<h3 id="use-cases--major-application-families">Use Cases / Major Application Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-application-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Cloud Infrastructure Control Planes</strong>: Every major cloud provider operates fault-tolerant control planes built on consensus: AWS uses a mix of internal Paxos derivatives (the Physalia and Millhouse internal services), GCP runs Spanner-derived stacks (Chubby for locks, Spanner for global state), Azure uses Service Fabric Replicator (a Paxos-family protocol), and managed Kubernetes (EKS, GKE, AKS) all surface multi-zone etcd Raft clusters. The control plane is generally CP (consistency-favouring); the data plane (compute, storage block-level) is often AP (availability-favouring) with eventual consistency.</p>
+</li>
+<li>
+<p><strong>Financial Transaction Systems</strong>: Core-banking, payment-rail, and securities-settlement systems mandate fault tolerance by regulation as well as by business need. Patterns: synchronous multi-site replication (active-active across two datacentres ≤100 km apart for sub-second RPO/RTO), event-sourced ledgers (immutable append-only logs as the system of record), and increasing adoption of consensus-replicated ledgers (FedNow, RTGS systems, exchange matching engines). The London Stock Exchange’s Millennium Exchange and CME’s Globex run on customer-engineered fault-tolerant matching engines with documented sub-100-µs failover.</p>
+</li>
+<li>
+<p><strong>Cryptocurrency &amp; Blockchain</strong>: A pure-play instantiation of Byzantine fault tolerance — every blockchain consensus protocol exists in the design space carved out by Lamport-Shostak-Pease and FLP. Nakamoto consensus (proof-of-work, Bitcoin) trades safety-under-partition for probabilistic finality; Ethereum’s Casper FFG / Gasper finality gadget overlays a BFT finality layer on top of LMD-GHOST fork choice; Tendermint, HotStuff (Aptos, Sui, Diem), and Algorand BA⋆ pursue immediate-finality BFT directly. The blockchain industry has substantially commercialised BFT research and produced production deployments handling 10K+ TPS at hundreds-of-validator scales — well beyond the demonstration scale of pre-2015 BFT systems.</p>
+</li>
+<li>
+<p><strong>Telecommunications Carrier Networks</strong>: 99.999% (“five nines”) availability is the historic carrier-grade benchmark, corresponding to ≤5.26 minutes of downtime per year. Achieved through dual-plane signalling (SS7, Diameter), redundant transmission paths (SDH/SONET self-healing rings), N+1 hardware redundancy in base stations, and increasingly through cloud-native 5G core implementations (3GPP TS 23.501) using service-based architecture with Kubernetes-style fault tolerance.</p>
+</li>
+<li>
+<p><strong>Aerospace, Defence &amp; Space</strong>: Triple-redundant flight computers (Boeing 777, Airbus A380/A350), radiation-hardened space computers (RAD750 in Mars rovers, GR740 LEON4 in ESA missions), submarine combat systems (Type 23 / Type 26 frigates), and military aircraft mission computers (F-35 Integrated Power Package). Common architectural elements: cyclic-executive scheduling for deterministic timing, dissimilar redundancy to defeat common-mode design faults, watchdog timers and reset-to-safe-state, formal verification of safety-critical components.</p>
+</li>
+<li>
+<p><strong>Medical Devices &amp; Healthcare IT</strong>: FDA 510(k) and Class III device approval requires documented hazard analysis (IEC 62304 software lifecycle, ISO 14971 risk management). Patterns: lockstep redundancy in infusion-pump controllers, watchdog-and-safe-state in radiotherapy linacs (post-Therac-25), and at the IT layer, replicated EHR (Epic, Cerner) deployments with synchronous cross-site mirroring.</p>
+</li>
+<li>
+<p><strong>Hyperscale Web Services</strong>: Google, Meta, Amazon, Microsoft, Alibaba, Tencent, Netflix run global infrastructure with per-service availability targets typically 99.95% to 99.99%, achieved through cell-based architectures, regional and zonal isolation, traffic shifting via global load balancers, and aggressive use of caching and replication. The “blast radius” engineering discipline — design so that the failure of any single cell, zone, or region affects only a bounded fraction of customers — is now industry-standard.</p>
+</li>
+<li>
+<p><strong>Autonomous Vehicles</strong>: Multi-redundant compute (typical: dual NVIDIA DRIVE Orin / Thor in tandem, third channel as cross-check), sensor redundancy (camera + radar + LiDAR with disagreement detection), fallback paths to safe-stop, and over-the-air update systems with rollback. Tesla, Waymo, Cruise, Mobileye, and Mercedes Drive Pilot all publish (or are required by ISO 26262 to maintain) hazard analyses driving the fault-tolerance architecture.</p>
+</li>
+<li>
+<h3 id="aiml-training-fault-tolerance-2024-2026">AI/ML Training Fault Tolerance (2024-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aiml-training-fault-tolerance-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Hyperscale model training has emerged as a new fault-tolerance frontier in which the failure-rate arithmetic crosses a qualitative threshold.</p>
+</li>
+<li>
+<p>Meta’s Llama 3 technical report (Llama Team 2024 <em>arXiv:2407.21783</em>) on a 16,384-GPU training run documented 419 unexpected interruptions over 54 days — roughly one every three hours. Failure attribution:</p>
+<ul>
+<li>~30% GPU faults (NVIDIA H100 hardware errors, including silent compute errors detected via cross-checking).</li>
+<li>~17% GPU HBM3 memory failures.</li>
+<li>~10% network/InfiniBand link failures.</li>
+<li>~9% software/driver issues.</li>
+<li>remainder split across power, cooling, host CPU, and unclassified events.</li>
+</ul>
+</li>
+<li>
+<p>At that scale, <em>checkpointing every 30 minutes</em> becomes essential; <em>checkpoint-write throughput</em> becomes the dominant operational constraint, often consuming 10-30% of training time if not engineered carefully.</p>
+</li>
+<li>
+<p><strong>DeepSpeed Checkpointing</strong> (Microsoft Research):</p>
+<ul>
+<li>ZeRO-3 partitioned checkpoints distribute parameter/gradient/optimiser state across ranks.</li>
+<li>Async tiered checkpoint pipeline: local NVMe → cluster parallel filesystem → object store, decoupling GPU compute from durable-storage write latency.</li>
+<li>Universal-checkpoint format that allows reshape across different GPU counts (essential when recovering onto a different cluster topology after partial hardware loss).</li>
+</ul>
+</li>
+<li>
+<p><strong>PyTorch FSDP (Fully Sharded Data Parallel)</strong> &amp; <strong>Distributed Checkpointing</strong>:</p>
+<ul>
+<li><code>torch.distributed.checkpoint</code> provides sharded checkpoint read/write parallelised across ranks with planner/loader abstractions.</li>
+<li>Resharding on load allows recovery onto a different cluster topology — critical when running on dynamically-provisioned compute.</li>
+<li>Integration with PyTorch Distributed Elastic / TorchElastic for rendezvous-based worker membership.</li>
+</ul>
+</li>
+<li>
+<p><strong>NCCL Fault Recovery</strong>:</p>
+<ul>
+<li>NVIDIA Collective Communications Library extensions (NCCL 2.20+) to gracefully handle GPU loss mid-collective.</li>
+<li>Replaces legacy behaviour of hanging the entire collective on single-GPU failure.</li>
+<li>Combined with TorchElastic for automatic worker replacement and rendezvous restart.</li>
+</ul>
+</li>
+<li>
+<p><strong>Hyperscaler practice</strong> (Gemini, Anthropic, OpenAI — industry reports):</p>
+<ul>
+<li>Trillion-parameter training pipelines treat node failures as <em>expected</em> events, not exceptions.</li>
+<li>Automatic retraining from checkpoint with sub-five-minute wall-clock penalty.</li>
+<li>Sparse-fault-tolerant collective communication that excludes failed nodes mid-run.</li>
+<li>Capacity-isolation across training jobs to prevent cascading failure during shared-cluster faults.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cohere Re-train pipelines</strong>: Cohere has publicly described checkpoint-and-replay engineering investments needed at the multi-thousand-GPU scale, including custom checkpoint formats optimised for their cluster I/O architecture.</p>
+</li>
+<li>
+<p><strong>OOM and step-skipping</strong>: For training, an out-of-memory failure is locally recoverable by skipping the step (with gradient-accumulation logic ensuring the optimiser state remains consistent) — a softer recovery than full job restart, and a pattern that has migrated from research code into production training stacks.</p>
+</li>
+<li>
+<p><strong>Inference fault tolerance</strong> is qualitatively different: typically stateless or near-stateless per request, with fault tolerance achieved through replica-set autoscaling, request retry with backoff, and routing-layer health checks. The current frontier here is <em>model-weight versioning and rollback</em> (treating model deployments with the same care as code deployments) and <em>graceful degradation</em> (falling back from a frontier model to a smaller model on capacity exhaustion).</p>
+</li>
+<li>
+<h3 id="aerospace-and-safety-critical-systems">Aerospace and Safety-Critical Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#aerospace-and-safety-critical-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>DO-178C</strong> (RTCA 2011, with formal-methods supplement DO-333): “Software Considerations in Airborne Systems and Equipment Certification.” Five Design Assurance Levels: A (catastrophic — loss of aircraft), B (hazardous), C (major), D (minor), E (no safety effect). DAL A software must demonstrate Modified Condition/Decision Coverage (MC/DC); independence between development and verification; bidirectional traceability from requirements to code to tests.</p>
+</li>
+<li>
+<p><strong>ARP4754A</strong> (SAE 2010): “Guidelines for Development of Civil Aircraft and Systems.” Aircraft-level safety assessment process feeding into hardware (DO-254) and software (DO-178C) development. Establishes the FDAL (Function Development Assurance Level) and IDAL (Item Development Assurance Level) decomposition.</p>
+</li>
+<li>
+<p><strong>ISO 26262</strong> (2018 second edition): Automotive functional safety derived from IEC 61508. ASIL A through D, with ASIL D applying to systems where failure may cause life-threatening or fatal injuries (steer-by-wire, brake-by-wire, ADAS at SAE Level 3+).</p>
+</li>
+<li>
+<p><strong>IEC 61508</strong> (2010): The base functional-safety standard for electronic systems in industrial, process, and railway sectors. SIL 1-4 (Safety Integrity Levels). SIL 4 requires PFD (Probability of Failure on Demand) &lt; 10⁻⁴ and PFH (Probability of dangerous Failure per Hour) &lt; 10⁻⁸.</p>
+</li>
+<li>
+<p><strong>Boeing 777 Primary Flight Computer</strong>: Triplex architecture with three lanes per channel and three channels (effectively 9 computational paths), implemented with dissimilar microprocessor families (Intel 80486, Motorola 68040, AMD 29050) to defeat common-mode hardware/firmware bugs. Software is single-version with extensive formal verification.</p>
+</li>
+<li>
+<p><strong>Airbus A380/A350 Flight Control</strong>: Two primary (PRIM) and three secondary (SEC) computers; each computer implemented as a self-checking pair (command and monitor lanes) with disagreement triggering channel shutdown. Software developed by independent teams in different languages (Ada, C) for dissimilarity.</p>
+</li>
+<li>
+<p><strong>Mars Rover Computers</strong> (Curiosity, Perseverance): RAD750 PowerPC-derived radiation-hardened processor with extensive ECC, redundant computers (A-side and B-side) with periodic swap-and-vote, watchdog timers, and earth-controlled safe-mode entry.</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The fault-tolerance landscape in 2026 has consolidated around a few dominant patterns. <strong>Cloud-native Kubernetes deployments</strong> have made consensus-as-a-service ubiquitous: every cluster is implicitly an etcd Raft cluster; every multi-region database is a Spanner/CockroachDB/YugabyteDB/TiDB Paxos-or-Raft replicated SQL system; every “managed” message broker (MSK, Confluent Cloud, Pulsar Cloud) is a replicated commit log. The <strong>service-mesh tier</strong> (Istio, Linkerd, Cilium, Consul Connect) wraps every microservice call in retry/circuit-breaker/timeout discipline derived from the Hystrix patterns Netflix popularised.</p>
+</li>
+<li>
+<p><strong>Chaos engineering</strong> has matured from Netflix’s Chaos Monkey (2010) into a recognised practice with platforms (Gremlin, AWS Fault Injection Service, Litmus for Kubernetes) and conference-track legitimacy (SREcon, ChaosConf). The discipline of <em>deliberately injecting failures in production</em> to validate fault-tolerance assumptions is now standard at hyperscalers and increasingly adopted in regulated industries (with appropriate guardrails).</p>
+</li>
+<li>
+<p><strong>Site Reliability Engineering</strong> as codified by Google (Beyer, Jones, Petoff &amp; Murphy 2016 “Site Reliability Engineering”) and operationalised across the industry has produced a vocabulary—SLI/SLO/SLA, error budgets, toil reduction, blameless postmortems—that crystallises fault-tolerance discipline into an organisational practice. SRE’s central insight—that 100% reliability is the wrong target because it foreshortens innovation—has become received wisdom.</p>
+</li>
+<li>
+<p><strong>Silent Data Corruption</strong> has emerged as a recognised major failure mode. Google (Hochschild et al. 2021 HotOS “Cores that don’t count”) and Meta (Dixit et al. 2021 “Silent Data Corruptions at Scale”) have published evidence that a small but non-negligible fraction of CPU cores in their fleets produce arithmetically wrong results on specific instruction patterns—not detected by ECC, not flagged by built-in self-test. The implication: even within a single datacentre, the failure model is creeping toward Byzantine. Defensive responses include opportunistic re-execution on a different core, cross-CPU result comparison for critical paths, and lobbying CPU vendors for stronger in-silicon verification.</p>
+</li>
+<li>
+<p><strong>eBPF and kernel observability</strong> have given operators unprecedented visibility into the running system, enabling failure detection at lower latency and higher fidelity than legacy monitoring. Tools: BCC, bpftrace, Cilium Tetragon, Pixie.</p>
+</li>
+<li>
+<p><strong>Distributed tracing</strong> (OpenTelemetry, Jaeger, Tempo, Honeycomb, Lightstep) makes the propagation of failure across service boundaries observable and explicable, turning the “needle in a haystack” debugging exercise into structured reasoning.</p>
+</li>
+<li>
+<h3 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The United Kingdom occupies a distinctive position in fault-tolerance research and industrial practice, with deep roots in early dependability theory and active contemporary research centres.</p>
+</li>
+<li>
+<p><strong>Newcastle University (School of Computing)</strong>: The historic home of Brian Randell, originator of recovery blocks (1975) and one of the founders of the dependability discipline. The Newcastle Reliability Project (1972 onwards) produced foundational work on software fault tolerance; the school continues to lead in the Centre for Cybercrime and Computer Security and the EPSRC-funded research on resilient systems. Carlos Molina-Jimenez and Aad van Moorsel’s work on cloud dependability and quantitative reliability assessment continues this lineage.</p>
+</li>
+<li>
+<p><strong>Imperial College London (Lynx Group)</strong>: Soumya Pillai’s group on real-time fault-tolerant systems, language-level support for fault tolerance, and the Lynx programming environment for reliable concurrent software. The Department of Computing maintains a strong line in formal verification of fault-tolerant protocols, with applications to financial-services infrastructure (close collaboration with HSBC and Barclays on transaction-system reliability).</p>
+</li>
+<li>
+<p><strong>University of Cambridge (Computer Laboratory)</strong>: Ross Anderson’s Security Group historically anchored UK academic safety-culture research, with the “Security Engineering” textbook (Anderson 2001/2008/2020) covering fault tolerance as a security primitive. Ongoing research on resilient cyber-physical systems, the Computer Laboratory’s contributions to the formal verification of seL4, and applied work on industrial control system resilience. Cambridge Greater Innovation Centre supports spinout activity in the dependable-systems space.</p>
+</li>
+<li>
+<p><strong>University of York (Computer Science / YCCSA)</strong>: The High Integrity Systems Engineering (HISE) Group is the UK’s leading academic centre for safety-critical software engineering—long-standing partnership with Rolls-Royce on aero-engine control software (DO-178C compliance), with BAE Systems on military avionics, and with the Office for Nuclear Regulation on instrumentation and control. The York Centre for Complex Systems Analysis (YCCSA) addresses connectionist computing reliability and emergent failure modes.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh (DICE — Distributed, Concurrent, Parallel Systems)</strong>: Strong research line on distributed-systems reliability, including consensus algorithms, partial-synchrony models, and verification of distributed protocols. The LFCS (Laboratory for Foundations of Computer Science) hosts work on formal models of fault tolerance.</p>
+</li>
+<li>
+<p><strong>University of Sheffield (Safety-Critical Systems Group)</strong>: Applied research on dependability of cyber-physical systems, automotive functional safety (ISO 26262), and rail-systems safety (CENELEC EN 50128/50129). Industrial partnerships with Siemens Mobility, Jaguar Land Rover, McLaren Applied.</p>
+</li>
+<li>
+<p><strong>NCC Group</strong>: UK-headquartered cyber-security firm whose Fox-IT and Trail of Bits acquisitions place it among the world’s foremost specialists in the security and fault-tolerance audit of cryptographic and distributed systems. Their published research on blockchain consensus failures, smart-contract reentrancy, and cloud-key-management failures sets the bar for adversarial assessment of fault-tolerant designs.</p>
+</li>
+<li>
+<p><strong>UK Industrial Practice</strong>:</p>
+<ul>
+<li><strong>Financial services</strong>: HSBC, Barclays, NatWest, and Lloyds run multi-region active-active core-banking infrastructure built on IBM Z-Series and increasingly on cloud-native consensus platforms; the Bank of England has documented operational resilience requirements (SS1/21, PS6/21) elevating fault tolerance to a regulatory expectation.</li>
+<li><strong>Aerospace</strong>: Rolls-Royce (Derby) on aero-engine FADEC control systems, BAE Systems (Warton, Brough) on military avionics, Leonardo Helicopters (Yeovil), and Airbus (Filton, Broughton — wing assembly) all maintain DO-178C and ARP4754A compliance organisations of substantial scale.</li>
+<li><strong>Automotive</strong>: Jaguar Land Rover (Solihull, Gaydon, Whitley) and McLaren (Woking) maintain ISO 26262 ASIL D programmes for ADAS and electric powertrain control.</li>
+<li><strong>National infrastructure</strong>: NATS Air Traffic Control (Swanwick, Prestwick) operates triple-redundant flight-data-processing infrastructure; National Grid ESO runs n-2 contingency-tolerant transmission control; Network Rail maintains SIL-4 signalling systems.</li>
+</ul>
+</li>
+<li>
+<p><strong>Northern English innovation hubs</strong>: Manchester (especially the MediaCityUK-adjacent technology cluster and the Health Innovation Manchester partnerships) hosts cloud-resilience expertise at scale (the Co-op IT, Booking.com Manchester centre, JP Morgan technology centre); Leeds is home to the regional NHS Digital infrastructure and significant fintech (Skipton, Yorkshire Building Society); Sheffield hosts a notable cluster of safety-critical embedded systems firms; Newcastle and Durham anchor the North East Local Enterprise Partnership’s resilient-systems theme.</p>
+</li>
+<li>
+<h3 id="contrasts-with-adjacent-concepts">Contrasts with Adjacent Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrasts-with-adjacent-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>vs High Availability</strong>: High availability is a metric (uptime percentage); fault tolerance is the <em>mechanism class</em> by which HA is achieved. A system can be highly available without being Byzantine-fault-tolerant — most HA architectures tolerate crash failures only, and a single misbehaving (corrupted, malicious, or buggy) replica can poison the cluster. Conversely, a Byzantine-fault-tolerant system may exhibit lower availability than a simpler crash-tolerant one because BFT protocols are more expensive (3f+1 vs 2f+1 replicas, additional round-trips). The two concepts are complementary, not synonymous.</p>
+</li>
+<li>
+<p><strong>vs Simple Replication</strong>: Replication without consensus admits <em>split-brain</em> — two replicas independently accepting writes during a partition, producing irreconcilable divergent state on heal. Fault tolerance requires either (a) a consensus protocol to serialise writes across replicas, (b) eventual-consistency conflict resolution with explicit merge functions (CRDTs, vector clocks), or (c) a single-writer design with explicit failover protocol. “Just put a load balancer in front of two databases” is not fault tolerance.</p>
+</li>
+<li>
+<p><strong>vs Best-Effort Retry</strong>: Retry with exponential backoff handles transient faults (network glitches, brief overload) but provides no formal liveness or safety guarantee. It cannot recover from durable state loss, cannot resolve conflicting state across replicas, and amplifies cascading failure if uncoordinated (the <em>retry storm</em> anti-pattern). Production fault tolerance combines retry at the edge with deeper mechanisms — consensus, replication, idempotency tokens, circuit breakers, queue-based decoupling — at the core.</p>
+</li>
+<li>
+<p><strong>vs Disaster Recovery</strong>: Disaster recovery is the broader business-continuity discipline encompassing fault tolerance, backup-and-restore, runbook procedures, regulatory compliance, and human-factor planning for events spanning hours to days (regional cloud outage, ransomware, physical destruction). Fault tolerance addresses the technical primitives for <em>continuous</em> service under failures measured in seconds to minutes; DR addresses the broader response to events too large for online recovery.</p>
+</li>
+<li>
+<p><strong>vs Robustness &amp; Resilience</strong>: In the dependability vocabulary (Avizienis et al. 2004), robustness is correct operation under <em>anticipated</em> abnormal inputs; resilience is broader still — the capacity to absorb, recover from, and adapt to unanticipated disruptions. Fault tolerance is one mechanism family within resilience.</p>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Verified Consensus reaching production</strong>:</p>
+<ul>
+<li>Formally verified implementations of consensus algorithms — IronFleet (Hawblitzel et al. 2015 SOSP), Verdi (Wilcox et al. 2015 PLDI), Velisarios (Rahli et al. 2018) — moving from research artefacts into production deployment.</li>
+<li>Anticipated: verified Raft/HotStuff implementations in the supply chain for blockchain validators and high-stakes coordination services.</li>
+<li>The CompCert-style approach (verified compilers) extended to verified replicated state machines, with proof artefacts becoming part of safety-case submissions.</li>
+<li>Microsoft Research Project Everest and the Apple Crypto team’s verified cryptography work indicate where the industrial frontier is heading.</li>
+</ul>
+</li>
+<li>
+<p><strong>Heterogeneous BFT for AI Infrastructure</strong>:</p>
+<ul>
+<li>As AI training spans multiple cloud providers and on-premises hardware to avoid single-supplier risk, BFT-style protocols may become relevant for cross-organisation coordination.</li>
+<li>Use cases: model-weight commitment to a verifiable ledger, training-attestation logs for regulator inspection, cross-organisation federated training with mutual distrust.</li>
+<li>Particularly relevant for safety-critical model evaluation (regulatory testing of frontier models per the EU AI Act).</li>
+</ul>
+</li>
+<li>
+<p><strong>Silent-Data-Corruption Defences</strong>:</p>
+<ul>
+<li>Architectural responses to the Hochschild/Dixit findings — opportunistic dual-execution, sampled cross-replica verification, dedicated check-sum hardware.</li>
+<li>CPU vendors (Intel, AMD, ARM, NVIDIA) adding explicit fault-detection coverage to compute paths — not yet ubiquitous in commodity silicon.</li>
+<li>The economic case becomes compelling as failure rates compound across millions of CPU cores; expect this to become a procurement criterion for hyperscaler silicon RFPs by 2027-2028.</li>
+</ul>
+</li>
+<li>
+<p><strong>Confidential &amp; Trusted Execution Environments (TEE)</strong>:</p>
+<ul>
+<li>AMD SEV-SNP, Intel TDX, Arm CCA, AWS Nitro Enclaves, NVIDIA H100/H200 Confidential Computing moving from confidentiality-only into the fault-tolerance discussion.</li>
+<li>TEE attestation as a Byzantine-defence primitive: the TEE refuses to deviate from the attested code path, downgrading Byzantine to crash failure for protocol-design purposes.</li>
+<li>Enables 2f+1 instead of 3f+1 replica counts when attestation can be cryptographically demonstrated — a 33% replica-cost reduction.</li>
+</ul>
+</li>
+<li>
+<p><strong>Geo-Distributed AI Inference</strong>:</p>
+<ul>
+<li>Frontier-model inference fleets spanning continents will require new fault-tolerance patterns.</li>
+<li>Graceful regional fallback (request originally routed to EU re-routed to US on EU outage, with latency degradation rather than failure).</li>
+<li>Eventual consistency on model-weight updates across regions (a new version rolling out region-by-region over hours).</li>
+<li>Latency-bounded routing tolerating provider outages without quality regression.</li>
+</ul>
+</li>
+<li>
+<p><strong>Quantum-Era Threat Modelling</strong>:</p>
+<ul>
+<li>Post-quantum cryptographic signatures (Dilithium, SPHINCS+, Falcon — NIST FIPS 204/205/206) integrated into BFT protocols.</li>
+<li>Authentication-based BFT variants (PBFT-with-signatures, HotStuff) replace 3f+1 with 2f+1 under cryptographic assumptions — these assumptions must migrate to PQ primitives.</li>
+<li>Practical impact concentrated in long-lived blockchain ledgers and multi-decade archival systems (national archives, defence document retention).</li>
+</ul>
+</li>
+<li>
+<p><strong>Climate-Driven Outage Patterns</strong>:</p>
+<ul>
+<li>Increasing frequency of regional outages from extreme weather (heat-induced datacentre derating, flooding, wildfire, hurricane).</li>
+<li>The “two AZs in the same region” assumption is migrating toward “three AZs in geographically separated regions.”</li>
+<li>AWS, Azure, and GCP have all begun publishing climate-risk disclosures for regional infrastructure; insurance and compliance frameworks driving multi-region architecture as default.</li>
+</ul>
+</li>
+<li>
+<p><strong>Standardisation Evolution</strong>:</p>
+<ul>
+<li>DO-178C revision to address AI/ML components in airworthy systems — the ongoing EUROCAE WG-114 / SAE G-34 work on “Aeronautical Systems with Embedded AI” expected to publish guidance 2026-2027.</li>
+<li>ISO 26262 evolution for autonomous-driving stacks beyond the current SAE Level 3 framing.</li>
+<li>Emergence of dedicated AI-safety standards: ISO/IEC 42001 AI Management Systems (published 2023, adoption accelerating), the EU AI Act high-risk system technical specifications (Annex IV) detailing fault-tolerance expectations for high-risk AI.</li>
+<li>UK AI Safety Institute and NIST AI Safety Institute publishing evaluation methodologies that include fault-tolerance audit criteria.</li>
+</ul>
+</li>
+<li>
+<p><strong>Edge &amp; IoT Fault Tolerance</strong>:</p>
+<ul>
+<li>Massively-distributed IoT fleets (billions of devices) require fault-tolerance patterns operating under intermittent connectivity, limited durable storage, and untrusted device-firmware.</li>
+<li>Patterns emerging: store-and-forward with cryptographic receipts, on-device CRDTs for offline-first applications, cellular-grade availability targets at residential-IoT cost points.</li>
+</ul>
+</li>
+<li>
+<h3 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Foundational Theory</strong>:</p>
+<ol>
+<li>Lamport, L., Shostak, R., &amp; Pease, M. (1982). The Byzantine Generals Problem. <em>ACM Transactions on Programming Languages and Systems</em>, 4(3), 382-401. DOI: 10.1145/357172.357176</li>
+<li>Fischer, M.J., Lynch, N.A., &amp; Paterson, M.S. (1985). Impossibility of distributed consensus with one faulty process. <em>Journal of the ACM</em>, 32(2), 374-382. DOI: 10.1145/3149.214121</li>
+<li>Chandra, T.D., &amp; Toueg, S. (1996). Unreliable failure detectors for reliable distributed systems. <em>Journal of the ACM</em>, 43(2), 225-267. DOI: 10.1145/226643.226647</li>
+<li>Brewer, E. (2000). Towards Robust Distributed Systems. <em>PODC 2000 Keynote</em>.</li>
+<li>Gilbert, S., &amp; Lynch, N. (2002). Brewer’s conjecture and the feasibility of consistent, available, partition-tolerant web services. <em>ACM SIGACT News</em>, 33(2), 51-59.</li>
+<li>Schneider, F.B. (1990). Implementing fault-tolerant services using the state machine approach: A tutorial. <em>ACM Computing Surveys</em>, 22(4), 299-319.</li>
+<li>Avizienis, A., Laprie, J.-C., Randell, B., &amp; Landwehr, C. (2004). Basic concepts and taxonomy of dependable and secure computing. <em>IEEE Transactions on Dependable and Secure Computing</em>, 1(1), 11-33.</li>
+<li>Dwork, C., Lynch, N., &amp; Stockmeyer, L. (1988). Consensus in the presence of partial synchrony. <em>Journal of the ACM</em>, 35(2), 288-323.</li>
+</ol>
+</li>
+<li>
+<p><strong>Consensus Algorithms</strong>:
+9. Lamport, L. (1998). The Part-Time Parliament. <em>ACM Transactions on Computer Systems</em>, 16(2), 133-169. DOI: 10.1145/279227.279229
+10. Lamport, L. (2001). Paxos Made Simple. <em>ACM SIGACT News</em>, 32(4), 51-58.
+11. Ongaro, D., &amp; Ousterhout, J. (2014). In Search of an Understandable Consensus Algorithm. <em>USENIX Annual Technical Conference</em>, 305-319.
+12. Castro, M., &amp; Liskov, B. (1999). Practical Byzantine Fault Tolerance. <em>OSDI ‘99</em>, 173-186.
+13. Yin, M., Malkhi, D., Reiter, M.K., Gueta, G.G., &amp; Abraham, I. (2019). HotStuff: BFT Consensus in the Lens of Blockchain. <em>PODC 2019</em>, 347-356. DOI: 10.1145/3293611.3331591
+14. Buchman, E., Kwon, J., &amp; Milosevic, Z. (2018). The latest gossip on BFT consensus. <em>arXiv:1807.04938</em>.
+15. Liskov, B., &amp; Cowling, J. (2012). Viewstamped Replication Revisited. <em>MIT-CSAIL-TR-2012-021</em>.
+16. Howard, H., Malkhi, D., &amp; Spiegelman, A. (2016). Flexible Paxos: Quorum Intersection Revisited. <em>arXiv:1608.06696</em>.
+17. van Renesse, R., &amp; Schneider, F.B. (2004). Chain Replication for Supporting High Throughput and Availability. <em>OSDI ‘04</em>, 91-104.</p>
+</li>
+<li>
+<p><strong>Failure Detection &amp; Recovery</strong>:
+18. Das, A., Gupta, I., &amp; Motivala, A. (2002). SWIM: Scalable Weakly-consistent Infection-style Process Group Membership Protocol. <em>DSN 2002</em>, 303-312.
+19. Hayashibara, N., Défago, X., Yared, R., &amp; Katayama, T. (2004). The φ Accrual Failure Detector. <em>SRDS 2004</em>, 66-78.
+20. Chandy, K.M., &amp; Lamport, L. (1985). Distributed Snapshots: Determining Global States of Distributed Systems. <em>ACM Transactions on Computer Systems</em>, 3(1), 63-75.
+21. Mohan, C., Haderle, D., Lindsay, B., Pirahesh, H., &amp; Schwarz, P. (1992). ARIES: A Transaction Recovery Method. <em>ACM TODS</em>, 17(1), 94-162.
+22. Garcia-Molina, H., &amp; Salem, K. (1987). Sagas. <em>ACM SIGMOD ‘87</em>, 249-259.</p>
+</li>
+<li>
+<p><strong>Hardware &amp; Software Fault Tolerance</strong>:
+23. von Neumann, J. (1956). Probabilistic logics and the synthesis of reliable organisms from unreliable components. <em>Automata Studies</em>, Princeton University Press, 43-98.
+24. Patterson, D.A., Gibson, G., &amp; Katz, R.H. (1988). A Case for Redundant Arrays of Inexpensive Disks (RAID). <em>SIGMOD ‘88</em>, 109-116.
+25. Avizienis, A. (1985). The N-Version Approach to Fault-Tolerant Software. <em>IEEE TSE</em>, SE-11(12), 1491-1501.
+26. Randell, B. (1975). System Structure for Software Fault Tolerance. <em>IEEE TSE</em>, SE-1(2), 220-232.
+27. Candea, G., &amp; Fox, A. (2003). Crash-Only Software. <em>HotOS IX</em>, 67-72.
+28. Knight, J.C., &amp; Leveson, N.G. (1986). An Experimental Evaluation of the Assumption of Independence in Multiversion Programming. <em>IEEE TSE</em>, SE-12(1), 96-109.</p>
+</li>
+<li>
+<p><strong>Production Systems</strong>:
+29. Burrows, M. (2006). The Chubby Lock Service for Loosely-Coupled Distributed Systems. <em>OSDI ‘06</em>, 335-350.
+30. Hunt, P., Konar, M., Junqueira, F.P., &amp; Reed, B. (2010). ZooKeeper: Wait-Free Coordination for Internet-Scale Systems. <em>USENIX ATC ‘10</em>, 145-158.
+31. Corbett, J.C. et al. (2012). Spanner: Google’s Globally-Distributed Database. <em>OSDI ‘12</em>, 251-264.
+32. DeCandia, G. et al. (2007). Dynamo: Amazon’s Highly Available Key-value Store. <em>SOSP ‘07</em>, 205-220.
+33. Verbitski, A. et al. (2017). Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases. <em>SIGMOD ‘17</em>, 1041-1052.
+34. Beyer, B., Jones, C., Petoff, J., &amp; Murphy, N.R. (2016). <em>Site Reliability Engineering: How Google Runs Production Systems</em>. O’Reilly.</p>
+</li>
+<li>
+<p><strong>Contemporary (2020-2026)</strong>:
+35. Hochschild, P.H. et al. (2021). Cores that don’t count. <em>HotOS XVIII</em>, 9-16.
+36. Dixit, H.D. et al. (2021). Silent Data Corruptions at Scale. <em>arXiv:2102.11245</em>.
+37. Llama Team (2024). The Llama 3 Herd of Models. <em>arXiv:2407.21783</em> — 16K-GPU training interruption analysis.
+38. Hawblitzel, C. et al. (2015). IronFleet: Proving Practical Distributed Systems Correct. <em>SOSP ‘15</em>, 1-17.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Last Updated</strong>: 2026-05-16</p>
+</li>
+<li>
+<p><strong>Review Status</strong>: Phase 6 Opus enrichment</p>
+</li>
+<li>
+<p><strong>Verification</strong>: Foundational citations verified against arXiv/DOI; production-system references cross-checked against vendor docs and SOSP/OSDI papers</p>
+</li>
+<li>
+<p><strong>Regional Context</strong>: UK academic leadership (Newcastle Randell lineage, York HISE, Imperial Lynx, Cambridge Anderson, Edinburgh DICE, Sheffield SCSG); UK industrial practice (financial services, aerospace Rolls-Royce/BAE/Airbus, automotive JLR/McLaren, NATS, National Grid); Northern English hubs (Manchester, Leeds, Sheffield, Newcastle)</p>
+</li>
+<li>
+<p><strong>Domain Validation</strong>: <code>infrastructure</code> retained — fault tolerance is a foundational infrastructure/dependability concept spanning hardware, OS, middleware, and distributed-systems layers</p>
+</li>
+<li>
+<p><strong>Production-Ready</strong>: All 5 required sections present; OWL axiom families complete (Compositional, Dependency, Capability, Implementation, Reduction, Association); UK context populated per worker brief; 2024-2026 AI/ML training fault-tolerance frontier covered (Llama 3, DeepSpeed, FSDP, NCCL)</p>
+</li>
+<li>
+<p><strong>Authority Score</strong>: 0.87 (foundational distributed-systems theory with 40+ years of peer-reviewed development; impossibility results (FLP, Byzantine, CAP) cited 10K-30K+ times; production deployment ubiquitous across cloud, aerospace, finance, healthcare)</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2319" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#association-relationships" data-for="association-relationships">Association Relationships</a></li><li class="depth-0"><a href="#data-properties-characteristics" data-for="data-properties-characteristics">Data Properties (Characteristics)</a></li><li class="depth-0"><a href="#property-characteristics" data-for="property-characteristics">Property Characteristics</a></li><li class="depth-0"><a href="#annotations" data-for="annotations">Annotations</a></li><li class="depth-0"><a href="#about-fault-tolerance" data-for="about-fault-tolerance">About Fault Tolerance</a></li><li class="depth-1"><a href="#core-theoretical-foundations" data-for="core-theoretical-foundations">Core Theoretical Foundations</a></li><li class="depth-1"><a href="#failure-models--taxonomy" data-for="failure-models--taxonomy">Failure Models — Taxonomy</a></li><li class="depth-1"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-1"><a href="#failure-detection" data-for="failure-detection">Failure Detection</a></li><li class="depth-1"><a href="#recovery-mechanisms" data-for="recovery-mechanisms">Recovery Mechanisms</a></li><li class="depth-1"><a href="#major-production-systems" data-for="major-production-systems">Major Production Systems</a></li><li class="depth-1"><a href="#use-cases--major-application-families" data-for="use-cases--major-application-families">Use Cases / Major Application Families</a></li><li class="depth-1"><a href="#aiml-training-fault-tolerance-2024-2026" data-for="aiml-training-fault-tolerance-2024-2026">AI/ML Training Fault Tolerance (2024-2026)</a></li><li class="depth-1"><a href="#aerospace-and-safety-critical-systems" data-for="aerospace-and-safety-critical-systems">Aerospace and Safety-Critical Systems</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#contrasts-with-adjacent-concepts" data-for="contrasts-with-adjacent-concepts">Contrasts with Adjacent Concepts</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/ACID-Properties" class="internal">ACID Properties</a></li><li><a href="../pages/Actor-Model" class="internal">Actor Model</a></li><li><a href="../pages/Asynchronous-Communication" class="internal">Asynchronous Communication</a></li><li><a href="../pages/Asynchronous-Messaging" class="internal">Asynchronous Messaging</a></li><li><a href="../pages/Auto-Scaling" class="internal">Auto-Scaling</a></li><li><a href="../pages/Business-Continuity" class="internal">Business Continuity</a></li><li><a href="../pages/CRDT" class="internal">CRDT</a></li><li><a href="../pages/Circuit-Breaker" class="internal">Circuit Breaker</a></li><li><a href="../pages/Cloud-Native" class="internal">Cloud Native</a></li><li><a href="../pages/Component" class="internal">Component</a></li><li><a href="../pages/Container" class="internal">Container</a></li><li><a href="../pages/Distributed-System" class="internal">Distributed System</a></li><li><a href="../pages/Health-Monitoring" class="internal">Health Monitoring</a></li><li><a href="../pages/Lambda-Architecture" class="internal">Lambda Architecture</a></li><li><a href="../pages/Log-Replication" class="internal">Log Replication</a></li><li><a href="../pages/Message-Passing" class="internal">Message Passing</a></li><li><a href="../pages/Message-Queue" class="internal">Message Queue</a></li><li><a href="../pages/Network-Connectivity" class="internal">network connectivity</a></li><li><a href="../pages/Node-Independent-Validation-PBFT" class="internal">Node-Independent Validation PBFT</a></li><li><a href="../pages/Observability" class="internal">Observability</a></li><li><a href="../pages/Operational-Resilience" class="internal">operational resilience</a></li><li><a href="../pages/Rabbitmq" class="internal">Rabbitmq</a></li><li><a href="../pages/Rate-Limiting" class="internal">Rate Limiting</a></li><li><a href="../pages/Reliability-Engineering" class="internal">Reliability Engineering</a></li><li><a href="../pages/Resource-Management" class="internal">Resource Management</a></li><li><a href="../pages/Scalability" class="internal">Scalability</a></li><li><a href="../pages/Service-Discovery" class="internal">Service Discovery</a></li><li><a href="../pages/Service-Level-Objective" class="internal">Service Level Objective</a></li><li><a href="../pages/Single-Point-Of-Failure" class="internal">Single Point Of Failure</a></li><li><a href="../pages/Threshold-Cryptography" class="internal">Threshold Cryptography</a></li><li><a href="../pages/Write-Ahead-Logging" class="internal">Write-Ahead Logging</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

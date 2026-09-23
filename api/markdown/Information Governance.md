@@ -1,0 +1,3 @@
+
+Information Governance is the framework of policies, processes, roles, and standards that organisations use to manage the availability, usability, integrity, and security of their information assets throughout the data lifecycle. It encompasses data stewardship, regulatory compliance, records management, and accountability structures. Effective information governance ensures that data is trustworthy, properly classified, and handled in accordance with legal and business requirements.
+

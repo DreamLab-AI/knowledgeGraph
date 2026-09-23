@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Enterprise Ai</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Enterprise Ai"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Enterprise Ai"/><meta name="twitter:description" content="Enterprise AI is the application of artificial-intelligence systems within large organisations to automate workflows, augment knowledge work and inform decisions, subject to governance, security and integration constraints."/><meta property="og:description" content="Enterprise AI is the application of artificial-intelligence systems within large organisations to automate workflows, augment knowledge work and inform decisions, subject to governance, security and integration constraints."/><meta property="og:image:alt" content="Enterprise AI is the application of artificial-intelligence systems within large organisations to automate workflows, augment knowledge work and inform decisions, subject to governance, security and integration constraints."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Enterprise-Ai"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Enterprise-Ai"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Enterprise AI is the application of artificial-intelligence systems within large organisations to automate workflows, augment knowledge work and inform decisions, subject to governance, security and integration constraints."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Enterprise-Ai"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2952"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2952" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Enterprise Ai</a></div></nav><h1 class="article-title">Enterprise Ai</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.755Z">23 Sept 2026</time><span>25 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:enterprise-ai</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.62</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../AI-Application" class="internal">AI Application</a></li><li><a href="../pages/Digital-Transformation" class="internal">Digital Transformation</a></li><li><a href="../pages/Knowledge-Management" class="internal">Knowledge Management</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Retrieval-Augmented-Generation" class="internal">Retrieval-Augmented Generation</a></li><li><a href="../pages/Agentic-Workflow" class="internal">Agentic Workflow</a></li><li><a href="../pages/Enterprise-Search" class="internal">Enterprise Search</a></li><li><a href="../pages/AI-Governance-Framework" class="internal">AI Governance Framework</a></li><li><a href="../pages/Human-in-the-Loop" class="internal">Human-in-the-Loop</a></li><li><a href="../pages/Model-Context-Protocol" class="internal">Model Context Protocol</a></li><li><a href="../pages/Vector-Database" class="internal">Vector Database</a></li><li><a href="../pages/AI-Agents" class="internal">AI Agents</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance-Law-and-Privacy" class="internal">AI Governance Law and Privacy</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Data-Infrastructure" class="internal">Data Infrastructure</a></li><li><a href="../pages/Cloud-Computing" class="internal">Cloud Computing</a></li><li><a href="../pages/Identity-and-Access-Management" class="internal">Identity and Access Management</a></li><li><a href="../pages/Machine-Learning-Platform" class="internal">Machine Learning Platform</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Agentic-Workflow" class="internal">Agentic Workflow</a></li><li><a href="../enterprise-search" class="internal">Enterprise Search</a></li><li><a href="../pages/Enterprise-Automation" class="internal">Enterprise Automation</a></li><li><a href="../pages/Decision-Support" class="internal">Decision Support</a></li><li><a href="../pages/Customer-Experience" class="internal">Customer Experience</a></li><li><a href="../Back-Office-Automation" class="internal">Back-Office Automation</a></li><li><a href="../Knowledge-Work-Augmentation" class="internal">Knowledge Work Augmentation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Enterprise-Automation" class="internal">Enterprise Automation</a></li><li><a href="../pages/Enterprise-Resource-Planning" class="internal">Enterprise Resource Planning</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/AI-Adoption" class="internal">AI Adoption</a></li><li><a href="../Consumer-AI" class="internal">Consumer AI</a></li><li><a href="../Research-AI" class="internal">Research AI</a></li><li><a href="../pages/Robotic-Process-Automation" class="internal">Robotic Process Automation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance-Law-and-Privacy" class="internal">AI Governance Law and Privacy</a></li><li><a href="../pages/Data-Quality" class="internal">Data Quality</a></li><li><a href="../pages/Machine-Learning-Platform" class="internal">Machine Learning Platform</a></li><li><a href="../pages/Vector-Database" class="internal">Vector Database</a></li><li><a href="../pages/Human-in-the-Loop" class="internal">Human-in-the-Loop</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Enterprise-Resource-Planning" class="internal">Enterprise Resource Planning</a></li><li><a href="../pages/Cloud-Computing" class="internal">Cloud Computing</a></li><li><a href="../pages/Agentic-Workflow" class="internal">Agentic Workflow</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/AI-Agents" class="internal">AI Agents</a></li><li><a href="../pages/Retrieval-Augmented-Generation" class="internal">Retrieval-Augmented Generation</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:enterprise-ai</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Institutional-Adoption" class="internal">Institutional Adoption</a></li><li><a href="../pages/Enterprise-AI-Adoption" class="internal">Enterprise AI Adoption</a></li><li><a href="../pages/Enterprise-Resource-Planning" class="internal">Enterprise Resource Planning</a></li><li><a href="../pages/Enterprise-Automation" class="internal">Enterprise Automation</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../pages/ISO-42001" class="internal">ISO 42001</a></li><li><a href="../pages/GDPR" class="internal">GDPR</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/AI-Adoption" class="internal">AI Adoption</a></li><li><a href="../pages/Technology-Adoption" class="internal">Technology Adoption</a></li><li><a href="../pages/Enterprise-AI-Adoption" class="internal">Enterprise AI Adoption</a></li><li><a href="../pages/Institutional-Adoption" class="internal">Institutional Adoption</a></li><li><a href="../pages/Business-Intelligence" class="internal">Business Intelligence</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../ai-agents" class="internal">AI Agents</a></li><li><a href="../pages/Microsoft-Copilot" class="internal">Microsoft Copilot</a></li><li><a href="../pages/Machine-Learning-Platform" class="internal">Machine Learning Platform</a></li><li><a href="../pages/Model-Context-Protocol" class="internal">Model Context Protocol</a></li><li><a href="../pages/Vector-Database" class="internal">Vector Database</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Enterprise AI is the application of artificial-intelligence systems within large organisations to automate workflows, augment knowledge work and inform decisions, subject to governance, security and integration constraints. It spans foundation-model assistants, retrieval-augmented systems over corporate data, and agentic automation embedded in existing software estates. Distinct from consumer AI, it prioritises auditability, data residency, access control and measurable return on investment.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:RetrievalAugmentedGeneration))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:AgenticWorkflow))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:EnterpriseSearch))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:AIGovernanceFramework))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:HumanInTheLoop))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:ModelContextProtocol))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:CopilotAssistant))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:hasPart ai:VectorDatabase))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:requires ai:AIGovernanceLawAndPrivacy))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:requires ai:DataInfrastructure))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:requires ai:CloudComputing))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:requires ai:IdentityAndAccessManagement))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:requires ai:MachineLearningPlatform))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:DataQuality))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:dependsOn ai:HumanInTheLoop))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:AgenticWorkflow))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:EnterpriseSearch))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:KnowledgeWorkAugmentation))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:CustomerExperienceAutomation))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:DecisionSupport))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:BackOfficeAutomation))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:enables ai:EnterpriseAutomation))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:implements ai:FoundationModel))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:implements ai:LargeLanguageModels))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:implements ai:AIAgents))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:implements ai:RetrievalAugmentedGeneration))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:ArtificialIntelligence))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:EnterpriseAutomation))
+SubClassOf(ai:EnterpriseAI
+  ObjectSomeValuesFrom(ai:reducesTo ai:DigitalTransformation))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="origins-and-historical-development">Origins and Historical Development<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#origins-and-historical-development" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Enterprise AI as a distinct category crystallised between 2016 and 2020 as machine-learning deployments at Fortune 500 and FTSE 100 companies moved beyond analytics dashboards into operational systems — fraud detection, demand forecasting, churn prediction, and quality control — managed by specialist data science teams with growing links to business operations.</li>
+<li>The category was first comprehensively articulated in Davenport &amp; Ronanki’s 2018 Harvard Business Review article “Artificial Intelligence for the Real World,” which distinguished three types of enterprise AI: process automation, cognitive insight (ML-driven analytics), and cognitive engagement (natural-language systems).</li>
+<li>The emergence of <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> capabilities with GPT-3 (2020) transformed the enterprise AI landscape by demonstrating that a single general-purpose pre-trained model could perform a broad range of knowledge work tasks with minimal task-specific engineering, dramatically lowering deployment costs for text-centric applications.</li>
+<li>The public release of ChatGPT in November 2022 triggered the fastest technology experimentation cycle in corporate history, with organisations deploying generative AI copilot and search pilots across every function within months — while simultaneously exposing systemic weaknesses in enterprise data estates and governance frameworks that had been latent since the analytics wave of 2014–2018.</li>
+<li>The 2023–2024 period was defined by the emergence of <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> as the dominant enterprise AI architecture pattern, resolving the hallucination and data-currency problems that made pure LLM deployment unsafe in regulated contexts, and by the first wave of production-scale agentic deployments using frameworks such as LangChain, AutoGPT, and early versions of LangGraph.</li>
+<li>By 2025–2026, the enterprise AI market has consolidated around a small number of dominant platform patterns — embedded copilots, RAG knowledge systems, and agentic orchestration — with major enterprise software vendors (Microsoft, Salesforce, SAP, ServiceNow, IBM) having fully integrated AI as a native capability layer rather than an add-on product.</li>
+</ul>
+</li>
+<li>
+<h3 id="distinguishing-characteristics-from-consumer-ai">Distinguishing Characteristics from Consumer AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distinguishing-characteristics-from-consumer-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Data residency and sovereignty</strong>: Enterprise AI deployments must respect contractual and regulatory requirements about where data is processed and stored. A consumer AI service routing queries to a hyperscaler API in an unconstrained region is architecturally incompatible with enterprise-grade data governance. This drives demand for on-premise deployments, sovereign cloud configurations, and private LLM infrastructure.</li>
+<li><strong>Identity and access control on retrieved context</strong>: Enterprise <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> systems must enforce document-level access controls in retrieval, ensuring that a user only receives context from documents they are authorised to view — preventing information leakage across organisational hierarchies or security classifications.</li>
+<li><strong>Audit and explainability requirements</strong>: Regulated industries (financial services, healthcare, insurance, legal) require that AI-generated recommendations include reasoning traces, source citations, and confidence indicators sufficient for human reviewers to evaluate, challenge, or override the output. Consumer AI assistants are not designed to these standards.</li>
+<li><strong>Cost governance at scale</strong>: Enterprise AI deployments involve millions of API calls per day across thousands of users, making per-token cost management a significant operational discipline. Token budget controls, model tier selection (using smaller models for simpler tasks), caching strategies, and batch processing optimisations are routine enterprise engineering concerns absent from consumer use.</li>
+<li><strong>Integration with systems of record</strong>: Enterprise AI value is primarily realised not through standalone AI interfaces but through AI capabilities embedded in the tools where work happens — CRM, ERP, ITSM, IDE, document management — requiring robust integration architecture rather than chat interfaces.</li>
+</ul>
+</li>
+<li>
+<h3 id="the-enterprise-ai-governance-imperative">The Enterprise AI Governance Imperative<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-enterprise-ai-governance-imperative" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The intersection of enterprise AI with multiple regulatory frameworks creates a compliance burden with no consumer analogue.</li>
+<li>GDPR (in force since May 2018) applies to any personal data processed by AI systems in the EU or relating to EU data subjects, requiring data minimisation, purpose limitation, and rights of access and erasure that constrain training, fine-tuning, and retrieval pipeline design.</li>
+<li>The EU AI Act entered into force on 1 August 2024, with prohibited AI practices and AI literacy obligations effective from 2 February 2025, GPAI model provisions from 2 August 2025, and full applicability on 2 August 2026. High-risk AI systems — including those used in employment, credit, education, and healthcare — require technical documentation, conformity assessments, post-market monitoring, and incident reporting.</li>
+<li>NIS2 (effective October 2024) sets cybersecurity baseline requirements for critical sector organisations, including risk management obligations relevant to AI system security and supply chain risk.</li>
+<li>DORA (effective January 2025) establishes operational resilience requirements for financial sector entities, including third-party ICT risk management applicable to AI model API dependencies.</li>
+<li>UK financial services regulators (FCA, PRA, Bank of England) have issued strategic AI letters (January 2026) directing firms to publish AI adoption plans and demonstrate risk management frameworks consistent with existing principles-based regulatory expectations.</li>
+<li>The intersection of these frameworks has driven demand for structured enterprise AI governance programmes: AI risk registers classifying each deployment by regulation and risk tier, automated compliance monitoring pipelines, and AI governance platforms (ServiceNow AI Control Tower, IBM OpenScale, Microsoft Responsible AI tooling) embedded in the enterprise MLOps stack.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The enterprise AI technology stack layers seven interconnected capability tiers from raw data to governed business outcome.</li>
+<li>
+<h3 id="foundation-model-layer">Foundation Model Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#foundation-model-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Selection and version management of general-purpose <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a>: proprietary APIs (OpenAI GPT-4o, Anthropic Claude 3.7 Sonnet, Google Gemini 2.0 Pro) or open-weight self-hosted models (Llama 3.1 70B/405B, Mistral Large 2, Phi-3.5, Qwen 2.5).</li>
+<li>Model selection criteria for enterprise deployment: context window size, instruction-following accuracy, tool-use capability, cost per million tokens, data residency of API provider, and fine-tuning availability.</li>
+<li>Fine-tuning infrastructure for domain-adapted specialists where generic <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> performance is insufficient: clinical coding models fine-tuned on SNOMED CT, legal review models trained on precedent corpora, financial analysis models calibrated to company-specific reporting formats.</li>
+<li>Model version pinning and rollback capabilities to ensure reproducible behaviour in audited workflows.</li>
+</ul>
+</li>
+<li>
+<h3 id="retrieval-and-grounding-layer">Retrieval and Grounding Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#retrieval-and-grounding-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> pipelines combining <a href="../pages/Vector-Database" class="internal alias" data-slug="pages/Vector-Database">Vector Database</a> semantic search with BM25 keyword retrieval in hybrid configurations that deliver 15–30% precision improvements over pure vector search.</li>
+<li>Document ingestion pipelines: chunking strategies (fixed-size, semantic, hierarchical), embedding model selection (OpenAI ada-002, Cohere embed-v3, BGE-M3), and metadata tagging for access control enforcement at retrieval time.</li>
+<li><a href="../pages/Vector-Database" class="internal alias" data-slug="pages/Vector-Database">Vector Database</a> infrastructure: Pinecone, Weaviate, pgvector, Chroma, or Qdrant — selected on throughput, managed service vs. self-hosted, and integration with identity management systems.</li>
+<li>Reranking pipelines (Cohere Rerank, cross-encoder models) applied post-retrieval to improve response relevance before LLM context assembly.</li>
+<li>Knowledge graph augmentation for structured entity retrieval alongside unstructured document retrieval — combining semantic similarity with explicit relationship traversal.</li>
+<li>The global RAG market reached USD 1.96 billion in 2025, growing at 49.1% CAGR toward USD 11 billion by 2030 (market research, 2025).</li>
+</ul>
+</li>
+<li>
+<h3 id="agentic-orchestration-layer">Agentic Orchestration Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-orchestration-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Multi-agent coordination frameworks enabling <a href="../pages/Agentic-Workflow" class="internal alias" data-slug="pages/Agentic-Workflow">Agentic Workflow</a> execution: LangGraph (graph-based state machine orchestration), CrewAI (role-based agent collaboration), AutoGen (Microsoft’s conversational agent framework), OpenAI Agents SDK (structured tool-use with handoffs), and Anthropic’s Claude with <a href="../pages/Model-Context-Protocol" class="internal alias" data-slug="pages/Model-Context-Protocol">Model Context Protocol</a> tool integration.</li>
+<li>Tool calling and function execution: agents invoke external tools — web search, code execution, database queries, API calls — and process results within iterative Reason–Act–Observe loops.</li>
+<li>Sub-agent delegation: orchestrator agents decompose complex goals into sub-tasks assigned to specialist agents, enabling parallel execution and capability separation.</li>
+<li>Gartner (2026) forecasts 40% of enterprise applications will embed task-specific AI agents by end of 2026 — up from under 5% in early 2025.</li>
+</ul>
+</li>
+<li>
+<h3 id="integration-and-connectivity-layer">Integration and Connectivity Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#integration-and-connectivity-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Model-Context-Protocol" class="internal alias" data-slug="pages/Model-Context-Protocol">Model Context Protocol</a> (Anthropic, 2024): standardised open protocol providing a universal interface between AI reasoning layers and enterprise data sources, tools, and action surfaces — analogous to USB for AI connectivity.</li>
+<li>API gateways with rate limiting, prompt logging, PII detection and redaction (before data leaves the corporate perimeter), and cost attribution to business units.</li>
+<li>ERP/CRM/ITSM integration adapters: Salesforce Agentforce native integration, SAP Joule with 50+ assistants across S/4HANA, ServiceNow AI-native actions, Microsoft Copilot Studio with 160,000 organisational deployments.</li>
+<li><a href="../pages/Robotic-Process-Automation" class="internal alias" data-slug="pages/Robotic-Process-Automation">Robotic Process Automation</a> bridges connecting AI reasoning layers to legacy UI-based systems that lack API interfaces — enabling AI to interact with browser-based ERP screens through structured tool wrappers.</li>
+</ul>
+</li>
+<li>
+<h3 id="governance-and-compliance-layer">Governance and Compliance Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#governance-and-compliance-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI risk registers: structured inventories classifying each AI deployment by <a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> risk tier, documenting technical specifications, conformity assessment status, post-market monitoring arrangements, and incident reporting procedures.</li>
+<li>Automated bias detection pipelines sampling production model outputs against demographic fairness criteria on a continuous basis.</li>
+<li>Prompt injection detection: monitoring <a href="../pages/Agentic-Workflow" class="internal alias" data-slug="pages/Agentic-Workflow">Agentic Workflow</a> tool call outputs for adversarial content that could redirect agent behaviour — a novel attack surface absent from traditional software security models.</li>
+<li><a href="../pages/Human-in-the-Loop" class="internal" data-slug="pages/Human-in-the-Loop">Human-in-the-Loop</a> approval queues routing model-generated recommendations above configurable risk thresholds for human review before action — particularly critical in financial transaction approval, medical recommendation, and legal advice generation.</li>
+<li>Audit logging with immutable event stores meeting financial services record-keeping requirements (FCA COBS 11.8, SEC Rule 17a-4) and GDPR Article 5 accountability obligations.</li>
+<li>ServiceNow AI Control Tower (April 2026) represents the emerging category of vendor-provided, governance-first AI management platforms embedded as defaults across all enterprise tiers.</li>
+</ul>
+</li>
+<li>
+<h3 id="identity-and-data-security-layer">Identity and Data Security Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#identity-and-data-security-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Role-based access control applied at retrieval time: user identity from directory services (Active Directory, Okta) maps to document-level permissions enforced by the <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> pipeline before context is assembled for the <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a>.</li>
+<li>Tenant isolation in multi-tenant SaaS AI deployments: cryptographic separation of organisational data within shared vector index infrastructure.</li>
+<li>Data loss prevention policies scanning AI inputs and outputs for sensitive patterns (PII, financial data, trade secrets) before transmission or storage.</li>
+<li>Data residency configuration: sovereign cloud regions, on-premise vector index hosting, and edge inference for data that cannot leave a specific jurisdiction.</li>
+</ul>
+</li>
+<li>
+<h3 id="measurement-and-evaluation-layer">Measurement and Evaluation Layer<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#measurement-and-evaluation-layer" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>LLM-as-judge evaluation frameworks: using a separate LLM to score production outputs against rubrics for accuracy, faithfulness to retrieved context, helpfulness, and safety — enabling automated quality monitoring at scale.</li>
+<li>A/B testing of model versions in production: canary deployments comparing new model versions against incumbents on real user traffic with statistical significance gating.</li>
+<li>Productivity delta tracking: comparing AI-augmented task completion time, output quality scores, and throughput against pre-AI baselines at cohort level.</li>
+<li>Business KPI attribution: connecting AI tool usage logs to revenue outcomes, cost reductions, error rate improvements, and customer satisfaction scores through causal analysis.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="knowledge-work-copilots">Knowledge Work Copilots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#knowledge-work-copilots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Inline AI assistance embedded in productivity platforms — Microsoft 365 Copilot, Google Workspace Duet, Notion AI, Slack AI, Atlassian Rovo — for drafting emails and documents, summarising meetings, translating content, and generating code.</li>
+<li>Microsoft Copilot Studio serves 160,000 organisations running 400,000+ custom agents as of mid-2026, demonstrating the scale of copilot deployment across enterprise productivity workflows.</li>
+<li>GitHub Copilot reports 55% faster task completion in controlled developer studies; Microsoft 365 Copilot demonstrates 30–40% reduction in meeting-note creation time and 29% faster document drafting in enterprise pilots.</li>
+<li>A 2025 Gallup survey found 27% of white-collar employees reported frequent AI use at work, up 12 percentage points from 2024 — the fastest adoption rate increase recorded for any enterprise technology in a single year.</li>
+<li>Key governance challenge: ensuring employees critically evaluate AI outputs rather than accepting them uncritically — particularly in legal, financial, medical, and compliance contexts where errors carry professional and legal liability.</li>
+</ul>
+</li>
+<li>
+<h3 id="enterprise-knowledge-management-via-rag">Enterprise Knowledge Management via RAG<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enterprise-knowledge-management-via-rag" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI-powered document search and Q&amp;A systems grounding <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> responses in access-controlled proprietary documents — policy manuals, technical specifications, contracts, regulatory filings, customer records — via <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a>.</li>
+<li>Resolves the hallucination and currency risks of pure LLM deployment by anchoring every generated response in retrieved context with explicit source citations, enabling human verification.</li>
+<li>2025–2026 deployment trend: multimodal RAG integrating image, audio, tabular data, and video embeddings alongside text, enabling richer enterprise knowledge retrieval from diverse document formats.</li>
+<li>Knowledge graph augmentation combining semantic retrieval with structured entity relationships — enabling AI to traverse organisational knowledge graphs for relationship-dependent queries (e.g., “Who approved this contract and what were the predecessor agreements?”).</li>
+</ul>
+</li>
+<li>
+<h3 id="agentic-process-automation">Agentic Process Automation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#agentic-process-automation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Autonomous or semi-autonomous <a href="../pages/AI-Agents" class="internal alias" data-slug="pages/AI-Agents">AI Agents</a> handling complete business process sequences: invoice extraction and three-way matching, contract review and clause flagging, IT ticket triage and resolution, HR onboarding task sequences, compliance report generation.</li>
+<li>Salesforce Agentforce demonstrates enterprise-scale agentic deployment: Atlas Reasoning Engine executing Reason–Act–Observe loops grounded in Salesforce Data 360, serving 29,000 enterprise customers with USD 800 million ARR by 2026.</li>
+<li>SAP Joule: 50+ AI assistants orchestrating 200+ agents across SAP S/4HANA finance, supply chain, and HR modules, integrated with Microsoft Teams and Azure OpenAI.</li>
+<li>IBM watsonx Orchestrate: 150+ pre-built automations spanning SAP, Salesforce, ServiceNow, and ServiceNow integrations, with natural-language agent configuration for non-technical business users.</li>
+<li>Critical governance requirement: <a href="../pages/Human-in-the-Loop" class="internal" data-slug="pages/Human-in-the-Loop">Human-in-the-Loop</a> escalation for agentic actions touching financial commitments, customer data modification, or regulatory compliance decisions.</li>
+</ul>
+</li>
+<li>
+<h3 id="customer-experience-ai">Customer Experience AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#customer-experience-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Conversational AI for tier-1 customer support automation, AI-assisted claims processing, intelligent routing to appropriate service channels, and personalised product recommendations.</li>
+<li>Brynjolfsson, Li &amp; Raymond (2023) demonstrate 14% average productivity gain in customer service agent performance when LLM assistance is deployed; novice agents see up to 34% improvement — the most cited causal evidence for enterprise AI value in customer-facing functions.</li>
+<li>Key deployment pattern: human-AI collaboration where AI handles the first-contact response and data retrieval, with human agents reviewing and sending — rather than fully autonomous AI responses in high-complexity or sensitive interactions.</li>
+</ul>
+</li>
+<li>
+<h3 id="decision-support-and-analytics">Decision Support and Analytics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decision-support-and-analytics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI-augmented dashboards synthesising structured operational data (financial reports, supply chain metrics, CRM data) with unstructured signals (news, analyst reports, internal documents) to generate natural-language narrative alongside quantitative outputs.</li>
+<li>Applications: supply chain disruption early warning (AI monitoring geopolitical and logistics signals against inventory exposure), M&amp;A target screening (AI-generated investment thesis drafts from SEC filings), regulatory reporting narrative (AI-drafted TCFD and ESG disclosure sections), and credit underwriting memoranda.</li>
+<li>Distinct from traditional <a href="../pages/Business-Intelligence" class="internal alias" data-slug="pages/Business-Intelligence">Business Intelligence</a>: produces multi-source synthesis with reasoning traces and confidence indicators, not just query-driven data visualisations.</li>
+</ul>
+</li>
+<li>
+<h3 id="software-development-acceleration">Software Development Acceleration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-development-acceleration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>AI coding assistants (GitHub Copilot, Tabnine, Cursor), automated test generation, security vulnerability detection, architecture documentation generation, and autonomous developer agents (Claude Code, GitHub Copilot Workspace, Devin) executing multi-file coding tasks autonomously.</li>
+<li>Gartner (2026) forecasts AI-augmented software development will be standard practice in 75% of technology organisations by end of 2026.</li>
+<li>Enterprise governance requirement: AI-generated code undergoes the same review, testing, and security scanning as human-written code — automated code review tools (Semgrep, CodeQL) adapted for AI-generated patterns.</li>
+</ul>
+</li>
+<li>
+<h3 id="vertical-domain-ai">Vertical Domain AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vertical-domain-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Specialised AI deployments combining general-purpose <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> reasoning with domain-specific <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> and often fine-tuned or instruction-tuned specialist model variants:
+<ul>
+<li><strong>Healthcare</strong>: Clinical documentation automation (ambient scribing, clinical coding), radiology image analysis, drug discovery acceleration, patient pathway optimisation.</li>
+<li><strong>Legal</strong>: Contract review and clause extraction, e-discovery document classification, legal research synthesis, regulatory compliance gap analysis.</li>
+<li><strong>Financial services</strong>: Credit underwriting memorandum generation, derivatives pricing model validation, AML transaction narrative generation, investment research synthesis.</li>
+<li><strong>Manufacturing</strong>: Predictive maintenance narrative generation, engineering specification search and retrieval, supply chain disruption risk synthesis.</li>
+</ul>
+</li>
+<li>Subject to heightened <a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> compliance obligations for high-risk system categories: biometrics, critical infrastructure, education, employment, credit, migration — requiring full technical documentation, conformity assessments, and post-market monitoring before deployment.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Enterprise AI research draws from organisational informatics, IT economics, AI systems research, and management science.</li>
+<li><strong>IT productivity complementarity</strong> (Brynjolfsson &amp; Hitt, 1996): Demonstrated that IT investment generates returns only when accompanied by complementary organisational changes — restructured processes, new skills, and management practices. This framework directly explains the enterprise AI pilot-to-production gap: technology investment without operating model redesign generates no sustained productivity gain.</li>
+<li><strong>Analytics strategy</strong> (Davenport &amp; Harris, 2007): Established the competitive advantage of systematic data and analytics management, identifying the same organisational barriers (data silos, talent gaps, executive scepticism) that dominate enterprise AI adoption 15 years later.</li>
+<li><strong>AI-first operating models</strong> (Iansiti &amp; Lakhani, 2020): Introduced the concept of organisations that redesign the full value chain around AI-native decision architectures — providing the theoretical endpoint of the enterprise AI transformation journey and distinguishing AI-native from AI-augmented organisations.</li>
+<li><strong>Causal enterprise AI productivity evidence</strong> (Brynjolfsson, Li &amp; Raymond, 2023): NBER Working Paper 31161 reported a randomised controlled experiment at a large call centre deploying LLM assistance, demonstrating 14% average productivity improvement (34% for novice agents) — the most methodologically rigorous causal evidence of enterprise AI value as of 2025.</li>
+<li><strong>Foundation model taxonomy</strong> (Bommasani et al., Stanford CRFM, 2021): Established the conceptual category of foundation models and analysed their societal opportunities and risks, providing the theoretical basis for the current enterprise AI architecture centred on pre-trained model adaptation.</li>
+<li><strong>RAG architecture</strong> (Lewis et al., Meta AI, 2020): Introduced <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> as an architecture combining parametric and non-parametric memory, becoming the dominant enterprise AI pattern for knowledge-intensive applications by 2023–2025.</li>
+<li><strong>MIT CISR Enterprise AI Maturity</strong> (Weill, Woerner, Sebastian &amp; Kaganer, 2024–2025): The most empirically grounded enterprise AI maturity model, identifying the four-stage progression and calibrating it against financial performance outcomes across hundreds of global organisations.</li>
+<li>In the UK: <strong>Alan Turing Institute</strong> (London) leads on trustworthy AI and responsible deployment in enterprise contexts; <strong>Warwick Business School</strong> (Thomas Davenport collaboration) researches analytics strategy and AI in professional services; <strong>Imperial College Business School</strong> contributes AI strategy and digital transformation research; <strong>University of Edinburgh</strong> (School of Informatics) maintains research programmes on natural language processing and enterprise knowledge systems.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>As of mid-2026 enterprise AI has transitioned from discretionary innovation investment to a fundamental dimension of corporate operating infrastructure.</li>
+<li><strong>Market scale</strong>: Global enterprise AI spending at USD 407 billion (IDC), growing 34.8% year-on-year. The AI agents market alone is projected at USD 10.9–12.1 billion with 44–46% CAGR through 2030.</li>
+<li><strong>Deployment breadth</strong>: McKinsey (2025) finds 88% of organisations using AI in at least one business function; Gartner forecasts 40% of enterprise applications will embed task-specific agents by end of 2026 — up from under 5% in early 2025.</li>
+<li><strong>Platform consolidation</strong>: Major enterprise software vendors have embedded AI as a default capability rather than an add-on, consolidating market power in the AI delivery layer:
+<ul>
+<li><strong>Microsoft Copilot Studio</strong>: 160,000 organisations, 400,000+ custom agents; Build 2026 positioned Copilot as the universal interface layer with ERP/CRM as backend services called by agents.</li>
+<li><strong>Salesforce Agentforce</strong>: 29,000 enterprise deals, USD 800 million ARR; Atlas Reasoning Engine with native Data 360 integration eliminating external pipeline overhead.</li>
+<li><strong>SAP Joule</strong>: 50+ AI assistants, 200+ agents across SAP S/4HANA finance, supply chain, and HR, with Microsoft Azure OpenAI integration announced at SAP Sapphire 2026.</li>
+<li><strong>ServiceNow</strong>: April 2026 restructuring embeds AI Control Tower and Workflow Data Fabric across all tiers as default governance architecture — the clearest signal of governance-first design as market standard.</li>
+<li><strong>IBM watsonx Orchestrate</strong>: 150+ pre-built enterprise automations; strong integration with SAP, Salesforce, and ServiceNow for multi-platform enterprise back-office AI.</li>
+</ul>
+</li>
+<li><strong>Regulatory environment</strong>: EU AI Act fully applicable to GPAI models from August 2025; full scope August 2026. 78% of EU organisations have not taken meaningful compliance steps (Requesty, 2026). UK FCA/PRA issued strategic AI letters in January 2026 directing firms to publish adoption plans.</li>
+<li><strong>ROI reality</strong>: McKinsey (2025) reports 5.8x average ROI within 14 months for production-deployed organisations; IDC and Microsoft report 3.7x return per USD 1 invested in generative AI. IBM (2025) finds only 25% of AI initiatives delivered expected ROI; Gartner predicts 40% of agentic AI projects cancelled by 2027 due to scaling failures. The bimodal distribution between leaders and laggards is the defining feature of the current landscape.</li>
+<li><strong>The pilot-to-production gap</strong>: 95% of AI initiatives stall before full production scale (MIT State of AI in Business, 2025). Only 1% of organisations consider their AI strategies mature (McKinsey, 2025). The dominant failure mode: treating AI adoption as a technology deployment project rather than an operating model transformation.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The UK occupies a globally significant position in enterprise AI with ambitions to become the G7’s fastest AI-adopting economy, backed by coordinated government, regulator, and industry action.</li>
+<li><strong>Government AI Opportunities Action Plan (January 2025)</strong>: Three-pillar framework targeting compute infrastructure (Isambard-AI at Bristol, Cambridge sixfold expansion, £250 million cloud AI Research Resource), public service AI transformation, and frontier AI sovereignty. One-year-on report (June 2025) confirmed progress against all three pillars.</li>
+<li><strong>NHS</strong>: UK’s largest enterprise AI deployment target. NHS Shared Business Services launched a £900 million AI solutions framework in May 2026 for healthcare AI procurement across the NHS estate. NHS England maintains a separate £150 million framework covering clinical pathway optimisation, radiology AI, and administrative automation. Health Data Research Service (HDRS), funded at up to £600 million by government and Wellcome, creates secure national-scale health dataset access for AI researchers and enterprise deployers.</li>
+<li><strong>Financial services regulation</strong>: FCA and PRA issued strategic AI letters in January 2026; AI Live Testing sandbox launched October 2025 (first cohort), second cohort April 2026. UK financial AI adopters navigate a principles-based regulatory regime (Principle 3: management and control; Principle 11: risk management) applied to AI alongside sector-specific operational resilience rules.</li>
+<li><strong>CDEI and governance</strong>: Centre for Data Ethics and Innovation publishes sector-specific responsible AI guidance. ICO has issued guidance on AI and data protection. The UK’s post-Brexit position allows divergence from EU AI Act requirements, though international companies operating in both jurisdictions typically implement EU Act standards as the higher-water mark.</li>
+<li><strong>Sector adoption rates (DSIT AI Adoption Research, 2025)</strong>:
+<ul>
+<li>Information and communications: 43–51% actively using AI</li>
+<li>Financial and professional services: 20–31%</li>
+<li>Retail, healthcare, hospitality, education: 11–15%</li>
+<li>Overall: approximately 1 in 6 UK businesses using AI, with most large firms and information-sector businesses among the active adopters.</li>
+</ul>
+</li>
+<li><strong>Northern England and Midlands</strong>:
+<ul>
+<li><strong>Aston University / Capgemini Centre of Excellence for Enterprise AI (Birmingham, September 2024)</strong>: Focus on responsible enterprise AI for manufacturing, health, and finance sectors. MSc AI for Business Transformation (co-designed with industry). AI fellowship programme for postdoctoral researchers. AI-powered business hub opened in Birmingham’s enterprise ecosystem.</li>
+<li><strong>Manchester</strong>: Record £64 million spinout funding in 2024. Enterprise AI adoption in retail (The Co-operative Group, N Brown), financial services (Barclays technology hub), digital media (MediaCom, Havas), and logistics (XPO, DHL UK operations). University of Manchester AI group contributes NLP and knowledge representation research.</li>
+<li><strong>Sheffield AMRC</strong>: Advanced Manufacturing Research Centre applies enterprise AI to aerospace and automotive manufacturing — predictive maintenance for Rolls-Royce aero-engines, defect detection for Boeing fuselage components, digital twin integration for precision engineering.</li>
+<li><strong>Leeds</strong>: Financial services AI adoption in insurance (Direct Line digital operations), legal services (Addleshaw Goddard AI programme), and digital health (Cera Care, TPP). University of Leeds School of Computing contributes to AI and data science research pipelines.</li>
+<li><strong>Newcastle / North East</strong>: Sage Group (Newcastle HQ) deploys AI across accounting software for SME customers; Accenture’s Newcastle digital centre; North East BIC enterprise AI adoption programmes for SMEs.</li>
+</ul>
+</li>
+<li><strong>London ecosystem</strong>: Alan Turing Institute co-hosted at UCL; Faculty AI delivering enterprise AI programmes for government, NHS, MoD, and financial services; Wayve (autonomous systems), Monzo (financial AI), DeepMind (Isomorphic Labs enterprise pharmaceutical AI); Microsoft UK’s AI at Scale programme headquartered at Cardinal Place.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Agentic Enterprise Operating System</strong>: Evolution from AI features within applications to persistent, proactive agent networks monitoring, planning, and acting across the complete enterprise technology estate. Organisations will manage fleets of specialised agents coordinated by orchestrator agents — equivalent to IT managing server fleets — rather than individual software applications. Gartner (2026) identifies this as the post-copilot paradigm shift defining the 2027–2030 enterprise AI landscape.</li>
+<li><strong>Sovereign and On-Premise AI Infrastructure</strong>: EU AI Act data residency requirements, UK post-Brexit data frameworks, DORA operational resilience rules, and the US Cloud Act’s extraterritorial reach over US-headquartered cloud providers drive large-scale investment in private cloud LLM infrastructure, EU-sovereign AI compute, and edge inference capabilities. The hyperscaler “European region” is legally insufficient for strict data sovereignty requirements — only EU-headquartered or community cloud infrastructure satisfies the full regulatory obligation.</li>
+<li><strong>Outcome-Based Platform Economics</strong>: IDC predicts seat-based SaaS pricing will be obsolete by 2028, replaced by consumption, task-completion, and business-outcome metrics. Enterprise software vendors (SAP, Salesforce, ServiceNow) will compete on demonstrable AI-driven revenue gain, cost reduction, and operational scale — restructuring procurement evaluation criteria and vendor management practices across the enterprise software market.</li>
+<li><strong>Continuous Evaluation and Adaptive Governance</strong>: Production AI monitoring evolves from point-in-time audit cycles to continuous drift detection, automated bias re-evaluation, prompt injection vulnerability scanning, and model self-monitoring loops — with adaptive governance policies that update risk classifications as model behaviours shift over time and usage patterns evolve.</li>
+<li><strong>Multi-Modal Enterprise AI</strong>: Integration of vision (document image understanding, shop-floor quality inspection, satellite imagery analysis), audio (call centre intelligence, meeting synthesis, field engineer dictation), and structured-data reasoning alongside text extends enterprise AI from text-centric copilots to pervasive operational intelligence across physical and digital workflows, particularly in manufacturing, healthcare, and logistics.</li>
+<li><strong>Federated and Privacy-Preserving Enterprise AI</strong>: Federated learning protocols, differential privacy mechanisms, and emerging homomorphic encryption applications mature to enable cross-organisational AI training on sensitive data without centralising raw records — enabling sector-wide foundation models (NHS-wide clinical AI, FCA-wide financial crime detection, cross-firm supply chain intelligence) with regulatory-compliant data sharing.</li>
+<li><strong>AI-Native Operating Models</strong>: Following Iansiti &amp; Lakhani (2020), the leading enterprise transformation frontier moves beyond AI-augmented traditional functions to redesigning organisations around AI-native decision architectures — where human expertise is deployed on exception handling, strategic judgement, ethical oversight, and relationship management, while AI systems execute the cognitive routine work of forecasting, drafting, classification, retrieval, and process orchestration.</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Foundation Model</strong>: A large-scale <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> pre-trained on broad datasets and adapted to enterprise tasks through prompting, fine-tuning, or <a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a> — the core reasoning component of enterprise AI architectures. Examples: GPT-4o, Claude 3.7 Sonnet, Gemini 2.0 Pro, Llama 3.1.</li>
+<li><strong>Retrieval-Augmented Generation (RAG)</strong>: The dominant enterprise AI architectural pattern, combining <a href="../pages/Vector-Database" class="internal alias" data-slug="pages/Vector-Database">Vector Database</a> retrieval of proprietary documents with <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> generation to produce answers grounded in current organisational knowledge with source citations — eliminating hallucination risk in knowledge-intensive applications.</li>
+<li><strong>Agentic Workflow</strong>: An AI execution pattern in which a <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> autonomously plans, executes tools, observes results, and iterates across multiple steps toward a goal — enabling enterprise AI to perform complete business process sequences rather than single-turn question answering.</li>
+<li><strong>Model Context Protocol (MCP)</strong>: Open protocol developed by Anthropic (2024) providing standardised interfaces between AI reasoning layers and enterprise data sources, tools, and action surfaces — the emerging connectivity standard for enterprise AI integration.</li>
+<li><strong>AI Copilot</strong>: An AI assistant embedded within an existing enterprise application (Microsoft 365, Salesforce, GitHub, ServiceNow) providing inline generation, retrieval, and recommendation capabilities within the user’s existing workflow — the dominant form factor for enterprise AI deployment by usage volume.</li>
+<li><strong>Data Residency</strong>: The regulatory or contractual requirement that data processed by AI systems remain within a specified geographic jurisdiction — a primary constraint on enterprise AI architecture decisions and a driver of sovereign AI infrastructure investment.</li>
+<li><strong>Human-in-the-Loop (HITL)</strong>: A governance pattern requiring human review and approval of AI-generated recommendations or agentic actions above a configurable risk or confidence threshold before execution — essential for enterprise AI deployments in regulated, customer-facing, or high-consequence contexts.</li>
+<li><strong>AI Risk Register</strong>: A structured inventory documenting all AI systems deployed within an organisation, including <a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> risk classification, technical documentation status, governance controls, monitoring arrangements, and incident response procedures.</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Brynjolfsson, E. &amp; Hitt, L. (1996). Paradox Lost? Firm-Level Evidence on the Returns to Information Systems Spending. <em>Management Science</em>, 42(4), 541–558.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Davenport, T.H. &amp; Harris, J.G. (2007). <em>Competing on Analytics: The New Science of Winning</em>. Harvard Business Press.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Brynjolfsson, E. &amp; McAfee, A. (2014). <em>The Second Machine Age: Work, Progress, and Prosperity in a Time of Brilliant Technologies</em>. W.W. Norton &amp; Company.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Davenport, T.H. &amp; Ronanki, R. (2018). Artificial Intelligence for the Real World. <em>Harvard Business Review</em>, January–February 2018, 108–116. Introduced three-type enterprise AI taxonomy.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Iansiti, M. &amp; Lakhani, K.R. (2020). <em>Competing in the Age of AI: Strategy and Leadership When Algorithms and Networks Run the World</em>. Harvard Business Review Press.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Lewis, P. et al. (2020). Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks. <em>NeurIPS 2020</em>. arXiv:2005.11401. Foundational RAG architecture paper.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>Bommasani, R. et al. (2021). On the Opportunities and Risks of Foundation Models. <em>Stanford CRFM</em>. arXiv:2108.07258.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Brynjolfsson, E., Li, D. &amp; Raymond, L.R. (2023). Generative AI at Work. <em>NBER Working Paper</em> 31161. <a href="https://danielle.li/assets/docs/GenerativeAIatWork.pdf" class="external">https://danielle.li/assets/docs/GenerativeAIatWork.pdf<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Weill, P., Woerner, S.L. &amp; Sebastian, I.M. (2024). Building Enterprise AI Maturity. <em>MIT CISR Research Briefing</em>, December 2024. <a href="https://cisr.mit.edu/publication/2024_1201_EnterpriseAIMaturityModel_WeillWoernerSebastian" class="external">https://cisr.mit.edu/publication/2024_1201_EnterpriseAIMaturityModel_WeillWoernerSebastian<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Woerner, S.L., Sebastian, I.M., Weill, P. &amp; Kaganer, E. (2025). Grow Enterprise AI Maturity for Bottom-Line Impact. <em>MIT CISR</em>, August 2025. <a href="https://cisr.mit.edu/publication/2025_0801_EnterpriseAIMaturityUpdate_WoernerSebastianWeillKaganer" class="external">https://cisr.mit.edu/publication/2025_0801_EnterpriseAIMaturityUpdate_WoernerSebastianWeillKaganer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Anthropic (2024). Model Context Protocol Specification. <a href="https://modelcontextprotocol.io" class="external">https://modelcontextprotocol.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>McKinsey Global Institute (2025). <em>The State of AI 2025</em>. McKinsey &amp; Company. <a href="https://www.mckinsey.com" class="external">https://www.mckinsey.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Deloitte (2026). <em>The State of AI in the Enterprise 2026</em>. Deloitte Global. <a href="https://www.deloitte.com/uk/en/issues/generative-ai/state-of-ai-in-enterprise.html" class="external">https://www.deloitte.com/uk/en/issues/generative-ai/state-of-ai-in-enterprise.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>IDC (2025). <em>Worldwide AI Spending Guide 2025</em>. International Data Corporation.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Gartner (2026). <em>Hype Cycle for Artificial Intelligence 2026</em>. Gartner Research.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>IBM Institute for Business Value (2025). <em>CEO Study 2025: AI Investment and ROI</em>. IBM.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>DSIT (2025). <em>AI Adoption Research</em>. UK Government. <a href="https://www.gov.uk/government/publications/ai-adoption-research/ai-adoption-research" class="external">https://www.gov.uk/government/publications/ai-adoption-research/ai-adoption-research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>UK Government (2025). <em>AI Opportunities Action Plan: One Year On</em>. <a href="https://www.gov.uk/government/publications/ai-opportunities-action-plan-one-year-on/ai-opportunities-action-plan-one-year-on" class="external">https://www.gov.uk/government/publications/ai-opportunities-action-plan-one-year-on/ai-opportunities-action-plan-one-year-on<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>European Commission (2024). EU Artificial Intelligence Act. <a href="https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai" class="external">https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Requesty (2026). EU AI Compliance in 2026: The 7 Regulations Every Enterprise Now Has to Answer For. <a href="https://www.requesty.ai/blog/eu-ai-compliance-2026-regulations-enterprises-must-prove" class="external">https://www.requesty.ai/blog/eu-ai-compliance-2026-regulations-enterprises-must-prove<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>NHS SBS (2026). NHS SBS launches £900m healthcare AI solutions framework. <em>Digital Health</em>, May 2026. <a href="https://www.digitalhealth.net/2026/05/nhs-sbs-launches-900m-healthcare-ai-solutions-framework/" class="external">https://www.digitalhealth.net/2026/05/nhs-sbs-launches-900m-healthcare-ai-solutions-framework/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Aston University (2024). Aston University and Capgemini launch new Centre of Excellence for Enterprise AI. <a href="https://www.aston.ac.uk/latest-news/aston-university-and-capgemini-launch-new-centre-excellence-enterprise-ai" class="external">https://www.aston.ac.uk/latest-news/aston-university-and-capgemini-launch-new-centre-excellence-enterprise-ai<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Mollick, E. &amp; Mollick, L. (2023). Navigating the Jagged Technological Frontier: Field Experimental Evidence of AI Effects on Knowledge Worker Productivity. <em>Organization Science</em>. <a href="https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838" class="external">https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Kai Waehner (2026). Enterprise Agentic AI Landscape 2026: Trust, Flexibility and Vendor Lock-in. <a href="https://www.kai-waehner.de/blog/2026/04/06/enterprise-agentic-ai-landscape-2026-trust-flexibility-and-vendor-lock-in/" class="external">https://www.kai-waehner.de/blog/2026/04/06/enterprise-agentic-ai-landscape-2026-trust-flexibility-and-vendor-lock-in/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Sana Labs (2025). Best Enterprise AI Agent Platforms 2025–2026. <a href="https://sanalabs.com/agents-blog/leading-ai-enterprise-fortune-500" class="external">https://sanalabs.com/agents-blog/leading-ai-enterprise-fortune-500<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Microsoft Azure (2026). Advancing enterprise AI: New SAP on Azure announcements from SAP Sapphire 2026. <a href="https://azure.microsoft.com/en-us/blog/advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026/" class="external">https://azure.microsoft.com/en-us/blog/advancing-enterprise-ai-new-sap-on-azure-announcements-from-sap-sapphire-2026/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Futurum Group (2025). Will Technology Friction Derail the ROI Promise of Enterprise AI Investments? <a href="https://futurumgroup.com/insights/will-technology-friction-derail-the-roi-promise-of-enterprise-ai-investments/" class="external">https://futurumgroup.com/insights/will-technology-friction-derail-the-roi-promise-of-enterprise-ai-investments/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Largit Data (2025). Enterprise AI Knowledge Management: Complete RAG Guide 2025. <a href="https://www.largitdata.com/en/knowledge/enterprise-ai-knowledge-management/" class="external">https://www.largitdata.com/en/knowledge/enterprise-ai-knowledge-management/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-2160" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-1"><a href="#origins-and-historical-development" data-for="origins-and-historical-development">Origins and Historical Development</a></li><li class="depth-1"><a href="#distinguishing-characteristics-from-consumer-ai" data-for="distinguishing-characteristics-from-consumer-ai">Distinguishing Characteristics from Consumer AI</a></li><li class="depth-1"><a href="#the-enterprise-ai-governance-imperative" data-for="the-enterprise-ai-governance-imperative">The Enterprise AI Governance Imperative</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-1"><a href="#foundation-model-layer" data-for="foundation-model-layer">Foundation Model Layer</a></li><li class="depth-1"><a href="#retrieval-and-grounding-layer" data-for="retrieval-and-grounding-layer">Retrieval and Grounding Layer</a></li><li class="depth-1"><a href="#agentic-orchestration-layer" data-for="agentic-orchestration-layer">Agentic Orchestration Layer</a></li><li class="depth-1"><a href="#integration-and-connectivity-layer" data-for="integration-and-connectivity-layer">Integration and Connectivity Layer</a></li><li class="depth-1"><a href="#governance-and-compliance-layer" data-for="governance-and-compliance-layer">Governance and Compliance Layer</a></li><li class="depth-1"><a href="#identity-and-data-security-layer" data-for="identity-and-data-security-layer">Identity and Data Security Layer</a></li><li class="depth-1"><a href="#measurement-and-evaluation-layer" data-for="measurement-and-evaluation-layer">Measurement and Evaluation Layer</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#knowledge-work-copilots" data-for="knowledge-work-copilots">Knowledge Work Copilots</a></li><li class="depth-1"><a href="#enterprise-knowledge-management-via-rag" data-for="enterprise-knowledge-management-via-rag">Enterprise Knowledge Management via RAG</a></li><li class="depth-1"><a href="#agentic-process-automation" data-for="agentic-process-automation">Agentic Process Automation</a></li><li class="depth-1"><a href="#customer-experience-ai" data-for="customer-experience-ai">Customer Experience AI</a></li><li class="depth-1"><a href="#decision-support-and-analytics" data-for="decision-support-and-analytics">Decision Support and Analytics</a></li><li class="depth-1"><a href="#software-development-acceleration" data-for="software-development-acceleration">Software Development Acceleration</a></li><li class="depth-1"><a href="#vertical-domain-ai" data-for="vertical-domain-ai">Vertical Domain AI</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

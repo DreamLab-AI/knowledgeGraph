@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Universal Scene Description</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Universal Scene Description"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Universal Scene Description"/><meta name="twitter:description" content="Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and… S..."/><meta property="og:description" content="Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and… S..."/><meta property="og:image:alt" content="Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Universal-Scene-Description"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Universal-Scene-Description"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Universal-Scene-Description"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-7956"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-7956" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Universal Scene Description</a></div></nav><h1 class="article-title">Universal Scene Description</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.933Z">23 Sept 2026</time><span>46 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:universal-scene-description</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>spatial-computing</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Standards-and-Interoperability" class="internal">Standards and Interoperability</a></li><li><a href="../pages/3D-File-Format" class="internal">3D File Format</a></li><li><a href="../pages/Asset-Pipeline" class="internal">Asset Pipeline</a></li><li><a href="../pages/Scene-Graph" class="internal">Scene Graph</a></li><li><a href="../pages/Open-Standard" class="internal">Open Standard</a></li><li><a href="../pages/Interoperability" class="internal">Interoperability</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Serialisation-Format" class="internal">Crate Format</a></li><li><a href="../pages/MaterialX" class="internal">MaterialX</a></li><li><a href="../Hydra" class="internal">Hydra</a></li><li><a href="../OpenSubdiv" class="internal">OpenSubdiv</a></li><li><a href="../Composition-Arcs" class="internal">Composition Arcs</a></li><li><a href="../Layer-Stack" class="internal">Layer Stack</a></li><li><a href="../Variant-Sets" class="internal">Variant Sets</a></li><li><a href="../UsdSkel" class="internal">UsdSkel</a></li><li><a href="../Crate-Format" class="internal">Crate Format</a></li><li><a href="../USDZ" class="internal">USDZ</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Asset-Pipeline" class="internal">Asset Pipeline</a></li><li><a href="../pages/Renderer" class="internal">Renderer</a></li><li><a href="../pages/Scene-Graph" class="internal">Scene Graph</a></li><li><a href="../pages/Schema-Registry" class="internal">Schema Registry</a></li><li><a href="../Layer-Resolution" class="internal">Layer Resolution</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Collaborative-Systems-Modality" class="internal">Collaborative Scene Assembly</a></li><li><a href="../pages/Interoperability" class="internal">Cross-DCC Interoperability</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Non-Destructive-Editing" class="internal">Non-Destructive Editing</a></li><li><a href="../pages/Real-Time-Rendering" class="internal">Real-Time Rendering</a></li><li><a href="../Spatial-Computing" class="internal">Spatial Computing</a></li><li><a href="../Virtual-Production" class="internal">Virtual Production</a></li><li><a href="../Digital-Twins" class="internal">Digital Twins</a></li><li><a href="../Spatial-Computing-Paradigm" class="internal">Spatial Computing Paradigm</a></li><li><a href="../Cross-DCC-Interoperability" class="internal">Cross-DCC Interoperability</a></li><li><a href="../Collaborative-Scene-Assembly" class="internal">Collaborative Scene Assembly</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/glTF" class="internal">glTF</a></li><li><a href="../pages/FBX" class="internal">FBX</a></li><li><a href="../Alembic" class="internal">Alembic</a></li><li><a href="../OBJ" class="internal">OBJ</a></li><li><a href="../COLLADA" class="internal">COLLADA</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Layer-Composition-Algorithm" class="internal">Layer Composition Algorithm</a></li><li><a href="../Schema-System" class="internal">Schema System</a></li><li><a href="../Asset-Resolution" class="internal">Asset Resolution</a></li><li><a href="../SdfPath-Addressing" class="internal">SdfPath Addressing</a></li><li><a href="../OpenColorIO" class="internal">OpenColorIO</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../FormatLayer" class="internal">FormatLayer</a></li><li><a href="../PipelineLayer" class="internal">PipelineLayer</a></li><li><a href="../RenderingLayer" class="internal">RenderingLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/MaterialX" class="internal">MaterialX Shading</a></li><li><a href="../LIVRPS-Composition" class="internal">LIVRPS Composition</a></li><li><a href="../Hydra-Scene-Delegate" class="internal">Hydra Scene Delegate</a></li><li><a href="../MaterialX-Shading" class="internal">MaterialX Shading</a></li><li><a href="../OpenSubdiv-Refinement" class="internal">OpenSubdiv Refinement</a></li><li><a href="../OpenPBR-Material-Model" class="internal">OpenPBR Material Model</a></li><li><a href="../Variant-Selection" class="internal">Variant Selection</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>CT-3001</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../3-dgraphics-domain" class="internal">3DGraphicsDomain</a></li><li><a href="../alembic" class="internal">Alembic</a></li><li><a href="../alliance-for-open-usd" class="internal">Alliance for OpenUSD</a></li><li><a href="../aousd" class="internal">AOUSD</a></li><li><a href="../apple-vision-pro" class="internal">Apple Vision Pro</a></li><li><a href="../ar-quick-look" class="internal">AR Quick Look</a></li><li><a href="../asset-pipeline" class="internal">Asset Pipeline</a></li><li><a href="../asset-resolution" class="internal">Asset Resolution</a></li><li><a href="../autodesk-maya" class="internal">Autodesk Maya</a></li><li><a href="../c-api" class="internal">C++ API</a></li><li><a href="../collaborative-scene-assembly" class="internal">Collaborative Scene Assembly</a></li><li><a href="../collada" class="internal">COLLADA</a></li><li><a href="../composition-arcs" class="internal">Composition Arcs</a></li><li><a href="../crate-format" class="internal">Crate Format</a></li><li><a href="../creative-tools-domain" class="internal">CreativeToolsDomain</a></li><li><a href="../cross-dcc-interoperability" class="internal">Cross-DCC Interoperability</a></li><li><a href="../digital-twins" class="internal">Digital Twins</a></li><li><a href="../fbx" class="internal">FBX</a></li><li><a href="../film-and-animation-pipeline" class="internal">Film and Animation Pipeline</a></li><li><a href="../format-layer" class="internal">FormatLayer</a></li><li><a href="../game-development" class="internal">Game Development</a></li><li><a href="../gl-tf" class="internal">glTF</a></li><li><a href="../glsl-shaders" class="internal">GLSL Shaders</a></li><li><a href="../houdini" class="internal">Houdini</a></li><li><a href="../hydra" class="internal">Hydra</a></li><li><a href="../hydra-scene-delegate" class="internal">Hydra Scene Delegate</a></li><li><a href="../industrial-simulation" class="internal">Industrial Simulation</a></li><li><a href="../joint-development-foundation" class="internal">Joint Development Foundation</a></li><li><a href="../layer-composition-algorithm" class="internal">Layer Composition Algorithm</a></li><li><a href="../layer-resolution" class="internal">Layer Resolution</a></li><li><a href="../layer-stack" class="internal">Layer Stack</a></li><li><a href="../linux-foundation" class="internal">Linux Foundation</a></li><li><a href="../livrps-composition" class="internal">LIVRPS Composition</a></li><li><a href="../material-x" class="internal">MaterialX</a></li><li><a href="../material-x-shading" class="internal">MaterialX Shading</a></li><li><a href="../metaverse-platforms" class="internal">Metaverse Platforms</a></li><li><a href="../non-destructive-editing" class="internal">Non-Destructive Editing</a></li><li><a href="../obj" class="internal">OBJ</a></li><li><a href="../open-color-io" class="internal">OpenColorIO</a></li><li><a href="../open-gl" class="internal">OpenGL</a></li><li><a href="../open-pbr-material-model" class="internal">OpenPBR Material Model</a></li><li><a href="../open-subdiv" class="internal">OpenSubdiv</a></li><li><a href="../open-subdiv-refinement" class="internal">OpenSubdiv Refinement</a></li><li><a href="../open-vdb" class="internal">OpenVDB</a></li><li><a href="../pipeline-layer" class="internal">PipelineLayer</a></li><li><a href="../pixar-animation-studios" class="internal">Pixar Animation Studios</a></li><li><a href="../python-api" class="internal">Python API</a></li><li><a href="../renderer" class="internal">Renderer</a></li><li><a href="../rendering-layer" class="internal">RenderingLayer</a></li><li><a href="../robotics-simulation" class="internal">Robotics Simulation</a></li><li><a href="../schema-system" class="internal">Schema System</a></li><li><a href="../sdf-path-addressing" class="internal">SdfPath Addressing</a></li><li><a href="../spatial-computing-domain" class="internal">SpatialComputingDomain</a></li><li><a href="../usd-skel" class="internal">UsdSkel</a></li><li><a href="../usdz" class="internal">USDZ</a></li><li><a href="../variant-selection" class="internal">Variant Selection</a></li><li><a href="../variant-sets" class="internal">Variant Sets</a></li><li><a href="../vulkan" class="internal">Vulkan</a></li><li><a href="../3-d-file-format" class="internal">3D File Format</a></li><li><a href="../blender" class="internal">Blender</a></li><li><a href="../interoperability" class="internal">Interoperability</a></li><li><a href="../nvidia-omniverse" class="internal">NVIDIA Omniverse</a></li><li><a href="../open-standard" class="internal">Open Standard</a></li><li><a href="../real-time-rendering" class="internal">Real-Time Rendering</a></li><li><a href="../scene-graph" class="internal">Scene Graph</a></li><li><a href="../schema-registry" class="internal">Schema Registry</a></li><li><a href="../spatial-computing" class="internal">Spatial Computing</a></li><li><a href="../unreal-engine" class="internal">Unreal Engine</a></li><li><a href="../virtual-production" class="internal">Virtual Production</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:5ccf9e06b584664571d4ac76f379b8ddc0103fda3f46b8e840496f88dd9ff1dd</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Apple-Vision-Pro" class="internal">Apple Vision Pro</a></li><li><a href="../pages/Blender-3D-Creation-Suite" class="internal">Blender 3D Creation Suite</a></li><li><a href="../pages/NVIDIA-Omniverse-Platform" class="internal">NVIDIA Omniverse Platform</a></li><li><a href="../pages/Unreal-Engine" class="internal">Unreal Engine</a></li><li><a href="../Houdini" class="internal">Houdini</a></li><li><a href="../Autodesk-Maya" class="internal">Autodesk Maya</a></li><li><a href="../AOUSD" class="internal">AOUSD</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../joint-development-foundation" class="internal">Joint Development Foundation</a></li><li><a href="../pages/Linux-Foundation" class="internal">Linux Foundation</a></li><li><a href="../pixar-animation-studios" class="internal">Pixar Animation Studios</a></li><li><a href="../Alliance-for-OpenUSD" class="internal">Alliance for OpenUSD</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../game-development" class="internal">Game Development</a></li><li><a href="../pages/Metaverse-Platform" class="internal">Metaverse Platform</a></li><li><a href="../pages/Robotics-Simulation" class="internal">Robotics Simulation</a></li><li><a href="../Film-and-Animation-Pipeline" class="internal">Film and Animation Pipeline</a></li><li><a href="../AR-Quick-Look" class="internal">AR Quick Look</a></li><li><a href="../Industrial-Simulation" class="internal">Industrial Simulation</a></li><li><a href="../Metaverse-Platforms" class="internal">Metaverse Platforms</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/GLSL" class="internal">GLSL Shaders</a></li><li><a href="../pages/OpenGL" class="internal">OpenGL</a></li><li><a href="../pages/Vulkan" class="internal">Vulkan</a></li><li><a href="../Python-API" class="internal">Python API</a></li><li><a href="../C++-API" class="internal">C++ API</a></li><li><a href="../GLSL-Shaders" class="internal">GLSL Shaders</a></li><li><a href="../OpenVDB" class="internal">OpenVDB</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:HydraRenderingFramework))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:MaterialXShadingNetwork))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:OpenSubdivMeshRefinement))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:CompositionArcs))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:LayerStack))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:VariantSets))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:UsdSkelAnimationSystem))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:CrateFileFormat))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:hasPart ct:USDZArchiveFormat))
+
+  ## Dependency Relationships
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:requires ct:SceneGraph))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:requires ct:AssetPipeline))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:requires ct:RendererBackend))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:requires ct:SchemaRegistry))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:requires ct:LayerResolution))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:dependsOn ct:LIVRPSCompositionAlgorithm))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:dependsOn ct:SdfPathAddressing))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:dependsOn ct:AssetResolutionProtocol))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:dependsOn ct:OpenColorIO))
+
+  ## Capability Relationships
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:enables ct:VirtualProduction))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:enables ct:DigitalTwins))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:enables ct:SpatialComputing))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:enables ct:NonDestructiveEditing))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:enables ct:CrossDCCInteroperability))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:enables ct:RealTimeRendering))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:supports ct:FilmAnimationPipeline))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:supports ct:GameDevelopment))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:supports ct:ARQuickLook))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:supports ct:IndustrialSimulation))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:supports ct:RoboticsSimulation))
+
+  ## Implementation Relationships
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:implements ct:LIVRPSComposition))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:implements ct:HydraSceneDelegate))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:implements ct:MaterialXShading))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:implements ct:OpenSubdivRefinement))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:implements ct:OpenPBRMaterialModel))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:implements ct:VariantSelection))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:uses ct:PythonAPI))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:uses ct:CppAPI))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:uses ct:VulkanGraphicsAPI))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:uses ct:OpenVDBVolumes))
+
+  ## Reduction Relationships
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:reduces ct:AssetFormatFragmentation))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:reduces ct:PipelineIntegrationCost))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:reduces ct:DataConversionOverhead))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:reduces ct:DepartmentalConflict))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:reduces ct:RenderFarmPreprocessingTime))
+
+  ## Association Relationships
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:relatedTo ct:NVIDIAOmniverse))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:relatedTo ct:AppleVisionPro))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:relatedTo ct:MetaverseStandardsForum))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:relatedTo ct:GaussianSplatting))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:contrasts ct:glTF))
+  SubClassOf(ct:UniversalSceneDescription
+    ObjectSomeValuesFrom(ct:standardizedBy ct:AllianceForOpenUSD))
+
+  ## Data Properties
+  DataPropertyAssertion(ct:hasIdentifier ct:UniversalSceneDescription &quot;CT-3001&quot;^^xsd:string)
+  DataPropertyAssertion(ct:authorityScore ct:UniversalSceneDescription &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ct:foundingYear ct:UniversalSceneDescription &quot;2012&quot;^^xsd:integer)
+  DataPropertyAssertion(ct:openSourceYear ct:UniversalSceneDescription &quot;2016&quot;^^xsd:integer)
+  DataPropertyAssertion(ct:aousdFoundedYear ct:UniversalSceneDescription &quot;2023&quot;^^xsd:integer)
+  DataPropertyAssertion(ct:coreSpec10ReleaseYear ct:UniversalSceneDescription &quot;2025&quot;^^xsd:integer)
+  DataPropertyAssertion(ct:aousdMemberCount ct:UniversalSceneDescription &quot;50&quot;^^xsd:integer)
+
+  ## Property Constraints
+  SubClassOf(ct:UniversalSceneDescription
+    DataSomeValuesFrom(ct:compositionArcType xsd:string))
+  SubClassOf(ct:UniversalSceneDescription
+    DataMinCardinality(1 ct:hasFileFormat xsd:string))
+  SubClassOf(ct:UniversalSceneDescription
+    DataSomeValuesFrom(ct:hasRenderDelegate xsd:string))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ct:UniversalSceneDescription &quot;Universal Scene Description&quot;@en)
+  AnnotationAssertion(rdfs:comment ct:UniversalSceneDescription &quot;Open-source, extensible 3D scene-graph framework by Pixar providing unified file formats (USDA/USDC/USDZ) and APIs for composing, simulating, and collaborating on production scenes through non-destructive layer composition; standardised by the Alliance for OpenUSD (AOUSD) Core Specification 1.0 released December 2025 with 50 member organisations; powers Apple Vision Pro USDZ delivery, NVIDIA Omniverse digital twins, and film/VFX pipelines globally.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ct:UniversalSceneDescription &quot;CT-3001&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ct:UniversalSceneDescription &quot;3D Scene Description, Asset Pipeline, Rendering, Spatial Computing, VFX, Digital Twins&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(ct:requires)
+AsymmetricObjectProperty(ct:enables)
+AsymmetricObjectProperty(ct:implements)
+AsymmetricObjectProperty(ct:reduces)
+TransitiveObjectProperty(ct:dependsOn)
+FunctionalDataProperty(ct:authorityScore)
+FunctionalDataProperty(ct:coreSpec10ReleaseYear)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-universal-scene-description">About Universal Scene Description<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-universal-scene-description" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Universal Scene Description</strong> (USD, or OpenUSD since the open-source relicensing) is the foundational interchange and pipeline technology of the contemporary 3D industry. Pixar Animation Studios conceived it internally around 2012 to address the extreme complexity of feature-film production: a single animated feature involves hundreds of artists across modelling, rigging, shading, effects, lighting, and compositing departments, each generating vast quantities of scene data that must combine into coherent, renderable shots without destructive conflicts. The traditional approach—baking scene data into monolithic files handed sequentially between departments—collapsed under the scale of films like <em>Brave</em> and <em>Monsters University</em>. Departments would produce Maya or Houdini scenes with embedded geometry, publish to shared network storage, and downstream departments would copy and modify those files. When the modelling department updated a character, every downstream department had to manually re-import or reconcile differences—a process consuming enormous pipeline-engineering effort and introducing errors at every handoff.</p>
+</li>
+<li>
+<p>USD’s design insight was to treat every authored value as an “<strong>opinion</strong>” and to define a composable, layered model in which opinions from many sources are resolved deterministically at read time, leaving all source data intact. The fundamental conceptual shift: instead of files that represent final states, USD files represent <em>contributions</em>. A modelling file contributes geometry opinions; a shading file contributes material opinions; a layout file contributes transform opinions. The USD runtime resolves all contributions according to a strict priority ordering, producing a single coherent view of the scene without any department modifying another’s data. This enables simultaneous multi-department collaboration on the same shot in a way that was previously impossible at feature-film scale.</p>
+</li>
+<li>
+<p>Pixar open-sourced USD in 2016, releasing C++ and Python libraries together with the Hydra rendering abstraction layer and usdview inspection tool. Initial adoption was cautious: USD’s composition algebra is significantly more complex than formats like Alembic or FBX, and pipeline engineers required time to learn its idioms. Adoption accelerated substantially after SideFX integrated USD natively into Houdini’s Solaris context in Houdini 18 (2019), giving the broader VFX community a production-proven USD environment outside Pixar itself. By 2021–2022, USD had become the de-facto standard for multi-studio VFX productions; by 2023 the formation of AOUSD confirmed USD’s transition from a Pixar technology to an industry-governed open standard.</p>
+</li>
+<li>
+<h3 id="historical-development-and-milestones">Historical Development and Milestones<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#historical-development-and-milestones" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>USD development at Pixar began around 2012 under the internal codename “USD” (Universal Scene Description), initially as a replacement for Pixar’s proprietary scene description formats (SubD, RIB, Menva). The primary design goals were: (1) lossless, non-destructive scene composition from multiple independently-maintained files; (2) efficient large-scale traversal and streaming for scenes with 100M+ primitives; (3) full extensibility through user-defined schemas without modifying the core library; (4) a language-agnostic data model with both C++ and Python bindings. Pixar used USD internally on <em>Finding Dory</em> (2016) and subsequent productions before releasing the source code to GitHub in July 2016.</p>
+</li>
+<li>
+<p>Key milestones in USD’s development and standardisation history include: the 2016 open-source release establishing foundational composition arc semantics and the Hydra renderer abstraction; OpenUSD 19.01 (2019) introducing the Vulkan-capable HGI (Hydra Graphics Interface) abstraction layer; SideFX Houdini 18 Solaris (2019) as the first major third-party DCC to adopt USD as its native scene representation; Maya MayaUSD plugin reaching production quality (2021, bundled with Maya 2022); OpenUSD 22.11 introducing Hydra 2 Scene Index architecture with composable filter chains; Blender 3.0 (2021) adding USD import/export; Apple embracing USDZ as the native AR delivery format for iOS and iPadOS (2018, ARKit 2) and later visionOS; AOUSD formation (August 2023) with Pixar, Adobe, Apple, Autodesk, NVIDIA as founders; OpenUSD 24.08 (2024) adding Vulkan HgiVulkan backend for Storm renderer developed by Pixar, Autodesk, and Adobe; AOUSD Core Specification 1.0 (17 December 2025), the first formally ratified vendor-independent USD specification with 50 member organisations.</p>
+</li>
+<li>
+<h3 id="core-technical-architecture-scene-graph-and-data-model">Core Technical Architecture: Scene Graph and Data Model<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-technical-architecture-scene-graph-and-data-model" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The fundamental unit of scene data in USD is the <strong>prim</strong> (primitive)—a named node in the scene-graph hierarchy identified by an SdfPath such as <code>/World/Characters/Rex/Body</code>. Every prim carries typed <strong>attributes</strong> (time-sampled or static values of USD types: float, float3, color4f, token, matrix4d, asset, string, int, bool, dictionary, etc.) and <strong>relationships</strong> (typed, ordered lists of path targets linking prims). USD uses a rich type system with vector, matrix, colour, asset-reference, and array types, all with defined interpolation modes for time-sampled animation.</p>
+</li>
+<li>
+<p>Prims are typed via <strong>schema</strong> classes that define the canonical attributes and relationships a prim of that type carries. <strong>Typed schemas</strong> define the prim’s primary nature: <code>UsdGeomMesh</code> has attributes <code>points</code> (point3f[]), <code>faceVertexCounts</code> (int[]), <code>faceVertexIndices</code> (int[]), <code>normals</code> (normal3f[]), <code>uvs</code> (texCoord2f[]); <code>UsdGeomCamera</code> has <code>focalLength</code> (float), <code>horizontalAperture</code> (float), <code>clippingRange</code> (float2); <code>UsdLuxDomeLight</code> has <code>inputs:color</code> (color3f), <code>inputs:intensity</code> (float), <code>inputs:textureFile</code> (asset). <strong>API schemas</strong> add behavioural capabilities to prims without changing their core type: <code>UsdPhysicsRigidBodyAPI</code> adds physics simulation properties to any prim; <code>UsdShadeMaterialBindingAPI</code> adds material binding; <code>UsdGeomImageable</code> provides visibility and purpose attributes. API schemas can be applied multiple times (multi-apply API schemas) to carry multiple independent behaviours on a single prim.</p>
+</li>
+<li>
+<p>The <code>UsdStage</code> is the primary in-memory representation of a fully composed USD scene. Opening a stage from a root layer file triggers recursive resolution of all referenced layers, sublayers, and payloads (unless payload loading is deferred), producing a fully composed view of the scene. The stage presents traversal APIs (BFS, DFS, pruning by purpose/type/activation), attribute value access with automatic time-sampling interpolation, and relationship resolution. The <code>UsdEditTarget</code> mechanism controls which layer receives new authored opinions during interactive editing sessions, enabling non-destructive collaborative workflows where artists accumulate opinions in their local layer without touching upstream asset layers.</p>
+</li>
+<li>
+<p><strong>Primvars</strong> (primitive variables) are a specialised attribute type inherited from RenderMan’s variable scoping model: they carry per-vertex, per-face, per-face-vertex, or constant values on geometric prims, with USD managing their interpolation across subdivision and face-varying UV seams. Primvars are how texture coordinates, vertex colours, per-instance data, and custom render-engine hints are attached to geometry in a renderer-agnostic, schema-validated form.</p>
+</li>
+<li>
+<p><strong>Time-coding</strong>: All USD attributes may optionally carry time samples—(time, value) pairs—enabling keyframe animation, simulation caches (Alembic-style point caches, VDB volume sequences), and procedurally-generated motion. The stage’s <code>UsdTimeCode</code> system handles time-offset and time-scale applied by reference and payload arcs, enabling a referenced animation to be retimed in its context without modifying the source asset.</p>
+</li>
+<li>
+<h3 id="composition-arcs-and-the-livrps-algorithm">Composition Arcs and the LIVRPS Algorithm<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#composition-arcs-and-the-livrps-algorithm" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>USD’s defining technical innovation is its <strong>composition algebra</strong>, which governs how multiple independently-authored layers combine into a single resolved scene. Six arc types, applied to prims, collectively constitute the composition architecture:</p>
+</li>
+<li>
+<p><strong>1. Sublayers</strong>: The most foundational composition mechanism. A root layer declares an ordered stack of sublayers (itself a layer). Each sublayer contributes opinions to all prims it authors; opinion strength is determined purely by position in the sublayer stack, with the root layer being strongest (position 0). Sublayers do not graft scene-graph subtrees—they merge opinions into the same prim namespaces as the root. The sublayer mechanism is how a “session layer” in interactive DCC tools (usdview, Maya, Houdini) accumulates temporary edits on top of the underlying production layers, with the session layer always strongest. Studios routinely use sublayers to stack multiple departmental contributions for a shot: a layout sublayer (transforms), shading sublayer (material bindings), effects sublayer (particle caches), and lighting sublayer (light positions and settings) all merge into the shot’s root layer, with the strongest sublayer (typically lighting/shot-specific overrides) taking priority over weaker ones.</p>
+</li>
+<li>
+<p><strong>2. References</strong>: A reference arc on a prim in one layer includes a specified path within another USD file, grafting the referenced file’s prim subtree onto the local prim. References are the primary mechanism for assembling assets into shots: a shot file references character asset files, environment asset files, and prop asset files without embedding their data, enabling multiple shots to reference the same asset version and ensuring pipeline updates propagate automatically when asset files are updated. References support: <code>defaultPrim</code> targeting (grafting the referenced file’s declared default prim); sub-prim targeting (grafting an arbitrary subtree within the referenced file); layer offsets (time-offset and time-scale for animation retiming at the reference boundary); and reference stacking (multiple references on the same prim from different files). A character might have references stacked for: base geometry (from modelling), rig (from rigging, referencing back to geometry), materials (from shading), and a shot-specific override layer.</p>
+</li>
+<li>
+<p><strong>3. Payloads</strong>: Structurally identical to references in syntax and semantics but semantically marked as “heavy optional data.” The USD stage loading model treats payloads as separately loadable: a <code>UsdStage</code> can be opened with payload loading disabled, loading only the scene’s layer metadata and prim structure without loading the heavy geometry and simulation data behind payload arcs. This enables: interactive DCC tools to present a full scene hierarchy with proxy geometry (low-res stand-in representations) whilst deferring the load of production-quality geometry until an artist specifically requests it; render farms to load scenes selectively, loading only the assets intersecting a given spatial tile or camera frustum; and game engines or web runtimes to stream large environments progressively. Payloads are the foundation of USD’s scalability for open-world environments where a full scene might comprise terabytes of geometry data across hundreds of thousands of assets.</p>
+</li>
+<li>
+<p><strong>4. Variants</strong>: Named sets of alternative opinions encoded within an asset file (VariantSets / Variants). A VariantSet is a named collection of named variants; each variant is an opinion namespace that is active only when its variant is selected. Example: a character asset might have a <code>lodVariant</code> VariantSet with variants <code>hero</code> (full subdivision, high-res textures, all rig controls), <code>crowd</code> (lower subdivision, 512x512 textures, simplified rig), and <code>shadow_proxy</code> (very low-res convex hull). Downstream artists or pipeline tools select the active variant per-prim without modifying the asset file; the composition system resolves only the selected variant’s opinions. Variants are pervasively used for: levels of detail (LODs); material configurations (painted/worn/clean); regional costume variations; seasonal scene configurations (summer/winter environments); A/B set comparisons; platform-specific asset configurations. Because variant selection is recorded as a simple token in the layer that references the asset, switching variants is nearly free at composition resolution time.</p>
+</li>
+<li>
+<p><strong>5. Inherits</strong>: Class-based sharing of properties across multiple asset instances. A <code>__class__</code> prim (by convention, a prim path beginning with <code>__class__</code>) defines template opinions that are not themselves rendered but are inherited by other prims. Multiple asset prims across different files can inherit from the same class prim, automatically adopting all its authored values whilst retaining the ability to locally override any attribute. Critically, inherits propagate <em>downstream through composition</em>: if a shot’s layer overrides a class prim value, that override propagates automatically to all prims that inherit from that class, enabling “fix-it” overrides applied retroactively across every instance of a character in a sequence without touching individual shot files. This is the mechanism by which a VFX supervisor can say “darken all the hero characters’ skin across the entire sequence by 10%” and implement that in a single override.</p>
+</li>
+<li>
+<p><strong>6. Specializes</strong>: Semantically similar to inherits but with the weakest precedence in the LIVRPS strength ordering, lower even than References and Payloads. Specializes is intended for “template asset” patterns where a base asset (e.g., <code>Biped_Template</code>) defines default values, and specialised derivative assets (e.g., <code>Warrior_Biped</code>, <code>Mage_Biped</code>) specialise from it. The specialised asset’s authors can override any template default without conflict; template opinions are always weakest and thus never accidentally override authored values.</p>
+</li>
+<li>
+<p><strong>LIVRPS Strength Ordering</strong>: The composition algorithm resolves conflicting opinions from different arc types in the following deterministic priority ordering (strongest to weakest): <strong>L</strong>ocal opinions (authored directly in the layer being resolved) > <strong>I</strong>nherits (class template opinions) > <strong>V</strong>ariants (active variant opinions) > <strong>R</strong>eferences (referenced asset opinions) > <strong>P</strong>ayloads (payload asset opinions) > <strong>S</strong>pecializes (template base opinions). This ordering applies at every level of the composition graph, making it possible to reason about which opinion will win in any conflict situation by inspecting the arc types involved. The LIVRPS ordering is not merely a tiebreaker—it is the architectural constraint that enables the entire pipeline workflow: artists know that their local opinions always win, referenced asset opinions are always overridable locally, and class template opinions are always weakest.</p>
+</li>
+<li>
+<h3 id="hydra-rendering-architecture">Hydra Rendering Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hydra-rendering-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Hydra</strong> is USD’s rendering framework, introduced in USD 0.8 (2018) and substantially overhauled to Hydra 2.x in OpenUSD 23.x. Hydra’s architectural purpose is to decouple scene traversal and representation from renderer implementation, enabling any renderer to consume USD scene data without bespoke USD integration code in the renderer itself. The decoupling is achieved through two plugin interface families:</p>
+</li>
+<li>
+<p><strong>Scene Delegates / Scene Indices</strong> (Hydra 2): The scene-facing side of Hydra. A Scene Delegate (the older interface) or Scene Index (the Hydra 2 interface) presents scene data to renderers in a renderer-agnostic representation: <code>HdRprim</code> (render-able primitives: meshes, curves, points, volumes), <code>HdSprim</code> (state primitives: cameras, lights, materials), and <code>HdBprim</code> (buffer primitives: textures). The <code>UsdImagingDelegate</code> / <code>UsdImagingStageSceneIndex</code> translates a fully composed <code>UsdStage</code> into these Hydra representations, handling time-sampling, purpose filtering, visibility, instancing, primvar extraction, and material binding resolution. Hydra 2’s Scene Index architecture introduces a <strong>filter chain</strong>: a functional-programming-inspired composition of scene-index processors that can intercept and modify scene data in-flight (e.g., adding LOD culling, injecting procedural geometry, applying motion blur sampling) without modifying USD core or the renderer.</p>
+</li>
+<li>
+<p><strong>Render Delegates</strong>: The renderer-facing side of Hydra. A Render Delegate receives <code>HdRprim</code>/<code>HdSprim</code>/<code>HdBprim</code> data from the scene delegate and translates it into renderer-internal data structures. Pixar’s <strong>Storm</strong> rasteriser (the default real-time viewer renderer for usdview and interactive DCC viewports) implements a full Render Delegate with OpenGL and Vulkan backends. Third-party renderers ship their own Hydra delegates: Arnold’s <code>hdArnold</code> delegate; V-Ray’s <code>hdVRay</code>; RenderMan’s <code>hdPrman</code>; SideFX Karma’s <code>hdKarma</code>; OTOY OctaneRender’s Hydra delegate; Chaos V-Ray; Redshift; Cycles (Blender’s Hydra integration). Because all these renderers speak the Hydra protocol, a USD pipeline can switch between renderers by changing the render delegate plugin without changing a line of scene description.</p>
+</li>
+<li>
+<p>OpenUSD 24.08 (August 2024) added experimental Vulkan support for Storm’s HgiVulkan backend, co-developed by Pixar, Autodesk, and Adobe. HgiVulkan enables Storm to run on Vulkan-capable GPUs, improving performance on modern workstations and enabling USD viewport rendering on platforms without OpenGL (Android mobile). The SIGGRAPH 2024 BOF on USD, Hydra and OpenSubdiv featured demonstrations of the Vulkan Storm renderer and Hydra 2 Scene Index filter chain capabilities.</p>
+</li>
+<li>
+<h3 id="materialx-integration-and-openpbr">MaterialX Integration and OpenPBR<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#materialx-integration-and-openpbr" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>MaterialX</strong> is an Academy Software Foundation (ASWF) open-source standard for portable, renderer-agnostic shading networks. A MaterialX document defines a directed acyclic graph of shader nodes—texture lookups, math operations, PBR BSDF models, procedural generators—expressed in a vendor-neutral XML notation. USD integrates MaterialX through the <code>UsdShadeConnectableAPI</code> and <code>UsdShade</code> material binding: a USD material prim can contain a MaterialX document as a sub-namespace, and Hydra render delegates that support MaterialX can translate the node graph to their renderer’s native shader representation without any studio-authored renderer-specific shader code.</p>
+</li>
+<li>
+<p>The <strong>OpenPBR</strong> uber-shader specification, launched in 2024 and co-developed by Adobe and Autodesk as a MaterialX surface shader, provides a single, comprehensive physically-based material description covering diffuse reflection, specular reflection, metallic conductors, translucency, subsurface scattering, emission, thin-film interference, and fuzz/sheen lobes. Multiple renderers—Arnold, V-Ray, RenderMan, Karma, Cycles—have adopted OpenPBR as a native import target, meaning a look-development artist creating an OpenPBR material in one renderer can export it as MaterialX USD and it will render correctly in any other OpenPBR-supporting renderer without manual shader re-creation. The MaterialX Technical Steering Committee at SIGGRAPH 2024 presented OpenPBR milestones and roadmap for MaterialX procedural texture support and glTF/USD material interchange alignment.</p>
+</li>
+<li>
+<p><strong>MaterialX–glTF alignment</strong> (2024–2025): The AOUSD–Khronos joint working group is developing translation specifications between MaterialX node graphs and glTF PBR extension materials. The goal is bidirectional conversion fidelity so a single material description can serve both production rendering (via MaterialX/USD) and real-time delivery (via glTF GLB), eliminating the current practice of maintaining two separate material representations for the same asset.</p>
+</li>
+<li>
+<h3 id="opensubdiv">OpenSubdiv<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#opensubdiv" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>OpenSubdiv</strong> (Pixar, open-sourced 2012, current version 3.6+) provides GPU-accelerated subdivision surface evaluation algorithms for Catmull-Clark, Loop, and Bilinear subdivision schemes. USD’s <code>UsdGeomMesh</code> schema carries subdivision scheme, interpolation modes, and crease data attributes that map directly to OpenSubdiv topology descriptors, enabling any tool using OpenSubdiv with identical parameters to produce bit-identical mesh refinements. This eliminates the geometry discrepancies that previously required pipeline engineers to carefully manage subdivision level and interpolation settings at every department handoff—a persistent source of rendering artefacts in pre-USD pipelines. OpenSubdiv’s GPU acceleration (via CUDA, OpenCL, and DX11 evaluate kernels) enables real-time viewport subdivision at production mesh densities, making USD-native tools like Houdini Solaris viable for interactive look-development on hero assets.</p>
+</li>
+<li>
+<h3 id="file-formats-and-serialisation">File Formats and Serialisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#file-formats-and-serialisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>USD supports three file format families, all carrying identical data model semantics:</p>
+</li>
+<li>
+<p><strong>USD ASCII (.usda)</strong>: Human-readable text format using a custom grammar superficially resembling Python. Every USD value type has a text representation; the full USDA grammar supports all composition arcs, schemas, primvars, time-samples, and metadata. USDA files are version-control-friendly—<code>git diff</code> on a <code>.usda</code> produces meaningful diffs for code review workflows. Parse performance is slower than binary (typically 5–20× slower for large scenes); USDA is used for small files, configuration layers, and schema definitions but rarely for large geometry caches.</p>
+</li>
+<li>
+<p><strong>USD Binary / Crate (.usdc)</strong>: Memory-mapped binary format using Pixar’s internal “Crate” encoding. Crate files use a custom data serialisation optimised for random-access reads: each data field is stored at a known offset within the file, enabling the USD runtime to memory-map the file and read individual attribute values without parsing the entire file. Crate files typically 3–10× smaller than equivalent USDA files and load 10–50× faster for large geometry; they are the preferred format for production geometry caches, simulation outputs, and any large-scene data. Crate files are not human-readable but can be inspected with <code>usdcat --out file.usda</code> (converting to text).</p>
+</li>
+<li>
+<p><strong>USD (auto-detect, .usd)</strong>: USD accepts <code>.usd</code> as an extension for either text or binary files; the runtime auto-detects format from the file header. This extension is used in contexts where the serialisation format may change between versions (e.g., pipeline tools that may write either text or binary depending on configuration).</p>
+</li>
+<li>
+<p><strong>USDZ (.usdz)</strong>: An uncompressed ZIP archive containing one or more USD layers and all dependent assets (textures, audio, video, supplemental files) with a flat directory structure inside the archive. The zero-compression design (ZIP stored mode, no DEFLATE) enables direct memory-mapping of assets within the archive on Apple platforms without a decompression step. USDZ is Apple’s primary 3D delivery format: AR Quick Look on iOS/iPadOS (ARKit 2+) renders USDZ files directly in Safari, Messages, Files, and first-party apps; Reality Composer Pro (Xcode) assembles USDZ experiences for visionOS; visionOS 26 (WWDC 2025) introduced the HTML <code>&lt;model></code> element enabling inline USDZ embedding in web pages with CSS sizing/positioning and JavaScript interaction, and persistent spatial anchoring of USDZ objects locked to physical surfaces across Apple Vision Pro sessions. The USDZ format is specified jointly by Apple and Pixar; the AOUSD Core Specification 1.0 includes the USDZ archive format definition as a normative component.</p>
+</li>
+<li>
+<h3 id="alliance-for-openusd-aousd-governance-and-specification">Alliance for OpenUSD (AOUSD): Governance and Specification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alliance-for-openusd-aousd-governance-and-specification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Formed in August 2023 by five founding organisations—<strong>Pixar Animation Studios</strong>, <strong>Adobe</strong>, <strong>Apple</strong>, <strong>Autodesk</strong>, and <strong>NVIDIA</strong>—under the Joint Development Foundation (a Linux Foundation project), AOUSD provides vendor-neutral governance, specification development, and compliance infrastructure for OpenUSD. The founders each brought distinct strategic interests: Pixar as the original creator with an interest in broad adoption; Adobe with Substance 3D and Creative Cloud integration; Apple with USDZ as the visionOS and iOS AR format; Autodesk with Maya and 3ds Max as the dominant DCC tools in VFX; NVIDIA with Omniverse as the industrial digital twin and simulation platform natively built on USD.</p>
+</li>
+<li>
+<p>AOUSD grew rapidly: by the Core Specification 1.0 release in December 2025 it comprised <strong>50 member organisations</strong> spanning media and entertainment (Pixar/Lucasfilm, Foundry, SideFX, Chaos, OTOY, Sony Pictures Imageworks), technology (Apple, NVIDIA, Adobe, Autodesk, Intel, Amazon), manufacturing (Siemens, PTC, Hexagon, Bright Machines, Rockwell Automation, Dematic, Omron), geospatial (Esri, Cesium, Trimble), retail (IKEA, Lowe’s), rendering (Chaos V-Ray, OTOY OctaneRender), and enterprise software (SAP, Ansys). The breadth of membership reflects USD’s expansion beyond its VFX origins into industrial, retail, and enterprise domains.</p>
+</li>
+<li>
+<p><strong>OpenUSD Core Specification 1.0</strong> (17 December 2025): The first formally ratified, vendor-independent specification document for OpenUSD, establishing: (a) the foundational data model (prim/attribute/relationship/metadata semantics, SdfPath addressing, layer/stage model); (b) the composition algebra with normative LIVRPS ordering rules; (c) file format requirements for USDA, USDC, and USDZ; (d) schema registry requirements for typed and API schemas; (e) vendor-independent compliance baselines and testing frameworks enabling any USD implementation to be tested for specification conformance without running against Pixar’s reference implementation. The specification serves as canonical documentation for future higher-level AOUSD sub-specifications for Geometry, Materials (including MaterialX integration), and Physics. The roadmap for <strong>Core Specification 1.1</strong> (target: 2026) adds: animation schema formalisation (skeleton, blend shapes, skeletal animation clips); large-scene scaling capabilities (fine-grained streaming beyond payload granularity); and refined compliance testing guidelines with certification programmes for DCC vendors.</p>
+</li>
+<li>
+<p>AOUSD working groups include: the Core Specification Working Group (composition algebra, data model); the Geometry Working Group (mesh, subdivision, instancing, volumes); the Materials Working Group (MaterialX integration, OpenPBR, glTF alignment); the Physics Working Group (rigid body, joints, constraints); the USD Camera Working Group; and the Rendering Interchange Working Group (light transport semantics, render settings, OpenColorIO integration). Each working group publishes proposals and meeting notes on the AOUSD forum (forum.aousd.org), enabling community participation in standard development.</p>
+</li>
+<li>
+<h3 id="usd-vs-gltf-differentiation-and-interoperability">USD vs glTF: Differentiation and Interoperability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#usd-vs-gltf-differentiation-and-interoperability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>USD and glTF (GL Transmission Format, Khronos Group) address overlapping but distinct problem spaces. USD originated in the production pipeline—a creator-side format for composing and maintaining complex scenes across teams—whilst glTF originated as a delivery format for efficiently transmitting 3D assets to real-time engines and web runtimes. The AOUSD–Khronos liaison (formalised 2023–2024) pursues deliberate interoperability rather than convergence, recognising that both standards have roles in a complete 3D asset lifecycle.</p>
+</li>
+<li>
+<p>Key differentiations: USD provides full LIVRPS layered composition (no equivalent in glTF); USD’s Hydra renderer abstraction has no glTF equivalent; USD Physics is a comprehensive simulation schema (glTF physics extensions are under development); USD MaterialX/OpenPBR provides renderer-agnostic production shading (glTF uses KHR_materials_* extensions for delivery-grade PBR); USD handles hundreds of millions of polygons with payload streaming (glTF is optimised for compact delivery of typical real-time asset sizes); USDZ is Apple’s AR delivery format (GLB/glTF is the Android/web AR delivery format). At the same time, glTF’s compact GLB binary is more efficient for web delivery than USDC; glTF is supported by three.js, Babylon.js, and all major game engines as a native import without USD parsing overhead; and glTF’s PBR materials have stronger adoption in consumer-facing platforms.</p>
+</li>
+<li>
+<p>Active interoperability projects (2024–2025): <strong>glTF ⇄ USD Conversion Guidelines</strong> with test asset suites (Metaverse Standards Forum working group); <strong>MaterialX–glTF node alignment</strong> so MaterialX shaders and glTF KHR_materials_* extensions can be mutually converted with full PBR fidelity; <strong>spatial computing extensions</strong> (physics, interactivity, audio metadata) co-developed by AOUSD and Khronos to support the same semantic data in both formats; <strong>Gaussian splatting schema harmonisation</strong> with Khronos glTF Gaussian splatting extension and AOUSD USD Gaussian splatting schema coordinated to ensure conversion fidelity between the two standards for photogrammetric capture assets.</p>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Scene Graph and Prim Hierarchy</strong>: A USD scene is a directed acyclic graph (DAG) of prims addressed by SdfPath (e.g., <code>/World/Environment/Building_A/Windows/Window_01</code>). Prims inherit transform state from parent prims (via the <code>UsdGeomXformable</code> API schema, which provides a composable transform stack). The scene DAG supports instancing: <code>UsdGeomPointInstancer</code> instances a single prototype prim across millions of points with per-instance transforms, orientations, scales, and attribute primvars, enabling efficient representation of foliage, crowds, debris fields, and particle systems with a single prototypical geometry definition.</p>
+</li>
+<li>
+<p><strong>Layer System</strong>: Each <code>.usda</code>/<code>.usdc</code> file is a <code>SdfLayer</code>. Layers are the fundamental unit of USD persistence and composition. The <code>SdfLayerStack</code> for a given stage root resolves opinions according to LIVRPS composition applied to all layers in the stage’s closure. The <code>UsdEditTarget</code> mechanism controls which layer in the stage’s layer stack receives new authored opinions during an interactive editing session, supporting workflows where artists accumulate work-in-progress opinions in a local “session layer” or “work layer” without touching upstream production asset layers. Layer muting and sublayer reordering are supported at runtime without reopening the stage.</p>
+</li>
+<li>
+<p><strong>Schema Registry and Custom Schemas</strong>: USD schemas are defined in a plugin registry (<code>.plugInfo.json</code> files loaded at runtime) paired with compiled C++ schema classes (generated from <code>.usda</code> schema definition files using <code>usdGenSchema</code>). The schema registry discovers all installed schemas at startup, enabling DCC tools, studios, and tool vendors to extend USD with domain-specific data types. Example custom schemas in production use: NVIDIA’s USD Physics schema (rigid bodies, joints, colliders); Isaac Sim’s robot URDF-derived schemas; geospatial schemas (Esri CityEngine exports USD with georeferencing metadata); retail product schemas (IKEA product dimension and configuration data); media metadata schemas (editorial timecode, clip naming conventions). Custom schemas integrate seamlessly into the composition algebra—they obey LIVRPS like built-in schemas and can carry any USD value type.</p>
+</li>
+<li>
+<p><strong>Asset Resolution (ArResolver)</strong>: The <code>ArResolver</code> interface allows studios to replace the default file-path resolver with custom resolvers that translate logical asset URIs into physical storage paths. Production studios integrate USD’s asset resolution with their asset management systems (Shotgrid/Flow Production Tracking, ftrack, Kitsu, proprietary databases): the resolver intercepts <code>asset:/characters/Rex/v003</code> paths, looks up the asset management system for the appropriate versioned physical path, and returns the correct file path to the USD runtime. Asset resolver plugins enable USD to be the query layer for the entire studio’s asset management system without requiring changes to USD core or asset files.</p>
+</li>
+<li>
+<p><strong>UsdSkel (Skeletal Animation)</strong>: The UsdSkeletal animation schema provides a compact, renderer-independent representation of: skeleton joint hierarchies (<code>UsdSkelSkeleton</code>); joint weights and linear blend skinning (<code>UsdSkelBindingAPI</code>); blend shapes / morph targets (<code>UsdSkelBlendShapes</code>); and skeletal animation clips (<code>UsdSkelAnimation</code>, carrying time-sampled joint transforms as compact arrays). UsdSkel is used by game engine USD importers (Unreal, Unity), Omniverse digital human workflows (NVIDIA Audio2Face USD output), and Apple Vision Pro character animation in visionOS. The compact array representation of joint transforms (rather than per-joint prim attributes) makes UsdSkel significantly more efficient for large character rigs (100–500+ joints) than naive USD attribute-per-joint approaches.</p>
+</li>
+<li>
+<p><strong>USD Physics</strong>: A schema layer (co-developed by NVIDIA and Pixar, maintained under AOUSD Physics Working Group) representing: rigid body simulation (<code>UsdPhysicsRigidBodyAPI</code>, <code>UsdPhysicsMassAPI</code>); collision shapes (<code>UsdPhysicsCollisionAPI</code>, <code>UsdPhysicsMeshCollisionAPI</code>, <code>UsdPhysicsSphereCollisionAPI</code>); joint constraints (<code>UsdPhysicsFixedJoint</code>, <code>UsdPhysicsRevoluteJoint</code>, <code>UsdPhysicsPrismaticJoint</code>); physics materials (<code>UsdPhysicsMaterialAPI</code>); and scene-level physics settings (<code>UsdPhysicsScene</code>). NVIDIA Omniverse’s simulation stack uses USD Physics natively with PhysX as the solver backend, enabling the same USD scene file to drive both photorealistic rendering and physically accurate simulation without format conversion.</p>
+</li>
+<li>
+<p><strong>USD Render</strong>: Render settings and output specification schemas (<code>UsdRenderSettings</code>, <code>UsdRenderProduct</code>, <code>UsdRenderVar</code>) enabling USD files to carry renderer configuration (resolution, pixel aspect ratio, shutter interval, samples per pixel, render pass definitions) in a renderer-agnostic form. Hydra render delegates read these schemas to configure rendering without requiring renderer-specific configuration files.</p>
+</li>
+<li>
+<p><strong>USD Lux (Lighting)</strong>: A comprehensive lighting schema covering: <code>UsdLuxRectLight</code>, <code>UsdLuxSphereLight</code>, <code>UsdLuxCylinderLight</code>, <code>UsdLuxDiskLight</code> (area lights); <code>UsdLuxDistantLight</code> (directional); <code>UsdLuxDomeLight</code> (environment/HDRI); <code>UsdLuxPortalLight</code> (portals for interior environments); <code>UsdLuxMeshLight</code> (emissive mesh geometry as light source). The Hydra render delegate protocol carries light data to renderers via <code>HdLight</code> primitives, enabling all lights to work across renderers through a single schema.</p>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="film-and-episodic-vfx">Film and Episodic VFX<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#film-and-episodic-vfx" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>USD’s originating use case remains its highest-profile deployment. Major studios and VFX service houses now maintain all production scene data as USD layers: <strong>Pixar Animation Studios</strong> (all productions since 2016, internal refinement ongoing); <strong>Lucasfilm/ILM</strong> (<em>Star Wars</em> franchise, <em>Indiana Jones and the Dial of Destiny</em>, <em>Obi-Wan Kenobi</em>, <em>Andor</em>); <strong>Framestore</strong> (London; <em>Paddington in Peru</em>, <em>Wicked</em>, <em>Guardians of the Galaxy Vol. 3</em>); <strong>DNEG</strong> (London; <em>Oppenheimer</em>, <em>Mission: Impossible – Dead Reckoning Part One</em>, <em>Dune: Part Two</em>); <strong>MPC</strong> (now Technicolor VFX); <strong>Weta FX</strong> (Wellington, NZ; <em>Avatar: The Way of Water</em>, <em>Planet of the Apes</em> franchise); <strong>Industrial Light &amp; Magic</strong> (San Francisco/London/Singapore; <em>Indiana Jones</em>, MCU productions); <strong>ScanlineVFX</strong>, <strong>Cinesite</strong>, <strong>Atomic Fiction</strong>, <strong>Rising Sun Pictures</strong> (Australia). A typical episodic shot pipeline for a major streaming production references 300–2,000 USD files per shot (base character geometry, rigged character variants, environment pieces with LOD variants, particle cache payloads, effects simulations as geometry cache references, per-shot lighting layers, render settings). USD’s payload-based progressive loading enables artists on mid-range NVLink workstations (64–128 GB RAM) to interactively navigate shots containing hundreds of millions of production-quality polygons by loading layer metadata and proxy stand-ins until specific assets are needed.</p>
+</li>
+<li>
+<p>The USD pipeline for episodic productions typically operates as follows: <strong>Asset Department</strong> publishes base character geometry as a USD file with multiple LOD VariantSets and Payload arcs to geometry caches; <strong>Rigging Department</strong> authors a rig layer that references the model asset and contributes skeletal hierarchy and control rig primitives via sublayer; <strong>Shading Department</strong> authors a material layer that references the rigged character and contributes material binding opinions; <strong>Layout Department</strong> references the shaded characters and environments into a shot layout layer, setting up camera and blocking transforms; <strong>Effects Department</strong> adds simulation caches as USD geometry cache references or sublayers; <strong>Lighting Department</strong> opens the shot layout layer, adds a lighting sublayer with all light positions, HDRIs, and per-shot adjustments; the assembled shot is submitted to a render farm running Arnold, RenderMan, or V-Ray with a Hydra delegate that reads the same USD layer stack the lighting artist used interactively.</p>
+</li>
+<li>
+<h3 id="virtual-production">Virtual Production<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#virtual-production" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>LED volume stages—from studio-scale (30–100 m²) to large-format (up to 4,000 m²) installations at facilities including Pinewood Studios (Buckinghamshire), BBC Studioworks, dock10 (MediaCityUK, Salford), and Manhattan Beach Studios—require real-time rendering of complex game-engine environments for in-camera visual effects (ICVFX). USD mediates between VFX-pipeline asset sources (Maya, Houdini) and real-time engines (Unreal Engine 5’s USD Stage Editor, Disguise’s d3 platform), enabling the same character model, environment piece, or prop asset to appear in an offline render and an LED volume stage without re-authoring. The asset travels from DCC to engine as a USD layer stack; the engine’s USD Stage Editor resolves composition, selects appropriate VariantSet LODs for real-time performance, and presents the scene for interactive manipulation by the virtual production supervisor. Unreal Engine 5.4+ (2024) expanded USD Stage editor fidelity, supporting VariantSet selection, multi-layer composition, and live USD round-trip editing within the Unreal editor.</p>
+</li>
+<li>
+<h3 id="spatial-computing-and-augmented-reality">Spatial Computing and Augmented Reality<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spatial-computing-and-augmented-reality" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Apple’s commitment to USDZ as the primary 3D delivery format for iOS, iPadOS, and visionOS has created the world’s largest consumer-facing USD ecosystem. <strong>AR Quick Look</strong> renders USDZ directly across hundreds of millions of iOS/iPadOS devices (ARKit 2+, iOS 12+) in native apps (Files, Messages, Safari, Notes) and Safari web pages without a dedicated AR app. Retailers including <strong>IKEA</strong> (IKEA Place app; AOUSD member), <strong>Wayfair</strong> (View in Room 3D), <strong>Amazon</strong> (View in Your Room), and <strong>Lowe’s</strong> serve product visualisation through USDZ files; USDZ product catalogues span millions of items for major retailers. <strong>Reality Composer Pro</strong> (bundled with Xcode) provides a USD-native scene assembly tool for authoring visionOS and ARKit experiences, with full USD composition and VariantSet support. <strong>visionOS 26</strong> (WWDC 2025) extended USDZ to the web via the HTML <code>&lt;model></code> element: developers embed USDZ files via <code>&lt;model src=&quot;asset.usdz&quot;></code>, CSS controls sizing and layout, and JavaScript provides interaction APIs; additionally, visionOS 26 introduced persistent spatial anchoring of USDZ objects locked to physical surfaces (tables, walls) that persist across Apple Vision Pro app launches, enabling permanent spatial annotations. Apple Reality Composer Pro exports USDZ files optimised for visionOS with embedded UsdSkel animations, USD Physics interactions, and MaterialX-based looks.</p>
+</li>
+<li>
+<h3 id="industrial-digital-twins-and-robotics-simulation">Industrial Digital Twins and Robotics Simulation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industrial-digital-twins-and-robotics-simulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>NVIDIA Omniverse</strong>, the most prominent industrial digital twin platform as of 2025–2026, is built natively on OpenUSD: every scene, asset, material, and simulation state is expressed in USD layers, enabling seamless interchange between Omniverse applications and any USD-compatible DCC tool or render engine. The <strong>Omniverse Cloud API</strong> suite—deployed on Oracle Cloud Infrastructure (bare-metal L40S GPU instances) and Google Cloud (RTX PRO 6000 Blackwell servers)—provides: <strong>USD Render</strong> (fully ray-traced NVIDIA RTX renders of OpenUSD scene data via cloud API); <strong>USD Composer</strong> (cloud-hosted scene assembly and editing); and USD collaboration services (multi-user concurrent editing via USD layer streaming). At NVIDIA GTC 2025, Foxconn deployed Omniverse to design, simulate, and optimise a 242,287 sq ft factory in Houston (building NVIDIA AI infrastructure systems)—the entire facility represented as a USD stage with robots, conveyors, workstations, and process flows as USD assets with USD Physics simulation. Industry integrators including Siemens, SAP, Schneider Electric, Ansys, Dematic, Omron, Rockwell Automation, Vention, and Sight Machine have integrated Omniverse Cloud APIs into their industrial software suites.</p>
+</li>
+<li>
+<p><strong>NVIDIA SimReady Assets</strong>: Omniverse-certified USD assets that carry physics properties, accurate materials, and geometry metadata conforming to NVIDIA’s SimReady asset specification, ensuring that an asset is immediately usable in simulation workflows without manual physics setup. The SimReady programme, alongside the NVIDIA NIM (NVIDIA Inference Microservices) for OpenUSD—generative AI models trained on SimReady assets that generate geometry, physics parameters, and MaterialX material networks from text and image prompts—represents the convergence of USD and generative AI for industrial content creation. The <strong>OpenUSD Asset Structure Pipeline for Robotics</strong> (NVIDIA, Disney Research, and Intrinsic, announced GTC 2025) establishes best practices for robot-ready USD asset organisation: URDF-derived joint/link hierarchy encoded as UsdSkel; collision geometry as USD Physics colliders; visual geometry as USD mesh primitives; contact materials as USD Physics materials; and semantic labelling as USD custom schema annotations. <strong>NVIDIA Isaac Sim</strong> uses USD Physics with PhysX as its simulation backend, enabling sim-to-real transfer workflows where robots trained in USD-described virtual environments can be deployed to physical hardware with minimal fidelity gap.</p>
+</li>
+<li>
+<h3 id="game-development">Game Development<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#game-development" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Unreal Engine 5 (Epic Games) supports USD import for environment and character assembly: the USD Stage Editor allows Unreal artists to open a USD layer stack, navigate the prim hierarchy, select VariantSets, and import assets into the Unreal level. USD import fidelity improved substantially in UE5.4+ (2024): VariantSet selection, multi-layer composition, USD skeletal animation via UsdSkel, and basic USD Physics shape import are all supported. Unity’s USD SDK (available via package registry) provides USD import for both Editor and runtime contexts. Autodesk 3ds Max (2022+) includes USD import/export. Cinema 4D (R25+) supports USD import. The game pipeline use case emphasises runtime performance: game teams use USD primarily as an interchange format for DCC-to-engine asset transfer rather than as a runtime composition engine, though active AOUSD working group discussions address USD runtime composition within game engines for potential Unreal 6 / Unity features.</p>
+</li>
+<li>
+<h3 id="geospatial-and-architecture--engineering--construction">Geospatial and Architecture / Engineering / Construction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#geospatial-and-architecture--engineering--construction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Esri</strong> and <strong>Cesium</strong> (both AOUSD members) have driven USD adoption for geospatial data: CityGML city models and architectural BIM (Building Information Modelling) data can be exported to USD for photorealistic visualisation and simulation. <strong>Trimble</strong> (AOUSD member) bridges USD with construction and civil engineering workflows. <strong>Chaos Vantage</strong> and <strong>NVIDIA Omniverse</strong> are used in architecture / engineering / construction (AEC) visualisation where large-scale outdoor environments (campus scale, city scale) are represented as USD stages with geospatially-accurate coordinate systems and payload-streamed building assets. <strong>PTC</strong> (AOUSD member) bridges USD with PLM (product lifecycle management) data, enabling engineering CAD models to be exported as USD for visualisation, simulation, and XR.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>USD’s theoretical foundations synthesise ideas from multiple prior lines of research in computer graphics, programming languages, and data management:</p>
+</li>
+<li>
+<p><strong>Scene graph research (1970s–1990s)</strong>: USD’s prim/attribute/relationship data model descends from scene-graph systems including SGI OpenInventor (1992), VRML/X3D, and Open Scene Graph. The key distinction is USD’s non-destructive layering semantics, which had no precedent in prior scene-graph systems—prior systems assumed a single authoritative representation per scene element.</p>
+</li>
+<li>
+<p><strong>CSS-style cascading</strong>: The LIVRPS opinion-override model is conceptually analogous to CSS cascade (specificity determines which rule wins), though USD’s LIVRPS ordering is based on arc type rather than selector specificity, and applies to arbitrary typed data rather than style properties. Both systems solve the same fundamental problem: how to compose opinions from multiple independent sources without requiring any source to know about others.</p>
+</li>
+<li>
+<p><strong>Version space and configuration management</strong>: USD’s variant and layer systems share concepts with software configuration management (SCM): a VariantSet is analogous to a feature branch; the LIVRPS layer stack is analogous to a merge strategy. The key difference is that USD resolves all “branches” simultaneously at query time rather than producing a merged commit, enabling fully dynamic variant selection.</p>
+</li>
+<li>
+<p><strong>Hydra Scene Index composition</strong> (OpenUSD 22.11+): The functional-programming-inspired composition of Scene Index filters—each filter is a pure transformation on the incoming scene index stream—draws on dataflow graph theory and functional reactive programming. Scene Index filters can be stacked arbitrarily, composed, and inspected, making them amenable to formal reasoning about scene transformation pipelines.</p>
+</li>
+<li>
+<p><strong>Formal specification and compliance testing</strong>: AOUSD Core Specification 1.0 (2025) represents a novel contribution in the 3D standards space: the first formally written vendor-independent specification for a complex scene-description system with normative compliance tests. Prior 3D standards (glTF, COLLADA, FBX) have specifications, but USD’s composition algebra is significantly more complex and its compliance testing more challenging. The AOUSD approach—developing compliance tests alongside the specification, with multiple independent implementations tested against the same suite—follows the approach of successful protocol specifications (HTTP, TCP/IP) applied to creative-tools infrastructure.</p>
+</li>
+<li>
+<p><strong>PointInstancer and GPU instancing</strong>: USD’s <code>UsdGeomPointInstancer</code> schema generalises GPU hardware instancing research to the scene-graph level, enabling billions of point-instanced primitives (foliage, particle systems, crowd agents, scatter objects) to be represented efficiently with a single prototype definition and per-instance transform arrays, matching the data layout of GPU instanced draw calls for efficient render-time traversal.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>As of May 2026, OpenUSD is unambiguously the dominant 3D scene-description standard across all professional market segments:</p>
+</li>
+<li>
+<p><strong>Specification governance</strong>: AOUSD Core Specification 1.0 (December 2025) provides the first formally ratified, vendor-independent specification for OpenUSD with 50 member organisations and compliance testing infrastructure. Core Specification 1.1 (targeting animation, large-scene scaling) is in active development with an anticipated 2026 release. The AOUSD working group structure covers Geometry, Materials, Physics, Rendering Interchange, Camera, and USD/glTF interoperability in parallel workstreams.</p>
+</li>
+<li>
+<p><strong>DCC tool support</strong>: Houdini Solaris (native USD; every LOP node authors USD operations directly); Maya MayaUSD plugin (bundled with Maya 2022+, Layer Editor for managing sublayers and opinions); Blender 3.0+ built-in USD import/export with Hydra viewport rendering; Autodesk 3ds Max (2022+); Cinema 4D (R25+); Modo (USD import/export); Katana 5+ (USD as primary scene representation, Foundry as AOUSD member); Substance 3D Painter and Stager (USD export of materials and staged scenes); Adobe After Effects (limited USD import for motion graphics).</p>
+</li>
+<li>
+<p><strong>Render engines and Hydra delegates</strong>: RenderMan 26+, Arnold 7+ (MtoA hdArnold), V-Ray 6+ (hdVRay), Karma (SideFX, native Hydra path-tracer), Redshift (Maxon, Hydra delegate), Cycles (Blender, Hydra integration), OTOY OctaneRender (Hydra delegate), Chaos V-Ray (Hydra delegate), Omniverse RTX Renderer (NVIDIA, path-tracing and real-time rasterisation). Storm (Pixar’s rasteriser, OpenGL and Vulkan) provides the default interactive viewport renderer for usdview and DCC tools. The Hydra delegate ecosystem means that virtually any renderer can consume USD without custom integration.</p>
+</li>
+<li>
+<p><strong>Cloud and collaboration infrastructure</strong>: NVIDIA Omniverse Cloud APIs (USD Render, USD Composer, collaboration services) on Oracle Cloud Infrastructure and Google Cloud enable cloud-hosted USD collaboration at studio scale without requiring on-premises NVIDIA GPU hardware. Apple Reality Composer Pro (Xcode-integrated) provides USDZ assembly and visionOS experience authoring with full USD composition support. AWS is experimenting with USD-native workflows for its Amazon Studios content production.</p>
+</li>
+<li>
+<p><strong>Emerging AI-native domains</strong>: NVIDIA NIM microservices for OpenUSD (announced GTC 2025) generate USD geometry, physics parameters, and MaterialX material networks from text and image prompts, trained on the NVIDIA SimReady asset corpus. AI-driven USD authoring tools are entering studios for procedural city generation, terrain authoring, and industrial facility layout—domains where manual USD authoring is too slow for iterative design exploration. Generative AI models that output OpenUSD rather than mesh files integrate directly into USD-based production pipelines without format conversion.</p>
+</li>
+<li>
+<p><strong>glTF interoperability progress</strong>: The AOUSD–Khronos liaison’s joint working group on glTF ⇄ USD conversion has published initial guidelines with test asset suites; MaterialX–glTF node alignment is progressing toward a 2026 publication; Gaussian splatting schemas in both standards are coordinated. The practical result by 2026 is that a USD-authored asset can be reliably converted to glTF GLB for web/real-time delivery and back, covering the most common material types (opaque PBR metallic-roughness, transmissive glass, cloth) without material fidelity loss.</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The United Kingdom hosts a disproportionately large share of the world’s most prominent USD adopters, reflecting the country’s historical strength in film and television VFX.</p>
+</li>
+<li>
+<p><strong>Framestore</strong> (28 Chancery Lane, London EC2A 1HP) is consistently ranked among the three largest global VFX houses. It operates studios in London, New York, LA, Chicago, Montreal, Vancouver, Melbourne, and Mumbai with 3,000+ artists. USD-based production pipelines power its feature film and streaming work (<em>Paddington in Peru</em>, <em>Wicked</em>, <em>Guardians of the Galaxy Vol. 3</em>, Disney+ and Netflix productions). Microsoft’s Azure cloud infrastructure supports Framestore’s pipeline with USD-compatible storage and compute services; a 2024 Microsoft case study documented Framestore’s cloud-native production architecture. In May 2026, Framestore promoted its Creative Director of AI, Theo Jones, to lead the rollout of “Futon”—a new platform integrating machine learning and generative AI directly into Framestore’s USD-based VFX pipeline, representing the convergence of AI and USD workflows at a major UK studio.</p>
+</li>
+<li>
+<p><strong>DNEG</strong> (formerly Double Negative; headquarters: 12–14 Whitfield Street, Fitzrovia, London W1T 2RF) is the UK’s largest VFX studio by headcount. An Academy Award winner for VFX on <em>Oppenheimer</em> (2023), <em>Dunkirk</em> (2017), <em>Inception</em> (2010), and multiple other productions, DNEG operates one of the world’s most sophisticated USD-based VFX pipeline infrastructures. The studio’s global delivery model (studios in London, Vancouver, Mumbai, Hyderabad, Mohali, Bangalore, Chennai, Montreal, Toronto, Sydney, Los Angeles) depends on USD’s layer-based collaboration model to enable geographically distributed teams to work simultaneously on the same shots without destructive conflicts.</p>
+</li>
+<li>
+<p><strong>Foundry</strong> (275 New Kings Road, London SW6 4RD) is an AOUSD founding member and develops two of the most widely-used production applications with deep USD integration: <strong>Nuke</strong> compositing (USD geometry import for 3D compositing and deep compositing workflows) and <strong>Katana</strong> look development (USD as the primary scene representation, with Katana’s recipe-based look-development workflow now expressed in USD layers). Foundry’s active contributions to Hydra delegate development for Katana make it a technical contributor to the OpenUSD ecosystem beyond product integration.</p>
+</li>
+<li>
+<p><strong>Milk VFX</strong> (London; <em>Doctor Who</em>, BBC productions) and <strong>Outpost VFX</strong> (Bournemouth; US streaming productions) represent the tier of independent UK VFX studios increasingly adopting USD for interoperability with major client studios whose delivery pipelines mandate USD-compatible asset workflows. <strong>BlueBolt</strong> (London) and <strong>Realise Studio</strong> (Newcastle) are further UK studios engaged in high-end episodic VFX with USD pipeline adoption driven by Netflix, Disney+, and Apple TV+ technical delivery specifications.</p>
+</li>
+<li>
+<p>Northern England has a growing digital production cluster supported by regional screen industry investment bodies. <strong>Screen Yorkshire</strong> (Leeds) and <strong>Screen Manchester</strong> fund screen industry infrastructure with public investment from UK Creative Industries Growth Finance. <strong>dock10</strong> (MediaCityUK, Salford, Greater Manchester) hosts one of the UK’s most technologically advanced broadcast and production facilities, with LED volume stages and emerging virtual production capabilities that benefit from USD’s DCC-to-engine asset workflow. The UK’s <strong>Audio Visual Expenditure Credit (AVEC)</strong>, effective January 2025, provides a 29.25% net rate on qualifying UK VFX expenditure with the 80% cap removed—a policy change specifically designed to encourage investment in advanced pipeline tooling including USD-capable infrastructure. The Confederation of Screen Industries (CSI) and ScreenSkills have both identified USD pipeline skills as a workforce development priority, with ScreenSkills including USD/Houdini Solaris in its 2025 VFX Apprenticeship and Graduate trainee programme curricula.</p>
+</li>
+<li>
+<p>UK Higher Education engagement with USD is developing at: <strong>Bournemouth University</strong> (National Centre for Computer Animation; MSc Computer Animation and Visual Effects; curriculum includes Houdini Solaris USD workflows); <strong>Escape Studios</strong> (London; Pearson College, VFX and animation programmes); the <strong>Royal College of Art</strong> (ADS5 Architecture programme exploring USD for built-environment visualisation); <strong>UAL London College of Communication</strong> (MA Creative Technologies, Spatial Computing pathway); and <strong>Teesside University</strong> (BSc Visual Effects; active graduate pipeline into Realise Studio and northern UK VFX). The <strong>National Film and Television School</strong> (NFTS, Beaconsfield) has introduced USD pipeline modules in its 2025 curriculum for directing digital animation and VFX producing programmes.</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>AOUSD Core Specification 1.1 and sub-specifications</strong> (2026): Animation schema formalisation (UsdSkel normative specification, blend shape semantics, skeletal constraint graphs); large-scene streaming (prim-granularity streaming beyond payload level, streaming LOD systems for open-world traversal); compliance certification programmes enabling DCC vendors and renderer developers to achieve AOUSD-certified conformance. Geometry, Materials, and Physics sub-specifications are expected to reach initial published form by 2026–2027, enabling certification at the schema level.</p>
+</li>
+<li>
+<p><strong>AI-native USD authoring</strong>: NVIDIA NIM microservices for OpenUSD (2025) represent the first production deployment of AI-generated USD content. By 2027–2028, AI USD generators trained on large corpora of production assets are expected to reduce the manual authoring burden for: procedural environment generation (forests, cities, terrain); industrial facility layout (factory floor planning, warehouse design); character rig generation from geometry; and material authoring from reference photographs. The convergence of generative AI with USD’s schema-validated data model enables AI outputs to be directly composited into production pipelines without manual cleanup.</p>
+</li>
+<li>
+<p><strong>WebUSD and the spatial web</strong>: The HTML <code>&lt;model></code> element (visionOS 26, WWDC 2025) enabling inline USDZ in web pages signals a future where USD is the native 3D format of the browser. W3C discussions around a native 3D web model element (analogous to <code>&lt;video></code> and <code>&lt;audio></code>) are ongoing with USDZ and GLB as the leading candidate formats. Three.js and Babylon.js USD parsing libraries, and WebGPU-based Hydra Storm ports, are active open-source projects. By 2028, a USD-native web runtime is plausible for spatial web experiences on Apple platforms and potentially cross-platform through W3C standardisation.</p>
+</li>
+<li>
+<p><strong>USD in real-time engines as runtime composition</strong>: Unreal Engine and Unity are progressing toward USD-as-runtime-composition, where the engine’s scene graph is expressed natively in USD layers during development and at runtime, enabling live DCC-to-engine round-trip editing without export steps. This would complete the USD pipeline from creative authoring through to real-time delivery without format conversion, a significant workflow improvement for virtual production, game development, and XR applications.</p>
+</li>
+<li>
+<p><strong>Gaussian splatting and neural scene representation integration</strong>: Coordinated AOUSD/Khronos schemas for 3D Gaussian Splatting (finalised 2024–2025) and ongoing research into NeRF-derived scene representations encoded in USD schemas will enable photogrammetric captures to coexist with traditional authored USD geometry in unified production pipelines. By 2027, USD stages containing mixed traditional mesh/material geometry and splat/neural geometry representations are expected to be supported in major DCC tools and renderers.</p>
+</li>
+<li>
+<p><strong>USD for telecommunications and geospatial digital twins</strong>: Esri’s and Cesium’s involvement in AOUSD positions USD as the scene description layer for city-scale geospatial digital twins. By 2028–2030, USD is expected to become the standard for representing: smart city sensor data overlaid on geospatial geometry; telecommunications network visualisation (5G/6G infrastructure planning); transportation infrastructure digital twins (road networks, rail, aviation ground operations); and urban planning environments integrating BIM (IFC/gbXML) and GIS data through USD schemas.</p>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<ul>
+<li>Elkoura, G., Haessig, G., Luk, A., Roble, D., Stanek, N., Telfer, A., &amp; Zhu, Y. (2019). <em>An Overview of Universal Scene Description</em>. SIGGRAPH 2019 Open Source Software. Comprehensive technical overview of USD’s composition algebra, schema system, and production deployment at Pixar.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Pixar Animation Studios (2016). <em>Universal Scene Description: Composition and Asset Pipelines</em>. SIGGRAPH 2016 Open Problems in Real-Time Rendering. The foundational public presentation introducing USD’s design rationale and LIVRPS ordering to the graphics community.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Alliance for OpenUSD (2025). <em>OpenUSD Core Specification 1.0</em>. Joint Development Foundation / Linux Foundation. Published 17 December 2025. The formal vendor-independent specification document establishing normative semantics for USD’s data model, composition algebra, and file formats.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Pixar Animation Studios / AOUSD (2024). <em>USD, Hydra and OpenSubdiv</em>. SIGGRAPH 2024 Birds of a Feather. openusd.org/files/BOFSiggraph2024.pdf. Covers Hydra 2 Scene Index architecture, HgiVulkan Storm backend, and OpenSubdiv 3.6 advances.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Khronos Group (2024). <em>Vulkan Support Added to OpenUSD and Pixar’s Hydra Storm Renderer</em>. Khronos Blog, August 2024. Technical announcement of HgiVulkan backend in OpenUSD 24.08 enabling GPU rasterisation on Vulkan-capable platforms.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Khronos Group / AOUSD (2024). <em>Building Bridges in 3D: AOUSD and Khronos Collaborate on OpenUSD and glTF Interoperability</em>. Khronos Blog. Documents the liaison structure and joint working group agenda for MaterialX alignment, physics extensions, and Gaussian splatting schemas.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Metaverse Standards Forum (2024). <em>State of 3D Asset Interoperability using USD and glTF</em>. SIGGRAPH 2024 Birds of a Feather. Metaverse Standards Forum Working Group publication on glTF⇄USD conversion guidelines and test assets.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>AOUSD (2024). <em>The Alliance for OpenUSD at SIGGRAPH 2024</em>. aousd.org/blog. Summary of AOUSD programming at SIGGRAPH 2024 covering MaterialX/OpenPBR, Rendering Interchange, and Camera Working Group updates.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>NVIDIA (2025). <em>Generative AI Models and NIM Microservices for OpenUSD</em>. NVIDIA Newsroom, GTC March 2025. Announcement of AI-native USD generation for geometry, physics, and materials.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>NVIDIA (2025). <em>Designing AI Factories Using OpenUSD and SimReady Assets</em>. NVIDIA Technical Blog. Technical documentation of OpenUSD use for Omniverse-based industrial digital twin facility design including the Foxconn Houston factory case study.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>NVIDIA (2025). <em>Into the Omniverse: How OpenUSD and Digital Twins Are Powering Industrial and Physical AI</em>. blogs.nvidia.com. Overview of Omniverse Cloud API suite and industrial adopters (Siemens, SAP, Schneider Electric, Ansys, Dematic, Omron).</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>NVIDIA (2025). <em>OpenUSD Asset Structure Pipeline for Robotics</em> (with Disney Research and Intrinsic). NVIDIA GTC 2025 session on best practices for robot-ready USD asset organisation.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Apple Inc. (2025). <em>What’s new for the spatial web</em>. WWDC25, session 237. developer.apple.com/videos. Documents visionOS 26 USDZ HTML <code>&lt;model></code> element, persistent spatial anchoring, and spatial browsing capabilities.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Apple Inc. (2024). <em>visionOS 2 brings new spatial computing experiences to Apple Vision Pro</em>. Apple Newsroom, June 2024. WWDC 2024 visionOS 2 announcements relevant to USDZ and Reality Composer Pro.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>SideFX (2023). <em>USD Basics — Solaris</em>. sidefx.com/docs/houdini/solaris/usd.html. Official Houdini Solaris USD documentation covering LOPs and USD-native scene assembly.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>NVIDIA / Autodesk (2024). <em>OpenUSD Enhancements for Autodesk Maya</em>. blogs.nvidia.com. Documents Maya MayaUSD plugin improvements and Omniverse Maya connector.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Autodesk (2024). <em>openusd-hydra-contributions</em>. github.com/Autodesk/openusd-hydra-contributions. Repository of Autodesk’s Hydra delegate and Scene Index contributions to the OpenUSD ecosystem.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Foundry (2024). <em>Katana USD Scene Description Integration</em>. Foundry developer documentation. Technical reference for Katana’s USD-based look-development pipeline.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>MaterialX TSC (2024). <em>OpenPBR Surface Shader Specification 1.1</em>. Academy Software Foundation / ASWF. Specification for the OpenPBR physically-based material model implemented as a MaterialX surface shader.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Pixar / openusd.org (2024). <em>MaterialX In Hydra and USD Architecture Guide</em>. openusd.org/dev/api. Technical documentation for MaterialX integration in Hydra render delegates.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Microsoft (2024). <em>Art in the Cloud: How Framestore Uses Cloud Technology to Redefine Visual Effects</em>. microsoft.com/microsoft-cloud/blog, March 2024. Case study documenting Framestore’s cloud-native USD production pipeline on Azure.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Vitrina AI (2025). <em>The UK’s Top VFX Companies 2025 Guide</em>. vitrina.ai/blog. Industry survey of UK VFX studio capabilities and market positions.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Codesal, M. (maintainer, 2024). <em>awesome-openusd: A curated list of OpenUSD resources</em>. github.com/matiascodesal/awesome-openusd. Community-maintained reference index for OpenUSD tools, libraries, and learning resources.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>AOUSD Forum (2025). <em>Consistent units across applications: Blender, Maya, Houdini, Unreal — USD</em>. forum.aousd.org. Community discussion documenting cross-DCC unit system challenges and USD schema conventions for consistent measurement.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>openusd.org (2024). <em>Products Using USD</em>. openusd.org/dev/usd_products.html. Official registry of DCC tools, renderers, and platforms with USD support.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>ScreenSkills (2025). <em>VFX Workforce Development and Pipeline Skills Report 2025</em>. ScreenSkills / BFI. UK workforce development priorities including USD pipeline skills training.</li>
+</ul>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Domain correction applied: <code>spatial-computing</code> → <code>creative-tools</code>. The original stub assigned USD to the <code>spatial-computing</code> domain on the basis of the USDZ/Apple AR Quick Look use case. USD’s primary ontological classification is as a creative-tools standard: it is fundamentally a 3D scene-description format, composition engine, and asset pipeline framework originating in film production, with spatial computing as a significant secondary deployment domain. IRI, URI, and owl-class updated accordingly.</li>
+<li>Worker model: claude-sonnet-4-6</li>
+<li>Enrichment sprint: Phase 6 bulk run</li>
+<li>Enriched: 2026-05-17T00:00:00Z</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Alliance for OpenUSD (AOUSD). “Core Specification 1.0 Announcement.” aousd.org/news/core-spec-announcement/, December 17 2025.</li>
+<li>CG Channel. “AOUSD releases the OpenUSD Core Specification.” cgchannel.com, December 2025.</li>
+<li>PR Newswire / Linux Foundation. “Alliance for OpenUSD Announces Core Specification 1.0.” linuxfoundation.org/press, December 2025.</li>
+<li>Khronos Group. “Vulkan Support Added to OpenUSD and Pixar’s Hydra Storm Renderer.” khronos.org/blog, August 2024.</li>
+<li>Khronos Group. “Building Bridges in 3D: AOUSD and Khronos Collaborate on OpenUSD and glTF Interoperability.” khronos.org/blog, 2024.</li>
+<li>Metaverse Standards Forum. “State of 3D Asset Interoperability using USD and glTF.” SIGGRAPH 2024 BOF PDF. metaverse-standards.org.</li>
+<li>AOUSD. “The Alliance for OpenUSD at SIGGRAPH 2024.” aousd.org/blog, 2024.</li>
+<li>Pixar / AOUSD. “USD, Hydra and OpenSubdiv.” SIGGRAPH 2024 BOF. openusd.org/files/BOFSiggraph2024.pdf.</li>
+<li>NVIDIA. “NVIDIA Announces Generative AI Models and NIM Microservices for OpenUSD.” nvidianews.nvidia.com, GTC 2025.</li>
+<li>NVIDIA. “Designing AI Factories Using OpenUSD and SimReady Assets.” developer.nvidia.com/blog, 2025.</li>
+<li>NVIDIA. “Into the Omniverse: How OpenUSD and Digital Twins Are Powering Industrial and Physical AI.” blogs.nvidia.com, 2025.</li>
+<li>NVIDIA. “NVIDIA Omniverse Physical AI Operating System Expands to More Industries.” investor.nvidia.com, 2025.</li>
+<li>Apple Inc. “What’s new for the spatial web.” WWDC25 session 237. developer.apple.com/videos, June 2025.</li>
+<li>Apple Inc. “visionOS 26 introduces powerful new spatial experiences.” apple.com/newsroom, 2025.</li>
+<li>Apple Inc. “visionOS 2 brings new spatial computing experiences to Apple Vision Pro.” apple.com/newsroom, June 2024.</li>
+<li>SideFX. “USD Basics — Solaris.” sidefx.com/docs/houdini/solaris/usd.html.</li>
+<li>NVIDIA Omniverse. “OpenUSD Enhancements for Autodesk Maya.” blogs.nvidia.com, 2024.</li>
+<li>openusd.org. “Products Using USD.” openusd.org/dev/usd_products.html.</li>
+<li>openusd.org. “MaterialX In Hydra and USD Architecture Guide.” openusd.org/dev/api, 2024.</li>
+<li>openusd.org. “Houdini USD Example Workflow.” openusd.org/release, 2024.</li>
+<li>Autodesk. “openusd-hydra-contributions.” github.com/Autodesk/openusd-hydra-contributions, 2024.</li>
+<li>Microsoft. “Art in the Cloud: How Framestore Uses Cloud Technology.” microsoft.com/microsoft-cloud/blog, March 2024.</li>
+<li>Vitrina AI. “The UK’s Top VFX Companies 2025 Guide.” vitrina.ai/blog, 2025.</li>
+<li>Codesal, M. “awesome-openusd.” github.com/matiascodesal/awesome-openusd, 2024.</li>
+<li>AOUSD Forum. “Consistent units across applications.” forum.aousd.org, 2025.</li>
+<li><strong>domain-correction:</strong> spatial-computing <span>→</span> creative-tools (corrected 2026-05-17; USD is primarily a creative-tools/3D scene-description standard; spatial computing is a secondary deployment domain)</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-5813" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-universal-scene-description" data-for="about-universal-scene-description">About Universal Scene Description</a></li><li class="depth-1"><a href="#historical-development-and-milestones" data-for="historical-development-and-milestones">Historical Development and Milestones</a></li><li class="depth-1"><a href="#core-technical-architecture-scene-graph-and-data-model" data-for="core-technical-architecture-scene-graph-and-data-model">Core Technical Architecture: Scene Graph and Data Model</a></li><li class="depth-1"><a href="#composition-arcs-and-the-livrps-algorithm" data-for="composition-arcs-and-the-livrps-algorithm">Composition Arcs and the LIVRPS Algorithm</a></li><li class="depth-1"><a href="#hydra-rendering-architecture" data-for="hydra-rendering-architecture">Hydra Rendering Architecture</a></li><li class="depth-1"><a href="#materialx-integration-and-openpbr" data-for="materialx-integration-and-openpbr">MaterialX Integration and OpenPBR</a></li><li class="depth-1"><a href="#opensubdiv" data-for="opensubdiv">OpenSubdiv</a></li><li class="depth-1"><a href="#file-formats-and-serialisation" data-for="file-formats-and-serialisation">File Formats and Serialisation</a></li><li class="depth-1"><a href="#alliance-for-openusd-aousd-governance-and-specification" data-for="alliance-for-openusd-aousd-governance-and-specification">Alliance for OpenUSD (AOUSD): Governance and Specification</a></li><li class="depth-1"><a href="#usd-vs-gltf-differentiation-and-interoperability" data-for="usd-vs-gltf-differentiation-and-interoperability">USD vs glTF: Differentiation and Interoperability</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#film-and-episodic-vfx" data-for="film-and-episodic-vfx">Film and Episodic VFX</a></li><li class="depth-1"><a href="#virtual-production" data-for="virtual-production">Virtual Production</a></li><li class="depth-1"><a href="#spatial-computing-and-augmented-reality" data-for="spatial-computing-and-augmented-reality">Spatial Computing and Augmented Reality</a></li><li class="depth-1"><a href="#industrial-digital-twins-and-robotics-simulation" data-for="industrial-digital-twins-and-robotics-simulation">Industrial Digital Twins and Robotics Simulation</a></li><li class="depth-1"><a href="#game-development" data-for="game-development">Game Development</a></li><li class="depth-1"><a href="#geospatial-and-architecture--engineering--construction" data-for="geospatial-and-architecture--engineering--construction">Geospatial and Architecture / Engineering / Construction</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/3D-Asset-Standard" class="internal">3D Asset Standard</a></li><li><a href="../pages/3D-Asset" class="internal">3D Asset</a></li><li><a href="../pages/Asset-Pipeline" class="internal">Asset Pipeline</a></li><li><a href="../pages/Asset-Portability" class="internal">asset portability</a></li><li><a href="../pages/Design-Software" class="internal">Design Software</a></li><li><a href="../pages/Interoperability-Protocol" class="internal">Interoperability Protocol</a></li><li><a href="../pages/Open-Metaverse-Interoperability" class="internal">Open Metaverse Interoperability</a></li><li><a href="../pages/Photorealistic-Rendering" class="internal">Photorealistic Rendering</a></li><li><a href="../pages/Vircadia" class="internal">Vircadia</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

@@ -1,0 +1,107 @@
+
+Optimisation is the mathematical and computational discipline concerned with finding the best solution — maximum or minimum — of an objective function subject to given constraints, across a search space of possible decisions or parameter configurations. It encompasses deterministic methods (linear programming, convex optimisation, gradient-based search), stochastic methods (simulated annealing, evolutionary algorithms, Monte Carlo sampling), and learned methods (differentiable optimisation, meta-learning, neural combinatorial solvers). Optimisation is the theoretical core of machine learning training, operations research, control engineering, signal processing, and resource scheduling. The choice of optimisation algorithm fundamentally determines convergence speed, solution quality, and computational cost across all application domains.
+
+- ### Overview
+  - Optimisation asks: given an objective function f(x) and a feasible set X, find x* ∈ X such that f(x*) ≤ f(x) for all x ∈ X (minimisation) or ≥ (maximisation).
+  - The structure of f and X determines which algorithms are applicable and what guarantees they offer.
+  - When f is convex and X is a convex set, any local minimum is a global minimum; polynomial-time algorithms exist for the most common convex problem classes.
+  - When f is non-convex — the generic case in [[Deep Learning]] — theoretical guarantees weaken, but empirical performance of [[Gradient Descent]] variants is remarkably good in practice.
+  - The computational complexity of an optimisation problem is classified by whether it falls into P, NP, or harder classes; many combinatorial problems are NP-hard, motivating approximation algorithms and metaheuristics.
+  - The history of optimisation spans Fermat's method of adequality, Newton's calculus, Lagrange multipliers, Dantzig's simplex method (1947), Karmarkar's interior-point method (1984), and the deep learning era's stochastic first-order methods.
+
+- ### Key Components and Methods
+  - #### Continuous Optimisation
+    - **[[Gradient Descent]]**: iteratively moves in the direction of steepest descent; the dominant paradigm in [[Neural Network Training]].
+      - Stochastic gradient descent (SGD): estimates gradient on mini-batches, enabling large-scale training.
+      - Adaptive methods: Adam, AdamW, RMSProp — adjust learning rates per-parameter using gradient moment statistics.
+      - Second-order methods: Newton's method, L-BFGS — use Hessian or its approximation for faster convergence but higher memory cost.
+    - **[[Convex Optimisation]]**: problems where the feasible set and objective are both convex.
+      - [[Linear Programming]] (LP): optimise a linear objective over a polyhedral feasible set; solved efficiently by simplex or interior-point methods.
+      - Quadratic programming (QP): quadratic objective, linear constraints; ubiquitous in [[Reinforcement Learning]] (policy optimisation) and support vector machines.
+      - Semidefinite programming (SDP): matrix variable constrained to be positive semidefinite; key in robust control and relaxations of combinatorial problems.
+      - Disciplined convex programming frameworks (CVX, CVXPY) automate verification of convexity.
+    - **[[Bayesian Optimisation]]**: builds a probabilistic surrogate model (typically a Gaussian process) of the objective and balances exploration and exploitation via acquisition functions (EI, UCB).
+      - Ideal for [[Hyperparameter Tuning]] and expensive black-box experiments with few evaluations.
+    - **Differentiable Optimisation**: embeds an optimisation solver as a differentiable layer inside a neural network, enabling end-to-end learning of decision-making pipelines.
+
+  - #### Discrete and Combinatorial Optimisation
+    - **Integer programming (IP / MIP)**: extends LP with integrality constraints; solved via branch-and-bound, cutting planes, or branch-and-cut.
+    - **Constraint programming**: declarative specification of constraints; inference-based solving via propagation.
+    - **Graph algorithms**: shortest paths (Dijkstra, Bellman-Ford), minimum spanning trees, network flows — closed-form polynomial-time solutions for structured problems.
+    - **Dynamic programming**: exploits optimal substructure; decomposes problems into overlapping sub-problems (Bellman equation in [[Reinforcement Learning]]).
+
+  - #### Metaheuristics and Stochastic Methods
+    - **[[Evolutionary Algorithm]]s**: population-based search inspired by natural selection; genetic algorithms, CMA-ES, NSGA-II for multi-objective problems.
+    - **Simulated annealing**: probabilistic hill-climbing that accepts worse solutions with decreasing probability, escaping local optima.
+    - **Particle swarm optimisation (PSO)**: swarm-based continuous search with social and cognitive velocity updates.
+    - **Monte Carlo methods**: random sampling to approximate integrals and expectations; underpins MCMC-based inference and [[Reinforcement Learning]] policy evaluation.
+
+  - #### Multi-Objective Optimisation
+    - When multiple conflicting objectives must be balanced simultaneously, the solution is a Pareto frontier rather than a single point.
+    - Scalarisation (weighted sum, epsilon-constraint) converts multi-objective to single-objective.
+    - Evolutionary multi-objective algorithms (NSGA-II, MOEA/D) approximate the Pareto set.
+    - Applications: engineering design trade-offs, [[Portfolio Optimisation]] (risk vs return), [[Reinforcement Learning]] reward shaping.
+
+- ### Applications and Use Cases
+  - #### Machine Learning and AI
+    - Training every modern neural network — from CNNs to transformers — is solved as an unconstrained non-convex optimisation problem via stochastic first-order methods.
+    - [[Hyperparameter Tuning]] for model selection uses [[Bayesian Optimisation]] or random search over the hyperparameter space.
+    - Neural architecture search (NAS) applies discrete and continuous optimisation to find efficient network topologies.
+    - [[Reinforcement Learning]] frames sequential decision-making as policy optimisation via policy gradient or temporal difference methods.
+  - #### Operations Research and Logistics
+    - [[Supply Chain Management]]: vehicle routing, warehouse location, inventory management — all framed as integer programmes.
+    - Airline scheduling: crew pairing and aircraft assignment solved as large-scale MIP problems daily by airlines.
+    - Telecommunications: network flow optimisation for bandwidth allocation and routing.
+  - #### Finance
+    - [[Portfolio Optimisation]]: Markowitz mean-variance framework minimises portfolio variance subject to expected return constraints.
+    - Algorithmic trading: execution optimisation minimises market impact; option pricing uses stochastic optimisation (stochastic control).
+    - Risk management: VaR and CVaR minimisation via convex methods.
+  - #### Engineering and Control
+    - [[Optimal Control]]: computes control inputs to minimise a performance criterion over a trajectory (LQR, MPC).
+    - Model predictive control (MPC): solves a constrained QP at each time step in real-time for industrial processes and autonomous vehicles.
+    - Structural design: topology optimisation finds optimal material distributions for mechanical components under stress constraints.
+    - VLSI design: placement and routing of circuits are formulated as discrete optimisation problems.
+  - #### Scientific Computing
+    - Parameter estimation and curve fitting: least-squares optimisation via Gauss-Newton or Levenberg-Marquardt.
+    - Molecular dynamics: energy minimisation finds stable molecular conformations for drug discovery.
+    - [[Quantum Computing]]: variational quantum eigensolvers (VQE) and QAOA apply hybrid quantum-classical optimisation to combinatorial problems.
+  - #### Spatial Computing and Rendering
+    - Real-time rendering uses optimised rasterisation pipelines and GPU-parallelised shaders.
+    - 3D reconstruction (SLAM, NeRF training) requires non-linear least-squares optimisation over scene parameters.
+    - Mesh decimation and UV parameterisation in [[Spatial Computing]] workflows are formulated as geometric optimisation problems.
+
+- ### Landscape of Optimisation Algorithms
+  - | Category | Examples | Best for |
+  - | First-order gradient | SGD, Adam, AdaGrad | Large-scale ML training |
+  - | Second-order | L-BFGS, Newton-CG | Medium-scale, convex or smooth problems |
+  - | Zeroth-order / black-box | Bayesian Opt, CMA-ES | Expensive evaluations, non-differentiable objectives |
+  - | Linear programming | Simplex, interior-point | Linear objectives and constraints |
+  - | Mixed-integer | Branch-and-cut, CPLEX | Combinatorial, scheduling, routing |
+  - | Evolutionary | Genetic algorithms, NSGA-II | Multi-objective, rugged landscapes |
+  - | Quantum | QAOA, VQE | Combinatorial (research stage) |
+
+- ### Standards and Context
+  - **Software frameworks**: SciPy (`scipy.optimize`), CVXPY (disciplined convex programming), Optuna and Ray Tune ([[Hyperparameter Tuning]]), OR-Tools (Google, combinatorial).
+  - **Benchmark suites**: BBOB (black-box optimisation benchmarking), MIPLIB (mixed-integer problem library), CUTEst (nonlinear optimisation).
+  - **Academic foundations**: SIAM Journal on Optimization, Mathematical Programming, Journal of Optimization Theory and Applications.
+  - **Industry standards**: ISO/IEC standards for numerical computation; BLAS/LAPACK for dense [[Linear Algebra]] kernels underpinning most solvers.
+  - **Quantum optimisation**: NIST, IBM Quantum, and Google Quantum AI publish results on quantum advantage for combinatorial optimisation; QAOA circuits target MaxCut and related graph problems.
+  - **Hardware acceleration**: GPU-parallel optimisation (CUDA kernels for [[Gradient Descent]]) and tensor cores for matrix operations are now standard in ML training infrastructure.
+
+- ### Current Landscape (2026)
+  - The headline shift since 2024 is the rise of matrix-preconditioned optimisers that challenge AdamW's long default status: Muon (Jordan et al., 2024), which orthogonalises each 2-D weight matrix's momentum via a matmul-only Newton-Schulz iteration, graduated from nanoGPT speedruns to frontier-scale training and stores only one momentum buffer per parameter (roughly half AdamW's optimiser-state memory).
+  - "Muon is Scalable for LLM Training" (Liu et al., Moonshot AI and UCLA, arXiv:2502.16982, Feb 2025) showed Muon scales with two additions - decoupled weight decay and consistent per-parameter update-RMS scaling - reaching a target loss on about 52% of AdamW's FLOPs (approximately 2x compute efficiency) on the Moonlight 16B/3B-active MoE trained on 5.7T tokens.
+  - Moonshot's Kimi K2 (arXiv:2507.20534, July 2025), a 1T-parameter / 32B-active MoE, introduced MuonClip - Muon plus a QK-Clip mechanism that rescales query/key projection weights whenever attention logits exceed a threshold (tau = 100) - and pre-trained on 15.5T tokens with zero loss spikes, solving the attention-logit-explosion instability that had blocked Muon at scale.
+  - Adoption has moved into production: Zhipu AI's GLM-4.5 and GLM-5 (744B) use Muon variants including a "Muon Split" that orthogonalises MLA up-projections per attention head, DeepSeek-V4 (1.6T) employs Muon, and framework support landed in DeepSpeed and PyTorch (PyTorch blog, mid-2026) plus Karpathy's nanochat, cementing the hybrid recipe of Muon for 2-D matrices and AdamW for embeddings, norms and the LM head.
+  - The MLCommons AlgoPerf benchmark reshaped the field: Distributed Shampoo (Anil et al.) won the 2024 external-tuning track and Schedule-Free AdamW (Defazio et al.) won the self-tuning track (Kasimbeg et al., 2025), reviving interest in second-order/dense-preconditioning methods and learning-rate-schedule-free training; a parallel wave includes SOAP (Vyas et al., 2025, Adam in Shampoo's eigenbasis), MARS, Prodigy, ADOPT and AdEMAMix.
+  - Frontier open challenges as of 2026: rigorous benchmarks temper the hype - "Fantastic Pretraining Optimizers and Where to Find Them" (arXiv:2509.02046, Sept 2025) finds matrix optimisers deliver only about 1.3-1.4x speedup (not 2x) below ~520M parameters and that gains depend heavily on well-tuned hyperparameter transfer (muP with 1/width-scaled weight decay, NeurIPS 2025); orthogonalisation remains defined only for 2-D weights, per-step runtime overhead is higher, and numerical-stability guarantees at multi-trillion-parameter scale are still being established.
+
+- ### References
+  - 1. Liu et al., Moonshot AI and UCLA (2025). Muon is Scalable for LLM Training. https://arxiv.org/abs/2502.16982
+  - 2. Kimi K2 Team, Moonshot AI (2025). Kimi K2: Open Agentic Intelligence (MuonClip / QK-Clip). https://arxiv.org/abs/2507.20534
+  - 3. PyTorch / DeepSpeed (2026). Using Muon Optimizer with DeepSpeed. https://pytorch.org/blog/using-muon-optimizer-with-deepspeed/
+  - 4. Semenov et al. (2025). Fantastic Pretraining Optimizers and Where to Find Them. https://arxiv.org/pdf/2509.02046.pdf
+  - 5. NeurIPS (2025). Hyperparameter Transfer Enables Consistent Gains of Matrix-Preconditioned Optimizers. https://proceedings.neurips.cc/paper_files/paper/2025/file/bdcd9f6327db5877dee502cdec183159-Paper-Conference.pdf
+
+- ### Provenance
+

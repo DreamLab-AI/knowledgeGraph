@@ -1,0 +1,91 @@
+
+Video generation is the AI-driven synthesis of temporally coherent video sequences from text prompts, reference images, or other conditioning signals using generative models such as latent diffusion, autoregressive transformers, or flow-matching networks. Unlike image generation, video synthesis must maintain temporal consistency across frames, model object trajectories and camera motion, and produce physically plausible dynamics across variable-length sequences. Contemporary approaches encode video into a compressed spatiotemporal latent space via a 3D variational autoencoder, apply a diffusion or flow-matching process in that space conditioned on text or visual embeddings, then decode to pixel space. Scaling laws, large curated training datasets, and architectural advances such as full spatiotemporal attention have driven rapid capability growth, enabling cinematic-quality outputs at multiple seconds of duration.
+
+- ### Overview
+  - Video generation sits at the intersection of [[Generative AI]], [[Computer Vision]], and [[Multimodal AI]], representing one of the most compute-intensive tasks in applied deep learning.
+  - **Why it matters**: Synthetic video reduces the cost of producing visual content dramatically, enabling applications ranging from advertising and entertainment to scientific simulation and robotics training.
+  - **How it works**:
+    - A high-dimensional video (T × H × W × C) is compressed into a low-dimensional spatiotemporal latent representation by a 3D VAE ([[Variational Autoencoder]] with temporal downsampling).
+    - A generative model — typically a [[Diffusion Model]] using [[Latent Diffusion]] or a [[Flow Matching]] network — learns to denoise or transform samples in that latent space.
+    - Text conditioning is injected via [[Cross-Attention]] layers that align text embeddings (from [[CLIP]], T5, or a large language model encoder) with spatial-temporal latent activations.
+    - [[Classifier-Free Guidance]] amplifies the conditioning signal at inference, improving prompt adherence.
+    - The latent sequence is decoded back to pixel space by the VAE decoder.
+  - **Architectural families**:
+    - UNet-based diffusion (early VideoLDM, ModelScope)
+    - Diffusion Transformer (DiT) with spatiotemporal factored attention (Open-Sora, CogVideoX, Wan2.1)
+    - Autoregressive token prediction (VideoGPT, MAGVIT-v2)
+    - Flow-matching with rectified flows (Stable Video Diffusion successors, Sora-class models)
+
+- ### Key Components
+  - **[[Video VAE]]** — encodes/decodes video clips between pixel and latent space using 3D convolutions with temporal stride; essential for tractable training and inference on high-resolution sequences.
+  - **[[Temporal Attention]]** — attention mechanism applied across the time axis to enforce frame-to-frame coherence; may be factored (space then time) or full joint spatiotemporal attention.
+  - **[[3D Convolution]]** — extends spatial 2D convolutions across the temporal dimension; used in earlier architectures and as components of 3D VAEs.
+  - **[[Diffusion Model]]** — iterative denoising process that learns to reverse Gaussian noise corruption in latent space; the dominant training paradigm for video generation.
+  - **[[Flow Matching]]** — deterministic continuous normalising flow alternative to diffusion; typically faster inference and more stable training trajectories.
+  - **[[Cross-Attention]]** — mechanism by which text embeddings condition each spatial-temporal latent activation, enabling text-to-video alignment.
+  - **[[Classifier-Free Guidance]]** — inference-time technique that amplifies the conditional score by contrasting with an unconditional forward pass; improves prompt fidelity.
+  - **[[Optical Flow]]** — dense motion field between frames; used as auxiliary training signal or evaluation metric to measure motion coherence.
+  - **[[Motion Estimation]]** — estimation of per-pixel or per-region motion; drives temporal consistency objectives and augments training with motion priors.
+  - **[[Text Encoder]]** — encodes natural-language prompts into dense embeddings; CLIP, T5-XXL, and dedicated LLM encoders are commonly used.
+  - **[[Positional Encoding]]** — extended to 3D (height, width, time) to provide the model spatial and temporal position awareness across the full sequence.
+  - **[[Noise Scheduling]]** — defines the diffusion forward process; adapted for video to handle increased data dimensionality and sequence length.
+
+- ### Applications and Use Cases
+  - **Film and commercial previsualization**: rapid generation of storyboard animatics and scene concepts reduces pre-production cost in [[Virtual Production]] pipelines.
+  - **Advertising and marketing**: brands generate product demo videos and social-media content without traditional shoots.
+  - **Entertainment and gaming**: AI-generated cutscenes, backgrounds, and cinematic trailers augmenting traditional VFX pipelines ([[Content Creation]]).
+  - **Autonomous driving data synthesis**: generating rare edge-case scenarios and adverse weather conditions for [[Autonomous Driving Simulation]], complementing real-world sensor data.
+  - **Robotics training**: [[World Model]] approaches use video generation to synthesise diverse training environments for robot policy learning without physical interaction.
+  - **Scientific visualisation**: generating plausible visual representations of molecular dynamics, climate simulations, or medical imaging sequences.
+  - **Education and explainers**: on-demand synthesis of explainer videos from structured knowledge, linking [[Knowledge Graph]] content to rich media.
+  - **[[Synthetic Media]] and deepfake forensics**: the same generative technology drives [[Deepfake Detection]] research, creating an adversarial red-team / blue-team dynamic with significant implications for [[AI Safety]].
+  - **[[Metaverse Content]] creation**: procedural video synthesis populates persistent virtual worlds with dynamic scenes without manual 3D authoring.
+  - **Interactive storytelling**: branching narrative video generated on demand responds to user choices, enabled by fast inference and lightweight LoRA-fine-tuned models.
+
+- ### Technical Challenges
+  - **Temporal consistency**: objects, faces, and textures must not flicker or deform across frames; addressed by [[Temporal Attention]] and motion-aware training objectives.
+  - **Long-sequence generation**: memory and compute grow with sequence length; windowed attention, hierarchical generation, and compressed representations help scale to minutes.
+  - **Fine-grained motion**: generating plausible hand gestures, fluid dynamics, or fire requires learning high-frequency motion distributions, which current models handle imperfectly.
+  - **Prompt alignment at motion level**: text prompts specify spatial content more easily than temporal dynamics; models often struggle to precisely control speed, direction, and timing of motion.
+  - **Identity preservation**: maintaining consistent face appearance and clothing details across a generated sequence is non-trivial and often requires subject-specific fine-tuning (LoRA, DreamBooth).
+  - **Compute cost**: training large video generation models requires orders-of-magnitude more compute than image-generation equivalents; inference similarly demands high VRAM, limiting accessibility.
+  - **Evaluation**: no universally accepted metric exists; FID/IS adapted for video (FVD — Fréchet Video Distance), human preference studies, and task-specific probes (motion smoothness, text alignment) are commonly combined.
+  - **Ethics and misuse**: [[Deepfake Detection]] countermeasures and provenance watermarking are active research areas given the potential for video generation to produce [[Synthetic Media]] that deceives viewers.
+
+- ### Landmark Systems and Research Directions
+  - **CogVideo / CogVideoX** (THUDM) — open-source diffusion transformer video generation trained on high-quality curated data.
+  - **Open-Sora** — open-source reproduction of diffusion-transformer video generation, enabling community research.
+  - **Wan2.1** — open-weight model noted for high spatial and temporal quality at competitive sizes.
+  - **Stable Video Diffusion** — Stability AI image-conditioned video generation model demonstrating fine-tuning from image generators.
+  - **Sora** (OpenAI) — proprietary diffusion transformer trained on a large video corpus, notable for long-duration, high-resolution outputs; primary architectural details remain undisclosed.
+  - **MAGVIT / MAGVIT-v2** — masked autoregressive video generation using tokenised visual representations.
+  - **VideoPoet** (Google) — multimodal language model trained to generate video, audio, and images within a unified token space.
+  - **Research frontiers**: world models for embodied AI ([[World Model]]); video generation for robot learning; controllable generation with camera trajectories; real-time inference via consistency distillation; native audio-video co-generation.
+
+- ### Standards and Context
+  - No formal ISO/W3C standard governs AI video generation specifically; relevant frameworks include:
+    - **C2PA (Coalition for Content Provenance and Authenticity)** — specification for attaching cryptographic provenance manifests to generated media, relevant for combating [[Synthetic Media]] misuse.
+    - **IEEE P3164** — ongoing standard for AI-generated media authenticity disclosure.
+    - **EU AI Act** — classifies systems that generate deepfakes or synthetic content as high-risk and mandates disclosure obligations.
+    - **NIST AI Risk Management Framework** — applicable governance framework for assessing risks of deploying video generation in consequential settings.
+  - Evaluation conventions: Fréchet Video Distance (FVD) as the primary distribution-level metric; CLIP Score for text-video alignment; human-preference studies for qualitative assessment.
+  - [[AI Safety]] considerations include watermarking, detection-resistant content policies, and model-card disclosure requirements that are increasingly mandated by platform operators.
+
+- ### Current Landscape (2026)
+  - Native single-pass audio-visual generation became the defining capability of 2025-2026: Google's Veo 3 (Google I/O, May 2025) and its Veo 3.1 successor generate synchronised dialogue, sound effects and ambience in the same pass, and this synced-audio approach is now matched by Kling and by ByteDance's Seedance line.
+  - The competitive frontier shifted decisively towards Chinese and enterprise players: as of mid-2026 the Artificial Analysis Video Arena is led by ByteDance Seedance 2.0, Alibaba's HappyHorse and Kuaishou's Kling 3.0, with Runway Gen-4.5 topping the physical-accuracy board and Kling O1 unifying 18+ video tasks into one multimodal model.
+  - OpenAI retreated from the market it defined: after Sora 2 launched in 2025, OpenAI discontinued the standalone Sora web and app experiences on 26 April 2026 and scheduled the Sora 2 API for shutdown on 24 September 2026, leaving Veo 3.1, Kling 3.0 and Runway Gen-4.5 as the safest production foundations.
+  - Open-weight models effectively closed the quality gap: Lightricks' LTX-2 (January 2026) and the LTX-2.3 update (March 2026, ~22B DiT) became the first open model to generate synchronised 4K video and stereo audio in a single pass, alongside Alibaba's Apache-2.0 Wan 2.7 (April 2026) and Tencent's HunyuanVideo 1.5 (November 2025), which renders roughly 75 seconds on a single RTX 4090.
+  - Regulation went live and binding: the EU AI Act Article 50 transparency duties became enforceable on 2 August 2026 (machine-readable marking, visible deepfake labels; penalties up to EUR15 million or 3% of global turnover), with the EU Code of Practice finalised 10 June 2026 mandating a C2PA-plus-SynthID multi-layer approach; California's SB 942 became operative the same day and India's IT Rules 2026 imposed a three-hour takedown window.
+  - Provenance standardised around C2PA: Content Credentials (C2PA 2.1) was ratified as ISO/IEC 22144, and platforms and labs layered signed manifests with imperceptible watermarks such as Google SynthID and Meta's July 2026 Content Seal (VideoSeal/PixelSeal).
+  - Open challenges as of 2026 remain acute: signed manifests do not survive screenshots or re-encoding, open-weight generators can be recompiled without any watermark, provenance verifies declared origin rather than detecting fabrication, and sustaining character consistency and coherent physics beyond the easy 6-second range towards 60-second clips is still the frontier.
+
+- ### References
+  - 1. Masonry (2026). Best AI Video Generators in 2026: Sora vs Runway vs Kling vs Veo. https://masonry.so/blog/best-ai-video-generator-2025-comparison
+  - 2. Teamday (2026). Best AI Video Models 2026: Veo, Runway, Kling, Sora Ranked. https://www.teamday.ai/blog/best-ai-video-models-2026
+  - 3. Netarx (2025-2026). EU AI Act Article 50: What Deepfake Compliance Requires Now. https://www.netarx.com/blog/eu-ai-act-article-50-what-deepfake-compliance
+  - 4. TechTimes (2026). California AI Transparency Act Operative: Midjourney Has No Watermark, Fines Start Today. https://www.techtimes.com/articles/322713/20260802/california-ai-transparency-act-operative-midjourney-has-no-watermark-fines-start-today.htm
+  - 5. Pinggy (2026). Best Video Generation AI Models in 2026. https://pinggy.io/blog/best_video_generation_ai_models/
+
+- ### Provenance
+

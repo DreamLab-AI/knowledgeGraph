@@ -1,0 +1,21 @@
+
+Media authenticity is the property and practice of establishing that a piece of digital media is genuine, unaltered, and accurately attributed to its source. It combines cryptographic provenance metadata, watermarking, and forensic analysis to distinguish authentic recordings from synthetic or manipulated content. As generative models make convincing synthetic media inexpensive, media authenticity has become central to combating disinformation and preserving trust in visual and audio evidence.
+
+- Media authenticity is the assurance that digital media is genuine, unmodified, and correctly attributed. It draws on [[Content Provenance]], [[Digital Watermarking]], and [[Media Forensics]] to separate authentic content from [[Synthetic Media]].
+- It is increasingly standardised through [[C2PA]] provenance metadata that travels with an asset across editing and distribution.
+- ### Overview
+- The proliferation of generative models has made it cheap to fabricate realistic images, audio, and video. This erodes the default assumption that recorded media reflects reality, threatening journalism, legal evidence, and public discourse.
+- Media authenticity responds with two complementary strategies: proactive provenance, which cryptographically records how an asset was captured and edited, and reactive forensics, which analyses an asset for signs of manipulation after the fact.
+- Effective deployment combines signed capture metadata, robust watermarking that survives recompression, and detection models, while remaining mindful that adversaries adapt.
+- ### Key aspects
+- Provenance: cryptographically signed records of capture device, edits, and authorship.
+- Watermarking: imperceptible signals embedded at generation or capture time to mark origin.
+- Forensics: statistical and learned detectors that flag manipulation artefacts.
+- Standards: interoperable metadata formats so authenticity claims are verifiable across platforms.
+- ### Applications
+- Newsroom verification of user-submitted footage.
+- Labelling AI-generated content in social platforms and search.
+- Authenticating evidence in legal and insurance contexts.
+- Camera and creative-tool integrations that sign content at the point of capture or export.
+- ### Provenance
+

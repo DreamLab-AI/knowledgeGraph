@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Agent-Based Models</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Agent-Based Models"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Agent-Based Models"/><meta name="twitter:description" content="Agent-Based Models (ABMs) are computational simulation frameworks that represent systems as collections of autonomous, heterogeneous agents that interact with one another and their environment according to local rules, allowing complex global behaviours and emergent phenomena to arise from the botto..."/><meta property="og:description" content="Agent-Based Models (ABMs) are computational simulation frameworks that represent systems as collections of autonomous, heterogeneous agents that interact with one another and their environment according to local rules, allowing complex global behaviours and emergent phenomena to arise from the botto..."/><meta property="og:image:alt" content="Agent-Based Models (ABMs) are computational simulation frameworks that represent systems as collections of autonomous, heterogeneous agents that interact with one another and their environment according to local rules, allowing complex global behaviours and emergent phenomena to arise from the botto..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Agent-Based-Models"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Agent-Based-Models"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Agent-Based Models (ABMs) are computational simulation frameworks that represent systems as collections of autonomous, heterogeneous agents that interact with one another and their environment according to local rules, allowing complex global behaviours and emergent phenomena to arise from the botto..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Agent-Based-Models"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-628"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-628" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Agent Based Models</a></div></nav><h1 class="article-title">Agent-Based Models</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.668Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:agent-based-models</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.87</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Computational-Intelligence" class="internal">Computational Intelligence</a></li><li><a href="../pages/Simulation" class="internal">Simulation</a></li><li><a href="../Complex-Systems-Science" class="internal">Complex Systems Science</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Complexity-Science" class="internal">Complexity Science</a></li><li><a href="../pages/Computational-Intelligence" class="internal">Computational Intelligence</a></li><li><a href="../Complex-Systems-Science" class="internal">Complex Systems Science</a></li><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../pages/Environment-Model" class="internal">Environment Model</a></li><li><a href="../pages/Stochastic-Process" class="internal">Stochastic Process</a></li><li><a href="../pages/Feedback-Loop" class="internal">Feedback Loop</a></li><li><a href="../pages/Sensitivity-Analysis" class="internal">Sensitivity Analysis</a></li><li><a href="../pages/Scheduler" class="internal">Scheduler</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Simulation" class="internal">Simulation</a></li><li><a href="../pages/Stochastic-Process" class="internal">Stochastic Process</a></li><li><a href="../pages/Scientific-Computing" class="internal">Scientific Computing</a></li><li><a href="../pages/Computational-Modelling" class="internal">Computational Modelling</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../Emergence" class="internal">Emergence</a></li><li><a href="../pages/Collective-Intelligence" class="internal">Collective Intelligence</a></li><li><a href="../pages/Policy-Simulation" class="internal">Policy Simulation</a></li><li><a href="../pages/Epidemiological-Modelling" class="internal">Epidemiological Modelling</a></li><li><a href="../pages/Supply-Chain-Optimisation" class="internal">Supply Chain Optimisation</a></li><li><a href="../social-simulation" class="internal">Social Simulation</a></li><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../pages/Innovation-Diffusion" class="internal">Innovation Diffusion</a></li><li><a href="../pages/Crowd-Simulation" class="internal">Crowd Simulation</a></li><li><a href="../pages/Economic-Model" class="internal">Economic Model</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal">Multi-Agent Reinforcement Learning</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Multi-Agent-Systems" class="internal">Multi-Agent Systems</a></li><li><a href="../pages/Swarm-Intelligence" class="internal">Swarm Intelligence</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/System-Dynamics" class="internal">System Dynamics</a></li><li><a href="../equation-based-modelling" class="internal">Equation-Based Modelling</a></li><li><a href="../pages/Discrete-Event-Simulation" class="internal">Discrete Event Simulation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Complex-Adaptive-Systems" class="internal">Complex Adaptive Systems</a></li><li><a href="../pages/Behavioral-Modeling" class="internal">Behavioral Modeling</a></li><li><a href="../pages/Network-Science" class="internal">Network Science</a></li><li><a href="../pages/Scientific-Computing" class="internal">Scientific Computing</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Simulation" class="internal">Simulation</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Complex-Adaptive-Systems" class="internal">Complex Adaptive Systems</a></li><li><a href="../artificial-life" class="internal">Artificial Life</a></li><li><a href="../Behavioural-Modelling" class="internal">Behavioural Modelling</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../autonomous-agent" class="internal">Autonomous Agent</a></li><li><a href="../behavioural-modelling" class="internal">Behavioral Modeling</a></li><li><a href="../scientific-computing" class="internal">Scientific Computing</a></li><li><a href="../emergence" class="internal">Emergence</a></li><li><a href="../collective-intelligence" class="internal">Collective Intelligence</a></li><li><a href="../feedback-loop" class="internal">Feedback Loop</a></li><li><a href="../computational-intelligence" class="internal">Computational Intelligence</a></li><li><a href="../agent-based-modelling" class="internal">Agent-Based Modelling</a></li><li><a href="../multi-agent-reinforcement-learning" class="internal">Multi-Agent Reinforcement Learning</a></li><li><a href="../simulation" class="internal">Simulation</a></li><li><a href="../complex-adaptive-systems" class="internal">Complex Adaptive Systems</a></li><li><a href="../stochastic-process" class="internal">Stochastic Process</a></li><li><a href="../network-science" class="internal">Network Science</a></li><li><a href="../reinforcement-learning" class="internal">Reinforcement Learning</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../monte-carlo-simulation" class="internal">Monte Carlo Simulation</a></li><li><a href="../cellular-automata" class="internal">Cellular Automata</a></li><li><a href="../multi-agent-systems" class="internal">Multi-Agent Systems</a></li><li><a href="../epidemiological-modelling" class="internal">Epidemiological Modelling</a></li><li><a href="../economic-model" class="internal">Economic Model</a></li><li><a href="../digital-twin" class="internal">Digital Twin</a></li><li><a href="../swarm-intelligence" class="internal">Swarm Intelligence</a></li><li><a href="../social-simulation" class="internal">Social Simulation</a></li><li><a href="../complex-systems-science" class="internal">Complex Systems Science</a></li><li><a href="../sensitivity-analysis" class="internal">Sensitivity Analysis</a></li><li><a href="../uncertainty-quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../policy-simulation" class="internal">Policy Simulation</a></li><li><a href="../supply-chain-optimisation" class="internal">Supply Chain Optimisation</a></li><li><a href="../game-theory" class="internal">Game Theory</a></li><li><a href="../discrete-event-simulation" class="internal">Discrete Event Simulation</a></li><li><a href="../parallel-computing" class="internal">Parallel Computing</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../genetic-algorithm" class="internal">Genetic Algorithm</a></li><li><a href="../urban-computing" class="internal">Urban Computing</a></li><li><a href="../crowd-simulation" class="internal">Crowd Simulation</a></li><li><a href="../innovation-diffusion" class="internal">Innovation Diffusion</a></li><li><a href="../system-dynamics" class="internal">System Dynamics</a></li><li><a href="../equation-based-modelling" class="internal">Equation-Based Modelling</a></li><li><a href="../artificial-life" class="internal">Artificial Life</a></li><li><a href="../environment-model" class="internal">Environment Model</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:agent-based-models</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Feedback-Loop" class="internal">Feedback Loop</a></li><li><a href="../multi-agent-systems" class="internal">Multi-Agent Systems</a></li><li><a href="../pages/Swarm-Intelligence" class="internal">Swarm Intelligence</a></li><li><a href="../pages/Game-Theory" class="internal">Game Theory</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../pages/Agent-Based-Modelling" class="internal">Agent-Based Modelling</a></li><li><a href="../pages/Collective-Intelligence" class="internal">Collective Intelligence</a></li><li><a href="../Emergence" class="internal">Emergence</a></li><li><a href="../pages/Network-Science" class="internal">Network Science</a></li><li><a href="../Artificial-Life" class="internal">Artificial Life</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Economic-Model" class="internal">Economic Model</a></li><li><a href="../pages/Urban-Computing" class="internal">Urban Computing</a></li><li><a href="../pages/Crowd-Simulation" class="internal">Crowd Simulation</a></li><li><a href="../pages/Digital-Twin" class="internal">Digital Twin</a></li><li><a href="../pages/Policy-Simulation" class="internal">Policy Simulation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../pages/Behavioral-Modeling" class="internal">Behavioral Modeling</a></li><li><a href="../pages/Scientific-Computing" class="internal">Scientific Computing</a></li><li><a href="../pages/Monte-Carlo-Simulation" class="internal">Monte Carlo Simulation</a></li><li><a href="../pages/Cellular-Automata" class="internal">Cellular Automata</a></li><li><a href="../pages/Reinforcement-Learning" class="internal">Reinforcement Learning</a></li><li><a href="../pages/Genetic-Algorithm" class="internal">Genetic Algorithm</a></li><li><a href="../pages/Parallel-Computing" class="internal">Parallel Computing</a></li><li><a href="../pages/Sensitivity-Analysis" class="internal">Sensitivity Analysis</a></li><li><a href="../pages/Network-Science" class="internal">Network Science</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Agent-Based Models (ABMs) are computational simulation frameworks that represent systems as collections of autonomous, heterogeneous agents that interact with one another and their environment according to local rules, allowing complex global behaviours and emergent phenomena to arise from the bottom up without being explicitly programmed at the system level. They are a primary tool in complexity science for studying social, biological, economic, and technical systems.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:hasPart ai:AutonomousAgent))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:hasPart ai:EnvironmentModel))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:hasPart ai:StochasticProcess))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:hasPart ai:FeedbackLoop))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:hasPart ai:Scheduler))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:hasPart ai:OutputLayer))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:requires ai:Simulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:requires ai:StochasticProcess))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:requires ai:ScientificComputing))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:dependsOn ai:ComplexAdaptiveSystems))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:dependsOn ai:BehaviouralModelling))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:dependsOn ai:NetworkScience))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:Emergence))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:CollectiveIntelligence))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:EpidemiologicalModelling))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:PolicySimulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:SocialSimulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:SupplyChainOptimisation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:UncertaintyQuantification))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:enables ai:InnovationDiffusion))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:implements ai:ComplexAdaptiveSystems))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:implements ai:ArtificialLife))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:uses ai:ReinforcementLearning))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:uses ai:CellularAutomata))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:uses ai:MonteCarloSimulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:uses ai:GeneticAlgorithm))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:uses ai:ParallelComputing))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:reducesTo ai:SystemDynamics))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:reducesTo ai:CellularAutomata))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:reducesTo ai:DiscreteEventSimulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:reducesTo ai:EquationBasedModelling))
+</code></pre>
+</li>
+<li>
+<h2 id="support-and-contrast-axioms">Support and Contrast Axioms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-and-contrast-axioms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:supports ai:EconomicModel))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:supports ai:DigitalTwin))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:supports ai:SocialSimulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:supports ai:CrowdSimulation))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:bridgesTo ai:MultiAgentSystems))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:bridgesTo ai:SwarmIntelligence))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:bridgesTo ai:LargeLanguageModels))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:bridgesTo ai:MultiAgentReinforcementLearning))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:relatedTo ai:GameTheory))
+SubClassOf(ai:AgentBasedModels
+  ObjectSomeValuesFrom(ai:relatedTo ai:NetworkScience))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Agent-Based Models (ABMs) are the standard computational instrument for studying <a href="../pages/Complex-Adaptive-Systems" class="internal alias" data-slug="pages/Complex-Adaptive-Systems">Complex Adaptive Systems</a>: systems of many interacting components whose collective behaviour is qualitatively richer than any component’s individual behaviour. The defining property is <a href="../Emergence" class="internal" data-slug="Emergence">Emergence</a> — aggregate patterns that arise from, but are not reducible to, micro-level rules. ABMs generate these patterns by simulating the parallel, concurrent actions of many discrete <a href="../pages/Autonomous-Agent" class="internal alias" data-slug="pages/Autonomous-Agent">Autonomous Agent</a> entities, making them uniquely suited to studying heterogeneous populations, non-equilibrium dynamics, and path-dependent history. This “generative” stance (Epstein, 1999) positions ABMs as a third mode of science alongside theory and physical experiment: one can ask “can these micro-rules generate that macro-pattern?” and test the answer computationally. The agent framework implements <a href="../pages/Complex-Adaptive-Systems" class="internal alias" data-slug="pages/Complex-Adaptive-Systems">Complex Adaptive Systems</a> theory directly: agents adapt their rules and strategies (via <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a>, evolutionary dynamics via <a href="../pages/Genetic-Algorithm" class="internal alias" data-slug="pages/Genetic-Algorithm">Genetic Algorithm</a>, or social learning through imitation and bounded rationality), their interactions form networks that link to <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a>, their aggregate actions loop through <a href="../pages/Feedback-Loop" class="internal alias" data-slug="pages/Feedback-Loop">Feedback Loop</a> mechanisms that can amplify or dampen perturbations, and the system as a whole can exhibit self-organised criticality, phase transitions, cascading failures, and power-law statistics. ABMs contrast with <a href="../Equation-Based-Modelling" class="internal alias" data-slug="Equation-Based-Modelling">Equation-Based Modelling</a> in that ODEs assume homogeneous, continuous populations; they contrast with <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a> in that stock-and-flow models aggregate all individuals into undifferentiated compartments; and they contrast with <a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a> in that DES focuses on process-level logic (queues, resources, workflows) rather than autonomous agents with internal state and adaptive strategy. All three contrasted paradigms have complementary strengths: <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a> is faster and analytically tractable; <a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a> models logistics precisely; ABMs capture heterogeneity and emergence. Commercial platforms like AnyLogic deliberately combine all three in a single simulation environment precisely because real-world systems exhibit all three types of dynamics simultaneously.</li>
+<li>The historical lineage of ABMs spans six decades. Thomas Schelling’s 1969 residential segregation model and John Conway’s 1970 Game of Life are considered the earliest recognisable ABMs; both showed that surprisingly rich global structure emerges from extremely simple local rules. Schelling’s model, built initially with coins on graph paper rather than a computer, showed that agents who merely prefer that at least 30 per cent of their immediate neighbours share their type will — through repeated relocations — produce residential segregation levels exceeding 75 per cent, demonstrating that social macro-phenomena (segregation as a social fact) can be disaggregated into their micro-level generative mechanisms (mild preference, unconstrained mobility). Craig Reynolds’ 1987 Boids model demonstrated that three local behavioural rules (separation from close neighbours, velocity alignment with nearby flockmates, cohesion toward the local centroid) suffice to generate globally realistic bird-flock and fish-school dynamics, without any central choreography — a seminal result for <a href="../pages/Swarm-Intelligence" class="internal alias" data-slug="pages/Swarm-Intelligence">Swarm Intelligence</a> and <a href="../Artificial-Life" class="internal alias" data-slug="Artificial-Life">Artificial Life</a> that influenced computer animation (the bat flock in Batman Returns, 1992) and robotics. The Santa Fe Institute’s complex adaptive systems programme in the late 1980s and 1990s, under Holland, Kauffman, Arthur, and Gell-Mann, provided the theoretical foundation; Epstein and Axtell’s Sugarscape (1996) operationalised it as a quantitative social science tool. The NetLogo platform (Wilensky, 1999) democratised ABM construction through an intuitive agent-programming language with integrated behavioural-space and sensitivity analysis tools. The SWARM toolkit (Santa Fe Institute) and later Repast (Java, Argonne National Laboratory) and MASON (George Mason University) provided research-grade infrastructure for social science and defence applications. The ODD protocol (Grimm et al., 2006; 2020) established a community standard for reproducible model description — a critical methodological contribution given that ABM publications historically provided insufficient detail for independent replication. Since 2020, the ABM field has undergone two major accelerations: the COVID-19 pandemic demonstrated ABM’s policy significance at national scale through CovidSim (Imperial College, Report 9, March 2020); and the integration of <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as generative agent engines (Park et al., Stanford, 2023, “Generative Agents: Interactive Simulacra of Human Behavior”) opened a new research frontier in which agents reason via LLM-mediated planning, reflection, and memory retrieval rather than hand-coded decision trees or utility functions.</li>
+<li>Four components constitute any ABM: (1) the agent population, specifying attributes (state variables), behavioural rules (conditional logic, utility functions, or learned policies from <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a>), perception functions (what each agent can observe of its neighbourhood), and interaction protocols (how agents communicate, trade, infect, or influence each other); (2) the <a href="../pages/Environment-Model" class="internal alias" data-slug="pages/Environment-Model">Environment Model</a>, which may be a spatial grid following <a href="../pages/Cellular-Automata" class="internal alias" data-slug="pages/Cellular-Automata">Cellular Automata</a> logic, a continuous 2D or 3D landscape, a graph structure from <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a>, a GIS-embedded geographic layer, or an abstract state space that agents inhabit, traverse, and modify (consuming resources, depositing signals, triggering events); (3) the scheduler, determining whether agents activate synchronously (reading pre-step state, writing post-step state atomically) or asynchronously (activating in random or priority order within a step, reading partially updated state) — a design choice that can materially alter emergent outcomes, particularly in models with resource competition or spatial diffusion; and (4) the output and analysis layer, recording aggregate statistics (time series of mean wealth, infection prevalence, mean velocity), spatial distributions (heat maps, cluster statistics), event logs (bankruptcy events, epidemic onset dates), and micro-trajectories (per-agent state histories) for calibration, validation, and hypothesis testing. Modern implementations support <a href="../pages/Parallel-Computing" class="internal alias" data-slug="pages/Parallel-Computing">Parallel Computing</a> (multi-threaded CPU execution via Agents.jl in Julia; GPU-massively parallel execution via FLAME GPU 2 from the University of Sheffield, achieving approximately 1,000x speedup over NetLogo for the Schelling and Boids benchmarks) and differentiable execution (ABMax in JAX, 2025, enabling gradient-based parameter inference via automatic differentiation through the simulation graph) rather than exhaustive <a href="../pages/Monte-Carlo-Simulation" class="internal alias" data-slug="pages/Monte-Carlo-Simulation">Monte Carlo Simulation</a> sweeps that may require millions of serial simulation runs for high-dimensional parameter spaces.</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Agent population</strong>: The core ontological commitment of any ABM is the definition of agent types — what entities the simulation contains, what attributes they carry, what they can perceive, and how they decide and act. Agents are discrete entities with: (a) state variables — scalar or vector attributes characterising each agent’s current condition (wealth, health status W ∈ [0,1], spatial location (x,y), belief vector b ∈ R^d, social ties as an adjacency list, infection status, strategy type); (b) behavioural rules — the decision function mapping perceived neighbourhood state and internal memory to action choices, implemented as conditional logic (if-then rules), utility maximisation (rational choice), lookup tables (finite state machine), learned policies from <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> (Q-table, deep Q-network, policy gradient network), or LLM-based contextual reasoning for generative ABMs; (c) a perception function — what the agent can observe of its neighbourhood (typically a local subset of the global state, reflecting bounded rationality and information asymmetry; perceptual radius r defines the neighbourhood); (d) an action function — the mapping from perceived state to chosen action from a finite or continuous action space; and optionally (e) a memory and adaptation mechanism — an internal store of past observations, outcomes, or strategies enabling backward-looking adaptation via <a href="../pages/Genetic-Algorithm" class="internal alias" data-slug="pages/Genetic-Algorithm">Genetic Algorithm</a> (parameter mutation and crossover), imitation of successful neighbours (replicator dynamics), <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> (value function update from reward signals), or reflection in generative ABM (LLM-based summarisation of past experiences to inform future decisions). Agent populations may be heterogeneous in all these dimensions — different agent types with different state spaces, rules, and adaptation mechanisms — or homogeneous (all agents share one type definition with individually varied parameter draws from a distribution).</li>
+<li><strong>Environment model</strong>: The shared space in which agents exist, move, and interact — both a substrate for interaction and itself a dynamic entity with state variables that agents read and modify. The <a href="../pages/Environment-Model" class="internal alias" data-slug="pages/Environment-Model">Environment Model</a> type determines what kind of locality, proximity, and spatial dynamics the ABM can represent. Common types: (i) discrete regular grid — 2D rectangular, hexagonal, or 3D cubic lattice — enabling <a href="../pages/Cellular-Automata" class="internal alias" data-slug="pages/Cellular-Automata">Cellular Automata</a> logic where neighbours are spatially adjacent cells; agents move between cells, consume resources in cells, and interact with occupants of neighbouring cells; (ii) continuous metric space — Euclidean 2D or 3D — where agents have real-valued positions and velocities, enabling realistic movement dynamics (random walks, directed movement, social force models for <a href="../pages/Crowd-Simulation" class="internal alias" data-slug="pages/Crowd-Simulation">Crowd Simulation</a> following Helbing and Molnar, 1995); (iii) network graph from <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a> — agents are nodes, edges are interaction channels (friendship, trade, road, communication); adjacency structure governs who can interact with whom; the network may be static (fixed throughout the simulation) or adaptive (edges added/removed as agents form/dissolve relationships); (iv) GIS-embedded geographic layer — real-world map data (land use, road network, administrative boundaries, building footprints) ingested via GIS tools for spatially explicit <a href="../pages/Urban-Computing" class="internal alias" data-slug="pages/Urban-Computing">Urban Computing</a>, <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a>, and ecological ABMs; (v) abstract (non-spatial) environment — an attribute space (e.g., opinion space [0,1] for bounded-confidence models, or product quality space for market competition models) where “proximity” is defined by similarity or information access rather than physical distance. The environment carries its own state variables (resource levels in Sugarscape cells, pheromone concentrations in ant-colony models, pollution concentrations in air quality models, road congestion levels in traffic ABMs) that update each time step based on agent actions and environmental dynamics.</li>
+<li><strong>Scheduler</strong>: The scheduler determines the order and frequency of agent activation — a design choice that can substantially affect emergent outcomes. Synchronous scheduling (bulk-synchronous parallel, BSP): all agents compute their next state simultaneously from the current global state (a snapshot), then all states are atomically replaced; this mirrors cellular-automaton dynamics and is natural for physics-style equilibrium models; it prevents any agent from “reacting” to another’s action within the same time step. Asynchronous scheduling: agents activate in random order within each time step, each reading the partially-updated state produced by earlier-activating agents; this better reflects continuous-time dynamics (people do not all decide simultaneously in real markets), eliminates spurious oscillations in competitive models, but introduces order-of-activation artefacts that require analysis. Priority-based scheduling: agents activate in a specified priority order (by wealth, health level, or role) enabling power-asymmetric interaction. Event-driven scheduling from <a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a>: agents activate only when triggered by an event (message arrival, resource depletion, alarm threshold crossing), reducing computational load in sparse models with long quiescent periods between meaningful interactions. Hybrid schedulers in AnyLogic combine continuous-time ODEs for aggregate population dynamics with event-driven discrete activation of individual agents — a pragmatic bridge between ABM and <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a>.</li>
+<li><strong>Stochastic layer</strong>: Randomness plays three distinct roles in ABMs. (i) Model realism: stochastic transition probabilities capture genuine variability in real-world phenomena — an agent is infected with probability β*dt, a firm defaults with probability p(leverage), a consumer adopts a product with probability based on social influence and idiosyncratic preference noise. (ii) Ensemble statistics: running N replicates from independent random seeds via <a href="../pages/Monte-Carlo-Simulation" class="internal alias" data-slug="pages/Monte-Carlo-Simulation">Monte Carlo Simulation</a> generates a distribution of outcomes from which expectations, variances, confidence intervals, and tail-risk statistics can be estimated; the sample size N needed for stable statistics depends on the variance of the output of interest. (iii) Exploration: stochastic rule perturbation (epsilon-greedy exploration in <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> agents, genetic mutation in <a href="../pages/Genetic-Algorithm" class="internal alias" data-slug="pages/Genetic-Algorithm">Genetic Algorithm</a>-evolved strategies) enables models to explore the full outcome space and avoid trapping in deterministic cycles. Random seed management is critical for reproducibility (seeds must be recorded and reported), for independent replication of published results, and for ensemble generation in <a href="../pages/Sensitivity-Analysis" class="internal alias" data-slug="pages/Sensitivity-Analysis">Sensitivity Analysis</a> and <a href="../pages/Uncertainty-Quantification" class="internal alias" data-slug="pages/Uncertainty-Quantification">Uncertainty Quantification</a> pipelines.</li>
+<li><strong>Output and calibration layer</strong>: Responsible for translating agent micro-trajectories into measurable macro-observables and comparing those observables to empirical targets. Records: aggregate time series (epidemic incidence, Gini wealth coefficient, aggregate output, price index); spatial statistics (Moran’s I for spatial autocorrelation, cluster radii, perimeter-area ratios); network statistics (degree distribution, clustering coefficient, betweenness centrality of key nodes); distributional statistics (histogram bins, power-law exponent estimates via Hill estimator, tail-risk VaR/CVaR for financial ABMs); and micro-trajectories (per-agent state history, event timestamps). Calibration methods: manual expert calibration; grid-search over discretised parameter space; approximate Bayesian computation (ABC) comparing observed and simulated summary statistics without explicit likelihood; <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> neural-network emulators trained on ABM output distributions and optimised via gradient descent (Lamperti et al., 2018); and differentiable ABM gradient descent (ABMax, 2025). Global <a href="../pages/Sensitivity-Analysis" class="internal alias" data-slug="pages/Sensitivity-Analysis">Sensitivity Analysis</a> via Sobol variance decomposition or Morris elementary effects screen quantifies which parameters dominate output variance, guiding prioritised data collection. Tools: OpenMOLE (CNRS, open-source, workflow management and distributed computing for ABM sensitivity analysis and optimisation); SALib (Python, Sobol and Morris indices); NetLogo BehaviorSpace (built-in parameter sweep); SMC-ABC (Sequential Monte Carlo ABC) implementations in Python and R.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="epidemiology-and-public-health">Epidemiology and Public Health<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#epidemiology-and-public-health" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>ABMs resolve disease transmission to the individual level, capturing heterogeneous contact rates, super-spreader dynamics, spatial clustering, household structure, and context-specific intervention efficacy — none of which can be captured faithfully by ODE compartmental (SIR, SEIR, SEIRD) models</li>
+<li>CovidSim (Imperial College London, Neil Ferguson’s group, 2020) projected approximately 510,000 UK deaths under unmitigated SARS-CoV-2 spread
+<ul>
+<li>The model directly informed the UK government’s March 2020 lockdown decision (Report 9, 16 March 2020)</li>
+<li>It showed household isolation combined with social distancing reduces peak healthcare demand by over 60 per cent</li>
+<li>Implemented as a spatially explicit individual-based <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a> ABM with age-stratified contact matrices and household-workplace-school spatial structure</li>
+</ul>
+</li>
+<li>The Epiabm framework (Cambridge Engineering, 2022) provides open-source Python and C++ infrastructure for epidemic simulation at local-authority spatial resolution</li>
+<li>Differentiable epidemic ABM approaches (Chopra et al., 2023, AAMAS) enable gradient-based calibration of transmission parameters against observed case-count time series
+<ul>
+<li>Calibration time reduced from weeks of <a href="../pages/Monte-Carlo-Simulation" class="internal alias" data-slug="pages/Monte-Carlo-Simulation">Monte Carlo Simulation</a> to hours via automatic differentiation</li>
+</ul>
+</li>
+<li>County-level US epidemic ABMs (CDC, NIH) inform vaccine allocation strategy under heterogeneous coverage and variant emergence scenarios</li>
+<li>Key ABM advantages over compartmental models in epidemiology:
+<ul>
+<li>Individual heterogeneity in susceptibility, exposure, and infectious period</li>
+<li>Spatial clustering of cases in households, schools, and workplaces</li>
+<li>Targeting of non-pharmaceutical interventions at specific sub-populations</li>
+<li>Modelling of healthcare capacity (hospital bed, ICU) surge dynamics</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="economic-and-financial-modelling">Economic and Financial Modelling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#economic-and-financial-modelling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>ABMs challenge the rational-expectations, representative-agent assumptions of mainstream DSGE macroeconomics by modelling heterogeneous firms, households, banks, and regulators with bounded rationality</li>
+<li>Santa Fe artificial stock market (LeBaron, Arthur, Palmer, 1999):
+<ul>
+<li>Heterogeneous trader agents using technical and fundamental analysis with <a href="../pages/Genetic-Algorithm" class="internal alias" data-slug="pages/Genetic-Algorithm">Genetic Algorithm</a>-evolved strategies</li>
+<li>Emergent fat-tailed return distributions and volatility clustering without rational expectations assumptions</li>
+<li>Cannot be reproduced by homogeneous rational-agent models without exogenous shock assumptions</li>
+</ul>
+</li>
+<li>Eurace and Banca d’Italia ABMs (Dawid, Dosi, Fagiolo, Roventini):
+<ul>
+<li>Reproduce business cycle statistics, financial fragility, and fiscal multiplier effects</li>
+<li>Incorporate firm bankruptcy, credit network cascade failures, and non-equilibrium recovery dynamics</li>
+<li>Used by the OECD as complements to standard econometric tools in policy analysis</li>
+</ul>
+</li>
+<li><a href="../pages/Supply-Chain-Optimisation" class="internal alias" data-slug="pages/Supply-Chain-Optimisation">Supply Chain Optimisation</a> ABMs:
+<ul>
+<li>Model Bullwhip effect (demand variability amplification up the supply chain) at the firm level</li>
+<li>Simulate supplier disruption cascades, inventory rebalancing, and sourcing diversification strategies</li>
+<li>DHL Resilience360 deploys ABM stress-testing of air-freight networks against weather and geopolitical disruption scenarios — revealed 20 per cent capacity gaps under modelled disruptions</li>
+<li>Procter and Gamble ABM deployment reduced inventory by 25 per cent through demand-volatility simulation</li>
+<li>Ocean carriers run 5,000 ABM routing scenarios daily integrating weather and geopolitical risk data, achieving 92 per cent delay prediction accuracy</li>
+</ul>
+</li>
+<li>Agentic supply chain <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> (A-SCDT) architectures (Taylor and Francis, 2026) hybridise ABM agent layers with AI optimisation for real-time operational decision support</li>
+</ul>
+</li>
+<li>
+<h3 id="ecology-and-conservation">Ecology and Conservation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ecology-and-conservation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Individual-based population ecology models (Grimm and Railsback, 2005) simulate species dynamics with individual heterogeneity in body size, energy reserves, dispersal propensity, and life-history stage</li>
+<li>Predator-prey dynamics at the individual level:
+<ul>
+<li>Stochastic individual encounter rates and energy-budget models produce more realistic population fluctuations than Lotka-Volterra ODEs</li>
+<li>Spatial ABMs reveal how predator spatial memory and prey refuge use interact to generate population cycles</li>
+</ul>
+</li>
+<li>Species competition and coexistence:
+<ul>
+<li>Competitive exclusion dynamics in heterogeneous landscapes — spatial refugia prevent competitive exclusion that aggregate models predict</li>
+<li>Priority effects (order of arrival) in assembly of ecological communities</li>
+</ul>
+</li>
+<li>Habitat fragmentation and corridor design:
+<ul>
+<li>Dispersal-limited species ABMs inform reserve connectivity planning and green corridor placement</li>
+<li>Metapopulation viability analysis under habitat loss scenarios</li>
+</ul>
+</li>
+<li>Fisheries stock assessment ABMs: model individual fish growth, mortality, and harvesting pressure to support Total Allowable Catch (TAC) policy under uncertain recruitment and climate-driven range shifts</li>
+<li>Forest fire ABMs: couple fire spread (terrain, wind, fuel moisture) with vegetation dynamics to inform prescribed burning and defensible space policy</li>
+<li><a href="../pages/Swarm-Intelligence" class="internal alias" data-slug="pages/Swarm-Intelligence">Swarm Intelligence</a> animal behaviour models (Boids-derived): validated against high-resolution GPS and stereophotogrammetry tracking data for bird flocks, fish schools, and insect swarms — confirm that three-rule models account for most group shape variance</li>
+</ul>
+</li>
+<li>
+<h3 id="urban-planning-and-pedestrian-dynamics">Urban Planning and Pedestrian Dynamics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#urban-planning-and-pedestrian-dynamics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Crowd-Simulation" class="internal alias" data-slug="pages/Crowd-Simulation">Crowd Simulation</a> ABMs model pedestrian flows in complex built environments under normal and emergency conditions:
+<ul>
+<li>Social force model (Helbing and Molnar, 1995): pedestrian movement as sum of desired velocity, repulsive forces from neighbours and walls, attractive forces from goals</li>
+<li>Produces realistic congestion, arching at bottlenecks, lane formation in bidirectional flows, and trampling dynamics under panic conditions</li>
+<li>Applied to station, airport, and stadium design optimisation; train and building evacuation planning (EU Directive 2008/164/EC); concert and event crowd management</li>
+</ul>
+</li>
+<li>Transport ABMs at city scale:
+<ul>
+<li>MATSIM (open-source, ETH Zurich / TU Berlin): million-agent transport demand simulation used for Zurich’s city transport plan, Singapore’s mobility-on-demand planning, and Berlin’s cycling infrastructure</li>
+<li>Nagel-Schreckenberg cellular automaton model for highway traffic: reproduces stop-and-go waves, capacity drop at high density</li>
+<li><a href="../pages/Urban-Computing" class="internal alias" data-slug="pages/Urban-Computing">Urban Computing</a> ABMs for land-use change (UrbanSim), housing market dynamics, and energy demand response in smart grids</li>
+</ul>
+</li>
+<li>Real-time and fused ABMs:
+<ul>
+<li>Nick Malleson (University of Leeds, Alan Turing Institute Urban Analytics): real-time pedestrian dynamics ABMs fused with anonymised CCTV tracking data and mobile phone GPS traces</li>
+<li>Enables live monitoring and short-horizon prediction of city pedestrian flows for urban management and safety</li>
+</ul>
+</li>
+<li>Generative urban mobility simulation:
+<ul>
+<li>GATSim (arXiv:2506.23306, 2025/2026): city-scale urban mobility simulation using LLM-driven generative agents as drivers</li>
+<li>Captures nuanced origin-destination choice, schedule adaptation, and mode-switching behaviour beyond rule-based models</li>
+<li>Demonstrates feasibility of <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as scalable urban mobility simulation agents</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="social-science-and-opinion-dynamics">Social Science and Opinion Dynamics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#social-science-and-opinion-dynamics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Canonical <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> ABMs form a benchmark suite for the field:
+<ul>
+<li>Schelling segregation model (1969/1971): agents with 30 per cent same-type neighbourhood preference → emergent 75 per cent same-type segregation via relocation; demonstrates that segregation as a social fact has micro-level mechanistic explanation</li>
+<li>Axelrod culture dissemination model (1997): local cultural homogenisation → global cultural diversity despite continuous local interaction — reproduces persistence of cultural groups</li>
+<li>Deffuant-Weisbuch bounded-confidence opinion dynamics (2000): agents adopt averaged opinions only with those within threshold ε → fragmentation into opinion clusters below critical ε ≈ 0.2</li>
+<li>Hegselmann-Krause opinion dynamics (synchronous bounded confidence): phase transition from consensus to polarisation to fragmentation as ε decreases</li>
+<li>Castellano, Fortunato, Loreto voter model (2009 review): wide family of spin-model-derived opinion dynamics ABMs</li>
+</ul>
+</li>
+<li>Modern generative opinion ABMs:
+<ul>
+<li>Replace scalar opinion values with linguistically mediated discourse using <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as agent reasoning engines</li>
+<li>Concordia framework (Google DeepMind, 2024): structured generative <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> with LLM agents and experimental design primitives</li>
+<li>Sentipolis (2025): emotion-aware LLM agents for crisis communication and political simulation</li>
+<li>VirtLab (2025): large-scale team simulation for organisational science</li>
+</ul>
+</li>
+<li>Applications: political polarisation, misinformation spread, norm emergence, rumour propagation, radicalisation pathways, public health communication <a href="../pages/Policy-Simulation" class="internal alias" data-slug="pages/Policy-Simulation">Policy Simulation</a></li>
+</ul>
+</li>
+<li>
+<h3 id="defence-security-and-intelligence">Defence, Security, and Intelligence<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#defence-security-and-intelligence" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Wargaming ABMs simulate adversarial decision-making, logistics friction, and escalation dynamics:
+<ul>
+<li>Agent strategies represent doctrine, resource constraints, and commander risk appetite</li>
+<li>Coalition formation and defection dynamics under changing conditions</li>
+<li>Logistics chain vulnerability analysis and materiel resupply optimisation</li>
+</ul>
+</li>
+<li>Repast HPC (Argonne National Laboratory, DARPA-funded): billion-agent <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> infrastructure for defence scenario analysis at national scale</li>
+<li>Population-centric operations (SOCOM): ABMs of civilian population response to military operations, humanitarian aid distribution, and information operations</li>
+<li>UK DSTL: cyber-attack propagation ABMs on critical infrastructure <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a> graphs; critical mineral supply chain resilience ABMs</li>
+<li>Critical infrastructure cascade failure: power grid, water network, and financial clearing network ABMs simulate how localised failure propagates through interdependent infrastructure under <a href="../pages/Feedback-Loop" class="internal alias" data-slug="pages/Feedback-Loop">Feedback Loop</a> coupling</li>
+</ul>
+</li>
+<li>
+<h3 id="multi-agent-reinforcement-learning-environments">Multi-Agent Reinforcement Learning Environments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multi-agent-reinforcement-learning-environments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>ABM simulation environments serve as the substrate for training and evaluating <a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal alias" data-slug="pages/Multi-Agent-Reinforcement-Learning">Multi-Agent Reinforcement Learning</a> agents:
+<ul>
+<li>Provide realistic, heterogeneous populations of agents with adaptive behaviour as training opponents or co-players</li>
+<li>OpenAI hide-and-seek: multi-agent competition produces emergent tool use and obstacle manipulation behaviours</li>
+<li>DeepMind MeltingPot: suite of ABM-like social dilemma environments for testing cooperative and competitive MARL policies</li>
+<li>StarCraft II Multi-Agent Challenge (SMAC): micromanagement ABM for evaluating decentralised cooperative control</li>
+<li>NetLogo traffic ABMs and pedestrian ABMs serve as environments for model-free <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> policy training</li>
+</ul>
+</li>
+<li>Bidirectional coupling: MARL-trained agent policies can replace hand-coded ABM rules — producing more adaptive, strategically sophisticated agents — and ABM populations provide the heterogeneous multi-agent context in which MARL training occurs</li>
+</ul>
+</li>
+<li>
+<h3 id="generative-ai-simulation-2023-2026">Generative AI Simulation (2023-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#generative-ai-simulation-2023-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The integration of <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> as agent decision engines is the field’s most significant methodological shift since the 1990s</li>
+<li>Park et al. (2023), “Generative Agents: Interactive Simulacra of Human Behavior”, Stanford:
+<ul>
+<li>25 LLM agents in Smallville (simulated social town) exhibit planning, reflection, memory retrieval, and emergent social coordination</li>
+<li>Spontaneous social events (party organisation, information spread, relationship formation) emerge without explicit group-level programming</li>
+<li>Demonstrated LLM agents as a viable, richer alternative to hand-coded rule-based agents for social phenomena</li>
+</ul>
+</li>
+<li>Park et al. (2024): LLM agents simulate 1,052-person survey cohort responses to political attitude questions
+<ul>
+<li>Demonstrates LLM ABMs as synthetic data generators for social science where real data collection is impractical</li>
+</ul>
+</li>
+<li>Scale-out platforms (2024-2025):
+<ul>
+<li>AgentScope (Alibaba): thousands of concurrent LLM agents with structured communication and tool use</li>
+<li>OASIS: social media simulation with millions of LLM-driven user agents</li>
+<li>AgentSociety (2025): study of emergent social dynamics in large LLM-agent populations</li>
+</ul>
+</li>
+<li>Key open challenge (Springer AI Review, 2025): validation is the central unsolved problem
+<ul>
+<li>LLM cultural and linguistic biases reflect training corpus (predominantly US/English-language internet text)</li>
+<li>Stochastic LLM outputs reduce replicability between runs</li>
+<li>Black-box LLM reasoning prevents formal behavioural verification or theoretical analysis</li>
+<li>Calibration against empirical social data is harder than for rule-based ABMs because LLM behaviour is not parameterised in a transparent way</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The theoretical foundations of ABMs span statistical physics, evolutionary <a href="../pages/Game-Theory" class="internal alias" data-slug="pages/Game-Theory">Game Theory</a>, complex systems science, computational social science, ecology, and — most recently — generative AI. Key intellectual lineages:
+<ul>
+<li><strong>Self-organised criticality</strong> (Bak, Tang and Wiesenfeld, 1987): interacting agent populations driven at a constant rate can spontaneously organise to a critical state where event-size distributions follow power laws (1/f noise), providing a unified explanation for the ubiquity of scale-free distributions in earthquakes, avalanches, forest fires, financial crashes, and network cascades. The sandpile model is an ABM in which each agent (sand grain) follows an extremely simple toppling rule, yet the collective exhibits complex, scale-free dynamics — a canonical result for <a href="../Emergence" class="internal" data-slug="Emergence">Emergence</a> in agent systems.</li>
+<li><strong>Evolution of cooperation</strong> (Axelrod, 1984): Axelrod’s computer tournaments showed that in an iterated Prisoner’s Dilemma environment with a heterogeneous population of strategies, the Tit-for-Tat rule (cooperate on first move, then copy opponent’s previous move) outperforms sophisticated strategies including defectors, establishing that cooperation can emerge in populations of self-interested agents through reciprocal altruism. Extensions to spatially structured populations and evolving strategies via <a href="../pages/Genetic-Algorithm" class="internal alias" data-slug="pages/Genetic-Algorithm">Genetic Algorithm</a> (Nowak and May, 1992) showed cooperation is further enhanced when agents interact locally — a direct bridge to spatial ABMs and <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a> results on cooperation dynamics.</li>
+<li><strong>Complex adaptive systems</strong> (Holland, 1992; 1995): Holland’s formal characterisation of CAS identified seven foundational properties — aggregation, non-linearity, flows, diversity, tagging, internal models, and building blocks — all of which are directly instantiated in ABMs. His work on classifier systems and the genetic algorithm provided formal mechanisms for adaptive agent strategy evolution, laying groundwork for <a href="../pages/Reinforcement-Learning" class="internal alias" data-slug="pages/Reinforcement-Learning">Reinforcement Learning</a> in agents.</li>
+<li><strong>Sugarscape</strong> (Epstein and Axtell, 1996): agents on a two-resource (sugar, spice) landscape that exhibit heterogeneous vision radii and metabolic rates produce emergent wealth distributions following Pareto’s law (power-law tails), seasonal migration patterns, trade dynamics with endogenous prices, cultural group formation, and epidemic spread — demonstrating that a rich suite of social macro-phenomena can be “grown” computationally from a small set of micro-rules. This is the canonical existence proof for ABM as a social science methodology.</li>
+<li><strong>Generative agents</strong> (Park et al., Stanford, 2023): LLM-driven agents in a simulated social environment exhibit planning, reflection, memory retrieval, and emergent social coordination (surprise birthday party, information spreading, social relationship formation) without explicit programming of these behaviours — demonstrating that <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> can serve as agent engines that produce richer, more human-like <a href="../Emergence" class="internal" data-slug="Emergence">Emergence</a> than rule-based approaches, at the cost of computational expense and reduced interpretability.</li>
+</ul>
+</li>
+<li>The Journal of Artificial Societies and Social Simulation (JASSS, University of Surrey, founded 1998) is the primary peer-reviewed venue for <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> ABMs, publishing over 750 papers. The ODD (Overview, Design concepts, Details) protocol (Grimm et al., 2006; updated 2020) provides a community standard for model description, addressing the reproducibility crisis endemic to ABM research: many published models cannot be replicated from their paper descriptions alone, requiring author correspondence. The 2020 ODD update added pattern-oriented modelling (POM) elements and multi-level structure documentation. The CoMSES/OpenABM repository (Arizona State University) applies FAIR data principles to ABM code publication and peer-review, requiring machine-readable model descriptions, test datasets, and version tracking. The Journal of Economic Dynamics and Control, Ecological Modelling, PNAS, Complexity, and Nature Human Behaviour publish ABMs across their respective domains. Key interdisciplinary venues include the AAMAS (Autonomous Agents and Multi-Agent Systems) conference series, the ESSA (European Social Simulation Association) annual meeting, and the Winter Simulation Conference.</li>
+<li>Key methodological advances since 2015 include: <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> surrogate models for fast ABM meta-calibration (Lamperti et al., 2018, using neural networks trained on ABM ensemble runs to create emulators orders of magnitude faster than the ABM itself for sensitivity analysis and optimisation); approximate Bayesian computation (ABC) for likelihood-free inference of ABM parameters from observational data without a tractable likelihood function; differentiable ABM frameworks (ABMax in JAX, 2025; grad-ABM; PyTorch-based differentiable simulation) enabling gradient-descent calibration; Gaussian process surrogate (metamodelling) methods applying the Conti-O’Hagan design-of-experiments framework to ABM output surfaces; formal verification of emergent properties using temporal logic model checking applied to agent rule sets; and adaptive <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a> embedded ABMs where agent interaction topology co-evolves with agent states. The epidemiological ABM sub-field generated the Epiabm framework (Cambridge, 2022), differentiable epidemic ABMs (Chopra et al., 2023), and geo-coded spatial ABMs at the local authority level for pandemic response planning.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The ABM software ecosystem in 2026 is large and stratified. <strong>NetLogo</strong> (Northwestern University) remains the dominant academic and educational platform with over 400,000 registered users; NetLogo 7 (in development) targets improved performance and web deployment. <strong>Mesa</strong> (Python, 3.0 released 2025) is the data science community’s standard, integrating with NumPy, Pandas, NetworkX, and Jupyter; it supports batch-run APIs and pluggable schedulers. <strong>Agents.jl</strong> (Julia) provides the best CPU throughput among interpreted-language frameworks. <strong>FLAME GPU 2</strong> (University of Sheffield) achieves GPU throughput approximately 1,000x faster than NetLogo and 18x faster than Agents.jl in published benchmarks (Boids, Schelling models), enabling billion-agent simulations on a single NVIDIA A100. <strong>AnyLogic</strong> dominates commercial deployment, combining ABM with <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a> and <a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a> in a hybrid environment used by logistics firms, defence contractors, and healthcare systems globally. <strong>krABMaga</strong> (Rust-based) demonstrated superior multi-core CPU scalability over Python Mesa, Julia Agents.jl, NetLogo, and Java MASON in 2024 published benchmarks.</li>
+<li>Differentiable ABM frameworks emerged as a major 2025-2026 development: <strong>ABMax</strong> (JAX-based, 2025) makes agent transition functions differentiable, enabling gradient-descent calibration and probabilistic inference over agent parameters orders of magnitude faster than <a href="../pages/Monte-Carlo-Simulation" class="internal alias" data-slug="pages/Monte-Carlo-Simulation">Monte Carlo Simulation</a> sweeps. <strong>AMBER</strong> (Columnar architecture, 2025/2026) brings a columnar data layout to Python ABM for cache-efficient large-scale execution.</li>
+<li>Generative ABM has become a distinct sub-field. Google DeepMind’s <strong>Concordia</strong> framework (2024) provides a library for LLM-driven <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> with structured experimental design. <strong>AgentSociety</strong> (2025) demonstrates large-scale societal simulation with LLM agents. <strong>GATSim</strong> (2025/2026) applies generative agents to urban mobility simulation. Validation challenges are recognised as acute: a 2025 Springer Nature AI Review paper identified validation as the “central challenge” for generative ABMs, given LLMs’ cultural biases, black-box reasoning, and stochastic outputs.</li>
+<li>Industry applications are quantifiably significant. ABM-based supply chain <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> deployments report: 40 per cent improvement in demand forecasting accuracy, 30 per cent faster disruption response times, and 20 per cent revealed capacity gaps in stress-testing (Debales AI, 2025; Taylor and Francis, 2026). ABM layers within digital twin architectures for smart cities, factory floors, and financial markets are mainstream in 2026 among large enterprises.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="imperial-college-london">Imperial College London<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#imperial-college-london" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>CovidSim ABM (MRC Centre for Global Infectious Disease Analysis, Neil Ferguson’s group):
+<ul>
+<li>Most consequential UK ABM policy deployment in recent history</li>
+<li>Report 9 (16 March 2020): projected approximately 510,000 UK deaths under unmitigated SARS-CoV-2 spread</li>
+<li>Directly influenced the UK government’s national lockdown announcement on 23 March 2020</li>
+<li>Built on an earlier 2005 influenza pandemic ABM, demonstrating <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a> ABMs as critical national infrastructure</li>
+</ul>
+</li>
+<li>Department of Computing: active research in autonomous agents, <a href="../pages/Multi-Agent-Systems" class="internal alias" data-slug="pages/Multi-Agent-Systems">Multi-Agent Systems</a>, and agentic AI deployment</li>
+<li>Thomson Reuters-Imperial Frontier AI Lab (December 2025): covers agent-based and multi-agent reasoning applications in legal and financial contexts</li>
+<li>Lenovo London AI Technology Centre (White City Deep Tech Campus, 2025): focuses on foundation models, agentic AI, and real-world deployment of intelligent systems</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-sheffield">University of Sheffield<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-sheffield" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>FLAME GPU (Paul Richmond and colleagues, Department of Computer Science):
+<ul>
+<li>Globally distinctive UK contribution to ABM computational infrastructure</li>
+<li>FLAME GPU 2: approximately 1,000x faster than NetLogo, 18x faster than Agents.jl (Boids and Schelling benchmarks)</li>
+<li>Enables billion-agent simulations on a single NVIDIA A100 GPU</li>
+<li>Published with NVIDIA endorsement; widely adopted for large-scale <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a>, <a href="../pages/Crowd-Simulation" class="internal alias" data-slug="pages/Crowd-Simulation">Crowd Simulation</a>, and <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> applications</li>
+<li>Directly enables real-time agent-based <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> layers requiring sub-second update cycles</li>
+</ul>
+</li>
+<li>Natural Robotics Lab (Roderich Gross): decentralised <a href="../pages/Swarm-Intelligence" class="internal alias" data-slug="pages/Swarm-Intelligence">Swarm Intelligence</a> and supervisory control theory for robot swarms — relevant to distributed ABM agent coordination</li>
+<li>AMRC (Advanced Manufacturing Research Centre) Sheffield: industrial ABM applications in production scheduling, predictive maintenance, and manufacturing process optimisation</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-edinburgh">University of Edinburgh<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-edinburgh" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Active in <a href="../pages/Multi-Agent-Systems" class="internal alias" data-slug="pages/Multi-Agent-Systems">Multi-Agent Systems</a> theory, agent-based <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a>, and multi-agent planning</li>
+<li>Co-led UK Multi-Agent Systems Symposium 2025 with the Alan Turing Institute and King’s College London</li>
+<li>Lenovo AI Technology Centre opening in Edinburgh in 2025/2026: expanding regional AI research capacity for agent-based AI research</li>
+<li>Research spanning formal verification of agent properties, multi-agent coordination protocols, and social ABM applications in policy analysis</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-leeds">University of Leeds<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-leeds" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Nick Malleson (Professor of Spatial Science, Centre for Spatial Analysis and Policy, School of Geography):
+<ul>
+<li>Leads the most active UK urban ABM research group</li>
+<li>Develops real-time pedestrian dynamics ABMs fused with anonymised CCTV tracking data and GPS mobility traces</li>
+<li>Embedded within the Alan Turing Institute’s Urban Analytics programme</li>
+<li>Work directly informs <a href="../pages/Urban-Computing" class="internal alias" data-slug="pages/Urban-Computing">Urban Computing</a> and <a href="../pages/Policy-Simulation" class="internal alias" data-slug="pages/Policy-Simulation">Policy Simulation</a> for UK city management and emergency response</li>
+</ul>
+</li>
+<li>Institute for Data Analytics (IDA, Leeds): brings ABM into contact with data engineering and machine learning pipelines</li>
+<li>Proximity to major Northern England logistics and retail industries with supply-chain ABM and <a href="../pages/Supply-Chain-Optimisation" class="internal alias" data-slug="pages/Supply-Chain-Optimisation">Supply Chain Optimisation</a> demand</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-manchester">University of Manchester<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-manchester" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>PhD in Multi-Scale Modelling (School of Engineering, 2026 entry): addresses ABM across biological, engineering, and social domains</li>
+<li>Interdisciplinary complex systems research spanning materials science, soft matter, and <a href="../Computational-Social-Science" class="internal alias" data-slug="Computational-Social-Science">Computational Social Science</a> applications</li>
+<li>Centre for Policy Modelling (CPM, Manchester Metropolitan University, founded by Nigel Gilbert and colleagues):
+<ul>
+<li>One of Europe’s earliest dedicated ABM research centres, active since the early 1990s</li>
+<li>Pioneered the use of <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> ABMs for evidence-based public policy analysis in the UK</li>
+<li>Historically significant Northern England contribution to the international ABM community (alongside JASSS publication)</li>
+</ul>
+</li>
+<li>Manchester’s AI and data science commercial ecosystem (Peak AI, ThoughtRiver, and others) provides industrial ABM application contexts</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-cambridge">University of Cambridge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-cambridge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Epiabm project (Cambridge Engineering Department, 2022): open-source Python and C++ <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a> ABM framework at local-authority spatial resolution
+<ul>
+<li>Supports national pandemic preparedness and epidemic response ABM infrastructure</li>
+<li>Integrates with UK Health Security Agency (UKHSA) data pipelines</li>
+</ul>
+</li>
+<li>Engineering Design Centre: individual-based modelling of complex engineering systems and socio-technical systems</li>
+</ul>
+</li>
+<li>
+<h3 id="university-of-nottingham">University of Nottingham<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#university-of-nottingham" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Biomedical ABMs: cancer growth, tumour invasion, and immune system response using individual-based modelling frameworks</li>
+<li>Ecological and conservation ABMs: species population dynamics, habitat fragmentation</li>
+<li>Participant in the Epiabm consortium for epidemic <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a> ABM development</li>
+</ul>
+</li>
+<li>
+<h3 id="alan-turing-institute-london">Alan Turing Institute (London)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alan-turing-institute-london" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Coordinates UK-wide ABM research through Urban Analytics, Health, and Defence and Security programmes</li>
+<li>Connects academic ABM groups to government advisory roles (NHS, Cabinet Office, DSTL)</li>
+<li>Urban Analytics programme: national hub for city-scale ABM and data fusion, co-ordinating Leeds, Edinburgh, and London groups</li>
+<li>Partnership with ONS (Office for National Statistics) on synthetic population ABMs for census data quality assessment</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="differentiable-and-probabilistic-abms">Differentiable and Probabilistic ABMs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#differentiable-and-probabilistic-abms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Convergence of ABM with probabilistic programming (Pyro, NumPyro, Stan) and differentiable frameworks (JAX, PyTorch):
+<ul>
+<li>New class of inference-capable ABMs where parameters are inferred from data via gradient descent or variational inference</li>
+<li>ABMax (2025, JAX): differentiable ABM achieving gradient-based calibration through automatic differentiation of the simulation graph</li>
+<li>Reduces calibration time from weeks of <a href="../pages/Monte-Carlo-Simulation" class="internal alias" data-slug="pages/Monte-Carlo-Simulation">Monte Carlo Simulation</a> sweeps to hours of gradient-descent</li>
+<li>Enables Bayesian posterior characterisation of agent parameters — producing uncertainty intervals over emergent model predictions</li>
+<li>Approximate Bayesian Computation (ABC) and Sequential Monte Carlo (SMC-ABC) are current state of the art for likelihood-free inference over ABM parameters</li>
+</ul>
+</li>
+<li>Gaussian process metamodels trained on ABM ensemble runs provide fast surrogate surfaces for global <a href="../pages/Sensitivity-Analysis" class="internal alias" data-slug="pages/Sensitivity-Analysis">Sensitivity Analysis</a> and optimisation</li>
+</ul>
+</li>
+<li>
+<h3 id="generative-abm-validation-and-reproducibility">Generative ABM Validation and Reproducibility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#generative-abm-validation-and-reproducibility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>The 2025 Springer AI Review (“Validation is the central challenge”) identifies core unsolved issues:
+<ul>
+<li>Behavioural validity: do LLM agents replicate known social phenomena (Schelling segregation, Deffuant opinion dynamics) with correct statistics?</li>
+<li>Cross-simulation reproducibility: stochastic LLM outputs require distribution-level rather than point-level comparison</li>
+<li>Cultural and linguistic bias in LLM training corpora distorts simulated population behaviour</li>
+</ul>
+</li>
+<li>Research agenda (2026-2030):
+<ul>
+<li>Standardised behavioural benchmark suite for LLM agents analogous to ABM ODD protocol</li>
+<li>Hybrid architectures: rule-based agents for high-volume routine decisions, LLM agents for rare, context-sensitive events</li>
+<li>Formal behavioural specification of LLM agent policies using temporal logic — enabling at least partial verification</li>
+<li>Calibration protocols for generative ABMs using revealed preference data and survey response comparison</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="real-time-and-edge-deployed-abms">Real-Time and Edge-Deployed ABMs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#real-time-and-edge-deployed-abms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Demand for continuously calibrated <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> layers drives ABM execution to operational timescales:
+<ul>
+<li>Sub-second update cycles required for real-time urban mobility and factory floor twins</li>
+<li>FLAME GPU-class hardware (NVIDIA A100, H100) enables billion-agent real-time execution</li>
+<li>Edge inference accelerators (NVIDIA Jetson, Intel Gaudi) enable distributed ABM execution near IoT data sources</li>
+</ul>
+</li>
+<li>Data assimilation methods from weather forecasting adapt to ABM:
+<ul>
+<li>Ensemble Kalman Filter (EnKF) applied to ABM state estimation from live sensor data</li>
+<li>Particle filter methods for sequential Bayesian updating of ABM state given streaming observations</li>
+<li>Each sensor reading updates the ensemble of running ABM replicates to maintain calibration</li>
+</ul>
+</li>
+<li>This convergence makes ABMs a real-time operational tool rather than an offline analysis tool</li>
+</ul>
+</li>
+<li>
+<h3 id="multi-scale-and-hierarchical-abms">Multi-Scale and Hierarchical ABMs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multi-scale-and-hierarchical-abms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Combining agent-level microstructure with meso-level <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a> dynamics and macro-level aggregate constraints:
+<ul>
+<li>Addresses the long-standing tension between computational tractability and representational fidelity</li>
+<li>Hierarchical ABMs coupling population-level <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a> with agent-level heterogeneity for key sub-populations</li>
+<li>Example: pandemic ABM where the general population follows SEIR dynamics but healthcare workers, care home residents, and super-spreaders are individually modelled</li>
+<li>Multi-resolution ABMs adaptively refine agent representation in high-interest regions and coarsen elsewhere</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="abm-as-marl-environment-and-ai-governance-tool">ABM as MARL Environment and AI Governance Tool<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#abm-as-marl-environment-and-ai-governance-tool" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>As <a href="../pages/Multi-Agent-Reinforcement-Learning" class="internal alias" data-slug="pages/Multi-Agent-Reinforcement-Learning">Multi-Agent Reinforcement Learning</a> matures, ABM substrates become the primary policy training environment:
+<ul>
+<li>ABM provides realistic, heterogeneous populations of adaptive agents for MARL training — improving policy robustness and transfer</li>
+<li>Bidirectional coupling: MARL-trained agent policies can replace hand-coded ABM rules; ABM populations provide training context</li>
+<li>OpenAI hide-and-seek, DeepMind MeltingPot, and SMAC are early instances of this MARL-ABM integration pattern</li>
+</ul>
+</li>
+<li>AI governance ABMs model heterogeneous AI adopter populations, regulatory bodies, and affected communities:
+<ul>
+<li><a href="../pages/Innovation-Diffusion" class="internal alias" data-slug="pages/Innovation-Diffusion">Innovation Diffusion</a> ABMs of AI tool adoption across sectors — projecting distributional welfare effects under alternative policy scenarios</li>
+<li>Labour market displacement ABMs under automation — informing retraining policy and social safety net design</li>
+<li>Safety incident propagation ABMs for AI systems deployed in critical infrastructure</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="hypergraph-and-higher-order-interaction-abms">Hypergraph and Higher-Order Interaction ABMs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hypergraph-and-higher-order-interaction-abms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Beyond pairwise <a href="../pages/Network-Science" class="internal alias" data-slug="pages/Network-Science">Network Science</a> edges to hyperedges capturing simultaneous group interactions:
+<ul>
+<li>Group opinion formation (quorum effects, committee decision dynamics)</li>
+<li>Higher-order contagion (infection requires simultaneous contact with multiple infectious individuals)</li>
+<li>Multi-party biological signalling (quorum sensing in bacterial populations)</li>
+</ul>
+</li>
+<li>Hypergraph-embedded ABMs capture social phenomena invisible to pairwise network models</li>
+<li>Connection to topological data analysis (persistent homology of interaction patterns) as a novel <a href="../pages/Sensitivity-Analysis" class="internal alias" data-slug="pages/Sensitivity-Analysis">Sensitivity Analysis</a> tool</li>
+</ul>
+</li>
+<li>
+<h3 id="federated-and-privacy-preserving-abms">Federated and Privacy-Preserving ABMs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#federated-and-privacy-preserving-abms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Training and calibrating ABMs on distributed sensitive data without centralisation:
+<ul>
+<li>Hospital records (NHS DigiTrials, UK GDPR compliance): federated calibration of <a href="../pages/Epidemiological-Modelling" class="internal alias" data-slug="pages/Epidemiological-Modelling">Epidemiological Modelling</a> ABMs across NHS trusts</li>
+<li>Financial transaction data: federated systemic risk ABMs using bank-level proprietary data under PRA oversight</li>
+<li>Urban mobility data: anonymised GPS traces under GDPR for <a href="../pages/Urban-Computing" class="internal alias" data-slug="pages/Urban-Computing">Urban Computing</a> ABMs</li>
+</ul>
+</li>
+<li>Federated learning protocols (FedAvg, FedProx, Flower framework) adapted to ABM parameter fitting:
+<ul>
+<li>Local ABM sub-models calibrated to local data, global ABM parameters aggregated across participants</li>
+<li>Differential privacy noise injection to prevent re-identification from calibrated parameters</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="formal-verification-of-emergent-properties">Formal Verification of Emergent Properties<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-verification-of-emergent-properties" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Applying model checking (PRISM, SPIN) and formal methods to provide provable guarantees about emergent ABM behaviour:
+<ul>
+<li>Temporal logic specification: “it is always the case that, after 100 time steps, the fraction of infected agents is less than p under vaccination strategy V”</li>
+<li>Stochastic model checking: probabilistic guarantees over the ensemble distribution of outcomes</li>
+<li>Critical for safety-relevant ABM applications: aviation evacuation ABMs (FAR 25.803 certification), nuclear plant emergency response ABMs, healthcare capacity planning ABMs used in national resilience planning</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026-1">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="software-ecosystem">Software Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>NetLogo</strong> (Northwestern University, 400,000+ registered users): dominant academic and educational ABM platform with built-in BehaviorSpace for parameter sweeps and <a href="../pages/Sensitivity-Analysis" class="internal alias" data-slug="pages/Sensitivity-Analysis">Sensitivity Analysis</a>; limited to single-threaded execution</li>
+<li><strong>Mesa</strong> (Python, Mesa 3.0, 2025): dominant data science community framework integrating with NumPy, NetworkX, Jupyter; approximately 10^6 agent steps/second; suitable for models up to approximately 100,000 agents</li>
+<li><strong>Agents.jl</strong> (Julia): highest CPU throughput among interpreted-language frameworks (approximately 10^8 agent steps/second multi-threaded); approximately 18x faster than FLAME GPU 2 for Schelling benchmark on CPU</li>
+<li><strong>FLAME GPU 2</strong> (University of Sheffield): approximately 1,000x faster than NetLogo, 18x faster than Agents.jl for GPU benchmarks (Boids, Schelling); enables billion-agent simulations on NVIDIA A100; target for real-time <a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a> ABM layers</li>
+<li><strong>AnyLogic</strong> (commercial): uniquely combines ABM, <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a>, and <a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a> in one hybrid environment; dominant industrial platform for logistics, defence, and healthcare applications</li>
+<li><strong>ABMax</strong> (JAX, 2025): differentiable ABM enabling gradient-based calibration via automatic differentiation; GPU-accelerated for large-scale inference</li>
+<li><strong>krABMaga</strong> (Rust, 2024): demonstrated superior multi-core CPU scalability over Mesa, Agents.jl, NetLogo, and MASON in published benchmarks</li>
+<li><strong>AMBER</strong> (Python columnar, 2025): column-oriented agent state layout for cache-efficient large-scale Python ABM execution</li>
+</ul>
+</li>
+<li>
+<h3 id="generative-abm-platforms-2024-2026">Generative ABM Platforms (2024-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#generative-abm-platforms-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Google DeepMind <strong>Concordia</strong> (2024): structured library for LLM-driven <a href="../Social-Simulation" class="internal alias" data-slug="Social-Simulation">Social Simulation</a> with experimental design primitives</li>
+<li><strong>AgentSociety</strong> (2025): large-scale societal simulation with LLM-driven agents; studies human behaviour and emergent social dynamics</li>
+<li><strong>OASIS</strong>: social-media-scale simulation with millions of LLM-driven user agents for information diffusion and opinion formation</li>
+<li><strong>GATSim</strong> (2025/2026, arXiv:2506.23306): city-scale urban mobility simulation using generative LLM agents</li>
+<li>Springer Nature AI Review (2025): identifies validation as the central challenge — LLM cultural biases, stochastic outputs, and black-box reasoning compound ABM calibration difficulty</li>
+</ul>
+</li>
+<li>
+<h3 id="industry-applications">Industry Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industry-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Supply-Chain-Optimisation" class="internal alias" data-slug="pages/Supply-Chain-Optimisation">Supply Chain Optimisation</a>: DHL Resilience360 (ABM stress-testing), Procter and Gamble (25 per cent inventory reduction), ocean carriers (5,000 ABM scenarios/day, 92 per cent delay accuracy)</li>
+<li><a href="../pages/Digital-Twin" class="internal alias" data-slug="pages/Digital-Twin">Digital Twin</a>: agentic digital twin (A-SCDT) architectures in smart cities, factory floors, and financial markets (Taylor and Francis, 2026)</li>
+<li>Healthcare: NHS-linked hospital capacity and pandemic ABMs; Epiabm (Cambridge) for UKHSA planning</li>
+<li>Finance: Bank of England internal ABM for systemic risk; OECD agent-based macro complements to DSGE</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="contrast-with-related-paradigms">Contrast with Related Paradigms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#contrast-with-related-paradigms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<h3 id="abms-vs-system-dynamics">ABMs vs <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#abms-vs-system-dynamics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a> (Forrester, 1961): aggregate stocks and flows via differential equations — fast, analytically tractable, excellent for feedback-dominated systems
+<ul>
+<li>Cannot represent individual heterogeneity, spatial structure, or path-dependent individual histories</li>
+</ul>
+</li>
+<li>ABMs: preserve individual heterogeneity, spatial and network structure, stochasticity, adaptive strategies
+<ul>
+<li>Cost: computationally expensive, analytically intractable, calibration-demanding</li>
+</ul>
+</li>
+<li>Synthesis: AnyLogic hybrid models combine <a href="../pages/System-Dynamics" class="internal alias" data-slug="pages/System-Dynamics">System Dynamics</a> aggregate flows with ABM heterogeneous sub-populations (e.g., SEIR dynamics with ABM healthcare workers in pandemic models)</li>
+</ul>
+</li>
+<li>
+<h3 id="abms-vs-discrete-event-simulation">ABMs vs <a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#abms-vs-discrete-event-simulation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Discrete-Event-Simulation" class="internal alias" data-slug="pages/Discrete-Event-Simulation">Discrete Event Simulation</a> focuses on process flows (queues, resources, activities) — passive entities flowing through predefined process networks
+<ul>
+<li>Natural for operations research: call centres, manufacturing, hospital patient pathways</li>
+</ul>
+</li>
+<li>ABMs give entities autonomy, internal state, and adaptive strategy — active agents making decisions, not passive tokens</li>
+<li>Hybrid DES-ABM: modelling both process flow (patient pathways, DES) and autonomous decision-making (patient preferences, ABM) in healthcare systems</li>
+</ul>
+</li>
+<li>
+<h3 id="abms-vs-multi-agent-systems-ai-engineering">ABMs vs <a href="../pages/Multi-Agent-Systems" class="internal alias" data-slug="pages/Multi-Agent-Systems">Multi-Agent Systems</a> (AI Engineering)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#abms-vs-multi-agent-systems-ai-engineering" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="../pages/Multi-Agent-Systems" class="internal alias" data-slug="pages/Multi-Agent-Systems">Multi-Agent Systems</a> in AI engineering designs, deploys, and coordinates autonomous agents in real-world systems (robotics, LLM orchestration)
+<ul>
+<li>MAS goal: functional, safe, efficient deployed system with provable properties</li>
+<li>ABM goal: scientific model of emergent phenomena for understanding, explanation, and policy testing</li>
+</ul>
+</li>
+<li>Convergence: generative ABMs increasingly use deployed MAS frameworks (LangChain, CrewAI, AutoGen) as agent engines — blurring the scientific simulation/AI deployment boundary</li>
+</ul>
+</li>
+<li>
+<h3 id="abms-vs-equation-based-modelling">ABMs vs <a href="../Equation-Based-Modelling" class="internal alias" data-slug="Equation-Based-Modelling">Equation-Based Modelling</a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#abms-vs-equation-based-modelling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Mathematical models (ODEs, PDEs) assume homogeneous, continuous populations with globally defined dynamics — enabling formal analysis but prohibiting individual-level heterogeneity</li>
+<li>ABMs relax all three assumptions (homogeneity, continuity, global specification) at the cost of computational expense and analytical intractability</li>
+<li>Pattern-oriented modelling (POM, Grimm et al.) uses multiple empirical patterns as constraints for ABM validation, partially compensating for the absence of mathematical analysis</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>[1] Schelling, T.C. (1969). Models of segregation. <em>American Economic Review Papers and Proceedings</em>, 59(2), 488-493.</li>
+<li>[2] Conway, J.H. (1970). The game of life. <em>Scientific American</em>, 223(4), 4-10. (reported by Martin Gardner)</li>
+<li>[3] Reynolds, C.W. (1987). Flocks, herds and schools: A distributed behavioral model. <em>SIGGRAPH Computer Graphics</em>, 21(4), 25-34.</li>
+<li>[4] Axelrod, R. (1984). <em>The Evolution of Cooperation</em>. Basic Books, New York.</li>
+<li>[5] Holland, J.H. (1992). <em>Adaptation in Natural and Artificial Systems</em>. MIT Press, Cambridge MA.</li>
+<li>[6] Epstein, J.M. and Axtell, R.L. (1996). <em>Growing Artificial Societies: Social Science from the Bottom Up</em>. MIT Press, Cambridge MA.</li>
+<li>[7] Epstein, J.M. (1999). Agent-based computational models and generative social science. <em>Complexity</em>, 4(5), 41-60.</li>
+<li>[8] Axelrod, R. (1997). The dissemination of culture: A model with local convergence and global polarisation. <em>Journal of Conflict Resolution</em>, 41(2), 203-226.</li>
+<li>[9] Bak, P., Tang, C. and Wiesenfeld, K. (1987). Self-organized criticality: An explanation of 1/f noise. <em>Physical Review Letters</em>, 59(4), 381.</li>
+<li>[10] Wilensky, U. (1999). NetLogo. Center for Connected Learning and Computer-Based Modeling, Northwestern University. <a href="http://ccl.northwestern.edu/netlogo/" class="external">http://ccl.northwestern.edu/netlogo/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>[11] LeBaron, B., Arthur, W.B. and Palmer, R. (1999). Time series properties of an artificial stock market. <em>Journal of Economic Dynamics and Control</em>, 23(9-10), 1487-1516.</li>
+<li>[12] Grimm, V. et al. (2006). A standard protocol for describing individual-based and agent-based models. <em>Ecological Modelling</em>, 198(1-2), 115-126.</li>
+<li>[13] Grimm, V. and Railsback, S. (2005). <em>Individual-based Modeling and Ecology</em>. Princeton University Press.</li>
+<li>[14] Bonabeau, E. (2002). Agent-based modeling: Methods and techniques for simulating human systems. <em>PNAS</em>, 99(suppl 3), 7280-7287.</li>
+<li>[15] Helbing, D. and Molnar, P. (1995). Social force model for pedestrian dynamics. <em>Physical Review E</em>, 51(5), 4282.</li>
+<li>[16] Ferguson, N.M. et al. (2020). Impact of non-pharmaceutical interventions (NPIs) to reduce COVID-19 mortality and healthcare demand. Imperial College COVID-19 Response Team Report 9.</li>
+<li>[17] Grimm, V. et al. (2020). The ODD protocol for describing agent-based and other simulation models: A second update. <em>JASSS</em>, 23(2), 7.</li>
+<li>[18] Richmond, P. et al. (2010). High performance cellular level agent-based simulation with FLAME for the GPU. <em>Briefings in Bioinformatics</em>, 11(3), 334-347.</li>
+<li>[19] Park, J.S. et al. (2023). Generative agents: Interactive simulacra of human behavior. <em>UIST 2023</em>. Stanford University.</li>
+<li>[20] Park, J.S. et al. (2024). AI agents simulate human responses in social science surveys. <em>Nature Human Behaviour</em> (preprint/publication).</li>
+<li>[21] Lamperti, F., Roventini, A. and Sani, A. (2018). Agent-based model calibration using machine learning surrogates. <em>Journal of Economic Dynamics and Control</em>, 90, 366-389.</li>
+<li>[22] Chopra, A. et al. (2023). Differentiable agent-based epidemiology. <em>AAMAS 2023</em>, London.</li>
+<li>[23] Abar, S. et al. (2017). Agent based modelling and simulation tools: A review of the state-of-art software. <em>Computer Science Review</em>, 24, 13-33.</li>
+<li>[24] Castellano, C., Fortunato, S. and Loreto, V. (2009). Statistical physics of social dynamics. <em>Reviews of Modern Physics</em>, 81(2), 591.</li>
+<li>[25] Validation is the central challenge for generative social simulation (2025). <em>Artificial Intelligence Review</em>, Springer Nature. DOI:10.1007/s10462-025-11412-6.</li>
+<li>[26] LLMs and Generative Agent-Based Models for Complex Systems Research (2024). <em>Humanities and Social Sciences Communications</em>, Nature. DOI:10.1038/s41599-024-03611-3.</li>
+<li>[27] ABMax: A JAX-based Agent-based Modeling Framework (2025). arXiv:2508.16508.</li>
+<li>[28] GATSim: Urban Mobility Simulation with Generative Agents (2025/2026). arXiv:2506.23306.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-396" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#support-and-contrast-axioms" data-for="support-and-contrast-axioms">Support and Contrast Axioms</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#epidemiology-and-public-health" data-for="epidemiology-and-public-health">Epidemiology and Public Health</a></li><li class="depth-1"><a href="#economic-and-financial-modelling" data-for="economic-and-financial-modelling">Economic and Financial Modelling</a></li><li class="depth-1"><a href="#ecology-and-conservation" data-for="ecology-and-conservation">Ecology and Conservation</a></li><li class="depth-1"><a href="#urban-planning-and-pedestrian-dynamics" data-for="urban-planning-and-pedestrian-dynamics">Urban Planning and Pedestrian Dynamics</a></li><li class="depth-1"><a href="#social-science-and-opinion-dynamics" data-for="social-science-and-opinion-dynamics">Social Science and Opinion Dynamics</a></li><li class="depth-1"><a href="#defence-security-and-intelligence" data-for="defence-security-and-intelligence">Defence, Security, and Intelligence</a></li><li class="depth-1"><a href="#multi-agent-reinforcement-learning-environments" data-for="multi-agent-reinforcement-learning-environments">Multi-Agent Reinforcement Learning Environments</a></li><li class="depth-1"><a href="#generative-ai-simulation-2023-2026" data-for="generative-ai-simulation-2023-2026">Generative AI Simulation (2023-2026)</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#imperial-college-london" data-for="imperial-college-london">Imperial College London</a></li><li class="depth-1"><a href="#university-of-sheffield" data-for="university-of-sheffield">University of Sheffield</a></li><li class="depth-1"><a href="#university-of-edinburgh" data-for="university-of-edinburgh">University of Edinburgh</a></li><li class="depth-1"><a href="#university-of-leeds" data-for="university-of-leeds">University of Leeds</a></li><li class="depth-1"><a href="#university-of-manchester" data-for="university-of-manchester">University of Manchester</a></li><li class="depth-1"><a href="#university-of-cambridge" data-for="university-of-cambridge">University of Cambridge</a></li><li class="depth-1"><a href="#university-of-nottingham" data-for="university-of-nottingham">University of Nottingham</a></li><li class="depth-1"><a href="#alan-turing-institute-london" data-for="alan-turing-institute-london">Alan Turing Institute (London)</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#differentiable-and-probabilistic-abms" data-for="differentiable-and-probabilistic-abms">Differentiable and Probabilistic ABMs</a></li><li class="depth-1"><a href="#generative-abm-validation-and-reproducibility" data-for="generative-abm-validation-and-reproducibility">Generative ABM Validation and Reproducibility</a></li><li class="depth-1"><a href="#real-time-and-edge-deployed-abms" data-for="real-time-and-edge-deployed-abms">Real-Time and Edge-Deployed ABMs</a></li><li class="depth-1"><a href="#multi-scale-and-hierarchical-abms" data-for="multi-scale-and-hierarchical-abms">Multi-Scale and Hierarchical ABMs</a></li><li class="depth-1"><a href="#abm-as-marl-environment-and-ai-governance-tool" data-for="abm-as-marl-environment-and-ai-governance-tool">ABM as MARL Environment and AI Governance Tool</a></li><li class="depth-1"><a href="#hypergraph-and-higher-order-interaction-abms" data-for="hypergraph-and-higher-order-interaction-abms">Hypergraph and Higher-Order Interaction ABMs</a></li><li class="depth-1"><a href="#federated-and-privacy-preserving-abms" data-for="federated-and-privacy-preserving-abms">Federated and Privacy-Preserving ABMs</a></li><li class="depth-1"><a href="#formal-verification-of-emergent-properties" data-for="formal-verification-of-emergent-properties">Formal Verification of Emergent Properties</a></li><li class="depth-0"><a href="#current-landscape-2026-1" data-for="current-landscape-2026-1">Current Landscape (2026)</a></li><li class="depth-1"><a href="#software-ecosystem" data-for="software-ecosystem">Software Ecosystem</a></li><li class="depth-1"><a href="#generative-abm-platforms-2024-2026" data-for="generative-abm-platforms-2024-2026">Generative ABM Platforms (2024-2026)</a></li><li class="depth-1"><a href="#industry-applications" data-for="industry-applications">Industry Applications</a></li><li class="depth-0"><a href="#contrast-with-related-paradigms" data-for="contrast-with-related-paradigms">Contrast with Related Paradigms</a></li><li class="depth-1"><a href="#abms-vs-system-dynamics" data-for="abms-vs-system-dynamics">ABMs vs System Dynamics</a></li><li class="depth-1"><a href="#abms-vs-discrete-event-simulation" data-for="abms-vs-discrete-event-simulation">ABMs vs Discrete Event Simulation</a></li><li class="depth-1"><a href="#abms-vs-multi-agent-systems-ai-engineering" data-for="abms-vs-multi-agent-systems-ai-engineering">ABMs vs Multi-Agent Systems (AI Engineering)</a></li><li class="depth-1"><a href="#abms-vs-equation-based-modelling" data-for="abms-vs-equation-based-modelling">ABMs vs Equation-Based Modelling</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

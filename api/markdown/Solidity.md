@@ -1,0 +1,84 @@
+
+Solidity is a statically-typed, curly-brace, contract-oriented programming language designed for writing smart contracts that execute on the Ethereum Virtual Machine (EVM) and EVM-compatible blockchain platforms. Released in 2014 by the Ethereum Foundation, it compiles to EVM bytecode and provides constructs including inheritance, interfaces, libraries, events, function modifiers, and custom error types. The language's semantics are shaped by on-chain execution constraints: every opcode costs gas, state is globally persistent, and deployed code is immutable absent explicit upgrade patterns. Solidity is the dominant language for decentralised finance, non-fungible tokens, and decentralised autonomous organisations, and its security vulnerability surface has driven a parallel industry of formal verification, auditing frameworks, and defensive programming libraries.
+
+- ### Overview
+  - Solidity was conceived in 2014 by Gavin Wood, Christian Reitwiessner, and collaborators within the Ethereum project as a language whose syntax would feel familiar to JavaScript and C++ developers while mapping cleanly onto the EVM's stack-based execution model.
+  - The first stable release appeared in 2016; the 0.8.x series (from late 2020) introduced checked arithmetic by default, eliminating a major class of integer-overflow bugs that had plagued earlier contracts.
+  - The language compiles to [[EVM Bytecode]] via the `solc` compiler, which also produces the [[Application Binary Interface]] (ABI) JSON consumed by client libraries such as ethers.js and web3.py to encode and decode on-chain calls.
+  - Solidity retains overwhelming ecosystem dominance measured by deployed contracts, developer tooling (Hardhat, Foundry, Remix), educational resources, and third-party library ecosystems (OpenZeppelin Contracts, Uniswap V3, Aave), making it the de facto entry point for blockchain application development.
+  - Why it matters: the language is the primary surface through which multi-billion-dollar DeFi protocols, NFT markets, and governance systems are programmed, making its correctness and security properties of systemic financial importance.
+
+- ### Key Components
+  - **State Variables** — persistent on-chain storage of typed values (uint, address, mapping, struct, array) packed into 32-byte EVM storage slots.
+    - Storage layout design directly affects gas cost; packing multiple smaller values into one slot reduces expensive `SSTORE` operations.
+  - **Functions** — callable units of code with visibility specifiers (`public`, `external`, `internal`, `private`) and state-mutability labels (`view`, `pure`, `payable`).
+    - `external` functions use `calldata` for arguments, saving gas relative to `memory` copies.
+  - **Modifiers** — reusable precondition guards (`onlyOwner`, `nonReentrant`) that wrap function bodies using the `_` placeholder, enabling [[Access Control]] patterns.
+  - **Events** — indexed log emissions stored in transaction receipts; far cheaper than storage and used by off-chain indexers (The Graph protocol) to reconstruct state.
+  - **Interfaces and Inheritance** — allow definition of standard API shapes such as [[ERC-20]], [[ERC-721]], and [[ERC-1155]], enabling composable protocol interactions.
+  - **Libraries** — deployed code shared across contracts via `DELEGATECALL`; OpenZeppelin's audited library suite is the industry standard baseline.
+  - **Custom Errors** — introduced in 0.8.4, replacing string `revert` messages with gas-efficient typed errors decoded from the [[Application Binary Interface]].
+  - **Yul / Inline Assembly** — low-level intermediate representation embedded in Solidity for gas-optimal paths and access to EVM primitives not exposed at the high level.
+  - **Constructor** — one-time initialisation function executed at deployment; sets initial state and ownership, often accepting constructor arguments encoded in the deployment transaction.
+  - **Receive / Fallback** — special functions that handle plain Ether transfers and unmatched calldata, crucial for [[Decentralised Finance]] payment flows.
+
+- ### Gas Economics and Constraints
+  - Every EVM [[Opcode]] has a defined gas cost; a transaction reverts if it exhausts the gas limit before completion, returning a partial-execution failure.
+  - Storage writes (`SSTORE`) are among the most expensive operations (20,000 gas for a zero-to-non-zero write); EIP-2929 and EIP-2930 introduced access list-based cost adjustments for cold vs warm storage slots.
+  - Skilled Solidity developers pack multiple values into single 32-byte slots, use `events` instead of storage for data only needed off-chain, and prefer mappings over arrays to avoid iteration costs.
+  - Loop avoidance is critical: unbounded loops can exceed block gas limits, making contracts permanently non-functional for large data sets.
+  - The [[Gas]] metering model creates an economic alignment between computational cost and on-chain resource consumption, functioning as a spam-prevention mechanism and a computational pricing oracle.
+
+- ### Security and Formal Verification
+  - Solidity smart contracts are typically immutable once deployed (absent [[Proxy Pattern]] upgrade architectures), and they control substantial financial assets; consequently, pre-deployment [[Security Audit]] is standard practice.
+  - The 2016 DAO [[Reentrancy Attack]] — exploiting a Solidity contract's failure to update state before calling an external contract — led to a hard fork of Ethereum and remains the canonical cautionary case.
+  - Standard defensive patterns:
+    - **Checks-Effects-Interactions** — validate inputs, update contract state, then call external contracts; prevents reentrancy.
+    - **Re-entrancy Guard** (`nonReentrant` modifier) — mutex flag preventing recursive external calls.
+    - **Pull Payment** — recipients withdraw funds rather than contracts pushing them, isolating failure domains.
+    - **OpenZeppelin Contracts** — community-audited, battle-tested library of standard patterns.
+  - **[[Formal Verification]]** tools provide mathematical correctness guarantees:
+    - **SMTChecker** — integrated into the Solidity compiler; checks assertions, overflow, and underflow against SMT solvers.
+    - **Certora Prover** — commercial tool using temporal logic specifications (CVL) to prove invariants hold across all reachable states.
+    - **Halmos / Echidna / Medusa** — property-based and fuzzing tools that generate adversarial inputs to find edge-case violations.
+  - **[[Unit Testing]]** frameworks: Hardhat (JavaScript/TypeScript), Foundry (Solidity-native tests with fast Rust EVM), Brownie (Python).
+
+- ### Applications and Use Cases
+  - **[[Decentralised Finance]] (DeFi)** — automated market makers (Uniswap, Curve), lending protocols (Aave, Compound), derivatives (Synthetix, dYdX), yield optimisers (Yearn Finance). Core logic encoding interest rate models, liquidity pool mathematics, and liquidation thresholds is written in Solidity.
+  - **[[NFT]] Standards** — [[ERC-721]] (unique tokens) and [[ERC-1155]] (multi-token) implementations power art markets (OpenSea), gaming items, and identity credentials.
+  - **[[DAO]] Governance** — on-chain voting contracts (Governor Bravo, OpenZeppelin Governor) encode proposal, voting, timelock, and execution flows for community governance of protocols.
+  - **[[Token]] Issuance** — [[ERC-20]] contracts are the universal standard for fungible tokens; stablecoins (USDC, DAI), governance tokens (UNI, COMP), and wrapped assets (WETH) are all Solidity contracts.
+  - **Cross-chain Bridges** — locking and minting contracts coordinate asset transfers between chains, interacting with [[Oracle]] feeds to verify cross-chain events.
+  - **[[Zero-Knowledge Proof]] Verifiers** — ZK proof verifier contracts (Groth16, PLONK) are deployed as Solidity; zkSync, Polygon zkEVM, and StarkNet validity proofs are verified on Ethereum via Solidity verifier contracts.
+  - **Identity and Credentials** — ERC-725/735 identity contracts and W3C Verifiable Credential anchoring use Solidity for on-chain registry logic.
+  - **Supply Chain Provenance** — enterprise chains (Polygon, Hyperledger Besu) use Solidity contracts for asset tracking and certification, bridging to [[Blockchain]] audit trails.
+
+- ### Standards and Context
+  - **Ethereum Improvement Proposals (EIPs)** — the standards process that defines token interfaces Solidity must implement; maintained by the Ethereum Foundation and community.
+  - **[[ERC-20]]** (EIP-20) — fungible token interface; the most widely deployed Solidity interface class.
+  - **[[ERC-721]]** (EIP-721) — non-fungible token standard; defines ownership, transfer, and approval methods.
+  - **[[ERC-1155]]** (EIP-1155) — multi-token standard supporting fungible and non-fungible tokens in a single contract.
+  - **EIP-2535 Diamond Standard** — a modular upgrade pattern extending [[Proxy Pattern]] to multi-facet contract architectures.
+  - **solc (Solidity Compiler)** — the reference compiler, maintained by the Ethereum Foundation; emits EVM bytecode and [[Application Binary Interface]] JSON.
+  - **OpenZeppelin Contracts** — de facto standard library of audited Solidity implementations; widely used as the baseline for production deployments.
+  - **Ethereum Foundation** — primary steward of language development; the Solidity team publishes specifications and compiler releases at docs.soliditylang.org.
+  - **EVM-compatible chains** — Polygon, BNB Chain, Avalanche C-Chain, Arbitrum, Optimism, Base, and others accept the same Solidity source and EVM bytecode, amplifying the language's reach beyond Ethereum mainnet.
+  - **Alternative languages** — [[Vyper]] (auditability-focused Python-like language), Fe (Rust-inspired, still experimental), Yul (low-level IR used internally by solc) provide contrast with Solidity's design trade-offs.
+
+- ### Current Landscape (2026)
+  - Solidity 0.8.29 (12 March 2025) shipped experimental EVM Object Format (EOF) support, custom storage-layout specifiers (the "layout at" syntax to relocate contract storage), and initial ethdebug debugging-format output; the EOF backend compiles via IR with the optimiser enabled and provides SWAPN/DUPN access that virtually eliminates "Stack Too Deep" errors.
+  - Solidity 0.8.30 (7 May 2025) was a maintenance release aligned with the Pectra network upgrade, switching the default EVM target from "cancun" to "prague".
+  - The wider ecosystem plan around EOF was disrupted when Ethereum core developers cut EOF from the Fusaka scope after the 28 April 2025 All Core Developers "final decision" call, moving 16 EOF EIPs to "Declined for Inclusion"; Fusaka activated on mainnet on 3 December 2025 with PeerDAS (EIP-7594) as its headline feature, leaving Solidity's experimental EOF/Osaka backend without a near-term live deployment target.
+  - Solidity remains the dominant EVM smart-contract language: 2026 block-explorer analyses put it at roughly 85% of deployed contracts, backed by the largest developer pool and the deepest tooling stack (Foundry, Hardhat, Remix, OpenZeppelin, Slither).
+  - Vyper continues as the main security-first alternative, gaining ground in high-value niches such as custodial bridges and institutional DeFi; its 0.4.0 line introduced a composable module system and the Venom backend, and 2026 benchmarks report Vyper using roughly 8-15% less gas on simple token transfers, keeping competitive pressure on Solidity's audit and gas story.
+  - Open challenges as of 2026 centre on Solidity's large audit surface relative to minimalist languages (delegatecall, inline assembly, inheritance and upgradeable-proxy storage risks), the uncertain future of EOF adoption, and competition from Rust and Move on non-EVM chains for high-throughput and formally verifiable workloads.
+
+- ### References
+  - 1. Solidity Team / Ethereum (2025). Solidity 0.8.29 Release Announcement. https://www.soliditylang.org/blog/2025/03/12/solidity-0.8.29-release-announcement/
+  - 2. Solidity Team / Ethereum (2025). Solidity 0.8.30 Release Announcement. https://www.soliditylang.org/blog/2025/05/07/solidity-0.8.30-release-announcement/
+  - 3. Ethereum Foundation (2025). Fusaka Mainnet Announcement. https://blog.ethereum.org/2025/11/06/fusaka-mainnet-announcement
+  - 4. Ethereum Foundation (2025). Process Improvements (Checkpoint 2 — EOF removed from Fusaka). https://blog.ethereum.org/2025/04/29/checkpoint-2
+  - 5. CryptoChain Blog (2026). Solidity vs Vyper for Secure Smart Contracts: 2026 Comparison. https://www.cryptochainblog.com/smart-contracts/solidity-vs-vyper-secure-smart-contracts-2026-comparison
+
+- ### Provenance
+

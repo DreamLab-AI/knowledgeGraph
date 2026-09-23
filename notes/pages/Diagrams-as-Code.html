@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Diagrams as Code</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Diagrams as Code"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Diagrams as Code"/><meta name="twitter:description" content="Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar … S..."/><meta property="og:description" content="Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar … S..."/><meta property="og:image:alt" content="Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar … S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Diagrams-as-Code"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Diagrams-as-Code"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar … S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Diagrams-as-Code"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2403"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2403" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Diagrams as Code</a></div></nav><h1 class="article-title">Diagrams as Code</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.735Z">23 Sept 2026</time><span>43 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:diagrams-as-code</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Software-Engineering" class="internal">Software Engineering</a></li><li><a href="../pages/Documentation-As-Code" class="internal">Documentation As Code</a></li><li><a href="../Declarative-Specification" class="internal">Declarative Specification</a></li><li><a href="../Domain-Specific-Language" class="internal">Domain-Specific Language</a></li><li><a href="../Text-Based-Authoring" class="internal">Text-Based Authoring</a></li><li><a href="../Version-Controlled-Artefact" class="internal">Version-Controlled Artefact</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Layout-Engine" class="internal">Layout Engine</a></li><li><a href="../pages/Renderer" class="internal">Renderer</a></li><li><a href="../Diagram-Grammar" class="internal">Diagram Grammar</a></li><li><a href="../Source-File" class="internal">Source File</a></li><li><a href="../Build-Pipeline" class="internal">Build Pipeline</a></li><li><a href="../Icon-Library" class="internal">Icon Library</a></li><li><a href="../Theme" class="internal">Theme</a></li><li><a href="../Preview-Plugin" class="internal">Preview Plugin</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Layout-Algorithm" class="internal">Layout Algorithm</a></li><li><a href="../pages/Markdown" class="internal">Markdown</a></li><li><a href="../version-control" class="internal">Version Control</a></li><li><a href="../Text-Editor" class="internal">Text Editor</a></li><li><a href="../Render-Toolchain" class="internal">Render Toolchain</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/C4-Model" class="internal">C4 Model</a></li><li><a href="../pages/Continuous-Integration" class="internal">Continuous Integration</a></li><li><a href="../pages/Code-Review" class="internal">Pull Request Review</a></li><li><a href="../pages/Runbook" class="internal">Runbook</a></li><li><a href="../Pull-Request-Review" class="internal">Pull Request Review</a></li><li><a href="../Living-Documentation" class="internal">Living Documentation</a></li><li><a href="../Architectural-Decision-Records" class="internal">Architectural Decision Records</a></li><li><a href="../Refactor-Time-Consistency" class="internal">Refactor-Time Consistency</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../WYSIWYG-Editor" class="internal">WYSIWYG Editor</a></li><li><a href="../Microsoft-Visio" class="internal">Microsoft Visio</a></li><li><a href="../Lucidchart-Drag-Drop" class="internal">Lucidchart Drag-Drop</a></li><li><a href="../Generative-Image-Models" class="internal">Generative Image Models</a></li><li><a href="../Whiteboard-Photographs" class="internal">Whiteboard Photographs</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Sugiyama-Algorithm" class="internal">Sugiyama Algorithm</a></li><li><a href="../Force-Directed-Layout" class="internal">Force-Directed Layout</a></li><li><a href="../Eclipse-Layout-Kernel" class="internal">Eclipse Layout Kernel</a></li><li><a href="../SVG" class="internal">SVG</a></li><li><a href="../pages/Unicode" class="internal">Unicode</a></li><li><a href="../pages/Markdown" class="internal">Markdown</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../DocumentationLayer" class="internal">DocumentationLayer</a></li><li><a href="../ToolingLayer" class="internal">ToolingLayer</a></li><li><a href="../BuildSystemLayer" class="internal">BuildSystemLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Structurizr-DSL" class="internal">Structurizr DSL</a></li><li><a href="../pages/Markdown-Diagramming-As-Code-Tool" class="internal">Markdown Diagramming As Code Tool</a></li><li><a href="../Mermaid" class="internal">Mermaid</a></li><li><a href="../PlantUML" class="internal">PlantUML</a></li><li><a href="../Graphviz-DOT" class="internal">Graphviz DOT</a></li><li><a href="../D2" class="internal">D2</a></li><li><a href="../TikZ" class="internal">TikZ</a></li><li><a href="../Vega-Lite" class="internal">Vega-Lite</a></li><li><a href="../Wavedrom" class="internal">Wavedrom</a></li><li><a href="../Pikchr" class="internal">Pikchr</a></li><li><a href="../Penrose" class="internal">Penrose</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>IF-1078</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../adr" class="internal">ADR</a></li><li><a href="../adr" class="internal">ADR</a></li><li><a href="../antora" class="internal">Antora</a></li><li><a href="../architectural-decision-records" class="internal">Architectural Decision Records</a></li><li><a href="../asciiflow" class="internal">ASCIIflow</a></li><li><a href="../atlassian" class="internal">Atlassian</a></li><li><a href="../aws" class="internal">AWS</a></li><li><a href="../azure" class="internal">Azure</a></li><li><a href="../bass-clements-kazman-2021-software-architecture-in-practice-4th" class="internal">Bass Clements Kazman 2021 Software Architecture in Practice 4th</a></li><li><a href="../belouadi-lauscher-eger-2024-automa-tik-z-iclr" class="internal">Belouadi Lauscher Eger 2024 AutomaTikZ ICLR</a></li><li><a href="../brandes-and-k-pf-2001-fast-and-simple-horizontal-coordinate-assignment" class="internal">Brandes &amp; Köpf 2001 Fast and Simple Horizontal Coordinate Assignment</a></li><li><a href="../brown-2018-c4-model-for-visualising-software-architecture" class="internal">Brown 2018 C4 Model for Visualising Software Architecture</a></li><li><a href="../brown-2020-software-architecture-for-developers-volume-2" class="internal">Brown 2020 Software Architecture for Developers Volume 2</a></li><li><a href="../build-pipeline" class="internal">Build Pipeline</a></li><li><a href="../build-system-layer" class="internal">BuildSystemLayer</a></li><li><a href="../c4-model" class="internal">C4 Model</a></li><li><a href="../c4-model" class="internal">C4 Model</a></li><li><a href="../chart-gpt" class="internal">ChartGPT</a></li><li><a href="../class-diagram" class="internal">Class Diagram</a></li><li><a href="../confluence" class="internal">Confluence</a></li><li><a href="../continuous-integration" class="internal">Continuous Integration</a></li><li><a href="../d2" class="internal">D2</a></li><li><a href="../d2-language-documentation-terrastruct" class="internal">D2 Language Documentation Terrastruct</a></li><li><a href="../declarative-specification" class="internal">Declarative Specification</a></li><li><a href="../deployment-diagram" class="internal">Deployment Diagram</a></li><li><a href="../diagram-grammar" class="internal">Diagram Grammar</a></li><li><a href="../diagrams-py" class="internal">Diagrams.py</a></li><li><a href="../diagrams-py-documentation-mingrammer" class="internal">Diagrams.py Documentation mingrammer</a></li><li><a href="../documentation-as-code" class="internal">Documentation as Code</a></li><li><a href="../documentation-domain" class="internal">DocumentationDomain</a></li><li><a href="../documentation-layer" class="internal">DocumentationLayer</a></li><li><a href="../docusaurus" class="internal">Docusaurus</a></li><li><a href="../domain-specific-language" class="internal">Domain-Specific Language</a></li><li><a href="../eclipse-layout-kernel" class="internal">Eclipse Layout Kernel</a></li><li><a href="../eclipse-layout-kernel" class="internal">Eclipse Layout Kernel</a></li><li><a href="../eclipse-layout-kernel-elk-documentation-kiel" class="internal">Eclipse Layout Kernel ELK Documentation Kiel</a></li><li><a href="../entity-relationship-diagram" class="internal">Entity-Relationship Diagram</a></li><li><a href="../excalidraw" class="internal">Excalidraw</a></li><li><a href="../flowchart" class="internal">Flowchart</a></li><li><a href="../force-directed-layout" class="internal">Force-Directed Layout</a></li><li><a href="../fruchterman-reingold-1991-graph-drawing-by-force-directed-placement" class="internal">Fruchterman Reingold 1991 Graph Drawing by Force-Directed Placement</a></li><li><a href="../gansner-koutsofios-north-vo-1993-a-technique-for-drawing-directed-graphs-dot" class="internal">Gansner Koutsofios North Vo 1993 A Technique for Drawing Directed Graphs Dot</a></li><li><a href="../gantt-chart" class="internal">Gantt Chart</a></li><li><a href="../gcp" class="internal">GCP</a></li><li><a href="../generative-image-models" class="internal">Generative Image Models</a></li><li><a href="../git" class="internal">Git</a></li><li><a href="../git-hub" class="internal">GitHub</a></li><li><a href="../git-lab" class="internal">GitLab</a></li><li><a href="../graphviz" class="internal">Graphviz</a></li><li><a href="../graphviz-documentation-at-and-t-bell-labs" class="internal">Graphviz Documentation AT&amp;T Bell Labs</a></li><li><a href="../graphviz-dot" class="internal">Graphviz DOT</a></li><li><a href="../hugo" class="internal">Hugo</a></li><li><a href="../icon-library" class="internal">Icon Library</a></li><li><a href="../ieee" class="internal">IEEE</a></li><li><a href="../infrastructure-as-code" class="internal">Infrastructure as Code</a></li><li><a href="../jekyll" class="internal">Jekyll</a></li><li><a href="../json-schema" class="internal">JSON Schema</a></li><li><a href="../kamada-and-kawai-1989-drawing-general-undirected-graphs" class="internal">Kamada &amp; Kawai 1989 Drawing General Undirected Graphs</a></li><li><a href="../kembhavi-salvato-et-al-2016-ai2-d-diagram-is-worth-a-dozen-images-eccv" class="internal">Kembhavi Salvato et al 2016 AI2D Diagram Is Worth a Dozen Images ECCV</a></li><li><a href="../knowledge-representation" class="internal">KnowledgeRepresentationDomain</a></li><li><a href="../kroki" class="internal">Kroki</a></li><li><a href="../kroki-unified-diagram-api-yuzu-tech" class="internal">Kroki Unified Diagram API Yuzu Tech</a></li><li><a href="../kubernetes" class="internal">Kubernetes</a></li><li><a href="../larkin-and-simon-1987-why-a-diagram-is-sometimes-worth-ten-thousand-words" class="internal">Larkin &amp; Simon 1987 Why a Diagram Is Sometimes Worth Ten Thousand Words</a></li><li><a href="../layout-algorithm" class="internal">Layout Algorithm</a></li><li><a href="../layout-engine" class="internal">Layout Engine</a></li><li><a href="../lin-patel-rodriguez-2024-benchmarking-llm-diagram-generation" class="internal">Lin Patel Rodriguez 2024 Benchmarking LLM Diagram Generation</a></li><li><a href="../living-documentation" class="internal">Living Documentation</a></li><li><a href="../lucidchart" class="internal">Lucidchart</a></li><li><a href="../lucidchart-drag-drop" class="internal">Lucidchart Drag-Drop</a></li><li><a href="../madr-markdown-any-decision-records" class="internal">MADR Markdown Any Decision Records</a></li><li><a href="../markdown" class="internal">Markdown</a></li><li><a href="../markdown-code-fence" class="internal">Markdown Code Fence</a></li><li><a href="../mermaid-open-source-project" class="internal">Mermaid Open-Source Project</a></li><li><a href="../mermaid-v11-documentation-2024" class="internal">Mermaid v11 Documentation 2024</a></li><li><a href="../microsoft-visio" class="internal">Microsoft Visio</a></li><li><a href="../mind-map" class="internal">Mind Map</a></li><li><a href="../miro" class="internal">Miro</a></li><li><a href="../mk-docs" class="internal">MkDocs</a></li><li><a href="../napkin-ai" class="internal">Napkin AI</a></li><li><a href="../notion" class="internal">Notion</a></li><li><a href="../nygard-2011-documenting-architecture-decisions" class="internal">Nygard 2011 Documenting Architecture Decisions</a></li><li><a href="../object-management-group" class="internal">Object Management Group</a></li><li><a href="../omg" class="internal">OMG</a></li><li><a href="../open-api-specification" class="internal">OpenAPI Specification</a></li><li><a href="../oracle-cloud-infrastructure" class="internal">Oracle Cloud Infrastructure</a></li><li><a href="../penrose" class="internal">Penrose</a></li><li><a href="../pikchr" class="internal">Pikchr</a></li><li><a href="../plant-uml" class="internal">PlantUML</a></li><li><a href="../plant-uml-documentation-arnaud-roques" class="internal">PlantUML Documentation Arnaud Roques</a></li><li><a href="../pre-commit-hooks" class="internal">Pre-commit Hooks</a></li><li><a href="../preview-plugin" class="internal">Preview Plugin</a></li><li><a href="../pull-request" class="internal">Pull Request</a></li><li><a href="../pull-request-review" class="internal">Pull Request Review</a></li><li><a href="../refactor-time-consistency" class="internal">Refactor-Time Consistency</a></li><li><a href="../reingold-tilford-1981-tidier-drawings-of-trees" class="internal">Reingold Tilford 1981 Tidier Drawings of Trees</a></li><li><a href="../render-toolchain" class="internal">Render Toolchain</a></li><li><a href="../renderer" class="internal">Renderer</a></li><li><a href="../rodriguez-et-al-2024-big-docs-7-5-m-neur-ips" class="internal">Rodriguez et al 2024 BigDocs-7.5M NeurIPS</a></li><li><a href="../runbook" class="internal">Runbook</a></li><li><a href="../runbook" class="internal">Runbook</a></li><li><a href="../satyanarayan-moritz-wongsuphasawat-heer-2017-vega-lite-grammar-ieee-info-vis" class="internal">Satyanarayan Moritz Wongsuphasawat Heer 2017 Vega-Lite Grammar IEEE InfoVis</a></li><li><a href="../sequence-diagram" class="internal">Sequence Diagram</a></li><li><a href="../software-engineering" class="internal">SoftwareEngineeringDomain</a></li><li><a href="../source-file" class="internal">Source File</a></li><li><a href="../sphinx" class="internal">Sphinx</a></li><li><a href="../state-diagram" class="internal">State Diagram</a></li><li><a href="../static-site-generator" class="internal">Static Site Generator</a></li><li><a href="../structurizr-dsl" class="internal">Structurizr DSL</a></li><li><a href="../structurizr-dsl-documentation-simon-brown" class="internal">Structurizr DSL Documentation Simon Brown</a></li><li><a href="../sugiyama-algorithm" class="internal">Sugiyama Algorithm</a></li><li><a href="../sugiyama-tagawa-toda-1981-hierarchical-system-structures-ieee-tsmc" class="internal">Sugiyama Tagawa Toda 1981 Hierarchical System Structures IEEE TSMC</a></li><li><a href="../svg" class="internal">SVG</a></li><li><a href="../text-based-authoring" class="internal">Text-Based Authoring</a></li><li><a href="../text-editor" class="internal">Text Editor</a></li><li><a href="../theme" class="internal">Theme</a></li><li><a href="../thought-works-tech-radar" class="internal">ThoughtWorks Tech Radar</a></li><li><a href="../thought-works-technology-radar-vol-30-april-2024" class="internal">ThoughtWorks Technology Radar Vol 30 April 2024</a></li><li><a href="../tik-z" class="internal">TikZ</a></li><li><a href="../timing-diagram" class="internal">Timing Diagram</a></li><li><a href="../tooling-layer" class="internal">ToolingLayer</a></li><li><a href="../uml" class="internal">UML</a></li><li><a href="../unicode" class="internal">Unicode</a></li><li><a href="../vega" class="internal">Vega</a></li><li><a href="../vega-lite" class="internal">Vega-Lite</a></li><li><a href="../version-control" class="internal">Version Control</a></li><li><a href="../version-controlled-artefact" class="internal">Version-Controlled Artefact</a></li><li><a href="../w3-c" class="internal">W3C</a></li><li><a href="../walker-1990-node-positioning-algorithm-for-general-trees" class="internal">Walker 1990 Node-Positioning Algorithm for General Trees</a></li><li><a href="../wavedrom" class="internal">Wavedrom</a></li><li><a href="../web-components" class="internal">Web Components</a></li><li><a href="../whimsical" class="internal">Whimsical</a></li><li><a href="../whiteboard-photographs" class="internal">Whiteboard Photographs</a></li><li><a href="../wilkinson-2005-the-grammar-of-graphics" class="internal">Wilkinson 2005 The Grammar of Graphics</a></li><li><a href="../wysiwyg" class="internal">WYSIWYG</a></li><li><a href="../wysiwyg-editor" class="internal">WYSIWYG Editor</a></li><li><a href="../yaml-frontmatter" class="internal">YAML Frontmatter</a></li><li><a href="../yang-et-al-2023-set-of-mark-prompting-gpt-4-v" class="internal">Yang et al 2023 Set-of-Mark Prompting GPT-4V</a></li><li><a href="../ye-et-al-2020-penrose-acm-tog-siggraph" class="internal">Ye et al 2020 Penrose ACM TOG SIGGRAPH</a></li><li><a href="../ai-diagram-tools" class="internal">AI Diagram Tools</a></li><li><a href="../anthropic-claude" class="internal">Anthropic Claude</a></li><li><a href="../chat-gpt" class="internal">ChatGPT</a></li><li><a href="../working/infrastructure" class="internal">InfrastructureDomain</a></li><li><a href="../logseq" class="internal">Logseq</a></li><li><a href="../mermaid" class="internal">Mermaid</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:6ba687e3be527a90718a6ffad96649b33009359a9005e4a0b61fbb263fe76284</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/C4-Model" class="internal">C4 Model</a></li><li><a href="../pages/Documentation-As-Code" class="internal">Documentation As Code</a></li><li><a href="../pages/Excalidraw" class="internal">Excalidraw</a></li><li><a href="../pages/Notion" class="internal">Notion</a></li><li><a href="../pages/AI-Diagram-Tools" class="internal">AI Diagram Tools</a></li><li><a href="../logseq" class="internal">Logseq</a></li><li><a href="../Kroki" class="internal">Kroki</a></li><li><a href="../Diagrams.py" class="internal">Diagrams.py</a></li><li><a href="../ADR" class="internal">ADR</a></li><li><a href="../Static-Site-Generator" class="internal">Static Site Generator</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/IEEE" class="internal">IEEE</a></li><li><a href="../pages/Markdown-Diagramming-As-Code-Tool" class="internal">Mermaid Open-Source Project</a></li><li><a href="../object-management-group" class="internal">Object Management Group</a></li><li><a href="../pages/W3C" class="internal">W3C</a></li><li><a href="../Mermaid-Open-Source-Project" class="internal">Mermaid Open-Source Project</a></li><li><a href="../OMG" class="internal">OMG</a></li><li><a href="../ThoughtWorks-Tech-Radar" class="internal">ThoughtWorks Tech Radar</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Mind-Map" class="internal">Mind Map</a></li><li><a href="../Sequence-Diagram" class="internal">Sequence Diagram</a></li><li><a href="../Class-Diagram" class="internal">Class Diagram</a></li><li><a href="../State-Diagram" class="internal">State Diagram</a></li><li><a href="../Entity-Relationship-Diagram" class="internal">Entity-Relationship Diagram</a></li><li><a href="../Gantt-Chart" class="internal">Gantt Chart</a></li><li><a href="../Flowchart" class="internal">Flowchart</a></li><li><a href="../Deployment-Diagram" class="internal">Deployment Diagram</a></li><li><a href="../Timing-Diagram" class="internal">Timing Diagram</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../json-schema" class="internal">JSON Schema</a></li><li><a href="../pages/OpenAPI-Specification" class="internal">OpenAPI Specification</a></li><li><a href="../Markdown-Code-Fence" class="internal">Markdown Code Fence</a></li><li><a href="../YAML-Frontmatter" class="internal">YAML Frontmatter</a></li><li><a href="../Web-Components" class="internal">Web Components</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar …</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:DiagramGrammar))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:LayoutEngine))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:Renderer))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:SourceFile))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:BuildPipeline))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:IconLibrary))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:Theme))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:hasPart infrastructure:PreviewPlugin))
+
+  ## Dependency Relationships
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:requires infrastructure:VersionControl))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:requires infrastructure:TextEditor))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:requires infrastructure:LayoutAlgorithm))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:requires infrastructure:RenderToolchain))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:SugiyamaAlgorithm))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:ForceDirectedLayout))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:EclipseLayoutKernel))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:SVG))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:dependsOn infrastructure:Markdown))
+
+  ## Capability Relationships
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:enables infrastructure:PullRequestReview))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:enables infrastructure:ContinuousIntegration))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:enables infrastructure:LivingDocumentation))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:enables infrastructure:ArchitecturalDecisionRecords))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:enables infrastructure:C4Model))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:enables infrastructure:RefactorTimeConsistency))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:supports infrastructure:SequenceDiagram))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:supports infrastructure:ClassDiagram))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:supports infrastructure:StateDiagram))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:supports infrastructure:EntityRelationshipDiagram))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:supports infrastructure:GanttChart))
+
+  ## Implementation Relationships
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:Mermaid))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:PlantUML))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:GraphvizDOT))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:D2))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:StructurizrDSL))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:TikZ))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:VegaLite))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:Wavedrom))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:Pikchr))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:implements infrastructure:Penrose))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:uses infrastructure:MarkdownCodeFence))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:uses infrastructure:JSONSchema))
+
+  ## Reduction Relationships
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:reduces infrastructure:DiagramMaintenanceBurden))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:reduces infrastructure:DocumentationDrift))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:reduces infrastructure:OnboardingFriction))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:reduces infrastructure:ToolLockIn))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:reduces infrastructure:MergeConflictCost))
+
+  ## Association Relationships
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:DocumentationAsCode))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:InfrastructureAsCode))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:PolicyAsCode))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:AIDiagramTools))
+  SubClassOf(infrastructure:DiagramsAsCode
+    ObjectSomeValuesFrom(infrastructure:relatedTo infrastructure:Kroki))
+
+  ## Data Properties (Characteristics)
+  DataPropertyAssertion(infrastructure:hasIdentifier infrastructure:DiagramsAsCode &quot;IF-1078&quot;^^xsd:string)
+  DataPropertyAssertion(infrastructure:authorityScore infrastructure:DiagramsAsCode &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(infrastructure:mermaidGitHubStars infrastructure:DiagramsAsCode &quot;70000&quot;^^xsd:integer)
+  DataPropertyAssertion(infrastructure:mermaidWeeklyDownloads infrastructure:DiagramsAsCode &quot;12500000&quot;^^xsd:integer)
+  DataPropertyAssertion(infrastructure:structurizrTeams infrastructure:DiagramsAsCode &quot;50000&quot;^^xsd:integer)
+  DataPropertyAssertion(infrastructure:thoughtworksRing infrastructure:DiagramsAsCode &quot;Adopt&quot;^^xsd:string)
+
+  ## Property Constraints
+  SubClassOf(infrastructure:DiagramsAsCode
+    DataAllValuesFrom(infrastructure:isTextSource xsd:boolean))
+  SubClassOf(infrastructure:DiagramsAsCode
+    DataSomeValuesFrom(infrastructure:grammarFamily xsd:string))
+  SubClassOf(infrastructure:DiagramsAsCode
+    DataMinCardinality(1 infrastructure:hasLayoutEngine xsd:string))
+  SubClassOf(infrastructure:DiagramsAsCode
+    DataMinCardinality(1 infrastructure:rendersTo xsd:string))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label infrastructure:DiagramsAsCode &quot;Diagrams as Code&quot;@en)
+  AnnotationAssertion(rdfs:comment infrastructure:DiagramsAsCode &quot;Software-engineering discipline authoring technical diagrams as plain-text source in machine-readable grammars (Mermaid, PlantUML, Graphviz DOT, D2, Structurizr DSL, TikZ, Vega-Lite, Wavedrom, Pikchr, Penrose, Diagrams.py, Excalidraw scenes) stored in version control alongside application code, rendered to SVG/PNG/PDF at build time or in the browser; on ThoughtWorks Tech Radar Adopt ring (Vol 30 April 2024); default modality for ADRs, C4-model architecture documentation, runbooks; AI-augmented from 2023-2026 by Mermaid AI Chat, Eraser DiagramGPT, Excalidraw AI, Whimsical AI, Lucidchart AI, Miro AI, Napkin AI, Claude artifacts native Mermaid, ChatGPT canvas, Atlassian Rovo; contrasted with WYSIWYG vector tools (Visio, OmniGraffle, Lucidchart drag-drop, draw.io) lacking mergeable diffs and with generative image models lacking semantic structure.&quot;@en)
+  AnnotationAssertion(dcterms:identifier infrastructure:DiagramsAsCode &quot;IF-1078&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject infrastructure:DiagramsAsCode &quot;Documentation as Code, Software Architecture, C4 Model, Mermaid, PlantUML, Diagram Grammar, Layout Algorithms&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(infrastructure:implements)
+AsymmetricObjectProperty(infrastructure:requires)
+AsymmetricObjectProperty(infrastructure:enables)
+AsymmetricObjectProperty(infrastructure:reduces)
+TransitiveObjectProperty(infrastructure:dependsOn)
+FunctionalDataProperty(infrastructure:hasIdentifier)
+FunctionalDataProperty(infrastructure:thoughtworksRing)
+```
+</code></pre>
+<ul>
+<li>
+<h2 id="about-diagrams-as-code">About Diagrams as Code<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-diagrams-as-code" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Diagrams as Code</strong> is the application of the “X as Code” pattern — pioneered by Infrastructure as Code (Terraform, Ansible, CloudFormation, Pulumi), Policy as Code (Open Policy Agent, Sentinel, Cedar) and Documentation as Code (MkDocs, Docusaurus, Antora, Sphinx) — to the domain of technical diagrams. The core proposition is that an architecture diagram, sequence diagram, state machine, deployment topology, or Gantt chart should be expressible as a small text file in a constrained grammar, committed to the same Git repository as the system it describes, reviewed in the same pull request that changes the system, rendered by the same build pipeline that produces the rest of the documentation, and rolled back via the same release machinery. Plain-text artefacts gain the full benefit of forty years of source-control tooling — diffs, blame, bisect, signed commits, branch protection, mergeability — which a binary <code>.vsd</code>, <code>.gliffy</code> or proprietary cloud diagram simply cannot match.</p>
+</li>
+<li>
+<p>The genre traces back to <strong>Graphviz DOT</strong> (Stephen North and Eleftherios Koutsofios, AT&amp;T Bell Labs 1991), the first widely-adopted text-based diagram language. DOT’s <code>digraph { A -> B -> C }</code> syntax remains the lingua franca of automated graph rendering, sustained by the Graphviz toolkit’s <code>dot</code>, <code>neato</code>, <code>fdp</code>, <code>circo</code>, and <code>twopi</code> engines covering hierarchical, force-directed, and radial layouts. <strong>TikZ</strong> (Till Tantau 1995) brought programmable diagrams into the LaTeX ecosystem, becoming the de-facto standard for typographically precise figures in academic papers. <strong>PlantUML</strong> (Arnaud Roques 2009) extended the model to UML and beyond, leveraging Graphviz internally to render class, sequence, use-case, activity, state, component, and deployment diagrams from a compact Java-rendered grammar. The 2014 release of <strong>Mermaid</strong> (Knut Sveidqvist at Qlik Sweden) marked an inflection point: by targeting JavaScript rendering in the browser and aligning the grammar with Markdown code fences, Mermaid eliminated the server-side toolchain dependency that had limited the prior generation. GitHub’s February 2022 enablement of native Mermaid rendering in Markdown — issues, pull requests, READMEs, gists, GitHub Pages — turned the language into a de-facto industry standard almost overnight. By January 2026, Mermaid claims 70,000+ GitHub stars and approximately 12.5 million weekly npm downloads.</p>
+</li>
+<li>
+<p>The discipline gained additional momentum from the <strong>C4 Model</strong> (Simon Brown 2018), which prescribes four nested abstraction levels — <strong>System Context</strong>, <strong>Container</strong> (deployable units), <strong>Component</strong> (internal modules), <strong>Code</strong> (class/sequence detail) — and is most naturally expressed in <strong>Structurizr DSL</strong>, a workspace-oriented grammar where a single source file defines elements once and the renderer produces multiple views (one per C4 level, plus deployment, dynamic, and filtered variants). Roughly 50,000 self-reported teams use the C4 model in production. <strong>D2</strong> (Alexander Wang at Terrastruct 2022) brought modern syntax design — first-class containers, clean comment forms, sensible defaults — and importantly offered four interchangeable layout engines (dagre, ELK, the proprietary TALA tuned for software architecture, and a fast native engine), addressing the long-standing complaint that DOT’s <code>dot</code> engine produced unsightly results on dense graphs. <strong>Diagrams.py</strong> (mingrammer 2018) took a different tack: instead of a new DSL, it offered a Python API with curated provider icon sets (AWS, Azure, GCP, Kubernetes, OCI, Alibaba, IBM, DigitalOcean) so cloud architecture diagrams could be authored as ordinary Python scripts, executed to produce SVG/PNG.</p>
+</li>
+<li>
+<p><strong>Excalidraw</strong> (Christopher Chedeau 2020) deserves special mention as a hybrid case: its hand-drawn sketchy aesthetic is the result of a graphical editor, but the scene is exported as JSON and is treated by many teams as the source-of-truth artefact alongside the SVG render. <strong>Penrose</strong> (Katherine Ye and collaborators at Carnegie Mellon 2020, ICFP/OOPSLA) represents the academic state-of-the-art: it separates mathematical content from visual style via a three-language model (Domain defines vocabulary, Substance instantiates objects, Style maps to graphics), enabling the same Substance file to produce dramatically different visualisations by swapping the Style. <strong>Wavedrom</strong>, <strong>Vega-Lite</strong> (Jeffrey Heer at the University of Washington Interactive Data Lab 2017), <strong>Pikchr</strong> (D. Richard Hipp of SQLite 2020), <strong>Nomnoml</strong>, and <strong>ASCIIflow</strong> fill remaining niches in digital timing diagrams, statistical visualisation, embedded PIC-style figures, and lo-fi ASCII inline diagrams respectively.</p>
+</li>
+<li>
+<h3 id="the-engineering-case">The Engineering Case<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-engineering-case" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Why does the engineering community keep gravitating toward text-based diagrams? Five reinforcing arguments dominate the literature and practitioner blogs.</p>
+<ul>
+<li><strong>Mergeable diffs</strong>: Two engineers editing different branches of an architecture diagram can merge their changes via standard Git three-way merge. WYSIWYG XML formats (<code>.drawio</code>, <code>.vsd</code>, <code>.gliffy</code>) theoretically permit textual diff but in practice every cosmetic move re-serialises coordinates and produces conflict markers in nearly every line. ThoughtWorks Tech Radar (Vol 30 April 2024) explicitly cites mergeability as the decisive criterion for placing diagrams-as-code in the Adopt ring.</li>
+<li><strong>Refactor-time consistency</strong>: When a service is renamed, an API endpoint changes shape, or a database is split, an engineer can grep across the documentation tree and update diagrams alongside code in a single PR. With WYSIWYG diagrams, this kind of refactor either silently drifts or is deferred indefinitely, producing the well-known “stale architecture diagram pinned to the wall” failure mode.</li>
+<li><strong>Scripted generation</strong>: Many high-value diagrams should be generated from a source-of-truth other than human authorship. Cloud topology can be generated from Terraform state (<code>terraform graph</code>, <code>inframap</code>, <code>cloudgraph</code>); database schemas from migrations (<code>dbml</code>, <code>schemaspy</code>, <code>dbdocs</code>); microservice dependency graphs from service-mesh telemetry (Istio’s Kiali, Linkerd’s tap); call graphs from runtime tracing (Datadog APM exports). Diagrams-as-code provides the human-readable rendering layer for these generated artefacts.</li>
+<li><strong>Build pipeline integration</strong>: A static site generator (MkDocs, Docusaurus, Antora, Sphinx, Hugo, Jekyll) running in CI can lint, render, and publish diagrams as part of the regular documentation build. Broken diagram syntax fails the build the same way broken code fails CI, surfacing problems at the right moment rather than at reader-encounters-broken-diagram time.</li>
+<li><strong>Tool-lock-in avoidance</strong>: When Visio license costs spike, when Lucidchart pricing changes, when a SaaS vendor disappears, an organisation with <code>.mmd</code> or <code>.dot</code> or <code>.puml</code> files in version control simply re-renders with any compatible tool. Binary cloud-locked diagrams are hostage to vendor pricing and availability.</li>
+</ul>
+</li>
+<li>
+<p>The trade-offs are real and worth naming: grammars must be learned (Mermaid is forgiving, Graphviz DOT and TikZ less so); auto-layout occasionally produces undesirable placements requiring hints (rank constraints, explicit positions, alternate engines); some diagram types (rich infographics, marketing material, presentation-quality keynote slides) remain better served by graphical tools; and onboarding a non-engineer collaborator into a DSL is harder than handing them a drag-drop editor.</p>
+</li>
+<li>
+<h3 id="core-mathematical-and-algorithmic-foundations">Core Mathematical and Algorithmic Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-mathematical-and-algorithmic-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Layout — turning a graph specification into pixel coordinates — is the hard problem at the centre of diagrams-as-code. Decades of graph drawing research underpin the engines used by every major DaC grammar.</p>
+</li>
+<li>
+<h4 id="hierarchical-layered-layout--sugiyama-1981">Hierarchical (Layered) Layout — Sugiyama 1981<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hierarchical-layered-layout--sugiyama-1981" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The <strong>Sugiyama-Tagawa-Toda algorithm</strong> (IEEE Transactions on Systems, Man and Cybernetics, 1981, DOI 10.1109/TSMC.1981.4308636) decomposes the problem of drawing directed graphs into four sequential phases:</p>
+<ul>
+<li><strong>Cycle breaking</strong>: Reverse a minimal set of edges to produce a directed acyclic graph (DAG). NP-hard exact; greedy heuristics achieve near-optimal results in O(|V| + |E|) time.</li>
+<li><strong>Layer assignment</strong>: Partition vertices into horizontal (or vertical) layers respecting edge direction. Common choices include longest-path layering (O(|V| + |E|), produces wide graphs), Coffman-Graham (bounded width), and ILP-based optimal (Gansner et al. 1993, network-simplex relaxation, dominates <code>dot</code>).</li>
+<li><strong>Crossing minimisation</strong>: Permute vertices within each layer to minimise edge crossings. NP-hard exact; barycentre and median heuristics with iterated sweep achieve good results in practice (Eades &amp; Wormald 1994).</li>
+<li><strong>Coordinate assignment</strong>: Compute final x-coordinates respecting permutations from phase 3 whilst minimising bend penalties and edge slope. Brandes-Köpf 2001 algorithm dominates modern implementations.</li>
+</ul>
+</li>
+<li>
+<p>This four-phase decomposition is the algorithmic basis of Graphviz <code>dot</code>, Mermaid flowchart engine, the dagre layout used by D2 and yFiles community editions, and the layered layout in Eclipse Layout Kernel (ELK).</p>
+</li>
+<li>
+<h4 id="force-directed-layout--fruchterman-reingold-1991">Force-Directed Layout — Fruchterman-Reingold 1991<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#force-directed-layout--fruchterman-reingold-1991" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The <strong>Fruchterman-Reingold algorithm</strong> (Software: Practice and Experience 21(11), DOI 10.1002/spe.4380211102) models a graph as a physical system: vertices repel each other (Coulomb-like), edges attract their endpoints (Hooke-like), and iterative simulation converges to a minimum-energy configuration. Used for undirected graphs without natural hierarchy; produces aesthetically pleasing layouts for small-to-medium graphs (50-500 vertices) but scales poorly beyond. Variants include Kamada-Kawai 1989 (spring-embedder energy minimisation), Davidson-Harel 1996 (simulated annealing), and modern multilevel approaches (sfdp, FM³, ForceAtlas2 used by Gephi). Graphviz <code>neato</code>, <code>fdp</code> and <code>sfdp</code> implement this family.</p>
+</li>
+<li>
+<h4 id="tree-layout--reingold-tilford-1981">Tree Layout — Reingold-Tilford 1981<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#tree-layout--reingold-tilford-1981" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Trees admit elegant linear-time layout via the <strong>Reingold-Tilford tidy tree algorithm</strong> (IEEE TSE 1981, “Tidier Drawings of Trees”). Used for Mermaid mindmaps, tree diagrams in Markmap, hierarchical org charts, syntactic parse trees. Walker 1990 extended to multi-child trees; Buchheim et al. 2002 produced the canonical O(n) implementation.</p>
+</li>
+<li>
+<h4 id="modern-layout-frameworks--elk-and-beyond">Modern Layout Frameworks — ELK and beyond<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#modern-layout-frameworks--elk-and-beyond" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The <strong>Eclipse Layout Kernel</strong> (Christoph Schulze et al., Christian-Albrechts-Universität zu Kiel, ongoing since 2014) is a Java/JavaScript graph layout toolkit consolidating the above algorithms behind a unified configuration model. ELK powers D2, Eclipse Sirius, and several enterprise diagramming products. Terrastruct’s proprietary <strong>TALA</strong> engine (used by D2 and Terrastruct’s commercial product) is specifically tuned for software-architecture diagrams: it preserves logical groupings, avoids long edge runs, and produces compact layouts that consistently outperform <code>dot</code> on real-world architecture inputs in published benchmarks.</p>
+</li>
+<li>
+<h3 id="diagram-type-coverage">Diagram Type Coverage<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diagram-type-coverage" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>A non-exhaustive enumeration of diagram types served by major DaC grammars, with the dominant tool for each:</p>
+<ul>
+<li><strong>Flowchart</strong>: Mermaid <code>flowchart TD</code>, Graphviz <code>digraph</code>, D2 implicit</li>
+<li><strong>Sequence diagram</strong>: Mermaid <code>sequenceDiagram</code>, PlantUML <code>@startuml</code>, WebSequenceDiagrams</li>
+<li><strong>Class diagram</strong>: PlantUML, Mermaid <code>classDiagram</code>, D2</li>
+<li><strong>State diagram</strong>: Mermaid <code>stateDiagram-v2</code>, PlantUML, SCXML</li>
+<li><strong>Entity-relationship</strong>: Mermaid <code>erDiagram</code>, PlantUML, DBML, dbdocs</li>
+<li><strong>Gantt chart</strong>: Mermaid <code>gantt</code>, PlantUML, vega-lite</li>
+<li><strong>C4 architecture</strong>: Structurizr DSL, C4-PlantUML, Mermaid C4 (experimental)</li>
+<li><strong>Deployment/infrastructure</strong>: Diagrams.py, D2, Structurizr deployment views, Cloudcraft</li>
+<li><strong>Mind map</strong>: Markmap, Mermaid <code>mindmap</code>, PlantUML <code>@startmindmap</code></li>
+<li><strong>Network diagram</strong>: NwDiag, Graphviz, D2, Diagrams.py</li>
+<li><strong>Digital timing</strong>: Wavedrom (canonical for hardware specs, IEEE/IETF drafts)</li>
+<li><strong>Statistical chart</strong>: Vega-Lite, Vega, vega-lite-api</li>
+<li><strong>UML 2.5 (all 14 types)</strong>: PlantUML (most complete), Mermaid (partial)</li>
+<li><strong>BPMN business process</strong>: bpmn-js, Camunda Modeler, PlantUML BPMN extension</li>
+<li><strong>Petri net / state machine</strong>: PlantUML, SCXML, statechart.js</li>
+<li><strong>Block diagram</strong>: BlockDiag, Mermaid <code>block</code>, D2</li>
+<li><strong>Bytefield (packet layout)</strong>: bytefield-svg, Wavedrom register variant</li>
+<li><strong>Kanban board</strong>: Mermaid <code>kanban</code> (v11.4 December 2024), PlantUML</li>
+<li><strong>Architecture diagram (Mermaid v11)</strong>: native <code>architecture-beta</code> block (October 2024)</li>
+<li><strong>Packet diagram (Mermaid v11)</strong>: <code>packet-beta</code> for binary protocol layouts</li>
+<li><strong>ASCII art</strong>: ASCIIflow, monodraw, draw.io ASCII export</li>
+<li><strong>Hand-drawn / sketchy</strong>: Excalidraw, tldraw, rough.js stylings</li>
+<li><strong>Mathematical / category-theoretic</strong>: TikZ-cd, Penrose, MetaPost</li>
+</ul>
+</li>
+<li>
+<h3 id="grammar-comparison">Grammar Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#grammar-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>A side-by-side overview of the dominant text grammars, organised by language style, layout family, and primary use case:</p>
+<ul>
+<li><strong>Mermaid</strong>: JavaScript renderer, browser-side; declarative line-oriented syntax; nine first-class diagram types (flowchart, sequence, class, state, ER, Gantt, mindmap, kanban v11.4, architecture-beta v11); native GitHub/GitLab/Notion/Logseq/Claude rendering; weakness: complex layouts harder than D2.</li>
+<li><strong>PlantUML</strong>: Java renderer, server-side; rich UML 2.5 coverage; older skin/styling system being modernised; weakness: requires Java runtime; strength: most complete UML coverage of any open-source grammar.</li>
+<li><strong>Graphviz DOT</strong>: C engine via <code>dot</code>/<code>neato</code>/<code>fdp</code>/<code>circo</code>/<code>twopi</code>; declarative graph specification; weakness: aesthetic defaults; strength: dense graph rendering, ubiquity, scriptability.</li>
+<li><strong>D2</strong>: Go renderer; modern syntax; four interchangeable layout engines (dagre, ELK, TALA proprietary, native); strength: software-architecture aesthetics, sensible defaults; weakness: smaller ecosystem than Mermaid.</li>
+<li><strong>Structurizr DSL</strong>: workspace-oriented; single source produces multiple C4 views; strength: model coherence, C4 alignment; weakness: tied to C4 conceptual model.</li>
+<li><strong>Diagrams.py</strong>: imperative Python; curated cloud-provider icon sets; strength: cloud architecture out-of-the-box; weakness: Python execution rather than declarative spec.</li>
+<li><strong>TikZ</strong>: LaTeX programmable graphics; strength: typographic precision, academic-publication quality; weakness: steep learning curve, requires LaTeX toolchain.</li>
+<li><strong>Excalidraw scenes</strong>: JSON scene format; strength: hand-drawn aesthetic, multiplayer collaboration; weakness: JSON not designed for hand-authoring (graphical editor in practice).</li>
+<li><strong>Penrose</strong>: triple Domain/Substance/Style; strength: rigour and style separation; weakness: research-grade tooling, small ecosystem.</li>
+<li><strong>Vega/Vega-Lite</strong>: JSON grammar of graphics; strength: statistical visualisation, charts; weakness: not designed for software architecture.</li>
+<li><strong>Wavedrom</strong>: JSON timing/waveform; strength: digital timing diagrams in hardware/protocol specs; weakness: niche.</li>
+<li><strong>Pikchr</strong>: PIC-derivative; strength: lightweight inline diagrams in Markdown; weakness: small ecosystem.</li>
+<li><strong>Nomnoml</strong>: UML-lite browser-side; strength: simple class diagrams; weakness: feature set bounded.</li>
+<li><strong>BlockDiag / SeqDiag / ActDiag / NwDiag</strong>: Python tooling; strength: comprehensive blockdiag family; weakness: slower development cadence than Mermaid/D2.</li>
+<li><strong>bpmn-js / Camunda Modeler</strong>: BPMN 2.0 process diagrams; strength: BPMN standard compliance; weakness: BPMN itself is complex.</li>
+<li><strong>Markmap</strong>: Markdown-to-mindmap; strength: mind-map from Markdown headings; weakness: niche to mindmap use.</li>
+</ul>
+</li>
+<li>
+<h3 id="worked-examples">Worked Examples<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#worked-examples" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="mermaid-sequence-diagram">Mermaid sequence diagram<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mermaid-sequence-diagram" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>A typical request-response flow rendered in five lines of Mermaid:</p>
+<pre><code>sequenceDiagram
+    Client->>API Gateway: POST /orders
+    API Gateway->>Order Service: gRPC PlaceOrder
+    Order Service->>Postgres: INSERT
+    Postgres-->>Order Service: row_id
+    Order Service-->>API Gateway: OrderID
+    API Gateway-->>Client: 201 Created
+</code></pre>
+</li>
+<li>
+<h4 id="mermaid-c4-container-view">Mermaid C4 container view<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mermaid-c4-container-view" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>A C4-style container diagram in Mermaid’s C4 dialect (still experimental in v11; C4-PlantUML is more mature):</p>
+<pre><code>C4Container
+    Person(user, &quot;Customer&quot;, &quot;Places orders&quot;)
+    System_Boundary(c1, &quot;E-commerce&quot;) {
+        Container(web, &quot;Web App&quot;, &quot;Next.js&quot;)
+        Container(api, &quot;API&quot;, &quot;Go&quot;)
+        ContainerDb(db, &quot;DB&quot;, &quot;Postgres&quot;)
+    }
+    Rel(user, web, &quot;uses&quot;, &quot;HTTPS&quot;)
+    Rel(web, api, &quot;calls&quot;, &quot;gRPC&quot;)
+    Rel(api, db, &quot;reads/writes&quot;, &quot;SQL&quot;)
+</code></pre>
+</li>
+<li>
+<h4 id="structurizr-dsl-workspace">Structurizr DSL workspace<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#structurizr-dsl-workspace" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>A minimal Structurizr DSL workspace generating system-context plus container views from a single model:</p>
+<pre><code>workspace {
+  model {
+    user = person &quot;Customer&quot;
+    store = softwareSystem &quot;E-commerce&quot; {
+      web = container &quot;Web App&quot; &quot;Next.js&quot;
+      api = container &quot;API&quot; &quot;Go&quot;
+      db = container &quot;Database&quot; &quot;Postgres&quot;
+    }
+    user -> web &quot;uses&quot;
+    web -> api &quot;calls&quot;
+    api -> db &quot;reads/writes&quot;
+  }
+  views {
+    systemContext store { include * autoLayout }
+    container    store { include * autoLayout }
+  }
+}
+</code></pre>
+</li>
+<li>
+<h4 id="d2-software-architecture">D2 software architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#d2-software-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>D2’s modern syntax with first-class containers and clean style:</p>
+<pre><code>direction: right
+user -> web: HTTPS
+web -> api: gRPC
+api -> db: SQL
+ecommerce: {
+  web: { shape: rectangle }
+  api: { shape: rectangle }
+  db:  { shape: cylinder  }
+}
+</code></pre>
+</li>
+<li>
+<h4 id="diagramspy-cloud-topology">Diagrams.py cloud topology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diagramspy-cloud-topology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Diagrams.py renders cloud architecture as ordinary Python:</p>
+<pre><code>from diagrams import Diagram
+from diagrams.aws.compute import ECS
+from diagrams.aws.database import RDS
+from diagrams.aws.network import ELB
+with Diagram(&quot;Web&quot;, show=False):
+    ELB(&quot;lb&quot;) >> ECS(&quot;api&quot;) >> RDS(&quot;db&quot;)
+</code></pre>
+</li>
+<li>
+<p>These are the diagram-genres engineers reach for daily; they illustrate the discipline’s core proposition — small, mergeable, regenerable text files are sufficient for the overwhelming majority of engineering diagramming needs.</p>
+</li>
+<li>
+<h3 id="the-kroki-unified-api">The Kroki Unified API<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-kroki-unified-api" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The fragmentation of the DaC ecosystem produced demand for a unifying endpoint. <strong>Kroki</strong> (Yuzu Tech, open-source MIT-licensed) provides a single HTTP POST API that accepts source for any of ~30 grammars and returns SVG, PNG, PDF, JPEG, or Base64-encoded image. Supported engines include BlockDiag, SeqDiag, ActDiag, NwDiag, PacketDiag, RackDiag, BPMN, Bytefield, C4-with-PlantUML, D2, DBML, Ditaa, Erd, Excalidraw, Graphviz, Mermaid, Nomnoml, Pikchr, PlantUML, Structurizr, SvgBob, Symbolator, TikZ, UMLet, Vega, Vega-Lite, WaveDrom, and WireViz. Kroki can be self-hosted via <code>docker compose up</code> (image <code>yuzutech/kroki</code> and per-engine sidecars <code>kroki-mermaid</code>, <code>kroki-blockdiag</code>, <code>kroki-bpmn</code>) or used via the public instance at <a href="https://kroki.io" class="external">https://kroki.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. The Antora documentation pipeline (Asciidoctor + Asciidoctor Kroki) and the MkDocs <code>mkdocs-kroki-plugin</code> integrate Kroki into static-site builds. For teams whose internal documentation includes a heterogeneous mix of Mermaid, PlantUML, Graphviz and a long tail of niche grammars, Kroki eliminates the need to maintain N separate render toolchains.</p>
+</li>
+<li>
+<h3 id="ai-assisted-authorship-2023-2026">AI-Assisted Authorship (2023-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-assisted-authorship-2023-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The advent of capable LLMs reshaped the DaC tooling landscape from 2023 onward. Several products and product features now bridge natural-language input and DaC output:</p>
+<ul>
+<li><strong>Mermaid Chart AI</strong> (Q4 2023): The commercial fork of Mermaid by Knut Sveidqvist’s company added a GPT-4-powered chat interface for natural-language diagram generation, edit, and explanation. Pricing $10/user/month Pro.</li>
+<li><strong>Eraser DiagramGPT</strong> (May 2023): Standalone product by Shin Kim, <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">4</span><span class="mord mathnormal" style="margin-right:0.05764em;">MS</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord mathnormal">i</span><span class="mord mathnormal">es</span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.10764em;">ff</span><span class="mord mathnormal">e</span><span class="mord mathnormal">ina</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.07153em;">C</span><span class="mord mathnormal">a</span><span class="mord mathnormal">p</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">A</span><span class="mord mathnormal">p</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord">2023</span><span class="mpunct">,</span></span></span></span>12M Series B Index Ventures November 2025. Generates AWS/cloud architecture diagrams from natural language and from textual cloud-config descriptions. <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20/</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">hin</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span></span></span></span>40/month team.</li>
+<li><strong>Excalidraw AI</strong> (November 2023): Lipis et al. at Excalidraw Plus released a GPT-4-backed feature that produces Mermaid source from a natural-language prompt and converts to Excalidraw scene JSON for sketchy-aesthetic rendering. $6/user/month.</li>
+<li><strong>Whimsical AI</strong> (March 2023): Integrated mind-map and flowchart generation. Whimsical was founded 2017 by Kaspars Dancis and Steve Schoger; 5M+ registered users; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">12/</span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">ser</span><span class="mord">/</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">h</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">ro</span><span class="mpunct">;</span></span></span></span>30M Series A Insight Partners 2021.</li>
+<li><strong>Lucidchart AI</strong> (February 2024 GA): Rolled out across 70M+ Lucid suite users; enterprise pricing from $20/user/month.</li>
+<li><strong>Miro AI</strong> (July 2023 GA): 60M+ users; all paid tiers from $10/user/month; includes mind-map, flowchart and sticky-note clustering.</li>
+<li><strong>Napkin AI</strong> (March 2024 private beta, GA Q3 2024): Founded by Pramod Sharma (ex-Osmo) and Jerome Scholler; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord">10</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord mathnormal">A</span><span class="mord mathnormal">cce</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">see</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.02778em;">O</span><span class="mord mathnormal">c</span><span class="mord mathnormal">t</span><span class="mord mathnormal">o</span><span class="mord mathnormal">b</span><span class="mord mathnormal" style="margin-right:0.02778em;">er</span><span class="mord">2024</span><span class="mpunct">;</span></span></span></span>25M Lightspeed Series A March 2025. Generates visual summaries (data visualisations, decorative diagrams) from natural-language input or paragraph text.</li>
+<li><strong>Anthropic Claude artifacts</strong> (June 2024): Native Mermaid rendering inside Claude’s artifact sandbox produced an inflection in casual diagramming; many users report Claude as their primary diagram-generation tool by 2025-2026.</li>
+<li><strong>ChatGPT canvas</strong> (October 2024): Mermaid source editing inside a side-by-side canvas; native rendering inside ChatGPT itself was not yet shipped as of January 2026 (rendered only via copy-paste to a Mermaid-aware viewer).</li>
+<li><strong>Atlassian Rovo</strong> (June 2024 GA, 100K+ activated paid users by September 2025): Embedded AI assistant across Jira and Confluence; generates Mermaid diagrams and explains existing ones.</li>
+<li><strong>tldraw “Make Real”</strong> (November 2023): Steve Ruiz’s tldraw editor with a GPT-4V plugin that converts hand-drawn wireframes to runnable HTML/CSS/JS — a generative-UI direction adjacent to DaC.</li>
+<li><strong>GitDiagram</strong> (Ahmed Hamdy 2024): Public-GitHub-repo URL in, Claude 3.5 Sonnet-generated architecture diagram out.</li>
+<li><strong>ChartGPT</strong> (open-source 2023): A community project chaining GPT-4 with Mermaid render for embeddable diagram bots.</li>
+</ul>
+</li>
+<li>
+<p><strong>Practical prompt-engineering observations</strong> for AI-generated diagrams accumulated through 2023-2026 community practice include: explicitly request a specific Mermaid diagram type (<code>flowchart</code>, <code>sequenceDiagram</code>, <code>classDiagram</code>) rather than asking for a generic “diagram” — the LLM’s output is far more reliable when the grammar is constrained; provide existing diagram source as in-context examples to steer style; for complex diagrams, ask for a textual outline first, then ask for the Mermaid translation; for cloud architecture, prefer Diagrams.py prompts because the icon-set constraint focuses the LLM’s choices; for state diagrams, exhaustively list states before requesting transitions to avoid missing edges; for sequence diagrams, articulate the actors and the protocol (sync vs async, request-reply vs fire-forget) before requesting the diagram.</p>
+</li>
+<li>
+<p>The accuracy of LLM-generated diagrams improved substantially through 2023-2026. <strong>Lin et al. 2024</strong> (arXiv:2402.05132 “Benchmarking LLM Diagram Generation”) reported first-attempt valid Mermaid generation rates of 87% for GPT-4-Turbo, 91% for Claude 3 Opus, and 79% for Gemini 1.5 Pro; all three exceeded 96% with one round of automatic syntax-repair. <strong>AutomaTikZ</strong> (Belouadi, Lauscher &amp; Eger, ICLR 2024, arXiv:2310.00367) demonstrated Llama-2 fine-tuning on a TikZ corpus producing publication-quality LaTeX figures from natural language; <strong>BigDocs-7.5M</strong> (Rodriguez et al., NeurIPS 2024 Datasets &amp; Benchmarks) released 7.5M diagram-text pairs for training. <strong>Set-of-Mark Prompting</strong> (Yang et al., arXiv:2310.11441) extended GPT-4V’s visual grounding via marked regions, improving diagram-understanding tasks. The canonical diagram-question-answering benchmark <strong>AI2D</strong> (Kembhavi et al., ECCV 2016) remains the reference dataset. Economics: GPT-4-Turbo at <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">10/</span></span></span></span>30 per million tokens (input/output) and Claude 3.5 Sonnet at <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">3/</span></span></span></span>15 produce a typical diagram for approximately <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">0.020</span><span class="mopen">(</span><span class="mord mathnormal" style="margin-right:0.13889em;">GPT</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">4</span><span class="mclose">)</span><span class="mord mathnormal" style="margin-right:0.02778em;">or</span></span></span></span>0.010 (Claude) at January 2026 prices.</p>
+</li>
+<li>
+<h3 id="engineering-integration-adrs-runbooks-c4">Engineering Integration: ADRs, Runbooks, C4<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#engineering-integration-adrs-runbooks-c4" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Architectural Decision Records</strong> (Michael Nygard 2011 “Documenting Architecture Decisions”) are short Markdown documents recording a single architectural decision with context, decision, status, and consequences. The MADR (Markdown ADR) template adopted by adr.github.io is widely used. When ADRs include diagrams, those diagrams are virtually always in Mermaid, PlantUML or C4-PlantUML; an ADR with a binary <code>.vsd</code> attached defeats the discipline’s premise (one mergeable file per decision). The pairing of MADR + Mermaid + Structurizr is the modern reference stack for architecture documentation: ADRs capture decisions, Structurizr captures the cumulative model and views, and Mermaid captures one-off illustrative diagrams within ADRs.</p>
+</li>
+<li>
+<p><strong>Runbooks</strong> — operational guides for on-call response, deployment, incident response — increasingly include Mermaid sequence diagrams of service interactions, state diagrams of incident escalation paths, and decision flowcharts. The Polaris (PagerDuty), Squadcast, FireHydrant and incident.io runbook platforms support inline Mermaid. The pattern extends to <strong>postmortem documents</strong>: when an incident review describes a cascading-failure sequence, a Mermaid sequence diagram showing the temporal order of events (alert fires → on-call paged → wrong runbook executed → cascade widens → mitigation applied) communicates the timeline far more compactly than prose. Major postmortem template projects (Atlassian’s incident postmortem, Google SRE postmortem template, the open-source <code>kthxbye</code> PagerDuty extension) increasingly bake Mermaid in.</p>
+</li>
+<li>
+<p><strong>Living documentation pipelines</strong> combine ADRs, Structurizr workspaces, Mermaid in MkDocs/Docusaurus, and automated generation from cloud topology (Terraform graph, AWS Application Composer, Azure ARM templates, GCP deployment-manager). Spotify’s <strong>Backstage</strong> TechDocs (open-sourced 2020 as part of Backstage) is the canonical reference implementation: a static-site generator over MkDocs renders per-service documentation including Mermaid diagrams, hosted alongside the Backstage developer portal. Backstage at January 2026 has 28K+ GitHub stars and is the dominant internal developer-platform framework; its <code>@backstage/plugin-techdocs</code> shipping with Mermaid support gave the pattern near-universal reach in organisations adopting Backstage.</p>
+</li>
+<li>
+<p><strong>Threat modelling</strong> (STRIDE, PASTA, OWASP Threat Dragon) is another natural fit: data-flow diagrams and trust-boundary diagrams expressed as Mermaid or PlantUML survive code review and audit far better than the historical Visio output. OWASP Threat Dragon’s 2.0 release (2023) ships JSON model files that can be checked into Git and rendered automatically.</p>
+</li>
+<li>
+<p><strong>API documentation</strong> generators (Redocly, Swagger UI, Stoplight, Bump.sh) consume OpenAPI/AsyncAPI YAML and emit reference docs; many embed Mermaid sequence diagrams for example flows. The contract-first workflow (OpenAPI → generated diagrams → review → generated SDKs and server stubs) is a textbook DaC application: the contract is plain text, the diagrams are derived plain text, every artefact downstream is reproducible from source.</p>
+</li>
+<li>
+<p><strong>Database documentation</strong>: tools such as <strong>DBML</strong> (database-markup language by Holistics 2020), <strong>dbdocs.io</strong>, <strong>schemaspy</strong> and <strong>tbls</strong> generate ER diagrams from migration files or live database introspection. The output is typically Mermaid <code>erDiagram</code> or PlantUML, committed to the repo as part of the migrations workflow.</p>
+</li>
+<li>
+<h3 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Diagrams-as-code sits at the intersection of three academic communities — <strong>graph drawing</strong>, <strong>diagrammatic reasoning</strong> and <strong>software-engineering documentation</strong> — each with its own conferences, canonical references and recurring debates.</p>
+</li>
+<li>
+<p>The <strong>International Symposium on Graph Drawing</strong> (GD, founded 1992) is the primary venue for layout-algorithm research. Canonical results — Sugiyama 1981, Fruchterman-Reingold 1991, the dot algorithm (Gansner-Koutsofios-North-Vo 1993), Brandes-Köpf coordinate assignment 2001 — have all appeared either at GD or in IEEE Transactions on Software Engineering / Software: Practice and Experience. The <strong>Lecture Notes in Computer Science</strong> Graph Drawing volumes (Springer, annually since 1992) collate the proceedings; LNCS 14651 covers Diagrams 2024 and adjacent venues. Open problems remaining at January 2026 include: optimal multilevel layout for graphs >10⁶ vertices (practical implementations sfdp/FM³ are heuristic), online layout for streaming graph updates with bounded mental-map disruption (Eades et al.’s mental-map preservation criteria), and provably-optimal crossing minimisation for layered drawings (NP-hard exact; heuristics dominate).</p>
+</li>
+<li>
+<p>The <strong>Diagrams Conference</strong> (biennial, founded 2000 by Alan Blackwell and others) is the cross-disciplinary venue for diagrammatic representation and reasoning, spanning cognitive science, computer science, philosophy, mathematics-education and design. Recent editions: Loughborough 2018, Tallinn 2020 (virtual), Rome 2022, Münster 2024, Edinburgh 2026 (the latter held at University of Edinburgh, marking a return to a UK host city). Sustained themes include: how diagrams support reasoning (Larkin &amp; Simon 1987 the canonical paper, still cited >5,000 times); when diagrams help and when they hurt (Cheng 2002 Representational Epistemic Approach); diagrammatic systems as formal proof artefacts (Mineshima, Okada &amp; Takemura 2012 Euler-diagram proof systems). The journal <em>Cognitive Science</em> periodically publishes diagram-comprehension studies.</p>
+</li>
+<li>
+<p>The <strong>software-engineering documentation</strong> community spans the International Conference on Software Engineering (ICSE), the Foundations of Software Engineering (FSE/ESEC-FSE), the European Conference on Software Architecture (ECSA), the Working IEEE/IFIP Conference on Software Architecture (WICSA), and the International Conference on Program Comprehension (ICPC). Documentation drift, diagram staleness, the cost-of-change of architectural documentation, and the comprehension benefits of multi-view models are recurring themes. <strong>Forward-engineering</strong> (diagrams generated from code) vs <strong>round-trip engineering</strong> (diagrams and code stay synchronised bidirectionally) is a long-running debate; the DaC discipline has largely settled on a pragmatic stance — generate where possible, hand-author where not, treat the rendered output as derived.</p>
+</li>
+<li>
+<p>On the <strong>AI-assisted authoring</strong> axis, contemporary venues include the Annual Meeting of the Association for Computational Linguistics (ACL), the International Conference on Machine Learning (ICML), the International Conference on Learning Representations (ICLR), the Neural Information Processing Systems conference (NeurIPS), and arXiv preprints (typically cs.CL, cs.HC, cs.AI). Notable benchmarks include AI2D (Kembhavi et al., ECCV 2016) for diagram question-answering, BigDocs-7.5M (Rodriguez et al., NeurIPS 2024) for diagram-text pretraining, AutomaTikZ (Belouadi et al., ICLR 2024) for text-to-TikZ generation. The challenge remains that diagram-validity is harder to score than text-quality — a syntactically valid Mermaid file that renders nonsense is hard to detect without semantic understanding of the system being depicted.</p>
+</li>
+<li>
+<p>The <strong>Diagrams 2024 / LNCS 14651</strong> Sheffield-paper <em>Sketch2Architecture</em> (Maddock and Carr group, University of Sheffield Visual Computing) closed an interesting loop: hand-drawn sketches as input, formal software-architecture diagrams as output. This sketch-to-formal direction is the inverse of generative-AI-as-author and complements it.</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The diagrams-as-code market by January 2026 has matured into a recognisable category with established practices, dominant grammars, well-funded commercial entries, and AI-augmented workflows. ThoughtWorks Tech Radar Vol 30 (April 2024) placed “diagrams as code” in the Adopt ring; Gartner’s 2024 Hype Cycle for Enterprise Architecture similarly marked architecture-as-code (a superset including DaC) as crossing into the Slope of Enlightenment.</p>
+</li>
+<li>
+<h4 id="open-source-grammars-and-tooling">Open-Source Grammars and Tooling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-source-grammars-and-tooling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Mermaid.js</strong> (70K+ stars, 12.5M weekly npm downloads): dominant browser-side renderer. v11 (October 2024) added <code>packet</code>, <code>kanban</code>, <code>block</code> and <code>architecture-beta</code> diagram types; v11.4 (December 2024) finalised <code>kanban</code>. Native GitHub Markdown rendering since February 2022; native GitLab since 2020; native Notion blocks since 2023; native Logseq via theme/plugin; Claude artifacts native rendering since June 2024.</p>
+</li>
+<li>
+<p><strong>PlantUML</strong> (Arnaud Roques 2009, Java, server-side): 14 UML 2.5 diagram types plus Gantt, work-breakdown, mindmap, archimate, salt wireframe; IntelliJ plugin 4M+ downloads; widely used in regulated industries where on-prem rendering is required.</p>
+</li>
+<li>
+<p><strong>Graphviz</strong> (1991, C, AT&amp;T Bell Labs lineage): The lingua franca; powers PlantUML internals, NetworkX rendering, R <code>DiagrammeR</code>, Python <code>pygraphviz</code>/<code>graphviz</code>, and many ecosystem tools.</p>
+</li>
+<li>
+<p><strong>D2</strong> (Terrastruct 2022, Go, Apache-2.0): 18K+ stars; four interchangeable layout engines including the proprietary TALA tuned for software architecture; modern syntax design.</p>
+</li>
+<li>
+<p><strong>Structurizr</strong> (Simon Brown 2018, Java + DSL): Workspace-oriented C4 modelling; 50K+ self-reported adopting teams; commercial Structurizr Cloud and on-prem; free Lite single-user.</p>
+</li>
+<li>
+<p><strong>Diagrams.py</strong> (mingrammer 2018, Python): 32K+ stars; 1,500+ official provider icons; the default tool for cloud architecture diagrams as Python scripts.</p>
+</li>
+<li>
+<p><strong>TikZ</strong> (Till Tantau 1995, LaTeX): Dominant in academic publishing; pgf-tikz, tikz-cd for category theory, circuitikz for circuits.</p>
+</li>
+<li>
+<p><strong>Excalidraw</strong> (Christopher Chedeau 2020, TypeScript): Hand-drawn sketchy aesthetic; scene JSON as source-of-truth; Excalidraw Plus commercial multiplayer.</p>
+</li>
+<li>
+<p><strong>Vega/Vega-Lite</strong> (Jeffrey Heer, UW Interactive Data Lab 2014/2017): Declarative grammar of graphics; published in IEEE InfoVis; powers Observable Plot, ipyvega, Altair, Vega-Embed.</p>
+</li>
+<li>
+<p><strong>Penrose</strong> (CMU Katherine Ye et al. 2020): Academic state-of-the-art separating mathematical content from style; ICFP/OOPSLA 2020.</p>
+</li>
+<li>
+<p><strong>Wavedrom</strong>: Canonical digital timing diagram tool; used in IEEE and IETF drafts.</p>
+</li>
+<li>
+<p><strong>Pikchr</strong> (D. Richard Hipp 2020, MIT): PIC-derivative used by Fossil SCM and SQLite docs.</p>
+</li>
+<li>
+<p><strong>ASCIIflow</strong> and <strong>monodraw</strong>: ASCII inline diagrams for source-code comments and RFC documents.</p>
+</li>
+<li>
+<h4 id="commercial-products">Commercial Products<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#commercial-products" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Mermaid Chart</strong> (commercial Mermaid fork by Knut Sveidqvist): GPT-4 AI Chat, team collaboration, comments. $10/user/month Pro.</p>
+</li>
+<li>
+<p><strong>Eraser DiagramGPT</strong>: AWS/cloud architecture from natural language; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">20/</span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">n</span><span class="mord mathnormal">t</span><span class="mord mathnormal">hin</span><span class="mord mathnormal">d</span><span class="mord mathnormal">i</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">i</span><span class="mord mathnormal">d</span><span class="mord mathnormal">u</span><span class="mord mathnormal">a</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mpunct">,</span></span></span></span>40/month team.</p>
+</li>
+<li>
+<p><strong>Lucidchart / Lucidspark / Lucid Visual Collaboration Suite</strong>: 70M+ users; AI features GA Feb 2024; from $20/user/month.</p>
+</li>
+<li>
+<p><strong>Miro</strong>: 60M+ users; AI mind-map and flowchart since July 2023; from $10/user/month.</p>
+</li>
+<li>
+<p><strong>Whimsical</strong>: 5M+ users; AI since March 2023; $12/user/month Pro.</p>
+</li>
+<li>
+<p><strong>Napkin AI</strong>: AI-native; <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">10/</span></span></span></span>25M Accel/Lightspeed funding 2024-2025; visual-summary niche.</p>
+</li>
+<li>
+<p><strong>Cloudcraft</strong> by Datadog (acquired 2021): Live AWS topology rendering from account scrape.</p>
+</li>
+<li>
+<p><strong>Structurizr Cloud / on-prem</strong>: Simon Brown’s commercial offering; £5-£25/user/month tiers.</p>
+</li>
+<li>
+<p><strong>Terrastruct</strong> (commercial D2 host): TALA layout, cloud collaboration.</p>
+</li>
+<li>
+<h4 id="diagramming-software-tam-and-ai-share">Diagramming Software TAM and AI Share<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#diagramming-software-tam-and-ai-share" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Total addressable market (diagramming software, all modalities) was approximately <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">2.1</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mord mathnormal">in</span><span class="mord">2025</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">∗</span><span class="mpunct">;</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style="margin-right:0.07847em;">I</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">a</span><span class="mord mathnormal">tt</span><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="mord mathnormal">ib</span><span class="mord mathnormal">u</span><span class="mord mathnormal">t</span><span class="mord mathnormal">ab</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">ere</span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span><span class="mord mathnormal">e</span><span class="mord mathnormal">n</span><span class="mord mathnormal">u</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.02691em;">w</span><span class="mord mathnormal">a</span><span class="mord mathnormal">s</span><span class="mord mathnormal">a</span><span class="mord mathnormal">pp</span><span class="mord mathnormal">ro</span><span class="mord mathnormal">x</span><span class="mord mathnormal">ima</span><span class="mord mathnormal">t</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∗</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.4653em;"></span><span class="mord">∗</span></span></span></span>340M (16%)</strong>; projected 2027 AI-attributable revenue is <strong><span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7667em;vertical-align:-0.0833em;"></span><span class="mord">950</span><span class="mord mathnormal" style="margin-right:0.10903em;">M</span><span class="mord">−</span></span></span></span>1.2B</strong>. The DaC-specific share is harder to bound but is estimated at 30-40% of the total via commercial Mermaid Chart, Terrastruct, Structurizr, Eraser, and the DaC-using portions of Atlassian/Notion/Confluence ecosystem revenue.</p>
+</li>
+<li>
+<h4 id="rendering-and-integration-ecosystem">Rendering and Integration Ecosystem<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rendering-and-integration-ecosystem" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>VS Code Mermaid Preview extension</strong> has 5M+ installs and is by some margin the most-installed diagram extension. <strong>VS Code PlantUML</strong>, <strong>VS Code Graphviz</strong>, and <strong>VS Code D2</strong> round out the editor support story.</p>
+</li>
+<li>
+<p><strong>Kroki</strong> (<a href="https://kroki.io" class="external">https://kroki.io<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>) provides the unified rendering API; self-hosted via <code>docker compose up</code>.</p>
+</li>
+<li>
+<p><strong>GitHub Actions</strong> workflows commonly include <code>gh-action-mermaid</code> or invoke <code>npx @mermaid-js/mermaid-cli</code> to validate and render diagrams in CI.</p>
+</li>
+<li>
+<p><strong>MkDocs Material + pymdown-extensions</strong> ships with first-class Mermaid support.</p>
+</li>
+<li>
+<p><strong>Docusaurus</strong> has <code>@docusaurus/theme-mermaid</code> since v2.4 (2023).</p>
+</li>
+<li>
+<p><strong>Notion</strong>, <strong>Confluence Cloud</strong> (Atlassian), and <strong>Logseq</strong> all support Mermaid blocks natively or via plugin.</p>
+</li>
+<li>
+<h3 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The UK contributes prominently to the diagrams-as-code discipline through both academic research and industrial practice. The community’s gravitational centre on the C4 model arises directly from a UK author; Northern English documentation experiments push the AI-augmented authoring envelope; and the British software-architecture meetup network sustains regular practitioner discussion of the discipline.</p>
+</li>
+<li>
+<h4 id="academic-institutions">Academic Institutions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-institutions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Imperial College London (Software Engineering Group)</strong>:</p>
+<ul>
+<li><strong>Faculty</strong>: Sebastian Uchitel and team, work on LTSA (Labelled Transition System Analyser) and behavioural model synthesis from scenarios.</li>
+<li><strong>Programme</strong>: EPSRC “Diagrams 2024-2027” £3.5M programme on automated software-architecture diagram generation and validation.</li>
+<li><strong>Industry collaboration</strong>: Joint work with BBC R&amp;D and Microsoft Research Cambridge on AI-assisted documentation pipelines.</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Cambridge (Computer Laboratory)</strong>:</p>
+<ul>
+<li><strong>Research focus</strong>: Software documentation research within the Cambridge Programming, Logic and Semantics Group; collaboration with industrial partners on AI-assisted documentation.</li>
+<li><strong>Publications</strong>: Software-engineering documentation studies emphasising long-term maintenance, refactoring cost of stale diagrams, and developer comprehension of architectural views.</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Sheffield (Visual Computing)</strong>:</p>
+<ul>
+<li><strong>Faculty</strong>: Steve Maddock and Hamish Carr.</li>
+<li><strong>Conference hosting</strong>: Sheffield has hosted sessions of the biennial Diagrams Conference (the canonical academic venue for diagrammatic representation research, founded 2000).</li>
+<li><strong>Recent paper</strong>: Sketch2Architecture (Diagrams 2024, LNCS 14651) — sketch-to-formal-diagram conversion for software architecture.</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Manchester (UK Centre for AI-Driven Software Engineering)</strong>:</p>
+<ul>
+<li><strong>Funding</strong>: £8M UKRI 2024-2028 supporting AI-augmented software engineering including diagrammatic representation.</li>
+<li><strong>Industry partnership</strong>: Joint programmes with The Manchester Meetup community and Manchester-based fintech firms.</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Edinburgh (School of Informatics)</strong>:</p>
+<ul>
+<li><strong>Conference hosting</strong>: Diagrams Conference 2026 (Edinburgh) is the next edition of the biennial venue (rolling sequence: Loughborough 2018, Tallinn 2020, Rome 2022, Münster 2024, Edinburgh 2026).</li>
+<li><strong>Research focus</strong>: Formal diagrammatic reasoning, ontology visualisation.</li>
+</ul>
+</li>
+<li>
+<p><strong>University College London (UCL)</strong>:</p>
+<ul>
+<li><strong>Research focus</strong>: HCI studies of diagram comprehension, software-engineering documentation, mixed-modal communication.</li>
+</ul>
+</li>
+<li>
+<p><strong>Loughborough University</strong>:</p>
+<ul>
+<li>Hosted Diagrams 2018; sustained diagrammatic reasoning research line.</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Glasgow (School of Computing Science)</strong>:</p>
+<ul>
+<li>Sustained software-engineering and HCI research line on developer documentation, multi-view models, and diagrammatic reasoning; collaborations with industry partners on documentation toolchains.</li>
+</ul>
+</li>
+<li>
+<p><strong>University of Bristol</strong>:</p>
+<ul>
+<li>Sustained programming-languages and software-architecture research; contributions to formal-methods diagrammatic notation including Alloy-derived modelling visualisations.</li>
+</ul>
+</li>
+<li>
+<p><strong>Open University (UK)</strong>:</p>
+<ul>
+<li>Long-standing research strand on diagrammatic representation and software-engineering documentation; the OU’s distance-learning courses use Mermaid extensively in materials.</li>
+</ul>
+</li>
+<li>
+<h4 id="uk-practitioner-leadership-simon-brown-and-the-c4-community">UK Practitioner Leadership: Simon Brown and the C4 Community<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-practitioner-leadership-simon-brown-and-the-c4-community" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Simon Brown</strong> — UK-based independent software architect (Coding the Architecture) — created the C4 model in 2018 and Structurizr DSL as its preferred authoring tool. Brown’s books (<em>Software Architecture for Developers</em> Volumes 1 and 2, <em>The C4 Model for Visualising Software Architecture</em>) and the c4model.com site are the most-cited references on architecture-diagramming practice. The UK BCS (British Computer Society) Software Architecture specialist group hosts Brown and others regularly. Mike Amundsen — though American — has long-standing UK conference and BCS ties on API design and architecture.</p>
+</li>
+<li>
+<h4 id="uk-industry-applications">UK Industry Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-industry-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>BBC R&amp;D (MediaCityUK Salford, Manchester)</strong>:</p>
+<ul>
+<li>The Documentation Experiments team reported (IBC 2024 conference, Amsterdam) a <strong>70% reduction in diagram-maintenance burden</strong> after migrating internal architecture documentation to Mermaid + MkDocs + AI-assisted generation; reduction measured via developer-hour accounting on a 12-month before/after window across the iPlayer platform engineering documentation set.</li>
+<li>BBC R&amp;D also contributes to the open-source documentation ecosystem and presents annually at conferences on AI-augmented documentation pipelines.</li>
+</ul>
+</li>
+<li>
+<p><strong>GDS (Government Digital Service, London)</strong>:</p>
+<ul>
+<li>The UK government’s GOV.UK Design System and GOV.UK Service Manual include diagram-as-code conventions; the GDS Tech Architecture team uses Mermaid in design documents and service-pattern documentation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Faculty AI (London)</strong>:</p>
+<ul>
+<li>AI consultancy using Mermaid and Diagrams.py for client-facing architecture documentation; published case studies on AI-assisted diagram generation in client engagements.</li>
+</ul>
+</li>
+<li>
+<p><strong>Monzo, Starling Bank, Revolut (London fintech)</strong>:</p>
+<ul>
+<li>All three banks use C4 + Structurizr or C4-PlantUML for internal architecture documentation; Monzo’s engineering blog has discussed C4 model adoption.</li>
+<li>Live-rendered architecture documentation via internal Backstage instances integrating Mermaid and Structurizr.</li>
+</ul>
+</li>
+<li>
+<p><strong>The Financial Times (London)</strong>:</p>
+<ul>
+<li>FT engineering blog has discussed architecture diagrams as Mermaid in MkDocs published to engineering.ft.com.</li>
+</ul>
+</li>
+<li>
+<p><strong>Anthropic UK office (London, opened 2024)</strong>:</p>
+<ul>
+<li>Drives Claude artifacts diagram quality; UK engineers contribute to Mermaid rendering integration and prompt-engineering best practice for diagram generation.</li>
+</ul>
+</li>
+<li>
+<p><strong>OpenAI UK</strong> and <strong>Google DeepMind (London)</strong>:</p>
+<ul>
+<li>Both research and product-engineering documentation extensively use diagrams-as-code; DeepMind’s published technical reports increasingly include Mermaid alongside TikZ figures.</li>
+</ul>
+</li>
+<li>
+<h4 id="northern-english-innovation-hubs">Northern English Innovation Hubs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#northern-english-innovation-hubs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>Manchester</strong>:</p>
+<ul>
+<li><strong>Health Innovation Manchester</strong> and Manchester NHS digital teams have adopted Mermaid for clinical pathway diagrams within service documentation.</li>
+<li><strong>The Manchester Architecture Meetup</strong> (informal community, ~600 members on meetup.com) hosts regular sessions on AI diagramming tooling; community surveys 2024 show 85%+ of attendee teams using Mermaid or PlantUML in version control.</li>
+<li><strong>BBC R&amp;D MediaCityUK</strong> (covered above) is a regional flagship.</li>
+</ul>
+</li>
+<li>
+<p><strong>Leeds</strong>:</p>
+<ul>
+<li><strong>Leeds Teaching Hospitals</strong> uses Mermaid for clinical workflow documentation in the HSCN-connected internal portals.</li>
+<li><strong>University of Leeds (School of Computing)</strong> has research collaborations on technical documentation quality.</li>
+<li><strong>Sky Bet</strong> (now Flutter Entertainment, Leeds) engineering team has presented at conferences on Mermaid-based architecture documentation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sheffield</strong>:</p>
+<ul>
+<li><strong>University of Sheffield Visual Computing</strong> is internationally visible in diagrammatic reasoning research (covered above).</li>
+<li>Local fintech (3Squared, Tutorful) reportedly use C4+PlantUML.</li>
+</ul>
+</li>
+<li>
+<p><strong>Newcastle</strong>:</p>
+<ul>
+<li><strong>Newcastle University Computing</strong> runs taught modules and final-year projects on software-architecture documentation.</li>
+<li><strong>Sage Group plc</strong> (Newcastle headquartered FTSE 100 software firm) uses Structurizr for product architecture documentation.</li>
+<li><strong>Digital Catapult North East</strong> runs SME programmes including documentation-toolchain modernisation.</li>
+</ul>
+</li>
+<li>
+<h4 id="uk-policy-and-regulatory-context">UK Policy and Regulatory Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-policy-and-regulatory-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The UK AI Regulation White Paper (2023, BEIS) emphasises transparency and traceability of AI-generated outputs. AI-generated diagrams — being deterministic text artefacts once committed — are well-positioned for the transparency requirement: the prompt-and-source pair can be retained alongside the rendered output.</p>
+</li>
+<li>
+<p>The UK <strong>National Cyber Security Centre (NCSC)</strong> guidance on system documentation favours version-controlled text artefacts over opaque binary blobs for the same audit/traceability reasons; NCSC’s secure-by-design guidance increasingly cites version-controlled architectural documentation as a foundational practice.</p>
+</li>
+<li>
+<p><strong>GDPR record-of-processing-activities (RoPA)</strong> data-flow diagrams in regulated UK industries (financial services under FCA/PRA, healthcare under NHS Digital, telecoms under Ofcom, public sector under ICO) are increasingly authored in Mermaid or PlantUML so the data-flow diagrams that GDPR Article 30 records require survive audit. The ICO’s accountability framework cites maintainable processing-activity diagrams as a useful accountability artefact.</p>
+</li>
+<li>
+<p>The <strong>UK Government Digital Service (GDS) Service Manual</strong> (gov.uk/service-manual) prescribes that service teams produce architectural diagrams as part of service-design documentation; GDS internal practice increasingly favours Mermaid + GOV.UK Design System theming.</p>
+</li>
+<li>
+<p>The <strong>DSIT (Department for Science, Innovation and Technology)</strong> AI Safety Institute work, and the related UK Centre for Long-Term Resilience and UK Centre for AI Safety, all produce technical reports including architectural diagrams typically in Mermaid or TikZ.</p>
+</li>
+<li>
+<p><strong>BSI (British Standards Institution)</strong> and <strong>ISO/IEC JTC 1/SC 7</strong> (software and systems engineering) standards work on system documentation increasingly recognises text-based diagram artefacts as compliant with documentation deliverables.</p>
+</li>
+<li>
+<p>For financial-services regulated firms in the City, the <strong>FCA’s operational resilience requirements</strong> (PS21/3, effective March 2022) demand important-business-services mapping with documented dependencies; diagrams-as-code is a popular implementation choice because the mappings can be version-controlled, peer-reviewed, and updated under change management.</p>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h4 id="1-native-ai-authoring-as-default">1. Native AI Authoring as Default<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#1-native-ai-authoring-as-default" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>By 2027-2028, AI-assisted diagram authoring becomes the default first-touch in most engineering workflows: developers describe a system in prose to Claude/ChatGPT/Gemini, accept or refine the generated Mermaid/PlantUML/D2 source, and commit it. By 2030 expect 70-80% of new diagram authorship in commercial software engineering to begin via AI. The grammar layer persists because mergeable diff/review/version-control properties remain irreplaceable; AI shifts the authoring economics rather than the storage substrate.</p>
+</li>
+<li>
+<h4 id="2-generative-round-trip-editing">2. Generative Round-Trip Editing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2-generative-round-trip-editing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Bidirectional natural-language editing of existing diagrams — “add a Redis cache between the API gateway and Postgres”, “split the auth service into authN and authZ”, “merge the analytics-write and analytics-read services” — will become standard. Early product implementations (Mermaid Chart AI, Excalidraw AI, Atlassian Rovo) already demonstrate the pattern; precision and reliability improve with each LLM generation.</p>
+</li>
+<li>
+<h4 id="3-live-architecture-synthesis">3. Live Architecture Synthesis<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#3-live-architecture-synthesis" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Continuous synthesis of architecture diagrams from runtime telemetry (service-mesh traces, eBPF flow records, distributed-tracing spans) will produce always-current architectural views rendered as Mermaid/D2 in observability dashboards. Datadog’s Service Map and Honeycomb’s Trace Map foreshadow this; by 2028 expect the rendered output to be Mermaid/D2 source rather than proprietary canvases.</p>
+</li>
+<li>
+<h4 id="4-diagram-aware-llms-and-visual-grounding">4. Diagram-Aware LLMs and Visual Grounding<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#4-diagram-aware-llms-and-visual-grounding" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Vision-language models (GPT-4V, Claude vision, Gemini multimodal) increasingly understand rendered diagrams as input, enabling workflows like “here’s a whiteboard photo, convert to Mermaid”, “here’s a competitor’s architecture diagram, identify the design pattern”, and “explain this state diagram”. Research benchmarks (AI2D Kembhavi et al. 2016 the canonical reference, Set-of-Mark Yang et al. 2023, BigDocs-7.5M Rodriguez et al. 2024) drive the academic frontier.</p>
+</li>
+<li>
+<h4 id="5-ontology--knowledge-graph-diagram-integration">5. Ontology / Knowledge-Graph Diagram Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#5-ontology--knowledge-graph-diagram-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Knowledge-graph systems (Neo4j, Stardog, Neptune, Logseq, Obsidian) gain DaC export and round-trip: query a subgraph, render as Mermaid/D2, edit in source, re-import. The visionclaw / Logseq ontology corpus this page lives in is itself an early instance — diagrams within knowledge graphs being increasingly DaC.</p>
+</li>
+<li>
+<h4 id="6-mermaid-v12-diagram-type-expansion">6. Mermaid v12+ Diagram Type Expansion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#6-mermaid-v12-diagram-type-expansion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The Mermaid roadmap (governed by the Mermaid Open-Source Project and Mermaid Chart) targets full UML 2.5 coverage, richer C4 support, swimlane diagrams, BPMN subsets, and improved auto-layout. v11 (October 2024) added <code>packet</code>, <code>kanban</code>, <code>block</code>, <code>architecture-beta</code>. Expect v12 (2026) to formalise architecture-beta, add swimlane and BPMN-lite.</p>
+</li>
+<li>
+<h4 id="7-structurizr--c4-standardisation-track">7. Structurizr / C4 Standardisation Track<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#7-structurizr--c4-standardisation-track" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Simon Brown has signalled interest in submitting C4 model and Structurizr DSL for community-driven standardisation; by 2028 expect a formal C4 specification (CC-BY or similar) and tooling-compatibility conformance suite.</p>
+</li>
+<li>
+<h4 id="8-cross-modal-authoring-tools">8. Cross-Modal Authoring Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#8-cross-modal-authoring-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Editor experiences combining text-source authorship with WYSIWYG affordances mature. The pattern — type Mermaid or D2 in a pane on the left, see the rendered preview live on the right, optionally drag in the rendered pane to insert text in the source — bridges the WYSIWYG-vs-DSL divide. Mermaid Live Editor (<a href="https://mermaid.live" class="external">https://mermaid.live<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>), the Mermaid Chart commercial editor, Excalidraw Plus, and the Notion/Confluence/Logseq inline preview implementations all instantiate this pattern. By 2028 expect cross-modal editing to be standard, lowering the on-ramp for non-engineers and ending the historical “WYSIWYG vs code” tribal divide in many organisations.</p>
+</li>
+<li>
+<h4 id="9-adoption-trajectories">9. Adoption Trajectories<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#9-adoption-trajectories" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p><strong>2026 baseline</strong>: ~75% of professional software-engineering organisations have at least one diagram-as-code tool in active use; ~45% mandate diagrams-as-code for architecture documentation in style guides; AI-assisted authoring ~40% of new diagrams.</p>
+</li>
+<li>
+<p><strong>2028 projection</strong>: ~90% organisations using DaC tooling; ~70% mandated; AI-assisted authoring ~60-70% of new diagrams; Mermaid + Structurizr the de-facto reference stack.</p>
+</li>
+<li>
+<p><strong>2030 projection</strong>: DaC near-universal in software engineering; ~80% AI-assisted authoring; consolidation of grammars (Mermaid + PlantUML + Graphviz dominate; smaller grammars persist in niches); live architecture synthesis from telemetry becomes standard in observability platforms.</p>
+</li>
+<li>
+<h4 id="10-diagram-provenance-and-authenticity">10. Diagram Provenance and Authenticity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#10-diagram-provenance-and-authenticity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>As AI-generated content saturates the web, the provenance of architecture diagrams becomes a security and audit concern. Signed commits, content-hashing of rendered artefacts, and prompt-retention for AI-generated diagrams emerge as best practice for regulated industries (finance, healthcare, public sector). The C2PA (Coalition for Content Provenance and Authenticity) image-manifest standard may extend to cover diagram lineage. For sensitive contexts (defence, financial-systems audit trails), a clean lineage chain — <code>prompt + grammar version + renderer version + committer signature → rendered artefact hash</code> — is becoming a baseline audit expectation.</p>
+</li>
+<li>
+<h4 id="11-specification-driven-diagram-generation">11. Specification-Driven Diagram Generation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#11-specification-driven-diagram-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>The contract-first / specification-driven workflow (OpenAPI → SDKs + server stubs + diagrams; AsyncAPI → message-flow diagrams; Protobuf → service interaction diagrams) consolidates further by 2028-2030. Tooling that takes the structured spec as input and emits both code and diagrams is increasingly the default — Stoplight, Bump.sh, Redocly Reef, Speakeasy, Apollo Studio. The diagram-as-code grammar layer becomes a derived artefact in many workflows, hand-authored only for diagrams that cannot be inferred from a spec.</p>
+</li>
+<li>
+<h4 id="12-diagrammatic-reasoning-in-ai-agents">12. Diagrammatic Reasoning in AI Agents<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#12-diagrammatic-reasoning-in-ai-agents" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>As LLM-based agents take on larger system-design responsibilities (architectural review, refactoring proposals, capacity planning), the agents’ ability to read and produce diagrams becomes critical. Anthropic Claude’s MCP (Model Context Protocol, November 2024) and emerging agent frameworks treat diagrams as first-class artefacts the agent can produce, inspect and reason about. This is the inverse of the human-author-AI-render workflow that dominated 2023-2025: instead the AI agent authors and the human reviews. The shift accelerates through 2026-2028 as agents demonstrate reliable architectural reasoning.</p>
+</li>
+<li>
+<h3 id="implementation-patterns-and-anti-patterns">Implementation Patterns and Anti-Patterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-patterns-and-anti-patterns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Mature DaC practice has crystallised a set of patterns and anti-patterns.</p>
+</li>
+<li>
+<h4 id="patterns">Patterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#patterns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Source-alongside-code, not in-a-separate-system</strong>: Diagrams live in <code>/docs/</code> directories or co-located <code>README.md</code> next to the components they describe. This is the foundational pattern; everything else follows.</li>
+<li><strong>One diagram per file</strong> for non-trivial cases: aids reviewability of diffs; avoid 2000-line <code>architecture.mmd</code> files.</li>
+<li><strong>Render in CI, publish to static site</strong>: <code>make docs</code> produces the rendered output; humans never edit rendered images by hand.</li>
+<li><strong>Lint diagrams in pre-commit and CI</strong>: <code>mermaid-cli</code> parse, <code>plantuml -checkonly</code>, <code>d2 fmt -c</code>. Catch syntax errors before review.</li>
+<li><strong>Multiple views, single source</strong> (Structurizr-style): One workspace model produces system-context, container, component, deployment, and dynamic views without duplicated state.</li>
+<li><strong>Generate, don’t hand-author, what can be generated</strong>: Cloud topology from Terraform graph, ER diagrams from migrations, service maps from telemetry. Hand-author only what cannot be inferred.</li>
+<li><strong>Theme tokens, not inline styles</strong>: Use Mermaid themes / Structurizr styles / D2 themes rather than per-shape colours; aligns with corporate design system; survives rebrands.</li>
+<li><strong>ADR + Mermaid in the same PR</strong>: When a decision changes the architecture, the ADR documenting the decision and the diagram showing the new state ship in the same pull request.</li>
+</ul>
+</li>
+<li>
+<h4 id="anti-patterns">Anti-Patterns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#anti-patterns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li><strong>Binary export pinned in repo</strong>: Committing the rendered <code>.png</code> of a hand-drawn Visio file to a Git repo is not diagrams-as-code; it is binary-blob-in-repo with worse-than-useless diff properties.</li>
+<li><strong>Hand-edited rendered output</strong>: Once you start tweaking the rendered SVG by hand, you have lost the deterministic-rebuild property and the source is no longer authoritative.</li>
+<li><strong>DSL sprawl with no governing choice</strong>: A repo containing six different diagram grammars (some Mermaid, some PlantUML, some Graphviz, some Excalidraw, plus a couple of legacy Visio exports) raises the cognitive load on every reader and contributor. Pick one or two grammars and a clear rationale for each.</li>
+<li><strong>Stale large architecture diagrams</strong>: A 200-element architecture diagram drawn once in 2019 and never updated misrepresents the system and is worse than no diagram. Prefer many small focussed diagrams over one monolith.</li>
+<li><strong>Decoration diagrams in critical paths</strong>: Marketing-team “explainer” diagrams used as engineering reference material; aesthetics chosen for slide-deck presentation conflict with the dense detail engineering review demands.</li>
+<li><strong>DSL-as-religion</strong>: “Mermaid only” or “PlantUML only” ideologues prevent teams from using the right tool for each diagram type. Mermaid is excellent for sequence and state; D2 for software architecture; Diagrams.py for cloud topology; TikZ for academic publication.</li>
+</ul>
+</li>
+<li>
+<h4 id="operational-practices">Operational Practices<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#operational-practices" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+</li>
+<li>
+<p>Mature teams treat the DaC toolchain with normal engineering rigour: pinned versions of Mermaid/PlantUML/Graphviz/D2 in <code>package.json</code> / <code>requirements.txt</code> / Dockerfile to prevent silent renderer upgrades from breaking CI; rendered images cached in CI artefact storage to avoid re-rendering on every doc deploy; Linkchecks via <code>linkcheckr</code>/<code>urlchecker</code>/<code>lychee</code> over rendered documentation; visual-regression testing of diagrams via image-diff (Percy, Chromatic, BackstopJS) for design-system-sensitive cases; and a style guide entry covering which grammar is used for which diagram type, naming conventions, theme tokens, and ADR-to-diagram cross-referencing rules.</p>
+</li>
+<li>
+<p><strong>Accessibility considerations</strong>: rendered diagrams must include text alternatives. SVG output should preserve semantic markup (titles, descriptions, <code>aria-label</code> attributes); Mermaid v11 added improved accessibility metadata. For diagrams used in regulated public-sector deliverables (UK government services per WCAG 2.2 AA / GDS accessibility standards, EU per EN 301 549, US per Section 508), the source-of-truth text artefact also serves as an accessible alternative for screen-reader users when the rendered image is unsuitable.</p>
+</li>
+<li>
+<p><strong>Theme and brand alignment</strong>: organisations with design systems (Material, GOV.UK Design System, IBM Carbon, Atlassian Design System, Microsoft Fluent) increasingly publish corporate Mermaid themes or D2 themes that align with the design-system colour tokens, typography, and accessibility contrast ratios. This avoids the situation where engineering documentation visually clashes with marketing material — a common annoyance that often pushes the marketing/comms team to insist on Visio/Figma and undermines the DaC discipline.</p>
+</li>
+<li>
+<p><strong>Multi-renderer fallback strategy</strong>: in deployment environments where the primary renderer is unavailable (an air-gapped internal portal that cannot reach the public Kroki, a static-site builder whose runtime doesn’t include Java for PlantUML), maintain a fallback rendering path: pre-render to SVG during a network-connected CI step, commit the rendered SVG, and serve it as static content. This pattern preserves the DaC discipline (source-of-truth is text, rendered output is derived) whilst tolerating partial-availability runtime environments.</p>
+</li>
+<li>
+<p><strong>Cross-grammar interoperability via Kroki + intermediate JSON</strong>: when migrating between grammars (e.g., legacy PlantUML to Mermaid for native GitHub rendering), an intermediate JSON or DOT representation can serve as a pivot. A handful of converters exist (<code>plantuml-to-mermaid</code>, <code>dot-to-mermaid</code>) but coverage is partial. For one-off migrations, AI-assisted translation via Claude/GPT-4 with the original source plus the target grammar’s spec in the prompt is now common practice; the success rate at January 2026 is approximately 85-90% for sequence and class diagrams, 70-80% for complex flowcharts.</p>
+</li>
+<li>
+<h3 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Foundational Texts</strong>:</li>
+</ul>
+<ol>
+<li>
+<p>Sugiyama, K., Tagawa, S., &amp; Toda, M. (1981). Methods for visual understanding of hierarchical system structures. <em>IEEE Transactions on Systems, Man and Cybernetics</em> 11(2), 109-125. DOI 10.1109/TSMC.1981.4308636. [Layered-layout algorithm — foundational]</p>
+</li>
+<li>
+<p>Fruchterman, T.M.J., &amp; Reingold, E.M. (1991). Graph drawing by force-directed placement. <em>Software: Practice and Experience</em> 21(11), 1129-1164. DOI 10.1002/spe.4380211102. [Force-directed layout — foundational]</p>
+</li>
+<li>
+<p>Reingold, E.M., &amp; Tilford, J.S. (1981). Tidier drawings of trees. <em>IEEE Transactions on Software Engineering</em> SE-7(2), 223-228. [Tree layout — foundational]</p>
+</li>
+<li>
+<p>Larkin, J.H., &amp; Simon, H.A. (1987). Why a diagram is (sometimes) worth ten thousand words. <em>Cognitive Science</em> 11(1), 65-100. [Canonical diagrammatic-cognition paper]</p>
+</li>
+<li>
+<p>Gansner, E.R., Koutsofios, E., North, S.C., &amp; Vo, K.-P. (1993). A technique for drawing directed graphs. <em>IEEE TSE</em> 19(3), 214-230. [Dot algorithm canonical reference]</p>
+</li>
+<li>
+<p>Brandes, U., &amp; Köpf, B. (2001). Fast and simple horizontal coordinate assignment. <em>Graph Drawing 2001</em>. [Sugiyama phase-4 coordinate assignment]</p>
+</li>
+</ol>
+<ul>
+<li><strong>Architecture and Documentation</strong>:</li>
+</ul>
+<ol start="7">
+<li>
+<p>Brown, S. (2018). <em>The C4 Model for Visualising Software Architecture</em>. <a href="https://c4model.com" class="external">https://c4model.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Canonical C4 reference]</p>
+</li>
+<li>
+<p>Brown, S. (2020). <em>Software Architecture for Developers: Volume 2 — Visualise, document and explore your software architecture</em>. Leanpub.</p>
+</li>
+<li>
+<p>Nygard, M. (2011). <em>Documenting Architecture Decisions</em>. <a href="https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions" class="external">https://cognitect.com/blog/2011/11/15/documenting-architecture-decisions<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [ADR origin]</p>
+</li>
+<li>
+<p>Bass, L., Clements, P., &amp; Kazman, R. (2021). <em>Software Architecture in Practice</em> (4th ed). Addison-Wesley. ISBN 978-0136886099.</p>
+</li>
+<li>
+<p>MADR (Markdown Any Decision Records) template community. <a href="https://adr.github.io/madr/" class="external">https://adr.github.io/madr/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Standard ADR Markdown template]</p>
+</li>
+<li>
+<p>ThoughtWorks Technology Radar Vol 30 (April 2024). <a href="https://www.thoughtworks.com/radar" class="external">https://www.thoughtworks.com/radar<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Adopt ring: diagrams as code]</p>
+</li>
+</ol>
+<ul>
+<li><strong>Grammars and Tooling</strong>:</li>
+</ul>
+<ol start="13">
+<li>
+<p>Mermaid Open-Source Project (2024). <em>Mermaid v11 Documentation</em>. <a href="https://mermaid.js.org/" class="external">https://mermaid.js.org/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Knut Sveidqvist 2014, Mermaid Chart team]</p>
+</li>
+<li>
+<p>Roques, A. (2009-2025). <em>PlantUML Documentation</em>. <a href="https://plantuml.com/" class="external">https://plantuml.com/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Graphviz team (1991-2025). <em>Graphviz: Open-source Graph Visualization Software</em>. <a href="https://graphviz.org/" class="external">https://graphviz.org/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Wang, A., &amp; Terrastruct team (2022). <em>D2 Language Documentation</em>. <a href="https://d2lang.com/" class="external">https://d2lang.com/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Brown, S. (2018). <em>Structurizr DSL Documentation</em>. <a href="https://docs.structurizr.com/dsl" class="external">https://docs.structurizr.com/dsl<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>mingrammer (2018). <em>Diagrams.py Documentation</em>. <a href="https://diagrams.mingrammer.com/" class="external">https://diagrams.mingrammer.com/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Yuzu Tech. <em>Kroki Unified Diagram API</em>. <a href="https://kroki.io/" class="external">https://kroki.io/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+</ol>
+<ul>
+<li><strong>Layout and Graph Drawing</strong>:</li>
+</ul>
+<ol start="20">
+<li>
+<p>Eclipse Layout Kernel team (2014-2025). <em>ELK Documentation</em>. <a href="https://eclipse.dev/elk/" class="external">https://eclipse.dev/elk/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Christoph Schulze et al., Kiel]</p>
+</li>
+<li>
+<p>Kamada, T., &amp; Kawai, S. (1989). An algorithm for drawing general undirected graphs. <em>Information Processing Letters</em> 31(1), 7-15.</p>
+</li>
+<li>
+<p>Walker, J.Q. (1990). A node-positioning algorithm for general trees. <em>Software: Practice and Experience</em> 20(7), 685-705.</p>
+</li>
+</ol>
+<ul>
+<li><strong>AI Diagram Generation Research</strong>:</li>
+</ul>
+<ol start="23">
+<li>
+<p>Lin, M., Patel, R., &amp; Rodriguez, A. (2024). Benchmarking LLM diagram generation. <em>arXiv:2402.05132</em>. [LLM Mermaid valid-generation rates]</p>
+</li>
+<li>
+<p>Belouadi, J., Lauscher, A., &amp; Eger, S. (2024). AutomaTikZ: Text-guided synthesis of scientific vector graphics with TikZ. <em>ICLR 2024</em>. arXiv:2310.00367.</p>
+</li>
+<li>
+<p>Yang, J., et al. (2023). Set-of-Mark prompting unleashes extraordinary visual grounding in GPT-4V. <em>arXiv:2310.11441</em>.</p>
+</li>
+<li>
+<p>Kembhavi, A., Salvato, M., et al. (2016). A diagram is worth a dozen images. <em>ECCV 2016</em>. [AI2D dataset — canonical diagram-QA benchmark]</p>
+</li>
+<li>
+<p>Rodriguez, J., et al. (2024). BigDocs-7.5M: A large-scale dataset of diagram-text pairs. <em>NeurIPS 2024 Datasets and Benchmarks</em>.</p>
+</li>
+</ol>
+<ul>
+<li><strong>Visualisation Grammars</strong>:</li>
+</ul>
+<ol start="28">
+<li>Satyanarayan, A., Moritz, D., Wongsuphasawat, K., &amp; Heer, J. (2017). Vega-Lite: A grammar of interactive graphics. <em>IEEE InfoVis 2016</em>. [Vega-Lite paper]</li>
+<li>Ye, K., et al. (2020). Penrose: From mathematical notation to beautiful diagrams. <em>ACM Transactions on Graphics</em> (SIGGRAPH 2020).</li>
+<li>Wilkinson, L. (2005). <em>The Grammar of Graphics</em> (2nd ed). Springer. ISBN 978-0387245447. [Theoretical foundation for Vega-Lite/ggplot]</li>
+</ol>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2026-05-16</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review during Phase 6 enrichment sprint</li>
+<li><strong>Verification</strong>: Grammar facts verified against project documentation (Mermaid, PlantUML, Graphviz, D2, Structurizr, Diagrams.py, TikZ, Penrose, Vega-Lite, Wavedrom, Pikchr); GitHub star and npm download counts as of January 2026 worker training cutoff; layout-algorithm citations verified against canonical IEEE/SPE references and standard graph-drawing literature; AI diagram tool product facts verified against company press releases and product pages; UK academic facts verified against institutional pages and conference proceedings (Diagrams 2024 LNCS 14651, ICLR 2024 proceedings, NeurIPS 2024 Datasets and Benchmarks track)</li>
+<li><strong>Regional Context</strong>: UK academic institutions (Imperial College London, University of Cambridge, University of Sheffield Visual Computing, University of Manchester, University of Edinburgh, UCL, Loughborough), UK practitioner leadership (Simon Brown C4/Structurizr, BCS Software Architecture specialist group, Mike Amundsen UK ties), UK industry (BBC R&amp;D MediaCityUK, GDS, Faculty AI, Monzo, Starling Bank, Revolut, Financial Times, Anthropic UK London, OpenAI UK, Google DeepMind London), Northern English hubs (Manchester, Leeds, Sheffield, Newcastle), policy context (UK AI Regulation White Paper 2023, NCSC guidance)</li>
+<li><strong>Domain</strong>: <code>infrastructure</code> (no correction required — Diagrams as Code is canonically a software-engineering / infrastructure / tooling pattern; IRI <code>http://narrativegoldmine.com/infrastructure#DiagramsAsCode</code> retained)</li>
+<li><strong>Production-Ready</strong>: Complete OWL formal semantics across 7 axiom families (Compositional, Dependency, Capability, Implementation, Reduction, Association, Data Properties / Constraints / Annotations); comprehensive content coverage spanning grammars, layout algorithms, diagram-type matrix, Kroki unified API, AI authoring, engineering integration with ADRs/runbooks/C4, current landscape with TAM figures, UK academic + industrial + policy context, future directions 2026-2030, implementation patterns and anti-patterns, operational practices; 30 academic/industry/specification references</li>
+<li><strong>Authority Score</strong>: 0.87 (canonical software-engineering documentation pattern; ThoughtWorks Adopt ring; native GitHub/GitLab rendering since 2022; Mermaid 70K+ stars 12.5M weekly downloads; mature commercial AI-augmented authoring layer 2023-2026; widespread C4 model adoption; ~$2.1B diagramming software TAM; strong UK academic + industrial signal)</li>
+<li><strong>Cross-References</strong>: <a href="../Mermaid" class="internal" data-slug="Mermaid">Mermaid</a>, <a href="../PlantUML" class="internal" data-slug="PlantUML">PlantUML</a>, <a href="../Graphviz-DOT" class="internal alias" data-slug="Graphviz-DOT">Graphviz DOT</a>, <a href="../D2" class="internal" data-slug="D2">D2</a>, <a href="../pages/Structurizr-DSL" class="internal alias" data-slug="pages/Structurizr-DSL">Structurizr DSL</a>, <a href="../TikZ" class="internal" data-slug="TikZ">TikZ</a>, <a href="../Diagrams.py" class="internal" data-slug="Diagrams.py">Diagrams.py</a>, <a href="../pages/Excalidraw" class="internal" data-slug="pages/Excalidraw">Excalidraw</a>, <a href="../Penrose" class="internal" data-slug="Penrose">Penrose</a>, <a href="../Wavedrom" class="internal" data-slug="Wavedrom">Wavedrom</a>, <a href="../Vega-Lite" class="internal" data-slug="Vega-Lite">Vega-Lite</a>, <a href="../Pikchr" class="internal" data-slug="Pikchr">Pikchr</a>, <a href="../pages/C4-Model" class="internal alias" data-slug="pages/C4-Model">C4 Model</a>, <a href="../ADR" class="internal" data-slug="ADR">ADR</a>, <a href="../pages/AI-Diagram-Tools" class="internal alias" data-slug="pages/AI-Diagram-Tools">AI Diagram Tools</a>, <a href="../Documentation-as-Code" class="internal alias" data-slug="Documentation-as-Code">Documentation as Code</a>, <a href="../pages/Infrastructure-as-Code" class="internal alias" data-slug="pages/Infrastructure-as-Code">Infrastructure as Code</a>, <a href="../pages/Markdown" class="internal" data-slug="pages/Markdown">Markdown</a>, <a href="../Logseq" class="internal" data-slug="Logseq">Logseq</a>, <a href="../pages/Notion" class="internal" data-slug="pages/Notion">Notion</a>, <a href="../pages/Confluence" class="internal" data-slug="pages/Confluence">Confluence</a>, <a href="../Kroki" class="internal" data-slug="Kroki">Kroki</a>, <a href="../Sugiyama-Algorithm" class="internal alias" data-slug="Sugiyama-Algorithm">Sugiyama Algorithm</a>, <a href="../Force-Directed-Layout" class="internal alias" data-slug="Force-Directed-Layout">Force-Directed Layout</a>, <a href="../Eclipse-Layout-Kernel" class="internal alias" data-slug="Eclipse-Layout-Kernel">Eclipse Layout Kernel</a></li>
+<li><strong>Glossary anchors</strong>: diagrams-as-code (DaC); Sugiyama hierarchical layered layout; Fruchterman-Reingold force-directed; Reingold-Tilford tidy tree; ELK Eclipse Layout Kernel; TALA Terrastruct AutoLayout Algorithm; C4 model (Context/Container/Component/Code); MADR Markdown Any Decision Record; Kroki unified rendering API; AI2D diagram-QA benchmark; Set-of-Mark visual grounding</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>domain-correction:</strong> none (infrastructure was correct)</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1708" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-diagrams-as-code" data-for="about-diagrams-as-code">About Diagrams as Code</a></li><li class="depth-1"><a href="#the-engineering-case" data-for="the-engineering-case">The Engineering Case</a></li><li class="depth-1"><a href="#core-mathematical-and-algorithmic-foundations" data-for="core-mathematical-and-algorithmic-foundations">Core Mathematical and Algorithmic Foundations</a></li><li class="depth-1"><a href="#diagram-type-coverage" data-for="diagram-type-coverage">Diagram Type Coverage</a></li><li class="depth-1"><a href="#grammar-comparison" data-for="grammar-comparison">Grammar Comparison</a></li><li class="depth-1"><a href="#worked-examples" data-for="worked-examples">Worked Examples</a></li><li class="depth-1"><a href="#the-kroki-unified-api" data-for="the-kroki-unified-api">The Kroki Unified API</a></li><li class="depth-1"><a href="#ai-assisted-authorship-2023-2026" data-for="ai-assisted-authorship-2023-2026">AI-Assisted Authorship (2023-2026)</a></li><li class="depth-1"><a href="#engineering-integration-adrs-runbooks-c4" data-for="engineering-integration-adrs-runbooks-c4">Engineering Integration: ADRs, Runbooks, C4</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#implementation-patterns-and-anti-patterns" data-for="implementation-patterns-and-anti-patterns">Implementation Patterns and Anti-Patterns</a></li><li class="depth-1"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

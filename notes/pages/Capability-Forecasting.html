@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Capability Forecasting</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Capability Forecasting"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Capability Forecasting"/><meta name="twitter:description" content="Capability forecasting is the practice of predicting the future capabilities of AI systems before they are built or deployed, typically by extrapolating from scaling laws, benchmark trends, and historical progress."/><meta property="og:description" content="Capability forecasting is the practice of predicting the future capabilities of AI systems before they are built or deployed, typically by extrapolating from scaling laws, benchmark trends, and historical progress."/><meta property="og:image:alt" content="Capability forecasting is the practice of predicting the future capabilities of AI systems before they are built or deployed, typically by extrapolating from scaling laws, benchmark trends, and historical progress."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Capability-Forecasting"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Capability-Forecasting"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Capability forecasting is the practice of predicting the future capabilities of AI systems before they are built or deployed, typically by extrapolating from scaling laws, benchmark trends, and historical progress."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Capability-Forecasting"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-1359"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-1359" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Capability Forecasting</a></div></nav><h1 class="article-title">Capability Forecasting</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.695Z">23 Sept 2026</time><span>36 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:capability-forecasting</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.62</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../Anticipatory-Governance" class="internal">Anticipatory Governance</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Scaling-Laws" class="internal">Scaling Laws</a></li><li><a href="../Benchmark-Trend-Analysis" class="internal">Benchmark Trend Analysis</a></li><li><a href="../pages/Emergent-Capabilities" class="internal">Emergent Capabilities</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../Threshold-Estimation" class="internal">Threshold Estimation</a></li><li><a href="../pages/Prediction-Markets" class="internal">Prediction Markets</a></li><li><a href="../Biological-Anchors-Model" class="internal">Biological Anchors Model</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../Compute-Budget" class="internal">Compute Budget</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Catastrophic-Risk-Assessment" class="internal">Catastrophic Risk Assessment</a></li><li><a href="../pages/AI-Regulation" class="internal">AI Regulation</a></li><li><a href="../pages/Responsible-Scaling-Policy" class="internal">Responsible Scaling Policy</a></li><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li><li><a href="../pages/Human-Oversight" class="internal">Human Oversight</a></li><li><a href="../Export-Control" class="internal">Export Control</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Emergent-Capabilities" class="internal">Emergent Capabilities</a></li><li><a href="../Benchmark-Saturation" class="internal">Benchmark Saturation</a></li><li><a href="../Reactive-Risk-Management" class="internal">Reactive Risk Management</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Scaling-Laws" class="internal">Scaling Laws</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../Compute-Budget" class="internal">Compute Budget</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../Biological-Anchors-Model" class="internal">Biological Anchors Model</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li><li><a href="../pages/Prediction-Markets" class="internal">Prediction Markets</a></li><li><a href="../Benchmark-Trend-Extrapolation" class="internal">Benchmark Trend Extrapolation</a></li><li><a href="../pages/Probabilistic-Risk-Assessment" class="internal">Probabilistic Risk Assessment</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:capability-forecasting</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Emergent-Capabilities" class="internal">Emergent Capabilities</a></li><li><a href="../pages/Capability-Evaluation" class="internal">Capability Evaluation</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Alignment" class="internal">Alignment</a></li><li><a href="../pages/Responsible-Scaling-Policy" class="internal">Responsible Scaling Policy</a></li><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li><li><a href="../pages/Transformative-AI" class="internal">Transformative AI</a></li><li><a href="../AI-Timelines" class="internal">AI Timelines</a></li><li><a href="../EpochAI" class="internal">EpochAI</a></li><li><a href="../Metaculus" class="internal">Metaculus</a></li><li><a href="../AI-Safety-Level" class="internal">AI Safety Level</a></li><li><a href="../Compute-Budget" class="internal">Compute Budget</a></li><li><a href="../Test-Time-Compute" class="internal">Test-Time Compute</a></li><li><a href="../Benchmark-Saturation" class="internal">Benchmark Saturation</a></li><li><a href="../METR" class="internal">METR</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../California-SB53" class="internal">California SB53</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment</a></li><li><a href="../pages/Catastrophic-Risk-Assessment" class="internal">Catastrophic Risk Assessment</a></li><li><a href="../pages/AI-Alignment" class="internal">AI Alignment</a></li><li><a href="../pages/Human-Oversight" class="internal">Human Oversight</a></li><li><a href="../pages/Responsible-AI" class="internal">Responsible AI</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/Responsible-Scaling-Policy" class="internal">Responsible Scaling Policy</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../pages/Model-Evaluation" class="internal">Model Evaluation</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../Expert-Elicitation" class="internal">Expert Elicitation</a></li><li><a href="../pages/Prediction-Markets" class="internal">Prediction Markets</a></li><li><a href="../Benchmark-Trend-Analysis" class="internal">Benchmark Trend Analysis</a></li><li><a href="../pages/Red-Teaming" class="internal">Red Teaming</a></li><li><a href="../Dangerous-Capability-Evaluation" class="internal">Dangerous Capability Evaluation</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Capability forecasting is the practice of predicting the future capabilities of AI systems before they are built or deployed, typically by extrapolating from scaling laws, benchmark trends, and historical progress. It aims to anticipate when models will reach particular performance thresholds so that safety, governance, and deployment decisions can be made proactively. Forecasts are inherently uncertain because of emergent behaviour and discontinuous jumps in capability.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:ScalingLaws))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:BenchmarkTrendAnalysis))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:EmergentCapabilities))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:ExpertElicitation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:UncertaintyQuantification))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:PredictionMarkets))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:ThresholdEstimation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:BiologicalAnchorsModel))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:hasPart ai:TestTimeComputeForecasting))
+</code></pre>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:requires ai:ScalingLaws))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:requires ai:ModelEvaluation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:requires ai:EvaluationBenchmarks))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:requires ai:ComputeBudget))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:requires ai:FoundationModel))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:dependsOn ai:DangerousCapabilityEvaluation))
+</code></pre>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:RiskAssessment))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:AISafety))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:CatastrophicRiskAssessment))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:AIRegulation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:HumanOversight))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:AnticipatoryGovernance))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:enables ai:ResponsibleScalingPolicy))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:supports ai:AIGovernance))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:supports ai:ExportControl))
+</code></pre>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:implements ai:BiologicalAnchorsModel))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:implements ai:ExpertElicitation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:implements ai:PredictionMarkets))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:implements ai:BenchmarkTrendExtrapolation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:uses ai:ScalingLaws))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:uses ai:ModelEvaluation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:uses ai:RedTeaming))
+</code></pre>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:reducesTo ai:ScalingLaws))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:reducesTo ai:ThresholdEstimation))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:reducesTo ai:UncertaintyQuantification))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:partOf ai:AIGovernance))
+SubClassOf(ai:CapabilityForecasting
+  ObjectSomeValuesFrom(ai:partOf ai:AISafety))
+</code></pre>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>Capability forecasting emerged as a recognised sub-discipline of <a href="../pages/AI-Safety" class="internal alias" data-slug="pages/AI-Safety">AI Safety</a> and <a href="../pages/AI-Governance" class="internal alias" data-slug="pages/AI-Governance">AI Governance</a> in response to the practical question: when will AI systems become capable enough to cross safety-relevant thresholds, and what can policymakers and safety engineers do to prepare?</p>
+<p>The discipline draws its technical foundations from empirical <a href="../pages/Scaling-Laws" class="internal alias" data-slug="pages/Scaling-Laws">Scaling Laws</a> research:</p>
+<ul>
+<li>The OpenAI Kaplan et al. (2020) scaling laws paper established smooth power-law relationships between training compute and held-out language modelling loss across five orders of magnitude.</li>
+<li>The DeepMind Hoffmann et al. (2022) Chinchilla paper corrected earlier over-parameterised models, establishing the compute-optimal training formula (equal scaling of model parameters and training tokens).</li>
+<li>Together these relationships provide the quantitative backbone for extrapolating: if loss follows L(C) ≈ A/C^α across many orders of magnitude, then given planned training compute budgets, loss at future training runs can be predicted.</li>
+<li>If downstream task performance is well-calibrated against loss, downstream capability can be forecast from planned training runs before those runs are executed.</li>
+</ul>
+<p>The practical difficulty is that “downstream capability” at the task level does not always scale smoothly with loss:</p>
+<ul>
+<li><a href="../pages/Emergent-Capabilities" class="internal alias" data-slug="pages/Emergent-Capabilities">Emergent Capabilities</a> appear as discontinuous jumps on specific benchmarks at sufficient scale, defying smooth extrapolation from training loss metrics.</li>
+<li>Wei et al. (2022) documented more than 100 emergent abilities in large language models — from multi-step reasoning to chain-of-thought problem solving — appearing abruptly above threshold compute scales.</li>
+<li>Schaeffer et al. (2023) countered that apparent emergence is an artefact of discrete evaluation metrics; continuous metrics reveal smooth scaling throughout.</li>
+<li>This debate remains fundamental: if emergence is real and discontinuous, forecasting is inherently limited by the impossibility of predicting phase transitions; if it is metric-artefactual, reliable extrapolation is in principle achievable.</li>
+</ul>
+<p>The institutional infrastructure for capability forecasting developed significantly from 2022 onwards:</p>
+<ul>
+<li><strong>EpochAI</strong>: a non-profit research institute funded by Open Philanthropy and Jaan Tallinn, maintains the most comprehensive public database of AI training runs, tracking compute trends, parameter counts, and benchmark performance trajectories.</li>
+<li><strong>Epoch’s direct approach</strong>: uses observed scaling laws and empirical measurements to directly predict performance improvements, complementing Ajeya Cotra’s biological anchors framework.</li>
+<li><strong>Biological anchors (Cotra 2020/2022)</strong>: treats computational cost of evolution or a human lifetime as upper bounds on training compute required for transformative AI.</li>
+<li><strong>EpochAI GATE model</strong>: as of late 2025, places the median transformative AI estimate around 2033 under baseline compute scaling.</li>
+<li><strong>Samotsvety superforecasters</strong>: assigned a 28% probability of AGI by 2030 as of early 2026, following significant timeline compression in 2024–2025.</li>
+<li><strong>Metaculus community</strong>: as of early 2026, assigned 25% probability of AGI by 2029 and 50% by 2033 — compressed from a 50-year median in 2020.</li>
+<li><strong>METR (Model Evaluation and Threat Research)</strong>: constructed a particularly influential empirical approach using task completion time horizons, measuring the longest autonomous task frontier models can reliably complete, then tracking how this time horizon grew across model generations.</li>
+<li>METR’s March 2025 analysis found this time horizon growing exponentially from 2019 to 2025, suggesting the ability to complete one-month-long autonomous software tasks may arrive in the 2027–2030 range.</li>
+</ul>
+<p>The policy use of capability forecasting has accelerated in 2024–2026:</p>
+<ul>
+<li>AI lab responsible scaling policies (Anthropic’s RSP, OpenAI’s Preparedness Framework, Google DeepMind’s Frontier Safety Framework) all include capability threshold definitions operationalised through evaluation benchmarks.</li>
+<li>Capability forecasting enables labs and regulators to project when these thresholds might be reached, informing proactive preparation for required safety measures.</li>
+<li>The UK AI Security Institute (AISI) incorporated capability trend extrapolation in its Frontier AI Trends Report (December 2025), noting that cyber autonomy tasks requiring over 10 years of human experience were successfully completed by AI for the first time in 2025.</li>
+<li>AISI also documented that autonomy task completion rates above one hour exceeded 40% for advanced models by mid-2025.</li>
+<li>These empirical trajectory findings directly enable <a href="../pages/Catastrophic-Risk-Assessment" class="internal alias" data-slug="pages/Catastrophic-Risk-Assessment">Catastrophic Risk Assessment</a> by grounding regulatory threshold definitions in observed capability growth rates.</li>
+</ul>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. Scaling-law extrapolation</strong></p>
+<p>The primary quantitative method, fitting power-law models to observed loss-versus-compute curves:</p>
+<ul>
+<li>Standard form: L(C) ≈ A·C^(-α), where α is the estimated scaling exponent typically in the range 0.05–0.30 for language models.</li>
+<li>Uncertainty in extrapolation grows with extrapolation distance; forecast error distributions widen substantially beyond the range of observed training runs.</li>
+<li>Requires accurate accounting of training <a href="../Compute-Budget" class="internal alias" data-slug="Compute-Budget">Compute Budget</a> in floating-point operations (FLOPs), careful standardisation of evaluation conditions, and domain-specific exponent estimation.</li>
+<li>Multi-axis fits across model parameters (N), training tokens (D), and compute (C = 6ND for standard transformers) decompose contributions from each axis.</li>
+<li>Architecture improvements (Mixtures of Experts, attention variants, improved tokenisation) can shift the power-law coefficient, introducing discontinuities into naive compute extrapolation.</li>
+<li>The Chinchilla compute-optimal frontier identifies the Pareto-optimal (N, D) allocation for each compute budget, enabling forecast of the optimal model configuration at future compute scales.</li>
+</ul>
+<p><strong>2. Benchmark trend extrapolation</strong></p>
+<p>Tracks performance trajectories on standardised evaluation benchmarks across model generations:</p>
+<ul>
+<li>ForecastBench (ICLR 2025) provides a systematic framework for benchmark trend extrapolation methodology.</li>
+<li>Benchmark saturation is a critical constraint: by early 2025, benchmarks that were frontier challenges in early 2024 — including GPQA (graduate-level scientific reasoning) — were being saturated within months of introduction.</li>
+<li>METR’s RE-Bench (Research Engineering Benchmark) and SWE-Bench (software engineering) are canonical examples: forecasts placed SWE-Bench saturation in 2026.</li>
+<li>Benchmark saturation dynamics require forecasters to simultaneously project model performance improvement and benchmark discrimination lifetime — a two-dimensional forecasting problem.</li>
+<li>The “Forecasting Frontier Language Model Agent Capabilities” paper (arXiv:2502.15850, 2025) demonstrated that aggregated benchmark performance can be predicted with reasonable accuracy but individual task performance cannot.</li>
+</ul>
+<p><strong>3. Expert elicitation and prediction markets</strong></p>
+<p>Structured aggregation of expert judgements complements quantitative extrapolation:</p>
+<ul>
+<li><strong>Metaculus</strong>: community forecasting aggregating predictions from thousands of registered forecasters with calibration tracking; assigned 25% probability AGI by 2029 as of early 2026.</li>
+<li><strong>Samotsvety</strong>: high-accuracy superforecasting group specialising in technology timelines; 28% probability AGI by 2030 as of early 2026.</li>
+<li><strong>Kalshi, Polymarket, Manifold</strong>: prediction markets providing incentive-aligned probability estimates for specific capability events.</li>
+<li><strong>AI Impacts survey</strong>: annual survey of machine learning researchers on capability timeline expectations.</li>
+<li><strong>RAND AI Expert Panel</strong>: structured expert elicitation using Delphi methodology for catastrophic risk probability estimation.</li>
+<li>The diversity of methodology across sources, and their partial agreement and disagreement, provides calibration of forecast uncertainty.</li>
+</ul>
+<p><strong>4. Biological anchors modelling</strong></p>
+<p>Cotra’s biological anchors framework (2020, updated 2022) anchors transformative AI compute requirements in biological estimates:</p>
+<ul>
+<li><strong>Evolution anchor</strong>: number of floating-point operations performed by evolution to produce a human brain.</li>
+<li><strong>Lifetime anchor</strong>: number performed by a human brain over a lifetime of learning.</li>
+<li><strong>Neural network anchors</strong>: scale model sizes to match brain parameter counts using observed scaling law relationships.</li>
+<li>The approach provides reference class forecasting — grounding uncertain AI timelines in biological facts better understood than AI R&amp;D trajectories.</li>
+<li>Key limitation: uncertainty about how computational efficiency of biological evolution relates to deep learning training efficiency spans many orders of magnitude.</li>
+</ul>
+<p><strong>5. Test-time compute forecasting</strong></p>
+<p>An emerging extension addressing the shift from training-compute-dominated to test-time-compute-dominated progress:</p>
+<ul>
+<li>Chain-of-thought reasoning (Wei et al., 2022), tree-of-thought search (Yao et al., 2023), and formally verified reasoning (DeepSeek-R1, 2025; Gemini 2.5, 2025) showed that inference-time compute allocation substantially improves performance on reasoning tasks.</li>
+<li>METR’s task completion time horizon framework naturally incorporates test-time compute effects because the metric measures what a model can achieve with arbitrary compute during generation.</li>
+<li>Forecasting test-time compute scaling requires modelling not just model weights but inference serving infrastructure and economic feasibility of extended compute-intensive inference.</li>
+<li>METR’s 2026 analysis found exponential growth in time horizon from 2019 to 2025, with preliminary model suggesting 99% AI R&amp;D automation around 2032.</li>
+</ul>
+<p><strong>6. Threshold estimation and dangerous capabilities evaluation</strong></p>
+<p>Operationalises capability forecasting for safety policy:</p>
+<ul>
+<li>Involves estimating when specific dangerous capabilities will be reached — “provides serious uplift to CBRN weapon synthesis” or “can conduct autonomous cyberattacks at nation-state level.”</li>
+<li>Anthropic’s Responsible Scaling Policy defines thresholds as AI Safety Levels (ASL-2, ASL-3, ASL-4).</li>
+<li>Operationalised via <a href="../Dangerous-Capability-Evaluation" class="internal alias" data-slug="Dangerous-Capability-Evaluation">Dangerous Capability Evaluation</a> benchmarks including WMDP (Weapons of Mass Destruction Proxy), HarmBench, and biological uplift assessments with domain expert consultants.</li>
+<li>Capability forecasting enables labs to project when ASL-3 or ASL-4 thresholds might be approached and to prepare required safety measures in advance.</li>
+<li>California SB53 (September 2025) legislated analogous framework requirements for all large frontier AI developers.</li>
+</ul>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>1. Responsible scaling policies (RSPs)</strong></p>
+<p>AI labs use internal capability forecasting to set the schedule and criteria for upgrading safety measures:</p>
+<ul>
+<li>Anthropic’s RSP defines training-run triggers (compute scale approaching a threshold) and evaluation triggers (benchmark performance approaching a dangerous-capability threshold) that activate additional safety evaluation requirements.</li>
+<li>Capability forecasting enables calculation of: “given planned compute scaling, when will the next training run plausibly hit the ASL-3 threshold?” — providing lead time to prepare the required safety mitigations before deployment.</li>
+<li>OpenAI’s Preparedness Framework (updated April 2025) similarly uses capability forecasts to schedule evaluations against “Critical” thresholds (capabilities enabling mass casualties or billions of dollars in economic damage).</li>
+<li>Google DeepMind’s Frontier Safety Framework defines analogous capability classification and monitoring requirements.</li>
+<li>Meta’s Frontier AI Safety framework follows similar structures for its Llama model family.</li>
+<li>California SB53 (September 2025) effectively legislates the capability forecasting and threshold-management function that RSPs implement voluntarily.</li>
+</ul>
+<p><strong>2. Regulatory compute thresholds</strong></p>
+<ul>
+<li>EU AI Act: uses compute-based capability thresholds (originally 10^25 floating-point operations) as proxy for frontier model status triggering enhanced regulatory requirements.</li>
+<li>Capability forecasting informs where to set these thresholds and how they should evolve as the capability frontier advances.</li>
+<li>AISI has worked with DSIT to inform the forthcoming UK AI Bill’s approach to capability thresholds, drawing on Frontier AI Trends Report empirical findings and trend extrapolations.</li>
+<li>NIST AI RMF: provides the US voluntary baseline for AI risk management including capability-sensitive risk classification.</li>
+</ul>
+<p><strong>3. Export control and compute governance</strong></p>
+<ul>
+<li>US Bureau of Industry and Security (BIS) rules restricting export of high-performance AI accelerators use compute thresholds requiring capability forecasting to calibrate.</li>
+<li>Setting thresholds too high relative to capability makes controls ineffective; too low impedes legitimate research.</li>
+<li>EpochAI’s compute tracking database is a key input to these calibrations, providing the most comprehensive public record of AI training compute trends.</li>
+<li>International discussions on AI compute governance through the G7 Hiroshima AI Process, OECD AI Policy Observatory, and emerging multilateral AI governance bodies all reference capability forecasting.</li>
+</ul>
+<p><strong>4. Red-teaming scheduling and evaluation prioritisation</strong></p>
+<ul>
+<li>Safety engineering teams use capability forecasts to prioritise which capability domains require red-teaming before the next training run.</li>
+<li>If a capability forecast indicates biological synthesis assistance will cross an uplift threshold within two training generations, this domain receives priority evaluation resources.</li>
+<li>METR’s evaluation pipeline tracks capability growth in domains including autonomous cyberattack, biological synthesis assistance, and long-horizon autonomous action.</li>
+<li>This trend data informs where to concentrate safety evaluation effort and which benchmarks need development.</li>
+</ul>
+<p><strong>5. Academic and philanthropic resource allocation</strong></p>
+<ul>
+<li>Open Philanthropy, Survival and Flourishing Fund, and the Arc Institute use capability forecasting as input to grant-making strategies for AI safety research.</li>
+<li>Compressed capability timelines directly justify increased safety research urgency and investment.</li>
+<li>The major AI safety funding surge of 2023–2025 reflects institutions acting on capability forecasts that compressed expected timelines substantially:
+<ul>
+<li>Anthropic raised $7.3B Series E (2024)</li>
+<li>UK government committed £100M AI Safety Research Grant programme</li>
+<li>US AI Safety Institute budget expanded</li>
+<li>Open Philanthropy’s AI safety grantmaking reached approximately $200M per year by 2025</li>
+</ul>
+</li>
+</ul>
+<p><strong>6. Insurance, financial risk, and scenario planning</strong></p>
+<ul>
+<li>Financial institutions, re-insurance companies, and national risk registries are beginning to incorporate AI capability forecasts into scenario planning.</li>
+<li>AI-enabled risks to scenario planning include: rapid knowledge-work automation, sophisticated cyber fraud, technology competition acceleration, systemic financial AI risk.</li>
+<li>Lloyd’s of London and Swiss Re have begun developing AI risk modelling frameworks incorporating capability forecasting as a core input, analogous to climate scenario analysis under TCFD recommendations.</li>
+<li>National risk registries (UK National Risk Register, US National Risk Management Centre) are adding AI capability trajectory to their horizon-scanning inputs.</li>
+</ul>
+<p><strong>7. Scientific impact forecasting</strong></p>
+<ul>
+<li>An emerging use case applying capability forecasting to scientific research acceleration timelines: when will AI systems reach capability thresholds for autonomous drug discovery, materials science synthesis pathway prediction, or mathematical theorem proving?</li>
+<li>AlphaFold 2 (2020) and AlphaFold 3 (2024) provided the most dramatic demonstrations of AI crossing scientific capability thresholds with transformative research impact.</li>
+<li>Capability forecasting for scientific AI is methodologically distinct from safety-focused forecasting because the target is benefit (capability crossing a productivity threshold) rather than risk (capability crossing a harm threshold), but uses the same underlying scaling law and benchmark trend methodology.</li>
+</ul>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The intellectual foundations of AI capability forecasting trace to I.J. Good’s (1965) concept of an “intelligence explosion” — the feedback loop by which a sufficiently intelligent machine could improve its own design, triggering recursive capability growth — which introduced the idea that AI capability trajectories might be discontinuous and difficult to forecast from gradual extrapolation.</p>
+<p><strong>Foundational scaling law work:</strong></p>
+<ul>
+<li>Kaplan et al. (2020, “Scaling Laws for Neural Language Models,” arXiv:2001.08361) demonstrated power-law scaling across five orders of magnitude in compute, parameter count, and data — the quantitative backbone of capability extrapolation.</li>
+<li>The surprise finding that smooth power laws held so reliably motivated the subsequent scaling-law research programme.</li>
+<li>Hoffmann et al. (2022, “Training Compute-Optimal Large Language Models,” arXiv:2203.15556 — Chinchilla) refined the compute allocation formula, revealing that earlier GPT-3-scale models were massively undertrained, and providing a practical framework for predicting compute-optimal model configurations at future compute budgets.</li>
+</ul>
+<p><strong>Emergence debate:</strong></p>
+<ul>
+<li>Wei et al. (2022, “Emergent Abilities of Large Language Models,” Transactions on Machine Learning Research) documented more than 100 task families where models gained ability to solve problems only above a threshold scale, with near-zero performance below and high performance above.</li>
+<li>Schaeffer et al. (2023, “Are Emergent Abilities of Large Language Models a Mirage?”, NeurIPS 2023) argued that apparent emergence is an artefact of discrete metrics; continuous metrics reveal smooth scaling throughout.</li>
+<li>Arora and Goyal (2023, arXiv:2307.15936) provided a theory of emergence grounded in the geometry of feature learning in high-dimensional spaces.</li>
+<li>This debate remains unresolved and constitutes the central epistemological challenge for smooth-extrapolation capability forecasting.</li>
+</ul>
+<p><strong>Transformative AI timelines research:</strong></p>
+<ul>
+<li>Cotra (2020; updated 2022, Open Philanthropy) provided the first systematic probabilistic forecast of transformative AI timelines using biological anchors, with the 2022 update compressing the median timeline substantially.</li>
+<li>The paper is notable for explicit uncertainty quantification and scenario modelling, establishing structured AI capability forecasting as a formal analytical practice.</li>
+<li>Epoch AI’s “Literature Review of Transformative Artificial Intelligence Timelines” (2023) systematically catalogued prior forecasting approaches, their assumptions, and their disagreements.</li>
+</ul>
+<p><strong>Autonomy evaluation and forecasting:</strong></p>
+<ul>
+<li>Kinniment et al. (2023, arXiv:2312.11671) established foundational methodology for autonomy evaluation using realistic task scenarios; METR’s subsequent work refined and scaled this approach.</li>
+<li>METR (2025) introduced the task completion time horizon as the canonical empirical metric for AI autonomy capability, finding exponential growth in time horizon from 2019 to 2025.</li>
+<li>Phuong et al. (2024, arXiv:2403.13793) established the methodology for dangerous capability evaluations that bridge capability forecasting with <a href="../pages/Catastrophic-Risk-Assessment" class="internal alias" data-slug="pages/Catastrophic-Risk-Assessment">Catastrophic Risk Assessment</a>, defining evaluation protocols for autonomous replication, cyberattack capability, and CBRN uplift.</li>
+<li>“Forecasting Frontier Language Model Agent Capabilities” (arXiv:2502.15850, 2025) synthesised benchmark trend extrapolation and autonomy forecasting, demonstrating that aggregated benchmark performance can be predicted but individual task performance cannot.</li>
+<li>ForecastBench (Dahl et al., ICLR 2025) provided standardised methodology and evaluation criteria for AI forecasting capability, enabling systematic comparison of forecasting approaches.</li>
+</ul>
+<p><strong>UK academic contributions:</strong></p>
+<ul>
+<li>Cambridge Centre for the Study of Existential Risk (CSER): applies structured expert elicitation to AI risk timelines and has contributed to UK government capability assessment methodology.</li>
+<li>Oxford Future of Humanity Institute (closed 2024, with key researchers dispersing to Anthropic, new independent institutes, and academia): produced foundational early work on AI timelines under Nick Bostrom, Toby Ord, and Carl Shulman.</li>
+<li>Toby Ord’s “The Precipice” (2020) provided the most systematic public-facing analysis of AI existential risk probability estimates, including capability forecasting inputs.</li>
+<li>Oxford’s Global Priorities Institute continues AI policy and long-term risk research following FHI’s closure.</li>
+</ul>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The capability forecasting landscape in 2026 is characterised by three defining features: rapid benchmark saturation, a paradigm shift from training-time to test-time compute, and growing institutional formalisation of forecasting as a governance input.</p>
+<p><strong>Benchmark saturation acceleration:</strong></p>
+<ul>
+<li>Benchmarks posing frontier challenges in early 2024 — GPQA Diamond, AIME competition mathematics, PhD-level chemistry reasoning — were largely saturated by leading models within twelve to eighteen months.</li>
+<li>This saturation race has driven development of increasingly difficult evaluation suites as of mid-2026:
+<ul>
+<li>METR’s RE-Bench: research engineering tasks requiring weeks of expert work</li>
+<li>Long-Horizon Tasks: tasks taking humans days to months</li>
+<li>FRONTIER-Bench: frontier scientific research tasks requiring graduate-level expertise</li>
+</ul>
+</li>
+<li>The Frontier AI Trends Report (AISI, December 2025) noted that by mid-2025, advanced models could complete software autonomy tasks taking a human at least one hour in over 40% of cases.</li>
+<li>The first model to successfully complete expert-level cyber tasks requiring more than ten years of human professional experience was evaluated in 2025.</li>
+</ul>
+<p><strong>Test-time compute paradigm shift:</strong></p>
+<ul>
+<li>Catalysed by o1-series models (OpenAI, 2024), DeepSeek-R1 (2025), and Gemini 2.5 Ultra (2025), which achieve task performance substantially above what pre-training loss alone would predict.</li>
+<li>Complicated training-compute-based capability forecasting by adding a second scaling dimension not captured in pre-training loss curves.</li>
+<li>METR’s time-horizon forecasting framework adapts to this by measuring task completion capability empirically rather than deriving it from loss metrics.</li>
+<li>Requires comprehensive empirical evaluation of each new model generation rather than pure extrapolation, increasing the cost and frequency of required assessments.</li>
+<li>METR’s February 2026 analysis suggested that under current trends, 99% AI R&amp;D automation may arrive around 2032.</li>
+</ul>
+<p><strong>Forecast estimate current state (early 2026):</strong></p>
+<ul>
+<li>EpochAI GATE model: median transformative AI date approximately 2033 under baseline compute scaling, earlier under accelerated or breakthrough scenarios.</li>
+<li>Samotsvety superforecasters: 28% probability of AGI by 2030, revised substantially earlier following 2024–2025 capability jumps.</li>
+<li>Metaculus: 25% probability of AGI by 2029, 50% by 2033 — compressed from a 50-year median in 2020.</li>
+<li>Kalshi contributors: approximately 40% probability of OpenAI achieving AGI by 2030 (January 2026).</li>
+<li>Polymarket: 9% probability of AGI by 2027 (early 2026).</li>
+</ul>
+<p><strong>Regulatory incorporation:</strong></p>
+<ul>
+<li>California SB53 (September 2025): requires all large frontier AI developers to publish frameworks describing dangerous capability assessment and threshold management.</li>
+<li>EU AI Act progressive implementation: mandatory framework publication requirements made previously internal capability forecasting methodology externally visible and subject to public scrutiny.</li>
+<li>UK AI Bill (expected Parliamentary introduction 2026–2027): expected to include statutory capability evaluation requirements, drawing on AISI’s evaluation methodology and capability trend data.</li>
+<li>The DSIT committed in January 2025 to establishing AISI as a statutory body with permanent institutional footing for capability assessment.</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The UK has positioned capability forecasting as a core function of frontier AI governance through a combination of institutional investment, evaluation methodology development, and regulatory integration.</p>
+<p><strong>AI Security Institute (AISI):</strong></p>
+<ul>
+<li>The primary UK government capability assessment institution, established November 2023 as AI Safety Institute, rebranded to AI Security Institute February 2025.</li>
+<li>Has conducted systematic capability evaluations across more than thirty frontier models since establishment.</li>
+<li>Published the most comprehensive public capability trend assessment by any government body: the Frontier AI Trends Report (December 2025).</li>
+<li>Coverage includes dangerous capability trajectories in: autonomous cyber operation, biological synthesis assistance, long-horizon task autonomy, and manipulation and persuasion.</li>
+<li>Evaluation frameworks used: Inspect (open-source Python evaluation harness), InspectCyber (cyber capability evaluation), ControlArena (control protocol testing).</li>
+<li>DSIT committed in January 2025 to establishing AISI as a statutory body, with the UK AI Bill expected to include statutory capability evaluation requirements.</li>
+</ul>
+<p><strong>Cambridge academic infrastructure:</strong></p>
+<ul>
+<li><strong>Centre for the Study of Existential Risk (CSER)</strong>: produces academic research on AI risk timelines and risk assessment methodology; applies structured expert elicitation and scenario analysis; contributed written evidence to Parliamentary committees on AI risk.</li>
+<li><strong>Leverhulme Centre for the Future of Intelligence (CFI)</strong>: addresses capability forecasting in the context of societal impact analysis, examining when AI systems reach thresholds relevant to labour market disruption, democratic integrity, and information ecosystem health.</li>
+</ul>
+<p><strong>Oxford research capacity:</strong></p>
+<ul>
+<li><strong>Former Future of Humanity Institute (closed 2024)</strong>: produced the key early academic work on AI timelines under Nick Bostrom, Toby Ord, and Carl Shulman; Toby Ord’s “The Precipice” (2020) provided the most systematic public-facing analysis of AI existential risk probability including capability forecasting inputs.</li>
+<li><strong>Global Priorities Institute (Oxford)</strong>: continues AI policy and long-term risk research following FHI’s closure.</li>
+</ul>
+<p><strong>Northern English and Scottish universities:</strong></p>
+<ul>
+<li>Edinburgh’s machine learning research group contributes to uncertainty quantification methods and Bayesian approaches to extrapolation under model uncertainty — directly applicable to capability forecast confidence interval estimation.</li>
+<li>Manchester’s Data Science Institute contributes to benchmark design and evaluation methodology.</li>
+<li>The UKRI Trustworthy Autonomous Systems (TAS) Hub (led by Nottingham) produced research on safety assurance for autonomous systems applicable to capability assessment frameworks.</li>
+</ul>
+<p><strong>National AI research infrastructure:</strong></p>
+<ul>
+<li>The Alan Turing Institute, as the UK’s national AI research body, has published analyses of AI capability trends through its Centre for Emerging Technology and Security (CETaS).</li>
+<li>CETaS produced the International AI Safety Report 2026 — a landmark synthesis drawing on contributions from researchers across thirty countries, with major findings on capability trajectories and their safety implications.</li>
+<li>The UK’s Long-Term Resilience Centre has published specific recommendations for how the UK AI Bill should incorporate capability forecasting into its regulatory framework, recommending a “preparedness framework” structure analogous to Anthropic’s RSP.</li>
+</ul>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Automated benchmark generation and evaluation:</strong> The benchmark saturation problem — evaluation suites being exhausted by frontier models faster than they can be constructed — motivates automated benchmark generation methods that can produce novel, calibrated evaluation tasks at scale. Language-model-assisted benchmark creation (using AI to generate new evaluation tasks in validated formats) and adversarial evaluation design (creating tasks specifically targeting current model weaknesses) are active research directions. The goal is evaluation infrastructure that can maintain discriminatory power indefinitely, rather than requiring constant manual benchmark development. Key challenges include ensuring that AI-generated benchmark tasks are valid, not contaminated by training data, and at the appropriate difficulty level — all of which are easy to verify for human-constructed benchmarks but harder for automated generation.</p>
+<p><strong>Integrating test-time compute into scaling forecasts:</strong> The transition to test-time compute as a primary capability driver requires new forecasting frameworks that model both pre-training compute and inference budget jointly. Theoretical work on the computation-capability relationship under extended inference-time compute (including Markov chain Monte Carlo search, tree-of-thought, and tool-augmented reasoning) is needed to provide principled scaling laws for the inference-time compute dimension. Empirical data from the o1/o3/Gemini 2.5 generation is beginning to enable systematic study of test-time scaling relationships. METR’s 2026 analysis suggesting 99% AI R&amp;D automation by approximately 2032 reflects these accelerated trajectories when test-time compute scaling is incorporated alongside training-time scaling.</p>
+<p><strong>Dangerous capability threshold calibration:</strong> As capability evaluations mature, the specific thresholds defined in RSPs and regulatory frameworks require empirical calibration against actual harm potential. The question “does capability X provide serious uplift to CBRN weapon development?” requires domain expert input (from biosecurity specialists, chemists, cyber security researchers) combined with empirical evaluation methodology. WMDP and the biological uplift assessments conducted by AISI and Anthropic represent the current state of this calibration; the 2027–2030 period is likely to see significant refinement of threshold definitions as evaluation methodology matures and as models demonstrate more complex and novel dangerous capabilities not anticipated in initial threshold definitions.</p>
+<p><strong>Forecast aggregation and calibration science:</strong> The proliferation of capability forecasting sources — scaling law extrapolation, biological anchors, expert elicitation, prediction markets, empirical task measurement — creates an aggregation problem: how should these sources be combined to produce well-calibrated probability distributions over capability milestones? The Forecasting Research Institute and Epoch AI are developing systematic aggregation methodologies, drawing on Bayesian model averaging and superforecasting ensemble methods. Well-calibrated aggregate forecasts are essential for governance use cases where decision-makers need reliable confidence intervals rather than point estimates. Structured deliberation — the process of sharing information and reasoning across forecaster groups before individual forecasts are made — has been shown to improve calibration in human forecasting teams and is being explored as a methodology for AI capability forecast aggregation.</p>
+<p><strong>Agent capability forecasting:</strong> As AI increasingly operates in agentic settings — orchestrating multi-step workflows, taking actions with real-world consequences, using tools and APIs — capability forecasting must extend from single-model performance on isolated tasks to agent-system performance on extended, multi-step, real-world tasks. This requires new evaluation frameworks, new theoretical models of agent capability scaling, and new empirical data on how agent capabilities scale with component model capabilities. METR’s task time horizon framework is the leading approach to date but requires substantial extension for compound AI system architectures that combine multiple models with tool use, memory, and external knowledge retrieval.</p>
+<p><strong>Societal impact capability thresholds:</strong> Alongside safety-critical capability thresholds (CBRN uplift, cyberattack autonomy), governance bodies increasingly need capability forecasts for socio-economic thresholds: when will AI automate 10%, 50%, 90% of software engineering tasks? When will AI systems be capable of autonomous scientific research at PhD level or above? When will AI-generated media reach the point where synthetic and authentic content are indistinguishable at population scale? These thresholds are relevant to labour market policy, education system design, and democratic integrity, requiring capability forecasting to engage with social science methodology alongside its technical toolkit.</p>
+<h2 id="benchmark-datasets-and-evaluation-infrastructure">Benchmark Datasets and Evaluation Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmark-datasets-and-evaluation-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Training compute tracking:</strong></p>
+<ul>
+<li><strong>EpochAI Training Compute Database</strong>: the most comprehensive public database of AI training runs, tracking compute (FLOPs), parameter counts, training data volume, training duration, and reported benchmark performance. Used as the primary data source for scaling law exponent estimation and compute trend extrapolation. As of mid-2026, the database contains over 800 documented training runs spanning 2010–2026.</li>
+<li><strong>MLPerf Training Benchmarks</strong>: standardised training compute benchmarks enabling comparison of hardware efficiency across AI accelerator generations, supporting capability-per-compute-dollar trend estimation.</li>
+</ul>
+<p><strong>Downstream performance benchmarks (capability indicators):</strong></p>
+<ul>
+<li><strong>MMLU (Massive Multitask Language Understanding)</strong>: 57-subject academic knowledge benchmark; used as a general capability proxy; widely saturated by frontier models by early 2025.</li>
+<li><strong>GPQA Diamond</strong>: graduate-level scientific reasoning across biology, chemistry, and physics; designed to be PhD-level difficult; being saturated by leading models by mid-2025.</li>
+<li><strong>AIME (American Invitational Mathematics Examination)</strong>: competition mathematics; saturated by leading reasoning models by early 2025.</li>
+<li><strong>HumanEval / SWE-Bench Verified</strong>: software engineering capability; SWE-Bench Verified forecast to be saturated in 2026 with strong elicitation.</li>
+<li><strong>BIG-Bench Hard</strong>: collection of 23 “beyond the scaling law” tasks requiring reasoning; used to test whether models exhibit genuine reasoning versus pattern matching.</li>
+<li><strong>HELM (Holistic Evaluation of Language Models)</strong>: multidimensional evaluation framework measuring accuracy, calibration, robustness, fairness, and efficiency across 42 scenarios.</li>
+</ul>
+<p><strong>Autonomy and agent capability benchmarks:</strong></p>
+<ul>
+<li><strong>METR RE-Bench (Research Engineering Benchmark)</strong>: tasks requiring weeks of skilled research engineering work; designed to remain challenging beyond 2026; forecast saturation in 2027.</li>
+<li><strong>SWE-Bench</strong>: software engineering tasks derived from real GitHub issues; measures end-to-end capability to resolve complex, multi-file bugs; forecast saturation late 2026.</li>
+<li><strong>METR Task Time Horizon metric</strong>: not a benchmark in the traditional sense but an empirically measured capability indicator tracking the longest autonomous task a model can reliably complete; used by METR as the primary capability forecasting metric.</li>
+<li><strong>AgentBench</strong>: standardised evaluation of agent capabilities across operating system interaction, database management, knowledge graph navigation, and web browsing tasks.</li>
+<li><strong>WebArena</strong>: benchmark for autonomous web navigation and task completion on realistic browser environments.</li>
+</ul>
+<p><strong>Dangerous capability evaluation benchmarks:</strong></p>
+<ul>
+<li><strong>WMDP (Weapons of Mass Destruction Proxy)</strong>: measures knowledge relevant to CBRN weapon development across biological, chemical, and cybersecurity domains; used by Anthropic, AISI, and METR for ASL-3 evaluation.</li>
+<li><strong>Virology Capabilities Test (VCT)</strong>: expert-virologist-validated assessment of biological uplift; used by AISI for biological dangerous capability evaluation.</li>
+<li><strong>CyberSecEval / InspectCyber</strong>: automated cybersecurity capability evaluation; part of AISI’s Inspect framework and Meta’s CyberSecEval suite.</li>
+<li><strong>HarmBench</strong>: standardised automated red teaming infrastructure with 400+ harmful behaviour test cases across 6 semantic categories.</li>
+</ul>
+<p><strong>Forecasting capability benchmarks:</strong></p>
+<ul>
+<li><strong>ForecastBench (ICLR 2025)</strong>: dynamic benchmark of AI forecasting capability using real prediction questions with known outcomes; used to evaluate whether AI systems themselves can contribute to capability forecasting.</li>
+<li><strong>AI Forecasting Accuracy Database</strong>: maintained by Forecasting Research Institute tracking human and AI forecasting accuracy on technology questions over time.</li>
+</ul>
+<h2 id="key-terminology">Key Terminology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Scaling Law:</strong> A power-law relationship between model training resources (compute, parameters, data) and performance metrics (typically cross-entropy loss), forming the primary quantitative tool of capability forecasting.</li>
+<li><strong>Compute Budget (C):</strong> The total floating-point operations used in training a model, typically measured in FLOPs (floating-point operations) or FLOP equivalents; the primary axis along which training-time capability forecasts are made.</li>
+<li><strong>Emergent Capability:</strong> A task performance that appears only above a threshold model scale, potentially posing a discontinuous prediction challenge for smooth-extrapolation forecasting.</li>
+<li><strong>Uplift:</strong> The capability increase an AI system provides to a malicious actor beyond what they could achieve through existing means without AI assistance; the primary harm-relevance criterion in dangerous capability evaluation.</li>
+<li><strong>AI Safety Level (ASL):</strong> Anthropic’s classification system for AI models based on their dangerous capabilities, from ASL-1 (no meaningful capability uplift) through ASL-4 (autonomous civilisational-scale harm potential), operationalising capability thresholds as deployment triggers.</li>
+<li><strong>Transformative AI (TAI):</strong> AI with sufficiently broad capabilities and autonomous reasoning to cause transformative changes in economic productivity, scientific progress, and societal organisation, typically used as the target event in long-range capability forecasting.</li>
+<li><strong>Benchmark Saturation:</strong> The state in which a model’s performance on a benchmark reaches the performance ceiling (maximum possible score), ending the benchmark’s discriminatory value for capability assessment.</li>
+<li><strong>Test-Time Compute:</strong> Compute used during inference (generation) rather than training, including extended chain-of-thought reasoning, tree-of-thought search, and tool use; increasingly important as a capability growth driver independent of pre-training scale.</li>
+<li><strong>Biological Anchors:</strong> A reference class forecasting approach to AI timelines that grounds compute requirement estimates in biological facts about brains and evolution, providing an alternative to pure trend extrapolation.</li>
+<li><strong>Task Completion Time Horizon:</strong> METR’s empirical metric measuring the longest autonomous task a frontier model can reliably complete without human intervention, used as a leading indicator of AI autonomy capability and tracked as a proxy for capability level across model generations.</li>
+</ul>
+<h2 id="key-research-institutions-and-organisations">Key Research Institutions and Organisations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-research-institutions-and-organisations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p><strong>Technical forecasting and evaluation organisations:</strong></p>
+<ul>
+<li><strong>EpochAI</strong>: non-profit research institute maintaining the most comprehensive public database of AI training runs and benchmark performance; publishes systematic capability trend analyses and the GATE transformative AI timeline model. Primary source of empirical data for scaling-law-based capability forecasting.</li>
+<li><strong>METR (Model Evaluation and Threat Research)</strong>: pioneered the task completion time horizon metric and the most comprehensive public autonomy evaluation suite; developed the ControlArena framework for agentic AI control testing; conducts pre-deployment evaluations for major AI labs under information-sharing agreements with AISI.</li>
+<li><strong>Samotsvety Forecasting Group</strong>: high-accuracy team of superforecasters applying structured probabilistic reasoning to AI capability timelines; produces regularly updated AGI timeline estimates that are among the most systematically calibrated public forecasts available.</li>
+<li><strong>Metaculus</strong>: open forecasting platform aggregating AI capability timeline predictions from thousands of registered forecasters with calibration tracking; maintains the most widely-cited community AI timeline estimates.</li>
+<li><strong>Forecasting Research Institute</strong>: supports rigorous forecasting methodology development including structured deliberation and calibration for AI capability predictions.</li>
+<li><strong>Apollo Research</strong>: specialises in evaluation of deception, situational awareness, and self-preservation behaviours in frontier models — capabilities most relevant to long-horizon capability forecasting.</li>
+</ul>
+<p><strong>AI laboratory internal forecasting teams:</strong></p>
+<ul>
+<li><strong>Anthropic RSP team</strong>: maintains internal capability forecasting infrastructure for ASL threshold monitoring; publishes voluntary RSP updates with threshold definitions informed by capability trend projections.</li>
+<li><strong>OpenAI Preparedness team</strong>: conducts pre-deployment capability evaluation and maintains the Preparedness Framework threshold classifications; updates capability risk scores as frontier models are developed.</li>
+<li><strong>Google DeepMind Safety team</strong>: maintains the Frontier Safety Framework and conducts dangerous capability evaluations; publishes academic work on evaluation methodology including Phuong et al. (2024).</li>
+</ul>
+<p><strong>Government and policy bodies:</strong></p>
+<ul>
+<li><strong>UK AI Security Institute (AISI)</strong>: the primary government body conducting systematic capability trend assessment; publishes the Frontier AI Trends Report; develops and maintains the Inspect evaluation framework.</li>
+<li><strong>US NIST AI Safety Institute</strong>: US counterpart to AISI; co-evaluates frontier models under bilateral information-sharing agreement; developed the NIST AI RMF framework used for capability-sensitive risk classification.</li>
+<li><strong>EU AI Office</strong>: responsible for enforcing EU AI Act general-purpose AI model provisions including dangerous capability evaluation; coordinates with AI Safety Institute network on evaluation methodology.</li>
+<li><strong>Long-Term Resilience Centre (UK)</strong>: publishes policy recommendations for incorporating capability forecasting into UK AI legislation; primary policy advocacy organisation for preparedness-framework approaches.</li>
+</ul>
+<p><strong>Academic centres:</strong></p>
+<ul>
+<li><strong>Cambridge Centre for the Study of Existential Risk (CSER)</strong>: applies structured expert elicitation to AI risk timelines; has contributed to UK government’s capability assessment methodology; operates the MPhil in Global Risk and Resilience.</li>
+<li><strong>Leverhulme Centre for the Future of Intelligence (CFI, Cambridge)</strong>: addresses capability forecasting for societal impact thresholds beyond safety-critical capabilities.</li>
+<li><strong>Alan Turing Institute / CETaS</strong>: national UK AI research body; published the International AI Safety Report 2026 and maintains the most systematic UK-based AI capability trend analysis.</li>
+<li><strong>Oxford Global Priorities Institute</strong>: continues long-horizon AI risk research following FHI’s 2024 closure; contributes to AI existential risk probability estimation and policy implications.</li>
+</ul>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Kaplan, J., McCandlish, S., Henighan, T., Brown, T.B., Chess, B., Child, R., Gray, S., Radford, A., Wu, J., and Amodei, D. (2020). Scaling Laws for Neural Language Models. arXiv:2001.08361.</li>
+<li>Hoffmann, J., Borgeaud, S., Mensch, A., Buchatskaya, E., Cai, T., Rutherford, E., de Las Casas, D., Hendrycks, D., Welbl, J., Clark, A., Hennigan, T., Noland, E., Millican, J., van den Driessche, G., Damoc, B., Guy, A., Osindero, S., Simonyan, K., Elsen, E., Rae, J.W., Vinyals, O., and Sifre, L. (2022). Training Compute-Optimal Large Language Models. arXiv:2203.15556.</li>
+<li>Wei, J., Tay, Y., Bommasani, R., Raffel, C., Zoph, B., Borgeaud, S., Yogatama, D., Bosma, M., Zhou, D., Miculivicius, V., Narang, S., Chowdhery, A., Le, Q., Sutton, C., and Fedus, W. (2022). Emergent Abilities of Large Language Models. Transactions on Machine Learning Research.</li>
+<li>Schaeffer, R., Miranda, B., and Koyejo, S. (2023). Are Emergent Abilities of Large Language Models a Mirage? NeurIPS 2023.</li>
+<li>Cotra, A. (2020, updated 2022). Forecasting Transformative AI with Biological Anchors. Open Philanthropy Technical Report.</li>
+<li>METR (2025). Task-Completion Time Horizons of Frontier AI Models. METR Technical Report, March 2025. metr.org/time-horizons.</li>
+<li>Kinniment, M., Shlegeris, B., Denison, C., Perez, E., Schneider, J., Lim, S., Bai, Y., and Irving, G. (2023). Evaluating Language-Model Agents on Realistic Autonomous Tasks. arXiv:2312.11671.</li>
+<li>Dahl, M., et al. (2025). ForecastBench: A Dynamic Benchmark of AI Forecasting Capability. ICLR 2025.</li>
+<li>Phuong, M., Aitchison, M., Catt, E., Dziedzic, A., Farquhar, S., Elinas, P., Fokkens, A., Fortunato, M., Freeman, R., Hawkins, R., He, C., Holte, C., Hutter, F., Iyer, S., Koëter, S., Loos, A., Maddison, C.J., March, T., Mathewson, K., Muelling, K., Ramapuram, J., Rowley, J., Sherwood, D., Siddiqui, A., Slatyer, T., Spoelstra, E., Stasinopoulos, M., Sullivan, K., Szepesvari, C., and Voth, J. (2024). Evaluating Frontier Models for Dangerous Capabilities. DeepMind Technical Report. arXiv:2403.13793.</li>
+<li>Epoch AI (2025). GATE: Generative AI Timeline Estimation. Epoch AI Research. epoch.ai/topics/future-of-ai.</li>
+<li>Epoch AI (2023). Literature Review of Transformative Artificial Intelligence Timelines. epoch.ai/blog.</li>
+<li>OpenAI (2025). Preparedness Framework (Updated April 2025). OpenAI Policy Document.</li>
+<li>Anthropic (2023; updated 2024). Responsible Scaling Policy. Anthropic Policy Document.</li>
+<li>Google DeepMind (2024). Frontier Safety Framework. Google DeepMind Technical Report.</li>
+<li>UK AI Security Institute (2025). Frontier AI Trends Report. AISI, December 2025. aisi.gov.uk/frontier-ai-trends-report.</li>
+<li>Zhang, J., and Li, E. (2025). Emergency Response Measures for Catastrophic AI Risk. arXiv:2511.05526.</li>
+<li>Ruan, Y., et al. (2024). Identifying the Risks of LM Agents with an LM-Emulated Sandbox. arXiv:2309.15817.</li>
+<li>Samotsvety Forecasting Group (2026). AI Timelines Update: January 2026. AI Futures Model blog.aifutures.org.</li>
+<li>Bostrom, N. (2014). Superintelligence: Paths, Dangers, Strategies. Oxford University Press.</li>
+<li>Ord, T. (2020). The Precipice: Existential Risk and the Future of Humanity. Bloomsbury.</li>
+<li>Bommasani, R., et al. (2021). On the Opportunities and Risks of Foundation Models. arXiv:2108.07258.</li>
+<li>Ganguli, D., et al. (2022). Predictability and Surprise in Large Generative Models. ACM FAccT 2022.</li>
+<li>Muennighoff, N., et al. (2023). Scaling Data-Constrained Language Models. NeurIPS 2023.</li>
+<li>DeepSeek (2025). DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning. DeepSeek Technical Report.</li>
+<li>Arora, S. and Goyal, A. (2023). A Theory for Emergence of Complex Skills in Language Models. arXiv:2307.15936.</li>
+<li>METR (2026). A Simpler AI Timelines Model Predicts 99% AI R&amp;D Automation in ~2032. METR Notes, February 2026. metr.org/notes.</li>
+<li>CETaS / Alan Turing Institute (2026). International AI Safety Report 2026. Centre for Emerging Technology and Security.</li>
+<li>Shulman, C. (2022). Forecasting AI Progress: Perspectives on Timelines to Transformative AI. Open Philanthropy Discussion.</li>
+</ol>
+<h2 id="why-capability-forecasting-is-hard--core-challenges">Why Capability Forecasting Is Hard — Core Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#why-capability-forecasting-is-hard--core-challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The field faces several structural challenges that distinguish it from other quantitative forecasting domains:</p>
+<p><strong>1. The emergence problem:</strong></p>
+<ul>
+<li>Smooth loss scaling does not guarantee smooth capability scaling on specific tasks.</li>
+<li>Phase transitions in benchmark performance (the “emergent abilities” phenomenon) create cliff-edge risks that scaling law extrapolation misses.</li>
+<li>Debate about whether emergence is real or metric-artefactual (Schaeffer et al., 2023) remains unresolved.</li>
+<li>Even if individual capabilities scale smoothly, capability thresholds relevant to governance (such as “provides meaningful CBRN uplift”) may appear to be discontinuous.</li>
+</ul>
+<p><strong>2. The benchmark saturation treadmill:</strong></p>
+<ul>
+<li>Frontier models exhaust evaluation benchmarks faster than new ones can be validated and deployed.</li>
+<li>This creates episodic blind spots where capability growth continues but measurement tools are temporarily saturated.</li>
+<li>The resolution — harder benchmarks — introduces its own biases as task difficulty selection affects apparent capability growth rates.</li>
+<li>Automated benchmark generation (using AI to create AI evaluations) creates circularity concerns about evaluation validity.</li>
+</ul>
+<p><strong>3. The test-time compute complication:</strong></p>
+<ul>
+<li>Training-time compute is the traditional forecasting variable; test-time compute is increasingly the capability driver.</li>
+<li>Test-time compute scaling is harder to forecast because it depends on inference economics (GPU cost per token), prompting strategy, and task-specific search depth — variables that change independently of model weights.</li>
+<li>The same model weights can exhibit dramatically different capability levels depending on inference settings, making single-point capability assessments misleading.</li>
+</ul>
+<p><strong>4. The elicitation gap:</strong></p>
+<ul>
+<li>Benchmarks measure capabilities under specific elicitation conditions (prompt format, number of few-shot examples, chain-of-thought encouragement).</li>
+<li>True model capability may substantially exceed benchmark-measured capability under optimal elicitation.</li>
+<li>METR explicitly excluded high-elicitation scenarios from some forecasts, noting the estimates might be too conservative.</li>
+<li>As elicitation techniques improve, measured capabilities increase even without model changes, complicating time-series trend analysis.</li>
+</ul>
+<p><strong>5. The out-of-distribution generalisation uncertainty:</strong></p>
+<ul>
+<li>Scaling laws are fitted on in-distribution evaluation; they may not generalise to novel capability domains or task types not represented in training benchmarks.</li>
+<li>Future capability milestones may require qualitatively different cognitive operations that current scaling law exponents do not anticipate.</li>
+<li>Architecture discontinuities (e.g., the shift from pure language model to multimodal model to agent system) can break historical scaling law fits.</li>
+</ul>
+<p><strong>6. The recursive improvement discontinuity:</strong></p>
+<ul>
+<li>If AI systems become sufficiently capable of AI research itself, capability trajectories may accelerate in ways that no backward-looking extrapolation can predict.</li>
+<li>METR’s simpler AI timelines model (February 2026) projects 99% AI R&amp;D automation around 2032 — which would create a recursive improvement dynamic qualitatively different from the linear extrapolation paradigm.</li>
+<li>At that point, capability forecasting based on human-driven compute scaling would need to be replaced by models of AI-recursive capability growth, which are inherently more uncertain.</li>
+<li>This represents the ultimate limit of scaling-law-based capability forecasting methodology: beyond the AI R&amp;D automation threshold, the extrapolation machinery itself breaks down.</li>
+<li>The governance implication is that safety measures and regulatory frameworks need to be established before this threshold is reached, since regulatory frameworks designed for human-pace AI development may be inadequate for AI-recursive capability growth.</li>
+</ul>
+<h2 id="relationship-to-adjacent-concepts">Relationship to Adjacent Concepts<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-adjacent-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>vs. <a href="../pages/Capability-Evaluation" class="internal alias" data-slug="pages/Capability-Evaluation">Capability Evaluation</a></strong>: Capability evaluation measures what current models can do; capability forecasting projects what future models will be able to do. Evaluation is backward-looking (empirical); forecasting is forward-looking (predictive). Both use the same benchmark infrastructure, but forecasting adds the extrapolation layer. Forecasting also involves probability distributions over uncertain futures, whereas evaluation produces point measurements.</li>
+<li><strong>vs. <a href="../pages/Emergent-Capabilities" class="internal alias" data-slug="pages/Emergent-Capabilities">Emergent Capabilities</a></strong>: Emergent capabilities are the principal challenge for smooth capability forecasting — they represent the potential for non-smooth, discontinuous capability jumps that extrapolation from prior trends cannot predict. Capability forecasting must treat emergence as a fundamental uncertainty rather than a predictable phenomenon. The debate between Wei et al. (2022) and Schaeffer et al. (2023) on whether emergence is “real” or metric-artefactual is thus directly consequential for capability forecasting methodology.</li>
+<li><strong>vs. <a href="../pages/Scaling-Laws" class="internal alias" data-slug="pages/Scaling-Laws">Scaling Laws</a></strong>: Scaling laws are the primary technical tool of capability forecasting for the training-time compute dimension. Capability forecasting extends scaling laws by applying them to governance-relevant downstream task performance rather than abstract loss metrics. It also extends beyond scaling laws to incorporate test-time compute, architectural innovations, and elicitation effects that scaling laws do not capture.</li>
+<li><strong>vs. <a href="../pages/Catastrophic-Risk-Assessment" class="internal alias" data-slug="pages/Catastrophic-Risk-Assessment">Catastrophic Risk Assessment</a></strong>: Capability forecasting enables catastrophic risk assessment by projecting when dangerous capability thresholds will be reached; catastrophic risk assessment consumes capability forecast outputs to set risk management timelines. They are complementary components of anticipatory AI governance — capability forecasting provides the “when” and catastrophic risk assessment provides the “how bad.” The AISI Frontier AI Trends Report combines both: empirical capability trend measurement (capability forecasting) and assessment of which capabilities matter for harm (catastrophic risk assessment).</li>
+<li><strong>vs. <a href="../pages/Responsible-Scaling-Policy" class="internal alias" data-slug="pages/Responsible-Scaling-Policy">Responsible Scaling Policy</a></strong>: RSPs operationalise capability forecasting for AI lab governance, defining the specific thresholds and safety measures that capability forecasts are used to schedule preparation for. An RSP without capability forecasting cannot anticipate when thresholds will be crossed; capability forecasting without an RSP lacks the institutional mechanism to act on forecasts.</li>
+<li><strong>vs. <a href="../AI-Timelines" class="internal alias" data-slug="AI-Timelines">AI Timelines</a></strong>: AI timelines research is the long-horizon variant of capability forecasting focused on transformative or general AI milestones decades out; near-term capability forecasting focuses on specific benchmark saturations and dangerous capability thresholds on a months-to-years timescale. The two traditions share forecasting methodology (scaling law extrapolation, expert elicitation, biological anchors) but differ in time horizon, purpose, and the specificity of the capability targets they project.</li>
+<li><strong>vs. <a href="../pages/Model-Evaluation" class="internal alias" data-slug="pages/Model-Evaluation">Model Evaluation</a></strong>: Model evaluation provides the empirical data inputs for capability forecasting — benchmark scores, autonomy task completion rates, elicitation-controlled capability measurements. Capability forecasting takes these empirical inputs and extrapolates forward. As evaluation frameworks improve (harder benchmarks, better elicitation protocols), the quality of capability forecasts improves correspondingly.</li>
+<li><strong>vs. <a href="../AI-Safety-Level" class="internal alias" data-slug="AI-Safety-Level">AI Safety Level</a></strong>: AI Safety Levels (ASLs) are the operationalisation of dangerous capability thresholds that capability forecasting projects. Capability forecasting tells you “when will we reach ASL-3?”; the ASL framework tells you “what does reaching ASL-3 mean and what must be done?” The two concepts are tightly coupled in frontier AI lab governance: RSPs reference ASL thresholds; capability forecasting projects ASL timelines; safety engineering prepares the required mitigations; evaluation gates verify threshold status before deployment.</li>
+<li><strong>vs. <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a></strong>: Foundation models are the subject of capability forecasting — the systems whose future capabilities are being projected. Capability forecasting helps determine which foundation model training runs require dangerous capability evaluation before deployment, and at what point in the scaling trajectory new safety measures must be prepared.</li>
+<li><strong>vs. <a href="../Expert-Elicitation" class="internal alias" data-slug="Expert-Elicitation">Expert Elicitation</a></strong>: Expert elicitation is one of the primary methods within capability forecasting, providing probabilistic timeline estimates from domain experts as an alternative or complement to quantitative scaling law extrapolation. Forecasting organisations including EpochAI and Samotsvety specifically synthesise expert elicitation with quantitative extrapolation to produce calibrated forecasts that neither method could achieve alone.</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-931" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#benchmark-datasets-and-evaluation-infrastructure" data-for="benchmark-datasets-and-evaluation-infrastructure">Benchmark Datasets and Evaluation Infrastructure</a></li><li class="depth-0"><a href="#key-terminology" data-for="key-terminology">Key Terminology</a></li><li class="depth-0"><a href="#key-research-institutions-and-organisations" data-for="key-research-institutions-and-organisations">Key Research Institutions and Organisations</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#why-capability-forecasting-is-hard--core-challenges" data-for="why-capability-forecasting-is-hard--core-challenges">Why Capability Forecasting Is Hard — Core Challenges</a></li><li class="depth-0"><a href="#relationship-to-adjacent-concepts" data-for="relationship-to-adjacent-concepts">Relationship to Adjacent Concepts</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Scaling-Laws" class="internal">scaling laws</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

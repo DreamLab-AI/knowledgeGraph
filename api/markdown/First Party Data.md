@@ -1,0 +1,6 @@
+
+First party data is information a company collects directly from its own customers, users or audience through owned channels such as websites, apps, purchase records and CRM systems, with the subject's knowledge or consent. It is distinguished from second-party data (another party's first-party data, shared by agreement) and third-party data (aggregated from external sources without a direct relationship). Its direct provenance makes it more accurate, more compliant with privacy regulation, and increasingly central to marketing and personalisation as third-party cookies are phased out.
+
+- ### Content
+  - First party data is information a company collects directly from its own customers, users or audience through owned channels such as websites, apps, purchase records and CRM systems, with the subject's knowledge or consent. It is distinguished from second-party data (another party's first-party data, shared by agreement) and third-party data (aggregated from external sources without a direct relationship). Its direct provenance makes it more accurate, more compliant with privacy regulation, and increasingly central to marketing and personalisation as third-party cookies are phased out.
+

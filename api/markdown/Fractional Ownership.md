@@ -1,0 +1,12 @@
+
+Fractional ownership is a model in which a high-value asset is divided into discrete shares that multiple parties hold simultaneously, each acquiring proportional economic rights and, in some structures, governance rights over the underlying asset. Historically applied to aircraft, real estate, and fine art through legal syndication, it has been radically simplified by blockchain-based tokenisation, which encodes shares as on-chain tokens transferable without traditional intermediaries. Fractional ownership democratises access to asset classes previously restricted to institutional or wealthy investors. It raises important questions of regulatory classification, valuation, and liquidity management.
+
+- ### Content
+  - Fractional ownership predates blockchain technology: timeshare holiday properties, private-aviation syndicates, and art investment funds all represent pre-digital implementations. These structures required substantial legal overhead—special-purpose vehicles, solicitor conveyancing, and regulated broker-dealer involvement—making them accessible only to sophisticated investors willing to absorb transaction costs.
+
+  - Blockchain tokenisation dramatically reduces this overhead by encoding ownership fractions as tokens on a shared ledger. ERC-20 tokens can represent shares in an underlying asset governed by a smart contract that distributes rental income, enforces transfer restrictions, and records beneficial ownership without a central registry. ERC-1155 and more specialised standards like ERC-1400 add compliance hooks for KYC/AML checks required by securities regulators.
+
+  - Fractionalized NFTs extend the concept to uniquely identified assets such as artworks, collectibles, and parcels of virtual land. A single high-value NFT can be locked in a vault contract while ERC-20 tokens representing fractional claims are issued and traded on secondary markets, enabling price discovery for illiquid assets and allowing smaller investors to participate in premium markets.
+
+  - Regulatory classification remains the critical challenge: regulators in most jurisdictions treat fractional asset tokens as securities, triggering registration, disclosure, and investor-protection requirements. Compliance-first platforms use regulated transfer agents, accredited-investor gates, and jurisdiction-specific whitelisting, whereas permissionless protocols operate in regulatory grey areas. Resolving this tension is key to the mainstream adoption of on-chain fractional ownership.
+

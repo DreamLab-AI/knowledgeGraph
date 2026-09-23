@@ -1,0 +1,12 @@
+
+Bandwidth Optimisation is the set of techniques and algorithms that maximise the effective throughput of network links by reducing unnecessary data transmission, prioritising critical traffic, and intelligently managing congestion. It encompasses data compression, deduplication, caching, traffic shaping, protocol selection, and adaptive bitrate strategies applied across local, wide-area, and wireless network infrastructures.
+
+- ### Content
+  - Bandwidth optimisation as a formal discipline emerged in the 1990s with the growth of wide-area enterprise networks and the cost of leased lines. WAN optimisation appliances from vendors such as Riverbed, Citrix, and Cisco became standard enterprise infrastructure through the 2000s, using byte-level deduplication caches, TCP optimisation, and application-level protocol acceleration to make expensive WAN links perform 5–10x better without capacity upgrades.
+
+  - Core technical mechanisms include: lossless compression (LZ4, Zstandard) to reduce payload sizes with minimal CPU overhead; byte-caching and deduplication that replace repeated byte sequences with short references; protocol optimisation that batches small writes and acknowledges TCP segments more aggressively; traffic shaping via token bucket or leaky bucket algorithms that smooth bursts; and adaptive bitrate (ABR) streaming for video that continuously selects the highest sustainable quality tier given measured throughput.
+
+  - In modern cloud and edge environments, bandwidth optimisation is implemented at multiple layers simultaneously. Content delivery networks cache static assets at edge nodes to reduce origin-to-user bandwidth. Software-defined WAN (SD-WAN) platforms intelligently route traffic across multiple links — MPLS, broadband, 5G — selecting paths based on real-time performance measurements. HTTP/3 with QUIC reduces head-of-line blocking and handshake overhead compared with HTTP/2 over TCP.
+
+  - By 2024–2025, machine learning is increasingly applied to predictive bandwidth management — forecasting congestion and pre-positioning content before demand peaks. 5G network slicing allows bandwidth guarantees to be negotiated per application. Video traffic, which comprises over 80% of global internet bandwidth, drives continued innovation in perceptual compression and neural video codecs that achieve equivalent quality at 30–50% lower bitrates than H.265.
+

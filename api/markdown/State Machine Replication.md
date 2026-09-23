@@ -1,0 +1,73 @@
+
+State Machine Replication (SMR) is a fault-tolerance and consistency technique in which multiple server replicas each maintain an identical deterministic state machine by processing the same totally-ordered sequence of client commands, ensuring that all correct replicas converge to the same state after executing every command. The approach was formalised by Leslie Lamport and later by Fred Schneider, and it provides the theoretical foundation for consensus protocols such as Paxos, Raft, and Viewstamped Replication. SMR simultaneously achieves high availability and strong consistency in the presence of crash or Byzantine failures by decoupling the agreement problem (ordering) from the execution problem (state transition). It is the core architectural abstraction underlying permissioned blockchains, cloud database replication, and coordination services such as Apache ZooKeeper.
+
+- ### Overview
+  - SMR addresses the core challenge of building reliable services atop unreliable components. A service is modelled as a deterministic state machine: given any state and an input command, the machine transitions to a precisely defined next state and produces a deterministic output. Replicating this machine across N servers creates redundancy; as long as a quorum of replicas agrees on the same command sequence, the system can tolerate up to ⌊(N-1)/2⌋ crash failures (crash fault-tolerant, CFT) or, under [[Byzantine Fault Tolerance]] variants, up to ⌊(N-1)/3⌋ arbitrary failures (BFT).
+  - The central challenge reduces to ensuring all correct replicas observe the same totally-ordered log of commands — a problem solved by [[Total Order Broadcast]], which is equivalent in power to [[Consensus Mechanism]] in asynchronous networks (by FLP impossibility). Practical systems circumvent FLP by using timeouts and leader-based protocols.
+  - SMR is contrasted with [[Primary-Backup Replication]], where only the primary executes requests and ships state changes to passive backups; SMR has all replicas execute commands, providing stronger recoverability properties at the cost of higher coordination overhead.
+
+- ### Key Components
+  - **Deterministic State Machine** — The replicated object; all non-determinism (random number generation, wall-clock reads, thread scheduling) must be excluded or serialised before being injected into the command log. See [[Deterministic Execution]].
+  - **Total Order Broadcast / Atomic Broadcast** — The ordering layer that delivers the same sequence of messages to every correct replica, satisfying validity, agreement, and total order properties. [[Total Order Broadcast]] is the key primitive.
+  - **Leader Election** — Many SMR protocols (Paxos, Raft) elect a single leader replica that sequences proposals. [[Leader Election]] must handle leader failures via view changes or term increments.
+  - **Log Replication** — The leader appends entries to a distributed log and replicates them to followers before committing. [[Log Replication]] is the data-flow component of [[Raft Consensus]] and Paxos.
+  - **Quorum** — A majority (or weighted) subset of replicas whose acknowledgement is required before a command is considered committed. [[Quorum]] intersection properties guarantee that any two quorums share at least one correct member, preventing conflicting decisions.
+  - **State Transfer / Snapshotting** — New or lagging replicas must catch up without replaying the entire log. [[State Transfer]] or checkpoint mechanisms allow replicas to install a snapshot and replay only recent log entries.
+  - **View Changes / Leader Failover** — When the current leader is suspected of failure, replicas execute a view-change protocol to elect a new leader without losing committed entries. Raft calls this a term change; Paxos Phase 1 serves the same purpose.
+  - **Client Request Handling** — Clients submit commands to the leader (or any replica with forwarding), receive acknowledgements only after a quorum commits the entry, and use sequence numbers or session tokens to prevent duplicate execution.
+
+- ### Fault Tolerance Models
+  - **Crash Fault-Tolerant (CFT)** — Replicas may crash and stop but do not send incorrect messages. Raft, Multi-Paxos, and Viewstamped Replication are CFT protocols tolerating f failures in a 2f+1 cluster.
+  - **Byzantine Fault-Tolerant (BFT)** — Replicas may behave arbitrarily (send conflicting messages, collude). [[Practical Byzantine Fault Tolerance]] (PBFT) requires 3f+1 replicas to tolerate f Byzantine faults. Used in permissioned blockchains and critical infrastructure.
+  - **Hybrid Models** — Systems such as Stellar and Tendermint blend BFT with economic or trust-based quorum selection, lowering replica counts while retaining safety under partial Byzantine assumptions.
+
+- ### Consensus Protocol Implementations
+  - **[[Paxos]]** — The original multi-decree consensus protocol by Lamport; defines the theoretical basis for leader-based SMR. Multi-Paxos extends it to a continuous log of decrees.
+  - **[[Raft Consensus]]** — A more understandable SMR protocol designed for engineering teams; introduces explicit leader election, log replication, and safety proofs. Widely deployed in etcd, CockroachDB, TiKV, and Consul.
+  - **[[Viewstamped Replication]]** — Developed by Liskov and Cowling (1988, revised 2012); equivalent in power to Paxos and historically important as an independent derivation.
+  - **[[Practical Byzantine Fault Tolerance]]** (PBFT) — The first practical BFT-SMR algorithm; introduced by Castro and Liskov (1999). Three-phase protocol (pre-prepare, prepare, commit) provides safety and liveness under f < n/3 Byzantine faults.
+  - **HotStuff** — Linear-communication BFT protocol used in Diem/LibraBFT and several permissioned blockchains; achieves O(n) message complexity per view change vs. O(n²) in PBFT.
+  - **Tendermint / CometBFT** — BFT-SMR engine underlying the Cosmos ecosystem; combines round-based voting with [[Proof of Stake]] validator selection.
+
+- ### Applications
+  - **[[Coordination Service]]** — Apache ZooKeeper and etcd implement SMR (via ZAB and Raft respectively) to provide distributed locks, configuration stores, and service discovery used by nearly all large-scale cloud infrastructure.
+  - **[[Distributed Database]]** — Google Spanner, CockroachDB, TiDB, and YugabyteDB use Paxos or Raft at the tablet/range level to replicate database shards with ACID semantics across data centres.
+  - **[[Blockchain]]** — Permissioned blockchains (Hyperledger Fabric, Quorum) use BFT-SMR to order and replicate the ledger. Permissionless chains (Bitcoin, Ethereum) instantiate SMR probabilistically via Nakamoto or [[Proof of Stake]] consensus, with finality achieved asynchronously.
+  - **[[Smart Contract]] Execution** — The Ethereum Virtual Machine and similar runtimes enforce SMR determinism by banning floating-point operations and bounding execution via gas, ensuring all validator nodes reach the same contract output.
+  - **Replicated Storage Engines** — Systems such as Chubby (Google), Zab (ZooKeeper), and DRBD (Linux block replication) use SMR or derived protocols to maintain consistent storage state across replicas.
+  - **Cloud Databases as a Service** — Amazon Aurora, Azure Cosmos DB, and Google Cloud Spanner expose SMR-backed storage layers behind managed APIs, abstracting replication complexity from application developers.
+  - **[[Distributed AI Training]]** — Emerging use-case: parameter-server clusters and federated learning co-ordination layers are beginning to apply SMR principles to provide consistent global model state across training workers.
+
+- ### Theoretical Foundations
+  - **FLP Impossibility** — Fischer, Lynch, and Paterson (1985) proved that no deterministic algorithm can achieve consensus in a fully asynchronous system with even one crash failure. SMR protocols circumvent this via partial synchrony assumptions or randomisation.
+  - **[[CAP Theorem]]** — Brewer's conjecture (formalised by Gilbert and Lynch, 2002) shows that a distributed system cannot simultaneously guarantee Consistency, Availability, and Partition tolerance. SMR prioritises CP (Consistency + Partition tolerance) at the cost of availability under partitions.
+  - **[[Linearizability]]** — The strongest single-object consistency model (Herlihy and Wing, 1990); SMR provides linearisable semantics for the replicated state machine as a whole, making the cluster appear as a single atomic object to clients.
+  - **Equivalence of SMR and Consensus** — Chandra and Toueg (1996) showed that solving consensus is equivalent to implementing total order broadcast, which in turn is the ordering component of SMR. These three problems are computationally equivalent.
+
+- ### Standards & Context
+  - SMR is not governed by a single formal standards body; it is codified primarily through academic literature and open-source reference implementations.
+  - **Key papers**: Lamport (1998) "The Part-Time Parliament" (Paxos); Schneider (1990) "Implementing Fault-Tolerant Services Using the State Machine Approach"; Castro & Liskov (1999) PBFT; Ongaro & Ousterhout (2014) "In Search of an Understandable Consensus Algorithm" (Raft).
+  - **IETF RFC 8628** and related RFCs address aspects of distributed consensus in network protocols; no single RFC defines SMR, but the IETF RAFT working group standardised Raft via multiple RFCs.
+  - **NIST SP 800-204** series on microservices security discusses replicated state management as part of resilient architecture guidance.
+  - Industry adoption is tracked through implementations in etcd (CNCF), Apache ZooKeeper (Apache Software Foundation), and consensus layers of major cloud providers.
+  - The correctness of SMR implementations is formally verified using tools such as TLA+ (by Lamport), Coq, and Isabelle/HOL; the Raft paper includes a full TLA+ specification.
+
+- ### Current Landscape (2026)
+  - The 2024-2026 frontier is dominated by uncertified DAG-based BFT-SMR: Mysticeti-C (NDSS 2025, Babel/Sonnino et al.) drops explicit block certification to commit in the theoretical minimum of 3 message delays, reaching sub-0.5s WAN commit latency at over 200k TPS.
+  - Mysticeti went live on Sui Mainnet in July 2024 across roughly 106 validators, replacing Bullshark and cutting P50 latency about 80% (from ~1,900ms to ~400ms); it has since also been adopted by the IOTA network.
+  - A rapid wave of DAG-SMR designs followed: Shoal++ (NSDI 2025) reduces end-to-end commit to ~4.5 message delays, while Sailfish, Mahi-Mahi (ICDCS 2025, the first asynchronous DAG protocol with sub-second WAN latency at 100k+ TPS) and Autobahn (Giridharan/Suri-Payer et al.) push latency and seamless recovery from transient asynchrony ("blips").
+  - Autobahn re-couples an asynchronous dissemination layer with a partially synchronous PBFT-style core, matching Bullshark throughput (~234k tx/s) while roughly halving its latency and avoiding HotStuff-style "hangovers" after network blips.
+  - Key players are now largely industrial L1 blockchain teams and their labs: Mysten Labs (Sui), Aptos Labs (Bullshark/Shoal), and academic groups at Cornell, Yale and UC Berkeley, alongside the long-standing BFT-SMaRt lineage (2f+1 designs such as uBFT reaching ~10us in data-centre RDMA settings).
+  - Formal verification matured in parallel: Yale's LiDO-DAG framework produced mechanised safety and liveness proofs for the deployed Mysticeti protocol (S&P 2026), reflecting a push to machine-check protocols already running in production.
+  - Open challenges as of 2026 are post-quantum security (signature-free designs like Simple-IT, 2026, avoid the ~2x latency penalty of PQ signatures), DAG bandwidth/scalability under large committees (tribe/clan sub-committee broadcast, IACR 2025), and recovery under excessive faults beyond the n/3 bound (recoverable HotStuff fault-detection work, 2025).
+
+- ### References
+  - 1. Babel, Sonnino, Kokoris-Kogias et al. (2025). Mysticeti: Reaching the Latency Limits with Uncertified DAGs (NDSS 2025). https://www.ndss-symposium.org/wp-content/uploads/2025-929-paper.pdf
+  - 2. Mysten Labs / Sui (2024). Consensus — Mysticeti (Sui Documentation). https://docs.sui.io/develop/sui-architecture/consensus
+  - 3. Arun, Gelashvili, Spiegelman et al. (2025). Shoal++: High Throughput DAG BFT Can Be Fast! (NSDI 2025). https://www.usenix.org/system/files/nsdi25-arun.pdf
+  - 4. Giridharan, Suri-Payer, Abraham, Alvisi, Crooks (2024). Autobahn: Seamless High Speed BFT. https://www.cs.cornell.edu/lorenzo/papers/Suri24Autobahn.pdf
+  - 5. Wu, Yue, Fan, Li, Flynn, Zhang (2024/2025). Half a Century of Distributed Byzantine Fault-Tolerant Consensus. https://arxiv.org/html/2407.19863v3
+  - 6. Qiu, Xiao, Shin, Shao (2026). Mechanized Safety and Liveness Proofs for the Mysticeti Consensus Protocol (IEEE S&P 2026). https://flint.cs.yale.edu/flint/publications/sp26.pdf
+
+- ### Provenance
+

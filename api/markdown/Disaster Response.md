@@ -1,0 +1,18 @@
+
+Disaster response is the coordinated use of sensing, mapping and robotic systems to assess damage, locate survivors and direct relief in the aftermath of natural or human-made catastrophes. Spatial-computing techniques fuse aerial imagery, LiDAR, satellite remote sensing and ground-robot telemetry into situational maps that guide responders. Speed, robustness under degraded conditions, and accurate geospatial localisation are the defining requirements.
+
+- ### Overview
+  - Disaster response operates in environments where infrastructure, communications and prior maps are unreliable. Unmanned aerial vehicles and ground robots survey hazardous zones, capturing imagery and LiDAR that are fused into rapidly updated damage maps; remote-sensing analysis flags flooding, structural collapse and fire fronts; and on-board perception locates survivors. The geospatial outputs are shared with command centres to allocate scarce relief resources where they are most needed.
+- ### Key aspects
+  - Rapid aerial survey and damage mapping
+  - Sensor fusion across imagery, LiDAR and satellite data
+  - Survivor detection through robotic perception
+  - Geospatial localisation under degraded GNSS
+  - Real-time situational sharing with command centres
+- ### Applications
+  - Earthquake and building-collapse search and rescue
+  - Flood and wildfire extent mapping
+  - Damage assessment for relief prioritisation
+  - Hazardous-environment reconnaissance by drones and ground robots
+- ### Provenance
+

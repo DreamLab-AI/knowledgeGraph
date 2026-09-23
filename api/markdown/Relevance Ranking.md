@@ -1,0 +1,23 @@
+
+Relevance Ranking is the process of ordering a set of candidate documents, passages or items by their estimated usefulness to a given query or context. It combines lexical, semantic and behavioural signals into a score that determines the sequence in which results are presented. Ranking quality directly governs the perceived effectiveness of search, recommendation and retrieval-augmented generation systems.
+
+- ### Overview
+  - Relevance ranking sits at the heart of every retrieval pipeline. Early systems relied on sparse lexical statistics such as term frequency and inverse document frequency; modern stacks fuse those with dense semantic embeddings and learned ranking functions. A typical pipeline first retrieves a broad candidate set cheaply, then applies a more expensive reranker to refine the top results.
+- ### Key aspects
+  - Scoring functions that blend lexical, semantic and behavioural features
+  - Two-stage retrieve-then-rerank architectures for efficiency
+  - Learning-to-rank objectives optimised against graded relevance labels
+  - Evaluation via metrics such as NDCG, MRR and precision at k
+  - Calibration so that scores are comparable across queries
+- ### Mechanisms
+  - Scoring functions that blend lexical, semantic and behavioural features
+  - Two-stage retrieve-then-rerank architectures for efficiency
+  - Learning-to-rank objectives optimised against graded relevance labels
+- ### Applications
+  - Web and enterprise search result ordering
+  - Retrieval-augmented generation context selection
+  - E-commerce product and recommendation ranking
+  - Question answering passage selection
+  - Knowledge graph and document discovery
+- ### Provenance
+

@@ -1,0 +1,12 @@
+
+Behavioural economics is an interdisciplinary field that integrates insights from cognitive psychology and social science into economic modelling, documenting systematic ways in which human decision-making deviates from the predictions of classical rational-choice theory. It explains phenomena such as loss aversion, anchoring, present bias, and herd behaviour that standard utility maximisation models cannot account for.
+
+- ### Content
+  - The intellectual roots of behavioural economics lie in the work of Herbert Simon, who introduced the concept of bounded rationality in the 1950s, and in Kahneman and Tversky's prospect theory, published in 1979. Their empirical demonstrations that people weight losses approximately twice as heavily as equivalent gains posed a direct challenge to expected utility theory. Richard Thaler extended this programme into market anomalies and later co-developed nudge theory with Cass Sunstein, earning the Nobel Memorial Prize in Economic Sciences in 2017.
+
+  - Technically, behavioural economics constructs models that parameterise deviations from rationality. Prospect theory replaces the utility function with a value function defined over gains and losses relative to a reference point, combined with a probability weighting function that overweights small probabilities and underweights large ones. Quasi-hyperbolic discounting (beta-delta preferences) captures present bias by applying an additional discount factor to all non-immediate periods. These models are tractable enough to be embedded in mechanism design and contract theory.
+
+  - The field's ecosystem spans academic departments of economics, business schools, and government "nudge units" such as the UK Behavioural Insights Team (founded 2010) and the US Social and Behavioural Sciences Team. Major technology platforms deploy behavioural insights to shape user engagement, pricing, and default settings. Development economics applies the field to savings behaviour and health adoption in low-income populations.
+
+  - By 2024–2025 behavioural economics increasingly intersects with AI systems: recommendation algorithms exploit known biases such as variable reward schedules and social proof, raising ethical questions about manipulation. Researchers are developing frameworks to audit algorithmic nudges and align them with user welfare. The field is also being applied to explain and correct AI alignment failures, linking bounded human rationality to challenges in specifying reward functions for machine learning agents.
+

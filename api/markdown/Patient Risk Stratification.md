@@ -1,0 +1,3 @@
+
+Patient risk stratification is the process of classifying patients into groups by their likelihood of experiencing a particular clinical outcome, such as hospital readmission, disease progression, or adverse drug reaction, using clinical, demographic, and increasingly machine-learned features. It allows clinicians and health systems to prioritise limited resources, such as closer monitoring or preventive intervention, toward the patients most likely to benefit. Modern risk stratification tools combine electronic health record data with predictive models to produce continuously updated risk scores rather than static categorical assessments.
+

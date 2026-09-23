@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Autoregressive Model</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Autoregressive Model"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Autoregressive Model"/><meta name="twitter:description" content="An autoregressive model generates sequences by predicting each element conditioned on all previously generated elements, thereby factorising the joint probability distribution of a sequence into an ordered product of conditional distributions via the chain rule of probability."/><meta property="og:description" content="An autoregressive model generates sequences by predicting each element conditioned on all previously generated elements, thereby factorising the joint probability distribution of a sequence into an ordered product of conditional distributions via the chain rule of probability."/><meta property="og:image:alt" content="An autoregressive model generates sequences by predicting each element conditioned on all previously generated elements, thereby factorising the joint probability distribution of a sequence into an ordered product of conditional distributions via the chain rule of probability."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Autoregressive-Model"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Autoregressive-Model"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="An autoregressive model generates sequences by predicting each element conditioned on all previously generated elements, thereby factorising the joint probability distribution of a sequence into an ordered product of conditional distributions via the chain rule of probability."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Autoregressive-Model"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-945"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-945" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Autoregressive Model</a></div></nav><h1 class="article-title">Autoregressive Model</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.679Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:autoregressive-model</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>machine-learning</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.92</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Generative-Model" class="internal">Generative Model</a></li><li><a href="../pages/Deep-Generative-Model" class="internal">Deep Generative Model</a></li><li><a href="../pages/Probabilistic-Model" class="internal">Probabilistic Model</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Embedding-Layer" class="internal">Embedding Layer</a></li><li><a href="../decoder-stack" class="internal">Decoder Stack</a></li><li><a href="../language-model-head" class="internal">Language Model Head</a></li><li><a href="../pages/Key-Value-Cache" class="internal">Key-Value Cache</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Probabilistic-Model" class="internal">Probabilistic Model</a></li><li><a href="../pages/Tokenization" class="internal">Tokenisation</a></li><li><a href="../chain-rule-of-probability" class="internal">Chain Rule of Probability</a></li><li><a href="../working/Tokenisation" class="internal">Tokenisation</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../pages/GPU-Computing" class="internal">GPU Computing</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Language-Model" class="internal">Language Model</a></li><li><a href="../pages/Text-Generation" class="internal">Text Generation</a></li><li><a href="../pages/Image-Generation" class="internal">Image Generation</a></li><li><a href="../neural-audio-synthesis" class="internal">Neural Audio Synthesis</a></li><li><a href="../pages/Large-Language-Model" class="internal">Large Language Model</a></li><li><a href="../pages/Code-Generation" class="internal">Code Generation</a></li><li><a href="../Time-Series-Forecasting" class="internal">Time Series Forecasting</a></li><li><a href="../pages/Protein-Structure-Prediction" class="internal">Protein Structure Prediction</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal">Reinforcement Learning from Human Feedback</a></li><li><a href="../pages/Multimodal-AI" class="internal">Multimodal AI</a></li><li><a href="../pages/Protein-Structure-Prediction" class="internal">Protein Structure Prediction</a></li><li><a href="../pages/Constitutional-AI" class="internal">Constitutional AI</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../pages/Variational-Autoencoder" class="internal">Variational Autoencoder</a></li><li><a href="../pages/Masked-Language-Modelling" class="internal">Masked Language Model</a></li><li><a href="../flow-based-model" class="internal">Flow-Based Model</a></li><li><a href="../pages/Generative-Adversarial-Network" class="internal">Generative Adversarial Network</a></li><li><a href="../Masked-Language-Model" class="internal">Masked Language Model</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/GPU-Computing" class="internal">GPU Computing</a></li><li><a href="../pages/Training-Data" class="internal">Training Data</a></li><li><a href="../Masked-Self-Attention" class="internal">Masked Self-Attention</a></li><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../Softmax" class="internal">Softmax</a></li><li><a href="../pages/Byte-Pair-Encoding" class="internal">Byte-Pair Encoding</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Maximum-Likelihood-Estimation" class="internal">Maximum Likelihood Estimation</a></li><li><a href="../teacher-forcing" class="internal">Teacher Forcing</a></li><li><a href="../pages/Next-Token-Prediction" class="internal">Next-Token Prediction</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../probabilistic-model" class="internal">Probabilistic Model</a></li><li><a href="../language-model" class="internal">Language Model</a></li><li><a href="../transformer" class="internal">Transformer</a></li><li><a href="../generative-model" class="internal">Generative Model</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:b6f0cecc5184d5dda9bdea6049fcb6b58ad6cd3e792003f96f57b5f9130c525e</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Recurrent-Neural-Network" class="internal">Recurrent Neural Network</a></li><li><a href="../pages/Next-Token-Prediction" class="internal">Next-Token Prediction</a></li><li><a href="../pages/Beam-Search" class="internal">Beam Search</a></li><li><a href="../speculative-decoding" class="internal">Speculative Decoding</a></li><li><a href="../scaling-laws" class="internal">Scaling Laws</a></li><li><a href="../pages/Hallucination" class="internal">Hallucination</a></li><li><a href="../Time-Series-Forecasting" class="internal">Time Series Forecasting</a></li><li><a href="../pages/WaveNet" class="internal">WaveNet</a></li><li><a href="../PixelCNN" class="internal">PixelCNN</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/NeurIPS" class="internal">NeurIPS</a></li><li><a href="../pages/ICML" class="internal">ICML</a></li><li><a href="../pages/ICLR" class="internal">ICLR</a></li><li><a href="../pages/ACL" class="internal">ACL</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/In-Context-Learning" class="internal">In-Context Learning</a></li><li><a href="../chain-of-thought-reasoning" class="internal">Chain-of-Thought Reasoning</a></li><li><a href="../pages/Retrieval-Augmented-Generation" class="internal">Retrieval-Augmented Generation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Transformer" class="internal">Transformer</a></li><li><a href="../pages/Self-Attention" class="internal">Masked Self-Attention</a></li><li><a href="../pages/Cross-Entropy-Loss" class="internal">Cross-Entropy Loss</a></li><li><a href="../pages/Softmax-Function" class="internal">Softmax</a></li><li><a href="../pages/Key-Value-Cache" class="internal">Key-Value Cache</a></li><li><a href="../pages/Byte-Pair-Encoding" class="internal">Byte-Pair Encoding</a></li><li><a href="../pages/Beam-Search" class="internal">Beam Search</a></li><li><a href="../pages/Speculative-Decoding" class="internal">Speculative Decoding</a></li><li><a href="../pages/Flash-Attention" class="internal">Flash Attention</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>An autoregressive model generates sequences by predicting each element conditioned on all previously generated elements, thereby factorising the joint probability distribution of a sequence into an ordered product of conditional distributions via the chain rule of probability. This approach yields exact log-likelihoods and a straightforward maximum-likelihood training objective, making it the dominant paradigm for large language models, neural audio synthesis, and image generation. Inference is inherently sequential — each token must be sampled before the next can be computed — creating a fundamental latency trade-off relative to parallel decoding strategies. Modern architectures such as the Transformer exploit masked self-attention to parallelise training while preserving the strictly left-to-right conditional structure at inference time.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:EmbeddingLayer))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:DecoderStack))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:LanguageModelHead))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:KeyValueCache))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:CausalAttentionMask))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:TokenEmbedding))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:PositionalEncoding))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:hasPart ai:SoftmaxOutputHead))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:ChainRuleOfProbability))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:Tokenisation))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:TrainingData))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:GPUComputing))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:CrossEntropyLoss))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:MaskedSelfAttention))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:requires ai:Backpropagation))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:LargeLanguageModel))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:TextGeneration))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:ImageGeneration))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:NeuralAudioSynthesis))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:CodeGeneration))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:TimeSeriesForecasting))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:ProteinSequenceDesign))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:enables ai:InContextLearning))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:implements ai:MaximumLikelihoodEstimation))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:implements ai:TeacherForcing))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:implements ai:NextTokenPrediction))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:implements ai:CausalMasking))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:reducesTo ai:ProbabilisticModel))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:reducesTo ai:SequenceModel))
+SubClassOf(ai:CausalLanguageModel
+  ObjectSomeValuesFrom(ai:reducesTo ai:AutoregressiveModel))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:reducesTo ai:GenerativeModel))
+SubClassOf(ai:RecurrentNeuralNetwork
+  ObjectSomeValuesFrom(ai:reducesTo ai:AutoregressiveModel))
+</code></pre>
+</li>
+<li>
+<h2 id="support-relationships">Support Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#support-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:supports ai:PromptEngineering))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:supports ai:InContextLearning))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:supports ai:ChainOfThoughtReasoning))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:supports ai:RetrievalAugmentedGeneration))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:supports ai:ToolUse))
+SubClassOf(ai:AutoregressiveModel
+  ObjectSomeValuesFrom(ai:supports ai:AgenticBehaviour))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Autoregressive modelling is one of the oldest and most theoretically principled paradigms in statistical machine learning, with roots in classical time-series analysis — the Box-Jenkins ARIMA framework from the 1970s formalised autoregressive (AR) processes for linear stationary series. The deep-learning era transformed this into a non-linear, high-dimensional paradigm: Sutskever et al. (2011) applied RNNs to sequence modelling autoregressively; Graves (2013) demonstrated character-level language modelling with LSTMs; and van den Oord et al. (2016) introduced WaveNet and PixelCNN, establishing that deep convolutional autoregressive models could generate perceptually convincing audio and images pixel-by-pixel. The pivotal architectural shift came with Vaswani et al.’s Transformer (2017), which replaced the sequential hidden-state computation of RNNs with parallel self-attention, enabling training on the massive corpora needed to achieve human-competitive language understanding while preserving the causal left-to-right generation structure at inference time.</li>
+<li>The GPT series (Radford et al. 2018, 2019; Brown et al. 2020; OpenAI 2023) demonstrated that decoder-only autoregressive pre-training on internet-scale text, followed by lightweight fine-tuning or prompting, constitutes a unified approach to natural language understanding and generation. GPT-3’s 175B-parameter model (2020) shocked the community with few-shot learning capabilities that emerged purely from scale, sparking the scaling law research programme of Kaplan et al. (2020) and Hoffmann et al. (2022) — the latter’s Chinchilla work showing that compute-optimal training requires roughly equal token and parameter scaling, overturning the prior assumption that larger models trained on fixed data budgets were uniformly better. By 2023-2025, the ecosystem included LLaMA (Meta), Mistral, Falcon, Gemini (Google DeepMind), Claude (Anthropic), and a proliferating family of open-weight models, all built on the decoder-only autoregressive Transformer architecture with refinements including grouped-query attention, sliding-window attention, and rotary positional encodings (RoPE).</li>
+<li>The defining strength of the autoregressive paradigm — exact likelihood evaluation under maximum likelihood training — carries a structural weakness: inference is fundamentally serial. Each generated token requires a full forward pass through the model (or a KV-cache lookup), making throughput proportional to the inverse of model depth and width. Production deployments in 2024-2026 address this through speculative decoding (a small draft model proposes batches of tokens verified in parallel by the main model, achieving 2-4x throughput gains), continuous batching, PagedAttention, and Flash Attention kernel optimisations. The 2026 research frontier explores whether truly parallel generation — either via diffusion-based or masked autoregressive hybrid approaches — can close the quality gap with sequential autoregressive decoding while eliminating its latency bottleneck.</li>
+</ul>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Chain-rule factorisation</strong> — the joint sequence probability P(x₁, …, xₙ) = ∏ᵢ P(xᵢ | x&lt;ᵢ) requires no independence assumption; any distribution over sequences has such a factorisation.</li>
+<li><strong><a href="../working/Tokenisation" class="internal" data-slug="working/Tokenisation">Tokenisation</a></strong> — raw input (text, audio waveform samples, image patches) is converted to discrete vocabulary tokens via <a href="../pages/Byte-Pair-Encoding" class="internal alias" data-slug="pages/Byte-Pair-Encoding">Byte-Pair Encoding</a> (BPE), WordPiece, or SentencePiece; the model learns embeddings for each token in a high-dimensional space (typically 2048–8192 dimensions).</li>
+<li><strong><a href="../pages/Embedding-Layer" class="internal alias" data-slug="pages/Embedding-Layer">Embedding Layer</a></strong> — each token index is mapped to a dense vector; positional encodings (absolute, rotary RoPE, or ALiBi) are added to encode sequence order.</li>
+<li><strong><a href="../Decoder-Stack" class="internal alias" data-slug="Decoder-Stack">Decoder Stack</a></strong> — a stack of L Transformer decoder layers, each comprising a <a href="../Masked-Self-Attention" class="internal alias" data-slug="Masked-Self-Attention">Masked Self-Attention</a> sublayer (causal mask prevents attending to future positions), a Feed-Forward Network sublayer, and residual connections with layer normalisation (pre-LN is standard in modern models).</li>
+<li><strong><a href="../Masked-Self-Attention" class="internal alias" data-slug="Masked-Self-Attention">Masked Self-Attention</a></strong> — scaled dot-product attention with a causal mask; enables O(n²) pairwise interactions but is parallelised across all training positions simultaneously; at inference, a <a href="../pages/Key-Value-Cache" class="internal alias" data-slug="pages/Key-Value-Cache">Key-Value Cache</a> stores computed K and V projections for all prior tokens.</li>
+<li><strong>Language Model Head</strong> — a linear projection from hidden dimension to vocabulary size V, followed by <a href="../Softmax" class="internal" data-slug="Softmax">Softmax</a> to produce token probabilities; at training, <a href="../pages/Cross-Entropy-Loss" class="internal alias" data-slug="pages/Cross-Entropy-Loss">Cross-Entropy Loss</a> against the ground-truth next token is backpropagated.</li>
+<li><strong><a href="../Teacher-Forcing" class="internal alias" data-slug="Teacher-Forcing">Teacher Forcing</a></strong> — during training, the model is always conditioned on ground-truth tokens rather than its own predictions; this eliminates exposure bias during training but can cause distribution drift at inference, partially mitigated by scheduled sampling or curriculum learning.</li>
+<li><strong><a href="../pages/Key-Value-Cache" class="internal alias" data-slug="pages/Key-Value-Cache">Key-Value Cache</a></strong> — at inference, previously computed attention keys and values are cached per decoder layer; new tokens incur O(1) per-layer attention cost rather than recomputing from scratch.</li>
+<li><strong>Decoding strategies</strong> — greedy argmax, <a href="../pages/Beam-Search" class="internal alias" data-slug="pages/Beam-Search">Beam Search</a>, top-k sampling, nucleus (top-p) sampling, and temperature scaling; <a href="../pages/Speculative-Decoding" class="internal alias" data-slug="pages/Speculative-Decoding">Speculative Decoding</a> uses a small draft model to propose candidate continuations that the target model verifies in parallel.</li>
+</ul>
+</li>
+<li>
+<h2 id="formal-probability-framework">Formal Probability Framework<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-probability-framework" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The probability of a sequence x = (x₁, x₂, …, xₙ) under an autoregressive model parameterised by θ is:
+P_θ(x) = ∏ᵢ₌₁ⁿ P_θ(xᵢ | x₁, …, xᵢ₋₁)</li>
+<li>Maximum likelihood training minimises the negative log-likelihood:
+L(θ) = -∑ᵢ log P_θ(xᵢ | x&lt;ᵢ)</li>
+<li>This is equivalent to minimising <a href="../pages/Cross-Entropy-Loss" class="internal alias" data-slug="pages/Cross-Entropy-Loss">Cross-Entropy Loss</a> between the empirical next-token distribution and the model distribution, and to minimising the KL divergence D_KL(p_data || p_θ).</li>
+<li>Perplexity PP(θ) = exp(L(θ)/n) is the standard intrinsic evaluation metric; lower perplexity indicates a better-calibrated model.</li>
+</ul>
+</li>
+<li>
+<h2 id="major-architectures-and-families">Major Architectures and Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#major-architectures-and-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Decoder-only <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a></strong> — the dominant architecture for text: GPT-1/2/3/4 (OpenAI), LLaMA 1/2/3 (Meta), Mistral 7B/Mixtral (Mistral AI), Falcon (TII UAE), Gemini (Google DeepMind), Claude (Anthropic), Grok (xAI), Command R (Cohere). All share the decoder-only, next-token-prediction pre-training paradigm with varying context lengths (2K to 1M+ tokens), parameter counts (7B to 1T+), and architectural refinements.</li>
+<li><strong><a href="../pages/Recurrent-Neural-Network" class="internal alias" data-slug="pages/Recurrent-Neural-Network">Recurrent Neural Network</a> (LSTM/GRU)</strong> — the historical predecessor; processes tokens sequentially with a hidden state, enabling theoretically infinite context but suffering from vanishing gradients, slow training, and inability to parallelise across time steps. Largely superseded for language modelling by Transformers after 2018, but still used in streaming and embedded settings.</li>
+<li><strong><a href="../pages/WaveNet" class="internal" data-slug="pages/WaveNet">WaveNet</a></strong> — convolutional autoregressive model for raw audio at 16-24 kHz; uses dilated causal convolutions to achieve large effective receptive fields without RNN hidden states; generates waveform samples one at a time; inspired WaveGlow, SoundStream, and neural codec language models (EnCodec, Voicebox).</li>
+<li><strong>PixelCNN / PixelRNN</strong> — autoregressive image models generating pixels in raster-scan order; PixelCNN replaced RNN recurrence with masked convolutions for efficiency; PixelCNN++ added discretised logistic mixtures for continuous pixel values; demonstrated generative viability over 2D autoregressive data.</li>
+<li><strong>Masked Autoregressive Flow (MAF)</strong> — uses autoregressive structure to parameterise normalising flows; each dimension’s transformation is conditioned on previous dimensions, enabling exact likelihood and efficient training; bridges autoregressive and flow-based generative modelling.</li>
+<li><strong>Autoregressive image generation</strong> — VQVAE + Transformer (van den Oord et al. 2017; Ramesh et al. 2021 DALL-E v1): images are quantised to discrete tokens, then modelled autoregressively with a Transformer; this approach was supplanted for images by diffusion models but remains relevant for video (VideoGPT, MAGVIT) and multimodal models.</li>
+<li><strong>State Space Models (SSM/Mamba)</strong> — an emerging alternative (Gu &amp; Dao 2023) that provides linear-time sequence modelling with comparable perplexity to Transformers; Mamba uses selective state spaces instead of attention, enabling efficient long-sequence modelling with recurrent inference without the O(n²) attention bottleneck; competes with autoregressive Transformers but has not yet displaced them at large scale as of 2026.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases">Use Cases<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a> pre-training and deployment</strong> — the GPT/Claude/Gemini/LLaMA ecosystem is entirely built on decoder-only autoregressive Transformers pre-trained on next-token prediction over web-scale corpora (Common Crawl, The Pile, FineWeb, Dolma). Pre-trained base models are aligned via <a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal alias" data-slug="pages/Reinforcement-Learning-from-Human-Feedback">Reinforcement Learning from Human Feedback</a> and Supervised Fine-Tuning to produce instruction-following assistants; commercial products (ChatGPT, Claude, Copilot, Gemini, Perplexity) serve billions of monthly users as of 2025.</li>
+<li><strong><a href="../pages/Code-Generation" class="internal alias" data-slug="pages/Code-Generation">Code Generation</a></strong> — Codex (OpenAI, 2021), GitHub Copilot, StarCoder (BigCode, 2023), CodeLlama (Meta, 2023), and DeepSeek-Coder (2024) use decoder-only autoregressive pre-training on code corpora (GitHub, Stack Exchange, documentation) to generate syntactically valid, contextually appropriate code; used daily by millions of software engineers. Code completion constitutes one of the highest-ROI LLM applications in industry.</li>
+<li><strong><a href="../Neural-Audio-Synthesis" class="internal alias" data-slug="Neural-Audio-Synthesis">Neural Audio Synthesis</a></strong> — WaveNet (Google, 2016) and its successors generate high-fidelity speech waveforms autoregressively; neural codec language models (Google SoundStorm, Meta Voicebox, ElevenLabs) use VQ-VAE-compressed discrete tokens in an autoregressive Transformer for real-time text-to-speech; music generation models (MusicLM, AudioLM, Suno) chain language-model-like autoregressive token prediction over hierarchical audio codebooks.</li>
+<li><strong><a href="../pages/Image-Generation" class="internal alias" data-slug="pages/Image-Generation">Image Generation</a> (historical and hybrid)</strong> — DALL-E v1 (2021) used autoregressive modelling over VQ-VAE image tokens; while diffusion models now dominate static image generation, autoregressive approaches remain relevant for video (VideoPoet, Sora’s tokenisation pipeline) and for models that require exact likelihood.</li>
+<li><strong><a href="../Time-Series-Forecasting" class="internal alias" data-slug="Time-Series-Forecasting">Time Series Forecasting</a></strong> — DeepAR (Salinas et al. 2020, Amazon), Temporal Fusion Transformer (Lim et al. 2021), TimesFM (Google, 2024), and Chronos (Amazon, 2024) use autoregressive decoder architectures for probabilistic multi-step forecasting in supply chain, energy, and financial domains; these represent direct successors to classical ARIMA models.</li>
+<li><strong><a href="../pages/Multimodal-AI" class="internal alias" data-slug="pages/Multimodal-AI">Multimodal AI</a></strong> — GPT-4V, Gemini 1.5, Claude 3/3.5, LLaVA, Flamingo, and Chameleon model both image and text tokens within a shared autoregressive vocabulary; the unifying insight is that any modality that can be tokenised (images, audio, video, code, structured data) can be modelled with a single autoregressive objective over a combined vocabulary.</li>
+<li><strong><a href="../pages/Protein-Structure-Prediction" class="internal alias" data-slug="pages/Protein-Structure-Prediction">Protein Structure Prediction</a> and design</strong> — autoregressive Transformer models (ProtGPT2, ESM-1v, Progen2) generate amino acid sequences conditioned on desired structural or functional properties; combined with structure prediction (AlphaFold3) these enable directed protein evolution without exhaustive wet-lab search.</li>
+<li><strong>Autonomous AI Agents</strong> — autoregressive LLMs serve as the reasoning and planning backbone for agent frameworks (ReAct, AutoGPT, LangChain agents, OpenAI Assistants); the model’s ability to generate structured tool-call tokens and chain reasoning steps autoregressively underpins multi-step agentic behaviour.</li>
+</ul>
+</li>
+<li>
+<h2 id="decoding-strategies">Decoding Strategies<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#decoding-strategies" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Greedy decoding</strong> — argmax over the vocabulary at each step; fast and deterministic but prone to repetition and suboptimal global sequences due to locally optimal token choices.</li>
+<li><strong><a href="../pages/Beam-Search" class="internal alias" data-slug="pages/Beam-Search">Beam Search</a></strong> — maintains k candidate sequences (beams) in parallel at each step, expanding each, retaining the top-k by cumulative log-probability; standard for structured generation (translation, summarisation with exact phrase constraints) but can produce generic, low-diversity outputs.</li>
+<li><strong>Top-k sampling</strong> — sample from the k most probable tokens after zeroing others; controls diversity; k=50 is a common default.</li>
+<li><strong>Nucleus (top-p) sampling</strong> (Holtzman et al. 2020) — dynamically truncate the vocabulary to the smallest set whose cumulative probability exceeds p (e.g. 0.9); adapts vocabulary size to model confidence.</li>
+<li><strong>Temperature scaling</strong> — divide logits by temperature T before softmax; T&lt;1 concentrates probability on the top token (more deterministic); T>1 flattens the distribution (more creative/random).</li>
+<li><strong><a href="../pages/Speculative-Decoding" class="internal alias" data-slug="pages/Speculative-Decoding">Speculative Decoding</a></strong> (Leviathan et al. 2023; Chen et al. 2023) — a smaller, faster draft model proposes γ tokens; the target model verifies all γ in a single parallel forward pass using the modified rejection sampling scheme; accepted tokens are committed; rejected tokens cause the draft to be discarded and the target to resample. Achieves 2-4x wall-clock speedup with identical distribution guarantees. Adopted in production by Google, Anthropic, and via vLLM in 2024-2025.</li>
+<li><strong>Self-speculative decoding / layer-skipping</strong> — the main model generates draft tokens by skipping early layers; eliminates the need for a separate draft model at the cost of slight quality degradation.</li>
+<li><strong>Parallel decoding (Medusa, EAGLE)</strong> — adds extra decoding heads to predict multiple future tokens simultaneously; competitive with speculative decoding without requiring a separate model.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Autoregressive sequence modelling has deep theoretical roots. Wold’s decomposition theorem (1938) established that any second-order stationary process can be decomposed into a deterministic and a linearly autoregressive component — the statistical foundation for ARIMA models. The application to neural networks began in earnest with Jordan (1986) and Elman (1990) networks, which modelled sequential context via recurrent hidden states. Key milestones:</li>
+<li><strong>2011</strong> — Sutskever et al. apply RNNs to language modelling with BPTT; Graves (2011) demonstrates connectionist temporal classification.</li>
+<li><strong>2013</strong> — Graves demonstrates character-level language modelling with deep LSTMs, showing that RNNs can model long-range dependencies.</li>
+<li><strong>2014</strong> — Sutskever, Vinyals &amp; Le introduce the Seq2Seq encoder-decoder architecture with attention (Bahdanau et al. 2015), bridging autoregressive generation with learned conditioning.</li>
+<li><strong>2016</strong> — van den Oord et al. introduce WaveNet (convolutional autoregressive audio) and PixelCNN/PixelRNN (autoregressive image generation).</li>
+<li><strong>2017</strong> — Vaswani et al. “Attention Is All You Need” introduces the Transformer; Liu et al. demonstrate language modelling with Transformer decoders.</li>
+<li><strong>2018</strong> — Radford et al. (OpenAI) “Improving Language Understanding by Generative Pre-Training” (GPT-1): decoder-only autoregressive pre-training followed by fine-tuning.</li>
+<li><strong>2019</strong> — Radford et al. GPT-2 (1.5B parameters): zero-shot task transfer from autoregressive language modelling at scale.</li>
+<li><strong>2020</strong> — Brown et al. GPT-3 (175B): few-shot in-context learning; Kaplan et al. establish scaling laws for autoregressive language models.</li>
+<li><strong>2022</strong> — Hoffmann et al. Chinchilla: compute-optimal training; Wei et al. demonstrate chain-of-thought reasoning emergent in large autoregressive models.</li>
+<li><strong>2023</strong> — Touvron et al. LLaMA; Jiang et al. Mistral; speculative decoding papers (Leviathan et al.; Chen et al.); GPT-4 (OpenAI); Llama 2 (Meta).</li>
+<li><strong>2024</strong> — Llama 3 (Meta, 405B); DeepSeek-V2 (mixture-of-experts autoregressive); Gemini 1.5 (Google, 1M context); Li et al. MAR (Masked Autoregressive generation bridging AR and diffusion); Gu &amp; Dao Mamba 2; Phi-3 small models.</li>
+<li><strong>2025-2026</strong> — Continuous Autoregressive Language Models (CALM, Li et al. 2025); unification of AR and diffusion paradigms (MDLM, SEDD); AR-Diffusion; Speculative Decoding at ICLR 2026; test-time compute scaling (o1, o3, Claude 3.7 Sonnet extended thinking).</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>As of mid-2026, the autoregressive decoder-only Transformer remains the uncontested dominant architecture for all frontier language model systems. The leading models — Claude 3.5/3.7 (Anthropic), GPT-4o/o3 (OpenAI), Gemini 2.0/2.5 (Google DeepMind), LLaMA 3.3 (Meta), Mistral Large (Mistral AI), Grok 3 (xAI), and DeepSeek-V3/R1 (DeepSeek) — are all autoregressive Transformer decoders, differing primarily in parameter count (7B to ~2T), context length (8K to 2M+ tokens), training data composition, post-training alignment approach, and inference infrastructure.</li>
+<li>Inference efficiency is the dominant engineering challenge of 2025-2026. Production deployments universally employ: PagedAttention and continuous batching (vLLM, TensorRT-LLM); Flash Attention 3 for memory-efficient attention on H100/H200 GPUs; speculative decoding achieving 2.5-3.6x throughput improvements; quantisation (INT4/FP8 weight-only and activation quantisation); and tensor parallelism across multiple GPUs. NVIDIA H100/H200 clusters and AMD MI300X have emerged as the dominant training and inference hardware, with Google TPU v5 dominant internally at Google.</li>
+<li>The scaling frontier has shifted partially from pre-training compute to inference-time compute (test-time compute scaling). OpenAI o1/o3, Anthropic Claude 3.7 with extended thinking, and DeepSeek-R1 demonstrate that allocating more autoregressive decoding steps to chain-of-thought reasoning before producing a final answer substantially improves performance on mathematical, coding, and logical reasoning benchmarks — an autoregressive phenomenon that does not require retraining.</li>
+<li>Hybrid autoregressive-diffusion architectures are an active 2025-2026 frontier: MAR (Li et al. 2024), Auto-Regressive Masked Diffusion Models (2025), AR-Diffusion, and Block Diffusion explore combining the exact likelihood and KV-cache advantages of autoregressive generation with the parallelism of diffusion. State Space Models (Mamba, Mamba 2) provide an alternative linear-time recurrent approach but have not yet exceeded Transformer quality at the largest scales.</li>
+<li>Multimodal autoregressive models now handle text, images, audio, video, and code within a single model: GPT-4o, Gemini 1.5/2.0, Claude 3.5 Sonnet (with vision), and Chameleon (Meta) demonstrate native multimodal autoregressive generation by treating all modalities as token sequences.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>UK universities and research institutes have made foundational contributions to autoregressive neural sequence modelling. The University of Edinburgh has a long history of statistical language modelling research (SRILM, Kneser-Ney smoothing), and the Edinburgh NLP group contributed to early neural machine translation using RNN encoder-decoders — a direct precursor to autoregressive generation. University College London’s Gatsby Computational Neuroscience Unit has contributed to understanding the statistical mechanics of large-scale autoregressive models, while UCL’s Centre for Artificial Intelligence (founded 2019) is active in language model interpretability and alignment research relevant to autoregressive systems.</li>
+<li>DeepMind (now Google DeepMind, headquartered in London) has been a central contributor to autoregressive model research: the Chinchilla scaling laws (Hoffmann et al. 2022), AlphaCode (autoregressive code generation), Gemini architecture, and Flamingo multimodal autoregressive model all originated from Google DeepMind London. The Alan Turing Institute in London serves as the UK’s national AI research institute and has active programmes on language model alignment, bias, and evaluation.</li>
+<li>Cambridge University’s Computer Laboratory (Department of Computer Science and Technology) has contributed to neural language modelling and theoretical foundations of sequence models. The University of Manchester has research groups working on efficient inference for autoregressive models, including quantisation and neural architecture search. The EPSRC-funded projects and UK Research and Innovation (UKRI) funding streams have supported academic work on controllable generation, factuality, and retrieval-augmented autoregressive models.</li>
+<li>Industrial deployment in the UK: Stability AI (formerly London-based) contributed open autoregressive image models; Wayve (London) uses autoregressive world models for autonomous driving; Speechmatics (Cambridge) deploys autoregressive neural acoustic models for transcription. The UK Government’s AI Safety Institute (AISI, London) conducts safety evaluations of frontier autoregressive models as part of the global AI safety ecosystem.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Test-time compute scaling</strong> — the most immediate trajectory: allocating more autoregressive decoding steps for reasoning (chain-of-thought, internal monologue, self-correction) systematically improves output quality without additional training; process reward models and outcome reward models guide this search. The paradigm may eventually blur the boundary between training and inference.</li>
+<li><strong>Hybrid autoregressive-diffusion</strong> — models such as MAR, MDLM, and Block Diffusion aim to provide the tractable likelihood and KV-cache efficiency of autoregressive models with the parallel generation of diffusion; if successful this would fundamentally alter the latency profile of generation.</li>
+<li><strong>State Space Model competition</strong> — Mamba-architecture models scale favourably in memory and compute for long sequences; if quality at 100B+ parameters matches Transformers, autoregressive SSMs could partially displace attention-based models for specific applications (streaming speech, long genomic sequences).</li>
+<li><strong>Long-context and infinite-context models</strong> — context lengths of 1M-10M tokens are becoming feasible (Gemini 1.5 at 1M, Phi-3 at 128K); models that approach truly infinite context via hierarchical autoregressive architectures or memory-augmented generation could eliminate the need for separate retrieval systems.</li>
+<li><strong>Multimodal unification</strong> — autoregressive models over unified vocabularies spanning text, image, audio, video, action, and code tokens (GPT-4o, Gemini 2.0, Chameleon) will deepen, likely converging on world-model-style autoregressive prediction over sensorimotor token streams.</li>
+<li><strong>Efficient open models</strong> — the Llama, Phi, Mistral, and Qwen families demonstrate that models with 3-14B parameters can approach frontier quality on many tasks; quantisation (GGUF, AWQ, GPTQ) enables deployment on consumer hardware. By 2028, edge-deployable autoregressive models with 7B parameters and 4-bit quantisation may handle most personal-device AI tasks.</li>
+<li><strong>Formal verification and safety</strong> — as autoregressive models are deployed in high-stakes domains (medical, legal, critical infrastructure), methods for bounding hallucination rates, provably constraining output spaces, and formally verifying factual claims will become essential research directions.</li>
+</ul>
+</li>
+<li>
+<h2 id="research-and-literature">Research and Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research-and-literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Box, G. E. P. and Jenkins, G. M. (1970). “Time Series Analysis: Forecasting and Control.” Holden-Day. — Classical ARIMA foundation.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Elman, J. L. (1990). “Finding Structure in Time.” Cognitive Science, 14(2), 179-211. — Recurrent autoregressive networks for sequences.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Graves, A. (2013). “Generating Sequences With Recurrent Neural Networks.” arXiv:1308.0850. — LSTM-based autoregressive sequence generation.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Sutskever, I., Vinyals, O. and Le, Q. V. (2014). “Sequence to Sequence Learning with Neural Networks.” NeurIPS 2014. — Seq2Seq framework bridging AR generation with conditioning.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>van den Oord, A., Dieleman, S., Zen, H. et al. (2016). “WaveNet: A Generative Model for Raw Audio.” arXiv:1609.03499. — Convolutional autoregressive audio generation.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>van den Oord, A., Kalchbrenner, N. and Kavukcuoglu, K. (2016). “Pixel Recurrent Neural Networks.” ICML 2016. — Autoregressive image generation.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>van den Oord, A., Kalchbrenner, N., Vinyals, O. et al. (2016). “Conditional Image Generation with PixelCNN Decoders.” NeurIPS 2016. — PixelCNN masked convolution variant.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Vaswani, A., Shazeer, N., Parmar, N. et al. (2017). “Attention Is All You Need.” NeurIPS 2017. — Transformer architecture enabling parallelised autoregressive training.</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Radford, A., Narasimhan, K., Salimans, T. and Sutskever, I. (2018). “Improving Language Understanding by Generative Pre-Training.” OpenAI Blog. — GPT-1: decoder-only autoregressive pre-training.</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Radford, A., Wu, J., Child, R. et al. (2019). “Language Models are Unsupervised Multitask Learners.” OpenAI Blog. — GPT-2: zero-shot autoregressive transfer.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Brown, T., Mann, B., Ryder, N. et al. (2020). “Language Models are Few-Shot Learners.” NeurIPS 2020. — GPT-3: in-context learning at scale.</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Holtzman, A., Buys, J., Du, L. et al. (2020). “The Curious Case of Neural Text Degeneration.” ICLR 2020. — Nucleus sampling for autoregressive decoding.</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Kaplan, J., McCandlish, S., Henighan, T. et al. (2020). “Scaling Laws for Neural Language Models.” arXiv:2001.08361. — Power-law scaling of autoregressive LM loss.</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Salinas, D., Flunkert, V., Gasthaus, J. and Januschowski, T. (2020). “DeepAR: Probabilistic Forecasting with Autoregressive Recurrent Networks.” International Journal of Forecasting.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Ramesh, A., Pavlov, M., Goh, G. et al. (2021). “Zero-Shot Text-to-Image Generation.” ICML 2021. — DALL-E v1: autoregressive image generation with VQVAE.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Chen, M., Tworek, J., Jun, H. et al. (2021). “Evaluating Large Language Models Trained on Code.” arXiv:2107.03374. — Codex: autoregressive code generation.</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Hoffmann, J., Borgeaud, S., Mensch, A. et al. (2022). “Training Compute-Optimal Large Language Models.” NeurIPS 2022. — Chinchilla: compute-optimal autoregressive scaling.</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Wei, J., Wang, X., Schuurmans, D. et al. (2022). “Chain-of-Thought Prompting Elicits Reasoning in Large Language Models.” NeurIPS 2022. — Chain-of-thought emergence in autoregressive models.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Leviathan, Y., Kalman, M. and Matias, Y. (2023). “Fast Inference from Transformers via Speculative Decoding.” ICML 2023. — Speculative decoding for autoregressive acceleration.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Chen, C., Borgeaud, S., Irving, G. et al. (2023). “Accelerating Large Language Model Decoding with Speculative Sampling.” arXiv:2302.01318. — Parallel speculative sampling.</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Touvron, H., Lavril, T., Izacard, G. et al. (2023). “LLaMA: Open and Efficient Foundation Language Models.” arXiv:2302.13971. — Open-weight autoregressive decoder family.</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Gu, A. and Dao, T. (2023). “Mamba: Linear-Time Sequence Modeling with Selective State Spaces.” arXiv:2312.00752. — State space alternative to autoregressive Transformers.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Li, T., Chang, H., Mishra, S. et al. (2024). “Autoregressive Image Generation without Vector Quantization.” NeurIPS 2024. — MAR: masked autoregressive generation bridging AR and diffusion.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Dubey, A., Jauhri, A., Pandey, A. et al. (2024). “The Llama 3 Herd of Models.” arXiv:2407.21783. — Meta’s state-of-the-art open autoregressive family.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Li, X., Zhao, X., Gu, Y. et al. (2025). “Continuous Autoregressive Language Models.” arXiv:2510.27688. — CALM: continuous-space autoregressive language modelling.</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Ye, T., Zhang, T., He, Z. et al. (2025). “Auto-Regressive Masked Diffusion Models.” arXiv:2601.16971. — Hybrid AR-diffusion for flexible generation.</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>OpenAI (2025). “OpenAI o3 System Card.” OpenAI Technical Report. — Test-time compute scaling for autoregressive reasoning models.</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>Anthropic (2026). “Claude 3.7 Sonnet Model Card.” Anthropic Technical Report. — Extended thinking: inference-time compute scaling in autoregressive models.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="benchmarks-and-evaluation">Benchmarks and Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#benchmarks-and-evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Intrinsic evaluation of autoregressive language models uses <strong>perplexity</strong> on held-out text corpora as the primary metric. Perplexity PP = exp(-1/n ∑ log P_θ(xᵢ | x&lt;ᵢ)) measures how surprised the model is by the test data; lower is better. The Penn Treebank, WikiText-103, the Pile (Gao et al. 2021), and FineWeb (Penedo et al. 2024) are canonical benchmark corpora for intrinsic language modelling evaluation.</li>
+<li>Extrinsic evaluation covers a broad landscape of downstream tasks, using benchmarks designed for instruction-following and few-shot transfer:
+<ul>
+<li><strong>MMLU</strong> (Massive Multitask Language Understanding; Hendrycks et al. 2021) — 57 subject areas covering STEM, humanities, social sciences, and professional domains; tests knowledge breadth acquired during autoregressive pre-training.</li>
+<li><strong>HellaSwag</strong> (Zellers et al. 2019) — commonsense NLI for sentence completion; tests contextual reasoning in autoregressive generation.</li>
+<li><strong>HumanEval</strong> (Chen et al. 2021) — 164 Python programming problems with unit-test evaluation; the canonical code generation benchmark for autoregressive models.</li>
+<li><strong>MBPP</strong> (Mostly Basic Programming Problems; Austin et al. 2021) — 374 crowd-sourced Python problems; complementary to HumanEval.</li>
+<li><strong>GSM8K</strong> (Cobbe et al. 2021) — 8,500 grade school maths word problems requiring multi-step reasoning; evaluates chain-of-thought capability in autoregressive models.</li>
+<li><strong>MT-Bench</strong> (Zheng et al. 2023) — 80 multi-turn conversation questions graded by GPT-4; evaluates instruction-following quality in fine-tuned autoregressive assistants.</li>
+<li><strong>MATH</strong> (Hendrycks et al. 2021) — 12,500 competition mathematics problems; tests advanced symbolic and mathematical reasoning.</li>
+<li><strong>BIG-Bench Hard</strong> (Suzgun et al. 2022) — 23 challenging tasks from BIG-Bench where chain-of-thought provides the largest improvements; specifically evaluates emergent reasoning in large autoregressive models.</li>
+<li><strong>LMSYS Chatbot Arena</strong> (Chiang et al. 2024) — human preference ranking via blind pairwise comparisons; the most direct measure of autoregressive assistant quality for real users.</li>
+</ul>
+</li>
+<li>Efficiency benchmarks measure throughput and latency of autoregressive inference: tokens per second (TPS), time-to-first-token (TTFT), and inter-token latency (ITL) are standard production metrics. MLPerf Inference benchmarks include LLM inference workloads measuring autoregressive generation throughput on standardised hardware.</li>
+</ul>
+</li>
+<li>
+<h2 id="alignment-and-safety-dimensions">Alignment and Safety Dimensions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#alignment-and-safety-dimensions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The autoregressive paradigm creates specific safety challenges that have motivated an entire research sub-field. Because an autoregressive model learns to predict the next token based on the statistical patterns in training data, it inherits and can amplify biases, stereotypes, and factual errors present in that data. The model’s distribution is the training distribution’s conditional, not a verified knowledge base.</li>
+<li><strong><a href="../pages/Hallucination" class="internal" data-slug="pages/Hallucination">Hallucination</a></strong> is the most practically significant failure mode: autoregressive models confidently generate plausible-sounding but factually incorrect continuations when the conditional P(xᵢ | x&lt;ᵢ) assigns high probability to a false statement. This arises from the maximum likelihood objective’s indifference to whether generated content is true, only that it resembles the training distribution. Retrieval-augmented approaches (grounding generation on retrieved documents), <a href="../pages/Chain-of-Thought-Reasoning" class="internal alias" data-slug="pages/Chain-of-Thought-Reasoning">Chain-of-Thought Reasoning</a> with explicit verification steps, and constitutional approaches to <a href="../pages/Responsible-AI" class="internal alias" data-slug="pages/Responsible-AI">Responsible AI</a> partially mitigate hallucination.</li>
+<li><strong><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal alias" data-slug="pages/Reinforcement-Learning-from-Human-Feedback">Reinforcement Learning from Human Feedback</a></strong> (RLHF; Ouyang et al. 2022) — the dominant post-training alignment technique: a reward model is trained on human preference rankings between model outputs, and the autoregressive policy is optimised using PPO or DPO to maximise reward while minimising KL divergence from the pre-trained base distribution. This produces instruction-following assistants from raw autoregressive base models. Direct Preference Optimisation (DPO; Rafailov et al. 2023) simplifies RLHF by directly optimising the policy against preference data without a separate reward model.</li>
+<li><strong><a href="../pages/Constitutional-AI" class="internal alias" data-slug="pages/Constitutional-AI">Constitutional AI</a></strong> (Bai et al. 2022, Anthropic) — an alternative alignment approach that uses a set of principles (the “constitution”) to guide both supervised fine-tuning (through self-critique and revision) and RL (through AI feedback instead of human feedback), reducing reliance on human labelling while maintaining alignment quality.</li>
+<li><strong>Memorisation and privacy</strong> — autoregressive models are known to memorise training data verbatim, especially for repeated or rare sequences; this creates privacy risks (leaking personal information present in training corpora) and copyright concerns (reproducing copyrighted text). Differential privacy training techniques and extraction-rate auditing are active research areas.</li>
+<li><strong>Jailbreaking and adversarial prompting</strong> — the conditional structure of autoregressive generation makes models susceptible to adversarial prompt injection: carefully crafted prefixes can shift the distribution toward harmful outputs. Prompt injection attacks, jailbreak strings, and system prompt leakage are empirically demonstrated vulnerabilities in deployed autoregressive assistants.</li>
+</ul>
+</li>
+<li>
+<h2 id="computational-infrastructure">Computational Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#computational-infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Training a frontier autoregressive model (e.g. 70B-405B parameters) requires thousands of specialised accelerators. The dominant training infrastructure in 2025-2026 uses:
+<ul>
+<li><strong>NVIDIA H100/H200 SXM</strong> — 80-141 GB HBM3/3e, 3.35-3.9 TB/s memory bandwidth, 989 TFLOPS BF16 (H100); organised into 8-GPU DGX nodes connected via NVLink (900 GB/s intra-node); across nodes via InfiniBand HDR/NDR (400-800 Gbps per port).</li>
+<li><strong>Google TPU v5e/v5p</strong> — deployed in pods of 256-4096 chips; interconnected via a 2D/3D torus network; optimised for the matrix multiplications dominant in autoregressive Transformer training.</li>
+<li><strong>AMD MI300X</strong> — 192 GB HBM3 unified memory; 5.3 TB/s bandwidth; increasingly adopted by cloud providers (Microsoft Azure ND MI300X) for both training and inference.</li>
+<li><strong>Parallelism strategies</strong> — large autoregressive model training uses a combination of: tensor parallelism (split individual matrix multiplications across devices); pipeline parallelism (split layers across device groups); data parallelism (replicate the model across many data shards); and Mixture-of-Experts sharding (route tokens to different expert FFN blocks, reducing per-token compute). DeepSpeed ZeRO and Megatron-LM are the dominant open-source training frameworks.</li>
+</ul>
+</li>
+<li>Inference infrastructure for autoregressive models is dominated by the <a href="../pages/Key-Value-Cache" class="internal alias" data-slug="pages/Key-Value-Cache">Key-Value Cache</a> memory bottleneck: at long sequence lengths, KV cache occupies more GPU memory than the model weights themselves. PagedAttention (vLLM, 2023) addresses this by managing KV cache in non-contiguous memory pages analogous to OS virtual memory, enabling much higher GPU utilisation under concurrent request batches. Continuous batching (Orca, 2022) eliminates the fixed-batch overhead by processing requests at the iteration level rather than the request level, dramatically improving throughput.</li>
+</ul>
+</li>
+<li>
+<h2 id="responsible-ai-and-governance-dimensions">Responsible AI and Governance Dimensions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#responsible-ai-and-governance-dimensions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Autoregressive models occupy a central position in AI governance frameworks globally because they power virtually all frontier AI assistants, code generation systems, and agentic AI products. The characteristics of autoregressive generation — probabilistic next-token prediction, sensitivity to prompt framing, memorisation of training data — create specific governance challenges that differ from those of discriminative ML systems.</li>
+<li>The <strong>EU AI Act</strong> (2024, in force from 2025-2026) classifies general-purpose AI models (GPAIs) — which includes large autoregressive language models — under specific transparency and capability evaluation obligations. Providers of frontier models with training compute exceeding 10^25 FLOP (the “systemic risk” threshold) must conduct mandatory capability evaluations, red-teaming, incident reporting, and provide technical documentation. Autoregressive models from Anthropic, OpenAI, Google, Meta, and Mistral fall under GPAI SYRI (Systemic Risk Indicators) obligations when deployed in the EU.</li>
+<li>The <strong>UK AI Safety Institute</strong> (AISI, est. 2023, renamed AI Security Institute in 2024) conducts pre-deployment safety evaluations of frontier autoregressive models, testing for dangerous capability uplift in cyber, chemical, biological, and radiological domains. AISI’s evaluations are conducted under pre-deployment access agreements with frontier model providers and represent the primary UK government mechanism for assessing autoregressive model risks.</li>
+<li><strong>NIST AI RMF</strong> (Risk Management Framework, 2023) and the forthcoming <strong>ISO/IEC 42001</strong> AI management system standard provide voluntary governance frameworks applicable to autoregressive model development and deployment, emphasising risk identification, measurement, and mitigation across the AI lifecycle.</li>
+<li><strong>Copyright and training data</strong> — autoregressive models trained on web-scale text corpora face ongoing legal challenges regarding the copyright status of training data. The New York Times v. OpenAI lawsuit (2023), Getty Images v. Stability AI, and similar cases turn on whether autoregressive training on copyrighted text constitutes fair use (US) or a lawful basis under GDPR’s legitimate interests exception (EU). The outcome will significantly affect the data acquisition practices of future autoregressive model training runs.</li>
+<li><strong>Watermarking</strong> — autoregressive generation can be watermarked by modifying the sampling procedure to introduce statistically detectable patterns (Kirchenbauer et al. 2023, “A Watermark for Large Language Models”); the watermark is statistically detectable in the output but invisible to human readers. Watermarking is discussed as a technical enforcement mechanism for AI transparency requirements under the EU AI Act’s generated content disclosure obligations.</li>
+</ul>
+</li>
+<li>
+<h2 id="relationship-to-classical-statistical-models">Relationship to Classical Statistical Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#relationship-to-classical-statistical-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The term “autoregressive” in deep learning inherits from classical statistics and econometrics, where autoregressive (AR) models describe linear stochastic processes. Understanding this connection places the deep learning paradigm in its proper historical context and clarifies terminology across disciplines.</li>
+<li>In classical statistics, an AR(p) process is defined as: X_t = φ₁X_{t-1} + φ₂X_{t-2} + … + φ_pX_{t-p} + ε_t, where φᵢ are the autoregressive coefficients and ε_t is white noise. This is a <em>linear</em> autoregressive model where the current value depends only on the previous p values — a special case of the general autoregressive factorisation P(xₜ | x&lt;t) restricted to linear dependencies and a finite lag of p.</li>
+<li><strong>ARMA(p,q)</strong> — autoregressive moving average models add a moving-average component MA(q): X_t = φ₁X_{t-1} + … + φ_pX_{t-p} + ε_t + θ₁ε_{t-1} + … + θ_qε_{t-q}. ARIMA (Integrated ARMA) adds differencing for non-stationary series. These Box-Jenkins models remain the standard for univariate time series forecasting in many applied domains.</li>
+<li>The deep learning autoregressive paradigm <em>generalises</em> the classical AR model in three critical dimensions: (1) <strong>Non-linearity</strong> — neural AR models use deep non-linear transformations rather than linear combinations; (2) <strong>Unbounded order</strong> — Transformer-based AR models attend to all previous positions (up to context length), not just the previous p; (3) <strong>Discrete distributions</strong> — neural AR models learn distributions over discrete vocabularies, not continuous Gaussian distributions. The mathematical structure (conditional factorisation) is identical; only the expressive power of the conditional distribution differs.</li>
+<li><strong>DeepAR</strong> (Salinas et al. 2020, Amazon Web Services) exemplifies the bridge: it uses an LSTM-based autoregressive decoder to produce probabilistic forecasts for time series data, where the “vocabulary” is a parametric distribution (Gaussian or negative binomial) over continuous values at each time step rather than a discrete token vocabulary. This framework has been extended by TimesFM (Google, 2024) and Chronos (Amazon, 2024) using Transformer decoders, demonstrating direct transfer of the LLM autoregressive paradigm to time series forecasting.</li>
+<li><strong>Normalising flows with autoregressive structure</strong> — Masked Autoregressive Flow (MAF; Papamakarios et al. 2017) and Inverse Autoregressive Flow (IAF; Kingma et al. 2016) use the autoregressive factorisation to parameterise bijective transformations for density estimation and sampling; the coupling layers in RealNVP are a related approach. These methods bridge the autoregressive and flow-based generative paradigms that BEIR contrasts.</li>
+</ul>
+</li>
+<li>
+<h2 id="multi-modality-and-token-based-unification">Multi-Modality and Token-Based Unification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multi-modality-and-token-based-unification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>A distinctive feature of the autoregressive paradigm in 2024-2026 is its capacity to serve as a universal generative framework across modalities. The key insight is that any data type that can be converted to a discrete token sequence can be modelled with the identical autoregressive next-token prediction objective.</li>
+<li><strong>Text</strong> — the native modality; characters, subword tokens (BPE), or word-level tokens define the vocabulary. Standard pre-training on raw text requires no labels.</li>
+<li><strong>Code</strong> — code tokens share the same BPE vocabulary as text tokens in models like Codex, StarCoder, and CodeLlama; the model learns syntax, semantics, and API conventions from raw code corpora. The autoregressive constraint maps naturally to the sequential generation of syntactically valid code.</li>
+<li><strong>Images</strong> — images are converted to discrete tokens via vector quantisation: VQ-VAE or VQGAN compresses images into grids of codebook indices (e.g. 16×16 = 256 tokens per image). Autoregressive models (PixelCNN, DALL-E v1, MAGVIT-v2) predict these token sequences in raster scan order. While diffusion models have overtaken pure autoregressive approaches for high-quality static image generation, autoregressive image tokenisation remains dominant for video generation (VideoPoet, SORA’s internal pipeline) due to the temporal nature of video.</li>
+<li><strong>Audio</strong> — neural audio codecs (EnCodec, SoundStream, DAC) compress audio waveforms into sequences of discrete codebook indices at multiple bitrate levels (typically 50-75 tokens per second). Autoregressive Transformer models (AudioLM, MusicLM, VoiceBox) predict these audio token sequences, enabling high-quality speech synthesis, music generation, and voice cloning from text or audio prompts. AudioGen and SoundStorm extend this to general audio generation.</li>
+<li><strong>Actions</strong> — in robotics and autonomous driving, sensor observations are tokenised and action commands are generated autoregressively; GPT-style models (RT-2, VPT for Minecraft, GATO) treat robot control as language modelling, predicting action tokens in a mixed vocabulary spanning text, images, and motor commands.</li>
+<li><strong>Structured data</strong> — tabular data, SQL queries, JSON outputs, and API call specifications can be generated autoregressively; this capability underpins tool-calling in LLM agent frameworks (function calling in OpenAI API, Anthropic tool use API) where the model generates structured JSON that triggers external tool execution.</li>
+<li><strong>Molecules and proteins</strong> — molecular SMILES strings and amino acid sequences are treated as text tokens; autoregressive Transformer models (GPT-4 for chemistry, ProtGPT2, Progen2) generate novel molecules or protein sequences by sampling from the conditional distribution given a desired property description.</li>
+<li>The multimodal unification achieved by models like GPT-4o, Gemini 1.5 Ultra, and Chameleon (interleaved image-text tokens in a single vocabulary) represents the logical culmination of the token-based autoregressive paradigm: a single model with a single training objective over a single vocabulary spanning all modalities.</li>
+</ul>
+</li>
+<li>
+<h2 id="key-terminology-glossary">Key Terminology Glossary<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-terminology-glossary" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Autoregressive (AR)</strong> — a model in which each output depends on all previous outputs; the joint distribution is factorised as a product of conditionals ordered by position.</li>
+<li><strong>Causal Language Model (CLM)</strong> — synonym for decoder-only autoregressive language model; “causal” refers to the causal masking that ensures each token attends only to prior tokens.</li>
+<li><strong>Causal Mask</strong> — a lower-triangular binary matrix applied to the attention weight matrix in a Transformer decoder; prevents position i from attending to positions j > i, enforcing the autoregressive left-to-right constraint.</li>
+<li><strong><a href="../Chain-Rule-of-Probability" class="internal alias" data-slug="Chain-Rule-of-Probability">Chain Rule of Probability</a></strong> — the identity P(x₁, …, xₙ) = ∏ P(xᵢ | x&lt;ᵢ) used to factorise joint distributions; the mathematical foundation of the autoregressive paradigm.</li>
+<li><strong><a href="../pages/Cross-Entropy-Loss" class="internal alias" data-slug="pages/Cross-Entropy-Loss">Cross-Entropy Loss</a></strong> — H(p, q) = -∑ p(x) log q(x); the training objective for autoregressive models; minimised when the model distribution q matches the data distribution p.</li>
+<li><strong>Decoder-Only Architecture</strong> — a <a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a> architecture with only decoder blocks (no encoder); uses causal self-attention; the standard architecture for autoregressive language models (GPT, LLaMA, Mistral).</li>
+<li><strong>Exposure Bias</strong> — the discrepancy between training (ground-truth tokens as context) and inference (model-generated tokens as context); can cause error accumulation during long autoregressive generation.</li>
+<li><strong><a href="../pages/Flash-Attention" class="internal alias" data-slug="pages/Flash-Attention">Flash Attention</a></strong> — a memory-efficient attention algorithm (Dao et al. 2022, 2023) that tiles the attention computation to avoid materialising the full n×n attention matrix; enables training with longer sequences on the same hardware.</li>
+<li><strong><a href="../pages/Key-Value-Cache" class="internal alias" data-slug="pages/Key-Value-Cache">Key-Value Cache</a></strong> — at autoregressive inference, the key and value projections for all past tokens are cached per decoder layer; new token generation requires only O(n) new attention operations rather than O(n²) from scratch.</li>
+<li><strong>Logit</strong> — the raw unnormalised score output by the language model head for each vocabulary token before softmax normalisation; the temperature parameter scales logits before softmax.</li>
+<li><strong><a href="../Masked-Self-Attention" class="internal alias" data-slug="Masked-Self-Attention">Masked Self-Attention</a></strong> — self-attention with a causal mask; all positions in the sequence can be computed in parallel during training (enabling efficient use of GPU tensor cores), while the mask enforces the autoregressive conditional independence structure.</li>
+<li><strong><a href="../pages/Maximum-Likelihood-Estimation" class="internal alias" data-slug="pages/Maximum-Likelihood-Estimation">Maximum Likelihood Estimation</a></strong> — the training principle: find θ that maximises log P_θ(training data); for autoregressive models this equals minimising cross-entropy loss on next-token prediction.</li>
+<li><strong><a href="../pages/Next-Token-Prediction" class="internal alias" data-slug="pages/Next-Token-Prediction">Next-Token Prediction</a></strong> — the pretraining task: given tokens x₁, …, xᵢ₋₁, predict the distribution over the next token xᵢ; the autoregressive objective that drives all GPT-style pre-training.</li>
+<li><strong>Perplexity</strong> — PP = exp(loss); the standard intrinsic evaluation metric for autoregressive language models; lower perplexity indicates a better-fitting model.</li>
+<li><strong><a href="../pages/Scaling-Laws" class="internal alias" data-slug="pages/Scaling-Laws">Scaling Laws</a></strong> — empirical power-law relationships (Kaplan et al. 2020; Hoffmann et al. 2022) describing how autoregressive language model loss decreases as a function of model parameters N, training tokens D, and compute C; foundational to the economics of LLM development.</li>
+<li><strong><a href="../Softmax" class="internal" data-slug="Softmax">Softmax</a></strong> — the normalisation function converting logits to a probability distribution over vocabulary; softmax(zᵢ) = exp(zᵢ) / ∑ exp(zⱼ); the output function of every autoregressive language model head.</li>
+<li><strong><a href="../pages/Speculative-Decoding" class="internal alias" data-slug="pages/Speculative-Decoding">Speculative Decoding</a></strong> — an inference acceleration technique in which a small draft model proposes γ tokens, all verified in parallel by the larger target model; achieves identical output distribution with 2-4x throughput improvement.</li>
+<li><strong><a href="../Teacher-Forcing" class="internal alias" data-slug="Teacher-Forcing">Teacher Forcing</a></strong> — the training technique of always feeding ground-truth tokens as context rather than the model’s own predictions; stabilises gradient flow but creates exposure bias.</li>
+<li><strong><a href="../working/Tokenisation" class="internal" data-slug="working/Tokenisation">Tokenisation</a></strong> — the preprocessing step converting raw text to discrete token IDs via a vocabulary constructed by <a href="../pages/Byte-Pair-Encoding" class="internal alias" data-slug="pages/Byte-Pair-Encoding">Byte-Pair Encoding</a> or similar algorithm; the boundary between continuous text and the discrete space over which the autoregressive model is defined.</li>
+<li><strong>Top-p (Nucleus) Sampling</strong> — a decoding strategy that samples from the smallest subset of tokens whose cumulative probability mass exceeds p (e.g. 0.9); adaptive in vocabulary coverage based on model confidence at each step.</li>
+</ul>
+</li>
+<li>
+<h2 id="connections-to-adjacent-concepts-in-this-ontology">Connections to Adjacent Concepts in This Ontology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#connections-to-adjacent-concepts-in-this-ontology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The following pages are directly linked to Autoregressive Model within this knowledge graph.</li>
+<li><strong><a href="../pages/Attention-Mechanism" class="internal alias" data-slug="pages/Attention-Mechanism">Attention Mechanism</a></strong> — the core computational mechanism enabling parallelised
+training of autoregressive Transformer decoders; <a href="../Masked-Self-Attention" class="internal alias" data-slug="Masked-Self-Attention">Masked Self-Attention</a> applies a causal mask
+to standard scaled dot-product attention, enforcing the autoregressive conditional structure
+while allowing all positions to be processed simultaneously during training.</li>
+<li><strong><a href="../pages/Backpropagation" class="internal" data-slug="pages/Backpropagation">Backpropagation</a></strong> — the gradient computation algorithm that makes autoregressive model
+training tractable; through-time backpropagation in RNN-based AR models and standard
+backpropagation in Transformer-based models both use the same principle of reverse-mode
+automatic differentiation to compute parameter gradients with respect to the cross-entropy loss.</li>
+<li><strong><a href="../pages/Gradient-Descent" class="internal alias" data-slug="pages/Gradient-Descent">Gradient Descent</a></strong> — the optimisation algorithm applied to the gradients produced by
+backpropagation in autoregressive model training; modern implementations use Adam or AdamW
+optimisers with learning rate warmup, cosine annealing, and weight decay.</li>
+<li><strong><a href="../pages/Neural-Network" class="internal alias" data-slug="pages/Neural-Network">Neural Network</a></strong> — the broader computational class to which autoregressive models belong;
+autoregressive Transformers are a specific deep neural network architecture specialised for
+discrete sequence generation.</li>
+<li><strong><a href="../pages/BEIR-Benchmark" class="internal alias" data-slug="pages/BEIR-Benchmark">BEIR Benchmark</a></strong> — the primary evaluation framework for retrieval-augmented systems
+that supply retrieved documents to autoregressive reader models; BEIR’s retrieval component
+quality directly affects the factual accuracy of autoregressive RAG outputs.</li>
+<li><strong><a href="../pages/Embedding-Layer" class="internal alias" data-slug="pages/Embedding-Layer">Embedding Layer</a></strong> — the first component of an autoregressive model architecture;
+maps discrete token indices to dense vector representations that serve as input to the
+Transformer decoder stack.</li>
+<li><strong><a href="../pages/Feed-Forward-Network" class="internal alias" data-slug="pages/Feed-Forward-Network">Feed-Forward Network</a></strong> — the second sublayer in each Transformer decoder block
+(after masked self-attention); applies a two-layer MLP with a non-linear activation
+(GELU, SiLU, or SwiGLU) independently to each position’s representation.</li>
+<li><strong><a href="../pages/Positional-Encoding" class="internal alias" data-slug="pages/Positional-Encoding">Positional Encoding</a></strong> — mechanisms for injecting position information into the
+autoregressive Transformer, which is otherwise position-agnostic; methods include
+learned absolute position embeddings (GPT-1/2/3), sinusoidal encodings (original Transformer),
+rotary position encodings (RoPE, used in LLaMA/Mistral), and ALiBi (attention linear biases).</li>
+<li><strong><a href="../pages/Byte-Pair-Encoding" class="internal alias" data-slug="pages/Byte-Pair-Encoding">Byte-Pair Encoding</a></strong> — the dominant tokenisation algorithm for autoregressive text models;
+constructs a subword vocabulary by iteratively merging the most frequent adjacent byte pairs
+in the training corpus; used in all GPT-series and LLaMA-series models.</li>
+<li><strong><a href="../pages/Constitutional-AI" class="internal alias" data-slug="pages/Constitutional-AI">Constitutional AI</a></strong> — Anthropic’s alignment approach for fine-tuning autoregressive base
+models into safe assistants using principle-guided self-critique and AI feedback.</li>
+<li><strong><a href="../pages/Responsible-AI" class="internal alias" data-slug="pages/Responsible-AI">Responsible AI</a></strong> — the governance and ethics framework applicable to autoregressive
+model development and deployment; addresses hallucination, bias, privacy, and copyright.</li>
+<li><strong><a href="../pages/Multimodal-AI" class="internal alias" data-slug="pages/Multimodal-AI">Multimodal AI</a></strong> — the extension of autoregressive models to multiple modalities
+(text, image, audio, video, code) by unifying all modalities as discrete token sequences
+within a single shared vocabulary and autoregressive training objective.</li>
+</ul>
+</li>
+<li>
+<h2 id="ontology-cross-reference-adjacent-concepts">Ontology Cross-Reference (Adjacent Concepts)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ontology-cross-reference-adjacent-concepts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The following pages in this knowledge graph are closely related to Autoregressive Model and should
+be consulted when navigating the generative AI sub-graph of this ontology.</li>
+<li><strong><a href="../pages/Generative-Model" class="internal alias" data-slug="pages/Generative-Model">Generative Model</a></strong> — the parent class; Autoregressive Model is-subclass-of <a href="../pages/Generative-Model" class="internal alias" data-slug="pages/Generative-Model">Generative Model</a>.
+Other subclasses include <a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">Diffusion Model</a>, <a href="../pages/Variational-Autoencoder" class="internal alias" data-slug="pages/Variational-Autoencoder">Variational Autoencoder</a>, <a href="../pages/Generative-Adversarial-Network" class="internal alias" data-slug="pages/Generative-Adversarial-Network">Generative Adversarial Network</a>,
+and <a href="../Flow-Based-Model" class="internal alias" data-slug="Flow-Based-Model">Flow-Based Model</a>.</li>
+<li><strong><a href="../pages/Transformer" class="internal" data-slug="pages/Transformer">Transformer</a></strong> — the dominant architecture implementing autoregressive text models since 2017;
+decoder-only variants (GPT, LLaMA) are the primary autoregressive architecture in 2024-2026.</li>
+<li><strong><a href="../pages/Large-Language-Model" class="internal alias" data-slug="pages/Large-Language-Model">Large Language Model</a></strong> — the primary application class of autoregressive models at scale;
+all frontier LLMs (Claude, GPT-4, Gemini, LLaMA 3, Mistral) are autoregressive Transformers.</li>
+<li><strong><a href="../pages/Language-Model" class="internal alias" data-slug="pages/Language-Model">Language Model</a></strong> — the general class of which autoregressive language models are the
+dominant subtype; includes n-gram models, RNN-based models, and masked language models.</li>
+<li><strong><a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a></strong> — the broader paradigm within which large autoregressive models sit;
+foundation models are pre-trained on broad data and adapted to many tasks.</li>
+<li><strong><a href="../Masked-Language-Model" class="internal alias" data-slug="Masked-Language-Model">Masked Language Model</a></strong> — the primary contrast class: BERT-style models predict masked tokens
+in bidirectional context; contrasts-with autoregressive left-to-right conditional generation.</li>
+<li><strong><a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">Diffusion Model</a></strong> — a competing generative paradigm using iterative denoising processes;
+currently dominant for high-quality static image generation; contrasts-with autoregressive models
+in generation order (parallel denoising vs. sequential token prediction).</li>
+<li><strong><a href="../pages/Recurrent-Neural-Network" class="internal alias" data-slug="pages/Recurrent-Neural-Network">Recurrent Neural Network</a></strong> — the historical predecessor to Transformer-based autoregressive
+models; processed sequences with a recurrent hidden state; largely superseded for language
+modelling but continues in streaming/embedded deployments.</li>
+<li><strong><a href="../pages/Speculative-Decoding" class="internal alias" data-slug="pages/Speculative-Decoding">Speculative Decoding</a></strong> — the primary inference acceleration technique for autoregressive models;
+enables 2-4x throughput improvements while maintaining identical output distribution.</li>
+<li><strong><a href="../pages/Reinforcement-Learning-from-Human-Feedback" class="internal alias" data-slug="pages/Reinforcement-Learning-from-Human-Feedback">Reinforcement Learning from Human Feedback</a></strong> — the primary post-training alignment technique
+applied to autoregressive base models to produce instruction-following assistants.</li>
+<li><strong><a href="../pages/Attention-Mechanism" class="internal alias" data-slug="pages/Attention-Mechanism">Attention Mechanism</a></strong> — the core computational mechanism inside autoregressive Transformer decoders;
+<a href="../Masked-Self-Attention" class="internal alias" data-slug="Masked-Self-Attention">Masked Self-Attention</a> is the specific variant enforcing the autoregressive conditional structure.</li>
+<li><strong><a href="../pages/Backpropagation" class="internal" data-slug="pages/Backpropagation">Backpropagation</a></strong> — the training algorithm used to compute gradients of the cross-entropy loss
+with respect to all autoregressive model parameters; enables gradient-based optimisation.</li>
+<li><strong><a href="../pages/Scaling-Laws" class="internal alias" data-slug="pages/Scaling-Laws">Scaling Laws</a></strong> — empirical relationships describing how autoregressive model loss decreases
+as a power law in model size, training tokens, and compute; the theoretical foundation for
+investment decisions in frontier autoregressive model training.</li>
+<li><strong><a href="../pages/Hallucination" class="internal" data-slug="pages/Hallucination">Hallucination</a></strong> — the primary safety failure mode of autoregressive generation; models
+produce confident factually incorrect statements because the training objective optimises for
+plausibility (matching the training distribution) rather than factual accuracy.</li>
+<li><strong><a href="../pages/Retrieval-Augmented-Generation" class="internal alias" data-slug="pages/Retrieval-Augmented-Generation">Retrieval-Augmented Generation</a></strong> — an architectural pattern that pairs an autoregressive
+generative model with a retrieval system to ground generation on retrieved documents,
+mitigating hallucination and extending effective knowledge beyond the training cutoff.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-637" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#support-relationships" data-for="support-relationships">Support Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-0"><a href="#formal-probability-framework" data-for="formal-probability-framework">Formal Probability Framework</a></li><li class="depth-0"><a href="#major-architectures-and-families" data-for="major-architectures-and-families">Major Architectures and Families</a></li><li class="depth-0"><a href="#use-cases" data-for="use-cases">Use Cases</a></li><li class="depth-0"><a href="#decoding-strategies" data-for="decoding-strategies">Decoding Strategies</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research-and-literature" data-for="research-and-literature">Research and Literature</a></li><li class="depth-0"><a href="#benchmarks-and-evaluation" data-for="benchmarks-and-evaluation">Benchmarks and Evaluation</a></li><li class="depth-0"><a href="#alignment-and-safety-dimensions" data-for="alignment-and-safety-dimensions">Alignment and Safety Dimensions</a></li><li class="depth-0"><a href="#computational-infrastructure" data-for="computational-infrastructure">Computational Infrastructure</a></li><li class="depth-0"><a href="#responsible-ai-and-governance-dimensions" data-for="responsible-ai-and-governance-dimensions">Responsible AI and Governance Dimensions</a></li><li class="depth-0"><a href="#relationship-to-classical-statistical-models" data-for="relationship-to-classical-statistical-models">Relationship to Classical Statistical Models</a></li><li class="depth-0"><a href="#multi-modality-and-token-based-unification" data-for="multi-modality-and-token-based-unification">Multi-Modality and Token-Based Unification</a></li><li class="depth-0"><a href="#key-terminology-glossary" data-for="key-terminology-glossary">Key Terminology Glossary</a></li><li class="depth-0"><a href="#connections-to-adjacent-concepts-in-this-ontology" data-for="connections-to-adjacent-concepts-in-this-ontology">Connections to Adjacent Concepts in This Ontology</a></li><li class="depth-0"><a href="#ontology-cross-reference-adjacent-concepts" data-for="ontology-cross-reference-adjacent-concepts">Ontology Cross-Reference (Adjacent Concepts)</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Audio-Generation" class="internal">Audio Generation</a></li><li><a href="../pages/Audio-Synthesis" class="internal">Audio Synthesis</a></li><li><a href="../pages/Deep-Generative-Model" class="internal">Deep Generative Model</a></li><li><a href="../pages/Next-Token-Prediction" class="internal">Next Token Prediction</a></li><li><a href="../pages/Normalising-Flow" class="internal">Normalising Flow</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

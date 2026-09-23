@@ -1,0 +1,3 @@
+
+Protocol design is the systems-engineering discipline of specifying the message formats, state transitions, and interaction rules that govern communication between independent components. It balances correctness, efficiency, extensibility, and security concerns before a formal specification is written. Protocol design decisions - such as framing, versioning, and error-handling strategy - directly shape the reliability and interoperability of the resulting system.
+

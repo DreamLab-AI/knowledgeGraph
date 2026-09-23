@@ -1,0 +1,84 @@
+
+Sustainability reporting is the structured, standardised practice through which organisations disclose their environmental, social, and governance (ESG) performance to investors, regulators, and other stakeholders. It encompasses the measurement, aggregation, and public presentation of data covering greenhouse gas emissions (Scope 1, 2, and 3), resource use, labour practices, board diversity, and supply chain impacts in conformance with frameworks such as GRI, ISSB IFRS S1/S2, TCFD, and the EU Corporate Sustainability Reporting Directive (CSRD). The discipline bridges quantitative carbon accounting, qualitative narrative disclosure, and third-party assurance to enable comparable, decision-useful ESG information. Emerging technologies including AI-assisted data collection, blockchain-based provenance, and real-time sensor integration are reshaping how organisations assemble and verify material sustainability data.
+
+- ### Overview
+  - Sustainability reporting emerged in the 1990s from voluntary corporate communications practices and has since matured into a mandatory regulatory obligation across major jurisdictions.
+  - The driving rationale is that investors and other capital allocators need comparable, decision-useful information about [[Climate Risk]], natural-resource dependencies, and social licence to operate — data that traditional financial statements do not capture.
+  - Regulators have moved from "comply-or-explain" to hard mandatory disclosure: the EU [[CSRD]] (effective from 2024 onwards for large companies) requires [[Double Materiality]] assessments and conformance with [[European Sustainability Reporting Standards]] (ESRS); globally the [[ISSB]] IFRS S1 (general sustainability) and IFRS S2 (climate) standards are being adopted by over 20 jurisdictions.
+  - The central technical challenge is [[Data Quality Management]]: emissions data spans hundreds of suppliers, activity categories, and geographies, each requiring defensible measurement or estimation with appropriate uncertainty bounds.
+  - Reported figures must be auditable: organisations need end-to-end data lineage from source measurement to disclosed totals, making robust [[Data Governance]] foundational.
+
+- ### Key Components
+  - #### Emissions Accounting
+    - **Scope 1** — direct emissions from owned or controlled sources (combustion, process emissions, company vehicles)
+    - **Scope 2** — indirect emissions from purchased electricity, steam, heat, or cooling; reported under both location-based and market-based methods
+    - **Scope 3** — all other indirect [[Scope 3 Emissions]] across the value chain; typically the largest share and the hardest to measure; disaggregated into 15 categories per the GHG Protocol
+    - The [[GHG Protocol]] Corporate Standard remains the globally dominant methodology for boundary-setting, source identification, and emission factor application
+  - #### Materiality Assessment
+    - [[Materiality Assessment]] identifies which sustainability topics are significant enough to require disclosure, balancing financial materiality (impact on enterprise value) with impact materiality (effects on people and planet) — the [[Double Materiality]] concept required by ESRS
+    - Topics typically assessed: climate change, biodiversity, water, circular economy, workforce conditions, community impact, business conduct, supply chain human rights
+  - #### Reporting Frameworks and Standards
+    - [[Global Reporting Initiative]] (GRI) — universal standards for impact-based disclosure; most widely adopted globally
+    - [[TCFD]] — Task Force on Climate-related Financial Disclosures; scenario-based climate risk and opportunity reporting now subsumed into IFRS S2
+    - [[ISSB]] IFRS S1 / [[IFRS S2]] — IASB-adjacent standards for capital-markets-facing sustainability disclosure
+    - [[CSRD]] + [[European Sustainability Reporting Standards]] — EU mandatory reporting covering approximately 50,000 companies; sector-specific ESRS in development
+    - [[CDP]] (Carbon Disclosure Project) — voluntary data platform used alongside regulatory filings
+    - [[Science Based Targets initiative]] (SBTi) — alignment of reduction targets with 1.5 °C pathways
+  - #### Assurance and Verification
+    - [[Audit and Assurance]] over sustainability data is moving from limited to reasonable assurance as regulations tighten
+    - Assurance providers apply IAASB ISSA 5000 (International Standard on Sustainability Assurance) or ISAE 3000 for non-financial information
+    - [[Blockchain Sustainability]] provenance registries and IoT sensor trails provide complementary machine-verifiable evidence for high-value emission reduction claims
+  - #### Technology Infrastructure
+    - [[Carbon Footprint Measurement]] platforms aggregate activity data from ERP, utility bills, logistics, and procurement systems
+    - [[Life Cycle Assessment]] methodology underpins Scope 3 Category 1 (purchased goods) and Category 11 (product use-phase) calculations
+    - [[AI for Sustainability]] applications automate invoice parsing, transport routing analysis, and anomaly detection in emission datasets
+    - [[Supply Chain Transparency]] tools (e.g. supplier portals, blockchain provenance) extend data collection beyond organisational boundaries
+    - [[Digital Twin]] models of facilities enable real-time energy-use monitoring and predictive emission optimisation
+
+- ### Applications and Use Cases
+  - **Investor-Grade ESG Disclosure** — annual sustainability reports aligned with ISSB/TCFD used by asset managers for ESG scoring, portfolio carbon footprinting, and stewardship engagement; feeds into [[ESG Investment]] decision-making
+  - **Regulatory Filing** — CSRD-compliant ESRS reports submitted to national competent authorities; mandatory for EU-listed companies and large non-listed undertakings above thresholds
+  - **Supply Chain Due Diligence** — buyers require tier-1 and tier-2 suppliers to submit emissions, water, and labour data via platforms such as EcoVadis, Sedex, or CDP Supply Chain; feeds [[Supply Chain Transparency]]
+  - **Green Finance Alignment** — sustainability reports underpin issuance of green bonds and sustainability-linked loans; lenders verify alignment with [[Green Taxonomy]] (EU Taxonomy Regulation)
+  - **Internal Performance Management** — internal carbon prices, science-based targets dashboards, and business-unit sustainability KPIs drive operational improvement toward [[Net Zero]] commitments
+  - **Carbon Credit and Offset Verification** — project-level [[Carbon Credits]] (Verra VCS, Gold Standard) require MRV (Monitoring, Reporting, Verification) reports; corporate buyers rely on these for Scope 3 offsetting claims; [[Blockchain Sustainability]] registries reduce double-counting risk
+  - **Biodiversity and Nature Disclosure** — emerging frameworks (TNFD — Taskforce on Nature-related Financial Disclosures) extend sustainability reporting to ecosystem dependencies and impacts, intersecting with [[Life Cycle Assessment]] for land-use metrics
+
+- ### Standards and Regulatory Context
+  - **GHG Protocol** — foundational accounting standard for corporate and value-chain greenhouse gas inventories; defines Scope 1/2/3 boundary conventions and emission factor usage
+  - **GRI Universal Standards** (2021 revision) — GRI 1 (Foundation), GRI 2 (General Disclosures), GRI 3 (Material Topics) plus topic-specific standards (GRI 305 Emissions, GRI 306 Waste, etc.)
+  - **ISSB IFRS S1 / S2** (2023) — baseline global capital-markets sustainability disclosure; adopted or under adoption in Australia, Canada, UK, Singapore, Japan, Brazil, and others
+  - **TCFD Recommendations** (2017, updated 2021) — now embedded in IFRS S2; four-pillar framework (Governance, Strategy, Risk Management, Metrics and Targets) with scenario analysis requirements
+  - **EU CSRD / ESRS** — replaces NFRD; cross-cutting ESRS 1 (General Requirements), ESRS 2 (General Disclosures), and topical standards (E1 Climate, E2 Pollution, E3 Water, E4 Biodiversity, E5 Resource Use, S1–S4 Social, G1 Business Conduct); phased implementation 2024–2028
+  - **EU Taxonomy Regulation** — defines environmentally sustainable economic activities; "Do No Significant Harm" (DNSH) criteria and minimum social safeguards must be disclosed alongside taxonomy-alignment ratios
+  - **SEC Climate Disclosure Rule** — US Securities and Exchange Commission rules requiring Scope 1 and 2 disclosure for large public companies (implementation subject to ongoing legal proceedings as of 2026)
+  - **ISSA 5000** (IAASB) — international assurance standard for sustainability information; enables both limited and reasonable assurance engagements
+  - Key standard-setting bodies: [[ISSB]] (under IFRS Foundation), [[Global Reporting Initiative]], European Financial Reporting Advisory Group (EFRAG), IAASB, CDP
+
+- ### Challenges and Emerging Directions
+  - **Scope 3 data quality** — spend-based estimation introduces high uncertainty; primary supplier-data collection remains costly; industry spend-intensity databases (EXIOBASE, EPA USEEIO) improve but do not eliminate uncertainty
+  - **Greenwashing risk** — divergence between disclosed claims and underlying performance remains a significant [[Greenwashing]] risk; regulators (EU Green Claims Directive, FCA, SEC) are increasing scrutiny
+  - **Assurance gap** — moving from limited to reasonable assurance requires substantially more rigorous data trails and internal controls, analogous to financial audit infrastructure
+  - **Technology integration** — adoption of AI-powered [[Data Quality Management]], real-time IoT measurement, and [[Blockchain Sustainability]] provenance is accelerating but uneven across sectors and company sizes
+  - **Framework proliferation** — multiple competing standards create reporting burden; ISSB/GRI interoperability agreement (2023) and CSRD–ISSB equivalence assessment aim to reduce duplication
+  - **Nature and biodiversity** — [[TNFD]] (Taskforce on Nature-related Financial Disclosures) framework (2023) extends sustainability reporting into ecosystem accounting, adding new data demands
+
+- ### Current Landscape (2026)
+  - The EU's Omnibus I Amending Directive (EU) 2026/470 was published in the Official Journal on 26 February 2026 and entered into force on 18 March 2026, sharply narrowing CSRD scope: mandatory reporting now applies only to undertakings with more than 1,000 employees and net turnover above EUR 450 million (up from roughly 250 employees), removing listed SMEs and around 80% of previously in-scope companies; member states must transpose by 19 March 2027.
+  - The earlier "Stop-the-Clock" Directive (EU) 2025/794 (in force 17 April 2025) postponed CSRD reporting by two years for original Wave 2 (now FY2027, reporting 2028) and Wave 3 entities, while a July 2025 "Quick Fix" delegated act extended transitional reliefs for Wave 1 companies across FY2025 and FY2026.
+  - Revised, simplified ESRS were finalised on 3 July 2026, cutting the number of mandatory datapoints by roughly 61% versus the 2023 standards, making disclosure more quantitative and rendering sector-specific standards voluntary; the standards are mandatory from FY2027 with optional early use for FY2026, and a new VSME voluntary standard acts as a "value chain cap" protecting sub-1,000-employee partners.
+  - On 11 December 2025 the ISSB issued targeted amendments to IFRS S2 addressing GHG-emissions implementation challenges (notably Scope 3 and financed emissions reliefs), effective for annual periods beginning on or after 1 January 2027 with early application permitted.
+  - In April 2026 the ISSB agreed to develop nature-related disclosure guidance as a non-mandatory IFRS Practice Statement building on the TNFD framework (rather than a standalone standard), complementing IFRS S1/S2, with an Exposure Draft targeted for October 2026; separately it advanced its "Enhancing the SASB Standards" initiative touching 53 of 77 standards to improve GRI/TNFD interoperability.
+  - ISSB Standards are consolidating as the global baseline, with roughly 39 to 40 jurisdictions adopting or aligning (including China, Japan, Australia, Singapore and the Philippines); the UK published its UK Sustainability Reporting Standards (UK SRS) based on IFRS S1/S2 in early 2026, with an FCA consultation on requiring aligned disclosures for listed firms from 2027.
+  - The CSDDD due-diligence regime was simultaneously scaled back to only the largest corporations (over 5,000 employees and EUR 1.5 billion turnover), with mandatory compliance pushed to July 2029 and climate transition plan obligations removed from direct scope; the central open challenge for 2026 is regulatory fragmentation and interoperability between the pared-back EU regime and the expanding ISSB-aligned global baseline.
+
+- ### References
+  - 1. AL Goodbody (2026). Sustainability reporting and due diligence update – June 2026. https://www.algoodbody.com/insights-publications/sustainability-reporting-and-due-diligence-update-june-2026
+  - 2. Deloitte (2026). Heads Up — European Sustainability Reporting — Omnibus Legislative Developments and Updates to ESRS. https://dart.deloitte.com/USDART/home/publications/deloitte/heads-up/2026/eu-sustainability-reporting-omnibus-esrs-updates
+  - 3. KPMG International (2026). ESG Bulletin — 2026 Issue 02. https://assets.kpmg.com/content/dam/kpmgsites/cn/pdf/en/2026/05/esg-bulletin-02.pdf
+  - 4. White & Case (2026). Simplified, not abandoned: EU Corporate Sustainability after the Omnibus I Package. https://www.whitecase.com/insight-alert/simplified-not-abandoned-eu-corporate-sustainability-after-omnibus-i-package
+  - 5. Anthesis Group (2026). Sustainability Reporting in 2026: CSRD, EU Omnibus and ISSB — What Your Business Must Do Now. https://www.anthesisgroup.com/me/insights/sustainability-reporting-in-2026/
+  - 6. European Commission (2026). CSRD Delegated Act 2026/5010 (revised ESRS). https://ec.europa.eu/finance/docs/level-2-measures/csrd-delegated-act-2026-5010_en.pdf
+
+- ### Provenance
+

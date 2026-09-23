@@ -1,0 +1,96 @@
+
+AI regulation encompasses binding laws, technical standards, and administrative rules imposed by national or supranational bodies to govern the entire lifecycle of artificial intelligence systems — from design and training through deployment and monitoring. Regulatory instruments range from risk-based frameworks such as the EU AI Act, which imposes tiered obligations proportional to application risk, to sector-specific rules in finance, healthcare, and critical infrastructure. Regulation aims to protect fundamental rights, ensure accountability, and promote systemic safety while preserving innovation capacity. Implementation translates abstract policy obligations into concrete engineering requirements including conformity assessments, audit trails, data governance documentation, and post-market surveillance.
+
+- ### Overview
+  - AI regulation is the application of public governance instruments — statute, delegated regulation, technical standard, and supervisory guidance — to systems that perceive inputs, make inferences, and generate outputs using machine learning or rule-based approaches.
+  - The field emerged in response to documented harms from unaccountable algorithmic decision-making: discriminatory credit scoring, opaque content moderation, and safety failures in autonomous vehicles, among others.
+  - Regulation operates at multiple levels: international soft law (OECD, G7, UN), regional binding law (EU), national frameworks (US, UK, China, Singapore), and sectoral supervision (financial services, medical devices, aviation).
+  - The central challenge is balancing innovation incentives against systemic risk, particularly as AI capabilities accelerate faster than legislative cycles.
+  - Regulatory design choices — prescriptive rules versus principles-based approaches, ex ante approval versus ex post liability — significantly shape industry behaviour and the locus of accountability.
+  - The concept sits at the intersection of [[AI Policy]], [[AI Governance and Ethics]], legal theory, and [[Regulatory Compliance]] engineering.
+
+- ### Key Regulatory Frameworks
+  - #### EU AI Act (2024)
+    - The world's first comprehensive, binding AI law, applying a four-tier risk classification: prohibited practices (unacceptable risk), high-risk systems, limited-risk systems, and minimal-risk systems.
+    - Prohibited uses include real-time biometric surveillance in public spaces, social scoring by governments, and manipulation of vulnerable groups.
+    - High-risk categories cover [[Critical Infrastructure]], biometric identification, employment decisions, credit scoring, law enforcement, and educational assessment.
+    - High-risk obligations include [[Conformity Assessment]], [[Transparency]] documentation (technical files), human oversight mechanisms, accuracy and robustness requirements, and registration in an EU database.
+    - General-purpose AI (GPAI) models above a compute threshold face additional systemic-risk provisions including red-team testing and incident reporting to the [[AI Office]].
+  - #### US Approach
+    - The US pursues a sector-led, principles-based approach coordinated through executive orders, agency guidance, and the [[NIST AI RMF]] rather than comprehensive legislation.
+    - The 2023 Executive Order on AI directed agencies to issue sector-specific guidance, required safety evaluations for frontier models, and tasked NIST with developing evaluation standards.
+    - The Federal Trade Commission (FTC), Equal Employment Opportunity Commission (EEOC), and Consumer Financial Protection Bureau (CFPB) apply existing law to AI-related harms in their respective sectors.
+    - State-level activity is accelerating: Colorado, Illinois, and Texas have enacted algorithmic-discrimination statutes; California has introduced multiple AI accountability bills.
+  - #### China
+    - China's approach is prescriptive and content-focused: the Algorithmic Recommendation Measures (2022), Deep Synthesis (Deepfake) Measures (2022), and Generative AI Measures (2023) impose registration, labelling, and content-control obligations on operators.
+    - Key obligations include labelling AI-generated content, conducting security assessments before deployment, and maintaining audit logs for at least three years.
+    - China's framework prioritises national security and social stability alongside innovation promotion.
+  - #### UK
+    - The UK's post-Brexit approach is deliberately light-touch: a cross-sectoral AI Safety Institute, existing-regulator-led guidance (FCA, ICO, Ofcom), and a principles-based National AI Strategy.
+    - The AI Safety Institute conducts frontier model evaluations and publishes safety benchmarks without imposing mandatory requirements.
+    - The UK is positioning itself as a bridge between the EU's precautionary approach and the US's innovation-first stance.
+  - #### International Coordination
+    - The [[OECD AI Principles]] (2019, revised 2024) provide the broadest multilateral soft-law baseline, adopted by 46+ countries.
+    - The G7 Hiroshima Process produced the International Guiding Principles for Advanced AI and a Code of Conduct for organisations developing frontier AI.
+    - The Council of Europe Framework Convention on Artificial Intelligence (2024) is the first binding international AI treaty, open to non-European signatories.
+    - The UN General Assembly adopted a resolution on safe, secure, and trustworthy AI in 2024.
+
+- ### Key Mechanisms
+  - **Risk Classification** — tiering systems according to potential harm enables proportionate obligations; a [[Risk Assessment]] maps system characteristics to regulatory tier.
+  - **Conformity Assessment** — pre-market evaluation (internal or third-party) verifying that a high-risk system meets technical requirements before it enters service; analogous to CE marking for medical devices.
+  - **Technical Documentation** — mandatory records covering training data provenance, model architecture, known limitations, intended purpose, and post-deployment monitoring plans; supports [[AI Transparency]].
+  - **Human Oversight** — design requirements ensuring that a human can understand, correct, override, or halt AI outputs; operationalises [[Human-in-the-Loop]] principles.
+  - **Regulatory Sandboxes** — controlled environments allowing innovators to test novel AI products under relaxed but supervised conditions; the EU AI Act requires member states to establish them.
+  - **Incident Reporting** — mandatory notification to supervisory authorities when a high-risk system causes or contributes to a serious incident, mirroring medical-device and aviation safety reporting.
+  - **Post-Market Monitoring** — ongoing logging, performance tracking, and bias auditing after deployment; generates evidence for regulatory review and liability determination.
+  - **Algorithmic Impact Assessment** — structured evaluation of a system's potential social, economic, and rights impacts before or during deployment; used in [[Algorithmic Accountability]] frameworks.
+
+- ### Applications and Use Cases
+  - **Financial Services** — regulatory requirements for [[Explainable AI]] in credit-scoring and fraud-detection models, driven by FRB, ECB, and national banking supervisors; intersection with existing model-risk management (SR 11-7) frameworks.
+  - **Healthcare and Medical Devices** — AI diagnostic tools classified as Software as a Medical Device (SaMD) under MDR/IVDR (EU) and FDA 510(k)/De Novo pathways (US), requiring clinical validation and post-market surveillance.
+  - **Employment** — disclosure and impact assessment obligations for AI used in hiring, promotion, and performance evaluation; NYC Local Law 144 is an early example.
+  - **Law Enforcement and Justice** — highly restricted use of biometric identification, predictive policing tools, and AI-assisted judicial decision-making under both the EU AI Act and national constitutional law.
+  - **Autonomous Vehicles** — intersection of AI regulation with product liability, road traffic law, and type-approval frameworks; creates layered compliance obligations for manufacturers and operators.
+  - **Generative AI and Foundation Models** — emerging layer of obligations targeting large language models and image generators: content labelling, copyright compliance, safety testing, and systemic-risk assessment.
+  - **Public Sector** — obligations on government agencies using AI for benefits eligibility, tax assessment, or social service allocation; heightened accountability given coercive state power.
+  - **Regulatory Technology (RegTech)** — commercial tooling that automates compliance workflows: risk classification tools, audit log management, bias monitoring dashboards, and conformity documentation generators.
+
+- ### Standards and Context
+  - **ISO/IEC 42001:2023** — the first international management-system standard for AI, providing a framework organisations can certify against to demonstrate systematic AI governance; increasingly referenced by regulators as a benchmark.
+  - **ISO/IEC 23894** — guidance on AI risk management aligned with ISO 31000, feeding into conformity assessment processes.
+  - **NIST AI Risk Management Framework (AI RMF 1.0, 2023)** — voluntary US framework with four functions (Govern, Map, Measure, Manage) widely adopted by US government agencies and referenced internationally.
+  - **IEEE Ethically Aligned Design** — influence on transparency and accountability norms, particularly in professional engineering contexts.
+  - **OECD AI Principles** — five core principles (inclusive growth, human-centred values, transparency, robustness, accountability) adopted by 46+ governments; foundation for the G7 Hiroshima Code of Conduct.
+  - **EU AI Act Delegated Acts** — technical implementing specifications for conformity assessment procedures, harmonised standards lists, and high-risk classification criteria, developed by CEN/CENELEC.
+  - **ENISA AI Cybersecurity Guidelines** — intersection of AI regulation with the EU Cybersecurity Act and NIS2 Directive; cyber resilience requirements for high-risk AI systems.
+  - Regulatory convergence is being pursued through bilateral dialogues (EU-US Trade and Technology Council, UK-US Atlantic Declaration) to avoid fragmented compliance burdens.
+  - **Enforcement bodies**: EU AI Office (Commission), national market surveillance authorities, DPAs for GDPR overlap; US FTC, EEOC, CFPB, FDA; UK ICO, FCA, CMA.
+
+- ### Emerging Issues
+  - **Frontier AI and Existential Risk** — governments are beginning to apply regulatory attention to highly capable frontier models, including mandatory safety evaluations, compute thresholds, and emergency intervention powers; see [[AI Safety]] and [[AI Alignment]].
+  - **Regulatory Arbitrage** — jurisdictional variation creates incentives to deploy regulated AI systems from less-regulated territories; international enforcement cooperation remains immature.
+  - **Open-Source AI** — tension between open release of powerful AI models and regulatory obligations; the EU AI Act's open-source carve-out is contested.
+  - **Liability Attribution** — determining fault when an AI system causes harm across a chain of developers, deployers, and users; EU is revising the AI Liability Directive and Product Liability Directive in parallel with the AI Act.
+  - **Compute Governance** — emerging controls on the export of AI training hardware and cloud compute resources as a supply-chain lever for AI regulation; intersects with [[Supply Chain]] and export control law.
+  - **Regulatory Capacity** — most regulators lack technical expertise to evaluate complex AI systems; building inspection and audit capacity is a systemic challenge.
+
+- ### Current Landscape (2026)
+  - The EU AI Act, which entered into force on 1 August 2024, reached its central milestone on 2 August 2026: the bulk of the Regulation became applicable and enforcement powers activated, including the European AI Office's authority to fine general-purpose AI (GPAI) providers up to EUR 15 million or 3% of global turnover under Article 101, and Article 50 transparency duties (chatbot disclosure, deepfake and AI-content marking).
+  - The EU softened its own timeline via the "Digital Omnibus on AI" (Regulation (EU) 2026/1744, in force 27 July 2026), which pushed Annex III high-risk obligations to 2 December 2027 and Annex I embedded high-risk systems to 2 August 2028; new prohibitions on non-consensual intimate deepfakes and AI-generated CSAM apply from 2 December 2026.
+  - GPAI obligations have applied since 2 August 2025, operationalised through the voluntary GPAI Code of Practice; models above the 10^25 FLOP systemic-risk threshold face additional safety, security and copyright assessment duties, with pre-2 August 2025 models given until 2 August 2027 to comply.
+  - The United States pivoted to deregulation: Executive Order 14179 (January 2025) revoked the Biden-era safety order, and EO 14365 "Ensuring a National Policy Framework for Artificial Intelligence" (11 December 2025) created a DOJ AI Litigation Task Force to challenge state laws and threatened to condition USD 42bn of BEAD broadband funding on states repealing "onerous" AI rules.
+  - State-level activity nonetheless accelerated, with NYU's Center on Technology Policy counting 109 state AI laws across 29 states in the first half of 2026; California's Transparency in Frontier AI Act (SB 53) and Texas's Responsible AI Governance Act (TRAIGA) took effect on 1 January 2026, while Colorado repealed its pioneering AI Act and replaced it with the narrower Automated Decision-Making Technology Act (SB 26-189), effective 1 January 2027.
+  - Standards consolidated around ISO/IEC 42001, the first certifiable AI management system standard, now adopted in Europe as EN ISO/IEC 42001:2026 (CEN, March 2026) and increasingly demanded by enterprise procurement; 2025 added six companion standards (ISO/IEC 42005 impact assessment, 42006 certification bodies, 42007 conformity schemes, 12792 transparency, TS 6254 explainability, TR 20226 sustainability).
+  - Multilateral governance matured: the UN General Assembly in August 2025 approved terms for an Independent International Scientific Panel on AI and a Global Dialogue on AI Governance, and the second International AI Safety Report (chaired by Yoshua Bengio, published February 2026) synthesised evidence from experts across dozens of countries to underpin policymaking.
+  - Open challenges as of 2026 include the US federal-versus-state preemption fight (36 state attorneys general are resisting the EO), the gap between GPAI obligations and not-yet-finalised harmonised EU standards, defining international "red lines" for unacceptable AI outcomes, and governing increasingly autonomous agentic AI, which Singapore addressed with a dedicated framework in January 2026.
+
+- ### References
+  - 1. European Commission — Digital Strategy (2026). AI Act: regulatory framework and enforcement timeline. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. Future of Life Institute — EU Artificial Intelligence Act (2026). Implementation Timeline and Enforcement of Chapter V. https://artificialintelligenceact.eu/implementation-timeline/
+  - 3. The White House (2025). Executive Order 14365: Ensuring a National Policy Framework for Artificial Intelligence. https://www.whitehouse.gov/presidential-actions/2025/12/eliminating-state-law-obstruction-of-national-artificial-intelligence-policy/
+  - 4. Skadden, Arps (2026). Colorado Repeals and Replaces Its AI Act. https://www.skadden.com/insights/publications/2026/06/colorado-repeals-and-replaces-its-ai-act
+  - 5. International AI Safety Report (2026). International AI Safety Report 2026. https://internationalaisafetyreport.org/publication/international-ai-safety-report-2026
+  - 6. ITU (2025). The Annual AI Governance Report 2025: Steering the Future of AI. https://www.itu.int/epublications/zh/publication/the-annual-ai-governance-report-2025-steering-the-future-of-ai/en
+
+- ### Provenance
+

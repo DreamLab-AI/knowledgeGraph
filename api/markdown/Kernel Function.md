@@ -1,0 +1,3 @@
+
+A kernel function is a similarity measure between two data points that implicitly computes an inner product in a high-dimensional feature space without explicitly constructing that space. It underlies kernel methods such as support vector machines and Gaussian processes, enabling non-linear pattern recognition through the kernel trick. Common examples include the radial basis function, polynomial, and linear kernels, each encoding different assumptions about data similarity.
+

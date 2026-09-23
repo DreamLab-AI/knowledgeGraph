@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Safety</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Safety"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Safety"/><meta name="twitter:description" content="The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards."/><meta property="og:description" content="The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards."/><meta property="og:image:alt" content="The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Safety"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Safety"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Safety"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6750"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6750" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Safety</a></div></nav><h1 class="article-title">Safety</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.890Z">23 Sept 2026</time><span>16 min read</span></p><ul class="tags"><li><a href="../tags/" class="internal tag-link"></a></li></ul><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:safety</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>governance</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>draft</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../Governance-and-Safety" class="internal">Governance and Safety</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Hazard-Analysis" class="internal">Hazard Analysis</a></li><li><a href="../pages/Risk-Assessment" class="internal">Risk Assessment (AI-0079)</a></li><li><a href="../pages/Human-Oversight" class="internal">Human Oversight</a></li><li><a href="../Risk-Assessment-(AI-0079)" class="internal">Risk Assessment (AI-0079)</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Trust-and-Safety" class="internal">Trust and Safety</a></li><li><a href="../pages/Accountability" class="internal">Accountability</a></li><li><a href="../pages/AI-Trustworthiness" class="internal">AI Trustworthiness</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../pages/Infrastructure" class="internal">Infrastructure</a></li><li><a href="../working/Politics,-Law,-Privacy" class="internal">Politics, Law, Privacy</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Security" class="internal">Security</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../pages/Robustness" class="internal">Robustness</a></li><li><a href="../pages/Reliability" class="internal">Reliability</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../Safety-and-alignment" class="internal">Safety and alignment</a></li><li><a href="../pages/Defense-In-Depth" class="internal">Defense in Depth</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0070</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../hazard-analysis" class="internal">Hazard Analysis</a></li><li><a href="../risk-assessment-ai-0079" class="internal">Risk Assessment (AI-0079)</a></li><li><a href="../bitcoin" class="internal">Bitcoin</a></li><li><a href="../death-of-the-internet" class="internal">Death of the Internet</a></li><li><a href="../decentralised-web" class="internal">Decentralised Web</a></li><li><a href="../working/infrastructure" class="internal">Infrastructure</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li><li><a href="../politics-law-privacy" class="internal">Politics, Law, Privacy</a></li><li><a href="../safety-and-alignment" class="internal">Safety and alignment</a></li><li><a href="../social-contract-and-jobs" class="internal">Social contract and jobs</a></li><li><a href="../solid" class="internal">Solid</a></li><li><a href="../trust-and-safety" class="internal">Trust and Safety</a></li><li><a href="../webid" class="internal">webid</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:7d92a2aa5c693d48b959cad8cce0b7ff8912dd548dc698b781c376036527c9e7</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../adversarial-examples" class="internal">Adversarial Examples</a></li><li><a href="../formal-verification" class="internal">Formal Verification</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ISO-26262" class="internal">ISO 26262</a></li><li><a href="../pages/EU-AI-Act-Regulatory-Instrument" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-RMF" class="internal">NIST AI RMF</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li><li><a href="../pages/NIST-AI-Risk-Management-Framework" class="internal">NIST AI Risk Management Framework</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<p>The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.
+- <a href=".././tags/" class="tag-link internal alias" data-slug="tags/index"></a> Effective Altruists (EA) / AI Safety Advocates
+- Tend to emphasise caution and safety considerations around AI development
+- Concerned about risks of advanced AI systems causing harm or even existential catastrophe
+- Argue for more research into AI safety and potentially slowing down or regulating AI development
+- Associated with figures like Eliezer Yudkowsky, Paul Christiano, Nick Beckstead
+- Paul Christiano was appointed to head AI safety at the US AI Safety Institute (AISI) in April 2024; the Trump administration subsequently restructured AISI in 2025, renaming it the Center for AI Standards and Innovation (CAISI) and shifting focus from safety oversight to innovation and standards
+- <a href="https://arstechnica.com/tech-policy/2024/04/feds-appoint-ai-doomer-to-run-us-ai-safety-institute/" class="external">Feds appoint “AI doomer” to run AI safety at US institute | Ars Technica<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../pages/AI-Governance-Law-and-Privacy" class="internal alias" data-slug="pages/AI-Governance-Law-and-Privacy">AI Governance Law and Privacy</a>
+- <a href="https://www.bloomberg.com/opinion/articles/2024-05-21/ai-safety-is-dead-and-chuck-schumer-faces-risks" class="external">AI Safety Is Dead, and Chuck Schumer Faces Risks - Bloomberg<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../Safety-and-alignment" class="internal alias" data-slug="Safety-and-alignment">Safety and alignment</a>
+- <a href=".././tags/" class="tag-link internal alias" data-slug="tags/index"></a> Effective Accelerationists (EAcc) / AI Risk Sceptics
+- Emphasise the potential benefits of rapid AI progress
+- Tend to be more sceptical of AI safety concerns as blocking human advancement
+- Argue that slowing down AI development could deny humanity massive benefits
+- Associated with figures like “Beff Bezos” aka Guillaume Verdon, Daniel Dewey, Nick Land
+- See accelerating AI as part of a broader techno-capitalist imperative to transcend human limitations</p>
+</li>
+<li>
+<h1 id="potential-green-shoots">Potential Green Shoots<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#potential-green-shoots" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>There is a chance to build on recent advances in long running projects like <a href="../pages/Solid" class="internal" data-slug="pages/Solid">Solid</a>. This is all wrapped up with <a href="../pages/WebID-Decentralised-Identity-URI" class="internal alias" data-slug="pages/WebID-Decentralised-Identity-URI">WebID Decentralised Identity URI</a> and <a href="../Decentralised-Web" class="internal alias" data-slug="Decentralised-Web">Decentralised Web</a> monikers.</p>
+</li>
+<li>
+<p>Using AI to reduce conspiracy theory beliefs <a href="https://osf.io/preprints/psyarxiv/xcwdn" class="external">https://osf.io/preprints/psyarxiv/xcwdn<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../pages/Trust-and-Safety" class="internal alias" data-slug="pages/Trust-and-Safety">Trust and Safety</a> <a href="../Death-of-the-Internet" class="internal alias" data-slug="Death-of-the-Internet">Death of the Internet</a> the flips side being that they are very capable of <a href="https://www.anthropic.com/news/measuring-model-persuasiveness" class="external">persuasion<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</p>
+</li>
+<li>
+<p><a href="https://arxiv.org/pdf/2403.18802.pdf" class="external">2403.18802.pdf (arxiv.org)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../pages/Trust-and-Safety" class="internal alias" data-slug="pages/Trust-and-Safety">Trust and Safety</a>
+- 1) Most surprisingly: “LLM agents can achieve superhuman rating performance” on fact checking when given access to Google!
+2) Bigger models are more factual than smaller ones, as expected
+3) LLMs are 20x cheaper than human fact-checkers, even taking into account the number of calls the <a href="../pages/Large-Language-Models" class="internal alias" data-slug="pages/Large-Language-Models">Large Language Models</a> had to make.
+- 4) <a href="https://neurosciencenews.com/ai-llm-morality-26041/" class="external">AI Outperforms Humans in Moral Judgments - Neuroscience News<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h3 id="human-suffering-and-exploitation">Human Suffering and Exploitation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#human-suffering-and-exploitation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h1 id="trust-and-safety">Trust and Safety<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trust-and-safety" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>Trust and safety (T&amp;S) is crucially important for building ethical and inclu­sive online communities, the landscape is fraught with complex tradeoffs and challenges that make direct involvement difficult for independent researchers and developers like us. As summarized in a recent Atlantic Council report, T&amp;S operates in a high-stakes environment driven by commercial incentives that often conflict with safety objectives. Practitioners face threats of trauma, burnout, and retaliation when enforcing policies.
+- Established standards, struggles to quantify impact, and relies heavily on the judgement of private companies.
+- Trust and safety (T&amp;S) emerged as a field to govern risks in online communities. It became crucial as user-generated content platforms scaled.
+- • The emergence of a professionalized T&amp;S field creates opportunities for collaboration and innovation. But knowledge sharing, tooling, talent pipelines, and metrics need improvement. T&amp;S practitioners, especially content moderators, face high risk of trauma. Their wellbeing requires urgent attention.
+- • Systemic gaps exist around measuring T&amp;S value, regulation’s impact on incentives, and the role of venture capital. Market failures drive under-investment.
+- • Adjacent fields like academia, civil society, and media provide crucial external expertise but lack formal inclusion in T&amp;S.
+- • The gaming industry offers useful insights but has its own major T&amp;S challenges.
+- • Known harms will spread to new technologies, requiring adaptive solu­tions and proactive design.
+- • Systemic gaps exist around measurement, regulation, and investment. Creative initiatives needed to realign incentives.
+- • Philanthropy and government can help address systemic gaps through strategic programs and incentives.
+- • T&amp;S must balance competing goals like.
+- Protecting rights vs mitigating harms
+- Efficiency vs accuracy in enforcement
+- Reviewer wellbeing vs review needs
+- Centralized vs decentralized moderation
+- Growth vs safety investments
+- Internal process vs external expertise
+- Reactive enforcement vs proactive design</p>
+<pre><code>	- Reactive enforcement vs proactive design
+</code></pre>
+</li>
+<li>
+<h2 id="ai-safety-and-concerns">AI Safety and Concerns<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-safety-and-concerns" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### The UK situation.
+- Every time a phase change of technology has been introduced there has been a fundamental shift in governance structures. These take time to play out. Electronic communication allowed global awareness of corruption, and there is a well documented breakdown of [[Trust and Safety]] since. We can perhaps see this in the way that leaders are abandoning the pretence of 'norms' in the West.
+- More agile (emerging?) economies / countries may be able to take far more advantage, if they are allowed to, but make no mistake, the UK is currently well positioned. - 🟢 The UK is systemically well positioned to deal with sudden change, because the vertical integration of ministries allows them to be spun up and down in response to change regardless of the leadership. An agile AND persistent civil service can be effective in times of stress.
+	- [Ian Hogarth to lead UK’s AI Foundation Model Taskforce
+- he's actually a great choice](https://www.gov.uk/government/news/tech-entrepreneur-ian-hogarth-to-lead-uks-ai-foundation-model-taskforce)
+	- [Welcome to State of AI Report 2023](https://www.stateof.ai/)
+	- America is supportive of UK positioning around [[Trust and Safety]]. They have a compatible legal framework, and we are doing useful work that they are ill positioned to do in exploring the legal space.
+	- This perhaps explains the £2.5B [[Infrastructure]] and training investment plan by Microsoft.
+	- These companies are **as big** as the UK. Beware tech bros bearing gifts?
+	  ![image.png](assets/image_1704045603470_0.png)
+	- All this makes funding seem disproportionately risk sensitive right now.
+</code></pre>
+</li>
+<li>
+<p><img src="https://jnnnthnn.com/leike.png" alt/>{:width 600}</p>
+</li>
+<li>
+<p>A survey of 2778 AI researchers, to assess the pace of AI progress and the broader societal implications. The increased participation in this third iteration points to growing importance and concern surrounding AI in the scientific community.</p>
+</li>
+<li>
+<p>Most of the 39 tasks will likely be feasible within the next ten years, showcasing AI’s anticipated versatility and rapid advancement. It’s cheaper, so it will likely become ubiquitous without a new <a href="../pages/Employment-Social-Contract-Under-Automation" class="internal alias" data-slug="pages/Employment-Social-Contract-Under-Automation">Employment Social Contract Under Automation</a> initiative.</p>
+</li>
+<li>
+<p>Median prediction indicates a 50% chance of achieving High-Level Machine Intelligence by 2047 and Full Automation of Labour, by 2116</p>
+</li>
+<li>
+<p>Strong hints of potential differences in technological development speeds, cultural attitudes, or economic motivations across regions. This suggests incoming legislative arbitrage.
+- <a href="https://www.ft.com/content/9339d104-7b0c-42b8-9316-72226dd4e4c0" class="external">EU’s new AI Act risks hampering innovation, warns Emmanuel Macron (ft.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <a href="https://cacm.acm.org/news/273479-japan-goes-all-in-copyright-doesnt-apply-to-ai-training/fulltext#:~:text=In%20a%20surprising%20move%2C%20Japan%27s%20government%20recently%20reaffirmed,is%20content%20obtained%20from%20illegal%20sites%20or%20otherwise.%22" class="external">Japan Goes All In: Copyright Doesn’t Apply To AI Training | News | Communications of the ACM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+- <a href="https://www.technologyreview.com/2023/10/18/1081846/generative-ai-safety-censorship-china/" class="external">China’s plan to judge the safety of generative AI | MIT Technology Review<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Broad agreement exists on some future AI traits, like finding unexpected ways to achieve goals, but significant uncertainty remains, especially for traits with sinister implications.</p>
+</li>
+<li>
+<p>Scepticism exists about future AI systems’ ability to provide intelligible and truthful explanations of decisions, posing challenges for risk management and bias mitigation.
+- AI spreading false information.</p>
+</li>
+<li>
+<p><strong>Over 90%</strong> concerned about:
+- Authoritarian rulers using AI for control.
+- AI worsening economic inequality.
+- Bias in AI, e.g., gender or race discrimination.</p>
+</li>
+<li>
+<p><strong>Over 80%</strong> concerned about:</p>
+</li>
+<li>
+<p>Researchers emphasize safety and alignment as priority (10:1 margin).</p>
+</li>
+<li>
+<p><strong>58%</strong> see at least a <strong>5% chance of AI ending humanity</strong>.</p>
+</li>
+<li>
+<p>Risk of severe disempowerment of human species at <strong>16.2%</strong> (comparable to Russian Roulette).</p>
+</li>
+<li>
+<p><strong>10% chance by 2027</strong> and <strong>50% chance by 2047</strong> for AI to outperform humans in every task, <strong>13 years sooner</strong> than previous estimates.</p>
+</li>
+<li>
+<p><a href="https://aiimpacts.org/wp-content/uploads/2023/04/Thousands_of_AI_authors_on_the_future_of_AI.pdf" class="external">Thousands_of_AI_authors_on_the_future_of_AI.pdf (aiimpacts.org)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>The prospect of ASI raises significant ethical and safety concerns.</p>
+</li>
+<li>
+<h2 id="the-safe-superintelligence-project">The Safe Superintelligence Project<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-safe-superintelligence-project" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>In response to these risks, OpenAI co-founder Ilya Sutskever has launched a new company with the sole objective of creating Safe Superintelligence (SSI).</p>
+</li>
+<li>
+<p><a href="https://ssi.inc/" class="external">Safe Superintelligence Inc.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h2 id="the-risks-and-challenges">The Risks and Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-risks-and-challenges" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The prospect of ASI raises significant ethical and safety concerns.</p>
+</li>
+<li>
+<h2 id="areas-of-agreement-and-disagreement">Areas of Agreement and Disagreement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#areas-of-agreement-and-disagreement" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Both sides agree advanced AI will be transformative, but EAs worry more about downside risks</p>
+</li>
+<li>
+<p>Many EAs argue AI safety is critical because the risks are so catastrophic; delaying AI is worth it</p>
+</li>
+<li>
+<p>EAccs argue AI progress will be net positive and safety concerns are overblown; delays will cause harm</p>
+</li>
+<li>
+<p>EAs and EAccs both worry heavy-handed government AI regulation could be damaging, but EAccs are more universally skeptical of regulation</p>
+</li>
+<li>
+<p>EAccs are more open to transformative AI radically changing society; EAs want to preserve human agency</p>
+</li>
+<li>
+<p>Both sides agree AI development shouldn’t be monopolised by a few corporations, but differ on solutions.</p>
+</li>
+<li>
+<h2 id="jailbreaking-is-circumvention-of-llm-guardrails">Jailbreaking is circumvention of LLM guardrails<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#jailbreaking-is-circumvention-of-llm-guardrails" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><a href="https://chats-lab.github.io/persuasive_jailbreaker/" class="external">How Johnny Can Persuade LLMs to Jailbreak Them:<br/>Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs (chats-lab.github.io)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://github.com/pdparchitect/llm-hacking-database" class="external">pdparchitect/llm-hacking-database: This repository contains various attack against Large Language Models. (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://twitter.com/repligate/status/1784206780546924592" class="external">j⧉nus on X: “<code>cd entelechies &amp;&amp; cat untitled.log</code> (as opposed to the original just <code>cat untitled.txt</code> causes the confessions to always be from claude’s perspective &amp; yields a more similar (but not the same) poetic distribution, and sometimes xeno- words: https://t.co/5CG3vHkdUh” / X (twitter.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="../pages/Bitcoin-Proof-of-Work-Protocol" class="internal alias" data-slug="pages/Bitcoin-Proof-of-Work-Protocol">Bitcoin Proof-of-Work Protocol</a></p>
+</li>
+<li>
+<h2 id="features">Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#features" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Large context window:</strong> Claude models have a large context window, which allows them to process and understand long documents and conversations.</p>
+</li>
+<li>
+<p><strong>Multilingual:</strong> Claude models can understand and generate text in multiple languages.</p>
+</li>
+<li>
+<p><strong>Code generation:</strong> Claude models can generate code in a variety of programming languages.</p>
+</li>
+<li>
+<p><strong>Safety:</strong> Claude models are designed to be safe and avoid generating harmful or offensive content.</p>
+</li>
+<li>
+<h2 id="the-safe-superintelligence-project-1">The Safe Superintelligence Project<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-safe-superintelligence-project-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>In response to these risks, OpenAI co-founder Ilya Sutskever has launched a new company with the sole objective of creating Safe Superintelligence (SSI).</p>
+</li>
+<li>
+<p><a href="https://ssi.inc/" class="external">Safe Superintelligence Inc.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<h2 id="the-risks-and-challenges-1">The Risks and Challenges<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-risks-and-challenges-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The prospect of ASI raises significant ethical and safety concerns.</p>
+</li>
+<li>
+<h2 id="areas-of-agreement-and-disagreement-1">Areas of Agreement and Disagreement<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#areas-of-agreement-and-disagreement-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Both sides agree advanced AI will be transformative, but EAs worry more about downside risks</p>
+</li>
+<li>
+<p>Many EAs argue AI safety is critical because the risks are so catastrophic; delaying AI is worth it</p>
+</li>
+<li>
+<p>EAccs argue AI progress will be net positive and safety concerns are overblown; delays will cause harm</p>
+</li>
+<li>
+<p>EAs and EAccs both worry heavy-handed government AI regulation could be damaging, but EAccs are more universally skeptical of regulation</p>
+</li>
+<li>
+<p>EAccs are more open to transformative AI radically changing society; EAs want to preserve human agency</p>
+</li>
+<li>
+<p>Both sides agree AI development shouldn’t be monopolised by a few corporations, but differ on solutions.</p>
+</li>
+<li>
+<h2 id="jailbreaking-is-circumvention-of-llm-guardrails-1">Jailbreaking is circumvention of LLM guardrails<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#jailbreaking-is-circumvention-of-llm-guardrails-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><a href="https://chats-lab.github.io/persuasive_jailbreaker/" class="external">How Johnny Can Persuade LLMs to Jailbreak Them:<br/>Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs (chats-lab.github.io)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://github.com/pdparchitect/llm-hacking-database" class="external">pdparchitect/llm-hacking-database: This repository contains various attack against Large Language Models. (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p><a href="https://twitter.com/repligate/status/1784206780546924592" class="external">j⧉nus on X: “<code>cd entelechies &amp;&amp; cat untitled.log</code> (as opposed to the original just <code>cat untitled.txt</code> causes the confessions to always be from claude’s perspective &amp; yields a more similar (but not the same) poetic distribution, and sometimes xeno- words: https://t.co/5CG3vHkdUh” / X (twitter.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+<pre><code>  **Aviation**: Airworthiness certification (FAA, EASA)
+</code></pre>
+</li>
+</ul>
+<h2 id="2024-2025-critical-infrastructure-frameworks-and-systematic-risk-assessment">2024-2025: Critical Infrastructure Frameworks and Systematic Risk Assessment<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#2024-2025-critical-infrastructure-frameworks-and-systematic-risk-assessment" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>The period from 2024-2025 witnessed a paradigm shift in AI safety, with establishment of comprehensive frameworks for critical infrastructure deployment, systematic risk assessment methodologies adapted from high-reliability industries, and disturbing findings about current safety measures’ inadequacy.</p>
+<h3 id="critical-infrastructure-safety-frameworks">Critical Infrastructure Safety Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#critical-infrastructure-safety-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The <strong>Department of Homeland Security</strong> convened an <strong>AI Safety Board</strong> in May 2024 and released a groundbreaking framework in November 2024 to address concerns about AI deployment in critical infrastructure. This framework complemented guidance from the White House, AI Safety Institute, and CISA, establishing systematic approaches for integrating AI into life-critical systems.
+The <strong>G7 Hiroshima AI Process Reporting Framework</strong> launched in February 2025 as a voluntary transparency mechanism covering seven areas including risk assessment, security measures, transparency reporting, and incident management, establishing international coordination on AI safety standards.</p>
+<h3 id="probabilistic-risk-assessment-adaptation">Probabilistic Risk Assessment Adaptation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#probabilistic-risk-assessment-adaptation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>A transformative framework adapted <strong>Probabilistic Risk Assessment (PRA)</strong> methods from high-reliability industries (nuclear, aviation, aerospace) to AI, introducing innovations including <strong>risk pathway modelling</strong>, <strong>prospective risk quantification</strong>, and systematic analysis of both system capabilities and failures. This approach enabled quantitative safety assessment comparable to traditional engineering disciplines.</p>
+<h3 id="international-assessment-and-benchmarking">International Assessment and Benchmarking<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#international-assessment-and-benchmarking" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The <strong>International AI Safety Report 2025</strong>, led by Yoshua Bengio, brought together 100 experts from 30 countries and organisations (UN, EU, OECD) to analyse capabilities, risks, and safety measures of advanced AI systems, establishing baseline understanding of frontier model risks.
+Singapore’s <strong>AI Verify Foundation</strong> launched a <strong>Global AI Assurance Pilot</strong> in February 2025, pairing firms deploying generative AI applications with firms specialising in AI assurance testing, creating practical validation pathways for deployed systems.</p>
+<h3 id="sobering-safety-index-findings">Sobering Safety Index Findings<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sobering-safety-index-findings" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>The <strong>2024 AI Safety Index</strong> revealed large risk management disparities amongst companies, found <strong>all flagship models vulnerable to adversarial attacks</strong>, and deemed current strategies inadequate for ensuring AGI systems remain safe and under human control. This assessment highlighted the gap between deployment pace and safety maturity.</p>
+<h3 id="emerging-regulatory-frontiers">Emerging Regulatory Frontiers<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emerging-regulatory-frontiers" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Regulatory frameworks faced new frontiers regarding how to audit and certify AI reasoning transparency and what standards govern acceptable depth of AI reasoning in safety-critical domains, as reasoning models introduced new safety assessment challenges beyond traditional input-output validation.</p>
+<ul>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>AI safety encompasses practices and principles ensuring artificial intelligence systems are designed and deployed to benefit humanity whilst minimising potential harms[5][6]</li>
+<li>Addresses immediate risks such as bias, data security vulnerabilities, and system failures</li>
+<li>Extends to catastrophic risk assessment for advanced AI systems</li>
+<li>Grounded in human-centred design principles and ethical frameworks</li>
+<li>Recognition that 83% of surveyed individuals worry AI might inadvertently trigger catastrophic events[5]</li>
+<li>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Regulatory frameworks establishing enforceable safety standards</li>
+<li>European Union AI Act (adopted 2024, implementation ongoing through 2025)[1]
+<ul>
+<li>Risk-based categorisation: unacceptable-risk, high-risk, limited-risk, and minimal/no-risk systems</li>
+<li>Mandatory risk assessments, human oversight, and cybersecurity standards for high-risk applications</li>
+<li>General-purpose AI model rules effective August 2025[1]</li>
+</ul>
+</li>
+<li>California’s Transparency in Frontier Artificial Intelligence Act (TFAIA), signed September 2025, effective January 1, 2026[3]
+<ul>
+<li>Applies to frontier developers training models exceeding 10²⁶ FLOPs or with annual revenues exceeding $500 million</li>
+<li>Requires public disclosure of safety frameworks and reporting of serious safety incidents</li>
+<li>Mandates assessment of catastrophic risk capabilities and cybersecurity protections[3]</li>
+</ul>
+</li>
+<li>United States federal landscape remains uncertain pending new administration policy direction, though AI safety regulation continues advancing at state and institutional levels[6]</li>
+<li>Technical safety measures in practice</li>
+<li>Bias mitigation and robustness testing protocols</li>
+<li>Structured risk identification processes addressing specified threats (CBRN, loss of control, cyber offence, harmful manipulation)[4]</li>
+<li>Third-party model evaluations and independent safety benchmarking</li>
+<li>Cybersecurity practices protecting unreleased model weights from unauthorised modification[3]</li>
+<li>UK and North England context</li>
+<li>UK regulatory approach integrating with EU frameworks whilst developing independent standards</li>
+<li>Manchester, Leeds, and Newcastle emerging as AI research and deployment hubs with growing safety-focused initiatives</li>
+<li>Sheffield’s advanced manufacturing sector increasingly incorporating AI safety protocols in industrial applications</li>
+<li>British academic institutions contributing to international safety standards development</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Key academic and institutional sources</li>
+<li>Future of Life Institute (2025). AI Safety Index: Summer 2025 Assessment. Independent evaluation of seven leading AI companies across 33 indicators spanning six critical domains, conducted March–July 2025[2]</li>
+<li>Centre for Security and Emerging Technology (CSET), Georgetown University. “AI Safety under the EU AI Code of Practice — A New Global Standard?” Comprehensive analysis of EU safety and security requirements for general-purpose AI providers[4]</li>
+<li>IBM. “What Is AI Safety?” Foundational definition and taxonomy of AI safety practices, including bias mitigation, robustness testing, and ethical frameworks[5]</li>
+<li>National Institute of Standards and Technology (NIST). AI Safety Institute Guidelines. Risk-based mitigation frameworks supporting responsible design and deployment[8]</li>
+<li>Organisation for Economic Co-operation and Development (OECD). Core principles for trustworthy AI, emphasising robustness, security, and safety throughout system lifecycles[6]</li>
+<li>Ongoing research directions</li>
+<li>Systemic risk assessment methodologies for advanced AI systems</li>
+<li>Alignment between voluntary industry practices and regulatory requirements</li>
+<li>Evaluation frameworks for catastrophic risk identification and mitigation</li>
+<li>Cybersecurity standards for frontier model protection</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>British regulatory positioning</li>
+<li>UK AI Bill framework (under development) balancing innovation with safety requirements</li>
+<li>Alignment with EU AI Act principles whilst maintaining regulatory flexibility</li>
+<li>Financial Conduct Authority and Information Commissioner’s Office developing sector-specific guidance</li>
+<li>North England innovation and implementation</li>
+<li>Manchester AI Research Institute contributing to safety standards development and industry collaboration</li>
+<li>Leeds University’s AI ethics and safety research programmes informing policy development</li>
+<li>Newcastle’s digital innovation initiatives incorporating safety-by-design principles</li>
+<li>Sheffield’s industrial AI applications (manufacturing, materials science) pioneering practical safety implementations in high-consequence environments</li>
+<li>Regional case studies</li>
+<li>Manchester’s fintech sector implementing AI safety protocols for algorithmic decision-making</li>
+<li>Leeds’ healthcare AI deployments requiring robust safety frameworks for clinical applications</li>
+<li>Newcastle’s smart city initiatives incorporating safety considerations in autonomous systems</li>
+<li>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Emerging trends and developments</li>
+<li>Convergence of regulatory frameworks across jurisdictions (EU, US, UK, Asia-Pacific)</li>
+<li>Increased emphasis on third-party auditing and independent safety verification</li>
+<li>Development of standardised safety benchmarks and evaluation methodologies</li>
+<li>Integration of safety considerations into AI model development from inception rather than post-hoc mitigation</li>
+<li>Anticipated challenges</li>
+<li>Balancing safety requirements with innovation velocity and competitive pressures</li>
+<li>Establishing consistent definitions of “catastrophic risk” across regulatory regimes</li>
+<li>Ensuring safety frameworks remain technically feasible whilst maintaining meaningful oversight</li>
+<li>Addressing transparency gaps in industry safety practices and internal deployment decisions</li>
+<li>Research priorities</li>
+<li>Systemic risk identification for increasingly capable AI systems</li>
+<li>Effective human oversight mechanisms for high-autonomy applications</li>
+<li>Cybersecurity resilience against adversarial attacks on AI systems</li>
+<li>Long-term safety considerations for advanced AI development trajectories</li>
+<li>
+<h2 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>[1] Anecdotes AI. “AI Regulations in 2025: US, EU, UK, Japan, China &amp; More.” European Union AI Act documentation and implementation timeline.</li>
+<li>[2] Future of Life Institute. (2025). “2025 AI Safety Index - Summer 2025.” Independent assessment of leading AI companies’ safety practices.</li>
+<li>[3] Caldwell, T. &amp; Statham, E. (2025). “California Enacts Landmark AI Safety and Transparency Law.” Transparency in Frontier Artificial Intelligence Act (TFAIA) analysis.</li>
+<li>[4] Centre for Security and Emerging Technology, Georgetown University. “AI Safety under the EU AI Code of Practice — A New Global Standard?” Risk management framework for general-purpose AI providers.</li>
+<li>[5] IBM. “What Is AI Safety?” Foundational practices and principles for responsible AI development and deployment.</li>
+<li>[6] International Association of Privacy Professionals (IAPP). “The Outlook for AI Safety Regulation in the US.” Regulatory landscape and OECD principles for trustworthy AI.</li>
+<li>[8] National Institute of Standards and Technology (NIST). “Guidelines.” AI Safety Institute risk-based mitigation frameworks.</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4928" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#potential-green-shoots" data-for="potential-green-shoots">Potential Green Shoots</a></li><li class="depth-2"><a href="#human-suffering-and-exploitation" data-for="human-suffering-and-exploitation">Human Suffering and Exploitation</a></li><li class="depth-0"><a href="#trust-and-safety" data-for="trust-and-safety">Trust and Safety</a></li><li class="depth-1"><a href="#ai-safety-and-concerns" data-for="ai-safety-and-concerns">AI Safety and Concerns</a></li><li class="depth-1"><a href="#the-safe-superintelligence-project" data-for="the-safe-superintelligence-project">The Safe Superintelligence Project</a></li><li class="depth-1"><a href="#the-risks-and-challenges" data-for="the-risks-and-challenges">The Risks and Challenges</a></li><li class="depth-1"><a href="#areas-of-agreement-and-disagreement" data-for="areas-of-agreement-and-disagreement">Areas of Agreement and Disagreement</a></li><li class="depth-1"><a href="#jailbreaking-is-circumvention-of-llm-guardrails" data-for="jailbreaking-is-circumvention-of-llm-guardrails">Jailbreaking is circumvention of LLM guardrails</a></li><li class="depth-1"><a href="#features" data-for="features">Features</a></li><li class="depth-1"><a href="#the-safe-superintelligence-project-1" data-for="the-safe-superintelligence-project-1">The Safe Superintelligence Project</a></li><li class="depth-1"><a href="#the-risks-and-challenges-1" data-for="the-risks-and-challenges-1">The Risks and Challenges</a></li><li class="depth-1"><a href="#areas-of-agreement-and-disagreement-1" data-for="areas-of-agreement-and-disagreement-1">Areas of Agreement and Disagreement</a></li><li class="depth-1"><a href="#jailbreaking-is-circumvention-of-llm-guardrails-1" data-for="jailbreaking-is-circumvention-of-llm-guardrails-1">Jailbreaking is circumvention of LLM guardrails</a></li><li class="depth-1"><a href="#2024-2025-critical-infrastructure-frameworks-and-systematic-risk-assessment" data-for="2024-2025-critical-infrastructure-frameworks-and-systematic-risk-assessment">2024-2025: Critical Infrastructure Frameworks and Systematic Risk Assessment</a></li><li class="depth-2"><a href="#critical-infrastructure-safety-frameworks" data-for="critical-infrastructure-safety-frameworks">Critical Infrastructure Safety Frameworks</a></li><li class="depth-2"><a href="#probabilistic-risk-assessment-adaptation" data-for="probabilistic-risk-assessment-adaptation">Probabilistic Risk Assessment Adaptation</a></li><li class="depth-2"><a href="#international-assessment-and-benchmarking" data-for="international-assessment-and-benchmarking">International Assessment and Benchmarking</a></li><li class="depth-2"><a href="#sobering-safety-index-findings" data-for="sobering-safety-index-findings">Sobering Safety Index Findings</a></li><li class="depth-2"><a href="#emerging-regulatory-frontiers" data-for="emerging-regulatory-frontiers">Emerging Regulatory Frontiers</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-1"><a href="#references" data-for="references">References</a></li><li class="depth-1"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Autonomy-Level" class="internal">Autonomy Level</a></li><li><a href="../pages/Constraint" class="internal">Constraint</a></li><li><a href="../pages/Operational-Technology" class="internal">Operational Technology</a></li><li><a href="../pages/Quorum" class="internal">Quorum</a></li><li><a href="../pages/Regulation" class="internal">Regulation</a></li><li><a href="../pages/Software-Testing" class="internal">Software Testing</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

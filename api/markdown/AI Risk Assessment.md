@@ -1,0 +1,12 @@
+
+A structured methodology for identifying, analysing, and evaluating the potential harms, failure modes, and adverse societal impacts arising from the development and deployment of artificial intelligence systems. It applies established risk management frameworks to the distinctive properties of AI—opacity, emergent behaviour, data dependency, and scalability—to produce actionable risk registers and mitigation plans. The process informs governance decisions and regulatory compliance across the full AI system lifecycle.
+
+- ### Content
+  - Risk assessment as applied to automated systems predates the contemporary AI era, drawing on safety engineering traditions from aviation, nuclear, and medical device regulation. The emergence of opaque neural systems from roughly 2015 onwards created new challenges for traditional risk taxonomies, prompting standards bodies and regulators to develop AI-specific guidance, including NIST's AI Risk Management Framework (2023) and the EU AI Act's classification tiers.
+
+  - The technical practice of AI risk assessment involves constructing attack surfaces, enumerating failure modes (distributional shift, adversarial inputs, data poisoning, hallucination), and quantifying residual risk after mitigations. [[Red Teaming]] exercises—in which dedicated teams attempt to elicit harmful outputs—have become a standard component. Model-specific artefacts such as [[AI Model Card]] reports are used to communicate known limitations and residual risks to downstream deployers.
+
+  - In the enterprise ecosystem, specialised vendors and consulting practices offer AI risk assessment services layered on top of existing GRC (governance, risk, and compliance) platforms. Insurers are developing underwriting criteria that reference AI risk assessment outputs, and financial regulators in the UK, EU, and United States have issued sector-specific guidance requiring documented assessment before deploying high-impact AI systems.
+
+  - By 2024–2025, AI risk assessment has become a mandatory or strongly recommended practice across multiple regulatory jurisdictions. The AISI Frontier AI Safety Framework and voluntary commitments by frontier labs have embedded pre-deployment risk evaluation as a condition of release. Tooling for automated red-teaming and continuous post-deployment monitoring is maturing, reducing the cost of maintaining living risk registers as models are updated.
+

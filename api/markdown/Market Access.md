@@ -1,0 +1,19 @@
+
+Market access is the ability of a product, service or system to be lawfully sold and adopted within a target jurisdiction or sector, conditioned on meeting regulatory, certification and conformity requirements. For robotic and physical-automation systems it depends on demonstrating compliance with safety, electromagnetic and product-directive obligations such as CE marking before placement on a market. Achieving market access is therefore a gateway to commercialisation rather than a purely commercial activity.
+
+- Market access is the lawful ability to place a product or system on a target market, gated by [[Compliance]], [[Regulatory Approval]] and conformity marks such as [[CE Marking]]. For [[Robotics]] it unlocks the downstream [[Supply Chain]] and commercial deployment.
+- ### Overview
+- Building a capable robotic system is necessary but not sufficient for commercial success; the system must also satisfy the legal and conformity requirements of each jurisdiction it will be sold into.
+- Market access frames these requirements as a gateway: until conformity is demonstrated and documented, a product may not legally be placed on the market.
+- Because requirements differ across regions, market access is often pursued jurisdiction by jurisdiction, with overlapping but distinct evidence needs.
+- ### Key aspects
+- Conformity assessment against applicable directives and standards.
+- Technical documentation and declaration of conformity.
+- Affixing recognised marks such as CE for the relevant economic area.
+- Ongoing post-market surveillance and reporting obligations.
+- ### Applications
+- Placing industrial and service robots on regional markets.
+- Commercialising automation hardware and embedded systems.
+- Coordinating supply-chain entry once conformity is achieved.
+- ### Provenance
+

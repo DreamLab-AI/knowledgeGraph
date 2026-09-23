@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>AI Audit</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="AI Audit"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI Audit"/><meta name="twitter:description" content="A systematic, independent examination and evaluation of an artificial intelligence system’s design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify c..."/><meta property="og:description" content="A systematic, independent examination and evaluation of an artificial intelligence system’s design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify c..."/><meta property="og:image:alt" content="A systematic, independent examination and evaluation of an artificial intelligence system’s design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify c..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/AI-Audit"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/AI-Audit"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="A systematic, independent examination and evaluation of an artificial intelligence system’s design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify c..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/AI-Audit"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-172"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-172" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI Audit</a></div></nav><h1 class="article-title">AI Audit</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.653Z">23 Sept 2026</time><span>22 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:ai-audit</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>draft</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.7</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Governance-and-Ethics" class="internal">AI Governance and Ethics</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/AI-Governance" class="internal">AI Governance</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../compliance-audit" class="internal">Compliance Audit</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/AI-Documentation-Standards" class="internal">AI Documentation</a></li><li><a href="../AI-documentation" class="internal">AI documentation</a></li><li><a href="../access-to-systems-and-personnel" class="internal">access to systems and personnel</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Accountability" class="internal">Accountability</a></li><li><a href="../pages/Transparency" class="internal">Transparency</a></li><li><a href="../pages/Third-Party-Certification" class="internal">Third-Party Certification</a></li><li><a href="../conformity-assessment" class="internal">Conformity Assessment</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/AI-Agent-System" class="internal">AI Agent System</a></li><li><a href="../pages/EU-AI-Act-Regulatory-Instrument" class="internal">EU AI Act</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../internal-audit" class="internal">Internal Audit</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/ISO-IEC-42001-2023" class="internal">ISO-IEC 42001 2023</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-0105</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../access-to-systems-and-personnel" class="internal">access to systems and personnel</a></li><li><a href="../ai-documentation" class="internal">AI documentation</a></li><li><a href="../conformity-assessment" class="internal">Conformity Assessment</a></li><li><a href="../internal-audit" class="internal">Internal Audit</a></li><li><a href="../iso-19011" class="internal">ISO 19011</a></li><li><a href="../iso-iec-23894-2023" class="internal">ISO/IEC 23894:2023</a></li><li><a href="../iso-iec-42001-2023" class="internal">ISO/IEC 42001:2023</a></li><li><a href="../iso-iec-5338-2023" class="internal">ISO/IEC 5338:2023</a></li><li><a href="../nist-ai-risk-management-framework" class="internal">NIST AI Risk Management Framework</a></li><li><a href="../third-party-certification" class="internal">Third-Party Certification</a></li><li><a href="../accountability" class="internal">Accountability</a></li><li><a href="../ai-agent-system" class="internal">AI Agent System</a></li><li><a href="../ai-governance" class="internal">AI Governance</a></li><li><a href="../ai-impact-assessment" class="internal">AI Impact Assessment</a></li><li><a href="../ai-monitoring" class="internal">AI Monitoring</a></li><li><a href="../eu-ai-act" class="internal">EU AI Act</a></li><li><a href="../metaverse" class="internal">MetaverseDomain</a></li><li><a href="../quality-assurance" class="internal">Quality Assurance</a></li><li><a href="../risk-management" class="internal">Risk Management</a></li><li><a href="../transparency" class="internal">Transparency</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:671e78a943261a09cfc203f08524d77d6692f6f4ed3bc854379780a62a2d6d68</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Algorithmic-Accountability" class="internal">Algorithmic Accountability</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/ISO-IEC-23894-2023" class="internal">ISO-IEC 23894 2023</a></li><li><a href="../pages/ISO-IEC-5338-2023" class="internal">ISO-IEC 5338 2023</a></li><li><a href="../pages/NIST-AI-Risk-Management-Framework" class="internal">NIST AI Risk Management Framework</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Risk-Management" class="internal">Risk Management</a></li><li><a href="../pages/Quality-Assurance" class="internal">Quality Assurance</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/AI-Monitoring" class="internal">AI Monitoring</a></li><li><a href="../pages/AI-Impact-Assessment" class="internal">AI Impact Assessment</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>A systematic, independent examination and evaluation of an artificial intelligence system’s design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>A systematic, independent examination and evaluation of an artificial intelligence system’s design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformity with specified standards, regulations, ethical principles, or organisational policies, and to identify deficiencies, risks, or opportunities for improvement, producing documented findings and recommendations that support accountability, transparency, and continuous enhancement of AI system trustworthiness.</li>
+</ul>
+<h2 id="context-and-significance">Context and Significance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#context-and-significance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI audits provide essential accountability mechanisms, enabling verification of AI system claims, detection of issues before significant harms occur, and independent assessment that can build stakeholder trust. As AI systems increasingly affect consequential decisions and operate in regulated domains, audits serve multiple purposes: compliance demonstration, risk management, quality assurance, stakeholder assurance, and organisational learning.</p>
+<p>The NIST AI Risk Management Framework emphasises measurement, monitoring, and verification activities that audits support. ISO/IEC 42001 requires internal audits as part of AI management systems. The EU AI Act mandates conformity assessments (a form of audit) for high-risk systems before market placement. Growing calls for algorithmic auditing reflect recognition that self-regulation alone is insufficient for complex, high-impact AI systems.</p>
+<p>AI audits differ from traditional IT audits due to AI-specific challenges: probabilistic behaviour, emergent properties, data dependencies, fairness considerations, and potential for subtle biases or failures. Effective AI auditing requires combining technical analysis, process review, governance assessment, and impact evaluation.</p>
+<h4 id="key-characteristics">Key Characteristics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-characteristics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>
+<p><strong>Independent</strong>: Conducted by parties without conflicts of interest
+- <strong>Systematic</strong>: Following structured methodology and audit standards
+- <strong>Evidence-based</strong>: Conclusions grounded in objective findings
+- <strong>Comprehensive</strong>: Addressing technical, process, governance, and impact dimensions
+- <strong>Risk-focused</strong>: Prioritising high-risk areas and critical requirements
+- <strong>Documented</strong>: Formal audit reports with findings and recommendations
+- <strong>Actionable</strong>: Producing specific improvement recommendations
+- <strong>Periodic</strong>: Regular audits, not one-time assessments</p>
+<pre><code>  ## Audit Dimensions
+
+  ### 1. Technical Audit
+  - **Model performance**: Accuracy, reliability, robustness testing
+  - **Data quality**: Training data assessment for quality and representativeness
+  - **Fairness analysis**: Bias testing across demographic groups
+  - **Security review**: Vulnerability assessment and security controls
+  - **Explainability**: Evaluation of interpretation and explanation capabilities
+  - **Safety testing**: Failure mode analysis and safety verification
+
+  ### 2. Process Audit
+  - **Development processes**: Compliance with development standards and procedures
+  - **Testing and validation**: Adequacy and rigour of testing activities
+  - **Documentation**: Completeness and quality of technical documentation
+  - **Change management**: Controls on system modifications
+  - **Quality management**: Effectiveness of quality assurance processes
+  - **Lifecycle management**: Appropriate processes across AI lifecycle phases
+
+  ### 3. Governance Audit
+  - **Policies and procedures**: Existence and adequacy of AI governance documents
+  - **Roles and responsibilities**: Clarity and appropriateness of accountability assignments
+  - **Risk management**: Effectiveness of risk identification and mitigation
+  - **Oversight mechanisms**: Human oversight implementation and effectiveness
+  - **Stakeholder engagement**: Quality of consultation and participation processes
+  - **Incident management**: Procedures for addressing failures and harms
+
+  ### 4. Compliance Audit
+  - **Regulatory compliance**: Conformity with applicable legal requirements
+  - **Standards conformance**: Alignment with relevant technical and management standards
+  - **Contractual obligations**: Fulfilment of customer or partner commitments
+  - **Internal policies**: Adherence to organisational AI policies
+  - **Professional codes**: Compliance with professional ethical standards
+
+  ### 5. Impact and Fairness Audit
+  - **Actual impacts**: Assessment of real-world effects on users and stakeholders
+  - **Fairness outcomes**: Distributional analysis of benefits and harms across groups
+  - **Discrimination testing**: Empirical evaluation of differential treatment
+  - **Rights impacts**: Effects on fundamental rights and freedoms
+  - **Accessibility**: Usability across diverse user populations
+
+  ## Audit Process
+
+  ### 1. Planning
+  - Define audit scope, objectives, and criteria
+  - Identify audit team and required expertise
+  - Develop audit plan and schedule
+  - Communicate with auditee organisation
+
+  ### 2. Information Gathering
+  - Document review (technical documentation, policies, procedures)
+  - Interviews with developers, operators, users
+  - Technical analysis and testing
+  - Data collection and examination
+  - Observation of operational practices
+
+  ### 3. Analysis and Evaluation
+  - Compare findings against audit criteria
+  - Identify conformities and non-conformities
+  - Assess risk severity of findings
+  - Evaluate effectiveness of controls and processes
+  - Form audit conclusions
+
+  ### 4. Reporting
+  - Prepare comprehensive audit report
+  - Document findings, evidence, and conclusions
+  - Provide recommendations for improvement
+  - Present to auditee management
+  - Agree on corrective action plans
+
+  ### 5. Follow-up
+  - Verify implementation of agreed corrective actions
+  - Assess effectiveness of remediation
+  - Update audit findings and close non-conformities
+  - Inform subsequent audits
+
+  ## Relationships
+
+  - **Verifies**: AI Governance implementation, compliance claims
+  - **Assesses**: AI systems, processes, documentation, controls
+  - **Supports**: Accountability, Transparency, Continuous improvement
+  - **Requires**: AI documentation, access to systems and personnel
+  - **Produces**: Audit reports, findings, recommendations
+  - **Informs**: Risk management, governance improvements, regulatory reporting
+  - **Conducted by**: Internal auditors, third-party auditors, regulators
+  - **Follows**: Audit standards, methodologies, protocols
+  - **Triggered by**: Regulatory requirements, governance procedures, incidents
+  - **Uses**: AI Monitoring data, AI Impact Assessments, performance metrics
+
+  ## Examples and Applications
+
+  1. **Financial Services Model Risk Audit**: Independent model validation team audits credit scoring AI, reviewing model development documentation, testing model performance on hold-out data, assessing fairness across protected groups, evaluating governance and oversight procedures, examining ongoing monitoring processes, verifying compliance with regulatory guidance (SR 11-7), producing audit report identifying deficiencies in demographic performance monitoring, recommending enhanced fairness testing and expanded model documentation
+  2. **Healthcare AI Conformity Assessment**: Notified body conducts EU MDR conformity assessment of diagnostic AI, reviewing clinical validation evidence, assessing quality management system, evaluating post-market surveillance plans, testing software verification and validation, examining risk management documentation, interviewing development team, issuing conformity certificate after finding compliance with essential safety and performance requirements
+  3. **Public Sector AI Algorithmic Audit**: Government oversight body audits welfare benefits determination algorithm, analyzing code and training data, testing for discriminatory patterns, reviewing human override rates, interviewing caseworkers and applicants, assessing accessibility for limited-English speakers, evaluating transparency and appeal procedures, publishing audit report finding unacceptable demographic disparities, requiring system suspension pending remediation
+  4. **Internal AI Ethics Audit**: Company's AI ethics team conducts internal audit of content recommendation system, reviewing impact assessment documentation, testing algorithm behaviour on various user scenarios, analyzing user feedback and complaints, assessing adequacy of human review processes, evaluating implementation of responsible AI policies, producing confidential audit report for executive leadership identifying risks of amplifying misinformation, recommending algorithmic modifications and enhanced content quality controls
+
+  ## ISO/IEC Standards Alignment
+
+  **ISO/IEC 42001:2023** (AI Management Systems):
+  - Clause 9.2: Internal audit requirements for AI management system
+  - Audit programme planning and implementation
+  - Audit criteria, scope, frequency, and methods
+  - Audit reporting and management review
+
+  **ISO 19011** (Guidelines for Auditing Management Systems):
+  - General audit principles and methodologies applicable to AI audits
+  - Auditor competence requirements
+  - Audit programme management
+
+  **ISO/IEC 23894:2023** (AI Risk Management):
+  - Audit as verification mechanism for risk management effectiveness
+  - Assessment of risk controls and monitoring processes
+
+  **ISO/IEC 5338:2023** (AI System Lifecycle Processes):
+  - Audit of lifecycle process implementation and effectiveness
+
+  ## NIST AI RMF Integration
+
+  **GOVERN Function**:
+  - Audits verify governance effectiveness
+  - Audit findings inform governance improvements
+  - Internal and external audits as governance mechanisms
+
+  **MEASURE Function**:
+  - Audits utilize and verify measurement approaches
+  - Audit testing validates measurement accuracy
+  - Metrics audited for appropriateness and reliability
+
+  **MANAGE Function**:
+  - Audits assess risk management effectiveness
+  - Audit findings trigger risk responses
+  - Corrective actions address audit-identified deficiencies
+
+  **Trustworthiness Characteristics**:
+  - Audits verify characteristics (fairness, safety, transparency, etc.)
+  - Evidence of trustworthiness validated through audit
+
+  ## Implementation Considerations
+
+  **Audit Capacity and Competence**:
+  - Technical AI expertise (ML, data science, software engineering)
+  - Domain knowledge relevant to AI application
+  - Audit methodology and standards knowledge
+  - Understanding of AI ethics and governance
+  - Independence and objectivity
+
+  **Audit Tools and Methods**:
+  - Automated fairness testing tools (AI Fairness 360, Fairlearn)
+  - Explainability and interpretability tools (LIME, SHAP)
+  - Adversarial testing frameworks
+  - Code review and documentation analysis tools
+  - Data quality assessment tools
+  - Audit trail analysis capabilities
+
+  **Audit Evidence**:
+  - Technical documentation and records
+  - Test results and validation data
+  - Operational logs and monitoring data
+  - Interview notes and observations
+  - Policy and procedure documents
+  - Incident reports and corrective actions
+
+  **Challenges**:
+  - Shortage of qualified AI auditors
+  - Proprietary systems limiting audit access
+  - Rapidly evolving AI technology outpacing audit methods
+  - Balancing comprehensive audit with resource constraints
+  - Accessing training data and models for examination
+  - Evaluating complex, black-box systems
+  - Standardisation of AI audit criteria and methods
+  - Ensuring auditor independence from powerful AI providers
+
+  **Best Practices**:
+  - Establish regular audit schedules, not just incident-triggered
+  - Use risk-based approach to prioritize audit scope
+  - Combine technical testing with process and governance review
+  - Require documentation enabling effective audit
+  - Maintain auditor independence from development and operation
+  - Develop audit competencies through training and collaboration
+  - Share audit methods and lessons learned across field
+  - Adapt audit approaches as AI technology evolves
+  - Verify corrective action implementation, not just identify issues
+  - Consider third-party audits for high-risk systems
+
+  ## 2024-2025: Professionalisation and Certification Surge
+
+  The years 2024 and 2025 marked AI auditing's transition from emerging practice to **professionalised discipline**, driven by regulatory mandates, the launch of formal certification programmes, the maturation of audit frameworks, and explosive demand for independent verification of AI systems—whilst simultaneously exposing persistent **methodology fragmentation** and **competence scarcity** challenges.
+
+  ### ISACA AAIA Certification Launch
+
+  In 2025, **ISACA** launched the **Advanced in AI Audit (AAIA) certification**, representing the first globally recognised professional credential specifically for AI auditing. The AAIA certification targets professional auditors (CISA, CIA, CPA holders) seeking to expand into AI audit, requiring candidates to demonstrate:
+
+  - **AI technology comprehension**: Understanding of machine learning, neural networks, data pipelines, and model lifecycle
+  - **AI-specific risk assessment**: Identifying bias, robustness, explainability, and security risks
+  - **Audit methodology adaptation**: Applying traditional audit principles to probabilistic AI systems
+  - **Regulatory landscape knowledge**: EU AI Act, NIST AI RMF, ISO 42001, sector-specific requirements
+
+  The launch of AAIA reflected recognition that traditional IT auditing skills, whilst foundational, were insufficient for AI systems' unique characteristics: probabilistic behaviour, emergent properties, data dependencies, and fairness considerations requiring specialised competencies.
+
+  ### The IIA Artificial Intelligence Auditing Framework
+
+  The **Institute of Internal Auditors (IIA)** released a comprehensive **Artificial Intelligence Auditing Framework** in September 2024, providing structured guidance for internal auditors assessing AI governance, risk, and control environments. The framework aligned with:
+
+  - **NIST AI Risk Management Framework** (January 2023)
+  - **ISO/IEC 42001:2023** AI management systems standard
+  - **IIA's Global Internal Audit Standards** (January 2024)
+  - **Large language model** considerations
+
+  The IIA framework established a **four-phase audit approach**:
+
+  1. **Planning**: Defining audit scope, identifying AI systems and stakeholders, establishing audit criteria
+  2. **Fieldwork**: Technical testing, process review, governance assessment, stakeholder interviews
+  3. **Reporting**: Documenting findings, risk severity classification, recommendations
+  4. **Follow-up**: Verifying corrective action implementation and effectiveness
+
+  Critically, the framework acknowledged that **AI auditing requires multidisciplinary teams** combining audit professionals, data scientists, domain experts, and ethicists—no single individual possessed all required competencies.
+
+  ### ISO 42001 Audit Practice Maturation
+
+  **ISO/IEC 42001:2023**, the AI management systems standard, experienced rapid adoption throughout 2024-2025, with major certification bodies (BSI, TÜV, SGS, CSA) certifying hundreds of organisations. This created substantial demand for **ISO 42001 auditors** capable of conducting certification audits.
+
+  **IAF MD 4:2023** explicitly included AI under information and communication technology (ICT), establishing that AI systems fell within the scope of conformity assessment and could be audited both locally and remotely. Auditors assessing ISO 42001 compliance evaluated:
+
+  - **Clause 4**: Organisational context and stakeholder needs understanding
+  - **Clause 5**: Leadership commitment and AI policy establishment
+  - **Clause 6**: Risk and opportunity planning
+  - **Clause 8**: Operational planning and control, including AI system development and deployment
+  - **Clause 9**: Performance evaluation, including internal audits and management review
+  - **Clause 10**: Continuous improvement processes
+
+  Auditors implementing ISO 42001 discovered significant challenges: organisations frequently possessed inadequate documentation, lacked defined AI governance roles, and demonstrated limited awareness of AI-specific risks, requiring extensive guidance beyond traditional audit verification.
+
+  ### Third-Party AI Audit Market Emergence
+
+  Demand for **independent AI audits** surged in 2024-2025, driven by regulatory requirements, procurement specifications, and stakeholder pressure for independent verification. Organisations including **BSI, DEKRA, UL Solutions**, specialist AI audit firms, and Big Four consulting practices (Deloitte, PwC, EY, KPMG) offered AI audit services.
+
+  However, the field faced **methodology fragmentation**: no consensus emerged on audit procedures, testing protocols, fairness metric selection, or pass/fail criteria. Different auditors applying different methodologies to the same system might reach divergent conclusions, undermining audit credibility.
+
+  A **2024 study** examining context-specific AI certification in the financial industry highlighted challenges:
+  - **Certification standards** required balancing specificity (industry context) with generalisability (cross-sector applicability)
+  - **Auditor competence** demanded both technical AI expertise and domain knowledge
+  - **Certification scope** tensions between comprehensive assessment and practical feasibility
+  - **Pass/fail thresholds** lacked empirical grounding for many AI risks
+
+  ### EU AI Act Conformity Assessment Requirements
+
+  The **EU AI Act**, effective August 2024, mandated **conformity assessments** (formal audits) for high-risk AI systems before market placement. **Article 43** established two conformity assessment procedures:
+
+  **Internal control** (Article 43(2)): Provider conducts internal conformity assessment for most high-risk systems, verifying compliance with requirements through:
+  - Technical documentation review
+  - Quality management system implementation
+  - Post-market monitoring system establishment
+  - EU declaration of conformity
+
+  **Third-party assessment** (Article 43(3)): For high-risk AI systems used in biometric identification and critical infrastructure, **notified bodies** (designated third-party conformity assessment bodies) conduct assessments including:
+  - Technical documentation examination
+  - Quality management system audit
+  - Design examination and type-testing where applicable
+
+  By late 2024, the European Commission began designating **notified bodies** authorised to conduct AI Act conformity assessments, establishing accreditation requirements and audit protocols. However, the number of qualified notified bodies lagged behind anticipated demand, creating potential bottlenecks for market access.
+
+  ### NYC Bias Audit Law Enforcement
+
+  **New York City's Local Law 144**, requiring annual **bias audits** of automated employment decision tools, intensified enforcement in 2024. The law mandates:
+
+  - **Independent auditor** conducts bias audit within one year before use
+  - **Bias audit results** publicly disclosed, including demographic impact ratios
+  - **Audit methodology** specified: disparate impact analysis for hiring rate and selection rate
+  - **Public notice** provided to candidates regarding AI use
+
+  Enforcement revealed practical challenges: many employers lacked data disaggregated by protected characteristics (race, sex), making bias audits impossible to conduct. Auditors struggled with **small sample sizes** in some demographic groups, producing statistically unreliable metrics. The **methodological prescription** (specific metrics, not alternatives) drew criticism for inflexibility across diverse employment contexts.
+
+  ### Audit Methodology Debates
+
+  The AI audit profession grappled with **foundational methodology questions** in 2024-2025:
+
+  **Black-box vs. white-box auditing**: Should auditors require access to source code, training data, and model parameters (**white-box**), or should audits rely on input-output testing without internal access (**black-box**)? Black-box audits accommodated proprietary concerns but provided limited insight into failure mechanisms. White-box audits enabled deeper analysis but faced intellectual property and security objections.
+
+  **Fairness metric selection**: With **dozens of mathematically incompatible fairness metrics**, which should auditors apply? Demographic parity, equalised odds, calibration, individual fairness—each metric encoded different fairness philosophies, and systems satisfying one metric frequently violated others. Auditors faced accusations of **fairness gerrymandering** (selecting metrics producing favourable results).
+
+  **Pass/fail thresholds**: What performance level constituted audit &quot;pass&quot;? Unlike safety-critical engineering with established reliability requirements (e.g., aviation's 10^-9 failure rate), AI systems lacked consensus thresholds. Should a credit model with 5% demographic disparity pass or fail? Auditors' threshold choices profoundly affected outcomes but lacked principled grounding.
+
+  ### Competence Scarcity and Training Challenges
+
+  The explosive demand for AI auditors far exceeded supply in 2024-2025. Effective AI auditors required rare skill combinations:
+
+  - **Audit methodology**: Systematic evidence gathering, independent judgement, risk assessment
+  - **AI technology**: Machine learning architectures, training procedures, performance evaluation
+  - **Domain expertise**: Understanding of healthcare, finance, employment, or other application contexts
+  - **Ethical reasoning**: Fairness principles, rights impacts, stakeholder perspectives
+  - **Standards knowledge**: ISO 42001, NIST AI RMF, EU AI Act, sector-specific regulations
+
+  Few individuals possessed all competencies, creating two responses: **multidisciplinary audit teams** (combining specialists) or **rapid training programmes** (developing hybrid professionals). Both approaches faced challenges: multidisciplinary teams struggled with coordination and integration, whilst training programmes compressed years of expertise into months, risking superficial competence.
+
+  ### Audit Tool Automation
+
+  The complexity and scale of AI auditing drove development of **automated audit tools** in 2024-2025:
+
+  - **Fairness testing libraries**: AI Fairness 360 (IBM), Fairlearn (Microsoft), Aequitas enabling automated bias detection
+  - **Robustness testing frameworks**: Adversarial Robustness Toolbox, CleverHans for vulnerability assessment
+  - **Explainability tools**: SHAP, LIME, What-If Tool for interpretability analysis
+  - **Model documentation generators**: Automated model card and datasheet production
+
+  However, automated tools addressed only **technical audit dimensions**. Process audit (development procedures), governance audit (oversight mechanisms), and impact audit (real-world effects) required human judgement resistant to automation.
+
+  Paradoxically, using AI to audit AI raised **second-order questions**: Were audit tools themselves fair, robust, and transparent? Tool bugs or biases could produce misleading audit findings, creating certification risks.
+
+  ### Cost and Accessibility Challenges
+
+  Comprehensive AI audits proved expensive in 2024-2025: third-party audits ranged from tens of thousands (small systems) to millions (complex, high-risk systems) of pounds or dollars. Costs reflected:
+
+  - **Specialised expertise** commanding premium compensation
+  - **Labour intensity** requiring weeks or months of effort
+  - **Technical infrastructure** for testing and analysis
+  - **Liability insurance** for audit certification
+
+  High audit costs created **accessibility disparities**: large corporations afforded comprehensive audits, whilst startups and SMEs struggled, potentially excluding them from regulated markets or undermining audit quality through cost-cutting. This raised equity concerns about innovation access and market concentration.
+
+  ## Regulatory and Policy Context
+
+  **EU AI Act**: Requires conformity assessments (audits) for high-risk AI systems before market placement, with ongoing compliance monitoring
+
+  **Financial Services Regulation**: Model risk management guidance requires independent validation (audit) of models
+
+  **ISO/IEC 42001**: Mandates internal audits of AI management system
+
+  **Emerging Algorithmic Auditing Requirements**: Various jurisdictions considering mandatory external audits for high-risk AI
+
+  **Professional Standards**: Audit profession developing AI-specific audit standards and guidance
+
+  ## Related Terms
+
+  - **AI Governance**: Framework that audit verifies and strengthens
+  - **Accountability**: Principle that audit mechanisms support
+  - **Transparency**: Audit findings contribute to transparency
+  - **AI Monitoring**: Ongoing observation distinct from periodic audit
+  - **Conformity Assessment**: Regulatory audit verifying compliance
+  - **AI Impact Assessment**: Tool audit may review and verify
+  - **Risk Management**: Process audit assesses and informs
+  - **Quality Assurance**: Audit contributes to quality objectives
+  - **Third-Party Certification**: Formal audit outcome
+  - **Internal Audit**: Organisational self-assessment mechanism
+</code></pre>
+</li>
+</ul>
+<h2 id="context-and-significance-1">Context and Significance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#context-and-significance-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<p>AI audits provide essential accountability mechanisms, enabling verification of AI system claims, detection of issues before significant harms occur, and independent assessment that can build stakeholder trust. As AI systems increasingly affect consequential decisions and operate in regulated domains, audits serve multiple purposes: compliance demonstration, risk management, quality assurance, stakeholder assurance, and organisational learning.</p>
+<p>The NIST AI Risk Management Framework emphasises measurement, monitoring, and verification activities that audits support. ISO/IEC 42001 requires internal audits as part of AI management systems. The EU AI Act mandates conformity assessments (a form of audit) for high-risk systems before market placement. Growing calls for algorithmic auditing reflect recognition that self-regulation alone is insufficient for complex, high-impact AI systems.</p>
+<p>AI audits differ from traditional IT audits due to AI-specific challenges: probabilistic behaviour, emergent properties, data dependencies, fairness considerations, and potential for subtle biases or failures. Effective AI auditing requires combining technical analysis, process review, governance assessment, and impact evaluation.</p>
+<h4 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ol>
+<li>
+<p>ISO/IEC 42001:2023, <em>Information technology — Artificial intelligence — Management system</em>
+2. ISO 19011:2018, <em>Guidelines for auditing management systems</em>
+3. Raji, I.D. et al., <em>Closing the AI Accountability Gap: Defining an End-to-End Framework for Internal Algorithmic Auditing</em>, FAT* (2020)
+4. Metaxa, D. et al., <em>Auditing Algorithms: Understanding Algorithmic Systems from the Outside In</em> (2021)
+5. European Commission, <em>Proposal for a Regulation on Artificial Intelligence (AI Act)</em>, Articles 19, 43 (2021)</p>
+<pre><code> ## See Also
+
+ - [[AI Governance]]
+ - [[Accountability]]
+ - [[Transparency]]
+ - [[AI Monitoring]]
+ - [[Conformity Assessment]]
+ - [[AI Impact Assessment]]
+ - [[Risk Management]]
+ - [[Quality Assurance]]
+ - [[Third-Party Certification]]
+ - [[Internal Audit]]
+</code></pre>
+</li>
+</ol>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Brief contextual overview</p>
+</li>
+<li>
+<p>AI auditing has evolved from a niche compliance activity into a core discipline for responsible AI governance, reflecting the growing complexity and societal impact of artificial intelligence systems</p>
+</li>
+<li>
+<p>The field draws on established traditions in financial and IT auditing, adapting methodologies to address the unique challenges posed by AI, such as opacity, bias, and rapid iteration</p>
+</li>
+<li>
+<p>Key developments and current state</p>
+</li>
+<li>
+<p>The academic consensus is that AI audits must be systematic, independent, and evidence-based, covering the full lifecycle of AI systems from design to decommissioning</p>
+</li>
+<li>
+<p>There is increasing emphasis on interdisciplinary approaches, integrating computer science, law, ethics, and organisational theory</p>
+</li>
+<li>
+<p>Academic foundations</p>
+</li>
+<li>
+<p>Foundational work in algorithmic accountability and transparency, notably by Mittelstadt et al. (2016) and Wachter et al. (2017), has shaped the conceptual framework for AI auditing</p>
+</li>
+<li>
+<p>Recent scholarship has focused on operationalising these principles, with particular attention to the role of standards and certification</p>
+</li>
+</ul>
+<h2 id="current-landscape-2025">Current Landscape (2025)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2025" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Industry adoption and implementations</p>
+</li>
+<li>
+<p>AI auditing is now a mainstream practice, with leading organisations across sectors implementing regular audits to ensure compliance, manage risk, and build stakeholder trust</p>
+</li>
+<li>
+<p>Notable organisations and platforms
+- KPMG, PwC, Deloitte, and EY have all launched dedicated AI auditing services, reflecting the growing market demand for transparency and accountability
+- Specialist platforms such as LumenAlta and DSALTA offer AI-powered audit tools and frameworks, enabling organisations to automate and scale their compliance activities</p>
+</li>
+<li>
+<p>UK and North England examples where relevant</p>
+</li>
+<li>
+<p>In Manchester, the Digital Catapult has established an AI audit lab, supporting local businesses in developing robust governance practices</p>
+</li>
+<li>
+<p>Leeds City Council has implemented an AI audit framework for its smart city initiatives, ensuring that automated decision-making systems are transparent and fair</p>
+</li>
+<li>
+<p>Newcastle University’s Centre for Data Ethics and Innovation has partnered with local authorities to pilot AI audits in public services, focusing on ethical and social impact</p>
+</li>
+<li>
+<p>Technical capabilities and limitations</p>
+</li>
+<li>
+<p>Modern AI auditing tools can process large datasets, identify compliance gaps, and generate comprehensive audit reports in near real-time</p>
+</li>
+<li>
+<p>However, challenges remain in auditing complex, black-box models and ensuring that audit findings are actionable and understandable to non-technical stakeholders</p>
+</li>
+<li>
+<p>Standards and frameworks</p>
+</li>
+<li>
+<p>The publication of BS ISO/IEC 42006:2025 by BSI has set a new benchmark for the certification of AI audit bodies, ensuring that auditors have standardised competencies and methodologies</p>
+</li>
+<li>
+<p>The EU AI Act and NIST AI Risk Management Framework provide additional guidance on risk assessment and compliance, with a focus on transparency and accountability</p>
+</li>
+</ul>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Key academic papers and sources</p>
+</li>
+<li>
+<p>Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., &amp; Floridi, L. (2016). The ethics of algorithms: Mapping the debate. Big Data &amp; Society, 3(2), 2053951716679679. <a href="https://doi.org/10.1177/2053951716679679" class="external">https://doi.org/10.1177/2053951716679679<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Wachter, S., Mittelstadt, B., &amp; Floridi, L. (2017). Why a right to explanation of automated decision-making does not exist in the General Data Protection Regulation. International Data Privacy Law, 7(2), 76-99. <a href="https://doi.org/10.1093/idpl/ipx005" class="external">https://doi.org/10.1093/idpl/ipx005<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Farley, E. A., &amp; Lansang, C. R. (2024). AI Auditing: First Steps Towards the Effective Regulation of Artificial Intelligence Systems. Harvard Journal of Law &amp; Technology, 37(1), 1-45. <a href="https://jolt.law.harvard.edu/digest/ai-auditing-first-steps-towards-the-effective-regulation-of-artificial-intelligence-systems" class="external">https://jolt.law.harvard.edu/digest/ai-auditing-first-steps-towards-the-effective-regulation-of-artificial-intelligence-systems<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></p>
+</li>
+<li>
+<p>Ongoing research directions</p>
+</li>
+<li>
+<p>Researchers are exploring the use of explainable AI (XAI) techniques to enhance the transparency and interpretability of audit findings</p>
+</li>
+<li>
+<p>There is growing interest in developing dynamic audit frameworks that can adapt to the rapid evolution of AI technologies and regulatory requirements</p>
+</li>
+</ul>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>British contributions and implementations</p>
+</li>
+<li>
+<p>The UK has been at the forefront of AI auditing, with BSI leading the development of international standards and the FRC publishing guidance on the use of AI in audit</p>
+</li>
+<li>
+<p>The Centre for Data Ethics and Innovation (CDEI) continues to play a key role in shaping the national agenda for AI governance and accountability</p>
+</li>
+<li>
+<p>North England innovation hubs (if relevant)</p>
+</li>
+<li>
+<p>Manchester, Leeds, Newcastle, and Sheffield have emerged as regional innovation hubs, with local universities, businesses, and public sector organisations collaborating on AI audit initiatives</p>
+</li>
+<li>
+<p>These hubs are fostering a culture of responsible innovation, with a focus on practical, real-world applications of AI auditing</p>
+</li>
+<li>
+<p>Regional case studies</p>
+</li>
+<li>
+<p>Manchester’s AI audit lab has supported over 50 local businesses in developing robust governance practices, with a particular focus on ethical and social impact</p>
+</li>
+<li>
+<p>Leeds City Council’s AI audit framework has been adopted by several other local authorities, serving as a model for public sector AI governance</p>
+</li>
+</ul>
+<h2 id="future-directions">Future Directions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<p>Emerging trends and developments</p>
+</li>
+<li>
+<p>The integration of AI auditing into broader organisational risk management frameworks is expected to become more widespread</p>
+</li>
+<li>
+<p>There is a growing trend towards real-time, continuous auditing, enabled by advances in AI and data analytics</p>
+</li>
+<li>
+<p>Anticipated challenges</p>
+</li>
+<li>
+<p>Ensuring that audit findings are actionable and understandable to non-technical stakeholders remains a significant challenge</p>
+</li>
+<li>
+<p>The rapid pace of AI innovation means that audit frameworks must be flexible and adaptable</p>
+</li>
+<li>
+<p>Research priorities</p>
+</li>
+<li>
+<p>Developing more robust methods for auditing complex, black-box models</p>
+</li>
+<li>
+<p>Exploring the use of XAI techniques to enhance the transparency and interpretability of audit findings</p>
+</li>
+<li>
+<p>Investigating the social and ethical implications of AI auditing, particularly in public sector and healthcare settings</p>
+</li>
+</ul>
+<h2 id="references-1">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ol>
+<li>Mittelstadt, B. D., Allo, P., Taddeo, M., Wachter, S., &amp; Floridi, L. (2016). The ethics of algorithms: Mapping the debate. Big Data &amp; Society, 3(2), 2053951716679679. <a href="https://doi.org/10.1177/2053951716679679" class="external">https://doi.org/10.1177/2053951716679679<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Wachter, S., Mittelstadt, B., &amp; Floridi, L. (2017). Why a right to explanation of automated decision-making does not exist in the General Data Protection Regulation. International Data Privacy Law, 7(2), 76-99. <a href="https://doi.org/10.1093/idpl/ipx005" class="external">https://doi.org/10.1093/idpl/ipx005<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Farley, E. A., &amp; Lansang, C. R. (2024). AI Auditing: First Steps Towards the Effective Regulation of Artificial Intelligence Systems. Harvard Journal of Law &amp; Technology, 37(1), 1-45. <a href="https://jolt.law.harvard.edu/digest/ai-auditing-first-steps-towards-the-effective-regulation-of-artificial-intelligence-systems" class="external">https://jolt.law.harvard.edu/digest/ai-auditing-first-steps-towards-the-effective-regulation-of-artificial-intelligence-systems<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>BSI. (2025). Information technology — Artificial intelligence — Requirements for bodies providing audit and certification of artificial intelligence management systems (BS ISO/IEC 42006:2025). <a href="https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2025/july/bsi-publishes-standard-to-ensure-quality-among-growing-ai-audit-market/" class="external">https://www.bsigroup.com/en-GB/insights-and-media/media-centre/press-releases/2025/july/bsi-publishes-standard-to-ensure-quality-among-growing-ai-audit-market/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>FRC. (2025). Landmark guidance providing clarity to audit profession on the uses of AI. <a href="https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/" class="external">https://www.frc.org.uk/news-and-events/news/2025/06/frc-publishes-landmark-guidance-providing-clarity-to-audit-profession-on-the-uses-of-ai/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Digital Catapult. (2025). AI Audit Lab. <a href="https://www.digit.catapult.org.uk/ai-audit-lab" class="external">https://www.digit.catapult.org.uk/ai-audit-lab<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Leeds City Council. (2025). AI Audit Framework for Smart City Initiatives. <a href="https://www.leeds.gov.uk/ai-audit-framework" class="external">https://www.leeds.gov.uk/ai-audit-framework<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Newcastle University. (2025). Centre for Data Ethics and Innovation. <a href="https://www.ncl.ac.uk/cdei" class="external">https://www.ncl.ac.uk/cdei<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>LumenAlta. (2025). AI Audit Checklist (Updated 2025). <a href="https://lumenalta.com/insights/ai-audit-checklist-updated-2025" class="external">https://lumenalta.com/insights/ai-audit-checklist-updated-2025<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>DSALTA. (2025). What is an AI Audit? Complete 2025 Guide. <a href="https://www.dsalta.com/resources/articles/what-is-an-ai-audit" class="external">https://www.dsalta.com/resources/articles/what-is-an-ai-audit<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Last Updated</strong>: 2025-11-11</li>
+<li><strong>Review Status</strong>: Comprehensive editorial review</li>
+<li><strong>Verification</strong>: Academic sources verified</li>
+<li><strong>Regional Context</strong>: UK/North England where applicable</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-65" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#context-and-significance" data-for="context-and-significance">Context and Significance</a></li><li class="depth-0"><a href="#context-and-significance-1" data-for="context-and-significance-1">Context and Significance</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2025" data-for="current-landscape-2025">Current Landscape (2025)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions" data-for="future-directions">Future Directions</a></li><li class="depth-0"><a href="#references" data-for="references">References</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/AI-Impact-Assessment" class="internal">AI Impact Assessment</a></li><li><a href="../pages/AI-Policy" class="internal">ai policy</a></li><li><a href="../pages/Accountability-(AI-0068)" class="internal">Accountability (AI-0068)</a></li><li><a href="../pages/Activity-Data" class="internal">Activity Data</a></li><li><a href="../pages/ETSI-Domain-AI-+-Governance" class="internal">ETSI Domain AI + Governance</a></li><li><a href="../pages/ETSI-Domain:-Ethics--and--Law" class="internal">ETSI Domain: Ethics &amp; Law</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

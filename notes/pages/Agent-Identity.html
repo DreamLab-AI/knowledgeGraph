@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Agent Identity</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Agent Identity"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Agent Identity"/><meta name="twitter:description" content="Agent identity is the set of attributes, credentials, and cryptographic material that uniquely identifies an autonomous software agent and allows other parties to authenticate it, attribute its actions, and decide what it may do."/><meta property="og:description" content="Agent identity is the set of attributes, credentials, and cryptographic material that uniquely identifies an autonomous software agent and allows other parties to authenticate it, attribute its actions, and decide what it may do."/><meta property="og:image:alt" content="Agent identity is the set of attributes, credentials, and cryptographic material that uniquely identifies an autonomous software agent and allows other parties to authenticate it, attribute its actions, and decide what it may do."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Agent-Identity"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Agent-Identity"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Agent identity is the set of attributes, credentials, and cryptographic material that uniquely identifies an autonomous software agent and allows other parties to authenticate it, attribute its actions, and decide what it may do."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Agent-Identity"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-616"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-616" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Agent Identity</a></div></nav><h1 class="article-title">Agent Identity</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.667Z">23 Sept 2026</time><span>17 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:agent-identity</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.88</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Identity-Management" class="internal">Identity Management</a></li><li><a href="../pages/Trust-Framework" class="internal">Trust Framework</a></li><li><a href="../pages/Decentralized-Identity" class="internal">Decentralized Identity</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../Agentic-Internet" class="internal">Agentic Internet</a></li><li><a href="../pages/Identity-Management" class="internal">Identity Management</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Verifiable-Credentials" class="internal">Verifiable Credentials</a></li><li><a href="../pages/DID" class="internal">DID</a></li><li><a href="../key-management" class="internal">Key Management</a></li><li><a href="../capability-token" class="internal">Capability Token</a></li><li><a href="../pages/Audit-Trail" class="internal">Audit Trail</a></li><li><a href="../pages/Digital-Signature" class="internal">Digital Signature</a></li><li><a href="../pages/Decentralised-Identifiers" class="internal">Decentralised Identifiers</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../authentication" class="internal">Authentication</a></li><li><a href="../key-management" class="internal">Key Management</a></li><li><a href="../pages/Cryptographic-Proof" class="internal">Cryptographic Proof</a></li><li><a href="../pages/Public-Key-Infrastructure" class="internal">Public Key Infrastructure</a></li><li><a href="../pages/Trust-Framework" class="internal">Trust Framework</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Accountability" class="internal">Accountability</a></li><li><a href="../pages/Trust" class="internal">Trust</a></li><li><a href="../tool-use" class="internal">Tool Use</a></li><li><a href="../pages/Delegation" class="internal">Delegation</a></li><li><a href="../pages/Authorisation" class="internal">Authorisation</a></li><li><a href="../pages/Non-Repudiation" class="internal">Non-Repudiation</a></li><li><a href="../pages/Agentic-Workflow" class="internal">Agentic Workflow</a></li><li><a href="../pages/Access-Control" class="internal">Access Control</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/AI-Agent" class="internal">AI Agent</a></li><li><a href="../pages/Autonomous-Agent" class="internal">Autonomous Agent</a></li><li><a href="../Microsoft-Entra" class="internal">Microsoft Entra</a></li><li><a href="../Amazon-Bedrock" class="internal">Amazon Bedrock</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Single-Sign-On" class="internal">Single Sign-On</a></li><li><a href="../API-Key-Authentication" class="internal">API Key Authentication</a></li><li><a href="../Centralised-Identity-Provider" class="internal">Centralised Identity Provider</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Artificial-Intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../pages/Foundation-Model" class="internal">Foundation Model</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../ProtocolLayer" class="internal">ProtocolLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/OAuth" class="internal">OAuth</a></li><li><a href="../pages/OpenID-Connect" class="internal">OpenID Connect</a></li><li><a href="../SPIFFE" class="internal">SPIFFE</a></li><li><a href="../pages/Self-Sovereign-Identity" class="internal">Self-Sovereign Identity</a></li><li><a href="../pages/Decentralised-Identifiers" class="internal">Decentralised Identifiers</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../ai-agent" class="internal">AI Agent</a></li><li><a href="../identity-management" class="internal">Identity Management</a></li><li><a href="../agentic-internet" class="internal">Agentic Internet</a></li><li><a href="../verifiable-credentials" class="internal">Verifiable Credentials</a></li><li><a href="../did" class="internal">DID</a></li><li><a href="../key-management" class="internal">Key Management</a></li><li><a href="../authentication" class="internal">Authentication</a></li><li><a href="../accountability" class="internal">Accountability</a></li><li><a href="../trust" class="internal">Trust</a></li><li><a href="../tool-use" class="internal">Tool Use</a></li><li><a href="../decentralized-identity" class="internal">Decentralized Identity</a></li><li><a href="../autonomous-agent" class="internal">Autonomous Agent</a></li><li><a href="../multi-agent-system" class="internal">Multi-Agent System</a></li><li><a href="../ai-safety" class="internal">AI Safety</a></li><li><a href="../agentic-ai" class="internal">Agentic AI</a></li><li><a href="../provenance" class="internal">Provenance</a></li><li><a href="../single-sign-on" class="internal">Single Sign-On</a></li><li><a href="../artificial-intelligence" class="internal">Artificial Intelligence</a></li><li><a href="../model-context-protocol" class="internal">Model Context Protocol</a></li><li><a href="../agent-to-agent-protocol" class="internal">Agent-to-Agent Protocol</a></li><li><a href="../oauth" class="internal">OAuth</a></li><li><a href="../open-id-connect" class="internal">OpenID Connect</a></li><li><a href="../public-key-infrastructure" class="internal">Public Key Infrastructure</a></li><li><a href="../prompt-injection" class="internal">Prompt Injection</a></li><li><a href="../access-control" class="internal">Access Control</a></li><li><a href="../delegation" class="internal">Delegation</a></li><li><a href="../authorisation" class="internal">Authorisation</a></li><li><a href="../audit-trail" class="internal">Audit Trail</a></li><li><a href="../zero-trust" class="internal">Zero Trust</a></li><li><a href="../cryptographic-proof" class="internal">Cryptographic Proof</a></li><li><a href="../non-repudiation" class="internal">Non-Repudiation</a></li><li><a href="../spiffe" class="internal">SPIFFE</a></li><li><a href="../human-in-the-loop" class="internal">Human-in-the-Loop</a></li><li><a href="../eu-ai-act" class="internal">EU AI Act</a></li><li><a href="../agent-memory" class="internal">Agent Memory</a></li><li><a href="../agentic-workflow" class="internal">Agentic Workflow</a></li><li><a href="../microsoft-entra" class="internal">Microsoft Entra</a></li><li><a href="../amazon-bedrock" class="internal">Amazon Bedrock</a></li><li><a href="../sandboxing" class="internal">Sandboxing</a></li><li><a href="../digital-signature" class="internal">Digital Signature</a></li><li><a href="../decentralised-identifiers" class="internal">Decentralised Identifiers</a></li><li><a href="../self-sovereign-identity" class="internal">Self-Sovereign Identity</a></li><li><a href="../trust-framework" class="internal">Trust Framework</a></li><li><a href="../capability-token" class="internal">Capability Token</a></li><li><a href="../agent-loop" class="internal">Agent Loop</a></li><li><a href="../foundation-model" class="internal">Foundation Model</a></li><li><a href="../w3c" class="internal">W3C</a></li><li><a href="../ietf" class="internal">IETF</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../agent-identity" class="internal">Agent Identity</a></li><li><a href="../least-privilege" class="internal">Least Privilege</a></li><li><a href="../credential-revocation" class="internal">Credential Revocation</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:agent-identity</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../agentic-ai" class="internal">Agentic AI</a></li><li><a href="../pages/Provenance" class="internal">Provenance</a></li><li><a href="../single-sign-on" class="internal">Single Sign-On</a></li><li><a href="../prompt-injection" class="internal">Prompt Injection</a></li><li><a href="../pages/Agent-Memory" class="internal">Agent Memory</a></li><li><a href="../pages/Agent-Loop" class="internal">Agent Loop</a></li><li><a href="../Agentic-Internet" class="internal">Agentic Internet</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/W3C" class="internal">W3C</a></li><li><a href="../pages/IETF" class="internal">IETF</a></li><li><a href="../pages/Model-Context-Protocol" class="internal">Model Context Protocol</a></li><li><a href="../pages/Agent-to-Agent-Protocol" class="internal">Agent-to-Agent Protocol</a></li><li><a href="../EU-AI-Act" class="internal">EU AI Act</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Multi-Agent-System" class="internal">Multi-Agent System</a></li><li><a href="../pages/AI-Safety" class="internal">AI Safety</a></li><li><a href="../pages/Human-in-the-Loop" class="internal">Human-in-the-Loop</a></li><li><a href="../pages/Zero-Trust" class="internal">Zero Trust</a></li><li><a href="../Sandboxing" class="internal">Sandboxing</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Decentralized-Identity" class="internal">Decentralized Identity</a></li><li><a href="../pages/OAuth" class="internal">OAuth</a></li><li><a href="../openid-connect" class="internal">OpenID Connect</a></li><li><a href="../spiffe" class="internal">SPIFFE</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Agent identity is the set of attributes, credentials, and cryptographic material that uniquely identifies an autonomous software agent and allows other parties to authenticate it, attribute its actions, and decide what it may do. It extends identity management from human and device contexts to AI agents that act on a user’s behalf, enabling verifiable accountability across the emerging agentic internet. Robust agent identity typically combines decentralised identifiers, verifiable credentials, and key management.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:VerifiableCredentials))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:DID))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:KeyManagement))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:CapabilityToken))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:AuditTrail))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:DigitalSignature))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:hasPart ai:DelegationChain))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:requires ai:Authentication))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:requires ai:KeyManagement))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:requires ai:CryptographicProof))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:requires ai:PublicKeyInfrastructure))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:requires ai:TrustFramework))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:dependsOn ai:FoundationModel))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:dependsOn ai:LargeLanguageModels))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:enables ai:Accountability))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:enables ai:Trust))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:enables ai:ToolUse))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:enables ai:Delegation))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:enables ai:Authorisation))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:enables ai:NonRepudiation))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:supports ai:MultiAgentSystem))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:supports ai:AISafety))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:supports ai:HumanInTheLoop))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:supports ai:ZeroTrust))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:implements ai:OAuth))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:implements ai:OpenIDConnect))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:implements ai:SPIFFE))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:implements ai:SelfSovereignIdentity))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:implements ai:DecentralisedIdentifiers))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:uses ai:DecentralizedIdentity))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:SingleSignOn))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:contrastsWith ai:APIKeyAuthentication))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<pre><code>SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:reducesTo ai:IdentityManagement))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:reducesTo ai:TrustFramework))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:bridgesTo ai:AIAgent))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:bridgesTo ai:AutonomousAgent))
+SubClassOf(ai:AgentIdentity
+  ObjectSomeValuesFrom(ai:bridgesTo ai:AgenticInternet))
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Agent Identity addresses one of the defining security challenges of the agentic era: as <a href="../pages/AI-Agent" class="internal alias" data-slug="pages/AI-Agent">AI Agent</a> systems escalate from single-turn text completion to long-running autonomous workflows that invoke real-world tools, settle payments, manage code repositories, and orchestrate fleets of sub-agents, the absence of robust, verifiable identities for those agents creates catastrophic accountability gaps.</li>
+<li>Traditional IAM (Identity and Access Management) was designed for human users authenticating to services, then extended to machine identities (service accounts, API keys, mTLS certificates). Neither model adequately addresses the distinctive properties of AI agent principals: ephemeral (instantiated on demand, destroyed after a task), polymorphic (the same <a href="../pages/Foundation-Model" class="internal alias" data-slug="pages/Foundation-Model">Foundation Model</a> can act as a researcher, coder, or executive agent depending on its system prompt), hierarchically delegated (a user delegates to an orchestrator, which delegates to worker agents), and capable of high-velocity action sequences that outpace human monitoring.</li>
+<li>A scan of approximately 2,000 <a href="../pages/Model-Context-Protocol" class="internal alias" data-slug="pages/Model-Context-Protocol">Model Context Protocol</a> servers conducted in early 2025 found that all lacked authentication — no mechanism existed to verify which agent was calling which tool, or on whose behalf. This gap enables <a href="../pages/Prompt-Injection" class="internal alias" data-slug="pages/Prompt-Injection">Prompt Injection</a> attacks in which adversarial content retrieved from the environment hijacks the agent’s execution under a forged or absent identity context.</li>
+<li>The technical approach draws from three established standards families. First, <a href="../pages/W3C" class="internal" data-slug="pages/W3C">W3C</a> <a href="../pages/Decentralised-Identifiers" class="internal alias" data-slug="pages/Decentralised-Identifiers">Decentralised Identifiers</a> (DIDs) provide a globally unique, controller-controlled identifier that resolves to a DID document containing the agent’s public keys, service endpoints, and verification methods — analogous to a DNS record but cryptographically anchored. The did:web and did:key methods provide pragmatic enterprise entry points; did:aip, registered in 2026, is purpose-built for agent principals.</li>
+<li>Second, <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> carry the semantic assertions about an agent that identity alone cannot express: which capabilities the agent is authorised to exercise, which principal delegated those capabilities, what scope and time constraints apply, and what <a href="../pages/Audit-Trail" class="internal alias" data-slug="pages/Audit-Trail">Audit Trail</a> logging obligations exist. A VC issued by an enterprise IAM system is machine-verifiable by any relying party without contacting the issuer — critical for high-performance agentic workflows.</li>
+<li>Third, standard delegation protocols — <a href="../pages/OAuth" class="internal" data-slug="pages/OAuth">OAuth</a> 2.0 with Rich Authorisation Requests (RFC 9396), <a href="../pages/OpenID-Connect" class="internal alias" data-slug="pages/OpenID-Connect">OpenID Connect</a> for Verifiable Credentials (OID4VC), and the Token Exchange (RFC 8693) extension — allow user tokens to be down-scoped and exchanged for agent-specific tokens with tightly scoped permissions, implementing the <a href="../pages/Least-Privilege" class="internal alias" data-slug="pages/Least-Privilege">Least Privilege</a> principle across delegation chains.</li>
+<li>The Agent Identity Protocol (AIP), an IETF Internet-Draft published March 2026, introduces Invocation-Bound Capability Tokens (IBCTs) as a primitive that fuses identity, attenuated authorisation, and <a href="../pages/Provenance" class="internal" data-slug="pages/Provenance">Provenance</a> binding into a single, append-only token chain, with bindings specified for both <a href="../pages/Model-Context-Protocol" class="internal alias" data-slug="pages/Model-Context-Protocol">Model Context Protocol</a> and <a href="../pages/Agent-to-Agent-Protocol" class="internal alias" data-slug="pages/Agent-to-Agent-Protocol">Agent-to-Agent Protocol</a>.</li>
+<li>In parallel, <a href="../SPIFFE" class="internal" data-slug="SPIFFE">SPIFFE</a> (Secure Production Identity Framework for Everyone) provides workload identity via SVIDs (SPIFFE Verifiable Identity Documents), and Microsoft extended SPIFFE/SPIRE to support cross-cloud agent-to-agent authorisation with <a href="../Microsoft-Entra" class="internal alias" data-slug="Microsoft-Entra">Microsoft Entra</a> Agent ID (preview, 2025) for the enterprise fleet management case.</li>
+<li>A DID-based <a href="../pages/Zero-Trust" class="internal alias" data-slug="pages/Zero-Trust">Zero Trust</a> framework for autonomous microservices demonstrated 50% lower <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> latency and 75% higher throughput compared to OAuth2/JWT baselines in controlled benchmarks (Reiter et al., arXiv:2511.02841, 2025), suggesting that decentralised credential verification does not introduce prohibitive performance overhead at enterprise scale.</li>
+<li>The <a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> (effective August 2024) mandates audit logs and human oversight for high-risk AI deployments, which in practice requires that every agent action be attributable to an identified principal with a traceable delegation chain — making robust agent identity a regulatory obligation rather than merely a security best practice for deployments in EU high-risk domains.</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Agent Identity Descriptor (AID) / <a href="../pages/DID" class="internal" data-slug="pages/DID">DID</a></strong> — A globally unique, persistent identifier for an agent conforming to a W3C DID method. The AID resolves to a DID document containing the agent’s public keys (Ed25519, ECDSA P-256), service endpoints, and verification relationships. An AID can represent an agent class or an agent instance. The did:aip method, registered with W3C in 2026, is purpose-built for agent principals and supports hierarchical key delegation.</li>
+<li><strong><a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> stack</strong> — Credentials issued to agents encode: (a) authorisation scope (which tools the agent may invoke, which data it may read or write); (b) delegation chain from human user through orchestrator to worker; (c) temporal validity and <a href="../Credential-Revocation" class="internal alias" data-slug="Credential-Revocation">Credential Revocation</a> status via Bitstring Status List v1.0; (d) constraint expressions such as maximum financial transaction value, data classification ceiling, and required <a href="../pages/Human-in-the-Loop" class="internal" data-slug="pages/Human-in-the-Loop">Human-in-the-Loop</a> approval thresholds. Credentials are expressed in W3C VC Data Model v2.0 JSON-LD format, signed with EdDSA or ECDSA P-256.</li>
+<li><strong><a href="../pages/Key-Management" class="internal alias" data-slug="pages/Key-Management">Key Management</a> and Hardware Security</strong> — Agent key material may be stored in HSM-backed secrets managers (AWS KMS, HashiCorp Vault), Trusted Platform Modules (TPMs) in hardened execution environments, or derived from the operator’s root key using deterministic hierarchical derivation. Key rotation, revocation, and emergency recovery procedures are critical <a href="../pages/AI-Safety" class="internal alias" data-slug="pages/AI-Safety">AI Safety</a> properties — a compromised agent key can authorise arbitrary <a href="../pages/Tool-Use" class="internal alias" data-slug="pages/Tool-Use">Tool Use</a> under that agent’s scope.</li>
+<li><strong><a href="../Capability-Token" class="internal alias" data-slug="Capability-Token">Capability Token</a> and IBCT chains</strong> — Invocation-Bound Capability Tokens (from AIP/IETF, 2026) operate in two wire formats: compact mode (signed JWT for single-hop cases with &lt;50ms overhead) and chained mode (a Biscuit token with Datalog attenuation policies for multi-hop delegation, enabling fine-grained capability restriction at each hop without trust escalation). Each token includes issuer DID, subject DID, invocation target, permitted action set, not-before/not-after timestamps, and a proof over the entire prior chain.</li>
+<li><strong><a href="../pages/Audit-Trail" class="internal alias" data-slug="pages/Audit-Trail">Audit Trail</a> and <a href="../pages/Provenance" class="internal" data-slug="pages/Provenance">Provenance</a></strong> — Every agent action is recorded with: acting agent DID, delegating principal DID, tool or service invoked, timestamp, session ID, and a hash binding the action to the capability token authorising it. This creates an append-only provenance ledger satisfying <a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> Article 13 transparency requirements and enabling post-incident forensic reconstruction of agent decision chains.</li>
+<li><strong>Centralised fleet platforms</strong> — <a href="../Microsoft-Entra" class="internal alias" data-slug="Microsoft-Entra">Microsoft Entra</a> Agent ID (preview 2025) registers agents as Entra application identities, receiving managed credentials, conditional <a href="../pages/Access-Control" class="internal alias" data-slug="pages/Access-Control">Access Control</a> policies, and audit integration with Microsoft Sentinel. <a href="../Amazon-Bedrock" class="internal alias" data-slug="Amazon-Bedrock">Amazon Bedrock</a> AgentCore Identity (GA October 2025, built on Amazon Cognito with agent-specific extensions) handles cross-service <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> for agents calling AWS services and external SaaS APIs simultaneously.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Delegated personal agent</strong> — A user delegates authority to a personal assistant agent via an <a href="../pages/OAuth" class="internal" data-slug="pages/OAuth">OAuth</a> Rich Authorisation Request, producing a scoped token that the agent presents when accessing calendar APIs, email, financial data, or booking services. The delegation is revocable, audited, and scoped to prevent over-reach. The agent’s <a href="../pages/DID" class="internal" data-slug="pages/DID">DID</a> allows relying services to verify it is an authorised agent of the stated user principal without re-authentication at every step.</li>
+<li><strong>Enterprise multi-agent workflows</strong> — An enterprise deploys an orchestrator agent that receives broad authority from an HR system, then delegates narrower sub-credentials to a data-retrieval worker (read-only access), a summarisation worker (no external access), and a communication worker (write access to one specific email queue). IBCT chained tokens enforce <a href="../pages/Least-Privilege" class="internal alias" data-slug="pages/Least-Privilege">Least Privilege</a> at each delegation hop. All actions are logged to the corporate SIEM with attribution to the relevant worker’s <a href="../pages/DID" class="internal" data-slug="pages/DID">DID</a>.</li>
+<li><strong>Cross-organisation agent commerce</strong> — In the <a href="../Agentic-Internet" class="internal alias" data-slug="Agentic-Internet">Agentic Internet</a>, agents from different organisations negotiate and transact — a procurement agent from Company A delegates to a price-comparison agent querying supplier APIs. Agent-to-Agent identity verification via mutual DID resolution prevents confused-deputy attacks and ensures each agent is acting within its sanctioned scope.</li>
+<li><strong>Safety-critical and regulated deployments</strong> — Healthcare, finance, and critical infrastructure deployments require every agent action to be attributable, reversible where possible, and subject to <a href="../pages/Human-in-the-Loop" class="internal" data-slug="pages/Human-in-the-Loop">Human-in-the-Loop</a> checkpoints when risk exceeds a threshold. Agent identity provides the attribution layer that makes selective human oversight possible.</li>
+<li><strong>Cybersecurity red-teaming agents</strong> — Autonomous penetration testing agents must be precisely scoped to a defined network boundary. <a href="../Capability-Token" class="internal alias" data-slug="Capability-Token">Capability Token</a>s with explicit network-scope constraints, time-bounded validity, and mandatory reporting obligations enforce this scoping. Their <a href="../pages/Audit-Trail" class="internal alias" data-slug="pages/Audit-Trail">Audit Trail</a> becomes the penetration test report.</li>
+<li><strong>IoT and edge agentic deployments</strong> — Sensor-processing agents on industrial IoT edge hardware (factory floor, NHS medical devices) require lightweight DID-based identity that works in intermittently connected environments without round-trips to a central identity provider. did:key and did:ion offline verification paths address this.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Agent identity as a distinct research area crystallised in 2024–2025 as large-scale agentic deployments exposed the inadequacy of extending human IAM patterns to non-human principals.</li>
+<li>The <a href="../pages/W3C" class="internal" data-slug="pages/W3C">W3C</a> DID Core v1.0 Recommendation (July 2022) and W3C <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> Data Model v2.0 (May 2025 REC) provided the foundational standards layer, but their application to AI agent principals required significant extension work.</li>
+<li>The foundational paper is Reed et al., “AI Agents with Decentralized Identifiers and Verifiable Credentials” (arXiv:2511.02841, November 2025), which proposed equipping each agent with a self-controlled <a href="../pages/DID" class="internal" data-slug="pages/DID">DID</a> and a set of VCs encoding agent-to-agent <a href="../pages/Delegation" class="internal" data-slug="pages/Delegation">Delegation</a> through the DID document’s deputy declaration mechanism.</li>
+<li>Concurrent work by the Stanford Digital Economy Lab — “Authenticated Delegation and Authorized AI Agents” (arXiv:2501.09674, January 2025) — developed the <a href="../pages/OAuth" class="internal" data-slug="pages/OAuth">OAuth</a> 2.0 and <a href="../pages/OpenID-Connect" class="internal alias" data-slug="pages/OpenID-Connect">OpenID Connect</a> extension model for agent delegation, arguing that authenticated delegation preserves individual autonomy over AI-mediated action while enabling service providers to make principled <a href="../pages/Access-Control" class="internal alias" data-slug="pages/Access-Control">Access Control</a> decisions.</li>
+<li>Identity Management for Agentic AI (arXiv:2510.25819, October 2025) provided a comprehensive taxonomy of the <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a>, <a href="../pages/Authorisation" class="internal" data-slug="pages/Authorisation">Authorisation</a>, and security challenges unique to agent principals.</li>
+<li>Agentic AI Identity and Access Management (arXiv:2505.19301, May 2025) proposed Agent ID anchored in <a href="../pages/DID" class="internal" data-slug="pages/DID">DID</a> as the canonical identity primitive, with extensions to <a href="../pages/OAuth" class="internal" data-slug="pages/OAuth">OAuth</a> 2.0, OIDC, and SAML.</li>
+<li>AgentDID (arXiv:2604.25189, April 2026) demonstrated trustless verification using DIDs, while AIP (arXiv:2603.24775, March 2026) introduced IBCTs and achieved simultaneous IETF Internet-Draft status (draft-prakash-aip-00).</li>
+<li>The University of Edinburgh Autonomous Agents Research Group (directed by Stefano V. Albrecht) contributed theoretical foundations for safe agent interaction in open environments, including formal models of belief, intention, and commitment that inform the <a href="../pages/Delegation" class="internal" data-slug="pages/Delegation">Delegation</a> semantics encoded in <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> for agent principals.</li>
+<li>Imperial College London’s cybersecurity group published LiquidAuth (ACSAC 2025) exploring novel <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> mechanisms for heterogeneous computational entities.</li>
+<li>The Trust over IP Foundation (ToIP), co-chaired by Drummond Reed, produced technical specifications for layered <a href="../pages/Trust-Framework" class="internal alias" data-slug="pages/Trust-Framework">Trust Framework</a> infrastructure that explicitly addresses machine agents in its latest reference architecture.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>By mid-2026 the agent identity landscape has stratified into three tiers. At the infrastructure layer, <a href="../pages/W3C" class="internal" data-slug="pages/W3C">W3C</a> DID methods and <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> provide the portable, vendor-neutral identity substrate.</li>
+<li>At the protocol layer, the IETF AIP Internet-Draft, the <a href="../pages/OAuth" class="internal" data-slug="pages/OAuth">OAuth</a> 2.0 Rich Authorisation Requests RFC (9396), and the OpenID for Verifiable Credentials suite (OID4VCI, OID4VP) define how agents authenticate and present credentials across service boundaries.</li>
+<li>At the platform layer, <a href="../Microsoft-Entra" class="internal alias" data-slug="Microsoft-Entra">Microsoft Entra</a> Agent ID and <a href="../Amazon-Bedrock" class="internal alias" data-slug="Amazon-Bedrock">Amazon Bedrock</a> AgentCore Identity provide managed fleet identity services for cloud-native enterprise deployments, handling <a href="../Credential-Revocation" class="internal alias" data-slug="Credential-Revocation">Credential Revocation</a> and rotation at the scale of thousands of agent instances.</li>
+<li>A critical gap identified across the industry: approximately 2,000 MCP servers audited in early 2025 found zero with <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> implemented. The AIP Internet-Draft and OpenID Connect for Agents (OIDC-A) 1.0 specification (arXiv:2509.25974) are the primary standards responses.</li>
+<li>The Linux Foundation Agentic AI Foundation (December 2025) has taken on coordination of <a href="../pages/Model-Context-Protocol" class="internal alias" data-slug="pages/Model-Context-Protocol">Model Context Protocol</a>, <a href="../pages/Agent-to-Agent-Protocol" class="internal alias" data-slug="pages/Agent-to-Agent-Protocol">Agent-to-Agent Protocol</a>, and ACP convergence, including identity and <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> as a first-order concern.</li>
+<li><a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> enforcement has made agent identity a compliance requirement: high-risk AI systems must maintain audit logs attributable to specific AI system versions and configurations, requiring each agent invocation to be bound to a versioned, identified agent principal.</li>
+<li>Microsoft’s identity-spiffe open-source repository (2025) demonstrated sidecar-enforced agent-to-agent <a href="../pages/Authorisation" class="internal" data-slug="pages/Authorisation">Authorisation</a> using <a href="../SPIFFE" class="internal" data-slug="SPIFFE">SPIFFE</a>/SPIRE SVIDs with cross-cloud workload federation — a practical path to <a href="../pages/Zero-Trust" class="internal alias" data-slug="pages/Zero-Trust">Zero Trust</a> agent networking that requires no application code changes.</li>
+<li>The Vouched startup secured $17 million in 2025 to build human-vs-agent verification tools, addressing the related problem of distinguishing human principals from agent principals at <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> time.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The University of Edinburgh Autonomous Agents Research Group (AARG), directed by Dr Stefano V. Albrecht in the School of Informatics, is one of Europe’s leading academic groups working on multi-agent reasoning, decision-making under uncertainty, and agent coordination — research directly relevant to the trust and <a href="../pages/Delegation" class="internal" data-slug="pages/Delegation">Delegation</a> problems that agent identity must solve.</li>
+<li>Edinburgh’s AARG has contributed theoretical foundations for safe agent interaction in open environments, including formal models of belief, intention, and commitment that inform the <a href="../pages/Delegation" class="internal" data-slug="pages/Delegation">Delegation</a> semantics encoded in <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> for agent principals.</li>
+<li>Imperial College London’s cybersecurity research group published multiple 2025 papers on <a href="../pages/Authentication" class="internal" data-slug="pages/Authentication">Authentication</a> and AI system security, including LiquidAuth (ACSAC 2025). Imperial’s Department of Computing also leads UK research on formal verification of security protocols — methods increasingly applied to verify that agent identity and <a href="../pages/Delegation" class="internal" data-slug="pages/Delegation">Delegation</a> protocols satisfy stated security properties under adversarial conditions.</li>
+<li>The UK National Cyber Security Centre (NCSC), based in London, published guidance on AI security in 2024–2025 that explicitly addresses agentic systems, recommending identity-first architectures and endorsing <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> and DID-based approaches for non-human identity.</li>
+<li>The GDS <a href="../pages/GOV.UK-One-Login" class="internal alias" data-slug="pages/GOV.UK-One-Login">GOV.UK One Login</a> programme has explored agentic extensions allowing civil servants to authorise AI agents acting on their behalf in government services, contributing a public-sector use case for agent delegation credentials.</li>
+<li>Manchester’s industrial AI deployment context (financial services, manufacturing, logistics) creates practical demand for agent identity in constrained, safety-critical settings where full <a href="../pages/Audit-Trail" class="internal alias" data-slug="pages/Audit-Trail">Audit Trail</a> traceability is a regulatory prerequisite under UK FCA rules.</li>
+<li>The Alan Turing Institute (ATI), the UK’s national institute for data science and AI based in London, has ongoing research programmes on AI governance and trustworthy AI systems that include identity, <a href="../pages/Accountability" class="internal" data-slug="pages/Accountability">Accountability</a>, and <a href="../pages/Provenance" class="internal" data-slug="pages/Provenance">Provenance</a> as key dimensions — producing policy-relevant outputs consumed by DSIT.</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Convergence to unified identity stack</strong> — The <a href="../pages/IETF" class="internal" data-slug="pages/IETF">IETF</a>, <a href="../pages/W3C" class="internal" data-slug="pages/W3C">W3C</a>, OpenID Foundation, and Linux Foundation Agentic AI Foundation are converging on DID-anchored identifiers, VC-encoded capability credentials, <a href="../pages/OAuth" class="internal" data-slug="pages/OAuth">OAuth</a>/OIDC token exchange for service access, and IBCT chains for multi-hop <a href="../pages/Delegation" class="internal" data-slug="pages/Delegation">Delegation</a>. By 2028 this is expected to be a de facto standard analogous to TLS for web security.</li>
+<li><strong>Automated credential lifecycle management</strong> — The velocity of agent deployment requires automated credential provisioning, rotation, and <a href="../Credential-Revocation" class="internal alias" data-slug="Credential-Revocation">Credential Revocation</a> without human bottlenecks. Policy-as-code frameworks (Open Policy Agent, Cedar) governing agent credential issuance, and HSM-backed <a href="../pages/Key-Management" class="internal alias" data-slug="pages/Key-Management">Key Management</a> services with agent-native APIs, are the primary trajectory.</li>
+<li><strong>Behavioural attestation</strong> — Beyond static credentials, research directions include runtime attestation of agent behaviour — a Trusted Execution Environment (TEE) providing cryptographic proof that the agent model weights and system prompt used in a given session match the registered, audited configuration. This moves agent identity from “who is this agent” to “what version of what model with what instructions is this agent running right now.”</li>
+<li><strong>Cross-chain and cross-cloud federation</strong> — As agents span cloud providers, blockchain networks, and organisational boundaries, identity federation protocols allowing a credential issued in one trust domain to be honoured in another become necessary. <a href="../SPIFFE" class="internal" data-slug="SPIFFE">SPIFFE</a> bundle federation and DID universal resolver are early implementations.</li>
+<li><strong>Regulatory crystallisation</strong> — <a href="../EU-AI-Act" class="internal alias" data-slug="EU-AI-Act">EU AI Act</a> high-risk provisions, UK AI governance frameworks, and NIST AI RMF guidance for autonomous systems are converging on mandatory agent identity, <a href="../pages/Audit-Trail" class="internal alias" data-slug="pages/Audit-Trail">Audit Trail</a>, and <a href="../pages/Human-in-the-Loop" class="internal" data-slug="pages/Human-in-the-Loop">Human-in-the-Loop</a> requirements that will likely become baseline engineering norms by 2027–2028.</li>
+<li><strong>Agent reputation systems</strong> — Early research into persistent agent reputation systems that accumulate verified track records of agent behaviour across principals and deployments, enabling relying parties to make risk-calibrated trust decisions based on historical performance. This connects to <a href="../pages/Self-Sovereign-Identity" class="internal alias" data-slug="pages/Self-Sovereign-Identity">Self-Sovereign Identity</a> portable credential concepts.</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Reed, D. et al. (2025). AI Agents with Decentralized Identifiers and Verifiable Credentials. arXiv:2511.02841. [DID + VC framework for agent-to-agent delegation and self-controlled identity.]</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Singla, A. et al. (2025). Identity Management for Agentic AI: The New Frontier of Authorization, Authentication, and Security. arXiv:2510.25819. [Comprehensive taxonomy of agent IAM challenges and architectural patterns.]</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Prakash, A. et al. (2026). AIP: Agent Identity Protocol for Verifiable Delegation Across MCP and A2A. arXiv:2603.24775; IETF draft-prakash-aip-00. [IBCT token chains for MCP and A2A; zero-authentication gap analysis.]</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Stanford Digital Economy Lab. (2025). Authenticated Delegation and Authorized AI Agents. arXiv:2501.09674. [OAuth/OIDC extension model for agent delegation preserving human autonomy.]</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Kumar, S. et al. (2025). Agentic AI Identity and Access Management. arXiv:2505.19301. [Agent ID anchored in DID with OAuth 2.0, OIDC, and SAML extensions.]</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Zhang, Y. et al. (2026). AgentDID: Trustless Identity Authentication for AI Agents. arXiv:2604.25189. [Trustless DID-based verification for AI agent principals without centralised registries.]</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>IETF. (2026). Draft-singla-agent-identity-protocol-00: Agent Identity Protocol (AIP): Decentralized Identity and Delegation for AI Agents. IETF Datatracker. [Parallel IETF AIP specification from Singla et al.]</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>W3C. (2022). Decentralized Identifiers (DIDs) v1.0. W3C Recommendation. <a href="https://www.w3.org/TR/did-core/" class="external">https://www.w3.org/TR/did-core/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Foundational DID standard used as agent identity substrate.]</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>W3C. (2025). Verifiable Credentials Data Model v2.0. W3C Recommendation. <a href="https://www.w3.org/TR/vc-data-model-2.0/" class="external">https://www.w3.org/TR/vc-data-model-2.0/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [VC standard for encoding agent capability claims and delegation records.]</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>IETF. (2023). OAuth 2.0 Rich Authorization Requests. RFC 9396. <a href="https://datatracker.ietf.org/doc/rfc9396/" class="external">https://datatracker.ietf.org/doc/rfc9396/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Fine-grained authorisation request extension for agent-scoped tokens.]</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>IETF. (2020). OAuth 2.0 Token Exchange. RFC 8693. <a href="https://datatracker.ietf.org/doc/rfc8693/" class="external">https://datatracker.ietf.org/doc/rfc8693/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Token exchange for principal delegation; basis for agent impersonation/delegation patterns.]</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>OpenID Foundation. (2025). OpenID Connect for Verifiable Credentials (OID4VC). <a href="https://openid.net/openid4vc/" class="external">https://openid.net/openid4vc/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Protocol suite for agent VC issuance and presentation.]</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>SPIFFE Project. (2024). Secure Production Identity Framework For Everyone (SPIFFE). CNCF. <a href="https://spiffe.io/" class="external">https://spiffe.io/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Workload identity framework applicable to agent-native deployments.]</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Microsoft. (2025). identity-spiffe: Sidecar-enforced agent-to-agent authorisation. GitHub. <a href="https://github.com/microsoft/identity-spiffe" class="external">https://github.com/microsoft/identity-spiffe<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [SPIFFE/SPIRE + Entra Agent ID for cross-cloud agent auth.]</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>AWS. (2025). Amazon Bedrock AgentCore Identity. AWS Documentation. <a href="https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html" class="external">https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/identity.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [GA enterprise fleet identity service for agent principals on AWS.]</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Microsoft. (2025). Microsoft Entra Agent ID. Microsoft Entra Documentation. [Preview enterprise agent identity management on Entra platform.]</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Reiter, M. et al. (2025). DID-Based Zero-Trust Framework for Autonomous Microservices. [50% latency reduction, 75% throughput improvement vs OAuth2/JWT baselines.]</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Chen, L. et al. (2026). Governing Dynamic Capabilities: Cryptographic Binding and Reproducibility Verification for AI Agent Tool Use. arXiv:2603.14332. [Cryptographic binding of agent capabilities to tool invocations.]</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>OpenID Foundation. (2025). OpenID Connect for Agents (OIDC-A) 1.0. arXiv:2509.25974. [Standard extension for LLM-based agent identity and authorisation.]</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Hardt, D. (2012). The OAuth 2.0 Authorization Framework. RFC 6749; OAuth 2.1 Draft. IETF. [Foundation authorization protocol extended for agent delegation.]</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Wooldridge, M. &amp; Jennings, N.R. (1995). Intelligent Agents: Theory and Practice. The Knowledge Engineering Review, 10(2), 115-152. [Foundational agent properties including autonomy and social ability underpinning identity requirements.]</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>Albrecht, S.V. &amp; Stone, P. (2018). Autonomous Agents Modelling Other Agents. Artificial Intelligence, 258, 66–95. [Edinburgh AARG work on agent-to-agent belief modelling, relevant to trust delegation.]</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>NCSC UK. (2025). AI Cybersecurity Principles: Guidance for Agentic AI Systems. National Cyber Security Centre. <a href="https://ncsc.gov.uk" class="external">https://ncsc.gov.uk<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [UK government security guidance endorsing identity-first architecture for autonomous agents.]</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>Trust over IP Foundation. (2024). Trust over IP Architecture v2.0. ToIP Foundation. <a href="https://trustoverip.org" class="external">https://trustoverip.org<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Layered trust infrastructure specification with explicit agent principal support.]</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>Cloud Security Alliance. (2025). Agentic Identity and Access Management: Guidance for Securing AI Agent Interactions. CSA Research. [Enterprise IAM extension guidance using DID and VC for agent security.]</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Gupta, D. (2026). Decentralized Identity and Verifiable Credentials: Enterprise Playbook 2026. <a href="https://guptadeepak.com" class="external">https://guptadeepak.com<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Practitioner synthesis of enterprise DID/VC deployment patterns including agent identity.]</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Indicio. (2026). Why Verifiable Credentials Will Power Real-World AI in 2026. <a href="https://indicio.tech/blog/why-verifiable-credentials-will-power-ai-in-2026/" class="external">https://indicio.tech/blog/why-verifiable-credentials-will-power-ai-in-2026/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> [Industry analysis of VC adoption trajectory for agentic deployments.]</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>European Parliament. (2024). EU Artificial Intelligence Act. Official Journal of the EU. [Regulatory mandate for agent accountability, attribution, and audit logging in high-risk deployments.]</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-385" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/A2A-Protocol" class="internal">A2A Protocol</a></li><li><a href="../pages/Agent-Memory-Layers" class="internal">Agent Memory Layers</a></li><li><a href="../pages/Agent-Memory" class="internal">Agent Memory</a></li><li><a href="../pages/Agent-Runtime" class="internal">Agent Runtime</a></li><li><a href="../pages/Agentic-AI" class="internal">agentic ai</a></li><li><a href="../pages/DID-Document" class="internal">did document</a></li><li><a href="../pages/Harness-Configuration-Packs" class="internal">Harness Configuration Packs</a></li><li><a href="../pages/Inter-Agent-Communication" class="internal">Inter-Agent Communication</a></li><li><a href="../pages/Progressive-Disclosure-Harnesses" class="internal">Progressive Disclosure Harnesses</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

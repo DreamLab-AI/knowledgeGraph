@@ -1,0 +1,72 @@
+
+PayPal is a multinational financial technology company that operates one of the world's largest online payment platforms, enabling consumers and merchants to send, receive, and hold funds across more than 200 markets. Founded in 1998 and spun off from eBay in 2015, it provides digital wallets, payment processing infrastructure, buy-now-pay-later credit products, and cryptocurrency custody services. PayPal's two-sided network connects hundreds of millions of consumer accounts to tens of millions of merchant integrations, making it a foundational layer of global e-commerce payments. In 2023 the company launched PayPal USD (PYUSD), a regulated US dollar stablecoin issued on public blockchains, extending its reach into programmable money and digital asset settlement.
+
+- ### Overview
+  - PayPal was founded in 1998 (as Confinity, merging with X.com in 2000) and became an independent public company in 2015 when it was spun off from eBay.
+  - Its core proposition is a two-sided [[Payment Network]]: consumer accounts funded by bank accounts, debit cards, or credit cards on one side; merchant integrations via checkout buttons, APIs, and point-of-sale solutions on the other.
+  - The network effect — consumers choosing PayPal because merchants accept it, and vice versa — is the primary structural advantage underpinning the platform's durability.
+  - PayPal operates across consumer payments, merchant services, peer-to-peer transfers (via [[Venmo]]), credit products, and increasingly [[Digital Currency]] infrastructure.
+  - The platform processes hundreds of billions of dollars of [[Total Payment Volume]] annually, serving both developed and emerging markets with localised payment methods.
+
+- ### Key Components
+  - **PayPal Wallet** — a [[Digital Wallet]] allowing users to store balances, link external funding sources (bank accounts, [[Card Network]] cards), and transact without exposing card details to merchants.
+  - **PayPal Checkout** — a merchant integration product (formerly "Buy with PayPal") that provides one-click purchasing at partner [[E-Commerce]] sites, reducing cart abandonment.
+  - **Venmo** — a US social [[Peer-to-Peer Payment]] app owned by PayPal, popular among younger consumers for splitting costs and social money transfers.
+  - **PayPal Credit** — an embedded credit product enabling [[Buy Now Pay Later]] and instalment financing at the point of sale, underwritten by Synchrony Bank and later internal facilities.
+  - **Braintree** — a full-stack [[Payment Processing]] gateway acquired in 2013, serving large [[E-Commerce]] merchants with card processing, vaulting, and fraud tools.
+  - **PayPal USD (PYUSD)** — a regulated [[Stablecoin]] issued in partnership with Paxos on the Ethereum [[Blockchain]] (and later Solana), redeemable 1:1 for US dollars, backed by short-duration US Treasuries and cash equivalents.
+  - **Honey** — a browser extension acquired in 2020 for coupon discovery and price tracking, providing PayPal with consumer shopping-intent data to improve [[Merchant Services]] targeting.
+  - **Xoom** — an international [[Remittance]] and money transfer service acquired in 2015, enabling [[Cross-Border Payment]] to bank accounts and cash pickup in emerging markets.
+
+- ### Mechanisms
+  - **Payment Flow** — a payer's PayPal account balance or linked funding instrument is debited; PayPal settles to the merchant's PayPal balance or directly to a bank account, absorbing counterparty and chargeback risk.
+  - **Tokenisation** — PayPal uses [[Tokenisation]] to proxy card numbers, shielding both consumer card details and merchant systems from sensitive [[Payment Card Industry]] data, enabling [[PCI DSS]] compliance simplification for merchants.
+  - **Risk and Fraud Detection** — a proprietary [[Fraud Detection]] engine, augmented with [[Machine Learning]] models trained on transactional signals, scores every transaction in real time to detect anomalies, bot activity, and identity fraud.
+  - **Identity Verification** — [[Identity Verification]] and [[Anti-Money Laundering]] (AML) checks are embedded at account creation and during high-value transactions, satisfying [[Financial Regulation]] obligations across jurisdictions.
+  - **Currency Conversion** — PayPal performs real-time foreign exchange conversion, levying a spread on cross-currency transactions; this revenue stream is material for [[Cross-Border Payment]] volume.
+  - **Open Banking Integration** — via [[Open Banking]] APIs (especially in the EU under PSD2), PayPal connects directly to consumer bank accounts for account-to-account funding, reducing reliance on card rails and lowering interchange costs.
+
+- ### Applications and Use Cases
+  - **E-Commerce Checkout** — the dominant use case; PayPal's checkout button appears at millions of [[E-Commerce]] merchants globally, providing a trusted, frictionless alternative to card entry.
+  - **Peer-to-Peer Transfers** — consumers split restaurant bills, pay rent, or reimburse friends via PayPal or [[Venmo]] without exchanging bank details.
+  - **International Freelancer Payments** — platforms like Upwork and Fiverr route cross-border contractor payments through PayPal, making [[Remittance]] accessible to the gig economy.
+  - **Marketplace Payments** — PayPal provides escrow-like fund holding and seller-protection mechanics for marketplace operators, reducing [[Fraud Detection]] burden on platform businesses.
+  - **Cryptocurrency Trading and Custody** — PayPal allows US users to buy, sell, and hold major [[Digital Asset]] assets (Bitcoin, Ethereum, Litecoin, Bitcoin Cash) within its app, providing a regulated on-ramp for retail [[Digital Currency]] exposure.
+  - **PYUSD Settlement** — businesses and developers can settle transactions in [[Stablecoin]] PYUSD, enabling programmable payments, smart-contract escrows, and [[Decentralised Finance]] interoperability without exiting the PayPal ecosystem entirely.
+  - **Buy Now Pay Later** — [[Buy Now Pay Later]] instalment products at checkout increase average order values for merchants while extending credit access to consumers who avoid credit cards.
+  - **Small Business Lending** — PayPal Working Capital and PayPal Business Loan products offer merchant cash advances and loans underwritten using real-time transaction history, representing a data-driven alternative to traditional [[Banking Infrastructure]].
+
+- ### Standards and Regulatory Context
+  - **PCI DSS** — PayPal as a payment brand and processor operates under [[PCI DSS]] Level 1 compliance, setting the bar for secure cardholder data handling across its network.
+  - **PSD2 / Open Banking** — in Europe, PayPal operates as a licensed payment institution under PSD2, participates in [[Open Banking]] frameworks, and enables Strong Customer Authentication (SCA).
+  - **FinCEN / MSB Registration** — in the United States, PayPal is registered as a Money Services Business with the Financial Crimes Enforcement Network, imposing [[Anti-Money Laundering]] and KYC obligations.
+  - **PYUSD Regulatory Framework** — PayPal USD is issued by Paxos Trust Company under a New York State Department of Financial Services trust charter; the stablecoin is backed by short-duration US Treasuries and cash equivalents, audited monthly, meeting emerging [[Stablecoin]] regulatory expectations.
+  - **GDPR / CCPA** — as a global data processor handling financial and identity data, PayPal is subject to [[Financial Regulation]] and data-protection law across the EU, UK, California, and other jurisdictions.
+  - **Consumer Financial Protection** — in the US, PayPal's credit products are supervised by the Consumer Financial Protection Bureau (CFPB), particularly its [[Buy Now Pay Later]] offerings scrutinised post-2022 CFPB review.
+
+- ### Competitive Landscape
+  - PayPal contrastsWith [[Stripe]] in developer-focused payment processing; Stripe targets platform builders while PayPal targets end-user brand recognition.
+  - PayPal contrastsWith [[Square]] (now Block) in the small merchant segment, particularly at the physical point-of-sale.
+  - [[Apple Pay]] and Google Pay provide wallet and tap-to-pay capabilities embedded in device ecosystems, increasingly competing with PayPal's checkout button for consumer preference.
+  - [[Decentralised Finance]] protocols represent a structural long-term alternative to intermediated payment networks; PYUSD is PayPal's hedge into this space.
+  - Regional alternatives (Alipay, WeChat Pay, M-Pesa, UPI) dominate outside North America and Europe, limiting PayPal's total addressable market in high-growth emerging economies.
+
+- ### Current Landscape (2026)
+  - Under CEO Alex Chriss, PayPal reorganised in April 2026 into a three-business model — Checkout Solutions & PayPal, Consumer Financial Services & Venmo, and a new Payment Services & Crypto division that groups the PYUSD stablecoin with Braintree and merchant processing; full-year 2025 total payment volume reached USD 1.79 trillion (up 7%) across 439 million active accounts.
+  - The PYUSD stablecoin (issued by Paxos, distributed by PayPal) went global, expanding from a US/UK product to 70 markets on 17 March 2026; market cap peaked above USD 4 billion in Q1 2026 before easing to roughly USD 2.7 billion by early August, and PayPal advertises a variable ~4% rewards rate on balances held in the PayPal and Venmo apps.
+  - PayPal launched PayPal World on 23 July 2025 — a cloud-native cross-border interoperability platform whose founding partners (Mercado Pago, NPCI International/UPI, Tenpay Global, PayPal and Venmo) span nearly two billion users; it makes PayPal and Venmo interoperable for the first time and, from 2026, lets Venmo users pay at global PayPal-accepting merchants.
+  - PayPal is building for agentic commerce, backing Google's Agent Payments Protocol (AP2, announced 16 September 2025, 60+ collaborators including Mastercard, Coinbase and Adyen) alongside its open-source Agent Toolkit, and partnering with Google, OpenAI and Perplexity on agent-driven checkout.
+  - PYUSD deepened its multi-chain and DeFi footprint: native issuance on Polygon (9 July 2026) via the Open Money Stack, availability on Arbitrum and Stellar, a LayerZero cross-chain variant reaching a dozen-plus chains, plus payout integrations including YouTube creator payouts (January 2026) and Visa Direct via BVNK.
+  - Regulation crystallised with the US GENIUS Act, enacted July 2025, which created a federal stablecoin framework and designates PayPal a digital-asset service provider; Paxos converted to a national trust charter under OCC supervision in December 2025, and ongoing OCC rulemaking is a live risk to the PYUSD rewards programme.
+  - Open challenges as of 2026: sustaining branded-checkout and transaction-margin growth against Apple Pay, Shopify/Shop Pay and Stripe; the fact that under 1% of stablecoin volume is currently used for payments rather than trading; competing agentic-commerce standards (Stripe/OpenAI's ACP and Coinbase's x402 versus AP2); and converting PYUSD distribution into durable everyday-payment usage.
+
+- ### References
+  - 1. PayPal Holdings (2026). PayPal Brings PayPal USD to Users Across 70 Markets. https://investor.pypl.com/news-and-events/news-details/2026/PAYPAL-BRINGS-PAYPAL-USD-TO-USERS-ACROSS-70-MARKETS/default.aspx
+  - 2. PayPal (2025). Introducing PayPal World: a global platform connecting the world's largest payment systems and digital wallets. https://about.pypl.com/news-details/2025/Introducing-PayPal-World-a-global-platform-connecting-the-worlds-largest-payment-systems-and-digital-wallets-starting-with-interoperability-to-PayPal-and-Venmo/default.aspx
+  - 3. Cryptonomist (2026). PayPal PYUSD Expansion Advances with New Crypto Division. https://en.cryptonomist.ch/2026/08/03/paypal-pyusd-expansion/
+  - 4. PayPal Developer (2025). Agent Payments Protocol: Building Verifiable Trust for Agentic Commerce. https://developer.paypal.com/community/blog/PayPal-Agent-Payments-Protocol/
+  - 5. PayPal Holdings / SEC (2025). PYPL Q3 2025 Earnings Release. https://www.sec.gov/Archives/edgar/data/1633917/000163391725000194/pypl3q-25earningsrelease.htm
+  - 6. StockTitan (2026). PayPal (NASDAQ: PYPL) 10-K details 2025 growth, TPV, GENIUS Act and risks. https://www.stocktitan.net/sec-filings/PYPL/10-k-pay-pal-holdings-inc-files-annual-report-0d7a9cc1b582.html
+
+- ### Provenance
+

@@ -1,0 +1,75 @@
+
+Frontier AI denotes the most capable and computationally intensive artificial intelligence systems at the leading edge of current technical progress, typically characterised by unprecedentedly large training compute budgets, novel emergent capabilities, and performance that approaches or exceeds human expert level across diverse cognitive tasks. These systems, predominantly large language models and multimodal foundation models, exhibit qualitatively new behaviours not present in smaller predecessors, including in-context learning, chain-of-thought reasoning, and cross-domain generalisation. Their development is concentrated among a small number of resource-rich organisations, raising distinct safety, governance, and geopolitical considerations absent from earlier AI generations. Regulatory frameworks such as the EU AI Act and the UK AI Safety Institute use compute-threshold criteria to demarcate frontier systems from other AI, typically above 10^26 training FLOPs for general-purpose AI.
+
+- ### Overview
+  - The term "frontier AI" entered mainstream policy discourse around 2022–2023, used by the UK AI Safety Institute, the EU AI Office, and the US NIST to demarcate systems whose training compute and emergent capability place them in a qualitatively distinct tier from conventional machine learning models.
+  - Regulatory definitions typically rely on compute thresholds (commonly 10^26 training FLOPs for [[General-Purpose AI]] under the EU AI Act) as a tractable proxy for capability, acknowledging that architecture efficiency and data quality also matter.
+  - The dominant architectural basis for current frontier systems is the [[Transformers]] architecture, scaled to hundreds of billions or trillions of parameters, with post-training procedures including [[Reinforcement Learning from Human Feedback]] and direct preference optimisation to align outputs with human intent.
+  - Frontier AI systems differ from [[Narrow AI]] in exhibiting broad generalisation across tasks without task-specific training, and differ from hypothetical [[Artificial General Intelligence]] in remaining bounded in important ways, including susceptibility to distributional shift and lack of robust embodied agency.
+  - The competitive landscape as of 2025–2026 includes Anthropic, Google DeepMind, Meta AI, Microsoft/OpenAI, Mistral, and xAI as principal developers, with substantial state-backed programs in China and the EU.
+
+- ### Key Components
+  - **Scale and compute** — frontier systems require [[High-Performance Computing]] infrastructure at a scale that limits participation to a small number of organisations; training runs for leading models consume thousands of GPU/TPU-months.
+  - **[[Transformers]] architecture** — virtually all current frontier systems are built on transformer-based architectures, with variations in attention mechanisms, context length, and mixture-of-experts routing.
+  - **[[Reinforcement Learning from Human Feedback]]** — post-pretraining alignment procedures use human preference data to steer model outputs toward helpfulness and safety.
+  - **[[Emergent Capabilities]]** — abilities that appear discontinuously at scale and were not explicitly trained for, including multi-step reasoning, code synthesis, and theory-of-mind-adjacent behaviours.
+  - **[[Large-Scale Data Infrastructure]]** — pretraining on internet-scale corpora (trillions of tokens) is a defining characteristic; data curation and deduplication are critical quality levers.
+  - **[[Multimodal AI]]** — leading frontier systems integrate text, image, audio, and video modalities, with frontier multimodal capability advancing rapidly since 2023.
+  - **[[Agentic AI Systems]]** — frontier models are increasingly deployed as autonomous agents using tool use, planning loops, and multi-agent orchestration to complete extended tasks.
+  - **[[Scaling Laws]]** — empirical relationships between compute, data, parameters, and performance that guide investment decisions and capability forecasting.
+
+- ### Mechanisms and Capabilities
+  - **In-context learning** — frontier models adapt to new tasks given only natural-language examples in the prompt, without gradient updates, a capability that scales strongly with model size.
+  - **Chain-of-thought reasoning** — models can be prompted to produce intermediate reasoning steps, substantially improving accuracy on complex mathematical and logical tasks.
+  - **Instruction following** — fine-tuned frontier models follow nuanced natural-language instructions with high fidelity, enabling broad deployment via API without task-specific engineering.
+  - **[[Mechanistic Interpretability]]** — a research program to reverse-engineer the internal circuits responsible for specific frontier model behaviours; currently covers simple circuits in smaller models but scales to frontier systems with growing investment.
+  - **[[Scalable Oversight]]** — the challenge of supervising systems that may exceed human expertise in specific domains; methods include debate, weak-to-strong generalisation, and AI-assisted evaluation.
+  - **[[Red Teaming]]** — systematic adversarial probing of frontier models before deployment to elicit dangerous or policy-violating outputs; increasingly standardised through frameworks from the [[Frontier Model Forum]] and national safety institutes.
+  - **[[Model Evaluation Results]]** — benchmarks such as MMLU, GPQA, and MATH track capability trajectories; capability elicitation for dangerous tasks uses separate structured evaluation protocols.
+
+- ### Applications and Use Cases
+  - **Scientific research acceleration** — frontier models assist in protein structure prediction, materials discovery, drug design, and mathematical theorem proving, as in [[AI-Enabled Scientific Discovery]].
+  - **Software engineering** — code generation, debugging, and repository-level reasoning; frontier models increasingly operate as autonomous coding agents within IDE and CI/CD pipelines.
+  - **[[Generative AI]] products** — consumer and enterprise applications including text generation, image synthesis, video generation, and conversational assistants are primarily powered by frontier or near-frontier models.
+  - **Professional services augmentation** — legal document analysis, medical literature review, and financial modelling are early enterprise deployment domains.
+  - **[[Agentic AI Systems]]** — extended task automation where frontier models use tools, browse the web, write and execute code, and coordinate with other agents to complete multi-step goals.
+  - **Education and tutoring** — frontier models as personalised learning assistants, with demonstrated improvements in student outcomes in controlled trials.
+  - **National security and intelligence** — frontier AI capabilities are assessed for cyber operations, open-source intelligence, and adversarial simulation; a primary driver of national strategic interest.
+
+- ### Safety and Governance Context
+  - **[[AI Safety]] considerations** — frontier systems are the primary concern of technical AI safety research because their emergent capabilities and opacity make pre-deployment risk assessment difficult; central research areas include robustness, deceptive alignment, and capability control.
+  - **[[AI Governance]] frameworks** — the Bletchley Declaration (2023), the Seoul AI Safety Summit commitments (2024), the [[EU AI Act]] general-purpose AI provisions, and US Executive Orders on AI all specifically address frontier AI systems.
+  - **[[Frontier Model Forum]]** — established in 2023 by Anthropic, Google, Microsoft, and OpenAI to coordinate safety research, information sharing, and voluntary safety commitments at the frontier.
+  - **[[Compute Governance]]** — export controls on advanced semiconductors (particularly NVIDIA H100/H200-class GPUs), cloud compute restrictions, and know-your-customer requirements for large-scale AI compute are the primary tools states use to influence frontier AI development geography.
+  - **Capability thresholds and triggers** — a contested but operationally important policy concept: defining compute or capability thresholds above which additional safety requirements are triggered, as in the EU AI Act's 10^25 FLOP threshold for systemic-risk models.
+  - **Race dynamics** — competitive pressure between major labs and between national programs creates tension between safety timelines and deployment schedules; a central concern of [[AI Alignment]] researchers is that race dynamics may compress alignment work to inadequate timescales.
+  - **[[Existential Risk]]** — a minority but influential strand of safety research argues that sufficiently capable misaligned frontier systems could pose catastrophic or existential risks; this argument motivates both technical alignment research and governance urgency.
+
+- ### Standards and Specifications
+  - EU AI Act (2024) — General-Purpose AI provisions apply to models trained above 10^25 FLOPs; systemic-risk designation above 10^25 FLOPs triggers enhanced obligations including red-teaming, incident reporting, and information sharing.
+  - NIST AI Risk Management Framework — provides voluntary risk management guidance applicable to frontier systems, with profiles under development for high-capability AI.
+  - Frontier Model Forum Safety Framework — voluntary commitments on pre-deployment evaluation, red-teaming, and information sharing among member labs.
+  - UK AI Safety Institute evaluations — the AISI conducts structured pre-deployment evaluations of frontier models, with focus on CBRN uplift, cyberoffense, and autonomous replication capabilities.
+  - Seoul AI Safety Summit commitments (2024) — international agreement on safety testing and transparency for frontier AI developers.
+  - International AI Safety Report (2025) — produced by an international scientific panel convened at the Bletchley Summit; provides the first internationally agreed technical assessment of frontier AI risks.
+
+- ### Current Landscape (2026)
+  - Regulation moved from voluntary to enforceable: the EU AI Act's obligations for general-purpose AI models became applicable on 2 August 2025, and the Commission's enforcement powers over GPAI models with systemic risk (those trained above 10^25 FLOPs) apply from 2 August 2026.
+  - The EU published its General-Purpose AI Code of Practice on 10 July 2025 (Transparency, Copyright, and Safety & Security chapters, the last chaired by Yoshua Bengio, Marietje Schaake and Matthias Samwald); signatories including OpenAI, Anthropic and Google gain a presumption of conformity, while Meta declined and xAI signed only the Safety and Security chapter.
+  - Frontier safety frameworks became a statutory filing rather than a voluntary gesture: California's SB 53 took effect on 1 January 2026 requiring large frontier developers to publish and annually review a frontier AI framework, with New York's RAISE Act following on 1 January 2027.
+  - Each major lab now differentiates on a named safety framework layered over raw capability: Anthropic's Responsible Scaling Policy and ASL tiers (Opus 4.5 deployed under ASL-3), OpenAI's Preparedness and Frontier Governance Frameworks, and Google DeepMind's Frontier Safety Framework.
+  - Capability leadership stayed tightly contested through late 2025 and into 2026, with Google's Gemini 3 Pro and Anthropic's Claude Opus 4.5 (released within a week of each other in November 2025) trading the top of general-capability benchmarks, though safety scores varied widely between them.
+  - Open-weight models closed much of the capability gap while widening the safety gap: SaferAI reported in August 2026 that Z.ai's open-weight GLM-5.2 trailed leading closed models on cyber and bio capability by only a few months yet refused none of the offensive tasks it was set, whereas Claude Opus refused so consistently that some cyber benchmarks could not be completed.
+  - External evaluation matured into an ecosystem: bodies such as METR, the UK AI Safety Institute and US CAISI now run pre-deployment assessments, with METR's 2026 frontier risk reporting finding that agents as of early 2026 still lacked the capability to sustain a hidden rogue deployment against active investigation, while warning that margin could erode quickly.
+  - Open challenges as of 2026 centre on robustness rather than raw refusal: red-team and universal-jailbreak research (Far.ai) continues to collapse safety scores under attack, agentic misalignment, honesty and shutdown-resistance metrics show little improvement, and benchmark contamination (e.g. SWE-bench) is eroding trust in headline capability numbers.
+
+- ### References
+  - 1. European Commission (2026). Regulatory framework on AI (AI Act) — GPAI obligations and timelines. https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai
+  - 2. Center for Security and Emerging Technology, Georgetown (2025). AI Safety under the EU AI Code of Practice — A New Global Standard? https://cset.georgetown.edu/article/eu-ai-code-safety/
+  - 3. AI Frontiers (2025). How the EU's Code of Practice Advances AI Safety. https://ai-frontiers.org/articles/how-the-eus-code-of-practice-advances-ai-safety
+  - 4. Vorpal Labs (2026). Frontier AI safety framework tracker. https://vorplabs.com/ai-regulatory-updates/frontier-ai-frameworks
+  - 5. METR (2026). Frontier Risk Report (February to March 2026). https://metr.org/blog/2026-05-19-frontier-risk-report/
+  - 6. TechCrunch (2026). Open-weight AI models are catching up to the frontier. The safety gap remains. https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/
+
+- ### Provenance
+

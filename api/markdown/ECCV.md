@@ -1,0 +1,14 @@
+
+ECCV, the European Conference on Computer Vision, is a biennial premier venue for research in computer vision and pattern recognition, held in alternating years with ICCV to provide the community with annual high-quality publication opportunities. Founded in 1990, it attracts thousands of submissions covering topics from low-level image processing and 3D reconstruction to high-level scene understanding and video analysis. ECCV proceedings published through Springer LNCS constitute one of the most-cited bodies of literature in artificial intelligence. Acceptance at ECCV carries high prestige, signalling rigorous peer review and methodological significance.
+
+- ### Content
+  - ECCV was established in 1990 in Antibes, France, with the explicit goal of creating a European counterpart to the American CVPR and the international ICCV. The conference rotates between European cities—Munich, Amsterdam, Glasgow, Tel Aviv, and others—with each edition reflecting the geography of its host institution's organising committee. The biennial cadence was designed to interleave with ICCV, ensuring the community has a top-tier venue every year.
+
+  - Research topics at ECCV span the full spectrum of visual computing: image and video recognition, low-level processing and restoration, 3D scene reconstruction and novel view synthesis, medical image analysis, autonomous driving perception, generative visual models, and multimodal vision-language systems. In recent years transformer-based architectures have dominated proceedings, displacing convolution-centric papers that characterised the prior decade.
+
+  - The conference benchmarking ecosystem is central to ECCV's influence. Challenge workshops co-located with the main conference—covering tasks such as object detection in the wild, person re-identification, and visual question answering—release new datasets and evaluation protocols that the community adopts as standard references. Results from these challenges are often the first public demonstrations of methods that later become industry standards.
+
+  - Acceptance rates at ECCV typically range from 25–30%, enforced through double-blind review. The proceedings are published as volumes of Springer's Lecture Notes in Computer Science, making them widely accessible and highly indexed. Citation patterns show that landmark ECCV papers—including foundational work on deformable convolutional networks and feature pyramid networks—continue to accumulate thousands of citations years after publication.
+
+  - ECCV's European identity has shaped certain editorial priorities, with a stronger historical representation of work on autonomous vehicles, medical imaging, and cultural heritage applications that reflect European research funding patterns through programmes such as Horizon Europe and ERC grants.
+

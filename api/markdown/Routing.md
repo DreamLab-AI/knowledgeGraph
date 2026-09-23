@@ -1,0 +1,3 @@
+
+Routing is the process of selecting paths in a network along which data packets or messages are forwarded from source to destination. Routing algorithms and protocols such as BGP, OSPF, and segment routing determine optimal or policy-compliant paths based on metrics including latency, bandwidth, and cost. It is a foundational function of IP networks, software-defined networking, and overlay networks.
+

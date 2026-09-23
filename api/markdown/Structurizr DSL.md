@@ -1,0 +1,12 @@
+
+The Structurizr DSL is a text-based domain-specific language for defining software architecture models conforming to Simon Brown's C4 Model, enabling teams to describe system context, containers, components, and code-level elements as code that can be version-controlled and rendered into multiple diagram formats. It is the primary input format for the Structurizr toolchain, which produces interactive, filterable architecture diagrams from a single workspace definition.
+
+- ### Content
+  - Simon Brown created the C4 Model around 2006–2008 as a pragmatic notation for communicating software architecture at different levels of detail, and the Structurizr tooling — initially a SaaS application — was developed to support it. The Structurizr DSL was introduced as an open-source alternative to the graphical workspace editor, enabling teams to define architecture models entirely in text files, which could be committed to version control alongside source code.
+
+  - The DSL syntax uses a hierarchical block structure: a `workspace` block contains a `model` block defining elements and relationships, and a `views` block specifying diagram renderings. Elements are declared with `softwareSystem`, `container`, `component`, and `person` keywords. Relationships use arrow-like syntax with optional technology and description annotations. The `!include` directive enables model decomposition across files, and `!extend` allows workspace inheritance for large organisations.
+
+  - The Structurizr CLI, available as a Docker image or standalone JAR, can render DSL files to static diagrams (PNG, SVG), push models to the Structurizr SaaS platform or on-premises installation, and validate workspace integrity. Integration with GitHub Actions, GitLab CI, and Jenkins enables automated diagram generation on commit. The Structurizr for .NET, Java, and TypeScript libraries provide programmatic workspace construction as alternatives to the DSL.
+
+  - By 2024–2025, the Structurizr DSL has gained significant traction in enterprises seeking to treat architecture documentation with the same rigour as infrastructure-as-code. AI-assisted tooling (GitHub Copilot, LLM agents) can generate DSL stubs from natural-language system descriptions, accelerating architecture documentation. The format is increasingly referenced in architecture decision records and onboarding materials, positioning it as an emerging standard for software architecture communication in modern engineering organisations.
+

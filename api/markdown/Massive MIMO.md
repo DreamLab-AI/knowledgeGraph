@@ -1,0 +1,3 @@
+
+Massive MIMO (multiple-input multiple-output) is a wireless communication technique that equips a base station with a very large number of antenna elements, typically tens to hundreds, to serve many users simultaneously on the same time-frequency resource. It exploits spatial multiplexing and beamforming to increase spectral efficiency and link reliability without additional bandwidth. Massive MIMO is a core physical-layer technology of 5G networks, enabling higher capacity and energy efficiency per served user.
+

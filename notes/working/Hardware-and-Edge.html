@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Hardware and Edge</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Hardware and Edge"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Hardware and Edge"/><meta name="twitter:description" content="Wearables Orion Zero to One: How Our Custom Silicon &amp; Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store Meta Ray Bans The Meta Ray-Ban smart glasses, developed in partnership with EssilorLuxottica, offer a range of advanced features in a stylish form factor."/><meta property="og:description" content="Wearables Orion Zero to One: How Our Custom Silicon &amp; Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store Meta Ray Bans The Meta Ray-Ban smart glasses, developed in partnership with EssilorLuxottica, offer a range of advanced features in a stylish form factor."/><meta property="og:image:alt" content="Wearables Orion Zero to One: How Our Custom Silicon &amp; Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store Meta Ray Bans The Meta Ray-Ban smart glasses, developed in partnership with EssilorLuxottica, offer a range of advanced features in a stylish form factor."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/working/Hardware-and-Edge"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/working/Hardware-and-Edge"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Wearables Orion Zero to One: How Our Custom Silicon &amp; Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store Meta Ray Bans The Meta Ray-Ban smart glasses, developed in partnership with EssilorLuxottica, offer a range of advanced features in a stylish form factor."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="working/Hardware-and-Edge"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-8682"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-8682" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../working/">working</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Hardware and Edge</a></div></nav><h1 class="article-title">Hardware and Edge</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.958Z">23 Sept 2026</time><span>19 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Note</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:58.55607396Z</span></span></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><ul>
+<li>
+<h1 id="wearables">Wearables<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#wearables" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<h3 id="orion">Orion<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#orion" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="https://www.meta.com/en-gb/blog/orion-custom-silicon-chips-ip-blocks-accelerators-ar-algorithms-energy-efficiency-reality-labs/" class="external">Zero to One: How Our Custom Silicon &amp; Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>
+<h3 id="meta-ray-bans">Meta Ray Bans<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#meta-ray-bans" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><video controls src="../assets/rbm-plp-hero-d-data_1718993826789_0.mp4"></video></li>
+<li>The Meta Ray-Ban smart glasses, developed in partnership with EssilorLuxottica, offer a range of advanced features in a <a href="https://about.fb.com/news/2023/09/new-ray-ban-meta-smart-glasses/" class="external">stylish form factor<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. Here’s a technical overview:</li>
+<li>
+<h4 id="hardware">Hardware<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hardware" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Camera: 12 MP ultra-wide camera for photos and 1080p video recording</li>
+<li>Processor: Qualcomm Snapdragon AR1 Gen1 Platform</li>
+<li>Audio: Custom-designed speakers with improved bass and directional audio</li>
+<li>Microphones: Five-microphone array for immersive audio recording</li>
+<li>Battery: Redesigned charging case with up to 36 hours of total use</li>
+</ul>
+</li>
+<li>
+<h4 id="key-features">Key Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-features" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Hands-free photo and video capture</li>
+<li>Live streaming to Facebook and Instagram</li>
+<li>Voice commands for various functions</li>
+<li>Open-ear audio for music and calls</li>
+<li>Water-resistant (IPX4 rating)</li>
+<li>Integration with Meta AI assistant</li>
+</ul>
+</li>
+<li>
+<h4 id="design">Design<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#design" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Available in Wayfarer and new Headliner styles</li>
+<li>Multiple color options, including transparent frames</li>
+<li>Prescription-lens compatible</li>
+<li>Reduced weight and slimmer profile for improved comfort</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>The Meta Ray-Ban smart glasses have been well-received, with reports indicating that around 1 million units have been shipped since their launch. To be clear, this modality of vision AR and AI is the future of <strong>all</strong> of this stuff. VR is still very poorly adopted and unloved, given the investment.</li>
+<li>To reach this Meta is developing full AR glasses codenamed Orion, <a href="https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans" class="external">slated for release in 2027<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.</li>
+<li>
+<h3 id="rabbit"><a href="https://www.rabbit.tech/" class="external">Rabbit<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rabbit" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Features:</strong>
+<ul>
+<li>Designed by Teenage Engineering Co</li>
+<li>Agentic (connect it to your data and it does stuff)
+<ul>
+<li>Needs to be connected to a lot of different user data sources</li>
+</ul>
+</li>
+<li>I’m sceptical, but it’s a nice effort.</li>
+<li>It’s <strong>cheap</strong>, I would totally give this to a kid over a mobile phone. £200 all in?!?</li>
+<li>It sold out immediately.</li>
+<li>{{tweet <a href="https://twitter.com/rabbit_hmi/status/1744781083831574824%7D%7D" class="external">https://twitter.com/rabbit_hmi/status/1744781083831574824}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="neural-interfaces">Neural Interfaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#neural-interfaces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<h2 id="emg-wristbands">EMG Wristbands<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#emg-wristbands" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Meta’s EMG wristbands use electromyography to interpret electrical signals from the brain that control hand movements<a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>. This technology allows for seamless and precise interactions with digital objects in virtual and augmented reality environments without the need for external cameras or sensors<a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.The wristbands contain embedded sensors that capture subtle electrical signals transmitted from the brain to the hands. These signals are then translated into precise commands, enabling real-time interaction with virtual environments<a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">Meta are Enhancing VR Experiences with Neural Wristbands<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<h3 id="key-features-and-benefits">Key Features and Benefits<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-features-and-benefits" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Precision and Intuitiveness</strong>: The EMG technology can detect even the tiniest muscle movements, allowing for fluid and responsive interactions in VR and AR<a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>Non-Invasive</strong>: The wristbands offer a non-invasive way to capture neural signals, making the technology more accessible and user-friendly<a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>Versatility</strong>: The wristbands can be used for various applications, from simple object recognition to fully immersive environments<a href="https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands" class="external">1<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><strong>Adaptive Learning</strong>: The neural interface continuously improves its understanding of each user’s unique movements over time, enhancing the overall experience5</li>
+<li>At present, the EMG wristbands can provide basic input commands, such as:
+<ul>
+<li>Finger taps (index and middle finger</li>
+<li>D-pad-like gestures</li>
+<li>Simple hand movements<a href="https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/" class="external">2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>While these inputs are currently limited, Meta’s CTO Andrew Bosworth suggests that the technology could evolve to become an increasingly universal interface over time<a href="https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/" class="external">2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="smart-rings---sticky-sensor-tech">Smart Rings - sticky sensor tech<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#smart-rings---sticky-sensor-tech" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="https://www.theverge.com/2024/10/1/24259284/oura-ring-samsung-galaxy-ring-ultrahuman-ring-air-ringconn-circular-ring-evie-ring-review-wearables" class="external">We tested six smart rings, and there’s a clear winner - The Verge<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li></li>
+<li>
+<h3 id="oura-smart-ring">Oura Smart Ring<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#oura-smart-ring" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Description</strong>: A ring that tracks overall health, focusing on sleep quality, activity levels, and readiness. Finland, not new, fairly mature.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Sleep tracking with detailed stages</li>
+<li>Body temperature sensor</li>
+<li>Heart rate and HRV tracking</li>
+<li>7-day battery life</li>
+<li>Waterproof and sleek design</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Employs AI to analyze data and provide personalized health insights and recommendations.</li>
+</ul>
+</li>
+<li>
+<h3 id="amazfit-smart-ring">Amazfit Smart Ring<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#amazfit-smart-ring" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>{{tweet <a href="https://twitter.com/AmazfitGlobal/status/1745524225589547012%7D%7D" class="external">https://twitter.com/AmazfitGlobal/status/1745524225589547012}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>
+<h3 id="rewind-pendant">Rewind Pendant<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rewind-pendant" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Description</strong>: A wearable device designed to aid memory by passively capturing audio throughout the day.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Auto-records ambient sound</li>
+<li>Privacy-focused with user-controlled storage</li>
+<li>Lightweight and can be worn as a necklace</li>
+<li>Integrates with an app for audio playback</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Uses AI to intelligently capture and categorize important sound bites.</li>
+</ul>
+</li>
+<li>
+<h3 id="humane-ai-pin">Humane Ai Pin<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#humane-ai-pin" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><a href="https://twitter.com/jaredostdiek/status/1768674773389713645" class="external">twitter link to the render loading below<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+{{twitter <a href="https://twitter.com/jaredostdiek/status/1768674773389713645%7D%7D" class="external">https://twitter.com/jaredostdiek/status/1768674773389713645}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><strong>Description</strong>: A wearable device focused on interaction and connectivity, emphasizing humane and natural tech usage.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Connects with various apps and services</li>
+<li>Aims for minimal and non-intrusive notifications</li>
+<li>Includes a camera and interactive display</li>
+<li>Designed to promote ethical AI and user-friendly interfaces</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Integrates AI for intuitive interactions and ambient computing.</li>
+<li>This attempt at a wearable has been roundly panned by early adopters and reviewers.
+<ul>
+<li>{{video <a href="https://www.youtube.com/watch?v=TitZV6k8zfA%7D%7D" class="external">https://www.youtube.com/watch?v=TitZV6k8zfA}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="apollo-neuro">Apollo Neuro<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#apollo-neuro" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Description</strong>: A wearable wellness device that uses touch therapy to help the body adapt to stress.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Delivers gentle vibrations to improve stress resilience</li>
+<li>Modes for sleep, focus, relaxation, and more</li>
+<li>Wearable on the wrist or ankle</li>
+<li>App-controlled</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Utilizes AI to personalize and adapt therapy based on user feedback and usage patterns.</li>
+</ul>
+</li>
+<li>
+<h3 id="pavlok-3">Pavlok 3<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#pavlok-3" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Description</strong>: A behavior modification wearable that uses mild electric shock to help break bad habits. (weird)</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Delivers a mild shock to discourage bad habits</li>
+<li>Tracks sleep, steps, and hand motions</li>
+<li>Programmable via an app</li>
+<li>Community challenges and support</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Utilizes AI to learn patterns and optimize intervention timing.</li>
+</ul>
+</li>
+<li>
+<h3 id="yopi">Yopi<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#yopi" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Description</strong>: A voice-based wellness coach focused on improving breathing and reducing stress.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Monitors breathing patterns</li>
+<li>Provides real-time feedback and coaching</li>
+<li>Portable and pairs with smartphones</li>
+<li>Focus on breathing exercises and meditation</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Uses AI to customize breathing exercises and track progress.</li>
+</ul>
+</li>
+<li>
+<h3 id="chatgpt-and-whatever-siri-becomes-is-coming-to-watches">ChatGPT (and whatever Siri becomes) is coming to watches<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#chatgpt-and-whatever-siri-becomes-is-coming-to-watches" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Description</strong>: A concept of smartwatches integrated with AI for interactive and adaptive communication.</li>
+<li><strong>Features</strong>:
+<ul>
+<li>Voice and text-based interaction with AI</li>
+<li>Integration with various apps and services</li>
+<li>Notifications, reminders, and AI-driven suggestions</li>
+<li>Continuous updates and learning capabilities</li>
+</ul>
+</li>
+<li><strong>AI Aspect</strong>: Incorporates a conversational AI model for real-time communication and assistance.</li>
+<li><a href="https://mymanu.com/" class="external">Translation earbuds |Translator | language translation device – Mymanu®<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> -</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="open-source">Open Source<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#open-source" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="https://github.com/adamcohenhillel/ADeus?tab=readme-ov-file#setup-hardware---coral-ai-device" class="external">ADeus<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><strong>Description</strong>: An open source AI wearable device that captures what you say and hear in the real world and then transcribes and stores it on your own server. You can then chat with Adeus using the app, and it will have all the right context about what you want to talk about</li>
+<li>a truly personalized, personal AI.</li>
+</ul>
+</li>
+<li><a href="https://github.com/OwlAIProject/Owl" class="external">OwlAIProject/Owl: A personal wearable AI that runs locally (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><strong>Owl</strong> is an experiment in human-computer interaction using wearable devices to observe our lives and extract information and insights from them using AI. Presently, only audio and location are captured, but we plan to incorporate vision and other modalities as well. The objectives of the project are, broadly speaking:</li>
+</ul>
+</li>
+<li><a href="https://www.reddit.com/r/LocalLLaMA/comments/1b9hwwt/hey_ollama_home_assistant_ollama/" class="external">Hey Ollama<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>For HA<span>←</span>>Ollama: <a href="https://github.com/jekalmin/extended_openai_conversation" class="external">https://github.com/jekalmin/extended_openai_conversation<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Hardware: <a href="https://www.espressif.com/en/news/ESP32-S3-BOX-3" class="external">https://www.espressif.com/en/news/ESP32-S3-BOX-3<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/ollama/ollama/blob/main/docs/openai.md" class="external">https://github.com/ollama/ollama/blob/main/docs/openai.md<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/kahrendt/microWakeWord/issues/2" class="external">https://github.com/kahrendt/microWakeWord/issues/2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/jaymunro/esphome_firmware/blob/main/wake-word-voice-assistant/esp32-s3-box-3.yaml" class="external">https://github.com/jaymunro/esphome_firmware/blob/main/wake-word-voice-assistant/esp32-s3-box-3.yaml<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Actually you can do full two way conversations! Here’s a PR someone has in progress to officially add it to esphome - <a href="https://github.com/esphome/firmware/pull/173" class="external">https://github.com/esphome/firmware/pull/173<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li><a href="https://www.crowdsupply.com/useful-sensors/ai-in-a-box" class="external">AI in a Box (crowdsupply.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><code>Your very own private AI that you can ask questions and get answers, all in a tiny box! The first AI that you can talk to, and that talks back, **running locally with no internet connection** so your conversations and data are completely secure. No account, setup, or subscription are needed, just plug in the box and start chatting. Need closed captions for a live event, or just to help in situations where you have trouble hearing a conversation? We’re using the latest in AI technology to display subtitles based on the audio input, which are output on the built-in display and through an HDMI connector for external monitors or screens.</code></li>
+<li><a href="https://github.com/usefulsensors/useful-transformers" class="external">usefulsensors/useful-transformers: Efficient Inference of Transformer models (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><img src="https://www.crowdsupply.com/img/6605/75c87a10-e0cc-4acf-9f3b-6c498c986605/useful-sensors-ai-box-ready_jpg_md-xl.jpg" alt/> -</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="phones">Phones<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#phones" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<h2 id="samsung-galaxy-s24-series-local-ai-inferencing-features">Samsung Galaxy S24 Series Local AI Inferencing Features<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#samsung-galaxy-s24-series-local-ai-inferencing-features" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Live Translate for real-time voice and text translations directly within the phone app, functioning without the need for an internet connection.</li>
+<li>Chat Assist in Samsung Keyboard for real-time translation in 13 languages, enabling on-device translation for messages.</li>
+<li>Android Auto’s capability to summarize messages and suggest relevant replies, powered by on-device AI, for safer driving experiences.</li>
+<li>Note Assist for generating AI-powered summaries of notes taken within Samsung Notes, improving organization and retrieval of information.</li>
+<li>Transcript Assist uses on-device AI for transcribing and summarizing voice recordings, identifying different speakers and translating content.</li>
+<li>Edit Suggestion feature that uses on-device AI to suggest photo edits, enhancing the photography experience without the need for server processing.</li>
+<li>Generative Edit for intelligently filling in parts of an image background, providing users with AI-powered content creation tools.</li>
+</ul>
+</li>
+<li>
+<h2 id="google-sub-second-inferencing-on-a-phone">Google sub second inferencing on a phone.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#google-sub-second-inferencing-on-a-phone" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>[Paper page</li>
+<li>MobileDiffusion: Subsecond Text-to-Image Generation on Mobile Devices (huggingface.co)](<a href="https://huggingface.co/papers/2311.16567" class="external">https://huggingface.co/papers/2311.16567<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li></li>
+<li>
+<h1 id="training-and-inferencing-hardware">Training and inferencing hardware<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#training-and-inferencing-hardware" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>Chips and <a href="../Hardware-and-Edge" class="internal alias" data-slug="Hardware-and-Edge">Hardware and Edge</a> technologies are rapidly advancing to support the growing demands of artificial intelligence applications.
+<ul>
+<li>For more insights on this topic, visit <a href="http://etched.com" class="external">Etched<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li><a href="https://www.ft.com/content/dbc0984b-4801-4aeb-bcab-480704c34161" class="external">Cristiano Amon: generative AI is ‘evolving very, very fast’ into mobile devices (FT.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> highlights the necessity for dedicated computing resources in mobile devices.
+<ul>
+<li>As Amon explains, while tasks can be executed on a CPU or GPU, these processors are often preoccupied with other functions. This multitasking can hinder performance when running complex AI algorithms.</li>
+<li>To address this challenge, there is a push towards implementing dedicated accelerated computing solutions. This includes the integration of Neural Processing Units (NPUs), which are specifically designed to handle AI workloads efficiently.</li>
+<li>NPUs enable faster processing speeds and lower power consumption compared to traditional CPUs and GPUs, making them ideal for real-time applications such as image recognition, natural language processing, and augmented reality experiences.</li>
+<li>The evolution of these technologies signifies a pivotal shift in how we approach AI deployment across various platforms, particularly in mobile environments where resource constraints are prevalent.</li>
+</ul>
+</li>
+<li>You’re going to see devices launch in early 2024 with a number of <a href="../Proprietary-Large-Language-Models" class="internal alias" data-slug="Proprietary-Large-Language-Models">Proprietary Large Language Models</a> use cases. It has the potential to create a new upgrade cycle on smartphones. And what we want is that eventually you’re going to say, you know, “I’ve been keeping my phone for the past four years … Now I need to buy a new phone because I really want this gen AI capability</li>
+<li>VR and AI
+<ul>
+<li>We are seeing gen AI coming into VR. We see an incredible potential for augmented reality and mixed reality glasses, especially as you use audio and large language models as an interface. We have been very bullish about spatial computing being the new computing platform, and we see a lot of promising developments coming: we see what Meta is doing, we see what is happening on the Android ecosystem with Google and Samsung. We are just at the beginning.</li>
+<li>Bloomberg reports Sam Altman is in talks to raise money for a ‘global’ network of fabricators building hardware for AI. Sam Altman’s plan to establish a global network of AI chip factories could revolutionize the tech industry, reducing dependence on existing semiconductor giants and ensuring a steady supply of AI advancements.</li>
+<li><a href="https://wow.groq.com/lpu-inference-engine/" class="external">The Groq LPU™ Inference Engine - Groq<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Asic</li>
+<li><a href="https://blogs.nvidia.com/blog/chat-with-rtx-available-now/" class="external">Chat with RTX Now Free to Download | NVIDIA Blog<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li><a href="https://www.amd.com/en/products/accelerators/instinct/mi300.html" class="external">AMD Instinct™ MI300 Series Accelerators<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.marktechpost.com/2022/10/27/ibm-research-introduces-artificial-intelligence-unit-aiu-its-first-complete-system-on-chip-designed-to-run-and-train-deep-learning-models-faster-and-more-efficiently-than-a-general-purpose-cpu/" class="external">IBM custom board<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.okdo.com/p/nvidia-jetson-agx-orin-64gb-developer-kit/" class="external">Nvidia jetson AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://dev.to/ajeetraina/install-cuda-on-jetson-nano-2b06" class="external">install cuda<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.theverge.com/2023/2/23/23611668/ai-image-stable-diffusion-mobile-android-qualcomm-fastest" class="external">Qualcomm phone SD<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.esperanto.ai/" class="external">Esperanto RISC V<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://hdh4797.wixsite.com/dhan/project-1" class="external">The MetaVRain asic claims 900x speed increases} on general GPU problems<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://developers.google.com/learn/topics/on-device-ml" class="external">Google android etc<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.pocket-lint.com/what-is-meteor-lake-and-how-will-intel-leverage-ai-in-future/" class="external">Intel meteor lake?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/Shopify/handy" class="external">Shopify handy<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://timdettmers.com/2023/01/16/which-gpu-for-deep-learning/" class="external">Comparison of GPUs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://community.intel.com/t5/Blogs/Tech-Innovation/Artificial-Intelligence-AI/Numenta-and-Intel-Accelerate-Inference-20x-on-Large-Language/post/1471636" class="external">LLM on Intel XEON optmised<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://cloud.google.com/blog/topics/systems/tpu-v4-enables-performance-energy-and-co2e-efficiency-gains" class="external">TPU v4 matrix multiplier<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/geohot/tinygrad/blob/master/docs/showcase.md#stable-diffusion" class="external">Tinygrad tinybox<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.phonescoop.com/articles/article.php?a=22911" class="external">Snapdragon 8 inference<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Qualcomm has launched its latest flagship chip, the Snapdragon 8 Gen 2, which is expected to power most Android smartphones next year. The new chip is more power-efficient and powerful compared to its predecessor Gen 1, and features significant improvements and new features in AI. The new Qualcomm AI engine offers an AI performance improvement of up to 4.35x and up to 60% better power efficiency. There is a new direct link between the Hexagon AI cores and the Spectra imaging cores, providing real-time semantic segmentation, and the Sensing Hub has two AI processors and more memory for smarter always-on features. The Kryo CPU cores have also been updated, with four performance cores and three efficiency cores, optimising them for legacy 32-bit apps. On the GPU side, the new Adreno cores support hardware-accelerated raytracing and Unreal Engine 5’s Metahumans technology. The X70 modem supports 4-carrier aggregation for downlink speeds of up to 10 Gbps, while the onboard FastConnect 7800 system is the first to support Wi-Fi 7 with High Band Simultaneous Multi-Link. <a href="https://www.phonescoop.com/articles/article.php?a=22911" class="external">https://www.phonescoop.com/articles/article.php?a=22911<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="consumer-hardware">Consumer Hardware<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#consumer-hardware" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work" class="external">Sideloaded app stores are coming to iOS in the EU (thenextweb.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?" class="external">AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li></li>
+</ul>
+</li>
+<li><strong>I don’t personally think any of these wearables and gadgets “break through” vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.</strong></li>
+<li>
+<h1 id="hci-and-interfaces">HCI and interfaces<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hci-and-interfaces" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><a href="https://venturebeat.com/games/doublepoint-launches-gesture-touch-tech-for-wearable-devices/" class="external">Doublepoint launches gesture-touch tech for wearable devices | VentureBeat<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.from-the-interface.com/wrist-interfaces/" class="external">Meta’s wrist reader<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>
+<h1 id="edge">Edge<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#edge" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>Edge compute refers to the practice of processing and analyzing data as close to the source as possible, which is typically at the edge of a network. This approach aims to reduce latency and network congestion by performing computations and running applications on devices such as sensors, gateways, or edge servers located near the data source. By moving computational tasks closer to where the data is generated, edge compute enables real-time and low-latency decision-making.</li>
+<li>Edge AI, also known as AI at the edge or on-device AI, refers to the deployment of artificial intelligence and machine learning algorithms on edge devices. By bringing AI capabilities closer to the data source, Edge AI eliminates the need to transmit large volumes of data to the cloud for processing. This approach enables real-time inference and decision-making directly on devices with limited computing resources, such as smartphones, drones, or IoT devices. Edge AI has several advantages, including reduced latency, improved privacy and security, offline functionality, and the ability to operate in disconnected or bandwidth-constrained environments.</li>
+<li>Fog compute, on the other hand, extends the concept of edge compute by introducing a hierarchical architecture. It involves distributing computing resources, storage, and applications between the cloud and edge devices. In the fog computing model, intermediate fog nodes are deployed between edge devices and the cloud, enabling them to process and store data. This approach reduces the need for data to be transmitted to traditional data centers or the cloud, allowing for faster response times, increased security, and better bandwidth utilization.</li>
+<li>Overall, the combination of edge compute, fog compute, and edge AI introduces a distributed computing paradigm that brings processing, storage, and intelligence closer to the data source. This not only improves performance and efficiency but also enables new use cases and applications in various domains, including IoT, smart cities, autonomous vehicles, and industrial automation.</li>
+<li>These systems will drive the compute to less ‘constrained’ but somewhat less capable AI systems, distributing the access but increasing risks. <a href="../Update-Cycle" class="internal alias" data-slug="Update-Cycle">Update Cycle</a>
+<ul>
+<li><a href="https://analyticsindiamag.com/andrej-karpathys-baby-llama-runs-on-samsung-galaxy-watch-4/" class="external">Andrej Karpathy’s Baby Llama Runs on Samsung Galaxy Watch 4Baby Llama Runs on Samsung Galaxy Watch 4 (analyticsindiamag.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Baby llama <a href="../Large-language-models" class="internal alias" data-slug="Large-language-models">Large language models</a> with Llama.c is 700 lines of C code!  <a href="https://github.com/karpathy/llama2.c" class="external">karpathy/llama2.c: Inference Llama 2 in one file of pure C (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<h6 id="edge-ai-compute-and-apus">Edge AI compute and APUs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#edge-ai-compute-and-apus" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h6>
+</li>
+<li><a href="https://www.theverge.com/2023/2/23/23611668/ai-image-stable-diffusion-mobile-android-qualcomm-fastest" class="external">Qualcomm phone chip<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> offers low power and high speed Stable Diffusion on mobiles</li>
+<li>IBM have introduced the <a href="https://research.ibm.com/blog/ibm-artificial-intelligence-unit-aiu" class="external">concept of the AIU<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, for high speed and low power training</li>
+<li>Nvidia’s <a href="https://www.okdo.com/p/nvidia-jetson-agx-orin-64gb-developer-kit/" class="external">latest in the Jetson<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Edge AGX line is a high performance general AI unit for industrial applications</li>
+<li>Esperanto Risc V chip <a href="https://www.esperanto.ai/News/risc-v-startup-esperanto-technologies-samples-first-ai-silicon/" class="external">claims incredible performance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> gains</li>
+<li>The MetaVRain asic <a href="https://hdh4797.wixsite.com/dhan/project-1" class="external">claims 900x speed increases<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> on general GPU problems</li>
+<li>Microsoft are rumoured to be looking to mitigate the staggering costs of running ChatGPT ($1M/day) using forthcoming <a href="https://www.theinformation.com/articles/microsoft-readies-ai-chip-as-machine-learning-costs-surge?" class="external">hardware of their own design<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.cerebras.net/" class="external">Cerebras systems<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> have built an AI architecture from the ground up and claim incredible numbers.</li>
+<li>[Ushering in the Thermodynamic Future</li>
+<li>Litepaper (extropic.ai)](<a href="https://www.extropic.ai/future" class="external">https://www.extropic.ai/future<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>Tenstorrent Grayskull <a href="../Hardware-and-Edge" class="internal alias" data-slug="Hardware-and-Edge">Hardware and Edge</a>  [Cards</li>
+<li>Tenstorrent](<a href="https://tenstorrent.com/cards/" class="external">https://tenstorrent.com/cards/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>) -</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h1 id="displays">Displays<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#displays" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>
+<h3 id="displays--headset-hardware">Displays &amp; Headset Hardware<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#displays--headset-hardware" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Awaiting a bit more market stability for this section. Of note is thatMicrosoft seems to be <a href="https://www.windowscentral.com/microsoft/microsoft-has-laid-off-entire-teams-behind-virtual-mixed-reality-and-hololens" class="external">abandoningHololens<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>,and Apple seem to have postponed their commodity AR headset.</li>
+<li>Microsoft think that creating the Perfect Illusion, that of alife-likeness in VR will require a field of view of 210 horizontal and135 vertical, 60 pixels per degree subtended, and a refresh rate of 1800Mhz according to Microsoft. They expect this by as soon as2028.<a href="../cuervo2018creating" class="internal" data-slug="cuervo2018creating">cuervo2018creating</a></li>
+<li>With the advent of<a href="https://developer.chrome.com/docs/web-platform/webgpu/" class="external">WebGPU<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>alongside WebGL everything is likely to converge on the browserexperience.</li>
+<li>{{renderer :linkpreview,<a href="https://skarredghost.com/2024/04/01/valve-deckard-leaked/%7D%7D" class="external">https://skarredghost.com/2024/04/01/valve-deckard-leaked/}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>
+<h4 id="the-apple-in-the-room">The Apple in the Room<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-apple-in-the-room" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h4>
+<ul>
+<li>Following the announcement of The Apple Vision Pro we start to see theconvergence of spatial computing, mixed reality, locally appliedtransformer based AI, and business. They have perhaps removed “gorillaarm syndrome”<a href="../boring2009scroll" class="internal" data-slug="boring2009scroll">boring2009scroll</a> where hands in the sky interfaces arepotentially uncomfortable over long periods.<a href="../hansberger2017dispelling" class="internal" data-slug="hansberger2017dispelling">hansberger2017dispelling</a>Nathan Gitter and Amy DeDonato from the Apple Design team <a href="https://developer.apple.com/videos/play/wwdc2023/10072/" class="external">introducespatial design for thedevice<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li>
+<h5 id="spatial-operating-systems">Spatial operating systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#spatial-operating-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<ul>
+<li>
+<ul>
+<li>Enabling users to design experiences not previously possible.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The presentation outlines how to keep apps familiar, be human-centered, take advantage of space, enhance immersion, and make apps authentic to the platform.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The world serves as an infinite canvas for new apps and games.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Existing app elements should be kept familiar with common elements like sidebars, tabs, and search fields.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>In a spatial platform, interfaces are placed within windows to make them easily accessible and part of the user’s surroundings.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h5 id="windows-in-spatial-design">Windows in Spatial Design<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#windows-in-spatial-design" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<ul>
+<li>
+<ul>
+<li>Windows are designed with a new visual language, made of a glass material that provides contrast with the world, awareness of surroundings, and adapts to different lighting conditions.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Windows can be moved, closed, and resized by users, with windows facing the user during movement.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Windows are flexible and can be resized to fit comfortably within the user’s view.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Choosing Window Size and Layout Windows are designed to be flexible, adapting to content, and the window size should be chosen based on this. Windows can change size dynamically based on context.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Apps can use multiple windows to display content side by side or show distinct actions, but should ideally stick to a single window to avoid user overwhelm.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h5 id="designing-with-points">Designing with Points<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#designing-with-points" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+<ul>
+<li>
+<ul>
+<li>Interfaces are designed with points to ensure they scale well and remain legible at different distances.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Points allow designers to set the size of interface elements with familiar units. Human-Centered Design</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Good spatial design places the user at the center, accounting for their field of view and movement.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>The most important content should be placed in the center of the field of view and use landscape layouts.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Ergonomics should also be considered, placing content along a natural line of sight for comfort.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Designers should avoid placing content behind users or anchoring content to their view as it can be disorienting.</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>Spatial design should aim to create stationary experiences that require minimal movement from users.</li>
+</ul>
+</li>
+<li>
+<h5 id="user-mobility">User Mobility<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#user-mobility" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>The presentation emphasizes the importance of designing applicationsthat require minimal movement from users. It recommends usingsystem-level recentering methods to adjust the app’s view when a usermoves.</li>
+<li>
+<h5 id="space-utilization">Space Utilization<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#space-utilization" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>The importance of optimizing an app’s usage of space is discussed, asthe available physical space for users can vary. It advises againstconstraining your app based on the physical space available and insteadcreating an app that can function in any amount of space.</li>
+<li>
+<h5 id="dimensionality">Dimensionality<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dimensionality" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>The use of depth and scale in designing the user experience isemphasized. Depth can help with hierarchy and focus, and scale can beused to emphasize content. The text warns against overusing depth,especially with text, and encourages developers to experiment with scaleto achieve the desired user experience.</li>
+<li>
+<h5 id="immersiveness">Immersiveness<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#immersiveness" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>The passage introduces the concept of an immersion spectrum, where anapp can transition between various states of immersion based on theuser’s experience. The importance of smooth transitions, designing withconsideration to user focus, thoughtful blending with reality, andkeeping the user comfortable are emphasized.</li>
+<li>
+<h5 id="sound-design">Sound Design<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#sound-design" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>It also highlights the importance of using spatial audio to enhance theimmersive experience of an app, which includes attaching sound toobjects and creating soundscapes.</li>
+<li>
+<h5 id="user-comfort">User Comfort<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#user-comfort" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>Recommendations for moving an immersive app, focusing on avoidingdisorienting fast movements and instead recommending fade out and fadein techniques to keep the user comfortable during motion.</li>
+<li>
+<h5 id="transitions">Transitions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#transitions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>It highlights the importance of clear, intuitive methods for enteringand exiting immersive experiences. It suggests using easily recognizablesymbols, such as arrows for expanding or collapsing views.</li>
+<li>
+<h5 id="authenticity">Authenticity<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#authenticity" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>Emphasizes creating an authentic experience that takes full advantage ofthe platform’s capabilities. An example given is Freeform, which uses alarge creative space allowing users to view all their content at once.</li>
+<li>
+<h5 id="key-moments">Key Moments<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-moments" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h5>
+</li>
+<li>Focusing on a “key moment” that provides a unique spatial or immersiveexperience is recommended. This could involve enhancing a moment withdepth and scale or transforming the user’s space to create a unique andmemorable experience.</li>
+</ul>
+</li>
+<li>Lightfield
+<ul>
+<li><a href="https://www.lightfieldlab.com/#tech" class="external">Light Field Lab<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li><a href="https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens" class="external">Infitec shows holographic projection screens (installation-international.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://hypervsn.com/" class="external">HYPERVSN is a 3D Integrated Holographic System for advertising, digital signage, events.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>{{video <a href="https://www.youtube.com/watch?v=DxkIo-2Jzzo&amp;%7D%7D" class="external">https://www.youtube.com/watch?v=DxkIo-2Jzzo&amp;}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li></li>
+<li></li>
+</ul>
+</li>
+<li>
+<h1 id="brain">Brain<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#brain" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li>Apple has submitted a patent application that raises some serious privacy and ethical concerns.</li>
+<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7196781454519877632/" class="external">From this post<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><img src="../assets/1715807554519_1716117593773_0.jpeg" alt="1715807554519.jpeg"/></li>
+<li>The US Patent and Trademark Office lists application 2023/0225659 as a “biosensing device” built into Apple’s earbuds to measure “biological signal parameters from a user.”
+<ul>
+<li>👉 Electroencephalography (EEG). In other words, the aim is to directly record the user’s brain waves from tiny sensors positioned within the ear canal.</li>
+<li>👉 Electromyography (EMG). This records muscle movements and the information can be used to help understand facial expressions and jaw movements related to emotion.</li>
+<li>👉 Electrooculography (EOG) tracks eye movements, particularly side-to-side.</li>
+<li>👉 Electrocardiogram (ECG) typically measures the electrical activity of the heart.</li>
+<li>👉 Galvanic skin response (GSR), which provides an indirect measure of emotional arousal – that is, the strength of an emotional response.</li>
+<li>👉 Blood volume pulse (BVP). This is measured using photoplethysmography and provides information about heart rate (HR) and heart rate variability (HRV).</li>
+</ul>
+</li>
+<li>In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!</li>
+<li>It’s unclear to me how you could even record meaningful data from within the ear.</li>
+<li>If this kind of interface goes ahead it should be
+<ul>
+<li>
+<ol>
+<li>Voluntary. Participants should not be forced or deceived into providing physiological or neurological data. Volunteers at liberty to stop at any time.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Limited. Personal data may only be collected for a specific, explicit and legitimate purpose. This purpose must be clearly stated, and only stored as long as needed to complete that purpose.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Transparent. Requires informed consent including being aware the data are being collected and knowing the risks involved, including whether the information will be shared with other organizations.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Autonomy. Free from manipulation. Participants should not be forced or deceived into making decisions they would not otherwise make.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Valid. Must be based on valid science and led by scientifically trained staff.</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>To my mind, this application potentially violates 4 out of 5 of these principles (I don’t see any evidence of manipulation) and this makes me deeply uneasy!</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-6364" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#wearables" data-for="wearables">Wearables</a></li><li class="depth-2"><a href="#orion" data-for="orion">Orion</a></li><li class="depth-2"><a href="#meta-ray-bans" data-for="meta-ray-bans">Meta Ray Bans</a></li><li class="depth-2"><a href="#rabbit" data-for="rabbit">Rabbit</a></li><li class="depth-0"><a href="#neural-interfaces" data-for="neural-interfaces">Neural Interfaces</a></li><li class="depth-1"><a href="#emg-wristbands" data-for="emg-wristbands">EMG Wristbands</a></li><li class="depth-2"><a href="#key-features-and-benefits" data-for="key-features-and-benefits">Key Features and Benefits</a></li><li class="depth-0"><a href="#smart-rings---sticky-sensor-tech" data-for="smart-rings---sticky-sensor-tech">Smart Rings - sticky sensor tech</a></li><li class="depth-2"><a href="#oura-smart-ring" data-for="oura-smart-ring">Oura Smart Ring</a></li><li class="depth-2"><a href="#amazfit-smart-ring" data-for="amazfit-smart-ring">Amazfit Smart Ring</a></li><li class="depth-2"><a href="#rewind-pendant" data-for="rewind-pendant">Rewind Pendant</a></li><li class="depth-2"><a href="#humane-ai-pin" data-for="humane-ai-pin">Humane Ai Pin</a></li><li class="depth-2"><a href="#apollo-neuro" data-for="apollo-neuro">Apollo Neuro</a></li><li class="depth-2"><a href="#pavlok-3" data-for="pavlok-3">Pavlok 3</a></li><li class="depth-2"><a href="#yopi" data-for="yopi">Yopi</a></li><li class="depth-2"><a href="#chatgpt-and-whatever-siri-becomes-is-coming-to-watches" data-for="chatgpt-and-whatever-siri-becomes-is-coming-to-watches">ChatGPT (and whatever Siri becomes) is coming to watches</a></li><li class="depth-0"><a href="#open-source" data-for="open-source">Open Source</a></li><li class="depth-0"><a href="#phones" data-for="phones">Phones</a></li><li class="depth-1"><a href="#samsung-galaxy-s24-series-local-ai-inferencing-features" data-for="samsung-galaxy-s24-series-local-ai-inferencing-features">Samsung Galaxy S24 Series Local AI Inferencing Features</a></li><li class="depth-1"><a href="#google-sub-second-inferencing-on-a-phone" data-for="google-sub-second-inferencing-on-a-phone">Google sub second inferencing on a phone.</a></li><li class="depth-0"><a href="#training-and-inferencing-hardware" data-for="training-and-inferencing-hardware">Training and inferencing hardware</a></li><li class="depth-0"><a href="#consumer-hardware" data-for="consumer-hardware">Consumer Hardware</a></li><li class="depth-0"><a href="#hci-and-interfaces" data-for="hci-and-interfaces">HCI and interfaces</a></li><li class="depth-0"><a href="#edge" data-for="edge">Edge</a></li><li class="depth-0"><a href="#displays" data-for="displays">Displays</a></li><li class="depth-2"><a href="#displays--headset-hardware" data-for="displays--headset-hardware">Displays &amp; Headset Hardware</a></li><li class="depth-0"><a href="#brain" data-for="brain">Brain</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

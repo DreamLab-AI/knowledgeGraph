@@ -1,0 +1,5 @@
+
+Telepresence is the distributed-collaboration taxonomy hub covering technologies that create a convincing sense of physical co-presence across remote locations — spanning robotic telepresence, haptic-feedback telepresence, virtual-reality telepresence, and social presence theory. It is a peer category to Workspace Tools and Communication Technology within the distributed collaboration domain.
+
+Telepresence technologies aim to dissolve the perceptual gap between geographically distributed participants. Achieving high-fidelity presence requires convergence of low-latency video/audio, spatial audio, haptic feedback, and — increasingly — robotic avatars and VR environments. Social presence theory provides the theoretical grounding for evaluating how effectively any given system achieves the subjective experience of being physically co-located.
+

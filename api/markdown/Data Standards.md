@@ -1,0 +1,77 @@
+
+Data Standards are formally agreed specifications, schemas, formats, vocabularies, and protocols that define how data is structured, encoded, exchanged, and interpreted across systems, organisations, and domains. They enable interoperability between heterogeneous systems by establishing shared semantics and syntactic conventions, reducing integration costs and data quality errors. Governed by bodies such as ISO, W3C, IETF, and NIST, data standards span a spectrum from de facto industry conventions (e.g., JSON, CSV) to de jure normative specifications (e.g., SQL:2023, OWL2, FHIR). They are foundational to data governance, metadata management, and the reliable operation of distributed data ecosystems.
+
+- ### Overview
+  - Data standards exist wherever multiple parties need to exchange or combine data reliably. Without agreed conventions a sender and receiver may use the same field name with entirely different meanings, types, or units — producing silent data corruption that is far harder to detect than a parse error.
+  - Standards operate at multiple layers:
+    - **Syntactic** — encoding and file format (e.g., [[JSON]], [[XML]], [[Parquet]], [[CSV]])
+    - **Structural** — schema and data model conventions (e.g., SQL DDL, [[JSON Schema]], [[XML Schema]])
+    - **Semantic** — shared meaning and terminology (e.g., [[Ontology]], [[Controlled Vocabulary]], [[RDF]])
+    - **Process** — lifecycle, versioning, provenance (e.g., [[PROV-O]], [[DCAT]])
+  - Standards reduce both the *N²* integration problem (every pair of systems needing a custom connector) and the long-term maintenance burden of proprietary formats that become [[Data Silo]] lock-in.
+  - Why it matters:
+    - Regulatory compliance (GDPR, DORA, Basel IV) increasingly mandates standard data representations
+    - AI/ML pipelines require clean, consistently typed training data — enforced via [[Data Schema]] contracts
+    - [[Open Data]] initiatives depend on standard formats for reusability and reproducibility
+    - [[Knowledge Graph]] construction requires shared [[Ontology]] and URI conventions
+
+- ### Key Components
+  - **[[Data Schema]]** — formal description of data structure: field names, types, constraints, and cardinality. Examples: [[JSON Schema]], SQL DDL, Apache Avro schema, Protocol Buffers.
+  - **[[Metadata Standard]]** — specifies descriptive, administrative, and structural metadata. Examples: [[Dublin Core]], [[DCAT]], [[Schema.org]], ISO 19115 (geospatial).
+  - **[[Data Exchange Format]]** — serialisation syntax for transmission. Examples: [[JSON]], [[XML]], [[CSV]], [[Parquet]], [[ORC]], [[Arrow IPC]].
+  - **[[Controlled Vocabulary]]** — curated list of authorised terms with defined meanings. Examples: SNOMED CT, MeSH, SKOS thesauri, ISO 4217 (currency codes).
+  - **[[Ontology]]** — formal knowledge representation specifying classes, properties, and axioms. Examples: [[OWL2]], [[RDF]], [[RDFS]], FIBO (finance), SNOMED.
+  - **Reference Data Models** — canonical entity models shared across an industry (e.g., HL7 FHIR for healthcare, FpML for finance, CIM for energy).
+  - **API Standards** — conventions for data access interfaces: [[REST]], [[GraphQL]], [[OData]], [[SPARQL]].
+  - **Identifier Standards** — globally unique, persistent identifiers: [[URI]], [[DOI]], [[ORCID]], [[ISBN]], [[ISIN]], [[LEI]] (Legal Entity Identifier).
+
+- ### Mechanisms
+  - **Standardisation lifecycle** — drafting by technical committee → public review → balloting → publication → maintenance. Bodies such as [[ISO]], [[W3C]], and [[IETF]] operate formal consensus processes.
+  - **De facto vs de jure** — de facto standards emerge from dominant market adoption ([[JSON]], [[Markdown]]); de jure are formally ratified. Both coexist and often converge.
+  - **Profiles and extensions** — a base standard (e.g., [[Dublin Core]]) is profiled for a domain (e.g., DCAT-AP for EU public sector) by restricting or extending permitted terms.
+  - **Conformance testing** — reference implementations, validation schemas (e.g., [[SHACL]], [[JSON Schema]]), and certification programmes ensure standard compliance.
+  - **Versioning and backward compatibility** — standards use semantic versioning or dated editions; migration paths and deprecation schedules manage evolution.
+  - **[[FAIR Principles]]** — Findable, Accessible, Interoperable, Reusable — provide a meta-framework that motivates adoption of standards for scientific and open data.
+
+- ### Applications / Use Cases
+  - **Healthcare** — [[FHIR]] (HL7 Fast Healthcare Interoperability Resources) standardises clinical data exchange between EHRs, insurers, and apps. SNOMED CT provides a controlled clinical terminology.
+  - **Finance** — ISO 20022 standardises payment messaging; XBRL enables structured financial reporting; LEI uniquely identifies legal entities.
+  - **Geospatial** — OGC standards ([[GeoJSON]], WMS, WFS, OGC API Features) enable interoperable mapping and GIS data exchange.
+  - **AI/ML pipelines** — [[Data Schema]] enforcement via Avro, Protobuf, or [[JSON Schema]] prevents training data drift; [[DCAT]] enables dataset discovery for [[Machine Learning]] experiments.
+  - **[[Knowledge Graph]]** — [[RDF]], [[OWL2]], [[RDFS]], and [[SPARQL]] are W3C standards underpinning the [[Semantic Web]] and enterprise knowledge graphs.
+  - **[[Open Data]]** — DCAT, [[CSV on the Web]] (CSVW), and [[Linked Data]] conventions make government and research datasets reusable across organisations.
+  - **[[Federated Learning]]** — standardised model update formats (e.g., Flower framework conventions) and data schemas allow privacy-preserving cross-silo training without raw data sharing.
+  - **Supply chain** — GS1 standards (EAN/UPC barcodes, EDI, GS1 Digital Link) uniquely identify products and communicate logistics data globally.
+  - **[[Blockchain]] / distributed ledgers** — token standards (ERC-20, ERC-721) and DID/VC standards (W3C Decentralised Identifiers, Verifiable Credentials) define interoperable on-chain data structures.
+
+- ### Standards & Context
+  - **ISO/IEC JTC 1** — Joint Technical Committee covering IT standards including character sets (ISO 10646 / Unicode), SQL (ISO/IEC 9075), and data quality (ISO 8000).
+  - **W3C** — World Wide Web Consortium publishes [[RDF]], [[OWL2]], [[SPARQL]], [[SHACL]], [[JSON-LD]], [[PROV-O]], [[DCAT]], [[CSVW]], [[Schema.org]] community group.
+  - **IETF** — Internet Engineering Task Force defines [[JSON]] (RFC 8259), [[URI]] (RFC 3986), [[HTTP]] (RFC 9110), and [[MIME]] types.
+  - **OGC** — Open Geospatial Consortium governs geospatial data standards: WMS, WFS, [[GeoJSON]] (also IETF RFC 7946), CityGML.
+  - **HL7 / FHIR** — Health Level Seven publishes clinical data exchange standards; FHIR R5 (2023) is the current release.
+  - **OASIS** — Organisation for the Advancement of Structured Information Standards governs MQTT, AMQP, OData, and SAML.
+  - **IEEE** — Institute of Electrical and Electronics Engineers publishes standards for data formats in signal processing, networking (802.x), and robotics (ROS-I).
+  - **NIST** — US National Institute of Standards and Technology publishes data-format guidance and cybersecurity standards (SP 800 series) with data classification implications.
+  - **EU Regulatory context** — GDPR Article 20 (data portability) and the EU Data Act (2024) mandate interoperable formats; the European Interoperability Framework (EIF) drives adoption of open standards across public administrations.
+  - **[[FAIR Principles]]** — Wilkinson et al. (2016) meta-framework for scientific data management, now embedded in EU Horizon funding requirements and OpenAIRE guidelines.
+
+- ### Current Landscape (2026)
+  - The EU Data Act (Regulation (EU) 2023/2854) became applicable on 12 September 2025, making data-space interoperability a legal requirement under Articles 33–35: participants must describe dataset content, formats, vocabularies, taxonomies and code lists in a machine-readable, publicly consistent manner, with connected-product design duties following from September 2026 and the removal of cloud switching/egress fees from 12 January 2027.
+  - On 7 July 2025 CEN, CENELEC and ETSI formally accepted the Commission's Standardisation Request under Mandate M/614 (European Trusted Data Framework), committing to seven deliverables — four European Standards (two intended for citation in the Official Journal) plus three Technical Specifications — to underpin Data Act conformity.
+  - CEN/CLC JTC 25 'Data management, Dataspaces, Cloud and Edge', established in September 2024, now leads work on data governance, quality and lifecycle management, portability and switchability, building on CEN/CWA 18125:2024 'Trusted Data Transaction'; ETSI TC Data covers semantic frameworks and catalogues.
+  - The IDSA Dataspace Protocol is being promoted to an international standard, with ISO/IEC 20151 building directly on the IDSA Rulebook, signalling convergence of European sovereign data-sharing efforts (Gaia-X, IDSA, the Data Spaces Support Centre and SIMPL middleware) toward common protocol-level standards.
+  - The European Health Data Space Regulation (EU) 2025/327 was adopted on 11 February 2025, extending FAIR-aligned standardised health-data exchange and secondary-use mechanisms across the Union as a flagship sectoral data space among the 14 domains under development.
+  - The Data Union Strategy, adopted in November 2025, proposed expanding data spaces (including a new defence data space) and flagged a forthcoming standardisation request for a European data quality standard covering completeness, consistency, provenance, semantic clarity and governance.
+  - Semantic interoperability work under the SEMIC framework is pushing JSON-LD and machine-readable annotation of CSV/XML/JSON as minimum documentation requirements, but open challenges remain: few Member States have designated Data Act competent authorities, M/614 deliverables are not yet binding until referenced in the Official Journal, and the Act still lacks a statutory definition of "data space".
+
+- ### References
+  - 1. European Commission — Shaping Europe's Digital Future (2025). Data Act explained. https://digital-strategy.ec.europa.eu/en/factpages/data-act-explained
+  - 2. CEN-CENELEC (2025). Data Act: Standardization Request Officially Accepted by CEN and CENELEC (Mandate M/614). https://www.cencenelec.eu/news-events/news/2025/brief-news/2025-07-11-data-act-standardization-request/
+  - 3. International Data Spaces Association (2025). How the EU Data Act will shape data spaces. https://internationaldataspaces.org/how-the-eu-data-act-will-shape-data-spaces/
+  - 4. European Parliament and Council (2025). Regulation (EU) 2025/327 on the European Health Data Space. https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202500327
+  - 5. European Commission — Interoperable Europe (2025). Data Economy / Data Interoperability, Rolling Plan for ICT Standardisation 2025. https://interoperable-europe.ec.europa.eu/collection/rolling-plan-ict-standardisation/data-economy-rp-2025
+
+- ### Provenance
+  - **domain-remap:** spatial-computing → data (Data Standards is a cross-domain foundational concept most precisely classified under the data domain)
+

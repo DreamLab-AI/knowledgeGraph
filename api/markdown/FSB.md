@@ -1,0 +1,57 @@
+
+The Financial Stability Board (FSB) is an international body established in 2009 by the G20 that monitors and makes recommendations about the global financial system. It coordinates the work of national financial authorities and international standard-setting bodies to develop and promote effective regulatory, supervisory, and other financial sector policies. The FSB addresses vulnerabilities in financial markets, oversees the implementation of agreed reforms, and assesses systemic risks arising from entities, activities, and instruments across the global financial system, including emerging risks from crypto-assets, non-bank financial intermediation, and climate-related financial exposures.
+
+- ### Overview
+  - The FSB emerged from the 2008–2009 global [[Financial Crisis]] as policymakers recognised that the existing architecture of international financial oversight — centred on the Financial Stability Forum (est. 1999) — lacked the mandate, membership, and tools to address cross-border [[Systemic Risk]] at the scale revealed by the crisis.
+  - The FSB was endowed with a broader mandate: to promote [[Macroprudential Policy]], coordinate reforms across the banking, insurance, and securities sectors, and monitor shadow banking (now termed [[Non-Bank Financial Intermediation]]).
+  - Membership encompasses G20 jurisdictions, key financial centres, and major international institutions, covering approximately 90% of global GDP. Members include central banks, ministries of finance, and supervisory authorities from 24 national jurisdictions plus the EU, alongside institutions such as the [[IMF]], [[World Bank]], [[BIS]], [[OECD]], [[Basel Committee]], [[IOSCO]], and [[IAIS]].
+  - The FSB does not issue legally binding rules; rather, it publishes recommendations, policy frameworks, and peer review findings that carry significant normative weight and shape the domestic regulatory agendas of member jurisdictions.
+
+- ### Key Components
+  - **Plenary** — the FSB's decision-making body, which meets twice per year and comprises senior officials from member jurisdictions and organisations.
+  - **Steering Committee** — manages the ongoing work programme and coordinates between meetings of the Plenary.
+  - **Standing Committees** — three permanent technical committees:
+    - *Standing Committee on Assessment of Vulnerabilities* (SCAV) — monitors the global [[Financial System]] for emerging fragilities.
+    - *Standing Committee on Supervisory and Regulatory Cooperation* (SRC) — promotes convergence in regulatory and supervisory approaches.
+    - *Standing Committee on Standards Implementation* (SCSI) — conducts [[Peer Review]] of members' implementation of agreed standards.
+  - **Regional Consultative Groups** (RCGs) — six groups covering the Americas, Asia, CIS/MENA/Sub-Saharan Africa, Europe, Middle East and North Africa, and Sub-Saharan Africa, extending FSB outreach beyond core membership.
+  - **Secretariat** — a small permanent staff hosted at the [[BIS]] in Basel, providing analytical and administrative support.
+
+- ### Mechanisms
+  - **Vulnerability Assessments** — the SCAV produces regular assessments of [[Systemic Risk]], shared with the [[IMF]]/[[World Bank]] and presented at G20 finance ministers' meetings.
+  - **Policy Development** — the FSB leads multi-stakeholder workstreams to develop global policy frameworks (e.g., [[Total Loss-Absorbing Capacity]] (TLAC), [[Crypto-Asset Regulation]] frameworks, [[Climate-Related Financial Risk]] disclosures).
+  - **Peer Reviews** — thematic and country-level [[Peer Review]] processes assess members' implementation of FSB recommendations and [[Basel Committee]] standards, reporting publicly.
+  - **Data Collection** — the FSB's Data Gaps Initiative (coordinated with the [[IMF]]) drives improvements in the availability and comparability of global financial data, supporting [[Data Reporting]] standards.
+  - **Coordination with SSBs** — the FSB acts as an umbrella body for standard-setting bodies (SSBs) including the [[Basel Committee]], [[IOSCO]], [[IAIS]], IASB, and CPMI, aligning their work programmes.
+  - **Monitoring Implementation** — annual reports track the status of post-crisis reform implementation across [[G20]] jurisdictions, covering capital requirements, [[Resolution Framework]] regimes, [[OTC Derivatives]] reform, and [[Stress Testing]] practices.
+
+- ### Applications and Use Cases
+  - **Post-Crisis Regulatory Reform** — the FSB coordinated and monitored the post-2008 reform package, including [[Basel III]], central clearing mandates for [[OTC Derivatives]], and [[Resolution Framework]] regimes for systemically important financial institutions (SIFIs).
+  - **Global Systemically Important Banks (G-SIBs)** — the FSB annually publishes the list of G-SIBs (in coordination with the [[Basel Committee]]), setting higher loss-absorbency requirements and informing [[Too Big To Fail]] reform.
+  - **Shadow Banking / NBFI Monitoring** — through the Global Monitoring Report on [[Non-Bank Financial Intermediation]], the FSB tracks assets and risk in money market funds, hedge funds, and other entities outside the banking system.
+  - **Crypto-Asset Regulation** — the FSB developed high-level recommendations for the regulation, supervision, and oversight of [[Crypto-Asset]] markets and activities (2022–2023), as well as for global stablecoin arrangements, directly shaping jurisdictional legislation.
+  - **Climate-Related Financial Disclosures** — the FSB established and continues to support the [[Task Force on Climate-related Financial Disclosures]] (TCFD), whose voluntary disclosure framework has been widely adopted and incorporated into mandatory regimes, addressing [[Climate-Related Financial Risk]].
+  - **Cross-Border Payments** — the FSB, in partnership with the [[BIS]] Committee on Payments and Market Infrastructures (CPMI), leads the G20 Roadmap to enhance [[Cross-Border Payments]], targeting cheaper, faster, more transparent international transfers.
+  - **AI and Technology in Finance** — the FSB monitors financial stability implications of [[AI in Finance]] and [[Decentralised Finance]], publishing thematic reports and early-warning analyses on [[Algorithmic Trading]], cloud concentration, and [[Fintech]] risks.
+  - **Compensation Practices** — the FSB's Principles for Sound Compensation Practices and Implementation Standards (2009) established global norms on financial sector remuneration to reduce excessive risk-taking.
+
+- ### Standards and Context
+  - The FSB operates under a **Charter** adopted in 2012, which formalised its institutional status, governance, and mandate following the G20 Leaders' commitment in 2009.
+  - Key deliverables are coordinated with the G20 Finance Ministers and Central Bank Governors meetings, and the FSB Chair reports to the G20 Leaders' Summit.
+  - Core reform areas monitored by the FSB align with the post-2008 Basel agreements:
+    - [[Basel III]] / [[Basel IV]] — risk-based capital, leverage, liquidity (Liquidity Coverage Ratio, Net Stable Funding Ratio).
+    - [[TLAC]] — Total Loss-Absorbing Capacity standard for G-SIBs, enabling orderly [[Resolution Framework]] without taxpayer bail-outs.
+    - [[OTC Derivatives]] reform — central clearing, trade reporting, margin requirements.
+  - The FSB's **Key Attributes of Effective Resolution Regimes** (2011, updated 2014) established the global template for bank resolution planning and bail-in tools, widely enacted through national legislation.
+  - On crypto-assets: FSB recommendations (July 2023) established that same-activity, same-risk, same-regulation principles should apply, informing the EU's [[MiCA]] regulation and other jurisdictional frameworks.
+  - On climate: the [[TCFD]] framework (2017 recommendations) is now embedded in mandatory disclosure requirements in the UK, EU (via [[CSRD]]), Japan, Canada, and other jurisdictions.
+  - The FSB engages with the [[IMF]] through joint Early Warning Exercise (EWE) processes and coordinates data standards via the Data Gaps Initiative.
+
+- ### Governance and Membership
+  - The FSB Chair is a senior central bank governor or finance ministry official from a member jurisdiction, appointed by the Plenary.
+  - Decisions in the Plenary are reached by consensus; the FSB has no supranational legislative powers.
+  - Full members (as of 2025) include G20 countries, Hong Kong SAR, Netherlands, Singapore, Spain, and Switzerland, alongside the EU, ECB, and six major international organisations.
+  - Non-member jurisdictions participate through the six [[Regional Consultative Groups]], ensuring geographic representation across approximately 70 countries.
+
+- ### Provenance
+

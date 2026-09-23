@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Retrieval Augmented Generation - RAG</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Retrieval Augmented Generation - RAG"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Retrieval Augmented Generation - RAG"/><meta name="twitter:description" content="Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we… S..."/><meta property="og:description" content="Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we… S..."/><meta property="og:image:alt" content="Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Retrieval-Augmented-Generation---RAG"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Retrieval-Augmented-Generation---RAG"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Retrieval-Augmented-Generation---RAG"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6538"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6538" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Retrieval Augmented Generation   RAG</a></div></nav><h1 class="article-title">Retrieval Augmented Generation - RAG</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.883Z">23 Sept 2026</time><span>38 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:retrieval-augmented-generation-rag</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Application" class="internal">AI Application</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../Neural-Information-Retrieval" class="internal">Neural Information Retrieval</a></li><li><a href="../pages/Generative-AI" class="internal">Generative AI</a></li><li><a href="../Knowledge-Intensive-NLP" class="internal">Knowledge-Intensive NLP</a></li><li><a href="../Open-Domain-Question-Answering" class="internal">Open Domain Question Answering</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Chunking" class="internal">Chunking Strategy</a></li><li><a href="../pages/Document-Store" class="internal">Document Store</a></li><li><a href="../embedding-model" class="internal">Embedding Model</a></li><li><a href="../generator" class="internal">Generator</a></li><li><a href="../pages/Prompt-Template" class="internal">Prompt Template</a></li><li><a href="../pages/Query-Encoder" class="internal">Query Encoder</a></li><li><a href="../pages/Reranker" class="internal">Reranker</a></li><li><a href="../pages/Vector-Index" class="internal">Vector Index</a></li><li><a href="../Retriever" class="internal">Retriever</a></li><li><a href="../Chunking-Strategy" class="internal">Chunking Strategy</a></li><li><a href="../Passage-Encoder" class="internal">Passage Encoder</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Data-Preprocessing" class="internal">Corpus Preprocessing</a></li><li><a href="../pages/Dense-Passage-Retrieval" class="internal">Dense Passage Retrieval</a></li><li><a href="../pages/Text-Embeddings" class="internal">Text Embeddings</a></li><li><a href="../vector-database" class="internal">Vector Database</a></li><li><a href="../pages/Attention" class="internal">Attention</a></li><li><a href="../pages/Large-Language-Models" class="internal">Large Language Models</a></li><li><a href="../Transformers" class="internal">Transformers</a></li><li><a href="../Corpus-Preprocessing" class="internal">Corpus Preprocessing</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../domain-adaptation" class="internal">Domain Adaptation Without Fine-Tuning</a></li><li><a href="../factual-grounding" class="internal">Factual Grounding</a></li><li><a href="../pages/Hallucination-Reduction" class="internal">Hallucination Reduction</a></li><li><a href="../pages/Multi-Hop-Reasoning" class="internal">Multi-Hop Reasoning</a></li><li><a href="../Citation-Generation" class="internal">Citation Generation</a></li><li><a href="../Knowledge-Currency" class="internal">Knowledge Currency</a></li><li><a href="../Domain-Adaptation-Without-Fine-Tuning" class="internal">Domain Adaptation Without Fine-Tuning</a></li><li><a href="../Verifiable-AI-Outputs" class="internal">Verifiable AI Outputs</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Fine-Tuning" class="internal">Fine Tuning</a></li><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li><li><a href="../pages/In-Context-Learning" class="internal">In-Context Learning</a></li><li><a href="../pages/Model-Training" class="internal">Model Training</a></li><li><a href="../Parametric-Knowledge" class="internal">Parametric Knowledge</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../Transformers" class="internal">Transformers</a></li><li><a href="../pages/Attention" class="internal">Attention</a></li><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../pages/Vector-Database" class="internal">Vector Database</a></li><li><a href="../pages/Knowledge-Graphing" class="internal">Knowledge Graphing</a></li><li><a href="../Approximate-Nearest-Neighbour-Search" class="internal">Approximate Nearest Neighbour Search</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../InfrastructureLayer" class="internal">InfrastructureLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Agentic-RAG" class="internal">Agentic RAG</a></li><li><a href="../pages/BM25" class="internal">BM25</a></li><li><a href="../contextual-retrieval" class="internal">Contextual Retrieval</a></li><li><a href="../pages/Dense-Passage-Retrieval" class="internal">Dense Passage Retrieval</a></li><li><a href="../pages/GraphRAG" class="internal">GraphRAG</a></li><li><a href="../pages/Hybrid-Search" class="internal">Hybrid Search</a></li><li><a href="../ColBERTv2" class="internal">ColBERTv2</a></li><li><a href="../Self-RAG" class="internal">Self-RAG</a></li><li><a href="../HyDE" class="internal">HyDE</a></li><li><a href="../RAPTOR" class="internal">RAPTOR</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-2201</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../agentic-rag" class="internal">Agentic RAG</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../approximate-nearest-neighbour-search" class="internal">Approximate Nearest Neighbour Search</a></li><li><a href="../ares-framework" class="internal">ARES Framework</a></li><li><a href="../beir-benchmark" class="internal">BEIR Benchmark</a></li><li><a href="../bm25" class="internal">BM25</a></li><li><a href="../chunking-strategy" class="internal">Chunking Strategy</a></li><li><a href="../citation-generation" class="internal">Citation Generation</a></li><li><a href="../code-navigation" class="internal">Code Navigation</a></li><li><a href="../col-bertv2" class="internal">ColBERTv2</a></li><li><a href="../contextual-retrieval" class="internal">Contextual Retrieval</a></li><li><a href="../corpus-preprocessing" class="internal">Corpus Preprocessing</a></li><li><a href="../customer-support-automation" class="internal">Customer Support Automation</a></li><li><a href="../dense-passage-retrieval" class="internal">Dense Passage Retrieval</a></li><li><a href="../document-store" class="internal">Document Store</a></li><li><a href="../domain-adaptation-without-fine-tuning" class="internal">Domain Adaptation Without Fine-Tuning</a></li><li><a href="../embedding-model" class="internal">Embedding Model</a></li><li><a href="../enterprise-search" class="internal">Enterprise Search</a></li><li><a href="../factual-grounding" class="internal">Factual Grounding</a></li><li><a href="../generator" class="internal">Generator</a></li><li><a href="../graph-rag" class="internal">GraphRAG</a></li><li><a href="../hallucination-reduction" class="internal">Hallucination Reduction</a></li><li><a href="../hy-de" class="internal">HyDE</a></li><li><a href="../hybrid-search" class="internal">Hybrid Search</a></li><li><a href="../in-context-learning" class="internal">In-Context Learning</a></li><li><a href="../information-retrieval" class="internal">InformationRetrievalDomain</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../knowledge-currency" class="internal">Knowledge Currency</a></li><li><a href="../knowledge-intensive-nlp" class="internal">Knowledge-Intensive NLP</a></li><li><a href="../legal-ai" class="internal">Legal AI</a></li><li><a href="../llama-index" class="internal">LlamaIndex</a></li><li><a href="../mteb-benchmark" class="internal">MTEB Benchmark</a></li><li><a href="../multi-hop-reasoning" class="internal">Multi-Hop Reasoning</a></li><li><a href="../natural-language-processing" class="internal">NaturalLanguageProcessingDomain</a></li><li><a href="../neural-information-retrieval" class="internal">Neural Information Retrieval</a></li><li><a href="../open-domain-question-answering" class="internal">Open Domain Question Answering</a></li><li><a href="../parametric-knowledge" class="internal">Parametric Knowledge</a></li><li><a href="../passage-encoder" class="internal">Passage Encoder</a></li><li><a href="../prompt-template" class="internal">Prompt Template</a></li><li><a href="../query-encoder" class="internal">Query Encoder</a></li><li><a href="../ragas-framework" class="internal">RAGAS Framework</a></li><li><a href="../raptor" class="internal">RAPTOR</a></li><li><a href="../reranker" class="internal">Reranker</a></li><li><a href="../retriever" class="internal">Retriever</a></li><li><a href="../scientific-literature-mining" class="internal">Scientific Literature Mining</a></li><li><a href="../self-rag" class="internal">Self-RAG</a></li><li><a href="../text-embeddings" class="internal">Text Embeddings</a></li><li><a href="../trec-deep-learning-track" class="internal">TREC Deep Learning Track</a></li><li><a href="../vector-database" class="internal">Vector Database</a></li><li><a href="../vector-index" class="internal">Vector Index</a></li><li><a href="../verifiable-ai-outputs" class="internal">Verifiable AI Outputs</a></li><li><a href="../agent-frameworks" class="internal">Agent Frameworks</a></li><li><a href="../agentic-internet" class="internal">Agentic Internet</a></li><li><a href="../agents" class="internal">Agents</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../ai-search" class="internal">AI Search</a></li><li><a href="../anthropic-claude" class="internal">Anthropic Claude</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../attention" class="internal">Attention</a></li><li><a href="../call-centres" class="internal">Call Centres</a></li><li><a href="../chat-gpt" class="internal">ChatGPT</a></li><li><a href="../chatbots" class="internal">Chatbots</a></li><li><a href="../cli-multi-agent-systems" class="internal">CLI Multi-Agent Systems</a></li><li><a href="../compliance-monitoring" class="internal">Compliance Monitoring</a></li><li><a href="../domain-ontology" class="internal">Domain Ontology</a></li><li><a href="../evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../fine-tuning" class="internal">Fine Tuning</a></li><li><a href="../foundation-models" class="internal">Foundation Models</a></li><li><a href="../function-calling" class="internal">Function Calling</a></li><li><a href="../generative-ai" class="internal">Generative AI</a></li><li><a href="../graph-database" class="internal">Graph Database</a></li><li><a href="../ground-robot" class="internal">Ground Robot</a></li><li><a href="../infrastructure-layer" class="internal">InfrastructureLayer</a></li><li><a href="../knowledge-graphing" class="internal">Knowledge Graphing</a></li><li><a href="../large-language-models" class="internal">Large Language Models</a></li><li><a href="../medical-ai" class="internal">Medical AI</a></li><li><a href="../model-control-protocols-like-mcp" class="internal">Model Control Protocols like MCP</a></li><li><a href="../model-training" class="internal">Model Training</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../prompt-engineering" class="internal">Prompt Engineering</a></li><li><a href="../transformers" class="internal">Transformers</a></li><li><a href="../verifiable-credentials" class="internal">Verifiable Credentials</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:f6844001f6f72b1205a2581a7bf163b4d8d7f58c0e74b5bf0a93212aa15352e1</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../Agentic-Internet" class="internal">Agentic Internet</a></li><li><a href="../Agents" class="internal">Agents</a></li><li><a href="../pages/AI-Search" class="internal">AI Search</a></li><li><a href="../pages/Chatbots" class="internal">Chatbots</a></li><li><a href="../pages/CLI-Multi-Agent-Systems" class="internal">CLI Multi-Agent Systems</a></li><li><a href="../pages/Function-Calling" class="internal">Function Calling</a></li><li><a href="../pages/Graph-Database" class="internal">Graph Database</a></li><li><a href="../pages/Knowledge-Graphing" class="internal">Knowledge Graphing</a></li><li><a href="../Model-Control-Protocols-like-MCP" class="internal">Model Control Protocols like MCP</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/BEIR-Benchmark" class="internal">BEIR Benchmark</a></li><li><a href="../pages/MTEB-Benchmark" class="internal">MTEB Benchmark</a></li><li><a href="../RAGAS-Framework" class="internal">RAGAS Framework</a></li><li><a href="../ARES-Framework" class="internal">ARES Framework</a></li><li><a href="../TREC-Deep-Learning-Track" class="internal">TREC Deep Learning Track</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Customer-Support-Automation" class="internal">Customer Support Automation</a></li><li><a href="../enterprise-search" class="internal">Enterprise Search</a></li><li><a href="../legal-ai" class="internal">Legal AI</a></li><li><a href="../pages/Compliance-Monitoring" class="internal">Compliance Monitoring</a></li><li><a href="../Medical-AI" class="internal">Medical AI</a></li><li><a href="../Scientific-Literature-Mining" class="internal">Scientific Literature Mining</a></li><li><a href="../Code-Navigation" class="internal">Code Navigation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/LlamaIndex" class="internal">LlamaIndex</a></li><li><a href="../pages/Agent-Frameworks" class="internal">Agent Frameworks</a></li><li><a href="../pages/Constitutional-AI-Language-Model-Family" class="internal">Constitutional AI Language Model Family</a></li><li><a href="../pages/Instruction-Following-Conversational-AI-System" class="internal">Instruction-Following Conversational AI System</a></li><li><a href="../Evaluation-benchmarks-and-leaderboards" class="internal">Evaluation benchmarks and leaderboards</a></li><li><a href="../pages/Large-Scale-Pretrained-Foundation-Model" class="internal">Large-Scale Pretrained Foundation Model</a></li><li><a href="../pages/Function-Calling" class="internal">Function Calling</a></li><li><a href="../Model-Control-Protocols-like-MCP" class="internal">Model Control Protocols like MCP</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:Retriever))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:Generator))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:VectorIndex))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:ChunkingStrategy))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:EmbeddingModel))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:Reranker))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:DocumentStore))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:PromptTemplate))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:QueryEncoder))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:hasPart ai:PassageEncoder))
+
+  ## Dependency Relationships
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:requires ai:LargeLanguageModel))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:requires ai:VectorDatabase))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:requires ai:TextEmbeddings))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:requires ai:CorpusPreprocessing))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:requires ai:DensePassageRetrieval))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:dependsOn ai:TransformerArchitecture))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:dependsOn ai:ApproximateNearestNeighbourSearch))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:dependsOn ai:AttentionMechanism))
+
+  ## Capability Relationships
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:enables ai:FactualGrounding))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:enables ai:CitationGeneration))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:enables ai:KnowledgeCurrency))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:enables ai:HallucinationReduction))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:enables ai:DomainAdaptationWithoutFinetuning))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:enables ai:MultiHopReasoning))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:supports ai:EnterpriseSearch))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:supports ai:OpenDomainQA))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:supports ai:CodeNavigation))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:supports ai:LegalAI))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:supports ai:MedicalQA))
+
+  ## Implementation Relationships
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:BM25SparseRetrieval))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:DensePassageRetrieval))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:HybridSearch))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:ColBERTv2LateInteraction))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:GraphRAG))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:SelfRAG))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:implements ai:ContextualRetrieval))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:uses ai:HNSWApproximateNearestNeighbour))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:uses ai:ReciprocalRankFusion))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:uses ai:CrossEncoderReranking))
+
+  ## Reduction Relationships
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:reduces ai:HallucinationRate))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:reduces ai:FineTuningCost))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:reduces ai:KnowledgeStaleness))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:reduces ai:ContextWindowRequirement))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:reduces ai:ModelParameterDependence))
+
+  ## Association Relationships
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:relatedTo ai:AgenticAI))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:relatedTo ai:KnowledgeGraphs))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:relatedTo ai:FunctionCalling))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:relatedTo ai:PromptEngineering))
+  SubClassOf(ai:RetrievalAugmentedGenerationRAG
+    ObjectSomeValuesFrom(ai:contrasts ai:FineTuning))
+
+  ## Data Properties
+  DataPropertyAssertion(ai:hasIdentifier ai:RetrievalAugmentedGenerationRAG &quot;AI-2201&quot;^^xsd:string)
+  DataPropertyAssertion(ai:authorityScore ai:RetrievalAugmentedGenerationRAG &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:hallucinationReduction ai:RetrievalAugmentedGenerationRAG &quot;0.49&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:foundingYear ai:RetrievalAugmentedGenerationRAG &quot;2020&quot;^^xsd:integer)
+  DataPropertyAssertion(ai:defaultTopKDocuments ai:RetrievalAugmentedGenerationRAG &quot;5&quot;^^xsd:integer)
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:RetrievalAugmentedGenerationRAG &quot;Retrieval Augmented Generation - RAG&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:RetrievalAugmentedGenerationRAG &quot;Neural architecture paradigm (Lewis et al. NeurIPS 2020) augmenting LLM generation with dynamic non-parametric knowledge retrieval via dense bi-encoder (DPR), sparse BM25, hybrid, and late-interaction ColBERTv2 retrieval over vector databases (Pinecone, Weaviate, Qdrant, pgvector, LanceDB); enabling factually grounded citation-traceable responses without retraining. Advanced variants include GraphRAG, Self-RAG, Contextual Retrieval, RAPTOR, FLARE, HyDE, agentic RAG. Evaluated via RAGAS/ARES/BEIR. Dominant production knowledge-grounding approach 2026.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:RetrievalAugmentedGenerationRAG &quot;AI-2201&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:RetrievalAugmentedGenerationRAG &quot;Information Retrieval, NLP, Generative AI, Vector Databases, Knowledge Grounding, Hallucination Reduction&quot;@en)
+)
+
+## Property Characteristics
+AsymmetricObjectProperty(ai:requires)
+AsymmetricObjectProperty(ai:enables)
+AsymmetricObjectProperty(ai:implements)
+AsymmetricObjectProperty(ai:reduces)
+TransitiveObjectProperty(ai:dependsOn)
+FunctionalDataProperty(ai:hallucinationReduction)
+FunctionalDataProperty(ai:defaultTopKDocuments)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-retrieval-augmented-generation">About Retrieval Augmented Generation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-retrieval-augmented-generation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Retrieval Augmented Generation (RAG)</strong> resolves a fundamental tension in deploying large language models in production: parametric knowledge encoded in model weights during pre-training is static, expensive to update, difficult to trace to sources, bounded by training cutoff dates, and may contain hallucinated or conflated facts with no mechanism for correction. Retrieval augmentation addresses all five limitations simultaneously by coupling a frozen or lightly tuned generator with a dynamic retrieval engine that fetches relevant passages from an external corpus at inference time. The generator then conditions its output on both the original query and the retrieved evidence, producing responses grounded in verifiable, citable, and updatable source material.</p>
+</li>
+<li>
+<p>The architecture represents a deliberate architectural separation between <em>what the model knows how to do</em> (reasoning, summarisation, generation, instruction-following — encoded parametrically) and <em>what the model needs to know</em> (facts, entities, policies, recent events — stored externally in a retrieval corpus). This separation mirrors how human experts operate: a clinician does not memorise every drug interaction but knows how to retrieve the current formulary and reason over it. RAG extends this cognitive model to language systems.</p>
+</li>
+<li>
+<h3 id="formal-model-and-information-theoretic-foundations">Formal Model and Information-Theoretic Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#formal-model-and-information-theoretic-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The canonical formulation by Lewis et al. (NeurIPS 2020) casts RAG as a latent variable generative model. Let x be the input query, z ∈ Z a retrieved document from corpus Z, and y the desired output. The marginal probability is:</p>
+</li>
+<li>
+<p><strong>p_RAG(y|x) = ∑_z p_η(z|x) · p_θ(y|x,z)</strong></p>
+</li>
+<li>
+<p>where the retriever p_η parameterised by η (typically a bi-encoder BERT model) assigns probability to each candidate document via softmax over inner products, and the generator p_θ parameterised by θ (BART, T5, GPT-family) synthesises the output by conditioning on the concatenation of query x and retrieved passages z. In practice, the sum is approximated over top-k retrieved documents (k=5-10) rather than the full corpus. Two inference variants were defined: <strong>RAG-Sequence</strong> (a single document z* governs the entire output sequence) and <strong>RAG-Token</strong> (different retrieved documents may inform different tokens, enabling token-level attention over multiple passages simultaneously). Lewis et al. demonstrated strong performance on Natural Questions (recall@5 improved 41.5 → 73.7% over BM25), TriviaQA, WebQuestions, and CuratedTrec.</p>
+</li>
+<li>
+<p>The <strong>bi-encoder retrieval</strong> step uses Maximum Inner Product Search (MIPS) against a pre-computed dense FAISS index. At index construction, each corpus passage p is encoded as E_P(p) ∈ ℝ^d. At inference, the query is encoded as E_Q(x) ∈ ℝ^d and the top-k passages are retrieved by solving argmax_p E_Q(x)^T E_P(p) using HNSW or IVFFlat approximate nearest neighbour search, achieving sub-10 ms retrieval over millions of passages.</p>
+</li>
+<li>
+<p><strong>Fusion-in-Decoder (FiD)</strong> (Izacard &amp; Grave EACL 2021) is an influential architectural variant: rather than concatenating all retrieved passages in the encoder context, FiD encodes each (query, passage) pair independently through the encoder and concatenates the resulting representations in the decoder cross-attention. This allows scaling to k=100 retrieved passages without quadratic attention cost, achieving superior performance on NaturalQuestions (51.4 EM) and TriviaQA (67.6 EM) over earlier RAG variants.</p>
+</li>
+<li>
+<h3 id="core-pipeline-architecture-five-stage-canonical-rag">Core Pipeline Architecture: Five-Stage Canonical RAG<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#core-pipeline-architecture-five-stage-canonical-rag" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>A production RAG pipeline comprises five functional stages: corpus ingestion and preprocessing, embedding and indexing, query-time retrieval, context construction and reranking, and generation with attribution.</p>
+</li>
+<li>
+<p><strong>Stage 1 — Corpus Ingestion, Parsing, and Chunking.</strong> Raw documents (PDFs, DOCX, HTML, Markdown, SQL schemas, code files, emails, wikis) are parsed, cleaned, and segmented into retrievable units. Document parsing is non-trivial: OCR quality, table extraction, equation rendering, and page header/footer removal all affect downstream retrieval precision. Tools including Unstructured, LlamaParse, Reducto, and pdfminer handle format-specific extraction. Chunking strategy critically impacts recall-precision tradeoffs. Four primary approaches exist:</p>
+<ul>
+<li><em>Fixed-size chunking</em> — splitting on character or token count (512-1024 tokens is common), simple but may bisect sentences or paragraphs mid-thought</li>
+<li><em>Sentence-window chunking</em> — sentence-level semantic units with ±k surrounding sentences added as context (k=1-3), preserving coherence at mild storage overhead; the surrounding sentences are included in the context sent to the generator but not in the chunk used for indexing</li>
+<li><em>Recursive character splitting</em> — hierarchical delimiters (paragraph → sentence → word) producing structurally coherent chunks that respect document hierarchy</li>
+<li><em>Semantic chunking</em> — embedding-based breakpoints where cosine similarity between adjacent sentence embeddings drops below a threshold (typically 0.7), producing variable-length topically coherent units; computationally expensive but retrieval-optimal for heterogeneous corpora</li>
+</ul>
+</li>
+<li>
+<p><strong>Contextual Retrieval</strong> (Anthropic 2024) adds a critical pre-processing step: Claude Haiku prepends a brief document-specific contextual summary to each chunk before embedding — e.g. “This passage is from a 2023 IPCC Working Group III report on mitigation pathways, chapter 12 on carbon capture. It discusses…” — reducing retrieval failure by 49% and improving answer relevance by 67% in ablation studies. The key insight is that a chunk stripped of its surrounding document context becomes semantically ambiguous; contextualised chunks resolve this ambiguity at indexing time.</p>
+</li>
+<li>
+<p><strong>Stage 2 — Embedding and Vector Indexing.</strong> Each chunk is encoded into a dense vector by an embedding model. The embedding model choice governs the semantic coverage of the retrieval system. Current best practice: use BGE-M3 or E5-mistral-7b for multilingual or long-document corpora, OpenAI text-embedding-3-large for English-dominant enterprise corpora requiring API simplicity, and all-MiniLM-L6-v2 or nomic-embed-text-v1.5 for cost-sensitive or edge-deployed applications. Corpus embeddings are stored in a vector index supporting approximate nearest neighbour search. <strong>HNSW (Hierarchical Navigable Small World)</strong> graphs implemented in FAISS, Qdrant, Weaviate, and pgvector achieve sub-10 ms recall@10 at 99%+ ANN accuracy for corpora up to tens of millions of vectors. For larger corpora (100M-1B+ vectors), DiskANN and StreamingDiskANN enable SSD-resident indices with low memory footprint. <strong>Quantisation</strong> (Product Quantisation compressing 32-bit float vectors to 8-bit codes, Binary Quantisation compressing to 1 bit per dimension) enables 4-32× storage reduction with &lt; 5% retrieval quality loss at scale, critical for cost management at billion-scale deployments.</p>
+</li>
+<li>
+<p><strong>Stage 3 — Query-Time Retrieval.</strong> At inference, the user query is embedded by the same encoder used at indexing time (critical: query and passage encoder must share a shared embedding space) and top-k nearest neighbours (k=3-20 depending on context window budget and corpus density) are retrieved from the vector index via MIPS. <strong>Hybrid retrieval</strong> fuses sparse BM25 scores with dense cosine similarity scores using <strong>Reciprocal Rank Fusion (RRF)</strong>: score_RRF(d) = ∑_r 1/(k_RRF + rank_r(d)) where k_RRF=60 is a constant preventing high scores for top-ranked documents overwhelming lower-ranked ones and the sum is over retrieval methods r. RRF requires no score normalisation and consistently outperforms linear combination of normalised scores in heterogeneous retrieval settings. Sparse indices maintained in Elasticsearch or OpenSearch via BM25 provide complementary signal for keyword-heavy, entity-rich, or acronym-dense queries where dense embeddings underperform. <strong>Query rewriting</strong> (a pre-retrieval step) uses an LLM to rephrase the query for retrieval optimality: generating multiple query variants (MultiQueryRetriever), extracting structured filters (SelfQueryRetriever), or expanding with synonyms and related terms. HyDE generates a full hypothetical answer document as the retrieval query, bridging the asymmetric length and style gap between short queries and long retrieval passages.</p>
+</li>
+<li>
+<p><strong>Stage 4 — Reranking and Context Construction.</strong> A <strong>reranker</strong> (optional but consistently beneficial) applies a cross-encoder model to re-score the top-k retrieved passages against the query jointly, using full pairwise attention rather than independent embedding. Cross-encoders (Cohere Rerank 3, BGE-Reranker-Large, ms-marco-MiniLM-L-12-v2) produce more accurate relevance scores than bi-encoders but cannot be used for large-scale first-pass retrieval due to O(|corpus|) inference cost. Reranking over top-k=50 candidates to select top-n=5 improves NDCG@10 by 5-15 points on BEIR at 50-200 ms latency per query. Retrieved and reranked passages are assembled into a context prompt. The <strong>Lost-in-the-Middle</strong> phenomenon (Liu et al. 2023) documents that LLM performance degrades for passages placed in the middle of long contexts; optimal placement is beginning or end, motivating position-aware context ordering strategies. <strong>Contextual Compression</strong> (LangChain) extracts only the relevant fragments from each retrieved passage before context assembly, reducing context length and improving signal-to-noise ratio for generation.</p>
+</li>
+<li>
+<p><strong>Stage 5 — Generation with Attribution.</strong> The LLM generates the response conditioned on the assembled context prompt (system instruction + retrieved passages + user query). Citation tokens ([1], [2], [Source: doc_id]) are inserted inline to attribute specific claims to retrieved passages, enabling downstream fact-checking, audit trail generation, and user trust calibration. <strong>Faithfulness</strong> — the fraction of generated claims entailed by the retrieved context — is the primary RAG-specific quality metric, distinct from <em>answer correctness</em> (which requires correct retrieval AND correct reasoning) and <em>answer completeness</em> (whether all relevant information from context is incorporated). Production RAG systems apply post-generation hallucination filtering: Vectara’s HHEM score, Cohere’s grounded generation endpoint, or LLM-as-judge faithfulness checks flag responses where generation departs from retrieved evidence.</p>
+</li>
+<li>
+<h3 id="retrieval-methods-sparse-dense-hybrid-late-interaction">Retrieval Methods: Sparse, Dense, Hybrid, Late Interaction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#retrieval-methods-sparse-dense-hybrid-late-interaction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Sparse Retrieval — BM25.</strong> The BM25 (Best Match 25) probabilistic ranking function scores document d for query q:</p>
+</li>
+<li>
+<p>score(d,q) = ∑_{t∈q} IDF(t) · [f(t,d) · (k₁+1)] / [f(t,d) + k₁ · (1-b + b·|d|/avgdl)]</p>
+</li>
+<li>
+<p>where f(t,d) is term frequency in document d, IDF(t) = log[(N-n(t)+0.5)/(n(t)+0.5)+1] is inverse document frequency over N documents with n(t) containing term t, k₁=1.5 controls term frequency saturation, b=0.75 controls document length normalisation, and avgdl is the mean document length. BM25 excels on keyword-heavy queries, rare entities, product codes, and legal/technical terminology where dense retrieval trained on broad web corpora may underfit. The BEIR benchmark (Thakur et al. 2021) established BM25 as a strong zero-shot baseline across all 18 tasks, outperforming many early dense models on out-of-domain corpora — a sobering result that motivated the dense model research community to invest in zero-shot generalisation. BM25 requires no GPU, runs entirely on CPU via inverted indices, is interpretable (explicit term weights), and scales to billions of documents via Elasticsearch/OpenSearch distributed infrastructure.</p>
+</li>
+<li>
+<p><strong>Dense Retrieval — DPR and Descendants.</strong> Dense Passage Retrieval (Karpukhin et al. EMNLP 2020) introduced bi-encoder neural retrieval: question encoder E_Q and passage encoder E_P independently map inputs to ℝ^{768}, trained with in-batch negatives to maximise similarity between matched (question, passage) pairs and minimise similarity for unmatched pairs. Retrieval selects argmax_p E_Q(q)^T E_P(p). DPR trained on Natural Questions and TriviaQA outperformed BM25 by 9-19 points on NQ top-20 accuracy but struggled on BEIR zero-shot tasks. Post-DPR embedding models vastly improved: <strong>MSMARCO-trained models</strong> (SBERT, all-mpnet-base-v2) generalised better; <strong>INSTRUCTOR</strong> (Su et al. 2022) enabled task-specific instruction-conditioned embeddings; <strong>E5</strong> (Wang et al. 2022) used constrastive pre-training on web scraped text-query pairs; <strong>BGE-M3</strong> unified dense, sparse, and ColBERT embeddings in a single model supporting 100+ languages and 8192 token contexts; <strong>GTE-Qwen2-7B</strong> (Alibaba 2024) achieved MTEB top-5 with a 7B-parameter decoder-based embedding model.</p>
+</li>
+<li>
+<p><strong>Hybrid Retrieval.</strong> Combining BM25 and dense retrieval captures complementary signals: BM25 catches exact lexical matches (rare proper nouns, product codes, regulatory article numbers) that dense retrieval misses due to out-of-distribution embeddings; dense retrieval captures paraphrase, semantic equivalence, and cross-lingual matches that BM25 misses entirely. Azure AI Search, Weaviate, Qdrant, Elasticsearch 8.x, and OpenSearch all provide native hybrid search. Reciprocal Rank Fusion as the combination strategy consistently outperforms weighted linear combination of normalised scores, improving NDCG@10 by 3-8 points over either method alone across heterogeneous enterprise corpora (Cormack et al. 2009 demonstrated RRF robustness across TREC tasks).</p>
+</li>
+<li>
+<p><strong>Late Interaction — ColBERT and ColBERTv2.</strong> Single-vector bi-encoders compress all passage semantics into d=768 dimensions, inevitably losing fine-grained token-level signal. Cross-encoders retain all token interactions but require O(n) inference passes per query. ColBERT (Khattab &amp; Zaharia SIGIR 2020) introduces <strong>late interaction</strong>: both query q and passage p are independently encoded into per-token embedding matrices Q ∈ ℝ^{|q|×d_col} and P ∈ ℝ^{|p|×d_col} (d_col=128), and similarity is computed as:</p>
+</li>
+<li>
+<p>score(q,p) = ∑_{i∈q} max_{j∈p} Q_i · P_j^T (MaxSim)</p>
+</li>
+<li>
+<p>This per-query-token maximum over all passage tokens captures token-level alignment without requiring full cross-attention. <strong>ColBERTv2</strong> (Santhanam et al. NAACL 2022) adds distillation from a cross-encoder teacher and residual vector compression, achieving BEIR state-of-the-art on several tasks at 100-1000× lower inference latency than cross-encoders. <strong>PLAID</strong> (Santhanam et al. 2022) enables sub-100 ms retrieval over 100M passages via decompressed residual vector search. <strong>RAGatouille</strong> (Answer.AI) provides plug-and-play ColBERT integration for LlamaIndex and LangChain pipelines, lowering the engineering barrier to late-interaction RAG.</p>
+</li>
+<li>
+<h3 id="embedding-models-state-of-the-art-2024-2026">Embedding Models: State of the Art (2024-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#embedding-models-state-of-the-art-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Model</th><th>Provider</th><th>Dims</th><th>Max Seq</th><th>MTEB (En)</th><th>Licence</th><th>Notes</th></tr></thead><tbody><tr><td>text-embedding-3-large</td><td>OpenAI</td><td>1536/3072</td><td>8191</td><td>64.6</td><td>Proprietary API</td><td>MRL dim reduction; +10% vs ada-002</td></tr><tr><td>Cohere Embed v3</td><td>Cohere</td><td>1024</td><td>512</td><td>64.5</td><td>API + on-prem</td><td>Input-type aware; binary quantisation</td></tr><tr><td>BGE-M3</td><td>BAAI</td><td>1024</td><td>8192</td><td>63.5</td><td>MIT</td><td>100+ lang; dense+sparse+ColBERT unified</td></tr><tr><td>E5-mistral-7b-instruct</td><td>Microsoft</td><td>4096</td><td>32768</td><td>66.6</td><td>MIT</td><td>Best multilingual MTEB 2024</td></tr><tr><td>GTE-Qwen2-7B-instruct</td><td>Alibaba</td><td>3584</td><td>32768</td><td>67.5</td><td>Apache 2.0</td><td>MTEB top-5 2025</td></tr><tr><td>nomic-embed-text-v1.5</td><td>Nomic AI</td><td>768</td><td>8192</td><td>62.4</td><td>Apache 2.0</td><td>Open weights; MRL; CPU-efficient</td></tr><tr><td>all-MiniLM-L6-v2</td><td>SBERT</td><td>384</td><td>256</td><td>56.3</td><td>Apache 2.0</td><td>Fast; ARM-native; edge RAG</td></tr><tr><td>mxbai-embed-large-v1</td><td>MixedBread</td><td>1024</td><td>512</td><td>64.7</td><td>Apache 2.0</td><td>Strong BEIR zero-shot</td></tr></tbody></table></div>
+</li>
+<li>
+<p><strong>ARM-based inference</strong> (Apple M-series, Qualcomm Snapdragon X Elite, AWS Graviton3, Ampere Altra) is viable for models ≤ 400M parameters (all-MiniLM, nomic-embed, mxbai-embed) at 2,000-8,000 passages/second per core without GPU, reducing infrastructure costs for mid-scale enterprise deployments from £0.002/1000 passages (GPU) to £0.0001/1000 passages (ARM CPU). The ARM Research collaboration with UK universities (Cambridge, Imperial, Southampton) is actively exploring quantised embedding inference for on-device healthcare and industrial IoT RAG where data sovereignty prohibits cloud egress.</p>
+</li>
+<li>
+<h3 id="vector-databases-architecture-and-tradeoffs">Vector Databases: Architecture and Tradeoffs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#vector-databases-architecture-and-tradeoffs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Pinecone.</strong> Managed cloud-native vector database (2019, San Francisco). Serverless tier (2024) charges per read/write unit rather than reserved pod capacity, eliminating idle compute cost. Supports hybrid dense-sparse search, metadata filtering on arbitrary fields, namespace partitioning for multi-tenancy, and sparse-dense upsert APIs. Backend uses HNSW combined with DiskANN for large-scale indices, achieving p99 latency &lt; 50 ms at 1B vector scale. Widely adopted in enterprise RAG stacks (Notion AI, Airbnb, Brex). UK customers benefit from EU data residency option.</p>
+</li>
+<li>
+<p><strong>Weaviate.</strong> Open-source Go-native vector database (2019). Module ecosystem enables text2vec-openai, text2vec-cohere, text2vec-huggingface, and multi2vec-clip for multimodal indexing at ingestion time, eliminating separate embedding infrastructure. Native hybrid BM25+vector search with Reciprocal Rank Fusion. GraphQL and REST APIs. Strong European presence (Amsterdam-based) with GDPR-compliant on-premises deployment templates. Verba (Weaviate’s reference RAG application) demonstrates full production pipeline integration. Active development: Weaviate v1.24 (2024) added Named Vectors enabling multiple embedding models per object.</p>
+</li>
+<li>
+<p><strong>Qdrant.</strong> Open-source Rust-native vector database (2021, Berlin). Consistently achieves highest HNSW throughput in ANN benchmarks on commodity CPU hardware. Payload-based filtering integrated into HNSW graph traversal avoids the recall degradation of post-filtering architectures, critical for enterprise RAG with complex metadata constraints. Binary quantisation and product quantisation built-in with minimal configuration. gRPC API achieving &lt; 5 ms p99 at 10M vectors on a single node. Sparse vector support (2023) enables native hybrid search. Favoured in latency-critical inference stacks; increasingly adopted in UK defence and intelligence research contexts.</p>
+</li>
+<li>
+<p><strong>Chroma.</strong> Embedded Python-native vector store (2022) designed for local development, Jupyter prototyping, and small-team experimentation. Single-process, no server required, tight LangChain integration. Default vector backend in many tutorials and educational RAG courses. Not production-scale for concurrent multi-user access. Chroma Cloud (2024) adds persistence, multi-user access, and managed hosting.</p>
+</li>
+<li>
+<p><strong>pgvector + pgvectorscale.</strong> The pgvector PostgreSQL extension (2021) enables vector(dim) column type with HNSW and IVFFlat indices. Critical enterprise advantage: vector and relational data co-located in an existing Postgres instance, eliminating ETL pipelines and data synchronisation overhead. <strong>pgvectorscale</strong> (Timescale 2024) adds StreamingDiskANN (SSD-resident billion-scale index) and statistical binary quantisation, achieving 28× faster queries at 1B scale vs pgvector alone. Deployed in Supabase, Neon, AWS Aurora PostgreSQL 15+, and Timescale Cloud. The SQL-native interface enables JOIN operations between vector similarity results and relational metadata filters in a single query — a uniquely powerful capability for structured enterprise RAG.</p>
+</li>
+<li>
+<p><strong>LanceDB.</strong> Open-source columnar vector database built on the Lance data format (2023). Serverless-first: stores data on S3/GCS/Azure Blob without requiring a running server, paying only for object storage. V-flat index enables billion-scale exact search with lazy column loading. Tight integration with PyArrow, Pandas, and DuckDB for embedded analytics alongside vector search. Zero infrastructure cost for read-heavy workloads with infrequent writes. Popular in academic research and startup prototyping.</p>
+</li>
+<li>
+<h3 id="advanced-rag-variants">Advanced RAG Variants<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#advanced-rag-variants" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>GraphRAG (Microsoft Research, April 2024).</strong> Edge et al. identified the fundamental limitation of flat-vector RAG: it answers local questions (specific entity lookups, passage-level facts) effectively but fails at global sensemaking queries requiring synthesis across an entire corpus. For a document collection (e.g. a podcast archive, a legal corpus, a scientific literature set), questions like “What are the major themes across these documents?” or “How has the discourse evolved over time?” are unanswerable by vector similarity — no single passage contains the answer. GraphRAG addresses this through a multi-stage pipeline: (1) <strong>Entity and Relationship Extraction</strong> — an LLM processes each chunk to extract entities (people, places, concepts, events) and relationships, building a heterogeneous knowledge graph; (2) <strong>Community Detection</strong> — the Leiden algorithm (Traag et al. 2019) partitions the graph into hierarchical communities at multiple resolution levels (global/intermediate/local); (3) <strong>Community Summarisation</strong> — an LLM generates a natural language summary for each community, capturing its central themes and entities; (4) <strong>Query-Focused Summarisation</strong> — for global queries, a map-reduce approach generates partial answers over community reports and synthesises them; for local queries, standard entity-centric graph traversal augmented by vector retrieval is used. GraphRAG outperforms naive RAG on corpora requiring global reasoning, achieving 2-3× higher comprehensiveness and diversity scores from blind human evaluators. Released open-source April 2024, the Microsoft GraphRAG Python library reached 20K GitHub stars within two months. <a href="../pages/Knowledge-Graphing" class="internal alias" data-slug="pages/Knowledge-Graphing">Knowledge Graphing</a> integration via GraphRAG represents a convergence of symbolic and neural information retrieval approaches.</p>
+</li>
+<li>
+<p><strong>Self-RAG (Asai et al., ICLR 2024).</strong> Extends the RAG paradigm by training a language model with four special reflection tokens that enable runtime self-critique of retrieval quality and generation faithfulness: [Retrieve] (decides whether retrieval is needed for the current generation step), [IsREL] (assesses whether the retrieved passage is relevant to the query), [IsSUP] (assesses whether the generated claim is supported by the retrieved passage), [IsUSE] (assesses overall utility of the generated response). At training, an LLM critic generates reflection token annotations for training examples; the Self-RAG model is then fine-tuned on these augmented examples via standard language modelling. At inference, the model dynamically decides when to retrieve (avoiding unnecessary retrieval for factual claims already known parametrically), critiques retrieved passages inline, and produces calibrated uncertainty signals. Self-RAG outperforms RAG baselines and instruction-tuned LLaMA-2 on ASQA (12.3% improvement), PopQA (6.8%), FactScore (+5.2 points), and FEVER without requiring retrieval for every query — reducing average retrieval calls by 40% whilst improving factual accuracy.</p>
+</li>
+<li>
+<p><strong>Contextual Retrieval (Anthropic, September 2024).</strong> Rather than modifying retrieval architecture or post-processing, Contextual Retrieval improves chunk-level representation quality at indexing time. For each chunk, Claude Haiku (the most cost-efficient Anthropic model) generates a contextual summary by processing the full document alongside the chunk: “Given the following full document and a specific chunk from it, generate a concise context for the chunk that would help in its retrieval. Document: [full document]. Chunk: [chunk]. Context:“. The augmented representation (context summary + original chunk text) is embedded for indexing and prepended to the chunk in generation context. This resolves the fundamental <strong>chunk isolation problem</strong>: a chunk extracted from a 200-page technical report loses the document-level context that makes it interpretable, causing embeddings to cluster by surface form rather than document intent. Anthropic reported 49% reduction in top-20 retrieval failures and 67% improvement in answer relevance on internal corpora. The technique requires approximately 1 additional LLM call per chunk at indexing time but zero additional compute at query time.</p>
+</li>
+<li>
+<p><strong>RAPTOR (Sarthi et al., ICLR 2024).</strong> Recursive Abstractive Processing for Tree-Organized Retrieval addresses the granularity problem: single-level chunking forces a choice between fine-grained chunks (high precision, low recall for broad questions) and coarse chunks (high recall, low precision). RAPTOR builds a hierarchical tree of summaries: (1) embed all leaf chunks; (2) cluster with UMAP dimensionality reduction + Gaussian Mixture Models; (3) LLM summarises each cluster into a parent node; (4) repeat recursively until a single root summary exists. At retrieval, queries can retrieve from any tree level — leaf chunks for specific facts, mid-level summaries for topical synthesis, root summaries for document-level overviews. RAPTOR improves QA performance by 20% on multidoc synthesis tasks compared to flat chunking.</p>
+</li>
+<li>
+<p><strong>FLARE — Forward-Looking Active REtrieval (Jiang et al., EMNLP 2023).</strong> Most RAG systems retrieve once before generation, but this fails when early generation steps reveal information needs not apparent from the initial query. FLARE iteratively generates text and monitors token generation probabilities: when generation probability falls below a threshold (p &lt; 0.2), the system triggers retrieval using the generated text so far as the query, retrieves new passages, and continues generation. This enables adaptive retrieval triggered by model uncertainty rather than query content, particularly beneficial for multi-step reasoning tasks.</p>
+</li>
+<li>
+<p><strong>Agentic RAG.</strong> Integration of RAG within autonomous <a href="../Agents" class="internal" data-slug="Agents">Agents</a> frameworks transforms retrieval from a single static step into an iterative, multi-strategy process embedded in a tool-calling agent loop. An agentic RAG system may: (1) decompose complex queries into sub-questions via query planning, resolving each via independent retrieval; (2) invoke web search tools when the static corpus is insufficient or stale; (3) call structured database APIs (SQL, GraphQL) for numerical or tabular data alongside vector retrieval; (4) use reflection loops to verify retrieved evidence via independent retrieval before generation; (5) maintain conversation memory across turns to reformulate queries based on prior context; (6) route different query types to specialised retrievers (semantic search for concepts, BM25 for entity lookup, SQL for quantitative queries). <a href="../pages/Agent-Frameworks" class="internal alias" data-slug="pages/Agent-Frameworks">Agent Frameworks</a> including LangGraph, LlamaIndex Workflows, CrewAI, and AutoGen all support agentic RAG as a first-class pattern. <strong>IRCoT</strong> (Trivedi et al. 2023) interleaves retrieval steps within Chain-of-Thought reasoning, retrieving after each reasoning step to ground the next inference.</p>
+</li>
+<li>
+<p><strong>HyDE — Hypothetical Document Embeddings (Gao et al. 2022).</strong> Dense retrieval models exhibit an asymmetric quality gap: they are trained on passage-to-passage similarity but deployed for query-to-passage similarity. Short, telegraphic user queries (&lt; 20 tokens) embed differently from long, expository retrieval passages (100-300 tokens), causing systematic retrieval underperformance for rare or complex queries. HyDE resolves this by using an LLM (no RAG) to generate a hypothetical answer document for the query — a plausible but unverified answer passage. This hypothetical document (in the target passage style and length) is then embedded and used as the retrieval query. Retrieval over the hypothetical document embedding consistently outperforms direct query embedding, improving recall@100 on TREC-COVID by +4.3 NDCG and on DBpedia by +3.8 NDCG, with no additional training required.</p>
+</li>
+<li>
+<h3 id="rag-as-a-service-platforms-and-frameworks">RAG-as-a-Service Platforms and Frameworks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#rag-as-a-service-platforms-and-frameworks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>LlamaIndex.</strong> (formerly GPT-Index, 2022, Jerry Liu) Python-native framework architecturally designed for RAG over heterogeneous document collections. Data connectors for 100+ sources (Notion, Confluence, Slack, GitHub, S3, Google Drive, Salesforce, SQL databases, PDFs, DOCX, HTML, CSV). Core index types: VectorStoreIndex (standard RAG), SummaryIndex (sequential chunk summarisation), KnowledgeGraphIndex (entity-relationship extraction for GraphRAG), SQLTableNodeMapping (structured data). Query engines: SimpleQueryEngine (basic RAG), SubQuestionQueryEngine (multi-step decomposition), MultiStepQueryEngine (iterative refinement), RouterQueryEngine (semantic routing to specialised indices). Workflow API (2024) enables stateful multi-step agentic RAG with human-in-the-loop approval steps, retry logic, and observability hooks. 36K+ GitHub stars mid-2025.</p>
+</li>
+<li>
+<p><strong>LangChain.</strong> (Harrison Chase, 2022) General-purpose LLM application framework with extensive RAG modules: 60+ document loaders (PDF, DOCX, HTML, S3, GCS, databases), 10+ text splitters (recursive character, semantic, token), 50+ vector store integrations (all major providers), retrieval chains (MultiQueryRetriever generating diverse query variants, ContextualCompressionRetriever extracting relevant fragments, SelfQueryRetriever converting natural language to metadata filter SQL, ParentDocumentRetriever indexing small chunks but retrieving parent documents). <strong>LangGraph</strong> (2024) adds stateful directed graph computation enabling complex agentic RAG with cycles (iterative retrieval), branching (conditional retrieval strategies), and persistent state across agent steps.</p>
+</li>
+<li>
+<p><strong>Vectara.</strong> RAG-as-a-Service platform (2021, San Francisco) providing managed ingestion, storage, retrieval, and generation. Proprietary Boomerang embedding model optimised for retrieval quality. Hybrid search with Reciprocal Rank Fusion built-in. <strong>HHEM</strong> (Hughes Hallucination Evaluation Model) scores each generated response for factual consistency with retrieved context, enabling production hallucination monitoring without manual evaluation. REST API and native LangChain/LlamaIndex connectors. GDPR-compliant EU data residency. Grounded generation endpoint returns citations with character-level offsets into source documents.</p>
+</li>
+<li>
+<p><strong>Cohere RAG — Command R and Command R+.</strong> Cohere’s Command R (35B) and Command R+ (104B) models (March 2024) are explicitly fine-tuned for retrieval-augmented generation: the <code>/chat</code> endpoint accepts a <code>documents=[]</code> parameter containing retrieved passages, producing structured JSON output with inline citation spans mapping each generated claim to a specific source document. Grounded generation is enforced at model training time, not post-hoc. Combined with Cohere Embed v3 (retrieval embedding) and Cohere Rerank 3 (cross-encoder reranking), Cohere offers a unified end-to-end managed RAG pipeline with predictable citation quality.</p>
+</li>
+<li>
+<p><strong>Azure AI Search + Azure OpenAI On Your Data.</strong> Microsoft’s managed search service provides semantic ranking (cross-encoder reranking via ms-marco fine-tuned models), vector search (HNSW on Azure), BM25 full-text search, and hybrid search with RRF — all in a single managed service. Azure OpenAI On Your Data endpoint enables zero-code RAG over Azure AI Search indices using Azure OpenAI embeddings and GPT-4 generation. The preferred RAG substrate in Microsoft 365 Copilot, GitHub Copilot Enterprise, Power Platform AI Builder, and Azure OpenAI Service deployments.</p>
+</li>
+<li>
+<p><strong>Amazon Bedrock Knowledge Bases.</strong> Managed RAG service (2023) using Amazon Titan Embeddings for dense retrieval and OpenSearch Serverless as the vector store backend. Supports S3 data sources with automatic document parsing, chunking, and embedding. Integration with Amazon Bedrock model catalogue (Claude, Llama, Titan, Mistral) for generation. Aurora PostgreSQL + pgvector backend available for RDS-integrated workloads.</p>
+</li>
+<li>
+<p><strong>Open-Source Self-Hosted.</strong> RAGFlow (InfiniFlow): deep document understanding pipeline with graph-based agentic task orchestration and no-code visual editor. AnythingLLM: multi-user self-hosted RAG with local LLM support (Ollama, LM Studio). Danswer (now Onyx): enterprise Q&amp;A over Slack, GitHub, Confluence, Google Drive with role-based access control. PrivateGPT: air-gapped local RAG with no external API calls, designed for classified or sensitive deployments.</p>
+</li>
+<li>
+<h3 id="evaluation-ragas-ares-beir">Evaluation: RAGAS, ARES, BEIR<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-ragas-ares-beir" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>RAG pipelines require evaluation along two orthogonal axes: <strong>retrieval quality</strong> (did the retriever surface relevant passages?) and <strong>generation quality</strong> (did the generator faithfully and correctly synthesise the retrieved passages into a useful answer?). Standard IR metrics (MRR, NDCG, Recall@k) address retrieval quality; RAG-specific metrics address the joint retrieval-generation quality.</p>
+</li>
+<li>
+<p><strong>RAGAS (Es et al., EACL 2024).</strong> Reference-free evaluation framework using LLM-as-judge. Four core metrics:</p>
+<ul>
+<li><em>Faithfulness</em>: an LLM decomposes the generated answer into atomic statements; each statement is verified against retrieved context; faithfulness = |supported statements| / |total statements|</li>
+<li><em>Answer Relevancy</em>: an LLM generates n (n=3) questions for which the generated answer would be the ground truth; answer relevancy = mean cosine similarity between generated questions and original question embedding — measuring whether the answer addresses the question (not whether it is correct)</li>
+<li><em>Context Precision</em>: fraction of retrieved context chunks that are relevant to answering the question (retrieval precision)</li>
+<li><em>Context Recall</em>: fraction of ground truth answer attributable to retrieved context (retrieval coverage)</li>
+</ul>
+</li>
+<li>
+<p>RAGAS requires no human annotation beyond a question-context-answer triple, running entirely via LLM API calls. Widely adopted for automated regression testing of RAG pipeline changes in CI/CD.</p>
+</li>
+<li>
+<p><strong>ARES (Saad-Falcon et al. 2023, Berkeley).</strong> Trains lightweight DeBERTa-large classifiers to predict context relevance, answer faithfulness, and answer completeness for domain-specific RAG evaluation. Training data is synthetically generated: an LLM produces (question, positive passage, answer, negative passage) tuples; classifiers are fine-tuned on these synthetic labels. At evaluation time, classifiers score the RAG system’s outputs; <strong>Prediction-Powered Inference (PPI)</strong> calibrates classifier scores against 50-150 human preference labels to produce unbiased estimates with confidence intervals. Achieves Spearman ρ > 0.9 with human judgements on KILT, Natural Questions, and three domain-specific corpora whilst reducing evaluation cost by 10-100× vs full human annotation.</p>
+</li>
+<li>
+<p><strong>BEIR (Thakur et al., NeurIPS 2021).</strong> Heterogeneous Text Retrieval benchmark comprising 18 datasets spanning nine retrieval task types: fact verification (FEVER), biomedical QA (BioASQ, TREC-COVID), scientific paper retrieval (SCIDOCS, NFCorpus), news retrieval (TREC-NEWS), Wikipedia entity retrieval (DBpedia), argument retrieval (ArguAna, Touché), citation prediction (SCIFACT), and general QA (Natural Questions, HotpotQA, FiQA). Models are trained on MS MARCO and evaluated zero-shot on all 18 tasks. NCDG@10 is the primary metric. BM25 scores 43.0 average NCDG@10; state-of-the-art dense models (GTE-Qwen2-7B, E5-mistral) score 58-62. BEIR is the mandatory citation for any new retrieval or embedding model.</p>
+</li>
+<li>
+<p><strong>Additional Benchmarks.</strong> RGB (Chen et al. 2023): four RAG-specific challenge axes (noise robustness with irrelevant passages inserted, negative rejection when no relevant passage exists, information integration requiring multi-passage synthesis, counterfactual robustness when retrieved context contradicts model priors). FRAMES (Google DeepMind 2024): 824 challenging multi-hop queries requiring simultaneous retrieval from multiple Wikipedia articles with complex reasoning chains, establishing a harder bar than standard single-hop NQ/TQA. MIRACL (Zhang et al. 2023): multilingual retrieval benchmark across 18 languages, critical for non-English RAG evaluation.</p>
+</li>
+<li>
+<h3 id="use-cases-and-major-deployment-families">Use Cases and Major Deployment Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases-and-major-deployment-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Enterprise Search and Knowledge Management.</strong> The dominant RAG deployment pattern: corporate wikis, internal policy documents, HR handbooks, technical documentation, and engineering runbooks are indexed; employees query in natural language and receive grounded citations to authoritative sources. Deployed by Microsoft (SharePoint + Copilot), Atlassian (Confluence + Rovo), Notion (Notion AI), ServiceNow (Now Assist), and Salesforce (Einstein Copilot). Typical corpus size: 10K-10M documents. Key requirement: freshness (documents updated daily/weekly must propagate to retrieval within hours).</p>
+</li>
+<li>
+<p><strong>Legal and Regulatory Q&amp;A.</strong> Law firms and compliance departments index case law, statutes, regulatory guidance, and firm-specific precedent. RAG enables question-answering over jurisdictional legal corpora with mandatory citation to specific paragraph/section of source document — a legal and liability requirement that closed-book LLMs cannot satisfy. UK examples: Travers Smith, Linklaters, Freshfields deploying RAG for associates conducting legal research; FCA-regulated firms using RAG over regulatory handbooks for compliance monitoring. GDPR audit trail requirements drive preference for citation-grounded RAG.</p>
+</li>
+<li>
+<p><strong>Medical and Clinical Q&amp;A.</strong> RAG over medical literature (PubMed, clinical guidelines, drug formularies, institutional protocols) enables clinician-facing decision support. Critical requirements: faithfulness (hallucinated clinical facts are patient-safety risks), freshness (drug interactions and treatment guidelines update frequently), and regulatory compliance (MHRA, FDA approval for AI-assisted clinical decision support). NHS trusts in the UK are piloting RAG for clinical guideline retrieval; NICE (National Institute for Health and Care Excellence) exploring RAG for guideline authoring assistance.</p>
+</li>
+<li>
+<p><strong>Code Navigation and Software Engineering.</strong> Code search using RAG over large codebases enables question-answering about internal APIs, architecture decisions (linked to ADRs), and implementation patterns. GitHub Copilot Enterprise indexes private repositories and uses RAG for codebase-aware code generation and Q&amp;A. Sourcegraph Cody, Continue.dev, and JetBrains AI Assistant all implement codebase-aware RAG.</p>
+</li>
+<li>
+<p><strong>Scientific Literature Synthesis.</strong> RAG over arXiv, Semantic Scholar, and institutional publication databases enables researchers to query across thousands of papers. Elicit, Consensus, and Perplexity Academic implement RAG for scientific QA with citation. UK applications: UKRI-funded research projects using RAG for systematic review automation; British Library and Wellcome Collection exploring RAG over digitised historical scientific archives.</p>
+</li>
+<li>
+<p><strong>Customer Support and Contact Centres.</strong> RAG over product documentation, FAQ databases, and ticketing history enables automated first-tier support with grounded answers citing specific product manual sections. <a href="../Call-Centres" class="internal alias" data-slug="Call-Centres">Call Centres</a> deploying RAG report 40-60% deflection of tier-1 queries to AI, reducing cost per contact. Intercom, Zendesk, Salesforce Service Cloud, and Freshdesk all offer RAG-powered support features. BT Group UK deploys RAG in enterprise customer support for billing and network troubleshooting.</p>
+</li>
+<li>
+<h3 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>RAG originated at the intersection of two research traditions: <strong>open-domain question answering</strong> (dating to Watson/DeepQA 2011 and DrQA 2017, Chen et al.) and <strong>retrieval-augmented language modelling</strong> (Guu et al. REALM 2020, Khandelwal et al. kNN-LM 2021). The DPR paper established dense neural retrieval as practically viable; the Lewis et al. RAG paper combined dense retrieval with seq2seq generation in an end-to-end trainable system for the first time.</p>
+</li>
+<li>
+<p>The subsequent research trajectory (2021-2024) expanded along three axes: (i) <strong>retrieval scale</strong> — scaling from 21M Wikipedia passages to 100B-token web corpora using ATLAS (Izacard et al. 2022, trained on 64 TPUs); (ii) <strong>architectural flexibility</strong> — Modular RAG frameworks (Gao et al. 2024 survey) decomposing pipelines into interchangeable components; (iii) <strong>specialisation</strong> — domain-adapted RAG for biomedicine (BioRAG, MedRAG), law (LegalBench RAG), code (CodeRAG), and finance (FinRAG). The convergence of RAG with agentic <a href="../Agents" class="internal" data-slug="Agents">Agents</a> frameworks (2023-2025) produced the dominant 2026 deployment pattern: agentic RAG pipelines that dynamically orchestrate multiple retrieval strategies, tool calls, and reasoning steps within a persistent agent loop.</p>
+</li>
+<li>
+<p><strong>Seminal Papers Timeline.</strong> REALM (Guu et al. 2020) pre-trained a retrieval-augmented language model end-to-end on masked language modelling, demonstrating retrieval could improve pre-training. DPR (Karpukhin et al. 2020) established bi-encoder dense retrieval as outperforming BM25 on in-domain QA. RAG (Lewis et al. 2020) coined the term and demonstrated seq2seq RAG. FiD (Izacard &amp; Grave 2021) scaled to k=100 passages via decoder fusion. ATLAS (Izacard et al. 2022) scaled RAG to trillion-token web corpora with faithful few-shot learning. ColBERTv2 (2022) established late interaction as state-of-the-art retrieval. BEIR (2021) established zero-shot heterogeneous evaluation. RAGAS (2023), Self-RAG (2023), RAPTOR (2024), GraphRAG (2024) diversified the advanced variant landscape.</p>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Long-Context Models vs RAG.</strong> Models with 128K-1M token context windows (Claude 3.7+, Gemini 2.0 Pro with 2M context, GPT-4o 128K) reopen the question of whether retrieval remains necessary. Empirical data from RULER benchmark (Hsieh et al. 2024) and Anthropic internal studies indicate: (a) for corpora fully fitting within context, direct context stuffing yields higher faithfulness than retrieval for short corpora (&lt; 50K tokens); (b) for large corpora (1M+ documents), retrieval is necessary; (c) for latency-sensitive applications, retrieval (10-100 ms) dramatically outperforms 500K-token context (5-30 s). The emerging consensus is <strong>selective RAG</strong>: small corpora in-context, large or dynamically-updating corpora retrieved.</p>
+</li>
+<li>
+<p><strong>Multimodal RAG.</strong> ColPali (Faysse et al. 2024) embeds PDF page images directly via PaliGemma vision-language model, bypassing text extraction entirely — critical for tables, charts, engineering schematics, and scanned documents where OCR fails. Multimodal vector indices (Weaviate multi2vec, LanceDB with PIL image support) enable combined text-image retrieval. Commercial multimodal parsing services (Reducto, LlamaParse, Unstructured) are productising high-fidelity document parsing as a managed RAG preprocessing service.</p>
+</li>
+<li>
+<p><strong>Structured/Hybrid RAG.</strong> Text-to-SQL routing (DINSQL, CHESS, Vanna) enables natural language queries over relational databases, with a routing LLM directing structured queries to SQL and unstructured queries to vector search. NL2SPARQL pipelines enable RAG over RDF knowledge graphs. <strong>Hybrid structured-unstructured RAG</strong> (pgvector JOIN with relational tables in a single PostgreSQL query) unifies structured and vector retrieval in a single execution plan.</p>
+</li>
+<li>
+<p><strong>RAG with Persistent Memory.</strong> Memory stores (MemGPT, Zep Memory, mem0, Letta) augment RAG with episodic user-specific memory banks updated across sessions, enabling personalised retrieval that adapts to individual user context, preferences, and conversation history — bridging RAG (document retrieval) and personal AI assistants.</p>
+</li>
+<li>
+<p><strong>Production Optimisation Patterns (2025-2026).</strong> Tiered retrieval (BM25 first-pass to 100 candidates → dense rerank to 10 → cross-encoder rerank to 5); embedding caching for frequent queries; async background re-indexing via Kafka/Celery pipelines; binary quantisation in production indices (4-32× memory reduction); speculative retrieval triggering retrieval during generation token latency gaps; RAG-specific caching layers (semantic query deduplication, passage-level caching).</p>
+</li>
+<li>
+<h3 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Imperial College London — NLP and Information Retrieval.</strong> Prof. Lucia Specia’s MultiMT group researches retrieval-augmented multilingual generation and grounded multimodal NLP. The Adaptive Computation Group (Prof. Bernhard Schölkopf visiting) explores theoretical foundations of retrieval-augmented learning. Imperial’s Institute for Security Science and Technology is exploring RAG for open-source intelligence analysis.</p>
+</li>
+<li>
+<p><strong>University of Edinburgh — Edinburgh NLP.</strong> Prof. Rico Sennrich and Dr Alexandra Birch lead multilingual dense retrieval and cross-lingual RAG research. The Edinburgh DataVault provides privacy-preserving distributed retrieval infrastructure for sensitive research data. Edinburgh’s School of Informatics contributes to TREC, CLEF, and NeuCLIR evaluation benchmarks covering multilingual RAG scenarios.</p>
+</li>
+<li>
+<p><strong>University of Manchester — NaCTeM.</strong> The National Centre for Text Mining (Prof. Sophia Ananiadou) produces biomedical RAG corpora (CRAFT, BioCreative, PharmaCoNER) and evaluation resources. Manchester GATE (General Architecture for Text Engineering) — one of the longest-running NLP infrastructure projects in the UK — is widely used for clinical NLP preprocessing pipelines upstream of RAG. Manchester researchers collaborate with NHS trusts on MIMIC-IV-based clinical RAG evaluation.</p>
+</li>
+<li>
+<p><strong>University of Glasgow — Information Retrieval.</strong> Prof. Iadh Ounis leads the Terrier IR platform (widely used in TREC and CLEF evaluations) and Glasgow’s Information Retrieval group has contributed to heterogeneous retrieval evaluation closely related to BEIR. Glasgow’s ECIR (European Conference on Information Retrieval) contributions include conversational and session-based retrieval directly applicable to agentic RAG patterns.</p>
+</li>
+<li>
+<p><strong>Open University — Knowledge Media Institute.</strong> Research on semantic retrieval over linked open data, OER corpus RAG for adaptive learning, and EU Horizon projects on trustworthy AI retrieval with provenance. The OU’s distance education context makes RAG-powered tutoring a priority application.</p>
+</li>
+<li>
+<p><strong>ARM Holdings (Cambridge).</strong> ARM’s ML IP division (Ethos NPUs, Cortex-M55+Ethos-U55) optimises sub-100 ms on-device embedding inference for edge RAG. ARM Research (Cambridge Science Park) actively collaborates with UK universities to develop quantised embedding pipelines (INT8, INT4 weight-only quantisation) for ARM64-native inference, enabling RAG in healthcare IoT, industrial edge, and mobile applications without cloud egress.</p>
+</li>
+<li>
+<p><strong>BT Group AI Labs (London / Adastral Park, Ipswich).</strong> BT researchers have published on domain-adaptive RAG evaluation for telecommunications, where specialised terminology (MPLS, SDH, DSL fault diagnostics) creates out-of-distribution retrieval challenges relative to MSMARCO-trained embeddings. BT deploys RAG for enterprise customer support automation, network configuration Q&amp;A, and internal knowledge management across 10,000+ technical documents.</p>
+</li>
+<li>
+<p><strong>UK Financial Sector.</strong> FCA-regulated institutions (Barclays AI Lab, Lloyds Banking Group AI Centre, HSBC AI Research London, NatWest Conversational AI) deploy RAG for regulatory handbook Q&amp;A, AML procedure lookup, COBS/SYSC compliance monitoring, and internal policy retrieval. The FCA’s AI Lab (Techsprints) explores RAG for regulatory interpretation assistance. GDPR Article 22 transparency requirements and FCA Principle 11 (regulatory communication) jointly mandate citation-traceable responses, creating structural demand for grounded RAG over closed-book generation in financial AI deployments.</p>
+</li>
+<li>
+<p><strong>Northern England.</strong> Leeds Building Society and West Yorkshire Combined Authority explore RAG for public services information retrieval. Sheffield NLP Group (Prof. Nikos Aletras) contributes to argument mining and legal RAG relevant to UK court document analysis. Newcastle University Digital Institute researches RAG for cultural heritage and digital humanities applications.</p>
+</li>
+<li>
+<h3 id="future-directions-2026-2030">Future Directions (2026-2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-2026-2030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Universal Embedding Spaces.</strong> Unified models embedding text, images, audio, video, code, and structured data into a shared space, enabling cross-modal RAG (text query retrieving video segments, image query retrieving medical literature, code query retrieving architecture documentation). Models like ImageBind (Meta) and Gecko (Google) point toward this convergence.</p>
+</li>
+<li>
+<p><strong>Continuous/Online Vector Indexing.</strong> Real-time corpus updates without full re-indexing — LSM-tree style vector stores (DuckDB HNSW with WAL-based updates, Qdrant real-time upsert at 10K+ docs/sec) enabling sub-second knowledge freshness for financial news, medical literature, and security intelligence feeds.</p>
+</li>
+<li>
+<p><strong>Retrieval-Optimised Foundation Models.</strong> Joint training of retriever and generator end-to-end with retrieval-aware RLHF reward signals, producing foundation models that actively shape retrieval trajectories during decoding — beyond RA-DIT’s dual instruction tuning. The retriever becomes a differentiable first-class component of the language model forward pass.</p>
+</li>
+<li>
+<p><strong>Verifiable RAG with Cryptographic Provenance.</strong> Document hash attestation (on distributed ledgers or Merkle trees) enabling auditable provenance chains for high-stakes RAG outputs in legal, medical, and financial domains. Integration with <a href="../pages/Verifiable-Credentials" class="internal alias" data-slug="pages/Verifiable-Credentials">Verifiable Credentials</a> standards for machine-readable source certification.</p>
+</li>
+<li>
+<p><strong>Federated and Privacy-Preserving RAG.</strong> Secure multi-party computation or federated embedding aggregation enabling RAG over distributed private corpora (hospital networks, multinational enterprise knowledge bases) without centralising documents. SMPC-based retrieval (Hao et al. 2024) demonstrates retrieval over 1M-passage distributed indices without plaintext document exposure.</p>
+</li>
+<li>
+<p><strong>Neurosymbolic RAG.</strong> Integration of formal knowledge bases (OWL ontologies, SPARQL-queryable RDF graphs, first-order logic theorem provers) with neural retrieval, enabling provably correct logical inference over retrieved evidence — closing the gap between statistical pattern matching and guaranteed-correct symbolic reasoning. Relevant to <a href="../pages/Domain-Ontology" class="internal alias" data-slug="pages/Domain-Ontology">Domain Ontology</a> and <a href="../pages/Knowledge-Graphing" class="internal alias" data-slug="pages/Knowledge-Graphing">Knowledge Graphing</a> convergence.</p>
+</li>
+<li>
+<p><strong>RAG for Embodied AI.</strong> Retrieval-augmented world models enabling robots and embodied agents to retrieve relevant procedural knowledge, spatial maps, and object affordances during task execution — bridging RAG with <a href="../Agents" class="internal" data-slug="Agents">Agents</a> and <a href="../pages/Ground-Robot" class="internal alias" data-slug="pages/Ground-Robot">Ground Robot</a> research domains.</p>
+</li>
+<li>
+<h3 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Foundational Papers</strong></p>
+<ul>
+<li>Lewis, P., Perez, E., Piktus, A., et al. (2020). “Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.” <em>NeurIPS 2020</em>. arXiv:2005.11401.</li>
+<li>Karpukhin, V., Oğuz, B., Min, S., et al. (2020). “Dense Passage Retrieval for Open-Domain Question Answering.” <em>EMNLP 2020</em>. arXiv:2004.04906.</li>
+<li>Izacard, G., &amp; Grave, E. (2021). “Leveraging Passage Retrieval with Generative Models for Open Domain Question Answering.” (FiD). <em>EACL 2021</em>. arXiv:2007.01282.</li>
+<li>Robertson, S., &amp; Zaragoza, H. (2009). “The Probabilistic Relevance Framework: BM25 and Beyond.” <em>Foundations and Trends in IR</em> 3(4).</li>
+<li>Guu, K., Lee, K., Tung, Z., et al. (2020). “REALM: Retrieval-Augmented Language Model Pre-Training.” <em>ICML 2020</em>. arXiv:2002.08909.</li>
+</ul>
+</li>
+<li>
+<p><strong>Retrieval Models</strong></p>
+<ul>
+<li>Santhanam, K., Khattab, O., Saad-Falcon, J., et al. (2022). “ColBERTv2: Effective and Efficient Retrieval via Lightweight Late Interaction.” <em>NAACL 2022</em>. arXiv:2112.01488.</li>
+<li>Thakur, N., Reimers, N., Rücklé, A., et al. (2021). “BEIR: A Heterogeneous Benchmark for Zero-shot Evaluation of IR Models.” <em>NeurIPS 2021 Datasets &amp; Benchmarks</em>. arXiv:2104.08663.</li>
+<li>Wang, L., Yang, N., Huang, X., et al. (2024). “Improving Text Embeddings with Large Language Models.” (E5-mistral). <em>ACL 2024</em>. arXiv:2401.00368.</li>
+<li>Gao, L., et al. (2022). “Precise Zero-Shot Dense Retrieval without Relevance Labels.” (HyDE). arXiv:2212.10496.</li>
+<li>Cormack, G. V., Clarke, C. L. A., &amp; Buettcher, S. (2009). “Reciprocal Rank Fusion Outperforms Condorcet and Individual Rank Learning Methods.” <em>SIGIR 2009</em>.</li>
+<li>Faysse, M., et al. (2024). “ColPali: Efficient Document Retrieval with Vision Language Models.” arXiv:2407.01449.</li>
+</ul>
+</li>
+<li>
+<p><strong>Advanced RAG Variants</strong></p>
+<ul>
+<li>Edge, D., Trinh, H., Cheng, N., et al. (2024). “From Local to Global: A Graph RAG Approach to Query-Focused Summarization.” Microsoft Research. arXiv:2404.16130.</li>
+<li>Asai, A., Wu, Z., Wang, B., et al. (2023). “Self-RAG: Learning to Retrieve, Generate, and Critique through Self-Reflection.” <em>ICLR 2024</em>. arXiv:2310.11511.</li>
+<li>Sarthi, P., Abdullah, S., Tuli, A., et al. (2024). “RAPTOR: Recursive Abstractive Processing for Tree-Organized Retrieval.” <em>ICLR 2024</em>. arXiv:2401.18059.</li>
+<li>Jiang, Z., Xu, F. F., Gao, L., et al. (2023). “Active Retrieval Augmented Generation.” (FLARE). <em>EMNLP 2023</em>. arXiv:2305.06983.</li>
+<li>Anthropic. (2024, September). “Contextual Retrieval.” Anthropic Research Blog. <a href="https://www.anthropic.com/news/contextual-retrieval" class="external">https://www.anthropic.com/news/contextual-retrieval<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Lin, X. V., Chen, X., Chen, M., et al. (2023). “RA-DIT: Retrieval-Augmented Dual Instruction Tuning.” <em>ICLR 2024</em>. arXiv:2310.01352.</li>
+<li>Trivedi, H., Balasubramanian, N., Khot, T., &amp; Sabharwal, A. (2023). “Interleaving Retrieval with Chain-of-Thought Reasoning.” (IRCoT). <em>ACL 2023</em>. arXiv:2212.10509.</li>
+<li>Izacard, G., Lewis, P., Lomeli, L., et al. (2022). “Atlas: Few-shot Learning with Retrieval Augmented Language Models.” <em>JMLR 2023</em>. arXiv:2208.03299.</li>
+</ul>
+</li>
+<li>
+<p><strong>Evaluation</strong></p>
+<ul>
+<li>Es, S., James, J., Anke, L. E., &amp; Schockaert, S. (2023). “RAGAS: Automated Evaluation of Retrieval Augmented Generation.” <em>EACL 2024</em>. arXiv:2309.15217.</li>
+<li>Saad-Falcon, J., Khattab, O., Potts, C., &amp; Zaharia, M. (2023). “ARES: An Automated Evaluation Framework for RAG Systems.” arXiv:2311.09476.</li>
+<li>Hsieh, C. Y., et al. (2024). “RULER: What’s the Real Context Size of Your Long-Context Language Models?” arXiv:2404.06654.</li>
+<li>Zhang, X., et al. (2023). “MIRACL: A Multilingual Retrieval Dataset Covering 18 Languages.” <em>TACL</em>. arXiv:2210.09984.</li>
+<li>Gao, Y., Xiong, Y., Gao, X., et al. (2024). “Retrieval-Augmented Generation for LLMs: A Survey.” (Modular RAG). arXiv:2312.10997.</li>
+</ul>
+</li>
+<li>
+<p><strong>Infrastructure</strong></p>
+<ul>
+<li>Timescale. (2024). “pgvectorscale: Fast Approximate Nearest Neighbour at Billion Scale on Postgres.” GitHub. <a href="https://github.com/timescale/pgvectorscale" class="external">https://github.com/timescale/pgvectorscale<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Cohere. (2023). “Embed v3: State-of-the-Art Embeddings.” Cohere Blog.</li>
+<li>OpenAI. (2024, January). “New Embedding Models and API Updates.” OpenAI Blog.</li>
+<li>BAAI. (2024). “BGE-M3: Multi-Linguality, Multi-Functionality, Multi-Granularity.” GitHub. <a href="https://github.com/FlagOpen/FlagEmbedding" class="external">https://github.com/FlagOpen/FlagEmbedding<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>InfiniFlow. (2024). “RAGFlow: An Open-source RAG Engine Based on Deep Document Understanding.” GitHub. <a href="https://github.com/infiniflow/ragflow" class="external">https://github.com/infiniflow/ragflow<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+<li>Liu, J. (2022). “LlamaIndex.” GitHub. <a href="https://github.com/run-llama/llama_index" class="external">https://github.com/run-llama/llama_index<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.</li>
+</ul>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>domain-correction:</strong> null — domain was correctly <code>artificial-intelligence</code>; iri/uri corrected from stub <code>ngm</code> prefix to <code>artificial-intelligence</code> prefix matching ontology conventions for this domain</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Lewis, P. et al. (2020). NeurIPS 2020. arXiv:2005.11401. [Foundational RAG paper]</li>
+<li>Karpukhin, V. et al. (2020). EMNLP 2020. arXiv:2004.04906. [Dense Passage Retrieval]</li>
+<li>Izacard, G. &amp; Grave, E. (2021). EACL 2021. arXiv:2007.01282. [Fusion-in-Decoder]</li>
+<li>Santhanam, K. et al. (2022). NAACL 2022. arXiv:2112.01488. [ColBERTv2]</li>
+<li>Thakur, N. et al. (2021). NeurIPS 2021. arXiv:2104.08663. [BEIR benchmark]</li>
+<li>Edge, D. et al. (2024). Microsoft Research. arXiv:2404.16130. [GraphRAG]</li>
+<li>Asai, A. et al. (2023). ICLR 2024. arXiv:2310.11511. [Self-RAG]</li>
+<li>Sarthi, P. et al. (2024). ICLR 2024. arXiv:2401.18059. [RAPTOR]</li>
+<li>Jiang, Z. et al. (2023). EMNLP 2023. arXiv:2305.06983. [FLARE]</li>
+<li>Anthropic. (2024). Contextual Retrieval blog post.</li>
+<li>Lin, X. V. et al. (2023). ICLR 2024. arXiv:2310.01352. [RA-DIT]</li>
+<li>Es, S. et al. (2023). EACL 2024. arXiv:2309.15217. [RAGAS]</li>
+<li>Saad-Falcon, J. et al. (2023). arXiv:2311.09476. [ARES]</li>
+<li>Guu, K. et al. (2020). ICML 2020. arXiv:2002.08909. [REALM]</li>
+<li>Trivedi, H. et al. (2023). ACL 2023. arXiv:2212.10509. [IRCoT]</li>
+<li>Gao, L. et al. (2022). arXiv:2212.10496. [HyDE]</li>
+<li>Gao, Y. et al. (2024). arXiv:2312.10997. [Modular RAG survey]</li>
+<li>Robertson, S. &amp; Zaragoza, H. (2009). Foundations and Trends in IR. [BM25]</li>
+<li>Cormack, G. V. et al. (2009). SIGIR 2009. [Reciprocal Rank Fusion]</li>
+<li>Faysse, M. et al. (2024). arXiv:2407.01449. [ColPali multimodal RAG]</li>
+<li>Wang, L. et al. (2024). ACL 2024. [E5-mistral embeddings]</li>
+<li>Hsieh, C. Y. et al. (2024). arXiv:2404.06654. [RULER long-context benchmark]</li>
+<li>Zhang, X. et al. (2023). TACL. arXiv:2210.09984. [MIRACL multilingual retrieval]</li>
+<li>Timescale. (2024). pgvectorscale GitHub.</li>
+<li>OpenAI. (2024). text-embedding-3 announcement.</li>
+<li>Cohere. (2023). Embed v3 announcement.</li>
+<li>BAAI. (2024). BGE-M3 GitHub.</li>
+<li>InfiniFlow. (2024). RAGFlow GitHub.</li>
+<li><strong>domain-correction:</strong> null</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4782" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-retrieval-augmented-generation" data-for="about-retrieval-augmented-generation">About Retrieval Augmented Generation</a></li><li class="depth-1"><a href="#formal-model-and-information-theoretic-foundations" data-for="formal-model-and-information-theoretic-foundations">Formal Model and Information-Theoretic Foundations</a></li><li class="depth-1"><a href="#core-pipeline-architecture-five-stage-canonical-rag" data-for="core-pipeline-architecture-five-stage-canonical-rag">Core Pipeline Architecture: Five-Stage Canonical RAG</a></li><li class="depth-1"><a href="#retrieval-methods-sparse-dense-hybrid-late-interaction" data-for="retrieval-methods-sparse-dense-hybrid-late-interaction">Retrieval Methods: Sparse, Dense, Hybrid, Late Interaction</a></li><li class="depth-1"><a href="#embedding-models-state-of-the-art-2024-2026" data-for="embedding-models-state-of-the-art-2024-2026">Embedding Models: State of the Art (2024-2026)</a></li><li class="depth-1"><a href="#vector-databases-architecture-and-tradeoffs" data-for="vector-databases-architecture-and-tradeoffs">Vector Databases: Architecture and Tradeoffs</a></li><li class="depth-1"><a href="#advanced-rag-variants" data-for="advanced-rag-variants">Advanced RAG Variants</a></li><li class="depth-1"><a href="#rag-as-a-service-platforms-and-frameworks" data-for="rag-as-a-service-platforms-and-frameworks">RAG-as-a-Service Platforms and Frameworks</a></li><li class="depth-1"><a href="#evaluation-ragas-ares-beir" data-for="evaluation-ragas-ares-beir">Evaluation: RAGAS, ARES, BEIR</a></li><li class="depth-1"><a href="#use-cases-and-major-deployment-families" data-for="use-cases-and-major-deployment-families">Use Cases and Major Deployment Families</a></li><li class="depth-1"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-1"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-1"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-1"><a href="#future-directions-2026-2030" data-for="future-directions-2026-2030">Future Directions (2026-2030)</a></li><li class="depth-1"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/BM25" class="internal">BM25</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

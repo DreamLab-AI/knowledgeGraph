@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Probabilistic Model</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Probabilistic Model"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Probabilistic Model"/><meta name="twitter:description" content="ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde… S..."/><meta property="og:description" content="ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde… S..."/><meta property="og:image:alt" content="ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde… S..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Probabilistic-Model"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Probabilistic-Model"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde… S..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Probabilistic-Model"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-6001"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-6001" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Probabilistic Model</a></div></nav><h1 class="article-title">Probabilistic Model</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.863Z">23 Sept 2026</time><span>61 min read</span></p><ul class="tags"><li><a href="../tags/P-hard" class="internal tag-link">P-hard</a></li></ul><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:probabilistic-model</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>artificial-intelligence</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.52</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../AI-Technique" class="internal">AI Technique</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Machine-Learning-Discipline" class="internal">Machine Learning Discipline</a></li><li><a href="../Statistical-Learning" class="internal">Statistical Learning</a></li><li><a href="../pages/Bayesian-Inference" class="internal">Bayesian Inference</a></li><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../pages/Generative-Model" class="internal">Generative Model</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Acquisition-Function" class="internal">Acquisition Function</a></li><li><a href="../pages/Graphical-Model" class="internal">Graphical Model</a></li><li><a href="../pages/Inference-Algorithm" class="internal">Inference Algorithm</a></li><li><a href="../pages/Likelihood-Function" class="internal">Likelihood Function</a></li><li><a href="../pages/Posterior-Distribution" class="internal">Posterior Distribution</a></li><li><a href="../pages/Prior-Distribution" class="internal">Prior Distribution</a></li><li><a href="../Latent-Variable" class="internal">Latent Variable</a></li><li><a href="../Probabilistic-Programming-Language" class="internal">Probabilistic Programming Language</a></li><li><a href="../Nonconformity-Score" class="internal">Nonconformity Score</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Automatic-Differentiation" class="internal">Automatic Differentiation</a></li><li><a href="../pages/Computational-Graph" class="internal">Computational Graph</a></li><li><a href="../pages/Measure-Theory" class="internal">Measure Theory</a></li><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../numerical-linear-algebra" class="internal">Numerical Linear Algebra</a></li><li><a href="../pages/Probability-Theory" class="internal">Probability Theory</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../anomaly-detection" class="internal">Anomaly Detection</a></li><li><a href="../pages/Bayesian-Decision-Theory" class="internal">Bayesian Decision Theory</a></li><li><a href="../pages/Bayesian-Optimisation" class="internal">Bayesian Optimisation</a></li><li><a href="../pages/Causal-Inference" class="internal">Causal Inference</a></li><li><a href="../pages/Conformal-Prediction" class="internal">Conformal Prediction</a></li><li><a href="../pages/Probabilistic-Forecasting" class="internal">Probabilistic Forecasting</a></li><li><a href="../pages/Uncertainty-Quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../pages/Active-Learning" class="internal">Active Learning</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../Deterministic-Model" class="internal">Deterministic Model</a></li><li><a href="../pages/Frequentist-Statistics" class="internal">Frequentist Statistics</a></li><li><a href="../Point-Estimate" class="internal">Point Estimate</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../pages/Maximum-Likelihood-Estimation" class="internal">Maximum Likelihood Estimation</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Information-Theory" class="internal">Information Theory</a></li><li><a href="../Graphical-Model-Theory" class="internal">Graphical Model Theory</a></li><li><a href="../pages/Stochastic-Processes" class="internal">Stochastic Processes</a></li><li><a href="../pages/Functional-Analysis" class="internal">Functional Analysis</a></li><li><a href="../Computational-Statistics" class="internal">Computational Statistics</a></li><li><a href="../Differential-Geometry" class="internal">Differential Geometry</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li><li><a href="../InferenceLayer" class="internal">InferenceLayer</a></li><li><a href="../ApplicationLayer" class="internal">ApplicationLayer</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Bayes-Theorem" class="internal">Bayes Theorem</a></li><li><a href="../pages/Evidence-Lower-Bound" class="internal">Evidence Lower Bound</a></li><li><a href="../pages/Expectation-Maximisation" class="internal">Expectation Maximisation</a></li><li><a href="../pages/Hamiltonian-Monte-Carlo" class="internal">Hamiltonian Monte Carlo</a></li><li><a href="../pages/Markov-Chain-Monte-Carlo" class="internal">Markov Chain Monte Carlo</a></li><li><a href="../pages/Message-Passing" class="internal">Message Passing</a></li><li><a href="../pages/Score-Matching" class="internal">Score Matching</a></li><li><a href="../variational-inference" class="internal">Variational Inference</a></li></ul></td></tr><tr><th scope="row">Legacy term id</th><td><ul class="properties-values"><li><span>AI-2047</span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../acquisition-function" class="internal">Acquisition Function</a></li><li><a href="../aistats" class="internal">AISTATS</a></li><li><a href="../algorithm-layer" class="internal">AlgorithmLayer</a></li><li><a href="../anomaly-detection" class="internal">Anomaly Detection</a></li><li><a href="../automatic-differentiation" class="internal">Automatic Differentiation</a></li><li><a href="../autonomous-systems" class="internal">Autonomous Systems</a></li><li><a href="../bayes-theorem" class="internal">Bayes Theorem</a></li><li><a href="../bayesian-analysis-journal" class="internal">Bayesian Analysis Journal</a></li><li><a href="../bayesian-decision-theory" class="internal">Bayesian Decision Theory</a></li><li><a href="../bayesian-deep-learning" class="internal">Bayesian Deep Learning</a></li><li><a href="../bayesian-inference" class="internal">Bayesian Inference</a></li><li><a href="../bayesian-optimisation" class="internal">Bayesian Optimisation</a></li><li><a href="../belief-propagation" class="internal">Belief Propagation</a></li><li><a href="../causal-inference" class="internal">Causal Inference</a></li><li><a href="../causal-model" class="internal">Causal Model</a></li><li><a href="../climate-modelling" class="internal">Climate Modelling</a></li><li><a href="../computational-graph" class="internal">Computational Graph</a></li><li><a href="../computational-statistics" class="internal">Computational Statistics</a></li><li><a href="../conformal-prediction" class="internal">Conformal Prediction</a></li><li><a href="../deterministic-model" class="internal">Deterministic Model</a></li><li><a href="../differential-geometry" class="internal">Differential Geometry</a></li><li><a href="../diffusion-model" class="internal">Diffusion Model</a></li><li><a href="../drug-discovery" class="internal">Drug Discovery</a></li><li><a href="../evidence-lower-bound" class="internal">Evidence Lower Bound</a></li><li><a href="../expectation-maximisation" class="internal">Expectation Maximisation</a></li><li><a href="../financial-risk-modelling" class="internal">Financial Risk Modelling</a></li><li><a href="../frequentist-statistics" class="internal">Frequentist Statistics</a></li><li><a href="../functional-analysis" class="internal">Functional Analysis</a></li><li><a href="../gaussian-process" class="internal">Gaussian Process</a></li><li><a href="../graphical-model" class="internal">Graphical Model</a></li><li><a href="../graphical-model-theory" class="internal">Graphical Model Theory</a></li><li><a href="../hamiltonian-monte-carlo" class="internal">Hamiltonian Monte Carlo</a></li><li><a href="../inference-algorithm" class="internal">Inference Algorithm</a></li><li><a href="../inference-layer" class="internal">InferenceLayer</a></li><li><a href="../information-theory" class="internal">Information Theory</a></li><li><a href="../journal-of-machine-learning-research" class="internal">Journal of Machine Learning Research</a></li><li><a href="../journal-of-the-american-statistical-association" class="internal">Journal of the American Statistical Association</a></li><li><a href="../latent-variable" class="internal">Latent Variable</a></li><li><a href="../likelihood-function" class="internal">Likelihood Function</a></li><li><a href="../machine-learning-domain" class="internal">MachineLearningDomain</a></li><li><a href="../markov-chain-monte-carlo" class="internal">Markov Chain Monte Carlo</a></li><li><a href="../maximum-likelihood-estimation" class="internal">Maximum Likelihood Estimation</a></li><li><a href="../measure-theory" class="internal">Measure Theory</a></li><li><a href="../medical-imaging" class="internal">Medical Imaging</a></li><li><a href="../message-passing" class="internal">Message Passing</a></li><li><a href="../monte-carlo-methods" class="internal">Monte Carlo Methods</a></li><li><a href="../neur-ips-probabilistic-track" class="internal">NeurIPS Probabilistic Track</a></li><li><a href="../nonconformity-score" class="internal">Nonconformity Score</a></li><li><a href="../normalising-flows" class="internal">Normalising Flows</a></li><li><a href="../numerical-linear-algebra" class="internal">Numerical Linear Algebra</a></li><li><a href="../point-estimate" class="internal">Point Estimate</a></li><li><a href="../posterior-distribution" class="internal">Posterior Distribution</a></li><li><a href="../prior-distribution" class="internal">Prior Distribution</a></li><li><a href="../probabilistic-forecasting" class="internal">Probabilistic Forecasting</a></li><li><a href="../probabilistic-programming-language" class="internal">Probabilistic Programming Language</a></li><li><a href="../probability-theory" class="internal">Probability Theory</a></li><li><a href="../score-based-diffusion" class="internal">Score-Based Diffusion</a></li><li><a href="../score-matching" class="internal">Score Matching</a></li><li><a href="../statistical-learning" class="internal">Statistical Learning</a></li><li><a href="../statistics-domain" class="internal">StatisticsDomain</a></li><li><a href="../stochastic-processes" class="internal">Stochastic Processes</a></li><li><a href="../uai-conference" class="internal">UAI Conference</a></li><li><a href="../uncertainty-quantification" class="internal">Uncertainty Quantification</a></li><li><a href="../variational-autoencoder" class="internal">Variational Autoencoder</a></li><li><a href="../variational-inference" class="internal">Variational Inference</a></li><li><a href="../active-learning" class="internal">Active Learning</a></li><li><a href="../pages/ai-technique" class="internal">AI-GroundedDomain</a></li><li><a href="../application-layer" class="internal">ApplicationLayer</a></li><li><a href="../bayes-filter" class="internal">Bayes Filter</a></li><li><a href="../pages/ai-research-area" class="internal">ComputationAndIntelligenceDomain</a></li><li><a href="../generative-model" class="internal">Generative Model</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../particle-filter" class="internal">Particle Filter</a></li><li><a href="../robotics" class="internal">Robotics</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:b240f444852cdd88c901b53b888769dbe8e6aa231da96defba50dd4da711d2f4</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Bayesian-Deep-Learning" class="internal">Bayesian Deep Learning</a></li><li><a href="../pages/Conformal-Prediction" class="internal">Conformal Prediction</a></li><li><a href="../pages/Gaussian-Process" class="internal">Gaussian Process</a></li><li><a href="../pages/Graphical-Model" class="internal">Graphical Model</a></li><li><a href="../pages/Normalising-Flows" class="internal">Normalising Flows</a></li><li><a href="../Causal-Model" class="internal">Causal Model</a></li><li><a href="../Score-Based-Diffusion" class="internal">Score-Based Diffusion</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../pages/Journal-of-Machine-Learning-Research" class="internal">Journal of Machine Learning Research</a></li><li><a href="../NeurIPS-Probabilistic-Track" class="internal">NeurIPS Probabilistic Track</a></li><li><a href="../AISTATS" class="internal">AISTATS</a></li><li><a href="../UAI-Conference" class="internal">UAI Conference</a></li><li><a href="../Bayesian-Analysis-Journal" class="internal">Bayesian Analysis Journal</a></li><li><a href="../Journal-of-the-American-Statistical-Association" class="internal">Journal of the American Statistical Association</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Autonomous-System" class="internal">Autonomous System</a></li><li><a href="../pages/Climate-Modelling" class="internal">Climate Modelling</a></li><li><a href="../drug-discovery" class="internal">Drug Discovery</a></li><li><a href="../medical-imaging" class="internal">Medical Imaging</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../Robotics" class="internal">Robotics</a></li><li><a href="../Autonomous-Systems" class="internal">Autonomous Systems</a></li><li><a href="../Financial-Risk-Modelling" class="internal">Financial Risk Modelling</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Belief-Propagation" class="internal">Belief Propagation</a></li><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../pages/Gaussian-Process" class="internal">Gaussian Process</a></li><li><a href="../pages/Hamiltonian-Monte-Carlo" class="internal">Hamiltonian Monte Carlo</a></li><li><a href="../pages/Normalising-Flows" class="internal">Normalising Flows</a></li><li><a href="../pages/Variational-Autoencoders" class="internal">Variational Autoencoders</a></li><li><a href="../pages/Particle-Filter" class="internal">Particle Filter</a></li><li><a href="../pages/Variational-Autoencoder" class="internal">Variational Autoencoder</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde…</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:PriorDistribution))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:LikelihoodFunction))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:PosteriorDistribution))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:LatentVariable))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:GraphicalModel))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:InferenceAlgorithm))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:ProbabilisticProgrammingLanguage))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:hasPart ai:NonconformityScore))
+
+  ## Dependency Relationships
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:requires ai:ProbabilityTheory))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:requires ai:MeasureTheory))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:requires ai:NumericalLinearAlgebra))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:requires ai:ComputationalGraph))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:requires ai:MonteCarloMethods))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:requires ai:AutomaticDifferentiation))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:dependsOn ai:InformationTheory))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:dependsOn ai:GraphicalModelTheory))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:dependsOn ai:StochasticProcesses))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:dependsOn ai:FunctionalAnalysis))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:dependsOn ai:ComputationalStatistics))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:dependsOn ai:DifferentialGeometry))
+
+  ## Capability Relationships
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:UncertaintyQuantification))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:BayesianDecisionTheory))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:CausalInference))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:AnomalyDetection))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:ActiveLearning))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:ConformalPrediction))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:BayesianOptimisation))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:enables ai:ProbabilisticForecasting))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:supports ai:DrugDiscovery))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:supports ai:MedicalImaging))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:supports ai:AutonomousSystems))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:supports ai:FinancialRiskModelling))
+
+  ## Implementation Relationships
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:BayesTheorem))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:VariationalInference))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:MarkovChainMonteCarlo))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:ExpectationMaximisation))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:MessagePassing))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:ScoreMatching))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:EvidenceLowerBound))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:implements ai:HamiltonianMonteCarlo))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:HamiltonianMonteCarlo))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:NormalisingFlows))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:GaussianProcess))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:VariationalAutoencoder))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:ParticleFilter))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:uses ai:BeliefPropagation))
+
+  ## Reduction Relationships
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:reduces ai:ModelMisspecificationRisk))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:reduces ai:OverconfidenceError))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:reduces ai:DataRequirement))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:reduces ai:CalibrationError))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:reduces ai:DecisionRisk))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:contrastsWith ai:DeterministicModel))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:contrastsWith ai:FrequentistStatistics))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:relatedTo ai:CausalModel))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:relatedTo ai:BayesianDeepLearning))
+  SubClassOf(ai:ProbabilisticModel
+    ObjectSomeValuesFrom(ai:relatedTo ai:ScoreBasedDiffusion))
+
+  ## Data Properties
+  DataPropertyAssertion(ai:hasIdentifier ai:ProbabilisticModel &quot;AI-2047&quot;^^xsd:string)
+  DataPropertyAssertion(ai:authorityScore ai:ProbabilisticModel &quot;0.87&quot;^^xsd:decimal)
+  DataPropertyAssertion(ai:qualityScore ai:ProbabilisticModel &quot;0.52&quot;^^xsd:decimal)
+
+  ## Property Constraints
+  SubClassOf(ai:ProbabilisticModel
+    DataAllValuesFrom(ai:hasDistributionFamily xsd:string))
+  SubClassOf(ai:ProbabilisticModel
+    DataSomeValuesFrom(ai:hasInferenceMethod xsd:string))
+  SubClassOf(ai:ProbabilisticModel
+    DataMinCardinality(1 ai:hasLatentDimension xsd:integer))
+
+  ## Annotations
+  AnnotationAssertion(rdfs:label ai:ProbabilisticModel &quot;Probabilistic Model&quot;@en)
+  AnnotationAssertion(rdfs:comment ai:ProbabilisticModel &quot;Computational or mathematical framework explicitly representing uncertainty over random variables through probability distributions, subsуming Bayesian networks, MRFs, generative models, probabilistic programming (Pyro/PyMC/Stan/NumPyro/Turing.jl/Gen), variational inference, MCMC (HMC/NUTS), normalising flows, Bayesian deep learning, score-based diffusion, and conformal prediction.&quot;@en)
+  AnnotationAssertion(dcterms:identifier ai:ProbabilisticModel &quot;AI-2047&quot;^^xsd:string)
+  AnnotationAssertion(dcterms:subject ai:ProbabilisticModel &quot;Bayesian Inference, Graphical Models, Probabilistic Programming, Uncertainty Quantification, Generative Models&quot;@en)
+)
+</code></pre>
+<ul>
+<li>
+<h2 id="about-probabilistic-models">About Probabilistic Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about-probabilistic-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Probabilistic models</strong> constitute the theoretical and computational substrate for reasoning under uncertainty across machine learning, statistics, robotics, and artificial intelligence. The unifying principle is the explicit use of probability distributions — not merely as a computational device but as a first-class representational commitment: quantities that are unknown or inherently variable are modelled as random variables, and the model specifies their joint distribution p(x, z) over observable data x and latent variables z. Inference is the process of computing or approximating the posterior p(z|x) using Bayes’ theorem: p(z|x) ∝ p(x|z) p(z), where p(x|z) is the likelihood (how observations arise from latent structure) and p(z) is the prior (beliefs before observing data).</p>
+</li>
+<li>
+<p>This Bayesian perspective contrasts sharply with frequentist and maximum-likelihood approaches, which treat unknown parameters as fixed constants to be estimated rather than random variables to be inferred. The Bayesian approach offers three decisive advantages:</p>
+<ul>
+<li>(i) <strong>Calibrated uncertainty</strong> — posterior distributions encode not just best estimates but the full range of plausible explanations for the data, with expected calibration errors (ECE) substantially lower than those from uncalibrated neural networks; Bayesian credible intervals have exact frequentist coverage for correctly-specified models and approximate coverage for misspecified models</li>
+<li>(ii) <strong>Principled regularisation</strong> — priors encode domain knowledge and prevent overfitting without requiring separate cross-validation procedures; hierarchical priors implement automatic relevance determination (ARD) feature selection; the evidence framework (MacKay 1992) selects hyperparameters by maximising log p(x|α) without held-out data</li>
+<li>(iii) <strong>Coherent sequential updating</strong> — Bayes’ theorem provides the mathematically optimal procedure for updating beliefs as new evidence arrives, enabling online learning, Bayesian filtering for state estimation (Kalman 1960, Particle filters 1993), and active information gathering via Bayesian experimental design (Lindley 1956 D-optimality, Chaloner-Verdinelli 1995 survey)</li>
+</ul>
+</li>
+<li>
+<p>The computational challenge is that posterior distributions are typically intractable for all but the simplest conjugate models — the normalising constant p(x) = ∫ p(x|z) p(z) dz requires integrating over all possible values of the latent variables, exponentially expensive in the latent dimension. This computational challenge has driven two centuries of methodological innovation:</p>
+<ul>
+<li><strong>Laplace approximation</strong> (1774): second-order Taylor expansion around the MAP estimate gives Gaussian approximation; O(d²) cost from Hessian; foundational to approximate Bayesian inference</li>
+<li><strong>Metropolis-Hastings</strong> (1953/1970): propose z’ ~ q(z’|z), accept with probability min(1, p(z’|x) q(z|z’) / (p(z|x) q(z’|z))); first practical MCMC, still widely used for simple models</li>
+<li><strong>Gibbs sampling</strong> (Geman-Geman 1984): alternate sampling each variable from full conditional p(z_i | z_{-i}, x); feasible for conjugate exponential family models</li>
+<li><strong>Variational Bayes</strong> (Jordan et al. 1999): ELBO optimisation replacing intractable integration with optimisation; enabled LDA (Blei 2003) and VAE (Kingma 2014) at scale</li>
+<li><strong>Hamiltonian Monte Carlo</strong> (Duane 1987, Neal 2011): Hamiltonian dynamics exploration; O(d^{1/4}) scaling vs O(d^{-1/4}) for MH</li>
+<li><strong>NUTS</strong> (Hoffman-Gelman 2014): dynamic trajectory length HMC; default sampler in Stan, PyMC, NumPyro; standard for 10–10,000 dimensional posteriors</li>
+<li><strong>GPU-accelerated PPLs</strong> (Pyro 2017, NumPyro 2019, PyMC-JAX 2023): NUTS on GPU/TPU reducing inference time from hours to minutes for hierarchical models</li>
+</ul>
+</li>
+<li>
+<h2 id="components-and-architecture">Components and Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components-and-architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="probabilistic-graphical-models-directed-and-undirected">Probabilistic Graphical Models: Directed and Undirected<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#probabilistic-graphical-models-directed-and-undirected" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Bayesian Networks</strong> (directed acyclic graphical models, DAGs) represent the joint distribution over n variables as a product of conditionals: p(x₁, …, xₙ) = ∏ᵢ p(xᵢ | pa(xᵢ)), where pa(xᵢ) denotes the parents of node xᵢ in the DAG. Each node represents a random variable; directed edges encode direct probabilistic dependence. The DAG structure encodes <strong>conditional independencies</strong> via d-separation: variables A and C are conditionally independent given B (A ⊥ C | B) if every undirected path between A and C is d-separated by B, where d-separation is determined by three connectivity patterns — serial connections (A → B → C blocked by B), diverging connections (A ← B → C blocked by B), and converging connections (A → B ← C unblocked by B unless B or any descendant of B is observed, the <strong>explaining away</strong> or intercausal reasoning phenomenon). Koller and Friedman (2009) provide the definitive treatment, distinguishing causal reasoning (top-down, cause to effect via conditional generation), evidential reasoning (bottom-up, observed symptoms to latent causes via posterior inference), and intercausal reasoning (explaining away competing causes). Exact inference in Bayesian networks uses the <strong>junction tree algorithm</strong> (Lauritzen-Spiegelhalter 1988): moral graph construction by marrying parents → triangulation to chordal graph → junction tree extraction → message passing in two phases (collect evidence, distribute evidence) with time complexity O(n × exp(w)) where w is the tree-width. For low tree-width models (chains, trees, polytrees), exact inference is polynomial; for dense graphs (complete DAGs), tree-width equals n and exact inference is NP-hard. Classical Bayesian networks include MYCIN medical diagnosis (1974, Stanford), QMR-DT (1991, Quick Medical Reference with 600 diseases and 4,000 findings), HUGIN commercial Bayes net tool (Denmark, 1988), Netica (Norsys, 1995), and the BNLEARN R package (Scutari 2010, 2M+ CRAN downloads). Latent Dirichlet Allocation (Blei, Ng, Jordan 2003) — a Bayesian network with Dirichlet priors over topic-word distributions and per-document topic proportions — has over 46,000 Google Scholar citations and is deployed in recommender systems (Yahoo!, Netflix topic modelling), document summarisation, and biomedical literature mining.</p>
+</li>
+<li>
+<p><strong>Markov Random Fields</strong> (MRFs, undirected graphical models, Gibbs random fields) represent distributions via a product of potential functions over cliques: p(x) = (1/Z) ∏_C ψ_C(x_C), where Z = ∑_x ∏_C ψ_C(x_C) is the intractable partition function and the product runs over maximal cliques C. Unlike Bayesian networks, MRFs represent <strong>symmetric dependencies</strong> — pixel neighbourhood interactions in image segmentation (Besag 1986 iterated conditional modes, Boykov-Kolmogorov 2004 graph-cuts for submodular energies), pairwise social network relationship models, protein residue contact maps (DCA direct-coupling analysis), and Ising spin-glass models (Mézard-Montanari 2009). Computing Z is <a href=".././tags/P-hard" class="tag-link internal alias" data-slug="tags/P-hard">P-hard</a> in general; approximate methods include belief propagation (exact on trees, approximate loopy BP on general graphs via Bethe free energy), variational methods (naive mean-field, structured mean-field, expectation propagation), and MCMC (Gibbs sampling for discrete MRFs, Metropolis-Hastings for continuous energies). <strong>Conditional Random Fields</strong> (CRFs, Lafferty et al. 2001) discriminatively model p(y|x) = (1/Z(x)) exp(∑_k λ_k f_k(y,x)), conditioning the label field y on observations x through feature functions f_k, eliminating the need to model p(x) and enabling rich overlapping features without independence assumptions. Linear-chain CRFs dominated NLP sequence labelling (named entity recognition, part-of-speech tagging, information extraction) from 2001–2017, with CRFPP and CRF++ libraries deployed in production NLP pipelines at Google, Microsoft, and the NHS Clinical NLP Service. <strong>Restricted Boltzmann Machines</strong> (RBMs, Hinton-Salakhutdinov 2006) are bipartite MRFs with visible and hidden units, stacked to form Deep Belief Networks (DBNs) — the 2006 breakthrough enabling deep learning via greedy layer-wise pretraining.</p>
+</li>
+<li>
+<p><strong>Dynamic Bayesian Networks</strong> (DBNs) extend Bayesian networks to temporal sequences by replicating the graph structure across time slices with Markov transition distributions p(z_t|z_{t-1}) and observation likelihoods p(x_t|z_t). Special cases include <strong>Hidden Markov Models</strong> (HMMs) with discrete hidden states (Rabiner 1989, fundamental to speech recognition; Viterbi decoding, forward-backward EM for parameter learning; HMMER protein family modelling Eddy 2011 with 800,000+ sequence database searches), <strong>Kalman filters</strong> with Gaussian linear dynamics (Kalman 1960, standard in GPS tracking, robot localisation, financial state-space models; extended Kalman filter linearising non-linear dynamics; unscented Kalman filter using sigma points for better non-linear approximation), and <strong>particle filters</strong> (sequential Monte Carlo, Gordon-Salmond-Smith 1993; stratified resampling; Rao-Blackwellisation for partially analytical substructures) for non-linear non-Gaussian dynamics deployed in robot SLAM, visual odometry, and multi-target tracking.</p>
+</li>
+<li>
+<h3 id="generative-vs-discriminative-models">Generative vs Discriminative Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#generative-vs-discriminative-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Generative models</strong> specify the complete joint distribution p(x, y) = p(x|y) p(y) over observations x and labels y, enabling both classification via Bayes’ rule p(y|x) = p(x|y)p(y)/p(x) and data generation by sampling x ~ p(x|y). Naïve Bayes classification assumes conditional independence of features given class — p(x|y) = ∏ᵢ p(xᵢ|y) — enabling closed-form maximum likelihood estimation and achieving competitive performance on text classification despite strong independence assumptions (McCallum-Nigam 1998, 20 Newsgroups 89.6% accuracy). Gaussian mixture models (GMMs, Dempster-Laird-Rubin EM 1977) fit K-component Gaussian mixtures p(x) = ∑_k π_k N(x|μ_k, Σ_k) via expectation-maximisation, serving as soft clustering, density estimation, and speech acoustic models (GMM-HMM speech recognition dominated ASR from 1990–2013 before deep learning). Latent Dirichlet Allocation (generative model of documents as mixtures of topics), variational autoencoders (deep latent variable models learned via amortised VI), normalising flows (tractable density estimation via invertible transformations), and score-based diffusion models (generative models learning the score of the data density) all fall within this generative family.</p>
+</li>
+<li>
+<p><strong>Discriminative models</strong> directly specify the conditional p(y|x) without modelling the data marginal p(x). Logistic regression p(y|x) = σ(wᵀx + b) with cross-entropy optimisation and L₂ regularisation (equivalent to Gaussian prior on weights), SVMs with Platt scaling post-hoc softmax conversion, conditional random fields, and most modern neural networks (ResNet, ViT, BERT fine-tuning) are discriminative. Ng and Jordan (2001) established the asymptotic analysis comparing Naïve Bayes (generative) against logistic regression (discriminative): logistic regression achieves lower asymptotic error with sufficient data, but Naïve Bayes converges faster with limited data because it exploits the structure of p(x) even at the cost of the independence assumption. Modern <strong>semi-supervised</strong> approaches combine both: Kingma et al. 2014 M1/M2 VAE models learn p(x, y) with a generative component whilst also optimising a discriminative objective, outperforming pure discriminative baselines with 100 MNIST labels by 3.33% error vs 11.82%; semi-supervised normalising flows (Izmailov et al. 2020) extend this to bijective generative models.</p>
+</li>
+<li>
+<p>The <strong>calibration problem</strong> for discriminative deep learning is acute: standard neural network softmax outputs are systematically overconfident, with expected calibration error (ECE) of 5–15% on ImageNet (Guo et al. 2017). Temperature scaling — dividing logits by scalar T before softmax — reduces ECE to 1–3% with negligible inference overhead and is now standard practice. Bayesian approaches (MC-Dropout, deep ensembles, SWAG) provide better calibration under distribution shift, whilst conformal prediction provides distribution-free coverage guarantees independent of calibration quality.</p>
+</li>
+<li>
+<h3 id="variational-inference-theory-and-algorithms">Variational Inference: Theory and Algorithms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#variational-inference-theory-and-algorithms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Variational inference</strong> (VI) casts posterior computation as an optimisation problem: approximate the intractable true posterior p(z|x) with a tractable variational distribution q_φ(z|x) from a variational family Q, chosen to minimise the KL divergence KL[q_φ(z|x) || p(z|x)]. Minimising this KL divergence is equivalent to maximising the <strong>Evidence Lower BOund</strong> (ELBO): ELBO(φ) = E_{q_φ(z|x)}[log p(x, z)] - E_{q_φ(z|x)}[log q_φ(z|x)] = E_{q_φ(z|x)}[log p(x|z)] - KL[q_φ(z|x) || p(z)], decomposing into a reconstruction term (expected log likelihood) and a regularisation term (KL divergence between variational posterior and prior). Since log p(x) = ELBO(φ) + KL[q_φ(z|x) || p(z|x)] and KL ≥ 0, the ELBO is a lower bound on the log marginal likelihood log p(x) (the “evidence”), hence its name. <strong>Mean-field VI</strong> (MFVI) assumes complete factorisation q_φ(z) = ∏ᵢ q_φᵢ(zᵢ), enabling coordinate ascent VI (CAVI) with analytical optimal updates q*<em>φᵢ(zᵢ) ∝ exp(E</em>{-i}[log p(z, x)]) for conjugate exponential family models — Gaussian mean and variance from Gaussian-Gaussian conjugacy, Dirichlet concentration from Dirichlet-Multinomial conjugacy. Stochastic VI (Hoffman et al. 2013) introduces minibatch subsampling of the likelihood term, enabling CAVI to scale LDA to 1M documents on a single machine in hours rather than weeks. <strong>Expectation Propagation</strong> (EP, Minka 2001) approximates the posterior with a product of simpler factors, iteratively updating each factor by moment matching — superior to mean-field when factors exhibit strong correlations, deployed in Bayesian matrix factorisation (Hernandez-Lobato et al. 2014) and probabilistic matrix completion. <strong>Amortised VI</strong> replaces per-datapoint optimisation with an <strong>inference network</strong> (encoder) q_φ(z|x) mapping data directly to variational parameters, enabling O(1) inference for new datapoints without re-optimisation — the key innovation of the VAE (Kingma-Welling 2014) enabling deep learning–scale amortised inference.</p>
+</li>
+<li>
+<h3 id="markov-chain-monte-carlo-hmc-and-nuts">Markov Chain Monte Carlo: HMC and NUTS<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#markov-chain-monte-carlo-hmc-and-nuts" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>MCMC</strong> methods construct a Markov chain whose stationary distribution is the target posterior p(z|x), then sample from the chain after a burn-in period. The fundamental correctness guarantee is <strong>detailed balance</strong>: K(z’|z) p(z|x) = K(z|z’) p(z’|x), ensuring the chain’s stationary distribution equals the target. Classical Metropolis-Hastings proposes z’ ~ q(z’|z) and accepts with probability min(1, p(z’|x) q(z|z’) / (p(z|x) q(z’|z))), guaranteeing ergodicity under mild regularity conditions. Gibbs sampling alternates sampling each variable conditioned on all others: z_i ~ p(z_i | z_{-i}, x) — feasible when full conditionals are analytically available (conjugate models), requiring no tuning but suffering from slow mixing for highly correlated posteriors. Both suffer from <strong>random-walk inefficiency</strong> in high dimensions: the average acceptance rate with Gaussian proposals decays as d^{-1/4} for d-dimensional targets, requiring O(d^{3/4}) steps to traverse the posterior — impractical for models with >1,000 parameters.</p>
+</li>
+<li>
+<p><strong>Hamiltonian Monte Carlo</strong> (HMC, Duane-Kennedy-Pendleton-Roweth 1987, statistical ML applications by Neal 2011 Chapter 5) overcomes random-walk inefficiency by introducing auxiliary momentum variables p ~ N(0, M) (mass matrix M, typically diagonal) and simulating Hamiltonian dynamics: dz/dt = M⁻¹ p, dp/dt = ∇_z log p(z|x), preserving the Hamiltonian H(z, p) = -log p(z|x) + (1/2) pᵀ M⁻¹ p. Because Hamiltonian dynamics conserve H and are volume-preserving, proposals from long trajectories have acceptance probability ≈ 1 (corrected for leapfrog discretisation error). Leapfrog integration: p_{t+ε/2} = p_t + (ε/2) ∇_z log p(z_t|x); z_{t+ε} = z_t + ε M⁻¹ p_{t+ε/2}; p_{t+ε} = p_{t+ε/2} + (ε/2) ∇_z log p(z_{t+ε}|x), with L steps and step size ε as tuning parameters. HMC achieves O(d^{1/4}) acceptance-optimised step-size scaling vs O(d^{-1/4}) for MH, reducing the number of steps to traverse the posterior from O(d^{3/4}) to O(d^{1/4}) — a dramatic improvement for high-dimensional posteriors.</p>
+</li>
+<li>
+<p><strong>The No-U-Turn Sampler</strong> (NUTS, Hoffman-Gelman 2014) eliminates the need to tune L by dynamically growing the trajectory using a doubling procedure until the trajectory would double back (U-turn criterion: the dot product between the momentum and the position difference from the start becomes negative). NUTS uses slice sampling to select from trajectory states satisfying the no-U-turn condition, ensuring detailed balance. NUTS is the default sampler in Stan (all versions), PyMC (via Nutpie or Blackjax backends), and NumPyro, producing samples in 10–100× fewer steps than random-walk MH for 10-1,000 dimensional posteriors. The Riemannian Manifold HMC (RMHMC, Girolami-Calderhead 2011) uses the Fisher information metric as M, adapting the mass matrix to local posterior geometry — superior for posteriors with strong parameter correlations or funnel-shaped geometries common in hierarchical models. <strong>Diagnostics</strong>: Gelman-Rubin R̂ statistic (&lt; 1.01 indicating convergence), effective sample size (ESS > 400 per parameter), energy fraction of missing information (E-FMI for detecting sampling pathologies), and divergent transitions (HMC-specific indicator of pathological posterior geometry).</p>
+</li>
+<li>
+<h3 id="probabilistic-programming-languages-ecosystem-and-trade-offs">Probabilistic Programming Languages: Ecosystem and Trade-offs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#probabilistic-programming-languages-ecosystem-and-trade-offs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic programming languages (PPLs) elevate probabilistic models to first-class programs, separating model specification from inference engine through effect-handler or compilation frameworks. The core PPL operations are (i) <strong>sampling</strong> from prior distributions (z ~ Prior(params)); (ii) <strong>conditioning</strong> on observed data (observe(x, Likelihood(params))); (iii) <strong>inference</strong> invoked automatically via NUTS, ADVI, or custom kernels. Effect handlers (Pyro’s Poutine; Turing.jl’s DynamicPPL) transform model execution traces without modifying model code — wrapping the same generative function in different effects produces different inference algorithms from identical model specifications.</p>
+</li>
+<li>
+<p><strong>Stan</strong> (Carpenter et al. 2017, Stan Development Team) compiles probabilistic programs in the Stan modelling language to optimised C++ with reverse-mode automatic differentiation (Stan Math Library), running NUTS-HMC as the primary sampler and ADVI for faster approximate inference. Stan distinguishes data blocks (observed), parameters blocks (continuous latent variables), transformed parameters (deterministic functions), and generated quantities (posterior predictive). Stan 2.35 (2025) added optional JAX backend (CmdStanJAX) achieving 8× speedup for continuous models on modern GPUs, partial compilation caching reducing re-compilation time 60% for iterative development, and improved pathfinder algorithm (Zhang et al. 2022) for fast variational initialisation. Stan ecosystem includes RStan (R interface), PyStan (Python), CmdStanR, CmdStanPy, brms (Bayesian regression models with Stan, Paul-Christian Bürkner 2017), and BMRS. Stan dominates clinical pharmacokinetics (Bayesian PK/PD, NONMEM competition), randomised clinical trial analysis (EORTC Bayesian adaptive designs), ecology (occupancy and N-mixture models), and psychometrics (item response theory). CRAN download rate exceeds 2M/month for RStan alone.</p>
+</li>
+<li>
+<p><strong>PyMC</strong> (Salvatier et al. 2016; PyMC 5.x since 2023, formerly PyMC3) uses PyTensor (formerly Theano-derived Aesara) as its computational backend. PyMC 5.7 (2025) added native GPU support via JAX backend (Nutpie and Blackjax NUTS implementations), improved hierarchical model convergence via rank-normalised split-R̂ diagnostics (Vehtari et al. 2021), and ArviZ 0.18 integration for convergence diagnostics and posterior predictive checks. PyMC Gaussian Processes module (Rasmussen-Williams GP library) supports sparse variational GP (Hensman et al. SVGP), Hilbert space GP (Solin-Sarkka 2020), and latent variable GP regression. PyMC-Marketing (2023) extends PyMC for marketing mix modelling (media channel attribution, saturation curves, carry-over effects) — adopted by major advertising agencies for Bayesian budget allocation. Key use cases: hierarchical A/B testing (Kruschke 2013 BEST method replacing t-tests), epidemiological compartmental models (SEIR with PyMC fitting to case counts, deployed during COVID-19 response by NHS England analysts), and psychological research (multiverse analysis, robust mixed-effects models avoiding p-value thresholding).</p>
+</li>
+<li>
+<p><strong>Pyro</strong> (Bingham et al. 2019, Uber AI Labs, now maintained by the Pyro team at Berkeley AI Research) is built on PyTorch and provides a universal PPL through a unified sample/observe API with compositional effect handlers (Poutine). Pyro 1.9 (2025) improved GPyTorch integration for scalable GP inference on GPU (inducing-point sparse GPs with 1M observations on NVIDIA A100 in &lt;60 seconds), added amortised MCMC with learned step-size adaptation reducing NUTS warm-up by 40%, and introduced NumPyro model import for JAX-accelerated sampling of Pyro-specified models. The SVI module implements Adam-based ELBO optimisation with low-variance gradient estimators (REINFORCE/NVIL for discrete latent variables, reparameterisation for continuous), deployed in Broad Institute genomic variant calling (continuous relaxation of discrete mutation indicators), Genentech clinical trial simulation, and AstraZeneca mechanistic PK/PD models.</p>
+</li>
+<li>
+<p><strong>NumPyro</strong> (Phan et al. 2019, Pyro dev team / JAX contributors) reimplements Pyro’s probabilistic programming model on JAX, achieving 10–100× speedups on GPU/TPU through JIT compilation (jax.jit), automatic vectorisation (jax.vmap), and forward-mode differentiation (jax.jvp). NumPyro’s vmap-based batching runs dozens of MCMC chains in parallel across TPU cores — full NUTS posterior for a 200-parameter hierarchical model in 90 seconds on 8× TPUv3 vs 15 minutes on CPU. NumPyro 0.15 (2026) introduced mixed-effects model primitives, reparam module with PathwiseDerivative estimator for discrete variables, and improved SVI guide libraries (AutoNormal, AutoLowRankMultivariateNormal, AutoDiagonalNormal). Blackjax (Cabezas et al. 2024) provides a library of MCMC kernels (NUTS, MCLMC, SGLD, normalising flow-based MCMC) compatible with NumPyro-style JAX transforms, used for large-scale probabilistic modelling at DeepMind and Google Research.</p>
+</li>
+<li>
+<p><strong>Turing.jl</strong> (Ge, Xu, Ghahramani 2018, Cambridge MLG) exploits Julia’s multiple dispatch and LLVM JIT compilation to achieve near-C performance for PPL inference. DynamicPPL.jl (the underlying effect-handler PPL library) generates model-specific MCMC kernels via Julia’s macro system and multiple dispatch, eliminating interpreter overhead. Turing.jl 0.30 (2025) improved NUTS diagnostics (divergence detection, E-FMI), added support for sparse Gaussian processes via AbstractGPs.jl, and improved ODE/SDE integration via DifferentialEquations.jl (SciML ecosystem). Key applications: COVID-19 transmission modelling (SIR-Bayes ODEs fit to UK data, 2020 SAGE advisory); Bayesian parameter estimation for climate model emulators; pharmacokinetic two-compartment ODE models fit to individual patient PK data; turbulence model calibration for aerospace CFD at Rolls-Royce (Derby, UK).</p>
+</li>
+<li>
+<p><strong>Gen</strong> (Cusumano-Towner et al. 2019, MIT Probabilistic Computing Project) introduces <strong>generative functions</strong> as first-class objects with explicit <strong>choice maps</strong> recording all random choices made during program execution. This explicit trace representation enables compositional probabilistic inference: custom MCMC kernels using involutive MCMC (Cusumano-Towner et al. 2020), reversible jump MCMC (RJMCMC) for model selection over variable-dimension spaces, sequential Monte Carlo with arbitrary proposal distributions interoperating with general program structure. Gen is deployed for 3D scene understanding via inverse graphics (Gothoskar et al. 2021 3DP3, MIT), program induction from observations (Lake et al. 2019 meta-learning with Gen), and structured prediction combining symbolic and neural components.</p>
+</li>
+<li>
+<h3 id="bayesian-deep-learning">Bayesian Deep Learning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bayesian-deep-learning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Bayesian deep learning</strong> combines the representational power of deep neural networks with principled uncertainty quantification from Bayesian inference, placing a prior distribution over network weights W ~ p(W) and computing the posterior p(W|D) given training data D. Predictions use the <strong>posterior predictive distribution</strong>: p(y*|x*, D) = ∫ p(y*|x*, W) p(W|D) dW — the Bayesian model average over all weight configurations weighted by their posterior probability, providing calibrated predictive uncertainty. This integral is intractable for networks with millions of parameters, necessitating approximations. Wilson and Izmailov (2020) demonstrated that stochastic gradient descent implicitly performs approximate Bayesian inference, and that Bayesian model averaging over SGD trajectory endpoints (SWA) substantially improves generalisation and calibration, motivating SWAG.</p>
+</li>
+<li>
+<p><strong>MC-Dropout</strong> (Gal and Ghahramani 2016, Cambridge MLG) demonstrated that applying Bernoulli dropout with probability p at test time is equivalent to approximate Bayesian inference in a Gaussian process with a specific covariance function proportional to the network architecture. Running T stochastic forward passes with dropout and computing the mean ŷ = (1/T) ∑_t f_{W_t}(x) and variance σ² = (1/T) ∑_t f_{W_t}(x)² - ŷ² provides calibrated epistemic uncertainty estimates with negligible computational overhead (T=10–50 typical, ~5–10% inference overhead). MC-Dropout is deployed at scale: Waymo’s object detection pipeline uses MC-Dropout confidence thresholds to trigger human review for autonomous driving edge cases (2018–2026); nnU-Net-Bayesian applies MC-Dropout to medical image segmentation providing voxel-level uncertainty maps accepted by MICCAI 2019–2024 challenges; Oxford’s BDL (Bayesian Deep Learning) toolkit has been downloaded 85,000+ times.</p>
+</li>
+<li>
+<p><strong>Deep Ensembles</strong> (Lakshminarayanan, Pritzel, Blundell 2017, DeepMind) train M=5–10 independently initialised networks with different random seeds, optionally with random input perturbations (adversarial training), and aggregate their predictive distributions. Ensemble predictions average both aleatoric uncertainty (model-internal variance, captured by each member’s output variance) and epistemic uncertainty (variance across ensemble members representing model uncertainty). Ovadia et al. (2019, Google Brain) “Can You Trust Your Model’s Uncertainty?” benchmarked VI, MC-Dropout, temperature scaling, and deep ensembles on CIFAR-10/ImageNet under dataset shift — ensembles outperformed all methods on calibration (ECE, NLL) and out-of-distribution detection (AUROC) under mild-to-severe shift. The primary limitation is M× inference cost and M× memory footprint, addressed by <strong>PackedEnsembles</strong> (Laurent et al. 2023, parallelised within single forward pass via grouped convolutions, 1.3–1.5× overhead vs single model), <strong>BatchEnsembles</strong> (Wen et al. 2020, rank-1 perturbations of shared weight matrix, 1.1× overhead), and <strong>Hypermodel distillation</strong> (compressing M-member ensemble into single network).</p>
+</li>
+<li>
+<p><strong>Laplace Approximation</strong> (Ritter et al. 2018 online Laplace; Daxberger et al. 2021 NeurIPS “Laplace Redux”) fits a Gaussian N(W_MAP, Σ) to the log-posterior around the MAP estimate using the Hessian: Σ = (∇²_W log p(D|W) p(W))⁻¹ |_{W=W_MAP}. Full Hessian computation is O(p²) in the number of parameters p — infeasible for p > 10,000. Kronecker-factored approximate curvature (KFAC, Martens-Grosse 2015) approximates the Fisher information matrix as a Kronecker product of two smaller matrices per layer: F ≈ ⊗_ℓ A_ℓ ⊗ G_ℓ, enabling O(p d²) computation with d = layer width. The Laplace Redux toolkit (laplace-torch library) implements last-layer Laplace (only the final linear layer receives a Bayesian treatment — sufficient for calibration at minimal computational cost), full-network KFAC Laplace, and probit approximations for classification. Last-layer Laplace is now deployed in production: Spotify recommendation calibration (post-hoc uncertainty on collaborative filtering embeddings), AstraZeneca ADMET property prediction calibration, and UK NHSX AI Lab deployment evaluations.</p>
+</li>
+<li>
+<p><strong>Stochastic Weight Averaging Gaussian</strong> (SWAG, Maddox et al. 2019, Cornell) fits a Gaussian distribution to the SGD trajectory during the final training epochs, capturing both a mean (SWA estimate) and a low-rank + diagonal covariance: p(W|D) ≈ N(W_SWA, Σ_SWA), Σ_SWA = (Σ_diag + D D^T)/2 where D contains rank-K deviation vectors from the trajectory. SWAG requires no architectural changes and adds negligible training overhead (one checkpoint save per epoch), providing strong calibration for ResNet/ViT image classifiers and language models. MultiSWAG (Wilson-Izmailov 2020) combines SWAG samples from multiple independent SGD runs, bridging SWAG and deep ensembles.</p>
+</li>
+<li>
+<h3 id="score-based-diffusion-as-probabilistic-models">Score-Based Diffusion as Probabilistic Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#score-based-diffusion-as-probabilistic-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Score-based diffusion models (Song et al. 2020 NCSN, 2021 SDE framework; Kingma et al. 2021 improved DDPM; Ho et al. 2020 DDPM) represent the current synthesis of deep generative modelling and classical probabilistic modelling via the <strong>denoising score matching</strong> objective (Vincent 2011; Hyvärinen 2005 score matching): train a neural network s_θ(x, t) to approximate the score ∇_x log p_t(x) — the gradient of the log density of the data distribution perturbed with Gaussian noise at level t. The forward process adds noise: dx = f(x,t)dt + g(t)dW, where W is Wiener process, f is the drift, and g is the diffusion coefficient — typically the Ornstein-Uhlenbeck process q(x_t|x_0) = N(x_t; √ᾱ_t x_0, (1-ᾱ_t)I) with ᾱ_t = ∏_{s=1}^t (1-β_s) for discrete schedules or the VP-SDE for continuous time. The reverse process reconstructs data via the reverse SDE: dx = [f(x,t) - g(t)² ∇_x log p_t(x)]dt + g(t)dW̄, approximated by replacing ∇_x log p_t(x) with the learned score s_θ(x, t). <strong>Tweedie’s formula</strong> (Efron 2011) provides the Bayesian connection: E[x₀|x_t] = (x_t + σ_t² ∇_{x_t} log p_t(x_t)) / ᾱ_t^{1/2}, showing that the denoising network implicitly computes a Bayesian posterior mean — diffusion models are probabilistic models learning the Bayes-optimal denoising function at each noise level. This enables: (i) <strong>inverse problem conditioning</strong> — plugging likelihood gradients into the reverse SDE to sample from p(x|y) for image super-resolution, MRI reconstruction from undersampled k-space (Chung et al. 2022), CT denoising, and inpainting; (ii) <strong>score-based MCMC</strong> via Langevin dynamics x_{t+1} = x_t + (ε/2) ∇_x log p(x_t) + √ε η_t with η ~ N(0,I) (Welling-Teh 2011 SGLD); (iii) <strong>log-likelihood computation</strong> via probability flow ODE — the deterministic ODE dx = [f(x,t) - (1/2)g(t)² ∇_x log p_t(x)]dt has the same marginals as the SDE, enabling exact log-likelihood evaluation via the instantaneous change-of-variables formula for neural ODEs. Industrial deployments include Stable Diffusion 3 (Escher Labs/Stability AI, latent diffusion on LAION-5B, 860M parameters, commercial API), DALL-E 3 (OpenAI, text-to-image via CLIP+diffusion), Imagen 2 (Google DeepMind, text-to-image for Gemini), and Adobe Firefly (content-aware generation in Photoshop). Scientific applications include protein structure generation (RFDiffusion, Baker Lab 2023, generating novel protein backbones with diffusion in SE(3)), molecular conformation generation (DiffDock, Corso et al. 2022, protein-ligand docking via diffusion over product of Euclidean and torus spaces), and materials discovery (Crystal Diffusion VAE, Xie et al. 2022).</p>
+</li>
+<li>
+<h3 id="conformal-prediction">Conformal Prediction<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#conformal-prediction" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Conformal prediction</strong> (Vovk, Gammerman, Shafer 2005 foundational monograph “Algorithmic Learning in a Random World”; Shafer-Vovk 2008 tutorial; Angelopoulos-Bates 2021 accessible tutorial arXiv:2107.07511) provides <strong>distribution-free, finite-sample valid</strong> coverage guarantees without requiring any assumptions on the data distribution beyond exchangeability — a fundamental departure from parametric Bayesian approaches that require a correctly-specified likelihood. Given a calibration set {(x_i, y_i)}<em>{i=1}^n drawn exchangeably from the same distribution as the test point (x</em>{n+1}, y_{n+1}), and a <strong>nonconformity score</strong> A(x, y) measuring how poorly y conforms to the fitted model’s predictions for x (e.g., A(x, y) = |y - ŷ| for regression, A(x, y) = 1 - p̂(y|x) for classification), conformal prediction produces a prediction set C(x_{n+1}) = {y : A(x_{n+1}, y) ≤ q̂} where q̂ is the ⌈(n+1)(1-α)⌉/n-quantile of calibration scores {A(x_i, y_i)}. The <strong>marginal coverage guarantee</strong> P(y_{n+1} ∈ C(x_{n+1})) ≥ 1-α holds exactly (not approximately) for any user-specified α ∈ (0,1) and any exchangeable data distribution, any fitted model, and any nonconformity score — a remarkably universal result. <strong>Split conformal prediction</strong> (Papadopoulos et al. 2002) uses a held-out calibration split (40–50% of data), computing q̂ once and applying to all test points at O(1) inference time beyond the base model forward pass. <strong>Inductive conformal prediction</strong> maintains efficiency for large calibration sets. <strong>Mondrian conformal prediction</strong> stratifies calibration by label or group, providing <strong>conditional coverage</strong> guarantees per stratum P(y_{n+1} ∈ C(x_{n+1}) | group(x_{n+1}) = g) ≥ 1-α — stronger than marginal coverage and essential for equitable AI systems where coverage must not differ systematically across demographic groups. <strong>Conformal risk control</strong> (Angelopoulos et al. 2022 “Conformal Risk Control”, ICLR 2023) generalises beyond coverage to arbitrary bounded risk functions R(ŷ, y) ≤ B, providing guaranteed bounds on expected risk without assuming the specific 0/1-loss structure of coverage — enabling valid uncertainty quantification for ranking, object detection mAP, and precision-recall trade-offs. Industrial adoption accelerated dramatically 2024–2026: Waymo uses split conformal prediction for object detection confidence thresholds, providing FDA-equivalent coverage certificates for safety-critical decisions; NHS AI radiology guidelines (NHS AIAI 2025) recommend conformal prediction coverage certificates for AI triage systems; Amazon uses conformal regression intervals for demand forecasting uncertainty bounds; EU AI Act Article 9 compliance frameworks increasingly adopt conformal prediction as the mechanism for technical uncertainty documentation for high-risk AI systems.</p>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h3 id="medical-clinical-and-pharmaceutical-applications">Medical, Clinical, and Pharmaceutical Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#medical-clinical-and-pharmaceutical-applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic models permeate clinical decision support and drug discovery. Bayesian networks power differential diagnosis engines: Isabel DDx (Isabel Healthcare, UK, deployed in 900+ NHS trusts) uses Bayesian reasoning over 11,000+ conditions; QMR-DT (University of Pittsburgh) deployed probabilistic inference across 600 diseases × 4,000 findings in clinical workstations. Gaussian processes model drug pharmacokinetics for personalised dosing: Optimum Patient Care (Cambridge, UK) uses GP-based dose optimisation for COPD and asthma. Hierarchical Bayesian models analyse clinical trial data with partial pooling across sites and patient subgroups — the standard approach in EORTC adaptive trial designs and FDA Bayesian trial guidance (FDA guidance on Bayesian statistics in clinical trials, 2010 revision 2025). Conformal prediction provides coverage-guaranteed prediction intervals for NHS AI radiology referral pathways: radiology AI systems processing 400,000+ NHS mammograms/year (NHS Breast Screening AI Pilot, 2024) use conformal sets for recall rate calibration. The UK’s NICE evidence standards framework (2022, updated 2025) explicitly requires that AI medical devices demonstrate calibrated uncertainty outputs — a requirement probabilistic models satisfy intrinsically.</p>
+</li>
+<li>
+<p>In drug discovery, Bayesian optimisation (GP surrogate + acquisition function: expected improvement EI(x) = E[max(f(x) - f_best, 0)], upper confidence bound UCB, Thompson sampling) drives molecular property optimisation loops. Exscientia (Oxford, NASDAQ: EXAI, founded 2012) used GP-BO in 3D chemical space to design DSP-1181 (collaboration with Sumitomo Dainippon Pharma, 2020), the first fully AI-designed drug candidate to enter Phase I clinical trial, completing design-to-clinic in 12 months vs 4.5 years industry average, and subsequently developed multiple GSK/Sanofi collaboration candidates with clinical milestones. BenevolentAI (London, founded 2013, £375M Series C 2021) applies Bayesian graph neural networks over a biomedical knowledge graph of 500,000+ scientific papers for therapeutic target identification and drug repurposing, with baricitinib repurposing for COVID-19 (2020) validated by RECOVERY trial. Variational autoencoders over SMILES strings (JTVAE, Jin et al. 2018) enable latent-space molecular generation with uncertainty quantification. Normalising flows over 3D molecular conformations (DiffDock, Corso et al. 2022) provide probability estimates over docked protein-ligand poses, exceeding AutoDock Vina performance by 28% on PoseBusters benchmark.</p>
+</li>
+<li>
+<h3 id="natural-language-processing-and-llm-calibration">Natural Language Processing and LLM Calibration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#natural-language-processing-and-llm-calibration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Bayesian approaches have returned to NLP prominence via the calibration crisis of large language models. GPT-4, Claude 3, and Gemini output temperature-scaled softmax probabilities that are systematically overconfident or underconfident depending on domain and query type — demonstrated by Kadavath et al. (2022) “Language Models (Mostly) Know What They Know” showing GPT-3 calibration degrades by 15-25% ECE under distribution shift. Post-hoc calibration methods: <strong>temperature scaling</strong> T ∈ [0.5, 2.0] dividing logits before softmax, optimised on held-out calibration data minimising NLL; <strong>Platt scaling</strong> fitting a logistic regression to logits; <strong>isotonic regression</strong> fitting a monotone calibration function. Conformal prediction applied to LLMs (Quach et al. 2023 NeurIPS “Conformal Language Modelling”; Angelopoulos et al. 2024 “Prediction-Powered Inference”) produces valid set-valued predictions for question answering — instead of a single answer, returning a set of candidate answers with coverage guarantee P(correct answer ∈ set) ≥ 1-α — reducing hallucination exposure for high-stakes deployments. Bayesian active learning via LLM uncertainty (query strategies selecting most uncertain prompts for human-in-the-loop fine-tuning) reduces instruction-tuning data requirements by 40–70% whilst maintaining equivalent downstream task performance (Diao et al. 2023 “Active Prompting”). Bayesian scaling laws (Henighan et al. 2023, Hoffmann et al. 2022 Chinchilla) model loss as a power-law function of compute with Gaussian noise, enabling principled confidence intervals on optimal model sizes — the probabilistic framework underlying Chinchilla optimal compute allocation.</p>
+</li>
+<li>
+<h3 id="robotics-and-autonomous-systems">Robotics and Autonomous Systems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#robotics-and-autonomous-systems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic robotics (Thrun, Burgard, Fox 2005, the field’s foundational textbook) established the framework: robot state (pose, map) is a random variable; sensor measurements and motion commands update belief distributions via Bayesian filtering. <strong>Robot SLAM</strong> (simultaneous localisation and mapping) uses particle filters (FastSLAM, Montemerlo et al. 2002) for feature-based environments and Gaussian process occupancy maps for continuous terrain. Modern neural-probabilistic SLAM systems combine learned perceptual features with Bayesian filtering: iSDF (Ortiz et al. 2022, Meta AI) maintains implicit neural distance fields updated via online Bayesian learning; NeRF-SLAM (Rosinol et al. 2022) fuses probabilistic depth uncertainty from monocular DepthPro with radiance field scene representation. Conformal prediction for object detection (Romano et al. 2023, Angelopoulos-Bates tutorial) provides coverage-guaranteed bounding boxes: Waymo’s production pipeline produces conformal sets of object hypotheses with 95% coverage guarantee used for safety monitoring alerts. Boston Dynamics Atlas uses Gaussian process regression for terrain model uncertainty during contact-rich manipulation planning.</p>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Probabilistic models as a unified discipline emerged from the intersection of Judea Pearl’s graphical model formalisation (Probabilistic Reasoning in Intelligent Systems, 1988, 900+ citations/year), Lauritzen and Spiegelhalter’s junction tree algorithm (1988, JRSS-B), the MRC Biostatistics Unit Cambridge developing BUGS (Bayesian inference Using Gibbs Sampling, Spiegelhalter et al. 1994) as the first accessible Bayesian software, and the statistical physics community’s work on spin-glass models as MRFs (Mézard-Montanari 2009 Information, Physics, and Computation). David Heckerman (Microsoft Research) established structure learning from data (Bayesian score for Bayesian network structure, Heckerman-Geiger-Chickering 1995). Koller and Friedman (Probabilistic Graphical Models, 2009, MIT Press, 1270pp) remains the canonical graduate reference, providing the first comprehensive treatment of directed and undirected graphical models, exact and approximate inference, and structure learning algorithms. <strong>Kevin Murphy’s Probabilistic Machine Learning</strong> (Vol. 1 Introduction 2022, Vol. 2 Advanced Topics 2023, MIT Press, ~2400pp combined open-access at probml.github.io) constitutes the field’s 2020s synthesis, integrating classical graphical models with deep learning, normalising flows, diffusion, GPs, Bayesian optimisation, and probabilistic programming. Murphy (Google Research) trained under Zoubin Ghahramani at Cambridge. <strong>David MacKay</strong> (1967–2016, Cambridge, Warde Professor) made foundational contributions to Bayesian neural networks (weight decay as Gaussian prior, 1992), evidence framework for hyperparameter selection, and Information Theory, Inference, and Learning Algorithms (2003, 640pp, freely available at inference.org.uk, 800,000+ downloads), which remains the most accessible graduate-level probabilistic inference text.</p>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>Three convergent trends reshape the probabilistic modelling ecosystem in 2026. <strong>Hardware acceleration</strong> via JAX/NumPyro on Google TPUv5 pods enables full-posterior NUTS inference for models with 10M+ parameters previously requiring variational approximations; Stan 2.35’s JAX backend provides 8× speedup; GPU-accelerated SMC (BlackJax SMC-SAX) achieves 100× parallelisation over CPU; Pyro 1.9’s GPyTorch integration delivers sparse GP inference at 1M observations in &lt;60 seconds on A100. <strong>LLM calibration urgency</strong> driven by EU AI Act 2024/1689 (in force August 2026) Article 9 requiring technical documentation of uncertainty outputs for high-risk AI systems — directly mandating conformal prediction or equivalent for healthcare, employment, and credit scoring AI; NHS AI deployment governance requiring coverage-guaranteed uncertainty certificates for radiology AI triage. <strong>Generative model unification</strong>: score-based diffusion, flow matching (Lipman et al. 2022 conditional flow matching; Albergo-Vaitl 2022 stochastic interpolants), and continuous normalising flows have converged on a shared probabilistic transport framework (Kingma-Gao 2023 unified framework paper); consistency models (Song et al. 2023) distil diffusion trajectories into single-step generation; Stable Diffusion 3 adopts flow matching rather than DDPM for improved training stability. PPL ecosystem consolidation: cross-framework model exchange via JSON trace formats; Soss.jl (UK, Chad Scherrer) exploring algebraic measure-theoretic PPL foundations; Probabilistic Programming Languages workgroup at Alan Turing Institute standardising benchmark suites (PPL-Bench 2025).</p>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p>The <strong>Cambridge Machine Learning Group</strong> (MLG) is globally pre-eminent in probabilistic ML. Rasmussen and Williams (2006 GP textbook, MIT Press, 4,000+ citations/year) established the reference framework for Gaussian processes. Titsias (2009 inducing points for sparse GP variational inference, AISTATS 2009) enabled GP scaling from hundreds to millions of datapoints — the foundational method behind GPflow, GPyTorch, and NumPyro GP modules. Hensman, Fusi, Lawrence (2013 SVGP stochastic variational inference for Gaussian processes, UAI 2013) further scaled via minibatch GP training. Gal and Ghahramani (2016 ICML MC-Dropout, Cambridge PhD thesis) delivered the most-deployed Bayesian deep learning method globally. Richard Turner (Cambridge, now co-leads MLG) contributes diffusion model posterior sampling for inverse problems and probabilistic audio processing. Zoubin Ghahramani (former MLG director, now VP Probabilistic AI at Google Research) trained Neil Lawrence, Kevin Murphy, Carl Rasmussen, Ryan Adams, and Finale Doshi-Velez, representing perhaps the most influential ML mentorship network in probabilistic AI globally. Neil Lawrence (Amazon Science Director, Cambridge, formerly Sheffield) leads open data science and probabilistic ML advocacy, maintaining GPy (Sheffield GP toolbox, 4,500+ GitHub stars) and developing the DataFirst ethical data science framework. The <strong>Alan Turing Institute</strong> (London, 13 university partners) coordinates UK probabilistic AI research: Bayesian Methods for Clinical Trials working group (MHRAX collaboration 2024), Conformal Prediction for Regulatory AI panel (FCA, ICO collaboration 2025), and PPL-Bench standardisation. <strong>Edinburgh</strong> CDT Data Science (Chris Williams co-founder PRML with Bishop, Amos Storkey GAN + probabilistic ML, Charles Sutton PPL and Monte Carlo methods) produced 200+ Bayesian ML PhDs 2014–2026. <strong>Imperial College</strong> Statistics (Mark van der Wilk: sparse GP, probabilistic continual learning; Marc Deisenroth: GP for robot learning, co-author Mathematics for ML textbook; Seth Flaxman: spatiotemporal Bayesian modelling for COVID-19 case estimation NHS SAGE). <strong>Northern England</strong>: Sheffield (Neil Lawrence base 2007–2012, GPy, AutoML Bayesian optimisation research), Manchester Centre for Imaging Sciences (Prof Geoffrey Parker: dynamic MRI Bayesian reconstruction, probabilistic pharmacokinetic modelling), Leeds CDT Fluid Dynamics (Bayesian UQ for CFD calibration at aerospace Tier 1 suppliers), Newcastle Digital Institute (smart-grid probabilistic energy demand forecasting EPSRC EP/W001098/1). <strong>BenevolentAI</strong> (London) and <strong>Exscientia</strong> (Oxford) represent the UK probabilistic ML commercial frontier in drug discovery.</p>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Amortised MCMC</strong> combining learned inference networks with MCMC corrections for valid posterior samples at neural-network speed: transport score MCMC (Zhang et al. 2023), learned HMC mass matrices (Hoffman et al. 2025), neural transport NUTS achieving 10–50× speedups over standard NUTS with asymptotically correct posteriors. <strong>Causal probabilistic models</strong>: structural causal models (SCMs) as PPL programs (Mooij et al. 2023, Bongers et al. 2021) enabling counterfactual reasoning from observational data — critical for policy evaluation, clinical trial emulation (Pearl’s do-calculus), and algorithmic fairness under distribution shift. The causal discovery literature (Spirtes-Glymour-Scheines 1993, Peters-Janzing-Schölkopf 2017) is increasingly integrated with modern PPLs via differentiable DAG learning (DAG-No-TEARS, Zheng et al. 2018; DAGMA, Bello et al. 2022). <strong>Scalable BDL for foundation models</strong>: efficient Hessian approximations (spectral density estimation, randomised Nyström, KFAC for transformer attention blocks) enabling Laplace posteriors over LLMs with 1B–7B parameters; Goldblum et al. (2023) Bayesian model comparison via marginal likelihood approximation for LLM architecture selection; <strong>probabilistic fine-tuning</strong> of LoRA adapters with SWAG posterior for calibrated instruction following. <strong>Probabilistic numerical methods</strong> (Cockayne-Oates-Sullivan-Girolami 2019, Hennig-Osborne-Girolami 2022 textbook “Probabilistic Numerics”) treating numerical algorithms (ODE solvers, quadrature, linear algebra) as Bayesian inference — quantifying discretisation uncertainty in scientific simulations, accelerating expensive CFD/FEM simulations with probabilistic surrogate calibration. <strong>Probabilistic forecasting standards</strong>: ECMWF (Reading, UK) and Met Office (Exeter) transitioning from ensemble NWP to neural probabilistic forecasting (GraphCast uncertainty quantification, NeuralGCM stochastic parameterisation); UK Centre for Environmental Data Analysis (CEDA) developing probabilistic climate projection standards with conformal coverage certificates; electricity market probabilistic dispatch using quantile regression forests and Bayesian LSTM for renewable energy uncertainty.</p>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<p><strong>Foundational Texts</strong></p>
+</li>
+<li>
+<p>Koller, D. &amp; Friedman, N. (2009). Probabilistic Graphical Models: Principles and Techniques. MIT Press. 1270pp. Canonical reference for graphical models.</p>
+</li>
+<li>
+<p>Murphy, K.P. (2022). Probabilistic Machine Learning: An Introduction. MIT Press. Open-access at probml.github.io.</p>
+</li>
+<li>
+<p>Murphy, K.P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press. Open-access.</p>
+</li>
+<li>
+<p>Pearl, J. (1988). Probabilistic Reasoning in Intelligent Systems. Morgan Kaufmann.</p>
+</li>
+<li>
+<p>MacKay, D.J.C. (2003). Information Theory, Inference, and Learning Algorithms. Cambridge University Press. Freely available at inference.org.uk.</p>
+</li>
+<li>
+<p>Bishop, C.M. (2006). Pattern Recognition and Machine Learning. Springer. (PRML)</p>
+</li>
+<li>
+<p>Rasmussen, C.E. &amp; Williams, C.K.I. (2006). Gaussian Processes for Machine Learning. MIT Press. Freely available at gaussianprocess.org.</p>
+</li>
+<li>
+<p>Thrun, S., Burgard, W. &amp; Fox, D. (2005). Probabilistic Robotics. MIT Press.</p>
+</li>
+<li>
+<p><strong>Inference and Algorithms</strong></p>
+</li>
+<li>
+<p>Neal, R.M. (2011). MCMC using Hamiltonian dynamics. In Handbook of Markov Chain Monte Carlo, Ch.5. CRC Press.</p>
+</li>
+<li>
+<p>Hoffman, M.D. &amp; Gelman, A. (2014). The No-U-Turn Sampler. Journal of Machine Learning Research, 15, 1593–1623.</p>
+</li>
+<li>
+<p>Blei, D.M., Kucukelbir, A. &amp; McAuliffe, J.D. (2017). Variational Inference: A Review for Statisticians. JASA, 112(518), 859–877.</p>
+</li>
+<li>
+<p>Jordan, M.I., Ghahramani, Z., Jaakkola, T.S. &amp; Saul, L.K. (1999). An Introduction to Variational Methods. Machine Learning, 37, 183–233.</p>
+</li>
+<li>
+<p>Gelfand, A.E. &amp; Smith, A.F.M. (1990). Sampling-Based Approaches to Calculating Marginal Densities. JASA, 85(410), 398–409.</p>
+</li>
+<li>
+<p>Vehtari, A. et al. (2021). Rank-Normalization, Folding, and Localization: An Improved R̂ for Assessing MCMC Convergence. Bayesian Analysis, 16(2), 667–718.</p>
+</li>
+<li>
+<p><strong>Probabilistic Programming</strong></p>
+</li>
+<li>
+<p>Carpenter, B. et al. (2017). Stan: A Probabilistic Programming Language. Journal of Statistical Software, 76(1).</p>
+</li>
+<li>
+<p>Bingham, E. et al. (2019). Pyro: Deep Universal Probabilistic Programming. JMLR, 20(28), 1–6.</p>
+</li>
+<li>
+<p>Phan, D. et al. (2019). Composable Effects for Flexible and Accelerated Probabilistic Programming in NumPyro. arXiv:1912.11554.</p>
+</li>
+<li>
+<p>Salvatier, J., Wiecki, T.V. &amp; Fonnesbeck, C. (2016). Probabilistic Programming in Python using PyMC3. PeerJ Computer Science, 2, e55.</p>
+</li>
+<li>
+<p>Ge, H., Xu, K. &amp; Ghahramani, Z. (2018). Turing: A Language for Flexible Probabilistic Inference. AISTATS 2018.</p>
+</li>
+<li>
+<p>Cusumano-Towner, M.F. et al. (2019). Gen: A General-Purpose Probabilistic Programming System. PLDI 2019.</p>
+</li>
+<li>
+<p><strong>Deep Generative Models</strong></p>
+</li>
+<li>
+<p>Kingma, D.P. &amp; Welling, M. (2014). Auto-Encoding Variational Bayes. ICLR 2014.</p>
+</li>
+<li>
+<p>Rezende, D.J. &amp; Mohamed, S. (2015). Variational Inference with Normalizing Flows. ICML 2015.</p>
+</li>
+<li>
+<p>Song, Y. et al. (2021). Score-Based Generative Modeling through Stochastic Differential Equations. ICLR 2021.</p>
+</li>
+<li>
+<p>Ho, J., Jain, A. &amp; Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. NeurIPS 2020.</p>
+</li>
+<li>
+<p>Dinh, L., Sohl-Dickstein, J. &amp; Bengio, S. (2017). Density Estimation using Real-valued Non-Volume Preserving (RealNVP) Transformations. ICLR 2017.</p>
+</li>
+<li>
+<p>Blei, D.M., Ng, A.Y. &amp; Jordan, M.I. (2003). Latent Dirichlet Allocation. JMLR, 3, 993–1022.</p>
+</li>
+<li>
+<p><strong>Bayesian Deep Learning</strong></p>
+</li>
+<li>
+<p>Gal, Y. &amp; Ghahramani, Z. (2016). Dropout as a Bayesian Approximation. ICML 2016.</p>
+</li>
+<li>
+<p>Lakshminarayanan, B., Pritzel, A. &amp; Blundell, C. (2017). Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles. NeurIPS 2017.</p>
+</li>
+<li>
+<p>Daxberger, E. et al. (2021). Laplace Redux — Effortless Bayesian Deep Learning. NeurIPS 2021.</p>
+</li>
+<li>
+<p>Maddox, W.J. et al. (2019). A Simple Baseline for Bayesian Uncertainty in Deep Learning (SWAG). NeurIPS 2019.</p>
+</li>
+<li>
+<p>Wilson, A.G. &amp; Izmailov, P. (2020). Bayesian Deep Learning and a Probabilistic Perspective of Generalisation. NeurIPS 2020.</p>
+</li>
+<li>
+<p><strong>Conformal Prediction</strong></p>
+</li>
+<li>
+<p>Vovk, V., Gammerman, A. &amp; Shafer, G. (2005). Algorithmic Learning in a Random World. Springer.</p>
+</li>
+<li>
+<p>Angelopoulos, A.N. &amp; Bates, S. (2021). A Gentle Introduction to Conformal Prediction and Distribution-Free Uncertainty Quantification. arXiv:2107.07511.</p>
+</li>
+<li>
+<p>Angelopoulos, A.N. et al. (2022). Conformal Risk Control. ICLR 2023.</p>
+</li>
+<li>
+<p>Romano, Y., Patterson, E. &amp; Candes, E. (2019). Conformalized Quantile Regression. NeurIPS 2019.</p>
+</li>
+<li>
+<h3 id="distribution-families-and-conjugate-pairs">Distribution Families and Conjugate Pairs<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distribution-families-and-conjugate-pairs" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The tractability of Bayesian inference depends critically on distribution family choice. Key conjugate pairs where p(z|x) belongs to the same family as p(z):</p>
+<ul>
+<li><strong>Gaussian-Gaussian</strong>: N(μ, σ²) prior on mean μ, N(x|μ, σ²_noise) likelihood → Gaussian posterior; used in Kalman filtering, Gaussian process regression, linear regression with known noise variance</li>
+<li><strong>Dirichlet-Categorical/Multinomial</strong>: Dir(α) prior on probability vector θ, Categorical(θ) likelihood → Dir(α + counts) posterior; used in topic models (LDA), language model Bayesian smoothing (Kneser-Ney as limit of Dirichlet process), Naïve Bayes text classification</li>
+<li><strong>Beta-Bernoulli</strong>: Beta(a,b) prior on bias p, Bernoulli(p) likelihood → Beta(a + heads, b + tails) posterior; used in A/B testing (Bayesian hypothesis testing), click-through rate estimation, clinical binary outcome trials</li>
+<li><strong>Gamma-Poisson</strong>: Gamma(a,b) prior on rate λ, Poisson(λ) likelihood → Gamma(a + Σx_i, b + n) posterior; used in count data modelling (web traffic, disease incidence, queueing systems)</li>
+<li><strong>Normal-Inverse-Wishart</strong>: NIW prior on (μ, Σ) for multivariate Gaussian → NIW posterior; used in Gaussian mixture model EM with Bayesian updating, LDA with full-covariance topic distributions</li>
+<li><strong>Gaussian Process prior</strong>: GP prior over function f ~ GP(m, k) with Gaussian likelihood → GP posterior (still a GP) with posterior mean and covariance analytically computed via Woodbury identity; foundational to GP regression (Rasmussen-Williams 2006)</li>
+</ul>
+</li>
+<li>
+<p><strong>Exponential family</strong> distributions p(x|η) = h(x) exp(η^T T(x) - A(η)) with natural parameters η, sufficient statistics T(x), and log-partition function A(η) always have conjugate priors of the form p(η|χ,ν) ∝ exp(η^T χ - ν A(η)) enabling CAVI updates in closed form — the algebraic foundation of mean-field variational inference for latent variable models</p>
+</li>
+<li>
+<h3 id="inference-algorithm-comparison">Inference Algorithm Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#inference-algorithm-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Trade-offs between inference methods across dimensions of accuracy, scalability, and ease of use:</p>
+<ul>
+<li><strong>Exact inference</strong> (junction tree, variable elimination): exact posterior; O(n × exp(tree-width)); feasible only for low tree-width (&lt;20) graphical models; deployed in discrete Bayesian networks (Isabel DDx, HUGIN commercial tool)</li>
+<li><strong>CAVI mean-field VI</strong>: O(n × K × D) per iteration; biased (underestimates variance due to factorisation); fast convergence for conjugate exponential family; deployed in LDA (Hoffman stochastic VI), GMM clustering, sparse Bayesian linear models</li>
+<li><strong>Expectation Propagation</strong>: O(n × K²) per sweep; moment-matched approximation; more accurate than mean-field for strongly correlated posteriors; deployed in Bayesian matrix factorisation, sparse GP classification (Rasmussen-Williams Ch.3)</li>
+<li><strong>Metropolis-Hastings</strong>: unbiased asymptotically; O(1) per step (excluding likelihood evaluation); O(d^{-1/4}) acceptance rate scaling; suitable for d &lt; 100 and expensive likelihoods</li>
+<li><strong>Gibbs sampling</strong>: unbiased; O(d) per sweep; no acceptance step (always accepted); requires tractable full conditionals; excellent for discrete-continuous mixed models</li>
+<li><strong>HMC/NUTS</strong>: unbiased; O(L × d) per step (L leapfrog); O(d^{1/4}) acceptance scaling; requires continuous differentiable log-posterior; standard for d ∈ [10, 10,000]; deployed in Stan, PyMC, NumPyro</li>
+<li><strong>SMC/Particle filters</strong>: unbiased; O(N × T × d) for N particles over T time steps; handles non-stationary targets; sequential real-time updating; deployed in robot SLAM, financial state-space filtering</li>
+<li><strong>Stochastic VI (SVI)</strong>: biased; O(mini-batch × K) per step; Adam-optimisable; GPU-parallelisable; deployed in Pyro SVI, VAE training, large-scale Bayesian neural networks</li>
+<li><strong>Laplace approximation</strong>: O(d²) for Hessian (O(d) for diagonal/KFAC); biased (Gaussian shape assumption); fast; post-hoc applicable to pretrained networks; deployed in last-layer Laplace, neural ODEs uncertainty</li>
+<li><strong>MC-Dropout</strong>: O(T × forward-pass); biased (approximate GP posterior); zero architectural change; T=30 standard; deployed at Waymo, NHS radiology AI, nnU-Net medical segmentation</li>
+</ul>
+</li>
+<li>
+<h3 id="key-theorems-and-theoretical-foundations">Key Theorems and Theoretical Foundations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-theorems-and-theoretical-foundations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic models rest on a small number of foundational theoretical results:</p>
+<ul>
+<li><strong>Bayes’ theorem</strong>: p(z|x) = p(x|z)p(z) / p(x); from conditional probability; the foundational update rule for all Bayesian inference</li>
+<li><strong>Markov blanket theorem</strong> (Pearl 1988): every node in a Bayesian network is conditionally independent of all non-descendants given its Markov blanket (parents, children, co-parents); enables modular inference and local updates</li>
+<li><strong>Hammersley-Clifford theorem</strong> (1971, published posthumously): any strictly positive distribution that factorises over a graph of conditional independencies is a Gibbs distribution (MRF) over that graph; duality between graphical model conditional independence structure and factorisation</li>
+<li><strong>ELBO-KL duality</strong>: log p(x) = ELBO(q) + KL[q(z|x) || p(z|x)]; maximising ELBO over q simultaneously maximises evidence and minimises KL divergence; the variational EM framework</li>
+<li><strong>Jensen’s inequality for ELBO</strong>: log E_p[f(z)] ≥ E_p[log f(z)]; applied with f(z) = p(x,z)/q(z|x) and q-expectation to derive the ELBO as a lower bound</li>
+<li><strong>Bernstein-von Mises theorem</strong>: under regularity conditions, as n → ∞ the posterior p(θ|x₁,…,xₙ) converges to N(θ_true, I(θ_true)⁻¹/n) where I(θ) is the Fisher information; Bayesian credible intervals are asymptotically equivalent to frequentist confidence intervals</li>
+<li><strong>PAC-Bayes bound</strong> (McAllester 1998, Catoni 2007): for any prior P and any posterior Q, the expected generalisation error E[L(Q)] ≤ E_{S~Dⁿ}[L̂(Q,S)] + √(KL[Q||P] + log(1/δ)) / (2n); connects variational inference to PAC learning theory; tighter bounds for concentrated posteriors</li>
+<li><strong>Tweedie’s formula</strong> (Efron 2011): E[x₀|x_t] = x_t + σ_t² ∇_{x_t} log p_t(x_t); connects denoising score to Bayesian conditional expectation; theoretical foundation of diffusion model denoising interpretation</li>
+<li><strong>Exchangeability and de Finetti’s theorem</strong> (de Finetti 1931, Hewitt-Savage 1955): an infinite exchangeable sequence (x₁, x₂, …) can be represented as a mixture of i.i.d. sequences: p(x₁,…,xₙ) = ∫ ∏ᵢ p(xᵢ|θ) dP(θ); Bayesian hierarchical modelling is the natural framework for exchangeable data; Dirichlet process = nonparametric prior over mixing distributions</li>
+</ul>
+</li>
+<li>
+<h3 id="software-ecosystem-and-tooling">Software Ecosystem and Tooling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#software-ecosystem-and-tooling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The probabilistic modelling software ecosystem stratifies across three performance tiers:</p>
+</li>
+<li>
+<p><strong>Tier 1 — High-performance compiled backends</strong>: Stan (C++ with NUTS), PyMC with Nutpie (Rust NUTS), Turing.jl (Julia LLVM JIT)</p>
+<ul>
+<li>Stan: model → C++ → LLVM → native binary; NUTS gradient evaluated in ~1µs for 100-parameter models</li>
+<li>PyMC Nutpie: Rust implementation of NUTS, 3-5× faster than Python PyMC3 for large hierarchical models</li>
+<li>Turing.jl: model macro → Julia IR → LLVM; supports ODE/SDE models via DifferentialEquations.jl</li>
+</ul>
+</li>
+<li>
+<p><strong>Tier 2 — GPU/TPU-accelerated differentiable backends</strong>: NumPyro (JAX), Pyro (PyTorch), Blackjax (JAX)</p>
+<ul>
+<li>NumPyro vmap: 64 parallel NUTS chains on 8× TPUv3 in 90 seconds for 200-parameter hierarchical model</li>
+<li>Pyro SVI: Adam-based ELBO optimisation, 1M gradient steps/hour on A100, discrete latent via REINFORCE</li>
+<li>Blackjax: composable MCMC kernels (NUTS, MCLMC, SGLD), pure JAX functional API, used at DeepMind</li>
+</ul>
+</li>
+<li>
+<p><strong>Tier 3 — Educational and prototyping</strong>: BUGS/WinBUGS (Gibbs sampling, foundational but superseded), JAGS (GPL Gibbs/slice sampling via R rjags), Infer.NET (Microsoft Research, factor graph message passing for .NET)</p>
+</li>
+<li>
+<p><strong>Diagnostic tooling</strong>: ArviZ (Python, MCMC diagnostics: R̂, ESS, MCSE, LOO cross-validation, posterior predictive checks); PSIS-LOO-CV (Vehtari et al. 2017, widely used model selection); Bambi (Bayesian Model Building Interface, brms-equivalent for PyMC); corner.py (posterior corner plots); SBC (simulation-based calibration, Talts et al. 2018, checking sampler correctness)</p>
+</li>
+<li>
+<p><strong>Model selection</strong>: Bayes factors via bridge sampling (Gronau et al. 2017, bridgesampling R package); WAIC (Watanabe 2010, widely applicable information criterion); PSIS-LOO (Vehtari-Gelman-Gabry 2017, approximating leave-one-out cross-validation from MCMC samples via Pareto-smoothed importance sampling)</p>
+</li>
+<li>
+<h3 id="key-algorithms-reference">Key Algorithms Reference<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-algorithms-reference" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Bayesian updating</strong>: p(θ|x₁,…,xₙ) ∝ p(θ) ∏ᵢ p(xᵢ|θ) — sequential conditioning; posterior after n observations is prior for n+1</p>
+</li>
+<li>
+<p><strong>EM algorithm</strong>: Expectation step E[log p(x,z|θ)|x,θ_old] → Maximisation step θ_new = argmax Q(θ, θ_old); monotonically increases log p(x|θ)</p>
+</li>
+<li>
+<p><strong>Belief propagation</strong>: Factor graph message passing μ_{f→x}(x) = ∑_~ x f(x, ~x) ∏_{y∈ne(f)\x} μ_{y→f}(y); exact on trees, iterates to convergence (loopy BP) on general graphs</p>
+</li>
+<li>
+<p><strong>Variational EM (mean-field)</strong>: E-step update q*(z_j) ∝ exp(E_{-j}[log p(x,z)]); M-step maximise E_q[log p(x,z,θ)] over θ</p>
+</li>
+<li>
+<p><strong>Stochastic gradient VI</strong>: ELBO gradient estimator via reparameterisation ∇_φ ELBO = E_{ε~N(0,I)}[∇_φ log p(x, g(φ,ε)) - ∇_φ log q_φ(g(φ,ε)|x)]; low-variance, enables Adam optimisation</p>
+</li>
+<li>
+<p><strong>NUTS doubling procedure</strong>: Binary tree of depth j; double until U-turn or Metropolis slice condition violated; select from tree via multinomial sampling on depth with slice conditions</p>
+</li>
+<li>
+<p><strong>Tweedie denoising score</strong>: x̂₀(x_t, t) = (x_t + σ²_t s_θ(x_t, t)) / √ᾱ_t; MMSE denoiser at each noise level via learned score</p>
+</li>
+<li>
+<p><strong>Split conformal p-value</strong>: p(x_{n+1}, y) = #{i∈{1..n}: A(xᵢ,yᵢ) ≥ A(x_{n+1},y)} / (n+1); C(x) = {y: p(x,y) > α}</p>
+</li>
+<li>
+<h3 id="normalising-flows-architecture-taxonomy">Normalising Flows: Architecture Taxonomy<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#normalising-flows-architecture-taxonomy" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Normalising flows construct complex distributions via sequences of invertible transformations. Key architectures and their properties:</p>
+<ul>
+<li><strong>NICE</strong> (Dinh et al. 2015): additive coupling layers; trivial Jacobian determinant (triangular); limited expressiveness, foundational paper</li>
+<li><strong>RealNVP</strong> (Dinh et al. 2017): affine coupling x_{1:d/2}’ = x_{1:d/2}, x_{d/2:d}’ = x_{d/2:d} ⊙ exp(s(x_{1:d/2})) + t(x_{1:d/2}); log|det J| = ∑ s_i(x_{1:d/2}); used in image generation, speech synthesis (WaveNet RealNVP variant)</li>
+<li><strong>Glow</strong> (Kingma-Dhariwal 2018): 1×1 invertible convolution for permutation + actnorm for scale shift + affine coupling; log|det J| = log|det W| (LU-decomposed); 256×256 face generation, deployed in image inpainting APIs</li>
+<li><strong>Neural Spline Flows</strong> (Durkan et al. 2019): piecewise rational-quadratic bijections via monotone spline interpolation; more expressive than affine coupling; 8–10 bins standard; state-of-art for tabular density estimation</li>
+<li><strong>FFJORD</strong> (Grathwohl et al. 2019): continuous normalising flow via neural ODE dz/dt = f_θ(z, t); log|det J| computed via Hutchinson trace estimator (unbiased, O(d) vs O(d²) for full Jacobian); high expressiveness at high computational cost</li>
+<li><strong>Masked Autoregressive Flow</strong> (MAF, Papamakarios et al. 2017): autoregressive factorisation p(x) = ∏ᵢ p(xᵢ|x_{&lt;i}) with each factor Gaussian; fast density evaluation, slow sampling (sequential); used for posterior approximation in likelihood-free inference</li>
+<li><strong>Inverse Autoregressive Flow</strong> (IAF, Kingma et al. 2016): inverse of MAF; fast sampling, slow density; used as variational posterior in high-performance VAEs</li>
+<li><strong>Neural Posterior Estimation</strong> (Cranmer-Brehmer-Louppe 2020, simulation-based inference): normalising flow trained to approximate p(θ|x) for simulator-based models without tractable likelihoods; deployed in particle physics (ATLAS detector calibration), neuroscience (Bayesian brain modelling), gravitational wave parameter estimation (LIGO)</li>
+</ul>
+</li>
+<li>
+<h3 id="gaussian-processes-kernel-families-and-scalability">Gaussian Processes: Kernel Families and Scalability<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#gaussian-processes-kernel-families-and-scalability" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Gaussian processes define a distribution over functions f ~ GP(m, k) where m(x) is the mean function and k(x, x’) is the covariance kernel. The posterior GP given observations {X, y} is: f* | X, y, X* ~ N(μ*, Σ*) with μ* = m(X*) + K(X*, X)[K(X,X) + σ²I]⁻¹(y - m(X)) and Σ* = K(X*, X*) - K(X*, X)[K(X,X) + σ²I]⁻¹K(X, X*). Key kernel families:</p>
+<ul>
+<li><strong>Squared Exponential (RBF)</strong>: k(x,x’) = σ² exp(-||x-x’||²/(2ℓ²)); infinitely differentiable functions; characteristic lengthscale ℓ; standard default kernel</li>
+<li><strong>Matérn-5/2</strong>: k(x,x’) = σ²(1 + √5r/ℓ + 5r²/(3ℓ²)) exp(-√5r/ℓ), r = ||x-x’||; twice-differentiable; better calibrated for most physical processes than RBF; recommended default (Stein 1999)</li>
+<li><strong>Rational Quadratic</strong>: k(x,x’) = σ²(1 + r²/(2αℓ²))^{-α}; scale mixture of RBF kernels; captures multi-scale variation; reduces to RBF as α→∞</li>
+<li><strong>Periodic</strong>: k(x,x’) = σ² exp(-2sin²(π|x-x’|/p)/ℓ²); for periodic functions with period p; used in time-series modelling (seasonal effects)</li>
+<li><strong>Spectral Mixture</strong> (Wilson-Adams 2013): k(x,x’) = ∑_q w_q cos(2π μ_q^T (x-x’)) exp(-2π² (x-x’)^T diag(v_q) (x-x’)); flexible multi-scale periodic; learned from data; deployed in Chronos forecasting (Amazon, 2024)</li>
+</ul>
+</li>
+<li>
+<p>Scalability: naive GP inference is O(n³) for Cholesky factorisation of K(X,X) + σ²I, limiting exact GPs to n ≤ 10,000. Scalable approximations:</p>
+<ul>
+<li><strong>Inducing points (Titsias 2009)</strong>: m &lt;&lt; n inducing locations Z; variational lower bound on log p(y|X); O(nm²) per iteration; foundational to GPflow, GPyTorch sparse GP modules</li>
+<li><strong>SVGP (Hensman 2013)</strong>: stochastic mini-batch training of inducing point GP; scales to n = 10M; O(m³ + B×m²) per mini-batch B</li>
+<li><strong>SKI/KISS-GP</strong> (Wilson-Nickisch 2015): grid-based inducing points + structured kernel interpolation; O(n + m log m) with FFT; exploits Kronecker structure for multidimensional inputs</li>
+<li><strong>Hilbert Space GP</strong> (Solin-Sarkka 2020): stationary GP approximation via Laplace eigenfunctions of the Matérn kernel on compact domain; O(n × L) training; L basis functions; deployed in Turing.jl HSGP module</li>
+</ul>
+</li>
+<li>
+<h3 id="hierarchical-models-and-partial-pooling">Hierarchical Models and Partial Pooling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#hierarchical-models-and-partial-pooling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Hierarchical (multilevel) Bayesian models are among the most practically powerful probabilistic modelling tools, implementing <strong>partial pooling</strong> across groups:</p>
+<ul>
+<li><strong>Complete pooling</strong>: single estimate θ across all groups; ignores between-group variation; underfits group-specific effects</li>
+<li><strong>No pooling</strong>: separate θ_g per group g; ignores shared information; overfits small-n groups</li>
+<li><strong>Partial pooling</strong> (Stein-James 1961 shrinkage estimator; Gelman-Hill 2007 textbook): θ_g ~ N(μ, τ²), μ ~ hyperprior, τ ~ hyperprior; groups share information via hyperparameters; optimal for many groups with small n each; the <strong>James-Stein estimator</strong> is the frequentist version</li>
+</ul>
+</li>
+<li>
+<p>Canonical examples of hierarchical models:</p>
+<ul>
+<li><strong>Eight schools</strong> (Rubin 1981): 8 independent SAT coaching studies; school effects θ_j ~ N(μ, τ²); posterior shrinks estimates toward grand mean; textbook example in Gelman-Carlin-Stern-Rubin “Bayesian Data Analysis” 3rd ed 2013</li>
+<li><strong>Radon measurement</strong> (Gelman-Hill 2007 Ch.12): 919 Minnesota counties; county-level uranium (group predictor) + household basement/floor measurement; 3-level hierarchy (state, county, household); 58% RMSE reduction vs no pooling</li>
+<li><strong>NBA free throws</strong> (Efron-Morris 1975 original shrinkage paper): player career FT% pooled toward league mean; demonstrated James-Stein dominance over MLE</li>
+<li><strong>Pharmacokinetic population models</strong>: patient-level PK parameters θ_i ~ N(θ_pop, Ω), θ_pop ~ hyperprior; Bayesian NONMEM alternative; deployed in FDA drug approval submissions (>200 BLA/NDA submissions use Stan/NONMEM Bayesian PK 2018–2026)</li>
+</ul>
+</li>
+<li>
+<p>The non-centred parameterisation resolves the <strong>funnel geometry problem</strong> in hierarchical models: instead of sampling (μ, τ, θ_1,…,θ_K) directly, reparameterise as θ_k = μ + τ × η_k, η_k ~ N(0,1), then sample (μ, τ, η_1,…,η_K); the posterior over (μ, τ, η) has no funnel and HMC/NUTS mixes exponentially faster</p>
+</li>
+<li>
+<h3 id="bayesian-nonparametrics">Bayesian Nonparametrics<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bayesian-nonparametrics" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Bayesian nonparametric (BNP) models place priors over infinite-dimensional parameter spaces, allowing model complexity to grow with data:</p>
+<ul>
+<li><strong>Dirichlet Process</strong> (Ferguson 1973): DP(α, G₀) is a distribution over distributions; draws G ~ DP are almost surely discrete; used as prior on mixture model atom distributions in Dirichlet Process Mixture Models (DPMM); number of components K determined automatically from data; Chinese Restaurant Process and Stick-Breaking (Sethuraman 1994) representations</li>
+<li><strong>Gaussian Process</strong> (prior over functions, Rasmussen-Williams 2006): effectively a nonparametric model for regression and classification; posterior complexity grows with n</li>
+<li><strong>Indian Buffet Process</strong> (Griffiths-Ghahramani 2011): binary matrix prior with unbounded columns; used for latent feature models where number of features is unknown; Beta Process prior representation</li>
+<li><strong>Hierarchical Dirichlet Process</strong> (Teh et al. 2006): multiple grouped datasets sharing global set of topics; each group has DP mixture over global topics; foundational to hierarchical topic models, online DP (Hoffman et al. 2010)</li>
+<li><strong>Gaussian Process LVM</strong> (Lawrence 2005, Cambridge/Sheffield): low-dimensional GP latent variable model; maps latent z via GP to observation x; nonlinear dimensionality reduction with uncertainty; used in motion capture analysis, gene expression visualisation</li>
+</ul>
+</li>
+<li>
+<h3 id="probabilistic-forecasting-and-time-series">Probabilistic Forecasting and Time-Series<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#probabilistic-forecasting-and-time-series" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic forecasting produces predictive distributions p(y_T+h | y_{1:T}) rather than point estimates, enabling calibrated prediction intervals and risk quantification:</p>
+<ul>
+<li><strong>State space models</strong>: Local level, local linear trend, seasonal decomposition (ETS Exponential Smoothing State Space); Kalman filter for Gaussian models; structural time series (Harvey 1990; Durbin-Koopman 2012)</li>
+<li><strong>BSTS</strong> (Bayesian Structural Time Series, Scott-Varian 2014, R bsts package): trend + seasonal + regression components; spike-and-slab prior for variable selection; deployed at Google for web query forecasting</li>
+<li><strong>Prophet</strong> (Taylor-Letham 2018, Facebook/Meta, open-source): decomposable model trend + seasonality + holidays; Laplace prior on changepoints; Stan backend; 1M+ GitHub downloads; used by Airbnb, Twitter, NHS for operational planning</li>
+<li><strong>DeepAR</strong> (Salinas et al. 2020, Amazon): recurrent neural network trained to predict parameters of output distribution (Gaussian, negative binomial); produces calibrated quantile forecasts; deployed in AWS Forecast service</li>
+<li><strong>Temporal Fusion Transformer</strong> (Lim et al. 2021): attention-based multi-horizon forecasting with quantile regression outputs; winner M5 forecasting competition (Walmart SKU-level demand)</li>
+<li><strong>Chronos</strong> (Ansari et al. 2024, Amazon): language model pre-trained on time series quantised as tokens; zero-shot probabilistic forecasting; GP uncertainty on top of transformer backbone; ArXiv 2024, deployed in Amazon Forecast</li>
+<li><strong>Neural probabilistic forecasting evaluation</strong>: WQL (Weighted Quantile Loss), CRPS (Continuous Ranked Probability Score = ∫ (F(y) - 1_{y≥z})² dz, proper scoring rule for distributional forecasts), coverage at 80%/90%/95% nominal levels, sharpness (interval width), calibration (coverage vs nominal)</li>
+</ul>
+</li>
+<li>
+<h3 id="simulation-based-inference-and-likelihood-free-methods">Simulation-Based Inference and Likelihood-Free Methods<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#simulation-based-inference-and-likelihood-free-methods" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>When the likelihood p(x|θ) is intractable (expensive simulator, implicit model), likelihood-free inference methods approximate the posterior without evaluating p(x|θ):</p>
+<ul>
+<li><strong>Approximate Bayesian Computation</strong> (ABC, Tavaré 1997, Beaumont 2002): accept samples θ ~ p(θ) if simulator output x’ satisfies ρ(S(x’), S(x_obs)) &lt; ε for summary statistics S and distance ρ; curse of dimensionality in summary statistics; deployed in population genetics (BEAST, coalescent models), ecology (individual-based models), epidemiology</li>
+<li><strong>Sequential Monte Carlo ABC</strong> (SMC-ABC): sequence of decreasing tolerances ε₁ > ε₂ > … > ε_T with particle reweighting; more efficient than naive ABC rejection</li>
+<li><strong>Neural Likelihood Estimation</strong> (NLE, Papamakarios et al. 2019): train normalising flow q_φ(x|θ) to approximate likelihood; then run MCMC with surrogate likelihood; amortised across simulations</li>
+<li><strong>Neural Posterior Estimation</strong> (NPE, Cranmer-Brehmer-Louppe 2020): train normalising flow q_φ(θ|x) directly approximating posterior; single-round or multi-round (SNPE-A/B/C); deployed at LIGO for gravitational wave parameter estimation (Dax et al. 2021), neuroscience (Gonçalves et al. 2020), particle physics ATLAS</li>
+<li><strong>Neural Ratio Estimation</strong> (NRE): train classifier to distinguish p(x,θ) from p(x)p(θ); ratio p(x|θ)/p(x) proportional to posterior/prior; sequential NRE (SNRE) improves sample efficiency; swyft library (Miller et al. 2022)</li>
+<li><strong>Key software</strong>: sbi (simulation-based inference Python library, Cranmer group, 2022); lampe (likelihood-free + normalising flows, PyTorch); elfi (Engine for Likelihood-Free Inference, Python); BayesFlow (Köthe group, Bayesian scientific neural networks)</li>
+</ul>
+</li>
+<li>
+<h3 id="calibration-benchmarks-2025-2026">Calibration Benchmarks (2025-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#calibration-benchmarks-2025-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Calibration is measured via Expected Calibration Error ECE = ∑_m (|B_m|/n) |acc(B_m) - conf(B_m)| over confidence bins B_m. Benchmark results on ImageNet-Val:</p>
+<ul>
+<li>Uncalibrated ResNet-50: ECE 4.1% (Guo et al. 2017 on older checkpoint), modern training ECE ~2.5%</li>
+<li>Temperature scaling (T=1.3): ECE 0.9%; effective for in-distribution calibration</li>
+<li>MC-Dropout (T=30, p=0.1): ECE 1.2%; marginal improvement over temperature scaling in-distribution, +15% ECE reduction under dataset shift</li>
+<li>Deep Ensembles (M=5): ECE 0.6%; best in-distribution; +40% ECE reduction under natural distribution shift (ImageNet-C corruption benchmarks)</li>
+<li>SWAG: ECE 0.7%; close to ensembles at 1.0× inference cost vs 5× for ensembles</li>
+<li>Last-layer Laplace: ECE 0.8%; post-hoc, no retraining required</li>
+<li>Temperature scaling + conformal calibration: coverage guaranteed 95% for prediction sets; typical set size 2.3 classes (top-5 subset) for 95% coverage on ImageNet</li>
+</ul>
+</li>
+<li>
+<p>OOD detection benchmark (ImageNet vs iNaturalist, as in Lakshminarayanan 2017):</p>
+<ul>
+<li>Maximum softmax probability (MSP): AUROC 0.876 baseline</li>
+<li>Temperature-scaled MSP: AUROC 0.881</li>
+<li>MC-Dropout entropy: AUROC 0.891</li>
+<li>Deep Ensembles (M=5) predictive entropy: AUROC 0.923</li>
+<li>Energy score (Liu et al. 2020): AUROC 0.895</li>
+<li>ODIN (Liang et al. 2018): AUROC 0.899 with input perturbation + temperature</li>
+<li>Mahalanobis distance (Lee et al. 2018): AUROC 0.915 using penultimate layer features</li>
+</ul>
+</li>
+<li>
+<h3 id="bayesian-optimisation">Bayesian Optimisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#bayesian-optimisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong>Bayesian optimisation</strong> (BO) uses a probabilistic surrogate model — typically a Gaussian process — to optimise expensive black-box functions f(x) with a limited query budget (20–1,000 evaluations):</p>
+<ul>
+<li><strong>GP surrogate</strong>: f ~ GP(m, k); posterior μ(x), σ²(x) after n observations provide estimate and uncertainty</li>
+<li><strong>Acquisition functions</strong> (next query selection balancing exploitation and exploration):
+<ul>
+<li>Expected Improvement EI(x) = E[max(f(x) - f_best, 0)] = (μ(x) - f_best) Φ(Z) + σ(x) φ(Z), Z = (μ(x) - f_best)/σ(x)</li>
+<li>Upper Confidence Bound UCB(x) = μ(x) + κ σ(x), κ = exploration weight (κ=2 typical)</li>
+<li>Thompson Sampling: sample f_s ~ posterior GP, then x_next = argmax f_s(x); naturally balances exploration</li>
+<li>Probability of Improvement PI(x) = Φ((μ(x) - f_best)/σ(x)); greedy, prone to over-exploitation</li>
+</ul>
+</li>
+<li><strong>BO for hyperparameter optimisation</strong>: Snoek et al. (2012 NeurIPS “Practical Bayesian Optimization of Machine Learning Algorithms”); Spearmint library; outperforms grid search and random search with 3-5× fewer evaluations to match performance</li>
+<li><strong>BO for drug discovery</strong>: Exscientia GP-BO in 3D molecular space (DSP-1181 2020); AstraZeneca ADMET property optimisation loops; Pfizer MRL automated synthesis robot (2024) with GP surrogate on reaction conditions</li>
+<li><strong>BO for materials science</strong>: Attiyat et al. perovskite solar cell efficiency optimisation (2023); Lookman et al. shape memory alloy discovery via BO (2019 Nature Materials); UK EPSRC-funded AI-for-materials initiative (AMAS, 2024)</li>
+<li><strong>Software</strong>: Ax (Meta, PyTorch-based, 2019), BoTorch (Meta, GPU-accelerated acquisition optimisation, 2020), GPyOpt (Sheffield/Cambridge, deprecated but historically important), Optuna (preferred Bayesian sampling backend using CMA-ES), SMAC3 (Auto-ML, Freiburg)</li>
+</ul>
+</li>
+<li>
+<h3 id="industrial-deployment-patterns-2024-2026">Industrial Deployment Patterns (2024-2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#industrial-deployment-patterns-2024-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic models follow identifiable deployment patterns by sector and use-case:</p>
+</li>
+<li>
+<p><strong>Healthcare AI</strong>:</p>
+<ul>
+<li>Isabel DDx (UK): Bayesian network over 11,000 conditions, deployed 900+ NHS trusts, GP and A&amp;E decision support</li>
+<li>NHS Breast Screening AI Pilot (2024): conformally-calibrated recall scores on 400,000+ mammograms, 18% reader time reduction</li>
+<li>NHS AI Lab (NHSX 2023 report): conformal prediction recommended for all AI triage systems in NHS deployment guidance</li>
+<li>Oxford/Moorfields ophthalmology AI (Google DeepMind 2018): Bayesian uncertainty maps for retinal OCT, >50 ophthalmic conditions, 2M patient dataset</li>
+<li>Freenome (US): Bayesian multi-omic cancer liquid biopsy, GP regression on cfDNA methylation signatures, early detection study 2024</li>
+</ul>
+</li>
+<li>
+<p><strong>Finance and Risk</strong>:</p>
+<ul>
+<li>JPMorgan: Bayesian portfolio allocation, Black-Litterman model (Gaussian prior on returns + investor views), deployed across $2.4T AUM</li>
+<li>Goldman Sachs: Bayesian VAR (Value at Risk) models, Monte Carlo stress testing for regulatory capital (Basel III/IV), FRTB internal model approach</li>
+<li>Citadel/Two Sigma: Gaussian process factor models for alpha signal generation, regime-switching hidden Markov models</li>
+<li>UK Prudential Regulation Authority: Bayesian model risk framework for internal model approval (Solvency II), requiring posterior predictive validation</li>
+</ul>
+</li>
+<li>
+<p><strong>Climate and Earth Science</strong>:</p>
+<ul>
+<li>ECMWF (Reading): ensemble NWP (50-member ECMWF-ENS), transitioning to neural probabilistic forecasting with GP uncertainty</li>
+<li>UK Met Office (Exeter): MOGREPS-UK ensemble, GraphCast calibration (Google DeepMind/Met Office MOU 2024)</li>
+<li>UK Centre for Environmental Data Analysis (CEDA, Chilton): probabilistic climate projection standards, conformal coverage for UKCP18 projections</li>
+<li>Alan Turing Institute/BAS: Bayesian ice sheet modelling for sea-level rise uncertainty quantification, EPSRC EP/T000414/1</li>
+</ul>
+</li>
+<li>
+<p><strong>Autonomous Systems</strong>:</p>
+<ul>
+<li>Waymo (Alphabet): factor graph belief propagation for HD map inference, split conformal 95% coverage for object detection, probability-flow ODE for trajectory prediction uncertainty</li>
+<li>Cruise (GM): Gaussian process obstacle prediction, Bayesian occupancy grid mapping</li>
+<li>Boston Dynamics: GP regression terrain uncertainty for Atlas contact planning, Kalman filter proprioceptive state estimation</li>
+<li>BAE Systems AI (UK, Farnborough): Bayesian sensor fusion for autonomous military vehicle perception, EPSRC Defence Partnership collaboration</li>
+</ul>
+</li>
+<li>
+<h3 id="probabilistic-model-selection-and-comparison">Probabilistic Model Selection and Comparison<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#probabilistic-model-selection-and-comparison" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Model selection in the Bayesian framework uses marginal likelihood (evidence) p(x|M) = ∫ p(x|θ, M) p(θ|M) dθ comparing models M₁, M₂ via Bayes factor BF₁₂ = p(x|M₁)/p(x|M₂):</p>
+<ul>
+<li>BF₁₂ > 100: decisive evidence for M₁ (Jeffreys 1961 scale)</li>
+<li>BF₁₂ 10-100: strong evidence</li>
+<li>BF₁₂ 3-10: moderate evidence</li>
+<li>BF₁₂ 1-3: weak evidence (inconclusive)</li>
+</ul>
+</li>
+<li>
+<p>Computing marginal likelihood is intractable in general; practical approximations:</p>
+<ul>
+<li><strong>Bridge sampling</strong> (Gronau et al. 2017): Monte Carlo estimator of normalising constant; high accuracy; requires MCMC samples from both prior and posterior</li>
+<li><strong>WAIC</strong> (Watanabe 2010): lppd - p_WAIC where lppd = ∑_i log p(y_i|y_{-i}) is log pointwise predictive density and p_WAIC = ∑_i Var_θ[log p(y_i|θ)] is effective parameter count; computed from MCMC samples; asymptotically equivalent to LOO-CV</li>
+<li><strong>PSIS-LOO-CV</strong> (Vehtari-Gelman-Gabry 2017): approximate leave-one-out cross-validation using Pareto-smoothed importance sampling weights r_i = p(θ|y) / p(θ|y_{-i}); reliable when Pareto shape k̂ &lt; 0.7 for all observations; otherwise flag high-influence observations</li>
+<li><strong>DIC</strong> (Deviance Information Criterion, Spiegelhalter et al. 2002): D(θ̄) + 2 p_D where p_D = E_θ[D(θ)] - D(θ̄); easy to compute but inconsistent; largely superseded by WAIC/LOO</li>
+<li><strong>Nested sampling</strong> (Skilling 2006, MultiNest/dynesty implementations): computes log Z = log p(x|M) directly via shrinking prior volume; used in particle physics, cosmology (Planck CMB analysis), gravitational wave inference</li>
+</ul>
+</li>
+<li>
+<h3 id="limitations-failure-modes-and-open-problems">Limitations, Failure Modes, and Open Problems<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#limitations-failure-modes-and-open-problems" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>Probabilistic modelling is not a panacea; practitioners must be aware of systematic failure modes:</p>
+<ul>
+<li><strong>Model misspecification</strong>: posterior inference is conditional on the model being correct; a misspecified prior or likelihood can produce confident but wrong posteriors (Bayesian overconfidence under model misspecification); Robust Bayes (Berger 1984), generalised variational inference (Knoblauch et al. 2019), and coarsened posteriors (Miller-Dunson 2019) address this</li>
+<li><strong>Mean-field underestimation of posterior variance</strong>: MFVI systematically underestimates posterior variance due to mode-seeking KL minimisation; full-rank VI or normalising flow posteriors required for faithful uncertainty quantification in multimodal or strongly correlated posteriors</li>
+<li><strong>MCMC non-convergence and local trapping</strong>: HMC/NUTS can fail to mix across modes separated by low-probability barriers (e.g., multimodal posteriors from symmetry in mixture models, label-switching); solutions include tempering (parallel tempering, MCMC with temperature annealing), mode-jumping proposals, and running multiple chains from diverse initialisations with R̂ diagnostics</li>
+<li><strong>Computational cost</strong>: full Bayesian inference remains 10-1,000× more expensive than MAP/MLE; JAX-accelerated PPLs (NumPyro, Blackjax) reduce but do not eliminate this gap; for 1B+ parameter models, full posterior inference remains impractical without drastic approximation</li>
+<li><strong>Prior sensitivity</strong>: in small-data regimes, posterior is dominated by the prior; weakly informative priors (Gelman et al. 2017 “Prior Choice Recommendations”) or empirical Bayes (type-II MLE) can mitigate sensitivity; prior predictive checks should always precede inference</li>
+<li><strong>Identifiability</strong>: many probabilistic models are unidentifiable (e.g., mixture models with label-switching, factor models with sign/rotation ambiguity); posterior may be multimodal with equivalent modes; identifiability constraints or informative priors required</li>
+<li><strong>Calibration ≠ accuracy</strong>: a model can be well-calibrated but low-accuracy (high ECE only when confidence and accuracy diverge); calibration and discrimination are orthogonal properties; proper scoring rules (log-loss, Brier score, CRPS) simultaneously reward both</li>
+<li><strong>Conformal validity requires exchangeability</strong>: conformal prediction marginal coverage guarantee requires exchangeable (not necessarily i.i.d.) calibration and test data; under covariate shift or concept drift, coverage may fail; weighted conformal prediction (Tibshirani et al. 2019) extends to covariate shift scenarios</li>
+</ul>
+</li>
+<li>
+<h3 id="key-researchers-and-lineages">Key Researchers and Lineages<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-researchers-and-lineages" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p>The probabilistic ML community has distinct research lineages tracing to a small number of foundational groups:</p>
+</li>
+<li>
+<p><strong>Cambridge Machine Learning Group lineage</strong> (Ghahramani):</p>
+<ul>
+<li>Zoubin Ghahramani (Cambridge → Google VP Probabilistic AI): GP hyperparameter learning, Bayesian ICA, infinite mixture models, Turing.jl supervisor</li>
+<li>Carl Edward Rasmussen (Cambridge): GP for ML textbook, GP regression/classification, GPML MATLAB toolbox</li>
+<li>Richard Turner (Cambridge): probabilistic audio/speech, diffusion model inverse problems, probabilistic DL</li>
+<li>Yarin Gal (Cambridge → Oxford): MC-Dropout, Bayesian deep learning for NLP, uncertainty quantification</li>
+<li>Neil Lawrence (Cambridge/Sheffield/Amazon): GP-LVM, sparse GP, DataFirst, GPy toolbox</li>
+</ul>
+</li>
+<li>
+<p><strong>Bayesian Statistics lineage</strong> (Gelman-Rubin):</p>
+<ul>
+<li>Andrew Gelman (Columbia): Bayesian Data Analysis textbook (3 eds), Stan co-creator, R̂ diagnostic, prior predictive checks, Bayesian workflow</li>
+<li>Bob Carpenter (Columbia → Flatiron): Stan language design, NUTS implementation, CmdStan</li>
+<li>Aki Vehtari (Aalto): PSIS-LOO model comparison, rank-normalised R̂, ArviZ, Bayesian workflow</li>
+</ul>
+</li>
+<li>
+<p><strong>Probabilistic programming</strong> (Goodman, Mansinghka):</p>
+<ul>
+<li>Noah Goodman (Stanford → MIT): Church, WebPPL, probabilistic models of cognition</li>
+<li>Vikash Mansinghka (MIT): Gen, probabilistic programming for 3D scene understanding, inverse graphics</li>
+<li>David Wingate (MIT → Uber → BYU): NUTS generalisation, Stan history, Pyro influences</li>
+</ul>
+</li>
+<li>
+<p><strong>Deep generative model lineage</strong>:</p>
+<ul>
+<li>Diederik Kingma (OpenAI): VAE, Glow, improved DDPM, unified diffusion framework</li>
+<li>Yang Song (Stanford → DeepMind): NCSN, SDE-based diffusion, flow matching, consistency models</li>
+<li>David Blei (Princeton/Columbia): LDA, variational Bayes review, SVI, DEF, VAE theory</li>
+</ul>
+</li>
+<li>
+<p><strong>Conformal prediction lineage</strong>:</p>
+<ul>
+<li>Vladimir Vovk (Royal Holloway, UK): Venn prediction, conformal prediction theory, Algorithmic Learning in a Random World</li>
+<li>Anastasios Angelopoulos (Berkeley): split conformal, conformal risk control, RAPS, conformal LLMs</li>
+<li>Ryan Tibshirani (Carnegie Mellon): conformised quantile regression, weighted conformal, adaptive prediction sets</li>
+</ul>
+</li>
+<li>
+<h3 id="cross-concept-bridges-and-disambiguation">Cross-Concept Bridges and Disambiguation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#cross-concept-bridges-and-disambiguation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<p><strong><a href="../pages/Bayes-Filter" class="internal alias" data-slug="pages/Bayes-Filter">Bayes Filter</a></strong> covers the robotics-specific incarnation: Kalman filter, particle filter, occupancy grid map updates. Probabilistic Model covers the broader mathematical framework from which Bayes Filter is derived.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Gaussian-Process" class="internal alias" data-slug="pages/Gaussian-Process">Gaussian Process</a></strong> is a specific probabilistic model family (prior over functions); detailed GP architecture/kernel content lives on the <a href="../pages/Gaussian-Process" class="internal alias" data-slug="pages/Gaussian-Process">Gaussian Process</a> page; this page covers GP as an inference tool within the broader probabilistic model ecosystem.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Diffusion-Model" class="internal alias" data-slug="pages/Diffusion-Model">Diffusion Model</a></strong> covers the deep learning generative model perspective (DDPM, DDIM, Stable Diffusion architectures); this page covers diffusion models as instantiations of score-based probabilistic models (score matching, Tweedie’s formula, SDE/ODE duality).</p>
+</li>
+<li>
+<p><strong><a href="../pages/Variational-Autoencoder" class="internal alias" data-slug="pages/Variational-Autoencoder">Variational Autoencoder</a></strong> covers the deep learning architecture; this page covers VAE as an instance of amortised variational inference within the probabilistic model mathematical framework.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Conformal-Prediction" class="internal alias" data-slug="pages/Conformal-Prediction">Conformal Prediction</a></strong> is distribution-free uncertainty quantification complementary to, not dependent on, parametric probabilistic models; this page covers conformal prediction as an orthogonal UQ method deployable post-hoc on any model.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a></strong> is the inferential paradigm that probabilistic models implement; <a href="../pages/Bayesian-Inference" class="internal alias" data-slug="pages/Bayesian-Inference">Bayesian Inference</a> covers philosophical and decision-theoretic aspects; this page covers the computational methods and model families.</p>
+</li>
+<li>
+<p><strong><a href="../pages/Normalising-Flows" class="internal alias" data-slug="pages/Normalising-Flows">Normalising Flows</a></strong> covers flow architectures in depth; this page covers normalising flows as a component of the broader probabilistic modelling toolkit.</p>
+</li>
+<li>
+<h2 id="metadata">Metadata<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#metadata" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>term-id: AI-2047</li>
+<li>domain: artificial-intelligence</li>
+<li>domain-correction: none (domain correctly set to artificial-intelligence in stub)</li>
+<li>ontology-version: v2</li>
+<li>preferred-label: Probabilistic Model</li>
+<li>alt-labels: Probabilistic Graphical Model, Bayesian Model, Stochastic Model, Generative Probabilistic Model, Bayesian Probabilistic Model</li>
+<li>scope-note: Covers directed and undirected graphical models, probabilistic programming languages, approximate inference, deep generative models including diffusion, and distribution-free uncertainty quantification. Robotics-specific content is in <a href="../pages/Bayes-Filter" class="internal alias" data-slug="pages/Bayes-Filter">Bayes Filter</a>.</li>
+<li>enrichment-phase: Phase 6</li>
+<li>enrichment-worker: claude-sonnet-4-6</li>
+<li>enrichment-date: 2026-05-17</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Koller, D. &amp; Friedman, N. (2009). Probabilistic Graphical Models: Principles and Techniques. MIT Press.</li>
+<li>Murphy, K.P. (2022). Probabilistic Machine Learning: An Introduction. MIT Press.</li>
+<li>Murphy, K.P. (2023). Probabilistic Machine Learning: Advanced Topics. MIT Press.</li>
+<li>Pearl, J. (1988). Probabilistic Reasoning in Intelligent Systems. Morgan Kaufmann.</li>
+<li>MacKay, D.J.C. (2003). Information Theory, Inference, and Learning Algorithms. Cambridge University Press.</li>
+<li>Bishop, C.M. (2006). Pattern Recognition and Machine Learning. Springer.</li>
+<li>Rasmussen, C.E. &amp; Williams, C.K.I. (2006). Gaussian Processes for Machine Learning. MIT Press.</li>
+<li>Thrun, S., Burgard, W. &amp; Fox, D. (2005). Probabilistic Robotics. MIT Press.</li>
+<li>Neal, R.M. (2011). MCMC using Hamiltonian dynamics. Handbook of Markov Chain Monte Carlo, Ch.5. CRC Press.</li>
+<li>Hoffman, M.D. &amp; Gelman, A. (2014). The No-U-Turn Sampler. Journal of Machine Learning Research, 15, 1593–1623.</li>
+<li>Blei, D.M., Kucukelbir, A. &amp; McAuliffe, J.D. (2017). Variational Inference: A Review for Statisticians. JASA, 112(518), 859–877.</li>
+<li>Jordan, M.I., Ghahramani, Z., Jaakkola, T.S. &amp; Saul, L.K. (1999). An Introduction to Variational Methods. Machine Learning, 37, 183–233.</li>
+<li>Vehtari, A. et al. (2021). Rank-Normalization, Folding, and Localization: An Improved R̂. Bayesian Analysis, 16(2), 667–718.</li>
+<li>Carpenter, B. et al. (2017). Stan: A Probabilistic Programming Language. Journal of Statistical Software, 76(1).</li>
+<li>Bingham, E. et al. (2019). Pyro: Deep Universal Probabilistic Programming. JMLR, 20(28), 1–6.</li>
+<li>Phan, D. et al. (2019). Composable Effects for Flexible Probabilistic Programming in NumPyro. arXiv:1912.11554.</li>
+<li>Salvatier, J., Wiecki, T.V. &amp; Fonnesbeck, C. (2016). Probabilistic Programming in Python using PyMC3. PeerJ CS, 2, e55.</li>
+<li>Ge, H., Xu, K. &amp; Ghahramani, Z. (2018). Turing: A Language for Flexible Probabilistic Inference. AISTATS 2018.</li>
+<li>Cusumano-Towner, M.F. et al. (2019). Gen: A General-Purpose Probabilistic Programming System. PLDI 2019.</li>
+<li>Kingma, D.P. &amp; Welling, M. (2014). Auto-Encoding Variational Bayes. ICLR 2014.</li>
+<li>Rezende, D.J. &amp; Mohamed, S. (2015). Variational Inference with Normalizing Flows. ICML 2015.</li>
+<li>Song, Y. et al. (2021). Score-Based Generative Modeling through Stochastic Differential Equations. ICLR 2021.</li>
+<li>Ho, J., Jain, A. &amp; Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. NeurIPS 2020.</li>
+<li>Gal, Y. &amp; Ghahramani, Z. (2016). Dropout as a Bayesian Approximation. ICML 2016.</li>
+<li>Lakshminarayanan, B., Pritzel, A. &amp; Blundell, C. (2017). Simple and Scalable Predictive Uncertainty Estimation using Deep Ensembles. NeurIPS 2017.</li>
+<li>Daxberger, E. et al. (2021). Laplace Redux — Effortless Bayesian Deep Learning. NeurIPS 2021.</li>
+<li>Vovk, V., Gammerman, A. &amp; Shafer, G. (2005). Algorithmic Learning in a Random World. Springer.</li>
+<li>Angelopoulos, A.N. &amp; Bates, S. (2021). A Gentle Introduction to Conformal Prediction. arXiv:2107.07511.</li>
+<li>Maddox, W.J. et al. (2019). A Simple Baseline for Bayesian Uncertainty in Deep Learning (SWAG). NeurIPS 2019.</li>
+<li>Wilson, A.G. &amp; Izmailov, P. (2020). Bayesian Deep Learning and a Probabilistic Perspective of Generalisation. NeurIPS 2020.</li>
+<li>Romano, Y., Patterson, E. &amp; Candes, E. (2019). Conformalized Quantile Regression. NeurIPS 2019.</li>
+<li>Cranmer, K., Brehmer, J. &amp; Louppe, G. (2020). The Frontier of Simulation-Based Inference. PNAS, 117(48), 30055–30062.</li>
+<li>Teh, Y.W. et al. (2006). Hierarchical Dirichlet Processes. JASA, 101(476), 1566–1581.</li>
+<li>Papamakarios, G. et al. (2021). Normalizing Flows for Probabilistic Modeling and Inference. JMLR, 22(57), 1–64.</li>
+<li>Gelman, A. et al. (2013). Bayesian Data Analysis, 3rd edition. CRC Press.</li>
+<li>Gelman, A. et al. (2020). Bayesian Workflow. arXiv:2011.01808.</li>
+<li><strong>domain-validation:</strong> domain was correctly set to artificial-intelligence in stub; no correction required</li>
+</ul>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-4396" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#about-probabilistic-models" data-for="about-probabilistic-models">About Probabilistic Models</a></li><li class="depth-0"><a href="#components-and-architecture" data-for="components-and-architecture">Components and Architecture</a></li><li class="depth-1"><a href="#probabilistic-graphical-models-directed-and-undirected" data-for="probabilistic-graphical-models-directed-and-undirected">Probabilistic Graphical Models: Directed and Undirected</a></li><li class="depth-1"><a href="#generative-vs-discriminative-models" data-for="generative-vs-discriminative-models">Generative vs Discriminative Models</a></li><li class="depth-1"><a href="#variational-inference-theory-and-algorithms" data-for="variational-inference-theory-and-algorithms">Variational Inference: Theory and Algorithms</a></li><li class="depth-1"><a href="#markov-chain-monte-carlo-hmc-and-nuts" data-for="markov-chain-monte-carlo-hmc-and-nuts">Markov Chain Monte Carlo: HMC and NUTS</a></li><li class="depth-1"><a href="#probabilistic-programming-languages-ecosystem-and-trade-offs" data-for="probabilistic-programming-languages-ecosystem-and-trade-offs">Probabilistic Programming Languages: Ecosystem and Trade-offs</a></li><li class="depth-1"><a href="#bayesian-deep-learning" data-for="bayesian-deep-learning">Bayesian Deep Learning</a></li><li class="depth-1"><a href="#score-based-diffusion-as-probabilistic-models" data-for="score-based-diffusion-as-probabilistic-models">Score-Based Diffusion as Probabilistic Models</a></li><li class="depth-1"><a href="#conformal-prediction" data-for="conformal-prediction">Conformal Prediction</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-1"><a href="#medical-clinical-and-pharmaceutical-applications" data-for="medical-clinical-and-pharmaceutical-applications">Medical, Clinical, and Pharmaceutical Applications</a></li><li class="depth-1"><a href="#natural-language-processing-and-llm-calibration" data-for="natural-language-processing-and-llm-calibration">Natural Language Processing and LLM Calibration</a></li><li class="depth-1"><a href="#robotics-and-autonomous-systems" data-for="robotics-and-autonomous-systems">Robotics and Autonomous Systems</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#distribution-families-and-conjugate-pairs" data-for="distribution-families-and-conjugate-pairs">Distribution Families and Conjugate Pairs</a></li><li class="depth-1"><a href="#inference-algorithm-comparison" data-for="inference-algorithm-comparison">Inference Algorithm Comparison</a></li><li class="depth-1"><a href="#key-theorems-and-theoretical-foundations" data-for="key-theorems-and-theoretical-foundations">Key Theorems and Theoretical Foundations</a></li><li class="depth-1"><a href="#software-ecosystem-and-tooling" data-for="software-ecosystem-and-tooling">Software Ecosystem and Tooling</a></li><li class="depth-1"><a href="#key-algorithms-reference" data-for="key-algorithms-reference">Key Algorithms Reference</a></li><li class="depth-1"><a href="#normalising-flows-architecture-taxonomy" data-for="normalising-flows-architecture-taxonomy">Normalising Flows: Architecture Taxonomy</a></li><li class="depth-1"><a href="#gaussian-processes-kernel-families-and-scalability" data-for="gaussian-processes-kernel-families-and-scalability">Gaussian Processes: Kernel Families and Scalability</a></li><li class="depth-1"><a href="#hierarchical-models-and-partial-pooling" data-for="hierarchical-models-and-partial-pooling">Hierarchical Models and Partial Pooling</a></li><li class="depth-1"><a href="#bayesian-nonparametrics" data-for="bayesian-nonparametrics">Bayesian Nonparametrics</a></li><li class="depth-1"><a href="#probabilistic-forecasting-and-time-series" data-for="probabilistic-forecasting-and-time-series">Probabilistic Forecasting and Time-Series</a></li><li class="depth-1"><a href="#simulation-based-inference-and-likelihood-free-methods" data-for="simulation-based-inference-and-likelihood-free-methods">Simulation-Based Inference and Likelihood-Free Methods</a></li><li class="depth-1"><a href="#calibration-benchmarks-2025-2026" data-for="calibration-benchmarks-2025-2026">Calibration Benchmarks (2025-2026)</a></li><li class="depth-1"><a href="#bayesian-optimisation" data-for="bayesian-optimisation">Bayesian Optimisation</a></li><li class="depth-1"><a href="#industrial-deployment-patterns-2024-2026" data-for="industrial-deployment-patterns-2024-2026">Industrial Deployment Patterns (2024-2026)</a></li><li class="depth-1"><a href="#probabilistic-model-selection-and-comparison" data-for="probabilistic-model-selection-and-comparison">Probabilistic Model Selection and Comparison</a></li><li class="depth-1"><a href="#limitations-failure-modes-and-open-problems" data-for="limitations-failure-modes-and-open-problems">Limitations, Failure Modes, and Open Problems</a></li><li class="depth-1"><a href="#key-researchers-and-lineages" data-for="key-researchers-and-lineages">Key Researchers and Lineages</a></li><li class="depth-1"><a href="#cross-concept-bridges-and-disambiguation" data-for="cross-concept-bridges-and-disambiguation">Cross-Concept Bridges and Disambiguation</a></li><li class="depth-0"><a href="#metadata" data-for="metadata">Metadata</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Acquisition-Function" class="internal">Acquisition Function</a></li><li><a href="../pages/Belief-Propagation" class="internal">Belief Propagation</a></li><li><a href="../pages/Computational-Linguistics" class="internal">Computational Linguistics</a></li><li><a href="../pages/Normalising-Flow" class="internal">Normalising Flow</a></li><li><a href="../pages/State-Space-Model" class="internal">State Space Model</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

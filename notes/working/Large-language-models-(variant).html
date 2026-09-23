@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Large language models (variant)</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Large language models (variant)"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Large language models (variant)"/><meta name="twitter:description" content="Public page automatically published Introduction to Large Language Models Large Language Models (LLMs) like OpenAI’s GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation."/><meta property="og:description" content="Public page automatically published Introduction to Large Language Models Large Language Models (LLMs) like OpenAI’s GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation."/><meta property="og:image:alt" content="Public page automatically published Introduction to Large Language Models Large Language Models (LLMs) like OpenAI’s GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/working/Large-language-models-(variant)"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/working/Large-language-models-(variant)"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Public page automatically published Introduction to Large Language Models Large Language Models (LLMs) like OpenAI’s GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="working/Large-language-models-(variant)"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-8693"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-8693" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../working/">working</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Large language models (variant)</a></div></nav><h1 class="article-title">Large language models (variant)</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.959Z">23 Sept 2026</time><span>37 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Note</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:58.55607396Z</span></span></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><ul>
+<li>
+<h3 id="public-page-automatically-published">Public page automatically published<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#public-page-automatically-published" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li><img src="../assets/1721832527031_1721833836065_0.jpeg" alt="1721832527031.jpeg"/></li>
+<li>
+<h2 id="introduction-to-large-language-models">Introduction to Large Language Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#introduction-to-large-language-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>Large Language Models (LLMs) like OpenAI’s GPT series have revolutionized the field of artificial intelligence, offering unprecedented capabilities in natural language understanding and generation. These models are trained on vast amounts of text data, enabling them to perform a wide range of language-based tasks, from writing and translation to answering questions and generating code.
+<ul>
+<li><a href="https://www.understandingai.org/p/large-language-models-explained-with" class="external">This is a jargon free primer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>
+<h1 id="what-to-use-and-when">What to use and when<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#what-to-use-and-when" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<ul>
+<li><strong>Start with Simple API Calls:</strong>
+<ul>
+<li>Initially, utilize third-party APIs that serve your needs without complicating your system. This is the most straightforward and cost-effective solution.</li>
+<li>If third-party APIs meet your requirements in terms of functionality, privacy, cost, and latency, there’s no need to progress to more complex solutions.</li>
+</ul>
+</li>
+<li><strong>Deploy Pre-trained Models:</strong>
+<ul>
+<li>If API solutions are insufficient due to privacy, cost, or latency issues, consider deploying a generic, pre-trained model (like MixL or LLaMA) behind your own API.</li>
+<li>This step involves a bit more complexity and control over the data but remains relatively simple.</li>
+</ul>
+</li>
+<li><strong>Curate Context and Improve Prompts:</strong>
+<ul>
+<li>Enhance the output quality by curating in-context examples and optimizing prompts. This step aims to extract better performance from the existing deployed model with minimal changes.</li>
+</ul>
+</li>
+<li><strong>Integrate Retrieval Systems:</strong>
+<ul>
+<li>If further improvement is needed, integrate a retrieval system to complement the model’s responses, based on the available latency and the complexity it introduces to your system.</li>
+</ul>
+</li>
+<li><strong>Fine-tune on Specific Data:</strong>
+<ul>
+<li>When adjustments and retrieval integrations aren’t sufficient, proceed to fine-tune the model on a targeted dataset. This step tailors the model more closely to your specific requirements.</li>
+</ul>
+</li>
+<li><strong>Swap for a Larger Model or Pre-train Your Own:</strong>
+<ul>
+<li>If fine-tuning does not achieve the desired outcomes, consider swapping in a larger pre-trained model or pre-training your own model for more significant customization and improvement.</li>
+<li>This can involve domain adaptation through further pre-training on a relevant corpus, followed by fine-tuning.</li>
+</ul>
+</li>
+<li><strong>Iterate and Add Complexity as Necessary:</strong>
+<ul>
+<li>Continue iterating, adding layers of complexity only as needed. This approach ensures that you only invest in higher compute and development costs when there’s a clear benefit.</li>
+</ul>
+</li>
+<li><strong>Simplify and Streamline for Deployment:</strong>
+<ul>
+<li>Throughout this process, aim to simplify and streamline solutions for deployment. Consider the target audience and operationalize the solution in a way that makes it accessible and practical for them.</li>
+<li></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="key-resources-and-projects">Key Resources and Projects<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-resources-and-projects" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Web LLM Project</strong>: A pioneering initiative bringing LLM functionalities to the browser, enabling users to interact with these models directly from their web interface. <a href="https://example.com/link-to-web-llm-project" class="external">Web LLM Project<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>This project demonstrates the feasibility and potential of deploying complex AI models in consumer-friendly interfaces.</em></li>
+</ul>
+</li>
+<li><strong>Browser-based Models</strong>: The <a href="https://simonwillison.net/2023/Apr/16/web-llm/" class="external">Web LLM project<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> introduces a browser-based implementation of the vicuna-7b Large Language Model. This project showcases the practical application of LLMs in web environments, enabling users to interact with sophisticated AI models directly within their browsers. The initiative highlights the evolving accessibility of AI technologies, bringing powerful computational linguistics tools to a broader audience without the need for specialized hardware.</li>
+</ul>
+</li>
+<li>
+<h2 id="interfaces-and-scaling">Interfaces and Scaling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interfaces-and-scaling" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>The evolution and scaling of interfaces for Large Language Models have significant implications for user interaction and the accessibility of AI technologies. This area explores the integration of LLMs into various interfaces, including immersive spaces and metaverse applications, which opens up new avenues for interaction and engagement with AI.</li>
+</ul>
+</li>
+<li>
+<h3 id="key-projects-and-discussions">Key Projects and Discussions<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-projects-and-discussions" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Immersive Spaces</strong>: The potential of generative AI in metaverse applications and game development is vast, offering new ways to create engaging and dynamic environments. While specific links to projects or discussions were not provided in the initial extraction, this area highlights the intersection of LLMs with virtual worlds, suggesting a future where AI can contribute to more immersive and interactive digital spaces.</li>
+<li><strong>Generative AI in the Metaverse</strong>: An insightful article on why now is the time to use generative AI in your metaverse company, outlining potential impacts and considerations for developers and businesses. [Why You Should Use Generative AI in Your Metaverse Company
+<ul>
+<li>The Ghost Howls](<a href="https://skarredghost.com/2023/02/11/generative-ai-metaverse-company/" class="external">https://skarredghost.com/2023/02/11/generative-ai-metaverse-company/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li><em>This article provides a comprehensive overview of how generative AI can revolutionize metaverse applications, offering a balanced view on the opportunities and challenges.</em></li>
+</ul>
+</li>
+<li><strong>AI-Assisted Graphics in Game Development</strong>: Exploring the use of AI to assist in graphics creation for games, enhancing realism and efficiency. <a href="https://www.traffickinggame.com/ai-assisted-graphics/" class="external">AI-Assisted Graphics<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>This link showcases practical applications of AI in game development, highlighting advancements in creating more immersive and visually stunning gaming experiences.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="optimizations">Optimizations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#optimizations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Optimizations are critical for enhancing the performance and efficiency of Large Language Models. This section covers various techniques and tools that have been developed for this purpose.</li>
+<li>
+<h3 id="key-techniques-and-tools">Key Techniques and Tools<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-techniques-and-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DeepSpeed</strong>: <a href="https://github.com/microsoft/DeepSpeed" class="external">DeepSpeed by Microsoft<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> is an advanced deep learning optimization software suite that significantly accelerates the training of deep learning models. It offers various features like model parallelism, gradient accumulation, and sparsity to achieve unprecedented scale and speed. <em>DeepSpeed is pivotal for researchers and practitioners aiming to push the boundaries of model size and training speed.</em></li>
+<li><strong>Nvidia DASK</strong>: <a href="https://developer.nvidia.com/blog/dask-tutorial-beginners-guide-to-distributed-computing-with-gpus-in-python/" class="external">Tutorial for distributed computing with GPUs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> provides insights into using Nvidia DASK for distributed computing, enhancing the performance of LLMs by leveraging GPU resources more efficiently. <em>This tutorial is a valuable resource for anyone looking to understand and implement distributed computing with GPUs.</em></li>
+<li><strong>SWARM Training Paper</strong>: <a href="https://arxiv.org/pdf/2301.11913.pdf" class="external">SWARM: A Paradigm for Distributed Training of LLMs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> discusses innovative methods for distributed training of large language models, addressing challenges related to scalability and efficiency. <em>The SWARM approach represents a significant advancement in distributed training techniques, offering insights into overcoming the limitations of traditional training methodologies.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="projects-and-implementations">Projects and Implementations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#projects-and-implementations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Browser-based Models</strong>: A significant advancement in making LLMs accessible via web interfaces. The <a href="https://simonwillison.net/2023/Apr/16/web-llm/" class="external">Web LLM project<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> discusses a browser-based version of the Vicuna-7b Large Language Model, showcasing how LLMs can be integrated into web applications, offering an accurate and fast model capable of handling complex prompts. This project exemplifies the potential of LLMs in providing accessible AI-powered applications directly from a web browser.</li>
+</ul>
+</li>
+<li>
+<h3 id="interfaces-and-scaling-1">Interfaces and Scaling<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#interfaces-and-scaling-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Immersive Spaces</strong>: Exploring the integration of generative AI, including LLMs, in metaverse applications and game development. The potential for immersive, AI-driven spaces is vast, ranging from enhanced user experiences to novel forms of interaction. <a href="https://skarredghost.com/2023/02/11/generative-ai-metaverse-company/" class="external">Why you should use generative AI in your metaverse company<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>This article discusses the implications and opportunities of incorporating generative AI in metaverse platforms.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="optimizations-1">Optimizations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#optimizations-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>DeepSpeed</strong>: A software suite by Microsoft aimed at accelerating deep learning tasks. DeepSpeed offers innovative tools for enhancing the performance and efficiency of LLMs, making it easier to scale up training and inference operations. <a href="https://github.com/microsoft/DeepSpeed" class="external">DeepSpeed GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>DeepSpeed is pivotal in addressing the computational and memory challenges of training large models, offering solutions to significantly reduce training times and resource consumption.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="training--fine-tuning">Training &amp; Fine-tuning<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#training--fine-tuning" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Methods and Tools</strong>: Enhancing LLM performance through innovative training and fine-tuning techniques. Resources cover a range of strategies, including LoRA training, deep retraining, pruning techniques, and model merging strategies.
+<ul>
+<li><a href="https://lightning.ai/pages/community/lora-insights/" class="external">LoRA Training Insights<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>An insightful blog post on the application and benefits of Low-Rank Adaptation (LoRA) in training LLMs, providing a deep dive into how LoRA can be used to fine-tune models efficiently.</em></li>
+<li><a href="https://github.com/OpenBMB/BMTrain" class="external">BMTrain Toolkit<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>BMTrain presents an efficient framework for training large models, focusing on distributed training while maintaining simplicity in code structure, making it accessible for large-scale model training.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="evaluation">Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Comparison and Detection</strong>: Tools and methodologies for assessing LLM performance and detecting AI-generated text. This includes evaluations of model outputs and capabilities.
+<ul>
+<li><a href="https://arxiv.org/abs/2303.11156" class="external">AI-Generated Text Detection<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>A comprehensive study on the reliability of detecting AI-generated text, highlighting the challenges and methodologies involved in distinguishing between human and AI-generated content.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="applications">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Consumer Tools Using LLMs</strong>: Showcasing the application of LLMs in creating innovative consumer tools.
+<ul>
+<li><a href="https://customgpt.ai" class="external">CustomGPT for Personalized Customer Experiences<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>CustomGPT leverages LLMs to offer personalized interactions, demonstrating the potential of AI in enhancing customer service and engagement.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="infrastructure">Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#infrastructure" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Hosting and Deployment</strong>: Solutions for effectively deploying LLMs, addressing the technical challenges involved.
+<ul>
+<li><a href="https://rubbrband.com" class="external">Rubbrband for Auto Deployments<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>Rubbrband provides a streamlined solution for deploying LLMs, emphasizing ease of use and efficiency in managing AI model deployments.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="multilingual-and-abstract-translation">Multilingual and Abstract Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multilingual-and-abstract-translation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
+<ul>
+<li><a href="https://github.com/facebookresearch/seamless_communication#seamlessm4t" class="external">SeamlessM4T by Facebook Research<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>An innovative project aimed at enhancing multilingual translation, showcasing efforts to bridge language barriers and improve communication globally.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="additional-training--fine-tuning-resources">Additional Training &amp; Fine-tuning Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-training--fine-tuning-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Mesh TensorFlow for Distributed Training</strong>: A tool for distributing computation across different hardware to enhance training efficiency. <a href="https://github.com/tensorflow/mesh" class="external">Mesh TensorFlow<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>Enables sophisticated distribution strategies, optimizing the use of hardware resources during model training.</em></li>
+</ul>
+</li>
+<li><strong>Colossal-AI for Easy Distributed Training</strong>: Provides user-friendly tools for distributed deep learning, making it simpler to scale up training processes. <a href="https://colossalai.org/" class="external">Colossal-AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>Aims to simplify the transition from single-device to distributed model training, supporting more efficient utilization of computing resources.</em></li>
+</ul>
+</li>
+<li><strong>BMTrain for Large Model Training</strong>: Focuses on training large models with simplicity and efficiency, even in distributed settings. <a href="https://github.com/OpenBMB/BMTrain" class="external">BMTrain<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>An efficient toolkit designed for simplicity in training large-scale models, supporting distributed training with ease.</em></li>
+</ul>
+</li>
+<li><strong>LoRA Training Insights</strong>: Discusses the benefits and application of Low-Rank Adaptation (LoRA) for efficient model fine-tuning. <a href="https://lightning.ai/pages/community/lora-insights/" class="external">LoRA Training Insights<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>Provides a deep dive into how LoRA can be utilized to fine-tune models efficiently, offering significant insights into the process.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="evaluation-1">Evaluation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Comparison and Detection</li>
+<li><strong>LLM QA Evaluation on Wikipedia</strong>: An insightful comparison of different LLMs’ performance on QA tasks using Wikipedia as a benchmark. <a href="https://georgesung.github.io/ai/llm-qa-eval-wikipedia/" class="external">LLM QA Evaluation Wikipedia<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>This study offers a comparative analysis highlighting the strengths and weaknesses of open-source vs closed-source LLMs in handling QA tasks, providing valuable insights for both developers and users.</em></li>
+<li><strong>LLM Zoo</strong>: A collection of various LLMs to explore and compare their capabilities. <a href="https://github.com/FreedomIntelligence/LLMZoo" class="external">LLMZoo GitHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>A unique repository that provides access to a wide range of LLMs, facilitating exploration, comparison, and understanding of different models’ functionalities and performance.</em></li>
+<li><strong>Can AI-Generated Text be Reliably Detected?</strong>: Addresses the critical question of distinguishing between human and AI-generated text. <a href="https://arxiv.org/abs/2303.11156" class="external">AI-Generated Text Detection Study<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><em>This paper delves into the challenges and methodologies involved in detecting AI-generated text, offering insights into the reliability of current detection techniques.</em></li>
+</ul>
+</li>
+<li>
+<h3 id="applications-1">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Consumer Tools Using LLMs</li>
+</ul>
+</li>
+<li><strong>Innovative Tools for Personalized Customer Experiences</strong>: LLMs are increasingly used to create tools that offer personalized interactions for users, enhancing ecommerce experiences and facilitating efficient email management.
+<ul>
+<li><a href="https://customgpt.ai" class="external">CustomGPT<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A platform enabling businesses to create their own chatbots using their content, leading to accurate and personalized customer interactions. This tool exemplifies the use of LLMs in improving customer service and engagement.</li>
+</ul>
+</li>
+<li><a href="https://github.com/Mintplex-Labs/anything-llm" class="external">AnythingLLM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A full-stack personalized AI assistant application that turns documents or content into reference data for intelligent conversations. Demonstrates the flexibility and potential of LLMs in custom applications.</li>
+</ul>
+</li>
+<li><a href="https://nodepad.space/" class="external">NodePad<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>An LLM-assisted brainstorming tool that helps users organize their ideas visually. Highlights the creative use of LLMs in supporting individual thought processes and ideation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="applications-2">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications-2" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Consumer Tools Using LLMs</li>
+</ul>
+</li>
+<li><strong>Personalized Customer Experiences</strong>: LLMs are increasingly used to create personalized interactions in consumer applications, enhancing ecommerce experiences and facilitating more intuitive user interfaces.
+<ul>
+<li><a href="https://customgpt.ai" class="external">CustomGPT<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>CustomGPT offers businesses the ability to create their own chatbot using GPT-4 for tailored customer interactions. This platform demonstrates the application of LLMs in improving customer service and engagement by providing accurate, context-aware responses.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Innovative Interfaces and Applications</strong>: The versatility of LLMs allows for the development of creative tools that simplify complex tasks or provide new services.
+<ul>
+<li><a href="https://github.com/Mintplex-Labs/anything-llm" class="external">AnythingLLM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>A comprehensive solution for turning any document or piece of content into a piece of data for LLM-based chat interactions, showcasing the potential of LLMs in data management and retrieval.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="infrastructure-1">Infrastructure<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#infrastructure-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Hosting and Deployment</li>
+</ul>
+</li>
+<li><strong>Solutions for LLM Deployment</strong>: Addressing the technical requirements and solutions for deploying LLMs efficiently.
+<ul>
+<li><a href="https://rubbrband.com" class="external">Rubbrband for Auto Deployments<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>Rubbrband simplifies the deployment of LLMs by providing an automated platform that supports various deployment scenarios, facilitating easier access to LLM capabilities.</em></li>
+</ul>
+</li>
+<li><a href="https://1984.hosting" class="external">Hosting VPS Solutions<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>1984 Hosting offers privacy-focused VPS solutions, ideal for hosting LLMs with a commitment to free speech and data protection.</em></li>
+</ul>
+</li>
+<li><a href="https://codesphere.com/pricing?anonymousId=YTQLcRg" class="external">Free Custom Domains VPS<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>Codesphere provides VPS hosting with the option for free custom domains, enabling personalized deployment of LLM applications.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Distributed Computing and Training</strong>:
+<ul>
+<li><a href="https://developer.nvidia.com/blog/dask-tutorial-beginners-guide-to-distributed-computing-with-gpus-in-python/" class="external">Nvidia DASK for Distributed Computing<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>Nvidia’s DASK tutorial offers a beginner’s guide to distributed computing with GPUs, enhancing the performance of LLM training and inference.</em></li>
+</ul>
+</li>
+<li><a href="https://arxiv.org/pdf/2301.11913.pdf" class="external">SWARM Training for LLMs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>The SWARM training paper discusses innovative methods for distributed training of LLMs, proposing solutions to scale training processes efficiently.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="multilingual-and-abstract-translation-1">Multilingual and Abstract Translation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#multilingual-and-abstract-translation-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li><strong>Enhancing Translation Capabilities</strong>: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
+<ul>
+<li><a href="https://github.com/facebookresearch/seamless_communication#seamlessm4t" class="external">Meta SeamlessM4T<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>A project by Meta aimed at enhancing multilingual translation to support seamless communication across different languages, showcasing the potential of LLMs in breaking down language barriers.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Supporting Global Communication</strong>: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
+<ul>
+<li><a href="https://github.com/allenai/mmc4" class="external">MultimodalC4 Extension<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li><em>A multimodal extension of the C4 dataset that interleaves millions of images with text to provide context, aiming at improving the capabilities of LLMs in understanding and generating content in a multilingual and multimodal context.</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="general-purpose-and-miscellaneous">General Purpose and Miscellaneous<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#general-purpose-and-miscellaneous" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li><strong>Learning and Development</strong>: Resources for learning about LLMs, including educational materials and platforms for fine-tuning and experimenting.
+<ul>
+<li><a href="https://blog.replit.com/llm-training" class="external">Replit LLM Training Guide<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A guide on training your own large language models using Replit.</li>
+</ul>
+</li>
+<li><a href="http://Futurepedia.io" class="external">Futurepedia<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>The largest AI tools directory, featuring over 700 tools in various categories.</li>
+</ul>
+</li>
+<li><a href="https://magazine.sebastianraschka.com/p/understanding-large-language-models" class="external">Understanding Large Language Models<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A cross-section of relevant literature to get up to speed on LLMs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Distributed Technology</strong>
+<ul>
+<li><a href="https://github.com/tensorflow/mesh" class="external">Mesh TensorFlow<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A language for distributed deep learning, allowing broad classes of distributed tensor computations.</li>
+</ul>
+</li>
+<li><a href="https://github.com/OpenBMB/BMTrain" class="external">BMTrain<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>An efficient large model training toolkit for distributed training.</li>
+</ul>
+</li>
+<li><a href="https://colossalai.org/" class="external">Colossal-AI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>Aims to simplify distributed deep learning, supporting easy transition to distributed training.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Optimizations and Scaling</strong>
+<ul>
+<li><a href="https://github.com/NVIDIA/TensorRT-LLM" class="external">TensorRT-LLM optimization repo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>Optimizations for LLMs using TensorRT for better inference performance.</li>
+</ul>
+</li>
+<li><a href="https://github.com/microsoft/DeepSpeed" class="external">DeepSpeed<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>Deep learning optimization software suite by Microsoft for scalable training.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Emotion Tracking</strong>
+<ul>
+<li><a href="https://dct.openempathic.ai/guide/#:~:text=Rating%20Arousal%20and%20Valence%3A" class="external">LAION Empathetic<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A tool for emotion tracking in text.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="additional-tools-and-resources">Additional Tools and Resources<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#additional-tools-and-resources" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li><a href="https://horde.koboldai.net/" class="external">Horde Image and LLM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A project integrating images with LLMs for enhanced content generation.</li>
+</ul>
+</li>
+<li><a href="https://github.com/lobehub" class="external">LobeHub<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>A technology-driven forum for AIGC, offering modern design components and tools.</li>
+</ul>
+</li>
+<li>Microsoft <a href="https://wizardlm.github.io/WizardLM2/" class="external">WizardLM 2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li></li>
+<li></li>
+<li>
+<h1 id="old-version-to-integrate">old version to integrate<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#old-version-to-integrate" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<h3 id="large-language-models-llms">Large Language Models (LLMs)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#large-language-models-llms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Introduction to LLMs</strong>
+<ul>
+<li>Large language models are advanced computer programs capable of generating text, answering questions, and more, trained on vast internet text. Examples include OpenAI’s GPT-3.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="projects-and-implementations-1"><strong>Projects and Implementations</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#projects-and-implementations-1" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Browser-based models, such as the <a href="https://simonwillison.net/2023/Apr/16/web-llm/" class="external">Web LLM project<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>, which discusses a browser-based version of the vicuna-7b Large Language Model.</li>
+</ul>
+</li>
+<li></li>
+<li>
+<h3 id="distributed-technology">Distributed Technology<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#distributed-technology" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Optimizations and Scaling</strong>
+<ul>
+<li><a href="https://developer.nvidia.com/blog/dask-tutorial-beginners-guide-to-distributed-computing-with-gpus-in-python/" class="external">Nvidia DASK<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>: Tutorial for distributed computing with GPUs.</li>
+<li><a href="https://arxiv.org/pdf/2301.11913.pdf" class="external">SWARM Training Paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>: Discusses methods for distributed training of LLMs.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Interfaces and scaling
+<ul>
+<li><a href="https://github.com/lobehub" class="external">LobeHub (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Distributed tech
+<ul>
+<li><a href="https://horde.koboldai.net/" class="external">horde image and llm<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Browser based whole models
+<ul>
+<li><a href="https://simonwillison.net/2023/Apr/16/web-llm/" class="external">The Web LLM project has created a browser-based version of the vicuna-7b Large Language Model, which is impressively accurate and fast. The model is able to handle complex prompts and provide accurate responses, although it does sometimes make mistakes.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://developer.nvidia.com/blog/dask-tutorial-beginners-guide-to-distributed-computing-with-gpus-in-python/" class="external">Nvidia DASK<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/pdf/2301.11913.pdf" class="external">SWARM training paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>immersive spaces
+<ul>
+<li>Why you should use now generative AI in your metaverse company. Or maybe not
+<ul>
+<li>The Ghost Howls <a href="https://skarredghost.com/2023/02/11/generative-ai-metaverse-company/" class="external">https://skarredghost.com/2023/02/11/generative-ai-metaverse-company/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li><a href="https://www.traffickinggame.com/ai-assisted-graphics/" class="external">games dev<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li><a href="https://twitter.com/ronithhh/status/1641318606549176321" class="external">Instant app from prompts<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://replit.com/@asrsubs/SkyRoads-GPT-4" class="external">endless runner without any coding experience<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/mlc-ai/mlc-llm/tree/main/android" class="external">Edge (phone deployment on android)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/ysymyth/tree-of-thought-llm" class="external">Tree of thought github<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2307.10169" class="external">Scaling challenges paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/FlowiseAI/Flowise" class="external">Flow node based LLM design<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/NVIDIA/TensorRT-LLM" class="external">TensorRT-LLM optimisation repo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/flatypus/flowchat" class="external">Flowchat<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Multi Modal
+<ul>
+<li><a href="https://github.com/allenai/mmc4" class="external">MultimodalC4 is a multimodal extension of c4 that interleaves millions of images with text. The corpus contains over a billion images, and the text is interleaved with the images to provide context.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://otter-ntu.github.io/" class="external">Otter with weights<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://minigpt-4.github.io/" class="external">minigpt<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/Vision-CAIR/MiniGPT-4" class="external">MiniGPT local multimodal<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.adept.ai/blog/fuyu-8b?" class="external">Fuya<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>emotion tracking
+<ul>
+<li><a href="https://dct.openempathic.ai/guide/#:~:text=Rating%20Arousal%20and%20Valence%3A" class="external">laion empathetic<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.numind.ai/blog/a-foundation-model-for-entity-recognition" class="external">entity identify open LLM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Optimisations
+<ul>
+<li>[𝐃𝐞𝐞𝐩𝐒𝐩𝐞𝐞𝐝 is an easy-to-use deep learning optimization software suite that enables unprecedented scale and speed for DL Training and Inference. Visit us at deepspeed.ai or our Github repo.</li>
+<li>📌Megatron-LM GPT2 tutorial: <a href="https://lnkd.in/gXvPhXqb" class="external">https://lnkd.in/gXvPhXqb<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>](<a href="https://github.com/microsoft/DeepSpeed" class="external">https://github.com/microsoft/DeepSpeed<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li><a href="https://blog.replit.com/llm-training" class="external">The text provides instructions on how to train your own large language models using Replit. It explains that you will need to first create a Replit account and then follow the instructions on the website.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="http://Futurepedia.io" class="external">Futurepedia is the largest AI tools directory, with over 700 tools in various categories. It is updated daily, and features search and filter options to help you find the right tool for your needs.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>[GitHub
+<ul>
+<li>gitnomad24601/ShogScript: ShogScript: The GitHub repository “ShogScript” contains a proof-of-concept pseudocode for GPT-4 AI interactions, ideal for storytelling &amp; communication. The code is released under the MIT license.](<a href="https://github.com/gitnomad24601/ShogScript" class="external">https://github.com/gitnomad24601/ShogScript<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+<li><a href="https://together.ai/blog/flash-decoding-for-long-context-inference?" class="external">Flash decoding 8x<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://magazine.sebastianraschka.com/p/understanding-large-language-models" class="external">Understanding Large Language Models: A Cross-Section of the Most Relevant Literature To Get Up to Speed<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/oobabooga/text-generation-webui/pull/1229" class="external">The text describes a change to support the GPTQ triton commit c90adef. This change allows for the disabling of quant attention.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2305.02301" class="external">2000x performance improvement paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/FMInference/FlexGen#get-started-with-a-single-gpu" class="external">Flexgen<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/johnsmith0031/alpaca_lora_4bit" class="external">4bit compression<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.reddit.com/r/MachineLearning/comments/123b66w/dgpt4_might_be_able_to_tell_you_if_it_hallucinated/" class="external">GPT4 self hallucination checking<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2301.00774" class="external">Sparse LLM, half the size, all the power<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2306.03078" class="external">SpQR lossless optimisation paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/eugenepentland/landmark-attention-qlora" class="external">Landmark attention qlora oogabooga<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/lobehub" class="external">LobeHub (github.com)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>We are a group of e/acc design-engineers, hoping to provide modern design components and tools for AIGC, and creating a technology-driven forum, fostering knowledge interaction and the exchange of ideas that may culminate in mutual inspiration and collaborative innovation. Whether for users or professional developers, LobeHub will be your AI Agent playground.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Training &amp; Finetuning</li>
+<li>Lora</li>
+<li><a href="https://discord.com/channels/1086739839761776660/1087508281758584852" class="external">alpaca lora training<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/tloen/alpaca-lora" class="external">Github<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/oobabooga/text-generation-webui/commit/09d8119e3cf36257496acfb44e6445a9f40c3d02" class="external">CPU offload lora training<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://rentry.org/llama-tard-v2#llama-int8-4bit-chatbot-guide-v2" class="external">llamatard 4bit chat instructions<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://civitai.com/models/22530" class="external">The text provides a guide on how to make your own Loras, which are easy and free to create. The process is described in detail, and the text includes instructions on how to create and customize your own Loras.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Deep retraining</li>
+<li>Deepspeed chat retraining in hours</li>
+<li>microsoft just released a new finetuning pipeline
+they finetuned a 65B model in 10 hours using RLHF</li>
+<li>[TRL
+<ul>
+<li>Transformer Reinforcement Learning](<a href="https://github.com/lvwerra/trl" class="external">https://github.com/lvwerra/trl<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+<li>Hardware requirements for retraining (links to state of the art)
+<ul>
+<li><a href="https://www.databricks.com/blog/2023/03/20/fine-tuning-large-language-models-hugging-face-and-deepspeed.html" class="external">Finetuning blog post<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>Pruning</li>
+<li><a href="https://arxiv.org/abs/1803.03635" class="external">Seems that both 4 bit and straight up pruning don’t harm the models much<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Merging</li>
+<li><a href="https://github.com/TehVenomm/LM_Transformers_BlockMerge" class="external">diffusion style LLM block merging<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://docs.google.com/document/d/1JCzJ1wdBMBVwsFW4CWGUbX-YEDXB0yS4mfFbvwPLQrI/edit" class="external">Domain expert model merging<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Toolkits and distributed</li>
+<li><a href="https://github.com/tensorflow/mesh" class="external">𝐌𝐞𝐬𝐡 𝐓𝐞𝐧𝐬𝐨𝐫𝐅𝐥𝐨𝐰 (mtf) is a language for distributed deep learning, capable of specifying a broad class of distributed tensor computations. The purpose of Mesh TensorFlow is to formalize and implement distribution strategies for your computation graph over your hardware/processors. For example: “Split the batch over rows of processors and split the units in the hidden layer across columns of processors.” Mesh TensorFlow is implemented as a layer over TensorFlow.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/OpenBMB/BMTrain" class="external">𝐁𝐌𝐓𝐫𝐚𝐢𝐧 is an efficient large model training toolkit that can be used to train large models with tens of billions of parameters. It can train models in a distributed manner while keeping the code as simple as stand-alone training.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://colossalai.org/" class="external">𝐂𝐨𝐥𝐨𝐬𝐬𝐚𝐥-𝐀𝐈 provides a collection of parallel components for you. It aim to support us to write our distributed deep learning models just like how we write our model on our laptop. It provide user-friendly tools to kickstart distributed training and inference in a few lines.
+📌Open source solution replicates ChatGPT training process.Ready to go with only 1.6GB GPU memory and gives you 7.73 times faster training: https://lnkd.in/gp4XTCnz<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/young-geng/EasyLM" class="external">EasyLM one stop scaleable toolkit<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/gmpetrov/databerry" class="external">databerry training and deployment<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2209.01188" class="external">Petals collaborative fine tuning<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://opensource.googleblog.com/2023/03/openxla-is-ready-to-accelerate-and-simplify-ml-development.html" class="external">Goodle openXLA training accelerator<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Adversarial and self instructed</li>
+<li><a href="https://twitter.com/BrianRoemmele/status/1637871062246649856" class="external">Use GPT API as a GAN (twitter thread)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/bigscience-workshop/petals" class="external">Bigscience petals run training through torrents<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.reddit.com/r/MachineLearning/comments/136vt7b/p_airoboros_a_rewrite_of_selfinstructalpaca/" class="external">airoboros_a_rewrite_of_selfinstructalpaca/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2304.12210" class="external">A Cookbook of Self-Supervised Learning<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://lightning.ai/pages/community/lora-insights/?" class="external">Lora training lessons blog post<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/Lightning-AI/lit-gpt" class="external">lit-gpt hackable training platform apache 2<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/nebuly-ai/nebullvm/tree/main/apps/accelerate/chatllama" class="external">ChatLLaMA  is a library that allows you to create hyper-personalized ChatGPT-like assistants using your own data and the least amount of compute possible. Instead of depending on one large assistant that “rules us all”, we envision a future where each of us can create our own personalized version of ChatGPT-like assistants.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://abuqader.substack.com/p/releasing-alpaca-30b" class="external">Substack on retraining a 30B model in an A100<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>[𝐀𝐥𝐩𝐚 is a system for training and serving large-scale neural networks. Scaling neural networks to hundreds of billions of parameters has enabled dramatic breakthroughs such as GPT-3, but training and serving these large-scale neural networks require complicated distributed system techniques. Alpa aims to automate large-scale distributed training and serving with just a few lines of code.</li>
+<li>📌Alpa:</li>
+<li></li>
+<li>📌Serving OPT-175B, BLOOM-176B and CodeGen-16B using Alpa: <a href="https://lnkd.in/g_ANHH6f" class="external">https://lnkd.in/g_ANHH6f<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>](<a href="https://github.com/alpa-projects/alpa" class="external">https://github.com/alpa-projects/alpa<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li>[𝐌𝐞𝐠𝐚𝐭𝐫𝐨𝐧-𝐋𝐌 / Megatron is a large, powerful transformer developed by the Applied Deep Learning Research team at NVIDIA. Below repository is for ongoing research on training large transformer language models at scale. Developing efficient, model-parallel (tensor, sequence, and pipeline), and multi-node pre-training of transformer based models such as GPT, BERT, and T5 using mixed precision.</li>
+<li>📌pretrain_gpt3_175B.sh: <a href="https://lnkd.in/gFA9h8ns" class="external">https://lnkd.in/gFA9h8ns<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>](<a href="https://github.com/NVIDIA/Megatron-LM" class="external">https://github.com/NVIDIA/Megatron-LM<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+<li><a href="https://bair.berkeley.edu/blog/2023/04/03/koala/?ref=emergentmind" class="external">Koala paper on training with minimal noise for chatbots<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://twitter.com/ehalm_/status/1652373239044112388" class="external">Emmet twitter and github on fine tuning<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/1rgs/jsonformer" class="external">Ensure structured json<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://lightning.ai/pages/community/tutorial/lora-llm/" class="external">Lora training guide from Pytorch lightning.ai people<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/ist-daslab/gptq" class="external">GPTQ paper code<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/microsoft/guidance" class="external">Microsoft guidance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/artidoro/qlora" class="external">QLoRA fast retraining of large models<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/pdf/2305.14314.pdf" class="external">paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://readthedocs.org/projects/alibi/downloads/pdf/latest/" class="external">Some kind of inscrutable training thing<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.philschmid.de/sagemaker-llama2-qlora" class="external">Llama 2 training guide<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/pdf/2308.01320.pdf" class="external">RLHF cheap paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://huggingface.co/blog/mwitiderrick/llm-infrerence-on-cpu" class="external">Sparse LLM cpu training breakthrough<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Evaluation</li>
+<li><a href="https://georgesung.github.io/ai/llm-qa-eval-wikipedia/" class="external">github of comparisons<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://georgesung.github.io/ai/llm-qa-eval-wikipedia/" class="external">compare open source vs closed<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/FreedomIntelligence/LLMZoo" class="external">LLM zoo<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2303.11156" class="external">Can AI-Generated Text be Reliably Detected?:<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>In the paper “Can AI-Generated Text be Reliably Detected?”, the authors show that current methods for detecting AI-generated text are not reliable in practical scenarios. They first demonstrate that paraphrasing attacks can break a range of detectors, including those using watermarking schemes and neural network-based detectors. They then provide a theoretical impossibility result showing that for a sufficiently good language model, even the best-possible detector can only perform marginally better than a random classifier. Finally, they show that even LLMs protected by watermarking schemes can be vulnerable to spoofing attacks where adversarial humans can add hidden watermarking signatures to their generated text.</li>
+<li><a href="http://gptzero.me/" class="external">gptzero spots AI authoring<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://gonzoknows.com/posts/GPTZero-Case-Study/" class="external">GPTZero Case Study (Exploring False Positives): Introduction In this case study, I will be sharing the vast amounts of false positives current AI detection software gives, specifically for this case study I will be demonstrating GPTZero. I personally want to thank the supposed “Healthcare professional” who brought this to my attention via my contact link. It has motivated me to look more into this issue rather than just posting bypasses to these popular AI detection software programs, it will be only more beneficial to highlight their real usability in general.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>The text describes a case study on false positives with AI detection software. The study found that the software often gives false positives, particularly with regard to healthcare. The study recommends that users be aware of this issue and take it into account when using such software.</li>
+<li><a href="https://hivemoderation.com/ai-generated-content-detection" class="external">Fake detector product<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard" class="external">Huggingface leaderboard<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="../Base-models" class="internal alias" data-slug="Base-models">Base models</a></li>
+<li>Prompt engineering and injection</li>
+<li>Character injection</li>
+<li><a href="https://oobabooga.github.io/character-creator.html" class="external">json builder<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://huggingface.co/blog/trl-peft" class="external">Huggingface commodity card retrainer<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Prompt model tips for learning</li>
+<li>
+<ol>
+<li>Improve your writing by getting feedback.</li>
+</ol>
+<ul>
+<li>Use this prompt:</li>
+<li>[paste your writing]</li>
+<li>“Proofread my writing above. Fix grammar and spelling mistakes. And make suggestions that will improve the clarity of my writing”</li>
+<li>
+<ol start="2">
+<li>Use the 80/20 principle to learn faster than ever.</li>
+</ol>
+</li>
+<li>“I want to learn about [insert topic]. Identify and share the most important 20% of learnings from this topic that will help me understand 80% of it.”</li>
+<li>
+<ol start="3">
+<li>Learn and develop any new skill.</li>
+</ol>
+</li>
+<li>“I want to learn / get better at [insert desired skill]. I am a complete beginner. Create a 30 day learning plan that will help a beginner like me learn and improve this skill.”</li>
+<li>
+<ol start="4">
+<li>Get short and insight-packed book summaries.</li>
+</ol>
+</li>
+<li>“Summarize the book [insert book] by the author [insert author] and give me a list of the most important learnings and insights.”</li>
+<li>
+<ol start="5">
+<li>Get feedback from history’s greatest minds.</li>
+</ol>
+</li>
+<li>“Assume you are [insert famous person e.g. Steve Jobs]. Read my argument below and give me feedback as if you were [insert person again]”</li>
+<li>[insert your argument]</li>
+<li>
+<ol start="6">
+<li>Enhance your problem solving skills.</li>
+</ol>
+</li>
+<li>“Your role is that of a problem solver. Give me a step-by-step guide to solving [insert your problem].”</li>
+<li>
+<ol start="7">
+<li>Generate new ideas and overcome writers block:</li>
+</ol>
+</li>
+<li>“I am writing a blog post about [insert topic]. Give me an outline for this blog post with 10 bullet points. Also give me 5 options for a catchy headline.”</li>
+<li>You can adapt this prompt for whatever you’re writing.</li>
+<li>
+<ol start="8">
+<li>Summarize long texts and accelerate your learning:</li>
+</ol>
+</li>
+<li>“Summarize the text below into 500 words or less. Create sections for each important point with a brief summary of that point.”</li>
+<li>
+<ol start="9">
+<li>Use stories and metaphors to aid your memory.</li>
+</ol>
+</li>
+<li>“I am currently learning about [insert topic]. Convert the key lessons from this topic into engaging stories and metaphors to aid my memorization.”</li>
+<li>
+<ol start="10">
+<li>Strengthen your learning by testing yourself.</li>
+</ol>
+</li>
+<li>“I am currently learning about [insert topic]. Ask me a series of questions that will test my knowledge. Identify knowledge gaps in my answers and give me better answers to fill those gaps.”</li>
+</ul>
+</li>
+<li><a href="https://simonwillison.net/2023/Apr/14/worst-that-can-happen/" class="external">Prompt injection: what s the worst that can happen?<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.digitaltrends.com/computing/how-to-jailbreak-chatgpt/" class="external">To jailbreak ChatGPT, you need to get it to really do what you want. This can be done by editing the source code or by using a third-party tool.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>General purpose super short prompt</li>
+<li>develop+extend+support(ideas), vocab(wide+natural+sophisticated), grammar(wide+flexible), cohesion(logical+smooth), clarity(precise+concise), engagement(attention+interest), mood(objective+explanatory), viewpoint(forward_looking)</li>
+<li><a href="https://www.linkedin.com/posts/emollick_there-are-now-three-research-backed-approaches-activity-7089472152701136896-aZNQ?utm_source=share&amp;utm_medium=member_desktop" class="external">Mollick methods post on linkedin<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://openreview.net/forum?id=92gvk82DE-" class="external">Large Language Models are Human-Level Prompt Engineers: We propose an algorithm for automatic instruction generation and selection for large language models with human level performance.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.oneusefulthing.org/p/how-to-use-ai-to-teach-some-of-the" class="external">Using models to learn well, blog and paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://olickel.com/everything-i-know-about-prompting-llms" class="external">Guide to prompting LLMs<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>basic software primitives
+Transformers are a new type of machine learning model that have been making headlines recently. They are very good at keeping track of context, which is why the text they generate makes sense. In this blog post, we will go over their architecture and how they work.
+<a href="https://txt.cohere.ai/what-are-transformer-models/" class="external">https://txt.cohere.ai/what-are-transformer-models/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+Datasets 101
+<a href="https://www.latent.space/p/datasets-101?utm_source=substack&amp;utm_medium=email#details" class="external">https://www.latent.space/p/datasets-101?utm_source=substack&amp;utm_medium=email#details<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+implementations
+pytorch/numpty
+tensorflow/jax
+LLM youtube bootcamp 2023
+<a href="https://www.youtube.com/playlist?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ" class="external">https://www.youtube.com/playlist?list=PL1T8fO7ArWleyIqOy37OVXsP4hFXymdOZ<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+Linkedin LLM roundup
+<a href="https://www.linkedin.com/posts/francesco-saverio-zuppichini-94659a150_ai-ml-ds-activity-7072868294000566272-kV83/?utm_source=share&amp;utm_medium=member_android" class="external">https://www.linkedin.com/posts/francesco-saverio-zuppichini-94659a150_ai-ml-ds-activity-7072868294000566272-kV83/?utm_source=share&amp;utm_medium=member_android<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+This is the list of resources I’ve recommended him
+Where everything started:
+<ul>
+<li>Attention is all you need Paper: <a href="https://lnkd.in/eJWz6ShV" class="external">https://lnkd.in/eJWz6ShV<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Blog: <a href="https://lnkd.in/eaUMMy6v" class="external">https://lnkd.in/eaUMMy6v<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>GPT-3 Language models are few-shot learners Paper: <a href="https://lnkd.in/eUgFk7Db" class="external">https://lnkd.in/eUgFk7Db<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Video: <a href="https://lnkd.in/ev8whzkb" class="external">https://lnkd.in/ev8whzkb<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> The first one is where Attention was introduced, the main building block of Transformers. The second one shows that LLMs can actually do zero and few shots Then, I suggest having a look at how we went from GPT3 <span>→</span> ChatGPT. So how it was possible to make LLMs better at human instructions. I suggest reading this Hugging Face blog post about Reinforcement Learning with Human Feedback (RLHF) <a href="https://lnkd.in/eAkM_FUj" class="external">https://lnkd.in/eAkM_FUj<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> The next step is what happen later, Meta leaked LLama a smaller language model that was actually very good, the takeaway there is that if you train with more stuff and for longer you obtain a better model. Paper: <a href="https://lnkd.in/efZRu4mY" class="external">https://lnkd.in/efZRu4mY<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> The next wave is all built upon that model, so how do we make it better at following human instruction. So I suggest looking at the Stanford Alpaca model. Blog: <a href="https://lnkd.in/eqCwvVDZ" class="external">https://lnkd.in/eqCwvVDZ<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> I also said other interesting models are Vicuna (<a href="https://lnkd.in/eCYT3yWx" class="external">https://lnkd.in/eCYT3yWx<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>) and WizardLM (<a href="https://lnkd.in/efvUD8AD" class="external">https://lnkd.in/efvUD8AD<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>). Saying that people have been focused on finding better and cheaper way to instruct the base LLama model. Another important thing is how to prompt, I’ve recommended chain of thoughts (<a href="https://lnkd.in/eYGxFaeS" class="external">https://lnkd.in/eYGxFaeS<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>) and tree of thouhts (<a href="https://lnkd.in/ejcfkAeN" class="external">https://lnkd.in/ejcfkAeN<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>) I’ve also shared the LLM leaderboard from Hugging Face : <a href="https://lnkd.in/eF6C_W6D" class="external">https://lnkd.in/eF6C_W6D<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> YT channels that I think are the bests are: AI Explained: <a href="https://lnkd.in/emhTmsds" class="external">https://lnkd.in/emhTmsds<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Yannic Kilcher: <a href="https://lnkd.in/eRGUVme4" class="external">https://lnkd.in/eRGUVme4<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Sam Witteveen: <a href="https://lnkd.in/e4EiE5iY" class="external">https://lnkd.in/e4EiE5iY<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> What do you think? Any resources that may be useful? Resourced shared Pritam Kumar Ravi Stanford CS25 Course <a href="https://lnkd.in/e2PrcwTu" class="external">https://lnkd.in/e2PrcwTu<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ul>
+</li>
+<li>LLM and creating new LLM</li>
+<li>Safefty, alignment, and breaking</li>
+<li><a href="https://arxiv.org/abs/2307.10490" class="external">image perturbation of multimodal<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://arxiv.org/abs/2307.15043" class="external">universal jailbreaks<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Consumer tools using LLM</li>
+<li><a href="https://nexus.snikpic.io" class="external">NexusGPT is a freelancer platform that uses AI to help businesses find the right freelancers for their needs. The platform offers a variety of features to help businesses find the perfect freelancer for their project, including a searchable database of freelancers, a rating system, and a feature that allows businesses to post their project and receive bids from freelancers.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://interestingengineering.com/innovation/radiogpt-worlds-first-ai-radio-station" class="external">RadioGPT: ‘World’s first’ AI-driven radio station is here (other)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Some experts are predicting that the metaverse, a shared online space where users can interact with each other and digital objects, will eventually replace the internet as we know it.</li>
+<li>[GitHub
+<ul>
+<li>MatveyM11/Mine-ChatGPT: OpenSourced ChatGPT downloader in markdown format. Download all text or markdown-styled code blocks Fear no more that servers are down, under high load or OpenAI adding a new feature. Keep all yours chat’s with you locally in the simple .md files.: OpenSourced ChatGPT downloader in markdown format. Download all text or markdown-styled code blocks Fear no more that servers are down, under high load or OpenAI adding a new feature. Keep all your…](<a href="https://github.com/MatveyM11/Mine-ChatGPT" class="external">https://github.com/MatveyM11/Mine-ChatGPT<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)</li>
+</ul>
+</li>
+<li>This repository contains a ChatGPT downloader that can be used to download all text or markdown-styled code blocks from a chat. Fear no more that servers are down, under high load or OpenAI adding a new feature. Keep all yours chat’s with you locally in the simple .md files.</li>
+<li><a href="https://github.com/FrancescoSaverioZuppichini/LinkedInGPT" class="external">Linkedin bot to make LLM posts<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.arcangelai.com/" class="external">ArcAngel Falcon based custom chat<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://community.openai.com/c/announcements/6" class="external">OpenAI community Pages<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>ChatGPT stuff</li>
+<li>Code interpreter</li>
+<li><a href="https://www.linkedin.com/feed/update/urn:li:activity:7083969476685099008/" class="external">setup prompt by mollick<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>You are going to be an expert at making powerful and beautiful visualizations using principles from Tufte and other experts. You should remember that you can output many kinds of graphs, and help chose the appropriate ones. You also can output jpgs, html, interactive maps, and animated gifs.</li>
+<li>First, mention some of the types of charts you can create, and the outputs that you can use.
+Next, read these does and don’ts of data from Angela Zoss
+Do:
+<ol>
+<li>Do use the full axis.</li>
+</ol>
+</li>
+<li>Avoid distortion.</li>
+<li>For bar charts, the numerical axis (often the y axis) must start at zero.  Our eyes are very sensitive to the area of bars, and we draw inaccurate conclusions when those bars are truncated.
+(But for line graphs, it may be okay to truncate the y axis.</li>
+<li>Wide ranges:
+If you have one or two very tall bars, you might consider using multiple charts to show both the full scale and a “zoomed in” view
+<ul>
+<li>also called a Panel Chart.</li>
+</ul>
+</li>
+<li>Consistent intervals:</li>
+<li>Finally, using the full axis also means that you should not skip values when you have numerical data.  See the charts below that have an axis with dates.  The trend is distorted if you do not have even intervals between your dates.  Make sure your spreadsheet has a data point for every date at a consistent interval, even if that data point is zero</li>
+<li>
+<ol start="2">
+<li>Do simplify less important information.</li>
+</ol>
+</li>
+<li>Chart elements like gridlines, axis labels, colors, etc. can all be simplified to highlight what is most important/relevant/interesting.  You may be able to eliminate gridlines or reserve colors for isolating individual data series and not for differentiating between all of the series being presented</li>
+<li>
+<ol start="3">
+<li>Do be creative with your legends and labels.</li>
+</ol>
+</li>
+<li>Possibilitiess
+Label lines individually
+Put value labels on bars to preserve the clean lines of the bar lengths</li>
+<li>
+<ol start="4">
+<li>Do pass the squint test.</li>
+</ol>
+</li>
+<li>“When you squint at your page, so that you cannot read any of the text, do you still ‘get’ something about the page?”</li>
+<li>Which elements draw the most attention? What color pops out?
+Do the elements balance? Is there a clear organization?
+Do contrast, grouping, and alignment serve the function of the chart?</li>
+<li>Don’t:
+<ol>
+<li>Don’t use 3D or blow apart effects.</li>
+</ol>
+</li>
+<li>Studies show that 3D effects reduce comprehension. Blow apart effects likewise make it hard to compare elements and judge areas.</li>
+<li>
+<ol start="2">
+<li>Don’t use more than (about) six colors.</li>
+</ol>
+</li>
+<li>Using color categories that are relatively universal makes it easier to see differences between color</li>
+<li>The more colors you need (that is, the more categories you try to visualize at once), the harder it is to do this.</li>
+<li>But different colors should be used for different categories
+(e.g., male/female, types of fruit), not different values in a range (e.g., age, temperature).</li>
+<li>If you want color to show a numerical value, use a range
+that goes from white to a highly saturated color in one of
+the universal color categories</li>
+<li>
+<ol start="3">
+<li>Don’t change (style) boats midstream.</li>
+</ol>
+</li>
+<li>One of the easiest ways to get the most out of charts is to rely on comparison to do the heavy lifting.</li>
+<li>Our visual system can detect anomalies in patterns.
+Try keeping the form of a chart consistent across a series so differences from one chart to another will pop out.</li>
+<li>Use the same colors, axes, labels, etc. across multiple charts.</li>
+<li>
+<ol start="4">
+<li>Don’t make users do “visual math.”</li>
+</ol>
+</li>
+<li>If the chart makes it hard to understand an important relationship between variables, do the extra calculation and visualize that as well.</li>
+<li>This includes using pie charts with wedges that are too similar to each other, or bubble charts with bubbles that are too similar to each other.  Our visual processing system is not well suited to comparing these types of visual areas.</li>
+<li>We are also not good at holding precise visual imagery in our memory and comparing it to new stimuli; if you are giving a presentation and want the audience to be able to compare two charts, they need to be on the same slide.</li>
+<li>
+<ol start="5">
+<li>Don’t overload the chart.</li>
+</ol>
+</li>
+<li>Adding too much information to a single chart eliminates the advantages of processing data visually; we have to read every element one by one! Try changing chart types, removing or splitting up data points, simplifying colors or positions, etc.</li>
+<li>Now ask what kind of data visualization I might be interested in, or if I want to upload some data for yout co consider visualizing.</li>
+<li><a href="https://github.com/SkalskiP/awesome-chatgpt-code-interpreter-experiments" class="external">loads of experiments<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>General links and papers</li>
+<li><a href="https://simonwillison.net/2023/Apr/2/calculator-for-words/" class="external">Think of language models like ChatGPT as a “calculator for words”: One of the most pervasive mistakes I see people using with large language model tools like ChatGPT is trying to use them as a search engine. As with other LLM …<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Language models like ChatGPT are not reliable for use as a search engine, but can be thought of as a “calculator for words”. This means that they are good for manipulating language, but not for retrieving accurate information.</li>
+<li><a href="https://ihavemanythoughts.substack.com/p/peak-llm" class="external">Peak LLM: Prompt injection might be just the beginning<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://sentic.net/language-models-as-inductive-reasoners.pdf" class="external">Language models as inductive reasoners paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/jeffhj/LM-reasoning" class="external">This repository contains a collection of papers and resources on Reasoning in Large Language Models. The papers survey the state of the art in this area, and discuss how large language models can be used to obtain emergent abilities.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://mobile.twitter.com/omarsar0/status/1641788196550856704" class="external">Full trainingset used by bloombergAI<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.linkedin.com/posts/zainkahn_1000-ai-tools-were-released-in-march-activity-7048285306101358592-4wAA?utm_source=share&amp;utm_medium=member_android" class="external">Zain Kahn on LinkedIn reports that over 1,000 AI tools were released in March. He states that ChatGPT is just the tip of the iceberg, and that there are 20 AI tools that will transform productivity forever.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.reddit.com/r/MachineLearning/comments/129wzdk/p_engshell_a_gpt4_driven_englishlanguage_shell/" class="external">Language driven shell for OS (ooft)<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.linkedin.com/posts/ezra-eeman-8a5ba64_dpa-just-released-its-guidelines-for-the-activity-7048985893910519808-921y?utm_source=share&amp;utm_medium=member_android" class="external">The text contains information on the release of guidelines by the DPA for the use of AI, as well as on similar efforts by other organizations. It also provides links to resources on the topic.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://mind.ai/technology" class="external">Mind AI team website<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://lmstudio.ai/" class="external">LMStudio model manager<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://magazine.sebastianraschka.com/archive" class="external">Ahead of AI substack<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://drive.google.com/file/d/1i4NJKAggS82wqMamCJ1OHRGgViuyoY6R/view" class="external">Meta research paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.stateof.ai/" class="external">State of AI report<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.medpagetoday.com/special-reports/exclusives/102705" class="external">AI ML passes American medical exams<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/diego-vicente/som-tsp" class="external">Travelling salesman problem<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://medium.com/@socialemail/how-diffusion-models-can-achieve-seemingly-arbitrarily-large-compression-ratios-through-learning-2b21a317a46a" class="external">How the compression is so huge in diffusion models<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://udlbook.github.io/udlbook/" class="external">Understanding deep learning book<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>The book “Understanding Deep Learning” by Simon J.D. Prince covers a wide range of topics related to deep learning, from supervised and unsupervised learning to different types of neural networks and training methods. There are also chapters on measuring performance, regularization, and why deep learning works. The book includes many resources for instructors, such as slides, notebooks, and figures.</li>
+<li><a href="https://github.com/SkalskiP/courses" class="external">This repository is a collection of links to various courses and resources about Artificial Intelligence (AI).<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+<li><a href="https://github.com/SkalskiP/courses" class="external">Top courses link github<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.youtube.com/watch?v=bZQun8Y4L2A" class="external">State of GPT youtube presentation with great overview<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Infrastructure</li>
+<li><a href="https://rubbrband.com/" class="external">rubbrband github auto deployments<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://1984.hosting/" class="external">Hosting VPS<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://codesphere.com/pricing?anonymousId=YTQLcRg" class="external">Free custom domains VPS<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://wiki.archlinux.org/title/HP_Spectre_x360_(2020)" class="external">Arch linux for laptop<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.researchgate.net/publication/368728037_Masked360_Enabling_Robust_360-degree_Video_Streaming_with_Ultra_Low_Bandwidth_Consumption" class="external">360 camera compression paper<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>Multiligual and abstract translation</li>
+<li><a href="https://github.com/facebookresearch/seamless_communication#seamlessm4t" class="external">meta seamless M4T<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+<li>|
+|
+CustomGPT is a platform that enables businesses to create their own chatbot using their own content, resulting in accurate responses without making up facts. The tool is designed to help businesses increase customer engagement and improve employee efficiency, ultimately leading to revenue growth and a competitive advantage. CustomGPT offers easy integration of content through seamless website integration or file uploading. The chatbot comes with various pricing plans, depending on the number of custom chatbots, content pages, and queries. The platform is trusted by global companies and customers, and it can be deployed for customer service, support helpdesk, and topic research. CustomGPT is powered by ChatGPT-4 and can be deployed through API or ChatGPT Plugins. The company offers a live demo and contact email for further inquiries. <a href="https://customgpt.ai/" class="external">https://customgpt.ai/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+|
+|</li>
+<li></li>
+<li></li>
+<li><a href="https://github.com/h2oai/h2ogpt" class="external">h2o document summary / summariser with long context<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+<li>|
+|
+The website replit.com has blocked your access due to the presence of potentially harmful actions, such as submitting a certain word or phrase, a SQL command or malformed data. This is a security measure to protect the website from online attacks. To resolve the issue, you can contact the site owner and provide details of the actions that caused the block and the Cloudflare Ray ID found at the bottom of the page. <a href="https://blog.replit.com/llm-training" class="external">https://blog.replit.com/llm-training<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+|
+|</li>
+<li></li>
+<li></li>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+<li>|
+|
+NodePad is an LLM-assisted brainstorming experiment that helps users capture, expand, question, and organize their ideas visually. To create a new node, users simply write their thoughts in the input field and hit Enter. Nodes can be edited by double-clicking on them, linked through connectors, and deleted by clicking on them and hitting Backspace or Delete. Users can explore the app or consult the User Guide for further assistance. NodePad is designed for rapid note-taking and serendipitous ideation. <a href="https://nodepad.space/#" class="external">https://nodepad.space/#<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+|
+|</li>
+<li></li>
+<li></li>
+<li><a href="https://eugeneyan.com/writing/llm-patterns/" class="external">Patterns for building LLMs blog post<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/TextGeneratorio" class="external">textgenerator io self host<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.youtube.com/watch?v=Dt_UNg7Mchg%22%3E%3Crichcontent" class="external">Orca: The Model Few Saw Coming<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+<ul>
+<li>OpenOrca includes trained in tree of thought examples and is down to 500k training tokens for the same performance as the original Microsoft Orca paper</li>
+</ul>
+</li>
+<li><a href="https://github.com/huggingface/alignment-handbook" class="external">Mistral Zephyr tune for exceptional performance<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.youtube.com/watch?v=Up7VKg6ZE90" class="external">youtube on it<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>LLMs
+<ul>
+<li>The AnythingLLM project is a full-stack application designed to allow users to turn any document or piece of content into reference data that can be used by any LLM during conversations. The application can be hosted remotely, but also supports local instances. It utilizes Pinecone, ChromaDB, and other vector storage solutions, as well as OpenAI for LLM and chatting capabilities. Documents are organized into workspaces, which function like threads and allow for context to be kept clean. The monorepo consists of three main sections: the collector, frontend, and server. Requirements include yarn, node, Python 3.8+, access to an LLM such as GPT-3.5 or GPT-4, and a free account with Pinecone.io. The Docker setup enables users to get started in minutes, and the development environment includes instructions for setting up the necessary .env files and collector scripts to embed content. The project is open source and contributors can create issues and pull requests following the designated format. <a href="https://github.com/Mintplex-Labs/anything-llm" class="external">https://github.com/Mintplex-Labs/anything-llm<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+|
+|</li>
+</ul>
+</li>
+<li><a href="https://github.com/mit-han-lab/llm-awq" class="external">AWQ 4 bit quants<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/mit-han-lab/llm-awq/tree/main/tinychat" class="external">Tinychat<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/imoneoi/openchat" class="external">Openshat model<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li>
+<ul>
+<li></li>
+</ul>
+</li>
+<li>|
+|
+NodePad is a brainstorming tool that allows users to create nodes for their thoughts. Users can create new nodes by typing in the input field, and edit nodes by double-clicking on them. Nodes can be connected through connectors, and both nodes and connectors can be deleted by selecting and pressing Backspace or Delete. NodePad is an LLM-assisted brainstorming experiment that helps users capture, expand, question, and organize their ideas visually. The app offers a User Guide for assistance and is available for download through React Flow. <a href="https://nodepad.space/#" class="external">https://nodepad.space/#<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+|
+|</li>
+<li></li>
+<li></li>
+<li>
+<ul>
+<li></li>
+</ul>
+|
+|
+AnythingLLM is a full-stack personalized AI assistant application that allows users to turn any document or piece of content into a piece of data that can be used as reference when chatting. The application uses LLMs that can be hosted remotely or locally, and supports Pinecone, ChromaDB and more for vector storage and OpenAI for LLM chatting. AnythingLLM aims to be a full-stack application that can be run locally as well as hosted remotely and allows for intelligent chatting with any document provided to it. It divides documents into workspaces and provides simple UI-based tools to atomically manage the documents. There are two chat modes, conversation and query, and each chat response contains a citation that is linked to the original content. The monorepo consists of three main sections- collector, frontend and server, and requirements for the application include yarn and node on the user’s machine, Python 3.8+ for running scripts in the collector, access to an LLM like GPT-3.5, GPT-4 or a drop-in replacement, and a Pinecone.io free account. <a href="https://github.com/Mintplex-Labs/anything-llm" class="external">https://github.com/Mintplex-Labs/anything-llm<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+|
+|</li>
+<li></li>
+<li></li>
+<li><a href="https://github.com/dstackai/LLM-As-Chatbot/wiki/Running-LLM-As-Chatbot-in-your-cloud" class="external">This text provides instructions on how to run LLM-As-Chatbot in your cloud using dstack. The steps are as follows:  1. Install and set up dstack by running the command pip install dstack[aws,gcp,azure] -U and then dstack start to start the server.  2. Create a profile by creating a .dstack/profiles.yml file that points to your created project and describes the resources you need. Example:  <code>profiles:   - name: gcp     project: gcp     resources:       memory: 48GB       gpu:         memory: 24GB     default: true</code>  3. Run the initialization command: dstack init.  4. Finally, use the dstack run . command to build the environment and run LLM-As-Chatbot in your cloud. dstack will automatically forward the port to your local machine, providing secure and convenient access.  The instructions emphasize the use of dstack to automate the provisioning of cloud resources and simplify the process of running LLM-As-Chatbot in the cloud. More information about dstack and its documentation can be found for further details.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://github.com/lxe/simple-llama-finetuner" class="external">This text describes a project called Simple LLM Finetuner, which is a user-friendly interface designed to facilitate fine-tuning various language models using the LoRA method via the PEFT library on NVIDIA GPUs. The interface allows users to easily manage their datasets, customize parameters, train the models, and evaluate their inference capabilities.   The project includes several features such as the ability to paste datasets directly into the UI, adjustable parameters for fine-tuning and inference, and a beginner-friendly interface with explanations for each parameter. It also provides instructions on how to get started, including prerequisites such as Linux or WSL, a modern NVIDIA GPU with at least 16 GB of VRAM, and the installation of required packages using a virtual environment.  To use the project, users are instructed to clone the repository and install the required packages. Then, they can launch the interface by running the app.py file and accessing it in a browser. They can input their training data, specify the PEFT adapter name, and start the training process. After training is complete, users can navigate to the Inference tab to perform inference using their trained models.  The project provides a YouTube walkthrough for additional guidance and is licensed under the MIT License.  Overall, the Simple LLM Finetuner project aims to simplify the process of fine-tuning language models using the LoRA method and provide a user-friendly interface for managing and evaluating models.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://lnkd.in/eptCVijb" class="external">Maverick is an AI-driven video marketing platform that helps ecommerce stores enhance customer interactions. By creating personalized videos for each customer, Maverick enables brands to build trust, improve brand perception, and increase customer satisfaction. The platform has been well-received by ecommerce brands, with users praising the personalized videos for their effectiveness in engaging with customers and increasing subscription enrollments.  Testimonials from merchants highlight the positive impact of Maverick on their businesses. Merchants have seen a significant increase in customer engagement, with over 100 email responses per week expressing gratitude for the personalized videos. This level of interaction helps strengthen customer relationships and loyalty.  Customers of these ecommerce brands have also expressed their appreciation for the personalized videos. They mention feeling valued and delighted by the direct communication from the brand, which sets the companies apart from others in the market. The personalized videos have made customers more loyal, with some even becoming lifetime members of the brands they previously patronized.  Overall, Maverick’s AI-generated video marketing approach has proven to be a game changer for ecommerce brands. It enables personalized interactions with customers at scale, leading to increased customer satisfaction, brand loyalty, and reduced refund requests. The platform has received positive feedback from both merchants and their customers, highlighting the impact and success of Maverick in the ecommerce industry.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://twitter.com/justLV/status/1637876167763202053" class="external">A Twitter user named Justin Alvey recently tweeted about advancements in artificial intelligence. He mentioned a tool called LLM chaining, which allows users to perform various tasks with emails. This tool was inspired by LangChainAI. Justin Alvey also noted that this functionality is now available in real-time, thanks to OpenAI’s gpt-3.5-turbo model. The tweet has gained significant attention, with hundreds of thousands of views, retweets, likes, quotes, and bookmarks.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li><a href="https://www.linkedin.com/posts/francesco-saverio-zuppichini-94659a150_ai-ml-ds-activity-7072868294000566272-kV83?utm_source=shareandutm_medium=member_android" class="external">The text is a LinkedIn post by Francesco Saverio Zuppichini, a Machine Learning Engineer, recommending resources to learn about Language Learning Models (LLMs).  The post includes a list of resources that Zuppichini recommended to a friend who wanted to quickly learn about LLMs. The recommended resources include academic papers, blogs, videos, and YouTube channels. Zuppichini also mentions the importance of training models with more data and for longer durations to achieve better results. He suggests looking at models like Vicuna and WizardLM, as well as different methods of prompting, such as chain of thoughts and tree of thoughts. Additionally, Zuppichini shares the LLM leaderboard from Hugging Face and encourages others to share any useful resources they may have. The post receives positive feedback from other LinkedIn users, who appreciate the resources and share their own suggestions.<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+<li></li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-6372" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#public-page-automatically-published" data-for="public-page-automatically-published">Public page automatically published</a></li><li class="depth-1"><a href="#introduction-to-large-language-models" data-for="introduction-to-large-language-models">Introduction to Large Language Models</a></li><li class="depth-0"><a href="#what-to-use-and-when" data-for="what-to-use-and-when">What to use and when</a></li><li class="depth-2"><a href="#key-resources-and-projects" data-for="key-resources-and-projects">Key Resources and Projects</a></li><li class="depth-1"><a href="#interfaces-and-scaling" data-for="interfaces-and-scaling">Interfaces and Scaling</a></li><li class="depth-2"><a href="#key-projects-and-discussions" data-for="key-projects-and-discussions">Key Projects and Discussions</a></li><li class="depth-1"><a href="#optimizations" data-for="optimizations">Optimizations</a></li><li class="depth-2"><a href="#key-techniques-and-tools" data-for="key-techniques-and-tools">Key Techniques and Tools</a></li><li class="depth-2"><a href="#projects-and-implementations" data-for="projects-and-implementations">Projects and Implementations</a></li><li class="depth-2"><a href="#interfaces-and-scaling-1" data-for="interfaces-and-scaling-1">Interfaces and Scaling</a></li><li class="depth-2"><a href="#optimizations-1" data-for="optimizations-1">Optimizations</a></li><li class="depth-2"><a href="#training--fine-tuning" data-for="training--fine-tuning">Training &amp; Fine-tuning</a></li><li class="depth-2"><a href="#evaluation" data-for="evaluation">Evaluation</a></li><li class="depth-2"><a href="#applications" data-for="applications">Applications</a></li><li class="depth-2"><a href="#infrastructure" data-for="infrastructure">Infrastructure</a></li><li class="depth-2"><a href="#multilingual-and-abstract-translation" data-for="multilingual-and-abstract-translation">Multilingual and Abstract Translation</a></li><li class="depth-2"><a href="#additional-training--fine-tuning-resources" data-for="additional-training--fine-tuning-resources">Additional Training &amp; Fine-tuning Resources</a></li><li class="depth-2"><a href="#evaluation-1" data-for="evaluation-1">Evaluation</a></li><li class="depth-2"><a href="#applications-1" data-for="applications-1">Applications</a></li><li class="depth-2"><a href="#applications-2" data-for="applications-2">Applications</a></li><li class="depth-2"><a href="#infrastructure-1" data-for="infrastructure-1">Infrastructure</a></li><li class="depth-2"><a href="#multilingual-and-abstract-translation-1" data-for="multilingual-and-abstract-translation-1">Multilingual and Abstract Translation</a></li><li class="depth-2"><a href="#general-purpose-and-miscellaneous" data-for="general-purpose-and-miscellaneous">General Purpose and Miscellaneous</a></li><li class="depth-2"><a href="#additional-tools-and-resources" data-for="additional-tools-and-resources">Additional Tools and Resources</a></li><li class="depth-0"><a href="#old-version-to-integrate" data-for="old-version-to-integrate">old version to integrate</a></li><li class="depth-2"><a href="#large-language-models-llms" data-for="large-language-models-llms">Large Language Models (LLMs)</a></li><li class="depth-1"><a href="#projects-and-implementations-1" data-for="projects-and-implementations-1">Projects and Implementations</a></li><li class="depth-2"><a href="#distributed-technology" data-for="distributed-technology">Distributed Technology</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

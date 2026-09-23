@@ -1,0 +1,18 @@
+
+RAID (Redundant Array of Independent Disks) is a data storage virtualisation technology that combines multiple physical drives into one or more logical units to improve performance, capacity, or fault tolerance. Different RAID levels trade off redundancy, write performance and usable capacity using techniques such as striping, mirroring and parity. It protects against individual drive failure but is complementary to, not a substitute for, backups.
+
+- ### Overview
+  - RAID was introduced to deliver enterprise-grade reliability and throughput from arrays of inexpensive commodity drives instead of single high-cost disks.
+  - Common levels include RAID 0 (striping, no redundancy), RAID 1 (mirroring), RAID 5 (single parity), RAID 6 (dual parity) and nested levels such as RAID 10.
+  - Arrays can be implemented in hardware controllers, firmware, or software volume managers, each with distinct performance and rebuild characteristics.
+- ### Mechanisms
+  - Striping distributes data blocks across drives to parallelise reads and writes for higher throughput.
+  - Mirroring duplicates data across drives so a copy survives a single-drive failure.
+  - Parity stores computed redundancy information allowing reconstruction of lost data after a drive failure.
+  - Rebuild operations reconstruct a replaced drive's contents from surviving members, during which the array is more vulnerable.
+- ### Applications
+  - Database and virtualisation servers requiring sustained I/O with resilience to disk failure.
+  - Network-attached storage and storage area networks in enterprise data centres.
+  - Workstations handling large media files where throughput and uptime matter.
+- ### Provenance
+

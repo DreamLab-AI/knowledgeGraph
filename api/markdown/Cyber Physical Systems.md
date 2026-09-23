@@ -1,0 +1,95 @@
+
+Cyber Physical Systems (CPS) are engineered systems in which computational elements and physical processes are tightly integrated and coordinated through networked sensing, actuation, and feedback control. They span safety-critical domains including autonomous vehicles, industrial automation, smart grids, medical devices, and aerospace, demanding real-time coordination between embedded computation, heterogeneous communication networks, and physical plant dynamics. CPS extend traditional embedded and control systems by incorporating networked intelligence, adaptive autonomy, and large-scale coordination across geographically distributed components. Their design requires co-engineering of hardware, software, control, and communication layers under stringent timing, reliability, and safety constraints.
+
+- ### Overview
+  - CPS emerged as a research agenda formalised by Helen Gill at the US National Science Foundation around 2006, building on decades of prior work in [[Embedded Systems]], [[Control Theory]], and [[Real-Time Computing]].
+  - The core idea is that computation and physical dynamics are inseparable: the software cannot be reasoned about without the physics, and the physics cannot be engineered without the software.
+  - Unlike traditional IT systems, CPS failures can directly harm people, infrastructure, or the environment — making correctness, timing guarantees, and safety certification non-negotiable.
+  - Scale ranges from a single microcontroller regulating a pacemaker to continent-spanning power grid management systems coordinating millions of nodes.
+  - The [[Internet of Things]] (IoT) is a related paradigm emphasising connectivity; CPS emphasises the tighter integration of control loops and physical dynamics, often with higher assurance requirements.
+  - Modern CPS increasingly incorporate [[Machine Learning]] for perception and adaptive control, creating new verification challenges since learned models lack formal guarantees.
+
+- ### Key Components
+  - #### Sensing Layer
+    - [[Sensor Network|Sensor networks]] transduce physical quantities (temperature, position, velocity, pressure, current) into digital signals.
+    - MEMS sensors, LiDAR, cameras, accelerometers, and encoders are common CPS transducers.
+    - Sensor fusion — combining multiple sensor modalities via [[Kalman Filter]] or deep networks — improves state estimation robustness.
+  - #### Computation Layer
+    - [[Real-Time Operating System|Real-Time Operating Systems]] (RTOS) such as FreeRTOS, QNX, and VxWorks provide deterministic scheduling guarantees.
+    - [[Embedded Systems]] run on microcontrollers (ARM Cortex-M, RISC-V) through to multi-core SoCs and GPUs for perception tasks.
+    - [[Edge Computing]] pushes computation closer to the physical process, reducing latency and dependence on cloud connectivity.
+  - #### Communication Layer
+    - Fieldbuses (CAN, EtherCAT, Profibus), wireless protocols (5G, WirelessHART, TSN), and [[Network Protocols]] interconnect CPS nodes.
+    - [[Time-Sensitive Networking]] (TSN) IEEE 802.1 standards provide deterministic Ethernet for industrial CPS.
+    - End-to-end latency budgets are partitioned across sensing, computation, and actuation to meet hard real-time deadlines.
+  - #### Control and Actuation Layer
+    - [[Feedback Control]] — particularly [[PID Controller|PID controllers]] and [[Model Predictive Control]] — closes the loop between perceived state and actuator commands.
+    - [[Actuator|Actuators]] include electric motors, hydraulics, pneumatics, and micro-electromechanical (MEMS) devices.
+    - Hierarchical control architectures decompose high-level objectives (path planning) into low-level servo loops.
+  - #### Safety and Verification
+    - [[Functional Safety]] standards (IEC 61508, ISO 26262) define systematic processes for achieving required Safety Integrity Levels.
+    - [[Formal Verification]] tools (model checkers, theorem provers) are used to guarantee temporal logic properties of control software.
+    - Redundancy, fail-safe states, and watchdog timers are standard reliability mechanisms.
+
+- ### Applications and Use Cases
+  - #### Autonomous Vehicles
+    - Self-driving cars and trucks integrate perception (camera, LiDAR, radar), planning, and drive-by-wire actuation in a tight CPS loop.
+    - Functional safety certification follows ISO 26262 (road vehicles) and, for higher automation, ISO/PAS 21448 (SOTIF).
+  - #### Industrial Automation and Industry 4.0
+    - CPS form the backbone of [[Industry 4.0]], enabling flexible manufacturing, collaborative robotics (cobots), and predictive maintenance.
+    - [[Industrial Internet of Things]] (IIoT) connects CPS nodes to enterprise data platforms, supporting digital manufacturing.
+    - [[SCADA]] and [[Distributed Control Systems]] (DCS) are legacy antecedents; modern CPS replaces them with IP-based, cloud-connected architectures.
+  - #### Smart Grid and Energy Infrastructure
+    - [[Smart Grid]] systems monitor and control electricity generation, transmission, and distribution in real time.
+    - Phasor measurement units (PMUs) sample grid state at 30–120 Hz, feeding wide-area monitoring and automatic protective relaying.
+    - Vehicle-to-grid (V2G) integration treats EV batteries as distributed CPS actuators for load balancing.
+  - #### Medical Devices and Healthcare
+    - Implantable cardiac defibrillators, infusion pumps, and closed-loop artificial pancreas systems are safety-critical CPS.
+    - The FDA's Total Product Lifecycle (TPLC) framework addresses software as a medical device (SaMD) within CPS.
+    - Networked medical devices introduce [[Cyber Security]] attack surfaces that must be managed alongside patient safety.
+  - #### Aerospace and Defence
+    - Fly-by-wire aircraft, UAV swarms, and satellite attitude control systems are mature CPS domains.
+    - DO-178C governs airborne software; DO-254 covers hardware; together they address the CPS stack.
+  - #### Smart Cities and Built Environment
+    - [[Smart City]] deployments integrate building management, traffic control, water treatment, and public safety into coordinated CPS.
+    - Digital twins of city infrastructure (using [[Digital Twin]] technology) enable simulation-driven operational planning.
+
+- ### Standards and Context
+  - **IEC 61508** — Functional safety of electrical/electronic/programmable electronic safety-related systems; the root standard for CPS safety assurance.
+  - **ISO 26262** — Functional safety for road vehicles; defines Automotive Safety Integrity Levels (ASIL A–D).
+  - **ISO/PAS 21448 (SOTIF)** — Safety of the Intended Functionality; addresses ML-induced hazards in autonomous CPS.
+  - **NIST CPS Framework** (NIST SP 1500-201) — Provides a conceptual model and vocabulary for CPS design and interoperability.
+  - **IEEE 802.1 TSN** — Time-Sensitive Networking suite providing deterministic Ethernet for industrial CPS.
+  - **IEC 62443** — Industrial communication networks and IT security; addresses CPS cybersecurity for industrial automation.
+  - **DO-178C / DO-254** — Avionics software and hardware standards for safety-critical airborne CPS.
+  - Key research communities: ACM/IEEE ICCPS (International Conference on Cyber-Physical Systems), IEEE Transactions on Industrial Informatics, NSF CPS programme.
+  - Regulatory bodies include the FDA (medical CPS), FAA (avionics), NHTSA (automotive), NERC CIP (energy grid CPS).
+
+- ### Design Challenges
+  - **Heterogeneity** — CPS compose components built with different models of computation (dataflow, state machines, continuous differential equations) that must interoperate.
+  - **Timing guarantees** — End-to-end latency and jitter constraints must be met across hardware, OS, network, and application layers simultaneously.
+  - **Scalability** — Coordinating thousands to millions of nodes (e.g. smart grid) requires hierarchical and distributed control architectures.
+  - **Security-safety tension** — Adding cybersecurity controls (encryption, authentication) introduces latency and complexity that can conflict with real-time safety requirements.
+  - **Verification of learned components** — [[Machine Learning]] components (neural networks for perception) lack formal guarantees; runtime monitoring and conformal prediction are active research areas.
+  - **Model-based co-design** — Tools such as Ptolemy II, Modelica, MATLAB/Simulink, and SCADE support multi-formalism co-simulation but integration remains labour-intensive.
+  - **Legacy interoperability** — Industrial CPS must coexist with decades-old [[Operational Technology]] using proprietary protocols (Modbus, DNP3, OPC-UA).
+
+- ### Current Landscape (2026)
+  - The EU Cyber Resilience Act (Regulation (EU) 2024/2847) entered into force on 10 December 2024 and is now in its transitional phase, bringing cyber-physical products with digital elements under mandatory security-by-design and lifecycle vulnerability-handling duties; vulnerability and incident reporting to ENISA and national CSIRTs starts on 11 September 2026, with full application on 11 December 2027.
+  - CRA harmonised standardisation is well under way: in April 2025 CEN, CENELEC and ETSI accepted the Commission's request M/606 to develop around 41 standards, and by March 2026 the horizontal EN 40000 series drafts (40000-1-1 Vocabulary, 40000-1-2 Cyber Resilience Principles, 40000-1-3 Vulnerability Handling) had cleared public enquiry, with first core deliverables due 30 August 2026.
+  - Gartner formalised the category in February 2025 with its first Magic Quadrant for Cyber-Physical Systems Protection Platforms, naming Claroty, Nozomi Networks, Armis, Dragos and Microsoft as Leaders (Claroty highest on execution and vision) and Darktrace as the sole Visionary.
+  - Consolidation accelerated: Mitsubishi Electric agreed in September 2025 to acquire Nozomi Networks for around $1bn, and on 18 June 2026 Accenture agreed to take a majority stake in Dragos (at a $3.25bn valuation) alongside runZero and NetRise, a roughly $4.175bn package that is the largest OT-security deal on record.
+  - The CPS security market is sizeable and fast-growing: MarketsandMarkets values it at $18.26bn in 2025, forecast to reach $57.56bn by 2030 at a 25.8% CAGR, with North America holding about 37.6% share and vendors such as Fortinet, Microsoft, Schneider Electric, Siemens, Cisco and Palo Alto Networks alongside the OT specialists.
+  - State-sponsored pre-positioning remains the defining threat: the China-linked Volt Typhoon campaign, flagged in the February 2024 CISA/NSA/FBI advisory AA24-038A, was found dwelling inside US energy, water, communications and transport networks for years using living-off-the-land techniques.
+  - Open challenges into 2026 include fragmented and voluntary regulation outside the EU (US water systems remain on voluntary measures after the 2023 EPA rule was withdrawn; only pipelines and rail face mandatory TSA cyber directives), integrating AI-driven detection into safety-critical OT, and securing the vast installed base of legacy, internet-exposed ICS (145,000+ exposed services counted by Censys in 2024).
+
+- ### References
+  - 1. European Commission (2026). Cyber Resilience Act — Implementation and timeline. https://digital-strategy.ec.europa.eu/en/policies/cyber-resilience-act
+  - 2. CyberResilienceAct.eu (2026). Current State of Play & Timeline (2026). https://www.cyberresilienceact.eu/state-of-play.html
+  - 3. Adherent (2026). EU Cyber Resilience Act: Standardisation Activities Update. https://www.adherent.com/blog/eu-cyber-resilience-act-standardisation-activities-update/
+  - 4. Analysis Atlas (2026). OT/ICS Security and Critical Infrastructure Market. https://analysis-atlas.com/research/ot-ics-security-critical-infrastructure-market/
+  - 5. MarketsandMarkets (2025). Cyber Physical System (CPS) Security Market Report 2025-2030. https://www.marketsandmarkets.com/Market-Reports/cyber-physical-system-cps-security-market-247212119.html
+  - 6. Microsoft Security (2025). Microsoft named a Leader in the 2025 Gartner Magic Quadrant for Cyber-Physical Systems Protection Platforms. https://www.microsoft.com/en-us/security/blog/2025/02/19/microsoft-is-named-a-leader-in-the-2025-gartner-magic-quadrant-for-cyber-physical-systems-protection-platforms/
+
+- ### Provenance
+

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Audio Processing</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Audio Processing"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Audio Processing"/><meta name="twitter:description" content="Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalisation, spatialisation, and feature extraction."/><meta property="og:description" content="Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalisation, spatialisation, and feature extraction."/><meta property="og:image:alt" content="Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalisation, spatialisation, and feature extraction."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Audio-Processing"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Audio-Processing"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalisation, spatialisation, and feature extraction."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Audio-Processing"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-859"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-859" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Audio Processing</a></div></nav><h1 class="article-title">Audio Processing</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.676Z">23 Sept 2026</time><span>34 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:audio-processing</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>ai</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.92</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Signal-Processing" class="internal">Signal Processing</a></li><li><a href="../pages/Digital-Signal-Processing" class="internal">Digital Signal Processing</a></li></ul></td></tr><tr><th scope="row">Part of</th><td><ul class="properties-values"><li><a href="../pages/Multimedia-Processing" class="internal">Multimedia Processing</a></li><li><a href="../pages/Signal-Processing" class="internal">Signal Processing</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Digital-Signal-Processing" class="internal">Digital Signal Processing</a></li><li><a href="../pages/Audio-Codec" class="internal">Audio Codec</a></li><li><a href="../pages/Noise-Cancellation" class="internal">Noise Cancellation</a></li><li><a href="../pages/Feature-Extraction" class="internal">Audio Feature Extraction</a></li><li><a href="../Audio-Feature-Extraction" class="internal">Audio Feature Extraction</a></li><li><a href="../Audio-Spatialisation" class="internal">Audio Spatialisation</a></li><li><a href="../Source-Separation" class="internal">Source Separation</a></li><li><a href="../Spectrogram" class="internal">Spectrogram</a></li><li><a href="../Waveform" class="internal">Waveform</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Analogue-To-Digital-Conversion" class="internal">Analogue-to-Digital Conversion</a></li><li><a href="../pages/Fast-Fourier-Transform" class="internal">Fast Fourier Transform</a></li><li><a href="../Spectrogram" class="internal">Spectrogram</a></li><li><a href="../pages/Psychoacoustics" class="internal">Psychoacoustics</a></li><li><a href="../Nyquist-Shannon-Sampling-Theorem" class="internal">Nyquist-Shannon Sampling Theorem</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Speech-Recognition" class="internal">Speech Recognition</a></li><li><a href="../pages/Spatial-Audio-System" class="internal">Spatial Audio System</a></li><li><a href="../pages/Immersive-Audio-System" class="internal">Immersive Audio System</a></li><li><a href="../pages/Text-to-Speech" class="internal">Text-to-Speech</a></li><li><a href="../pages/Music-Generation" class="internal">Music Generation</a></li><li><a href="../pages/Voice-Activity-Detection" class="internal">Voice Activity Detection</a></li><li><a href="../pages/Audio-Generation" class="internal">Audio Generation</a></li><li><a href="../pages/Music-Information-Retrieval" class="internal">Music Information Retrieval</a></li><li><a href="../pages/Noise-Cancellation" class="internal">Noise Cancellation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Audio-Spatialization" class="internal">Audio Spatialization</a></li><li><a href="../pages/Spatial-Audio" class="internal">Spatial Audio</a></li><li><a href="../pages/Extended-Reality" class="internal">Extended Reality</a></li><li><a href="../Audio-Spatialisation" class="internal">Audio Spatialisation</a></li><li><a href="../pages/Audio-Generation" class="internal">Audio Generation</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Image-Processing" class="internal">Image Processing</a></li><li><a href="../Analogue-Signal-Processing" class="internal">Analogue Signal Processing</a></li></ul></td></tr><tr><th scope="row">Depends on</th><td><ul class="properties-values"><li><a href="../pages/Digital-Signal-Processing" class="internal">Digital Signal Processing</a></li><li><a href="../pages/Fourier-Analysis" class="internal">Fourier Analysis</a></li><li><a href="../pages/Psychoacoustics" class="internal">Psychoacoustics</a></li><li><a href="../Nyquist-Shannon-Sampling-Theorem" class="internal">Nyquist-Shannon Sampling Theorem</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li></ul></td></tr><tr><th scope="row">Implemented in layer</th><td><ul class="properties-values"><li><a href="../AlgorithmLayer" class="internal">AlgorithmLayer</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../digital-signal-processing" class="internal">Digital Signal Processing</a></li><li><a href="../signal-processing" class="internal">Signal Processing</a></li><li><a href="../fourier-analysis" class="internal">Fourier Analysis</a></li><li><a href="../fast-fourier-transform" class="internal">Fast Fourier Transform</a></li><li><a href="../nyquist-shannon-sampling-theorem" class="internal">Nyquist-Shannon Sampling Theorem</a></li><li><a href="../audio-codec" class="internal">Audio Codec</a></li><li><a href="../noise-cancellation" class="internal">Noise Cancellation</a></li><li><a href="../audio-feature-extraction" class="internal">Audio Feature Extraction</a></li><li><a href="../analogue-to-digital-conversion" class="internal">Analogue-to-Digital Conversion</a></li><li><a href="../spectrogram" class="internal">Spectrogram</a></li><li><a href="../psychoacoustics" class="internal">Psychoacoustics</a></li><li><a href="../speech-recognition" class="internal">Speech Recognition</a></li><li><a href="../text-to-speech" class="internal">Text-to-Speech</a></li><li><a href="../music-generation" class="internal">Music Generation</a></li><li><a href="../voice-activity-detection" class="internal">Voice Activity Detection</a></li><li><a href="../spatial-audio-system" class="internal">Spatial Audio System</a></li><li><a href="../immersive-audio-system" class="internal">Immersive Audio System</a></li><li><a href="../audio-spatialisation" class="internal">Audio Spatialisation</a></li><li><a href="../spatial-audio" class="internal">Spatial Audio</a></li><li><a href="../extended-reality" class="internal">Extended Reality</a></li><li><a href="../music-information-retrieval" class="internal">Music Information Retrieval</a></li><li><a href="../multimedia-processing" class="internal">Multimedia Processing</a></li><li><a href="../natural-language-processing" class="internal">Natural Language Processing</a></li><li><a href="../human-computer-interaction" class="internal">Human-Computer Interaction</a></li><li><a href="../telecommunications" class="internal">Telecommunications</a></li><li><a href="../convolutional-neural-network" class="internal">Convolutional Neural Network</a></li><li><a href="../transformer-architecture" class="internal">Transformer Architecture</a></li><li><a href="../audio-parameters" class="internal">Audio Parameters</a></li><li><a href="../mpeg-h-audio" class="internal">MPEG-H Audio</a></li><li><a href="../opus-codec" class="internal">Opus Codec</a></li><li><a href="../image-processing" class="internal">Image Processing</a></li><li><a href="../analogue-signal-processing" class="internal">Analogue Signal Processing</a></li><li><a href="../audio-processing-system" class="internal">Audio Processing System</a></li><li><a href="../audio-generation" class="internal">Audio Generation</a></li><li><a href="../machine-learning" class="internal">Machine Learning</a></li><li><a href="../deep-learning" class="internal">Deep Learning</a></li><li><a href="../neural-network" class="internal">Neural Network</a></li><li><a href="../source-separation" class="internal">Source Separation</a></li><li><a href="../residual-vector-quantisation" class="internal">Residual Vector Quantisation</a></li><li><a href="../waveform" class="internal">Waveform</a></li><li><a href="../diffusion-model" class="internal">Diffusion Model</a></li><li><a href="../attention-mechanism" class="internal">Attention Mechanism</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:audio-processing</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Music-Information-Retrieval" class="internal">Music Information Retrieval</a></li><li><a href="../pages/Psychoacoustics" class="internal">Psychoacoustics</a></li><li><a href="../pages/Audio-Processing-System" class="internal">Audio Processing System</a></li><li><a href="../Waveform" class="internal">Waveform</a></li><li><a href="../pages/Audio-Generation" class="internal">Audio Generation</a></li><li><a href="../Machine-Learning" class="internal">Machine Learning</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../mpeg-h-audio" class="internal">MPEG-H Audio</a></li><li><a href="../opus-codec" class="internal">Opus Codec</a></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Natural-Language-Processing" class="internal">Natural Language Processing</a></li><li><a href="../pages/Human-Computer-Interaction" class="internal">Human Computer Interaction</a></li><li><a href="../pages/Telecommunications" class="internal">Telecommunications</a></li><li><a href="../pages/Extended-Reality" class="internal">Extended Reality</a></li><li><a href="../pages/Music-Information-Retrieval" class="internal">Music Information Retrieval</a></li><li><a href="../pages/Speech-Recognition" class="internal">Speech Recognition</a></li><li><a href="../pages/Audio-Generation" class="internal">Audio Generation</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Convolutional-Neural-Network" class="internal">Convolutional Neural Network</a></li><li><a href="../pages/Transformer-Architecture" class="internal">Transformer Architecture</a></li><li><a href="../pages/Audio-Parameters" class="internal">Audio Parameters</a></li><li><a href="../pages/Diffusion-Model" class="internal">Diffusion Model</a></li><li><a href="../pages/Attention-Mechanism" class="internal">Attention Mechanism</a></li><li><a href="../Residual-Vector-Quantisation" class="internal">Residual Vector Quantisation</a></li><li><a href="../pages/Neural-Network" class="internal">Neural Network</a></li><li><a href="../Deep-Learning" class="internal">Deep Learning</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Audio processing is the computational manipulation of digital audio signals to transform, analyse, enhance, or synthesise sound, encompassing operations such as filtering, compression, equalisation, spatialisation, and feature extraction. It operates on discrete-time representations of acoustic waveforms using algorithms drawn from digital signal processing theory, spanning both time-domain and frequency-domain approaches. Applications range from consumer media playback and telecommunications to professional studio production, speech recognition pipelines, neural audio codecs, and immersive spatial audio for extended reality environments. Machine learning has significantly expanded the discipline, enabling source separation, generative synthesis, and zero-shot audio enhancement that were previously intractable.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<h2 id="compositional-relationships-components">Compositional Relationships (Components)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#compositional-relationships-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:DigitalSignalProcessing))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:AudioCodec))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:NoiseCancellation))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:AudioFeatureExtraction))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:AudioSpatialization))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:SourceSeparation))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:hasPart ai:Spectrogram))
+</code></pre>
+</li>
+<li>
+<h2 id="dependency-relationships">Dependency Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#dependency-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:requires ai:AnalogueToDigitalConversion))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:requires ai:FastFourierTransform))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:dependsOn ai:DigitalSignalProcessing))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:dependsOn ai:FourierAnalysis))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:dependsOn ai:Psychoacoustics))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:dependsOn ai:NyquistShannonSamplingTheorem))
+</code></pre>
+</li>
+<li>
+<h2 id="capability-relationships">Capability Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#capability-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:enables ai:SpeechRecognition))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:enables ai:TextToSpeech))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:enables ai:MusicGeneration))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:enables ai:SpatialAudioSystem))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:enables ai:VoiceActivityDetection))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:enables ai:AudioGeneration))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:supports ai:NaturalLanguageProcessing))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:supports ai:Telecommunications))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:supports ai:ExtendedReality))
+</code></pre>
+</li>
+<li>
+<h2 id="implementation-relationships">Implementation Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#implementation-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:uses ai:ConvolutionalNeuralNetwork))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:uses ai:TransformerArchitecture))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:uses ai:DiffusionModel))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:uses ai:ResidualVectorQuantisation))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:standardizedBy ai:OpusCodec))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:standardizedBy ai:MPEGHAudio))
+</code></pre>
+</li>
+<li>
+<h2 id="reduction-relationships">Reduction Relationships<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#reduction-relationships" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:reducesTo ai:WaveformAnalysis))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:reducesTo ai:SpectralAnalysis))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:reducesTo ai:FeatureExtraction))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:partOf ai:MultimediaProcessing))
+SubClassOf(ai:AudioProcessing
+  ObjectSomeValuesFrom(ai:partOf ai:SignalProcessing))
+</code></pre>
+</li>
+<li>
+<h2 id="about">About<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#about" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Audio processing emerged as a formal discipline in the 1960s alongside digital computing, drawing on Claude Shannon’s information theory (1948), the Nyquist-Shannon sampling theorem formalised by Nyquist (1928) and Shannon (1949), and the Cooley-Tukey <a href="../pages/Fast-Fourier-Transform" class="internal alias" data-slug="pages/Fast-Fourier-Transform">Fast Fourier Transform</a> algorithm (1965) that made discrete-frequency-domain analysis computationally tractable. Early implementations ran on specialised 8-bit digital signal processing chips in the 1970s (Texas Instruments TMS320 family, marketed from 1982); by the 1990s dedicated DSP co-processors (SHARC, Motorola 56000, Texas Instruments C6000 series) had enabled real-time synthesis, multi-band dynamics processing, and surround-sound decoding that previously required entire studio infrastructures. Consumer digital audio milestones included the Sony PCM-1600 digital audio processor (1979), the compact disc (Philips/Sony, 1982, 44.1 kHz 16-bit PCM), digital audio tape (DAT, 1987), the MP3 codec (Fraunhofer IIS/Thomson, 1994), and the Digidesign Pro Tools digital audio workstation (1991) which established the software DAW paradigm still dominant today. Today the compute workload spans CPUs, GPUs, FPGAs, and dedicated neural processing units (NPUs) in consumer devices, enabling real-time pipelines that were unthinkable a decade ago — including on-device <a href="../pages/Noise-Cancellation" class="internal alias" data-slug="pages/Noise-Cancellation">Noise Cancellation</a> in earbuds consuming under 10mW, 48 kHz spatial audio rendering in mobile XR headsets with sub-5ms latency, and real-time <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a> in hearing aids achieving word error rates below 10% in quiet conditions.</li>
+<li>A digital audio processing pipeline begins with <a href="../Analogue-to-Digital-Conversion" class="internal alias" data-slug="Analogue-to-Digital-Conversion">Analogue-to-Digital Conversion</a>, transducing continuous acoustic pressure waves into discrete pulse-code-modulated (PCM) sample sequences at a chosen sampling rate (44.1 kHz, 48 kHz, 96 kHz) and bit depth (16-bit CD quality, 24-bit studio, 32-bit float for processing). Algorithms operate in either the time domain — convolution, dynamic range compression (compression, limiting, gating), delay effects, reverberation via convolution with impulse responses — or the frequency domain via <a href="../pages/Fast-Fourier-Transform" class="internal alias" data-slug="pages/Fast-Fourier-Transform">Fast Fourier Transform</a>: equalisation, pitch shifting, spectral noise suppression, and harmonic analysis via <a href="../Spectrogram" class="internal" data-slug="Spectrogram">Spectrogram</a> representations (Short-Time Fourier Transform, STFT; Mel-frequency filterbanks; constant-Q transforms). The output of these pipelines feeds downstream applications directly or provides features for <a href="../Machine-Learning" class="internal alias" data-slug="Machine-Learning">Machine Learning</a> classifiers and generative models.</li>
+<li>The integration of <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> into audio processing — beginning with raw-waveform convolutional networks (WaveNet, 2016), continuing through encoder-decoder models (Conv-TasNet, 2019; Demucs, 2020) for <a href="../Source-Separation" class="internal alias" data-slug="Source-Separation">Source Separation</a>, and extending to <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a>-based models for universal enhancement — has fundamentally reshaped the discipline’s capability profile. Tasks that required carefully hand-crafted filter banks and heuristic post-processing — such as separating a single speaker from a noisy cocktail party, dereverberation, bandwidth extension, and codec artefact removal — are now handled by data-driven neural networks that generalise across conditions previously intractable with classical DSP. The introduction of <a href="../Residual-Vector-Quantisation" class="internal alias" data-slug="Residual-Vector-Quantisation">Residual Vector Quantisation</a> neural <a href="../pages/Audio-Codec" class="internal alias" data-slug="pages/Audio-Codec">Audio Codec</a> systems (SoundStream 2021, EnCodec 2022, DAC 2023) further blurs the boundary between audio processing and <a href="../pages/Audio-Generation" class="internal alias" data-slug="pages/Audio-Generation">Audio Generation</a>: learned codecs both compress audio for transmission and provide the discrete token vocabulary over which generative models operate.</li>
+</ul>
+</li>
+<li>
+<h2 id="components--architecture">Components / Architecture<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#components--architecture" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../Analogue-to-Digital-Conversion" class="internal alias" data-slug="Analogue-to-Digital-Conversion">Analogue-to-Digital Conversion</a></strong>: Transduces continuous acoustic pressure waves into discrete PCM sample sequences at a sampling rate (e.g. 44.1 kHz for CD quality, 48 kHz for broadcast, 96 kHz for high-resolution audio) and bit depth (16-bit: 96 dB dynamic range; 24-bit: 144 dB; 32-bit float: processing headroom). Quantisation noise is shaped via dithering. Oversampling and sigma-delta modulation dominate modern ADC architectures.</li>
+<li><strong><a href="../pages/Fast-Fourier-Transform" class="internal alias" data-slug="pages/Fast-Fourier-Transform">Fast Fourier Transform</a> and Spectral Analysis</strong>: The Cooley-Tukey FFT computes the Discrete Fourier Transform (DFT) of N samples in O(N log N) operations. The Short-Time Fourier Transform (STFT) applies overlapping windowed FFTs to produce time-frequency <a href="../Spectrogram" class="internal" data-slug="Spectrogram">Spectrogram</a> matrices. Mel-frequency filterbanks map linear frequency to the perceptual Mel scale; 80-128 Mel bins are standard in modern <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a> front-ends (Whisper uses 80-bin log-Mel spectrograms). Constant-Q Transforms provide logarithmic frequency resolution suited to musical pitch analysis.</li>
+<li><strong>Filtering</strong>: Finite impulse response (FIR) filters provide linear phase at the cost of higher order; infinite impulse response (IIR) filters (Butterworth, Chebyshev, elliptic) achieve steeper roll-off with lower order but introduce non-linear phase. Parametric equalisation, crossover networks for multi-driver speaker design, and anti-aliasing filters prior to ADC are canonical applications. Linear convolution in the frequency domain via FFT (overlap-add, overlap-save methods) enables zero-latency convolution reverb using measured acoustic impulse responses.</li>
+<li><strong>Dynamic Range Processing</strong>: Compression detectors compute the RMS or peak signal level and apply gain reduction above a threshold with a specified ratio (e.g. 4:1 for vocal compression). Limiters (∞:1 ratio) prevent clipping. Expanders and noise gates attenuate signals below a threshold. Multi-band dynamic processing applies frequency-selective compression. Broadcast loudness normalisation targets Integrated Loudness values per ITU-R BS.1770-4 / EBU R128 (typically -23 LUFS for broadcast, -14 LUFS for streaming).</li>
+<li><strong><a href="../pages/Noise-Cancellation" class="internal alias" data-slug="pages/Noise-Cancellation">Noise Cancellation</a></strong>
+<ul>
+<li>Feed-forward ANC uses a reference microphone positioned near the noise source to predict and cancel noise arriving at the error microphone near the ear, with the digital filter adapting in real-time via LMS.</li>
+<li>Feed-back ANC uses only the error microphone signal, more robust to physical variation but limited to lower frequencies (&lt; 1 kHz) without reference microphone geometry advantages.</li>
+<li>Consumer implementation: Apple AirPods Pro 2 achieves 25–30 dB ANC attenuation in the 50–1000 Hz range using adaptive hybrid feed-forward/feed-back topology with H2 custom chip running 48,000 measurements/second. Sony WH-1000XM5 uses 8 microphones and dual processors (QN1 + HD Noise Cancelling Processor QN1) targeting 10–1000 Hz noise.</li>
+<li>Neural noise suppression: NVIDIA RTX Voice (2020), NVIDIA Broadcast, Krisp, and DeepFilterNet use causal CNNs or recurrent networks trained on mixed speech+noise datasets to compute a time-frequency mask M[t,f] applied to the STFT of the input. DeepFilterNet2 achieves DNSMOS-P.835 score of 4.03/5.0 on VoiceBank-DEMAND at 48 kHz, real-time on a single CPU core.</li>
+<li>Directional beamforming: MVDR (Minimum Variance Distortionless Response) and superdirective beamformers use microphone array geometry to null spatially separated noise sources, providing 5–15 dB directional noise rejection without adaptive filter convergence delays.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Audio-Codec" class="internal alias" data-slug="pages/Audio-Codec">Audio Codec</a></strong>: Perceptual coding standards exploit <a href="../pages/Psychoacoustics" class="internal" data-slug="pages/Psychoacoustics">Psychoacoustics</a> masking models (simultaneous and temporal masking) to allocate bits away from inaudible signal components. MP3 (ISO/IEC 11172-3, 1993) achieves 128 kbps stereo at transparent quality; AAC (ISO/IEC 13818-7) improves on MP3 at equivalent bitrates; <a href="../Opus-Codec" class="internal alias" data-slug="Opus-Codec">Opus Codec</a> (IETF RFC 6716, 2012; RFC 8251, 2017) supports 6–510 kbps with hybrid SILK/CELT coding, is royalty-free, and is the standard for WebRTC (Discord, Zoom, Google Meet). Neural codecs — SoundStream (Zeghidour et al., 2021), EnCodec (Défossez et al., 2022), Descript Audio Codec (Kumar et al., 2023), FlexiCodec (2025), U-Codec (2025) — use <a href="../Residual-Vector-Quantisation" class="internal alias" data-slug="Residual-Vector-Quantisation">Residual Vector Quantisation</a> to compress 44.1 kHz audio to 8–12 kbps with perceptually transparent quality across speech, music, and environmental sounds.</li>
+<li><strong><a href="../Audio-Feature-Extraction" class="internal alias" data-slug="Audio-Feature-Extraction">Audio Feature Extraction</a></strong>: Mel-Frequency Cepstral Coefficients (MFCCs: 13–40 coefficients + delta and delta-delta) remain the standard ASR front-end feature; log-Mel filterbank outputs are preferred for end-to-end deep learning systems (Whisper, wav2vec 2.0). Chroma features encode pitch class content independently of octave for chord recognition. Spectral centroid, rolloff, and zero-crossing rate describe timbral texture. Beat tracking and onset detection locate rhythmic events. These features feed <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a> acoustic models, <a href="../pages/Music-Information-Retrieval" class="internal alias" data-slug="pages/Music-Information-Retrieval">Music Information Retrieval</a> classifiers, <a href="../pages/Voice-Activity-Detection" class="internal alias" data-slug="pages/Voice-Activity-Detection">Voice Activity Detection</a> systems, and general audio event detection pipelines.</li>
+<li><strong><a href="../Audio-Spatialisation" class="internal alias" data-slug="Audio-Spatialisation">Audio Spatialisation</a></strong>
+<ul>
+<li>Head-Related Transfer Functions (HRTFs) encode frequency-dependent amplitude and phase cues from the listener’s pinnae, head, and torso. Binaural rendering convolves a mono signal with measured or generalised HRTFs to produce the perception of a spatially located source over headphones.</li>
+<li>HRTF databases: ARI (Acoustics Research Institute, Vienna: 201 subjects, 1550 positions, SOFA format); CIPIC (UC Davis, 45 subjects, 1250 positions); SADIE-II (University of York, 20 subjects, high-resolution); 3D3A (Princeton, 50 subjects). Personalisation error with generic HRTFs causes front-back reversals and elevation errors; individualised HRTFs from ear photography are estimated to reduce these by 40–60%.</li>
+<li>Room acoustics modelling: image-source method (ISM) computes early reflections by mirroring the sound source across room boundaries, exact for shoebox rooms. Feedback delay networks (FDN) model late reverberation as a tightly coupled delay network with random phase response. Convolution with measured impulse responses provides physically exact room acoustics at the cost of single-position validity.</li>
+<li>Ambisonics: First-order B-format (W, X, Y, Z — 4 channels) captures sound field to zeroth and first order. Higher-order Ambisonics (HOA) of order N uses (N+1)² channels for spatial resolution improving with order. HOA-5 (36 channels) achieves perceptually acceptable spatial resolution for static binaural decoding. MPEG-H Audio supports HOA transport up to HOA-6.</li>
+<li><a href="../pages/Spatial-Audio-System" class="internal alias" data-slug="pages/Spatial-Audio-System">Spatial Audio System</a> and <a href="../pages/Immersive-Audio-System" class="internal alias" data-slug="pages/Immersive-Audio-System">Immersive Audio System</a> implementations in <a href="../pages/Extended-Reality" class="internal alias" data-slug="pages/Extended-Reality">Extended Reality</a> require sub-5ms latency HRTF convolution synchronised with head tracking, typically implemented as frequency-domain fast convolution on GPU or DSP hardware.</li>
+</ul>
+</li>
+<li><strong><a href="../Source-Separation" class="internal alias" data-slug="Source-Separation">Source Separation</a></strong>
+<ul>
+<li>Blind source separation decomposes a mixed multi-channel or mono signal into constituent source streams without knowledge of the mixing process.</li>
+<li>Classical approaches: Non-Negative Matrix Factorisation (NMF) factorises the magnitude spectrogram V ≈ WH into basis spectra W (templates) and time-varying activations H, separating sources by activating different templates at different times. Independent Component Analysis (ICA) applies to over-determined mixtures (at least as many microphones as sources) using statistical independence as the separation criterion. Both approaches are limited to stationary or quasi-stationary sources.</li>
+<li>Neural approaches: Conv-TasNet (2019, SI-SDR 15.3 dB on WSJ0-2mix) uses a learned filterbank encoder, TCN separator, and decoder. SepFormer (2021, arXiv:2010.13154) uses a dual-path transformer achieving 22.3 dB SI-SDR. Hybrid Transformer Demucs (HTDemucs, ICASSP 2023) operates in both time domain (UNet convolutions) and time-frequency domain (cross-attention transformer), achieving 9.20 dB SDR on MUSDB18-HQ.</li>
+<li>Deployed systems: Descript’s Overdub and Studio Sound (HTDemucs-based stem extraction); Lalal.ai (SOTA music separation as of 2025); iZotope RX 11 (Music Rebalance, Dialogue Isolation — industry standard for post-production audio repair); Moises.ai (mobile stem separation for musicians).</li>
+<li>Dialogue/speech separation in broadcast: INA (Institut National de l’Audiovisuel) speech segmentation tools; BBC R&amp;D’s voice separation for accessibility (audio description enhancement); pyannote.audio (open-source speaker diarisation + separation pipeline, widely deployed in academic and commercial ASR systems).</li>
+</ul>
+</li>
+<li><strong>Neural Audio Enhancement and Restoration</strong>
+<ul>
+<li>Generative audio enhancement models recover speech intelligibility and naturalness from heavily corrupted inputs (SNR &lt; 0 dB noise conditions, reverberant environments, codec compression artefacts).</li>
+<li>Discriminative enhancement: DeepFilterNet2 (2023) uses a dual-path CNN with Erb-scaled filterbank input, achieving DNSMOS 4.03 at 48 kHz real-time on CPU. MP-SENet (Multi-scale Parallel SE-Net, 2023) uses multi-scale feature fusion achieving PESQ 3.17 on VoiceBank-DEMAND.</li>
+<li>Generative enhancement: CDiffuSE (2022) and SGMSE+ (2022) formulate SE as reverse stochastic differential equations; PESQ 3.0+, ESTOI >0.85 on VoiceBank-DEMAND. Handle unseen noise types better than discriminative models.</li>
+<li>Bandwidth extension: LPCNet-BWE extends 8 kHz telephony-quality speech to 16/32 kHz by predicting the high-frequency spectral envelope using the low-frequency LPC residual as input. Nu-Wave 2 (2022) uses a diffusion model for arbitrary bandwidth extension to 48 kHz from any input sampling rate.</li>
+<li>Codec artefact removal: iZotope RX 11 De-click and De-crackle modules; Demucs post-processing for MP3 streaming quality restoration. Neural artefact removal models trained on paired clean/encoded audio achieve transparent quality improvement at MP3 128 kbps → apparent 320 kbps.</li>
+<li>Resampling and dereverberation: Blind room impulse response estimation networks (BLind And Room-Impulse-Response-free dereverberation, BLSTM+CRN) estimate the room impulse response from a reverberant signal without reference microphone, enabling dereverberation in single-microphone conference and podcast audio.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="neural-architecture-integration">Neural Architecture Integration<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#neural-architecture-integration" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Classical audio processing pipelines have been progressively augmented and in some cases replaced by <a href="../Deep-Learning" class="internal alias" data-slug="Deep-Learning">Deep Learning</a> architectures. The integration follows three patterns: (1) neural front-ends replacing engineered feature extractors with learned representations (wav2vec 2.0 replaces MFCC computation with a convolutional feature encoder + transformer contextualiser trained on 60,000 hours of unlabelled speech); (2) neural processors replicating classical operations with learned parameters (neural EQ, neural reverb, neural dynamics processors as VST3 plugins); and (3) fully neural pipelines where input is raw audio and output is a processed version produced end-to-end (Demucs for source separation, DeepFilterNet for noise suppression, HiFi-GAN for vocoding).</li>
+<li><strong><a href="../pages/Convolutional-Neural-Network" class="internal alias" data-slug="pages/Convolutional-Neural-Network">Convolutional Neural Network</a> architectures</strong> for audio adopt two paradigms: (a) 1D convolutions on <a href="../Waveform" class="internal" data-slug="Waveform">Waveform</a> samples at the audio sampling rate, capturing local time-domain structure (WaveNet, Conv-TasNet, HiFi-GAN); or (b) 2D convolutions on <a href="../Spectrogram" class="internal" data-slug="Spectrogram">Spectrogram</a> images treating frequency and time as spatial dimensions (audio classification, music tagging, sound event detection). The 2D approach benefits from pretrained image classification backbones (VGG, ResNet, EfficientNet) fine-tuned on spectrogram data; the 1D approach preserves phase information lost in magnitude spectrogram representations.</li>
+<li><strong><a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> models</strong> use one of three audio representations: (a) mel-spectrogram patches (Audio Spectrogram Transformer, AST, Gong et al. 2021; PaSST); (b) raw waveform with 1D CNN front-end tokenisation (wav2vec 2.0, HuBERT, WavLM); or (c) neural codec discrete tokens (SoundStream, EnCodec tokens) for generative models. Self-supervised audio representation learning (wav2vec 2.0, HuBERT, WavLM) pre-trains transformer encoders by predicting masked representations, achieving strong downstream performance on <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a>, speaker verification, emotion recognition, and audio classification with minimal labelled fine-tuning data.</li>
+<li><strong>Source Separation Neural Architectures</strong>: Conv-TasNet (Luo &amp; Mesgarani, 2019) uses a learned analysis filterbank (1D convolutional encoder), TCN separator with dilated depthwise-separable convolutions, and a decoder synthesising separated waveforms. SI-SDR improvement of 15.3 dB on WSJ0-2mix versus classical IRM masking. Hybrid Transformer Demucs (HTDemucs, 2022) combines 1D waveform convolutions with cross-<a href="../pages/Attention-Mechanism" class="internal alias" data-slug="pages/Attention-Mechanism">Attention Mechanism</a> transformer in the time-frequency domain, achieving SDR of 9.20 dB on MUSDB18-HQ across all four music stems (vocals, drums, bass, other) — the current MUSDB18 state-of-the-art as of mid-2026.</li>
+<li><strong>Neural Enhancement</strong>: Diffusion-model-based speech enhancement (CDiffuSE, SGMSE+, 2022-2023) formulates enhancement as reverse diffusion from a noisy observation, achieving PESQ scores above 3.0 on VoiceBank-DEMAND at 16 kHz. The generative approach handles novel noise types not seen in training. MetricGAN+ (Fu et al., 2022) uses a metric discriminator trained to predict PESQ/STOI scores, enabling direct optimisation toward human-correlated perceptual quality metrics.</li>
+<li><strong>Self-Supervised Pre-training at Scale</strong>: WavLM-Large (960h LibriSpeech pre-training + additional 60k hours) achieves state-of-the-art across SUPERB benchmark tasks (ASR WER 1.8%, speaker ID ACC 98.8%, emotion recognition 67.6%, sound event detection mAP 0.879) demonstrating the strong generalisation of large-scale self-supervised audio representations across diverse downstream audio processing tasks.</li>
+</ul>
+</li>
+<li>
+<h2 id="use-cases--major-families">Use Cases / Major Families<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#use-cases--major-families" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong><a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a> (ASR)</strong>: Log-Mel <a href="../Spectrogram" class="internal" data-slug="Spectrogram">Spectrogram</a> front-ends with 25ms windows and 10ms hop sizes feed encoder-decoder models. Whisper Large-v3 (OpenAI, 2023), trained on 5M+ hours of multilingual audio, achieves 2.7% WER on clean LibriSpeech and 5–6% on real-world mixed-condition audio, outperforming Microsoft Azure and Google STT on meeting benchmarks. Whisper was adopted as the MLPerf ASR benchmark model in 2025 (MLCommons MLPerf Inference v5.1), reducing WER by 72% versus the prior RNN-T benchmark. Codec-ASR (2024) extends ASR to discrete neural codec token representations, enabling language-model-based speech recognition without explicit acoustic models.</li>
+<li><strong><a href="../pages/Text-to-Speech" class="internal" data-slug="pages/Text-to-Speech">Text-to-Speech</a></strong>: Neural vocoders — HiFi-GAN (2020), UnivNet (2021), BigVGAN (2022) — synthesise 44.1 kHz waveforms from predicted mel-spectrograms in real-time on GPU. The Opus codec is used in streaming TTS pipelines at 32–64 kbps to maintain naturalness over bandwidth-constrained connections. ElevenLabs’ Flash v2.5 achieves sub-75ms end-to-end latency, enabling real-time conversational synthesis. Neural <a href="../pages/Audio-Codec" class="internal alias" data-slug="pages/Audio-Codec">Audio Codec</a> tokens are the generation target for codec language model TTS systems (VALL-E, Voicebox, F5-TTS).</li>
+<li><strong><a href="../pages/Telecommunications" class="internal" data-slug="pages/Telecommunications">Telecommunications</a> and Conferencing</strong>: Echo cancellation eliminates acoustic coupling between loudspeaker and microphone in full-duplex audio systems. Packet-loss concealment reconstructs missing audio frames (typically 20ms) using spectral repetition or parametric reconstruction. Jitter buffering manages variable network delay. The <a href="../Opus-Codec" class="internal alias" data-slug="Opus-Codec">Opus Codec</a> is the codec of choice for WebRTC (RFC 8825), deployed in Zoom, Google Meet, Discord, and Microsoft Teams, supporting 6–510 kbps adaptively. Beamforming microphone arrays (circular, linear, end-fire) provide spatial filtering for far-field voice capture in smart speakers and conferencing devices.</li>
+<li><strong>Professional Audio Production</strong>: Digital Audio Workstations (DAWs — Pro Tools, Logic Pro, Ableton Live) host chains of audio processing plugins (VST3, AU, AAX) implementing parametric EQ, multi-band compression, de-essing, convolution reverb, spectral editing, and harmonic saturation. Plugin formats implement real-time processing in the DAW host’s audio callback thread at buffer sizes of 64–512 samples (1.3–10.7ms at 48 kHz). The AES67 standard enables audio-over-IP transport in professional broadcast environments. ITU-R BS.1770-4 integrated loudness meters are mandatory in broadcast mastering workflows under EBU R128.</li>
+<li><strong><a href="../pages/Spatial-Audio-System" class="internal alias" data-slug="pages/Spatial-Audio-System">Spatial Audio System</a> and <a href="../pages/Extended-Reality" class="internal alias" data-slug="pages/Extended-Reality">Extended Reality</a></strong>: Real-time binaural rendering at 48 kHz in VR/AR headsets (Meta Quest 3, Apple Vision Pro) localises virtual sound sources in 3D relative to the listener’s tracked head orientation, using head-tracking data to continuously update the rendered HRTF convolution. MPEG-H Audio (ISO/IEC 23008-3) provides the standards framework for object-based and scene-based immersive audio in broadcast (NextGen TV in the US, UHD broadcast in Europe). Dolby Atmos and Sony 360 Reality Audio implement proprietary renderer toolchains for cinema and consumer formats.</li>
+<li><strong><a href="../pages/Music-Information-Retrieval" class="internal alias" data-slug="pages/Music-Information-Retrieval">Music Information Retrieval</a></strong>: Beat tracking, chord recognition, key estimation, onset detection, cover song identification, and automatic music transcription use <a href="../Audio-Feature-Extraction" class="internal alias" data-slug="Audio-Feature-Extraction">Audio Feature Extraction</a> pipelines feeding <a href="../pages/Convolutional-Neural-Network" class="internal alias" data-slug="pages/Convolutional-Neural-Network">Convolutional Neural Network</a> or <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> classifiers. Spotify’s recommendation engine and Apple Music’s Automatic Track Analysis use MIR features extracted from audio previews. The MIREX (Music Information Retrieval Evaluation eXchange) benchmark maintains annual evaluations of core MIR tasks.</li>
+<li><strong>Healthcare and Biometrics</strong>: Audio biomarker analysis detects respiratory conditions (COVID-19 cough classifiers achieved AUC 0.80+ in 2021-2022 studies), Parkinson’s disease tremor in speech (Dysarthria detection, F1 ~0.85), and vocal cord pathologies. Longitudinal monitoring of breathing patterns from non-contact ultrasonic microphones is used in NICU neonatal care. Automatic hearing test audiometry using calibrated audio stimuli and detection of auditory brainstem response thresholds are digital health applications.</li>
+<li><strong>Automotive</strong>: Active Noise Control (ANC) in vehicle cabins targets powertrain and road noise in the 50–400 Hz band, reducing perceived cabin noise by 10–15 dB. Beamforming microphone arrays integrated into headliner panels provide far-field wake word detection and voice command capture. BMW’s “Shy Tech” audio personalisation system uses per-zone DSP to create individual sound environments for driver and passengers. BMW HiFi, Harman Kardon, Bose, and Meridian Audio provide premium in-car audio processing as OEM-integrated systems.</li>
+</ul>
+</li>
+<li>
+<h2 id="academic-context">Academic Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#academic-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>Audio processing rests on mathematical foundations established by Claude Shannon (1948, A Mathematical Theory of Communication), Harry Nyquist (1928, Certain Topics in Telegraph Transmission Theory), and the 1965 Cooley-Tukey Fast Fourier Transform paper. The textbook foundations are Oppenheim and Schafer, Discrete-Time Signal Processing (3rd ed., 2010), Gold and Morgan, Speech and Audio Signal Processing (2011), and Bregman’s Auditory Scene Analysis (1990) for the perceptual underpinnings. The psychoacoustic model underpinning perceptual coding was developed by Johnston (1988) and Zwicker &amp; Fastl (Psychoacoustics: Facts and Models, 3rd ed., 2007).</li>
+<li>Deep learning for audio was catalysed by Hinton et al.’s context-dependent DNN-HMM ASR breakthrough (IEEE Signal Processing Magazine, 2012) and the application of convolutional networks to spectrogram inputs for music classification (Lee et al., ICML 2009). Key subsequent papers include WaveNet (van den Oord et al., 2016), Conv-TasNet (Luo &amp; Mesgarani, 2019), Demucs (Défossez et al., 2019, 2021), SoundStream (Zeghidour et al., 2021), Whisper (Radford et al., 2022), EnCodec (Défossez et al., 2022), and Codec-SUPERB (the neural audio codec benchmark, SLT 2024).</li>
+<li>Primary research venues are ICASSP (IEEE International Conference on Acoustics, Speech, and Signal Processing — the field’s largest conference, ~8,000 papers annually), Interspeech, ISMIR (International Society for Music Information Retrieval), DCASE (Detection and Classification of Acoustic Scenes and Events), IEEE/ACM Transactions on Audio, Speech, and Language Processing (TASLP), and the Journal of the Acoustical Society of America (JASA). The AES (Audio Engineering Society) publishes the Journal of the Audio Engineering Society and runs annual conventions.</li>
+<li>Foundational software libraries that shaped the field: libsndfile (audio file I/O, Erik de Castro Lopo); librosa (Python audio analysis, McFee et al. 2015, SCIPY 2015) — the standard <a href="../Audio-Feature-Extraction" class="internal alias" data-slug="Audio-Feature-Extraction">Audio Feature Extraction</a> library for Python ML research; SciPy signal module; PyTorch torchaudio; TensorFlow Audio; Kaldi (ASR toolkit, Povey et al. 2011); ESPnet (end-to-end speech processing toolkit, Watanabe et al. 2018); Speechbrain (PyTorch speech toolkit, Ravanelli et al. 2021); Hugging Face transformers audio models (wav2vec 2.0, Whisper, HuBERT, WavLM, AudioSpectrogram Transformer). These toolkits collectively lower the barrier to audio ML research and ensure reproducibility through standardised preprocessing and evaluation pipelines.</li>
+</ul>
+</li>
+<li>
+<h2 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>As of mid-2026, audio processing sits at the intersection of mature classical DSP infrastructure — which has not been displaced — and a rapidly evolving neural processing layer that handles the tasks classical DSP handled poorly. Neural <a href="../pages/Audio-Codec" class="internal alias" data-slug="pages/Audio-Codec">Audio Codec</a> systems have achieved perceptual transparency at 8–12 kbps for speech, music, and environmental sounds, making the classical MP3/AAC paradigm obsolete for new-build systems at equivalent bitrates. The Low-Resource Audio Codec (LRAC) challenge (2025) drives competition on codec quality at extreme compression for IoT and satellite communication use cases. Real-time neural noise suppression (DeepFilterNet, NVIDIA RTX Voice) is standard in all major videoconferencing platforms as of 2025. Whisper’s open-source release catalysed widespread deployment of production-quality ASR in applications previously restricted to commercial cloud APIs.</li>
+<li>The neural audio codec — specifically the <a href="../Residual-Vector-Quantisation" class="internal alias" data-slug="Residual-Vector-Quantisation">Residual Vector Quantisation</a> variant (EnCodec, DAC, U-Codec) — has become the foundational representation layer for <a href="../pages/Audio-Generation" class="internal alias" data-slug="pages/Audio-Generation">Audio Generation</a>, bridging classical audio processing and generative AI. Speech language models (SpeechGPT, AudioPaLM, Gemini) demonstrate that joint audio-text processing in a single <a href="../pages/Transformer-Architecture" class="internal alias" data-slug="pages/Transformer-Architecture">Transformer Architecture</a> backbone is achievable, suggesting that the classical separation between audio processing (feature extraction) and language modelling (semantic understanding) will erode over the 2026–2028 period. Systems like Codec-ASR directly bypass the explicit feature extraction pipeline by operating on codec tokens, achieving competitive ASR results without mel-spectrogram front-ends.</li>
+<li>The MPEG-H Audio standard has been adopted for NextGen TV (ATSC 3.0) rollout in South Korea, the US, and Germany, driving immersive audio to broadcast scale. The Web Audio API Level 2 (W3C) extends browser-native audio graph processing with AudioWorklet for custom DSP kernels, enabling professional-grade audio processing in browser-based applications. AES67 and the SMPTE ST 2110 family are the dominant audio-over-IP standards for live broadcast infrastructure.</li>
+</ul>
+</li>
+<li>
+<h2 id="uk-context">UK Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#uk-context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Academic Institutions</strong>
+<ul>
+<li>The Centre for Digital Music (C4DM) at Queen Mary University of London, directed by Professor Simon Dixon and including Professor Emmanouil Benetos (Machine Listening Lab lead), is one of the world’s pre-eminent groups in <a href="../pages/Music-Information-Retrieval" class="internal alias" data-slug="pages/Music-Information-Retrieval">Music Information Retrieval</a>, <a href="../Audio-Feature-Extraction" class="internal alias" data-slug="Audio-Feature-Extraction">Audio Feature Extraction</a>, and source separation. The UKRI AI Centre for Doctoral Training in Artificial Intelligence and Music (AIM CDT), hosted at Queen Mary, trains 50+ PhD researchers in machine listening, generative audio, and music AI. Queen Mary began new industry research partnerships on AI in Music in 2024, extending its collaborative ecosystem to music streaming and broadcast partners.</li>
+<li>The University of Edinburgh’s Centre for Speech Technology Research (CSTR) — which produced the Festival speech synthesis system (Black &amp; Taylor, 1997) and the Festvox and HTS/Merlin neural TTS toolkits — has published extensively on speech synthesis, vocal tract modelling, and expressive <a href="../pages/Text-to-Speech" class="internal" data-slug="pages/Text-to-Speech">Text-to-Speech</a>. The Edinburgh Futures Institute hosted the “AI and Digital Innovations for Voice and Vocal Music” event series in 2024-2025.</li>
+<li>The University of Sheffield’s Speech and Hearing Research Group and the University of Salford’s Acoustics Research Centre contribute to room acoustics, <a href="../pages/Psychoacoustics" class="internal" data-slug="pages/Psychoacoustics">Psychoacoustics</a>, and audio engineering research relevant to spatial audio processing. Salford’s anechoic and reverberant test chambers are among the UK’s premier facilities for acoustic measurement research.</li>
+<li>Imperial College London’s Electrical and Electronic Engineering department contributes to audio signal processing research in speech enhancement, source separation, and acoustic array processing.</li>
+</ul>
+</li>
+<li><strong>Northern England</strong>
+<ul>
+<li>The University of Leeds’ School of Electronic and Electrical Engineering conducts audio signal processing research. Newcastle University’s Digital Institute has worked on acoustic scene classification and audio for healthcare applications.</li>
+<li>Manchester Metropolitan University’s Music Department researches creative applications of audio AI, and the University of Manchester’s Alliance Manchester Business School has studied the economic impact of AI on the UK music industry.</li>
+<li>The BBC Research and Development division (Salford, Greater Manchester and London W12) is the UK’s largest applied research contributor to audio coding, immersive audio (BBC Spatial Audio Toolbox, “S3A” project), and object-based audio for broadcast. BBC R&amp;D collaborated with Qualcomm and Fraunhofer on the development of <a href="../MPEG-H-Audio" class="internal alias" data-slug="MPEG-H-Audio">MPEG-H Audio</a> for NextGen TV delivery. BBC R&amp;D’s Next Generation Audio research (2016-2023) defined object-based audio production workflows for the UK broadcast industry.</li>
+<li>The University of Huddersfield’s Music Technology group is internationally recognised for research in electroacoustic composition and spatial audio spatialisation, with close links to Acousmonium loudspeaker orchestra practice.</li>
+</ul>
+</li>
+<li><strong>Industry</strong>
+<ul>
+<li>Focusrite (publicly listed, Hertfordshire) produces professional audio interfaces, software, and the FAST (Flexible Audio Source Technology) research project funded by UKRI, working on AI-assisted audio production.</li>
+<li>Solid State Logic (Begbroke, Oxfordshire) develops mixing consoles, audio plugins, and software incorporating AI-assisted mix assistance. SSL’s Oxford research partnerships contribute to intelligent audio processing algorithms.</li>
+<li>Meridian Audio (Huntingdon, Cambridgeshire) has pioneered high-resolution audio processing (MQA codec, now Fold-down) and hold patents in perceptual audio coding. The company works closely with Linn Records (UK) on high-resolution audio distribution.</li>
+<li>Audioscenic (Bristol) and Envelop (distributed, UK-founded) develop spatial audio processing for headphones and consumer devices. Sonarworks (Latvian but UK-present) provides room acoustic correction DSP deployed in major UK studios.</li>
+<li>The EPSRC has funded multiple collaborative grants on audio DSP, speech enhancement, and audio deepfake detection, including the FAST IMPACt (Intelligent Music Production and Creativity Tools) and S3A (Future Spatial Audio for an Immersive Listener Experience at Home) projects.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="future-directions-20262030">Future Directions (2026–2030)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#future-directions-20262030" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>End-to-End Neural Audio Processing Pipelines</strong>
+<ul>
+<li>Classical DSP front-ends (FFT, filterbanks) will progressively be replaced by end-to-end neural audio networks operating on raw waveforms or codec tokens, trained jointly with downstream tasks.</li>
+<li>Codec-ASR (2024) demonstrated competitive <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a> without mel-spectrogram features; the trend will extend to spatial audio rendering, noise cancellation, and music production effects.</li>
+<li>Differentiable DSP (DDSP, Engel et al., 2020) integrates classical signal processing components (oscillators, filters, reverb) as differentiable modules within neural architectures, enabling hybrid systems that benefit from both DSP interpretability and neural adaptivity.</li>
+</ul>
+</li>
+<li><strong>On-Device Real-Time Neural DSP</strong>
+<ul>
+<li>Mobile NPUs (Apple Neural Engine A18 Pro: 38 TOPS; Qualcomm Hexagon NPU: 75 TOPS; MediaTek APU) will enable full-chain neural audio processing — neural ANC, source separation, enhancement, and codec decoding — in real-time at under 10ms latency on consumer devices.</li>
+<li>Apple’s Core Audio framework advances and Android’s Audio HAL enhancements will provide standardised NPU audio offload APIs by 2027, enabling third-party audio applications to delegate neural processing to dedicated silicon without CPU load.</li>
+<li>Neural noise cancellation will migrate from cloud-dependent systems (current Krisp, Nvidia RTX Voice) to fully on-device inference, enabling privacy-preserving noise suppression that does not require audio to leave the user’s device.</li>
+</ul>
+</li>
+<li><strong>Personalised <a href="../pages/Psychoacoustics" class="internal" data-slug="pages/Psychoacoustics">Psychoacoustics</a> and Spatial Audio</strong>
+<ul>
+<li>Individualised HRTFs estimated from ear photographs or short headphone-based calibration sequences (3–5 minutes) will replace generic HRTF databases, enabling personalised <a href="../pages/Spatial-Audio-System" class="internal alias" data-slug="pages/Spatial-Audio-System">Spatial Audio System</a> rendering that does not require studio acoustic measurement sessions.</li>
+<li>This is a key research challenge for <a href="../pages/Extended-Reality" class="internal alias" data-slug="pages/Extended-Reality">Extended Reality</a> audio realism, being pursued by Microsoft Research Audio, Meta Reality Labs Audio, Apple Vision Pro’s audio team, and academic groups including Aalborg University (Denmark), the University of Surrey (UK), and the Technical University of Denmark (DTU).</li>
+<li>HRTF personalisation networks trained on large acoustic measurement databases (SOFA format corpora) will achieve individualisation competitive with measured HRTFs using ear geometry features from standard phone cameras by 2027.</li>
+</ul>
+</li>
+<li><strong>Audio-Language Foundation Models</strong>
+<ul>
+<li>Joint audio-language models (Gemini Audio, GPT-4o Audio, AudioPaLM, Whisper successors) will generalise across the full audio processing task graph — <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a>, <a href="../pages/Text-to-Speech" class="internal" data-slug="pages/Text-to-Speech">Text-to-Speech</a>, enhancement, captioning, question answering, and generation — in a single model.</li>
+<li>Zero-shot adaptation to new acoustic domains (accents, languages, noise environments, music genres) via in-context learning will reduce the need for domain-specific fine-tuning, lowering deployment barriers for specialised applications (medical transcription, legal dictation, under-resourced languages).</li>
+<li>Audio scene understanding — real-time classification of acoustic environment type (indoor/outdoor, room size, noise level), <a href="../pages/Voice-Activity-Detection" class="internal alias" data-slug="pages/Voice-Activity-Detection">Voice Activity Detection</a>, and speaker diarisation — will be integrated into the audio processing stack as a pervasive ambient intelligence capability in smart devices.</li>
+</ul>
+</li>
+<li><strong>Neural Audio Codec Standardisation</strong>
+<ul>
+<li>ISO/IEC and IETF are expected to standardise neural audio codec profiles (building on the LRAC challenge and EnCodec/DAC research) for inclusion in MPEG-I and future WebRTC codec specifications.</li>
+<li>IETF CELLAR working group (Codec Lossless and Efficient Lossless Audio and Related) is the venue for neural codec standardisation in the IETF. The timeline for RVQ-codec inclusion in a WebRTC successor protocol is estimated at 2027-2029.</li>
+<li>Low-power codec implementations for IoT audio (sub-100 mW inference for smart microphones, hearing aids, industrial acoustic monitors) will drive a separate thread of neural codec miniaturisation distinct from the high-quality 44.1 kHz consumer codec trajectory.</li>
+</ul>
+</li>
+<li><strong>Immersive and Spatial Audio at Scale</strong>
+<ul>
+<li>Object-based audio (MPEG-H Audio, Dolby Atmos) will extend from cinema and premium streaming to live sports broadcast, esports, and interactive media, driven by NextGen TV (ATSC 3.0) rollout in the US and Europe.</li>
+<li>Real-time personalised binaural rendering on mobile for VR/AR requires audio processing pipelines that fuse head-tracking (IMU + optical), room acoustics estimation (from measured or inferred room impulse responses), and neural HRTF personalisation in a sub-10ms closed loop.</li>
+<li>Audio scene semantic segmentation — identifying and labelling individual sound sources with spatial positions in a mixed acoustic environment — will enable reactive, context-aware soundscapes in <a href="../pages/Extended-Reality" class="internal alias" data-slug="pages/Extended-Reality">Extended Reality</a> environments where virtual and real sound sources are perceptually integrated.</li>
+</ul>
+</li>
+<li><strong>AI-Augmented Studio Production</strong>
+<ul>
+<li>AI-assisted mixing and mastering tools — extending iZotope’s Neutron/Ozone AI assistants, Accusonus’s ERA suite, and iZotope RX — will move toward autonomous multi-track mix creation from raw recorded stems.</li>
+<li>Perceptual quality models trained on human-rated recordings (MUSHRA evaluations, pairwise preference studies) will provide the objective function for AI mastering systems, replacing heuristic loudness-normalisation with listener-preference-optimised processing chains.</li>
+<li>The FAST IMPACt (Intelligent Music Production and Creativity Tools) EPSRC-funded UK research project is investigating AI-assisted production tools for broadcast, live events, and recorded music, with partners including BBC R&amp;D, Focusrite, and multiple UK universities.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h2 id="evaluation-metrics-and-benchmarks">Evaluation Metrics and Benchmarks<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#evaluation-metrics-and-benchmarks" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Perceptual Speech Quality</strong>: PESQ (Perceptual Evaluation of Speech Quality, ITU-T P.862) — a reference-based metric scoring 1-4.5 (wideband PESQ-WB / MOS-LQO); widely used as the objective proxy for speech enhancement quality. STOI (Short-Time Objective Intelligibility) — 0 to 1, predicts the fraction of correctly understood speech segments. DNSMOS (DNS MOS, Microsoft) — a non-intrusive neural network trained to predict MOS from single degraded observations; DNSMOS-P.835 targets three sub-scores (speech, background noise, overall). UTMOS (Automatic MOS Prediction, Saeki et al. 2022) — neural predictor trained on VoiceMOS Challenge data covering TTS and speech enhancement.</li>
+<li><strong>Audio Quality (General)</strong>: FAD (Fréchet Audio Distance) — computes Fréchet distance between embeddings of real and generated audio from a VGGish audio feature network; analogous to FID for images, lower = better. CLAP-score — cosine similarity between CLAP embeddings of generated audio and conditioning text; measures text-audio alignment. KL-divergence on AudioSet class posterior distributions — measures whether generated audio belongs to the same AudioSet classes as real audio. Subjective MUSHRA (Multiple Stimuli with Hidden Reference and Anchor) — the gold standard subjective test for audio quality over 0-100 scale per ITU-R BS.1534.</li>
+<li><strong>Music Separation</strong>: SDR (Signal-to-Distortion Ratio, Vincent et al. 2006 BSS-Eval) — measures separation quality in dB, accounts for signal, interference, artefact, and noise components. SI-SDR (Scale-Invariant SDR, Le Roux et al. 2019) — scale-invariant reformulation more robust to gain ambiguity, widely adopted in speech separation. MUSDB18-HQ (Rafii et al. 2017, extended Stoeter et al. 2019) — 150-track benchmark for music source separation; median SDR across vocals/drums/bass/other is the primary ranking metric.</li>
+<li><strong>ASR</strong>: WER (Word Error Rate) = (S + D + I) / N — counts substitutions, deletions, and insertions relative to total reference words. CER (Character Error Rate) — analogous at character level, used for languages with high morphological complexity (Chinese, Korean, Arabic). SUPERB (Speech processing Universal PERformance Benchmark, Yang et al. 2021) — a multi-task evaluation of speech model representations across ASR, speaker ID, emotion, keyword spotting, voice separation, and dereverberation.</li>
+<li><strong>Room Acoustics</strong>: MOS-based naturalness for reverberation (perceived room quality); eSTOI and iSEF (intrusive short-time objective intelligibility); SSIM on spectrograms for dereverberation; T60 estimation error (MAE in seconds) for blind reverberation time estimation systems.</li>
+<li><strong>Codec Quality</strong>: VISQOL (Virtual Speech Quality Objective Listener) — a perceptual quality model using spectrogram patch similarity, suitable for codec and enhancement evaluation. SI-SDR on decoded audio versus original (low-bitrate limit). Bitrate vs. quality curves: competitive position relative to other codecs on the same bitrate point. Codec-SUPERB (SLT 2024, arXiv:2409.14085) — first standardised benchmark evaluating neural audio codecs on 11 downstream tasks.</li>
+</ul>
+</li>
+<li>
+<h2 id="key-standards-and-technical-specifications">Key Standards and Technical Specifications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-standards-and-technical-specifications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Sampling Rates</strong>: CD quality (44.1 kHz, chosen to capture the full audible range 20–20,000 Hz with a safety margin above the 40 kHz Nyquist limit); broadcast standard (48 kHz, required for professional video post-production per ITU-R BS.2088); high-resolution (96 kHz, 192 kHz for mastering and archival). Ultra-high sampling rates (352.8 kHz, 384 kHz) offer no perceptual benefit but support extreme anti-aliasing margins in oversampled processing chains.</li>
+<li><strong>Bit Depth and Dynamic Range</strong>: 16-bit PCM provides 96.3 dB theoretical dynamic range (20log₁₀(2¹⁶) ≈ 96 dB), sufficient for CD but limiting for studio work. 24-bit PCM provides 144 dB, exceeding the human auditory system’s dynamic range (~120 dB) and providing processing headroom. 32-bit floating point (IEEE 754 single precision) provides ~1,528 dB theoretical dynamic range (inexact representation) and is standard in all DAW internal processing busses to prevent numeric overflow during gain operations.</li>
+<li><strong>FFT Window Functions</strong>: Rectangular windows maximise frequency resolution but introduce spectral leakage; Hanning (Hann), Hamming, Blackman, and Kaiser windows trade resolution for sidelobe attenuation. The Hann window (50% overlap-add) is the standard choice for STFT in <a href="../Audio-Feature-Extraction" class="internal alias" data-slug="Audio-Feature-Extraction">Audio Feature Extraction</a> due to its balance of resolution and leakage. Kaiser-Bessel windows with configurable β parameter allow programmable sidelobe attenuation for demanding spectral analysis applications.</li>
+<li><strong>Mel Scale</strong>: The Mel frequency scale maps linear frequency f to perceptual Mel value M = 2595 × log₁₀(1 + f/700), approximating the frequency discrimination of the human basilar membrane. The 40–128 Mel filterbank output (log-compressed) is the standard acoustic feature for <a href="../pages/Speech-Recognition" class="internal alias" data-slug="pages/Speech-Recognition">Speech Recognition</a> and audio classification. The MFCC (Mel-Frequency Cepstral Coefficients) applies a Discrete Cosine Transform (DCT) to the log-Mel spectrum, producing decorrelated coefficients where the first 13 (C0–C12) capture the most variance; delta and delta-delta coefficients add temporal dynamics.</li>
+<li><strong>Loudness Standards</strong>: ITU-R BS.1770-4 defines Integrated Loudness (LUFS — Loudness Units relative to Full Scale) using K-weighting (pre-filter + RLB weighting) and gating at -70 LUFS and -10 dB relative threshold. EBU R128 specifies -23 LUFS ± 1 LU for European broadcast. ATSC A/85 specifies -24 LKFS for US broadcast. Streaming services normalise to -14 LUFS (Spotify) or -16 LUFS (Apple Music, Tidal) per their loudness normalisation policies.</li>
+<li><strong><a href="../Opus-Codec" class="internal alias" data-slug="Opus-Codec">Opus Codec</a> Technical Details</strong>: Hybrid SILK (SILK speech codec, based on interpolative coding of pitch parameters) / CELT (Constrained Energy Lapped Transform, a modified MDCT codec) codecs with 20ms default frame size. SILK for speech at 6-20 kbps; CELT for music at 20-500 kbps; hybrid mode 10-40 kbps. Variable bit-rate (VBR) and constrained VBR modes. Stereo up to 48 kHz, 6-channel surround. DTX (Discontinuous Transmission) reduces bandwidth during silence periods.</li>
+<li><strong>Head-Related Transfer Functions</strong>: HRTFs are measured at typically 1250 angular positions (2.5° azimuth step, 5° elevation step) per ear, each measurement being an impulse response of 256–2048 samples at 44.1 kHz. The SOFA (AES69-2022) standard stores HRTFs, BRIRs (binaural room impulse responses), and DRIRs (directional room impulse responses) in NetCDF4 format. The ARI, CIPIC, LISTEN, SADIE-II, and 3D3A databases are the principal open HRTF repositories used in <a href="../Audio-Spatialisation" class="internal alias" data-slug="Audio-Spatialisation">Audio Spatialisation</a> research.</li>
+<li><strong>Room Acoustics Parameters</strong>: Reverberation time T60 (time for sound to decay 60 dB), early decay time EDT, clarity C80 (speech) and C50 (music), definition D50, interaural cross-correlation IACC (spaciousness measure), and room gain coefficient are the primary descriptors used in architectural acoustics design and room correction algorithms.</li>
+</ul>
+</li>
+<li>
+<h2 id="mathematical-foundations-of-key-operations">Mathematical Foundations of Key Operations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mathematical-foundations-of-key-operations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li><strong>Convolution and Linear Filtering</strong>: In discrete time, convolution y[n] = (x * h)[n] = Σₖ x[k]h[n-k] implements any linear time-invariant (LTI) filter. FIR filters have h[n] of finite length M; IIR filters have infinite-length impulse responses implemented via difference equations y[n] = Σᵢ bᵢx[n-i] - Σⱼ aⱼy[n-j]. Frequency-domain convolution (multiply spectra, IFFT) is O(N log N) versus O(N²) for time-domain convolution, making overlap-add FFT convolution essential for long reverb impulse responses (>256 samples).</li>
+<li><strong>Short-Time Fourier Transform</strong>: STFT(m, k) = Σₙ x[n] w[n - mH] e^{-j2πkn/N} for hop size H, window w, DFT size N, frame index m, frequency bin k. The modulus |STFT(m,k)| is the <a href="../Spectrogram" class="internal" data-slug="Spectrogram">Spectrogram</a> magnitude; arg(STFT(m,k)) is the instantaneous phase. Phase vocoder algorithms manipulate STFT magnitude and phase independently for pitch shifting and time-stretching without the artefacts of naive resampling.</li>
+<li><strong>Adaptive Filtering (LMS)</strong>: The Least Mean Squares adaptive filter minimises E[e²[n]] where e[n] = d[n] - yᵀ[n]w[n], updating weights w[n+1] = w[n] + 2μe[n]x[n] for reference signal x[n], desired signal d[n], and step-size μ. Convergence requires μ &lt; 1/(λₘₐₓ × N) where λₘₐₓ is the maximum eigenvalue of the input covariance matrix. The Normalised LMS (NLMS) algorithm divides by ||x[n]||² to stabilise convergence across signal level variations.</li>
+<li><strong>Non-Negative Matrix Factorisation</strong>: NMF decomposes a non-negative spectrogram matrix V ≈ WH where W (basis spectra, F×K) and H (activation matrix, K×T) are constrained to be non-negative. The KL-divergence cost function (appropriate for Poisson-distributed spectrogram magnitudes) is minimised via multiplicative update rules. NMF is used in music source separation (each column of W represents an instrument’s spectral template; rows of H encode when it plays), audio inpainting, and audio compression artefact reduction.</li>
+</ul>
+</li>
+<li>
+<h2 id="research--literature">Research &amp; Literature<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#research--literature" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<ul>
+<li>
+<ol>
+<li>Shannon, C.E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379-423.</li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>Cooley, J.W., Tukey, J.W. (1965). An Algorithm for the Machine Computation of Complex Fourier Series. Mathematics of Computation, 19(90), 297-301.</li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Oppenheim, A.V., Schafer, R.W. (2010). Discrete-Time Signal Processing (3rd ed.). Pearson.</li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Bregman, A.S. (1990). Auditory Scene Analysis: The Perceptual Organization of Sound. MIT Press.</li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Zwicker, E., Fastl, H. (2007). Psychoacoustics: Facts and Models (3rd ed.). Springer.</li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>Hinton, G., Deng, L., Yu, D., et al. (2012). Deep Neural Networks for Acoustic Modeling in Speech Recognition. IEEE Signal Processing Magazine, 29(6), 82-97.</li>
+</ol>
+</li>
+<li>
+<ol start="7">
+<li>van den Oord, A., Dieleman, S., Zen, H., et al. (2016). WaveNet: A Generative Model for Raw Audio. arXiv:1609.03499. DeepMind.</li>
+</ol>
+</li>
+<li>
+<ol start="8">
+<li>Luo, Y., Mesgarani, N. (2019). Conv-TasNet: Surpassing Ideal Time-Frequency Magnitude Masking for Speech Separation. IEEE/ACM TASLP, 27(8).</li>
+</ol>
+</li>
+<li>
+<ol start="9">
+<li>Défossez, A., Usunier, N., Bottou, L., Bach, F. (2021). Music Source Separation in the Waveform Domain. arXiv:1911.13254. (Demucs, Meta)</li>
+</ol>
+</li>
+<li>
+<ol start="10">
+<li>Zeghidour, N., Luebbering, A., Skerry-Ryan, R., Jansen, A., et al. (2021). SoundStream: An End-to-End Neural Audio Codec. IEEE/ACM TASLP, 2022.</li>
+</ol>
+</li>
+<li>
+<ol start="11">
+<li>Défossez, A., Copet, J., Synnaeve, G., Adi, Y. (2022). High Fidelity Neural Audio Compression. arXiv:2210.13438. (EnCodec, Meta)</li>
+</ol>
+</li>
+<li>
+<ol start="12">
+<li>Kumar, R., Kumar, P., de Boissiere, T., et al. (2023). High-Fidelity Audio Compression with Improved RVQGAN. NeurIPS 2023. (Descript Audio Codec)</li>
+</ol>
+</li>
+<li>
+<ol start="13">
+<li>Radford, A., Kim, J.W., Xu, T., et al. (2022). Robust Speech Recognition via Large-Scale Weak Supervision. arXiv:2212.04356. (Whisper, OpenAI)</li>
+</ol>
+</li>
+<li>
+<ol start="14">
+<li>Kong, J., Kim, J., Bae, J. (2020). HiFi-GAN: Generative Adversarial Networks for Efficient and High Fidelity Speech Synthesis. NeurIPS 2020.</li>
+</ol>
+</li>
+<li>
+<ol start="15">
+<li>Siuzdak, H. (2023). Vocos: Closing the Gap between Time-domain and Fourier-based Neural Vocoders. arXiv:2306.00814.</li>
+</ol>
+</li>
+<li>
+<ol start="16">
+<li>Rouard, S., Massa, F., Défossez, A. (2022). Hybrid Transformers for Music Source Separation. ICASSP 2023. (HTDemucs)</li>
+</ol>
+</li>
+<li>
+<ol start="17">
+<li>Subakan, C., Ravanelli, M., Cornell, S., et al. (2021). Attention is All You Need in Speech Separation. ICASSP 2021. (SepFormer)</li>
+</ol>
+</li>
+<li>
+<ol start="18">
+<li>Schröter, H., Rosenkranz, T., Escalante-B, A.N., et al. (2022). DeepFilterNet: Perceptually Motivated Real-Time Speech Enhancement. arXiv:2205.05474.</li>
+</ol>
+</li>
+<li>
+<ol start="19">
+<li>Liu, H., Chen, Z., Yuan, Y., et al. (2023). AudioLDM: Text-to-Audio Generation with Latent Diffusion Models. ICML 2023.</li>
+</ol>
+</li>
+<li>
+<ol start="20">
+<li>Liu, H., Yuan, Y., Liu, X., et al. (2024). AudioLDM 2: Learning Holistic Audio Generation with Self-Supervised Pretraining. IEEE/ACM TASLP, 2024.</li>
+</ol>
+</li>
+<li>
+<ol start="21">
+<li>Benetos, E., Dixon, S., Duan, Z., Ewert, S. (2019). Automatic Music Transcription: An Overview. IEEE Signal Processing Magazine, 36(1).</li>
+</ol>
+</li>
+<li>
+<ol start="22">
+<li>ISO/IEC 23008-3:2022. MPEG-H Audio (3rd ed.). International Organisation for Standardisation.</li>
+</ol>
+</li>
+<li>
+<ol start="23">
+<li>Valin, J.-M., Vos, K., Terriberry, T. (2012). Definition of the Opus Audio Codec. IETF RFC 6716.</li>
+</ol>
+</li>
+<li>
+<ol start="24">
+<li>W3C Web Audio Working Group (2021). Web Audio API Level 2. W3C Working Draft.</li>
+</ol>
+</li>
+<li>
+<ol start="25">
+<li>ITU-R BS.1770-4 (2015). Algorithms to Measure Audio Programme Loudness and True-peak Audio Level. International Telecommunication Union.</li>
+</ol>
+</li>
+<li>
+<ol start="26">
+<li>Majdak, P., Hollomey, C., Baumgartner, R. (2022). AMT: A Toolbox for Reproducible Research in Auditory Modeling. Acta Acustica, 6, 19.</li>
+</ol>
+</li>
+<li>
+<ol start="27">
+<li>Codec-SUPERB Authors (2024). Codec-SUPERB @ SLT 2024: A Lightweight Benchmark for Neural Audio Codec Models. arXiv:2409.14085.</li>
+</ol>
+</li>
+<li>
+<ol start="28">
+<li>FlexiCodec Authors (2025). FlexiCodec: A Dynamic Neural Audio Codec for Low Frame Rates. arXiv:2510.00981.</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-572" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-1"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-1"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#compositional-relationships-components" data-for="compositional-relationships-components">Compositional Relationships (Components)</a></li><li class="depth-0"><a href="#dependency-relationships" data-for="dependency-relationships">Dependency Relationships</a></li><li class="depth-0"><a href="#capability-relationships" data-for="capability-relationships">Capability Relationships</a></li><li class="depth-0"><a href="#implementation-relationships" data-for="implementation-relationships">Implementation Relationships</a></li><li class="depth-0"><a href="#reduction-relationships" data-for="reduction-relationships">Reduction Relationships</a></li><li class="depth-0"><a href="#about" data-for="about">About</a></li><li class="depth-0"><a href="#components--architecture" data-for="components--architecture">Components / Architecture</a></li><li class="depth-0"><a href="#neural-architecture-integration" data-for="neural-architecture-integration">Neural Architecture Integration</a></li><li class="depth-0"><a href="#use-cases--major-families" data-for="use-cases--major-families">Use Cases / Major Families</a></li><li class="depth-0"><a href="#academic-context" data-for="academic-context">Academic Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#uk-context" data-for="uk-context">UK Context</a></li><li class="depth-0"><a href="#future-directions-20262030" data-for="future-directions-20262030">Future Directions (2026–2030)</a></li><li class="depth-0"><a href="#evaluation-metrics-and-benchmarks" data-for="evaluation-metrics-and-benchmarks">Evaluation Metrics and Benchmarks</a></li><li class="depth-0"><a href="#key-standards-and-technical-specifications" data-for="key-standards-and-technical-specifications">Key Standards and Technical Specifications</a></li><li class="depth-0"><a href="#mathematical-foundations-of-key-operations" data-for="mathematical-foundations-of-key-operations">Mathematical Foundations of Key Operations</a></li><li class="depth-0"><a href="#research--literature" data-for="research--literature">Research &amp; Literature</a></li><li class="depth-1"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Deepfakes" class="internal">Deepfakes</a></li><li><a href="../pages/Fast-Fourier-Transform" class="internal">Fast Fourier Transform</a></li><li><a href="../pages/Transformers" class="internal">Transformers</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

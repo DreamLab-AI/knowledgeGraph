@@ -1,0 +1,100 @@
+
+ESG Investing is an investment methodology that systematically integrates Environmental, Social, and Governance criteria into the analysis, selection, and management of portfolios, enabling investors to assess material sustainability risks and ethical impact alongside conventional financial returns. Environmental factors encompass carbon emissions, resource consumption, and climate transition exposure; social factors cover labour practices, supply-chain conditions, human rights, and community impact; governance factors evaluate board composition, executive remuneration, audit independence, and shareholder rights. ESG signals are incorporated through negative screening, positive best-in-class selection, engagement and proxy voting, or the construction of fully ESG-integrated thematic funds, each reflecting different theories of how non-financial data predicts long-run financial performance.
+
+- ### Overview
+  - ESG Investing emerged from the socially responsible investing movement of the 1970s–1990s but was formalised conceptually in the 2004 United Nations "Who Cares Wins" initiative that coined the acronym.
+  - It rests on the premise that environmental, social, and governance risks are financially material: a company with poor carbon management faces regulatory fines and stranded assets; weak labour practices generate reputational and legal liability; inadequate governance enables fraud and capital misallocation.
+  - Three primary investment styles apply ESG data differently:
+    - **Negative screening** — excluding companies or sectors failing minimum ESG thresholds (e.g., tobacco, weapons, high-emissions industries).
+    - **Best-in-class positive selection** — holding companies that score highest on ESG metrics within each sector, even in controversial sectors.
+    - **Full integration** — systematically adjusting valuation models, discount rates, and risk parameters based on ESG signals alongside financial fundamentals.
+  - **Engagement and stewardship** represent a fourth approach in which investors retain holdings but use [[Proxy Voting]] and direct dialogue to drive corporate behaviour change, often coordinated through bodies such as Climate Action 100+ or the PRI.
+  - The global scale of ESG assets under management reached multi-trillion-dollar levels by the early 2020s, making it a mainstream institutional consideration rather than a niche.
+
+- ### Key Components
+  - **Environmental (E)** pillar:
+    - Carbon emissions (Scope 1, 2, and 3 under [[GHG Protocol]])
+    - Energy efficiency and renewable energy transition
+    - Water usage, waste, and land-use impact
+    - Climate [[Physical Risk]] (flood, heat, drought exposure of physical assets)
+    - [[Climate Risk Management]] and alignment with Paris Agreement pathways
+  - **Social (S)** pillar:
+    - Labour rights, health and safety, and living wages across [[Supply Chain]]s
+    - Diversity, equity, and inclusion metrics at board and workforce levels
+    - Community relations, indigenous peoples' rights, and local economic impact
+    - Data privacy, product safety, and consumer protection
+    - Human rights due diligence linked to [[Modern Slavery]] reporting
+  - **Governance (G)** pillar:
+    - Board independence, diversity, and separation of chair and CEO roles
+    - Executive remuneration alignment with long-term performance
+    - Anti-corruption policies, audit quality, and whistleblower protections
+    - Shareholder rights, voting structures, and related-party transaction controls
+    - Tax transparency and political lobbying disclosure
+  - **ESG Ratings and Data**:
+    - Provided by agencies including MSCI, Sustainalytics, ISS, and Bloomberg ESG
+    - Ratings assess companies on a scored or letter-grade basis
+    - Significant divergence exists across providers due to differing metric choices, weightings, and data sources — a known structural problem documented in academic literature
+    - [[ESG Data Disclosure]] quality depends on voluntary and mandatory [[Non-Financial Reporting]] standards
+
+- ### Mechanisms and Instruments
+  - **[[Green Bond]]** — fixed-income instruments where proceeds are earmarked for environmental projects; governed by the [[ICMA Green Bond Principles]]
+  - **Sustainability-Linked Bond (SLB)** — coupon tied to issuer achieving specified ESG KPIs, structurally distinct from use-of-proceeds green bonds
+  - **ESG Exchange-Traded Fund (ETF)** — passive fund tracking an ESG-screened or ESG-weighted index
+  - **Thematic fund** — concentrated exposure to specific ESG themes (clean energy, water, gender diversity)
+  - **[[Carbon Credit]]** — tradeable permit representing one tonne of CO₂ equivalent reduced or avoided; links to [[Emissions Trading Scheme]] mechanisms
+  - **Tokenised ESG assets** — blockchain-based tokens embedding verifiable sustainability data in smart contracts, enabling fractional ownership of [[Green Bond]]s or carbon credits and real-time impact reporting (see [[Tokenization]])
+
+- ### Applications and Use Cases
+  - **Institutional asset management** — pension funds, sovereign wealth funds, and insurance companies integrating ESG to manage long-horizon climate and regulatory risk in line with fiduciary duty redefinitions
+  - **Retail investment products** — ESG-labelled mutual funds and ETFs sold to individual investors seeking alignment between portfolio and personal values
+  - **Corporate borrowing** — sustainability-linked loans with interest rates tied to ESG performance targets (e.g., emissions reduction, gender pay parity)
+  - **Index construction** — major index providers (MSCI, FTSE Russell, S&P) constructing ESG variants of flagship indices used as passive benchmarks
+  - **Regulatory compliance** — fund managers in the EU classifying products under [[SFDR]] Article 6, 8, or 9 to disclose sustainability ambition to retail investors
+  - **Stewardship campaigns** — coordinated [[Proxy Voting]] and shareholder resolutions on climate strategy, executive pay, and deforestation at annual general meetings
+  - **Supply-chain ESG due diligence** — buyers requiring suppliers to meet ESG standards as a condition of contract, using [[Non-Financial Reporting]] data to verify performance
+  - **Sovereign ESG bonds** — national governments issuing green or sustainability bonds to fund public infrastructure and meet climate commitments
+
+- ### Standards and Regulatory Context
+  - **[[SFDR]]** (EU Sustainable Finance Disclosure Regulation) — classifies funds as Article 6 (no ESG integration), Article 8 (environmental/social promotion), or Article 9 (sustainable investment objective); requires Principal Adverse Impact disclosures
+  - **[[EU Taxonomy Regulation]]** — defines a classification system for environmentally sustainable economic activities against six environmental objectives, used to determine green bond and fund eligibility
+  - **[[TCFD]]** (Task Force on Climate-related Financial Disclosures) — voluntary framework for disclosing climate-related risks and opportunities; adopted into law in several jurisdictions including the UK
+  - **[[GRI Standards]]** (Global Reporting Initiative) — modular framework for corporate sustainability reporting across environmental, social, and governance topics, widely used for voluntary disclosure
+  - **[[SASB Standards]]** (Sustainability Accounting Standards Board) — industry-specific materiality standards identifying financially relevant ESG disclosures by sector, now consolidated under the [[IFRS Foundation]] as ISSB standards
+  - **[[ISSB]]** (International Sustainability Standards Board) — established 2021 under the IFRS Foundation; issued IFRS S1 (general sustainability disclosures) and IFRS S2 (climate disclosures) to create a global baseline
+  - **[[PRI]]** (Principles for Responsible Investment) — UN-supported investor initiative providing a framework of six principles for incorporating ESG into investment practice and ownership policies
+  - **[[ICMA Green Bond Principles]]** — voluntary process guidelines for green bond issuance covering use of proceeds, project evaluation, management of proceeds, and reporting
+
+- ### Challenges and Criticisms
+  - **Ratings divergence** — major ESG data providers show low correlation in their ratings for the same company, undermining comparability and enabling fund managers to select ratings that suit their products
+  - **[[Greenwashing]]** — funds marketing themselves as ESG-compliant while holding significant exposure to high-carbon or harmful industries; regulatory action increasing (SEC, FCA enforcement)
+  - **Materiality inconsistency** — lack of agreement on which ESG factors are financially material for which industries makes systematic comparison difficult
+  - **Double materiality debate** — financial materiality (ESG risk to the company) vs. environmental/social materiality (company's impact on the world); EU approach requires both while ISSB focuses on financial materiality
+  - **Data quality and availability** — smaller companies and emerging-market issuers have limited ESG disclosure, creating coverage gaps in ESG analysis
+  - **Alpha versus impact tension** — debate over whether ESG integration genuinely improves risk-adjusted returns or primarily signals preferences; evidence is mixed across time periods and geographies
+
+- ### Blockchain and Technology Intersections
+  - Blockchain-based provenance systems create tamper-resistant shared records for supply-chain emissions and sustainability data, reducing the divergence problem (see [[Distributed Ledger]])
+  - [[Tokenization]] of green bonds and carbon credits embeds real-time reporting obligations in smart-contract logic and enables fractional retail participation
+  - [[Decentralised Autonomous Organisation]] (DAO) mechanisms applied to ESG funds allow token holders to vote on use-of-proceeds decisions, extending [[Stakeholder Engagement]] to retail investors
+  - [[Smart Contract]] automation can enforce sustainability-linked coupon step-ups without manual verification, reducing counterparty risk in SLBs
+  - Satellite data, IoT sensors, and [[Machine Learning]] increasingly used to generate independent ESG signals (deforestation detection, methane leak identification) that bypass company self-reporting biases
+
+- ### Current Landscape (2026)
+  - On 29 May 2026 the SEC voted to propose rescinding its March 2024 climate-related disclosure rules in their entirety (Release No. 33-11421, published in the Federal Register on 3 June 2026, comment period closing 3 August 2026), citing lack of statutory authority after it had ceased defending the rule in March 2025.
+  - The EU's "Omnibus I" simplification package, formally adopted on 24 February 2026, sharply narrowed the CSRD (now applying only to firms with more than 1,000 employees and over EUR 450m turnover), made climate transition plans and sector standards voluntary, and pushed CSDDD due-diligence duties out to July 2029; a 6 May 2026 draft delegated act cut mandatory ESRS data points by more than 60%.
+  - Global sustainable funds swung back to net inflows of USD 3.5bn in Q1 2026 and roughly USD 3.7bn in Q2 2026 after full-year 2025 saw a record USD 84bn of outflows (the first annual redemptions since Morningstar began tracking in 2018); US funds ended 14 straight quarters of outflows with nearly USD 3bn of inflows in Q2 2026.
+  - The rebound is heavily skewed to passive, index-tracking climate-transition and clean-energy strategies (e.g. First Trust's GRID ETF gathering USD 3.1bn in Q2 2026), while actively managed sustainable funds continued to bleed money for a 13th consecutive quarter; global sustainable assets stood at roughly USD 3.7 trillion by end-June 2026.
+  - ISSB-aligned disclosure regimes advanced globally even as US federal rules retreated: the UK published ISSB-based UK Sustainability Reporting Standards (UK SRS S1/S2) for voluntary use in February 2026, and Taiwan's FSC adopted IFRS Sustainability Disclosure Standards from 2026, while Brazil shifted its ISSB-based regime from mandatory to voluntary.
+  - US state-level rules diverged from the federal retreat: California's SB 253 (Scope 1 and 2 emissions reporting for firms with over USD 1bn revenue) held its first reporting deadline near 10 November 2026 after CARB deferred it from August, while SB 261's climate-risk disclosure was enjoined pending a Ninth Circuit First Amendment appeal.
+  - The EU Carbon Border Adjustment Mechanism (CBAM) moved from reporting-only to substantive payment obligations from 1 January 2026, and the European Commission's November 2025 proposal to overhaul the SFDR (replacing the Article 6/8/9 categories with a simpler classification) is being negotiated through 2026.
+  - Open challenges as of 2026 include a widening transatlantic regulatory split, persistent politicisation (the US "Protecting Americans' Retirement Savings From Politics Act" advancing in the House and scrutiny of proxy advisers), and a shift by large UK institutions from pooled ESG funds into bespoke segregated mandates that distorts headline flow data.
+
+- ### References
+  - 1. Pulsora (2026). ESG regulations and framework updates: Q2 2026. https://www.pulsora.com/blog/esg-regulations-and-framework-updates-q2-2026
+  - 2. U.S. Securities and Exchange Commission (2026). SEC Proposes Rescission of Climate-Related Disclosure Rules (Press Release 2026-49). https://www.sec.gov/newsroom/press-releases/2026-49-sec-proposes-rescission-climate-related-disclosure-rules
+  - 3. Morningstar (2026). US Sustainable Funds Returned to Positive Flows in Q2 2026. https://www.morningstar.com/sustainable-investing/us-sustainable-funds-returned-positive-flows-q2-2026
+  - 4. Morningstar (2026). ESG Funds: 2025 Closes With Continued Outflows Amid Persistent Headwinds. https://www.morningstar.com/sustainable-investing/esg-funds-2025-closes-with-continued-outflows-amid-persistent-headwinds
+  - 5. Generation Impact (2026). ESG Strategy: Global Regulatory Guide 2026. https://generationimpact.global/blog/esg-strategy-global-guide/
+
+- ### Provenance
+

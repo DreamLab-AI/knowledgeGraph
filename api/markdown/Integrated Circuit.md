@@ -1,0 +1,29 @@
+
+An integrated circuit (IC) is a set of electronic circuits — transistors, resistors, capacitors and their interconnections — fabricated as a single monolithic device on a wafer of semiconductor material, usually silicon. By miniaturising and mass-producing complete circuits photolithographically, ICs made computation cheap, fast and reliable, enabling microprocessors, memory, FPGAs and application-specific chips; transistor density doubled roughly every two years in the trend described by Moore's Law, underpinning the whole of modern digital infrastructure.
+
+- ### Semantic Classification
+
+- ### Content
+
+  ## Definition
+
+  An **integrated circuit** places an entire electronic circuit on one piece of semiconductor. Before its invention, circuits were assembled from discrete components hand-wired together — the "tyranny of numbers" that limited how complex electronics could become. Jack Kilby at Texas Instruments demonstrated the first monolithic circuit in 1958; Robert Noyce at Fairchild independently devised the planar silicon version in 1959 whose photolithographic interconnects made mass production practical. Layering patterned regions of doped [[Semiconductor]], insulating oxide and metal interconnect, a modern IC integrates from a handful to over a hundred billion transistors on dies typically a few hundred square millimetres, packaged with pins or solder balls for mounting on circuit boards.
+
+  ICs are conventionally classed by function — digital logic (microprocessors, microcontrollers, memory), analogue (amplifiers, regulators, RF), and mixed-signal (data converters, systems-on-chip) — and by design approach: standard commodity parts, [[Field-Programmable Gate Array]] devices configurable after manufacture, and [[ASIC]] designs fixed at fabrication for one application. Complexity has scaled through the eras of SSI, MSI, LSI and VLSI to today's systems-on-chip combining CPU cores, GPUs, neural accelerators, modems and memory controllers on a single die, the substrate of everything from smartphones to the data-centre hardware behind [[CPU Computing]] and [[GPU Computing]].
+
+  ## Technical Details
+
+  Fabrication is the province of [[Semiconductor Manufacturing]]: hundreds of photolithography, etch, deposition, implantation and polishing steps executed in cleanrooms, with extreme-ultraviolet (EUV) lithography now defining features a few nanometres across at the leading nodes (5nm, 3nm, 2nm) operated by TSMC, Samsung and Intel. The economics follow [[Moore's Law]] — Gordon Moore's 1965 observation that transistor counts double roughly every two years — though its cadence has slowed as physics and cost intervene; the industry increasingly compensates with 3D structures (FinFET, gate-all-around transistors, 3D NAND), chiplet-based packaging and heterogeneous integration rather than raw shrinkage alone. Design itself depends on electronic design automation (EDA) toolchains for synthesis, place-and-route and verification, with fabless design houses relying on foundries — a division of labour that has made advanced ICs one of the most concentrated and geopolitically sensitive supply chains in the world, addressed by measures such as the US CHIPS Act and the EU Chips Act.
+
+  ## Current Landscape
+
+  - The **2nm-class generation entered volume production in late 2025**, marking the shift from FinFET to gate-all-around (nanosheet) transistors: TSMC's N2 began high-volume manufacturing in Q4 2025 (fabs in Hsinchu and Kaohsiung), with early N2 capacity reported effectively sold out through 2026 to Apple, Nvidia, Qualcomm and AMD.
+  - **Intel 18A** (a 1.8nm-class node combining RibbonFET GAA transistors with PowerVia backside power delivery) reached high-volume manufacturing in late 2025 and shipped in Panther Lake (Core Ultra Series 3) processors, with yields reported improving sharply through late 2025 into 2026; follow-ons 18A-P and 18A-PT are in the roadmap.
+  - **Samsung's SF2** (first-generation 2nm, MBCFET GAA) entered mass production in late 2025 for its Exynos 2600, with ramp-up yields reported around 40–60%, trailing TSMC and Intel; SF2P is targeted for late 2026.
+  - Leading-edge economics keep tightening: processed 2nm wafers are estimated in the roughly $25,000–$32,000 range, and High-NA EUV lithography is being qualified for selected layers, reinforcing the concentration of advanced fabrication in a handful of firms and the strategic weight of the US CHIPS Act and EU Chips Act.
+
+  **Sources**:
+  - https://en.wikipedia.org/wiki/2_nm_process
+  - https://www.tomshardware.com/tech-industry/semiconductors/leading-edge-foundry-roadmaps-for-tsmc-intel-and-samsung-outlining-the-path-to-1-4nm-nodes-and-beyond
+  - https://www.design-reuse.com/news/202530190-global-2nm-supply-crunch-tsmc-leads-as-intel-18a-samsung-and-rapidus/
+

@@ -1,0 +1,18 @@
+
+A scheduler is a system component that decides which units of work run, where they run and in what order, allocating finite computing resources among competing tasks over time. Schedulers exist at many layers, from operating-system process and thread scheduling to cluster and container orchestration that places workloads across machines. Their policies trade off throughput, latency, fairness and resource utilisation according to the goals of the platform.
+
+- ### Overview
+  - A scheduler arbitrates access to scarce resources by choosing, at each decision point, which pending unit of work to admit, the resource to assign it, and how long it may hold that resource. Operating-system schedulers interleave processes and threads on CPU cores using policies such as round-robin, priority and fair-share to balance responsiveness against throughput. Cluster and container schedulers, exemplified by Kubernetes, instead place pods or jobs onto nodes subject to resource requests, affinity rules and constraints, then rebalance as demand shifts. Across both scales the recurring tensions are the same: maximise utilisation and throughput while bounding latency and preserving fairness, often informed by load balancing, priority queues and feedback from autoscaling.
+- ### Mechanisms
+  - Selects which work runs, where, and in what order.
+  - Policies span round-robin, priority, fair-share and deadline-driven.
+  - Operates at OS process level and at cluster or container level.
+  - Balances throughput, latency, fairness and resource utilisation.
+  - Coordinates with load balancing and autoscaling to absorb demand.
+- ### Applications
+  - Operating-system process and thread scheduling.
+  - Kubernetes pod placement and cluster scheduling.
+  - Batch and high-performance computing job queues.
+  - Real-time systems with deadline-driven task ordering.
+- ### Provenance
+

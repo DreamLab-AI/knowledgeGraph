@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>Distributed Ledger Technology</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="Distributed Ledger Technology"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="Distributed Ledger Technology"/><meta name="twitter:description" content="Distributed Ledger Technology (DLT) is a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator."/><meta property="og:description" content="Distributed Ledger Technology (DLT) is a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator."/><meta property="og:image:alt" content="Distributed Ledger Technology (DLT) is a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/Distributed-Ledger-Technology"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/Distributed-Ledger-Technology"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Distributed Ledger Technology (DLT) is a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/Distributed-Ledger-Technology"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-2607"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-2607" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>Distributed Ledger Technology</a></div></nav><h1 class="article-title">Distributed Ledger Technology</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.743Z">23 Sept 2026</time><span>8 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:distributed-ledger-technology</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>blockchain</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>established</span></li></ul></td></tr><tr><th scope="row">Quality</th><td><ul class="properties-values"><li><span>0.72</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Distributed-Systems" class="internal">Distributed Systems</a></li></ul></td></tr><tr><th scope="row">Has part</th><td><ul class="properties-values"><li><a href="../pages/Consensus-Mechanism" class="internal">Consensus Mechanism</a></li><li><a href="../Blockchain" class="internal">Blockchain</a></li><li><a href="../cryptographic-hash-function" class="internal">Cryptographic Hash Function</a></li><li><a href="../pages/Peer-to-Peer-Network" class="internal">Peer-to-Peer Network</a></li><li><a href="../pages/Merkle-Tree" class="internal">Merkle Tree</a></li></ul></td></tr><tr><th scope="row">Requires</th><td><ul class="properties-values"><li><a href="../pages/Public-Key-Cryptography" class="internal">Public Key Cryptography</a></li><li><a href="../pages/Digital-Signature" class="internal">Digital Signature</a></li><li><a href="../pages/Network-Protocol" class="internal">Network Protocol</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/Smart-Contract" class="internal">Smart Contract</a></li><li><a href="../decentralised-finance" class="internal">Decentralised Finance</a></li><li><a href="../pages/Tokenization" class="internal">Tokenisation</a></li><li><a href="../pages/Central-Bank-Digital-Currency" class="internal">Central Bank Digital Currency</a></li><li><a href="../pages/Self-Sovereign-Identity" class="internal">Self Sovereign Identity</a></li><li><a href="../working/Tokenisation" class="internal">Tokenisation</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Bridges to</th><td><ul class="properties-values"><li><a href="../pages/Federated-Learning" class="internal">Federated Learning</a></li><li><a href="../pages/Zero-Knowledge-Proof" class="internal">Zero-Knowledge Proof</a></li><li><a href="../internet-of-things" class="internal">Internet of Things</a></li></ul></td></tr><tr><th scope="row">Contrasts with</th><td><ul class="properties-values"><li><a href="../pages/Centralised-Database" class="internal">Centralised Database</a></li><li><a href="../pages/Payment-System" class="internal">Traditional Payment System</a></li><li><a href="../Traditional-Payment-System" class="internal">Traditional Payment System</a></li></ul></td></tr><tr><th scope="row">Implements</th><td><ul class="properties-values"><li><a href="../pages/Byzantine-Fault-Tolerance" class="internal">Byzantine Fault Tolerance</a></li><li><a href="../pages/Immutability" class="internal">Immutability</a></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:distributed-ledger-technology</span></li></ul></td></tr><tr><th scope="row">Related to</th><td><ul class="properties-values"><li><a href="../pages/Financial-Regulation" class="internal">Financial Regulation</a></li><li><a href="../pages/Blockchain-Governance" class="internal">Blockchain Governance</a></li><li><a href="../pages/Digital-Asset" class="internal">Digital Asset</a></li><li><a href="../data-integrity" class="internal">Data Integrity</a></li><li><a href="../pages/Supply-Chain-Transparency" class="internal">Supply Chain Transparency</a></li></ul></td></tr><tr><th scope="row">Standardized by</th><td><ul class="properties-values"><li><a href="../iso-tc-307" class="internal">ISO TC 307</a></li><li><a href="../ieee-blockchain-initiative" class="internal">IEEE Blockchain Initiative</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Distributed Ledger Technology (DLT) is a class of decentralised database protocols in which transaction records are replicated, shared, and synchronised across multiple networked nodes without a central administrator. Consensus mechanisms — including proof-of-work, proof-of-stake, and Byzantine fault-tolerant protocols — ensure agreement on the canonical ledger state across participants who may not mutually trust one another. DLT encompasses permissionless public networks such as Bitcoin and Ethereum as well as permissioned enterprise ledgers such as Hyperledger Fabric and R3 Corda, spanning use cases in finance, supply chain, identity management, and tokenised assets. The technology achieves tamper-evidence through cryptographic chaining of records, making retrospective alteration computationally infeasible.</p>
+<ul>
+<li>
+<h3 id="overview">Overview<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#overview" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>DLT addresses the fundamental problem of maintaining a consistent, authoritative record across parties that may be geographically dispersed, mutually distrusting, or subject to different regulatory jurisdictions.</li>
+<li>Unlike a conventional <a href="../pages/Centralised-Database" class="internal alias" data-slug="pages/Centralised-Database">Centralised Database</a>, no single entity controls write access; instead, participants join a <a href="../pages/Peer-to-Peer-Network" class="internal alias" data-slug="pages/Peer-to-Peer-Network">Peer-to-Peer Network</a> and validate proposed state changes according to protocol rules.</li>
+<li>The absence of a trusted central intermediary reduces single points of failure and censorship risk, but introduces new engineering challenges around latency, throughput, and governance.</li>
+<li><strong>Permissionless vs. permissioned architectures</strong>
+<ul>
+<li>Permissionless (public) networks — e.g., Bitcoin, Ethereum — allow any node to participate without prior authorisation; identity is pseudonymous and trust is achieved through economic incentives.</li>
+<li>Permissioned networks — e.g., Hyperledger Fabric, R3 Corda, Quorum — restrict participation to known, authenticated entities, enabling higher throughput and compliance with data-protection regulations.</li>
+<li>Hybrid models mix public settlement layers with permissioned application layers (e.g., <a href="../pages/Layer-2-Protocol" class="internal alias" data-slug="pages/Layer-2-Protocol">Layer 2 Protocol</a>s, sidechains).</li>
+</ul>
+</li>
+<li><strong>Why it matters</strong>
+<ul>
+<li>DLT enables trustless coordination at scale, unlocking use cases where intermediaries previously captured rent (trade finance, clearing and settlement, provenance tracking).</li>
+<li>It underpins emerging monetary infrastructure including <a href="../pages/Central-Bank-Digital-Currency" class="internal alias" data-slug="pages/Central-Bank-Digital-Currency">Central Bank Digital Currency</a> projects and wholesale settlement networks.</li>
+<li>By programmable rules encoded in <a href="../pages/Smart-Contract" class="internal alias" data-slug="pages/Smart-Contract">Smart Contract</a>s, DLT reduces operational risk and automates multi-party agreements without reliance on legal enforcement.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="key-components">Key Components<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#key-components" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="../pages/Consensus-Mechanism" class="internal alias" data-slug="pages/Consensus-Mechanism">Consensus Mechanism</a></strong>
+<ul>
+<li>The protocol by which nodes agree on which transactions are valid and in what order they occurred.</li>
+<li>Variants include Nakamoto consensus (longest-chain rule with proof-of-work), BFT-based protocols (PBFT, Tendermint, HotStuff), and proof-of-authority used in enterprise contexts.</li>
+</ul>
+</li>
+<li><strong><a href="../Blockchain" class="internal" data-slug="Blockchain">Blockchain</a> (append-only chain of blocks)</strong>
+<ul>
+<li>The canonical DLT data structure: transactions are batched into blocks, each block containing a cryptographic hash of its predecessor, forming an immutable chain.</li>
+<li>DAG-based alternatives (IOTA Tangle, Hedera Hashgraph) replace the linear chain with a graph structure to increase throughput.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Cryptographic-Hash-Function" class="internal alias" data-slug="pages/Cryptographic-Hash-Function">Cryptographic Hash Function</a></strong>
+<ul>
+<li>SHA-256 (Bitcoin), Keccak-256 (Ethereum), and similar algorithms bind each record to its predecessors and make tampering detectable.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Merkle-Tree" class="internal alias" data-slug="pages/Merkle-Tree">Merkle Tree</a></strong>
+<ul>
+<li>Efficient data structure enabling compact proofs of transaction inclusion (SPV proofs) without downloading the full ledger.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Digital-Signature" class="internal alias" data-slug="pages/Digital-Signature">Digital Signature</a></strong>
+<ul>
+<li>Asymmetric cryptography (<a href="../pages/Public-Key-Cryptography" class="internal alias" data-slug="pages/Public-Key-Cryptography">Public Key Cryptography</a>) authenticates transaction originators without revealing private keys.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Smart-Contract" class="internal alias" data-slug="pages/Smart-Contract">Smart Contract</a></strong>
+<ul>
+<li>Self-executing code deployed on the ledger that runs deterministically on all nodes, automating multi-party agreements and on-chain logic.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Peer-to-Peer-Network" class="internal alias" data-slug="pages/Peer-to-Peer-Network">Peer-to-Peer Network</a></strong>
+<ul>
+<li>The communications layer over which nodes broadcast proposed transactions and blocks; gossip protocols propagate state changes network-wide.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Network-Protocol" class="internal alias" data-slug="pages/Network-Protocol">Network Protocol</a></strong>
+<ul>
+<li>Specification of message formats, handshake procedures, and fork-resolution rules governing node interoperability.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="mechanisms">Mechanisms<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#mechanisms" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong><a href="../pages/Byzantine-Fault-Tolerance" class="internal alias" data-slug="pages/Byzantine-Fault-Tolerance">Byzantine Fault Tolerance</a></strong>
+<ul>
+<li>Property ensuring that a distributed system reaches consensus even if a fraction of nodes behave arbitrarily (including maliciously). Classic BFT algorithms tolerate up to ⌊(n-1)/3⌋ faulty nodes.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Immutability" class="internal" data-slug="pages/Immutability">Immutability</a></strong>
+<ul>
+<li>Once a record is sufficiently confirmed (depth in the chain), altering it requires re-mining or re-signing all subsequent blocks, which is computationally or economically prohibitive.</li>
+</ul>
+</li>
+<li><strong>Finality</strong>
+<ul>
+<li>Probabilistic finality (Bitcoin) vs. absolute finality (BFT-based chains): the distinction matters for settlement assurance in financial applications.</li>
+</ul>
+</li>
+<li><strong><a href="../working/Tokenisation" class="internal" data-slug="working/Tokenisation">Tokenisation</a></strong>
+<ul>
+<li>The representation of real-world assets (currencies, securities, commodities, intellectual property) as on-chain tokens, enabling programmable ownership and transfer.</li>
+</ul>
+</li>
+<li><strong>Sharding and <a href="../pages/Layer-2-Protocol" class="internal alias" data-slug="pages/Layer-2-Protocol">Layer 2 Protocol</a>s</strong>
+<ul>
+<li>Techniques to scale DLT throughput by partitioning state across sub-ledgers or processing transactions off-chain with periodic on-chain settlement.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="applications">Applications<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#applications" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>Finance and capital markets</strong>
+<ul>
+<li>Interbank settlement (JPMorgan Onyx, Project Helvetia), cross-border remittance, repo markets, bond issuance on-chain.</li>
+<li><a href="../pages/Decentralised-Finance" class="internal alias" data-slug="pages/Decentralised-Finance">Decentralised Finance</a> (DeFi): lending, derivatives, and liquidity provision governed by <a href="../pages/Smart-Contract" class="internal alias" data-slug="pages/Smart-Contract">Smart Contract</a>s without intermediaries.</li>
+<li><a href="../pages/Central-Bank-Digital-Currency" class="internal alias" data-slug="pages/Central-Bank-Digital-Currency">Central Bank Digital Currency</a>: retail and wholesale CBDC pilots (mBridge, Project Dunbar, Digital Euro) rely on DLT for issuance and settlement rails.</li>
+</ul>
+</li>
+<li><strong><a href="../pages/Supply-Chain-Transparency" class="internal alias" data-slug="pages/Supply-Chain-Transparency">Supply Chain Transparency</a></strong>
+<ul>
+<li>Provenance tracking of goods across multi-tier supply chains (food safety — IBM Food Trust; pharmaceuticals — DSCSA compliance; luxury goods authentication).</li>
+<li>DLT creates an auditable record linking physical goods to digital certificates, reducing fraud and counterfeiting.</li>
+</ul>
+</li>
+<li><strong>Identity and credentials</strong>
+<ul>
+<li><a href="../pages/Self-Sovereign-Identity" class="internal alias" data-slug="pages/Self-Sovereign-Identity">Self-Sovereign Identity</a> (SSI): W3C Decentralised Identifiers (DIDs) and Verifiable Credentials anchored to DLT enable users to control their own identity data.</li>
+<li>KYC/AML attestation sharing between financial institutions without centralised repositories.</li>
+</ul>
+</li>
+<li><strong>Healthcare</strong>
+<ul>
+<li>Patient record interoperability across healthcare providers with patient-controlled consent management.</li>
+<li>Clinical trial data integrity: immutable audit trails for regulatory submission.</li>
+</ul>
+</li>
+<li><strong>Energy</strong>
+<ul>
+<li>Peer-to-peer energy trading between prosumers (rooftop solar sellers and buyers) coordinated by smart contracts on permissioned ledgers.</li>
+<li>Carbon credit issuance and retirement tracked on-chain for double-spend prevention.</li>
+</ul>
+</li>
+<li><strong>Public sector and governance</strong>
+<ul>
+<li>Land registry modernisation (Georgia, Honduras, Dubai pilots).</li>
+<li>Voting infrastructure and transparent public procurement audit trails.</li>
+<li><a href="../pages/Blockchain-Governance" class="internal alias" data-slug="pages/Blockchain-Governance">Blockchain Governance</a> frameworks for digital asset regulation.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="standards--context">Standards &amp; Context<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#standards--context" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li><strong>ISO/TC 307 — Blockchain and Distributed Ledger Technologies</strong>
+<ul>
+<li>The primary international standardisation committee, producing standards on vocabulary (ISO 22739), reference architecture (ISO 23257), security (ISO 23245), and smart contracts.</li>
+</ul>
+</li>
+<li><strong>IEEE Blockchain Initiative</strong>
+<ul>
+<li>Produces interoperability and data format standards for blockchain-based systems, including IEEE P2418 series covering IoT and DLT integration.</li>
+</ul>
+</li>
+<li><strong>W3C Decentralised Identifiers (DIDs)</strong>
+<ul>
+<li>A W3C recommendation providing a self-sovereign identity layer anchored to DLT.</li>
+</ul>
+</li>
+<li><strong>BIS Innovation Hub</strong>
+<ul>
+<li>Publishes technical blueprints and pilots for wholesale CBDC and DLT-based settlement systems (Project mBridge, Project Helvetia).</li>
+</ul>
+</li>
+<li><strong>Regulatory landscape</strong>
+<ul>
+<li>EU: <a href="../pages/MiCA" class="internal" data-slug="pages/MiCA">MiCA</a> (Markets in Crypto-Assets Regulation) and DLT Pilot Regime for tokenised securities.</li>
+<li>US: SEC and CFTC rulemaking on digital assets; OCC interpretive letters on bank custody of crypto.</li>
+<li>UK: HM Treasury consultation on crypto-asset regulation; FCA sandbox programmes.</li>
+<li>Globally, central banks are engaged through the <a href="../pages/Financial-Stability-Board" class="internal alias" data-slug="pages/Financial-Stability-Board">Financial Stability Board</a> (FSB) and CPMI on DLT use in financial market infrastructure.</li>
+</ul>
+</li>
+<li><strong>Enterprise DLT platforms</strong>
+<ul>
+<li>Hyperledger Fabric (Linux Foundation) — modular permissioned ledger, widely deployed in trade finance and supply chain.</li>
+<li>R3 Corda — designed for financial institutions, with privacy-preserving transaction flows.</li>
+<li>ConsenSys Quorum — Ethereum-based permissioned variant used by banks and consortia.</li>
+<li>Hedera Hashgraph — DAG-based public ledger governed by a council of enterprises.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="current-landscape-2026">Current Landscape (2026)<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#current-landscape-2026" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>Regulation moved from policy to practice: the EU’s MiCA became fully applicable for crypto-asset service providers on 31 December 2024 (its grandfathering period ending 30 June 2026), while in the US the GENIUS Act (2025) created a federal payment-stablecoin regime and the SEC’s 2025 Crypto Task Force issued no-action relief clarifying that payment stablecoins and staking are not securities.</li>
+<li>Real-world asset (RWA) tokenisation scaled sharply: tokenised RWAs on public chains grew past roughly USD 35 billion by late 2025 and hit about USD 23 billion (excluding stablecoins) by February 2026, with BlackRock’s BUIDL fund (launched March 2024 with Securitize) growing to around USD 2.4-2.9 billion across eight chains.</li>
+<li>Market infrastructure went on-chain: in December 2025 the SEC cleared the DTCC to begin settling tokenised versions of frequently traded securities (ETFs, Treasuries, bonds), Nasdaq gained approval in March 2026 to let investors choose per-trade blockchain settlement, and JPMorgan rebranded Onyx as Kinexys (over USD 1.5 trillion processed), launching its MONY tokenised money-market fund in December 2025 and JLTXX in May 2026.</li>
+<li>Central banks advanced wholesale DLT settlement: the ECB’s Governing Council decided on 20 February 2025 to pursue a two-track strategy (Pontes for near-term TARGET interoperability, aiming to launch Q3 2026, and the longer-term Appia vision), while the SNB extended Project Helvetia’s wholesale CBDC on SIX Digital Exchange to at least mid-2027.</li>
+<li>The digital euro entered its preparation phase: the ECB targets a 12-month pilot from H2 2027 and potential first issuance in 2029 (pending 2026 adoption of the Regulation), selecting 36 payment service providers in 2026 from over 50 applicants.</li>
+<li>Interoperability consolidated around permissioned, privacy-enabled networks: the Canton Network pilot linked 45 institutions across 22 permissioned blockchains for atomic transactions, and JPMorgan announced native JPM Coin issuance on Canton in January 2026, with ISO 20022 remaining the connective standard between DLT and legacy rails.</li>
+<li>Switzerland issued its first DLT trading facility licence to BX Digital (Börse Stuttgart Group) in March 2025 under its DLT Act, a concrete operational milestone for regulated DLT market infrastructure.</li>
+<li>Open challenges as of 2026 include fragmented cross-chain settlement finality and legal recognition, modest uptake under the EU DLT Pilot Regime (prompting a December 2025 Commission proposal to extend and widen it), lost-key recovery and forced-transfer controls for tokenised assets, and preparing ledgers for post-quantum cryptography.</li>
+</ul>
+</li>
+<li>
+<h3 id="references">References<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#references" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul>
+<li>
+<ol>
+<li>State Street (2026). Digital Digest March 2026: Digital asset regulation accelerates in 2026. <a href="https://www.statestreet.com/us/en/insights/digital-digest-march-2026-regulations" class="external">https://www.statestreet.com/us/en/insights/digital-digest-march-2026-regulations<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>TRM Labs (2025). Global Crypto Policy Review &amp; Outlook 2025/26. <a href="https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26" class="external">https://www.trmlabs.com/reports-and-whitepapers/global-crypto-policy-review-outlook-2025-26<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="3">
+<li>Cleary Gottlieb (2026). 2026 Digital Assets Regulatory Update: A Landmark 2025 But More Developments on the Horizon. <a href="https://www.clearymawatch.com/2026/02/2026-digital-assets-regulatory-update-a-landmark-2025-but-more-developments-on-the-horizon/" class="external">https://www.clearymawatch.com/2026/02/2026-digital-assets-regulatory-update-a-landmark-2025-but-more-developments-on-the-horizon/<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="4">
+<li>Dakota (2026). The 6 Asset Managers Leading the Tokenized Real-World Asset Market in 2026. <a href="https://www.dakota.com/resources/blog/the-6-asset-managers-leading-the-tokenized-real-world-asset-market-in-2026" class="external">https://www.dakota.com/resources/blog/the-6-asset-managers-leading-the-tokenized-real-world-asset-market-in-2026<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="5">
+<li>Charles Schwab (2026). Tokenization: Real-World Assets on the Blockchain. <a href="https://www.schwab.com/learn/story/tokenization-real-world-assets-on-blockchain" class="external">https://www.schwab.com/learn/story/tokenization-real-world-assets-on-blockchain<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+<li>
+<ol start="6">
+<li>European Central Bank (2026). The digital euro: strengthening Europe’s payments ecosystem (speech, 6 February 2026). <a href="https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260206~dd5354fe95.en.html" class="external">https://www.ecb.europa.eu/press/key/date/2026/html/ecb.sp260206~dd5354fe95.en.html<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a></li>
+</ol>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-1886" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-0"><a href="#overview" data-for="overview">Overview</a></li><li class="depth-0"><a href="#key-components" data-for="key-components">Key Components</a></li><li class="depth-0"><a href="#mechanisms" data-for="mechanisms">Mechanisms</a></li><li class="depth-0"><a href="#applications" data-for="applications">Applications</a></li><li class="depth-0"><a href="#standards--context" data-for="standards--context">Standards &amp; Context</a></li><li class="depth-0"><a href="#current-landscape-2026" data-for="current-landscape-2026">Current Landscape (2026)</a></li><li class="depth-0"><a href="#references" data-for="references">References</a></li><li class="depth-0"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div><div class="backlinks"><h3>Backlinks</h3><ul id="list-2" class="overflow"><li><a href="../pages/Audit-Trail" class="internal">Audit Trail</a></li><li><a href="../pages/Avalanche" class="internal">Avalanche</a></li><li><a href="../pages/BIS" class="internal">BIS</a></li><li><a href="../pages/Bank-of-England" class="internal">Bank of England</a></li><li><a href="../pages/Central-Bank" class="internal">Central Bank</a></li><li><a href="../pages/Conflict-Resolution" class="internal">Conflict Resolution</a></li><li><a href="../pages/Correspondent-Banking" class="internal">Correspondent Banking</a></li><li><a href="../pages/Credential-Verification" class="internal">Credential Verification</a></li><li><a href="../pages/Cross-Border-Payments" class="internal">cross-border payments</a></li><li><a href="../pages/Cross-Chain-Interoperability" class="internal">Cross-Chain Interoperability</a></li><li><a href="../pages/Decentralized-Identifier" class="internal">Decentralized Identifier</a></li><li><a href="../pages/Decentralized-Identity" class="internal">Decentralized Identity</a></li><li><a href="../pages/Digital-Product-Passport" class="internal">digital product passport</a></li><li><a href="../pages/Energy-Consumption" class="internal">Energy Consumption</a></li><li><a href="../pages/European-Commission" class="internal">european commission</a></li><li><a href="../pages/Financial-Infrastructure" class="internal">Financial Infrastructure</a></li><li><a href="../pages/Financial-Services" class="internal">Financial Services</a></li><li><a href="../pages/Global-Digital-Finance" class="internal">Global Digital Finance</a></li><li><a href="../pages/Hong-Kong" class="internal">Hong Kong</a></li><li><a href="../pages/Hyperledger-Foundation" class="internal">hyperledger foundation</a></li><li><a href="../pages/IEEE-2418.1" class="internal">IEEE 2418.1</a></li><li><a href="../pages/ISO-23257" class="internal">ISO 23257</a></li><li><a href="../pages/ISO-TC-307" class="internal">iso tc 307</a></li><li><a href="../pages/Institutional-Adoption" class="internal">Institutional Adoption</a></li><li><a href="../pages/Ledger" class="internal">Ledger</a></li><li><a href="../pages/MiCA" class="internal">MiCA</a></li><li><a href="../pages/Patent" class="internal">Patent</a></li><li><a href="../pages/Payment-Network" class="internal">Payment Network</a></li><li><a href="../pages/Payment-System" class="internal">Payment System</a></li><li><a href="../pages/Permissionless-Network" class="internal">Permissionless Network</a></li><li><a href="../pages/Proof-Of-Stake-Sustainability" class="internal">Proof Of Stake Sustainability</a></li><li><a href="../pages/Provenance-Tracking" class="internal">Provenance Tracking</a></li><li><a href="../pages/Real-World-Asset-Tokenisation" class="internal">real-world asset tokenisation</a></li><li><a href="../pages/SWIFT-Messaging" class="internal">SWIFT Messaging</a></li><li><a href="../pages/Security-Token-Offering" class="internal">Security Token Offering</a></li><li><a href="../pages/Settlement" class="internal">Settlement</a></li><li><a href="../pages/Tendermint" class="internal">tendermint</a></li><li><a href="../pages/Traditional-Banking" class="internal">Traditional Banking</a></li><li><a href="../pages/University-of-Cambridge" class="internal">University of Cambridge</a></li><li><a href="../pages/Virtual-Economy" class="internal">Virtual Economy</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>

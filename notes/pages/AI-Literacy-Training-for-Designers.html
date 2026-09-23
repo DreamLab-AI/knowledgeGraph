@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"><head><title>AI Literacy Training for Designers</title><meta charset="utf-8"/><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com"/><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;family=IBM Plex Mono:wght@400;600&amp;display=swap"/><link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="og:site_name" content="Narrative Goldmine"/><meta property="og:title" content="AI Literacy Training for Designers"/><meta property="og:type" content="website"/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:title" content="AI Literacy Training for Designers"/><meta name="twitter:description" content="Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automa..."/><meta property="og:description" content="Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automa..."/><meta property="og:image:alt" content="Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automa..."/><meta property="og:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:url" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta name="twitter:image" content="https://narrativegoldmine.com/notes/static/og-image.png"/><meta property="og:image:type" content="image/.png"/><meta property="twitter:domain" content="narrativegoldmine.com/notes"/><meta property="og:url" content="https://narrativegoldmine.com/notes/pages/AI-Literacy-Training-for-Designers"/><meta property="twitter:url" content="https://narrativegoldmine.com/notes/pages/AI-Literacy-Training-for-Designers"/><link rel="icon" href="../static/icon.png"/><meta name="description" content="Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automa..."/><meta name="generator" content="Quartz"/><link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/><style>.expand-button {
+  position: absolute;
+  display: flex;
+  float: right;
+  padding: 0.4rem;
+  margin: 0.3rem;
+  right: 0;
+  color: var(--gray);
+  border-color: var(--dark);
+  background-color: var(--light);
+  border: 1px solid;
+  border-radius: 5px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.expand-button > svg {
+  fill: var(--light);
+  filter: contrast(0.3);
+}
+.expand-button:hover {
+  cursor: pointer;
+  border-color: var(--secondary);
+}
+.expand-button:focus {
+  outline: 0;
+}
+
+pre:hover > .expand-button {
+  opacity: 1;
+  transition: 0.2s;
+}
+
+#mermaid-container {
+  position: fixed;
+  contain: layout;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: none;
+  backdrop-filter: blur(4px);
+  background: rgba(0, 0, 0, 0.5);
+}
+#mermaid-container.active {
+  display: inline-block;
+}
+#mermaid-container > #mermaid-space {
+  border: 1px solid var(--lightgray);
+  background-color: var(--light);
+  border-radius: 5px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 80vh;
+  width: 80vw;
+  overflow: hidden;
+}
+#mermaid-container > #mermaid-space > .mermaid-content {
+  padding: 2rem;
+  position: relative;
+  transform-origin: 0 0;
+  transition: transform 0.1s ease;
+  overflow: visible;
+  min-height: 200px;
+  min-width: 200px;
+}
+#mermaid-container > #mermaid-space > .mermaid-content pre {
+  margin: 0;
+  border: none;
+}
+#mermaid-container > #mermaid-space > .mermaid-content svg {
+  max-width: none;
+  height: auto;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  gap: 8px;
+  padding: 8px;
+  background: var(--light);
+  border: 1px solid var(--lightgray);
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  border: 1px solid var(--lightgray);
+  background: var(--light);
+  color: var(--dark);
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--bodyFont);
+  transition: all 0.2s ease;
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:hover {
+  background: var(--lightgray);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:active {
+  transform: translateY(1px);
+}
+#mermaid-container > #mermaid-space > .mermaid-controls .mermaid-control-button:nth-child(2) {
+  width: auto;
+  padding: 0 12px;
+  font-size: 14px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VSb290IjoiL2hvbWUvcnVubmVyL3dvcmsvdmlzaW9uR3JhcGgvdmlzaW9uR3JhcGgvcXVhcnR6L3F1YXJ0ei9jb21wb25lbnRzL3N0eWxlcyIsInNvdXJjZXMiOlsibWVybWFpZC5pbmxpbmUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTs7QUFHRjtFQUNFO0VBQ0E7O0FBR0Y7RUFDRTs7O0FBS0Y7RUFDRTtFQUNBOzs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTs7QUFHRjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBOztBQUdGO0VBQ0U7RUFDQTs7QUFJSjtFQUNFO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FBRUE7RUFDRTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUNBOztBQUVBO0VBQ0U7O0FBR0Y7RUFDRTs7QUFJRjtFQUNFO0VBQ0E7RUFDQSIsInNvdXJjZXNDb250ZW50IjpbIi5leHBhbmQtYnV0dG9uIHtcbiAgcG9zaXRpb246IGFic29sdXRlO1xuICBkaXNwbGF5OiBmbGV4O1xuICBmbG9hdDogcmlnaHQ7XG4gIHBhZGRpbmc6IDAuNHJlbTtcbiAgbWFyZ2luOiAwLjNyZW07XG4gIHJpZ2h0OiAwOyAvLyBOT1RFOiByaWdodCB3aWxsIGJlIHNldCBpbiBtZXJtYWlkLmlubGluZS50c1xuICBjb2xvcjogdmFyKC0tZ3JheSk7XG4gIGJvcmRlci1jb2xvcjogdmFyKC0tZGFyayk7XG4gIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWxpZ2h0KTtcbiAgYm9yZGVyOiAxcHggc29saWQ7XG4gIGJvcmRlci1yYWRpdXM6IDVweDtcbiAgb3BhY2l0eTogMDtcbiAgdHJhbnNpdGlvbjogMC4ycztcblxuICAmID4gc3ZnIHtcbiAgICBmaWxsOiB2YXIoLS1saWdodCk7XG4gICAgZmlsdGVyOiBjb250cmFzdCgwLjMpO1xuICB9XG5cbiAgJjpob3ZlciB7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIGJvcmRlci1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTtcbiAgfVxuXG4gICY6Zm9jdXMge1xuICAgIG91dGxpbmU6IDA7XG4gIH1cbn1cblxucHJlIHtcbiAgJjpob3ZlciA+IC5leHBhbmQtYnV0dG9uIHtcbiAgICBvcGFjaXR5OiAxO1xuICAgIHRyYW5zaXRpb246IDAuMnM7XG4gIH1cbn1cblxuI21lcm1haWQtY29udGFpbmVyIHtcbiAgcG9zaXRpb246IGZpeGVkO1xuICBjb250YWluOiBsYXlvdXQ7XG4gIHotaW5kZXg6IDk5OTtcbiAgbGVmdDogMDtcbiAgdG9wOiAwO1xuICB3aWR0aDogMTAwdnc7XG4gIGhlaWdodDogMTAwdmg7XG4gIG92ZXJmbG93OiBoaWRkZW47XG4gIGRpc3BsYXk6IG5vbmU7XG4gIGJhY2tkcm9wLWZpbHRlcjogYmx1cig0cHgpO1xuICBiYWNrZ3JvdW5kOiByZ2JhKDAsIDAsIDAsIDAuNSk7XG5cbiAgJi5hY3RpdmUge1xuICAgIGRpc3BsYXk6IGlubGluZS1ibG9jaztcbiAgfVxuXG4gICYgPiAjbWVybWFpZC1zcGFjZSB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1saWdodCk7XG4gICAgYm9yZGVyLXJhZGl1czogNXB4O1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDUwJTtcbiAgICBsZWZ0OiA1MCU7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGUoLTUwJSwgLTUwJSk7XG4gICAgaGVpZ2h0OiA4MHZoO1xuICAgIHdpZHRoOiA4MHZ3O1xuICAgIG92ZXJmbG93OiBoaWRkZW47XG5cbiAgICAmID4gLm1lcm1haWQtY29udGVudCB7XG4gICAgICBwYWRkaW5nOiAycmVtO1xuICAgICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgICAgdHJhbnNmb3JtLW9yaWdpbjogMCAwO1xuICAgICAgdHJhbnNpdGlvbjogdHJhbnNmb3JtIDAuMXMgZWFzZTtcbiAgICAgIG92ZXJmbG93OiB2aXNpYmxlO1xuICAgICAgbWluLWhlaWdodDogMjAwcHg7XG4gICAgICBtaW4td2lkdGg6IDIwMHB4O1xuXG4gICAgICBwcmUge1xuICAgICAgICBtYXJnaW46IDA7XG4gICAgICAgIGJvcmRlcjogbm9uZTtcbiAgICAgIH1cblxuICAgICAgc3ZnIHtcbiAgICAgICAgbWF4LXdpZHRoOiBub25lO1xuICAgICAgICBoZWlnaHQ6IGF1dG87XG4gICAgICB9XG4gICAgfVxuXG4gICAgJiA+IC5tZXJtYWlkLWNvbnRyb2xzIHtcbiAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgIGJvdHRvbTogMjBweDtcbiAgICAgIHJpZ2h0OiAyMHB4O1xuICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgIGdhcDogOHB4O1xuICAgICAgcGFkZGluZzogOHB4O1xuICAgICAgYmFja2dyb3VuZDogdmFyKC0tbGlnaHQpO1xuICAgICAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tbGlnaHRncmF5KTtcbiAgICAgIGJvcmRlci1yYWRpdXM6IDZweDtcbiAgICAgIGJveC1zaGFkb3c6IDAgMnB4IDRweCByZ2JhKDAsIDAsIDAsIDAuMSk7XG4gICAgICB6LWluZGV4OiAyO1xuXG4gICAgICAubWVybWFpZC1jb250cm9sLWJ1dHRvbiB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogY2VudGVyO1xuICAgICAgICB3aWR0aDogMzJweDtcbiAgICAgICAgaGVpZ2h0OiAzMnB4O1xuICAgICAgICBwYWRkaW5nOiAwO1xuICAgICAgICBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodCk7XG4gICAgICAgIGNvbG9yOiB2YXIoLS1kYXJrKTtcbiAgICAgICAgYm9yZGVyLXJhZGl1czogNHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTZweDtcbiAgICAgICAgZm9udC1mYW1pbHk6IHZhcigtLWJvZHlGb250KTtcbiAgICAgICAgdHJhbnNpdGlvbjogYWxsIDAuMnMgZWFzZTtcblxuICAgICAgICAmOmhvdmVyIHtcbiAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1saWdodGdyYXkpO1xuICAgICAgICB9XG5cbiAgICAgICAgJjphY3RpdmUge1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpO1xuICAgICAgICB9XG5cbiAgICAgICAgLy8gU3R5bGUgdGhlIHJlc2V0IGJ1dHRvbiBkaWZmZXJlbnRseVxuICAgICAgICAmOm50aC1jaGlsZCgyKSB7XG4gICAgICAgICAgd2lkdGg6IGF1dG87XG4gICAgICAgICAgcGFkZGluZzogMCAxMnB4O1xuICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */</style><link href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/><script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script><link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://narrativegoldmine.com/notes/index.xml"/></head><body data-slug="pages/AI-Literacy-Training-for-Designers"><div id="quartz-root" class="page"><div id="quartz-body"><div class="left sidebar"><h2 class="page-title"><a href="..">Narrative Goldmine</a></h2><div class="spacer mobile-only"></div><div class="flex-component" style="flex-direction: row; flex-wrap: nowrap; gap: 1rem;"><div style="flex-grow: 1; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><div class="search"><button class="search-button"><svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.9 19.7"><title>Search</title><g class="search-path" fill="none"><path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4"></path><circle cx="8" cy="8" r="7"></circle></g></svg><p>Search</p></button><div class="search-container"><div class="search-space"><input autocomplete="off" class="search-bar" name="search" type="text" aria-label="Search for something" placeholder="Search for something"/><div class="search-layout" data-preview="true"></div></div></div></div></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="darkmode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="dayIcon" x="0px" y="0px" viewBox="0 0 35 35" style="enable-background:new 0 0 35 35" xml:space="preserve" aria-label="Dark mode"><title>Dark mode</title><path d="M6,17.5C6,16.672,5.328,16,4.5,16h-3C0.672,16,0,16.672,0,17.5    S0.672,19,1.5,19h3C5.328,19,6,18.328,6,17.5z M7.5,26c-0.414,0-0.789,0.168-1.061,0.439l-2,2C4.168,28.711,4,29.086,4,29.5    C4,30.328,4.671,31,5.5,31c0.414,0,0.789-0.168,1.06-0.44l2-2C8.832,28.289,9,27.914,9,27.5C9,26.672,8.329,26,7.5,26z M17.5,6    C18.329,6,19,5.328,19,4.5v-3C19,0.672,18.329,0,17.5,0S16,0.672,16,1.5v3C16,5.328,16.671,6,17.5,6z M27.5,9    c0.414,0,0.789-0.168,1.06-0.439l2-2C30.832,6.289,31,5.914,31,5.5C31,4.672,30.329,4,29.5,4c-0.414,0-0.789,0.168-1.061,0.44    l-2,2C26.168,6.711,26,7.086,26,7.5C26,8.328,26.671,9,27.5,9z M6.439,8.561C6.711,8.832,7.086,9,7.5,9C8.328,9,9,8.328,9,7.5    c0-0.414-0.168-0.789-0.439-1.061l-2-2C6.289,4.168,5.914,4,5.5,4C4.672,4,4,4.672,4,5.5c0,0.414,0.168,0.789,0.439,1.06    L6.439,8.561z M33.5,16h-3c-0.828,0-1.5,0.672-1.5,1.5s0.672,1.5,1.5,1.5h3c0.828,0,1.5-0.672,1.5-1.5S34.328,16,33.5,16z     M28.561,26.439C28.289,26.168,27.914,26,27.5,26c-0.828,0-1.5,0.672-1.5,1.5c0,0.414,0.168,0.789,0.439,1.06l2,2    C28.711,30.832,29.086,31,29.5,31c0.828,0,1.5-0.672,1.5-1.5c0-0.414-0.168-0.789-0.439-1.061L28.561,26.439z M17.5,29    c-0.829,0-1.5,0.672-1.5,1.5v3c0,0.828,0.671,1.5,1.5,1.5s1.5-0.672,1.5-1.5v-3C19,29.672,18.329,29,17.5,29z M17.5,7    C11.71,7,7,11.71,7,17.5S11.71,28,17.5,28S28,23.29,28,17.5S23.29,7,17.5,7z M17.5,25c-4.136,0-7.5-3.364-7.5-7.5    c0-4.136,3.364-7.5,7.5-7.5c4.136,0,7.5,3.364,7.5,7.5C25,21.636,21.636,25,17.5,25z"></path></svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="nightIcon" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100" xml:space="preserve" aria-label="Light mode"><title>Light mode</title><path d="M96.76,66.458c-0.853-0.852-2.15-1.064-3.23-0.534c-6.063,2.991-12.858,4.571-19.655,4.571  C62.022,70.495,50.88,65.88,42.5,57.5C29.043,44.043,25.658,23.536,34.076,6.47c0.532-1.08,0.318-2.379-0.534-3.23  c-0.851-0.852-2.15-1.064-3.23-0.534c-4.918,2.427-9.375,5.619-13.246,9.491c-9.447,9.447-14.65,22.008-14.65,35.369  c0,13.36,5.203,25.921,14.65,35.368s22.008,14.65,35.368,14.65c13.361,0,25.921-5.203,35.369-14.65  c3.872-3.871,7.064-8.328,9.491-13.246C97.826,68.608,97.611,67.309,96.76,66.458z"></path></svg></button></div><div style="flex-grow: 0; flex-shrink: 1; flex-basis: auto; order: 0; align-self: center; justify-self: center;"><button class="readermode"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" class="readerIcon" fill="currentColor" stroke="currentColor" stroke-width="0.2" stroke-linecap="round" stroke-linejoin="round" width="64px" height="64px" viewBox="0 0 24 24" aria-label="Reader mode"><title>Reader mode</title><g transform="translate(-1.8, -1.8) scale(1.15, 1.2)"><path d="M8.9891247,2.5 C10.1384702,2.5 11.2209868,2.96705384 12.0049645,3.76669482 C12.7883914,2.96705384 13.8709081,2.5 15.0202536,2.5 L18.7549359,2.5 C19.1691495,2.5 19.5049359,2.83578644 19.5049359,3.25 L19.5046891,4.004 L21.2546891,4.00457396 C21.6343849,4.00457396 21.9481801,4.28672784 21.9978425,4.6528034 L22.0046891,4.75457396 L22.0046891,20.25 C22.0046891,20.6296958 21.7225353,20.943491 21.3564597,20.9931534 L21.2546891,21 L2.75468914,21 C2.37499337,21 2.06119817,20.7178461 2.01153575,20.3517706 L2.00468914,20.25 L2.00468914,4.75457396 C2.00468914,4.37487819 2.28684302,4.061083 2.65291858,4.01142057 L2.75468914,4.00457396 L4.50368914,4.004 L4.50444233,3.25 C4.50444233,2.87030423 4.78659621,2.55650904 5.15267177,2.50684662 L5.25444233,2.5 L8.9891247,2.5 Z M4.50368914,5.504 L3.50468914,5.504 L3.50468914,19.5 L10.9478955,19.4998273 C10.4513189,18.9207296 9.73864328,18.5588115 8.96709342,18.5065584 L8.77307039,18.5 L5.25444233,18.5 C4.87474657,18.5 4.56095137,18.2178461 4.51128895,17.8517706 L4.50444233,17.75 L4.50368914,5.504 Z M19.5049359,17.75 C19.5049359,18.1642136 19.1691495,18.5 18.7549359,18.5 L15.2363079,18.5 C14.3910149,18.5 13.5994408,18.8724714 13.0614828,19.4998273 L20.5046891,19.5 L20.5046891,5.504 L19.5046891,5.504 L19.5049359,17.75 Z M18.0059359,3.999 L15.0202536,4 L14.8259077,4.00692283 C13.9889509,4.06666544 13.2254227,4.50975805 12.7549359,5.212 L12.7549359,17.777 L12.7782651,17.7601316 C13.4923805,17.2719483 14.3447024,17 15.2363079,17 L18.0059359,16.999 L18.0056891,4.798 L18.0033792,4.75457396 L18.0056891,4.71 L18.0059359,3.999 Z M8.9891247,4 L6.00368914,3.999 L6.00599909,4.75457396 L6.00599909,4.75457396 L6.00368914,4.783 L6.00368914,16.999 L8.77307039,17 C9.57551536,17 10.3461406,17.2202781 11.0128313,17.6202194 L11.2536891,17.776 L11.2536891,5.211 C10.8200889,4.56369974 10.1361548,4.13636104 9.37521067,4.02745763 L9.18347055,4.00692283 L8.9891247,4 Z"></path></g></svg></button></div></div><div class="explorer" data-behavior="link" data-collapsed="collapsed" data-savestate="true" data-data-fns="{&quot;order&quot;:[&quot;filter&quot;,&quot;map&quot;,&quot;sort&quot;],&quot;sortFn&quot;:&quot;(a,b)=>!a.isFolder&amp;&amp;!b.isFolder||a.isFolder&amp;&amp;b.isFolder?a.displayName.localeCompare(b.displayName,void 0,{numeric:!0,sensitivity:\&quot;base\&quot;}):!a.isFolder&amp;&amp;b.isFolder?1:-1&quot;,&quot;filterFn&quot;:&quot;node=>node.slugSegment!==\&quot;tags\&quot;&quot;,&quot;mapFn&quot;:&quot;node=>node&quot;}"><button type="button" class="explorer-toggle mobile-explorer hide-until-loaded" data-mobile="true" aria-controls="explorer-354"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-menu"><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="18" y2="18"></line></svg></button><button type="button" class="title-button explorer-toggle desktop-explorer" data-mobile="false" aria-expanded="true"><h2>Explorer</h2><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><div id="explorer-354" class="explorer-content" aria-expanded="false" role="group"><ul class="explorer-ul overflow" id="list-0"><li class="overflow-end"></li></ul></div><template id="template-file"><li><a href="#"></a></li></template><template id="template-folder"><li><div class="folder-container"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="5 8 14 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="folder-icon"><polyline points="6 9 12 15 18 9"></polyline></svg><div><button class="folder-button"><span class="folder-title"></span></button></div></div><div class="folder-outer"><ul class="content"></ul></div></li></template></div></div><div class="center"><div class="page-header"><div class="popover-hint"><nav class="breadcrumb-container" aria-label="breadcrumbs"><div class="breadcrumb-element"><a href="../">Home</a><p> ❯ </p></div><div class="breadcrumb-element"><a href="../pages/">pages</a><p> ❯ </p></div><div class="breadcrumb-element"><a href>AI Literacy Training for Designers</a></div></nav><h1 class="article-title">AI Literacy Training for Designers</h1><p show-comma="true" class="content-meta"><time datetime="2026-09-23T10:23:37.657Z">23 Sept 2026</time><span>14 min read</span></p><div class="properties"><h3 class="properties-title">Properties</h3><table class="properties-table"><tbody><tr><th scope="row">Type</th><td><ul class="properties-values"><li><span>Class</span></li></ul></td></tr><tr><th scope="row">Resource</th><td><ul class="properties-values"><li><span>urn:ngm:class:ai-literacy-training-for-designers</span></li></ul></td></tr><tr><th scope="row">Domain</th><td><ul class="properties-values"><li><span>infrastructure</span></li></ul></td></tr><tr><th scope="row">Status</th><td><ul class="properties-values"><li><span>stable</span></li></ul></td></tr><tr><th scope="row">Maturity</th><td><ul class="properties-values"><li><span>emerging</span></li></ul></td></tr><tr><th scope="row">Is a</th><td><ul class="properties-values"><li><a href="../pages/Software-Engineering" class="internal">Software Engineering</a></li></ul></td></tr><tr><th scope="row">Enables</th><td><ul class="properties-values"><li><a href="../pages/SME-AI-Productivity-Toolkit" class="internal">SME AI Productivity Toolkit</a></li><li><a href="../pages/Knowledge-Graphing" class="internal">Knowledge Graphing</a></li></ul></td></tr><tr><th scope="row">Generated</th><td><ul class="properties-values"><li class="properties-object"><span class="properties-entry"><span class="properties-entry-key">by:</span> <span>process:vault-migrate/1.0</span></span><span class="properties-entry"> · <span class="properties-entry-key">at:</span> <span>2026-09-22T12:41:39.024503178Z</span></span></li></ul></td></tr><tr><th scope="row">Links</th><td><ul class="properties-values"><li><a href="../chat-gpt" class="internal">ChatGPT</a></li><li><a href="../consumer-tools-for-smes" class="internal">Consumer Tools for SMEs</a></li><li><a href="../gemini" class="internal">Gemini</a></li><li><a href="../image-generation" class="internal">Image Generation</a></li><li><a href="../knowledge-graphing" class="internal">Knowledge Graphing</a></li><li><a href="../retrieval-augmented-generation-rag" class="internal">Retrieval Augmented Generation - RAG</a></li><li><a href="../social-media" class="internal">social media</a></li></ul></td></tr><tr><th scope="row">Page resource</th><td><ul class="properties-values"><li><span>urn:visionflow:page:918b97c982ea2b2728d9ba3b78b92009c86b29675669358732c7af3ff8417b7e</span></li></ul></td></tr><tr><th scope="row">Supports</th><td><ul class="properties-values"><li><a href="../pages/Generative-Design-Tool" class="internal">Generative Design Tool</a></li></ul></td></tr><tr><th scope="row">Uses</th><td><ul class="properties-values"><li><a href="../pages/Image-Generation" class="internal">Image Generation</a></li><li><a href="../pages/Retrieval-Augmented-Generation---RAG" class="internal">Retrieval Augmented Generation - RAG</a></li><li><a href="../pages/Prompt-Engineering" class="internal">Prompt Engineering</a></li></ul></td></tr></tbody></table></div></div></div><article class="popover-hint"><p>Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.</p>
+<p>Training for Design Practitioners covers structured programmes and self-directed learning pathways that equip designers—particularly in landscape, product, and spatial disciplines—with practical AI literacy, covering generative image tools, RAG-based knowledge management, client communication automation, and AI-assisted rendering workflows for immediate professional application.</p>
+<ul>
+<li>
+<h3 id="semantic-classification">Semantic Classification<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#semantic-classification" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+<li>
+<h3 id="content">Content<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#content" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<ul class="contains-task-list">
+<li>
+<h1 id="insights-about-ai-for-small-businesses">Insights about AI for small businesses<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#insights-about-ai-for-small-businesses" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>	- **Primary Recommendation: Google Gemini (Advanced Subscription)**
+		- Integrates deeply with Google Workspace (Docs, Slides, Drive).
+		- Provides cloud storage (2TB with subscription).
+		- Offers powerful mobile app features (voice interaction, transcription, image recognition).
+		- Suitable for general business tasks, writing, basic brainstorming, and initial concept generation.
+		- Cost: ~$20/month (mentioned as 20 quid).
+	- **Secondary/Specialized Tool: ChatGPT (Potentially Subscription)**
+		- Currently superior for specific image manipulation tasks (e.g., placing objects accurately within an existing image, iterative image editing).
+		- Consider subscribing if advanced, real-time image editing becomes a critical business need not met by Gemini.
+	- **Local AI:** Mentioned briefly for transcription but quickly superseded by cloud recommendations for broader utility.
+	- **Other Tools Mentioned:**
+		- **Obsidian:** Powerful (free) note-taking and knowledge management app using markdown. Recommended for organizing AI-generated ideas and notes long-term.
+		- **Mermaid:** Diagram-as-code tool that AI (like Gemini) can generate output for (e.g., Gantt charts). Useful for structured visualization.
+		- **Vectorworks:** existing design software. AI integration is currently limited by Vectorworks itself, but internal plugins might exist (like style transfer).
+	- **AI as a Productivity Multiplier:** AI can significantly speed up tasks like drafting text, generating ideas, creating initial visuals, and summarizing information.
+	- **The &quot;Jagged Frontier&quot;:** AI capabilities are inconsistent and change rapidly. Some tasks work well, others fail unexpectedly. Don't assume uniform competence.
+	- **Hyper-Personalization:** AI enables tailoring outputs (designs, presentations, communication) specifically to individual client styles, preferences, and contexts (e.g., matching design visuals to a client's home art style). This is a key value proposition.
+	- **Shift in Human Value:** As AI handles more tasks, human value shifts towards:
+		- Personal relationships and trust.
+		- Risk management and accountability (clients hire *you*, not the AI).
+		- Expert oversight, curation, and refinement of AI outputs.
+		- Understanding client needs deeply (the &quot;why&quot;).
+		- Creative direction and strategic thinking.
+	- **Information Overload:** AI makes generating information easy, increasing the need for effective information management strategies.
+	- **AI Doesn't Replace Expertise (Yet):** AI can generate plausible content but requires knowledgeable human oversight to check accuracy, relevance, and quality (e.g., checking plant suitability, design principles).
+	- **Start with Gemini:** Focus initial efforts on learning and integrating Gemini due to its ecosystem integration and suitability for core business tasks.
+	- **Embrace Experimentation:** Be prepared to try things, fail quickly, and iterate. Don't get discouraged if a prompt doesn't work; rephrase or try a different approach.
+	- **Use Voice Interaction:** Leverage the Gemini mobile app's voice capabilities for note-taking, brainstorming, and information capture while on the go (walking, driving). Treat it like an advanced dictaphone that can also analyze and structure information.
+	- **Develop Prompting Skills:**
+		- Be specific with requests.
+		- Provide context (e.g., target audience, desired style, constraints).
+		- Define and reuse your own &quot;style&quot; (writing, design philosophy) as part of your prompts.
+		- Iterate on prompts – refine them based on the output.
+		- Don't be afraid to &quot;smash lots of words&quot; into the prompt; more (relevant) detail is often better.
+	- **Leverage AI for Business Foundations:** Use AI immediately for tasks like:
+		- Drafting business plans and marketing plans.
+		- Market research and competitor analysis.
+		- Generating ideas for lead generation.
+		- Creating initial content for websites or social media.
+		- Logo design concepts.
+	- **Use AI for Design Assistance:**
+		- Generate mood boards and concept visualizations quickly.
+		- Create initial planting plans or Gantt charts (using Mermaid).
+		- Generate stylized images based on sketches or concepts (potentially using ChatGPT for more control initially).
+		- Explore AI for creating different visual perspectives or variations of a design idea.
+	- **Integrate with Workflow:** Connect Gemini to Google Drive to allow it access to your documents for summarization, analysis, and writing tasks based on your data.
+	- **Don't Over-Rely on Initial AI Output:** Treat AI output as a draft or starting point. Always review, edit, and refine based on your expertise. Don't read every word it generates initially; focus on the overall structure and key ideas.
+	- **Prioritize Tasks:** Focus AI efforts on the most immediate business needs first (e.g., marketing, lead generation) before diving deep into more advanced applications (like complex image editing or video).
+	- **Expect a Learning Curve:** Allocate time (suggested 2-3 months) for dedicated exploration and practice to build confidence and proficiency.
+	- **Play and Explore:** Regularly experiment with the tools (&quot;fiddle around&quot;) to understand their capabilities and limitations. This is essential due to the rapid changes in AI.
+	- **Focus on Confidence Building:** The initial phase is about getting comfortable talking to the AI, trying different prompts, and not being afraid of errors.
+	- **Learn Markdown:** Useful for formatting AI outputs and using them in tools like Obsidian. Tell the AI to format responses in markdown.
+	- **Stay Updated (Implicit):** The tools change constantly, requiring ongoing learning.
+	- **Client Consultation Prep/Follow-up:** Transcribe and summarise meeting notes (using local AI on phone or Gemini).
+	- **Concept Generation:** Quickly create mood boards, visual concepts, and planting ideas based on client needs and site photos.
+	- **Visualization:** Generate stylized images of proposed designs, potentially matching the client's aesthetic (using their home/art as inspiration). Create different views (e.g., top-down plan from a perspective sketch).
+	- **Planning &amp; Scheduling:** Generate Gantt charts (via Mermaid) for project timelines.
+	- **Plant Information:** Quickly look up plant details (Latin names, care requirements, soil pH) and generate care plans.
+	- **Marketing Materials:** Draft website copy, social media posts, blog articles, marketing plans.
+	- **Business Planning:** Assist in writing the business plan, analyzing the market.
+	- **Lead Generation:** Research potential clients (e.g., finding recent planning applications in specific areas - though agentic capabilities are future-facing, analysis of documents is possible).
+	- **Logo/Branding Ideas:** Generate initial concepts for branding.
+	- **Challenge:** AI generates vast amounts of information quickly, making organization crucial.
+	- **Strategy:** Develop a system to capture and retrieve valuable AI interactions and outputs.
+	- **Tools:**
+		- **Markdown:** Use as a standard format for notes.
+		- **Obsidian:** Recommended for building a personal knowledge base, linking ideas, and storing notes long-term.
+		- **Google Drive:** Use for storing documents and potentially allowing Gemini access.
+	- **Process:** Be deliberate about saving useful AI conversations/outputs and potentially tagging or linking them for future reference (e.g., saving a good prompt, storing generated text in Obsidian).
+</code></pre>
+</li>
+<li class="task-list-item"><input type="checkbox" disabled/> It takes a couple of months of pretty serious exploration to find where you are comfortable with AI.
+- <a href="../pages/Gemini-Multimodal-Language-Model" class="internal alias" data-slug="pages/Gemini-Multimodal-Language-Model">Gemini Multimodal Language Model</a></li>
+<li class="task-list-item"><input type="checkbox" disabled/> It typically takes a couple of months of focused exploration to become comfortable with AI tools and workflows.</li>
+<li>
+
+</li>
+</ul>
+<blockquote>
+<h3 id="do-play-with-tools"><strong>DO play with tools</strong><a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#do-play-with-tools" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p>Use the tools that come free with where you already keep your data (think Google at this time, but also Perplexity)
+Use the tools that come free with where you already keep your data (think Google at this time, but also Perplexity)
+Start to sort out your data. Learn it’s structure, and whether it’s useful to optimise it.
+High quality data gives high quality outcomes.
+See if there’s something on the market that is trustable when your data and product are ready, don’t spread data about too much.
+Do check if this is worth it. Get an expert opinion. Bloomberg spent around $20M on a model based on their financial data only to find that GPT4 <a href="https://arxiv.org/pdf/2305.05862.pdf" class="external">still beats it<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>.
+Think about integrating the open tooling into your product development, consider the software licenses. Take <strong>some</strong> legal advice.
+Use the paid and private version of <a href="https://app.rundiffusion.com/" class="external">RunDiffusion<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> to start to play with the open tooling. <a href="../pages/Fooocus" class="internal" data-slug="pages/Fooocus">Fooocus</a> is new and very accessible and on that platform with <strong>everything</strong> else of value.</p>
+<h3 id="the-secret-cyborg-concept-and-you">The <a href="https://www.oneusefulthing.org/p/reshaping-the-tree-rebuilding-organizations" class="external">Secret Cyborg<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> Concept and You.<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#the-secret-cyborg-concept-and-you" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+<p><a href="https://twitter.com/emollick/status/1775176524653642164" class="external">twitter link to the render loading below<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>{{twitter <a href="https://twitter.com/emollick/status/1775176524653642164%7D%7D" class="external">https://twitter.com/emollick/status/1775176524653642164}}<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>
+Acknowledge that employees are already using AI at work, often without approval. Over half of people using AI at work are doing so without telling their bosses. <a href="https://www.microsoft.com/en-us/worklab/work-trend-index/ai-at-work-is-here-now-comes-the-hard-part/" class="external">Microsoft put this number at a staggering 75%<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a> <a href="../working/Microsoft-Work-Trends-Impact-2024" class="internal alias" data-slug="working/Microsoft-Work-Trends-Impact-2024">Microsoft Work Trends Impact 2024</a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="table-container"><table><thead><tr><th>Statistic</th><th>Value</th></tr></thead><tbody><tr><td>Percentage of global knowledge workers using generative AI</td><td>75%</td></tr><tr><td>Percentage of AI users who say it helps them save time</td><td>90%</td></tr><tr><td>Percentage of AI users who say it helps them focus on their most important work</td><td>85%</td></tr><tr><td>Percentage of AI users who say it helps them be more creative</td><td>84%</td></tr><tr><td>Percentage of AI users who say it helps them enjoy their work more</td><td>83%</td></tr><tr><td>Percentage of AI users who are bringing their own AI tools to work (BYOAI)</td><td>78%</td></tr><tr><td>Percentage of AI users at small and medium-sized companies who are bringing their own AI to work</td><td>80%</td></tr><tr><td>Percentage of AI users reluctant to admit using AI for their most important tasks</td><td>52%</td></tr><tr><td>Percentage of leaders who would rather hire a less experienced candidate with AI skills than a more experienced candidate without them</td><td>71%</td></tr><tr><td>Percentage of leaders who say early-in-career talent will be given greater responsibilities with AI</td><td>77%</td></tr><tr><td>Create a culture of exploration and openness around AI use. Encourage employees to share how they are using AI to assist their work.</td><td></td></tr><tr><td>Completely rethink and redesign work processes around AI capabilities, rather than just using AI to automate existing processes. Cut down the org chart and regrow it for AI.</td><td></td></tr><tr><td>Let teams develop their own methods for incorporating AI as an “intelligence” that adds to processes. Manage AI more like additional team members than external IT solutions.</td><td></td></tr><tr><td>Align incentives and provide clear guidelines so employees feel empowered to ethically experiment with AI.</td><td></td></tr><tr><td>Build for the rapidly evolving future of AI, not just today’s models. Organizational change takes time, so consider future AI capabilities.</td><td></td></tr><tr><td>Act quickly</td><td></td></tr><tr><td>organizations that wait too long to experiment and adapt processes for AI efficiency gains will fall behind. Provide guidelines for short-term experimentation vs slow top-down solutions.</td><td></td></tr><tr><td>Realize there are only two ways to react to exponential AI change; too early or too late. The capabilities are increasing rapidly, so it’s better to start adapting sooner than later.</td><td></td></tr><tr><td>— working/pages/Adoption of Convergent Technologies.md</td><td></td></tr></tbody></table></div>
+</blockquote>
+<pre><code>  - It will ALWAYS help the AI for have more data about you. This can be done in a few ways
+</code></pre>
+<pre><code>  	- [x] Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
+  	- [ ] [[Gemini Multimodal Language Model]] connected to Google Drive and all you data.
+  	- [x] Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
+  	- [x] Available free with the [[Instruction-Following Conversational AI System]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
+  	- [x] [[Retrieval Augmented Generation - RAG]] - Combines your own document store with AI retrieval. Steeper learning curve, but extremely powerful over the medium term for keeping knowledge up to date.
+  	- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
+  	- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
+  	- [ ] Notion for collaborative wikis
+  	- [[Knowledge Graphing]] can help you to organise semi structured data.
+  	- [ ] Obsidian
+  	- [x] Logseq
+  	- [x] Notion
+</code></pre>
+<ul>
+<li>
+<h1 id="media-creation">Media Creation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#media-creation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+<pre><code>- Landscape renders using custom Stable Diffusion LoRAs (for example, JJ’s Landscape Render, StreetScape and Ecology Park models on Civitai)
+- General tools such as Midjourney, Stable Diffusion and DALL·E 3
+	- ![image.png](assets/image_1745922516312_0.png)
+	- ![ChatGPT Image Apr 29, 2025, 11_37_28 AM.png](assets/ChatGPT_Image_Apr_29,_2025,_11_37_28_AM_1745923062112_0.png)
+- [[Image Generation]]
+	- Image processing from drawings
+- [JJ's Landscape Render - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/257038/jjs-landscape-render)
+- [JJs StreetScape - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/306671?modelVersionId=344231)
+- [JJs Ecology Park - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/306688?modelVersionId=344250)
+- AI-assisted tools like Sustainable Home Visuals AI
+- Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
+- [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
+	- {{video https://youtu.be/0fzvIBO-yLw}}
+- Use [[Social Media Platform Infrastructure]] planning tools to schedule posts and analyse engagement
+- Leverage QR codes (for example, AI-powered QR code generators) to link print and digital campaigns
+- [[Social Media Platform Infrastructure]]
+- marketing grind [[SME AI Productivity Toolkit]]
+- QR code
+	- [AI QR Code Generator - Create Free QR in 2025](https://qrcode-ai.com/)
+</code></pre>
+</li>
+<li>
+<p>co-working engine (not quite sure what that one means)</p>
+</li>
+<li>
+<h1 id="todo-vectorworks-plan-visualisation">TODO Vectorworks Plan Visualisation<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#todo-vectorworks-plan-visualisation" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h1>
+</li>
+<li>
+<p>Modern AI can transform 2D Vectorworks plans into client-ready visuals in five key formats.
+- <strong>Vectorworks AI Visualizer</strong> (<a href="https://forum.vectorworks.net/index.php?/articles.html/articles/faqs/ai-visualizer/" class="external">FAQ<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Works inside Vectorworks 2024+, using your active file or view plus a text prompt.
+- Ideal for quick concept iterations (materials, lighting variations).
+- Note: not CAD-accurate rendering but excellent for inspirational visuals.
+- <strong>Veras AI for Vectorworks</strong> (<a href="https://www.evolvelab.io/post/announcing-veras-ai-for-vectorworks" class="external">EvolveLAB announcement<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Plugin that uses your 3D model or 2D viewport as a base.
+- Photorealistic or stylised renders in seconds with prompt-driven material and ambience overrides.
+- <strong>Mainstream Text-to-Image Generators</strong>
+- Export plan or massing views as PNG/JPG and feed into Midjourney, Stable Diffusion (with ControlNet) or DALL·E 3 for high-res concept images.
+- Best for early-stage mood boards rather than precise layouts.
+- <strong>Twinmotion</strong> (<a href="https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion" class="external">guide<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Real-time link via Datasmith; create MP4 or interactive 360 panoramas.
+- Supports AI-powered denoising and crowd/traffic generation.
+- <strong>Enscape for Vectorworks</strong> (<a href="https://blog.enscape3d.com/vectorworks-rendering" class="external">blog<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Live rendering inside Vectorworks, with keyframe-based video export and VR standalone packages.
+- <strong>Experimental AI Video Tools</strong>
+- Runway ML Gen-2 or PromeAI for short motion clips from still frames (low resolution but quick concept demos).
+- Use AI style-transfer plugins (such as Veras prompts for ‘watercolour sketch’ or ‘ink outline’)
+- Export views to image-to-image tools (Midjourney, Stable Diffusion with community style models) for watercolour, pencil or comic-book effects
+- Adobe Firefly in Photoshop for generative fill on SVG/PDF exports (text-to-image room textures, decorative elements)
+- <strong>Vectorworks Nomad</strong> (<a href="https://apps.apple.com/ch/app/vectorworks-nomad/id506706850?l=en-GB" class="external">app<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Markerless AR viewer on iOS/Android; place your model at 1 : 1 scale on site without coding.
+- <strong>Desktop VR via Enscape or Twinmotion</strong>
+- One-click VR export to headsets (Oculus, Vive) for real-time walkthroughs.
+- <strong>Custom Game-Engine Solutions</strong>
+- Import via Datasmith into Unreal Engine or FBX/OBJ into Unity for bespoke interactive apps. AI can assist by auto-generating environment assets or textures.
+- <strong>Web-Based AR/VR Viewers</strong>
+- Upload glTF/GLB to platforms like Sketchfab for browser-based AR (USDZ for iOS Quick Look) or VR demos.
+- <strong>usBIM.planAI</strong> (<a href="https://www.accasoftware.com/en/2d-to-3d-how-to-convert-2d-files-into-3d-models" class="external">ACCA tool<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Upload PNG, JPG or PDF plans; AI recognises walls, doors and rooms; outputs IFC for import into Vectorworks.
+- <strong>Planner 5D AI</strong> (<a href="https://planner5d.com/ai" class="external">service<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- Fast floor-plan recognition from images; yields a basic 3D layout you can reference or rebuild precisely.
+- <strong>Coohom Floor Plan to 3D</strong> (<a href="https://www.coohom.com/article/floor-plan-to-3d-ai" class="external">overview<svg aria-hidden="true" class="external-icon" style="max-width:0.8em;max-height:0.8em;" viewBox="0 0 512 512"><path d="M320 0H288V64h32 82.7L201.4 265.4 178.7 288 224 333.3l22.6-22.6L448 109.3V192v32h64V192 32 0H480 320zM32 32H0V64 480v32H32 456h32V480 352 320H424v32 96H64V96h96 32V32H160 32z"></path></svg></a>)
+- One-click conversion with auto-furnished interiors; ideal for rapid prototyping and client approvals.
+- Other services (GetFloorPlan, RoomSketcher) offer similar AI-assisted conversions for sketches or scanned plans.</p>
+</li>
+<li>
+<p>Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can index it.</p>
+</li>
+<li>
+<p>Use the AI Visualizer for rapid concept boards, then refine chosen options in Veras or Enscape for client review.</p>
+</li>
+<li>
+<p>Incorporate AR with Vectorworks Nomad on site visits—clients love seeing designs overlaid in real space.</p>
+</li>
+<li>
+<p>Keep stylistic consistency by choosing one illustration pipeline (for example, Stable Diffusion plus a ControlNet line-art workflow) and training a small set of prompts or custom LoRAs so that your presentations always look cohesive.</p>
+</li>
+<li>
+<h2 id="ai-in-the-cloud-vs-your-own-ai">AI in the cloud vs your own AI<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#ai-in-the-cloud-vs-your-own-ai" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### Business Admin leveraging Gemini
+- ### Core Concepts &amp; Insights
+- ### Practical Advice &amp; Strategies
+- ### Learning &amp; Development
+- ### Business Applications (Garden Design Specific)
+- ### Information Management
+</code></pre>
+</li>
+<li>
+<h2 id="information-management">Information Management<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#information-management" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+<pre><code>- ### Cloud AI versus On-Premise Models
+- ### DONE In-Context Training (think ChatGPT memory)
+- ### DONE Retrieval-Augmented Generation (RAG)
+- ### Tools for Notes and Knowledge
+- ### DOING Knowledge Graphs
+</code></pre>
+</li>
+<li>
+<h2 id="doing-images">DOING Images<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doing-images" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="doing-video">DOING Video<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#doing-video" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="social-media-and-marketing">Social Media and Marketing<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#social-media-and-marketing" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="renderings-from-plan-drawings">Renderings from Plan Drawings<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#renderings-from-plan-drawings" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="walkthrough-animations-or-flythrough-videos">Walkthrough Animations or Flythrough Videos<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#walkthrough-animations-or-flythrough-videos" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="stylised-artistic-illustrations">Stylised Artistic Illustrations<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#stylised-artistic-illustrations" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="immersive-ar-and-vr-experiences">Immersive AR and VR Experiences<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#immersive-ar-and-vr-experiences" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+<li>
+<h2 id="converting-2d-plans-into-3d-models">Converting 2D Plans into 3D Models<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#converting-2d-plans-into-3d-models" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h2>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="provenance">Provenance<a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#provenance" class="internal"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></a></h3>
+</li>
+</ul></article><hr/><div class="page-footer"></div></div><div class="right sidebar"><div class="graph"><h3>Graph View</h3><div class="graph-outer"><div class="graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:1,&quot;scale&quot;:1.1,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.3,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:false,&quot;enableRadial&quot;:false}"></div><button class="global-graph-icon" aria-label="Global Graph"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 55 55" fill="currentColor" xml:space="preserve"><path d="M49,0c-3.309,0-6,2.691-6,6c0,1.035,0.263,2.009,0.726,2.86l-9.829,9.829C32.542,17.634,30.846,17,29,17
+                s-3.542,0.634-4.898,1.688l-7.669-7.669C16.785,10.424,17,9.74,17,9c0-2.206-1.794-4-4-4S9,6.794,9,9s1.794,4,4,4
+                c0.74,0,1.424-0.215,2.019-0.567l7.669,7.669C21.634,21.458,21,23.154,21,25s0.634,3.542,1.688,4.897L10.024,42.562
+                C8.958,41.595,7.549,41,6,41c-3.309,0-6,2.691-6,6s2.691,6,6,6s6-2.691,6-6c0-1.035-0.263-2.009-0.726-2.86l12.829-12.829
+                c1.106,0.86,2.44,1.436,3.898,1.619v10.16c-2.833,0.478-5,2.942-5,5.91c0,3.309,2.691,6,6,6s6-2.691,6-6c0-2.967-2.167-5.431-5-5.91
+                v-10.16c1.458-0.183,2.792-0.759,3.898-1.619l7.669,7.669C41.215,39.576,41,40.26,41,41c0,2.206,1.794,4,4,4s4-1.794,4-4
+                s-1.794-4-4-4c-0.74,0-1.424,0.215-2.019,0.567l-7.669-7.669C36.366,28.542,37,26.846,37,25s-0.634-3.542-1.688-4.897l9.665-9.665
+                C46.042,11.405,47.451,12,49,12c3.309,0,6-2.691,6-6S52.309,0,49,0z M11,9c0-1.103,0.897-2,2-2s2,0.897,2,2s-0.897,2-2,2
+                S11,10.103,11,9z M6,51c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S8.206,51,6,51z M33,49c0,2.206-1.794,4-4,4s-4-1.794-4-4
+                s1.794-4,4-4S33,46.794,33,49z M29,31c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S32.309,31,29,31z M47,41c0,1.103-0.897,2-2,2
+                s-2-0.897-2-2s0.897-2,2-2S47,39.897,47,41z M49,10c-2.206,0-4-1.794-4-4s1.794-4,4-4s4,1.794,4,4S51.206,10,49,10z"></path></svg></button></div><div class="global-graph-outer"><div class="global-graph-container" data-cfg="{&quot;drag&quot;:true,&quot;zoom&quot;:true,&quot;depth&quot;:-1,&quot;scale&quot;:0.9,&quot;repelForce&quot;:0.5,&quot;centerForce&quot;:0.2,&quot;linkDistance&quot;:30,&quot;fontSize&quot;:0.6,&quot;opacityScale&quot;:1,&quot;showTags&quot;:true,&quot;removeTags&quot;:[],&quot;focusOnHover&quot;:true,&quot;enableRadial&quot;:true}"></div></div></div><div class="toc desktop-only"><button type="button" class="toc-header" aria-controls="toc-161" aria-expanded="true"><h3>Table of Contents</h3><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="fold"><polyline points="6 9 12 15 18 9"></polyline></svg></button><ul id="list-1" class="toc-content overflow"><li class="depth-2"><a href="#semantic-classification" data-for="semantic-classification">Semantic Classification</a></li><li class="depth-2"><a href="#content" data-for="content">Content</a></li><li class="depth-0"><a href="#insights-about-ai-for-small-businesses" data-for="insights-about-ai-for-small-businesses">Insights about AI for small businesses</a></li><li class="depth-2"><a href="#do-play-with-tools" data-for="do-play-with-tools">DO play with tools</a></li><li class="depth-2"><a href="#the-secret-cyborg-concept-and-you" data-for="the-secret-cyborg-concept-and-you">The Secret Cyborg Concept and You.</a></li><li class="depth-0"><a href="#media-creation" data-for="media-creation">Media Creation</a></li><li class="depth-0"><a href="#todo-vectorworks-plan-visualisation" data-for="todo-vectorworks-plan-visualisation">TODO Vectorworks Plan Visualisation</a></li><li class="depth-1"><a href="#ai-in-the-cloud-vs-your-own-ai" data-for="ai-in-the-cloud-vs-your-own-ai">AI in the cloud vs your own AI</a></li><li class="depth-1"><a href="#information-management" data-for="information-management">Information Management</a></li><li class="depth-1"><a href="#doing-images" data-for="doing-images">DOING Images</a></li><li class="depth-1"><a href="#doing-video" data-for="doing-video">DOING Video</a></li><li class="depth-1"><a href="#social-media-and-marketing" data-for="social-media-and-marketing">Social Media and Marketing</a></li><li class="depth-1"><a href="#renderings-from-plan-drawings" data-for="renderings-from-plan-drawings">Renderings from Plan Drawings</a></li><li class="depth-1"><a href="#walkthrough-animations-or-flythrough-videos" data-for="walkthrough-animations-or-flythrough-videos">Walkthrough Animations or Flythrough Videos</a></li><li class="depth-1"><a href="#stylised-artistic-illustrations" data-for="stylised-artistic-illustrations">Stylised Artistic Illustrations</a></li><li class="depth-1"><a href="#immersive-ar-and-vr-experiences" data-for="immersive-ar-and-vr-experiences">Immersive AR and VR Experiences</a></li><li class="depth-1"><a href="#converting-2d-plans-into-3d-models" data-for="converting-2d-plans-into-3d-models">Converting 2D Plans into 3D Models</a></li><li class="depth-2"><a href="#provenance" data-for="provenance">Provenance</a></li><li class="overflow-end"></li></ul></div></div><footer class><p>Created with <a href="https://quartz.jzhao.xyz/">Quartz v4.5.2</a> © 2026</p><ul><li><a href="https://narrativegoldmine.com/data/ontology.ttl">Ontology (Turtle)</a></li><li><a href="https://narrativegoldmine.com/api/search-index.json">Search index</a></li><li><a href="https://narrativegoldmine.com/context/v1.jsonld">JSON-LD context</a></li><li><a href="https://narrativegoldmine.com/">Explorer</a></li></ul></footer></div></div></body><script type="application/javascript">function n(){let t=this.parentElement;t.classList.toggle("is-collapsed");let e=t.getElementsByClassName("callout-content")[0];if(!e)return;let l=t.classList.contains("is-collapsed");e.style.gridTemplateRows=l?"0fr":"1fr"}function c(){let t=document.getElementsByClassName("callout is-collapsible");for(let e of t){let l=e.getElementsByClassName("callout-title")[0],s=e.getElementsByClassName("callout-content")[0];if(!l||!s)continue;l.addEventListener("click",n),window.addCleanup(()=>l.removeEventListener("click",n));let o=e.classList.contains("is-collapsed");s.style.gridTemplateRows=o?"0fr":"1fr"}}document.addEventListener("nav",c);
+</script><script type="module">function f(i,e){if(!i)return;function r(o){o.target===this&&(o.preventDefault(),o.stopPropagation(),e())}function t(o){o.key.startsWith("Esc")&&(o.preventDefault(),e())}i?.addEventListener("click",r),window.addCleanup(()=>i?.removeEventListener("click",r)),document.addEventListener("keydown",t),window.addCleanup(()=>document.removeEventListener("keydown",t))}function y(i){for(;i.firstChild;)i.removeChild(i.firstChild)}var h=class{constructor(e,r){this.container=e;this.content=r;this.setupEventListeners(),this.setupNavigationControls(),this.resetTransform()}isDragging=!1;startPan={x:0,y:0};currentPan={x:0,y:0};scale=1;MIN_SCALE=.5;MAX_SCALE=3;cleanups=[];setupEventListeners(){let e=this.onMouseDown.bind(this),r=this.onMouseMove.bind(this),t=this.onMouseUp.bind(this),o=this.resetTransform.bind(this);this.container.addEventListener("mousedown",e),document.addEventListener("mousemove",r),document.addEventListener("mouseup",t),window.addEventListener("resize",o),this.cleanups.push(()=>this.container.removeEventListener("mousedown",e),()=>document.removeEventListener("mousemove",r),()=>document.removeEventListener("mouseup",t),()=>window.removeEventListener("resize",o))}cleanup(){for(let e of this.cleanups)e()}setupNavigationControls(){let e=document.createElement("div");e.className="mermaid-controls";let r=this.createButton("+",()=>this.zoom(.1)),t=this.createButton("-",()=>this.zoom(-.1)),o=this.createButton("Reset",()=>this.resetTransform());e.appendChild(t),e.appendChild(o),e.appendChild(r),this.container.appendChild(e)}createButton(e,r){let t=document.createElement("button");return t.textContent=e,t.className="mermaid-control-button",t.addEventListener("click",r),window.addCleanup(()=>t.removeEventListener("click",r)),t}onMouseDown(e){e.button===0&&(this.isDragging=!0,this.startPan={x:e.clientX-this.currentPan.x,y:e.clientY-this.currentPan.y},this.container.style.cursor="grabbing")}onMouseMove(e){this.isDragging&&(e.preventDefault(),this.currentPan={x:e.clientX-this.startPan.x,y:e.clientY-this.startPan.y},this.updateTransform())}onMouseUp(){this.isDragging=!1,this.container.style.cursor="grab"}zoom(e){let r=Math.min(Math.max(this.scale+e,this.MIN_SCALE),this.MAX_SCALE),t=this.content.getBoundingClientRect(),o=t.width/2,n=t.height/2,c=r-this.scale;this.currentPan.x-=o*c,this.currentPan.y-=n*c,this.scale=r,this.updateTransform()}updateTransform(){this.content.style.transform=`translate(${this.currentPan.x}px, ${this.currentPan.y}px) scale(${this.scale})`}resetTransform(){this.scale=1;let e=this.content.querySelector("svg");this.currentPan={x:e.getBoundingClientRect().width/2,y:e.getBoundingClientRect().height/2},this.updateTransform()}},C=["--secondary","--tertiary","--gray","--light","--lightgray","--highlight","--dark","--darkgray","--codeFont"],E;document.addEventListener("nav",async()=>{let e=document.querySelector(".center").querySelectorAll("code.mermaid");if(e.length===0)return;E||=await import("https://cdnjs.cloudflare.com/ajax/libs/mermaid/11.4.0/mermaid.esm.min.mjs");let r=E.default,t=new WeakMap;for(let n of e)t.set(n,n.innerText);async function o(){for(let s of e){s.removeAttribute("data-processed");let a=t.get(s);a&&(s.innerHTML=a)}let n=C.reduce((s,a)=>(s[a]=window.getComputedStyle(document.documentElement).getPropertyValue(a),s),{}),c=document.documentElement.getAttribute("saved-theme")==="dark";r.initialize({startOnLoad:!1,securityLevel:"loose",theme:c?"dark":"base",themeVariables:{fontFamily:n["--codeFont"],primaryColor:n["--light"],primaryTextColor:n["--darkgray"],primaryBorderColor:n["--tertiary"],lineColor:n["--darkgray"],secondaryColor:n["--secondary"],tertiaryColor:n["--tertiary"],clusterBkg:n["--light"],edgeLabelBackground:n["--highlight"]}}),await r.run({nodes:e})}await o(),document.addEventListener("themechange",o),window.addCleanup(()=>document.removeEventListener("themechange",o));for(let n=0;n<e.length;n++){let v=function(){let g=l.querySelector("#mermaid-space"),m=l.querySelector(".mermaid-content");if(!m)return;y(m);let w=c.querySelector("svg").cloneNode(!0);m.appendChild(w),l.classList.add("active"),g.style.cursor="grab",u=new h(g,m)},M=function(){l.classList.remove("active"),u?.cleanup(),u=null},c=e[n],s=c.parentElement,a=s.querySelector(".clipboard-button"),d=s.querySelector(".expand-button"),p=window.getComputedStyle(a),L=a.offsetWidth+parseFloat(p.marginLeft||"0")+parseFloat(p.marginRight||"0");d.style.right=`calc(${L}px + 0.3rem)`,s.prepend(d);let l=s.querySelector("#mermaid-container");if(!l)return;let u=null;d.addEventListener("click",v),f(l,M),window.addCleanup(()=>{u?.cleanup(),d.removeEventListener("click",v)})}});
+</script><script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js" type="application/javascript"></script><script src="../postscript.js" type="module"></script></html>
